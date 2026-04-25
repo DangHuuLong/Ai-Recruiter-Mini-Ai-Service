@@ -1,0 +1,107 @@
+{
+  "resume": {
+    "personal": {
+      "full_name": "Mock Candidate",
+      "email": null,
+      "phone": null,
+      "location": null,
+      "linkedin_url": null,
+      "github_url": null,
+      "portfolio_url": null
+    },
+    "summary": "Mock parsed resume profile.",
+    "skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "category": "backend",
+        "evidence": "Python mentioned in resume text"
+      },
+      {
+        "name": "FastAPI",
+        "normalized_name": "fastapi",
+        "category": "backend",
+        "evidence": "FastAPI mentioned in resume text"
+      }
+    ],
+    "education": [],
+    "experience": [],
+    "projects": [],
+    "certifications": [],
+    "achievements": [],
+    "languages": []
+  },
+  "job_description": {
+    "title": "Backend Developer",
+    "seniority": "junior",
+    "employment_type": "full-time",
+    "responsibilities": [
+      "Develop and maintain backend APIs"
+    ],
+    "requirements": [
+      "Experience with backend API development"
+    ],
+    "nice_to_have": [
+      "Experience with Docker or Redis"
+    ],
+    "required_skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "is_core": true,
+        "weight_hint": 1.0
+      },
+      {
+        "name": "FastAPI",
+        "normalized_name": "fastapi",
+        "is_core": true,
+        "weight_hint": 1.0
+      },
+      {
+        "name": "PostgreSQL",
+        "normalized_name": "postgresql",
+        "is_core": true,
+        "weight_hint": 1.0
+      }
+    ],
+    "preferred_skills": [
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "is_core": false,
+        "weight_hint": 0.5
+      }
+    ],
+    "min_experience_years": 1,
+    "education_requirement": null,
+    "domain_keywords": [
+      "backend",
+      "api",
+      "database"
+    ]
+  },
+  "config": {
+    "criteria": [
+      {
+        "criterion": "SKILLS_MATCH",
+        "weight": 0.35
+      },
+      {
+        "criterion": "EXPERIENCE_RELEVANCE",
+        "weight": 0.3
+      },
+      {
+        "criterion": "PROJECT_RELEVANCE",
+        "weight": 0.15
+      },
+      {
+        "criterion": "EDUCATION_CERTIFICATION",
+        "weight": 0.1
+      },
+      {
+        "criterion": "KEYWORD_DOMAIN_ALIGNMENT",
+        "weight": 0.1
+      }
+    ]
+  }
+}

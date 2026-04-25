@@ -5,6 +5,8 @@ from collections.abc import AsyncIterator
 from fastapi import FastAPI
 
 from app.api.health import router as health_router
+from app.api.parse import router as parse_router
+from app.api.score import router as score_router
 from app.core.config import get_settings
 from app.core.logging import configure_logging
 
@@ -29,3 +31,5 @@ app = FastAPI(
 )
 
 app.include_router(health_router)
+app.include_router(parse_router)
+app.include_router(score_router)

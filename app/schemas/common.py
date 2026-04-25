@@ -1,6 +1,6 @@
 from typing import Generic, TypeVar
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 T = TypeVar("T")
@@ -20,4 +20,4 @@ class ApiResponse(BaseModel, Generic[T]):
 class ApiErrorResponse(BaseModel):
     success: bool = False
     message: str
-    errors: list[ErrorItem] = []
+    errors: list[ErrorItem] = Field(default_factory=list)

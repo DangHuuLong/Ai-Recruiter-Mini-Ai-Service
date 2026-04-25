@@ -430,38 +430,79 @@ Only `.env.example` should be committed.
 
 ---
 
-## 14. Current Implemented Files
+## 14. Schema Layer
 
-| File | Purpose |
+The schema layer defines the structured data contracts used by the AI service.
+
+Schemas are used to represent data after raw inputs have been extracted and normalized. They help ensure that the AI service returns predictable objects to the Backend instead of uncontrolled or inconsistent data.
+
+### Current schema groups:
+
+| Schema group | Purpose |
 | --- | --- |
-| app/main.py | FastAPI application entry point |
-| app/api/health.py | Health check endpoint |
-| app/core/config.py | Environment configuration |
-| app/core/logging.py | Logging setup |
-| app/schemas/common.py | Common API response schemas |
-| tests/conftest.py | Pytest import path setup |
-| tests/test_health.py | Health endpoint test |
-| pytest.ini | Pytest configuration |
-| .env.example | Environment variable template |
-| .gitignore | Git ignore rules |
-| requirements.txt | Python dependencies |
-| scripts/run-local.ps1 | Local run script |
+| Resume schemas | Represent parsed resume data after extracting information from a CV |
+| Job description schemas | Represent parsed job description data after analyzing JD text |
+| Evaluation schemas | Represent the input and output structure for CV-JD scoring |
+| Common schemas | Represent shared API response and error response formats |
+
+### Main data flow:
+
+```
+Raw resume text / raw JD text
+  ↓
+Parse and normalize
+  ↓
+ParsedResumeData / ParsedJobDescriptionData
+  ↓
+ScoreApplicationRequest
+  ↓
+EvaluationResult
+```
+
+### Schema details:
+
+- The resume schema groups information such as personal details, skills, education, experience, projects, certifications, achievements, and languages.
+- The job description schema groups information such as title, seniority, responsibilities, requirements, required skills, preferred skills, experience requirement, education requirement, and domain keywords.
+- The evaluation schema groups scoring output such as overall score, score breakdown, matched or missing skills, explanation, skill gap summary, interview questions, and evidence mapping.
+- These schemas are not database models. They are API-level objects used by the AI service and Backend to exchange structured data consistently.
 
 ---
 
-## 15. Current Status
+## 15. Schema Testing
 
-| Area | Status |
-| --- | --- |
-| FastAPI app bootstrap | Done |
-| Environment configuration | Done |
-| Logging configuration | Done |
-| Common response schema | Done |
-| Health endpoint | Done |
-| Local run script | Done |
-| Pytest configuration | Done |
-| Health endpoint test | Done |
-| Resume parsing endpoint | Not implemented |
-| Job description parsing endpoint | Not implemented |
-| Scoring endpoint | Not implemented |
-| Real AI provider integration | Not implemented |
+Schema tests verify that the main data objects can be created correctly and safely.
+
+### Purpose:
+
+The purpose of these tests is to make sure that:
+
+- Schema objects can be initialized with valid default values
+- List fields default to empty lists instead of `None`
+- Required fields are enforced where needed
+- The schema contract is stable before building mock parse and scoring endpoints
+
+### Run all tests:
+
+```bash
+python -m pytest
+```
+
+The schema tests are part of the basic safety check before adding parser, normalizer, scorer, and API endpoint logic.
+
+---
+
+## 16. Mock API Endpoints
+
+The AI service currently provides mock endpoints for parsing and scoring.
+
+These endpoints are used to validate the contract between the Backend and the AI service before real AI logic is implemented.
+
+Current mock endpoints:
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `POST` | `/parse/resume` | Parses raw resume text into structured resume data |
+| `POST` | `/parse/job-description` | Parses raw job description text into structured job description data |
+| `POST` | `/score/application` | Scores a parsed resume against a parsed job description |
+
+The mock implementation is deterministic and schema-based. It does not use a real LLM, embeddings, OCR, or external AI provider yet.
