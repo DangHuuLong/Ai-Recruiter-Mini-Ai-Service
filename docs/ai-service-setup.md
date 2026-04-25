@@ -1,496 +1,467 @@
-# AI Service Setup Documentation
+# AI Service Setup
 
 ## 1. Purpose
 
-This document tracks the setup process for the AI service of the AI Recruiter Mini project.
+This document describes the current setup of the AI service for the AI Recruiter Mini project.
 
-The AI service is responsible for providing independent AI-related capabilities for the recruitment screening pipeline, including:
+The AI service is a standalone Python service built with FastAPI. At the current stage, the service only contains the base project structure, environment configuration, logging setup, common response schema, health check endpoint, and basic test setup.
 
-- Resume parsing
-- Job description parsing
-- CV-JD scoring
-- Explanation generation
-- Interview question generation
-- Skill gap analysis
-
-In the first setup phase, the service will use mock endpoints and stable request/response schemas so that the Backend can integrate with it before real AI logic is implemented.
+This document only reflects the current implementation state.
 
 ---
 
-## 2. Repository Information
+## 2. Current Tech Stack
 
-**Repository name:**
+| Tool | Purpose |
+| --- | --- |
+| Python | Main programming language |
+| FastAPI | API framework |
+| Uvicorn | ASGI server for running FastAPI |
+| Pydantic | Data validation and response schema |
+| Pydantic Settings | Environment configuration |
+| python-dotenv | Load environment variables from `.env` |
+| Pytest | Testing framework |
+| HTTPX | Test client dependency used by FastAPI tests |
+
+---
+
+## 3. Current Folder Structure
 
 ```
 ai-recruiter-mini-ai-service
-```
-
-**Main branches:**
-
-| Branch | Purpose |
-|--------|---------|
-| `main` | Stable production-ready branch |
-| `develop` | Integration branch for development |
-| `chore/ai-service-setup` | Initial setup branch for the AI service foundation |
-
----
-
-## 3. Initial Setup Commands
-
-### Clone Repository
-
-```bash
-git clone https://github.com/<your-username>/ai-recruiter-mini-ai-service.git
-cd ai-recruiter-mini-ai-service
-```
-
-### Create Initial Commit
-
-```bash
-echo "# AI Recruiter Mini AI Service" > README.md
-git add README.md
-git commit -m "chore: initialize ai service repository"
-```
-
-### Push Main Branch
-
-```bash
-git branch -M main
-git push -u origin main
-```
-
-### Create Develop Branch
-
-```bash
-git checkout -b develop
-git push -u origin develop
-```
-
-### Create Setup Branch
-
-```bash
-git checkout develop
-git pull origin develop
-git checkout -b chore/ai-service-setup
-git push -u origin chore/ai-service-setup
+├── app
+│   ├── api
+│   │   ├── __init__.py
+│   │   └── health.py
+│   ├── core
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   └── logging.py
+│   ├── normalizers
+│   │   └── __init__.py
+│   ├── parsers
+│   │   └── __init__.py
+│   ├── schemas
+│   │   ├── __init__.py
+│   │   └── common.py
+│   ├── scorers
+│   │   └── __init__.py
+│   ├── services
+│   │   └── __init__.py
+│   ├── utils
+│   │   └── __init__.py
+│   ├── __init__.py
+│   └── main.py
+├── docs
+│   └── ai-service-setup.md
+├── samples
+├── scripts
+│   └── run-local.ps1
+├── tests
+│   ├── conftest.py
+│   └── test_health.py
+├── .env.example
+├── .gitignore
+├── pytest.ini
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## 4. Project Setup Goal
+## 4. Folder Responsibilities
 
-The goal of this setup branch is to create the foundation for a standalone Python AI service using **FastAPI**.
-
-The initial service should include:
-
-- ✅ FastAPI application bootstrap
-- ✅ Health check endpoint
-- ✅ Environment configuration
-- ✅ Logging configuration
-- ✅ Request and response schemas
-- ✅ Mock resume parser endpoint
-- ✅ Mock job description parser endpoint
-- ✅ Mock CV-JD scoring endpoint
-- ✅ Sample CV/JD input files
-- ✅ Local run script
-- ✅ Basic tests
+| Folder | Responsibility |
+| --- | --- |
+| app | Main application source code |
+| app/api | FastAPI route handlers |
+| app/core | Global configuration and logging setup |
+| app/schemas | Shared Pydantic schemas |
+| app/parsers | Placeholder for resume and job description parsing logic |
+| app/normalizers | Placeholder for text and skill normalization logic |
+| app/scorers | Placeholder for CV-JD scoring logic |
+| app/services | Placeholder for service orchestration logic |
+| app/utils | Shared utility functions |
+| tests | Automated tests |
+| samples | Sample input files for later testing |
+| scripts | Local development scripts |
+| docs | Project documentation |
 
 ---
 
-## 5. Planned Folder Structure
+## 5. Environment Configuration
+
+Environment variables are defined in:
 
 ```
-ai-recruiter-mini-ai-service/
-├── app/
-│   ├── main.py                           # FastAPI app entry point
-│   ├── core/
-│   │   ├── config.py                     # Configuration management
-│   │   └── logging.py                    # Logging setup
-│   ├── api/
-│   │   ├── health.py                     # Health check endpoint
-│   │   ├── parse.py                      # Parsing endpoints
-│   │   └── score.py                      # Scoring endpoints
-│   ├── parsers/
-│   │   ├── resume_parser.py              # Resume parsing logic
-│   │   └── job_description_parser.py     # Job description parsing logic
-│   ├── normalizers/
-│   │   ├── skill_normalizer.py           # Skill normalization
-│   │   └── text_normalizer.py            # Text normalization utilities
-│   ├── scorers/
-│   │   └── cv_jd_scorer.py               # CV-JD scoring logic
-│   ├── schemas/
-│   │   ├── common.py                     # Common request/response schemas
-│   │   ├── resume.py                     # Resume schemas
-│   │   ├── job_description.py            # Job description schemas
-│   │   └── evaluation.py                 # Evaluation schemas
-│   ├── services/
-│   │   ├── ai_provider_service.py        # AI provider integration
-│   │   ├── parsing_service.py            # Parsing service orchestration
-│   │   └── scoring_service.py            # Scoring service orchestration
-│   └── utils/
-│       └── text.py                       # Text utility functions
-├── tests/                                # Test suite
-│   ├── conftest.py                       # Pytest configuration
-│   ├── test_health.py                    # Health endpoint tests
-│   ├── test_parsers.py                   # Parser tests
-│   └── test_scorers.py                   # Scorer tests
-├── samples/                              # Sample input files
-│   ├── sample_resume.pdf
-│   ├── sample_resume.docx
-│   └── sample_job_description.txt
-├── scripts/                              # Utility scripts
-│   └── run.sh                            # Local run script
-├── docs/                                 # Documentation
-│   └── API.md                            # API documentation
-├── .env.example                          # Environment variables template
-├── .gitignore                            # Git ignore rules
-├── requirements.txt                      # Python dependencies
-├── pyproject.toml                        # Python project configuration
-├── README.md                             # Project README
-└── .github/                              # GitHub workflows
-    └── workflows/
-        └── tests.yml                     # CI/CD testing workflow
+.env.example
+```
+
+### Current variables:
+
+```
+APP_NAME=ai-recruiter-mini-ai-service
+APP_ENV=development
+APP_VERSION=0.1.0
+APP_PORT=8000
+
+LOG_LEVEL=INFO
+
+AI_PROVIDER=mock
+GEMINI_API_KEY=
+GEMINI_MODEL=gemini-3-flash-preview
+
+REQUEST_TIMEOUT_SECONDS=30
+```
+
+For local development, create a `.env` file from `.env.example`:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+The `.env` file is ignored by Git and should not be committed.
+
+---
+
+## 6. Configuration File
+
+Configuration is handled in:
+
+```
+app/core/config.py
+```
+
+This file defines the `Settings` class using `pydantic-settings`.
+
+### Current responsibilities:
+
+- Load environment variables from `.env`
+- Provide application name, version, environment, and port
+- Provide logging level
+- Provide AI provider configuration
+- Provide request timeout configuration
+
+The project uses a cached settings function:
+
+```python
+@lru_cache
+def get_settings() -> Settings:
+    return Settings()
+```
+
+This avoids creating a new settings instance repeatedly across the application.
+
+---
+
+## 7. Logging Configuration
+
+Logging is configured in:
+
+```
+app/core/logging.py
+```
+
+### Current log format:
+
+```
+timestamp | level | module | message
+```
+
+### Example:
+
+```
+2026-04-25 11:00:00 | INFO | app.main | AI service started
+```
+
+The log level is controlled by:
+
+```
+LOG_LEVEL=INFO
 ```
 
 ---
 
-## 6. Technology Stack
+## 8. Common Response Schema
 
-| Technology | Purpose |
-|-----------|---------|
-| **Python 3.10+** | Programming language |
-| **FastAPI** | Web framework |
-| **Pydantic** | Data validation |
-| **Pytest** | Testing framework |
-| **python-dotenv** | Environment configuration |
-| **Uvicorn** | ASGI server |
+Common response schemas are defined in:
+
+```
+app/schemas/common.py
+```
+
+### Current schemas:
+
+```python
+class ErrorItem(BaseModel):
+    field: str | None = None
+    message: str
+
+
+class ApiResponse(BaseModel, Generic[T]):
+    success: bool
+    message: str
+    data: T | None = None
+
+
+class ApiErrorResponse(BaseModel):
+    success: bool = False
+    message: str
+    errors: list[ErrorItem] = []
+```
+
+These schemas are used to keep API responses consistent.
+
+### Current success response format:
+
+```json
+{
+  "success": true,
+  "message": "AI service is healthy",
+  "data": {}
+}
+```
+
+### Current error response format:
+
+```json
+{
+  "success": false,
+  "message": "Invalid request",
+  "errors": [
+    {
+      "field": "rawText",
+      "message": "Field is required"
+    }
+  ]
+}
+```
 
 ---
 
-## 7. Key Endpoints (Mock Phase)
+## 9. FastAPI Application Entry Point
 
-### Health Check
+The main FastAPI app is defined in:
+
+```
+app/main.py
+```
+
+### Current responsibilities:
+
+- Configure logging
+- Load application settings
+- Create the FastAPI app instance
+- Register API routers
+- Handle startup and shutdown logging through FastAPI lifespan
+
+The app currently registers:
+
+- `GET /health`
+
+FastAPI documentation is available at:
+
+```
+http://localhost:8000/docs
+```
+
+OpenAPI JSON is available at:
+
+```
+http://localhost:8000/openapi.json
+```
+
+---
+
+## 10. Health Check Endpoint
+
+The health check route is defined in:
+
+```
+app/api/health.py
+```
+
+### Endpoint:
 
 ```
 GET /health
 ```
 
-**Response:**
-
-```json
-{
-  "status": "healthy",
-  "version": "0.1.0"
-}
-```
-
-### Parse Resume
-
-```
-POST /api/parse/resume
-```
-
-**Request:**
-
-```json
-{
-  "file_path": "/path/to/resume.pdf"
-}
-```
-
-**Response:**
+### Expected response:
 
 ```json
 {
   "success": true,
+  "message": "AI service is healthy",
   "data": {
-    "contact_info": { ... },
-    "experience": [ ... ],
-    "education": [ ... ],
-    "skills": [ ... ]
+    "service": "ai-recruiter-mini-ai-service",
+    "status": "healthy",
+    "version": "0.1.0",
+    "environment": "development",
+    "aiProvider": "mock"
   }
 }
 ```
 
-### Parse Job Description
-
-```
-POST /api/parse/job-description
-```
-
-**Request:**
-
-```json
-{
-  "text": "Job description text..."
-}
-```
-
-**Response:**
-
-```json
-{
-  "success": true,
-  "data": {
-    "title": "...",
-    "description": "...",
-    "required_skills": [ ... ],
-    "preferred_skills": [ ... ]
-  }
-}
-```
-
-### Score CV vs JD
-
-```
-POST /api/score/evaluate
-```
-
-**Request:**
-
-```json
-{
-  "resume_data": { ... },
-  "job_data": { ... }
-}
-```
-
-**Response:**
-
-```json
-{
-  "success": true,
-  "data": {
-    "overall_score": 75.5,
-    "criteria_scores": {
-      "skills_match": 80.0,
-      "experience_relevance": 70.0,
-      "project_relevance": 75.0,
-      "education_certification": 85.0,
-      "keyword_domain_alignment": 65.0
-    },
-    "matched_skills": [ ... ],
-    "missing_skills": [ ... ]
-  }
-}
-```
+This endpoint is used to verify that the AI service is running.
 
 ---
 
-## 8. Setup Status Checklist
+## 11. Local Setup
 
-| Task | Status |
-|------|--------|
-| Create empty repository | ⏳ Pending |
-| Clone repository locally | ⏳ Pending |
-| Create initial commit | ⏳ Pending |
-| Create `develop` branch | ⏳ Pending |
-| Create `chore/ai-service-setup` branch | ⏳ Pending |
-| Create `docs` folder | ⏳ Pending |
-| Create setup documentation | ⏳ Pending |
-| Initialize Python project | ⏳ Pending |
-| Create `pyproject.toml` | ⏳ Pending |
-| Create `requirements.txt` | ⏳ Pending |
-| Install FastAPI dependencies | ⏳ Pending |
-| Create `app/main.py` | ⏳ Pending |
-| Create health endpoint | ⏳ Pending |
-| Create configuration system | ⏳ Pending |
-| Create logging system | ⏳ Pending |
-| Create base schemas | ⏳ Pending |
-| Create mock parsing endpoints | ⏳ Pending |
-| Create mock scoring endpoint | ⏳ Pending |
-| Create sample input files | ⏳ Pending |
-| Create local run script | ⏳ Pending |
-| Create basic tests | ⏳ Pending |
-| Create API documentation | ⏳ Pending |
-| Create GitHub workflows | ⏳ Pending |
-
----
-
-## 9. Development Workflow
-
-### Setup Local Development Environment
+### Create virtual environment:
 
 ```bash
-# Clone the repository
-git clone https://github.com/DangHuuLong/Ai-Recruiter-Mini-Ai-Service.git
-cd ai-recruiter-mini-ai-service
+python -m venv .venv
+```
 
-# Checkout setup branch
-git checkout chore/ai-service-setup
+### Activate virtual environment:
 
-# Create virtual environment
-python -m venv venv
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
 
-# Activate virtual environment
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
+### Install dependencies:
 
-# Install dependencies
+```bash
 pip install -r requirements.txt
-
-# Run the service
-python -m uvicorn app.main:app --reload --port 8001
 ```
 
-The service will be available at `http://localhost:8001`.
-
-Health check: `http://localhost:8001/health`  
-API documentation: `http://localhost:8001/docs`
-
-### Running Tests
+### Run the service:
 
 ```bash
-# Run all tests
-pytest
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-# Run tests with coverage
-pytest --cov=app
+Or run with the local script:
 
-# Run specific test file
-pytest tests/test_health.py
+```powershell
+.\scripts\run-local.ps1
+```
 
-# Run in watch mode
-pytest-watch
+### Health check URL:
+
+```
+http://localhost:8000/health
+```
+
+### Swagger URL:
+
+```
+http://localhost:8000/docs
 ```
 
 ---
 
-## 10. Environment Configuration
+## 12. Test Configuration
 
-Create a `.env` file based on `.env.example`:
+Pytest is configured in:
 
-```env
-# Application
-APP_NAME=AI Recruiter Mini - AI Service
-APP_VERSION=0.1.0
-DEBUG=True
+```
+pytest.ini
+```
 
-# API
-API_HOST=0.0.0.0
-API_PORT=8001
+### Current configuration:
 
-# Logging
-LOG_LEVEL=INFO
-LOG_FILE=logs/app.log
+```ini
+[pytest]
+pythonpath = .
+testpaths = tests
+```
 
-# AI Provider (will be configured later)
-AI_PROVIDER=mock
-AI_API_KEY=
+The project also includes:
+
+```
+tests/conftest.py
+```
+
+This file ensures that the project root is added to `sys.path` during test execution, which helps avoid import issues on Windows.
+
+### Run tests:
+
+```bash
+python -m pytest
+```
+
+### Current test file:
+
+```
+tests/test_health.py
+```
+
+### Current test coverage:
+
+- Verify that `GET /health` returns HTTP 200
+- Verify that the response has `success = true`
+- Verify that the health status is `healthy`
+- Verify that the service name is correct
+
+### Expected result:
+
+```
+1 passed
 ```
 
 ---
 
-## 11. Key Files to Create
+## 13. Git Ignore Rules
 
-### `requirements.txt`
+The `.gitignore` file excludes local and generated files such as:
 
 ```
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pydantic==2.4.2
-pydantic-settings==2.0.3
-python-dotenv==1.0.0
-pytest==7.4.3
-pytest-cov==4.1.0
-pytest-watch==4.2.0
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.log
+.vscode/
+.idea/
+build/
+dist/
 ```
 
-### `pyproject.toml`
+### Important rule:
 
-```toml
-[build-system]
-requires = ["setuptools>=65.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "ai-recruiter-mini-ai-service"
-version = "0.1.0"
-description = "AI Service for AI Recruiter Mini platform"
-authors = [
-    {name = "Your Name", email = "your.email@example.com"}
-]
-requires-python = ">=3.10"
-dependencies = [
-    "fastapi==0.104.1",
-    "uvicorn[standard]==0.24.0",
-    "pydantic==2.4.2",
-    "pydantic-settings==2.0.3",
-    "python-dotenv==1.0.0",
-]
-
-[project.optional-dependencies]
-dev = [
-    "pytest==7.4.3",
-    "pytest-cov==4.1.0",
-    "pytest-watch==4.2.0",
-]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
 ```
+.env must not be committed.
+```
+
+Only `.env.example` should be committed.
 
 ---
 
-## 12. Integration with Backend
+## 14. Current Implemented Files
 
-The backend (`Ai-Recruiter-Mini-Backend`) will communicate with this AI service via HTTP requests.
-
-### Configuration in Backend
-
-The backend will need to configure the AI service base URL:
-
-```env
-AI_SERVICE_BASE_URL=http://localhost:8001
-```
-
-### API Calls from Backend
-
-The backend will call endpoints like:
-
-```typescript
-// Example: Parse a resume
-const response = await fetch('http://localhost:8001/api/parse/resume', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ file_path: '/path/to/resume.pdf' })
-});
-```
+| File | Purpose |
+| --- | --- |
+| app/main.py | FastAPI application entry point |
+| app/api/health.py | Health check endpoint |
+| app/core/config.py | Environment configuration |
+| app/core/logging.py | Logging setup |
+| app/schemas/common.py | Common API response schemas |
+| tests/conftest.py | Pytest import path setup |
+| tests/test_health.py | Health endpoint test |
+| pytest.ini | Pytest configuration |
+| .env.example | Environment variable template |
+| .gitignore | Git ignore rules |
+| requirements.txt | Python dependencies |
+| scripts/run-local.ps1 | Local run script |
 
 ---
 
-## 13. Next Steps
+## 15. Current Status
 
-1. **Initialize Repository** — Create GitHub repository and clone locally
-2. **Setup Python Project** — Create virtual environment and install dependencies
-3. **Bootstrap FastAPI** — Create main application and health check endpoint
-4. **Create Schemas** — Define request/response data structures
-5. **Implement Mock Endpoints** — Create mock parsing and scoring endpoints
-6. **Add Configuration** — Setup environment variables and logging
-7. **Write Tests** — Add basic test coverage for endpoints
-8. **Create Documentation** — Document API and setup process
-9. **Merge to Develop** — Create pull request and merge setup branch to develop
-10. **Iterate** — Add real AI logic and additional features
-
----
-
-## 14. References
-
-- **FastAPI Documentation:** https://fastapi.tiangolo.com/
-- **Pydantic Documentation:** https://docs.pydantic.dev/
-- **Pytest Documentation:** https://docs.pytest.org/
-- **Backend Repository:** https://github.com/DangHuuLong/Ai-Recruiter-Mini-Backend
-- **Frontend Repository:** https://github.com/DangHuuLong/Ai-Recruiter-Mini-Frontend
-
----
-
-## 15. Contact & Support
-
-For questions or updates regarding the AI service setup:
-
-- Create an issue in the repository
-- Reference this documentation
-- Link related issues from other repositories (backend, frontend)
+| Area | Status |
+| --- | --- |
+| FastAPI app bootstrap | Done |
+| Environment configuration | Done |
+| Logging configuration | Done |
+| Common response schema | Done |
+| Health endpoint | Done |
+| Local run script | Done |
+| Pytest configuration | Done |
+| Health endpoint test | Done |
+| Resume parsing endpoint | Not implemented |
+| Job description parsing endpoint | Not implemented |
+| Scoring endpoint | Not implemented |
+| Real AI provider integration | Not implemented |
