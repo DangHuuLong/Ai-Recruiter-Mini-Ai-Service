@@ -488,3 +488,21 @@ python -m pytest
 ```
 
 The schema tests are part of the basic safety check before adding parser, normalizer, scorer, and API endpoint logic.
+
+---
+
+## 16. Mock API Endpoints
+
+The AI service currently provides mock endpoints for parsing and scoring.
+
+These endpoints are used to validate the contract between the Backend and the AI service before real AI logic is implemented.
+
+Current mock endpoints:
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `POST` | `/parse/resume` | Parses raw resume text into structured resume data |
+| `POST` | `/parse/job-description` | Parses raw job description text into structured job description data |
+| `POST` | `/score/application` | Scores a parsed resume against a parsed job description |
+
+The mock implementation is deterministic and schema-based. It does not use a real LLM, embeddings, OCR, or external AI provider yet.
