@@ -506,3 +506,40 @@ Current mock endpoints:
 | `POST` | `/score/application` | Scores a parsed resume against a parsed job description |
 
 The mock implementation is deterministic and schema-based. It does not use a real LLM, embeddings, OCR, or external AI provider yet.
+
+---
+
+## 17. Parsed Resume Contract Preparation
+
+This section documents the preparation work for the parsed resume contract.
+
+### Purpose
+
+Define a stable `ParsedResumeData` response shape before implementing real CV parsing.
+
+At this stage, the AI service still uses mock parsing logic. PDF/DOCX reading, text extraction, section splitting, and real AI parsing are not implemented yet.
+
+### Updated files
+
+| File | Purpose |
+| --- | --- |
+| `app/schemas/resume.py` | Defines `ParsedResumeData` and related resume schemas |
+| `app/parsers/resume_parser.py` | Returns mock parsed resume data |
+| `samples/sample_resume.json` | Provides sample parsed resume output |
+| `tests/test_schemas.py` | Tests resume schema defaults and validation |
+| `tests/test_parse_resume.py` | Tests the mock parse resume endpoint |
+
+### Contract notes
+
+- JSON payloads use `snake_case`.
+- List fields default to empty lists.
+- `personal` defaults to an empty personal info object.
+- `skills[].normalized_name` is required.
+- Mock parser output must match `ParsedResumeData`.
+
+### Test result
+
+Current test result:
+
+```txt
+10 passed
