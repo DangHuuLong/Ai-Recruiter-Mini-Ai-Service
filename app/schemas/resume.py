@@ -1,7 +1,9 @@
 from pydantic import BaseModel, Field
 
+
 class ParseResumeRequest(BaseModel):
     raw_text: str
+
 
 class ResumePersonalInfo(BaseModel):
     full_name: str | None = None
@@ -15,39 +17,54 @@ class ResumePersonalInfo(BaseModel):
 
 class ResumeSkill(BaseModel):
     name: str
-    normalized_name: str | None = None
+    normalized_name: str
     category: str | None = None
     evidence: str | None = None
 
 
 class ResumeEducation(BaseModel):
-    school: str | None = None
+    institution: str | None = None
     degree: str | None = None
     field_of_study: str | None = None
-    start_date: str | None = None
-    end_date: str | None = None
+    start_year: int | None = None
+    end_year: int | None = None
+    description: str | None = None
 
 
 class ResumeExperience(BaseModel):
     company: str | None = None
-    title: str | None = None
+    role: str | None = None
+    location: str | None = None
     start_date: str | None = None
     end_date: str | None = None
-    description: str | None = None
-    skills: list[str] = Field(default_factory=list)
+    duration_months: int | None = None
+    responsibilities: list[str] = Field(default_factory=list)
+    technologies: list[str] = Field(default_factory=list)
 
 
 class ResumeProject(BaseModel):
     name: str | None = None
     description: str | None = None
     technologies: list[str] = Field(default_factory=list)
-    role: str | None = None
+    url: str | None = None
 
 
 class ResumeCertification(BaseModel):
-    name: str
+    name: str | None = None
     issuer: str | None = None
-    issued_date: str | None = None
+    issued_year: int | None = None
+    url: str | None = None
+
+
+class ResumeAchievement(BaseModel):
+    title: str | None = None
+    description: str | None = None
+    year: int | None = None
+
+
+class ResumeLanguage(BaseModel):
+    name: str
+    proficiency: str | None = None
 
 
 class ParsedResumeData(BaseModel):
@@ -58,5 +75,5 @@ class ParsedResumeData(BaseModel):
     experience: list[ResumeExperience] = Field(default_factory=list)
     projects: list[ResumeProject] = Field(default_factory=list)
     certifications: list[ResumeCertification] = Field(default_factory=list)
-    achievements: list[str] = Field(default_factory=list)
-    languages: list[str] = Field(default_factory=list)
+    achievements: list[ResumeAchievement] = Field(default_factory=list)
+    languages: list[ResumeLanguage] = Field(default_factory=list)
