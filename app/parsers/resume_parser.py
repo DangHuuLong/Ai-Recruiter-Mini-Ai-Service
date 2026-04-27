@@ -1,9 +1,9 @@
 from app.schemas.resume import (
     ParsedResumeData,
-    ResumePersonalInfo,
-    ResumeSkill,
     ResumeExperience,
+    ResumePersonalInfo,
     ResumeProject,
+    ResumeSkill,
 )
 
 
@@ -32,6 +32,8 @@ def parse_resume_mock(raw_text: str) -> ParsedResumeData:
                 )
             )
 
+    skill_names = [skill.name for skill in skills]
+
     return ParsedResumeData(
         personal=ResumePersonalInfo(
             full_name="Mock Candidate",
@@ -44,25 +46,29 @@ def parse_resume_mock(raw_text: str) -> ParsedResumeData:
         ),
         summary="Mock parsed resume profile.",
         skills=skills,
+        education=[],
         experience=[
             ResumeExperience(
                 company="Mock Company",
-                title="Backend Developer",
+                role="Backend Developer",
+                location=None,
                 start_date=None,
                 end_date=None,
-                description="Mock backend development experience extracted from resume text.",
-                skills=[skill.name for skill in skills],
+                duration_months=None,
+                responsibilities=[
+                    "Mock backend development experience extracted from resume text."
+                ],
+                technologies=skill_names,
             )
         ],
         projects=[
             ResumeProject(
                 name="Mock Backend API Project",
                 description="Mock project extracted from resume text.",
-                technologies=[skill.name for skill in skills],
-                role="Backend Developer",
+                technologies=skill_names,
+                url=None,
             )
         ],
-        education=[],
         certifications=[],
         achievements=[],
         languages=[],
