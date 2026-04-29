@@ -517,17 +517,23 @@ This section documents the preparation work for the parsed resume contract.
 
 Define a stable `ParsedResumeData` response shape before implementing real CV parsing.
 
-At this stage, the AI service still uses mock parsing logic. PDF/DOCX reading, text extraction, section splitting, and real AI parsing are not implemented yet.
+At this stage, the AI service uses deterministic rule-based parsing logic. PDF/DOCX reading, text normalization, section splitting, and structured resume extraction are implemented for MVP text-based CV formats.
 
 ### Updated files
 
 | File | Purpose |
 | --- | --- |
 | `app/schemas/resume.py` | Defines `ParsedResumeData` and related resume schemas |
-| `app/parsers/resume_parser.py` | Returns mock parsed resume data |
+| `app/parsers/resume_parser.py` | Orchestrates rule-based resume parsing |
+| `app/parsers/pdf_reader.py` | Extracts text from text-based PDF files |
+| `app/parsers/docx_reader.py` | Extracts text from DOCX paragraphs and tables |
+| `app/parsers/extractors/*` | Extracts resume fields from normalized text |
+| `app/parsers/normalizers/*` | Normalizes skills, dates, and durations |
 | `samples/sample_resume.json` | Provides sample parsed resume output |
 | `tests/test_schemas.py` | Tests resume schema defaults and validation |
-| `tests/test_parse_resume.py` | Tests the mock parse resume endpoint |
+| `tests/test_parse_resume.py` | Tests the parse resume endpoint |
+| `tests/test_file_readers.py` | Tests PDF and DOCX reader behavior |
+| `tests/test_parser_utilities.py` | Tests section and duration utilities |
 
 ### Contract notes
 
@@ -535,11 +541,47 @@ At this stage, the AI service still uses mock parsing logic. PDF/DOCX reading, t
 - List fields default to empty lists.
 - `personal` defaults to an empty personal info object.
 - `skills[].normalized_name` is required.
-- Mock parser output must match `ParsedResumeData`.
+- Parser output must match `ParsedResumeData`.
 
 ### Test result
 
 Current test result:
 
 ```txt
-10 passed
+19 passed
+```
+
+---
+
+## 18. Resume Parser Implementation Status
+
+The resume parser is now a deterministic MVP parser, not a mock-only parser.
+
+Implemented parser capabilities:
+
+- PDF text extraction through `app/parsers/pdf_reader.py`
+- DOCX text extraction through `app/parsers/docx_reader.py`
+- Text normalization with optional line preservation
+- Resume section splitting for English and basic Vietnamese headings
+- Email, phone, LinkedIn, GitHub, and portfolio link extraction
+- Skill extraction with aliases, categories, and normalized names
+- Education extraction for institution, degree, field, and years
+- Experience extraction for role, company, date range, duration, responsibilities, and technologies
+- Project, certification, achievement, and language extraction
+- `ParsedResumeData` schema-compatible output
+
+Current parser tests cover:
+
+- Short raw-text resume input
+- Structured multi-section resume input
+- Resume input without clear section headers
+- Basic Vietnamese section headers
+- PDF/DOCX reader behavior with mocked parser dependencies
+- Duration and section splitter utility behavior
+
+Known MVP limits:
+
+- The parser is rule-based and deterministic.
+- OCR and scanned CV handling are not implemented.
+- Highly visual or unusual CV layouts may still require better upstream text extraction.
+- Skill coverage depends on the local skill catalog and aliases.
