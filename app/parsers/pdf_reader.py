@@ -1,19 +1,33 @@
-"""Simple PDF reader wrapper.
-Attempts to use PyPDF2 if available, otherwise raises ImportError.
-"""
-from typing import Optional
+"""PDF text extraction helpers."""
+
+from pathlib import Path
+from typing import Any
 
 
-def read_pdf(path: str) -> str:
+def _load_pdf_reader() -> Any:
     try:
-        from PyPDF2 import PdfReader
-    except Exception as exc:  # pragma: no cover - optional dependency
-        raise ImportError("PyPDF2 is required to read PDF files") from exc
+        from pypdf import PdfReader
 
-    text_parts: list[str] = []
-    reader = PdfReader(path)
-    for page in reader.pages:
-        page_text = page.extract_text() or ""
-        text_parts.append(page_text)
+        return PdfReader
+    except Exception:
+        try:
+            from PyPDF2 import PdfReader
 
-    return "\n".join(text_parts)
+            return PdfReader
+        except Exception as exc:  # pragma: no cover - dependency error path
+            raise ImportError("pypdf or PyPDF2 is required to read PDF files") from exc
+
+
+def read_pdf(path: str | Path) -> str:
+    file_path = Path(path)
+    if not file_path.exists():
+        raise FileNotFoundError(f"PDF file not found: {file_path}")
+
+    PdfReader = _load_pdf_reader()
+    reader = PdfReader(str(file_path))
+
+    text_parts = []
+    for page in getattr(reader, "pages", []):
+        text_parts.append(page.extract_text() or "")
+
+    return "\n".join(part.strip() for part in text_parts if part.strip())
