@@ -24,7 +24,7 @@ The AI service is responsible for:
 - Parsing job description text
 - Scoring a parsed resume against a parsed job description
 
-At the current stage, the AI service provides mock endpoints. The response shape should remain stable so the Backend can integrate with it before real AI logic is implemented.
+At the current stage, the AI service provides deterministic MVP endpoints. Resume parsing uses rule-based extraction, while job description parsing and scoring still use lightweight deterministic logic. The response shape should remain stable so the Backend can integrate with it before LLM/embedding-based logic is implemented.
 
 ---
 
@@ -535,13 +535,13 @@ If the Backend and Frontend use `camelCase`, the Backend is responsible for mapp
 
 ---
 
-## 10. Mock Phase Notes
+## 10. MVP Parser Notes
 
-### During the mock phase:
+### During the MVP parser phase:
 
 - Endpoints should return stable response shapes
-- Mock logic can be simple and deterministic
-- The goal is to validate API contract, not AI quality
-- Real parsing, semantic matching, embeddings, or LLM integration are not required yet
+- Parser logic can be rule-based and deterministic
+- The goal is to validate API contract and provide usable first-pass parsing
+- OCR, semantic matching, embeddings, or LLM integration are not required yet
 
-The mock implementation should be replaceable without changing the API contract.
+The deterministic parser implementation should be replaceable without changing the API contract.
