@@ -138,9 +138,14 @@ def _has_project_context(next_lines: list[str]) -> bool:
     return any(token in window for token in PROJECT_CONTEXT_TOKENS)
 
 
+def _is_project_context_line(line: str) -> bool:
+    normalized = _normalize_title(line)
+    return any(normalized.startswith(token.rstrip(":")) for token in PROJECT_CONTEXT_TOKENS)
+
+
 def _looks_like_inline_project_header(line: str) -> bool:
     clean = strip_list_marker(line).strip()
-    if _is_non_project_title(clean):
+    if _is_non_project_title(clean) or _is_project_context_line(clean):
         return False
 
     for pattern in (r"\s+-\s+", r":\s+"):
@@ -150,7 +155,7 @@ def _looks_like_inline_project_header(line: str) -> bool:
 
         name = parts[0].strip(" -|,")
         rest = parts[1].strip()
-        if not name or _is_non_project_title(name):
+        if not name or _is_non_project_title(name) or _is_project_context_line(name):
             continue
 
         if not _looks_like_project_title(name):
@@ -200,7 +205,7 @@ def _is_dated_project_title(line: str) -> bool:
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
 
-    if _is_non_project_title(clean) or _is_date_only_line(clean):
+    if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean):
         return False
 
     if _is_dated_project_title(clean) or _looks_like_inline_project_header(clean):
