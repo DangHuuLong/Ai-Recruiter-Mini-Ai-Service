@@ -176,6 +176,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
         for item in extract_projects(projects_source)
     ]
 
+    certification_source = _section_or_fallback(sections, "certifications")
     certifications = [
         ResumeCertification(
             name=item.get("name"),
@@ -183,7 +184,10 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             issued_year=item.get("issued_year"),
             url=item.get("url"),
         )
-        for item in extract_certifications(_section_or_fallback(sections, "certifications"))
+        for item in extract_certifications(
+            certification_source,
+            allow_year_only=bool(sections.get("certifications")),
+        )
     ]
 
     achievements_source = _combine_sections(sections.get("achievements"), sections.get("experience"), sections.get("projects"))
@@ -224,13 +228,13 @@ def _experience_source(sections: dict[str, str]) -> str:
         experience_text = sections["experience"]
         projects_text = sections.get("projects", "")
         project_lines = split_lines(projects_text)
-        if project_lines and not _looks_like_real_project_start(project_lines):
+        if project_lines and _looks_like_misplaced_experience(project_lines):
             return _combine_sections(experience_text, projects_text)
         return experience_text
 
     projects_text = sections.get("projects", "")
     project_lines = split_lines(projects_text)
-    if project_lines and not _looks_like_real_project_start(project_lines):
+    if project_lines and _looks_like_misplaced_experience(project_lines):
         return projects_text
 
     other = sections.get("other", "")
@@ -262,11 +266,10 @@ def _projects_source(sections: dict[str, str]) -> str:
     projects_text = sections.get("projects", "")
     lines = split_lines(projects_text)
 
-    if lines and _looks_like_real_project_start(lines):
-        return projects_text
-
     if projects_text:
-        return _extract_project_tail_from_experience(projects_text)
+        if lines and _looks_like_misplaced_experience(lines):
+            return _extract_project_tail_from_experience(projects_text)
+        return projects_text
 
     experience_text = sections.get("experience", "")
     if not experience_text:
@@ -275,20 +278,21 @@ def _projects_source(sections: dict[str, str]) -> str:
     return _extract_project_tail_from_experience(experience_text)
 
 
-def _looks_like_real_project_start(lines: list[str]) -> bool:
+def _looks_like_misplaced_experience(lines: list[str]) -> bool:
     if not lines:
         return False
 
     first = strip_accents(lines[0]).lower()
     second = strip_accents(lines[1]).lower() if len(lines) > 1 else ""
+    third = strip_accents(lines[2]).lower() if len(lines) > 2 else ""
 
     if any(token in first for token in ["career history", "company", "corporation"]):
-        return False
-    if any(token in first for token in ["developer", "engineer", "manager"]):
-        return False
-    if any(token in second for token in ["position", "role", "teamsize", "description", "technologies"]):
         return True
-    if re.search(r"(?:19|20)\d{2}[/.-]\d{1,2}\s*(?:-|–|—|to)\s*", lines[0]):
+    if any(token in first for token in ["developer", "engineer", "manager"]):
+        return True
+    if any(token in second for token in ["developer", "engineer", "manager"]):
+        return True
+    if re.search(r"(?:19|20)\d{2}[/.-]\d{1,2}\s*(?:-|–|—|to)\s*", third):
         return True
 
     return False
