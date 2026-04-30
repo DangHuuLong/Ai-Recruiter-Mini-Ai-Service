@@ -245,11 +245,11 @@ def _experience_source(sections: dict[str, str]) -> str:
     if sections.get("experience"):
         return sections["experience"]
 
-    # Some two-column PDFs put a stray "Projects" heading before the career
-    # history content. In that layout, use the projects section as a bounded
-    # fallback for experience; the experience extractor will stop when it sees
-    # the first real project block.
-    return sections.get("projects", "") if _looks_like_misplaced_experience(split_lines(sections.get("projects", ""))) else ""
+    projects_text = sections.get("projects", "")
+    if _looks_like_misplaced_experience(split_lines(projects_text)):
+        return projects_text
+
+    return _extract_experience_from_unsectioned_text(sections.get("other", ""))
 
 
 def _projects_source(sections: dict[str, str]) -> str:
@@ -257,8 +257,6 @@ def _projects_source(sections: dict[str, str]) -> str:
     if projects_text:
         return projects_text
 
-    # Bounded fallback only: if no projects section exists, recover project-like
-    # tails from experience/other. Do not parse the full resume text here.
     return _combine_sections(
         _extract_project_tail_from_text(sections.get("experience", "")),
         _extract_project_tail_from_text(sections.get("other", "")),
@@ -283,6 +281,31 @@ def _looks_like_misplaced_experience(lines: list[str]) -> bool:
         return True
 
     return False
+
+
+def _extract_experience_from_unsectioned_text(text: str) -> str:
+    lines = split_lines(text)
+    candidate_lines = []
+
+    for line in lines:
+        lowered = strip_accents(line).lower()
+
+        if not candidate_lines:
+            if " at " in lowered:
+                candidate_lines.append(line)
+                continue
+            if re.search(r"(?:19|20)\d{2}|(?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}", line):
+                if any(role in lowered for role in ["developer", "engineer", "intern", "manager", "designer", "analyst"]):
+                    candidate_lines.append(line)
+                continue
+            continue
+
+        if any(token in lowered for token in ["university", "đại học", "dai hoc", "certified", "certificate", "english -", "language"]):
+            break
+
+        candidate_lines.append(line)
+
+    return "\n".join(candidate_lines)
 
 
 def _extract_project_tail_from_text(text: str) -> str:
