@@ -153,6 +153,26 @@ def _extract_url(line: str) -> str | None:
     return f"https://{url}"
 
 
+def _remove_url_text(line: str, url: str | None) -> str:
+    if not url:
+        return line.strip()
+
+    raw_url = url.replace("https://", "").replace("http://", "")
+    return line.replace(url, "").replace(raw_url, "").strip(" -|,")
+
+
+def _is_url_only_line(line: str, url: str | None = None) -> bool:
+    clean = line.strip()
+    if not clean:
+        return False
+
+    found_url = url or _extract_url(clean)
+    if not found_url:
+        return False
+
+    return _remove_url_text(clean, found_url) == ""
+
+
 def _extract_year(line: str) -> int | None:
     match = re.search(r"(?:19|20)\d{2}", line or "")
     return int(match.group(0)) if match else None
@@ -249,6 +269,9 @@ def _has_strong_project_header_context(line: str) -> bool:
     normalized = _normalize_key(line)
 
     if DATE_RANGE_RE.search(line):
+        return True
+
+    if _is_url_only_line(line):
         return True
 
     strong_tokens = [
@@ -391,6 +414,14 @@ def parse_project_block(lines: list[str]) -> dict:
 
         technologies.extend(skill["name"] for skill in extract_skills(clean))
 
+        if found_url and _is_url_only_line(clean, found_url):
+            continue
+
+        if found_url:
+            clean = _remove_url_text(clean, found_url)
+            if not clean:
+                continue
+
         label, value = _split_label_value(clean)
         kind = _label_kind(clean)
 
@@ -402,7 +433,10 @@ def parse_project_block(lines: list[str]) -> dict:
             _append_description(description_parts, label, value or clean)
             continue
 
-        if kind in {"link", "description", "role", "status", "meta"}:
+        if kind == "link":
+            continue
+
+        if kind in {"description", "role", "status", "meta"}:
             _append_description(description_parts, label, value or clean)
             continue
 
