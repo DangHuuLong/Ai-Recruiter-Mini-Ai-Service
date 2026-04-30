@@ -76,7 +76,7 @@ English - Intermediate, Vietnamese - Native
 
     assert data["personal"]["full_name"] == "John Doe"
     assert data["personal"]["linkedin_url"] == "https://linkedin.com/in/johndoe"
-    assert data["personal"]["portfolio_url"] == "https://johndoe.dev"
+    assert data["personal"]["portfolio_url"] == "https://johndoe.dev/"
     assert data["summary"] == "Backend developer with practical API and database experience."
 
     normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
@@ -243,6 +243,63 @@ Trạng thái: Đang phát triển
     assert "GPA: 3.53/4.0" in data["education"][0]["description"]
 
     assert data["experience"] == []
+
+
+def test_parse_resume_normalizes_personal_links_without_stealing_project_urls():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": """
+Ninh Hoang Khai
+FRESHER FRONTEND DEVELOPER
+nhkkhaii@gmail.com 0945772109 Ho Chi Minh City, Viet Nam nhkkhaii.super.site
+https://nhkkhaii.super.site/
+
+PROJECTS
+Personal Portfolio
+Frontend Developer
+https://nhkkhaii.github.io/portfolio/
+Technologies: ReactJS, Bootstrap
+09/2022
+Description:
+Worked on a personal portfolio website to showcase my technical skills and some completed projects.
+
+KaiSneaker – E-commerce Website
+Full Stack Developer
+https://github.com/ThueCode/KaiSneaker
+Technologies: ReactJS (TypeScript), PostgreSQL, RESTful API , Java (Spring Boot)
+04/2022 – 06/2022
+Description:
+A modern e-commerce web application for selling sneakers with complete frontend/backend integration.
+
+CinemaNHK – Movie Ticket Booking System
+Full Stack Developer
+https://github.com/nhkkhaii/CinemaNHK
+Technologies: C#, SQL Server, DevExpress, Microsoft Visual Studio
+09/2021 – 12/2021
+Description:
+An desktop application for the booking and management of cinema tickets.
+
+Project Management – Construction Management System
+https://github.com/nhkkhaii/QLDA
+Technologies: C#, SQL Server, Microsoft Visual Studio
+03/2021 – 05/2021
+Description:
+Desktop construction project management application.
+""",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    assert data["personal"]["github_url"] == "https://github.com/ThueCode"
+    assert data["personal"]["portfolio_url"] == "https://nhkkhaii.super.site/"
+
+    project_urls = {project["url"] for project in data["projects"]}
+    assert "https://nhkkhaii.github.io/portfolio/" in project_urls
+    assert "https://github.com/ThueCode/KaiSneaker" in project_urls
+    assert "https://github.com/nhkkhaii/QLDA" in project_urls
 
 
 def test_parse_resume_handles_frontend_developer_pdf_text_layout():
