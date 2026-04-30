@@ -116,6 +116,10 @@ def _clean_institution_candidate(value: str) -> str:
     return cleaned.strip(" -–—|,")
 
 
+def _matches_known_institution(normalized: str, token: str) -> bool:
+    return normalized == token or normalized.startswith(f"{token} ")
+
+
 def _extract_institution(text: str) -> str | None:
     lines = [strip_list_marker(line) for line in (text or "").splitlines() if strip_list_marker(line)]
 
@@ -123,7 +127,7 @@ def _extract_institution(text: str) -> str | None:
         normalized = strip_accents(line).lower()
 
         for token, display_name in KNOWN_INSTITUTIONS.items():
-            if normalized == token:
+            if _matches_known_institution(normalized, token):
                 return display_name
 
         if any(keyword in normalized for keyword in ["university", "college", "institute", "academy", "school", "truong", "dai hoc", "hoc vien"]):
