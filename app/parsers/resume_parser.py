@@ -110,6 +110,22 @@ def _combine_sections(*values: str | None) -> str:
     return "\n".join(value for value in values if value).strip()
 
 
+def _dedupe_by_name(items: list[dict]) -> list[dict]:
+    result = []
+    seen_names = set()
+
+    for item in items:
+        name = item.get("name")
+        normalized_name = name.lower().strip() if isinstance(name, str) else ""
+        if not normalized_name or normalized_name in seen_names:
+            continue
+
+        seen_names.add(normalized_name)
+        result.append(item)
+
+    return result
+
+
 def parse_resume(raw_text: str) -> ParsedResumeData:
     """Parse resume free text into ParsedResumeData using deterministic heuristics."""
     normalized_text = normalize_text(raw_text, lowercase=False, remove_accents=False, preserve_lines=True)
@@ -166,7 +182,8 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
         for item in extract_experience(_experience_source(sections))
     ]
 
-    projects_source = _projects_source(sections)
+    projects_source = _combine_sections(_projects_source(sections), normalized_text)
+    project_items = _dedupe_by_name(extract_projects(projects_source))
     projects = [
         ResumeProject(
             name=item.get("name"),
@@ -174,7 +191,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             technologies=item.get("technologies", []),
             url=item.get("url"),
         )
-        for item in extract_projects(projects_source)
+        for item in project_items
     ]
 
     certification_source = _section_or_fallback(sections, "certifications")
