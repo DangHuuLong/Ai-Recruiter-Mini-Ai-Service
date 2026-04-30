@@ -29,7 +29,7 @@ PROFICIENCY_WORDS = (
 
 def _normalize_language_key(value: str) -> str:
     text = strip_accents(value).lower()
-    text = re.sub(r"[^a-z ]+", " ", text)
+    text = re.sub(r"[^a-z0-9 ]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -46,6 +46,16 @@ def _extract_proficiency(value: str) -> str | None:
     for word in PROFICIENCY_WORDS:
         if re.search(rf"\b{word}\b", normalized):
             return word
+
+    toeic_match = re.search(r"\bTOEIC\s*[:\-]?\s*\d{3,4}\b", value, re.IGNORECASE)
+    if toeic_match:
+        return re.sub(r"\s+", " ", toeic_match.group(0)).strip()
+
+    if ":" in value:
+        _, proficiency = value.split(":", 1)
+        proficiency = proficiency.strip(" -|,")
+        return proficiency or None
+
     return None
 
 
