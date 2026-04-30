@@ -49,6 +49,82 @@ EMPTY_LOCATION_VALUES = {
     "hcmus",
 }
 
+PROJECT_RECOVERY_KEYWORDS = (
+    "app",
+    "application",
+    "e-commerce",
+    "ecommerce",
+    "management",
+    "platform",
+    "portfolio",
+    "portal",
+    "project",
+    "recruiter",
+    "sneaker",
+    "cinema",
+    "site",
+    "system",
+    "website",
+)
+
+PROJECT_RECOVERY_CONTEXT = (
+    "position",
+    "role",
+    "teamsize",
+    "team size",
+    "description",
+    "technologies",
+    "technology",
+    "tech stack",
+    "key contributions",
+    "key responsibilities",
+    "cong nghe su dung",
+    "mo ta chuc nang",
+    "vai tro",
+    "link github",
+)
+
+BAD_PROJECT_NAME_PREFIXES = (
+    "admin",
+    "auth",
+    "cong nghe su dung",
+    "crud",
+    "customer",
+    "link github",
+    "mo ta chuc nang",
+    "quan ly tai khoan",
+    "thanh toan",
+    "trang thai",
+    "upload",
+    "vai tro",
+)
+
+BAD_PROJECT_NAMES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "web developer",
+}
+
+SECTION_STOP_NAMES = {
+    "contact",
+    "education",
+    "language",
+    "languages",
+    "certicate",
+    "certificate",
+    "certification",
+    "honours awards",
+    "honors awards",
+    "skills",
+    "soft skills",
+}
+
 
 def _extract_location(raw_text: str) -> str | None:
     lines = split_lines(raw_text)
@@ -108,6 +184,23 @@ def _section_or_fallback(sections: dict[str, str], section_name: str) -> str:
 
 def _combine_sections(*values: str | None) -> str:
     return "\n".join(value for value in values if value).strip()
+
+
+def _normalize_name(value: str | None) -> str:
+    normalized = strip_accents(value or "").lower()
+    normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def _is_bad_project_name(name: str | None) -> bool:
+    normalized = _normalize_name(name)
+    if not normalized or normalized in BAD_PROJECT_NAMES:
+        return True
+    return any(normalized.startswith(prefix) for prefix in BAD_PROJECT_NAME_PREFIXES)
+
+
+def _filter_project_items(items: list[dict]) -> list[dict]:
+    return [item for item in items if not _is_bad_project_name(item.get("name"))]
 
 
 def _dedupe_by_name(items: list[dict]) -> list[dict]:
@@ -183,7 +276,13 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     ]
 
     projects_source = _projects_source(sections)
-    project_items = _dedupe_by_name(extract_projects(projects_source))
+    project_items = _filter_project_items(
+        [
+            *extract_projects(projects_source),
+            *extract_projects(_recover_dated_project_source(normalized_text)),
+        ]
+    )
+    project_items = _dedupe_by_name(project_items)
     projects = [
         ResumeProject(
             name=item.get("name"),
@@ -308,6 +407,52 @@ def _extract_experience_from_unsectioned_text(text: str) -> str:
         candidate_lines.append(line)
 
     return "\n".join(candidate_lines)
+
+
+def _looks_like_recoverable_project_start(line: str, next_lines: list[str]) -> bool:
+    normalized = strip_accents(line).lower()
+    date_match = re.search(
+        r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?\s*(?:-|–|—|to|den|đến)\s*(?:nay|present|current|now|(?:19|20)\d{2}(?:[/.-]\d{1,2})?)",
+        normalized,
+    )
+    if not date_match:
+        return False
+
+    title = normalized[: date_match.start()].strip(" -|,")
+    if not title or _is_bad_project_name(title):
+        return False
+
+    if not any(keyword in title for keyword in PROJECT_RECOVERY_KEYWORDS):
+        return False
+
+    context = "\n".join(strip_accents(item).lower() for item in next_lines[:6])
+    return any(token in context for token in PROJECT_RECOVERY_CONTEXT)
+
+
+def _recover_dated_project_source(text: str) -> str:
+    lines = split_lines(text)
+    chunks: list[str] = []
+    current: list[str] = []
+
+    for index, line in enumerate(lines):
+        if _looks_like_recoverable_project_start(line, lines[index + 1 : index + 7]):
+            if current:
+                chunks.append("\n".join(current))
+            current = [line]
+            continue
+
+        if current:
+            normalized = _normalize_name(line)
+            if normalized in SECTION_STOP_NAMES:
+                chunks.append("\n".join(current))
+                current = []
+                continue
+            current.append(line)
+
+    if current:
+        chunks.append("\n".join(current))
+
+    return "\n".join(chunks)
 
 
 def _extract_project_tail_from_text(text: str) -> str:
