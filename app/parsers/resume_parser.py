@@ -1,3 +1,6 @@
+import re
+
+from app.parsers.normalizer import normalize_text, split_lines, strip_accents
 from app.parsers.extractors.achievements import extract_achievements
 from app.parsers.extractors.education import extract_education
 from app.parsers.extractors.email_phone import extract_emails, extract_phones
@@ -20,6 +23,40 @@ from app.schemas.resume import (
     ResumeProject,
     ResumeSkill,
 )
+
+LOCATION_LABELS = (
+    "location",
+    "address",
+    "current address",
+    "dia chi",
+    "địa chỉ",
+    "que quan",
+    "quê quán",
+    "noi o",
+    "nơi ở",
+    "thanh pho",
+    "thành phố",
+)
+
+
+def _extract_location(raw_text: str) -> str | None:
+    for raw_line in split_lines(raw_text):
+        line = raw_line.strip()
+        normalized = strip_accents(line).lower()
+
+        if ":" in line:
+            label, value = line.split(":", 1)
+            normalized_label = strip_accents(label).lower().strip()
+
+            if any(token in normalized_label for token in LOCATION_LABELS):
+                cleaned = value.strip(" -|,")
+                return cleaned or None
+
+        if any(label in normalized for label in ["da nang", "đà nẵng", "ha noi", "hà nội", "ho chi minh", "hcm"]):
+            if len(line.split()) <= 10 and not any(token in normalized for token in ["email", "@", "sdt", "phone"]):
+                return line
+
+    return None
 
 
 def _extract_full_name(raw_text: str) -> str | None:
@@ -60,6 +97,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     if phones:
         personal.phone = phones[0]
     personal.full_name = _extract_full_name(raw_text)
+    personal.location = _extract_location(raw_text)
     personal.linkedin_url = links.get("linkedin")
     personal.github_url = links.get("github")
     personal.portfolio_url = links.get("portfolio")
@@ -97,7 +135,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             responsibilities=item.get("responsibilities", []),
             technologies=item.get("technologies", []),
         )
-        for item in extract_experience(_section_or_fallback(sections, "experience"))
+        for item in extract_experience(_experience_source(sections))
     ]
 
     projects = [
@@ -150,3 +188,32 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 
 def parse_resume_mock(raw_text: str) -> ParsedResumeData:
     return parse_resume(raw_text)
+
+def _experience_source(sections: dict[str, str]) -> str:
+    if sections.get("experience"):
+        return sections["experience"]
+
+    other = sections.get("other", "")
+    lines = split_lines(other)
+
+    candidate_lines = []
+    for line in lines:
+        lowered = line.lower()
+
+        if any(token in lowered for token in ["@", "email", "phone", "sđt", "sdt", "ngày sinh", "ngay sinh", "quê quán", "que quan"]):
+            continue
+
+        if " at " in lowered:
+            candidate_lines.append(line)
+            continue
+
+        if re.search(r"(?:19|20)\d{2}|(?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}", line):
+            if any(role in lowered for role in ["developer", "engineer", "intern", "manager", "designer", "analyst"]):
+                candidate_lines.append(line)
+                continue
+
+        # Nếu đã có current experience, cho phép gom dòng mô tả ngay sau nó
+        if candidate_lines and not any(token in lowered for token in ["university", "đại học", "dai hoc", "certified", "certificate"]):
+            candidate_lines.append(line)
+
+    return "\n".join(candidate_lines)

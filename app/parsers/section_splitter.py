@@ -59,6 +59,8 @@ HEADERS = {
         "academic background",
         "education background",
         "hoc van",
+        "hoc tap",
+        "qua trinh hoc tap",
         "bang cap",
     ),
     "certifications": (

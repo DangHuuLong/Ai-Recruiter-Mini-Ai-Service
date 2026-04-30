@@ -171,3 +171,74 @@ Tieng Anh - Advanced
     assert data["education"][0]["degree"] == "Bachelor"
     assert data["education"][0]["field_of_study"] == "Information Technology"
     assert data["languages"][0]["proficiency"] == "advanced"
+
+def test_parse_resume_handles_vietnamese_projects_and_education_blocks():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": """
+Đặng Hữu Long
+Developer
+danghuulong394@gmail.com
+Sđt: 0942301096
+Quê quán: P. Hòa Xuân, TP. Đà Nẵng
+
+Học tập
+2023 - nay Đại học Bách Khoa – Đại học Đà Nẵng
+Sinh viên năm 3 – Ngành Công nghệ Thông tin (Hợp
+tác doanh nghiệp)
+GPA: 3.53/4.0
+
+Dự án
+Quản lý cửa hàng thực phẩm
+Link Github | Dự án nhóm: 3 thành viên | 3/2025 - 6/2025
+Công nghệ sử dụng: HTML, CSS, JS, Bootstrap, .NET
+Mô tả chức năng:
+CRUD sản phẩm, danh mục, khuyến mãi
+Quản lý tài khoản
+hủy có lý do)
+Upload & quản lý ảnh sản phẩm
+Thanh toán VNPay
+Vai trò: Phụ trách phần giao diện View và Controller
+
+Quản lý nội thất
+Link Github | Dự án cá nhân | 10/2025 - nay
+Công nghệ sử dụng: ReactJS, Node.js
+Mô tả chức năng:
+Xây dựng giao diện web giới thiệu nội thất và hệ thống quản trị đơn giản.
+Customer: trang chủ, cửa hàng, giỏ hàng, thanh toán
+Admin: quản lý khách hàng, sản phẩm, danh mục
+Auth: đăng nhập, đăng ký, quên mật khẩu
+Trạng thái: Đang phát triển
+""",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    assert data["personal"]["location"] == "P. Hòa Xuân, TP. Đà Nẵng"
+
+    assert len(data["projects"]) == 2
+    assert data["projects"][0]["name"] == "Quản lý cửa hàng thực phẩm"
+    assert data["projects"][1]["name"] == "Quản lý nội thất"
+
+    first_project_description = data["projects"][0]["description"]
+    assert "Upload & quản lý ảnh sản phẩm" in first_project_description
+    assert "Thanh toán VNPay" in first_project_description
+    assert "hủy có lý do" in first_project_description
+
+    second_project_description = data["projects"][1]["description"]
+    assert "Customer" in second_project_description
+    assert "Admin" in second_project_description
+    assert "Auth" in second_project_description
+    assert "Trạng thái" in second_project_description
+
+    assert data["education"][0]["institution"] == "Đại học Bách Khoa – Đại học Đà Nẵng"
+    assert data["education"][0]["degree"] == "Bachelor"
+    assert data["education"][0]["field_of_study"] == "Information Technology"
+    assert data["education"][0]["start_year"] == 2023
+    assert data["education"][0]["end_year"] is None
+    assert "GPA: 3.53/4.0" in data["education"][0]["description"]
+
+    assert data["experience"] == []
