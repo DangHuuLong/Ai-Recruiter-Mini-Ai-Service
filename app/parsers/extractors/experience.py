@@ -95,7 +95,19 @@ def _looks_like_company(value: str) -> bool:
         return False
     if any(keyword in lowered for keyword in COMPANY_KEYWORDS):
         return True
-    return 1 <= len(value.split()) <= 6 and not any(char.isdigit() for char in value)
+
+    words = value.split()
+    if not 1 <= len(words) <= 6:
+        return False
+    if any(char.isdigit() for char in value):
+        return False
+    if any(token in lowered for token in ["experience", "project", "education", "summary", "skill"]):
+        return False
+
+    # Company names in CVs are often bare labels with no prefix, e.g. "FPT IS".
+    # In stacked layouts these labels are standalone non-bullet lines before a
+    # role line, so keep this heuristic permissive.
+    return True
 
 
 def _is_stop_line(value: str) -> bool:
@@ -208,14 +220,8 @@ def _append_current(entries: list[dict], current: dict | None) -> None:
         entries.append(current)
 
 
-def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookahead: int = 6) -> int | None:
-    """Find a date line for company -> role -> optional detail lines -> date layouts.
-
-    Real PDF extraction often emits work history as:
-    company line, role line, one or more description lines, date range line.
-    The older parser only accepted the date immediately after the role, so
-    company/start/end were lost for layouts like FPT IS in CV_NinhHoangKhai_FE.
-    """
+def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookahead: int = 9) -> int | None:
+    """Find a date line for company -> role -> optional detail lines -> date layouts."""
     if company_index + 1 >= len(lines):
         return None
 
@@ -229,10 +235,23 @@ def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookah
         candidate = lines[date_index]
         if _is_stop_line(candidate):
             break
+        if _looks_like_company(candidate) and date_index > company_index + 2 and date_index + 1 < len(lines) and _looks_like_role(lines[date_index + 1]):
+            break
         if _looks_like_project_block_start(candidate, lines[date_index + 1 : date_index + 6]):
             break
         if extract_date_range(candidate):
             return date_index
+
+    return None
+
+
+def _find_company_before_role(lines: list[str], role_index: int) -> int | None:
+    if role_index <= 0 or not _looks_like_role(lines[role_index]):
+        return None
+
+    previous = lines[role_index - 1]
+    if _looks_like_company(previous):
+        return role_index - 1
 
     return None
 
@@ -263,6 +282,22 @@ def extract_experience(text: str) -> list[dict]:
 
             index = stacked_date_index + 1
             continue
+
+        company_index = _find_company_before_role(lines, index)
+        if company_index is not None:
+            stacked_date_index = _find_stacked_date_index(lines, company_index)
+            if stacked_date_index is not None:
+                _append_current(entries, current)
+                current = _parse_stacked_experience_header(
+                    lines[company_index],
+                    lines[index],
+                    lines[stacked_date_index],
+                )
+                for detail in lines[index + 1 : stacked_date_index]:
+                    current["responsibilities"].append(detail)
+                    current["technologies"].extend(skill["name"] for skill in extract_skills(detail))
+                index = stacked_date_index + 1
+                continue
 
         if _is_new_entry(line):
             _append_current(entries, current)
