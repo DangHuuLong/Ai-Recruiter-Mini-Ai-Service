@@ -116,6 +116,18 @@ def _normalize_key(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _strip_date_suffix(value: str) -> str:
+    date_match = DATE_RANGE_RE.search(value)
+    if date_match:
+        return value[: date_match.start()].strip(" -|,")
+
+    date_start_match = re.search(r"\s+(?:19|20)\d{2}(?:[/.-]\d{1,2})?\b", value)
+    if date_start_match:
+        return value[: date_start_match.start()].strip(" -|,")
+
+    return value.strip()
+
+
 def _dedupe(values: list[str]) -> list[str]:
     return list(dict.fromkeys(value for value in values if value))
 
@@ -196,7 +208,7 @@ def _looks_like_sentence(line: str) -> bool:
 
 
 def _looks_like_project_title(line: str) -> bool:
-    clean = strip_list_marker(line).strip()
+    clean = _strip_date_suffix(strip_list_marker(line).strip())
     normalized = _normalize_key(clean)
 
     if not clean:
@@ -212,9 +224,6 @@ def _looks_like_project_title(line: str) -> bool:
         return False
 
     if "|" in clean:
-        return False
-
-    if DATE_RANGE_RE.search(clean):
         return False
 
     if _looks_like_sentence(clean):
@@ -458,17 +467,9 @@ def _split_inline_project_header(line: str) -> tuple[str, str | None]:
     if url_match:
         clean = clean.replace(url_match.group(0), "").strip()
 
-    date_match = DATE_RANGE_RE.search(clean)
-    if date_match:
-        name = clean[: date_match.start()].strip(" -|,")
-        if name and len(name.split()) <= 8:
-            return name, None
-
-    date_start_match = re.search(r"\s+(?:19|20)\d{2}(?:[/.-]\d{1,2})?\b", clean)
-    if date_start_match:
-        name = clean[: date_start_match.start()].strip(" -|,")
-        if name and len(name.split()) <= 8:
-            return name, None
+    stripped_name = _strip_date_suffix(clean)
+    if stripped_name != clean and stripped_name and len(stripped_name.split()) <= 8:
+        return stripped_name, None
 
     for pattern in (r"\s+-\s+", r":\s+"):
         parts = re.split(pattern, clean, maxsplit=1)
