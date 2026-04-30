@@ -257,24 +257,24 @@ https://nhkkhaii.super.site/
 
 PROJECTS
 Personal Portfolio
-Frontend Developer
 https://nhkkhaii.github.io/portfolio/
+Frontend Developer
 Technologies: ReactJS, Bootstrap
 09/2022
 Description:
 Worked on a personal portfolio website to showcase my technical skills and some completed projects.
 
 KaiSneaker – E-commerce Website
-Full Stack Developer
 https://github.com/ThueCode/KaiSneaker
+Full Stack Developer
 Technologies: ReactJS (TypeScript), PostgreSQL, RESTful API , Java (Spring Boot)
 04/2022 – 06/2022
 Description:
 A modern e-commerce web application for selling sneakers with complete frontend/backend integration.
 
 CinemaNHK – Movie Ticket Booking System
-Full Stack Developer
 https://github.com/nhkkhaii/CinemaNHK
+Full Stack Developer
 Technologies: C#, SQL Server, DevExpress, Microsoft Visual Studio
 09/2021 – 12/2021
 Description:
@@ -296,10 +296,20 @@ Desktop construction project management application.
     assert data["personal"]["github_url"] == "https://github.com/nhkkhaii"
     assert data["personal"]["portfolio_url"] == "https://nhkkhaii.super.site/"
 
-    project_urls = {project["url"] for project in data["projects"]}
-    assert "https://nhkkhaii.github.io/portfolio/" in project_urls
-    assert "https://github.com/ThueCode/KaiSneaker" in project_urls
-    assert "https://github.com/nhkkhaii/QLDA" in project_urls
+    projects_by_name = {project["name"]: project for project in data["projects"]}
+    assert set(projects_by_name) == {
+        "Personal Portfolio",
+        "KaiSneaker – E-commerce Website",
+        "CinemaNHK – Movie Ticket Booking System",
+        "Project Management – Construction Management System",
+    }
+    assert projects_by_name["Personal Portfolio"]["url"] == "https://nhkkhaii.github.io/portfolio/"
+    assert projects_by_name["KaiSneaker – E-commerce Website"]["url"] == "https://github.com/ThueCode/KaiSneaker"
+    assert projects_by_name["CinemaNHK – Movie Ticket Booking System"]["url"] == "https://github.com/nhkkhaii/CinemaNHK"
+    assert projects_by_name["Project Management – Construction Management System"]["url"] == "https://github.com/nhkkhaii/QLDA"
+
+    for project in data["projects"]:
+        assert not (project["description"] or "").startswith("https://")
 
 
 def test_parse_resume_handles_frontend_developer_pdf_text_layout():
