@@ -1,15 +1,15 @@
 import re
 
-from app.parsers.normalizer import normalize_text, split_lines, strip_accents
 from app.parsers.extractors.achievements import extract_achievements
 from app.parsers.extractors.education import extract_education
 from app.parsers.extractors.email_phone import extract_emails, extract_phones
 from app.parsers.extractors.experience import extract_experience
 from app.parsers.extractors.languages import extract_languages
 from app.parsers.extractors.links import extract_links
-from app.parsers.extractors.projects_certifications import extract_certifications, extract_projects
+from app.parsers.extractors.projects import extract_projects
+from app.parsers.extractors.projects_certifications import extract_certifications
 from app.parsers.extractors.skills import extract_skills
-from app.parsers.normalizer import normalize_text, split_lines
+from app.parsers.normalizer import normalize_text, split_lines, strip_accents
 from app.parsers.normalizers.skill_normalizer import normalize_skill
 from app.parsers.section_splitter import split_sections
 from app.schemas.resume import (
@@ -38,9 +38,108 @@ LOCATION_LABELS = (
     "thành phố",
 )
 
+EMPTY_LOCATION_VALUES = {
+    "",
+    "birthday",
+    "gender",
+    "phone",
+    "email",
+    "skills",
+    "education",
+    "hcmus",
+}
+
+PROJECT_RECOVERY_KEYWORDS = (
+    "app",
+    "application",
+    "booking",
+    "cinema",
+    "commerce",
+    "construction",
+    "e-commerce",
+    "ecommerce",
+    "management",
+    "platform",
+    "portfolio",
+    "portal",
+    "project",
+    "recruiter",
+    "shop",
+    "site",
+    "sneaker",
+    "store",
+    "system",
+    "website",
+)
+
+PROJECT_RECOVERY_CONTEXT = (
+    "position",
+    "role",
+    "teamsize",
+    "team size",
+    "description",
+    "technologies",
+    "technology",
+    "tech stack",
+    "key contributions",
+    "key responsibilities",
+    "cong nghe su dung",
+    "mo ta chuc nang",
+    "vai tro",
+    "link github",
+)
+
+BAD_PROJECT_NAME_PREFIXES = (
+    "admin",
+    "auth",
+    "cong nghe su dung",
+    "crud",
+    "customer",
+    "link github",
+    "mo ta chuc nang",
+    "quan ly tai khoan",
+    "thanh toan",
+    "trang thai",
+    "upload",
+    "vai tro",
+)
+
+BAD_PROJECT_NAMES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "web developer",
+}
+
+SECTION_STOP_NAMES = {
+    "contact",
+    "education",
+    "language",
+    "languages",
+    "certicate",
+    "certificate",
+    "certification",
+    "honours awards",
+    "honors awards",
+    "skills",
+    "soft skills",
+}
+
+URL_RE = re.compile(
+    r"https?://(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org)/[^\s)>,;]+",
+    re.IGNORECASE,
+)
+
 
 def _extract_location(raw_text: str) -> str | None:
-    for raw_line in split_lines(raw_text):
+    lines = split_lines(raw_text)
+
+    for index, raw_line in enumerate(lines):
         line = raw_line.strip()
         normalized = strip_accents(line).lower()
 
@@ -50,9 +149,20 @@ def _extract_location(raw_text: str) -> str | None:
 
             if any(token in normalized_label for token in LOCATION_LABELS):
                 cleaned = value.strip(" -|,")
-                return cleaned or None
+                normalized_value = strip_accents(cleaned).lower().strip()
+                return cleaned if normalized_value not in EMPTY_LOCATION_VALUES else None
 
-        if any(label in normalized for label in ["da nang", "đà nẵng", "ha noi", "hà nội", "ho chi minh", "hcm"]):
+        normalized_line = strip_accents(line).lower().strip()
+        if normalized_line in {"address", "dia chi", "địa chỉ"}:
+            next_value = lines[index + 1].strip() if index + 1 < len(lines) else ""
+            normalized_next = strip_accents(next_value).lower().strip()
+            if normalized_next in EMPTY_LOCATION_VALUES:
+                return None
+            if any(token in normalized_next for token in ["phone", "email", "birthday", "gender", "skills"]):
+                return None
+            return next_value or None
+
+        if any(label in normalized for label in ["da nang", "đà nẵng", "ha noi", "hà nội", "ho chi minh"]):
             if len(line.split()) <= 10 and not any(token in normalized for token in ["email", "@", "sdt", "phone"]):
                 return line
 
@@ -80,6 +190,96 @@ def _extract_full_name(raw_text: str) -> str | None:
 
 def _section_or_fallback(sections: dict[str, str], section_name: str) -> str:
     return sections.get(section_name) or sections.get("other", "")
+
+
+def _combine_sections(*values: str | None) -> str:
+    return "\n".join(value for value in values if value).strip()
+
+
+def _normalize_name(value: str | None) -> str:
+    normalized = strip_accents(value or "").lower()
+    normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def _is_bad_project_name(name: str | None) -> bool:
+    normalized = _normalize_name(name)
+    if not normalized or normalized in BAD_PROJECT_NAMES:
+        return True
+    return any(normalized.startswith(prefix) for prefix in BAD_PROJECT_NAME_PREFIXES)
+
+
+def _filter_project_items(items: list[dict]) -> list[dict]:
+    return [item for item in items if not _is_bad_project_name(item.get("name"))]
+
+
+def _dedupe_by_name(items: list[dict]) -> list[dict]:
+    result = []
+    seen_names = set()
+
+    for item in items:
+        name = item.get("name")
+        normalized_name = name.lower().strip() if isinstance(name, str) else ""
+        if not normalized_name or normalized_name in seen_names:
+            continue
+
+        seen_names.add(normalized_name)
+        result.append(item)
+
+    return result
+
+
+def _dedupe_strings(values: list[str]) -> list[str]:
+    result = []
+    seen = set()
+
+    for value in values:
+        key = value.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(value)
+
+    return result
+
+
+def _is_repo_url(url: str) -> bool:
+    match = re.match(r"https?://(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org)/([^/?#]+)/([^/?#]+)", url, re.IGNORECASE)
+    if not match:
+        return False
+
+    repo_name = match.group(2).lower().strip()
+    return repo_name not in {"", "repositories", "projects", "stars", "followers", "following"}
+
+
+def _project_repo_urls_from_text(raw_text: str, personal_github_url: str | None = None) -> list[str]:
+    personal_url = (personal_github_url or "").rstrip("/").lower()
+    urls = []
+
+    for match in URL_RE.finditer(raw_text or ""):
+        url = match.group(0).rstrip(".,;)")
+        if url.rstrip("/").lower() == personal_url:
+            continue
+        if _is_repo_url(url):
+            urls.append(url)
+
+    return _dedupe_strings(urls)
+
+
+def _attach_project_urls(project_items: list[dict], raw_text: str, personal_github_url: str | None = None) -> list[dict]:
+    repo_urls = _project_repo_urls_from_text(raw_text, personal_github_url)
+    url_index = 0
+
+    for item in project_items:
+        if item.get("url"):
+            continue
+        if url_index >= len(repo_urls):
+            break
+
+        item["url"] = repo_urls[url_index]
+        url_index += 1
+
+    return project_items
 
 
 def parse_resume(raw_text: str) -> ParsedResumeData:
@@ -138,6 +338,15 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
         for item in extract_experience(_experience_source(sections))
     ]
 
+    projects_source = _projects_source(sections)
+    project_items = _filter_project_items(
+        [
+            *extract_projects(projects_source),
+            *extract_projects(_recover_dated_project_source(normalized_text)),
+        ]
+    )
+    project_items = _dedupe_by_name(project_items)
+    project_items = _attach_project_urls(project_items, raw_text, personal.github_url)
     projects = [
         ResumeProject(
             name=item.get("name"),
@@ -145,9 +354,10 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             technologies=item.get("technologies", []),
             url=item.get("url"),
         )
-        for item in extract_projects(sections.get("projects", ""))
+        for item in project_items
     ]
 
+    certification_source = _section_or_fallback(sections, "certifications")
     certifications = [
         ResumeCertification(
             name=item.get("name"),
@@ -155,12 +365,16 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             issued_year=item.get("issued_year"),
             url=item.get("url"),
         )
-        for item in extract_certifications(_section_or_fallback(sections, "certifications"))
+        for item in extract_certifications(
+            certification_source,
+            allow_year_only=bool(sections.get("certifications")),
+        )
     ]
 
+    achievements_source = _combine_sections(sections.get("achievements"), sections.get("experience"), sections.get("projects"))
     achievements = [
         ResumeAchievement(title=item.get("title"), description=item.get("description"), year=item.get("year"))
-        for item in extract_achievements(sections.get("achievements", ""))
+        for item in extract_achievements(achievements_source, require_keyword=True)
     ]
     achievements.extend(
         ResumeAchievement(title=item.get("title"), description=item.get("description"), year=item.get("year"))
@@ -189,31 +403,171 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 def parse_resume_mock(raw_text: str) -> ParsedResumeData:
     return parse_resume(raw_text)
 
+
 def _experience_source(sections: dict[str, str]) -> str:
     if sections.get("experience"):
         return sections["experience"]
 
-    other = sections.get("other", "")
-    lines = split_lines(other)
+    projects_text = sections.get("projects", "")
+    if _looks_like_misplaced_experience(split_lines(projects_text)):
+        return projects_text
 
+    return _extract_experience_from_unsectioned_text(sections.get("other", ""))
+
+
+def _projects_source(sections: dict[str, str]) -> str:
+    projects_text = sections.get("projects", "")
+    if projects_text:
+        if _looks_like_misplaced_experience(split_lines(projects_text)):
+            return _extract_project_tail_from_text(projects_text)
+        return projects_text
+
+    return _combine_sections(
+        _extract_project_tail_from_text(sections.get("experience", "")),
+        _extract_project_tail_from_text(sections.get("other", "")),
+    )
+
+
+def _looks_like_project_section_start(lines: list[str]) -> bool:
+    if not lines:
+        return False
+
+    first = _normalize_name(lines[0])
+    rest = "\n".join(_normalize_name(line) for line in lines[1:8])
+
+    if any(keyword in first for keyword in PROJECT_RECOVERY_KEYWORDS):
+        return True
+
+    return any(token in rest for token in PROJECT_RECOVERY_CONTEXT)
+
+
+def _looks_like_misplaced_experience(lines: list[str]) -> bool:
+    if not lines:
+        return False
+
+    first = strip_accents(lines[0]).lower()
+    second = strip_accents(lines[1]).lower() if len(lines) > 1 else ""
+    third = strip_accents(lines[2]).lower() if len(lines) > 2 else ""
+
+    if any(token in first for token in ["career history", "company", "corporation"]):
+        return True
+
+    # Do not treat normal project sections as misplaced experience just because
+    # their second line is a project role such as "Frontend Developer".
+    if _looks_like_project_section_start(lines):
+        return False
+
+    if any(token in first for token in ["developer", "engineer", "manager"]):
+        return True
+    if any(token in second for token in ["developer", "engineer", "manager"]):
+        return True
+    if re.search(r"(?:19|20)\d{2}[/.-]\d{1,2}\s*(?:-|–|—|to)\s*", third):
+        return True
+
+    return False
+
+
+def _extract_experience_from_unsectioned_text(text: str) -> str:
+    lines = split_lines(text)
     candidate_lines = []
+
     for line in lines:
-        lowered = line.lower()
+        lowered = strip_accents(line).lower()
 
-        if any(token in lowered for token in ["@", "email", "phone", "sđt", "sdt", "ngày sinh", "ngay sinh", "quê quán", "que quan"]):
-            continue
-
-        if " at " in lowered:
-            candidate_lines.append(line)
-            continue
-
-        if re.search(r"(?:19|20)\d{2}|(?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}", line):
-            if any(role in lowered for role in ["developer", "engineer", "intern", "manager", "designer", "analyst"]):
+        if not candidate_lines:
+            if " at " in lowered:
                 candidate_lines.append(line)
                 continue
+            if re.search(r"(?:19|20)\d{2}|(?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}", line):
+                if any(role in lowered for role in ["developer", "engineer", "intern", "manager", "designer", "analyst"]):
+                    candidate_lines.append(line)
+                continue
+            continue
 
-        # Nếu đã có current experience, cho phép gom dòng mô tả ngay sau nó
-        if candidate_lines and not any(token in lowered for token in ["university", "đại học", "dai hoc", "certified", "certificate"]):
-            candidate_lines.append(line)
+        if any(token in lowered for token in ["university", "đại học", "dai hoc", "certified", "certificate", "english -", "language"]):
+            break
+
+        candidate_lines.append(line)
 
     return "\n".join(candidate_lines)
+
+
+def _looks_like_recoverable_project_start(line: str, next_lines: list[str]) -> bool:
+    normalized = strip_accents(line).lower()
+    date_match = re.search(
+        r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?\s*(?:-|–|—|to|den|đến)\s*(?:nay|present|current|now|(?:19|20)\d{2}(?:[/.-]\d{1,2})?)",
+        normalized,
+    )
+    if not date_match:
+        return False
+
+    title = normalized[: date_match.start()].strip(" -|,")
+    if not title or _is_bad_project_name(title):
+        return False
+
+    if not any(keyword in title for keyword in PROJECT_RECOVERY_KEYWORDS):
+        return False
+
+    context = "\n".join(strip_accents(item).lower() for item in next_lines[:6])
+    return any(token in context for token in PROJECT_RECOVERY_CONTEXT)
+
+
+def _recover_dated_project_source(text: str) -> str:
+    lines = split_lines(text)
+    chunks: list[str] = []
+    current: list[str] = []
+
+    for index, line in enumerate(lines):
+        if _looks_like_recoverable_project_start(line, lines[index + 1 : index + 7]):
+            if current:
+                chunks.append("\n".join(current))
+            current = [line]
+            continue
+
+        if current:
+            normalized = _normalize_name(line)
+            if normalized in SECTION_STOP_NAMES:
+                chunks.append("\n".join(current))
+                current = []
+                continue
+            current.append(line)
+
+    if current:
+        chunks.append("\n".join(current))
+
+    return "\n".join(chunks)
+
+
+def _extract_project_tail_from_text(text: str) -> str:
+    lines = split_lines(text)
+    tail_lines = []
+    collecting = False
+
+    for index, line in enumerate(lines):
+        normalized = strip_accents(line).lower()
+        next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
+
+        looks_like_project_start = (
+            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction)\b", normalized)
+            and any(
+                token in next_lines
+                for token in [
+                    "position",
+                    "role",
+                    "teamsize",
+                    "description",
+                    "technologies",
+                    "tech stack",
+                    "key contributions",
+                    "key responsibilities",
+                ]
+            )
+        )
+
+        if looks_like_project_start:
+            collecting = True
+
+        if collecting:
+            tail_lines.append(line)
+
+    return "\n".join(tail_lines)

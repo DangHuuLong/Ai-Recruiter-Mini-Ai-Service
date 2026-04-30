@@ -6,11 +6,36 @@ from app.parsers.normalizer import strip_accents
 
 
 PRESENT_VALUES = {"present", "current", "now", "to date", "nay", "hien tai"}
-MONTH_FORMATS = ("%b %Y", "%B %Y", "%b. %Y", "%B. %Y")
+MONTH_FORMATS = (
+    "%b %Y",
+    "%B %Y",
+    "%b. %Y",
+    "%B. %Y",
+    "%d %b %Y",
+    "%d %B %Y",
+    "%d %b. %Y",
+    "%d %B. %Y",
+    "%b %d %Y",
+    "%B %d %Y",
+    "%b. %d %Y",
+    "%B. %d %Y",
+    "%Y %b",
+    "%Y %B",
+    "%Y %b.",
+    "%Y %B.",
+)
+
+
+def _normalize_date_text(value: str) -> str:
+    normalized = value or ""
+    normalized = normalized.replace("–", "-").replace("—", "-").replace("−", "-")
+    normalized = normalized.replace("〜", "-").replace("~", "-")
+    normalized = re.sub(r"\b(?:den|đến)\b", " to ", normalized, flags=re.IGNORECASE)
+    return normalized
 
 
 def _clean_date_value(value: str) -> str:
-    cleaned = strip_accents(value or "").replace(",", " ").strip().lower()
+    cleaned = strip_accents(_normalize_date_text(value)).replace(",", " ").strip().lower()
     cleaned = re.sub(r"\s+", " ", cleaned)
     if cleaned.startswith("sept "):
         cleaned = cleaned.replace("sept ", "sep ", 1)
@@ -26,9 +51,27 @@ def _parse_year_month(value: str) -> Optional[datetime]:
         return datetime.today().replace(day=1)
 
     try:
-        year_month = re.fullmatch(r"(?P<year>(?:19|20)\d{2})[-/.](?P<month>\d{1,2})", value)
-        if year_month:
-            return datetime(int(year_month.group("year")), int(year_month.group("month")), 1)
+        year_month_day = re.fullmatch(
+            r"(?P<year>(?:19|20)\d{2})[-/.](?P<month>\d{1,2})(?:[-/.](?P<day>\d{1,2}))?",
+            value,
+        )
+        if year_month_day:
+            return datetime(
+                int(year_month_day.group("year")),
+                int(year_month_day.group("month")),
+                int(year_month_day.group("day") or 1),
+            )
+
+        day_month_year = re.fullmatch(
+            r"(?P<day>\d{1,2})[-/.](?P<month>\d{1,2})[-/.](?P<year>(?:19|20)\d{2})",
+            value,
+        )
+        if day_month_year:
+            return datetime(
+                int(day_month_year.group("year")),
+                int(day_month_year.group("month")),
+                int(day_month_year.group("day")),
+            )
 
         month_year = re.fullmatch(r"(?P<month>\d{1,2})[-/.](?P<year>(?:19|20)\d{2})", value)
         if month_year:
@@ -58,9 +101,13 @@ def months_between(start: str, end: str) -> Optional[int]:
     return max(0, (end_date.year - start_date.year) * 12 + (end_date.month - start_date.month))
 
 
-DATE_TOKEN = r"(?:to date|hien tai|present|current|now|nay|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z.]*\s+(?:19|20)\d{2}|(?:19|20)\d{2}[-/.]\d{1,2}|\d{1,2}[-/.](?:19|20)\d{2}|(?:19|20)\d{2})"
+MONTH_NAME = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z.]*"
+YEAR = r"(?:19|20)\d{2}"
+NUMERIC_DATE = rf"(?:{YEAR}[-/.]\d{{1,2}}(?:[-/.]\d{{1,2}})?|\d{{1,2}}[-/.]\d{{1,2}}[-/.]{YEAR}|\d{{1,2}}[-/.]{YEAR}|{YEAR})"
+TEXT_DATE = rf"(?:{MONTH_NAME}\s+\d{{1,2}},?\s+{YEAR}|\d{{1,2}}\s+{MONTH_NAME},?\s+{YEAR}|{MONTH_NAME}\s+{YEAR}|{YEAR}\s+{MONTH_NAME})"
+DATE_TOKEN = rf"(?:to date|hien tai|present|current|now|nay|{TEXT_DATE}|{NUMERIC_DATE})"
 DATE_RANGE_RE = re.compile(
-    rf"(?P<start>{DATE_TOKEN})\s*(?:-|to|\u2013|\u2014)\s*(?P<end>{DATE_TOKEN})",
+    rf"(?P<start>{DATE_TOKEN})\s*(?:-|to|until)\s*(?P<end>{DATE_TOKEN})",
     re.IGNORECASE,
 )
 
@@ -78,7 +125,7 @@ def normalize_date_label(value: str) -> str | None:
 
 
 def parse_explicit_duration_months(text: str) -> int | None:
-    normalized = strip_accents(text or "").lower()
+    normalized = strip_accents(_normalize_date_text(text or "")).lower()
 
     year_match = re.search(r"(?P<years>\d+(?:\.\d+)?)\s*(?:years?|yrs?|nam)", normalized)
     month_match = re.search(r"(?P<months>\d+)\s*(?:months?|mos?|thang)", normalized)
@@ -96,7 +143,7 @@ def parse_explicit_duration_months(text: str) -> int | None:
 
 
 def extract_date_range(text: str) -> dict[str, str | int | None] | None:
-    normalized = strip_accents(text or "")
+    normalized = strip_accents(_normalize_date_text(text or ""))
     match = DATE_RANGE_RE.search(normalized)
     if not match:
         return None

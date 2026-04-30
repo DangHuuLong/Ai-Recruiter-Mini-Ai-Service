@@ -116,6 +116,18 @@ def _normalize_key(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _strip_date_suffix(value: str) -> str:
+    date_match = DATE_RANGE_RE.search(value)
+    if date_match:
+        return value[: date_match.start()].strip(" -|,")
+
+    date_start_match = re.search(r"\s+(?:19|20)\d{2}(?:[/.-]\d{1,2})?\b", value)
+    if date_start_match:
+        return value[: date_start_match.start()].strip(" -|,")
+
+    return value.strip()
+
+
 def _dedupe(values: list[str]) -> list[str]:
     return list(dict.fromkeys(value for value in values if value))
 
@@ -139,6 +151,26 @@ def _extract_url(line: str) -> str | None:
         return url
 
     return f"https://{url}"
+
+
+def _remove_url_text(line: str, url: str | None) -> str:
+    if not url:
+        return line.strip()
+
+    raw_url = url.replace("https://", "").replace("http://", "")
+    return line.replace(url, "").replace(raw_url, "").strip(" -|,")
+
+
+def _is_url_only_line(line: str, url: str | None = None) -> bool:
+    clean = line.strip()
+    if not clean:
+        return False
+
+    found_url = url or _extract_url(clean)
+    if not found_url:
+        return False
+
+    return _remove_url_text(clean, found_url) == ""
 
 
 def _extract_year(line: str) -> int | None:
@@ -196,7 +228,7 @@ def _looks_like_sentence(line: str) -> bool:
 
 
 def _looks_like_project_title(line: str) -> bool:
-    clean = strip_list_marker(line).strip()
+    clean = _strip_date_suffix(strip_list_marker(line).strip())
     normalized = _normalize_key(clean)
 
     if not clean:
@@ -214,9 +246,6 @@ def _looks_like_project_title(line: str) -> bool:
     if "|" in clean:
         return False
 
-    if DATE_RANGE_RE.search(clean):
-        return False
-
     if _looks_like_sentence(clean):
         return False
 
@@ -227,10 +256,22 @@ def _looks_like_project_title(line: str) -> bool:
     return 1 <= word_count <= 8
 
 
+def _has_dated_project_title(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    if not DATE_RANGE_RE.search(clean):
+        return False
+
+    title = _strip_date_suffix(clean)
+    return title != clean and _looks_like_project_title(title)
+
+
 def _has_strong_project_header_context(line: str) -> bool:
     normalized = _normalize_key(line)
 
     if DATE_RANGE_RE.search(line):
+        return True
+
+    if _is_url_only_line(line):
         return True
 
     strong_tokens = [
@@ -247,12 +288,16 @@ def _has_strong_project_header_context(line: str) -> bool:
         "cong nghe su dung",
         "technologies",
         "tech stack",
+        "position",
+        "role",
+        "teamsize",
+        "description",
     ]
 
     if any(token in normalized for token in strong_tokens):
         return True
 
-    if _label_kind(line) in {"technologies", "link", "meta"}:
+    if _label_kind(line) in {"technologies", "link", "meta", "role", "description"}:
         return True
 
     return False
@@ -266,7 +311,10 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
 
     if not current:
         return True
-    
+
+    if _has_dated_project_title(clean):
+        return True
+
     if next_lines and _has_strong_project_header_context(next_lines[0]):
         return True
 
@@ -366,6 +414,14 @@ def parse_project_block(lines: list[str]) -> dict:
 
         technologies.extend(skill["name"] for skill in extract_skills(clean))
 
+        if found_url and _is_url_only_line(clean, found_url):
+            continue
+
+        if found_url:
+            clean = _remove_url_text(clean, found_url)
+            if not clean:
+                continue
+
         label, value = _split_label_value(clean)
         kind = _label_kind(clean)
 
@@ -377,7 +433,10 @@ def parse_project_block(lines: list[str]) -> dict:
             _append_description(description_parts, label, value or clean)
             continue
 
-        if kind in {"link", "description", "role", "status", "meta"}:
+        if kind == "link":
+            continue
+
+        if kind in {"description", "role", "status", "meta"}:
             _append_description(description_parts, label, value or clean)
             continue
 
@@ -421,7 +480,7 @@ def extract_projects(text: str) -> list[dict]:
     return projects
 
 
-def extract_certifications(text: str) -> list[dict]:
+def extract_certifications(text: str, *, allow_year_only: bool = False) -> list[dict]:
     certs = []
     for raw in (text or "").splitlines():
         line = strip_list_marker(raw)
@@ -429,7 +488,10 @@ def extract_certifications(text: str) -> list[dict]:
             continue
 
         lowered = line.lower()
-        if any(keyword in lowered for keyword in ["certificat", "certified", "certificate", "chung chi"]):
+        is_cert_line = any(keyword in lowered for keyword in ["certificat", "certified", "certificate", "certicate", "chung chi"])
+        has_year = bool(_extract_year(line))
+
+        if is_cert_line or (allow_year_only and has_year):
             url_match = _extract_url_match(line)
             name = line.replace(url_match.group(0), "") if url_match else line
             certs.append(
@@ -443,12 +505,17 @@ def extract_certifications(text: str) -> list[dict]:
 
     return certs
 
+
 def _split_inline_project_header(line: str) -> tuple[str, str | None]:
     clean = line.strip()
 
     url_match = _extract_url_match(clean)
     if url_match:
         clean = clean.replace(url_match.group(0), "").strip()
+
+    stripped_name = _strip_date_suffix(clean)
+    if stripped_name != clean and stripped_name and len(stripped_name.split()) <= 8:
+        return stripped_name, None
 
     for pattern in (r"\s+-\s+", r":\s+"):
         parts = re.split(pattern, clean, maxsplit=1)

@@ -94,7 +94,7 @@ English - Intermediate, Vietnamese - Native
 
     assert data["personal"]["full_name"] == "John Doe"
     assert data["personal"]["linkedin_url"] == "https://linkedin.com/in/johndoe"
-    assert data["personal"]["portfolio_url"] == "https://johndoe.dev"
+    assert data["personal"]["portfolio_url"] == "https://johndoe.dev/"
     assert data["summary"] == "Backend developer with practical API and database experience."
 
     normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
@@ -261,3 +261,180 @@ Trạng thái: Đang phát triển
     assert "GPA: 3.53/4.0" in data["education"][0]["description"]
 
     assert data["experience"] == []
+
+
+def test_parse_resume_normalizes_personal_links_without_stealing_project_urls():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": """
+Ninh Hoang Khai
+FRESHER FRONTEND DEVELOPER
+nhkkhaii@gmail.com 0945772109 Ho Chi Minh City, Viet Nam nhkkhaii.super.site
+https://nhkkhaii.super.site/
+
+PROJECTS
+Personal Portfolio
+https://nhkkhaii.github.io/portfolio/
+Frontend Developer
+Technologies: ReactJS, Bootstrap
+09/2022
+Description:
+Worked on a personal portfolio website to showcase my technical skills and some completed projects.
+
+KaiSneaker – E-commerce Website
+https://github.com/ThueCode/KaiSneaker
+Full Stack Developer
+Technologies: ReactJS (TypeScript), PostgreSQL, RESTful API , Java (Spring Boot)
+04/2022 – 06/2022
+Description:
+A modern e-commerce web application for selling sneakers with complete frontend/backend integration.
+
+CinemaNHK – Movie Ticket Booking System
+https://github.com/nhkkhaii/CinemaNHK
+Full Stack Developer
+Technologies: C#, SQL Server, DevExpress, Microsoft Visual Studio
+09/2021 – 12/2021
+Description:
+An desktop application for the booking and management of cinema tickets.
+
+Project Management – Construction Management System
+https://github.com/nhkkhaii/QLDA
+Technologies: C#, SQL Server, Microsoft Visual Studio
+03/2021 – 05/2021
+Description:
+Desktop construction project management application.
+""",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    assert data["personal"]["github_url"] == "https://github.com/nhkkhaii"
+    assert data["personal"]["portfolio_url"] == "https://nhkkhaii.super.site/"
+
+    projects_by_name = {project["name"]: project for project in data["projects"]}
+    assert set(projects_by_name) == {
+        "Personal Portfolio",
+        "KaiSneaker – E-commerce Website",
+        "CinemaNHK – Movie Ticket Booking System",
+        "Project Management – Construction Management System",
+    }
+    assert projects_by_name["Personal Portfolio"]["url"] == "https://nhkkhaii.github.io/portfolio/"
+    assert projects_by_name["KaiSneaker – E-commerce Website"]["url"] == "https://github.com/ThueCode/KaiSneaker"
+    assert projects_by_name["CinemaNHK – Movie Ticket Booking System"]["url"] == "https://github.com/nhkkhaii/CinemaNHK"
+    assert projects_by_name["Project Management – Construction Management System"]["url"] == "https://github.com/nhkkhaii/QLDA"
+
+    for project in data["projects"]:
+        assert not (project["description"] or "").startswith("https://")
+
+
+def test_parse_resume_handles_frontend_developer_pdf_text_layout():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": """
+Nguyễn Quốc Bình
+Frontend Developer
+Objective
+Become a frontend expert in 2 years.
+Full-stack developer can do frontend, backend and server to participate in large
+projects
+Career History
+Projects
+SaiGon Web Company
+Frontend Developer
+2020/10 - Present
+Working as a frontend developer responsible for frontend like coding html/css,
+animation and resolved the UI issues.
+<Key Achievements>
+- Highly appreciated by customers for handling frontend animation and mobile
+experience.
+- Award for best staff of the year 2019
+XTech Corporation
+Junior Web Developer
+2018/10 - 2020/09
+- Develop new features both frontend and backend on E-commerce site using
+PHP/Laravel, ReactJS
+<Key Achievements>
+- Deep understanding of Vuejs framework
+Fanclub system 2019/02 - 2021/08
+Position: Frontend Developer
+Role: Frontend Developer
+Teamsize: 7
+Description: fanclub is a platform with fans and many idols.
+Technologies: PHP/Laravel, VueJS, AWS(EC2, RDS, Autoscaling, CloudWatch)
+Contact
+Phone
+0706-663-784
+Email
+recruit.cv@growupwork.com
+Address
+Birthday
+1970/01/01
+Gender
+Male
+Hobbies
+Reading: reading technologies blog tech and research new javascript framework
+References
+Main duties: responsible for coding frontend
+Achievement/Skills and Knowledge Gained:
+Always get the job done before the deadline
+Achieve 120% productivity compared to plan
+E-learning system 2017/03 - 2019/01
+Position: Full stack developer
+Role: Web developer
+Teamsize: 3
+Description: e-learning is an online system of training through video.
+Technologies: HTML/CSS/ReactJS, PHP/Laravel
+Education
+HCMUS
+2010 - 2014
+IT
+Good Rank; GPA: 3.76
+Language
+English: TOEIC 600
+Vietnamese: Native
+Certicate
+2018 Principle of UI/UX
+Honours Awards
+2019 Best staff of the year 2019, OneTech
+""",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    assert data["personal"]["full_name"] == "Nguyễn Quốc Bình"
+    assert data["personal"]["email"] == "recruit.cv@growupwork.com"
+    assert data["personal"]["phone"] == "0706663784"
+    assert data["personal"]["location"] is None
+
+    assert len(data["experience"]) >= 2
+    assert data["experience"][0]["company"] == "SaiGon Web Company"
+    assert data["experience"][0]["role"] == "Frontend Developer"
+    assert data["experience"][0]["start_date"] == "2020-10"
+    assert data["experience"][0]["end_date"] == "present"
+    assert data["experience"][1]["company"] == "XTech Corporation"
+    assert data["experience"][1]["role"] == "Junior Web Developer"
+
+    project_names = {project["name"] for project in data["projects"]}
+    assert "Fanclub system" in project_names
+    assert "E-learning system" in project_names
+
+    assert data["education"][0]["institution"] == "HCMUS"
+    assert data["education"][0]["degree"] == "Bachelor"
+    assert data["education"][0]["field_of_study"] == "Information Technology"
+    assert data["education"][0]["start_year"] == 2010
+    assert data["education"][0]["end_year"] == 2014
+    assert "GPA: 3.76" in data["education"][0]["description"]
+
+    assert data["certifications"][0]["issued_year"] == 2018
+    assert "Principle of UI/UX" in data["certifications"][0]["name"]
+    assert data["achievements"][0]["year"] == 2019
+    assert data["languages"] == [
+        {"name": "English", "proficiency": "TOEIC 600"},
+        {"name": "Vietnamese", "proficiency": "native"},
+    ]

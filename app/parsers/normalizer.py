@@ -43,4 +43,7 @@ def split_lines(text: str) -> list[str]:
 
 
 def strip_list_marker(line: str) -> str:
-    return re.sub(r"^\s*(?:[-*]|\u2022|\d+[.)])\s+", "", line or "").strip()
+    # PDF extraction often emits bullets without a following space, e.g.
+    # "•Created business logic". Treat that the same as "• Created ..." so
+    # extractor heuristics do not mistake bullet rows for new section items.
+    return re.sub(r"^\s*(?:[-*]|\u2022|\d+[.)])\s*", "", line or "").strip()
