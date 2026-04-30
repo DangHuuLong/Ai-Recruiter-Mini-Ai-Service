@@ -2,6 +2,7 @@ import re
 
 from app.parsers.extractors.projects_certifications import (
     DATE_RANGE_RE,
+    FEATURE_STARTERS,
     _extract_url_match,
     _is_valid_project,
     _looks_like_project_title,
@@ -112,10 +113,15 @@ def _normalize_title(value: str) -> str:
     return re.sub(r"\s+", " ", normalized).strip()
 
 
+def _is_feature_name(line: str) -> bool:
+    normalized = _normalize_title(line)
+    return any(normalized.startswith(prefix) for prefix in FEATURE_STARTERS)
+
+
 def _is_non_project_title(line: str) -> bool:
     clean = _strip_date_suffix(strip_list_marker(line).strip())
     normalized = _normalize_title(clean)
-    return normalized in NON_PROJECT_TITLES or normalized in ROLE_ONLY_TITLES
+    return normalized in NON_PROJECT_TITLES or normalized in ROLE_ONLY_TITLES or _is_feature_name(clean)
 
 
 def _is_stop_line(line: str) -> bool:
@@ -259,6 +265,32 @@ def split_project_blocks(text: str) -> list[list[str]]:
     return blocks
 
 
+def _extract_dated_project_blocks(text: str) -> list[list[str]]:
+    lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
+    lines = [line for line in lines if line]
+    blocks: list[list[str]] = []
+    current: list[str] = []
+
+    for line in lines:
+        if _is_dated_project_title(line):
+            if current:
+                blocks.append(current)
+            current = [line]
+            continue
+
+        if current:
+            if _is_stop_line(line):
+                blocks.append(current)
+                current = []
+                continue
+            current.append(line)
+
+    if current:
+        blocks.append(current)
+
+    return blocks
+
+
 def _dedupe_projects(projects: list[dict]) -> list[dict]:
     unique_projects = []
     seen_names = set()
@@ -275,12 +307,25 @@ def _dedupe_projects(projects: list[dict]) -> list[dict]:
     return unique_projects
 
 
+def _is_valid_project_item(project: dict) -> bool:
+    if not _is_valid_project(project):
+        return False
+
+    name = project.get("name") or ""
+    return not _is_feature_name(name)
+
+
 def extract_projects(text: str) -> list[dict]:
     projects = []
 
     for block in split_project_blocks(text):
         project = parse_project_block(block)
-        if _is_valid_project(project):
+        if _is_valid_project_item(project):
+            projects.append(project)
+
+    for block in _extract_dated_project_blocks(text):
+        project = parse_project_block(block)
+        if _is_valid_project_item(project):
             projects.append(project)
 
     return _dedupe_projects(projects)
