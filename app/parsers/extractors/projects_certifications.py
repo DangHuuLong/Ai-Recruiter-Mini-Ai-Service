@@ -458,14 +458,6 @@ def _split_inline_project_header(line: str) -> tuple[str, str | None]:
     if url_match:
         clean = clean.replace(url_match.group(0), "").strip()
 
-    for pattern in (r"\s+-\s+", r":\s+"):
-        parts = re.split(pattern, clean, maxsplit=1)
-        if len(parts) == 2:
-            name = parts[0].strip(" -|,")
-            description = parts[1].strip(" -|,")
-            if name and description and len(name.split()) <= 8:
-                return name, description
-
     date_match = DATE_RANGE_RE.search(clean)
     if date_match:
         name = clean[: date_match.start()].strip(" -|,")
@@ -477,5 +469,13 @@ def _split_inline_project_header(line: str) -> tuple[str, str | None]:
         name = clean[: date_start_match.start()].strip(" -|,")
         if name and len(name.split()) <= 8:
             return name, None
+
+    for pattern in (r"\s+-\s+", r":\s+"):
+        parts = re.split(pattern, clean, maxsplit=1)
+        if len(parts) == 2:
+            name = parts[0].strip(" -|,")
+            description = parts[1].strip(" -|,")
+            if name and description and len(name.split()) <= 8:
+                return name, description
 
     return line.strip(" -|,"), None
