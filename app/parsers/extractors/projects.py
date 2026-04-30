@@ -8,7 +8,7 @@ from app.parsers.extractors.projects_certifications import (
     _strip_date_suffix,
     parse_project_block,
 )
-from app.parsers.normalizer import strip_list_marker
+from app.parsers.normalizer import strip_accents, strip_list_marker
 
 LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
     r"^(?P<title>.+?)\s+"
@@ -31,15 +31,51 @@ PROJECT_TITLE_KEYWORDS = (
     "website",
 )
 
+NON_PROJECT_TITLES = {
+    "academic",
+    "academic background",
+    "bang cap",
+    "certicate",
+    "certificate",
+    "certification",
+    "contact",
+    "education",
+    "education background",
+    "hoc tap",
+    "hoc van",
+    "language",
+    "languages",
+    "objective",
+    "profile",
+    "summary",
+}
+
+
+def _normalize_title(value: str) -> str:
+    normalized = strip_accents(value or "").lower()
+    normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def _is_non_project_title(line: str) -> bool:
+    clean = _strip_date_suffix(strip_list_marker(line).strip())
+    return _normalize_title(clean) in NON_PROJECT_TITLES
+
 
 def _looks_like_loose_dated_project_title(line: str) -> bool:
     clean = strip_list_marker(line).strip()
+    if _is_non_project_title(clean):
+        return False
+
     match = LOOSE_DATED_PROJECT_TITLE_RE.match(clean)
     if not match:
         return False
 
     title = match.group("title").strip(" -|,")
     lowered_title = title.lower()
+
+    if _is_non_project_title(title):
+        return False
 
     if not _looks_like_project_title(title):
         return False
@@ -49,6 +85,9 @@ def _looks_like_loose_dated_project_title(line: str) -> bool:
 
 def _is_dated_project_title(line: str) -> bool:
     clean = strip_list_marker(line).strip()
+    if _is_non_project_title(clean):
+        return False
+
     if _looks_like_loose_dated_project_title(clean):
         return True
 
@@ -56,11 +95,14 @@ def _is_dated_project_title(line: str) -> bool:
         return False
 
     title = _strip_date_suffix(clean)
-    return title != clean and _looks_like_project_title(title)
+    return title != clean and not _is_non_project_title(title) and _looks_like_project_title(title)
 
 
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
+
+    if _is_non_project_title(clean):
+        return False
 
     if _is_dated_project_title(clean):
         return True
