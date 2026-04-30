@@ -264,19 +264,25 @@ def _experience_source(sections: dict[str, str]) -> str:
 
 
 def _projects_source(sections: dict[str, str]) -> str:
-    projects_text = sections.get("projects", "")
-    lines = split_lines(projects_text)
+    candidates = []
 
+    projects_text = sections.get("projects", "")
+    project_lines = split_lines(projects_text)
     if projects_text:
-        if lines and _looks_like_misplaced_experience(lines):
-            return _extract_project_tail_from_experience(projects_text)
-        return projects_text
+        if project_lines and _looks_like_misplaced_experience(project_lines):
+            candidates.append(_extract_project_tail_from_experience(projects_text))
+        else:
+            candidates.append(projects_text)
 
     experience_text = sections.get("experience", "")
-    if not experience_text:
-        return ""
+    if experience_text:
+        candidates.append(_extract_project_tail_from_experience(experience_text))
 
-    return _extract_project_tail_from_experience(experience_text)
+    other_text = sections.get("other", "")
+    if other_text:
+        candidates.append(_extract_project_tail_from_experience(other_text))
+
+    return _combine_sections(*candidates)
 
 
 def _looks_like_misplaced_experience(lines: list[str]) -> bool:
