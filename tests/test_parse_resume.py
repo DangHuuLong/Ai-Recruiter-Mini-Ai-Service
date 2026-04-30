@@ -30,6 +30,24 @@ def test_parse_resume_returns_parsed_resume_data():
     assert body["data"]["personal"]["github_url"] == "https://github.com/test"
 
 
+def test_parse_resume_removes_null_bytes_from_raw_text():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": "Nguyen\u0000 Van A\nSkills:\nPython\u0000, FastAPI, PostgreSQL",
+        },
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()["data"]
+    normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
+
+    assert "python" in normalized_skills
+    assert "fastapi" in normalized_skills
+    assert "postgresql" in normalized_skills
+
+
 def test_parse_resume_extracts_structured_sections():
     response = client.post(
         "/parse/resume",
@@ -171,6 +189,7 @@ Tieng Anh - Advanced
     assert data["education"][0]["degree"] == "Bachelor"
     assert data["education"][0]["field_of_study"] == "Information Technology"
     assert data["languages"][0]["proficiency"] == "advanced"
+
 
 def test_parse_resume_handles_vietnamese_projects_and_education_blocks():
     response = client.post(
