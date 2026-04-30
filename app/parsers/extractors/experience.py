@@ -1,7 +1,7 @@
 import re
 
 from app.parsers.extractors.skills import extract_skills
-from app.parsers.normalizer import strip_list_marker
+from app.parsers.normalizer import strip_accents, strip_list_marker
 from app.parsers.normalizers.duration_normalizer import extract_date_range, parse_explicit_duration_months
 
 
@@ -43,7 +43,43 @@ STOP_KEYWORDS = (
     "honours",
     "honors",
     "awards",
+    "projects",
+    "skills",
+    "soft skills",
 )
+
+PROJECT_META_PREFIXES = (
+    "position:",
+    "role:",
+    "teamsize:",
+    "team size:",
+    "description:",
+    "technologies:",
+    "technology:",
+    "key contributions:",
+    "key responsibilities:",
+)
+
+PROJECT_TITLE_KEYWORDS = (
+    "app",
+    "application",
+    "e-commerce",
+    "ecommerce",
+    "management",
+    "platform",
+    "portfolio",
+    "portal",
+    "project",
+    "site",
+    "system",
+    "website",
+)
+
+
+def _normalize(value: str) -> str:
+    normalized = strip_accents(value or "").lower()
+    normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
 
 
 def _looks_like_role(value: str) -> bool:
@@ -63,8 +99,22 @@ def _looks_like_company(value: str) -> bool:
 
 
 def _is_stop_line(value: str) -> bool:
-    lowered = value.lower()
-    return any(keyword in lowered for keyword in STOP_KEYWORDS)
+    return _normalize(value) in STOP_KEYWORDS
+
+
+def _has_project_keyword(value: str) -> bool:
+    lowered = strip_accents(value or "").lower()
+    return any(keyword in lowered for keyword in PROJECT_TITLE_KEYWORDS)
+
+
+def _looks_like_project_block_start(line: str, next_lines: list[str]) -> bool:
+    if not _has_project_keyword(line):
+        return False
+
+    if extract_date_range(line):
+        return True
+
+    return any(_normalize(next_line).startswith(PROJECT_META_PREFIXES) for next_line in next_lines[:5])
 
 
 def _dedupe(values: list[str]) -> list[str]:
@@ -135,6 +185,8 @@ def _parse_stacked_experience_header(company: str, role: str, date_line: str) ->
 
 
 def _is_new_entry(line: str) -> bool:
+    if _normalize(line).startswith(PROJECT_META_PREFIXES):
+        return False
     if extract_date_range(line) and (_looks_like_role(line) or " at " in line.lower()):
         return True
     if parse_explicit_duration_months(line) and _looks_like_role(line):
@@ -150,6 +202,12 @@ def _clean_lines(text: str) -> list[str]:
     return [line for line in (strip_list_marker(raw) for raw in (text or "").splitlines()) if line]
 
 
+def _append_current(entries: list[dict], current: dict | None) -> None:
+    if current:
+        current["technologies"] = _dedupe(current["technologies"])
+        entries.append(current)
+
+
 def extract_experience(text: str) -> list[dict]:
     entries = []
     current = None
@@ -158,12 +216,11 @@ def extract_experience(text: str) -> list[dict]:
 
     while index < len(lines):
         line = lines[index]
+        next_lines = lines[index + 1 : index + 6]
 
-        if _is_stop_line(line):
-            if current:
-                current["technologies"] = _dedupe(current["technologies"])
-                entries.append(current)
-                current = None
+        if _is_stop_line(line) or _looks_like_project_block_start(line, next_lines):
+            _append_current(entries, current)
+            current = None
             break
 
         if (
@@ -172,18 +229,27 @@ def extract_experience(text: str) -> list[dict]:
             and _looks_like_role(lines[index + 1])
             and extract_date_range(lines[index + 2])
         ):
-            if current:
-                current["technologies"] = _dedupe(current["technologies"])
-                entries.append(current)
-
+            _append_current(entries, current)
             current = _parse_stacked_experience_header(line, lines[index + 1], lines[index + 2])
             index += 3
             continue
 
+        if (
+            index + 3 < len(lines)
+            and _looks_like_company(line)
+            and _looks_like_role(lines[index + 1])
+            and not extract_date_range(lines[index + 2])
+            and extract_date_range(lines[index + 3])
+        ):
+            _append_current(entries, current)
+            current = _parse_stacked_experience_header(line, lines[index + 1], lines[index + 3])
+            current["responsibilities"].append(lines[index + 2])
+            current["technologies"].extend(skill["name"] for skill in extract_skills(lines[index + 2]))
+            index += 4
+            continue
+
         if _is_new_entry(line):
-            if current:
-                current["technologies"] = _dedupe(current["technologies"])
-                entries.append(current)
+            _append_current(entries, current)
             current = _parse_experience_line(line)
             index += 1
             continue
@@ -194,8 +260,5 @@ def extract_experience(text: str) -> list[dict]:
 
         index += 1
 
-    if current:
-        current["technologies"] = _dedupe(current["technologies"])
-        entries.append(current)
-
+    _append_current(entries, current)
     return entries
