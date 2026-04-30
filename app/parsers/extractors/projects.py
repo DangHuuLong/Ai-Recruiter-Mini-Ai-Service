@@ -22,6 +22,8 @@ LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
 PROJECT_TITLE_KEYWORDS = (
     "app",
     "application",
+    "booking",
+    "cinema",
     "e-commerce",
     "ecommerce",
     "management",
@@ -29,12 +31,16 @@ PROJECT_TITLE_KEYWORDS = (
     "portfolio",
     "portal",
     "project",
+    "recruiter",
+    "shop",
     "site",
+    "store",
     "system",
     "website",
 )
 
 PROJECT_CONTEXT_TOKENS = (
+    "achievement/skills",
     "cong nghe su dung",
     "description",
     "du an ca nhan",
@@ -42,6 +48,7 @@ PROJECT_CONTEXT_TOKENS = (
     "key contributions",
     "key responsibilities",
     "link github",
+    "main duties",
     "mo ta chuc nang",
     "position:",
     "role:",
@@ -55,10 +62,27 @@ PROJECT_CONTEXT_TOKENS = (
 
 IMMEDIATE_PROJECT_CONTEXT_TOKENS = (
     "cong nghe su dung",
+    "description:",
     "du an ca nhan",
     "du an nhom",
     "link github",
     "position:",
+    "role:",
+    "team size",
+    "teamsize",
+    "technologies",
+    "technology",
+    "tech stack",
+)
+
+PROJECT_DETAIL_LABELS = (
+    "achievement/skills",
+    "description",
+    "key contributions",
+    "key responsibilities",
+    "main duties",
+    "position",
+    "role",
     "team size",
     "teamsize",
     "technologies",
@@ -78,46 +102,70 @@ ROLE_ONLY_TITLES = {
     "web developer",
 }
 
-NON_PROJECT_TITLES = {
-    "academic",
-    "academic background",
+SECTION_NOISE_TITLES = {
     "about",
     "address",
-    "bang cap",
     "birthday",
-    "certicate",
-    "certificate",
-    "certification",
     "contact",
-    "database",
-    "education",
-    "education background",
     "email",
-    "frontend",
     "gender",
     "hobbies",
-    "hoc tap",
-    "hoc van",
-    "language",
-    "languages",
-    "objective",
-    "personal skill",
     "phone",
     "profile",
     "references",
     "skills",
+}
+
+TERMINAL_SECTION_TITLES = {
+    "academic",
+    "academic background",
+    "awards",
+    "bang cap",
+    "certicate",
+    "certificate",
+    "certification",
+    "database",
+    "education",
+    "education background",
+    "frontend",
+    "hoc tap",
+    "hoc van",
+    "honors",
+    "honors awards",
+    "honours awards",
+    "language",
+    "languages",
+    "objective",
+    "personal skill",
     "soft skills",
     "summary",
     "tools",
     "work experience",
 }
 
-STOP_TITLES = NON_PROJECT_TITLES | {
-    "awards",
-    "honors",
-    "honours awards",
-    "key achievements",
-}
+NON_PROJECT_TITLES = SECTION_NOISE_TITLES | TERMINAL_SECTION_TITLES
+
+SKILL_NOISE_PATTERNS = (
+    "adobe",
+    "adobe photoshop",
+    "adobe xd",
+    "angularjs",
+    "html/css",
+    "javascript framework",
+    "photoshop",
+    "reactjs/angularjs",
+    "vuejs",
+)
+
+REFERENCE_NOISE_RE = re.compile(
+    r"\b(project manager|phone\s*:|email\s*:|@|one\s*tech|onetech)\b",
+    re.IGNORECASE,
+)
+
+CONTACT_NOISE_RE = re.compile(
+    r"^(?:\+?\d[\d\s().-]{5,}|male|female|\d{4}[/.-]\d{1,2}[/.-]\d{1,2})$",
+    re.IGNORECASE,
+)
 
 
 def _normalize_title(value: str) -> str:
@@ -131,15 +179,55 @@ def _is_feature_name(line: str) -> bool:
     return any(normalized.startswith(prefix) for prefix in FEATURE_STARTERS)
 
 
+def _is_skill_noise(line: str) -> bool:
+    normalized = _normalize_title(line)
+    if not normalized:
+        return False
+    return normalized in SKILL_NOISE_PATTERNS or any(pattern in normalized for pattern in SKILL_NOISE_PATTERNS)
+
+
+def _is_reference_noise(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    normalized = _normalize_title(clean)
+    if not clean:
+        return False
+    if REFERENCE_NOISE_RE.search(clean):
+        return True
+    return normalized.endswith(" project manager") or " project manager " in normalized
+
+
+def _is_contact_noise(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    return bool(CONTACT_NOISE_RE.fullmatch(clean))
+
+
 def _is_non_project_title(line: str) -> bool:
     clean = _strip_date_suffix(strip_list_marker(line).strip())
     normalized = _normalize_title(clean)
-    return normalized in NON_PROJECT_TITLES or normalized in ROLE_ONLY_TITLES or _is_feature_name(clean)
+    return (
+        normalized in NON_PROJECT_TITLES
+        or normalized in ROLE_ONLY_TITLES
+        or _is_feature_name(clean)
+        or _is_skill_noise(clean)
+        or _is_reference_noise(clean)
+        or _is_contact_noise(clean)
+    )
 
 
-def _is_stop_line(line: str) -> bool:
+def _is_terminal_stop_line(line: str) -> bool:
     clean = _strip_date_suffix(strip_list_marker(line).strip())
-    return _normalize_title(clean) in STOP_TITLES
+    return _normalize_title(clean) in TERMINAL_SECTION_TITLES
+
+
+def _is_layout_noise_line(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    normalized = _normalize_title(clean)
+    return (
+        normalized in SECTION_NOISE_TITLES
+        or _is_skill_noise(clean)
+        or _is_reference_noise(clean)
+        or _is_contact_noise(clean)
+    )
 
 
 def _is_date_only_line(line: str) -> bool:
@@ -169,6 +257,11 @@ def _is_project_context_line(line: str) -> bool:
     return any(normalized.startswith(token.rstrip(":")) for token in PROJECT_CONTEXT_TOKENS)
 
 
+def _is_project_detail_line(line: str) -> bool:
+    normalized = _normalize_title(line)
+    return any(normalized.startswith(label) for label in PROJECT_DETAIL_LABELS)
+
+
 def _looks_like_inline_project_header(line: str) -> bool:
     clean = strip_list_marker(line).strip()
     if _is_non_project_title(clean) or _is_project_context_line(clean):
@@ -187,7 +280,11 @@ def _looks_like_inline_project_header(line: str) -> bool:
         if not _looks_like_project_title(name):
             continue
 
-        if _extract_url_match(rest) or _has_project_keyword(name) or any(token in strip_accents(rest).lower() for token in PROJECT_CONTEXT_TOKENS):
+        normalized_rest = strip_accents(rest).lower()
+        # A URL by itself is not enough: references such as
+        # "Nguyen Van B Project Manager - OneTech Asia" can contain domains in
+        # following lines and must not become project headers.
+        if _has_project_keyword(name) or any(token in normalized_rest for token in PROJECT_CONTEXT_TOKENS):
             return True
 
     return False
@@ -210,6 +307,9 @@ def _looks_like_loose_dated_project_title(line: str) -> bool:
     if not _looks_like_project_title(title):
         return False
 
+    # Dated titles are strong signals, but keep one additional semantic guard so
+    # employment lines such as "XTech Corporation 2018/10 - 2020/09" do not leak
+    # into projects when two-column PDF text order is mixed.
     return _has_project_keyword(title)
 
 
@@ -246,6 +346,30 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
     return _has_immediate_project_context(next_lines)
 
 
+def _clean_project_lines(lines: list[str]) -> list[str]:
+    cleaned: list[str] = []
+    skipping_layout_noise = False
+
+    for line in lines:
+        if _is_terminal_stop_line(line):
+            break
+
+        if _is_layout_noise_line(line):
+            skipping_layout_noise = True
+            continue
+
+        # Sidebars often inject prose after About/Skills/References in the middle
+        # of the project section. Keep collecting again as soon as a real project
+        # detail label appears, but ignore the unrelated sidebar prose itself.
+        if skipping_layout_noise and not (_is_project_detail_line(line) or _is_dated_project_title(line)):
+            continue
+
+        skipping_layout_noise = False
+        cleaned.append(line)
+
+    return cleaned
+
+
 def split_project_blocks(text: str) -> list[list[str]]:
     lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
     lines = [line for line in lines if line]
@@ -256,19 +380,29 @@ def split_project_blocks(text: str) -> list[list[str]]:
     for index, line in enumerate(lines):
         next_lines = lines[index + 1 : index + 9]
 
-        if current and _is_stop_line(line):
-            blocks.append(current)
+        if current and _is_terminal_stop_line(line):
+            cleaned = _clean_project_lines(current)
+            if cleaned:
+                blocks.append(cleaned)
             current = []
             continue
 
+        if current and _is_layout_noise_line(line):
+            current.append(line)
+            continue
+
         if current and (_is_dated_project_title(line) or _looks_like_inline_project_header(line)):
-            blocks.append(current)
+            cleaned = _clean_project_lines(current)
+            if cleaned:
+                blocks.append(cleaned)
             current = [line]
             continue
 
         if _should_start_new_block(line, current, next_lines):
             if current:
-                blocks.append(current)
+                cleaned = _clean_project_lines(current)
+                if cleaned:
+                    blocks.append(cleaned)
 
             current = [line]
             continue
@@ -277,7 +411,9 @@ def split_project_blocks(text: str) -> list[list[str]]:
             current.append(line)
 
     if current:
-        blocks.append(current)
+        cleaned = _clean_project_lines(current)
+        if cleaned:
+            blocks.append(cleaned)
 
     return blocks
 
@@ -291,19 +427,25 @@ def _extract_dated_project_blocks(text: str) -> list[list[str]]:
     for line in lines:
         if _is_dated_project_title(line):
             if current:
-                blocks.append(current)
+                cleaned = _clean_project_lines(current)
+                if cleaned:
+                    blocks.append(cleaned)
             current = [line]
             continue
 
         if current:
-            if _is_stop_line(line):
-                blocks.append(current)
+            if _is_terminal_stop_line(line):
+                cleaned = _clean_project_lines(current)
+                if cleaned:
+                    blocks.append(cleaned)
                 current = []
                 continue
             current.append(line)
 
     if current:
-        blocks.append(current)
+        cleaned = _clean_project_lines(current)
+        if cleaned:
+            blocks.append(cleaned)
 
     return blocks
 
@@ -329,7 +471,7 @@ def _is_valid_project_item(project: dict) -> bool:
         return False
 
     name = project.get("name") or ""
-    return not _is_feature_name(name)
+    return not _is_non_project_title(name)
 
 
 def extract_projects(text: str) -> list[dict]:
