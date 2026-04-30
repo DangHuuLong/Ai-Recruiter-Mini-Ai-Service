@@ -23,7 +23,9 @@ PROJECT_TITLE_KEYWORDS = (
     "application",
     "e-commerce",
     "ecommerce",
+    "management",
     "platform",
+    "portfolio",
     "portal",
     "project",
     "site",
@@ -31,23 +33,57 @@ PROJECT_TITLE_KEYWORDS = (
     "website",
 )
 
+ROLE_ONLY_TITLES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "web developer",
+}
+
 NON_PROJECT_TITLES = {
     "academic",
     "academic background",
+    "about",
+    "address",
     "bang cap",
+    "birthday",
     "certicate",
     "certificate",
     "certification",
     "contact",
+    "database",
     "education",
     "education background",
+    "email",
+    "frontend",
+    "gender",
+    "hobbies",
     "hoc tap",
     "hoc van",
     "language",
     "languages",
     "objective",
+    "personal skill",
+    "phone",
     "profile",
+    "references",
+    "skills",
+    "soft skills",
     "summary",
+    "tools",
+    "work experience",
+}
+
+STOP_TITLES = NON_PROJECT_TITLES | {
+    "awards",
+    "honors",
+    "honours awards",
+    "key achievements",
 }
 
 
@@ -59,7 +95,23 @@ def _normalize_title(value: str) -> str:
 
 def _is_non_project_title(line: str) -> bool:
     clean = _strip_date_suffix(strip_list_marker(line).strip())
-    return _normalize_title(clean) in NON_PROJECT_TITLES
+    normalized = _normalize_title(clean)
+    return normalized in NON_PROJECT_TITLES or normalized in ROLE_ONLY_TITLES
+
+
+def _is_stop_line(line: str) -> bool:
+    clean = _strip_date_suffix(strip_list_marker(line).strip())
+    return _normalize_title(clean) in STOP_TITLES
+
+
+def _is_date_only_line(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    return bool(DATE_RANGE_RE.fullmatch(clean) or re.fullmatch(r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?", clean))
+
+
+def _has_project_keyword(value: str) -> bool:
+    lowered = strip_accents(value or "").lower()
+    return any(keyword in lowered for keyword in PROJECT_TITLE_KEYWORDS)
 
 
 def _looks_like_loose_dated_project_title(line: str) -> bool:
@@ -72,7 +124,6 @@ def _looks_like_loose_dated_project_title(line: str) -> bool:
         return False
 
     title = match.group("title").strip(" -|,")
-    lowered_title = title.lower()
 
     if _is_non_project_title(title):
         return False
@@ -80,7 +131,7 @@ def _looks_like_loose_dated_project_title(line: str) -> bool:
     if not _looks_like_project_title(title):
         return False
 
-    return any(keyword in lowered_title for keyword in PROJECT_TITLE_KEYWORDS)
+    return _has_project_keyword(title)
 
 
 def _is_dated_project_title(line: str) -> bool:
@@ -95,13 +146,18 @@ def _is_dated_project_title(line: str) -> bool:
         return False
 
     title = _strip_date_suffix(clean)
-    return title != clean and not _is_non_project_title(title) and _looks_like_project_title(title)
+    return title != clean and not _is_non_project_title(title) and _looks_like_project_title(title) and _has_project_keyword(title)
+
+
+def _has_project_context(next_lines: list[str]) -> bool:
+    window = [strip_list_marker(line).strip() for line in next_lines[:8] if strip_list_marker(line).strip()]
+    return any(_has_strong_project_header_context(line) for line in window)
 
 
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
 
-    if _is_non_project_title(clean):
+    if _is_non_project_title(clean) or _is_date_only_line(clean):
         return False
 
     if _is_dated_project_title(clean):
@@ -110,16 +166,13 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
     if not _looks_like_project_title(clean):
         return False
 
+    if not _has_project_context(next_lines):
+        return False
+
     if not current:
         return True
 
-    if next_lines and _has_strong_project_header_context(next_lines[0]):
-        return True
-
-    if len(next_lines) >= 2 and len(next_lines[0].split()) <= 4:
-        return _has_strong_project_header_context(next_lines[1])
-
-    return False
+    return _has_project_keyword(clean)
 
 
 def split_project_blocks(text: str) -> list[list[str]]:
@@ -130,7 +183,12 @@ def split_project_blocks(text: str) -> list[list[str]]:
     current: list[str] = []
 
     for index, line in enumerate(lines):
-        next_lines = lines[index + 1 : index + 4]
+        next_lines = lines[index + 1 : index + 9]
+
+        if current and _is_stop_line(line):
+            blocks.append(current)
+            current = []
+            continue
 
         if current and _is_dated_project_title(line):
             blocks.append(current)
@@ -146,8 +204,6 @@ def split_project_blocks(text: str) -> list[list[str]]:
 
         if current:
             current.append(line)
-        else:
-            current = [line]
 
     if current:
         blocks.append(current)
