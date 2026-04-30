@@ -247,12 +247,16 @@ def _has_strong_project_header_context(line: str) -> bool:
         "cong nghe su dung",
         "technologies",
         "tech stack",
+        "position",
+        "role",
+        "teamsize",
+        "description",
     ]
 
     if any(token in normalized for token in strong_tokens):
         return True
 
-    if _label_kind(line) in {"technologies", "link", "meta"}:
+    if _label_kind(line) in {"technologies", "link", "meta", "role", "description"}:
         return True
 
     return False
@@ -429,7 +433,10 @@ def extract_certifications(text: str) -> list[dict]:
             continue
 
         lowered = line.lower()
-        if any(keyword in lowered for keyword in ["certificat", "certified", "certificate", "chung chi"]):
+        is_cert_line = any(keyword in lowered for keyword in ["certificat", "certified", "certificate", "certicate", "chung chi"])
+        has_year = bool(_extract_year(line))
+
+        if is_cert_line or has_year:
             url_match = _extract_url_match(line)
             name = line.replace(url_match.group(0), "") if url_match else line
             certs.append(
@@ -442,6 +449,7 @@ def extract_certifications(text: str) -> list[dict]:
             )
 
     return certs
+
 
 def _split_inline_project_header(line: str) -> tuple[str, str | None]:
     clean = line.strip()
@@ -457,5 +465,11 @@ def _split_inline_project_header(line: str) -> tuple[str, str | None]:
             description = parts[1].strip(" -|,")
             if name and description and len(name.split()) <= 8:
                 return name, description
+
+    date_match = DATE_RANGE_RE.search(clean)
+    if date_match:
+        name = clean[: date_match.start()].strip(" -|,")
+        if name and len(name.split()) <= 8:
+            return name, None
 
     return line.strip(" -|,"), None
