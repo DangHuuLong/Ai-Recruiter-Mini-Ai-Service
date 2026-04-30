@@ -361,7 +361,7 @@ Pytest is configured in:
 pytest.ini
 ```
 
-### Current configuration:
+### Current configuration
 
 ```ini
 [pytest]
@@ -377,29 +377,65 @@ tests/conftest.py
 
 This file ensures that the project root is added to `sys.path` during test execution, which helps avoid import issues on Windows.
 
-### Run tests:
+### How tests are discovered
+
+Running:
 
 ```bash
 python -m pytest
 ```
 
-### Current test file:
+makes pytest collect tests from the `tests` folder. Test files follow the `test_*.py` naming convention, and test functions should start with `test_`.
 
+Examples:
+
+```txt
+tests/test_parse_resume.py
+def test_parse_resume_returns_parsed_resume_data(): ...
 ```
-tests/test_health.py
+
+### Useful test commands
+
+Run all tests:
+
+```bash
+python -m pytest
 ```
 
-### Current test coverage:
+Run only resume parser tests:
 
-- Verify that `GET /health` returns HTTP 200
-- Verify that the response has `success = true`
-- Verify that the health status is `healthy`
-- Verify that the service name is correct
-
-### Expected result:
-
+```bash
+python -m pytest tests/test_parse_resume.py
 ```
-1 passed
+
+Run one specific test:
+
+```bash
+python -m pytest tests/test_parse_resume.py::test_parse_resume_handles_vietnamese_projects_and_education_blocks
+```
+
+Run with verbose output:
+
+```bash
+python -m pytest -vv
+```
+
+### Current test files
+
+| File | Coverage |
+| --- | --- |
+| `tests/test_health.py` | Health endpoint |
+| `tests/test_parse_resume.py` | Resume parsing endpoint, structured English resumes, fallback resumes without clear headers, Vietnamese headers, Vietnamese project/education blocks |
+| `tests/test_parse_job_description.py` | Job description parsing endpoint |
+| `tests/test_score_application.py` | Application scoring endpoint |
+| `tests/test_schemas.py` | Pydantic schema defaults and validation |
+| `tests/test_file_readers.py` | PDF/DOCX readers with mocked dependencies |
+| `tests/test_parser_utilities.py` | Duration normalization and section splitting |
+
+### Current test result
+
+```txt
+20 passed
 ```
 
 ---
@@ -491,13 +527,13 @@ The schema tests are part of the basic safety check before adding parser, normal
 
 ---
 
-## 16. Mock API Endpoints
+## 16. Deterministic MVP API Endpoints
 
-The AI service currently provides mock endpoints for parsing and scoring.
+The AI service provides deterministic MVP endpoints for parsing and scoring.
 
-These endpoints are used to validate the contract between the Backend and the AI service before real AI logic is implemented.
+These endpoints are used to validate the contract between the Backend and the AI service before LLM, embedding-based, or OCR-based logic is introduced.
 
-Current mock endpoints:
+Current endpoints:
 
 | Method | Endpoint | Purpose |
 | --- | --- | --- |
@@ -505,7 +541,12 @@ Current mock endpoints:
 | `POST` | `/parse/job-description` | Parses raw job description text into structured job description data |
 | `POST` | `/score/application` | Scores a parsed resume against a parsed job description |
 
-The mock implementation is deterministic and schema-based. It does not use a real LLM, embeddings, OCR, or external AI provider yet.
+Implementation notes:
+
+- Resume parsing is no longer mock-only. It uses deterministic rule-based extraction.
+- Job description parsing and scoring still use lightweight deterministic MVP logic.
+- The API response shape remains stable and schema-compatible.
+- The current service does not use a real LLM, embeddings, OCR, or external AI provider yet.
 
 ---
 
@@ -524,14 +565,18 @@ At this stage, the AI service uses deterministic rule-based parsing logic. PDF/D
 | File | Purpose |
 | --- | --- |
 | `app/schemas/resume.py` | Defines `ParsedResumeData` and related resume schemas |
-| `app/parsers/resume_parser.py` | Orchestrates rule-based resume parsing |
+| `app/parsers/resume_parser.py` | Orchestrates deterministic resume parsing and controlled fallback logic |
+| `app/parsers/normalizer.py` | Normalizes whitespace and Vietnamese accents, including `Đ/đ` handling |
+| `app/parsers/section_splitter.py` | Splits resume text into sections using English and Vietnamese headings |
 | `app/parsers/pdf_reader.py` | Extracts text from text-based PDF files |
 | `app/parsers/docx_reader.py` | Extracts text from DOCX paragraphs and tables |
-| `app/parsers/extractors/*` | Extracts resume fields from normalized text |
+| `app/parsers/extractors/education.py` | Extracts institution, degree, field, year range, GPA, and wrapped education blocks |
+| `app/parsers/extractors/projects_certifications.py` | Extracts project blocks, inline project headers, URLs, technologies, and certification data |
+| `app/parsers/extractors/*` | Extracts personal information, skills, experience, achievements, links, and languages |
 | `app/parsers/normalizers/*` | Normalizes skills, dates, and durations |
 | `samples/sample_resume.json` | Provides sample parsed resume output |
 | `tests/test_schemas.py` | Tests resume schema defaults and validation |
-| `tests/test_parse_resume.py` | Tests the parse resume endpoint |
+| `tests/test_parse_resume.py` | Tests resume parsing, including Vietnamese project and education regression cases |
 | `tests/test_file_readers.py` | Tests PDF and DOCX reader behavior |
 | `tests/test_parser_utilities.py` | Tests section and duration utilities |
 
@@ -548,7 +593,7 @@ At this stage, the AI service uses deterministic rule-based parsing logic. PDF/D
 Current test result:
 
 ```txt
-19 passed
+20 passed
 ```
 
 ---
@@ -562,20 +607,26 @@ Implemented parser capabilities:
 - PDF text extraction through `app/parsers/pdf_reader.py`
 - DOCX text extraction through `app/parsers/docx_reader.py`
 - Text normalization with optional line preservation
-- Resume section splitting for English and basic Vietnamese headings
-- Email, phone, LinkedIn, GitHub, and portfolio link extraction
+- Vietnamese accent normalization with explicit `Đ/đ` to `D/d` handling
+- Resume section splitting for English and basic Vietnamese headings, including `Học tập`
+- Email, phone, LinkedIn, GitHub, portfolio, and location extraction
 - Skill extraction with aliases, categories, and normalized names
-- Education extraction for institution, degree, field, and years
-- Experience extraction for role, company, date range, duration, responsibilities, and technologies
-- Project, certification, achievement, and language extraction
+- Education extraction for institution, degree, field, start year, end year, GPA, and wrapped multi-line education blocks
+- Controlled experience fallback for resumes without clear section headers, while avoiding false positives from profile titles
+- Project extraction using block grouping and field-aware parsing
+- Inline project header parsing, including URL preservation
+- Certification, achievement, and language extraction
 - `ParsedResumeData` schema-compatible output
 
 Current parser tests cover:
 
 - Short raw-text resume input
-- Structured multi-section resume input
+- Structured multi-section English resume input
 - Resume input without clear section headers
 - Basic Vietnamese section headers
+- Vietnamese profile location extraction
+- Vietnamese project block parsing with feature lines that should remain in the same project
+- Vietnamese education block parsing with `Học tập`, wrapped field text, institution, field, start year, and GPA
 - PDF/DOCX reader behavior with mocked parser dependencies
 - Duration and section splitter utility behavior
 
@@ -585,3 +636,5 @@ Known MVP limits:
 - OCR and scanned CV handling are not implemented.
 - Highly visual or unusual CV layouts may still require better upstream text extraction.
 - Skill coverage depends on the local skill catalog and aliases.
+- Project metadata such as period, role, status, and feature list is currently folded into `projects[].description` because the project schema remains compact.
+- Tooling terms such as `GitHub` may appear in skills or project technologies when present in the source text.

@@ -117,6 +117,8 @@ Parses raw resume text into structured resume data.
 
 The AI service does not receive uploaded files directly in this contract. The Backend is responsible for file upload, file storage, and raw text extraction before calling this endpoint.
 
+The current implementation is a deterministic MVP parser. It uses rule-based text normalization, section splitting, and field extractors rather than an LLM. The response shape remains stable and must match `ParsedResumeData`.
+
 ### Request Body
 
 ```json
@@ -134,25 +136,41 @@ The AI service does not receive uploaded files directly in this contract. The Ba
   "data": {
     "personal": {
       "full_name": "Nguyen Van A",
-      "email": null,
-      "phone": null,
-      "location": null,
+      "email": "nguyen@example.com",
+      "phone": "+84912345678",
+      "location": "Da Nang",
       "linkedin_url": null,
-      "github_url": null,
+      "github_url": "https://github.com/nguyenvana",
       "portfolio_url": null
     },
-    "summary": "Mock parsed resume profile.",
+    "summary": null,
     "skills": [
       {
         "name": "Python",
         "normalized_name": "python",
-        "category": "backend",
-        "evidence": "Mentioned in resume text"
+        "category": "language",
+        "evidence": "Python, FastAPI, PostgreSQL"
       }
     ],
-    "education": [],
+    "education": [
+      {
+        "institution": "University of Technology",
+        "degree": "Bachelor",
+        "field_of_study": "Computer Science",
+        "start_year": 2019,
+        "end_year": 2023,
+        "description": "University of Technology - Bachelor of Computer Science, 2019 - 2023"
+      }
+    ],
     "experience": [],
-    "projects": [],
+    "projects": [
+      {
+        "name": "AI Recruiter",
+        "description": "CV screening API using Python, FastAPI and PostgreSQL. Used Docker and Redis for local development.",
+        "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "Redis"],
+        "url": "https://github.com/test/ai-recruiter"
+      }
+    ],
     "certifications": [],
     "achievements": [],
     "languages": []
@@ -162,19 +180,42 @@ The AI service does not receive uploaded files directly in this contract. The Ba
 
 ### Data Contract
 
-- `data` must match the `ParsedResumeData` schema
+- `data` must match the `ParsedResumeData` schema.
+- Resume JSON payloads use `snake_case`.
+- List fields such as `skills`, `education`, `experience`, `projects`, `certifications`, `achievements`, and `languages` default to empty lists.
+- The parser may return `null` for unknown optional values.
 
-### Main fields:
+### Main fields
 
-- `personal`
-- `summary`
-- `skills`
-- `education`
-- `experience`
-- `projects`
+- `personal` — name, email, phone, location, LinkedIn, GitHub, portfolio
+- `summary` — profile summary or objective when a clear summary section exists
+- `skills` — extracted technical skills with normalized names, category, and evidence
+- `education` — institution, degree, field of study, year range, and description
+- `experience` — company, role, dates, duration, responsibilities, and technologies
+- `projects` — project name, description, technologies, and URL
 - `certifications`
 - `achievements`
 - `languages`
+
+### Current Resume Parser Behavior
+
+The MVP resume parser now supports:
+
+- English and basic Vietnamese section headings, including `Học vấn`, `Học tập`, `Kỹ năng`, `Kinh nghiệm`, `Dự án`, and `Ngôn ngữ`.
+- Vietnamese accent normalization that preserves `Đ/đ` as `D/d` for keyword matching.
+- Personal location extraction from labels such as `location`, `address`, `địa chỉ`, `quê quán`, and common city names.
+- Education block extraction across wrapped lines, including institution, degree approximation, field of study, start year, end year, GPA inside description, and Vietnamese student-status text such as `Sinh viên năm 3`.
+- Project block extraction using field-aware grouping. Project details such as `Link Github`, `Công nghệ sử dụng`, `Mô tả chức năng`, `Vai trò`, `Customer`, `Admin`, `Auth`, and `Trạng thái` are grouped into the current project description instead of being treated as separate projects.
+- Inline project header parsing, for example `AI Recruiter - CV screening API ... https://github.com/...`.
+- Controlled fallback experience parsing for resumes without explicit section headers, while avoiding false positives from simple profile titles such as `Developer`.
+
+### Current MVP Limits
+
+- The parser is deterministic and rule-based, so unusual layouts can still require new heuristics.
+- OCR and scanned CV handling are not implemented.
+- Project metadata such as role, status, period, and feature list is currently folded into `projects[].description` because the contract still exposes a compact project schema.
+- `GitHub` can appear as a tooling skill or project technology when it is present in project text.
+- Highly visual PDFs may require better upstream text extraction before parsing.
 
 ---
 
@@ -537,11 +578,28 @@ If the Backend and Frontend use `camelCase`, the Backend is responsible for mapp
 
 ## 10. MVP Parser Notes
 
-### During the MVP parser phase:
+### During the MVP parser phase
 
-- Endpoints should return stable response shapes
-- Parser logic can be rule-based and deterministic
-- The goal is to validate API contract and provide usable first-pass parsing
-- OCR, semantic matching, embeddings, or LLM integration are not required yet
+- Endpoints should return stable response shapes.
+- Parser logic is rule-based and deterministic.
+- The goal is to validate the Backend ↔ AI service contract and provide usable first-pass parsing.
+- OCR, semantic matching, embeddings, and LLM-based parsing are not required yet.
+- The deterministic parser implementation should be replaceable without changing the API contract.
 
-The deterministic parser implementation should be replaceable without changing the API contract.
+### Recent parser improvements
+
+The resume parser was updated to improve Vietnamese CV support and reduce project/education parsing errors:
+
+- Added `Học tập` as an education heading.
+- Improved Vietnamese accent normalization for `Đ/đ`.
+- Added location extraction from Vietnamese profile labels such as `Quê quán`.
+- Improved project grouping so feature lines are not split into separate projects.
+- Improved inline project header parsing and project URL preservation.
+- Improved education extraction for multi-line Vietnamese education blocks.
+- Added a regression test for Vietnamese project and education parsing.
+
+### Current test status
+
+```txt
+20 passed
+```
