@@ -17,10 +17,54 @@ ROLE_KEYWORDS = (
     "consultant",
 )
 
+COMPANY_KEYWORDS = (
+    "company",
+    "corporation",
+    "corp",
+    "ltd",
+    "limited",
+    "inc",
+    "labs",
+    "studio",
+    "agency",
+    "startup",
+)
+
+STOP_KEYWORDS = (
+    "education",
+    "language",
+    "languages",
+    "certificate",
+    "certification",
+    "certicate",
+    "hobbies",
+    "references",
+    "personal skill",
+    "honours",
+    "honors",
+    "awards",
+)
+
 
 def _looks_like_role(value: str) -> bool:
     lowered = value.lower()
     return any(keyword in lowered for keyword in ROLE_KEYWORDS)
+
+
+def _looks_like_company(value: str) -> bool:
+    lowered = value.lower()
+    if _looks_like_role(value):
+        return False
+    if extract_date_range(value):
+        return False
+    if any(keyword in lowered for keyword in COMPANY_KEYWORDS):
+        return True
+    return 1 <= len(value.split()) <= 6 and not any(char.isdigit() for char in value)
+
+
+def _is_stop_line(value: str) -> bool:
+    lowered = value.lower()
+    return any(keyword in lowered for keyword in STOP_KEYWORDS)
 
 
 def _dedupe(values: list[str]) -> list[str]:
@@ -76,6 +120,20 @@ def _parse_experience_line(line: str) -> dict:
     }
 
 
+def _parse_stacked_experience_header(company: str, role: str, date_line: str) -> dict:
+    date_range = extract_date_range(date_line)
+    return {
+        "raw": f"{company} | {role} | {date_line}",
+        "company": company,
+        "role": role,
+        "start_date": date_range["start_date"] if date_range else None,
+        "end_date": date_range["end_date"] if date_range else None,
+        "duration_months": date_range["duration_months"] if date_range else None,
+        "responsibilities": [],
+        "technologies": [],
+    }
+
+
 def _is_new_entry(line: str) -> bool:
     if extract_date_range(line) and (_looks_like_role(line) or " at " in line.lower()):
         return True
@@ -88,13 +146,38 @@ def _is_new_entry(line: str) -> bool:
     return _looks_like_role(line) and len(line.split()) <= 8
 
 
+def _clean_lines(text: str) -> list[str]:
+    return [line for line in (strip_list_marker(raw) for raw in (text or "").splitlines()) if line]
+
+
 def extract_experience(text: str) -> list[dict]:
     entries = []
     current = None
+    lines = _clean_lines(text)
+    index = 0
 
-    for raw in (text or "").splitlines():
-        line = strip_list_marker(raw)
-        if not line:
+    while index < len(lines):
+        line = lines[index]
+
+        if _is_stop_line(line):
+            if current:
+                current["technologies"] = _dedupe(current["technologies"])
+                entries.append(current)
+                current = None
+            break
+
+        if (
+            index + 2 < len(lines)
+            and _looks_like_company(line)
+            and _looks_like_role(lines[index + 1])
+            and extract_date_range(lines[index + 2])
+        ):
+            if current:
+                current["technologies"] = _dedupe(current["technologies"])
+                entries.append(current)
+
+            current = _parse_stacked_experience_header(line, lines[index + 1], lines[index + 2])
+            index += 3
             continue
 
         if _is_new_entry(line):
@@ -102,11 +185,14 @@ def extract_experience(text: str) -> list[dict]:
                 current["technologies"] = _dedupe(current["technologies"])
                 entries.append(current)
             current = _parse_experience_line(line)
+            index += 1
             continue
 
         if current:
             current["responsibilities"].append(line)
             current["technologies"].extend(skill["name"] for skill in extract_skills(line))
+
+        index += 1
 
     if current:
         current["technologies"] = _dedupe(current["technologies"])
