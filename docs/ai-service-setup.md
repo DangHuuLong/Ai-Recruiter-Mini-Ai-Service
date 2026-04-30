@@ -4,9 +4,9 @@
 
 This document describes the current setup of the AI service for the AI Recruiter Mini project.
 
-The AI service is a standalone Python service built with FastAPI. At the current stage, the service only contains the base project structure, environment configuration, logging setup, common response schema, health check endpoint, and basic test setup.
+The AI service is a standalone Python service built with FastAPI. It provides deterministic MVP endpoints for health checks, resume parsing, job description parsing, and application scoring.
 
-This document only reflects the current implementation state.
+This document reflects the current implementation state and the latest parser work completed on 2026-04-30.
 
 ---
 
@@ -27,41 +27,25 @@ This document only reflects the current implementation state.
 
 ## 3. Current Folder Structure
 
-```
+```txt
 ai-recruiter-mini-ai-service
 ├── app
 │   ├── api
-│   │   ├── __init__.py
-│   │   └── health.py
 │   ├── core
-│   │   ├── __init__.py
-│   │   ├── config.py
-│   │   └── logging.py
 │   ├── normalizers
-│   │   └── __init__.py
 │   ├── parsers
-│   │   └── __init__.py
+│   │   ├── extractors
+│   │   └── normalizers
 │   ├── schemas
-│   │   ├── __init__.py
-│   │   └── common.py
 │   ├── scorers
-│   │   └── __init__.py
 │   ├── services
-│   │   └── __init__.py
 │   ├── utils
-│   │   └── __init__.py
-│   ├── __init__.py
 │   └── main.py
 ├── docs
-│   └── ai-service-setup.md
 ├── samples
 ├── scripts
-│   └── run-local.ps1
 ├── tests
-│   ├── conftest.py
-│   └── test_health.py
 ├── .env.example
-├── .gitignore
 ├── pytest.ini
 ├── README.md
 └── requirements.txt
@@ -73,33 +57,27 @@ ai-recruiter-mini-ai-service
 
 | Folder | Responsibility |
 | --- | --- |
-| app | Main application source code |
-| app/api | FastAPI route handlers |
-| app/core | Global configuration and logging setup |
-| app/schemas | Shared Pydantic schemas |
-| app/parsers | Placeholder for resume and job description parsing logic |
-| app/normalizers | Placeholder for text and skill normalization logic |
-| app/scorers | Placeholder for CV-JD scoring logic |
-| app/services | Placeholder for service orchestration logic |
-| app/utils | Shared utility functions |
-| tests | Automated tests |
-| samples | Sample input files for later testing |
-| scripts | Local development scripts |
-| docs | Project documentation |
+| `app` | Main application source code |
+| `app/api` | FastAPI route handlers |
+| `app/core` | Global configuration and logging setup |
+| `app/schemas` | Shared Pydantic schemas and parser/scoring contracts |
+| `app/parsers` | Resume/JD parsing orchestration, text readers, section splitting, extractors, and normalizers |
+| `app/normalizers` | Shared text/skill normalization helpers when applicable |
+| `app/scorers` | CV-JD scoring logic |
+| `app/services` | Service orchestration logic |
+| `app/utils` | Shared utility functions |
+| `tests` | Automated tests |
+| `samples` | Sample input files for testing |
+| `scripts` | Local development scripts |
+| `docs` | Project documentation |
 
 ---
 
 ## 5. Environment Configuration
 
-Environment variables are defined in:
+Environment variables are defined in `.env.example`.
 
-```
-.env.example
-```
-
-### Current variables:
-
-```
+```env
 APP_NAME=ai-recruiter-mini-ai-service
 APP_ENV=development
 APP_VERSION=0.1.0
@@ -120,99 +98,37 @@ For local development, create a `.env` file from `.env.example`:
 Copy-Item .env.example .env
 ```
 
-The `.env` file is ignored by Git and should not be committed.
+The `.env` file is ignored by Git and must not be committed.
 
 ---
 
-## 6. Configuration File
+## 6. Configuration and Logging
 
 Configuration is handled in:
 
-```
+```txt
 app/core/config.py
 ```
 
-This file defines the `Settings` class using `pydantic-settings`.
-
-### Current responsibilities:
-
-- Load environment variables from `.env`
-- Provide application name, version, environment, and port
-- Provide logging level
-- Provide AI provider configuration
-- Provide request timeout configuration
-
-The project uses a cached settings function:
-
-```python
-@lru_cache
-def get_settings() -> Settings:
-    return Settings()
-```
-
-This avoids creating a new settings instance repeatedly across the application.
-
----
-
-## 7. Logging Configuration
-
 Logging is configured in:
 
-```
+```txt
 app/core/logging.py
 ```
 
-### Current log format:
-
-```
-timestamp | level | module | message
-```
-
-### Example:
-
-```
-2026-04-25 11:00:00 | INFO | app.main | AI service started
-```
-
-The log level is controlled by:
-
-```
-LOG_LEVEL=INFO
-```
+The project uses cached settings through `get_settings()` to avoid repeatedly constructing configuration objects.
 
 ---
 
-## 8. Common Response Schema
+## 7. Common Response Schema
 
 Common response schemas are defined in:
 
-```
+```txt
 app/schemas/common.py
 ```
 
-### Current schemas:
-
-```python
-class ErrorItem(BaseModel):
-    field: str | None = None
-    message: str
-
-
-class ApiResponse(BaseModel, Generic[T]):
-    success: bool
-    message: str
-    data: T | None = None
-
-
-class ApiErrorResponse(BaseModel):
-    success: bool = False
-    message: str
-    errors: list[ErrorItem] = []
-```
-
-These schemas are used to keep API responses consistent.
-
-### Current success response format:
+Success response format:
 
 ```json
 {
@@ -222,7 +138,7 @@ These schemas are used to keep API responses consistent.
 }
 ```
 
-### Current error response format:
+Error response format:
 
 ```json
 {
@@ -230,7 +146,7 @@ These schemas are used to keep API responses consistent.
   "message": "Invalid request",
   "errors": [
     {
-      "field": "rawText",
+      "field": "raw_text",
       "message": "Field is required"
     }
   ]
@@ -239,15 +155,15 @@ These schemas are used to keep API responses consistent.
 
 ---
 
-## 9. FastAPI Application Entry Point
+## 8. FastAPI Application Entry Point
 
 The main FastAPI app is defined in:
 
-```
+```txt
 app/main.py
 ```
 
-### Current responsibilities:
+Responsibilities:
 
 - Configure logging
 - Load application settings
@@ -255,39 +171,24 @@ app/main.py
 - Register API routers
 - Handle startup and shutdown logging through FastAPI lifespan
 
-The app currently registers:
+Local docs:
 
-- `GET /health`
-
-FastAPI documentation is available at:
-
-```
+```txt
 http://localhost:8000/docs
-```
-
-OpenAPI JSON is available at:
-
-```
 http://localhost:8000/openapi.json
 ```
 
 ---
 
-## 10. Health Check Endpoint
+## 9. Health Check Endpoint
 
-The health check route is defined in:
+Endpoint:
 
-```
-app/api/health.py
-```
-
-### Endpoint:
-
-```
+```txt
 GET /health
 ```
 
-### Expected response:
+Expected response:
 
 ```json
 {
@@ -303,31 +204,29 @@ GET /health
 }
 ```
 
-This endpoint is used to verify that the AI service is running.
-
 ---
 
-## 11. Local Setup
+## 10. Local Setup
 
-### Create virtual environment:
+Create virtual environment:
 
 ```bash
 python -m venv .venv
 ```
 
-### Activate virtual environment:
+Activate on Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-### Install dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the service:
+Run service:
 
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
@@ -339,29 +238,17 @@ Or run with the local script:
 .\scripts\run-local.ps1
 ```
 
-### Health check URL:
-
-```
-http://localhost:8000/health
-```
-
-### Swagger URL:
-
-```
-http://localhost:8000/docs
-```
-
 ---
 
-## 12. Test Configuration
+## 11. Test Configuration
 
 Pytest is configured in:
 
-```
+```txt
 pytest.ini
 ```
 
-### Current configuration
+Current configuration:
 
 ```ini
 [pytest]
@@ -369,121 +256,35 @@ pythonpath = .
 testpaths = tests
 ```
 
-The project also includes:
-
-```
-tests/conftest.py
-```
-
-This file ensures that the project root is added to `sys.path` during test execution, which helps avoid import issues on Windows.
-
-### How tests are discovered
-
-Running:
+Useful commands:
 
 ```bash
 python -m pytest
-```
-
-makes pytest collect tests from the `tests` folder. Test files follow the `test_*.py` naming convention, and test functions should start with `test_`.
-
-Examples:
-
-```txt
-tests/test_parse_resume.py
-def test_parse_resume_returns_parsed_resume_data(): ...
-```
-
-### Useful test commands
-
-Run all tests:
-
-```bash
-python -m pytest
-```
-
-Run only resume parser tests:
-
-```bash
 python -m pytest tests/test_parse_resume.py
-```
-
-Run one specific test:
-
-```bash
-python -m pytest tests/test_parse_resume.py::test_parse_resume_handles_vietnamese_projects_and_education_blocks
-```
-
-Run with verbose output:
-
-```bash
 python -m pytest -vv
 ```
 
-### Current test files
+Current test files:
 
 | File | Coverage |
 | --- | --- |
 | `tests/test_health.py` | Health endpoint |
-| `tests/test_parse_resume.py` | Resume parsing endpoint, structured English resumes, fallback resumes without clear headers, Vietnamese headers, Vietnamese project/education blocks |
+| `tests/test_parse_resume.py` | Resume parsing endpoint and regression cases |
 | `tests/test_parse_job_description.py` | Job description parsing endpoint |
 | `tests/test_score_application.py` | Application scoring endpoint |
 | `tests/test_schemas.py` | Pydantic schema defaults and validation |
 | `tests/test_file_readers.py` | PDF/DOCX readers with mocked dependencies |
 | `tests/test_parser_utilities.py` | Duration normalization and section splitting |
 
-### Current test result
+---
+
+## 12. Schema Layer
+
+The schema layer defines structured data contracts used by the AI service.
+
+Main data flow:
 
 ```txt
-20 passed
-```
-
----
-
-## 13. Git Ignore Rules
-
-The `.gitignore` file excludes local and generated files such as:
-
-```
-.venv/
-.env
-__pycache__/
-.pytest_cache/
-*.log
-.vscode/
-.idea/
-build/
-dist/
-```
-
-### Important rule:
-
-```
-.env must not be committed.
-```
-
-Only `.env.example` should be committed.
-
----
-
-## 14. Schema Layer
-
-The schema layer defines the structured data contracts used by the AI service.
-
-Schemas are used to represent data after raw inputs have been extracted and normalized. They help ensure that the AI service returns predictable objects to the Backend instead of uncontrolled or inconsistent data.
-
-### Current schema groups:
-
-| Schema group | Purpose |
-| --- | --- |
-| Resume schemas | Represent parsed resume data after extracting information from a CV |
-| Job description schemas | Represent parsed job description data after analyzing JD text |
-| Evaluation schemas | Represent the input and output structure for CV-JD scoring |
-| Common schemas | Represent shared API response and error response formats |
-
-### Main data flow:
-
-```
 Raw resume text / raw JD text
   ↓
 Parse and normalize
@@ -495,43 +296,18 @@ ScoreApplicationRequest
 EvaluationResult
 ```
 
-### Schema details:
+Schema groups:
 
-- The resume schema groups information such as personal details, skills, education, experience, projects, certifications, achievements, and languages.
-- The job description schema groups information such as title, seniority, responsibilities, requirements, required skills, preferred skills, experience requirement, education requirement, and domain keywords.
-- The evaluation schema groups scoring output such as overall score, score breakdown, matched or missing skills, explanation, skill gap summary, interview questions, and evidence mapping.
-- These schemas are not database models. They are API-level objects used by the AI service and Backend to exchange structured data consistently.
-
----
-
-## 15. Schema Testing
-
-Schema tests verify that the main data objects can be created correctly and safely.
-
-### Purpose:
-
-The purpose of these tests is to make sure that:
-
-- Schema objects can be initialized with valid default values
-- List fields default to empty lists instead of `None`
-- Required fields are enforced where needed
-- The schema contract is stable before building mock parse and scoring endpoints
-
-### Run all tests:
-
-```bash
-python -m pytest
-```
-
-The schema tests are part of the basic safety check before adding parser, normalizer, scorer, and API endpoint logic.
+| Schema group | Purpose |
+| --- | --- |
+| Resume schemas | Parsed CV data |
+| Job description schemas | Parsed JD data |
+| Evaluation schemas | CV-JD scoring input/output |
+| Common schemas | Shared API response and error formats |
 
 ---
 
-## 16. Deterministic MVP API Endpoints
-
-The AI service provides deterministic MVP endpoints for parsing and scoring.
-
-These endpoints are used to validate the contract between the Backend and the AI service before LLM, embedding-based, or OCR-based logic is introduced.
+## 13. Deterministic MVP API Endpoints
 
 Current endpoints:
 
@@ -543,62 +319,14 @@ Current endpoints:
 
 Implementation notes:
 
-- Resume parsing is no longer mock-only. It uses deterministic rule-based extraction.
+- Resume parsing is deterministic and rule-based.
 - Job description parsing and scoring still use lightweight deterministic MVP logic.
 - The API response shape remains stable and schema-compatible.
-- The current service does not use a real LLM, embeddings, OCR, or external AI provider yet.
+- The service does not use a real LLM, embeddings, OCR, or external AI provider yet.
 
 ---
 
-## 17. Parsed Resume Contract Preparation
-
-This section documents the preparation work for the parsed resume contract.
-
-### Purpose
-
-Define a stable `ParsedResumeData` response shape before implementing real CV parsing.
-
-At this stage, the AI service uses deterministic rule-based parsing logic. PDF/DOCX reading, text normalization, section splitting, and structured resume extraction are implemented for MVP text-based CV formats.
-
-### Updated files
-
-| File | Purpose |
-| --- | --- |
-| `app/schemas/resume.py` | Defines `ParsedResumeData` and related resume schemas |
-| `app/parsers/resume_parser.py` | Orchestrates deterministic resume parsing and controlled fallback logic |
-| `app/parsers/normalizer.py` | Normalizes whitespace and Vietnamese accents, including `Đ/đ` handling |
-| `app/parsers/section_splitter.py` | Splits resume text into sections using English and Vietnamese headings |
-| `app/parsers/pdf_reader.py` | Extracts text from text-based PDF files |
-| `app/parsers/docx_reader.py` | Extracts text from DOCX paragraphs and tables |
-| `app/parsers/extractors/education.py` | Extracts institution, degree, field, year range, GPA, and wrapped education blocks |
-| `app/parsers/extractors/projects_certifications.py` | Extracts project blocks, inline project headers, URLs, technologies, and certification data |
-| `app/parsers/extractors/*` | Extracts personal information, skills, experience, achievements, links, and languages |
-| `app/parsers/normalizers/*` | Normalizes skills, dates, and durations |
-| `samples/sample_resume.json` | Provides sample parsed resume output |
-| `tests/test_schemas.py` | Tests resume schema defaults and validation |
-| `tests/test_parse_resume.py` | Tests resume parsing, including Vietnamese project and education regression cases |
-| `tests/test_file_readers.py` | Tests PDF and DOCX reader behavior |
-| `tests/test_parser_utilities.py` | Tests section and duration utilities |
-
-### Contract notes
-
-- JSON payloads use `snake_case`.
-- List fields default to empty lists.
-- `personal` defaults to an empty personal info object.
-- `skills[].normalized_name` is required.
-- Parser output must match `ParsedResumeData`.
-
-### Test result
-
-Current test result:
-
-```txt
-20 passed
-```
-
----
-
-## 18. Resume Parser Implementation Status
+## 14. Resume Parser Implementation Status
 
 The resume parser is now a deterministic MVP parser, not a mock-only parser.
 
@@ -618,23 +346,56 @@ Implemented parser capabilities:
 - Certification, achievement, and language extraction
 - `ParsedResumeData` schema-compatible output
 
-Current parser tests cover:
-
-- Short raw-text resume input
-- Structured multi-section English resume input
-- Resume input without clear section headers
-- Basic Vietnamese section headers
-- Vietnamese profile location extraction
-- Vietnamese project block parsing with feature lines that should remain in the same project
-- Vietnamese education block parsing with `Học tập`, wrapped field text, institution, field, start year, and GPA
-- PDF/DOCX reader behavior with mocked parser dependencies
-- Duration and section splitter utility behavior
-
 Known MVP limits:
 
 - The parser is rule-based and deterministic.
 - OCR and scanned CV handling are not implemented.
-- Highly visual or unusual CV layouts may still require better upstream text extraction.
+- Highly visual or unusual CV layouts may still require better upstream text extraction from Backend.
 - Skill coverage depends on the local skill catalog and aliases.
 - Project metadata such as period, role, status, and feature list is currently folded into `projects[].description` because the project schema remains compact.
 - Tooling terms such as `GitHub` may appear in skills or project technologies when present in the source text.
+
+---
+
+## 15. Work Completed on 2026-04-30
+
+The following work was completed to improve frontend developer CV parsing quality and align with Backend PDF hyperlink extraction.
+
+### Resume personal link parsing
+
+- Normalized GitHub repository URLs into candidate profile URLs for `personal.github_url`.
+- Added candidate-owned GitHub profile selection when multiple repository owners appear in project links.
+- Preserved GitHub repository URLs separately in `projects[].url`.
+- Improved portfolio URL detection for domains such as `github.io` and `super.site`.
+- Fixed GitHub Pages portfolio handling so URLs such as `https://nhkkhaii.github.io/portfolio/` are not incorrectly reduced to `https://github.io/portfolio/`.
+
+### Project extraction improvements
+
+- Added support for project titles followed immediately by URL lines.
+- Preserved project repository URLs for each project.
+- Prevented URL-only lines from being copied into the beginning of `projects[].description`.
+- Improved project grouping for frontend developer PDF text layouts.
+- Added regression coverage for the `Ninh Hoang Khai` CV case with four projects:
+  - `Personal Portfolio`
+  - `KaiSneaker – E-commerce Website`
+  - `CinemaNHK – Movie Ticket Booking System`
+  - `Project Management – Construction Management System`
+
+### Experience and layout robustness
+
+- Improved stacked experience parsing for company → role → date layouts.
+- Improved fallback parsing for wrapped PDF lines while avoiding false experience entries with missing company names.
+- Added handling for page-break/layout noise in parsed project descriptions where possible.
+
+### Test coverage
+
+- Added regression tests for personal link normalization.
+- Added regression tests for candidate-owned GitHub profile matching.
+- Added regression tests for project title + URL layouts.
+- Added regression tests to ensure project descriptions do not start with extracted URLs.
+
+Run the full suite after changes:
+
+```bash
+python -m pytest
+```

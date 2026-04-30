@@ -6,9 +6,9 @@ This document defines the API contract between the Backend service and the AI se
 
 The AI service is an internal service. It is not called directly by the Frontend.
 
-### Communication flow:
+### Communication flow
 
-```
+```txt
 Frontend
   ↓
 Backend API
@@ -30,15 +30,15 @@ At the current stage, the AI service provides deterministic MVP endpoints. Resum
 
 ## 2. Base URL
 
-### Local development base URL:
+### Local development base URL
 
-```
+```txt
 http://localhost:8000
 ```
 
-### Backend environment variable:
+### Backend environment variable
 
-```
+```txt
 AI_SERVICE_URL=http://localhost:8000
 ```
 
@@ -46,7 +46,7 @@ AI_SERVICE_URL=http://localhost:8000
 
 ## 3. Response Format
 
-### Success response format:
+### Success response format
 
 ```json
 {
@@ -56,7 +56,7 @@ AI_SERVICE_URL=http://localhost:8000
 }
 ```
 
-### Error response format:
+### Error response format
 
 ```json
 {
@@ -77,7 +77,7 @@ AI_SERVICE_URL=http://localhost:8000
 
 ### Endpoint
 
-```
+```txt
 GET /health
 ```
 
@@ -107,7 +107,7 @@ Used by the Backend to check whether the AI service is running.
 
 ### Endpoint
 
-```
+```txt
 POST /parse/resume
 ```
 
@@ -185,7 +185,7 @@ The current implementation is a deterministic MVP parser. It uses rule-based tex
 - List fields such as `skills`, `education`, `experience`, `projects`, `certifications`, `achievements`, and `languages` default to empty lists.
 - The parser may return `null` for unknown optional values.
 
-### Main fields
+### Main Fields
 
 - `personal` — name, email, phone, location, LinkedIn, GitHub, portfolio
 - `summary` — profile summary or objective when a clear summary section exists
@@ -197,33 +197,54 @@ The current implementation is a deterministic MVP parser. It uses rule-based tex
 - `achievements`
 - `languages`
 
-### Current Resume Parser Behavior
+---
 
-The MVP resume parser now supports:
+## 6. Current Resume Parser Behavior
+
+The MVP resume parser currently supports:
 
 - English and basic Vietnamese section headings, including `Học vấn`, `Học tập`, `Kỹ năng`, `Kinh nghiệm`, `Dự án`, and `Ngôn ngữ`.
 - Vietnamese accent normalization that preserves `Đ/đ` as `D/d` for keyword matching.
-- Personal location extraction from labels such as `location`, `address`, `địa chỉ`, `quê quán`, and common city names.
+- Personal information extraction for full name, email, phone, location, LinkedIn, GitHub, and portfolio.
+- GitHub profile normalization from repository URLs, for example `https://github.com/nhkkhaii/QLDA` can produce `https://github.com/nhkkhaii` for `personal.github_url`.
+- Candidate-owned GitHub profile selection when multiple repository owners appear in project links.
+- Portfolio URL detection for domains such as `github.io`, `super.site`, `vercel.app`, `netlify.app`, `.dev`, `.me`, `.io`, and `.app`.
 - Education block extraction across wrapped lines, including institution, degree approximation, field of study, start year, end year, GPA inside description, and Vietnamese student-status text such as `Sinh viên năm 3`.
-- Project block extraction using field-aware grouping. Project details such as `Link Github`, `Công nghệ sử dụng`, `Mô tả chức năng`, `Vai trò`, `Customer`, `Admin`, `Auth`, and `Trạng thái` are grouped into the current project description instead of being treated as separate projects.
-- Inline project header parsing, for example `AI Recruiter - CV screening API ... https://github.com/...`.
-- Controlled fallback experience parsing for resumes without explicit section headers, while avoiding false positives from simple profile titles such as `Developer`.
+- Stacked experience parsing for company → role → date layouts and company/role/date layouts with wrapped detail lines.
+- Date normalization for common separators and flexible resume date formats.
+- Project block extraction using field-aware grouping.
+- Project titles followed immediately by URL lines, for example:
 
-### Current MVP Limits
+```txt
+Personal Portfolio
+https://nhkkhaii.github.io/portfolio/
+Frontend Developer
+Technologies: ReactJS, Bootstrap
+```
 
-- The parser is deterministic and rule-based, so unusual layouts can still require new heuristics.
-- OCR and scanned CV handling are not implemented.
-- Project metadata such as role, status, period, and feature list is currently folded into `projects[].description` because the contract still exposes a compact project schema.
-- `GitHub` can appear as a tooling skill or project technology when it is present in project text.
-- Highly visual PDFs may require better upstream text extraction before parsing.
+- Project repository URL assignment into `projects[].url` without keeping URL-only lines at the start of `projects[].description`.
+- GitHub repository URL preservation for project links, for example `https://github.com/nhkkhaii/CinemaNHK`.
+- Project details such as `Link Github`, `Công nghệ sử dụng`, `Mô tả chức năng`, `Vai trò`, `Customer`, `Admin`, `Auth`, and `Trạng thái` are grouped into the current project description instead of being treated as separate projects.
+- Certification, achievement, and language extraction with support for section-specific fallback behavior.
 
 ---
 
-## 6. Parse Job Description
+## 7. Current MVP Limits
+
+- The parser is deterministic and rule-based, so unusual layouts can still require new heuristics.
+- OCR and scanned CV handling are not implemented.
+- Highly visual PDFs depend on the Backend's raw text extraction quality before parsing.
+- Project metadata such as role, status, period, and feature list is currently folded into `projects[].description` because the contract still exposes a compact project schema.
+- `GitHub` can appear as a tooling skill or project technology when it is present in project text.
+- Summary extraction may still include extra content if the CV layout does not expose clear section boundaries.
+
+---
+
+## 8. Parse Job Description
 
 ### Endpoint
 
-```
+```txt
 POST /parse/job-description
 ```
 
@@ -249,52 +270,26 @@ Parses raw job description text into structured job description data.
     "title": "Backend Developer",
     "seniority": "junior",
     "employment_type": "full-time",
-    "responsibilities": [
-      "Develop and maintain backend APIs"
-    ],
-    "requirements": [
-      "Experience with Python and FastAPI"
-    ],
-    "nice_to_have": [
-      "Docker experience"
-    ],
+    "responsibilities": ["Develop and maintain backend APIs"],
+    "requirements": ["Experience with Python and FastAPI"],
+    "nice_to_have": ["Docker experience"],
     "required_skills": [
       {
         "name": "Python",
         "normalized_name": "python",
         "is_core": true,
         "weight_hint": 1.0
-      },
-      {
-        "name": "FastAPI",
-        "normalized_name": "fastapi",
-        "is_core": true,
-        "weight_hint": 1.0
       }
     ],
-    "preferred_skills": [
-      {
-        "name": "Docker",
-        "normalized_name": "docker",
-        "is_core": false,
-        "weight_hint": 0.5
-      }
-    ],
+    "preferred_skills": [],
     "min_experience_years": 1,
     "education_requirement": null,
-    "domain_keywords": [
-      "backend",
-      "rest api"
-    ]
+    "domain_keywords": ["backend", "rest api"]
   }
 }
 ```
 
-### Data Contract
-
-- `data` must match the `ParsedJobDescriptionData` schema
-
-### Main fields:
+### Main Fields
 
 - `title`
 - `seniority`
@@ -310,11 +305,11 @@ Parses raw job description text into structured job description data.
 
 ---
 
-## 7. Score Application
+## 9. Score Application
 
 ### Endpoint
 
-```
+```txt
 POST /score/application
 ```
 
@@ -328,117 +323,6 @@ The Backend should call this endpoint after it already has:
 - Parsed job description data
 - Scoring criteria configuration
 
-### Request Body
-
-```json
-{
-  "resume": {
-    "personal": {
-      "full_name": "Nguyen Van A",
-      "email": null,
-      "phone": null,
-      "location": null,
-      "linkedin_url": null,
-      "github_url": null,
-      "portfolio_url": null
-    },
-    "summary": "Mock parsed resume profile.",
-    "skills": [
-      {
-        "name": "Python",
-        "normalized_name": "python",
-        "category": "backend",
-        "evidence": "Mentioned in resume text"
-      },
-      {
-        "name": "FastAPI",
-        "normalized_name": "fastapi",
-        "category": "backend",
-        "evidence": "Mentioned in resume text"
-      }
-    ],
-    "education": [],
-    "experience": [],
-    "projects": [],
-    "certifications": [],
-    "achievements": [],
-    "languages": []
-  },
-  "job_description": {
-    "title": "Backend Developer",
-    "seniority": "junior",
-    "employment_type": "full-time",
-    "responsibilities": [
-      "Develop and maintain backend APIs"
-    ],
-    "requirements": [
-      "Experience with Python and FastAPI"
-    ],
-    "nice_to_have": [
-      "Docker experience"
-    ],
-    "required_skills": [
-      {
-        "name": "Python",
-        "normalized_name": "python",
-        "is_core": true,
-        "weight_hint": 1.0
-      },
-      {
-        "name": "FastAPI",
-        "normalized_name": "fastapi",
-        "is_core": true,
-        "weight_hint": 1.0
-      },
-      {
-        "name": "PostgreSQL",
-        "normalized_name": "postgresql",
-        "is_core": true,
-        "weight_hint": 0.8
-      }
-    ],
-    "preferred_skills": [
-      {
-        "name": "Docker",
-        "normalized_name": "docker",
-        "is_core": false,
-        "weight_hint": 0.5
-      }
-    ],
-    "min_experience_years": 1,
-    "education_requirement": null,
-    "domain_keywords": [
-      "backend",
-      "rest api"
-    ]
-  },
-  "config": {
-    "criteria": [
-      {
-        "criterion": "SKILLS_MATCH",
-        "weight": 0.35
-      },
-      {
-        "criterion": "EXPERIENCE_RELEVANCE",
-        "weight": 0.3
-      },
-      {
-        "criterion": "PROJECT_RELEVANCE",
-        "weight": 0.15
-      },
-      {
-        "criterion": "EDUCATION_CERTIFICATION",
-        "weight": 0.1
-      },
-      {
-        "criterion": "KEYWORD_DOMAIN_ALIGNMENT",
-        "weight": 0.1
-      }
-    ]
-  }
-}
-```
-
 ### Response Body
 
 ```json
@@ -448,66 +332,17 @@ The Backend should call this endpoint after it already has:
   "data": {
     "overall_score": 75.0,
     "summary": "The candidate is a potential fit for the role.",
-    "criteria": [
-      {
-        "criterion": "SKILLS_MATCH",
-        "weight": 0.35,
-        "score_normalized": 0.75,
-        "reason": "The candidate matches several required backend skills.",
-        "evidence": [
-          "Python found in resume skills",
-          "FastAPI found in resume skills"
-        ]
-      }
-    ],
-    "skills": [
-      {
-        "skill_name": "Python",
-        "normalized_skill_name": "python",
-        "type": "MATCHED",
-        "importance": "HIGH",
-        "evidence": "Python found in resume skills",
-        "note": null
-      },
-      {
-        "skill_name": "PostgreSQL",
-        "normalized_skill_name": "postgresql",
-        "type": "MISSING",
-        "importance": "HIGH",
-        "evidence": null,
-        "note": "Required by the job description but not found in resume skills"
-      }
-    ],
+    "criteria": [],
+    "skills": [],
     "explanation": "The candidate matches the main backend direction but is missing some required database evidence.",
     "skill_gap_summary": "Main missing skill: PostgreSQL.",
-    "interview_questions": [
-      {
-        "question": "Can you describe how you used FastAPI in a real backend project?",
-        "category": "backend",
-        "linked_skill": "FastAPI",
-        "difficulty": "MEDIUM",
-        "rationale": "FastAPI is one of the required skills for this role.",
-        "display_order": 1
-      }
-    ],
-    "evidence_map": {
-      "skills": [
-        "Python found in resume skills",
-        "FastAPI found in resume skills"
-      ],
-      "missing_skills": [
-        "PostgreSQL required by JD but not found in resume"
-      ]
-    }
+    "interview_questions": [],
+    "evidence_map": {}
   }
 }
 ```
 
-### Data Contract
-
-- `data` must match the `EvaluationResult` schema
-
-### Main fields:
+### Main Fields
 
 - `overall_score`
 - `summary`
@@ -520,18 +355,18 @@ The Backend should call this endpoint after it already has:
 
 ---
 
-## 8. Backend Integration Notes
+## 10. Backend Integration Notes
 
 The Backend should call the AI service through an internal `AiService`.
 
-### Expected Backend methods:
+Expected Backend methods:
 
 - `checkHealth()`
 - `parseResume()`
 - `parseJobDescription()`
 - `scoreApplication()`
 
-### Expected mapping:
+Expected mapping:
 
 | Backend method | AI service endpoint |
 | --- | --- |
@@ -540,24 +375,22 @@ The Backend should call the AI service through an internal `AiService`.
 | `parseJobDescription()` | `POST /parse/job-description` |
 | `scoreApplication()` | `POST /score/application` |
 
-### The Backend should handle:
+The Backend should handle:
 
 - AI service timeout
 - AI service unavailable
 - Invalid AI service response
 - AI service error response
 
-### Important:
-
 The Frontend must not call the AI service directly.
 
 ---
 
-## 9. Naming Convention
+## 11. Naming Convention
 
 The current AI service contract uses `snake_case` in JSON payloads.
 
-### Examples:
+Examples:
 
 - `raw_text`
 - `full_name`
@@ -568,7 +401,7 @@ The current AI service contract uses `snake_case` in JSON payloads.
 
 If the Backend and Frontend use `camelCase`, the Backend is responsible for mapping AI service fields into the API response format expected by the Frontend.
 
-### Conversion examples:
+Conversion examples:
 
 - `overall_score` → `overallScore`
 - `skill_gap_summary` → `skillGapSummary`
@@ -576,9 +409,9 @@ If the Backend and Frontend use `camelCase`, the Backend is responsible for mapp
 
 ---
 
-## 10. MVP Parser Notes
+## 12. MVP Parser Notes
 
-### During the MVP parser phase
+During the MVP parser phase:
 
 - Endpoints should return stable response shapes.
 - Parser logic is rule-based and deterministic.
@@ -588,18 +421,29 @@ If the Backend and Frontend use `camelCase`, the Backend is responsible for mapp
 
 ### Recent parser improvements
 
-The resume parser was updated to improve Vietnamese CV support and reduce project/education parsing errors:
+The latest parser updates improved real CV support for frontend/backend developer resumes:
 
-- Added `Học tập` as an education heading.
-- Improved Vietnamese accent normalization for `Đ/đ`.
-- Added location extraction from Vietnamese profile labels such as `Quê quán`.
-- Improved project grouping so feature lines are not split into separate projects.
-- Improved inline project header parsing and project URL preservation.
-- Improved education extraction for multi-line Vietnamese education blocks.
-- Added a regression test for Vietnamese project and education parsing.
+- Better stacked experience extraction from two-column PDF text layouts.
+- Better project recovery when `Projects` appears near `Career History` in extracted PDF text.
+- Better project URL assignment and preservation.
+- Better GitHub and portfolio personal link normalization.
+- Better support for GitHub Pages portfolio URLs and repository URLs.
+- Better handling of project titles followed by URL lines.
+- Cleaner project descriptions by removing URL-only lines after extracting `projects[].url`.
+- Additional regression tests for frontend developer CV layouts and hyperlink/project URL cases.
 
 ### Current test status
 
-```txt
-20 passed
+Run tests with:
+
+```bash
+python -m pytest
 ```
+
+The latest local target after these parser updates is:
+
+```txt
+20+ tests passing
+```
+
+If new parser tests are added, update this count after running the full suite.
