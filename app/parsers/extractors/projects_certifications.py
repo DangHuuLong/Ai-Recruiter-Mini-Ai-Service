@@ -270,7 +270,7 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
 
     if not current:
         return True
-    
+
     if next_lines and _has_strong_project_header_context(next_lines[0]):
         return True
 
@@ -425,7 +425,7 @@ def extract_projects(text: str) -> list[dict]:
     return projects
 
 
-def extract_certifications(text: str) -> list[dict]:
+def extract_certifications(text: str, *, allow_year_only: bool = False) -> list[dict]:
     certs = []
     for raw in (text or "").splitlines():
         line = strip_list_marker(raw)
@@ -436,7 +436,7 @@ def extract_certifications(text: str) -> list[dict]:
         is_cert_line = any(keyword in lowered for keyword in ["certificat", "certified", "certificate", "certicate", "chung chi"])
         has_year = bool(_extract_year(line))
 
-        if is_cert_line or has_year:
+        if is_cert_line or (allow_year_only and has_year):
             url_match = _extract_url_match(line)
             name = line.replace(url_match.group(0), "") if url_match else line
             certs.append(
@@ -469,6 +469,12 @@ def _split_inline_project_header(line: str) -> tuple[str, str | None]:
     date_match = DATE_RANGE_RE.search(clean)
     if date_match:
         name = clean[: date_match.start()].strip(" -|,")
+        if name and len(name.split()) <= 8:
+            return name, None
+
+    date_start_match = re.search(r"\s+(?:19|20)\d{2}(?:[/.-]\d{1,2})?\b", clean)
+    if date_start_match:
+        name = clean[: date_start_match.start()].strip(" -|,")
         if name and len(name.split()) <= 8:
             return name, None
 
