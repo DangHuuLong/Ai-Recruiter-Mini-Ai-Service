@@ -23,6 +23,8 @@ SINGLE_DATE_RE = re.compile(
     re.IGNORECASE,
 )
 
+URL_ONLY_RE = re.compile(r"^(?:https?://)?(?:www\.)?[\w.-]+\.[a-z]{2,}(?:/[\w\-./?=#%&+]*)?/?$", re.IGNORECASE)
+
 ROLE_LINE_TITLES = {
     "backend developer",
     "developer",
@@ -186,6 +188,10 @@ def _is_feature_name(line: str) -> bool:
     return any(normalized.startswith(prefix) for prefix in FEATURE_STARTERS)
 
 
+def _is_url_only_line(line: str) -> bool:
+    return bool(URL_ONLY_RE.fullmatch(strip_list_marker(line).strip()))
+
+
 def _is_role_line(line: str) -> bool:
     return _normalize_title(_strip_date_suffix(strip_list_marker(line).strip())) in ROLE_LINE_TITLES
 
@@ -278,12 +284,18 @@ def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
         return False
 
     first = strip_accents(strip_list_marker(meaningful_lines[0])).lower()
+    if _is_url_only_line(meaningful_lines[0]):
+        return True
+
     if any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS):
         return True
 
-    # Common CV layout: project name, role line, Technologies, date, Description.
+    # Common CV layout: project name, optional URL, role line, Technologies, date, Description.
     if _is_role_line(meaningful_lines[0]):
         return _has_project_context(meaningful_lines[1:])
+
+    if len(meaningful_lines) >= 2 and _is_url_only_line(meaningful_lines[0]) and _is_role_line(meaningful_lines[1]):
+        return _has_project_context(meaningful_lines[2:])
 
     return False
 
@@ -395,7 +407,7 @@ def _clean_project_lines(lines: list[str]) -> list[str]:
             skipping_layout_noise = True
             continue
 
-        if skipping_layout_noise and not (_is_project_detail_line(line) or _is_dated_project_title(line)):
+        if skipping_layout_noise and not (_is_project_detail_line(line) or _is_dated_project_title(line) or _is_url_only_line(line)):
             continue
 
         skipping_layout_noise = False
