@@ -312,10 +312,34 @@ def _extract_experience_from_unsectioned_text(text: str) -> str:
 
 def _extract_project_tail_from_text(text: str) -> str:
     lines = split_lines(text)
+    tail_lines = []
+    collecting = False
+
     for index, line in enumerate(lines):
         normalized = strip_accents(line).lower()
-        if re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema)\b", normalized) and index + 1 < len(lines):
-            next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
-            if any(token in next_lines for token in ["position", "role", "teamsize", "description", "technologies", "tech stack", "key contributions", "key responsibilities"]):
-                return "\n".join(lines[index:])
-    return ""
+        next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
+
+        looks_like_project_start = (
+            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema)\b", normalized)
+            and any(
+                token in next_lines
+                for token in [
+                    "position",
+                    "role",
+                    "teamsize",
+                    "description",
+                    "technologies",
+                    "tech stack",
+                    "key contributions",
+                    "key responsibilities",
+                ]
+            )
+        )
+
+        if looks_like_project_start:
+            collecting = True
+
+        if collecting:
+            tail_lines.append(line)
+
+    return "\n".join(tail_lines)
