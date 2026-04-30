@@ -293,7 +293,7 @@ Desktop construction project management application.
     assert response.status_code == 200
     data = response.json()["data"]
 
-    assert data["personal"]["github_url"] == "https://github.com/ThueCode"
+    assert data["personal"]["github_url"] == "https://github.com/nhkkhaii"
     assert data["personal"]["portfolio_url"] == "https://nhkkhaii.super.site/"
 
     project_urls = {project["url"] for project in data["projects"]}
