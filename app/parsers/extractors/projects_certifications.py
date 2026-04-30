@@ -236,6 +236,15 @@ def _looks_like_project_title(line: str) -> bool:
     return 1 <= word_count <= 8
 
 
+def _has_dated_project_title(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    if not DATE_RANGE_RE.search(clean):
+        return False
+
+    title = _strip_date_suffix(clean)
+    return title != clean and _looks_like_project_title(title)
+
+
 def _has_strong_project_header_context(line: str) -> bool:
     normalized = _normalize_key(line)
 
@@ -278,6 +287,9 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
         return False
 
     if not current:
+        return True
+
+    if _has_dated_project_title(clean):
         return True
 
     if next_lines and _has_strong_project_header_context(next_lines[0]):
