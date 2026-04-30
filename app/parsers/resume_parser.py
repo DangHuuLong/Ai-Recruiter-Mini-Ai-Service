@@ -52,6 +52,10 @@ EMPTY_LOCATION_VALUES = {
 PROJECT_RECOVERY_KEYWORDS = (
     "app",
     "application",
+    "booking",
+    "cinema",
+    "commerce",
+    "construction",
     "e-commerce",
     "ecommerce",
     "management",
@@ -60,9 +64,10 @@ PROJECT_RECOVERY_KEYWORDS = (
     "portal",
     "project",
     "recruiter",
-    "sneaker",
-    "cinema",
+    "shop",
     "site",
+    "sneaker",
+    "store",
     "system",
     "website",
 )
@@ -364,6 +369,19 @@ def _projects_source(sections: dict[str, str]) -> str:
     )
 
 
+def _looks_like_project_section_start(lines: list[str]) -> bool:
+    if not lines:
+        return False
+
+    first = _normalize_name(lines[0])
+    rest = "\n".join(_normalize_name(line) for line in lines[1:8])
+
+    if any(keyword in first for keyword in PROJECT_RECOVERY_KEYWORDS):
+        return True
+
+    return any(token in rest for token in PROJECT_RECOVERY_CONTEXT)
+
+
 def _looks_like_misplaced_experience(lines: list[str]) -> bool:
     if not lines:
         return False
@@ -374,6 +392,12 @@ def _looks_like_misplaced_experience(lines: list[str]) -> bool:
 
     if any(token in first for token in ["career history", "company", "corporation"]):
         return True
+
+    # Do not treat normal project sections as misplaced experience just because
+    # their second line is a project role such as "Frontend Developer".
+    if _looks_like_project_section_start(lines):
+        return False
+
     if any(token in first for token in ["developer", "engineer", "manager"]):
         return True
     if any(token in second for token in ["developer", "engineer", "manager"]):
@@ -465,7 +489,7 @@ def _extract_project_tail_from_text(text: str) -> str:
         next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
 
         looks_like_project_start = (
-            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema)\b", normalized)
+            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction)\b", normalized)
             and any(
                 token in next_lines
                 for token in [
