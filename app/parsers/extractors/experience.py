@@ -114,6 +114,13 @@ def _is_stop_line(value: str) -> bool:
     return _normalize(value) in STOP_KEYWORDS
 
 
+def _is_achievement_heading(value: str) -> bool:
+    normalized = _normalize(value)
+    return normalized in {"key achievements", "achievements", "achievement"} or normalized.startswith(
+        "key achievement"
+    )
+
+
 def _has_project_keyword(value: str) -> bool:
     lowered = strip_accents(value or "").lower()
     return any(keyword in lowered for keyword in PROJECT_TITLE_KEYWORDS)
@@ -196,7 +203,17 @@ def _parse_stacked_experience_header(company: str, role: str, date_line: str) ->
     }
 
 
-def _is_new_entry(line: str) -> bool:
+def _is_weak_role_fragment(line: str) -> bool:
+    if not _looks_like_role(line):
+        return False
+    if extract_date_range(line) or parse_explicit_duration_months(line):
+        return False
+    if " at " in line.lower() or re.search(r"\s+-\s+|\s+\|\s+", line):
+        return False
+    return len(line.split()) <= 4
+
+
+def _is_new_entry(line: str, *, has_current: bool = False) -> bool:
     if _normalize(line).startswith(PROJECT_META_PREFIXES):
         return False
     if extract_date_range(line) and (_looks_like_role(line) or " at " in line.lower()):
@@ -207,6 +224,13 @@ def _is_new_entry(line: str) -> bool:
         return True
     if re.search(r"\s+-\s+|\s+\|\s+", line) and _looks_like_role(line):
         return True
+
+    # When an entry is already open, a bare role-like fragment is usually wrapped
+    # prose, e.g. "I've join project with role as" then "frontend developer".
+    # Do not start a company-null experience from that fragment.
+    if has_current and _is_weak_role_fragment(line):
+        return False
+
     return _looks_like_role(line) and len(line.split()) <= 8
 
 
@@ -271,12 +295,18 @@ def extract_experience(text: str) -> list[dict]:
             current = None
             break
 
+        if _is_achievement_heading(line):
+            index += 1
+            continue
+
         stacked_date_index = _find_stacked_date_index(lines, index)
         if stacked_date_index is not None:
             _append_current(entries, current)
             current = _parse_stacked_experience_header(line, lines[index + 1], lines[stacked_date_index])
 
             for detail in lines[index + 2 : stacked_date_index]:
+                if _is_achievement_heading(detail):
+                    continue
                 current["responsibilities"].append(detail)
                 current["technologies"].extend(skill["name"] for skill in extract_skills(detail))
 
@@ -294,12 +324,14 @@ def extract_experience(text: str) -> list[dict]:
                     lines[stacked_date_index],
                 )
                 for detail in lines[index + 1 : stacked_date_index]:
+                    if _is_achievement_heading(detail):
+                        continue
                     current["responsibilities"].append(detail)
                     current["technologies"].extend(skill["name"] for skill in extract_skills(detail))
                 index = stacked_date_index + 1
                 continue
 
-        if _is_new_entry(line):
+        if _is_new_entry(line, has_current=current is not None):
             _append_current(entries, current)
             current = _parse_experience_line(line)
             index += 1
