@@ -19,6 +19,7 @@ DEGREE_KEYWORDS = [
     "dai hoc",
     "hoc vien",
     "sinh vien",
+    "hcmus",
 ]
 
 DEGREE_PATTERNS = [
@@ -41,9 +42,15 @@ FIELD_PATTERNS = {
     "data science": "Data Science",
     "computer engineering": "Computer Engineering",
     "business administration": "Business Administration",
+    "it": "Information Technology",
+}
+
+KNOWN_INSTITUTIONS = {
+    "hcmus": "HCMUS",
 }
 
 PRESENT_WORDS = {"nay", "present", "current", "now", "hien tai", "hiện tại"}
+
 
 def _extract_years(text: str) -> tuple[int | None, int | None]:
     normalized = strip_accents(text or "").lower()
@@ -57,23 +64,26 @@ def _extract_years(text: str) -> tuple[int | None, int | None]:
 
     return start_year, end_year
 
+
 def _extract_degree(text: str) -> str | None:
     normalized = strip_accents(text).lower()
     for pattern, degree in DEGREE_PATTERNS:
         if re.search(pattern, normalized, re.IGNORECASE):
             return degree
 
-    if "sinh vien" in normalized or "dai hoc" in normalized:
+    if "sinh vien" in normalized or "dai hoc" in normalized or "hcmus" in normalized:
         return "Bachelor"
 
     return None
 
+
 def _extract_field(text: str) -> str | None:
     lowered = strip_accents(text).lower()
     for field, display_name in FIELD_PATTERNS.items():
-        if field in lowered:
+        if re.search(rf"\b{re.escape(field)}\b", lowered):
             return display_name
     return None
+
 
 def _clean_institution_candidate(value: str) -> str:
     cleaned = value or ""
@@ -105,20 +115,27 @@ def _clean_institution_candidate(value: str) -> str:
 
     return cleaned.strip(" -–—|,")
 
+
 def _extract_institution(text: str) -> str | None:
     lines = [strip_list_marker(line) for line in (text or "").splitlines() if strip_list_marker(line)]
 
     for line in lines:
         normalized = strip_accents(line).lower()
 
+        for token, display_name in KNOWN_INSTITUTIONS.items():
+            if normalized == token:
+                return display_name
+
         if any(keyword in normalized for keyword in ["university", "college", "institute", "academy", "school", "truong", "dai hoc", "hoc vien"]):
             return _clean_institution_candidate(line)
 
     return None
 
+
 def _extract_gpa(text: str) -> str | None:
     match = re.search(r"\bGPA\s*[:\-]?\s*([0-9]+(?:\.[0-9]+)?\s*/\s*[0-9]+(?:\.[0-9]+)?)", text or "", re.IGNORECASE)
     return match.group(1).replace(" ", "") if match else None
+
 
 def _looks_like_education_start(line: str) -> bool:
     normalized = strip_accents(line).lower()
@@ -132,6 +149,7 @@ def _looks_like_education_start(line: str) -> bool:
         "school",
         "hoc vien",
         "truong",
+        "hcmus",
     ]
 
     has_school_keyword = any(keyword in normalized for keyword in education_keywords)
@@ -144,6 +162,7 @@ def _looks_like_education_start(line: str) -> bool:
         return True
 
     return False
+
 
 def _split_education_blocks(text: str) -> list[list[str]]:
     lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
@@ -166,6 +185,7 @@ def _split_education_blocks(text: str) -> list[list[str]]:
         blocks.append(current)
 
     return blocks
+
 
 def extract_education(text: str) -> list[dict]:
     results = []
@@ -208,6 +228,7 @@ def extract_education(text: str) -> list[dict]:
         )
 
     return results
+
 
 def _merge_wrapped_lines(lines: list[str]) -> list[str]:
     merged: list[str] = []
