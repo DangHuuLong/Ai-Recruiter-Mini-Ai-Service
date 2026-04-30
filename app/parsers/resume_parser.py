@@ -130,6 +130,11 @@ SECTION_STOP_NAMES = {
     "soft skills",
 }
 
+URL_RE = re.compile(
+    r"https?://(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org)/[^\s)>,;]+",
+    re.IGNORECASE,
+)
+
 
 def _extract_location(raw_text: str) -> str | None:
     lines = split_lines(raw_text)
@@ -224,6 +229,59 @@ def _dedupe_by_name(items: list[dict]) -> list[dict]:
     return result
 
 
+def _dedupe_strings(values: list[str]) -> list[str]:
+    result = []
+    seen = set()
+
+    for value in values:
+        key = value.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(value)
+
+    return result
+
+
+def _is_repo_url(url: str) -> bool:
+    match = re.match(r"https?://(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org)/([^/?#]+)/([^/?#]+)", url, re.IGNORECASE)
+    if not match:
+        return False
+
+    repo_name = match.group(2).lower().strip()
+    return repo_name not in {"", "repositories", "projects", "stars", "followers", "following"}
+
+
+def _project_repo_urls_from_text(raw_text: str, personal_github_url: str | None = None) -> list[str]:
+    personal_url = (personal_github_url or "").rstrip("/").lower()
+    urls = []
+
+    for match in URL_RE.finditer(raw_text or ""):
+        url = match.group(0).rstrip(".,;)")
+        if url.rstrip("/").lower() == personal_url:
+            continue
+        if _is_repo_url(url):
+            urls.append(url)
+
+    return _dedupe_strings(urls)
+
+
+def _attach_project_urls(project_items: list[dict], raw_text: str, personal_github_url: str | None = None) -> list[dict]:
+    repo_urls = _project_repo_urls_from_text(raw_text, personal_github_url)
+    url_index = 0
+
+    for item in project_items:
+        if item.get("url"):
+            continue
+        if url_index >= len(repo_urls):
+            break
+
+        item["url"] = repo_urls[url_index]
+        url_index += 1
+
+    return project_items
+
+
 def parse_resume(raw_text: str) -> ParsedResumeData:
     """Parse resume free text into ParsedResumeData using deterministic heuristics."""
     normalized_text = normalize_text(raw_text, lowercase=False, remove_accents=False, preserve_lines=True)
@@ -288,6 +346,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
         ]
     )
     project_items = _dedupe_by_name(project_items)
+    project_items = _attach_project_urls(project_items, raw_text, personal.github_url)
     projects = [
         ResumeProject(
             name=item.get("name"),
