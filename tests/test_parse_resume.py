@@ -172,6 +172,7 @@ Tieng Anh - Advanced
     assert data["education"][0]["field_of_study"] == "Information Technology"
     assert data["languages"][0]["proficiency"] == "advanced"
 
+
 def test_parse_resume_handles_vietnamese_projects_and_education_blocks():
     response = client.post(
         "/parse/resume",
@@ -242,3 +243,113 @@ Trạng thái: Đang phát triển
     assert "GPA: 3.53/4.0" in data["education"][0]["description"]
 
     assert data["experience"] == []
+
+
+def test_parse_resume_handles_frontend_developer_pdf_text_layout():
+    response = client.post(
+        "/parse/resume",
+        json={
+            "raw_text": """
+Nguyễn Quốc Bình
+Frontend Developer
+Objective
+Become a frontend expert in 2 years.
+Full-stack developer can do frontend, backend and server to participate in large
+projects
+Career History
+Projects
+SaiGon Web Company
+Frontend Developer
+2020/10 - Present
+Working as a frontend developer responsible for frontend like coding html/css,
+animation and resolved the UI issues.
+<Key Achievements>
+- Highly appreciated by customers for handling frontend animation and mobile
+experience.
+- Award for best staff of the year 2019
+XTech Corporation
+Junior Web Developer
+2018/10 - 2020/09
+- Develop new features both frontend and backend on E-commerce site using
+PHP/Laravel, ReactJS
+<Key Achievements>
+- Deep understanding of Vuejs framework
+Fanclub system 2019/02 - 2021/08
+Position: Frontend Developer
+Role: Frontend Developer
+Teamsize: 7
+Description: fanclub is a platform with fans and many idols.
+Technologies: PHP/Laravel, VueJS, AWS(EC2, RDS, Autoscaling, CloudWatch)
+Contact
+Phone
+0706-663-784
+Email
+recruit.cv@growupwork.com
+Address
+Birthday
+1970/01/01
+Gender
+Male
+Hobbies
+Reading: reading technologies blog tech and research new javascript framework
+References
+Main duties: responsible for coding frontend
+Achievement/Skills and Knowledge Gained:
+Always get the job done before the deadline
+Achieve 120% productivity compared to plan
+E-learning system 2017/03 - 2019/01
+Position: Full stack developer
+Role: Web developer
+Teamsize: 3
+Description: e-learning is an online system of training through video.
+Technologies: HTML/CSS/ReactJS, PHP/Laravel
+Education
+HCMUS
+2010 - 2014
+IT
+Good Rank; GPA: 3.76
+Language
+English: TOEIC 600
+Vietnamese: Native
+Certicate
+2018 Principle of UI/UX
+Honours Awards
+2019 Best staff of the year 2019, OneTech
+""",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    assert data["personal"]["full_name"] == "Nguyễn Quốc Bình"
+    assert data["personal"]["email"] == "recruit.cv@growupwork.com"
+    assert data["personal"]["phone"] == "0706663784"
+    assert data["personal"]["location"] is None
+
+    assert len(data["experience"]) >= 2
+    assert data["experience"][0]["company"] == "SaiGon Web Company"
+    assert data["experience"][0]["role"] == "Frontend Developer"
+    assert data["experience"][0]["start_date"] == "2020-10"
+    assert data["experience"][0]["end_date"] == "present"
+    assert data["experience"][1]["company"] == "XTech Corporation"
+    assert data["experience"][1]["role"] == "Junior Web Developer"
+
+    project_names = {project["name"] for project in data["projects"]}
+    assert "Fanclub system" in project_names
+    assert "E-learning system" in project_names
+
+    assert data["education"][0]["institution"] == "HCMUS"
+    assert data["education"][0]["degree"] == "Bachelor"
+    assert data["education"][0]["field_of_study"] == "Information Technology"
+    assert data["education"][0]["start_year"] == 2010
+    assert data["education"][0]["end_year"] == 2014
+    assert "GPA: 3.76" in data["education"][0]["description"]
+
+    assert data["certifications"][0]["issued_year"] == 2018
+    assert "Principle of UI/UX" in data["certifications"][0]["name"]
+    assert data["achievements"][0]["year"] == 2019
+    assert data["languages"] == [
+        {"name": "English", "proficiency": "TOEIC 600"},
+        {"name": "Vietnamese", "proficiency": "native"},
+    ]
