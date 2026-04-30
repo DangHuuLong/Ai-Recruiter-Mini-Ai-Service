@@ -53,6 +53,19 @@ PROJECT_CONTEXT_TOKENS = (
     "vai tro",
 )
 
+IMMEDIATE_PROJECT_CONTEXT_TOKENS = (
+    "cong nghe su dung",
+    "du an ca nhan",
+    "du an nhom",
+    "link github",
+    "position:",
+    "team size",
+    "teamsize",
+    "technologies",
+    "technology",
+    "tech stack",
+)
+
 ROLE_ONLY_TITLES = {
     "backend developer",
     "developer",
@@ -144,6 +157,13 @@ def _has_project_context(next_lines: list[str]) -> bool:
     return any(token in window for token in PROJECT_CONTEXT_TOKENS)
 
 
+def _has_immediate_project_context(next_lines: list[str]) -> bool:
+    if not next_lines:
+        return False
+    first = strip_accents(strip_list_marker(next_lines[0])).lower()
+    return any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS)
+
+
 def _is_project_context_line(line: str) -> bool:
     normalized = _normalize_title(line)
     return any(normalized.startswith(token.rstrip(":")) for token in PROJECT_CONTEXT_TOKENS)
@@ -220,13 +240,10 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
     if not _looks_like_project_title(clean):
         return False
 
-    if not _has_project_context(next_lines):
-        return False
-
     if not current:
-        return True
+        return _has_project_context(next_lines)
 
-    return True
+    return _has_immediate_project_context(next_lines)
 
 
 def split_project_blocks(text: str) -> list[list[str]]:
