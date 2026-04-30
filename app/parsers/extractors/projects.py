@@ -179,10 +179,27 @@ def _is_feature_name(line: str) -> bool:
     return any(normalized.startswith(prefix) for prefix in FEATURE_STARTERS)
 
 
-def _is_skill_noise(line: str) -> bool:
+def _is_project_detail_line(line: str) -> bool:
     normalized = _normalize_title(line)
+    return any(normalized.startswith(label) for label in PROJECT_DETAIL_LABELS)
+
+
+def _is_skill_noise(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    normalized = _normalize_title(clean)
     if not normalized:
         return False
+
+    # Do not drop project content just because it contains technology names.
+    # Labelled rows like "Technologies: PHP/Laravel, VueJS" and duty sentences
+    # are valuable project data. Only short sidebar fragments such as "VueJS" or
+    # "HTML/CSS and Javascript framework" should be treated as layout noise.
+    if _is_project_detail_line(clean) or ":" in clean:
+        return False
+
+    if len(normalized.split()) > 4:
+        return False
+
     return normalized in SKILL_NOISE_PATTERNS or any(pattern in normalized for pattern in SKILL_NOISE_PATTERNS)
 
 
@@ -255,11 +272,6 @@ def _has_immediate_project_context(next_lines: list[str]) -> bool:
 def _is_project_context_line(line: str) -> bool:
     normalized = _normalize_title(line)
     return any(normalized.startswith(token.rstrip(":")) for token in PROJECT_CONTEXT_TOKENS)
-
-
-def _is_project_detail_line(line: str) -> bool:
-    normalized = _normalize_title(line)
-    return any(normalized.startswith(label) for label in PROJECT_DETAIL_LABELS)
 
 
 def _looks_like_inline_project_header(line: str) -> bool:
