@@ -208,6 +208,35 @@ def _append_current(entries: list[dict], current: dict | None) -> None:
         entries.append(current)
 
 
+def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookahead: int = 6) -> int | None:
+    """Find a date line for company -> role -> optional detail lines -> date layouts.
+
+    Real PDF extraction often emits work history as:
+    company line, role line, one or more description lines, date range line.
+    The older parser only accepted the date immediately after the role, so
+    company/start/end were lost for layouts like FPT IS in CV_NinhHoangKhai_FE.
+    """
+    if company_index + 1 >= len(lines):
+        return None
+
+    company = lines[company_index]
+    role = lines[company_index + 1]
+    if not (_looks_like_company(company) and _looks_like_role(role)):
+        return None
+
+    limit = min(len(lines), company_index + max_lookahead + 1)
+    for date_index in range(company_index + 2, limit):
+        candidate = lines[date_index]
+        if _is_stop_line(candidate):
+            break
+        if _looks_like_project_block_start(candidate, lines[date_index + 1 : date_index + 6]):
+            break
+        if extract_date_range(candidate):
+            return date_index
+
+    return None
+
+
 def extract_experience(text: str) -> list[dict]:
     entries = []
     current = None
@@ -223,29 +252,16 @@ def extract_experience(text: str) -> list[dict]:
             current = None
             break
 
-        if (
-            index + 2 < len(lines)
-            and _looks_like_company(line)
-            and _looks_like_role(lines[index + 1])
-            and extract_date_range(lines[index + 2])
-        ):
+        stacked_date_index = _find_stacked_date_index(lines, index)
+        if stacked_date_index is not None:
             _append_current(entries, current)
-            current = _parse_stacked_experience_header(line, lines[index + 1], lines[index + 2])
-            index += 3
-            continue
+            current = _parse_stacked_experience_header(line, lines[index + 1], lines[stacked_date_index])
 
-        if (
-            index + 3 < len(lines)
-            and _looks_like_company(line)
-            and _looks_like_role(lines[index + 1])
-            and not extract_date_range(lines[index + 2])
-            and extract_date_range(lines[index + 3])
-        ):
-            _append_current(entries, current)
-            current = _parse_stacked_experience_header(line, lines[index + 1], lines[index + 3])
-            current["responsibilities"].append(lines[index + 2])
-            current["technologies"].extend(skill["name"] for skill in extract_skills(lines[index + 2]))
-            index += 4
+            for detail in lines[index + 2 : stacked_date_index]:
+                current["responsibilities"].append(detail)
+                current["technologies"].extend(skill["name"] for skill in extract_skills(detail))
+
+            index = stacked_date_index + 1
             continue
 
         if _is_new_entry(line):
