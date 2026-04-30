@@ -6,7 +6,8 @@ from app.parsers.extractors.email_phone import extract_emails, extract_phones
 from app.parsers.extractors.experience import extract_experience
 from app.parsers.extractors.languages import extract_languages
 from app.parsers.extractors.links import extract_links
-from app.parsers.extractors.projects_certifications import extract_certifications, extract_projects
+from app.parsers.extractors.projects import extract_projects
+from app.parsers.extractors.projects_certifications import extract_certifications
 from app.parsers.extractors.skills import extract_skills
 from app.parsers.normalizer import normalize_text, split_lines, strip_accents
 from app.parsers.normalizers.skill_normalizer import normalize_skill
