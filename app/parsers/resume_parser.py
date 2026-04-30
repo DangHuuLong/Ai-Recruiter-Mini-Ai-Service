@@ -255,6 +255,8 @@ def _experience_source(sections: dict[str, str]) -> str:
 def _projects_source(sections: dict[str, str]) -> str:
     projects_text = sections.get("projects", "")
     if projects_text:
+        if _looks_like_misplaced_experience(split_lines(projects_text)):
+            return _extract_project_tail_from_text(projects_text)
         return projects_text
 
     return _combine_sections(
@@ -312,8 +314,8 @@ def _extract_project_tail_from_text(text: str) -> str:
     lines = split_lines(text)
     for index, line in enumerate(lines):
         normalized = strip_accents(line).lower()
-        if re.search(r"(?:system|platform|app|website|portfolio|project)\b", normalized) and index + 1 < len(lines):
-            next_lines = "\n".join(lines[index + 1 : index + 5]).lower()
-            if any(token in next_lines for token in ["position", "role", "teamsize", "description", "technologies", "tech stack"]):
+        if re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema)\b", normalized) and index + 1 < len(lines):
+            next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
+            if any(token in next_lines for token in ["position", "role", "teamsize", "description", "technologies", "tech stack", "key contributions", "key responsibilities"]):
                 return "\n".join(lines[index:])
     return ""
