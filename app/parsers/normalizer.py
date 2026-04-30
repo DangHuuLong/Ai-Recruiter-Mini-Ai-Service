@@ -5,7 +5,9 @@ import unicodedata
 
 
 def strip_accents(text: str) -> str:
-    return unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode("ascii")
+    value = text or ""
+    value = value.replace("Đ", "D").replace("đ", "d")
+    return unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
 
 
 def normalize_spaces(text: str) -> str:
