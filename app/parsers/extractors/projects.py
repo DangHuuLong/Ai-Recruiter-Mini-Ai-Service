@@ -1,3 +1,5 @@
+import re
+
 from app.parsers.extractors.projects_certifications import (
     DATE_RANGE_RE,
     _has_strong_project_header_context,
@@ -8,9 +10,48 @@ from app.parsers.extractors.projects_certifications import (
 )
 from app.parsers.normalizer import strip_list_marker
 
+LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
+    r"^(?P<title>.+?)\s+"
+    r"(?P<start>(?:19|20)\d{2}(?:[/.-]\d{1,2})?|\d{1,2}[/.-](?:19|20)\d{2})"
+    r"\s*(?:-|–|—|to|den|đến)\s*"
+    r"(?P<end>nay|present|current|now|hien tai|hiện tại|(?:19|20)\d{2}(?:[/.-]\d{1,2})?|\d{1,2}[/.-](?:19|20)\d{2})\s*$",
+    re.IGNORECASE,
+)
+
+PROJECT_TITLE_KEYWORDS = (
+    "app",
+    "application",
+    "e-commerce",
+    "ecommerce",
+    "platform",
+    "portal",
+    "project",
+    "site",
+    "system",
+    "website",
+)
+
+
+def _looks_like_loose_dated_project_title(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    match = LOOSE_DATED_PROJECT_TITLE_RE.match(clean)
+    if not match:
+        return False
+
+    title = match.group("title").strip(" -|,")
+    lowered_title = title.lower()
+
+    if not _looks_like_project_title(title):
+        return False
+
+    return any(keyword in lowered_title for keyword in PROJECT_TITLE_KEYWORDS)
+
 
 def _is_dated_project_title(line: str) -> bool:
     clean = strip_list_marker(line).strip()
+    if _looks_like_loose_dated_project_title(clean):
+        return True
+
     if not DATE_RANGE_RE.search(clean):
         return False
 
@@ -21,13 +62,13 @@ def _is_dated_project_title(line: str) -> bool:
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
 
+    if _is_dated_project_title(clean):
+        return True
+
     if not _looks_like_project_title(clean):
         return False
 
     if not current:
-        return True
-
-    if _is_dated_project_title(clean):
         return True
 
     if next_lines and _has_strong_project_header_context(next_lines[0]):
@@ -72,6 +113,22 @@ def split_project_blocks(text: str) -> list[list[str]]:
     return blocks
 
 
+def _dedupe_projects(projects: list[dict]) -> list[dict]:
+    unique_projects = []
+    seen_names = set()
+
+    for project in projects:
+        name = project.get("name")
+        normalized_name = name.lower().strip() if isinstance(name, str) else ""
+        if not normalized_name or normalized_name in seen_names:
+            continue
+
+        seen_names.add(normalized_name)
+        unique_projects.append(project)
+
+    return unique_projects
+
+
 def extract_projects(text: str) -> list[dict]:
     projects = []
 
@@ -80,4 +137,4 @@ def extract_projects(text: str) -> list[dict]:
         if _is_valid_project(project):
             projects.append(project)
 
-    return projects
+    return _dedupe_projects(projects)
