@@ -39,4 +39,4 @@ def extract_achievements(text: str, *, require_keyword: bool = False) -> list[di
             }
         )
 
-    return achievements
+    return sorted(achievements, key=lambda item: item["year"] is None)
