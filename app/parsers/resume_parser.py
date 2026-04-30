@@ -182,7 +182,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
         for item in extract_experience(_experience_source(sections))
     ]
 
-    projects_source = _combine_sections(_projects_source(sections), normalized_text)
+    projects_source = _projects_source(sections)
     project_items = _dedupe_by_name(extract_projects(projects_source))
     projects = [
         ResumeProject(
@@ -211,7 +211,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     achievements_source = _combine_sections(sections.get("achievements"), sections.get("experience"), sections.get("projects"))
     achievements = [
         ResumeAchievement(title=item.get("title"), description=item.get("description"), year=item.get("year"))
-        for item in extract_achievements(achievements_source)
+        for item in extract_achievements(achievements_source, require_keyword=True)
     ]
     achievements.extend(
         ResumeAchievement(title=item.get("title"), description=item.get("description"), year=item.get("year"))
@@ -243,63 +243,26 @@ def parse_resume_mock(raw_text: str) -> ParsedResumeData:
 
 def _experience_source(sections: dict[str, str]) -> str:
     if sections.get("experience"):
-        experience_text = sections["experience"]
-        projects_text = sections.get("projects", "")
-        project_lines = split_lines(projects_text)
-        if project_lines and _looks_like_misplaced_experience(project_lines):
-            return _combine_sections(experience_text, projects_text)
-        return experience_text
+        return sections["experience"]
 
-    projects_text = sections.get("projects", "")
-    project_lines = split_lines(projects_text)
-    if project_lines and _looks_like_misplaced_experience(project_lines):
-        return projects_text
-
-    other = sections.get("other", "")
-    lines = split_lines(other)
-
-    candidate_lines = []
-    for line in lines:
-        lowered = line.lower()
-
-        if any(token in lowered for token in ["@", "email", "phone", "sđt", "sdt", "ngày sinh", "ngay sinh", "quê quán", "que quan"]):
-            continue
-
-        if " at " in lowered:
-            candidate_lines.append(line)
-            continue
-
-        if re.search(r"(?:19|20)\d{2}|(?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}", line):
-            if any(role in lowered for role in ["developer", "engineer", "intern", "manager", "designer", "analyst"]):
-                candidate_lines.append(line)
-                continue
-
-        if candidate_lines and not any(token in lowered for token in ["university", "đại học", "dai hoc", "certified", "certificate"]):
-            candidate_lines.append(line)
-
-    return "\n".join(candidate_lines)
+    # Some two-column PDFs put a stray "Projects" heading before the career
+    # history content. In that layout, use the projects section as a bounded
+    # fallback for experience; the experience extractor will stop when it sees
+    # the first real project block.
+    return sections.get("projects", "") if _looks_like_misplaced_experience(split_lines(sections.get("projects", ""))) else ""
 
 
 def _projects_source(sections: dict[str, str]) -> str:
-    candidates = []
-
     projects_text = sections.get("projects", "")
-    project_lines = split_lines(projects_text)
     if projects_text:
-        if project_lines and _looks_like_misplaced_experience(project_lines):
-            candidates.append(_extract_project_tail_from_experience(projects_text))
-        else:
-            candidates.append(projects_text)
+        return projects_text
 
-    experience_text = sections.get("experience", "")
-    if experience_text:
-        candidates.append(_extract_project_tail_from_experience(experience_text))
-
-    other_text = sections.get("other", "")
-    if other_text:
-        candidates.append(_extract_project_tail_from_experience(other_text))
-
-    return _combine_sections(*candidates)
+    # Bounded fallback only: if no projects section exists, recover project-like
+    # tails from experience/other. Do not parse the full resume text here.
+    return _combine_sections(
+        _extract_project_tail_from_text(sections.get("experience", "")),
+        _extract_project_tail_from_text(sections.get("other", "")),
+    )
 
 
 def _looks_like_misplaced_experience(lines: list[str]) -> bool:
@@ -322,12 +285,12 @@ def _looks_like_misplaced_experience(lines: list[str]) -> bool:
     return False
 
 
-def _extract_project_tail_from_experience(experience_text: str) -> str:
-    lines = split_lines(experience_text)
+def _extract_project_tail_from_text(text: str) -> str:
+    lines = split_lines(text)
     for index, line in enumerate(lines):
         normalized = strip_accents(line).lower()
-        if re.search(r"(?:system|platform|app|website|project)\b", normalized) and index + 1 < len(lines):
-            next_line = strip_accents(lines[index + 1]).lower()
-            if any(token in next_line for token in ["position", "role", "teamsize", "description", "technologies"]):
+        if re.search(r"(?:system|platform|app|website|portfolio|project)\b", normalized) and index + 1 < len(lines):
+            next_lines = "\n".join(lines[index + 1 : index + 5]).lower()
+            if any(token in next_lines for token in ["position", "role", "teamsize", "description", "technologies", "tech stack"]):
                 return "\n".join(lines[index:])
     return ""
