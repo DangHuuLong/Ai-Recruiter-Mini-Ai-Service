@@ -18,6 +18,11 @@ LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
     re.IGNORECASE,
 )
 
+SINGLE_DATE_RE = re.compile(
+    r"^(?:(?:19|20)\d{2}(?:[/.-]\d{1,2})?|\d{1,2}[/.-](?:19|20)\d{2})$",
+    re.IGNORECASE,
+)
+
 ROLE_LINE_TITLES = {
     "backend developer",
     "developer",
@@ -196,10 +201,6 @@ def _is_skill_noise(line: str) -> bool:
     if not normalized:
         return False
 
-    # Do not drop project content just because it contains technology names.
-    # Labelled rows like "Technologies: PHP/Laravel, VueJS" and duty sentences
-    # are valuable project data. Only short sidebar fragments such as "VueJS" or
-    # "HTML/CSS and Javascript framework" should be treated as layout noise.
     if _is_project_detail_line(clean) or ":" in clean:
         return False
 
@@ -254,7 +255,11 @@ def _is_layout_noise_line(line: str) -> bool:
 
 def _is_date_only_line(line: str) -> bool:
     clean = strip_list_marker(line).strip()
-    return bool(DATE_RANGE_RE.fullmatch(clean) or re.fullmatch(r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?", clean))
+    return bool(
+        DATE_RANGE_RE.fullmatch(clean)
+        or SINGLE_DATE_RE.fullmatch(clean)
+        or re.fullmatch(r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?", clean)
+    )
 
 
 def _has_project_keyword(value: str) -> bool:
@@ -265,13 +270,6 @@ def _has_project_keyword(value: str) -> bool:
 def _has_project_context(next_lines: list[str]) -> bool:
     window = "\n".join(strip_accents(strip_list_marker(line)).lower() for line in next_lines[:8])
     return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window))
-
-
-def _has_immediate_project_context(next_lines: list[str]) -> bool:
-    if not next_lines:
-        return False
-    first = strip_accents(strip_list_marker(next_lines[0])).lower()
-    return any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS)
 
 
 def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
@@ -338,9 +336,6 @@ def _looks_like_loose_dated_project_title(line: str) -> bool:
     if not _looks_like_project_title(title):
         return False
 
-    # Dated titles are strong signals, but keep one additional semantic guard so
-    # employment lines such as "XTech Corporation 2018/10 - 2020/09" do not leak
-    # into projects when two-column PDF text order is mixed.
     return _has_project_keyword(title)
 
 
@@ -367,7 +362,10 @@ def _looks_like_stacked_project_title(line: str, next_lines: list[str]) -> bool:
     if not _looks_like_project_title(clean):
         return False
 
-    return _has_project_keyword(clean) or _has_strong_stacked_project_context(next_lines)
+    # A keyword alone is not enough. Description rows such as
+    # "Desktop construction project management application..." also contain
+    # project keywords. Require nearby project metadata instead.
+    return _has_strong_stacked_project_context(next_lines)
 
 
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
@@ -397,9 +395,6 @@ def _clean_project_lines(lines: list[str]) -> list[str]:
             skipping_layout_noise = True
             continue
 
-        # Sidebars often inject prose after About/Skills/References in the middle
-        # of the project section. Keep collecting again as soon as a real project
-        # detail label appears, but ignore the unrelated sidebar prose itself.
         if skipping_layout_noise and not (_is_project_detail_line(line) or _is_dated_project_title(line)):
             continue
 
@@ -514,7 +509,7 @@ def _is_valid_project_item(project: dict) -> bool:
         return False
 
     name = project.get("name") or ""
-    return not _is_non_project_title(name)
+    return not _is_non_project_title(name) and not _is_date_only_line(name)
 
 
 def extract_projects(text: str) -> list[dict]:
