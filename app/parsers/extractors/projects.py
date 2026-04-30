@@ -274,7 +274,7 @@ def _has_immediate_project_context(next_lines: list[str]) -> bool:
     return any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS)
 
 
-def _has_near_project_context(next_lines: list[str]) -> bool:
+def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
     meaningful_lines = [line for line in next_lines[:6] if not _is_layout_noise_line(line)]
     if not meaningful_lines:
         return False
@@ -287,7 +287,7 @@ def _has_near_project_context(next_lines: list[str]) -> bool:
     if _is_role_line(meaningful_lines[0]):
         return _has_project_context(meaningful_lines[1:])
 
-    return _has_project_context(meaningful_lines)
+    return False
 
 
 def _is_project_context_line(line: str) -> bool:
@@ -367,7 +367,7 @@ def _looks_like_stacked_project_title(line: str, next_lines: list[str]) -> bool:
     if not _looks_like_project_title(clean):
         return False
 
-    return _has_project_keyword(clean) or _has_near_project_context(next_lines)
+    return _has_project_keyword(clean) or _has_strong_stacked_project_context(next_lines)
 
 
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
