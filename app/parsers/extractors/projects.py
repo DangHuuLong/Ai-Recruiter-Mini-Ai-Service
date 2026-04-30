@@ -3,7 +3,6 @@ import re
 from app.parsers.extractors.projects_certifications import (
     DATE_RANGE_RE,
     FEATURE_STARTERS,
-    _extract_url_match,
     _is_valid_project,
     _looks_like_project_title,
     _strip_date_suffix,
@@ -19,11 +18,25 @@ LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
     re.IGNORECASE,
 )
 
+ROLE_LINE_TITLES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "web developer",
+}
+
 PROJECT_TITLE_KEYWORDS = (
     "app",
     "application",
     "booking",
     "cinema",
+    "commerce",
+    "construction",
     "e-commerce",
     "ecommerce",
     "management",
@@ -34,6 +47,7 @@ PROJECT_TITLE_KEYWORDS = (
     "recruiter",
     "shop",
     "site",
+    "sneaker",
     "store",
     "system",
     "website",
@@ -89,18 +103,6 @@ PROJECT_DETAIL_LABELS = (
     "technology",
     "tech stack",
 )
-
-ROLE_ONLY_TITLES = {
-    "backend developer",
-    "developer",
-    "frontend developer",
-    "full stack developer",
-    "fullstack developer",
-    "game developer",
-    "intern fullstack developer",
-    "junior web developer",
-    "web developer",
-}
 
 SECTION_NOISE_TITLES = {
     "about",
@@ -179,9 +181,13 @@ def _is_feature_name(line: str) -> bool:
     return any(normalized.startswith(prefix) for prefix in FEATURE_STARTERS)
 
 
+def _is_role_line(line: str) -> bool:
+    return _normalize_title(_strip_date_suffix(strip_list_marker(line).strip())) in ROLE_LINE_TITLES
+
+
 def _is_project_detail_line(line: str) -> bool:
     normalized = _normalize_title(line)
-    return any(normalized.startswith(label) for label in PROJECT_DETAIL_LABELS)
+    return any(normalized.startswith(label) for label in PROJECT_DETAIL_LABELS) or _is_role_line(line)
 
 
 def _is_skill_noise(line: str) -> bool:
@@ -223,7 +229,6 @@ def _is_non_project_title(line: str) -> bool:
     normalized = _normalize_title(clean)
     return (
         normalized in NON_PROJECT_TITLES
-        or normalized in ROLE_ONLY_TITLES
         or _is_feature_name(clean)
         or _is_skill_noise(clean)
         or _is_reference_noise(clean)
@@ -259,7 +264,7 @@ def _has_project_keyword(value: str) -> bool:
 
 def _has_project_context(next_lines: list[str]) -> bool:
     window = "\n".join(strip_accents(strip_list_marker(line)).lower() for line in next_lines[:8])
-    return any(token in window for token in PROJECT_CONTEXT_TOKENS)
+    return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window))
 
 
 def _has_immediate_project_context(next_lines: list[str]) -> bool:
@@ -267,6 +272,22 @@ def _has_immediate_project_context(next_lines: list[str]) -> bool:
         return False
     first = strip_accents(strip_list_marker(next_lines[0])).lower()
     return any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS)
+
+
+def _has_near_project_context(next_lines: list[str]) -> bool:
+    meaningful_lines = [line for line in next_lines[:6] if not _is_layout_noise_line(line)]
+    if not meaningful_lines:
+        return False
+
+    first = strip_accents(strip_list_marker(meaningful_lines[0])).lower()
+    if any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS):
+        return True
+
+    # Common CV layout: project name, role line, Technologies, date, Description.
+    if _is_role_line(meaningful_lines[0]):
+        return _has_project_context(meaningful_lines[1:])
+
+    return _has_project_context(meaningful_lines)
 
 
 def _is_project_context_line(line: str) -> bool:
@@ -279,24 +300,22 @@ def _looks_like_inline_project_header(line: str) -> bool:
     if _is_non_project_title(clean) or _is_project_context_line(clean):
         return False
 
-    for pattern in (r"\s+-\s+", r":\s+"):
+    for pattern in (r"\s+[-–—]\s+", r":\s+"):
         parts = re.split(pattern, clean, maxsplit=1)
         if len(parts) != 2:
             continue
 
-        name = parts[0].strip(" -|,")
+        name = parts[0].strip(" -–—|,")
         rest = parts[1].strip()
+        full_title = f"{name} {rest}".strip()
         if not name or _is_non_project_title(name) or _is_project_context_line(name):
             continue
 
-        if not _looks_like_project_title(name):
+        if not (_looks_like_project_title(name) or _looks_like_project_title(full_title)):
             continue
 
         normalized_rest = strip_accents(rest).lower()
-        # A URL by itself is not enough: references such as
-        # "Nguyen Van B Project Manager - OneTech Asia" can contain domains in
-        # following lines and must not become project headers.
-        if _has_project_keyword(name) or any(token in normalized_rest for token in PROJECT_CONTEXT_TOKENS):
+        if _has_project_keyword(full_title) or any(token in normalized_rest for token in PROJECT_CONTEXT_TOKENS):
             return True
 
     return False
@@ -340,22 +359,30 @@ def _is_dated_project_title(line: str) -> bool:
     return title != clean and not _is_non_project_title(title) and _looks_like_project_title(title) and _has_project_keyword(title)
 
 
+def _looks_like_stacked_project_title(line: str, next_lines: list[str]) -> bool:
+    clean = strip_list_marker(line).strip()
+    if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean) or _is_role_line(clean):
+        return False
+
+    if not _looks_like_project_title(clean):
+        return False
+
+    return _has_project_keyword(clean) or _has_near_project_context(next_lines)
+
+
 def _should_start_new_block(line: str, current: list[str], next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
 
-    if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean):
+    if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean) or _is_role_line(clean):
         return False
 
     if _is_dated_project_title(clean) or _looks_like_inline_project_header(clean):
         return True
 
-    if not _looks_like_project_title(clean):
-        return False
+    if _looks_like_stacked_project_title(clean, next_lines):
+        return True
 
-    if not current:
-        return _has_project_context(next_lines)
-
-    return _has_immediate_project_context(next_lines)
+    return False
 
 
 def _clean_project_lines(lines: list[str]) -> list[str]:
@@ -403,7 +430,11 @@ def split_project_blocks(text: str) -> list[list[str]]:
             current.append(line)
             continue
 
-        if current and (_is_dated_project_title(line) or _looks_like_inline_project_header(line)):
+        if current and (
+            _is_dated_project_title(line)
+            or _looks_like_inline_project_header(line)
+            or _looks_like_stacked_project_title(line, next_lines)
+        ):
             cleaned = _clean_project_lines(current)
             if cleaned:
                 blocks.append(cleaned)
