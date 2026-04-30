@@ -228,6 +228,11 @@ def _experience_source(sections: dict[str, str]) -> str:
             return _combine_sections(experience_text, projects_text)
         return experience_text
 
+    projects_text = sections.get("projects", "")
+    project_lines = split_lines(projects_text)
+    if project_lines and not _looks_like_real_project_start(project_lines):
+        return projects_text
+
     other = sections.get("other", "")
     lines = split_lines(other)
 
@@ -260,9 +265,12 @@ def _projects_source(sections: dict[str, str]) -> str:
     if lines and _looks_like_real_project_start(lines):
         return projects_text
 
+    if projects_text:
+        return _extract_project_tail_from_experience(projects_text)
+
     experience_text = sections.get("experience", "")
     if not experience_text:
-        return projects_text
+        return ""
 
     return _extract_project_tail_from_experience(experience_text)
 
