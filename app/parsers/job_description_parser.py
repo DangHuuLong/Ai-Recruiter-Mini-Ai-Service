@@ -57,6 +57,15 @@ SECTION_ALIASES: dict[str, tuple[str, ...]] = {
     ),
 }
 
+TITLE_LABELS: tuple[str, ...] = (
+    "job title",
+    "position",
+    "role",
+    "title",
+    "vi tri",
+    "chuc danh",
+)
+
 SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
     (r"\b(internship|intern|thuc tap|thuc tap sinh)\b", "intern"),
     (r"\b(fresher|entry[ -]?level|graduate)\b", "fresher"),
@@ -75,12 +84,11 @@ EMPLOYMENT_PATTERNS: tuple[tuple[str, str], ...] = (
 )
 
 TITLE_PATTERNS: tuple[str, ...] = (
-    r"(?:job title|position|role|title|vi tri|chuc danh)\s*[:\-]\s*(?P<title>.+)",
     r"(?:we are looking for|we need|hiring|tuyen dung|can tuyen)\s+(?:an?\s+)?(?P<title>[A-Z][A-Za-z0-9 /.#+-]*(?:Developer|Engineer|Designer|Analyst|Tester|Manager|Specialist|Intern|Lead))",
 )
 
 EXPERIENCE_PATTERNS: tuple[str, ...] = (
-    r"(?:minimum|min|at least|from|tu)\s*(?P<years>\d+)\+?\s*(?:years?|yrs?|nam)",
+    r"(?:minimum|min|at least|from|tu|toi thieu)\s*(?P<years>\d+)\+?\s*(?:years?|yrs?|nam)",
     r"(?P<years>\d+)\+?\s*(?:years?|yrs?|nam)\s+(?:of\s+)?(?:experience|kinh nghiem)",
 )
 
@@ -232,7 +240,7 @@ def _match_section_heading(line: str) -> str | None:
     normalized = _normalize_for_match(line).strip(" :.-")
     for section, aliases in SECTION_ALIASES.items():
         for alias in aliases:
-            if normalized == alias or normalized.startswith(f"{alias}:"):
+            if normalized == alias or normalized.startswith(f"{alias} "):
                 return section
     return None
 
@@ -283,6 +291,11 @@ def _contains_alias(text_for_match: str, alias: str) -> bool:
 
 
 def _detect_title(text: str) -> str | None:
+    for line in text.split("\n")[:12]:
+        labeled_title = _extract_labeled_title(line)
+        if labeled_title:
+            return labeled_title
+
     for pattern in TITLE_PATTERNS:
         match = re.search(pattern, text, flags=re.IGNORECASE)
         if match:
@@ -291,6 +304,16 @@ def _detect_title(text: str) -> str | None:
     for line in text.split("\n")[:8]:
         if re.search(r"\b(developer|engineer|designer|analyst|tester|manager|intern|lead)\b", line, flags=re.IGNORECASE):
             return _clean_title(line)
+    return None
+
+
+def _extract_labeled_title(line: str) -> str | None:
+    if ":" not in line:
+        return None
+    label, value = line.split(":", 1)
+    normalized_label = _normalize_for_match(label)
+    if normalized_label in TITLE_LABELS and value.strip():
+        return _clean_title(value)
     return None
 
 
