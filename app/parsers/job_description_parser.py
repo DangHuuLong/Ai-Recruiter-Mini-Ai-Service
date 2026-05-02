@@ -108,10 +108,10 @@ EDUCATION_PATTERNS: tuple[str, ...] = (
 
 DOMAIN_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("backend", ("backend", "back-end", "server-side", "api", "microservice")),
-    ("frontend", ("frontend", "front-end", "ui", "web interface", "react", "vue", "angular")),
+    ("frontend", ("frontend", "front-end", "ui", "web interface")),
     ("fullstack", ("full stack", "full-stack", "fullstack")),
     ("mobile", ("mobile", "android", "ios", "react native", "flutter")),
-    ("data", ("data", "etl", "warehouse", "analytics", "bi")),
+    ("data", ("data engineering", "data platform", "data pipeline", "etl", "warehouse", "analytics", "bi")),
     ("ai", ("ai", "machine learning", "ml", "llm", "nlp", "computer vision")),
     ("devops", ("devops", "ci/cd", "kubernetes", "docker", "cloud", "aws", "azure", "gcp")),
     ("qa", ("qa", "quality assurance", "tester", "testing", "automation test")),
@@ -137,7 +137,7 @@ SKILL_CATALOG: tuple[SkillDefinition, ...] = (
     SkillDefinition("Java", "java", ("java",), "language"),
     SkillDefinition("C#", "csharp", ("c#", "c sharp", ".net"), "language"),
     SkillDefinition("PHP", "php", ("php",), "language"),
-    SkillDefinition("Go", "go", ("golang", " go "), "language"),
+    SkillDefinition("Go", "go", ("golang", "go"), "language"),
     SkillDefinition("FastAPI", "fastapi", ("fastapi", "fast api"), "backend"),
     SkillDefinition("Django", "django", ("django",), "backend"),
     SkillDefinition("Flask", "flask", ("flask",), "backend"),
@@ -264,7 +264,7 @@ def _extract_section_items(sections: dict[str, list[str]], section: str) -> list
 
 
 def _extract_skills(text: str, *, is_core: bool, weight_hint: float) -> list[JobSkill]:
-    text_for_match = f" {_normalize_for_match(text)} "
+    text_for_match = _normalize_for_match(text)
     skills: list[JobSkill] = []
     seen: set[str] = set()
 
@@ -286,10 +286,15 @@ def _extract_skills(text: str, *, is_core: bool, weight_hint: float) -> list[Job
 
 
 def _contains_alias(text_for_match: str, alias: str) -> bool:
-    alias_for_match = f" {_normalize_for_match(alias).strip()} "
-    if alias.strip() == "go":
-        return bool(re.search(r"\b(golang|go)\b", text_for_match))
-    return alias_for_match in text_for_match
+    normalized_alias = _normalize_for_match(alias).strip()
+    if not normalized_alias:
+        return False
+
+    if normalized_alias == "go":
+        return bool(re.search(r"(?<![a-z0-9])(?:golang|go)(?![a-z0-9])", text_for_match))
+
+    pattern = rf"(?<![a-z0-9]){re.escape(normalized_alias)}(?![a-z0-9])"
+    return bool(re.search(pattern, text_for_match))
 
 
 def _detect_title(text: str) -> str | None:
@@ -368,7 +373,7 @@ def _extract_domain_keywords(text: str) -> list[str]:
     normalized = _normalize_for_match(text)
     keywords: list[str] = []
     for keyword, aliases in DOMAIN_KEYWORDS:
-        if any(alias in normalized for alias in aliases):
+        if any(_contains_alias(normalized, alias) for alias in aliases):
             keywords.append(keyword)
     return _dedupe_preserve_order(keywords)
 
