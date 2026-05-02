@@ -105,3 +105,41 @@ def test_parse_job_description_supports_vietnamese_headings_and_normalized_skill
     assert {"react", "typescript", "html", "css"}.issubset(required_skill_names)
     assert {"nextjs", "tailwind_css"}.issubset(preferred_skill_names)
     assert "frontend" in data["domain_keywords"]
+
+
+def test_parse_job_description_matches_hyphenated_skills_and_avoids_generic_data_domain():
+    response = client.post(
+        "/parse/job-description",
+        json={
+            "raw_text": """
+            Job Title: Senior Backend Developer
+            Employment Type: Full-time
+
+            Responsibilities:
+            - Collaborate with frontend developers to define API contracts.
+            - Store structured recruiting data for candidates and evaluations.
+
+            Requirements:
+            - At least 4 years of backend development experience.
+            - Strong Node.js, NestJS, TypeScript, REST API, PostgreSQL, and Redis experience.
+            - Good understanding of Docker-based local development and CI/CD pipelines.
+            - Experience with Prisma ORM.
+
+            Nice to have:
+            - Experience with AWS, Kubernetes, Python, FastAPI, Jest, or Pytest.
+            """
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+
+    required_skill_names = {skill["normalized_name"] for skill in data["required_skills"]}
+    preferred_skill_names = {skill["normalized_name"] for skill in data["preferred_skills"]}
+
+    assert "docker" in required_skill_names
+    assert "ci_cd" in required_skill_names
+    assert {"aws", "kubernetes", "python", "fastapi", "jest", "pytest"}.issubset(preferred_skill_names)
+    assert "data" not in data["domain_keywords"]
+    assert "backend" in data["domain_keywords"]
+    assert "rest api" in data["domain_keywords"]
