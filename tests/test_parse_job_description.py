@@ -139,7 +139,32 @@ def test_parse_job_description_matches_hyphenated_skills_and_avoids_generic_data
 
     assert "docker" in required_skill_names
     assert "ci_cd" in required_skill_names
+    assert "javascript" not in required_skill_names
     assert {"aws", "kubernetes", "python", "fastapi", "jest", "pytest"}.issubset(preferred_skill_names)
     assert "data" not in data["domain_keywords"]
     assert "backend" in data["domain_keywords"]
     assert "rest api" in data["domain_keywords"]
+
+
+def test_parse_job_description_does_not_match_short_alias_inside_framework_names():
+    response = client.post(
+        "/parse/job-description",
+        json={
+            "raw_text": """
+            Job Title: Backend Developer
+
+            Requirements:
+            - Strong Node.js and NestJS experience.
+            - Experience with TypeScript.
+            """
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()["data"]
+    required_skill_names = {skill["normalized_name"] for skill in data["required_skills"]}
+
+    assert "nodejs" in required_skill_names
+    assert "nestjs" in required_skill_names
+    assert "typescript" in required_skill_names
+    assert "javascript" not in required_skill_names
