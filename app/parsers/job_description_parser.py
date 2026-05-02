@@ -1,4 +1,5 @@
 import re
+import unicodedata
 from dataclasses import dataclass
 from typing import Iterable
 
@@ -28,8 +29,8 @@ SECTION_ALIASES: dict[str, tuple[str, ...]] = {
         "must-have",
         "qualifications",
         "minimum qualifications",
-        "what we need",
         "required qualifications",
+        "what we need",
         "yeu cau",
         "yeu cau cong viec",
         "bat buoc",
@@ -57,14 +58,7 @@ SECTION_ALIASES: dict[str, tuple[str, ...]] = {
     ),
 }
 
-TITLE_LABELS: tuple[str, ...] = (
-    "job title",
-    "position",
-    "role",
-    "title",
-    "vi tri",
-    "chuc danh",
-)
+TITLE_LABELS = ("job title", "position", "role", "title", "vi tri", "chuc danh")
 
 EXPLICIT_SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
     (r"\b(lead|principal|staff|architect|manager)\b", "lead"),
@@ -120,6 +114,8 @@ DOMAIN_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("recruitment", ("recruitment", "hiring", "ats", "candidate")),
     ("rest api", ("rest api", "restful", "api")),
 )
+
+SHORT_ALIASES = {"go", "js", "ts"}
 
 
 @dataclass(frozen=True)
@@ -286,15 +282,14 @@ def _extract_skills(text: str, *, is_core: bool, weight_hint: float) -> list[Job
 
 
 def _contains_alias(text_for_match: str, alias: str) -> bool:
-    normalized_alias = _normalize_for_match(alias).strip()
+    normalized_alias = _normalize_for_match(alias)
     if not normalized_alias:
         return False
 
-    if normalized_alias == "go":
-        return bool(re.search(r"(?<![a-z0-9])(?:golang|go)(?![a-z0-9])", text_for_match))
+    if normalized_alias in SHORT_ALIASES:
+        return bool(re.search(rf"(?<![a-z0-9.]){re.escape(normalized_alias)}(?![a-z0-9])", text_for_match))
 
-    pattern = rf"(?<![a-z0-9]){re.escape(normalized_alias)}(?![a-z0-9])"
-    return bool(re.search(pattern, text_for_match))
+    return bool(re.search(rf"(?<![a-z0-9]){re.escape(normalized_alias)}(?![a-z0-9])", text_for_match))
 
 
 def _detect_title(text: str) -> str | None:
@@ -384,80 +379,11 @@ def _looks_like_noise(line: str) -> bool:
 
 
 def _normalize_for_match(value: str) -> str:
-    lowered = value.lower()
-    replacements = {
-        "đ": "d",
-        "á": "a",
-        "à": "a",
-        "ả": "a",
-        "ã": "a",
-        "ạ": "a",
-        "ă": "a",
-        "ắ": "a",
-        "ằ": "a",
-        "ẳ": "a",
-        "ẵ": "a",
-        "ặ": "a",
-        "â": "a",
-        "ấ": "a",
-        "ầ": "a",
-        "ẩ": "a",
-        "ẫ": "a",
-        "ậ": "a",
-        "é": "e",
-        "è": "e",
-        "ẻ": "e",
-        "ẽ": "e",
-        "ẹ": "e",
-        "ê": "e",
-        "ế": "e",
-        "ề": "e",
-        "ể": "e",
-        "ễ": "e",
-        "ệ": "e",
-        "í": "i",
-        "ì": "i",
-        "ỉ": "i",
-        "ĩ": "i",
-        "ị": "i",
-        "ó": "o",
-        "ò": "o",
-        "ỏ": "o",
-        "õ": "o",
-        "ọ": "o",
-        "ô": "o",
-        "ố": "o",
-        "ồ": "o",
-        "ổ": "o",
-        "ỗ": "o",
-        "ộ": "o",
-        "ơ": "o",
-        "ớ": "o",
-        "ờ": "o",
-        "ở": "o",
-        "ỡ": "o",
-        "ợ": "o",
-        "ú": "u",
-        "ù": "u",
-        "ủ": "u",
-        "ũ": "u",
-        "ụ": "u",
-        "ư": "u",
-        "ứ": "u",
-        "ừ": "u",
-        "ử": "u",
-        "ữ": "u",
-        "ự": "u",
-        "ý": "y",
-        "ỳ": "y",
-        "ỷ": "y",
-        "ỹ": "y",
-        "ỵ": "y",
-    }
-    for source, target in replacements.items():
-        lowered = lowered.replace(source, target)
-    lowered = re.sub(r"[^a-z0-9#+./-]+", " ", lowered)
-    return re.sub(r"\s+", " ", lowered).strip()
+    lowered = value.lower().replace("đ", "d")
+    normalized = unicodedata.normalize("NFKD", lowered)
+    without_accents = "".join(char for char in normalized if not unicodedata.combining(char))
+    cleaned = re.sub(r"[^a-z0-9#+./-]+", " ", without_accents)
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def _dedupe_preserve_order(items: Iterable[str]) -> list[str]:
