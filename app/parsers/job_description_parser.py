@@ -66,13 +66,19 @@ TITLE_LABELS: tuple[str, ...] = (
     "chuc danh",
 )
 
-SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
-    (r"\b(internship|intern|thuc tap|thuc tap sinh)\b", "intern"),
-    (r"\b(fresher|entry[ -]?level|graduate)\b", "fresher"),
-    (r"\b(junior|jr\.?|0\s*-\s*1\s*years?|1\+?\s*years?)\b", "junior"),
-    (r"\b(mid[ -]?level|middle|2\+?\s*years?|3\+?\s*years?)\b", "mid"),
-    (r"\b(senior|sr\.?|5\+?\s*years?)\b", "senior"),
+EXPLICIT_SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
     (r"\b(lead|principal|staff|architect|manager)\b", "lead"),
+    (r"\b(senior|sr\.?)\b", "senior"),
+    (r"\b(mid[ -]?level|middle)\b", "mid"),
+    (r"\b(junior|jr\.?)\b", "junior"),
+    (r"\b(fresher|entry[ -]?level|graduate)\b", "fresher"),
+    (r"\b(internship|intern|thuc tap|thuc tap sinh)\b", "intern"),
+)
+
+EXPERIENCE_SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
+    (r"\b5\+?\s*years?\b", "senior"),
+    (r"\b[23]\+?\s*years?\b", "mid"),
+    (r"\b(?:0\s*-\s*1|1\+?)\s*years?\b", "junior"),
 )
 
 EMPLOYMENT_PATTERNS: tuple[tuple[str, str], ...] = (
@@ -167,10 +173,6 @@ SKILL_CATALOG: tuple[SkillDefinition, ...] = (
 )
 
 BULLET_RE = re.compile(r"^\s*(?:[-*+•]|\d+[.)])\s*")
-
-
-def parse_job_description_mock(raw_text: str) -> ParsedJobDescriptionData:
-    return parse_job_description(raw_text)
 
 
 def parse_job_description(raw_text: str) -> ParsedJobDescriptionData:
@@ -325,9 +327,15 @@ def _clean_title(value: str) -> str:
 
 def _detect_seniority(text: str) -> str | None:
     normalized = _normalize_for_match(text)
-    for pattern, seniority in SENIORITY_PATTERNS:
+
+    for pattern, seniority in EXPLICIT_SENIORITY_PATTERNS:
         if re.search(pattern, normalized, flags=re.IGNORECASE):
             return seniority
+
+    for pattern, seniority in EXPERIENCE_SENIORITY_PATTERNS:
+        if re.search(pattern, normalized, flags=re.IGNORECASE):
+            return seniority
+
     return None
 
 
