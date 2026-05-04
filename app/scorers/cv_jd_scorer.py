@@ -1,6 +1,7 @@
 import re
 from collections.abc import Iterable
 from dataclasses import dataclass
+from typing import Any
 
 from app.schemas.evaluation import (
     EvaluationCriterionScore,
@@ -18,6 +19,7 @@ DEFAULT_CRITERIA = [
     ("EDUCATION_CERTIFICATION", 0.10),
     ("KEYWORD_DOMAIN_ALIGNMENT", 0.10),
 ]
+DEFAULT_EVIDENCE = object()
 
 
 @dataclass(frozen=True)
@@ -44,7 +46,7 @@ def score_application_mock(request: ScoreApplicationRequest) -> EvaluationResult
     education_result = score_education_match(request)
 
     scorer_by_criterion = {
-        "SKILLS_MATCH": skill_result,
+        "SKILLS_MATCH": (skill_result.score, "Skill overlap score based on required/preferred JD skills.", skill_result.evidence),
         "EXPERIENCE_RELEVANCE": experience_result,
         "PROJECT_RELEVANCE": project_result,
         "EDUCATION_CERTIFICATION": education_result,
@@ -362,20 +364,19 @@ def make_skill_result(
     normalized_name: str | None,
     match_type: str,
     importance: str,
-    evidence: str | None | object = object(),
+    evidence: str | None | object = DEFAULT_EVIDENCE,
     note: str | None = None,
 ) -> EvaluationSkillResult:
     normalized = normalize_text(normalized_name or name)
-    if evidence is object:
-        evidence = None
-    if evidence is None and match_type in {"MATCHED", "PARTIAL"}:
-        evidence = f"{name} found in resume evidence"
+    resolved_evidence = None if evidence is DEFAULT_EVIDENCE else evidence
+    if resolved_evidence is None and match_type in {"MATCHED", "PARTIAL"}:
+        resolved_evidence = f"{name} found in resume evidence"
     return EvaluationSkillResult(
         skill_name=name,
         normalized_skill_name=normalized,
         type=match_type,
         importance=importance,
-        evidence=evidence if isinstance(evidence, str) else None,
+        evidence=resolved_evidence if isinstance(resolved_evidence, str) else None,
         note=note,
     )
 
@@ -513,7 +514,7 @@ def build_interview_questions(
     return questions[:6]
 
 
-def required_skill_weight(skills: Iterable) -> float:
+def required_skill_weight(skills: Iterable[Any]) -> float:
     return sum((skill.weight_hint or (1.25 if skill.is_core else 1.0)) for skill in skills)
 
 
@@ -524,7 +525,7 @@ def job_skill_names(request: ScoreApplicationRequest) -> set[str]:
     }
 
 
-def job_text(job_description) -> str:
+def job_text(job_description: Any) -> str:
     return " ".join(
         [
             job_description.title or "",
@@ -537,7 +538,7 @@ def job_text(job_description) -> str:
     )
 
 
-def resume_text(resume) -> str:
+def resume_text(resume: Any) -> str:
     sections = [resume.summary or ""]
     sections.extend(skill.name for skill in resume.skills)
     for exp in resume.experience:
