@@ -1,3 +1,5 @@
+from typing import Any
+
 from pydantic import BaseModel, Field
 
 from app.schemas.job_description import ParsedJobDescriptionData
@@ -53,4 +55,4 @@ class EvaluationResult(BaseModel):
     explanation: str | None = None
     skill_gap_summary: str | None = None
     interview_questions: list[EvaluationInterviewQuestion] = Field(default_factory=list)
-    evidence_map: dict[str, list[str]] = Field(default_factory=dict)
+    evidence_map: dict[str, Any] = Field(default_factory=dict)
