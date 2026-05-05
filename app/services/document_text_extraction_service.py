@@ -6,6 +6,38 @@ import httpx
 from docx import Document
 from pypdf import PdfReader
 
+VIETNAMESE_WORD_RE = re.compile(r"^[A-Za-zÀ-ỹĐđ]+$")
+COMMON_VIETNAMESE_ONSET_FRAGMENTS = {
+    "b",
+    "c",
+    "ch",
+    "d",
+    "đ",
+    "g",
+    "gh",
+    "gi",
+    "h",
+    "k",
+    "kh",
+    "l",
+    "m",
+    "n",
+    "ng",
+    "ngh",
+    "nh",
+    "p",
+    "ph",
+    "q",
+    "qu",
+    "r",
+    "s",
+    "t",
+    "th",
+    "tr",
+    "v",
+    "x",
+}
+
 
 class DocumentTextExtractionError(Exception):
     pass
@@ -109,7 +141,7 @@ class DocumentTextExtractionService:
             warnings.append(f"PyMuPDF PDF extraction failed; falling back to pypdf: {exc}")
             return ""
 
-        return self._normalize_extracted_text("\n".join(page_texts))
+        return self._normalize_extracted_text("\n".join(page_texts), repair_pdf_spacing=True)
 
     def _extract_pymupdf_page_text(self, page: Any) -> str:
         page_width = float(page.rect.width)
@@ -120,7 +152,7 @@ class DocumentTextExtractionService:
                 continue
 
             x0, y0, _x1, _y1, text = block[:5]
-            normalized_text = self._normalize_extracted_text(str(text))
+            normalized_text = self._normalize_extracted_text(str(text), repair_pdf_spacing=True)
             if not normalized_text:
                 continue
 
@@ -160,7 +192,7 @@ class DocumentTextExtractionService:
             warnings.append(f"pypdf PDF extraction failed: {exc}")
             return ""
 
-        return self._normalize_extracted_text("\n".join(page_texts))
+        return self._normalize_extracted_text("\n".join(page_texts), repair_pdf_spacing=True)
 
     def _extract_docx_text(self, document_bytes: bytes) -> DocumentTextExtractionResult:
         try:
@@ -183,12 +215,72 @@ class DocumentTextExtractionService:
             warnings=warnings,
         )
 
-    def _normalize_extracted_text(self, text: str) -> str:
-        return "\n".join(
-            re.sub(r"[ \t\f\v]+", " ", line).strip()
-            for line in (text or "").replace("\x00", "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
-            if line.strip()
-        ).strip()
+    def _normalize_extracted_text(self, text: str, repair_pdf_spacing: bool = False) -> str:
+        lines = []
+        for raw_line in (
+            (text or "").replace("\x00", "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+        ):
+            line = re.sub(r"[ \t\f\v]+", " ", raw_line).strip()
+            if repair_pdf_spacing:
+                line = self._repair_broken_vietnamese_spacing(line)
+            if line:
+                lines.append(line)
+
+        return "\n".join(lines).strip()
+
+    def _repair_broken_vietnamese_spacing(self, line: str) -> str:
+        tokens = line.split()
+        if len(tokens) < 2 or not self._looks_like_broken_vietnamese_line(tokens):
+            return line
+
+        repaired_tokens: list[str] = []
+        index = 0
+
+        while index < len(tokens):
+            current = tokens[index]
+
+            while index + 1 < len(tokens) and self._should_join_broken_vietnamese_token(
+                current,
+                tokens[index + 1],
+            ):
+                index += 1
+                current = f"{current}{tokens[index]}"
+
+            repaired_tokens.append(current)
+            index += 1
+
+        return " ".join(repaired_tokens)
+
+    def _looks_like_broken_vietnamese_line(self, tokens: list[str]) -> bool:
+        word_tokens = [token for token in tokens if self._is_word_token(token)]
+        single_letter_count = sum(1 for token in word_tokens if len(token) == 1)
+        short_fragment_count = sum(
+            1
+            for token in word_tokens
+            if len(token) <= 2 and token.lower() in COMMON_VIETNAMESE_ONSET_FRAGMENTS
+        )
+
+        return single_letter_count >= 1 or short_fragment_count >= 2
+
+    def _should_join_broken_vietnamese_token(self, left: str, right: str) -> bool:
+        if not self._is_word_token(left) or not self._is_word_token(right):
+            return False
+
+        left_lower = left.lower()
+
+        if len(right) == 1 and len(left) <= 4:
+            return True
+
+        if len(left) == 1 and len(right) <= 6:
+            return True
+
+        if left_lower in COMMON_VIETNAMESE_ONSET_FRAGMENTS and len(right) <= 6:
+            return True
+
+        return False
+
+    def _is_word_token(self, token: str) -> bool:
+        return bool(VIETNAMESE_WORD_RE.fullmatch(token))
 
 
 document_text_extraction_service = DocumentTextExtractionService()
