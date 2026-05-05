@@ -56,18 +56,34 @@ def _extract_proficiency(value: str) -> str | None:
         proficiency = proficiency.strip(" -|,")
         return proficiency or None
 
-    return None
+    normalized_language = _normalize_language_key(value)
+    for key in LANGUAGE_NAMES:
+        normalized_language = re.sub(rf"\b{re.escape(key)}\b", "", normalized_language).strip()
+
+    return re.sub(r"\s+", " ", normalized_language).strip() or None
 
 
-def extract_languages(text: str) -> list[dict]:
-    languages = []
-    seen = set()
+def _merge_wrapped_language_lines(text: str) -> list[str]:
+    merged_lines: list[str] = []
 
     for raw_line in (text or "").splitlines():
         line = strip_list_marker(raw_line)
         if not line:
             continue
 
+        if merged_lines and not _extract_language_name(line) and not re.search(r"[,;:]", line):
+            merged_lines[-1] = f"{merged_lines[-1]} {line}".strip()
+        else:
+            merged_lines.append(line)
+
+    return merged_lines
+
+
+def extract_languages(text: str) -> list[dict]:
+    languages = []
+    seen = set()
+
+    for line in _merge_wrapped_language_lines(text):
         parts = [part.strip() for part in re.split(r"[,;]", line) if part.strip()]
         for part in parts:
             name = _extract_language_name(part)
