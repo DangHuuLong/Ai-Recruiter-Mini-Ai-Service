@@ -7,6 +7,7 @@ from docx import Document
 from pypdf import PdfReader
 
 LINE_Y_TOLERANCE = 3.0
+URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
 
 
 class DocumentTextExtractionError(Exception):
@@ -116,9 +117,11 @@ class DocumentTextExtractionService:
     def _extract_pymupdf_page_text(self, page: Any) -> str:
         words = page.get_text("words", sort=False)
         if not words:
-            return page.get_text("text", sort=True)
+            text = page.get_text("text", sort=True)
+            return self._append_page_links(text, self._extract_page_links(page))
 
         page_width = float(page.rect.width)
+        page_links = self._extract_page_links(page)
         left_words = []
         right_words = []
 
@@ -143,16 +146,45 @@ class DocumentTextExtractionService:
                 right_words.append(item)
 
         if left_words and right_words:
-            return "\n".join(
+            page_text = "\n".join(
                 [
-                    self._words_to_text(left_words),
-                    self._words_to_text(right_words),
+                    self._words_to_text(left_words, page_links),
+                    self._words_to_text(right_words, page_links),
                 ],
             )
+        else:
+            page_text = self._words_to_text(left_words or right_words, page_links)
 
-        return self._words_to_text(left_words or right_words)
+        return self._append_unmatched_links(page_text, page_links)
 
-    def _words_to_text(self, words: list[dict[str, float | str]]) -> str:
+    def _extract_page_links(self, page: Any) -> list[dict[str, Any]]:
+        links: list[dict[str, Any]] = []
+
+        try:
+            raw_links = page.get_links()
+        except Exception:
+            return links
+
+        for raw_link in raw_links:
+            uri = self._normalize_url(raw_link.get("uri", ""))
+            rect = raw_link.get("from")
+            if not uri or rect is None:
+                continue
+
+            links.append(
+                {
+                    "url": uri,
+                    "x0": float(rect.x0),
+                    "y0": float(rect.y0),
+                    "x1": float(rect.x1),
+                    "y1": float(rect.y1),
+                    "matched": False,
+                },
+            )
+
+        return links
+
+    def _words_to_text(self, words: list[dict[str, float | str]], links: list[dict[str, Any]] | None = None) -> str:
         if not words:
             return ""
 
@@ -174,11 +206,82 @@ class DocumentTextExtractionService:
         line_texts = []
         for line in lines:
             ordered_line = sorted(line, key=lambda word: float(word["x0"]))
-            line_text = " ".join(str(word["text"]) for word in ordered_line)
-            if line_text.strip():
+            line_text = " ".join(str(word["text"]) for word in ordered_line).strip()
+            line_urls = self._urls_for_line(ordered_line, links or [])
+
+            if line_text:
                 line_texts.append(line_text)
+            for url in line_urls:
+                line_texts.append(url)
 
         return "\n".join(line_texts)
+
+    def _urls_for_line(
+        self,
+        line: list[dict[str, float | str]],
+        links: list[dict[str, Any]],
+    ) -> list[str]:
+        if not links or not line:
+            return []
+
+        min_x = min(float(word["x0"]) for word in line)
+        max_x = max(float(word["x1"]) for word in line)
+        min_y = min(float(word["y0"]) for word in line)
+        max_y = max(float(word["y1"]) for word in line)
+        urls: list[str] = []
+
+        for link in links:
+            if link["matched"]:
+                continue
+            horizontally_overlaps = float(link["x1"]) >= min_x - 4 and float(link["x0"]) <= max_x + 4
+            vertically_overlaps = float(link["y1"]) >= min_y - 4 and float(link["y0"]) <= max_y + 4
+
+            if horizontally_overlaps and vertically_overlaps:
+                link["matched"] = True
+                urls.append(str(link["url"]))
+
+        return self._unique_urls(urls)
+
+    def _append_page_links(self, text: str, links: list[dict[str, Any]]) -> str:
+        urls = self._unique_urls([str(link["url"]) for link in links])
+        if not urls:
+            return text
+
+        return "\n".join([text, *urls])
+
+    def _append_unmatched_links(self, text: str, links: list[dict[str, Any]]) -> str:
+        urls = self._unique_urls([str(link["url"]) for link in links if not link["matched"]])
+        if not urls:
+            return text
+
+        existing_urls = set(URL_RE.findall(text or ""))
+        missing_urls = [url for url in urls if url not in existing_urls]
+        if not missing_urls:
+            return text
+
+        return "\n".join([text, *missing_urls])
+
+    def _unique_urls(self, urls: list[str]) -> list[str]:
+        result = []
+        seen = set()
+
+        for url in urls:
+            normalized_url = self._normalize_url(url)
+            if not normalized_url:
+                continue
+            key = normalized_url.rstrip("/").lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            result.append(normalized_url)
+
+        return result
+
+    def _normalize_url(self, value: str) -> str | None:
+        cleaned = (value or "").strip().rstrip(".,;)")
+        if not re.match(r"^https?://", cleaned, flags=re.IGNORECASE):
+            return None
+        return cleaned
 
     def _try_extract_pdf_text_with_pypdf(
         self,
