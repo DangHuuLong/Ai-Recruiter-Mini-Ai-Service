@@ -1,4 +1,6 @@
 from io import BytesIO
+import re
+from typing import Any
 
 import httpx
 from docx import Document
@@ -62,25 +64,103 @@ class DocumentTextExtractionService:
         return upper_file_type
 
     def _extract_pdf_text(self, document_bytes: bytes) -> DocumentTextExtractionResult:
+        warnings: list[str] = []
+
+        pymupdf_text = self._try_extract_pdf_text_with_pymupdf(document_bytes, warnings)
+        if pymupdf_text:
+            return DocumentTextExtractionResult(
+                raw_text=pymupdf_text,
+                method="PDF_TEXT_PYMUPDF",
+                warnings=warnings,
+            )
+
+        pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
+        if pypdf_text:
+            return DocumentTextExtractionResult(
+                raw_text=pypdf_text,
+                method="PDF_TEXT_PYPDF",
+                warnings=warnings,
+            )
+
+        warnings.append(
+            "No selectable text was extracted from the PDF. OCR fallback is not implemented yet.",
+        )
+        return DocumentTextExtractionResult(
+            raw_text="",
+            method="PDF_TEXT_EMPTY",
+            warnings=warnings,
+        )
+
+    def _try_extract_pdf_text_with_pymupdf(
+        self,
+        document_bytes: bytes,
+        warnings: list[str],
+    ) -> str:
+        try:
+            import fitz  # PyMuPDF
+        except ImportError:
+            warnings.append("PyMuPDF is not installed; falling back to pypdf for PDF text extraction.")
+            return ""
+
+        try:
+            with fitz.open(stream=document_bytes, filetype="pdf") as document:
+                page_texts = [self._extract_pymupdf_page_text(page) for page in document]
+        except Exception as exc:  # PyMuPDF raises multiple parser-specific exceptions.
+            warnings.append(f"PyMuPDF PDF extraction failed; falling back to pypdf: {exc}")
+            return ""
+
+        return self._normalize_extracted_text("\n".join(page_texts))
+
+    def _extract_pymupdf_page_text(self, page: Any) -> str:
+        page_width = float(page.rect.width)
+        blocks = []
+
+        for block in page.get_text("blocks", sort=True):
+            if len(block) < 5:
+                continue
+
+            x0, y0, _x1, _y1, text = block[:5]
+            normalized_text = self._normalize_extracted_text(str(text))
+            if not normalized_text:
+                continue
+
+            blocks.append(
+                {
+                    "x0": float(x0),
+                    "y0": float(y0),
+                    "text": normalized_text,
+                },
+            )
+
+        if not blocks:
+            return ""
+
+        left_column_blocks = [block for block in blocks if block["x0"] < page_width * 0.38]
+        right_column_blocks = [block for block in blocks if block["x0"] >= page_width * 0.38]
+
+        if left_column_blocks and right_column_blocks:
+            ordered_blocks = [
+                *sorted(left_column_blocks, key=lambda block: (block["y0"], block["x0"])),
+                *sorted(right_column_blocks, key=lambda block: (block["y0"], block["x0"])),
+            ]
+        else:
+            ordered_blocks = sorted(blocks, key=lambda block: (block["y0"], block["x0"]))
+
+        return "\n".join(block["text"] for block in ordered_blocks)
+
+    def _try_extract_pdf_text_with_pypdf(
+        self,
+        document_bytes: bytes,
+        warnings: list[str],
+    ) -> str:
         try:
             reader = PdfReader(BytesIO(document_bytes))
             page_texts = [(page.extract_text() or "") for page in reader.pages]
-            raw_text = "\n".join(page_texts).strip()
         except Exception as exc:  # pypdf raises multiple parser-specific exceptions.
-            raise DocumentTextExtractionError(f"Failed to extract PDF text: {exc}") from exc
+            warnings.append(f"pypdf PDF extraction failed: {exc}")
+            return ""
 
-        warnings: list[str] = []
-
-        if not raw_text:
-            warnings.append(
-                "No selectable text was extracted from the PDF. OCR fallback is not implemented yet.",
-            )
-
-        return DocumentTextExtractionResult(
-            raw_text=raw_text,
-            method="PDF_TEXT",
-            warnings=warnings,
-        )
+        return self._normalize_extracted_text("\n".join(page_texts))
 
     def _extract_docx_text(self, document_bytes: bytes) -> DocumentTextExtractionResult:
         try:
@@ -91,6 +171,7 @@ class DocumentTextExtractionService:
         except Exception as exc:  # python-docx may raise zip/xml parser errors for invalid docs.
             raise DocumentTextExtractionError(f"Failed to extract DOCX text: {exc}") from exc
 
+        raw_text = self._normalize_extracted_text(raw_text)
         warnings: list[str] = []
 
         if not raw_text:
@@ -101,6 +182,13 @@ class DocumentTextExtractionService:
             method="DOCX_TEXT",
             warnings=warnings,
         )
+
+    def _normalize_extracted_text(self, text: str) -> str:
+        return "\n".join(
+            re.sub(r"[ \t\f\v]+", " ", line).strip()
+            for line in (text or "").replace("\x00", "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+            if line.strip()
+        ).strip()
 
 
 document_text_extraction_service = DocumentTextExtractionService()
