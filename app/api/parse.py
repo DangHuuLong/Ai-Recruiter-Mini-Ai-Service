@@ -1,19 +1,23 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 from app.schemas.common import ApiResponse
 from app.schemas.job_description import (
     ParseJobDescriptionRequest,
     ParsedJobDescriptionData,
 )
-from app.schemas.resume import ParseResumeRequest, ParsedResumeData
+from app.schemas.resume import ParseResumeRequest, ParseResumeResult
+from app.services.document_text_extraction_service import DocumentTextExtractionError
 from app.services.parsing_service import parsing_service
 
 router = APIRouter(prefix="/parse", tags=["parse"])
 
 
-@router.post("/resume", response_model=ApiResponse[ParsedResumeData])
-def parse_resume(request: ParseResumeRequest) -> ApiResponse[ParsedResumeData]:
-    parsed_resume = parsing_service.parse_resume(request.raw_text)
+@router.post("/resume", response_model=ApiResponse[ParseResumeResult])
+def parse_resume(request: ParseResumeRequest) -> ApiResponse[ParseResumeResult]:
+    try:
+        parsed_resume = parsing_service.parse_resume(request)
+    except DocumentTextExtractionError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     return ApiResponse(
         success=True,
