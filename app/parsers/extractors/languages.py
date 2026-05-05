@@ -79,6 +79,30 @@ def _merge_wrapped_language_lines(text: str) -> list[str]:
     return merged_lines
 
 
+def _recover_vietnamese_english_proficiency(text: str) -> str | None:
+    lines = [strip_list_marker(raw_line) for raw_line in (text or "").splitlines()]
+    lines = [line for line in lines if line]
+
+    for index, line in enumerate(lines):
+        normalized = _normalize_language_key(line)
+        if not normalized.startswith("tieng anh"):
+            continue
+
+        candidates = [line]
+        if index + 1 < len(lines):
+            next_line = lines[index + 1]
+            normalized_next = _normalize_language_key(next_line)
+            if normalized_next.startswith(("va ", "and ")) or not _extract_language_name(next_line):
+                candidates.append(next_line)
+
+        combined = " ".join(candidates)
+        if ":" in combined:
+            _, proficiency = combined.split(":", 1)
+            return re.sub(r"\s+", " ", proficiency.strip(" -|,")) or None
+
+    return None
+
+
 def extract_languages(text: str) -> list[dict]:
     languages = []
     seen = set()
@@ -90,11 +114,15 @@ def extract_languages(text: str) -> list[dict]:
             if not name or name in seen:
                 continue
 
+            proficiency = _extract_proficiency(part)
+            if name == "English":
+                proficiency = _recover_vietnamese_english_proficiency(text) or proficiency
+
             seen.add(name)
             languages.append(
                 {
                     "name": name,
-                    "proficiency": _extract_proficiency(part),
+                    "proficiency": proficiency,
                 }
             )
 
