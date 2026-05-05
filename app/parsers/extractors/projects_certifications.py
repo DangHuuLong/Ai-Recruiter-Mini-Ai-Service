@@ -212,6 +212,20 @@ def _label_kind(line: str) -> str | None:
     return None
 
 
+def _is_link_metadata_line(line: str) -> bool:
+    normalized = _normalize_key(line)
+    return bool(
+        _label_kind(line) == "link"
+        or normalized.startswith("link github")
+        or normalized.startswith("github")
+        or normalized.startswith("link gitlab")
+        or normalized.startswith("gitlab")
+        or normalized.startswith("demo")
+        or normalized.startswith("repository")
+        or normalized.startswith("repo")
+    )
+
+
 def _is_field_label_line(line: str) -> bool:
     return _label_kind(line) is not None
 
@@ -374,7 +388,7 @@ def _append_description(parts: list[str], label: str | None, value: str) -> None
 
 
 def _extract_technology_names(line: str) -> list[str]:
-    if _label_kind(line) == "link":
+    if _is_link_metadata_line(line):
         return []
 
     return [skill["name"] for skill in extract_skills(line)]
@@ -438,7 +452,7 @@ def parse_project_block(lines: list[str]) -> dict:
             _append_description(description_parts, label, value or clean)
             continue
 
-        if kind == "link":
+        if kind == "link" or _is_link_metadata_line(clean):
             continue
 
         technologies.extend(_extract_technology_names(clean))
