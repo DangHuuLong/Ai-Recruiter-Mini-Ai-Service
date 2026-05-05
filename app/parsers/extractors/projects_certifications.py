@@ -373,6 +373,13 @@ def _append_description(parts: list[str], label: str | None, value: str) -> None
         parts.append(value)
 
 
+def _extract_technology_names(line: str) -> list[str]:
+    if _label_kind(line) == "link":
+        return []
+
+    return [skill["name"] for skill in extract_skills(line)]
+
+
 def parse_project_block(lines: list[str]) -> dict:
     if not lines:
         return {
@@ -412,8 +419,6 @@ def parse_project_block(lines: list[str]) -> dict:
         if found_url and not url:
             url = found_url
 
-        technologies.extend(skill["name"] for skill in extract_skills(clean))
-
         if found_url and _is_url_only_line(clean, found_url):
             continue
 
@@ -429,12 +434,14 @@ def parse_project_block(lines: list[str]) -> dict:
             continue
 
         if kind == "technologies":
-            technologies.extend(skill["name"] for skill in extract_skills(value or clean))
+            technologies.extend(_extract_technology_names(value or clean))
             _append_description(description_parts, label, value or clean)
             continue
 
         if kind == "link":
             continue
+
+        technologies.extend(_extract_technology_names(clean))
 
         if kind in {"description", "role", "status", "meta"}:
             _append_description(description_parts, label, value or clean)
@@ -442,7 +449,7 @@ def parse_project_block(lines: list[str]) -> dict:
 
         _append_description(description_parts, None, clean)
 
-    technologies.extend(skill["name"] for skill in extract_skills(first_line))
+    technologies.extend(_extract_technology_names(first_line))
 
     return {
         "name": name or None,
