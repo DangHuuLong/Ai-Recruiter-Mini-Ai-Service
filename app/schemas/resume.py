@@ -1,8 +1,12 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 
 
 class ParseResumeRequest(BaseModel):
-    raw_text: str
+    resume_id: str
+    file_name: str
+    file_type: str
+    signed_url: HttpUrl
+    checksum: str | None = None
 
 
 class ResumePersonalInfo(BaseModel):
@@ -77,3 +81,12 @@ class ParsedResumeData(BaseModel):
     certifications: list[ResumeCertification] = Field(default_factory=list)
     achievements: list[ResumeAchievement] = Field(default_factory=list)
     languages: list[ResumeLanguage] = Field(default_factory=list)
+
+
+class ParseResumeResult(BaseModel):
+    raw_text: str
+    parsed_data: ParsedResumeData
+    parser_version: str
+    warnings: list[str] = Field(default_factory=list)
+    confidence: float | None = None
+    text_extraction_method: str
