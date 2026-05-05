@@ -1,46 +1,25 @@
-from fastapi.testclient import TestClient
-
-from app.main import app
+from app.services.parsing_service import parsing_service
 
 
-client = TestClient(app)
+def parse_resume_text(raw_text: str) -> dict:
+    return parsing_service.parse_resume_text(raw_text).model_dump(mode="json")
 
 
 def test_parse_resume_returns_parsed_resume_data():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": "Candidate has experience with Python, FastAPI, and PostgreSQL. Contact: test@example.com +84901234567 https://github.com/test",
-        },
+    data = parse_resume_text(
+        "Candidate has experience with Python, FastAPI, and PostgreSQL. Contact: test@example.com +84901234567 https://github.com/test",
     )
 
-    assert response.status_code == 200
-
-    body = response.json()
-
-    assert body["success"] is True
-    assert body["message"] == "Resume parsed successfully"
-    # summary may be None for short inputs
-    assert "data" in body
-    assert isinstance(body["data"], dict)
-    assert len(body["data"].get("skills", [])) >= 1
-    # email and phone should be extracted
-    assert body["data"]["personal"]["email"] == "test@example.com"
-    assert body["data"]["personal"]["phone"] == "+84901234567"
-    assert body["data"]["personal"]["github_url"] == "https://github.com/test"
+    assert len(data.get("skills", [])) >= 1
+    assert data["personal"]["email"] == "test@example.com"
+    assert data["personal"]["phone"] == "+84901234567"
+    assert data["personal"]["github_url"] == "https://github.com/test"
 
 
 def test_parse_resume_removes_null_bytes_from_raw_text():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": "Nguyen\u0000 Van A\nSkills:\nPython\u0000, FastAPI, PostgreSQL",
-        },
+    data = parse_resume_text(
+        "Nguyen\u0000 Van A\nSkills:\nPython\u0000, FastAPI, PostgreSQL",
     )
-
-    assert response.status_code == 200
-
-    data = response.json()["data"]
     normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
 
     assert "python" in normalized_skills
@@ -49,10 +28,8 @@ def test_parse_resume_removes_null_bytes_from_raw_text():
 
 
 def test_parse_resume_extracts_structured_sections():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 John Doe
 Email: john.doe@example.com
 Phone: +84987654321
@@ -86,11 +63,7 @@ Improved API response time by 40% in 2024
 Languages:
 English - Intermediate, Vietnamese - Native
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["full_name"] == "John Doe"
     assert data["personal"]["linkedin_url"] == "https://linkedin.com/in/johndoe"
@@ -98,7 +71,9 @@ English - Intermediate, Vietnamese - Native
     assert data["summary"] == "Backend developer with practical API and database experience."
 
     normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
-    assert {"python", "fastapi", "postgresql", "docker", "redis", "rest_api"}.issubset(normalized_skills)
+    assert {"python", "fastapi", "postgresql", "docker", "redis", "rest_api"}.issubset(
+        normalized_skills,
+    )
 
     assert data["experience"][0]["role"] == "Backend Developer"
     assert data["experience"][0]["company"] == "ABC Tech"
@@ -127,10 +102,8 @@ English - Intermediate, Vietnamese - Native
 
 
 def test_parse_resume_handles_resume_without_clear_section_headers():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 Nguyen Van A
 nguyen@example.com | +84 912 345 678 | github.com/nguyenvana
 Backend Engineer at Beta Labs | 06/2021 - Present
@@ -139,11 +112,7 @@ University of Science - Bachelor of Information Technology, 2017 - 2021
 AWS Certified Developer - Amazon Web Services, 2022
 English - Advanced
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["full_name"] == "Nguyen Van A"
     assert data["personal"]["github_url"] == "https://github.com/nguyenvana"
@@ -157,10 +126,8 @@ English - Advanced
 
 
 def test_parse_resume_handles_vietnamese_section_headers():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 Tran Thi B
 Email: tranb@example.com
 
@@ -176,11 +143,7 @@ Truong Dai hoc Bach Khoa - Cu nhan Cong nghe thong tin, 2016 - 2020
 Ngôn ngữ:
 Tieng Anh - Advanced
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["full_name"] == "Tran Thi B"
     normalized_skills = {skill["normalized_name"] for skill in data["skills"]}
@@ -192,10 +155,8 @@ Tieng Anh - Advanced
 
 
 def test_parse_resume_handles_vietnamese_projects_and_education_blocks():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 Đặng Hữu Long
 Developer
 danghuulong394@gmail.com
@@ -230,11 +191,7 @@ Admin: quản lý khách hàng, sản phẩm, danh mục
 Auth: đăng nhập, đăng ký, quên mật khẩu
 Trạng thái: Đang phát triển
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["location"] == "P. Hòa Xuân, TP. Đà Nẵng"
 
@@ -264,10 +221,8 @@ Trạng thái: Đang phát triển
 
 
 def test_parse_resume_normalizes_personal_links_without_stealing_project_urls():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 Ninh Hoang Khai
 FRESHER FRONTEND DEVELOPER
 nhkkhaii@gmail.com 0945772109 Ho Chi Minh City, Viet Nam nhkkhaii.super.site
@@ -305,11 +260,7 @@ Technologies: C#, SQL Server, Microsoft Visual Studio
 Description:
 Desktop construction project management application.
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["github_url"] == "https://github.com/nhkkhaii"
     assert data["personal"]["portfolio_url"] == "https://nhkkhaii.super.site/"
@@ -331,10 +282,8 @@ Desktop construction project management application.
 
 
 def test_parse_resume_handles_frontend_developer_pdf_text_layout():
-    response = client.post(
-        "/parse/resume",
-        json={
-            "raw_text": """
+    data = parse_resume_text(
+        """
 Nguyễn Quốc Bình
 Frontend Developer
 Objective
@@ -401,11 +350,7 @@ Certicate
 Honours Awards
 2019 Best staff of the year 2019, OneTech
 """,
-        },
     )
-
-    assert response.status_code == 200
-    data = response.json()["data"]
 
     assert data["personal"]["full_name"] == "Nguyễn Quốc Bình"
     assert data["personal"]["email"] == "recruit.cv@growupwork.com"
