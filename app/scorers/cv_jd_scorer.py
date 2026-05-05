@@ -21,6 +21,103 @@ DEFAULT_CRITERIA = [
 ]
 DEFAULT_EVIDENCE = object()
 
+GENERIC_MATCH_TOKENS = {
+    "a",
+    "about",
+    "across",
+    "all",
+    "an",
+    "and",
+    "application",
+    "applications",
+    "are",
+    "as",
+    "at",
+    "backed",
+    "based",
+    "build",
+    "built",
+    "business",
+    "code",
+    "collaborate",
+    "communication",
+    "company",
+    "create",
+    "created",
+    "data",
+    "database",
+    "deliver",
+    "design",
+    "designed",
+    "developer",
+    "development",
+    "dynamic",
+    "experience",
+    "features",
+    "flow",
+    "for",
+    "from",
+    "full",
+    "good",
+    "implement",
+    "implemented",
+    "improve",
+    "in",
+    "integration",
+    "is",
+    "it",
+    "maintain",
+    "modern",
+    "new",
+    "of",
+    "or",
+    "platform",
+    "processes",
+    "product",
+    "project",
+    "projects",
+    "quality",
+    "real",
+    "role",
+    "service",
+    "services",
+    "software",
+    "stable",
+    "store",
+    "strong",
+    "system",
+    "systems",
+    "team",
+    "teams",
+    "the",
+    "to",
+    "using",
+    "with",
+    "work",
+    "workflow",
+    "workflows",
+}
+
+EDUCATION_STOP_WORDS = GENERIC_MATCH_TOKENS | {
+    "bachelor",
+    "bachelors",
+    "degree",
+    "related",
+    "field",
+    "science",
+    "engineering",
+}
+
+COMPUTER_SCIENCE_TERMS = {
+    "computer",
+    "computing",
+    "information",
+    "informatics",
+    "it",
+    "software",
+    "technology",
+}
+
 
 @dataclass(frozen=True)
 class SkillScoringResult:
@@ -225,46 +322,62 @@ def score_keyword_overlap(request: ScoreApplicationRequest) -> tuple[float, str,
     jd_keywords = set(normalize_text(item) for item in request.job_description.domain_keywords)
     jd_keywords.update(tokens_from_text(" ".join(request.job_description.requirements)))
     jd_keywords.update(tokens_from_text(" ".join(request.job_description.responsibilities)))
-    resume_tokens = set(tokens_from_text(resume_text(request.resume)))
+    jd_keywords.update(job_skill_names(request))
 
-    stop_words = {"and", "or", "the", "with", "for", "to", "in", "of", "a", "an", "is", "are"}
-    jd_keywords = {item for item in jd_keywords if len(item) > 2 and item not in stop_words}
+    resume_tokens = meaningful_tokens(resume_text(request.resume))
+    jd_keywords = {item for item in jd_keywords if is_meaningful_match_token(item)}
     if not jd_keywords:
-        return 0.0, "No domain keywords were available in the job description.", []
+        return 0.0, "No meaningful domain keywords were available in the job description.", []
 
-    matched = sorted(jd_keywords & resume_tokens)
+    matched = sorted(item for item in jd_keywords if signal_matches_skill(resume_tokens, item))
     score = len(matched) / len(jd_keywords)
     return (
         clamp(score),
-        "Keyword/domain alignment based on overlap between JD domain terms and resume text.",
+        "Keyword/domain alignment based on meaningful JD terms found in resume evidence.",
         [f"Matched domain keyword: {item}" for item in matched[:8]],
     )
 
 
 def score_project_relevance(request: ScoreApplicationRequest) -> tuple[float, str, list[str]]:
-    jd_skill_names = job_skill_names(request)
-    jd_tokens = set(tokens_from_text(job_text(request.job_description))) | jd_skill_names
+    required_skills = normalized_skill_names(request.job_description.required_skills)
+    preferred_skills = normalized_skill_names(request.job_description.preferred_skills)
+    domain_keywords = meaningful_domain_keywords(request)
+
     if not request.resume.projects:
         return 0.0, "No projects found in parsed resume.", []
 
     project_scores: list[float] = []
     evidence: list[str] = []
     for project in request.resume.projects:
-        project_tokens = set(tokens_from_text(project.description or ""))
-        project_tokens.update(normalize_text(item) for item in project.technologies)
-        overlap = project_tokens & jd_tokens
-        score = len(overlap) / max(1, min(len(jd_tokens), 12))
+        project_signals = project_signal_tokens(project)
+        matched_required = sorted(skill for skill in required_skills if signal_matches_skill(project_signals, skill))
+        matched_preferred = sorted(skill for skill in preferred_skills if signal_matches_skill(project_signals, skill))
+        matched_domain = sorted(skill for skill in domain_keywords if signal_matches_skill(project_signals, skill))
+
+        required_score = len(matched_required) / max(1, len(required_skills))
+        preferred_score = len(matched_preferred) / max(1, len(preferred_skills))
+        domain_score = len(matched_domain) / max(1, len(domain_keywords))
+        score = required_score * 0.75 + preferred_score * 0.10 + domain_score * 0.15
+
+        missing_required_ratio = 1.0 - required_score
+        if required_skills and missing_required_ratio >= 0.60:
+            score = min(score, 0.45)
+        if required_skills and not matched_required:
+            score = min(score, 0.25)
+
         project_scores.append(clamp(score))
-        if overlap:
+        matched_for_evidence = [*matched_required, *matched_preferred, *matched_domain]
+        if matched_for_evidence:
             evidence.append(
-                f"Project {project.name or 'Unnamed project'} matches: {', '.join(sorted(overlap)[:5])}"
+                f"Project {project.name or 'Unnamed project'} matches meaningful signals: "
+                f"{', '.join(matched_for_evidence[:5])}"
             )
 
     best_score = max(project_scores) if project_scores else 0.0
     avg_score = sum(project_scores) / len(project_scores) if project_scores else 0.0
     return (
-        clamp(best_score * 0.7 + avg_score * 0.3),
-        "Project relevance combines best project fit and average project overlap with JD skills/domain.",
+        clamp(best_score * 0.75 + avg_score * 0.25),
+        "Project relevance prioritizes required skill evidence and ignores generic wording overlap.",
         evidence[:8],
     )
 
@@ -279,27 +392,48 @@ def score_experience_relevance(request: ScoreApplicationRequest) -> tuple[float,
     elif total_months > 0:
         years_score = 0.8
 
-    jd_tokens = set(tokens_from_text(job_text(request.job_description))) | job_skill_names(request)
+    required_skills = normalized_skill_names(request.job_description.required_skills)
+    preferred_skills = normalized_skill_names(request.job_description.preferred_skills)
+    domain_keywords = meaningful_domain_keywords(request)
+
     evidence: list[str] = []
     overlap_scores: list[float] = []
     for exp in request.resume.experience:
-        exp_tokens = set(tokens_from_text(" ".join(exp.responsibilities)))
-        exp_tokens.update(normalize_text(item) for item in exp.technologies)
-        role_tokens = set(tokens_from_text(exp.role or ""))
-        overlap = (exp_tokens | role_tokens) & jd_tokens
-        overlap_scores.append(len(overlap) / max(1, min(len(jd_tokens), 12)))
-        if overlap:
+        exp_signals = experience_signal_tokens(exp)
+        matched_required = sorted(skill for skill in required_skills if signal_matches_skill(exp_signals, skill))
+        matched_preferred = sorted(skill for skill in preferred_skills if signal_matches_skill(exp_signals, skill))
+        matched_domain = sorted(skill for skill in domain_keywords if signal_matches_skill(exp_signals, skill))
+
+        required_score = len(matched_required) / max(1, len(required_skills))
+        preferred_score = len(matched_preferred) / max(1, len(preferred_skills))
+        domain_score = len(matched_domain) / max(1, len(domain_keywords))
+        overlap_scores.append(required_score * 0.70 + preferred_score * 0.10 + domain_score * 0.20)
+
+        matched_for_evidence = [*matched_required, *matched_preferred, *matched_domain]
+        if matched_for_evidence:
             evidence.append(
-                f"Experience {exp.role or 'role'} at {exp.company or 'company'} matches: {', '.join(sorted(overlap)[:5])}"
+                f"Experience {exp.role or 'role'} at {exp.company or 'company'} matches meaningful signals: "
+                f"{', '.join(matched_for_evidence[:5])}"
             )
 
     relevance_score = max(overlap_scores) if overlap_scores else 0.0
-    score = years_score * 0.45 + clamp(relevance_score) * 0.55
+    score = years_score * 0.60 + clamp(relevance_score) * 0.40
+
+    if min_years is not None:
+        required_months = max(1, min_years * 12)
+        experience_ratio = clamp(total_months / required_months)
+        if experience_ratio < 1.0:
+            score_cap = 0.25 + 0.50 * experience_ratio
+            score = min(score, score_cap)
+            evidence.append(
+                f"Experience score capped because parsed experience is below the {min_years}-year JD requirement."
+            )
+
     if total_months:
         evidence.insert(0, f"Parsed experience duration: {round(total_months / 12, 1)} years")
     return (
         clamp(score),
-        "Experience relevance combines years of experience and overlap with JD responsibilities/skills.",
+        "Experience relevance combines years of experience with required-skill evidence and caps underqualified profiles.",
         evidence[:8],
     )
 
@@ -327,13 +461,20 @@ def score_education_match(request: ScoreApplicationRequest) -> tuple[float, str,
         " ".join(filter(None, [cert.name, cert.issuer])) for cert in certifications
     )
     candidate_tokens = set(tokens_from_text(f"{education_text} {certification_text}"))
-    matched = sorted(requirement_tokens & candidate_tokens)
-    score = len(matched) / max(1, len(requirement_tokens))
+    matched = sorted(
+        item for item in requirement_tokens & candidate_tokens if item not in EDUCATION_STOP_WORDS
+    )
+
+    score = len(matched) / max(1, len({item for item in requirement_tokens if item not in EDUCATION_STOP_WORDS}))
+    if education_requirement_is_met(requirement_tokens, candidate_tokens):
+        score = max(score, 0.75)
+        evidence.append("Education field appears to satisfy the JD's CS/IT/related degree requirement.")
+
     if matched:
         evidence.append(f"Education/certification matched requirement terms: {', '.join(matched[:6])}")
     return (
         clamp(score),
-        "Education/certification score is based on overlap with the JD education requirement.",
+        "Education/certification score is based on degree-field fit and meaningful requirement overlap.",
         evidence,
     )
 
@@ -523,6 +664,72 @@ def job_skill_names(request: ScoreApplicationRequest) -> set[str]:
         normalize_text(skill.normalized_name or skill.name)
         for skill in [*request.job_description.required_skills, *request.job_description.preferred_skills]
     }
+
+
+def normalized_skill_names(skills: Iterable[Any]) -> set[str]:
+    return {normalize_text(skill.normalized_name or skill.name) for skill in skills}
+
+
+def meaningful_domain_keywords(request: ScoreApplicationRequest) -> set[str]:
+    keywords = set(normalize_text(item) for item in request.job_description.domain_keywords)
+    keywords.update(tokens_from_text(" ".join(request.job_description.responsibilities)))
+    return {item for item in keywords if is_meaningful_match_token(item)}
+
+
+def project_signal_tokens(project: Any) -> set[str]:
+    signals = meaningful_tokens(" ".join([project.name or "", project.description or ""]))
+    signals.update(normalize_text(item) for item in project.technologies)
+    return signals
+
+
+def experience_signal_tokens(experience: Any) -> set[str]:
+    signals = meaningful_tokens(
+        " ".join([experience.role or "", " ".join(experience.responsibilities)])
+    )
+    signals.update(normalize_text(item) for item in experience.technologies)
+    return signals
+
+
+def meaningful_tokens(value: str) -> set[str]:
+    return {item for item in tokens_from_text(value) if is_meaningful_match_token(item)}
+
+
+def is_meaningful_match_token(value: str) -> bool:
+    normalized = normalize_text(value)
+    if len(normalized) <= 2:
+        return False
+    if normalized in GENERIC_MATCH_TOKENS:
+        return False
+    if all(part in GENERIC_MATCH_TOKENS for part in tokens_from_text(normalized)):
+        return False
+    return True
+
+
+def signal_matches_skill(signals: set[str], skill_name: str) -> bool:
+    normalized = normalize_text(skill_name)
+    if normalized in signals:
+        return True
+
+    parts = set(tokens_from_text(normalized))
+    if parts and parts <= signals:
+        return True
+
+    compact = normalized.replace(" ", "").replace(".", "").replace("+", "#")
+    signal_compacts = {item.replace(" ", "").replace(".", "").replace("+", "#") for item in signals}
+    return compact in signal_compacts
+
+
+def education_requirement_is_met(requirement_tokens: set[str], candidate_tokens: set[str]) -> bool:
+    requires_bachelor_or_related = bool(requirement_tokens & {"bachelor", "bachelors", "degree", "related"})
+    requires_cs_or_it = bool(requirement_tokens & COMPUTER_SCIENCE_TERMS) or "science" in requirement_tokens
+    candidate_has_degree_level = bool(candidate_tokens & {"bachelor", "bachelors", "university", "college"})
+    candidate_has_cs_or_it = bool(candidate_tokens & COMPUTER_SCIENCE_TERMS)
+
+    if requires_bachelor_or_related and requires_cs_or_it:
+        return candidate_has_degree_level and candidate_has_cs_or_it
+    if requires_cs_or_it:
+        return candidate_has_cs_or_it
+    return False
 
 
 def job_text(job_description: Any) -> str:
