@@ -24,7 +24,10 @@ HEADERS = {
         "career objective",
         "objective",
         "about",
+        "introduction",
         "tom tat",
+        "gioi thieu",
+        "giới thiệu",
         "muc tieu nghe nghiep",
     ),
     "skills": (
