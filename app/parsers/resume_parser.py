@@ -71,6 +71,49 @@ RESUME_HEADING_NAMES = {
     "technical skills",
     "work experience",
 }
+NAME_SCAN_STOP_HEADINGS = {"profile", "summary", "objective"}
+NAME_NOISE_TOKENS = {
+    "api",
+    "asp.net",
+    "backend",
+    "bootstrap",
+    "cloudinary",
+    "css",
+    "database",
+    "expo",
+    "express",
+    "fastapi",
+    "frontend",
+    "git",
+    "github",
+    "java",
+    "javascript",
+    "jwt",
+    "mobile",
+    "mongodb",
+    "mongoose",
+    "native",
+    "nestjs",
+    "node",
+    "postgre",
+    "postgresql",
+    "postman",
+    "prisma",
+    "python",
+    "query",
+    "react",
+    "redux",
+    "render",
+    "rest",
+    "sql",
+    "storage",
+    "supabase",
+    "tailwind",
+    "tanstack",
+    "typescript",
+    "vercel",
+    "vite",
+}
 SUMMARY_STOP_PATTERNS = (
     r"@",
     r"^s\s*t\s*:",
@@ -227,10 +270,32 @@ def _looks_like_resume_heading(value: str) -> bool:
     return _normalize_name(value) in RESUME_HEADING_NAMES
 
 
+def _looks_like_name_noise(value: str) -> bool:
+    normalized = _normalize_name(value)
+    if not normalized:
+        return True
+
+    if "," in value or "/" in value or "&" in value:
+        return True
+
+    if any(token in normalized.split() for token in NAME_NOISE_TOKENS):
+        return True
+
+    if any(token in normalized for token in ("frontend", "backend", "database", "programming languages", "tools services")):
+        return True
+
+    return False
+
+
 def _extract_full_name(raw_text: str) -> str | None:
     for line in split_lines(raw_text):
+        normalized = _normalize_name(line)
         lowered = line.lower()
-        if _looks_like_bad_text(line) or _looks_like_resume_heading(line):
+
+        if normalized in NAME_SCAN_STOP_HEADINGS:
+            return None
+
+        if _looks_like_bad_text(line) or _looks_like_resume_heading(line) or _looks_like_name_noise(line):
             continue
         if any(token in lowered for token in ["@", "http", "linkedin", "github", "phone", "email"]):
             continue
