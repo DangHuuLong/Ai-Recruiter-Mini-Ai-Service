@@ -71,7 +71,7 @@ def _extract_years(text: str) -> tuple[int | None, int | None]:
         return None, None
 
     start_year = years[0]
-    end_year = years[1] if len(years) > 1 else None
+    end_year = years[1] if len(years) > 1 and not any(word in normalized for word in PRESENT_WORDS) else None
 
     return start_year, end_year
 
@@ -95,7 +95,7 @@ def _is_date_line(line: str) -> bool:
 
 
 def _extract_degree(text: str) -> str | None:
-    normalized = strip_accents(text).lower()
+    normalized = strip_accents(text).lower().replace("ˇ", "'").replace("’", "'")
     for pattern, degree in DEGREE_PATTERNS:
         if re.search(pattern, normalized, re.IGNORECASE):
             return degree
@@ -182,7 +182,7 @@ def _extract_institution(text: str) -> str | None:
                 institution_lines.append(institution)
 
     if institution_lines:
-        return " ".join(line for line in institution_lines if line).strip(" -–—|,") or None
+        return " - ".join(line for line in institution_lines if line).strip(" -–—|,") or None
 
     return None
 
@@ -193,9 +193,6 @@ def _extract_gpa(text: str) -> str | None:
 
 
 def _looks_like_education_start(line: str) -> bool:
-    if _is_date_line(line):
-        return False
-
     normalized = strip_accents(line).lower()
 
     education_keywords = [
@@ -250,7 +247,16 @@ def _split_education_blocks(text: str) -> list[list[str]]:
     blocks: list[list[str]] = []
     current: list[str] = []
 
-    for line in lines:
+    for index, line in enumerate(lines):
+        if not current and _is_date_line(line):
+            # Two-column PDFs often emit education dates before the school name.
+            # Keep the date as part of the upcoming education block instead of
+            # dropping it before a school line starts the block.
+            next_lines = lines[index + 1 : index + 4]
+            if any(_looks_like_education_start(next_line) for next_line in next_lines):
+                current = [line]
+            continue
+
         if _looks_like_education_start(line):
             if current and not _looks_like_same_education_item(current, line):
                 blocks.append(current)
@@ -282,7 +288,7 @@ def extract_education(text: str) -> list[dict]:
                 continue
 
             lowered = strip_accents(line).lower()
-            if any(keyword in lowered for keyword in DEGREE_KEYWORDS):
+            if any(keyword in lowered for keyword in DEGREE_KEYWORDS) or _is_date_line(line):
                 candidate_lines.append(line)
 
         if candidate_lines:
@@ -327,10 +333,10 @@ def _merge_wrapped_lines(lines: list[str]) -> list[str]:
                 merged[-1] = f"{merged[-1].rstrip(' -–—')} - {clean}"
             continue
 
-        if merged and (
+        if merged and not _is_date_line(merged[-1]) and (
             merged[-1].endswith("(")
             or merged[-1].count("(") > merged[-1].count(")")
-            or len(merged[-1].split()) <= 3
+            or (len(merged[-1].split()) <= 3 and not _is_date_line(clean))
         ):
             merged[-1] = f"{merged[-1]} {clean}"
             continue
