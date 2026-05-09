@@ -23,9 +23,9 @@ DEGREE_KEYWORDS = [
 ]
 
 DEGREE_PATTERNS = [
-    (r"\b(bachelor|b\.?s\.?|bsc|b\.?eng|engineer)\b", "Bachelor"),
+    (r"\b(bachelor|bachelor'?s|b\.?s\.?|bsc|b\.?eng|engineer)\b", "Bachelor"),
     (r"\b(cu nhan|ky su)\b", "Bachelor"),
-    (r"\b(master|m\.?s\.?|msc|mba)\b", "Master"),
+    (r"\b(master|master'?s|m\.?s\.?|msc|mba)\b", "Master"),
     (r"\b(thac si|thac sy)\b", "Master"),
     (r"\b(phd|ph\.?d|doctor)\b", "PhD"),
     (r"\b(tien si)\b", "PhD"),
@@ -94,8 +94,19 @@ def _is_date_line(line: str) -> bool:
     )
 
 
+def _normalize_degree_text(text: str) -> str:
+    return (
+        strip_accents(text or "")
+        .lower()
+        .replace("ˇ", "'")
+        .replace("’", "'")
+        .replace("`", "'")
+        .replace("´", "'")
+    )
+
+
 def _extract_degree(text: str) -> str | None:
-    normalized = strip_accents(text).lower().replace("ˇ", "'").replace("’", "'")
+    normalized = _normalize_degree_text(text)
     for pattern, degree in DEGREE_PATTERNS:
         if re.search(pattern, normalized, re.IGNORECASE):
             return degree
@@ -240,6 +251,27 @@ def _looks_like_same_education_item(current: list[str], line: str) -> bool:
     return "gpa" in normalized or _extract_field(line) is not None or _extract_degree(line) is not None
 
 
+def _merge_date_only_blocks(blocks: list[list[str]]) -> list[list[str]]:
+    merged: list[list[str]] = []
+    pending_date_block: list[str] | None = None
+
+    for block in blocks:
+        if block and all(_is_date_line(line) for line in block):
+            pending_date_block = block
+            continue
+
+        if pending_date_block:
+            block = [*pending_date_block, *block]
+            pending_date_block = None
+
+        merged.append(block)
+
+    if pending_date_block:
+        merged.append(pending_date_block)
+
+    return merged
+
+
 def _split_education_blocks(text: str) -> list[list[str]]:
     lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
     lines = _merge_wrapped_lines([line for line in lines if line])
@@ -249,9 +281,6 @@ def _split_education_blocks(text: str) -> list[list[str]]:
 
     for index, line in enumerate(lines):
         if not current and _is_date_line(line):
-            # Two-column PDFs often emit education dates before the school name.
-            # Keep the date as part of the upcoming education block instead of
-            # dropping it before a school line starts the block.
             next_lines = lines[index + 1 : index + 4]
             if any(_looks_like_education_start(next_line) for next_line in next_lines):
                 current = [line]
@@ -272,7 +301,7 @@ def _split_education_blocks(text: str) -> list[list[str]]:
     if current:
         blocks.append(current)
 
-    return blocks
+    return _merge_date_only_blocks(blocks)
 
 
 def extract_education(text: str) -> list[dict]:
@@ -292,7 +321,7 @@ def extract_education(text: str) -> list[dict]:
                 candidate_lines.append(line)
 
         if candidate_lines:
-            blocks = [candidate_lines]
+            blocks = _merge_date_only_blocks([candidate_lines])
 
     for block in blocks:
         block_text = "\n".join(block)
