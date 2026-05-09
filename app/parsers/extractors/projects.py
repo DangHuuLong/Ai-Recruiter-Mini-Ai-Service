@@ -3,6 +3,7 @@ import re
 from app.parsers.extractors.projects_certifications import (
     DATE_RANGE_RE,
     FEATURE_STARTERS,
+    LOOSE_DATE_RANGE_RE,
     _is_valid_project,
     _looks_like_project_title,
     _strip_date_suffix,
@@ -35,6 +36,7 @@ ROLE_LINE_TITLES = {
     "game developer",
     "intern fullstack developer",
     "junior web developer",
+    "personal project",
     "web developer",
 }
 
@@ -48,13 +50,16 @@ PROJECT_TITLE_KEYWORDS = (
     "construction",
     "e-commerce",
     "ecommerce",
+    "learning",
     "management",
     "meeting",
+    "mobile",
     "platform",
     "portfolio",
     "portal",
     "project",
     "recruiter",
+    "recruitment",
     "shop",
     "site",
     "sneaker",
@@ -79,6 +84,7 @@ PROJECT_CONTEXT_TOKENS = (
     "link github",
     "main duties",
     "mo ta chuc nang",
+    "personal project",
     "position:",
     "role:",
     "team size",
@@ -100,6 +106,7 @@ IMMEDIATE_PROJECT_CONTEXT_TOKENS = (
     "implemented ",
     "integrated ",
     "link github",
+    "personal project",
     "position:",
     "role:",
     "team size",
@@ -115,6 +122,7 @@ PROJECT_DETAIL_LABELS = (
     "key contributions",
     "key responsibilities",
     "main duties",
+    "personal project",
     "position",
     "role",
     "team size",
@@ -278,6 +286,7 @@ def _is_date_only_line(line: str) -> bool:
     clean = strip_list_marker(line).strip()
     return bool(
         DATE_RANGE_RE.fullmatch(clean)
+        or LOOSE_DATE_RANGE_RE.fullmatch(clean)
         or SINGLE_DATE_RE.fullmatch(clean)
         or re.fullmatch(r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?", clean)
     )
@@ -297,14 +306,14 @@ def _split_content_and_date_only_lines(lines: list[str]) -> tuple[list[str], lis
     return content_lines, date_lines
 
 
-def _apply_trailing_dates(projects: list[dict], date_lines: list[str]) -> None:
-    """Attach dates from right-column extraction order to project blocks.
+def _coerce_loose_date_range(line: str) -> str:
+    match = LOOSE_DATE_RANGE_RE.fullmatch(strip_list_marker(line).strip())
+    if not match:
+        return line
+    return f"{match.group('start')} - {match.group('end')}"
 
-    PDF text extractors often emit all left-column project content first and
-    then all right-column dates at the bottom of the section. Assigning these
-    date-only lines by project order keeps one-column CVs working while fixing
-    two-column/caret-right layouts.
-    """
+
+def _apply_trailing_dates(projects: list[dict], date_lines: list[str]) -> None:
     if not date_lines or len(date_lines) < len(projects):
         return
 
@@ -312,7 +321,7 @@ def _apply_trailing_dates(projects: list[dict], date_lines: list[str]) -> None:
         if project.get("start_date") or project.get("end_date"):
             continue
 
-        date_range = extract_date_range(date_line)
+        date_range = extract_date_range(_coerce_loose_date_range(date_line))
         if not date_range:
             continue
 
@@ -327,7 +336,7 @@ def _has_project_keyword(value: str) -> bool:
 
 def _has_project_context(next_lines: list[str]) -> bool:
     window = "\n".join(strip_accents(strip_list_marker(line)).lower() for line in next_lines[:8])
-    return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window))
+    return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window) or LOOSE_DATE_RANGE_RE.search(window))
 
 
 def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
@@ -336,7 +345,7 @@ def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
         return False
 
     first = strip_accents(strip_list_marker(meaningful_lines[0])).lower()
-    if _is_url_only_line(meaningful_lines[0]):
+    if _is_url_only_line(meaningful_lines[0]) or _is_date_only_line(meaningful_lines[0]):
         return True
 
     if any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS):
@@ -420,6 +429,9 @@ def _is_dated_project_title(line: str) -> bool:
 def _looks_like_stacked_project_title(line: str, next_lines: list[str]) -> bool:
     clean = strip_list_marker(line).strip()
     if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean) or _is_role_line(clean):
+        return False
+
+    if "," in clean:
         return False
 
     if not _looks_like_project_title(clean):
