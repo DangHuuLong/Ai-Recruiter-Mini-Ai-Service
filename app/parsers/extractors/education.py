@@ -51,6 +51,17 @@ KNOWN_INSTITUTIONS = {
 
 PRESENT_WORDS = {"nay", "present", "current", "now", "hien tai", "hiện tại"}
 
+DATE_RANGE_RE = re.compile(
+    r"(?:"
+    r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+"
+    r")?"
+    r"(?:19|20)\d{2}"
+    r"\s*(?:-|–|—|to|den|đến)\s*"
+    r"(?:nay|present|current|now|hien tai|hiện tại|"
+    r"(?:(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+)?(?:19|20)\d{2})",
+    re.IGNORECASE,
+)
+
 
 def _extract_years(text: str) -> tuple[int | None, int | None]:
     normalized = strip_accents(text or "").lower()
@@ -63,6 +74,24 @@ def _extract_years(text: str) -> tuple[int | None, int | None]:
     end_year = years[1] if len(years) > 1 else None
 
     return start_year, end_year
+
+
+def _is_date_line(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    if not clean:
+        return False
+
+    if DATE_RANGE_RE.search(clean):
+        return True
+
+    normalized = strip_accents(clean).lower()
+    return bool(
+        re.fullmatch(
+            r"(?:(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+)?(?:19|20)\d{2}",
+            normalized,
+            flags=re.IGNORECASE,
+        )
+    )
 
 
 def _extract_degree(text: str) -> str | None:
@@ -87,6 +116,8 @@ def _extract_field(text: str) -> str | None:
 
 def _clean_institution_candidate(value: str) -> str:
     cleaned = value or ""
+
+    cleaned = DATE_RANGE_RE.sub("", cleaned)
 
     cleaned = re.sub(
         r"^\s*(?:19|20)\d{2}\s*(?:-|–|—|to|den|đến)\s*"
@@ -132,16 +163,23 @@ def _extract_institution(text: str) -> str | None:
     for line in lines:
         normalized = strip_accents(line).lower()
 
+        if _is_date_line(line):
+            continue
+
         for token, display_name in KNOWN_INSTITUTIONS.items():
             if _matches_known_institution(normalized, token):
                 return display_name
 
         if _is_school_line(line):
-            institution_lines.append(_clean_institution_candidate(line))
+            institution = _clean_institution_candidate(line)
+            if institution:
+                institution_lines.append(institution)
             continue
 
         if institution_lines and not _extract_degree(line) and not _extract_field(line) and not _extract_years(line)[0] and "gpa" not in normalized:
-            institution_lines.append(_clean_institution_candidate(line))
+            institution = _clean_institution_candidate(line)
+            if institution:
+                institution_lines.append(institution)
 
     if institution_lines:
         return " ".join(line for line in institution_lines if line).strip(" -–—|,") or None
@@ -155,6 +193,9 @@ def _extract_gpa(text: str) -> str | None:
 
 
 def _looks_like_education_start(line: str) -> bool:
+    if _is_date_line(line):
+        return False
+
     normalized = strip_accents(line).lower()
 
     education_keywords = [
@@ -189,6 +230,9 @@ def _looks_like_same_education_item(current: list[str], line: str) -> bool:
     current_text = "\n".join(current)
     current_has_school = any(_is_school_line(item) for item in current)
     current_has_degree = _extract_degree(current_text) is not None
+
+    if _is_date_line(line):
+        return True
 
     if current[-1].rstrip().endswith(("-", "–", "—")):
         return True
@@ -277,7 +321,10 @@ def _merge_wrapped_lines(lines: list[str]) -> list[str]:
             continue
 
         if merged and merged[-1].rstrip().endswith(("-", "–", "—")):
-            merged[-1] = f"{merged[-1].rstrip(' -–—')} - {clean}"
+            if _is_date_line(clean):
+                merged.append(clean)
+            else:
+                merged[-1] = f"{merged[-1].rstrip(' -–—')} - {clean}"
             continue
 
         if merged and (
