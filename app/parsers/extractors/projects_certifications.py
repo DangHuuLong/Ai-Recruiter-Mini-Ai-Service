@@ -2,6 +2,7 @@ import re
 
 from app.parsers.extractors.skills import extract_skills
 from app.parsers.normalizer import strip_accents, strip_list_marker
+from app.parsers.normalizers.duration_normalizer import extract_date_range
 
 
 URL_RE = re.compile(
@@ -108,6 +109,18 @@ DATE_RANGE_RE = re.compile(
     r"(?:nay|present|current|now|hien tai|hiện tại|(?:19|20)\d{2}(?:[/.-]\d{1,2})?|\d{1,2}[/.-](?:19|20)\d{2})",
     re.IGNORECASE,
 )
+
+PROJECT_ROLE_TITLES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "web developer",
+}
 
 
 def _normalize_key(value: str) -> str:
@@ -270,6 +283,10 @@ def _looks_like_project_title(line: str) -> bool:
     return 1 <= word_count <= 8
 
 
+def _looks_like_project_role(line: str) -> bool:
+    return _normalize_key(_strip_date_suffix(strip_list_marker(line).strip())) in PROJECT_ROLE_TITLES
+
+
 def _has_dated_project_title(line: str) -> bool:
     clean = strip_list_marker(line).strip()
     if not DATE_RANGE_RE.search(clean):
@@ -394,10 +411,21 @@ def _extract_technology_names(line: str) -> list[str]:
     return [skill["name"] for skill in extract_skills(line)]
 
 
+def _apply_project_date_range(result: dict, date_range: dict | None) -> None:
+    if not date_range:
+        return
+
+    result["start_date"] = date_range.get("start_date")
+    result["end_date"] = date_range.get("end_date")
+
+
 def parse_project_block(lines: list[str]) -> dict:
     if not lines:
         return {
             "name": None,
+            "role": None,
+            "start_date": None,
+            "end_date": None,
             "description": None,
             "technologies": [],
             "url": None,
@@ -406,10 +434,12 @@ def parse_project_block(lines: list[str]) -> dict:
     first_line = lines[0].strip()
 
     url = _extract_url(first_line)
+    date_range = extract_date_range(first_line)
 
     name, initial_description = _split_inline_project_header(first_line)
     description_parts: list[str] = []
     technologies: list[str] = []
+    role: str | None = None
 
     if initial_description:
         description_parts.append(initial_description)
@@ -427,6 +457,11 @@ def parse_project_block(lines: list[str]) -> dict:
     for line in lines[1:]:
         clean = line.strip()
         if not clean:
+            continue
+
+        line_date_range = extract_date_range(clean)
+        if line_date_range and not date_range and DATE_RANGE_RE.fullmatch(clean):
+            date_range = line_date_range
             continue
 
         found_url = _extract_url(clean)
@@ -455,22 +490,37 @@ def parse_project_block(lines: list[str]) -> dict:
         if kind == "link" or _is_link_metadata_line(clean):
             continue
 
+        if kind == "role" or (_looks_like_project_role(clean) and role is None):
+            role = value or clean
+            continue
+
         technologies.extend(_extract_technology_names(clean))
 
-        if kind in {"description", "role", "status", "meta"}:
+        if kind in {"description", "status", "meta"}:
             _append_description(description_parts, label, value or clean)
             continue
+
+        if line_date_range and not date_range:
+            date_range = line_date_range
+            clean = DATE_RANGE_RE.sub("", clean).strip(" -|,")
+            if not clean:
+                continue
 
         _append_description(description_parts, None, clean)
 
     technologies.extend(_extract_technology_names(first_line))
 
-    return {
+    result = {
         "name": name or None,
+        "role": role,
+        "start_date": None,
+        "end_date": None,
         "description": _clean_description_parts(description_parts),
         "technologies": _dedupe(technologies),
         "url": url,
     }
+    _apply_project_date_range(result, date_range)
+    return result
 
 
 def _is_valid_project(project: dict) -> bool:

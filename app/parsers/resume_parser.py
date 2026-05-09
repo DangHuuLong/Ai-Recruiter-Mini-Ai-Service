@@ -53,12 +53,16 @@ PROJECT_RECOVERY_KEYWORDS = (
     "app",
     "application",
     "booking",
+    "chat",
     "cinema",
+    "clone",
     "commerce",
     "construction",
     "e-commerce",
     "ecommerce",
+    "inventory",
     "management",
+    "meeting",
     "platform",
     "portfolio",
     "portal",
@@ -83,6 +87,11 @@ PROJECT_RECOVERY_CONTEXT = (
     "tech stack",
     "key contributions",
     "key responsibilities",
+    "built",
+    "designed",
+    "developed",
+    "implemented",
+    "integrated",
     "cong nghe su dung",
     "mo ta chuc nang",
     "vai tro",
@@ -350,6 +359,9 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     projects = [
         ResumeProject(
             name=item.get("name"),
+            role=item.get("role"),
+            start_date=item.get("start_date"),
+            end_date=item.get("end_date"),
             description=item.get("description"),
             technologies=item.get("technologies", []),
             url=item.get("url"),
@@ -452,8 +464,6 @@ def _looks_like_misplaced_experience(lines: list[str]) -> bool:
     if any(token in first for token in ["career history", "company", "corporation"]):
         return True
 
-    # Do not treat normal project sections as misplaced experience just because
-    # their second line is a project role such as "Frontend Developer".
     if _looks_like_project_section_start(lines):
         return False
 
@@ -548,7 +558,7 @@ def _extract_project_tail_from_text(text: str) -> str:
         next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
 
         looks_like_project_start = (
-            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction)\b", normalized)
+            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction|clone|meeting|chat|inventory)\b", normalized)
             and any(
                 token in next_lines
                 for token in [
@@ -560,6 +570,11 @@ def _extract_project_tail_from_text(text: str) -> str:
                     "tech stack",
                     "key contributions",
                     "key responsibilities",
+                    "built",
+                    "designed",
+                    "developed",
+                    "implemented",
+                    "integrated",
                 ]
             )
         )

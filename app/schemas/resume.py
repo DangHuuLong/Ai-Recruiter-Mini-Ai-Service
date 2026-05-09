@@ -48,6 +48,9 @@ class ResumeExperience(BaseModel):
 
 class ResumeProject(BaseModel):
     name: str | None = None
+    role: str | None = None
+    start_date: str | None = None
+    end_date: str | None = None
     description: str | None = None
     technologies: list[str] = Field(default_factory=list)
     url: str | None = None
