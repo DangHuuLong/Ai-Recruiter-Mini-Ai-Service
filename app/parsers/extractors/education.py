@@ -120,8 +120,14 @@ def _matches_known_institution(normalized: str, token: str) -> bool:
     return normalized == token or normalized.startswith(f"{token} ")
 
 
+def _is_school_line(line: str) -> bool:
+    normalized = strip_accents(line).lower()
+    return any(keyword in normalized for keyword in ["university", "college", "institute", "academy", "school", "truong", "dai hoc", "hoc vien"])
+
+
 def _extract_institution(text: str) -> str | None:
     lines = [strip_list_marker(line) for line in (text or "").splitlines() if strip_list_marker(line)]
+    institution_lines: list[str] = []
 
     for line in lines:
         normalized = strip_accents(line).lower()
@@ -130,8 +136,15 @@ def _extract_institution(text: str) -> str | None:
             if _matches_known_institution(normalized, token):
                 return display_name
 
-        if any(keyword in normalized for keyword in ["university", "college", "institute", "academy", "school", "truong", "dai hoc", "hoc vien"]):
-            return _clean_institution_candidate(line)
+        if _is_school_line(line):
+            institution_lines.append(_clean_institution_candidate(line))
+            continue
+
+        if institution_lines and not _extract_degree(line) and not _extract_field(line) and not _extract_years(line)[0] and "gpa" not in normalized:
+            institution_lines.append(_clean_institution_candidate(line))
+
+    if institution_lines:
+        return " ".join(line for line in institution_lines if line).strip(" -–—|,") or None
 
     return None
 
@@ -168,6 +181,24 @@ def _looks_like_education_start(line: str) -> bool:
     return False
 
 
+def _looks_like_same_education_item(current: list[str], line: str) -> bool:
+    if not current:
+        return False
+
+    normalized = strip_accents(line).lower()
+    current_text = "\n".join(current)
+    current_has_school = any(_is_school_line(item) for item in current)
+    current_has_degree = _extract_degree(current_text) is not None
+
+    if current[-1].rstrip().endswith(("-", "–", "—")):
+        return True
+
+    if _is_school_line(line) and current_has_school and not current_has_degree:
+        return True
+
+    return "gpa" in normalized or _extract_field(line) is not None or _extract_degree(line) is not None
+
+
 def _split_education_blocks(text: str) -> list[list[str]]:
     lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
     lines = _merge_wrapped_lines([line for line in lines if line])
@@ -177,9 +208,12 @@ def _split_education_blocks(text: str) -> list[list[str]]:
 
     for line in lines:
         if _looks_like_education_start(line):
-            if current:
+            if current and not _looks_like_same_education_item(current, line):
                 blocks.append(current)
-            current = [line]
+                current = [line]
+                continue
+
+            current.append(line)
             continue
 
         if current:
@@ -240,6 +274,10 @@ def _merge_wrapped_lines(lines: list[str]) -> list[str]:
     for line in lines:
         clean = line.strip()
         if not clean:
+            continue
+
+        if merged and merged[-1].rstrip().endswith(("-", "–", "—")):
+            merged[-1] = f"{merged[-1].rstrip(' -–—')} - {clean}"
             continue
 
         if merged and (
