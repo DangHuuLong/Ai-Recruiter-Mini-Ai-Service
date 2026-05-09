@@ -61,13 +61,16 @@ PROJECT_RECOVERY_KEYWORDS = (
     "e-commerce",
     "ecommerce",
     "inventory",
+    "learning",
     "management",
     "meeting",
+    "mobile",
     "platform",
     "portfolio",
     "portal",
     "project",
     "recruiter",
+    "recruitment",
     "shop",
     "site",
     "sneaker",
@@ -92,6 +95,7 @@ PROJECT_RECOVERY_CONTEXT = (
     "developed",
     "implemented",
     "integrated",
+    "personal project",
     "cong nghe su dung",
     "mo ta chuc nang",
     "vai tro",
@@ -122,6 +126,7 @@ BAD_PROJECT_NAMES = {
     "game developer",
     "intern fullstack developer",
     "junior web developer",
+    "personal project",
     "web developer",
 }
 
@@ -280,13 +285,17 @@ def _attach_project_urls(project_items: list[dict], raw_text: str, personal_gith
     url_index = 0
 
     for item in project_items:
-        if item.get("url"):
-            continue
-        if url_index >= len(repo_urls):
-            break
+        item_urls = list(item.get("urls") or [])
+        if item.get("url") and item["url"] not in item_urls:
+            item_urls.insert(0, item["url"])
 
-        item["url"] = repo_urls[url_index]
-        url_index += 1
+        if not item_urls and url_index < len(repo_urls):
+            item_urls.append(repo_urls[url_index])
+            url_index += 1
+
+        item_urls = _dedupe_strings(item_urls)
+        item["urls"] = item_urls
+        item["url"] = item_urls[0] if item_urls else item.get("url")
 
     return project_items
 
@@ -365,6 +374,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             description=item.get("description"),
             technologies=item.get("technologies", []),
             url=item.get("url"),
+            urls=item.get("urls", []),
         )
         for item in project_items
     ]
@@ -558,7 +568,7 @@ def _extract_project_tail_from_text(text: str) -> str:
         next_lines = "\n".join(lines[index + 1 : index + 6]).lower()
 
         looks_like_project_start = (
-            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction|clone|meeting|chat|inventory)\b", normalized)
+            re.search(r"(?:system|platform|app|website|portfolio|project|recruiter|sneaker|cinema|commerce|management|construction|clone|meeting|chat|inventory|learning|mobile|recruitment)\b", normalized)
             and any(
                 token in next_lines
                 for token in [
@@ -575,6 +585,7 @@ def _extract_project_tail_from_text(text: str) -> str:
                     "developed",
                     "implemented",
                     "integrated",
+                    "personal project",
                 ]
             )
         )
