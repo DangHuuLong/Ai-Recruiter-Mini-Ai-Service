@@ -10,6 +10,26 @@ LINE_Y_TOLERANCE = 3.0
 COLUMN_SPLIT_RATIO = 0.38
 COLUMN_SEGMENT_GAP_THRESHOLD = 36.0
 URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
+IMPORTANT_PDF_SECTION_NAMES = {
+    "experience": {"experience", "work experience"},
+}
+SECTION_STOP_NAMES = {
+    "academic",
+    "achievements",
+    "awards",
+    "certification",
+    "certifications",
+    "contact",
+    "education",
+    "honors",
+    "honours",
+    "languages",
+    "profile",
+    "projects",
+    "skills",
+    "summary",
+    "technical skills",
+}
 
 
 class DocumentTextExtractionError(Exception):
@@ -73,8 +93,10 @@ class DocumentTextExtractionService:
 
         pymupdf_text = self._try_extract_pdf_text_with_pymupdf(document_bytes, warnings)
         if pymupdf_text:
+            pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
+            merged_text = self._merge_supplemental_pdf_text(pymupdf_text, pypdf_text, warnings)
             return DocumentTextExtractionResult(
-                raw_text=pymupdf_text,
+                raw_text=merged_text,
                 method="PDF_TEXT_PYMUPDF_WORDS",
                 warnings=warnings,
             )
@@ -95,6 +117,65 @@ class DocumentTextExtractionService:
             method="PDF_TEXT_EMPTY",
             warnings=warnings,
         )
+
+    def _merge_supplemental_pdf_text(self, primary_text: str, fallback_text: str, warnings: list[str]) -> str:
+        """Append important sections that PyMuPDF layout extraction missed.
+
+        PyMuPDF words preserve layout better for multi-column resumes, so it
+        remains the primary source. Some PDFs, however, drop bottom sections or
+        text boxes in the word stream. pypdf sometimes still exposes those
+        sections. This merger only appends known important missing sections,
+        avoiding a broad raw-text concatenation that would duplicate most of the
+        resume or destroy layout ordering.
+        """
+        primary = self._normalize_extracted_text(primary_text)
+        fallback = self._normalize_extracted_text(fallback_text)
+
+        if not primary or not fallback:
+            return primary or fallback
+
+        primary_normalized = self._normalize_section_key(primary)
+        supplemental_sections: list[str] = []
+
+        for section_name, aliases in IMPORTANT_PDF_SECTION_NAMES.items():
+            if any(alias in primary_normalized for alias in aliases):
+                continue
+
+            section_text = self._extract_named_section(fallback, aliases)
+            if section_text:
+                supplemental_sections.append(section_text)
+                warnings.append(f"Merged missing PDF section from pypdf fallback: {section_name}")
+
+        if not supplemental_sections:
+            return primary
+
+        return self._normalize_extracted_text("\n".join([primary, *supplemental_sections]))
+
+    def _extract_named_section(self, text: str, aliases: set[str]) -> str:
+        lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
+        collected: list[str] = []
+        collecting = False
+
+        for line in lines:
+            normalized = self._normalize_section_key(line)
+
+            if not collecting and normalized in aliases:
+                collecting = True
+                collected.append(line)
+                continue
+
+            if collecting and normalized in SECTION_STOP_NAMES and normalized not in aliases:
+                break
+
+            if collecting:
+                collected.append(line)
+
+        return "\n".join(collected).strip()
+
+    def _normalize_section_key(self, value: str) -> str:
+        lowered = (value or "").lower()
+        lowered = re.sub(r"[^a-z0-9+#./ ]+", " ", lowered)
+        return re.sub(r"\s+", " ", lowered).strip()
 
     def _try_extract_pdf_text_with_pymupdf(
         self,
