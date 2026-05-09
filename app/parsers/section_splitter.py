@@ -90,6 +90,8 @@ HEADERS = {
         "honours",
         "honors awards",
         "honours awards",
+        "honors and awards",
+        "honours and awards",
         "awards and achievements",
         "thanh tich",
         "giai thuong",

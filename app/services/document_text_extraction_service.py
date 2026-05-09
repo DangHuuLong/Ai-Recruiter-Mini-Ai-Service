@@ -7,7 +7,29 @@ from docx import Document
 from pypdf import PdfReader
 
 LINE_Y_TOLERANCE = 3.0
+COLUMN_SPLIT_RATIO = 0.38
+COLUMN_SEGMENT_GAP_THRESHOLD = 36.0
 URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
+IMPORTANT_PDF_SECTION_NAMES = {
+    "experience": {"experience", "work experience"},
+}
+SECTION_STOP_NAMES = {
+    "academic",
+    "achievements",
+    "awards",
+    "certification",
+    "certifications",
+    "contact",
+    "education",
+    "honors",
+    "honours",
+    "languages",
+    "profile",
+    "projects",
+    "skills",
+    "summary",
+    "technical skills",
+}
 
 
 class DocumentTextExtractionError(Exception):
@@ -71,8 +93,10 @@ class DocumentTextExtractionService:
 
         pymupdf_text = self._try_extract_pdf_text_with_pymupdf(document_bytes, warnings)
         if pymupdf_text:
+            pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
+            merged_text = self._merge_supplemental_pdf_text(pymupdf_text, pypdf_text, warnings)
             return DocumentTextExtractionResult(
-                raw_text=pymupdf_text,
+                raw_text=merged_text,
                 method="PDF_TEXT_PYMUPDF_WORDS",
                 warnings=warnings,
             )
@@ -93,6 +117,65 @@ class DocumentTextExtractionService:
             method="PDF_TEXT_EMPTY",
             warnings=warnings,
         )
+
+    def _merge_supplemental_pdf_text(self, primary_text: str, fallback_text: str, warnings: list[str]) -> str:
+        """Append important sections that PyMuPDF layout extraction missed.
+
+        PyMuPDF words preserve layout better for multi-column resumes, so it
+        remains the primary source. Some PDFs, however, drop bottom sections or
+        text boxes in the word stream. pypdf sometimes still exposes those
+        sections. This merger only appends known important missing sections,
+        avoiding a broad raw-text concatenation that would duplicate most of the
+        resume or destroy layout ordering.
+        """
+        primary = self._normalize_extracted_text(primary_text)
+        fallback = self._normalize_extracted_text(fallback_text)
+
+        if not primary or not fallback:
+            return primary or fallback
+
+        primary_normalized = self._normalize_section_key(primary)
+        supplemental_sections: list[str] = []
+
+        for section_name, aliases in IMPORTANT_PDF_SECTION_NAMES.items():
+            if any(alias in primary_normalized for alias in aliases):
+                continue
+
+            section_text = self._extract_named_section(fallback, aliases)
+            if section_text:
+                supplemental_sections.append(section_text)
+                warnings.append(f"Merged missing PDF section from pypdf fallback: {section_name}")
+
+        if not supplemental_sections:
+            return primary
+
+        return self._normalize_extracted_text("\n".join([primary, *supplemental_sections]))
+
+    def _extract_named_section(self, text: str, aliases: set[str]) -> str:
+        lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
+        collected: list[str] = []
+        collecting = False
+
+        for line in lines:
+            normalized = self._normalize_section_key(line)
+
+            if not collecting and normalized in aliases:
+                collecting = True
+                collected.append(line)
+                continue
+
+            if collecting and normalized in SECTION_STOP_NAMES and normalized not in aliases:
+                break
+
+            if collecting:
+                collected.append(line)
+
+        return "\n".join(collected).strip()
+
+    def _normalize_section_key(self, value: str) -> str:
+        lowered = (value or "").lower()
+        lowered = re.sub(r"[^a-z0-9+#./ ]+", " ", lowered)
+        return re.sub(r"\s+", " ", lowered).strip()
 
     def _try_extract_pdf_text_with_pymupdf(
         self,
@@ -122,8 +205,7 @@ class DocumentTextExtractionService:
 
         page_width = float(page.rect.width)
         page_links = self._extract_page_links(page)
-        left_words = []
-        right_words = []
+        normalized_words = []
 
         for word in words:
             if len(word) < 5:
@@ -137,23 +219,11 @@ class DocumentTextExtractionService:
                 "y1": float(y1),
                 "text": str(text).strip(),
             }
-            if not item["text"]:
-                continue
+            if item["text"]:
+                normalized_words.append(item)
 
-            if item["x0"] < page_width * 0.38:
-                left_words.append(item)
-            else:
-                right_words.append(item)
-
-        if left_words and right_words:
-            page_text = "\n".join(
-                [
-                    self._words_to_text(left_words, page_links),
-                    self._words_to_text(right_words, page_links),
-                ],
-            )
-        else:
-            page_text = self._words_to_text(left_words or right_words, page_links)
+        line_segments = self._words_to_line_segments(normalized_words, page_links, page_width)
+        page_text = self._segments_to_reading_order_text(line_segments, page_width)
 
         return self._append_unmatched_links(page_text, page_links)
 
@@ -184,27 +254,12 @@ class DocumentTextExtractionService:
 
         return links
 
-    def _words_to_text(self, words: list[dict[str, float | str]], links: list[dict[str, Any]] | None = None) -> str:
+    def _words_to_text(self, words: list[dict[str, Any]], links: list[dict[str, Any]] | None = None) -> str:
         if not words:
             return ""
 
-        sorted_words = sorted(words, key=lambda word: (float(word["y0"]), float(word["x0"])))
-        lines: list[list[dict[str, float | str]]] = []
-
-        for word in sorted_words:
-            if not lines:
-                lines.append([word])
-                continue
-
-            current_line = lines[-1]
-            current_y = sum(float(item["y0"]) for item in current_line) / len(current_line)
-            if abs(float(word["y0"]) - current_y) <= LINE_Y_TOLERANCE:
-                current_line.append(word)
-            else:
-                lines.append([word])
-
         line_texts = []
-        for line in lines:
+        for line in self._group_items_into_lines(words):
             ordered_line = sorted(line, key=lambda word: float(word["x0"]))
             line_text = " ".join(str(word["text"]) for word in ordered_line).strip()
             line_urls = self._urls_for_line(ordered_line, links or [])
@@ -216,9 +271,142 @@ class DocumentTextExtractionService:
 
         return "\n".join(line_texts)
 
+    def _words_to_line_segments(
+        self,
+        words: list[dict[str, Any]],
+        links: list[dict[str, Any]],
+        page_width: float,
+    ) -> list[dict[str, Any]]:
+        if not words:
+            return []
+
+        segments: list[dict[str, Any]] = []
+        gap_threshold = max(COLUMN_SEGMENT_GAP_THRESHOLD, page_width * 0.06)
+
+        for line in self._group_items_into_lines(words):
+            ordered_line = sorted(line, key=lambda word: float(word["x0"]))
+            current_segment: list[dict[str, Any]] = []
+
+            for word in ordered_line:
+                if current_segment:
+                    previous_word = current_segment[-1]
+                    gap = float(word["x0"]) - float(previous_word["x1"])
+                    if gap > gap_threshold:
+                        segments.append(self._build_text_segment(current_segment, links))
+                        current_segment = []
+
+                current_segment.append(word)
+
+            if current_segment:
+                segments.append(self._build_text_segment(current_segment, links))
+
+        return segments
+
+    def _build_text_segment(
+        self,
+        words: list[dict[str, Any]],
+        links: list[dict[str, Any]],
+    ) -> dict[str, Any]:
+        ordered_words = sorted(words, key=lambda word: float(word["x0"]))
+        return {
+            "x0": min(float(word["x0"]) for word in ordered_words),
+            "y0": min(float(word["y0"]) for word in ordered_words),
+            "x1": max(float(word["x1"]) for word in ordered_words),
+            "y1": max(float(word["y1"]) for word in ordered_words),
+            "text": " ".join(str(word["text"]) for word in ordered_words).strip(),
+            "urls": self._urls_for_line(ordered_words, links),
+        }
+
+    def _segments_to_reading_order_text(
+        self,
+        segments: list[dict[str, Any]],
+        page_width: float,
+    ) -> str:
+        if not segments:
+            return ""
+
+        column_start_y = self._detect_two_column_start_y(segments, page_width)
+
+        if column_start_y is None:
+            ordered_segments = sorted(segments, key=lambda segment: (float(segment["y0"]), float(segment["x0"])))
+        else:
+            before_columns = [
+                segment
+                for segment in segments
+                if float(segment["y0"]) < column_start_y - LINE_Y_TOLERANCE
+            ]
+            column_segments = [
+                segment
+                for segment in segments
+                if float(segment["y0"]) >= column_start_y - LINE_Y_TOLERANCE
+            ]
+            split_x = page_width * COLUMN_SPLIT_RATIO
+            left_column = [segment for segment in column_segments if float(segment["x0"]) < split_x]
+            right_column = [segment for segment in column_segments if float(segment["x0"]) >= split_x]
+
+            ordered_segments = [
+                *sorted(before_columns, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+                *sorted(left_column, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+                *sorted(right_column, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+            ]
+
+        output_lines: list[str] = []
+        for segment in ordered_segments:
+            output_lines.extend(self._segment_output_lines(segment))
+
+        return "\n".join(output_lines)
+
+    def _detect_two_column_start_y(
+        self,
+        segments: list[dict[str, Any]],
+        page_width: float,
+    ) -> float | None:
+        split_x = page_width * COLUMN_SPLIT_RATIO
+
+        for line in self._group_items_into_lines(segments):
+            if len(line) < 2:
+                continue
+
+            has_left_segment = any(float(segment["x0"]) < split_x for segment in line)
+            has_right_segment = any(float(segment["x0"]) >= split_x for segment in line)
+
+            if has_left_segment and has_right_segment:
+                return min(float(segment["y0"]) for segment in line)
+
+        return None
+
+    def _segment_output_lines(self, segment: dict[str, Any]) -> list[str]:
+        lines: list[str] = []
+        text = str(segment.get("text") or "").strip()
+        if text:
+            lines.append(text)
+
+        for url in segment.get("urls") or []:
+            lines.append(str(url))
+
+        return lines
+
+    def _group_items_into_lines(self, items: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
+        sorted_items = sorted(items, key=lambda item: (float(item["y0"]), float(item["x0"])))
+        lines: list[list[dict[str, Any]]] = []
+
+        for item in sorted_items:
+            if not lines:
+                lines.append([item])
+                continue
+
+            current_line = lines[-1]
+            current_y = sum(float(existing_item["y0"]) for existing_item in current_line) / len(current_line)
+            if abs(float(item["y0"]) - current_y) <= LINE_Y_TOLERANCE:
+                current_line.append(item)
+            else:
+                lines.append([item])
+
+        return lines
+
     def _urls_for_line(
         self,
-        line: list[dict[str, float | str]],
+        line: list[dict[str, Any]],
         links: list[dict[str, Any]],
     ) -> list[str]:
         if not links or not line:

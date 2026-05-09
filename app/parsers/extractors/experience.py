@@ -104,9 +104,6 @@ def _looks_like_company(value: str) -> bool:
     if any(token in lowered for token in ["experience", "project", "education", "summary", "skill"]):
         return False
 
-    # Company names in CVs are often bare labels with no prefix, e.g. "FPT IS".
-    # In stacked layouts these labels are standalone non-bullet lines before a
-    # role line, so keep this heuristic permissive.
     return True
 
 
@@ -145,6 +142,34 @@ def _dedupe(values: list[str]) -> list[str]:
         seen.add(value)
         result.append(value)
     return result
+
+
+def _merge_wrapped_responsibilities(items: list[str]) -> list[str]:
+    merged: list[str] = []
+
+    for item in items:
+        clean = strip_list_marker(item).strip()
+        if not clean:
+            continue
+
+        if not merged:
+            merged.append(clean)
+            continue
+
+        previous = merged[-1]
+        should_merge = (
+            previous.endswith((",", "/"))
+            or previous.lower().endswith((" and", " or"))
+            or clean[0].islower()
+            or len(clean.split()) <= 3
+        )
+
+        if should_merge:
+            merged[-1] = f"{previous} {clean}".strip()
+        else:
+            merged.append(clean)
+
+    return merged
 
 
 def _parse_role_company(text: str) -> tuple[str | None, str | None]:
@@ -225,9 +250,6 @@ def _is_new_entry(line: str, *, has_current: bool = False) -> bool:
     if re.search(r"\s+-\s+|\s+\|\s+", line) and _looks_like_role(line):
         return True
 
-    # When an entry is already open, a bare role-like fragment is usually wrapped
-    # prose, e.g. "I've join project with role as" then "frontend developer".
-    # Do not start a company-null experience from that fragment.
     if has_current and _is_weak_role_fragment(line):
         return False
 
@@ -240,12 +262,12 @@ def _clean_lines(text: str) -> list[str]:
 
 def _append_current(entries: list[dict], current: dict | None) -> None:
     if current:
+        current["responsibilities"] = _merge_wrapped_responsibilities(current.get("responsibilities", []))
         current["technologies"] = _dedupe(current["technologies"])
         entries.append(current)
 
 
-def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookahead: int = 9) -> int | None:
-    """Find a date line for company -> role -> optional detail lines -> date layouts."""
+def _find_stacked_date_index_after_role(lines: list[str], company_index: int, *, max_lookahead: int = 9) -> int | None:
     if company_index + 1 >= len(lines):
         return None
 
@@ -265,6 +287,28 @@ def _find_stacked_date_index(lines: list[str], company_index: int, *, max_lookah
             break
         if extract_date_range(candidate):
             return date_index
+
+    return None
+
+
+def _find_role_index_after_date(lines: list[str], company_index: int, *, max_lookahead: int = 6) -> tuple[int, int] | None:
+    if company_index + 2 >= len(lines) or not _looks_like_company(lines[company_index]):
+        return None
+
+    limit = min(len(lines), company_index + max_lookahead + 1)
+    for date_index in range(company_index + 1, limit):
+        date_line = lines[date_index]
+        if _is_stop_line(date_line):
+            break
+        if not extract_date_range(date_line):
+            continue
+
+        for role_index in range(date_index + 1, limit):
+            role_line = lines[role_index]
+            if _is_stop_line(role_line):
+                break
+            if _looks_like_role(role_line):
+                return date_index, role_index
 
     return None
 
@@ -299,7 +343,22 @@ def extract_experience(text: str) -> list[dict]:
             index += 1
             continue
 
-        stacked_date_index = _find_stacked_date_index(lines, index)
+        date_role_indices = _find_role_index_after_date(lines, index)
+        if date_role_indices is not None:
+            date_index, role_index = date_role_indices
+            _append_current(entries, current)
+            current = _parse_stacked_experience_header(line, lines[role_index], lines[date_index])
+
+            for detail in lines[index + 1 : date_index] + lines[date_index + 1 : role_index]:
+                if _is_achievement_heading(detail):
+                    continue
+                current["responsibilities"].append(detail)
+                current["technologies"].extend(skill["name"] for skill in extract_skills(detail))
+
+            index = role_index + 1
+            continue
+
+        stacked_date_index = _find_stacked_date_index_after_role(lines, index)
         if stacked_date_index is not None:
             _append_current(entries, current)
             current = _parse_stacked_experience_header(line, lines[index + 1], lines[stacked_date_index])
@@ -315,7 +374,7 @@ def extract_experience(text: str) -> list[dict]:
 
         company_index = _find_company_before_role(lines, index)
         if company_index is not None:
-            stacked_date_index = _find_stacked_date_index(lines, company_index)
+            stacked_date_index = _find_stacked_date_index_after_role(lines, company_index)
             if stacked_date_index is not None:
                 _append_current(entries, current)
                 current = _parse_stacked_experience_header(

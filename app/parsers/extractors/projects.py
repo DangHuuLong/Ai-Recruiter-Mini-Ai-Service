@@ -3,12 +3,14 @@ import re
 from app.parsers.extractors.projects_certifications import (
     DATE_RANGE_RE,
     FEATURE_STARTERS,
+    LOOSE_DATE_RANGE_RE,
     _is_valid_project,
     _looks_like_project_title,
     _strip_date_suffix,
     parse_project_block,
 )
 from app.parsers.normalizer import strip_accents, strip_list_marker
+from app.parsers.normalizers.duration_normalizer import extract_date_range
 
 LOOSE_DATED_PROJECT_TITLE_RE = re.compile(
     r"^(?P<title>.+?)\s+"
@@ -34,6 +36,7 @@ ROLE_LINE_TITLES = {
     "game developer",
     "intern fullstack developer",
     "junior web developer",
+    "personal project",
     "web developer",
 }
 
@@ -42,16 +45,21 @@ PROJECT_TITLE_KEYWORDS = (
     "application",
     "booking",
     "cinema",
+    "clone",
     "commerce",
     "construction",
     "e-commerce",
     "ecommerce",
+    "learning",
     "management",
+    "meeting",
+    "mobile",
     "platform",
     "portfolio",
     "portal",
     "project",
     "recruiter",
+    "recruitment",
     "shop",
     "site",
     "sneaker",
@@ -62,15 +70,21 @@ PROJECT_TITLE_KEYWORDS = (
 
 PROJECT_CONTEXT_TOKENS = (
     "achievement/skills",
+    "built ",
     "cong nghe su dung",
+    "designed ",
     "description",
+    "developed ",
     "du an ca nhan",
     "du an nhom",
+    "implemented ",
+    "integrated ",
     "key contributions",
     "key responsibilities",
     "link github",
     "main duties",
     "mo ta chuc nang",
+    "personal project",
     "position:",
     "role:",
     "team size",
@@ -82,11 +96,17 @@ PROJECT_CONTEXT_TOKENS = (
 )
 
 IMMEDIATE_PROJECT_CONTEXT_TOKENS = (
+    "built ",
     "cong nghe su dung",
+    "designed ",
     "description:",
+    "developed ",
     "du an ca nhan",
     "du an nhom",
+    "implemented ",
+    "integrated ",
     "link github",
+    "personal project",
     "position:",
     "role:",
     "team size",
@@ -102,6 +122,7 @@ PROJECT_DETAIL_LABELS = (
     "key contributions",
     "key responsibilities",
     "main duties",
+    "personal project",
     "position",
     "role",
     "team size",
@@ -141,7 +162,9 @@ TERMINAL_SECTION_TITLES = {
     "hoc van",
     "honors",
     "honors awards",
+    "honors and awards",
     "honours awards",
+    "honours and awards",
     "language",
     "languages",
     "objective",
@@ -263,9 +286,47 @@ def _is_date_only_line(line: str) -> bool:
     clean = strip_list_marker(line).strip()
     return bool(
         DATE_RANGE_RE.fullmatch(clean)
+        or LOOSE_DATE_RANGE_RE.fullmatch(clean)
         or SINGLE_DATE_RE.fullmatch(clean)
         or re.fullmatch(r"(?:19|20)\d{2}(?:[/.-]\d{1,2})?", clean)
     )
+
+
+def _split_content_and_date_only_lines(lines: list[str]) -> tuple[list[str], list[str]]:
+    content_lines: list[str] = []
+    date_lines: list[str] = []
+
+    for line in lines:
+        clean = strip_list_marker(line).strip()
+        if _is_date_only_line(clean):
+            date_lines.append(clean)
+        else:
+            content_lines.append(line)
+
+    return content_lines, date_lines
+
+
+def _coerce_loose_date_range(line: str) -> str:
+    match = LOOSE_DATE_RANGE_RE.fullmatch(strip_list_marker(line).strip())
+    if not match:
+        return line
+    return f"{match.group('start')} - {match.group('end')}"
+
+
+def _apply_trailing_dates(projects: list[dict], date_lines: list[str]) -> None:
+    if not date_lines or len(date_lines) < len(projects):
+        return
+
+    for project, date_line in zip(projects, date_lines, strict=False):
+        if project.get("start_date") or project.get("end_date"):
+            continue
+
+        date_range = extract_date_range(_coerce_loose_date_range(date_line))
+        if not date_range:
+            continue
+
+        project["start_date"] = date_range.get("start_date")
+        project["end_date"] = date_range.get("end_date")
 
 
 def _has_project_keyword(value: str) -> bool:
@@ -275,7 +336,7 @@ def _has_project_keyword(value: str) -> bool:
 
 def _has_project_context(next_lines: list[str]) -> bool:
     window = "\n".join(strip_accents(strip_list_marker(line)).lower() for line in next_lines[:8])
-    return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window))
+    return any(token in window for token in PROJECT_CONTEXT_TOKENS) or bool(DATE_RANGE_RE.search(window) or LOOSE_DATE_RANGE_RE.search(window))
 
 
 def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
@@ -284,13 +345,12 @@ def _has_strong_stacked_project_context(next_lines: list[str]) -> bool:
         return False
 
     first = strip_accents(strip_list_marker(meaningful_lines[0])).lower()
-    if _is_url_only_line(meaningful_lines[0]):
+    if _is_url_only_line(meaningful_lines[0]) or _is_date_only_line(meaningful_lines[0]):
         return True
 
     if any(token in first for token in IMMEDIATE_PROJECT_CONTEXT_TOKENS):
         return True
 
-    # Common CV layout: project name, optional URL, role line, Technologies, date, Description.
     if _is_role_line(meaningful_lines[0]):
         return _has_project_context(meaningful_lines[1:])
 
@@ -371,12 +431,15 @@ def _looks_like_stacked_project_title(line: str, next_lines: list[str]) -> bool:
     if _is_non_project_title(clean) or _is_date_only_line(clean) or _is_project_context_line(clean) or _is_role_line(clean):
         return False
 
+    if "," in clean:
+        return False
+
     if not _looks_like_project_title(clean):
         return False
 
-    # A keyword alone is not enough. Description rows such as
-    # "Desktop construction project management application..." also contain
-    # project keywords. Require nearby project metadata instead.
+    if _has_project_keyword(clean):
+        return _has_strong_stacked_project_context(next_lines) or _has_project_context(next_lines)
+
     return _has_strong_stacked_project_context(next_lines)
 
 
@@ -525,9 +588,13 @@ def _is_valid_project_item(project: dict) -> bool:
 
 
 def extract_projects(text: str) -> list[dict]:
+    raw_lines = [strip_list_marker(raw) for raw in (text or "").splitlines()]
+    raw_lines = [line for line in raw_lines if line]
+    content_lines, date_only_lines = _split_content_and_date_only_lines(raw_lines)
+    content_text = "\n".join(content_lines)
     projects = []
 
-    for block in split_project_blocks(text):
+    for block in split_project_blocks(content_text):
         project = parse_project_block(block)
         if _is_valid_project_item(project):
             projects.append(project)
@@ -537,4 +604,6 @@ def extract_projects(text: str) -> list[dict]:
         if _is_valid_project_item(project):
             projects.append(project)
 
-    return _dedupe_projects(projects)
+    projects = _dedupe_projects(projects)
+    _apply_trailing_dates(projects, date_only_lines)
+    return projects

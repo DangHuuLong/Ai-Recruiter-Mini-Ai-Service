@@ -2,6 +2,7 @@ import re
 
 from app.parsers.extractors.skills import extract_skills
 from app.parsers.normalizer import strip_accents, strip_list_marker
+from app.parsers.normalizers.duration_normalizer import extract_date_range
 
 
 URL_RE = re.compile(
@@ -109,6 +110,25 @@ DATE_RANGE_RE = re.compile(
     re.IGNORECASE,
 )
 
+LOOSE_DATE_RANGE_RE = re.compile(
+    r"^(?P<start>\d{1,2}[/.-](?:19|20)\d{2}|(?:19|20)\d{2})\s+"
+    r"(?P<end>\d{1,2}[/.-](?:19|20)\d{2}|(?:19|20)\d{2}|nay|present|current|now|hien tai|hiện tại)$",
+    re.IGNORECASE,
+)
+
+PROJECT_ROLE_TITLES = {
+    "backend developer",
+    "developer",
+    "frontend developer",
+    "full stack developer",
+    "fullstack developer",
+    "game developer",
+    "intern fullstack developer",
+    "junior web developer",
+    "personal project",
+    "web developer",
+}
+
 
 def _normalize_key(value: str) -> str:
     text = strip_accents(value or "").lower()
@@ -151,6 +171,15 @@ def _extract_url(line: str) -> str | None:
         return url
 
     return f"https://{url}"
+
+
+def _extract_urls(line: str) -> list[str]:
+    urls: list[str] = []
+    for match in URL_RE.finditer(line or ""):
+        url = _extract_url(match.group(0))
+        if url:
+            urls.append(url)
+    return _dedupe(urls)
 
 
 def _remove_url_text(line: str, url: str | None) -> str:
@@ -257,7 +286,7 @@ def _looks_like_project_title(line: str) -> bool:
     if ":" in clean:
         return False
 
-    if "|" in clean:
+    if "|" in clean or "," in clean:
         return False
 
     if _looks_like_sentence(clean):
@@ -268,6 +297,10 @@ def _looks_like_project_title(line: str) -> bool:
 
     word_count = len(clean.split())
     return 1 <= word_count <= 8
+
+
+def _looks_like_project_role(line: str) -> bool:
+    return _normalize_key(_strip_date_suffix(strip_list_marker(line).strip())) in PROJECT_ROLE_TITLES
 
 
 def _has_dated_project_title(line: str) -> bool:
@@ -282,7 +315,7 @@ def _has_dated_project_title(line: str) -> bool:
 def _has_strong_project_header_context(line: str) -> bool:
     normalized = _normalize_key(line)
 
-    if DATE_RANGE_RE.search(line):
+    if DATE_RANGE_RE.search(line) or LOOSE_DATE_RANGE_RE.fullmatch(strip_list_marker(line).strip()):
         return True
 
     if _is_url_only_line(line):
@@ -329,13 +362,7 @@ def _should_start_new_block(line: str, current: list[str], next_lines: list[str]
     if _has_dated_project_title(clean):
         return True
 
-    if next_lines and _has_strong_project_header_context(next_lines[0]):
-        return True
-
-    if len(next_lines) >= 2 and len(next_lines[0].split()) <= 4:
-        return _has_strong_project_header_context(next_lines[1])
-
-    return False
+    return any(_has_strong_project_header_context(next_line) for next_line in next_lines[:3])
 
 
 def split_project_blocks(text: str) -> list[list[str]]:
@@ -394,83 +421,169 @@ def _extract_technology_names(line: str) -> list[str]:
     return [skill["name"] for skill in extract_skills(line)]
 
 
+def _looks_like_technology_continuation(line: str) -> bool:
+    clean = strip_list_marker(line).strip()
+    if not clean or ":" in clean:
+        return False
+    if clean.endswith("."):
+        return False
+    if len(clean.split()) > 8:
+        return False
+    return len(_extract_technology_names(clean)) >= 2
+
+
+def _coerce_loose_date_range(line: str) -> str:
+    clean = strip_list_marker(line).strip()
+    match = LOOSE_DATE_RANGE_RE.fullmatch(clean)
+    if not match:
+        return clean
+    return f"{match.group('start')} - {match.group('end')}"
+
+
+def _project_date_range(line: str) -> dict | None:
+    return extract_date_range(_coerce_loose_date_range(line))
+
+
+def _apply_project_date_range(result: dict, date_range: dict | None) -> None:
+    if not date_range:
+        return
+
+    result["start_date"] = date_range.get("start_date")
+    result["end_date"] = date_range.get("end_date")
+
+
 def parse_project_block(lines: list[str]) -> dict:
     if not lines:
         return {
             "name": None,
+            "role": None,
+            "start_date": None,
+            "end_date": None,
             "description": None,
             "technologies": [],
             "url": None,
+            "urls": [],
         }
 
     first_line = lines[0].strip()
 
-    url = _extract_url(first_line)
+    urls = _extract_urls(first_line)
+    date_range = _project_date_range(first_line)
 
     name, initial_description = _split_inline_project_header(first_line)
     description_parts: list[str] = []
     technologies: list[str] = []
+    role: str | None = None
 
     if initial_description:
         description_parts.append(initial_description)
 
-    if url:
+    for url in urls:
         raw_url = url.replace("https://", "").replace("http://", "")
         name = name.replace(url, "").replace(raw_url, "").strip(" -|,")
 
-        description_parts = [
-            part.replace(url, "").replace(raw_url, "").strip()
-            for part in description_parts
-            if part.replace(url, "").replace(raw_url, "").strip()
-        ]
+    if urls:
+        cleaned_description_parts = []
+        for part in description_parts:
+            cleaned = part
+            for url in urls:
+                cleaned = cleaned.replace(url, "").replace(url.replace("https://", "").replace("http://", ""), "")
+            cleaned = cleaned.strip()
+            if cleaned:
+                cleaned_description_parts.append(cleaned)
+        description_parts = cleaned_description_parts
 
+    previous_kind: str | None = None
     for line in lines[1:]:
         clean = line.strip()
         if not clean:
             continue
 
-        found_url = _extract_url(clean)
-        if found_url and not url:
-            url = found_url
-
-        if found_url and _is_url_only_line(clean, found_url):
+        line_date_range = _project_date_range(clean)
+        if line_date_range and not date_range and (DATE_RANGE_RE.fullmatch(clean) or LOOSE_DATE_RANGE_RE.fullmatch(clean)):
+            date_range = line_date_range
+            previous_kind = "date"
             continue
 
-        if found_url:
+        found_urls = _extract_urls(clean)
+        if found_urls:
+            urls.extend(found_urls)
+
+        if found_urls and any(_is_url_only_line(clean, found_url) for found_url in found_urls):
+            previous_kind = "link"
+            continue
+
+        for found_url in found_urls:
             clean = _remove_url_text(clean, found_url)
-            if not clean:
-                continue
+        if not clean:
+            previous_kind = "link"
+            continue
 
         label, value = _split_label_value(clean)
         kind = _label_kind(clean)
 
         if kind and not value:
+            previous_kind = kind
             continue
 
         if kind == "technologies":
             technologies.extend(_extract_technology_names(value or clean))
-            _append_description(description_parts, label, value or clean)
+            previous_kind = "technologies"
+            continue
+
+        if previous_kind == "technologies" and _looks_like_technology_continuation(clean):
+            technologies.extend(_extract_technology_names(clean))
+            previous_kind = "technologies"
             continue
 
         if kind == "link" or _is_link_metadata_line(clean):
+            if "personal project" in _normalize_key(clean) and role is None:
+                role = "Personal Project"
+            previous_kind = "link"
+            continue
+
+        if kind == "role" or (_looks_like_project_role(clean) and role is None):
+            role = value or clean
+            previous_kind = "role"
+            continue
+
+        if _normalize_key(clean).startswith("personal project") and role is None:
+            role = "Personal Project"
+            previous_kind = "role"
             continue
 
         technologies.extend(_extract_technology_names(clean))
 
-        if kind in {"description", "role", "status", "meta"}:
+        if kind in {"description", "status", "meta"}:
             _append_description(description_parts, label, value or clean)
+            previous_kind = kind
             continue
 
+        if line_date_range and not date_range:
+            date_range = line_date_range
+            clean = DATE_RANGE_RE.sub("", _coerce_loose_date_range(clean)).strip(" -|,")
+            if not clean:
+                previous_kind = "date"
+                continue
+
         _append_description(description_parts, None, clean)
+        previous_kind = "description"
 
     technologies.extend(_extract_technology_names(first_line))
+    urls = _dedupe(urls)
 
-    return {
+    result = {
         "name": name or None,
+        "role": role,
+        "start_date": None,
+        "end_date": None,
         "description": _clean_description_parts(description_parts),
         "technologies": _dedupe(technologies),
-        "url": url,
+        "url": urls[0] if urls else None,
+        "urls": urls,
     }
+    _apply_project_date_range(result, date_range)
+    return result
 
 
 def _is_valid_project(project: dict) -> bool:
@@ -485,6 +598,12 @@ def _is_valid_project(project: dict) -> bool:
             return False
 
     if len(str(name).split()) > 12:
+        return False
+
+    if DATE_RANGE_RE.fullmatch(str(name)) or LOOSE_DATE_RANGE_RE.fullmatch(str(name)):
+        return False
+
+    if "," in str(name):
         return False
 
     return True

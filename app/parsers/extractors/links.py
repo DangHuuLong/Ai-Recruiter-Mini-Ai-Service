@@ -25,6 +25,21 @@ COMMON_EMAIL_DOMAINS = {
     "live",
 }
 
+TECH_AS_URL_BLACKLIST = {
+    "angular.js",
+    "asp.net",
+    "d3.js",
+    "express.js",
+    "fastapi.io",
+    "next.js",
+    "node.js",
+    "nuxt.js",
+    "react.js",
+    "socket.io",
+    "three.js",
+    "vue.js",
+}
+
 
 def _canonical_key(value: str) -> str:
     return value.rstrip("/").lower()
@@ -40,6 +55,13 @@ def _unique_in_order(values: list[str]) -> list[str]:
         seen.add(key)
         result.append(value)
     return result
+
+
+def _is_known_technology_domain(value: str) -> bool:
+    cleaned = (value or "").strip().rstrip(".,;)/").lower()
+    cleaned = re.sub(r"^https?://", "", cleaned)
+    cleaned = re.sub(r"^www\.", "", cleaned)
+    return cleaned in TECH_AS_URL_BLACKLIST
 
 
 def _normalize_url(url: str) -> str:
@@ -76,6 +98,8 @@ def _looks_like_portfolio_url(url: str) -> bool:
     lowered = url.lower()
 
     if "linkedin.com" in lowered or "github.com" in lowered:
+        return False
+    if _is_known_technology_domain(lowered):
         return False
 
     return any(token in lowered for token in ["portfolio", "behance", "dribbble", "github.io", "super.site"]) or re.search(
@@ -125,9 +149,12 @@ def _select_github_profile_url(github_urls: list[str], identity_tokens: set[str]
 def extract_links(text: str) -> dict:
     urls = []
     for match in URL_RE.finditer(text or ""):
+        raw_url = match.group(0)
         if match.start() > 0 and text[match.start() - 1] == "@":
             continue
-        urls.append(_normalize_url(match.group(0)))
+        if _is_known_technology_domain(raw_url):
+            continue
+        urls.append(_normalize_url(raw_url))
 
     urls = _unique_in_order(urls)
     identity_tokens = _candidate_identity_tokens(text or "", urls)
