@@ -127,7 +127,6 @@ SUMMARY_STOP_PATTERNS = (
     r"^lien k",
     r"^github$",
 )
-SUMMARY_TAIL_PREFIXES = ("valuable ", "software ", "products", "solutions", "systems")
 
 PROJECT_RECOVERY_KEYWORDS = (
     "app",
@@ -333,47 +332,7 @@ def _is_summary_stop_line(line: str) -> bool:
     return any(re.search(pattern, normalized, re.IGNORECASE) for pattern in SUMMARY_STOP_PATTERNS)
 
 
-def _recover_summary_tail(summary: str | None, raw_text: str) -> str | None:
-    if not summary:
-        return None
-
-    cleaned = summary.strip()
-    if not cleaned or cleaned.endswith((".", "!", "?")):
-        return cleaned
-
-    lines = split_lines(raw_text)
-    summary_lines = split_lines(cleaned)
-    if not summary_lines:
-        return cleaned
-
-    last_summary_line = summary_lines[-1]
-    try:
-        last_index = max(index for index, line in enumerate(lines) if line.strip() == last_summary_line)
-    except ValueError:
-        return cleaned
-
-    for line in lines[last_index + 1 : last_index + 24]:
-        candidate = line.strip()
-        if not candidate:
-            continue
-        normalized = _normalize_name(candidate)
-        if normalized in {"education", "projects", "experience", "technical skills", "github"}:
-            continue
-        if _looks_like_bad_text(candidate) or _is_summary_stop_line(candidate):
-            continue
-        if any(token in candidate.lower() for token in ["@", "http://", "https://"]):
-            continue
-        if len(candidate.split()) > 8:
-            continue
-
-        candidate_lower = candidate.lower()
-        if candidate_lower.startswith(SUMMARY_TAIL_PREFIXES) or cleaned.lower().endswith((" to", " contribute to", " and")):
-            return f"{cleaned} {candidate}".strip()
-
-    return cleaned
-
-
-def _clean_summary(summary: str | None, raw_text: str | None = None) -> str | None:
+def _clean_summary(summary: str | None) -> str | None:
     if not summary:
         return None
 
@@ -386,10 +345,7 @@ def _clean_summary(summary: str | None, raw_text: str | None = None) -> str | No
         clean_lines.append(line)
 
     cleaned = "\n".join(clean_lines).strip()
-    if not cleaned:
-        return None
-
-    return _recover_summary_tail(cleaned, raw_text or summary)
+    return cleaned or None
 
 
 def _is_bad_project_name(name: str | None) -> bool:
@@ -587,7 +543,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 
     return ParsedResumeData(
         personal=personal,
-        summary=_clean_summary(sections.get("summary"), normalized_text),
+        summary=_clean_summary(sections.get("summary")),
         skills=skills,
         education=education,
         experience=experience,
@@ -771,3 +727,5 @@ def _extract_project_tail_from_text(text: str) -> str:
 
         if collecting:
             tail_lines.append(line)
+
+    return "\n".join(tail_lines)
