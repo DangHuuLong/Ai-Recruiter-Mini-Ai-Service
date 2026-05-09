@@ -50,6 +50,27 @@ EMPTY_LOCATION_VALUES = {
 }
 
 BAD_TEXT_MARKERS = ("·", "ï", "¿", "ˇ", "�")
+RESUME_HEADING_NAMES = {
+    "academic",
+    "academic background",
+    "achievements",
+    "awards",
+    "certification",
+    "certifications",
+    "contact",
+    "education",
+    "experience",
+    "github",
+    "languages",
+    "links",
+    "personal information",
+    "profile",
+    "projects",
+    "skills",
+    "summary",
+    "technical skills",
+    "work experience",
+}
 SUMMARY_STOP_PATTERNS = (
     r"@",
     r"^s\s*t\s*:",
@@ -202,10 +223,14 @@ def _looks_like_bad_text(value: str | None) -> bool:
     return bool(value) and any(marker in value for marker in BAD_TEXT_MARKERS)
 
 
+def _looks_like_resume_heading(value: str) -> bool:
+    return _normalize_name(value) in RESUME_HEADING_NAMES
+
+
 def _extract_full_name(raw_text: str) -> str | None:
     for line in split_lines(raw_text):
         lowered = line.lower()
-        if _looks_like_bad_text(line):
+        if _looks_like_bad_text(line) or _looks_like_resume_heading(line):
             continue
         if any(token in lowered for token in ["@", "http", "linkedin", "github", "phone", "email"]):
             continue
