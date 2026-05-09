@@ -20,10 +20,14 @@ SKILL_CATALOG = {
     "Next.js": {"category": "frontend", "aliases": ["next.js", "nextjs"]},
     "Vue": {"category": "frontend", "aliases": ["vue", "vue.js", "vuejs"]},
     "Tailwind CSS": {"category": "frontend", "aliases": ["tailwind css", "tailwind"]},
+    "shadcn/ui": {"category": "frontend", "aliases": ["shadcn/ui", "shadcn ui", "shadcn"]},
+    "Zustand": {"category": "frontend", "aliases": ["zustand"]},
     "Node.js": {"category": "backend", "aliases": ["node.js", "nodejs", "node"]},
     "ASP.NET MVC": {"category": "backend", "aliases": ["asp.net mvc", "asp net mvc"]},
     "NestJS": {"category": "backend", "aliases": ["nestjs", "nest.js"]},
     "Express": {"category": "backend", "aliases": ["express", "express.js"]},
+    "Socket.IO": {"category": "backend", "aliases": ["socket.io", "socket io"]},
+    "RBAC": {"category": "backend", "aliases": ["rbac", "role based access control", "role-based access control"]},
     "FastAPI": {"category": "backend", "aliases": ["fastapi", "fast api"]},
     "Django": {"category": "backend", "aliases": ["django"]},
     "Flask": {"category": "backend", "aliases": ["flask"]},
@@ -39,12 +43,16 @@ SKILL_CATALOG = {
     "Docker": {"category": "devops", "aliases": ["docker"]},
     "Kubernetes": {"category": "devops", "aliases": ["kubernetes", "k8s"]},
     "CI/CD": {"category": "devops", "aliases": ["ci/cd", "cicd", "continuous integration"]},
+    "GitHub Actions": {"category": "devops", "aliases": ["github actions", "gh actions"]},
+    "Nginx": {"category": "devops", "aliases": ["nginx"]},
     "AWS": {"category": "cloud", "aliases": ["aws", "amazon web services"]},
+    "AWS EC2": {"category": "cloud", "aliases": ["aws ec2", "ec2"]},
     "Azure": {"category": "cloud", "aliases": ["azure", "microsoft azure"]},
     "GCP": {"category": "cloud", "aliases": ["gcp", "google cloud"]},
     "Git": {"category": "tooling", "aliases": ["git"]},
     "GitHub": {"category": "tooling", "aliases": ["github"]},
     "Prisma": {"category": "tooling", "aliases": ["prisma"]},
+    "Whisper AI": {"category": "ai", "aliases": ["whisper ai", "openai whisper", "whisper"]},
     "Jest": {"category": "testing", "aliases": ["jest"]},
     "Pytest": {"category": "testing", "aliases": ["pytest"]},
 }
@@ -56,7 +64,7 @@ def _alias_pattern(alias: str) -> re.Pattern:
     if alias == ".net":
         return re.compile(rf"(?<![\w+]){escaped}(?![\w+])", re.IGNORECASE)
 
-    if alias in {"c#", "c++", "ci/cd"}:
+    if alias in {"c#", "c++", "ci/cd", "shadcn/ui", "socket.io"}:
         return re.compile(rf"(?<!\w){escaped}(?!\w)", re.IGNORECASE)
 
     return re.compile(rf"\b{escaped}\b", re.IGNORECASE)

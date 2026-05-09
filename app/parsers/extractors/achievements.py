@@ -6,14 +6,23 @@ from app.parsers.normalizer import strip_accents, strip_list_marker
 ACHIEVEMENT_KEYWORDS = (
     "achiev",
     "award",
+    "bronze",
+    "competition",
+    "contest",
+    "gold",
     "honor",
     "honour",
     "improved",
     "increased",
-    "reduced",
+    "medal",
     "optimized",
-    "won",
+    "prize",
     "ranked",
+    "reduced",
+    "second prize",
+    "silver",
+    "third prize",
+    "won",
     "thanh tich",
     "giai",
 )
@@ -47,7 +56,7 @@ def extract_achievements(text: str, *, require_keyword: bool = False) -> list[di
         if not line or _is_heading_only(line):
             continue
 
-        lowered = line.lower()
+        lowered = strip_accents(line).lower()
         if require_keyword and not any(keyword in lowered for keyword in ACHIEVEMENT_KEYWORDS):
             continue
 
