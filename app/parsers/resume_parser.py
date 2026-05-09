@@ -49,6 +49,21 @@ EMPTY_LOCATION_VALUES = {
     "hcmus",
 }
 
+BAD_TEXT_MARKERS = ("·", "ï", "¿", "ˇ", "�")
+SUMMARY_STOP_PATTERNS = (
+    r"@",
+    r"^s\s*t\s*:",
+    r"^phone\s*:",
+    r"^ngay sinh\s*:",
+    r"^date\s*:",
+    r"^que quan\s*:",
+    r"^address\s*:",
+    r"^technical skills$",
+    r"^skills$",
+    r"^lien k",
+    r"^github$",
+)
+
 PROJECT_RECOVERY_KEYWORDS = (
     "app",
     "application",
@@ -183,9 +198,15 @@ def _extract_location(raw_text: str) -> str | None:
     return None
 
 
+def _looks_like_bad_text(value: str | None) -> bool:
+    return bool(value) and any(marker in value for marker in BAD_TEXT_MARKERS)
+
+
 def _extract_full_name(raw_text: str) -> str | None:
     for line in split_lines(raw_text):
         lowered = line.lower()
+        if _looks_like_bad_text(line):
+            continue
         if any(token in lowered for token in ["@", "http", "linkedin", "github", "phone", "email"]):
             continue
         if any(token in lowered for token in ["developer", "engineer", "manager", "designer", "analyst", "consultant"]):
@@ -214,6 +235,27 @@ def _normalize_name(value: str | None) -> str:
     normalized = strip_accents(value or "").lower()
     normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
     return re.sub(r"\s+", " ", normalized).strip()
+
+
+def _is_summary_stop_line(line: str) -> bool:
+    normalized = _normalize_name(line)
+    return any(re.search(pattern, normalized, re.IGNORECASE) for pattern in SUMMARY_STOP_PATTERNS)
+
+
+def _clean_summary(summary: str | None) -> str | None:
+    if not summary:
+        return None
+
+    clean_lines: list[str] = []
+    for line in split_lines(summary):
+        if _is_summary_stop_line(line):
+            break
+        if _looks_like_bad_text(line) and len(line.split()) <= 5:
+            break
+        clean_lines.append(line)
+
+    cleaned = "\n".join(clean_lines).strip()
+    return cleaned or None
 
 
 def _is_bad_project_name(name: str | None) -> bool:
@@ -353,7 +395,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             responsibilities=item.get("responsibilities", []),
             technologies=item.get("technologies", []),
         )
-        for item in extract_experience(_experience_source(sections))
+        for item in extract_experience(_experience_source(sections, normalized_text))
     ]
 
     projects_source = _projects_source(sections)
@@ -411,7 +453,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 
     return ParsedResumeData(
         personal=personal,
-        summary=sections.get("summary") or None,
+        summary=_clean_summary(sections.get("summary")),
         skills=skills,
         education=education,
         experience=experience,
@@ -426,7 +468,7 @@ def parse_resume_mock(raw_text: str) -> ParsedResumeData:
     return parse_resume(raw_text)
 
 
-def _experience_source(sections: dict[str, str]) -> str:
+def _experience_source(sections: dict[str, str], raw_text: str | None = None) -> str:
     if sections.get("experience"):
         return sections["experience"]
 
@@ -434,7 +476,7 @@ def _experience_source(sections: dict[str, str]) -> str:
     if _looks_like_misplaced_experience(split_lines(projects_text)):
         return projects_text
 
-    return _extract_experience_from_unsectioned_text(sections.get("other", ""))
+    return _extract_experience_from_unsectioned_text(_combine_sections(sections.get("other", ""), raw_text))
 
 
 def _projects_source(sections: dict[str, str]) -> str:
