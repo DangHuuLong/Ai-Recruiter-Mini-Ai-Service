@@ -139,3 +139,77 @@ Built realtime chat with Socket.IO.
     assert result.projects[1].name == "Chat App"
     assert result.projects[1].start_date == "2025"
     assert result.projects[1].end_date == "present"
+
+
+def test_parse_two_column_projects_with_multiple_github_links():
+    raw_text = """
+Projects
+Food Store Management System
+11/2025 02/2026
+Personal Project | Link Github: Frontend | Backend
+https://github.com/DangHuuLong/Food-Delivery/tree/main/frontend
+https://github.com/DangHuuLong/Food-Delivery/tree/main/backend
+Technologies: React, Vite, Tailwind CSS, Redux Toolkit, Node.js, Express.js,
+MongoDB, JWT, Cloudinary
+Developed a food store management system including a customer-facing interface.
+Language Learning Mobile App
+01/2026 04/2026
+Personal Project | Link Github: Frontend | Backend
+https://github.com/DangHuuLong/Language-Learning-App
+https://github.com/DangHuuLong/Language-Learning-App-Backend
+Technologies: React Native, Expo, TypeScript, Node.js, Express.js, Prisma,
+PostgreSQL, Supabase, Gemini AI
+Developed a mobile language learning application.
+AI Recruitment Management System
+04/2026 - nay
+Personal Project | Link Github: Frontend | Backend | AI Service
+https://github.com/DangHuuLong/Ai-Recruiter-Mini-Frontend
+https://github.com/DangHuuLong/Ai-Recruiter-Mini-Backend
+https://github.com/DangHuuLong/Ai-Recruiter-Mini-Ai-Service
+Technologies: Next.js, TypeScript, Tailwind CSS, NestJS, PostgreSQL, Prisma,
+FastAPI, Python
+Developed a recruitment support system.
+Experience
+9/2025 - Present Mobile App Developer Intern
+"""
+
+    result = parse_resume(raw_text)
+
+    assert len(result.projects) == 3
+    assert [project.name for project in result.projects] == [
+        "Food Store Management System",
+        "Language Learning Mobile App",
+        "AI Recruitment Management System",
+    ]
+
+    assert result.projects[0].start_date == "2025-11"
+    assert result.projects[0].end_date == "2026-02"
+    assert result.projects[0].role == "Personal Project"
+    assert result.projects[0].url == "https://github.com/DangHuuLong/Food-Delivery/tree/main/frontend"
+    assert result.projects[0].urls == [
+        "https://github.com/DangHuuLong/Food-Delivery/tree/main/frontend",
+        "https://github.com/DangHuuLong/Food-Delivery/tree/main/backend",
+    ]
+
+    assert result.projects[1].start_date == "2026-01"
+    assert result.projects[1].end_date == "2026-04"
+    assert result.projects[1].urls == [
+        "https://github.com/DangHuuLong/Language-Learning-App",
+        "https://github.com/DangHuuLong/Language-Learning-App-Backend",
+    ]
+
+    assert result.projects[2].start_date == "2026-04"
+    assert result.projects[2].end_date == "present"
+    assert result.projects[2].urls == [
+        "https://github.com/DangHuuLong/Ai-Recruiter-Mini-Frontend",
+        "https://github.com/DangHuuLong/Ai-Recruiter-Mini-Backend",
+        "https://github.com/DangHuuLong/Ai-Recruiter-Mini-Ai-Service",
+    ]
+
+    skills = _skill_names(result)
+    assert "React Native" in skills
+    assert "Expo" in skills
+    assert "Redux Toolkit" in skills
+    assert "JWT" in skills
+    assert "Cloudinary" in skills
+    assert "Gemini AI" in skills
