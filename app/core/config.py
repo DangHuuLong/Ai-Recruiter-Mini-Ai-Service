@@ -16,6 +16,13 @@ class Settings(BaseSettings):
 
     request_timeout_seconds: int = 30
 
+    enable_pdf_ocr_fallback: bool = False
+    pdf_ocr_engine: str = "paddleocr"
+    pdf_ocr_mode: str = "targeted"
+    pdf_ocr_languages: str = "en"
+    pdf_ocr_max_pages: int = 2
+    pdf_ocr_min_confidence: float = 0.5
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
