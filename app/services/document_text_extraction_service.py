@@ -49,6 +49,7 @@ class PdfExtractionQuality:
     has_projects: bool = False
     has_experience: bool = False
     corrupted_glyph_ratio: float = 0.0
+    has_bad_glyphs: bool = False
     needs_header_ocr: bool = False
     needs_bottom_ocr: bool = False
     needs_full_page_ocr: bool = False
@@ -177,6 +178,7 @@ class DocumentTextExtractionService:
         lowered = (text or "").lower()
         bad_glyph_count = sum((text or "").count(marker) for marker in BAD_GLYPH_MARKERS)
         corrupted_glyph_ratio = bad_glyph_count / max(len(text or ""), 1)
+        has_bad_glyphs = bad_glyph_count > 0
 
         quality = PdfExtractionQuality(
             has_email=bool(EMAIL_RE.search(text or "")),
@@ -187,9 +189,10 @@ class DocumentTextExtractionService:
             has_projects="projects" in lowered or "project" in lowered,
             has_experience="experience" in lowered or "work experience" in lowered,
             corrupted_glyph_ratio=corrupted_glyph_ratio,
+            has_bad_glyphs=has_bad_glyphs,
         )
 
-        quality.needs_header_ocr = corrupted_glyph_ratio > 0.001 or not quality.has_email or not quality.has_phone
+        quality.needs_header_ocr = has_bad_glyphs or not quality.has_email or not quality.has_phone
         quality.needs_bottom_ocr = not quality.has_experience
         quality.needs_full_page_ocr = len(text or "") < 300 or corrupted_glyph_ratio > 0.03
         return quality
