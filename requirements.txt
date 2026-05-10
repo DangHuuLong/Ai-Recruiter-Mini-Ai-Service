@@ -29,3 +29,8 @@ typing_extensions==4.15.0
 uvicorn==0.46.0
 watchfiles==1.1.1
 websockets==16.0
+
+# Optional local OCR fallback. Install these only on OCR-capable workers.
+paddleocr>=2.8.0
+paddlepaddle>=2.6.0
+Pillow>=10.0.0
