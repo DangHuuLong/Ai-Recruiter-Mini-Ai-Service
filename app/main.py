@@ -1,9 +1,14 @@
 import logging
+import os
 from contextlib import asynccontextmanager
 from collections.abc import AsyncIterator
 
+os.environ.setdefault("FLAGS_use_mkldnn", "0")
+os.environ.setdefault("FLAGS_enable_mkldnn", "0")
+
 from fastapi import FastAPI
 
+import app.services.paddleocr_runtime_patch  # noqa: F401
 from app.api.health import router as health_router
 from app.api.parse import router as parse_router
 from app.api.score import router as score_router

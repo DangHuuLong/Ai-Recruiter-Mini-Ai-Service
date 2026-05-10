@@ -110,6 +110,10 @@ DATE_RANGE_RE = re.compile(
     rf"(?P<start>{DATE_TOKEN})\s*(?:-|to|until)\s*(?P<end>{DATE_TOKEN})",
     re.IGNORECASE,
 )
+LOOSE_PRESENT_DATE_RANGE_RE = re.compile(
+    rf"(?P<start>{TEXT_DATE}|{NUMERIC_DATE})\s+(?P<end>to date|hien tai|present|current|now|nay)\b",
+    re.IGNORECASE,
+)
 
 
 def normalize_date_label(value: str) -> str | None:
@@ -144,7 +148,7 @@ def parse_explicit_duration_months(text: str) -> int | None:
 
 def extract_date_range(text: str) -> dict[str, str | int | None] | None:
     normalized = strip_accents(_normalize_date_text(text or ""))
-    match = DATE_RANGE_RE.search(normalized)
+    match = DATE_RANGE_RE.search(normalized) or LOOSE_PRESENT_DATE_RANGE_RE.search(normalized)
     if not match:
         return None
 

@@ -425,9 +425,7 @@ def _attach_project_urls(project_items: list[dict], raw_text: str, personal_gith
             item_urls.append(repo_urls[url_index])
             url_index += 1
 
-        item_urls = _dedupe_strings(item_urls)
-        item["urls"] = item_urls
-        item["url"] = item_urls[0] if item_urls else item.get("url")
+        item["urls"] = _dedupe_strings(item_urls)
 
     return project_items
 
@@ -505,7 +503,6 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             end_date=item.get("end_date"),
             description=item.get("description"),
             technologies=item.get("technologies", []),
-            url=item.get("url"),
             urls=item.get("urls", []),
         )
         for item in project_items

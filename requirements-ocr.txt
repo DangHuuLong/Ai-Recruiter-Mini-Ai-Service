@@ -1,0 +1,10 @@
+# Optional local OCR runtime.
+# Install only in OCR-capable environments or OCR worker containers.
+# Python 3.12 is recommended on Windows because PaddlePaddle does not support Python 3.14 yet.
+# PyPI remains the primary index for paddleocr/Pillow; PaddlePaddle wheels are resolved from this extra index.
+
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cpu/
+
+paddlepaddle==3.2.0
+paddleocr==2.8.1
+Pillow>=10.0.0
