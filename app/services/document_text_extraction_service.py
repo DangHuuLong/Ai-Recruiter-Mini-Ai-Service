@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from io import BytesIO
+import logging
 import re
 from typing import Any
 
@@ -8,6 +9,8 @@ from docx import Document
 from pypdf import PdfReader
 
 from app.core.config import get_settings
+
+logger = logging.getLogger(__name__)
 
 LINE_Y_TOLERANCE = 3.0
 COLUMN_SPLIT_RATIO = 0.38
@@ -72,6 +75,10 @@ class OcrExtractionResult:
     raw_text: str = ""
     lines: list[OcrLine] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    raw_items_count: int = 0
+    accepted_items_count: int = 0
+    rejected_low_confidence_count: int = 0
+    rejected_empty_count: int = 0
 
 
 class DocumentTextExtractionError(Exception):
@@ -205,7 +212,22 @@ class DocumentTextExtractionService:
         warnings: list[str],
     ) -> str:
         settings = get_settings()
+        quality_message = (
+            "PDF OCR quality: "
+            f"has_email={quality.has_email}, has_phone={quality.has_phone}, "
+            f"has_bad_glyphs={quality.has_bad_glyphs}, "
+            f"corrupted_glyph_ratio={quality.corrupted_glyph_ratio:.6f}, "
+            f"needs_header_ocr={quality.needs_header_ocr}, "
+            f"needs_bottom_ocr={quality.needs_bottom_ocr}, "
+            f"needs_full_page_ocr={quality.needs_full_page_ocr}"
+        )
+        logger.info(quality_message)
+        warnings.append(quality_message)
+
         if not settings.enable_pdf_ocr_fallback:
+            message = "PaddleOCR fallback disabled by ENABLE_PDF_OCR_FALLBACK=false"
+            logger.info(message)
+            warnings.append(message)
             return self._normalize_extracted_text(primary_text)
 
         regions: list[str] = []
@@ -216,11 +238,36 @@ class DocumentTextExtractionService:
         if quality.needs_full_page_ocr or settings.pdf_ocr_mode.lower() == "full_page":
             regions.append("full_page")
 
+        regions = list(dict.fromkeys(regions))
         if not regions:
+            message = "PaddleOCR fallback enabled but no OCR regions were selected"
+            logger.info(message)
+            warnings.append(message)
             return self._normalize_extracted_text(primary_text)
 
+        message = (
+            "PaddleOCR fallback selected regions="
+            f"{regions}, lang={settings.pdf_ocr_languages}, "
+            f"max_pages={settings.pdf_ocr_max_pages}, min_confidence={settings.pdf_ocr_min_confidence}"
+        )
+        logger.info(message)
+        warnings.append(message)
+
         ocr_result = self._try_extract_pdf_text_with_paddleocr(document_bytes, regions, warnings)
+        result_message = (
+            "PaddleOCR fallback result: "
+            f"raw_items={ocr_result.raw_items_count}, accepted={ocr_result.accepted_items_count}, "
+            f"rejected_empty={ocr_result.rejected_empty_count}, "
+            f"rejected_low_confidence={ocr_result.rejected_low_confidence_count}, "
+            f"raw_text_chars={len(ocr_result.raw_text or '')}"
+        )
+        logger.info(result_message)
+        warnings.append(result_message)
+
         if not ocr_result.raw_text:
+            message = "PaddleOCR fallback produced no usable OCR text"
+            logger.warning(message)
+            warnings.append(message)
             return self._normalize_extracted_text(primary_text)
 
         merged_text = self._merge_ocr_result(primary_text, ocr_result, warnings)
@@ -237,7 +284,9 @@ class DocumentTextExtractionService:
             from paddleocr import PaddleOCR
             from PIL import Image
         except ImportError as exc:
-            warnings.append(f"PaddleOCR fallback skipped because optional OCR dependencies are missing: {exc}")
+            message = f"PaddleOCR fallback skipped because optional OCR dependencies are missing: {exc}"
+            logger.exception(message)
+            warnings.append(message)
             return OcrExtractionResult()
 
         settings = get_settings()
@@ -246,12 +295,16 @@ class DocumentTextExtractionService:
         lang = (settings.pdf_ocr_languages or "en").split("+")[0]
 
         try:
+            logger.info("Initializing PaddleOCR fallback with lang=%s", lang)
             ocr = PaddleOCR(use_angle_cls=True, lang=lang, show_log=False)
         except Exception as exc:
-            warnings.append(f"PaddleOCR fallback initialization failed: {exc}")
+            message = f"PaddleOCR fallback initialization failed: {exc}"
+            logger.exception(message)
+            warnings.append(message)
             return OcrExtractionResult()
 
         ocr_lines: list[OcrLine] = []
+        stats = {"raw": 0, "accepted": 0, "empty": 0, "low_confidence": 0}
         unique_regions = list(dict.fromkeys(regions))
 
         try:
@@ -260,6 +313,15 @@ class DocumentTextExtractionService:
                     if page_index >= max_pages:
                         break
                     for region_name, rect in self._ocr_regions_for_page(page, unique_regions):
+                        logger.info(
+                            "Running PaddleOCR page=%s region=%s rect=(%.1f, %.1f, %.1f, %.1f)",
+                            page_index + 1,
+                            region_name,
+                            float(rect.x0),
+                            float(rect.y0),
+                            float(rect.x1),
+                            float(rect.y1),
+                        )
                         pix = page.get_pixmap(
                             matrix=fitz.Matrix(OCR_RENDER_ZOOM, OCR_RENDER_ZOOM),
                             clip=rect,
@@ -267,26 +329,48 @@ class DocumentTextExtractionService:
                         )
                         image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
                         result = ocr.ocr(image, cls=True)
-                        ocr_lines.extend(
-                            self._paddleocr_result_to_lines(
-                                result,
-                                page_index + 1,
-                                region_name,
-                                rect,
-                                OCR_RENDER_ZOOM,
-                                min_confidence,
-                            )
+                        converted_lines, converted_stats = self._paddleocr_result_to_lines(
+                            result,
+                            page_index + 1,
+                            region_name,
+                            rect,
+                            OCR_RENDER_ZOOM,
+                            min_confidence,
                         )
+                        ocr_lines.extend(converted_lines)
+                        for key, value in converted_stats.items():
+                            stats[key] += value
         except Exception as exc:
-            warnings.append(f"PaddleOCR fallback failed: {exc}")
-            return OcrExtractionResult(lines=ocr_lines)
+            message = f"PaddleOCR fallback failed: {exc}"
+            logger.exception(message)
+            warnings.append(message)
+            return OcrExtractionResult(
+                lines=ocr_lines,
+                raw_items_count=stats["raw"],
+                accepted_items_count=stats["accepted"],
+                rejected_empty_count=stats["empty"],
+                rejected_low_confidence_count=stats["low_confidence"],
+            )
 
         sorted_lines = sorted(ocr_lines, key=lambda line: (line.page, line.y0 or 0, line.x0 or 0))
         raw_text = "\n".join(line.text for line in sorted_lines if line.text)
         if raw_text:
-            warnings.append(f"PaddleOCR fallback extracted text from regions: {', '.join(unique_regions)}")
+            sample = " | ".join(line.text for line in sorted_lines[:8])
+            message = (
+                f"PaddleOCR fallback extracted text from regions: {', '.join(unique_regions)}; "
+                f"sample={sample[:500]}"
+            )
+            logger.info(message)
+            warnings.append(message)
 
-        return OcrExtractionResult(raw_text=raw_text, lines=sorted_lines)
+        return OcrExtractionResult(
+            raw_text=raw_text,
+            lines=sorted_lines,
+            raw_items_count=stats["raw"],
+            accepted_items_count=stats["accepted"],
+            rejected_empty_count=stats["empty"],
+            rejected_low_confidence_count=stats["low_confidence"],
+        )
 
     def _ocr_regions_for_page(self, page: Any, regions: list[str]) -> list[tuple[str, Any]]:
         import fitz
@@ -312,21 +396,29 @@ class DocumentTextExtractionService:
         rect: Any,
         zoom: float,
         min_confidence: float,
-    ) -> list[OcrLine]:
+    ) -> tuple[list[OcrLine], dict[str, int]]:
         lines: list[OcrLine] = []
+        stats = {"raw": 0, "accepted": 0, "empty": 0, "low_confidence": 0}
         if not result:
-            return lines
+            return lines, stats
 
         for page_result in result:
             for item in page_result or []:
+                stats["raw"] += 1
                 if not item or len(item) < 2:
+                    stats["empty"] += 1
                     continue
                 box, recognition = item[0], item[1]
                 if not recognition or len(recognition) < 2:
+                    stats["empty"] += 1
                     continue
                 text, confidence = recognition[0], float(recognition[1] or 0)
                 text = str(text).strip()
-                if not text or confidence < min_confidence:
+                if not text:
+                    stats["empty"] += 1
+                    continue
+                if confidence < min_confidence:
+                    stats["low_confidence"] += 1
                     continue
 
                 try:
@@ -336,6 +428,7 @@ class DocumentTextExtractionService:
                     x_values = []
                     y_values = []
 
+                stats["accepted"] += 1
                 lines.append(
                     OcrLine(
                         text=text,
@@ -348,7 +441,7 @@ class DocumentTextExtractionService:
                         confidence=confidence,
                     )
                 )
-        return lines
+        return lines, stats
 
     def _merge_ocr_result(self, primary_text: str, ocr_result: OcrExtractionResult, warnings: list[str]) -> str:
         primary = self._normalize_extracted_text(primary_text)
@@ -363,6 +456,10 @@ class DocumentTextExtractionService:
         if self._has_corrupted_glyphs(primary) and header_text:
             blocks.insert(0, f"[OCR_HEADER]\n{header_text}\n[/OCR_HEADER]")
             warnings.append("Merged OCR header text to recover corrupted personal information")
+        elif self._has_corrupted_glyphs(primary):
+            message = "OCR header merge skipped because header OCR text was empty"
+            logger.warning(message)
+            warnings.append(message)
 
         if not self._contains_any_section(primary, IMPORTANT_PDF_SECTION_NAMES["experience"]):
             experience_section = self._extract_named_section(bottom_text, IMPORTANT_PDF_SECTION_NAMES["experience"])
@@ -389,15 +486,6 @@ class DocumentTextExtractionService:
         return any(alias in normalized for alias in aliases)
 
     def _merge_supplemental_pdf_text(self, primary_text: str, fallback_text: str, warnings: list[str]) -> str:
-        """Append important sections that PyMuPDF layout extraction missed.
-
-        PyMuPDF words preserve layout better for multi-column resumes, so it
-        remains the primary source. Some PDFs, however, drop bottom sections or
-        text boxes in the word stream. pypdf sometimes still exposes those
-        sections. This merger only appends known important missing sections,
-        avoiding a broad raw-text concatenation that would duplicate most of the
-        resume or destroy layout ordering.
-        """
         primary = self._normalize_extracted_text(primary_text)
         fallback = self._normalize_extracted_text(fallback_text)
 
@@ -446,11 +534,7 @@ class DocumentTextExtractionService:
         lowered = re.sub(r"[^a-z0-9+#./ ]+", " ", lowered)
         return re.sub(r"\s+", " ", lowered).strip()
 
-    def _try_extract_pdf_text_with_pymupdf(
-        self,
-        document_bytes: bytes,
-        warnings: list[str],
-    ) -> str:
+    def _try_extract_pdf_text_with_pymupdf(self, document_bytes: bytes, warnings: list[str]) -> str:
         try:
             import fitz  # PyMuPDF
         except ImportError:
@@ -460,7 +544,7 @@ class DocumentTextExtractionService:
         try:
             with fitz.open(stream=document_bytes, filetype="pdf") as document:
                 page_texts = [self._extract_pymupdf_page_text(page) for page in document]
-        except Exception as exc:  # PyMuPDF raises multiple parser-specific exceptions.
+        except Exception as exc:
             warnings.append(f"PyMuPDF PDF extraction failed; falling back to pypdf: {exc}")
             return ""
 
@@ -481,24 +565,16 @@ class DocumentTextExtractionService:
                 continue
 
             x0, y0, x1, y1, text = word[:5]
-            item = {
-                "x0": float(x0),
-                "y0": float(y0),
-                "x1": float(x1),
-                "y1": float(y1),
-                "text": str(text).strip(),
-            }
+            item = {"x0": float(x0), "y0": float(y0), "x1": float(x1), "y1": float(y1), "text": str(text).strip()}
             if item["text"]:
                 normalized_words.append(item)
 
         line_segments = self._words_to_line_segments(normalized_words, page_links, page_width)
         page_text = self._segments_to_reading_order_text(line_segments, page_width)
-
         return self._append_unmatched_links(page_text, page_links)
 
     def _extract_page_links(self, page: Any) -> list[dict[str, Any]]:
         links: list[dict[str, Any]] = []
-
         try:
             raw_links = page.get_links()
         except Exception:
@@ -509,36 +585,18 @@ class DocumentTextExtractionService:
             rect = raw_link.get("from")
             if not uri or rect is None:
                 continue
-
-            links.append(
-                {
-                    "url": uri,
-                    "x0": float(rect.x0),
-                    "y0": float(rect.y0),
-                    "x1": float(rect.x1),
-                    "y1": float(rect.y1),
-                    "matched": False,
-                },
-            )
-
+            links.append({"url": uri, "x0": float(rect.x0), "y0": float(rect.y0), "x1": float(rect.x1), "y1": float(rect.y1), "matched": False})
         return links
 
-    def _words_to_line_segments(
-        self,
-        words: list[dict[str, Any]],
-        links: list[dict[str, Any]],
-        page_width: float,
-    ) -> list[dict[str, Any]]:
+    def _words_to_line_segments(self, words: list[dict[str, Any]], links: list[dict[str, Any]], page_width: float) -> list[dict[str, Any]]:
         if not words:
             return []
 
         segments: list[dict[str, Any]] = []
         gap_threshold = max(COLUMN_SEGMENT_GAP_THRESHOLD, page_width * 0.06)
-
         for line in self._group_items_into_lines(words):
             ordered_line = sorted(line, key=lambda word: float(word["x0"]))
             current_segment: list[dict[str, Any]] = []
-
             for word in ordered_line:
                 if current_segment:
                     previous_word = current_segment[-1]
@@ -546,19 +604,12 @@ class DocumentTextExtractionService:
                     if gap > gap_threshold:
                         segments.append(self._build_text_segment(current_segment, links))
                         current_segment = []
-
                 current_segment.append(word)
-
             if current_segment:
                 segments.append(self._build_text_segment(current_segment, links))
-
         return segments
 
-    def _build_text_segment(
-        self,
-        words: list[dict[str, Any]],
-        links: list[dict[str, Any]],
-    ) -> dict[str, Any]:
+    def _build_text_segment(self, words: list[dict[str, Any]], links: list[dict[str, Any]]) -> dict[str, Any]:
         ordered_words = sorted(words, key=lambda word: float(word["x0"]))
         return {
             "x0": min(float(word["x0"]) for word in ordered_words),
@@ -569,33 +620,19 @@ class DocumentTextExtractionService:
             "urls": self._urls_for_line(ordered_words, links),
         }
 
-    def _segments_to_reading_order_text(
-        self,
-        segments: list[dict[str, Any]],
-        page_width: float,
-    ) -> str:
+    def _segments_to_reading_order_text(self, segments: list[dict[str, Any]], page_width: float) -> str:
         if not segments:
             return ""
 
         column_start_y = self._detect_two_column_start_y(segments, page_width)
-
         if column_start_y is None:
             ordered_segments = sorted(segments, key=lambda segment: (float(segment["y0"]), float(segment["x0"])))
         else:
-            before_columns = [
-                segment
-                for segment in segments
-                if float(segment["y0"]) < column_start_y - LINE_Y_TOLERANCE
-            ]
-            column_segments = [
-                segment
-                for segment in segments
-                if float(segment["y0"]) >= column_start_y - LINE_Y_TOLERANCE
-            ]
+            before_columns = [segment for segment in segments if float(segment["y0"]) < column_start_y - LINE_Y_TOLERANCE]
+            column_segments = [segment for segment in segments if float(segment["y0"]) >= column_start_y - LINE_Y_TOLERANCE]
             split_x = page_width * COLUMN_SPLIT_RATIO
             left_column = [segment for segment in column_segments if float(segment["x0"]) < split_x]
             right_column = [segment for segment in column_segments if float(segment["x0"]) >= split_x]
-
             ordered_segments = [
                 *sorted(before_columns, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
                 *sorted(left_column, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
@@ -605,26 +642,17 @@ class DocumentTextExtractionService:
         output_lines: list[str] = []
         for segment in ordered_segments:
             output_lines.extend(self._segment_output_lines(segment))
-
         return "\n".join(output_lines)
 
-    def _detect_two_column_start_y(
-        self,
-        segments: list[dict[str, Any]],
-        page_width: float,
-    ) -> float | None:
+    def _detect_two_column_start_y(self, segments: list[dict[str, Any]], page_width: float) -> float | None:
         split_x = page_width * COLUMN_SPLIT_RATIO
-
         for line in self._group_items_into_lines(segments):
             if len(line) < 2:
                 continue
-
             has_left_segment = any(float(segment["x0"]) < split_x for segment in line)
             has_right_segment = any(float(segment["x0"]) >= split_x for segment in line)
-
             if has_left_segment and has_right_segment:
                 return min(float(segment["y0"]) for segment in line)
-
         return None
 
     def _segment_output_lines(self, segment: dict[str, Any]) -> list[str]:
@@ -632,79 +660,58 @@ class DocumentTextExtractionService:
         text = str(segment.get("text") or "").strip()
         if text:
             lines.append(text)
-
         for url in segment.get("urls") or []:
             lines.append(str(url))
-
         return lines
 
     def _group_items_into_lines(self, items: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
         sorted_items = sorted(items, key=lambda item: (float(item["y0"]), float(item["x0"])))
         lines: list[list[dict[str, Any]]] = []
-
         for item in sorted_items:
             if not lines:
                 lines.append([item])
                 continue
-
             current_line = lines[-1]
             current_y = sum(float(existing_item["y0"]) for existing_item in current_line) / len(current_line)
             if abs(float(item["y0"]) - current_y) <= LINE_Y_TOLERANCE:
                 current_line.append(item)
             else:
                 lines.append([item])
-
         return lines
 
-    def _urls_for_line(
-        self,
-        line: list[dict[str, Any]],
-        links: list[dict[str, Any]],
-    ) -> list[str]:
+    def _urls_for_line(self, line: list[dict[str, Any]], links: list[dict[str, Any]]) -> list[str]:
         if not links or not line:
             return []
-
         min_x = min(float(word["x0"]) for word in line)
         max_x = max(float(word["x1"]) for word in line)
         min_y = min(float(word["y0"]) for word in line)
         max_y = max(float(word["y1"]) for word in line)
         urls: list[str] = []
-
         for link in links:
             if link["matched"]:
                 continue
             horizontally_overlaps = float(link["x1"]) >= min_x - 4 and float(link["x0"]) <= max_x + 4
             vertically_overlaps = float(link["y1"]) >= min_y - 4 and float(link["y0"]) <= max_y + 4
-
             if horizontally_overlaps and vertically_overlaps:
                 link["matched"] = True
                 urls.append(str(link["url"]))
-
         return self._unique_urls(urls)
 
     def _append_page_links(self, text: str, links: list[dict[str, Any]]) -> str:
         urls = self._unique_urls([str(link["url"]) for link in links])
-        if not urls:
-            return text
-
-        return "\n".join([text, *urls])
+        return "\n".join([text, *urls]) if urls else text
 
     def _append_unmatched_links(self, text: str, links: list[dict[str, Any]]) -> str:
         urls = self._unique_urls([str(link["url"]) for link in links if not link["matched"]])
         if not urls:
             return text
-
         existing_urls = set(URL_RE.findall(text or ""))
         missing_urls = [url for url in urls if url not in existing_urls]
-        if not missing_urls:
-            return text
-
-        return "\n".join([text, *missing_urls])
+        return "\n".join([text, *missing_urls]) if missing_urls else text
 
     def _unique_urls(self, urls: list[str]) -> list[str]:
         result = []
         seen = set()
-
         for url in urls:
             normalized_url = self._normalize_url(url)
             if not normalized_url:
@@ -714,7 +721,6 @@ class DocumentTextExtractionService:
                 continue
             seen.add(key)
             result.append(normalized_url)
-
         return result
 
     def _normalize_url(self, value: str) -> str | None:
@@ -723,18 +729,13 @@ class DocumentTextExtractionService:
             return None
         return cleaned
 
-    def _try_extract_pdf_text_with_pypdf(
-        self,
-        document_bytes: bytes,
-        warnings: list[str],
-    ) -> str:
+    def _try_extract_pdf_text_with_pypdf(self, document_bytes: bytes, warnings: list[str]) -> str:
         try:
             reader = PdfReader(BytesIO(document_bytes))
             page_texts = [(page.extract_text() or "") for page in reader.pages]
-        except Exception as exc:  # pypdf raises multiple parser-specific exceptions.
+        except Exception as exc:
             warnings.append(f"pypdf PDF extraction failed: {exc}")
             return ""
-
         return self._normalize_extracted_text("\n".join(page_texts))
 
     def _extract_docx_text(self, document_bytes: bytes) -> DocumentTextExtractionResult:
@@ -747,20 +748,14 @@ class DocumentTextExtractionService:
                     if row_text:
                         raw_text_parts.append(row_text)
             raw_text = "\n".join(raw_text_parts).strip()
-        except Exception as exc:  # python-docx may raise zip/xml parser errors for invalid docs.
+        except Exception as exc:
             raise DocumentTextExtractionError(f"Failed to extract DOCX text: {exc}") from exc
 
         raw_text = self._normalize_extracted_text(raw_text)
         warnings: list[str] = []
-
         if not raw_text:
             warnings.append("No text was extracted from the DOCX document.")
-
-        return DocumentTextExtractionResult(
-            raw_text=raw_text,
-            method="DOCX_TEXT",
-            warnings=warnings,
-        )
+        return DocumentTextExtractionResult(raw_text=raw_text, method="DOCX_TEXT", warnings=warnings)
 
     def _normalize_extracted_text(self, text: str) -> str:
         return "\n".join(
