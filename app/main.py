@@ -1,6 +1,10 @@
 import logging
+import os
 from contextlib import asynccontextmanager
 from collections.abc import AsyncIterator
+
+os.environ.setdefault("FLAGS_use_mkldnn", "0")
+os.environ.setdefault("FLAGS_enable_mkldnn", "0")
 
 from fastapi import FastAPI
 
