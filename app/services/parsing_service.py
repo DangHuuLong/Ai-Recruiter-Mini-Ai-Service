@@ -28,6 +28,17 @@ NAME_STOP_WORDS = {
     "doc",
     "docx",
 }
+ROLE_TITLE_TOKENS = {
+    "developer",
+    "engineer",
+    "manager",
+    "designer",
+    "analyst",
+    "consultant",
+    "intern",
+    "student",
+}
+SUMMARY_TAIL_PREFIXES = ("valuable", "software", "products", "solutions", "systems")
 
 
 class ParsingService:
@@ -128,22 +139,30 @@ class ParsingService:
         except ValueError:
             return cleaned
 
-        for line in lines[last_index + 1 : last_index + 32]:
+        for line in lines[last_index + 1 : last_index + 40]:
+            if not self._is_valid_summary_tail_candidate(line):
+                continue
             normalized = line.lower().strip()
-            if not normalized:
-                continue
-            if any(marker in line for marker in BAD_TEXT_MARKERS):
-                continue
-            if any(token in normalized for token in ["@", "http://", "https://", "phone:", "date:", "address:"]):
-                continue
-            if normalized in {"github", "technical skills", "education", "projects", "experience"}:
-                continue
-            if len(line.split()) > 6:
-                continue
-            if cleaned.lower().endswith((" to", " and", " with")) or normalized.startswith(("valuable", "software", "products")):
+            if normalized.startswith(SUMMARY_TAIL_PREFIXES):
                 return f"{cleaned} {line}".strip()
 
         return cleaned
+
+    def _is_valid_summary_tail_candidate(self, line: str) -> bool:
+        normalized = line.lower().strip()
+        if not normalized:
+            return False
+        if any(marker in line for marker in BAD_TEXT_MARKERS):
+            return False
+        if any(token in normalized for token in ["@", "http://", "https://", "phone:", "date:", "address:"]):
+            return False
+        if normalized in {"github", "technical skills", "education", "projects", "experience"}:
+            return False
+        if any(token in normalized.split() for token in ROLE_TITLE_TOKENS):
+            return False
+        if len(line.split()) > 6:
+            return False
+        return True
 
 
 parsing_service = ParsingService()
