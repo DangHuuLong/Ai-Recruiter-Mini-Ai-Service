@@ -1,3 +1,4 @@
+from dataclasses import dataclass, field
 from io import BytesIO
 import re
 from typing import Any
@@ -6,10 +7,16 @@ import httpx
 from docx import Document
 from pypdf import PdfReader
 
+from app.core.config import get_settings
+
 LINE_Y_TOLERANCE = 3.0
 COLUMN_SPLIT_RATIO = 0.38
 COLUMN_SEGMENT_GAP_THRESHOLD = 36.0
+OCR_RENDER_ZOOM = 3.0
 URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
+EMAIL_RE = re.compile(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}")
+PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,})")
+BAD_GLYPH_MARKERS = ("·", "ï", "¿", "ˇ", "�")
 IMPORTANT_PDF_SECTION_NAMES = {
     "experience": {"experience", "work experience"},
 }
@@ -30,6 +37,40 @@ SECTION_STOP_NAMES = {
     "summary",
     "technical skills",
 }
+
+
+@dataclass
+class PdfExtractionQuality:
+    has_email: bool = False
+    has_phone: bool = False
+    has_github: bool = False
+    has_linkedin: bool = False
+    has_education: bool = False
+    has_projects: bool = False
+    has_experience: bool = False
+    corrupted_glyph_ratio: float = 0.0
+    needs_header_ocr: bool = False
+    needs_bottom_ocr: bool = False
+    needs_full_page_ocr: bool = False
+
+
+@dataclass
+class OcrLine:
+    text: str
+    page: int
+    region: str
+    x0: float | None = None
+    y0: float | None = None
+    x1: float | None = None
+    y1: float | None = None
+    confidence: float | None = None
+
+
+@dataclass
+class OcrExtractionResult:
+    raw_text: str = ""
+    lines: list[OcrLine] = field(default_factory=list)
+    warnings: list[str] = field(default_factory=list)
 
 
 class DocumentTextExtractionError(Exception):
@@ -92,31 +133,257 @@ class DocumentTextExtractionService:
         warnings: list[str] = []
 
         pymupdf_text = self._try_extract_pdf_text_with_pymupdf(document_bytes, warnings)
+        pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
+
         if pymupdf_text:
-            pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
             merged_text = self._merge_supplemental_pdf_text(pymupdf_text, pypdf_text, warnings)
+            quality = self._analyze_pdf_extraction_quality(merged_text)
+            merged_text = self._maybe_merge_local_ocr_text(document_bytes, merged_text, quality, warnings)
+
             return DocumentTextExtractionResult(
                 raw_text=merged_text,
-                method="PDF_TEXT_PYMUPDF_WORDS",
+                method="PDF_HYBRID_PYMUPDF_PADDLEOCR" if any("PaddleOCR" in warning for warning in warnings) else "PDF_TEXT_PYMUPDF_WORDS",
                 warnings=warnings,
             )
 
-        pypdf_text = self._try_extract_pdf_text_with_pypdf(document_bytes, warnings)
         if pypdf_text:
+            quality = self._analyze_pdf_extraction_quality(pypdf_text)
+            merged_text = self._maybe_merge_local_ocr_text(document_bytes, pypdf_text, quality, warnings)
             return DocumentTextExtractionResult(
-                raw_text=pypdf_text,
-                method="PDF_TEXT_PYPDF",
+                raw_text=merged_text,
+                method="PDF_HYBRID_PYPDF_PADDLEOCR" if any("PaddleOCR" in warning for warning in warnings) else "PDF_TEXT_PYPDF",
+                warnings=warnings,
+            )
+
+        quality = PdfExtractionQuality(needs_full_page_ocr=True, needs_header_ocr=True, needs_bottom_ocr=True)
+        ocr_text = self._maybe_merge_local_ocr_text(document_bytes, "", quality, warnings)
+        if ocr_text:
+            return DocumentTextExtractionResult(
+                raw_text=ocr_text,
+                method="PDF_OCR_PADDLEOCR",
                 warnings=warnings,
             )
 
         warnings.append(
-            "No selectable text was extracted from the PDF. OCR fallback is not implemented yet.",
+            "No selectable text was extracted from the PDF and OCR fallback did not produce text.",
         )
         return DocumentTextExtractionResult(
             raw_text="",
             method="PDF_TEXT_EMPTY",
             warnings=warnings,
         )
+
+    def _analyze_pdf_extraction_quality(self, text: str) -> PdfExtractionQuality:
+        lowered = (text or "").lower()
+        bad_glyph_count = sum((text or "").count(marker) for marker in BAD_GLYPH_MARKERS)
+        corrupted_glyph_ratio = bad_glyph_count / max(len(text or ""), 1)
+
+        quality = PdfExtractionQuality(
+            has_email=bool(EMAIL_RE.search(text or "")),
+            has_phone=bool(PHONE_RE.search(text or "")),
+            has_github="github.com" in lowered,
+            has_linkedin="linkedin.com" in lowered,
+            has_education="education" in lowered or "academic" in lowered,
+            has_projects="projects" in lowered or "project" in lowered,
+            has_experience="experience" in lowered or "work experience" in lowered,
+            corrupted_glyph_ratio=corrupted_glyph_ratio,
+        )
+
+        quality.needs_header_ocr = corrupted_glyph_ratio > 0.001 or not quality.has_email or not quality.has_phone
+        quality.needs_bottom_ocr = not quality.has_experience
+        quality.needs_full_page_ocr = len(text or "") < 300 or corrupted_glyph_ratio > 0.03
+        return quality
+
+    def _maybe_merge_local_ocr_text(
+        self,
+        document_bytes: bytes,
+        primary_text: str,
+        quality: PdfExtractionQuality,
+        warnings: list[str],
+    ) -> str:
+        settings = get_settings()
+        if not settings.enable_pdf_ocr_fallback:
+            return self._normalize_extracted_text(primary_text)
+
+        regions: list[str] = []
+        if quality.needs_header_ocr:
+            regions.extend(["header", "left_sidebar", "top_left", "top_right"])
+        if quality.needs_bottom_ocr:
+            regions.extend(["bottom", "bottom_right"])
+        if quality.needs_full_page_ocr or settings.pdf_ocr_mode.lower() == "full_page":
+            regions.append("full_page")
+
+        if not regions:
+            return self._normalize_extracted_text(primary_text)
+
+        ocr_result = self._try_extract_pdf_text_with_paddleocr(document_bytes, regions, warnings)
+        if not ocr_result.raw_text:
+            return self._normalize_extracted_text(primary_text)
+
+        merged_text = self._merge_ocr_result(primary_text, ocr_result, warnings)
+        return self._normalize_extracted_text(merged_text)
+
+    def _try_extract_pdf_text_with_paddleocr(
+        self,
+        document_bytes: bytes,
+        regions: list[str],
+        warnings: list[str],
+    ) -> OcrExtractionResult:
+        try:
+            import fitz  # PyMuPDF
+            from paddleocr import PaddleOCR
+            from PIL import Image
+        except ImportError as exc:
+            warnings.append(f"PaddleOCR fallback skipped because optional OCR dependencies are missing: {exc}")
+            return OcrExtractionResult()
+
+        settings = get_settings()
+        max_pages = max(settings.pdf_ocr_max_pages, 1)
+        min_confidence = settings.pdf_ocr_min_confidence
+        lang = (settings.pdf_ocr_languages or "en").split("+")[0]
+
+        try:
+            ocr = PaddleOCR(use_angle_cls=True, lang=lang, show_log=False)
+        except Exception as exc:
+            warnings.append(f"PaddleOCR fallback initialization failed: {exc}")
+            return OcrExtractionResult()
+
+        ocr_lines: list[OcrLine] = []
+        unique_regions = list(dict.fromkeys(regions))
+
+        try:
+            with fitz.open(stream=document_bytes, filetype="pdf") as document:
+                for page_index, page in enumerate(document):
+                    if page_index >= max_pages:
+                        break
+                    for region_name, rect in self._ocr_regions_for_page(page, unique_regions):
+                        pix = page.get_pixmap(
+                            matrix=fitz.Matrix(OCR_RENDER_ZOOM, OCR_RENDER_ZOOM),
+                            clip=rect,
+                            alpha=False,
+                        )
+                        image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                        result = ocr.ocr(image, cls=True)
+                        ocr_lines.extend(
+                            self._paddleocr_result_to_lines(
+                                result,
+                                page_index + 1,
+                                region_name,
+                                rect,
+                                OCR_RENDER_ZOOM,
+                                min_confidence,
+                            )
+                        )
+        except Exception as exc:
+            warnings.append(f"PaddleOCR fallback failed: {exc}")
+            return OcrExtractionResult(lines=ocr_lines)
+
+        sorted_lines = sorted(ocr_lines, key=lambda line: (line.page, line.y0 or 0, line.x0 or 0))
+        raw_text = "\n".join(line.text for line in sorted_lines if line.text)
+        if raw_text:
+            warnings.append(f"PaddleOCR fallback extracted text from regions: {', '.join(unique_regions)}")
+
+        return OcrExtractionResult(raw_text=raw_text, lines=sorted_lines)
+
+    def _ocr_regions_for_page(self, page: Any, regions: list[str]) -> list[tuple[str, Any]]:
+        import fitz
+
+        width = float(page.rect.width)
+        height = float(page.rect.height)
+        mapping = {
+            "header": fitz.Rect(0, 0, width, height * 0.28),
+            "left_sidebar": fitz.Rect(0, 0, width * 0.42, height),
+            "top_left": fitz.Rect(0, 0, width * 0.45, height * 0.45),
+            "top_right": fitz.Rect(width * 0.35, 0, width, height * 0.35),
+            "bottom": fitz.Rect(0, height * 0.62, width, height),
+            "bottom_right": fitz.Rect(width * 0.35, height * 0.55, width, height),
+            "full_page": fitz.Rect(0, 0, width, height),
+        }
+        return [(region, mapping[region]) for region in regions if region in mapping]
+
+    def _paddleocr_result_to_lines(
+        self,
+        result: Any,
+        page: int,
+        region: str,
+        rect: Any,
+        zoom: float,
+        min_confidence: float,
+    ) -> list[OcrLine]:
+        lines: list[OcrLine] = []
+        if not result:
+            return lines
+
+        for page_result in result:
+            for item in page_result or []:
+                if not item or len(item) < 2:
+                    continue
+                box, recognition = item[0], item[1]
+                if not recognition or len(recognition) < 2:
+                    continue
+                text, confidence = recognition[0], float(recognition[1] or 0)
+                text = str(text).strip()
+                if not text or confidence < min_confidence:
+                    continue
+
+                try:
+                    x_values = [float(point[0]) / zoom + float(rect.x0) for point in box]
+                    y_values = [float(point[1]) / zoom + float(rect.y0) for point in box]
+                except Exception:
+                    x_values = []
+                    y_values = []
+
+                lines.append(
+                    OcrLine(
+                        text=text,
+                        page=page,
+                        region=region,
+                        x0=min(x_values) if x_values else None,
+                        y0=min(y_values) if y_values else None,
+                        x1=max(x_values) if x_values else None,
+                        y1=max(y_values) if y_values else None,
+                        confidence=confidence,
+                    )
+                )
+        return lines
+
+    def _merge_ocr_result(self, primary_text: str, ocr_result: OcrExtractionResult, warnings: list[str]) -> str:
+        primary = self._normalize_extracted_text(primary_text)
+        ocr_text = self._normalize_extracted_text(ocr_result.raw_text)
+        if not primary:
+            return ocr_text
+
+        blocks: list[str] = [primary]
+        header_text = self._ocr_text_for_regions(ocr_result, {"header", "left_sidebar", "top_left", "top_right"})
+        bottom_text = self._ocr_text_for_regions(ocr_result, {"bottom", "bottom_right", "full_page"})
+
+        if self._has_corrupted_glyphs(primary) and header_text:
+            blocks.insert(0, f"[OCR_HEADER]\n{header_text}\n[/OCR_HEADER]")
+            warnings.append("Merged OCR header text to recover corrupted personal information")
+
+        if not self._contains_any_section(primary, IMPORTANT_PDF_SECTION_NAMES["experience"]):
+            experience_section = self._extract_named_section(bottom_text, IMPORTANT_PDF_SECTION_NAMES["experience"])
+            if experience_section:
+                blocks.append(f"[OCR_RECOVERED_EXPERIENCE]\n{experience_section}")
+                warnings.append("Merged OCR bottom text to recover missing experience section")
+
+        if len(blocks) == 1 and ocr_text:
+            blocks.append(f"[OCR_SUPPLEMENTAL]\n{ocr_text}")
+            warnings.append("Merged OCR supplemental text because no targeted OCR block matched")
+
+        return "\n".join(blocks)
+
+    def _ocr_text_for_regions(self, ocr_result: OcrExtractionResult, regions: set[str]) -> str:
+        lines = [line for line in ocr_result.lines if line.region in regions]
+        lines = sorted(lines, key=lambda line: (line.page, line.y0 or 0, line.x0 or 0))
+        return self._normalize_extracted_text("\n".join(line.text for line in lines))
+
+    def _has_corrupted_glyphs(self, text: str) -> bool:
+        return any(marker in (text or "") for marker in BAD_GLYPH_MARKERS)
+
+    def _contains_any_section(self, text: str, aliases: set[str]) -> bool:
+        normalized = self._normalize_section_key(text)
+        return any(alias in normalized for alias in aliases)
 
     def _merge_supplemental_pdf_text(self, primary_text: str, fallback_text: str, warnings: list[str]) -> str:
         """Append important sections that PyMuPDF layout extraction missed.
@@ -134,11 +401,10 @@ class DocumentTextExtractionService:
         if not primary or not fallback:
             return primary or fallback
 
-        primary_normalized = self._normalize_section_key(primary)
         supplemental_sections: list[str] = []
 
         for section_name, aliases in IMPORTANT_PDF_SECTION_NAMES.items():
-            if any(alias in primary_normalized for alias in aliases):
+            if self._contains_any_section(primary, aliases):
                 continue
 
             section_text = self._extract_named_section(fallback, aliases)
@@ -253,23 +519,6 @@ class DocumentTextExtractionService:
             )
 
         return links
-
-    def _words_to_text(self, words: list[dict[str, Any]], links: list[dict[str, Any]] | None = None) -> str:
-        if not words:
-            return ""
-
-        line_texts = []
-        for line in self._group_items_into_lines(words):
-            ordered_line = sorted(line, key=lambda word: float(word["x0"]))
-            line_text = " ".join(str(word["text"]) for word in ordered_line).strip()
-            line_urls = self._urls_for_line(ordered_line, links or [])
-
-            if line_text:
-                line_texts.append(line_text)
-            for url in line_urls:
-                line_texts.append(url)
-
-        return "\n".join(line_texts)
 
     def _words_to_line_segments(
         self,
@@ -488,9 +737,13 @@ class DocumentTextExtractionService:
     def _extract_docx_text(self, document_bytes: bytes) -> DocumentTextExtractionResult:
         try:
             document = Document(BytesIO(document_bytes))
-            raw_text = "\n".join(
-                paragraph.text for paragraph in document.paragraphs if paragraph.text.strip()
-            ).strip()
+            raw_text_parts = [paragraph.text for paragraph in document.paragraphs if paragraph.text.strip()]
+            for table in document.tables:
+                for row in table.rows:
+                    row_text = " | ".join(cell.text.strip() for cell in row.cells if cell.text.strip())
+                    if row_text:
+                        raw_text_parts.append(row_text)
+            raw_text = "\n".join(raw_text_parts).strip()
         except Exception as exc:  # python-docx may raise zip/xml parser errors for invalid docs.
             raise DocumentTextExtractionError(f"Failed to extract DOCX text: {exc}") from exc
 
