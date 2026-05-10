@@ -28,6 +28,7 @@ COMPANY_KEYWORDS = (
     "studio",
     "agency",
     "startup",
+    "utilities",
 )
 
 STOP_KEYWORDS = (
@@ -228,6 +229,30 @@ def _parse_stacked_experience_header(company: str, role: str, date_line: str) ->
     }
 
 
+def _parse_company_role_pipe_date(company: str, role_date_line: str) -> dict | None:
+    if "|" not in role_date_line:
+        return None
+
+    role_part, date_part = [part.strip(" -|,") for part in role_date_line.split("|", 1)]
+    if not role_part or not _looks_like_role(role_part):
+        return None
+
+    date_range = extract_date_range(date_part)
+    if not date_range:
+        return None
+
+    return {
+        "raw": f"{company} | {role_part} | {date_part}",
+        "company": company,
+        "role": role_part,
+        "start_date": date_range["start_date"],
+        "end_date": date_range["end_date"],
+        "duration_months": date_range["duration_months"],
+        "responsibilities": [],
+        "technologies": [skill["name"] for skill in extract_skills(role_part)],
+    }
+
+
 def _is_weak_role_fragment(line: str) -> bool:
     if not _looks_like_role(line):
         return False
@@ -342,6 +367,14 @@ def extract_experience(text: str) -> list[dict]:
         if _is_achievement_heading(line):
             index += 1
             continue
+
+        if index + 1 < len(lines) and _looks_like_company(line):
+            company_role_date = _parse_company_role_pipe_date(line, lines[index + 1])
+            if company_role_date is not None:
+                _append_current(entries, current)
+                current = company_role_date
+                index += 2
+                continue
 
         date_role_indices = _find_role_index_after_date(lines, index)
         if date_role_indices is not None:
