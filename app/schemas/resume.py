@@ -53,7 +53,6 @@ class ResumeProject(BaseModel):
     end_date: str | None = None
     description: str | None = None
     technologies: list[str] = Field(default_factory=list)
-    url: str | None = None
     urls: list[str] = Field(default_factory=list)
 
 
