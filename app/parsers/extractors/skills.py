@@ -9,6 +9,7 @@ SKILL_CATALOG = {
     "Java": {"category": "language", "aliases": ["java"]},
     "PHP": {"category": "language", "aliases": ["php"]},
     "Ruby": {"category": "language", "aliases": ["ruby"]},
+    "C": {"category": "language", "aliases": ["c"]},
     "C#": {"category": "language", "aliases": ["c#"]},
     "C++": {"category": "language", "aliases": ["c++"]},
     "Go": {"category": "language", "aliases": ["go", "golang"]},
@@ -17,8 +18,8 @@ SKILL_CATALOG = {
     "CSS": {"category": "frontend", "aliases": ["css"]},
     "Bootstrap": {"category": "frontend", "aliases": ["bootstrap"]},
     "React": {"category": "frontend", "aliases": ["react", "reactjs", "react.js"]},
-    "React Native": {"category": "frontend", "aliases": ["react native"]},
-    "Expo": {"category": "frontend", "aliases": ["expo"]},
+    "React Native": {"category": "mobile", "aliases": ["react native"]},
+    "Expo": {"category": "mobile", "aliases": ["expo"]},
     "Vite": {"category": "frontend", "aliases": ["vite"]},
     "Next.js": {"category": "frontend", "aliases": ["next.js", "nextjs"]},
     "Vue": {"category": "frontend", "aliases": ["vue", "vue.js", "vuejs"]},
@@ -49,7 +50,7 @@ SKILL_CATALOG = {
     "PostgreSQL": {"category": "database", "aliases": ["postgresql", "postgres", "postgre sql"]},
     "MySQL": {"category": "database", "aliases": ["mysql"]},
     "MongoDB": {"category": "database", "aliases": ["mongodb", "mongo db"]},
-    "Mongoose": {"category": "database", "aliases": ["mongoose"]},
+    "Mongoose": {"category": "orm", "aliases": ["mongoose"]},
     "Redis": {"category": "database", "aliases": ["redis"]},
     "Docker": {"category": "devops", "aliases": ["docker"]},
     "Kubernetes": {"category": "devops", "aliases": ["kubernetes", "k8s"]},
@@ -69,7 +70,7 @@ SKILL_CATALOG = {
     "Git": {"category": "tooling", "aliases": ["git"]},
     "GitHub": {"category": "tooling", "aliases": ["github"]},
     "Postman": {"category": "tooling", "aliases": ["postman"]},
-    "Prisma": {"category": "tooling", "aliases": ["prisma"]},
+    "Prisma": {"category": "orm", "aliases": ["prisma"]},
     "Whisper AI": {"category": "ai", "aliases": ["whisper ai", "openai whisper", "whisper"]},
     "Gemini AI": {"category": "ai", "aliases": ["gemini ai", "gemini"]},
     "Jest": {"category": "testing", "aliases": ["jest"]},
@@ -83,10 +84,15 @@ def _alias_pattern(alias: str) -> re.Pattern:
     if alias == ".net":
         return re.compile(rf"(?<![\w+]){escaped}(?![\w+])", re.IGNORECASE)
 
-    # Keep short aliases strict so they do not fire on framework suffixes such
-    # as Node.js, Express.js, Next.js, or file extensions.
+    # Keep short aliases strict so they do not fire on framework suffixes
+    # such as Node.js, Express.js, Next.js, or file extensions.
     if alias in {"js", "ts"}:
         return re.compile(rf"(?<![.\w]){escaped}(?![\w])", re.IGNORECASE)
+
+    # Plain C should only match standalone C, C/C++, or C, C++ style language lists.
+    # This avoids false positives in words like CSS, Cloudinary, React, or academic.
+    if alias == "c":
+        return re.compile(r"(?<![A-Za-z0-9+#.])c(?![A-Za-z0-9#.])", re.IGNORECASE)
 
     # Do not extract plain React from React Native; React Native has its own
     # catalog entry and should remain the more specific match.
@@ -108,6 +114,13 @@ def _iter_evidence_units(text: str) -> Iterable[str]:
     lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
     if lines:
         yield from lines
+
+        # PDF extraction can wrap one logical skill line across multiple physical lines,
+        # e.g. "TanStack" on one line and "Query" on the next. Search small windows too.
+        for index in range(len(lines) - 1):
+            yield f"{lines[index]} {lines[index + 1]}"
+        for index in range(len(lines) - 2):
+            yield f"{lines[index]} {lines[index + 1]} {lines[index + 2]}"
         return
 
     yield from (part.strip() for part in re.split(r"(?<=[.!?])\s+", text or "") if part.strip())
