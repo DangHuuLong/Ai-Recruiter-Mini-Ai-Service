@@ -74,6 +74,7 @@ NON_NAME_TOKENS = {
     "working",
 }
 SUMMARY_TAIL_PREFIXES = ("valuable", "software", "products", "solutions", "systems")
+BULLET_MARKERS_RE = re.compile(r'^[\s"“”]+(?=(?:[A-Za-zÀ-ỹ]|Backend|Frontend|Database|State|Tools|Programming))')
 
 
 class ParsingService:
@@ -111,7 +112,19 @@ class ParsingService:
         return parse_job_description(self._sanitize_raw_text(raw_text))
 
     def _sanitize_raw_text(self, raw_text: str) -> str:
-        return (raw_text or "").replace("\x00", "")
+        text = (raw_text or "").replace("\x00", "")
+        text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+        cleaned_lines: list[str] = []
+        for raw_line in text.split("\n"):
+            line = raw_line.replace("\u00a0", " ")
+            line = BULLET_MARKERS_RE.sub("- ", line)
+            line = re.sub(r"[ \t]+", " ", line).strip()
+            cleaned_lines.append(line)
+
+        cleaned = "\n".join(cleaned_lines)
+        cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+        return cleaned.strip()
 
     def _recover_full_name_from_file_name(self, parsed_resume: ParsedResumeData, file_name: str | None) -> str | None:
         current_name = parsed_resume.personal.full_name
