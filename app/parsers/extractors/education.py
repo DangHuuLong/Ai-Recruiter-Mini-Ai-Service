@@ -81,7 +81,7 @@ def _is_date_line(line: str) -> bool:
     if not clean:
         return False
 
-    if DATE_RANGE_RE.search(clean):
+    if DATE_RANGE_RE.fullmatch(clean):
         return True
 
     normalized = strip_accents(clean).lower()
@@ -198,9 +198,22 @@ def _extract_institution(text: str) -> str | None:
     return None
 
 
+def _extract_gpa_parts(text: str) -> tuple[str | None, str | None]:
+    match = re.search(
+        r"\bGPA\s*[:\-]?\s*([0-9]+(?:\.[0-9]+)?)(?:\s*/\s*([0-9]+(?:\.[0-9]+)?))?",
+        text or "",
+        re.IGNORECASE,
+    )
+    if not match:
+        return None, None
+    return match.group(1), match.group(2)
+
+
 def _extract_gpa(text: str) -> str | None:
-    match = re.search(r"\bGPA\s*[:\-]?\s*([0-9]+(?:\.[0-9]+)?\s*/\s*[0-9]+(?:\.[0-9]+)?)", text or "", re.IGNORECASE)
-    return match.group(1).replace(" ", "") if match else None
+    gpa, scale = _extract_gpa_parts(text)
+    if not gpa:
+        return None
+    return f"{gpa}/{scale}" if scale else gpa
 
 
 def _looks_like_education_start(line: str) -> bool:
@@ -326,12 +339,7 @@ def extract_education(text: str) -> list[dict]:
     for block in blocks:
         block_text = "\n".join(block)
         start_year, end_year = _extract_years(block_text)
-        gpa = _extract_gpa(block_text)
-
-        description = block_text
-
-        if gpa and "gpa" not in block_text.lower():
-            description = f"{description}\nGPA: {gpa}"
+        gpa, gpa_scale = _extract_gpa_parts(block_text)
 
         results.append(
             {
@@ -340,7 +348,9 @@ def extract_education(text: str) -> list[dict]:
                 "field_of_study": _extract_field(block_text),
                 "start_year": start_year,
                 "end_year": end_year,
-                "description": description,
+                "gpa": gpa,
+                "gpa_scale": gpa_scale,
+                "description": block_text,
             }
         )
 
