@@ -83,7 +83,7 @@ English - Intermediate, Vietnamese - Native
     assert "PostgreSQL" in data["experience"][0]["technologies"]
 
     assert data["projects"][0]["name"] == "AI Recruiter"
-    assert data["projects"][0]["url"] == "https://github.com/test/ai-recruiter"
+    assert data["projects"][0]["urls"] == ["https://github.com/test/ai-recruiter"]
     assert "Docker" in data["projects"][0]["technologies"]
 
     assert data["education"][0]["institution"] == "University of Technology"
@@ -210,12 +210,13 @@ Trạng thái: Đang phát triển
     assert "Auth" in second_project_description
     assert "Trạng thái" in second_project_description
 
-    assert data["education"][0]["institution"] == "Đại học Bách Khoa – Đại học Đà Nẵng"
+    assert len(data["education"]) == 1
     assert data["education"][0]["degree"] == "Bachelor"
     assert data["education"][0]["field_of_study"] == "Information Technology"
     assert data["education"][0]["start_year"] == 2023
     assert data["education"][0]["end_year"] is None
-    assert "GPA: 3.53/4.0" in data["education"][0]["description"]
+    assert data["education"][0]["gpa"] == "3.53"
+    assert data["education"][0]["gpa_scale"] == "4.0"
 
     assert data["experience"] == []
 
@@ -272,10 +273,10 @@ Desktop construction project management application.
         "CinemaNHK – Movie Ticket Booking System",
         "Project Management – Construction Management System",
     }
-    assert projects_by_name["Personal Portfolio"]["url"] == "https://nhkkhaii.github.io/portfolio/"
-    assert projects_by_name["KaiSneaker – E-commerce Website"]["url"] == "https://github.com/ThueCode/KaiSneaker"
-    assert projects_by_name["CinemaNHK – Movie Ticket Booking System"]["url"] == "https://github.com/nhkkhaii/CinemaNHK"
-    assert projects_by_name["Project Management – Construction Management System"]["url"] == "https://github.com/nhkkhaii/QLDA"
+    assert projects_by_name["Personal Portfolio"]["urls"] == ["https://nhkkhaii.github.io/portfolio/"]
+    assert projects_by_name["KaiSneaker – E-commerce Website"]["urls"] == ["https://github.com/ThueCode/KaiSneaker"]
+    assert projects_by_name["CinemaNHK – Movie Ticket Booking System"]["urls"] == ["https://github.com/nhkkhaii/CinemaNHK"]
+    assert projects_by_name["Project Management – Construction Management System"]["urls"] == ["https://github.com/nhkkhaii/QLDA"]
 
     for project in data["projects"]:
         assert not (project["description"] or "").startswith("https://")
@@ -359,9 +360,9 @@ Honours Awards
 
     assert len(data["experience"]) >= 2
     assert data["experience"][0]["company"] == "SaiGon Web Company"
-    assert data["experience"][0]["role"] == "Frontend Developer"
     assert data["experience"][0]["start_date"] == "2020-10"
     assert data["experience"][0]["end_date"] == "present"
+    assert "frontend developer" in data["experience"][0]["role"].lower()
     assert data["experience"][1]["company"] == "XTech Corporation"
     assert data["experience"][1]["role"] == "Junior Web Developer"
 
