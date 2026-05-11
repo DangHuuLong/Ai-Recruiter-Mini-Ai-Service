@@ -537,8 +537,6 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             role=item.get("role"),
             start_date=item.get("start_date"),
             end_date=item.get("end_date"),
-            raw_date=item.get("raw_date"),
-            date_precision=item.get("date_precision"),
             description=item.get("description"),
             technologies=item.get("technologies", []),
             urls=item.get("urls", []),
