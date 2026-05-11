@@ -59,6 +59,7 @@ SECTION_ALIASES: dict[str, tuple[str, ...]] = {
 }
 
 TITLE_LABELS = ("job title", "position", "role", "title", "vi tri", "chuc danh")
+NORMALIZED_TITLE_LABELS = {"job title", "position", "role", "title", "vi tri", "chuc danh"}
 
 EXPLICIT_SENIORITY_PATTERNS: tuple[tuple[str, str], ...] = (
     (r"\b(lead|principal|staff|architect|manager)\b", "lead"),
@@ -314,13 +315,15 @@ def _extract_labeled_title(line: str) -> str | None:
         return None
     label, value = line.split(":", 1)
     normalized_label = _normalize_for_match(label)
-    if normalized_label in TITLE_LABELS and value.strip():
+    if normalized_label in NORMALIZED_TITLE_LABELS and value.strip():
         return _clean_title(value)
     return None
 
 
 def _clean_title(value: str) -> str:
     title = BULLET_RE.sub("", value).strip(" .,-;:")
+    label_pattern = r"^(?:job\s+title|position|role|title|vị\s*trí|vi\s*tri|chức\s*danh|chuc\s*danh)\s*:\s*"
+    title = re.sub(label_pattern, "", title, flags=re.IGNORECASE).strip(" .,-;:")
     title = re.split(r"\s+(?:with|for|who|that|to)\s+", title, maxsplit=1, flags=re.IGNORECASE)[0]
     return title[:80].strip()
 
