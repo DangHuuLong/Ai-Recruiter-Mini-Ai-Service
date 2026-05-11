@@ -14,6 +14,34 @@ logger = logging.getLogger(__name__)
 _original_maybe_merge_local_ocr_text = DocumentTextExtractionService._maybe_merge_local_ocr_text
 _original_merge_supplemental_pdf_text = DocumentTextExtractionService._merge_supplemental_pdf_text
 
+NON_NAME_FALLBACK_LINES = {
+    "academic",
+    "achievements",
+    "address",
+    "backend",
+    "certification",
+    "certifications",
+    "contact",
+    "date",
+    "education",
+    "experience",
+    "frontend",
+    "full stack developer",
+    "github",
+    "languages",
+    "links",
+    "mobile app developer intern",
+    "personal project",
+    "phone",
+    "profile",
+    "projects",
+    "skills",
+    "technical skills",
+    "tools",
+    "tools services",
+    "work experience",
+}
+
 
 def _maybe_merge_local_ocr_text(
     self: DocumentTextExtractionService,
@@ -78,8 +106,8 @@ def _recover_corrupted_header_name_from_fallback(primary_text: str, fallback_tex
 
 def _normalize_common_corrupted_glyphs(text: str) -> str:
     replacements = {
-        "Bachelorˇs s Degree": "Bachelor's Degree",
-        "Bachelorˇs Degree": "Bachelor's Degree",
+        "Bachelor\u02c7s s Degree": "Bachelor's Degree",
+        "Bachelor\u02c7s Degree": "Bachelor's Degree",
         "Bachelor's s Degree": "Bachelor's Degree",
     }
     result = text or ""
@@ -90,6 +118,14 @@ def _normalize_common_corrupted_glyphs(text: str) -> str:
 
 def _has_bad_glyph(text: str) -> bool:
     return any(marker in (text or "") for marker in BAD_GLYPH_MARKERS)
+
+
+def _has_non_ascii_letter(text: str) -> bool:
+    return any(char.isalpha() and ord(char) > 127 for char in (text or ""))
+
+
+def _letters_only(value: str) -> str:
+    return "".join(char for char in value if char.isalpha())
 
 
 def _looks_like_corrupted_name_line(text: str) -> bool:
@@ -103,8 +139,6 @@ def _looks_like_corrupted_name_line(text: str) -> bool:
 
 def _find_clean_name_candidate(text: str) -> str | None:
     lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
-    # Name lines in fallback extractors can appear near the visual header or near the end
-    # of the page, depending on PDF internal object order.
     search_lines = [*lines[:35], *lines[-35:]]
     for line in search_lines:
         if _is_clean_person_name(line):
@@ -114,26 +148,23 @@ def _find_clean_name_candidate(text: str) -> str | None:
 
 def _is_clean_person_name(line: str) -> bool:
     cleaned = re.sub(r"\s+", " ", str(line or "").strip())
+    normalized = re.sub(r"[^a-z0-9 ]+", " ", cleaned.lower())
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+
     if not cleaned or _has_bad_glyph(cleaned):
         return False
-    if any(token in cleaned.lower() for token in ["@", "http", "phone", "date", "address", "developer", "engineer"]):
+    if normalized in NON_NAME_FALLBACK_LINES:
+        return False
+    if any(token in normalized for token in ["@", "http", "phone", "date", "address", "developer", "engineer"]):
+        return False
+    if not _has_non_ascii_letter(cleaned):
         return False
 
     words = cleaned.split()
     if not 2 <= len(words) <= 5:
         return False
 
-    alpha_words = [re.sub(r"[^A-Za-zÀ-ỹ]", "", word) for word in words]
-    if any(not word for word in alpha_words):
-        return False
-
-    # Prefer Vietnamese/Unicode names when using fallback text to repair corrupted glyphs.
-    has_vietnamese_diacritic = bool(re.search(r"[À-ỹ]", cleaned))
-    if has_vietnamese_diacritic:
-        return True
-
-    # Fallback to title-case names only when every token looks like a name token.
-    return all(word[:1].isupper() and not word[1:].isupper() for word in alpha_words)
+    return all(_letters_only(word) for word in words)
 
 
 def _segments_to_reading_order_text(
@@ -227,7 +258,7 @@ def _layout_candidate_segment(segment: dict) -> dict | None:
 
 
 def _text_weight(text: str) -> int:
-    return len(re.sub(r"[^A-Za-zÀ-ỹ0-9]+", "", text or ""))
+    return len("".join(char for char in (text or "") if char.isalnum()))
 
 
 def _occupied_y_bands(segments: list[dict], band_height: float = 48.0) -> set[int]:
