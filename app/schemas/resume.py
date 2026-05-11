@@ -31,6 +31,7 @@ class ResumeSkill(BaseModel):
     normalized_name: str
     category: str | None = None
     evidence: str | None = None
+    level: str | None = None
 
 
 class ResumeEducation(BaseModel):
@@ -75,6 +76,8 @@ class ResumeProject(BaseModel):
     role: str | None = None
     start_date: str | None = None
     end_date: str | None = None
+    raw_date: str | None = None
+    date_precision: str | None = None
     description: str | None = None
     technologies: list[str] = Field(default_factory=list)
     urls: list[str] = Field(default_factory=list)
