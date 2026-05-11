@@ -321,6 +321,17 @@ def _combine_sections(*values: str | None) -> str:
     return "\n".join(value for value in values if value).strip()
 
 
+def _language_source(sections: dict[str, str], raw_text: str) -> str:
+    return _combine_sections(
+        sections.get("languages"),
+        sections.get("language"),
+        sections.get("skills"),
+        sections.get("technical skills"),
+        sections.get("other"),
+        raw_text,
+    )
+
+
 def _normalize_name(value: str | None) -> str:
     normalized = strip_accents(value or "").lower()
     normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
@@ -534,7 +545,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 
     languages = [
         ResumeLanguage(name=item["name"], proficiency=item.get("proficiency"))
-        for item in extract_languages(_section_or_fallback(sections, "languages"))
+        for item in extract_languages(_language_source(sections, raw_text))
         if item.get("name")
     ]
 
