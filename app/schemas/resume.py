@@ -1,4 +1,11 @@
-from pydantic import BaseModel, Field, HttpUrl
+import re
+
+from pydantic import BaseModel, Field, HttpUrl, model_validator
+
+GPA_RE = re.compile(
+    r"\b(?:Cumulative\s+)?GPA\s*[:\-]?\s*([0-9]+(?:\.[0-9]+)?)\s*/\s*([0-9]+(?:\.[0-9]+)?)",
+    re.IGNORECASE,
+)
 
 
 class ParseResumeRequest(BaseModel):
@@ -24,6 +31,7 @@ class ResumeSkill(BaseModel):
     normalized_name: str
     category: str | None = None
     evidence: str | None = None
+    level: str | None = None
 
 
 class ResumeEducation(BaseModel):
@@ -32,7 +40,24 @@ class ResumeEducation(BaseModel):
     field_of_study: str | None = None
     start_year: int | None = None
     end_year: int | None = None
+    gpa: str | None = None
+    gpa_scale: str | None = None
     description: str | None = None
+
+    @model_validator(mode="after")
+    def populate_gpa_from_description(self) -> "ResumeEducation":
+        if self.gpa and self.gpa_scale:
+            return self
+
+        match = GPA_RE.search(self.description or "")
+        if not match:
+            return self
+
+        if not self.gpa:
+            self.gpa = match.group(1)
+        if not self.gpa_scale:
+            self.gpa_scale = match.group(2)
+        return self
 
 
 class ResumeExperience(BaseModel):

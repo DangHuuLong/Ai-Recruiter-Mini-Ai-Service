@@ -228,6 +228,8 @@ URL_RE = re.compile(
     re.IGNORECASE,
 )
 
+SKILL_LEVEL_RE = re.compile(r"^(?P<name>[A-Za-z0-9 .+#/&-]+?)\s*:\s*(?P<level>[^\n]+)$")
+
 
 def _extract_location(raw_text: str) -> str | None:
     lines = split_lines(raw_text)
@@ -321,6 +323,18 @@ def _combine_sections(*values: str | None) -> str:
     return "\n".join(value for value in values if value).strip()
 
 
+def _language_source(sections: dict[str, str], raw_text: str) -> str:
+    return _combine_sections(
+        sections.get("languages"),
+        sections.get("language"),
+        sections.get("certifications"),
+        sections.get("skills"),
+        sections.get("technical skills"),
+        sections.get("other"),
+        raw_text,
+    )
+
+
 def _normalize_name(value: str | None) -> str:
     normalized = strip_accents(value or "").lower()
     normalized = re.sub(r"[^a-z0-9+#./ ]+", " ", normalized)
@@ -346,6 +360,24 @@ def _clean_summary(summary: str | None) -> str | None:
 
     cleaned = "\n".join(clean_lines).strip()
     return cleaned or None
+
+
+def _skill_levels_from_text(raw_text: str) -> dict[str, str]:
+    levels: dict[str, str] = {}
+    for line in split_lines(raw_text):
+        match = SKILL_LEVEL_RE.match(line.strip())
+        if not match:
+            continue
+
+        raw_names = [name.strip() for name in re.split(r"\s*&\s*|\s*/\s*|,", match.group("name")) if name.strip()]
+        level = match.group("level").strip(" .")
+        if not raw_names or not level:
+            continue
+
+        for raw_name in raw_names:
+            for skill in extract_skills(raw_name):
+                levels.setdefault(normalize_skill(skill["name"]), level)
+    return levels
 
 
 def _is_bad_project_name(name: str | None) -> bool:
@@ -450,12 +482,14 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     personal.github_url = links.get("github")
     personal.portfolio_url = links.get("portfolio")
 
+    skill_levels = _skill_levels_from_text(raw_text)
     skills = [
         ResumeSkill(
             name=skill["name"],
             normalized_name=normalize_skill(skill["name"]),
             category=skill.get("category"),
             evidence=skill.get("evidence"),
+            level=skill_levels.get(normalize_skill(skill["name"])),
         )
         for skill in extract_skills(raw_text)
         if skill.get("name")
@@ -468,6 +502,8 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
             field_of_study=item.get("field_of_study"),
             start_year=item.get("start_year"),
             end_year=item.get("end_year"),
+            gpa=item.get("gpa"),
+            gpa_scale=item.get("gpa_scale"),
             description=item.get("description"),
         )
         for item in extract_education(_section_or_fallback(sections, "education"))
@@ -534,7 +570,7 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
 
     languages = [
         ResumeLanguage(name=item["name"], proficiency=item.get("proficiency"))
-        for item in extract_languages(_section_or_fallback(sections, "languages"))
+        for item in extract_languages(_language_source(sections, raw_text))
         if item.get("name")
     ]
 

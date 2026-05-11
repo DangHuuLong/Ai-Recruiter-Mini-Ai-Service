@@ -38,7 +38,43 @@ ROLE_TITLE_TOKENS = {
     "intern",
     "student",
 }
+NON_NAME_TOKENS = {
+    "able",
+    "admin",
+    "api",
+    "application",
+    "applications",
+    "authentication",
+    "building",
+    "communicate",
+    "contribute",
+    "core",
+    "data",
+    "development",
+    "effectively",
+    "environment",
+    "environments",
+    "experience",
+    "feature",
+    "features",
+    "frontend",
+    "github",
+    "improve",
+    "interfaces",
+    "mobile",
+    "projects",
+    "reading",
+    "remote",
+    "skills",
+    "software",
+    "storage",
+    "technical",
+    "user",
+    "workflows",
+    "working",
+}
 SUMMARY_TAIL_PREFIXES = ("valuable", "software", "products", "solutions", "systems")
+BULLET_MARKERS_RE = re.compile(r'^[\s"“”]+(?=(?:[A-Za-zÀ-ỹ]|Backend|Frontend|Database|State|Tools|Programming))')
 
 
 class ParsingService:
@@ -55,7 +91,7 @@ class ParsingService:
         recovered_name = self._recover_full_name_from_file_name(parsed_resume, request.file_name)
         if recovered_name:
             parsed_resume.personal.full_name = recovered_name
-            warnings.append("Recovered full_name from file name because PDF text name was missing or corrupted")
+            warnings.append("Recovered full_name from file name because extracted PDF text name was missing, corrupted, or invalid")
 
         parsed_resume.summary = self._recover_summary_tail(parsed_resume.summary, raw_text)
         confidence = 0.9 if raw_text else 0.0
@@ -76,11 +112,23 @@ class ParsingService:
         return parse_job_description(self._sanitize_raw_text(raw_text))
 
     def _sanitize_raw_text(self, raw_text: str) -> str:
-        return (raw_text or "").replace("\x00", "")
+        text = (raw_text or "").replace("\x00", "")
+        text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+        cleaned_lines: list[str] = []
+        for raw_line in text.split("\n"):
+            line = raw_line.replace("\u00a0", " ")
+            line = BULLET_MARKERS_RE.sub("- ", line)
+            line = re.sub(r"[ \t]+", " ", line).strip()
+            cleaned_lines.append(line)
+
+        cleaned = "\n".join(cleaned_lines)
+        cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+        return cleaned.strip()
 
     def _recover_full_name_from_file_name(self, parsed_resume: ParsedResumeData, file_name: str | None) -> str | None:
         current_name = parsed_resume.personal.full_name
-        if current_name and not self._looks_corrupted(current_name):
+        if current_name and not self._looks_corrupted(current_name) and not self._looks_invalid_person_name(current_name):
             return None
 
         candidate = self._name_candidate_from_file_name(file_name)
@@ -91,6 +139,43 @@ class ParsingService:
 
     def _looks_corrupted(self, value: str | None) -> bool:
         return bool(value) and any(marker in value for marker in BAD_TEXT_MARKERS)
+
+    def _looks_invalid_person_name(self, value: str | None) -> bool:
+        if not value:
+            return True
+
+        cleaned = re.sub(r"\s+", " ", value).strip()
+        if not cleaned:
+            return True
+
+        if any(marker in cleaned for marker in BAD_TEXT_MARKERS):
+            return True
+
+        if any(token in cleaned.lower() for token in ["@", "http://", "https://", "phone:", "date:", "address:"]):
+            return True
+
+        words = cleaned.split()
+        if not 2 <= len(words) <= 5:
+            return True
+
+        normalized_words = [re.sub(r"[^A-Za-zÀ-ỹ]", "", word).lower() for word in words]
+        normalized_words = [word for word in normalized_words if word]
+        if len(normalized_words) != len(words):
+            return True
+
+        if any(word in NON_NAME_TOKENS or word in ROLE_TITLE_TOKENS for word in normalized_words):
+            return True
+
+        # Real names from PDF headers are usually title case or uppercase. Fully lowercase
+        # phrases such as "communicate effectively in remote" are body text, not names.
+        if all(word == word.lower() for word in words):
+            return True
+
+        alpha_chars = re.sub(r"[^A-Za-zÀ-ỹ]", "", cleaned)
+        if not alpha_chars:
+            return True
+
+        return False
 
     def _name_candidate_from_file_name(self, file_name: str | None) -> str | None:
         if not file_name:

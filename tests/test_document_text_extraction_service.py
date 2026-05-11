@@ -12,7 +12,7 @@ def segment(text: str, x0: float, y0: float, x1: float | None = None) -> dict:
     }
 
 
-def test_segments_to_reading_order_preserves_full_width_header_before_columns():
+def test_segments_to_reading_order_preserves_full_width_header_and_row_order_columns():
     service = DocumentTextExtractionService()
 
     text = service._segments_to_reading_order_text(
@@ -36,8 +36,8 @@ def test_segments_to_reading_order_preserves_full_width_header_before_columns():
         "OBJECTIVE",
         "I am seeking an internship where I can apply and strengthen my skills",
         "EDUCATION",
-        "University of Science and Technology",
         "WORK EXPERIENCE",
+        "University of Science and Technology",
         "S-Group",
         "PROJECTS",
     ]
