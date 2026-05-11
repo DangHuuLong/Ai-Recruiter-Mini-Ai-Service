@@ -4,6 +4,7 @@ import re
 from statistics import median
 
 from app.services.document_text_extraction_service import (
+    BAD_GLYPH_MARKERS,
     DocumentTextExtractionService,
     PdfExtractionQuality,
 )
@@ -11,6 +12,7 @@ from app.services.document_text_extraction_service import (
 logger = logging.getLogger(__name__)
 
 _original_maybe_merge_local_ocr_text = DocumentTextExtractionService._maybe_merge_local_ocr_text
+_original_merge_supplemental_pdf_text = DocumentTextExtractionService._merge_supplemental_pdf_text
 
 
 def _maybe_merge_local_ocr_text(
@@ -37,6 +39,101 @@ def _maybe_merge_local_ocr_text(
         logger.warning(message)
         warnings.append(message)
         return self._normalize_extracted_text(primary_text)
+
+
+def _merge_supplemental_pdf_text(
+    self: DocumentTextExtractionService,
+    primary_text: str,
+    fallback_text: str,
+    warnings: list[str],
+) -> str:
+    merged_text = _original_merge_supplemental_pdf_text(self, primary_text, fallback_text, warnings)
+    merged_text = _recover_corrupted_header_name_from_fallback(merged_text, fallback_text, warnings)
+    merged_text = _normalize_common_corrupted_glyphs(merged_text)
+    return self._normalize_extracted_text(merged_text)
+
+
+def _recover_corrupted_header_name_from_fallback(primary_text: str, fallback_text: str, warnings: list[str]) -> str:
+    if not primary_text or not fallback_text:
+        return primary_text
+
+    primary_lines = primary_text.splitlines()
+    corrupted_line_index = None
+    for index, line in enumerate(primary_lines[:20]):
+        if _has_bad_glyph(line) and _looks_like_corrupted_name_line(line):
+            corrupted_line_index = index
+            break
+
+    if corrupted_line_index is None:
+        return primary_text
+
+    clean_name = _find_clean_name_candidate(fallback_text)
+    if not clean_name:
+        return primary_text
+
+    primary_lines[corrupted_line_index] = clean_name
+    warnings.append("Recovered corrupted header name from alternate PDF text extractor")
+    return "\n".join(primary_lines)
+
+
+def _normalize_common_corrupted_glyphs(text: str) -> str:
+    replacements = {
+        "Bachelorˇs s Degree": "Bachelor's Degree",
+        "Bachelorˇs Degree": "Bachelor's Degree",
+        "Bachelor's s Degree": "Bachelor's Degree",
+    }
+    result = text or ""
+    for source, replacement in replacements.items():
+        result = result.replace(source, replacement)
+    return result
+
+
+def _has_bad_glyph(text: str) -> bool:
+    return any(marker in (text or "") for marker in BAD_GLYPH_MARKERS)
+
+
+def _looks_like_corrupted_name_line(text: str) -> bool:
+    words = str(text or "").strip().split()
+    if not 2 <= len(words) <= 5:
+        return False
+    if any(token in str(text).lower() for token in ["@", "phone", "date", "address", "http"]):
+        return False
+    return True
+
+
+def _find_clean_name_candidate(text: str) -> str | None:
+    lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
+    # Name lines in fallback extractors can appear near the visual header or near the end
+    # of the page, depending on PDF internal object order.
+    search_lines = [*lines[:35], *lines[-35:]]
+    for line in search_lines:
+        if _is_clean_person_name(line):
+            return line
+    return None
+
+
+def _is_clean_person_name(line: str) -> bool:
+    cleaned = re.sub(r"\s+", " ", str(line or "").strip())
+    if not cleaned or _has_bad_glyph(cleaned):
+        return False
+    if any(token in cleaned.lower() for token in ["@", "http", "phone", "date", "address", "developer", "engineer"]):
+        return False
+
+    words = cleaned.split()
+    if not 2 <= len(words) <= 5:
+        return False
+
+    alpha_words = [re.sub(r"[^A-Za-zÀ-ỹ]", "", word) for word in words]
+    if any(not word for word in alpha_words):
+        return False
+
+    # Prefer Vietnamese/Unicode names when using fallback text to repair corrupted glyphs.
+    has_vietnamese_diacritic = bool(re.search(r"[À-ỹ]", cleaned))
+    if has_vietnamese_diacritic:
+        return True
+
+    # Fallback to title-case names only when every token looks like a name token.
+    return all(word[:1].isupper() and not word[1:].isupper() for word in alpha_words)
 
 
 def _segments_to_reading_order_text(
@@ -160,4 +257,5 @@ def _is_full_width_segment(segment: dict, page_width: float) -> bool:
 
 
 DocumentTextExtractionService._maybe_merge_local_ocr_text = _maybe_merge_local_ocr_text
+DocumentTextExtractionService._merge_supplemental_pdf_text = _merge_supplemental_pdf_text
 DocumentTextExtractionService._segments_to_reading_order_text = _segments_to_reading_order_text
