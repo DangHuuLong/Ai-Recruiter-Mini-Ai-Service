@@ -32,6 +32,8 @@ class ResumeEducation(BaseModel):
     field_of_study: str | None = None
     start_year: int | None = None
     end_year: int | None = None
+    gpa: str | None = None
+    gpa_scale: str | None = None
     description: str | None = None
 
 
