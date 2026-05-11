@@ -444,12 +444,28 @@ def _project_date_range(line: str) -> dict | None:
     return extract_date_range(_coerce_loose_date_range(line))
 
 
-def _apply_project_date_range(result: dict, date_range: dict | None) -> None:
+def _project_date_precision(raw_date: str | None) -> str | None:
+    if not raw_date:
+        return None
+
+    normalized = strip_accents(raw_date).lower()
+    if re.search(r"\d{1,2}[/.-](?:19|20)\d{2}|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)", normalized):
+        return "month"
+
+    if re.search(r"(?:19|20)\d{2}", normalized):
+        return "year"
+
+    return None
+
+
+def _apply_project_date_range(result: dict, date_range: dict | None, raw_date: str | None = None) -> None:
     if not date_range:
         return
 
     result["start_date"] = date_range.get("start_date")
     result["end_date"] = date_range.get("end_date")
+    result["raw_date"] = raw_date or date_range.get("raw")
+    result["date_precision"] = _project_date_precision(result.get("raw_date"))
 
 
 def parse_project_block(lines: list[str]) -> dict:
@@ -459,6 +475,8 @@ def parse_project_block(lines: list[str]) -> dict:
             "role": None,
             "start_date": None,
             "end_date": None,
+            "raw_date": None,
+            "date_precision": None,
             "description": None,
             "technologies": [],
             "url": None,
@@ -468,7 +486,9 @@ def parse_project_block(lines: list[str]) -> dict:
     first_line = lines[0].strip()
 
     urls = _extract_urls(first_line)
+    first_raw_date = _coerce_loose_date_range(first_line)
     date_range = _project_date_range(first_line)
+    raw_date = first_raw_date if date_range else None
 
     name, initial_description = _split_inline_project_header(first_line)
     description_parts: list[str] = []
@@ -499,9 +519,11 @@ def parse_project_block(lines: list[str]) -> dict:
         if not clean:
             continue
 
+        line_raw_date = _coerce_loose_date_range(clean)
         line_date_range = _project_date_range(clean)
         if line_date_range and not date_range and (DATE_RANGE_RE.fullmatch(clean) or LOOSE_DATE_RANGE_RE.fullmatch(clean)):
             date_range = line_date_range
+            raw_date = line_raw_date
             previous_kind = "date"
             continue
 
@@ -561,7 +583,8 @@ def parse_project_block(lines: list[str]) -> dict:
 
         if line_date_range and not date_range:
             date_range = line_date_range
-            clean = DATE_RANGE_RE.sub("", _coerce_loose_date_range(clean)).strip(" -|,")
+            raw_date = line_raw_date
+            clean = DATE_RANGE_RE.sub("", line_raw_date).strip(" -|,")
             if not clean:
                 previous_kind = "date"
                 continue
@@ -577,12 +600,14 @@ def parse_project_block(lines: list[str]) -> dict:
         "role": role,
         "start_date": None,
         "end_date": None,
+        "raw_date": None,
+        "date_precision": None,
         "description": _clean_description_parts(description_parts),
         "technologies": _dedupe(technologies),
         "url": urls[0] if urls else None,
         "urls": urls,
     }
-    _apply_project_date_range(result, date_range)
+    _apply_project_date_range(result, date_range, raw_date)
     return result
 
 
