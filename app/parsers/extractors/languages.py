@@ -38,6 +38,8 @@ LANGUAGE_SKILL_KEYWORDS = (
     "working environments",
 )
 
+TOEIC_RE = re.compile(r"\bTOEIC\s*[:\-]?\s*(?P<score>\d{3,4})\s*(?:/\s*(?P<scale>\d{3,4}))?\b", re.IGNORECASE)
+
 
 def _normalize_language_key(value: str) -> str:
     text = strip_accents(value).lower()
@@ -53,15 +55,26 @@ def _extract_language_name(value: str) -> str | None:
     return None
 
 
+def _format_toeic(match: re.Match[str]) -> str:
+    score = match.group("score")
+    scale = match.group("scale")
+    return f"TOEIC {score}/{scale}" if scale else f"TOEIC {score}"
+
+
+def _extract_toeic_proficiency(value: str) -> str | None:
+    match = TOEIC_RE.search(value or "")
+    return _format_toeic(match) if match else None
+
+
 def _extract_proficiency(value: str) -> str | None:
+    toeic = _extract_toeic_proficiency(value)
+    if toeic:
+        return toeic
+
     normalized = _normalize_language_key(value)
     for word in PROFICIENCY_WORDS:
         if re.search(rf"\b{word}\b", normalized):
             return word
-
-    toeic_match = re.search(r"\bTOEIC\s*[:\-]?\s*\d{3,4}\b", value, re.IGNORECASE)
-    if toeic_match:
-        return re.sub(r"\s+", " ", toeic_match.group(0)).strip()
 
     if ":" in value:
         _, proficiency = value.split(":", 1)
@@ -120,6 +133,19 @@ def _recover_vietnamese_english_proficiency(text: str) -> str | None:
     return None
 
 
+def _upsert_language(languages: list[dict], seen: set[str], name: str, proficiency: str | None) -> None:
+    if name in seen:
+        if proficiency:
+            for language in languages:
+                if language.get("name") == name and not language.get("proficiency"):
+                    language["proficiency"] = proficiency
+                    break
+        return
+
+    seen.add(name)
+    languages.append({"name": name, "proficiency": proficiency})
+
+
 def extract_languages(text: str) -> list[dict]:
     languages = []
     seen = set()
@@ -131,19 +157,17 @@ def extract_languages(text: str) -> list[dict]:
 
         for part in parts:
             name = _extract_language_name(part)
-            if not name or name in seen:
+            if not name:
                 continue
 
             proficiency = _extract_proficiency(part)
             if name == "English":
                 proficiency = _recover_vietnamese_english_proficiency(text) or proficiency
 
-            seen.add(name)
-            languages.append(
-                {
-                    "name": name,
-                    "proficiency": proficiency,
-                }
-            )
+            _upsert_language(languages, seen, name, proficiency)
+
+    toeic = _extract_toeic_proficiency(text or "")
+    if toeic:
+        _upsert_language(languages, seen, "English", toeic)
 
     return languages
