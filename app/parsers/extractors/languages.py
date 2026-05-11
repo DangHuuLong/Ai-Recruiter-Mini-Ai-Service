@@ -24,6 +24,18 @@ PROFICIENCY_WORDS = (
     "beginner",
     "professional",
     "conversational",
+    "good",
+)
+
+LANGUAGE_SKILL_KEYWORDS = (
+    "listening",
+    "speaking",
+    "reading",
+    "writing",
+    "communicate",
+    "communication",
+    "remote working",
+    "working environments",
 )
 
 
@@ -68,10 +80,15 @@ def _merge_wrapped_language_lines(text: str) -> list[str]:
 
     for raw_line in (text or "").splitlines():
         line = strip_list_marker(raw_line)
+        line = line.lstrip('"').strip()
         if not line:
             continue
 
-        if merged_lines and not _extract_language_name(line) and not re.search(r"[,;:]", line):
+        normalized = _normalize_language_key(line)
+        starts_language = _extract_language_name(line) is not None
+        looks_language_continuation = any(keyword in normalized for keyword in LANGUAGE_SKILL_KEYWORDS)
+
+        if merged_lines and not starts_language and looks_language_continuation:
             merged_lines[-1] = f"{merged_lines[-1]} {line}".strip()
         else:
             merged_lines.append(line)
@@ -80,7 +97,7 @@ def _merge_wrapped_language_lines(text: str) -> list[str]:
 
 
 def _recover_vietnamese_english_proficiency(text: str) -> str | None:
-    lines = [strip_list_marker(raw_line) for raw_line in (text or "").splitlines()]
+    lines = [strip_list_marker(raw_line).lstrip('"').strip() for raw_line in (text or "").splitlines()]
     lines = [line for line in lines if line]
 
     for index, line in enumerate(lines):
@@ -109,6 +126,9 @@ def extract_languages(text: str) -> list[dict]:
 
     for line in _merge_wrapped_language_lines(text):
         parts = [part.strip() for part in re.split(r"[,;]", line) if part.strip()]
+        if ":" in line:
+            parts = [line]
+
         for part in parts:
             name = _extract_language_name(part)
             if not name or name in seen:
