@@ -77,16 +77,7 @@ class ResumeProject(BaseModel):
     end_date: str | None = None
     description: str | None = None
     technologies: list[str] = Field(default_factory=list)
-    url: str | None = None
     urls: list[str] = Field(default_factory=list)
-
-    @model_validator(mode="after")
-    def sync_primary_url(self) -> "ResumeProject":
-        if self.url and self.url not in self.urls:
-            self.urls.insert(0, self.url)
-        if not self.url and self.urls:
-            self.url = self.urls[0]
-        return self
 
 
 class ResumeCertification(BaseModel):
