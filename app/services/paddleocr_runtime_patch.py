@@ -1,5 +1,7 @@
 import logging
 import platform
+import re
+from statistics import median
 
 from app.services.document_text_extraction_service import (
     DocumentTextExtractionService,
@@ -37,4 +39,125 @@ def _maybe_merge_local_ocr_text(
         return self._normalize_extracted_text(primary_text)
 
 
+def _segments_to_reading_order_text(
+    self: DocumentTextExtractionService,
+    segments: list[dict],
+    page_width: float,
+) -> str:
+    if not segments:
+        return ""
+
+    layout = _detect_two_column_layout(segments, page_width)
+
+    if layout is None:
+        ordered_segments = sorted(segments, key=lambda segment: (float(segment["y0"]), float(segment["x0"])))
+    else:
+        split_x = float(layout["split_x"])
+        full_width_segments = [segment for segment in segments if _is_full_width_segment(segment, page_width)]
+        column_segments = [segment for segment in segments if segment not in full_width_segments]
+        left_column = [segment for segment in column_segments if float(segment["x0"]) < split_x]
+        right_column = [segment for segment in column_segments if float(segment["x0"]) >= split_x]
+
+        ordered_segments = [
+            *sorted(full_width_segments, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+            *sorted(left_column, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+            *sorted(right_column, key=lambda segment: (float(segment["y0"]), float(segment["x0"]))),
+        ]
+        logger.info(
+            "Detected two-column PDF layout: split_x=%.1f, left_segments=%s, right_segments=%s",
+            split_x,
+            len(left_column),
+            len(right_column),
+        )
+
+    output_lines: list[str] = []
+    for segment in ordered_segments:
+        output_lines.extend(self._segment_output_lines(segment))
+    return "\n".join(output_lines)
+
+
+def _detect_two_column_layout(segments: list[dict], page_width: float) -> dict[str, float] | None:
+    candidates = [_layout_candidate_segment(segment) for segment in segments]
+    candidates = [segment for segment in candidates if segment is not None]
+
+    if len(candidates) < 16:
+        return None
+
+    split_x = page_width * 0.38
+    left = [segment for segment in candidates if float(segment["x0"]) < split_x]
+    right = [segment for segment in candidates if float(segment["x0"]) >= split_x]
+
+    if len(left) < 8 or len(right) < 8:
+        return None
+
+    left_long = [segment for segment in left if _text_weight(segment["text"]) >= 8]
+    right_long = [segment for segment in right if _text_weight(segment["text"]) >= 8]
+
+    if len(left_long) < 6 or len(right_long) < 6:
+        return None
+
+    median_left_x1 = median(float(segment["x1"]) for segment in left_long)
+    median_right_x0 = median(float(segment["x0"]) for segment in right_long)
+    column_gap = median_right_x0 - median_left_x1
+
+    if column_gap < page_width * 0.06:
+        return None
+
+    left_y_bands = _occupied_y_bands(left_long)
+    right_y_bands = _occupied_y_bands(right_long)
+    overlap_bands = left_y_bands.intersection(right_y_bands)
+
+    if len(overlap_bands) < 4:
+        return None
+
+    date_like_right = sum(1 for segment in right if _looks_like_short_date(segment["text"]))
+    if date_like_right and date_like_right / max(len(right), 1) > 0.65:
+        return None
+
+    detected_split_x = (median_left_x1 + median_right_x0) / 2
+    min_split_x = page_width * 0.28
+    max_split_x = page_width * 0.55
+    detected_split_x = min(max(detected_split_x, min_split_x), max_split_x)
+
+    return {"split_x": detected_split_x}
+
+
+def _layout_candidate_segment(segment: dict) -> dict | None:
+    text = str(segment.get("text") or "").strip()
+    if _text_weight(text) < 2:
+        return None
+    return segment
+
+
+def _text_weight(text: str) -> int:
+    return len(re.sub(r"[^A-Za-zÀ-ỹ0-9]+", "", text or ""))
+
+
+def _occupied_y_bands(segments: list[dict], band_height: float = 48.0) -> set[int]:
+    bands: set[int] = set()
+    for segment in segments:
+        y0 = float(segment["y0"])
+        y1 = float(segment["y1"])
+        start = int(y0 // band_height)
+        end = int(y1 // band_height)
+        bands.update(range(start, end + 1))
+    return bands
+
+
+def _looks_like_short_date(text: str) -> bool:
+    cleaned = str(text or "").strip().lower()
+    if len(cleaned.split()) > 4:
+        return False
+    return bool(
+        re.fullmatch(r"(?:\d{1,2}/)?\d{4}(?:\s*[-–]\s*(?:present|\d{1,2}/)?\d{4})?", cleaned)
+        or re.fullmatch(r"(?:present|current)", cleaned)
+    )
+
+
+def _is_full_width_segment(segment: dict, page_width: float) -> bool:
+    width = float(segment["x1"]) - float(segment["x0"])
+    return width >= page_width * 0.72
+
+
 DocumentTextExtractionService._maybe_merge_local_ocr_text = _maybe_merge_local_ocr_text
+DocumentTextExtractionService._segments_to_reading_order_text = _segments_to_reading_order_text
