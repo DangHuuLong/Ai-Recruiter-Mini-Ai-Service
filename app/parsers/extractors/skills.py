@@ -83,6 +83,21 @@ def _alias_pattern(alias: str) -> re.Pattern:
     if alias == ".net":
         return re.compile(rf"(?<![\w+]){escaped}(?![\w+])", re.IGNORECASE)
 
+    # Keep short aliases strict so they do not fire on framework suffixes such
+    # as Node.js, Express.js, Next.js, or file extensions.
+    if alias in {"js", "ts"}:
+        return re.compile(rf"(?<![.\w]){escaped}(?![\w])", re.IGNORECASE)
+
+    # Do not extract plain React from React Native; React Native has its own
+    # catalog entry and should remain the more specific match.
+    if alias == "react":
+        return re.compile(rf"\b{escaped}\b(?!\s+native)", re.IGNORECASE)
+
+    # Do not extract plain CSS from Tailwind CSS; Tailwind CSS is the explicit
+    # technology in that phrase.
+    if alias == "css":
+        return re.compile(rf"(?<!tailwind\s)\b{escaped}\b", re.IGNORECASE)
+
     if alias in {"c#", "c++", "ci/cd", "shadcn/ui", "socket.io", "bloc/cubit"}:
         return re.compile(rf"(?<!\w){escaped}(?!\w)", re.IGNORECASE)
 
