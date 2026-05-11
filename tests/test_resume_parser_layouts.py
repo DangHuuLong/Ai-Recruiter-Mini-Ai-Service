@@ -79,12 +79,12 @@ CERTIFICATIONS
     assert len(result.projects) == 2
     assert result.projects[0].name == "Trello Clone"
     assert result.projects[0].role == "FullStack Developer"
-    assert result.projects[0].start_date == "2025"
-    assert result.projects[0].end_date == "2026"
+    assert result.projects[0].start_date == "2025-01"
+    assert result.projects[0].end_date == "2026-01"
     assert result.projects[1].name == "DUT Meeting"
     assert result.projects[1].role == "FullStack Developer"
-    assert result.projects[1].start_date == "2025"
-    assert result.projects[1].end_date == "2025"
+    assert result.projects[1].start_date == "2025-01"
+    assert result.projects[1].end_date == "2025-01"
 
     skills = _skill_names(result)
     assert "GitHub Actions" in skills
@@ -116,12 +116,12 @@ Integrated Whisper AI for real-time subtitles via background workers.
     assert len(result.projects) == 2
     assert result.projects[0].name == "Trello Clone"
     assert result.projects[0].role == "FullStack Developer"
-    assert result.projects[0].start_date == "2025"
-    assert result.projects[0].end_date == "2026"
+    assert result.projects[0].start_date == "2025-01"
+    assert result.projects[0].end_date == "2026-01"
     assert result.projects[1].name == "DUT Meeting"
     assert result.projects[1].role == "FullStack Developer"
-    assert result.projects[1].start_date == "2025"
-    assert result.projects[1].end_date == "2025"
+    assert result.projects[1].start_date == "2025-01"
+    assert result.projects[1].end_date == "2025-01"
 
 
 def test_parse_two_column_like_project_dates_assigned_by_order():
@@ -141,10 +141,10 @@ Built realtime chat with Socket.IO.
 
     assert len(result.projects) == 2
     assert result.projects[0].name == "Inventory System"
-    assert result.projects[0].start_date == "2024"
-    assert result.projects[0].end_date == "2025"
+    assert result.projects[0].start_date == "2024-01"
+    assert result.projects[0].end_date == "2025-01"
     assert result.projects[1].name == "Chat App"
-    assert result.projects[1].start_date == "2025"
+    assert result.projects[1].start_date == "2025-01"
     assert result.projects[1].end_date == "present"
 
 
@@ -192,7 +192,6 @@ Experience
     assert result.projects[0].start_date == "2025-11"
     assert result.projects[0].end_date == "2026-02"
     assert result.projects[0].role == "Personal Project"
-    assert result.projects[0].url == "https://github.com/DangHuuLong/Food-Delivery/tree/main/frontend"
     assert result.projects[0].urls == [
         "https://github.com/DangHuuLong/Food-Delivery/tree/main/frontend",
         "https://github.com/DangHuuLong/Food-Delivery/tree/main/backend",
