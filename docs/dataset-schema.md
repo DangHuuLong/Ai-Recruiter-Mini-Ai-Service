@@ -20,7 +20,46 @@ The dataset should support three future use cases:
 2. supervised scoring or ranking experiments;
 3. future fine-tuning when enough labeled pairs exist.
 
-## 3. Storage Format
+## 3. Parser Output Mapping
+
+Dataset records should be derived from the current AI service parser outputs whenever possible. Raw text should still be kept because parser logic can improve over time and old dataset versions may need to be reprocessed.
+
+The schema uses stable dataset field names. If the parser output uses a different name, transform it during dataset preparation instead of changing the dataset field name casually.
+
+### Resume Parser Mapping
+
+| AI Service Parser Output | Dataset Field | Notes |
+| --- | --- | --- |
+| `raw_text` | `raw_text` | Cleaned text returned by resume parsing flow |
+| `parsed_data.summary` | `summary` | Use `null` if summary is missing |
+| `parsed_data.skills[].name` | `skills` | Use display names for human-readable records |
+| `parsed_data.skills[].normalized_name` | `normalized_skills` | Recommended for matching and validation |
+| `parsed_data.education[]` | `education` | Keep the most relevant education block or a compact list if needed |
+| `parsed_data.experience[]` | `experience` | Preserve role/company/date evidence when available |
+| `parsed_data.projects[]` | `projects` | Preserve project descriptions and technologies |
+| `parsed_data.certifications[]` | `certifications` | Keep certification name and issued year if available |
+| `parsed_data.languages[]` | `languages` | Keep language name and proficiency |
+| derived from experience/projects | `experience_years` | Use `null` until a reliable derivation rule exists |
+| derived from parsed level or manual review | `candidate_level` | `intern`, `junior`, `middle`, `senior`, or `unknown` |
+
+### Job Description Parser Mapping
+
+| AI Service Parser Output | Dataset Field | Notes |
+| --- | --- | --- |
+| `raw_text` | `raw_text` | Original or cleaned JD text |
+| `parsed_data.title` | `title` | Job title |
+| `parsed_data.responsibilities[]` | `responsibilities` | Raw responsibility bullet list |
+| `parsed_data.requirements[]` | `requirements` | Raw requirement bullet list |
+| `parsed_data.nice_to_have[]` | `nice_to_have` | Raw optional requirement bullet list |
+| `parsed_data.required_skills[]` | `required_skills` | Normalized required skill names |
+| `parsed_data.preferred_skills[]` | `preferred_skills` | Normalized preferred skill names |
+| `parsed_data.min_experience_years` | `min_experience_years` | Number or `null` |
+| `parsed_data.education_requirement` | `education_requirement` | Text or `null` |
+| `parsed_data.domain_keywords[]` | `domain_keywords` | Used for domain relevance scoring |
+
+If a parser field is unavailable, use `null` for scalar fields and `[]` for list fields. Do not invent values unless the record is explicitly marked as `synthetic`.
+
+## 4. Storage Format
 
 Use JSON Lines (`.jsonl`) for versioned dataset files. Each line must be a valid JSON object.
 
@@ -43,7 +82,7 @@ datasets/
 
 Do not commit private, real, or personally identifiable CV data unless it is anonymized.
 
-## 4. Job Description Record
+## 5. Job Description Record
 
 Each JD record should contain enough raw text and extracted fields for matching.
 
@@ -54,6 +93,9 @@ Each JD record should contain enough raw text and extracted fields for matching.
   "title": "Backend Developer Intern",
   "level": "intern",
   "employment_type": "internship",
+  "location": "Da Nang, Vietnam",
+  "remote_allowed": false,
+  "posted_date": null,
   "domain": "recruitment_platform",
   "raw_text": "...",
   "responsibilities": ["Build REST APIs", "Integrate PostgreSQL"],
@@ -68,20 +110,37 @@ Each JD record should contain enough raw text and extracted fields for matching.
 }
 ```
 
+`requirements` and `responsibilities` should preserve readable raw bullet content. `required_skills` and `preferred_skills` should contain normalized skill names extracted from those bullets.
+
 ### Required Fields
 
 | Field | Required | Notes |
 | --- | --- | --- |
 | `id` | yes | Stable identifier, for example `jd_001` |
+| `source` | yes | `sample`, `synthetic`, `public`, or `anonymized` |
 | `title` | yes | Job title from source JD |
 | `level` | yes | `intern`, `junior`, `middle`, `senior`, or `unknown` |
 | `raw_text` | yes | Original JD text after privacy cleanup |
+| `responsibilities` | yes | Raw or lightly cleaned responsibility list |
+| `requirements` | yes | Raw or lightly cleaned requirement list |
 | `required_skills` | yes | Normalized skill names required by the job |
 | `preferred_skills` | yes | Optional skills that improve fit |
 | `min_experience_years` | yes | Number or `null` |
 | `language` | yes | `en`, `vi`, or `mixed` |
 
-## 5. Resume Record
+### Optional but Recommended Fields
+
+| Field | Notes |
+| --- | --- |
+| `location` | Useful for future filtering, but not required for early scoring |
+| `remote_allowed` | Useful when JD includes work mode |
+| `posted_date` | Useful for filtering outdated JD samples |
+| `employment_type` | Internship, full-time, part-time, contract |
+| `domain` | Compact business or technical domain label |
+| `education_requirement` | Text requirement or `null` |
+| `domain_keywords` | Keywords used for domain relevance scoring |
+
+## 6. Resume Record
 
 Each resume record should contain raw text plus parsed fields that are already available from the resume parser.
 
@@ -93,6 +152,7 @@ Each resume record should contain raw text plus parsed fields that are already a
   "raw_text": "...",
   "summary": "Final-year IT student with FastAPI experience.",
   "skills": ["Python", "FastAPI", "PostgreSQL", "React"],
+  "normalized_skills": ["python", "fastapi", "postgresql", "react"],
   "experience_years": 0.5,
   "education": {
     "degree": "Bachelor",
@@ -117,6 +177,22 @@ Each resume record should contain raw text plus parsed fields that are already a
 }
 ```
 
+### Required Fields
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `id` | yes | Stable identifier, for example `resume_001` |
+| `source` | yes | `synthetic`, `anonymized`, or `sample` |
+| `candidate_level` | yes | `intern`, `junior`, `middle`, `senior`, or `unknown` |
+| `raw_text` | yes | Anonymized resume text |
+| `skills` | yes | Human-readable skill names |
+| `normalized_skills` | yes | Stable skill keys used for matching |
+| `experience_years` | yes | Number or `null` if not reliably derived |
+| `education` | yes | Object, list, or `null` depending on parser output |
+| `projects` | yes | List, empty if unavailable |
+| `anonymized` | yes | Must be `true` for real resumes committed to the repo |
+| `language` | yes | `en`, `vi`, or `mixed` |
+
 ### Privacy Requirements
 
 Before a resume is added to the dataset, remove or replace:
@@ -130,7 +206,7 @@ Before a resume is added to the dataset, remove or replace:
 
 Use synthetic IDs such as `resume_001` instead of real candidate IDs.
 
-## 6. CV-JD Pair Record
+## 7. CV-JD Pair Record
 
 Pair records are the primary labeled dataset for model evaluation and later training.
 
@@ -139,7 +215,7 @@ Pair records are the primary labeled dataset for model evaluation and later trai
   "id": "pair_001",
   "resume_id": "resume_001",
   "job_description_id": "jd_001",
-  "split": "train",
+  "split": null,
   "label": "strong_match",
   "overall_score": 82,
   "criterion_scores": {
@@ -165,13 +241,16 @@ Pair records are the primary labeled dataset for model evaluation and later trai
 | `id` | yes | Stable pair ID |
 | `resume_id` | yes | Must exist in `resumes.jsonl` |
 | `job_description_id` | yes | Must exist in `job_descriptions.jsonl` |
+| `split` | yes | `train`, `validation`, `test`, or `null` before split assignment |
 | `label` | yes | Match class derived from score range |
 | `overall_score` | yes | Integer from 0 to 100 |
 | `criterion_scores` | yes | Score breakdown by rubric |
+| `matched_skills` | yes | Required skills found in the resume |
+| `missing_required_skills` | yes | Required skills not found or not evidenced |
 | `label_notes` | yes | Short reason for the label |
 | `label_version` | yes | Rubric version used to label the pair |
 
-## 7. Label Classes
+## 8. Label Classes
 
 | Score Range | Label | Meaning |
 | --- | --- | --- |
@@ -181,11 +260,11 @@ Pair records are the primary labeled dataset for model evaluation and later trai
 | 40-59 | `weak_match` | Some overlap but not enough for a reliable shortlist |
 | 0-39 | `poor_match` | Mostly mismatched or lacks core requirements |
 
-## 8. Dataset Split Rule
+## 9. Dataset Split Rule
 
-Use the split field only after the initial dataset is stable.
+Before the dataset reaches at least 50 labeled pairs, keep `split` as `null`. The early dataset is still exploratory and should not be treated as a stable evaluation set.
 
-Recommended ratio:
+After the dataset reaches at least 50 labeled pairs and the label rubric is stable, assign splits with the recommended ratio:
 
 ```txt
 train: 70%
@@ -195,11 +274,27 @@ test: 15%
 
 Avoid data leakage:
 
-- Do not place near-duplicate resumes across train and test.
-- Do not place near-duplicate JDs across validation and test.
+- Split by `resume_id` and `job_description_id`, not only by pair ID.
+- Do not place the same resume in both train and test.
+- Do not place the same JD in both validation and test.
+- Keep near-duplicate resumes or near-duplicate JDs in the same split.
 - Keep test labels stable once evaluation starts.
 
-## 9. Versioning Rule
+## 10. Validation Requirements
+
+Future validation scripts should check at least:
+
+- every JSONL line is valid JSON;
+- all required fields exist;
+- `overall_score` is between 0 and 100;
+- `label` matches the expected score range;
+- `criterion_scores` contains all rubric keys;
+- `resume_id` and `job_description_id` references exist;
+- `split` is one of `train`, `validation`, `test`, or `null`;
+- anonymized resume records do not contain obvious email or phone patterns;
+- no duplicate IDs exist within each file.
+
+## 11. Versioning Rule
 
 Use semantic-like dataset versions:
 
@@ -211,7 +306,9 @@ v1.0  Stable schema and rubric for baseline comparison
 
 Schema or rubric changes must be documented before the dataset version is updated.
 
-## 10. Phase Boundary
+If the rubric changes, keep old pairs with their original `label_version`. Re-label only when the new version is intended to replace the previous evaluation baseline.
+
+## 12. Phase Boundary
 
 This design stage may add documentation and dataset folder structure only.
 
