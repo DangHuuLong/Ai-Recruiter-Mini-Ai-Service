@@ -34,6 +34,23 @@ Allowed data types:
 - public or rewritten job descriptions;
 - small fixture-like examples for documentation.
 
+Additional rules:
+
+- Do not commit real CVs even in folders named `test`, `example`, or `sample`.
+- Git history keeps deleted sensitive files. If private data is accidentally committed, remove it from history before continuing.
+- Prefer synthetic records for early validation until the anonymization process is reliable.
+
+## How to Contribute a Sample Later
+
+When dataset samples are introduced in a later branch, use this flow:
+
+1. create or anonymize the resume/JD record;
+2. confirm the record follows `docs/dataset-schema.md`;
+3. add resume and JD records to the proper JSONL files;
+4. create the CV-JD pair record;
+5. run the dataset validation script when it exists;
+6. update the dataset version notes if the sample belongs to a versioned dataset.
+
 ## Related Documentation
 
 - `docs/dataset-schema.md`
