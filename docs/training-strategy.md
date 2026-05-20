@@ -30,13 +30,19 @@ job_description_text -> embedding
 similarity = cosine(resume_embedding, jd_embedding)
 ```
 
-Suggested lightweight model for first experiment:
+Suggested lightweight model for first English-first experiment:
 
 ```txt
 sentence-transformers/all-MiniLM-L6-v2
 ```
 
 This model is suitable for a local baseline because it is lightweight and easy to run.
+
+Note: `all-MiniLM-L6-v2` is mainly suitable for English text. If the dataset includes Vietnamese or mixed-language resumes/JDs, compare it with a multilingual baseline such as:
+
+```txt
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+```
 
 ## 4. Evaluation Metrics
 
@@ -50,7 +56,23 @@ Use different metrics depending on the target.
 
 For recruitment screening, ranking metrics are important because the service often needs to order candidates by fit, not only predict one score.
 
-## 5. Feature-Based Model Direction
+## 5. Data Leakage Prevention
+
+Dataset splitting must avoid leakage before any baseline result is trusted.
+
+Rules:
+
+- Split by `resume_id` and `job_description_id`, not only by pair ID.
+- One resume must not appear in both train and test.
+- One JD must not appear in both validation and test.
+- Keep near-duplicate resumes in the same split.
+- Keep near-duplicate JDs in the same split.
+- Assign split first, then shuffle within each split.
+- Do not tune thresholds or choose models using the test split.
+
+If these rules are hard to satisfy because the dataset is still small, keep `split` as `null` and treat the dataset as exploratory only.
+
+## 6. Feature-Based Model Direction
 
 Before fine-tuning deep models, consider a feature-based model using parser outputs.
 
@@ -66,7 +88,25 @@ Potential features:
 
 This direction is practical when the dataset is still small.
 
-## 6. Fine-Tuning Readiness
+## 7. Experiment Logging
+
+For a mini project, heavyweight tracking tools are optional. A simple CSV or JSON report is enough for early baselines.
+
+Recommended report file:
+
+```txt
+reports/baseline_results.csv
+```
+
+Suggested columns:
+
+```txt
+run_id, model_name, dataset_version, split, language_scope, MAE, RMSE, F1_macro, Spearman, Precision_at_5, Recall_at_5, notes
+```
+
+Do not commit large generated outputs or model files unless the project explicitly decides to version them.
+
+## 8. Fine-Tuning Readiness
 
 Fine-tuning should wait until there are enough high-quality labeled pairs.
 
@@ -77,9 +117,11 @@ Recommended minimum before fine-tuning:
 1000+ labeled pairs for more meaningful comparison
 ```
 
+Also check label balance before training. As a rough rule, try to have at least 50 pairs per label class before treating the dataset as trainable. An imbalanced dataset, for example many `strong_match` pairs and very few `poor_match` pairs, can produce misleading metrics.
+
 Do not treat fine-tuning as successful unless it beats the pretrained baseline on a stable test set.
 
-## 7. Artifact Direction
+## 9. Artifact Direction
 
 Future model artifacts should be stored outside source code or in a clearly ignored local folder.
 
@@ -93,7 +135,7 @@ artifacts/
 
 Large model files, embedding caches, and experiment outputs should not be committed to the repository unless the project explicitly decides otherwise.
 
-## 8. Phase Boundary
+## 10. Phase Boundary
 
 This document is only a planning artifact for later training work.
 
