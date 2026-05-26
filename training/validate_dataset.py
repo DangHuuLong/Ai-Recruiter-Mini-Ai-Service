@@ -62,12 +62,25 @@ PAIR_REQUIRED_FIELDS = {
     "label_version",
 }
 
-RUBRIC_KEYS = {
+LEGACY_RUBRIC_KEYS = {
     "skill_match",
     "experience_match",
     "education_match",
     "domain_relevance",
     "nice_to_have",
+}
+
+SCORER_ALIGNED_RUBRIC_KEYS = {
+    "SKILLS_MATCH",
+    "EXPERIENCE_RELEVANCE",
+    "PROJECT_RELEVANCE",
+    "EDUCATION_CERTIFICATION",
+    "KEYWORD_DOMAIN_ALIGNMENT",
+}
+
+RUBRIC_KEYS_BY_VERSION = {
+    "rubric_v0.1": LEGACY_RUBRIC_KEYS,
+    "rubric_v0.2": SCORER_ALIGNED_RUBRIC_KEYS,
 }
 
 ALLOWED_LEVELS = {"intern", "junior", "middle", "senior", "unknown"}
@@ -283,18 +296,28 @@ class DatasetValidator:
         criterion_scores = data.get("criterion_scores")
         if not isinstance(criterion_scores, dict):
             self.error(f"{self.location(record)} criterion_scores must be an object")
-        else:
-            missing_keys = RUBRIC_KEYS - set(criterion_scores)
-            extra_keys = set(criterion_scores) - RUBRIC_KEYS
+            return
 
-            if missing_keys:
-                self.error(f"{self.location(record)} criterion_scores missing keys: {sorted(missing_keys)}")
-            if extra_keys:
-                self.warning(f"{self.location(record)} criterion_scores has extra keys: {sorted(extra_keys)}")
+        label_version = data.get("label_version")
+        expected_keys = RUBRIC_KEYS_BY_VERSION.get(str(label_version))
+        if expected_keys is None:
+            self.error(
+                f"{self.location(record)} unsupported label_version {label_version!r}; "
+                f"expected one of {sorted(RUBRIC_KEYS_BY_VERSION)}"
+            )
+            return
 
-            for key, value in criterion_scores.items():
-                if not isinstance(value, int) or not 0 <= value <= 100:
-                    self.error(f"{self.location(record)} criterion_scores.{key} must be an integer from 0 to 100")
+        missing_keys = expected_keys - set(criterion_scores)
+        extra_keys = set(criterion_scores) - expected_keys
+
+        if missing_keys:
+            self.error(f"{self.location(record)} criterion_scores missing keys: {sorted(missing_keys)}")
+        if extra_keys:
+            self.warning(f"{self.location(record)} criterion_scores has extra keys: {sorted(extra_keys)}")
+
+        for key, value in criterion_scores.items():
+            if not isinstance(value, int) or not 0 <= value <= 100:
+                self.error(f"{self.location(record)} criterion_scores.{key} must be an integer from 0 to 100")
 
     def require_fields(self, record: JsonlRecord, required_fields: set[str]) -> None:
         missing = required_fields - set(record.data)
