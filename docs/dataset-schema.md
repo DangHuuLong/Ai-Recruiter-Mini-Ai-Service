@@ -2,9 +2,9 @@
 
 ## 1. Purpose
 
-This document defines the first dataset contract for training and evaluating CV-JD matching models in the AI service.
+This document defines the dataset contract for training and evaluating CV-JD matching models in the AI service.
 
-This stage is limited to dataset design and labeling rules. It does not introduce model training, fine-tuning, or inference code yet.
+The dataset is derived from existing parser and scoring outputs where possible, but it is stored in a stable JSONL format for validation, baseline evaluation, and future model training.
 
 ## 2. Dataset Scope
 
@@ -55,13 +55,13 @@ The schema uses stable dataset field names. If the parser output uses a differen
 | `parsed_data.preferred_skills[]` | `preferred_skills` | Normalized preferred skill names |
 | `parsed_data.min_experience_years` | `min_experience_years` | Number or `null` |
 | `parsed_data.education_requirement` | `education_requirement` | Text or `null` |
-| `parsed_data.domain_keywords[]` | `domain_keywords` | Used for domain relevance scoring |
+| `parsed_data.domain_keywords[]` | `domain_keywords` | Used for domain/context alignment scoring |
 
 If a parser field is unavailable, use `null` for scalar fields and `[]` for list fields. Do not invent values unless the record is explicitly marked as `synthetic`.
 
 ## 4. Storage Format
 
-Use JSON Lines (`.jsonl`) for versioned dataset files. Each line must be a valid JSON object.
+Use JSON Lines (`.jsonl`) for dataset files. Each line must be a valid JSON object.
 
 Recommended files:
 
@@ -138,7 +138,7 @@ Each JD record should contain enough raw text and extracted fields for matching.
 | `employment_type` | Internship, full-time, part-time, contract |
 | `domain` | Compact business or technical domain label |
 | `education_requirement` | Text requirement or `null` |
-| `domain_keywords` | Keywords used for domain relevance scoring |
+| `domain_keywords` | Keywords used for domain/context alignment scoring |
 
 ## 6. Resume Record
 
@@ -169,7 +169,7 @@ Each resume record should contain raw text plus parsed fields that are already a
   "languages": [
     {
       "name": "English",
-      "proficiency": "TOEIC 925/990"
+      "proficiency": "intermediate"
     }
   ],
   "anonymized": true,
@@ -210,6 +210,8 @@ Use synthetic IDs such as `resume_001` instead of real candidate IDs.
 
 Pair records are the primary labeled dataset for model evaluation and later training.
 
+Current working pairs should use `rubric_v0.2`, which is aligned with the runtime scoring criteria in `app/scorers/cv_jd_scorer.py`.
+
 ```json
 {
   "id": "pair_001",
@@ -219,18 +221,18 @@ Pair records are the primary labeled dataset for model evaluation and later trai
   "label": "strong_match",
   "overall_score": 82,
   "criterion_scores": {
-    "skill_match": 85,
-    "experience_match": 75,
-    "education_match": 80,
-    "domain_relevance": 70,
-    "nice_to_have": 60
+    "SKILLS_MATCH": 85,
+    "EXPERIENCE_RELEVANCE": 75,
+    "PROJECT_RELEVANCE": 80,
+    "EDUCATION_CERTIFICATION": 80,
+    "KEYWORD_DOMAIN_ALIGNMENT": 70
   },
   "matched_skills": ["Python", "FastAPI", "PostgreSQL"],
   "missing_required_skills": [],
   "matched_preferred_skills": [],
   "label_notes": "Strong backend match for an intern role. Missing Docker/AWS is acceptable because those are preferred skills.",
   "labeled_by": "manual",
-  "label_version": "rubric_v0.1"
+  "label_version": "rubric_v0.2"
 }
 ```
 
@@ -244,11 +246,20 @@ Pair records are the primary labeled dataset for model evaluation and later trai
 | `split` | yes | `train`, `validation`, `test`, or `null` before split assignment |
 | `label` | yes | Match class derived from score range |
 | `overall_score` | yes | Integer from 0 to 100 |
-| `criterion_scores` | yes | Score breakdown by rubric |
+| `criterion_scores` | yes | Score breakdown by rubric version |
 | `matched_skills` | yes | Required skills found in the resume |
 | `missing_required_skills` | yes | Required skills not found or not evidenced |
 | `label_notes` | yes | Short reason for the label |
 | `label_version` | yes | Rubric version used to label the pair |
+
+### Supported Criterion Key Sets
+
+| Label Version | Criterion Keys |
+| --- | --- |
+| `rubric_v0.1` | `skill_match`, `experience_match`, `education_match`, `domain_relevance`, `nice_to_have` |
+| `rubric_v0.2` | `SKILLS_MATCH`, `EXPERIENCE_RELEVANCE`, `PROJECT_RELEVANCE`, `EDUCATION_CERTIFICATION`, `KEYWORD_DOMAIN_ALIGNMENT` |
+
+`rubric_v0.1` is kept for historical compatibility with old snapshots. New working data should use `rubric_v0.2`.
 
 ## 8. Label Classes
 
@@ -282,13 +293,13 @@ Avoid data leakage:
 
 ## 10. Validation Requirements
 
-Future validation scripts should check at least:
+Validation scripts should check at least:
 
 - every JSONL line is valid JSON;
 - all required fields exist;
 - `overall_score` is between 0 and 100;
 - `label` matches the expected score range;
-- `criterion_scores` contains all rubric keys;
+- `criterion_scores` contains all keys required by `label_version`;
 - `resume_id` and `job_description_id` references exist;
 - `split` is one of `train`, `validation`, `test`, or `null`;
 - anonymized resume records do not contain obvious email or phone patterns;
@@ -299,8 +310,8 @@ Future validation scripts should check at least:
 Use semantic-like dataset versions:
 
 ```txt
-v0.1  Initial manually labeled dataset
-v0.2  More labels, same schema/rubric
+v0.1  Initial manually labeled dataset using legacy rubric_v0.1
+v0.2  Scorer-aligned working dataset using rubric_v0.2
 v1.0  Stable schema and rubric for baseline comparison
 ```
 
@@ -310,12 +321,6 @@ If the rubric changes, keep old pairs with their original `label_version`. Re-la
 
 ## 12. Phase Boundary
 
-This design stage may add documentation and dataset folder structure only.
+This document defines dataset structure and validation expectations.
 
-Do not add these items in this branch:
-
-- training scripts;
-- model files;
-- embedding cache;
-- fine-tuning code;
-- inference endpoint changes.
+Do not commit generated model artifacts, embedding cache, or private CV data into dataset folders.
