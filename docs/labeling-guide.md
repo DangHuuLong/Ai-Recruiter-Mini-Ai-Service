@@ -4,7 +4,7 @@
 
 This guide defines how CV-JD pairs should be labeled for the AI Recruiter Mini dataset.
 
-The goal is to create consistent labels before any model training starts. A small clean dataset is preferred over a large noisy dataset.
+The goal is to create consistent labels before model training or model comparison starts. A small clean dataset is preferred over a large noisy dataset.
 
 ## 2. Labeling Input
 
@@ -30,29 +30,45 @@ Use a 0-100 score for each criterion and for the final overall score.
 | 40-59 | Weak fit |
 | 0-39 | Poor fit |
 
-## 4. Rubric Weights
+## 4. Rubric Versions
 
-The initial rubric version is `rubric_v0.1`.
+### `rubric_v0.1` legacy dataset rubric
+
+The initial dataset docs used these exploratory criteria:
+
+| Criterion | Purpose |
+| --- | --- |
+| `skill_match` | Required/preferred skill coverage |
+| `experience_match` | Years, role level, and practical evidence |
+| `education_match` | Degree and education requirement fit |
+| `domain_relevance` | Similar domain or project context |
+| `nice_to_have` | Optional skills or bonus qualifications |
+
+This version is kept only for historical compatibility with `datasets/versions/v0.1`.
+
+### `rubric_v0.2` current scorer-aligned rubric
+
+The current working dataset should use `rubric_v0.2`.
+
+This version is aligned with the deterministic scoring baseline in `app/scorers/cv_jd_scorer.py`.
 
 | Criterion | Weight | What to check |
 | --- | ---: | --- |
-| Skill match | 45% | Required skills, preferred skills, skill evidence |
-| Experience match | 25% | Years, role level, real project/work relevance |
-| Education match | 10% | Degree, field of study, education requirement |
-| Domain relevance | 15% | Similar business domain, project context, responsibilities |
-| Nice-to-have match | 5% | Optional technologies or bonus qualifications |
-
-Skill match is weighted highest because technical fit is the primary filter in early-stage screening. Experience reflects role-level readiness and helps separate project-only exposure from production or internship experience. Domain relevance captures context beyond raw skill overlap. Education is weighted lower because strong candidates may come from non-traditional or self-taught backgrounds.
+| `SKILLS_MATCH` | 35% | Required/preferred JD skill coverage and evidence |
+| `EXPERIENCE_RELEVANCE` | 30% | Experience depth, years, role level, and responsibility fit |
+| `PROJECT_RELEVANCE` | 15% | Project evidence related to JD responsibilities and stack |
+| `EDUCATION_CERTIFICATION` | 10% | Degree, field of study, certifications, or equivalent background |
+| `KEYWORD_DOMAIN_ALIGNMENT` | 10% | Domain keywords, responsibilities, and contextual alignment |
 
 Overall score formula:
 
 ```txt
 overall_score =
-  skill_match * 0.45 +
-  experience_match * 0.25 +
-  education_match * 0.10 +
-  domain_relevance * 0.15 +
-  nice_to_have * 0.05
+  SKILLS_MATCH * 0.35 +
+  EXPERIENCE_RELEVANCE * 0.30 +
+  PROJECT_RELEVANCE * 0.15 +
+  EDUCATION_CERTIFICATION * 0.10 +
+  KEYWORD_DOMAIN_ALIGNMENT * 0.10
 ```
 
 Round the final score to the nearest integer.
@@ -71,11 +87,11 @@ Adjust expectations based on the JD level. Do not use the same experience standa
 
 A senior candidate applying for an intern role should not be penalized in skill or experience match only because of overqualification. If overqualification may affect hiring fit, mention it in `label_notes` instead of silently lowering the score.
 
-## 6. Skill Match Scoring
+## 6. Criterion Scoring Guidance
 
-Skill match is the most important criterion.
+### `SKILLS_MATCH`
 
-Guideline:
+Evaluate required and preferred skill coverage.
 
 | Score | Rule |
 | --- | --- |
@@ -87,13 +103,11 @@ Guideline:
 
 Do not give high skill scores for keyword mentions without evidence. Prefer skills that appear in projects, work experience, or skill sections.
 
-## 7. Experience Match Scoring
+### `EXPERIENCE_RELEVANCE`
 
-Evaluate whether the candidate's experience fits the job level.
+Evaluate whether the candidate's experience fits the JD level and expected responsibility depth.
 
 For intern roles, academic projects and personal projects can count as relevant experience.
-
-Guideline:
 
 | Score | Rule |
 | --- | --- |
@@ -103,11 +117,20 @@ Guideline:
 | 40-59 | Limited practical evidence |
 | 0-39 | No relevant experience or projects |
 
-## 8. Education Match Scoring
+### `PROJECT_RELEVANCE`
 
-Evaluate degree and field only when the JD requires or prefers it.
+Evaluate whether projects demonstrate the same stack, problem type, or responsibilities as the JD.
 
-Guideline:
+Examples:
+
+- backend API JD and a FastAPI/PostgreSQL project: high;
+- frontend SaaS dashboard JD and a Next.js dashboard project: high;
+- DevOps JD and only frontend UI projects: low;
+- AI data JD and dataset/evaluation project: high.
+
+### `EDUCATION_CERTIFICATION`
+
+Evaluate degree, field, certificates, or equivalent background only when it is relevant to the JD.
 
 | Score | Rule |
 | --- | --- |
@@ -119,25 +142,17 @@ Guideline:
 
 If the JD does not mention education, use a neutral score around 70 unless education is clearly relevant or clearly mismatched.
 
-## 9. Domain Relevance Scoring
+### `KEYWORD_DOMAIN_ALIGNMENT`
 
-Domain relevance measures whether the candidate has worked on similar problem types.
+Evaluate overlap in responsibilities, domain keywords, and business/technical context.
 
 Examples:
 
-- recruitment platform JD and recruitment/CV parsing project: high relevance;
-- backend API JD and generic CRUD API project: moderate to high relevance;
-- AI scoring JD and no data/AI project evidence: lower relevance.
+- recruitment platform JD and recruitment/CV parsing project: high;
+- backend API JD and generic CRUD API project: moderate to high;
+- AI scoring JD and no data/AI project evidence: lower.
 
-## 10. Nice-to-Have Scoring
-
-Nice-to-have skills should not dominate the final score.
-
-Use this criterion for optional items such as Docker, AWS, CI/CD, message queues, or extra languages.
-
-A candidate can still be a strong match while missing nice-to-have items.
-
-## 11. Label Class Mapping
+## 7. Label Class Mapping
 
 After computing `overall_score`, map it to a label:
 
@@ -151,7 +166,7 @@ After computing `overall_score`, map it to a label:
 
 Do not manually override the label unless the rubric has a clear issue. If an override is needed, document the reason in `label_notes`.
 
-## 12. Required Label Notes
+## 8. Required Label Notes
 
 Each pair must include a short explanation.
 
@@ -173,7 +188,7 @@ A good note should mention:
 - most important missing requirement;
 - why the final label makes sense.
 
-## 13. Match Decision Rules
+## 9. Match Decision Rules
 
 ### Strong Match
 
@@ -191,7 +206,7 @@ Use `weak_match` when there is some relationship but core requirements are missi
 
 Use `poor_match` when the resume and JD mostly target different roles, stacks, or seniority levels.
 
-## 14. Borderline Examples
+## 10. Borderline Examples
 
 ### Case A: Overqualified Candidate
 
@@ -199,10 +214,11 @@ A senior backend engineer applies for a backend intern role.
 
 Suggested approach:
 
-- Skill match: high, if required skills are clearly covered.
-- Experience match: high, because experience exceeds the JD expectation.
-- Domain relevance: depends on project/domain overlap.
-- Label notes: mention overqualification as a hiring consideration, but do not lower technical fit only because the candidate is senior.
+- `SKILLS_MATCH`: high, if required skills are clearly covered.
+- `EXPERIENCE_RELEVANCE`: high, because experience exceeds the JD expectation.
+- `PROJECT_RELEVANCE`: depends on project/domain overlap.
+- `KEYWORD_DOMAIN_ALIGNMENT`: depends on responsibility/domain overlap.
+- `label_notes`: mention overqualification as a hiring consideration, but do not lower technical fit only because the candidate is senior.
 
 ### Case B: Keyword Stuffing
 
@@ -210,9 +226,10 @@ A resume lists many technologies in one skill line but has no project or experie
 
 Suggested approach:
 
-- Skill match: moderate at most, unless raw text provides evidence elsewhere.
-- Experience match: low to moderate depending on actual projects.
-- Label notes: mention that skill evidence is weak.
+- `SKILLS_MATCH`: moderate at most, unless raw text provides evidence elsewhere.
+- `EXPERIENCE_RELEVANCE`: low to moderate depending on actual projects/work history.
+- `PROJECT_RELEVANCE`: low if projects do not support listed skills.
+- `label_notes`: mention that skill evidence is weak.
 
 ### Case C: Career Switcher
 
@@ -220,26 +237,28 @@ A frontend candidate applies for a backend role and has one small backend projec
 
 Suggested approach:
 
-- Skill match: based on required backend skills actually demonstrated.
-- Experience match: moderate or weak depending on project depth.
-- Domain relevance: can be moderate if the project solves similar problems.
-- Label notes: mention frontend strength and backend gap separately.
+- `SKILLS_MATCH`: based on required backend skills actually demonstrated.
+- `EXPERIENCE_RELEVANCE`: moderate or weak depending on project depth.
+- `PROJECT_RELEVANCE`: can be moderate if the project solves similar problems.
+- `label_notes`: mention frontend strength and backend gap separately.
 
-## 15. Consistency Rules
+## 11. Consistency Rules
 
-- Use the same rubric for all pairs in the same dataset version.
+- Use the same rubric for all pairs in the same working dataset version.
+- Keep legacy pairs with their original `label_version`.
 - Do not punish intern candidates for not having senior-level production experience.
 - Do not reward unrelated skills only because they are technical.
 - Prefer evidence from projects or experience over plain skill lists.
 - Keep labels stable once a dataset version is used for evaluation.
 - If two labelers assign overall scores that differ by more than 15 points on the same pair, escalate to a third reviewer before accepting either label.
 
-## 16. Quality Review Checklist
+## 12. Quality Review Checklist
 
 Before accepting a label:
 
-- [ ] `overall_score` matches the criterion scores.
+- [ ] `overall_score` matches the criterion scores and rubric weights.
 - [ ] `label` matches the score range.
+- [ ] `label_version` matches the criterion key set.
 - [ ] Required skills were checked against evidence.
 - [ ] Missing required skills are listed.
 - [ ] Job level was considered when scoring experience.
@@ -247,6 +266,6 @@ Before accepting a label:
 - [ ] Label notes explain the decision.
 - [ ] No private candidate information is included in notes.
 
-## 17. Phase Boundary
+## 13. Phase Boundary
 
-This guide only defines labeling rules. Training, fine-tuning, and model export should be implemented in later branches after the dataset contract is stable.
+This guide only defines labeling rules. Fine-tuning and model export should be implemented in later branches after the dataset contract is stable.
