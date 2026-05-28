@@ -2,10 +2,10 @@ from pathlib import Path
 
 
 RESUMES_FILE = Path("raw/resumes.jsonl")
-JDS_FILE = Path("raw/job_descriptions.jsonl")
+# JDS_FILE = Path("raw/job_descriptions.jsonl")
 OUTPUT_FILE = Path("current_pair_group.txt")
 
-START_LINE = 66
+START_LINE = 186
 BATCH_SIZE = 5
 
 
@@ -19,7 +19,7 @@ def read_jsonl_lines(file_path: Path) -> list[str]:
 
 def write_group_to_txt(
     resumes: list[str],
-    job_descriptions: list[str],
+    # job_descriptions: list[str],
     start_line: int,
     output_file: Path,
 ) -> None:
@@ -36,18 +36,18 @@ def write_group_to_txt(
         content.append(f"\n[RESUME LINE {i}]")
         content.append(resume)
 
-    content.append("\n\nJOB DESCRIPTIONS")
-    content.append("-" * 80)
-    for i, jd in enumerate(job_descriptions, start=start_line):
-        content.append(f"\n[JD LINE {i}]")
-        content.append(jd)
+    # content.append("\n\nJOB DESCRIPTIONS")
+    # content.append("-" * 80)
+    # for i, jd in enumerate(job_descriptions, start=start_line):
+    #     content.append(f"\n[JD LINE {i}]")
+    #     content.append(jd)
 
     output_file.write_text("\n".join(content), encoding="utf-8")
 
 
 def main():
     resumes = read_jsonl_lines(RESUMES_FILE)
-    job_descriptions = read_jsonl_lines(JDS_FILE)
+    # job_descriptions = read_jsonl_lines(JDS_FILE)
 
     current_line = START_LINE
 
@@ -56,15 +56,15 @@ def main():
         end_index = start_index + BATCH_SIZE
 
         resume_batch = resumes[start_index:end_index]
-        jd_batch = job_descriptions[start_index:end_index]
+        # jd_batch = job_descriptions[start_index:end_index]
 
-        if not resume_batch and not jd_batch:
+        if not resume_batch:
             print("Đã hết dữ liệu.")
             break
 
         write_group_to_txt(
             resumes=resume_batch,
-            job_descriptions=jd_batch,
+            # job_descriptions=jd_batch,
             start_line=current_line,
             output_file=OUTPUT_FILE,
         )
