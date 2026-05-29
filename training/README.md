@@ -9,7 +9,7 @@ At this stage, the repository includes dataset validation, split planning, basel
 Validate the current working dataset:
 
 ```bash
-python training/validate_dataset.py
+python training/validate_dataset.py --dataset-root datasets
 ```
 
 This checks:
@@ -21,14 +21,16 @@ This checks:
 Validate a versioned snapshot:
 
 ```bash
-python training/validate_dataset.py --version v0.1
+python training/validate_dataset.py --dataset-root datasets --version v0.2
 ```
 
 This checks:
 
-- `datasets/versions/v0.1/job_descriptions.jsonl`
-- `datasets/versions/v0.1/resumes.jsonl`
-- `datasets/versions/v0.1/cv_jd_pairs.jsonl`
+- `datasets/versions/v0.2/job_descriptions.jsonl`
+- `datasets/versions/v0.2/resumes.jsonl`
+- `datasets/versions/v0.2/cv_jd_pairs.jsonl`
+
+Use the working dataset command while records are still being edited. Use the versioned snapshot command before baseline evaluation or fine-tuning experiments.
 
 ## What the validator checks
 
@@ -57,18 +59,22 @@ python training/split_dataset.py --dry-run
 Plan split for a versioned snapshot:
 
 ```bash
-python training/split_dataset.py --version v0.1 --dry-run
+python training/split_dataset.py --dataset-root datasets --version v0.2 --dry-run
 ```
 
 The split planner follows the dataset rule from `docs/dataset-schema.md`: datasets with fewer than 50 labeled pairs should keep `split = null` and should not be treated as a stable evaluation set.
 
-Because the current sample dataset is still small, the script reports the planned split but skips writing a split file by default.
+## Write stable split assignments
 
-When the dataset is large enough, write a split file with:
+When the versioned dataset is large enough and the dry run looks correct, write split assignments into the official pair file:
 
 ```bash
-python training/split_dataset.py --output datasets/versions/v0.2/cv_jd_pairs.jsonl
+python training/split_dataset.py --dataset-root datasets --version v0.2 --output datasets/versions/v0.2/cv_jd_pairs.jsonl
 ```
+
+This command overwrites `datasets/versions/v0.2/cv_jd_pairs.jsonl` with records that include stable `split` values.
+
+Do not keep temporary files such as `cv_jd_pairs_split.jsonl` or `cv_jd_pairs_no_split.jsonl` inside the official version folder. A stable version should expose one official pair file only.
 
 For local experiments only, split generation can be forced below the minimum threshold:
 
@@ -83,40 +89,30 @@ Do not commit forced split outputs as stable dataset versions.
 The split planner:
 
 - reads `datasets/processed/cv_jd_pairs.jsonl` by default;
-- supports `--version v0.1` for versioned snapshots;
+- supports `--version v0.2` for versioned snapshots;
 - uses the default target ratio `70/15/15` for train/validation/test;
 - groups pairs that share the same `resume_id` or `job_description_id` into the same split;
 - avoids leaking the same resume or JD across train/validation/test;
 - uses a deterministic random seed for repeatable planning.
-
-## Evaluate baseline similarity
-
-Run the current pretrained embedding baseline:
-
-```bash
-python training/evaluate_baseline_similarity.py
-```
-
-Run against a versioned snapshot:
-
-```bash
-python training/evaluate_baseline_similarity.py --version v0.1
-```
-
-The script writes a local report under `artifacts/reports/`. The `artifacts/` folder is ignored by git.
 
 ## Check fine-tune readiness
 
 Check whether the current working dataset is ready for fine-tuning:
 
 ```bash
-python training/check_fine_tune_readiness.py
+python training/check_fine_tune_readiness.py --dataset-root datasets
+```
+
+Check a versioned snapshot:
+
+```bash
+python training/check_fine_tune_readiness.py --dataset-root datasets --version v0.2
 ```
 
 Use strict mode in CI or before starting a real fine-tuning branch:
 
 ```bash
-python training/check_fine_tune_readiness.py --strict
+python training/check_fine_tune_readiness.py --dataset-root datasets --version v0.2 --strict
 ```
 
 The readiness check currently requires:
@@ -134,7 +130,40 @@ The default minimum is 100 labeled pairs:
 python training/check_fine_tune_readiness.py --min-pairs 100
 ```
 
-With the current small synthetic dataset, this check is expected to report that fine-tuning is not ready yet.
+The `v0.2` snapshot is expected to pass this check after split assignments are written into `datasets/versions/v0.2/cv_jd_pairs.jsonl`.
+
+## Evaluate baseline similarity
+
+Run the current pretrained embedding baseline against a versioned snapshot:
+
+```bash
+python training/evaluate_baseline_similarity.py --dataset-root datasets --version v0.2 --output artifacts/reports/baseline_similarity_v0.2_report.json
+```
+
+The default primary model is configured in `training/baseline_models.json`. At the time of the `v0.2` baseline, the selected model is:
+
+```txt
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+The first `v0.2` baseline result was:
+
+```txt
+pairs evaluated: 2275
+MAE: 17.6431
+RMSE: 22.4497
+label accuracy: 0.2822
+```
+
+Future fine-tuning experiments should beat this baseline on the stable `v0.2` split before being treated as an improvement.
+
+## Generated artifacts
+
+The baseline script writes reports under `artifacts/reports/`.
+
+The repository currently ignores the full `artifacts/` folder, so generated reports, model checkpoints, embedding caches, and exported model files are local artifacts by default.
+
+Do not commit large generated artifacts unless the project explicitly changes the artifact policy.
 
 ## Current scope
 

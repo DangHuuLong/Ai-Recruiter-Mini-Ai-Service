@@ -1,31 +1,94 @@
 # Dataset Directory
 
-This directory stores dataset design notes and future versioned data for CV-JD matching experiments.
+This directory stores dataset files and versioned snapshots for CV-JD matching experiments.
+
+The dataset is used for validation, baseline evaluation, fine-tune readiness checks, and future model training work.
 
 ## Current Status
 
-This stage defines the dataset contract only. It does not include real training data yet.
+The current fine-tune-ready snapshot is:
 
-## Planned Structure
+```txt
+datasets/versions/v0.2/
+```
+
+This version is built with `rubric_v0.2`, contains stable train/validation/test split assignments, and is the recommended dataset version for the next fine-tuning experiment branch.
+
+## Directory Structure
 
 ```txt
 datasets/
-├── README.md
-├── raw/
-│   ├── job_descriptions.jsonl
-│   └── resumes.jsonl
-├── processed/
-│   └── cv_jd_pairs.jsonl
-└── versions/
-    └── v0.1/
-        ├── job_descriptions.jsonl
-        ├── resumes.jsonl
-        └── cv_jd_pairs.jsonl
+  README.md
+  raw/
+    job_descriptions.jsonl
+    resumes.jsonl
+  processed/
+    cv_jd_pairs.jsonl
+  versions/
+    v0.1/
+      job_descriptions.jsonl
+      resumes.jsonl
+      cv_jd_pairs.jsonl
+    v0.2/
+      job_descriptions.jsonl
+      resumes.jsonl
+      cv_jd_pairs.jsonl
 ```
+
+## Working Dataset
+
+The working dataset is the editable source used while adding or fixing records:
+
+```txt
+datasets/raw/job_descriptions.jsonl
+datasets/raw/resumes.jsonl
+datasets/processed/cv_jd_pairs.jsonl
+```
+
+Use this area when collecting, cleaning, anonymizing, or labeling new records.
+
+Validate the current working dataset with:
+
+```bash
+python training/validate_dataset.py --dataset-root datasets
+```
+
+## Versioned Snapshots
+
+A versioned snapshot is a stable dataset copy used for reproducible evaluation or training.
+
+Each version folder should contain exactly the three official JSONL files:
+
+```txt
+datasets/versions/<version>/job_descriptions.jsonl
+datasets/versions/<version>/resumes.jsonl
+datasets/versions/<version>/cv_jd_pairs.jsonl
+```
+
+For stable training and evaluation versions, `cv_jd_pairs.jsonl` must contain the final `split` assignment directly:
+
+```json
+"split": "train"
+```
+
+Temporary files such as `cv_jd_pairs_split.jsonl` or `cv_jd_pairs_no_split.jsonl` should not be kept inside the official version folder.
+
+Validate a versioned snapshot with:
+
+```bash
+python training/validate_dataset.py --dataset-root datasets --version v0.2
+```
+
+## Version Notes
+
+| Version | Notes |
+| --- | --- |
+| `v0.1` | Initial dataset snapshot kept for historical comparison. |
+| `v0.2` | Fine-tune-ready scorer-aligned snapshot using `rubric_v0.2` and stable split assignments. |
 
 ## Privacy Rule
 
-Do not commit private resumes, real candidate contact information, or company-confidential job descriptions.
+Only anonymized or synthetic resume data should be committed.
 
 Allowed data types:
 
@@ -36,23 +99,25 @@ Allowed data types:
 
 Additional rules:
 
-- Do not commit real CVs even in folders named `test`, `example`, or `sample`.
-- Git history keeps deleted sensitive files. If private data is accidentally committed, remove it from history before continuing.
+- Keep identifying details out of committed resume text.
+- Git history keeps deleted files. If sensitive data is accidentally committed, remove it from history before continuing.
 - Prefer synthetic records for early validation until the anonymization process is reliable.
 
-## How to Contribute a Sample Later
+## Dataset Update Flow
 
-When dataset samples are introduced in a later branch, use this flow:
+When adding or changing dataset records, use this flow:
 
-1. create or anonymize the resume/JD record;
-2. confirm the record follows `docs/dataset-schema.md`;
-3. add resume and JD records to the proper JSONL files;
-4. create the CV-JD pair record;
-5. run the dataset validation script when it exists;
-6. update the dataset version notes if the sample belongs to a versioned dataset.
+1. add or edit JD and resume records in `datasets/raw/`;
+2. add or edit CV-JD pair records in `datasets/processed/cv_jd_pairs.jsonl`;
+3. run the dataset validator against the working dataset;
+4. create a new versioned snapshot when the working dataset is stable;
+5. assign stable split values for the snapshot;
+6. validate the versioned snapshot;
+7. run the fine-tune readiness check before starting a training branch.
 
 ## Related Documentation
 
 - `docs/dataset-schema.md`
 - `docs/labeling-guide.md`
 - `docs/training-strategy.md`
+- `training/README.md`
