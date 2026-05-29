@@ -4,7 +4,7 @@
 
 This document records the training direction for the CV-JD matching model after the baseline scoring flow is stable.
 
-The current branch only prepares the dataset and labeling design. Actual training scripts should be added later.
+The current repository state prepares the dataset, validation scripts, split planning, baseline evaluation, and fine-tune readiness checks. Actual fine-tuning scripts should be added in a separate experiment branch.
 
 ## 2. Recommended Order
 
@@ -12,15 +12,32 @@ Do not fine-tune first. Follow this order:
 
 1. define dataset schema;
 2. define labeling rubric;
-3. create a small clean labeled dataset;
+3. create a clean labeled dataset;
 4. validate dataset quality;
-5. split train/validation/test;
+5. split train/validation/test without leakage;
 6. evaluate pretrained embedding baseline;
 7. add feature-based scoring if needed;
-8. fine-tune only when enough labeled pairs exist;
+8. fine-tune only when the dataset passes readiness checks;
 9. export the best model artifact for local/service inference.
 
-## 3. Initial Baseline
+## 3. Current Dataset Baseline
+
+The current fine-tune-ready dataset snapshot is:
+
+```txt
+datasets/versions/v0.2/
+```
+
+This snapshot uses `rubric_v0.2`, has stable train/validation/test split assignments, and should be used as the starting point for the next fine-tuning experiment.
+
+Validate it before using it:
+
+```bash
+python training/validate_dataset.py --dataset-root datasets --version v0.2
+python training/check_fine_tune_readiness.py --dataset-root datasets --version v0.2
+```
+
+## 4. Initial Baseline
 
 The first baseline should be simple and explainable:
 
@@ -44,7 +61,21 @@ Note: `all-MiniLM-L6-v2` is mainly suitable for English text. If the dataset inc
 sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 ```
 
-## 4. Evaluation Metrics
+## 5. v0.2 Baseline Result
+
+The first `v0.2` pretrained embedding baseline result is:
+
+```txt
+model: sentence-transformers/all-MiniLM-L6-v2
+pairs evaluated: 2275
+MAE: 17.6431
+RMSE: 22.4497
+label accuracy: 0.2822
+```
+
+Future fine-tuning experiments should beat this baseline on the stable `v0.2` split before being treated as an improvement.
+
+## 6. Evaluation Metrics
 
 Use different metrics depending on the target.
 
@@ -56,7 +87,7 @@ Use different metrics depending on the target.
 
 For recruitment screening, ranking metrics are important because the service often needs to order candidates by fit, not only predict one score.
 
-## 5. Data Leakage Prevention
+## 7. Data Leakage Prevention
 
 Dataset splitting must avoid leakage before any baseline result is trusted.
 
@@ -72,7 +103,7 @@ Rules:
 
 If these rules are hard to satisfy because the dataset is still small, keep `split` as `null` and treat the dataset as exploratory only.
 
-## 6. Feature-Based Model Direction
+## 8. Feature-Based Model Direction
 
 Before fine-tuning deep models, consider a feature-based model using parser outputs.
 
@@ -86,27 +117,29 @@ Potential features:
 - education match;
 - domain keyword overlap.
 
-This direction is practical when the dataset is still small.
+This direction is practical when the dataset is still small or when explainability is more important than raw model capacity.
 
-## 7. Experiment Logging
+## 9. Experiment Logging
 
-For a mini project, heavyweight tracking tools are optional. A simple CSV or JSON report is enough for early baselines.
+For a mini project, heavyweight tracking tools are optional. A simple JSON or CSV report is enough for early baselines.
 
-Recommended report file:
+Recommended local report path:
 
 ```txt
-reports/baseline_results.csv
+artifacts/reports/baseline_similarity_v0.2_report.json
 ```
 
-Suggested columns:
+Suggested report fields:
 
 ```txt
 run_id, model_name, dataset_version, split, language_scope, MAE, RMSE, F1_macro, Spearman, Precision_at_5, Recall_at_5, notes
 ```
 
+The repository currently ignores `artifacts/`, so generated reports are local by default.
+
 Do not commit large generated outputs or model files unless the project explicitly decides to version them.
 
-## 8. Fine-Tuning Readiness
+## 10. Fine-Tuning Readiness
 
 Fine-tuning should wait until there are enough high-quality labeled pairs.
 
@@ -121,7 +154,7 @@ Also check label balance before training. As a rough rule, try to have at least 
 
 Do not treat fine-tuning as successful unless it beats the pretrained baseline on a stable test set.
 
-## 9. Artifact Direction
+## 11. Artifact Direction
 
 Future model artifacts should be stored outside source code or in a clearly ignored local folder.
 
@@ -129,20 +162,19 @@ Recommended local structure:
 
 ```txt
 artifacts/
-├── models/
-└── reports/
+  models/
+  reports/
 ```
 
 Large model files, embedding caches, and experiment outputs should not be committed to the repository unless the project explicitly decides otherwise.
 
-## 10. Phase Boundary
+## 12. Phase Boundary
 
-This document is only a planning artifact for later training work.
+This document is still a planning artifact for later training work.
 
-Do not add in this branch:
+Do not add in this docs branch:
 
 - training Python scripts;
 - model checkpoints;
 - generated embeddings;
-- evaluation reports from incomplete datasets;
 - runtime inference changes.
