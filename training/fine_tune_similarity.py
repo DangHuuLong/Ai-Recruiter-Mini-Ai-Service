@@ -181,8 +181,7 @@ def label_from_score(score: int) -> str:
 
 
 def similarity_to_score(similarity: float) -> int:
-    normalized = (similarity + 1.0) / 2.0
-    clipped = max(0.0, min(1.0, normalized))
+    clipped = max(0.0, min(1.0, similarity))
     return round(clipped * 100)
 
 
@@ -252,7 +251,7 @@ def to_input_examples(examples: list[PairExample]) -> list[Any]:
     return [
         InputExample(
             texts=[example.resume_text, example.job_description_text],
-            label=example.target_score / 100.0,
+            label=(example.target_score / 100.0) * 2.0 - 1.0,
         )
         for example in examples
     ]
@@ -427,14 +426,29 @@ def main() -> int:
         print(f"Batch size: {args.batch_size}")
         print(f"Warmup steps: {warmup_steps}")
 
-        model.fit(
-            train_objectives=[(train_dataloader, train_loss)],
-            epochs=args.epochs,
+        from datasets import Dataset as _HFDataset
+        from sentence_transformers import SentenceTransformerTrainer
+        from sentence_transformers.training_args import SentenceTransformerTrainingArguments
+
+        _train_dataset = _HFDataset.from_dict({
+            "sentence1": [e.resume_text for e in train_examples],
+            "sentence2": [e.job_description_text for e in train_examples],
+            "label": [e.target_score / 100.0 for e in train_examples],
+        })
+        _training_args = SentenceTransformerTrainingArguments(
+            output_dir=str(output_dir),
+            num_train_epochs=args.epochs,
+            per_device_train_batch_size=args.batch_size,
             warmup_steps=warmup_steps,
-            optimizer_params={"lr": args.learning_rate},
-            output_path=str(output_dir),
-            show_progress_bar=True,
+            learning_rate=args.learning_rate,
         )
+        SentenceTransformerTrainer(
+            model=model,
+            args=_training_args,
+            train_dataset=_train_dataset,
+            loss=train_loss,
+        ).train()
+        model.save_pretrained(str(output_dir))
 
         tuned_model = SentenceTransformer(str(output_dir))
         validation_predictions = evaluate_model(tuned_model, validation_examples, args.batch_size)
