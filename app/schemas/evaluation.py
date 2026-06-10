@@ -56,3 +56,4 @@ class EvaluationResult(BaseModel):
     skill_gap_summary: str | None = None
     interview_questions: list[EvaluationInterviewQuestion] = Field(default_factory=list)
     evidence_map: dict[str, Any] = Field(default_factory=dict)
+    similarity_score: float | None = None
