@@ -51,10 +51,12 @@ class SimilarityModelLoader:
 
 @lru_cache(maxsize=1)
 def get_similarity_model() -> Any:
-    from app.core.config import get_settings
+    from app.ml.similarity_config import get_similarity_config
 
-    settings = get_settings()
+    cfg = get_similarity_config()
+    if cfg.fallback_mode == "rule_only":
+        raise RuntimeError("Similarity model disabled: fallback_mode=rule_only")
     return SimilarityModelLoader(
-        model_path=settings.similarity_model_path,
-        base_model=settings.similarity_base_model,
+        model_path=cfg.model_path,
+        base_model=cfg.base_model,
     ).load()

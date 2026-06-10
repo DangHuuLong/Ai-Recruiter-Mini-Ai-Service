@@ -18,7 +18,10 @@ class Settings(BaseSettings):
 
     similarity_model_path: str = ""
     similarity_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    similarity_model_version: str = ""
     similarity_scoring_weight: float = 0.0
+    similarity_score_threshold: float = 0.0
+    similarity_fallback_mode: str = "base_model"
 
     enable_pdf_ocr_fallback: bool = False
     pdf_ocr_engine: str = "paddleocr"
