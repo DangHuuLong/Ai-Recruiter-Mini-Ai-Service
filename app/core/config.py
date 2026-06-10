@@ -16,6 +16,9 @@ class Settings(BaseSettings):
 
     request_timeout_seconds: int = 30
 
+    similarity_model_path: str = ""
+    similarity_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+
     enable_pdf_ocr_fallback: bool = False
     pdf_ocr_engine: str = "paddleocr"
     pdf_ocr_mode: str = "targeted"
