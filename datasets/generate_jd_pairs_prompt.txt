@@ -111,8 +111,10 @@ Label class mapping (from overall_score):
 ================================================================================
 OUTPUT FORMAT
 ================================================================================
-
-Output exactly TWO JSONL blocks separated by a blank line and a header line.
+Output ONLY raw JSONL.
+Do not output BLOCK headers.
+Do not output PAIRS.
+Do not output explanations.
 
 --- BLOCK 1: JOB DESCRIPTIONS ---
 (5 lines, one compact JSON object per line, no pretty-print)
