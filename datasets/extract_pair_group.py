@@ -5,7 +5,7 @@ RESUMES_FILE = Path("raw/resumes.jsonl")
 # JDS_FILE = Path("raw/job_descriptions.jsonl")
 OUTPUT_FILE = Path("current_pair_group.txt")
 
-START_LINE = 386
+START_LINE = 456
 BATCH_SIZE = 5
 
 

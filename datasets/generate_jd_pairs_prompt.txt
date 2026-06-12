@@ -1,0 +1,194 @@
+You are a senior HR specialist and dataset engineer. Your task is to generate synthetic training data for an AI recruitment scoring model.
+
+================================================================================
+DATASET CONTEXT
+================================================================================
+
+The existing dataset already has job descriptions and resume-JD pairs.
+The header of the input block below tells you exactly which IDs to use for this batch:
+  - NEXT_JD_IDS   → use these IDs for the 5 new JDs you generate
+  - NEXT_PAIR_IDS → use these IDs (sequential) for the 25 new pairs you generate
+
+================================================================================
+YOUR TASK
+================================================================================
+
+STEP 1 — Generate exactly 5 Job Descriptions
+
+Rules for each JD:
+  - Each JD targets ONE specific resume as its PRIMARY match (the resume with the
+    same numeric suffix, e.g., resume_456 → jd_456).
+  - Write in realistic HR language. Do NOT copy exact phrases from the resume text.
+  - Requirements must be slightly broader than the resume:
+      * Use experience ranges (e.g., "3–6 years", not "exactly 5 years").
+      * Add 1–2 adjacent/preferred skills the target resume does not have.
+      * Include 2–3 transferable soft skills (e.g., "strong analytical thinking",
+        "comfortable working in agile teams") so off-diagonal pairs can score
+        moderate_match (60-74) instead of always poor_match.
+  - Domain and level must match the target resume's field and seniority.
+  - Design each JD so the diagonal pair scores 82–95.
+
+STEP 2 — Generate exactly 25 Pairs (5 JDs × 5 Resumes)
+
+Rules:
+  - Evaluate EVERY combination of the 5 JDs against all 5 resumes.
+  - Iteration order: outer = JDs (sorted by jd_id), inner = resumes (sorted by
+    resume_id). Example for IDs 456–460:
+      pair_2276 = jd_456 × resume_456   ← diagonal (target: high)
+      pair_2277 = jd_456 × resume_457
+      pair_2278 = jd_456 × resume_458
+      pair_2279 = jd_456 × resume_459
+      pair_2280 = jd_456 × resume_460
+      pair_2281 = jd_457 × resume_456
+      pair_2282 = jd_457 × resume_457   ← diagonal (target: high)
+      ... and so on until pair_2300 = jd_460 × resume_460
+  - Score each pair honestly based on actual resume content vs JD requirements.
+  - Aim for score distribution:
+      * Diagonal pairs (JD_i ↔ target resume_i): 82–95
+      * Off-diagonal pairs: vary realistically between 15–70
+      * Do NOT assign the same low score to all off-diagonal pairs.
+
+================================================================================
+SCORING RUBRIC  (rubric_v0.2)
+================================================================================
+
+Overall score formula — WEIGHTED average (NOT a simple mean):
+
+  overall_score =
+    SKILLS_MATCH             × 0.35
+    + EXPERIENCE_RELEVANCE   × 0.30
+    + PROJECT_RELEVANCE      × 0.15
+    + EDUCATION_CERTIFICATION× 0.10
+    + KEYWORD_DOMAIN_ALIGNMENT × 0.10
+
+Round the result to the nearest integer.
+
+Criterion guidance:
+
+  SKILLS_MATCH (35%)
+    90–100  Covers almost all required skills with clear evidence
+    75–89   Covers most required skills, minor gaps only
+    60–74   Covers some required skills, misses important items
+    40–59   Broad overlap but missing the core stack
+    0–39    Little or no overlap with required skills
+    Note: do not reward keyword mentions without project/work evidence.
+
+  EXPERIENCE_RELEVANCE (30%)
+    90–100  Experience clearly exceeds role expectations
+    75–89   Experience fits the role well
+    60–74   Related but shallow or incomplete
+    40–59   Limited practical evidence
+    0–39    No relevant experience or projects
+    Note: for intern JDs, academic/personal projects count as evidence.
+
+  PROJECT_RELEVANCE (15%)
+    Evaluate whether resume projects demonstrate the same stack, problem type,
+    or responsibilities as the JD. Examples:
+    - backend API JD + FastAPI/PostgreSQL project = high
+    - DevOps JD + only frontend UI projects = low
+    - AI data JD + dataset/evaluation project = high
+
+  EDUCATION_CERTIFICATION (10%)
+    90–100  Directly matches required degree and field
+    75–89   Related degree or strong equivalent background
+    60–74   Partially related education
+    40–59   Education is unclear or weakly related
+    0–39    Does not meet explicit education requirement
+    Note: if JD does not mention education, use a neutral score (~70).
+
+  KEYWORD_DOMAIN_ALIGNMENT (10%)
+    Evaluate overlap in responsibilities, domain keywords, and business/
+    technical context between the JD and the resume.
+
+Label class mapping (from overall_score):
+
+  90–100 → "excellent_match"
+  75–89  → "strong_match"
+  60–74  → "moderate_match"
+  40–59  → "weak_match"
+  0–39   → "poor_match"
+
+================================================================================
+OUTPUT FORMAT
+================================================================================
+Output ONLY raw JSONL.
+Do not output BLOCK headers.
+Do not output PAIRS.
+Do not output explanations.
+
+--- BLOCK 1: JOB DESCRIPTIONS ---
+(5 lines, one compact JSON object per line, no pretty-print)
+
+Required fields for each JD (all fields must be present):
+{
+  "id": "jd_456",
+  "source": "synthetic",
+  "title": "...",
+  "level": "intern|junior|middle|senior",
+  "employment_type": "full_time|part_time|contract|internship",
+  "location": "Ho Chi Minh City, Vietnam",
+  "remote_allowed": true,
+  "posted_date": null,
+  "domain": "...",
+  "raw_text": "...(2–4 sentence plain-text JD summary)...",
+  "responsibilities": ["...", "...", "..."],
+  "requirements": ["...", "...", "..."],
+  "nice_to_have": ["...", "..."],
+  "required_skills": ["Skill1", "Skill2"],
+  "preferred_skills": ["Skill3"],
+  "min_experience_years": 3,
+  "education_requirement": "...",
+  "domain_keywords": ["...", "..."],
+  "language": "en"
+}
+
+--- BLOCK 2: PAIRS ---
+(25 lines, one compact JSON object per line, no pretty-print)
+
+Required fields for each pair (all fields must be present):
+{
+  "id": "pair_2276",
+  "resume_id": "resume_456",
+  "job_description_id": "jd_456",
+  "split": null,
+  "label": "excellent_match",
+  "overall_score": 89,
+  "criterion_scores": {
+    "SKILLS_MATCH": 92,
+    "EXPERIENCE_RELEVANCE": 88,
+    "PROJECT_RELEVANCE": 85,
+    "EDUCATION_CERTIFICATION": 80,
+    "KEYWORD_DOMAIN_ALIGNMENT": 90
+  },
+  "matched_skills": ["Skill1", "Skill2"],
+  "missing_required_skills": [],
+  "matched_preferred_skills": ["Skill3"],
+  "label_notes": "...(one sentence: strongest reason + key gap + why the label fits)...",
+  "labeled_by": "manual_ai_assisted",
+  "label_version": "rubric_v0.2"
+}
+
+================================================================================
+SELF-CHECK BEFORE OUTPUTTING
+================================================================================
+
+Verify all of the following before writing your final answer:
+
+  [ ] Exactly 5 JD objects in Block 1
+  [ ] Exactly 25 pair objects in Block 2
+  [ ] All 25 combinations are present (no duplicate, no missing pair)
+  [ ] Diagonal pairs (JD_i ↔ its target resume) score 82–95
+  [ ] overall_score = weighted formula result (rounded to nearest integer):
+        score = SM*0.35 + ER*0.30 + PR*0.15 + EC*0.10 + KDA*0.10
+  [ ] label matches the overall_score range (see label mapping above)
+  [ ] JD IDs follow resume numbering (resume_456 → jd_456)
+  [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
+  [ ] No JD copies verbatim phrases from the resume raw_text
+  [ ] Off-diagonal pairs have varied scores — not all the same low number
+  [ ] Each label_notes mentions: strongest match reason + most important gap
+
+================================================================================
+INPUT
+================================================================================
+
+[PASTE THE FULL CONTENT OF current_pair_group.txt HERE]
