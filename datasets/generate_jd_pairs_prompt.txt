@@ -26,7 +26,10 @@ Rules for each JD:
         "comfortable working in agile teams") so off-diagonal pairs always score
         at least weak_match (40–59) — never below 40.
   - Domain and level must match the target resume's field and seniority.
-  - Design each JD so the diagonal pair scores 82–95.
+  - Design each JD so the diagonal pair scores **90–95** (targeting excellent_match).
+    Craft requirements to align tightly with the target resume's core stack so the
+    weighted score naturally lands ≥ 90. Only drop below 90 if the resume has a clear
+    gap that cannot be bridged by the JD design.
 
 STEP 2 — Generate exactly 25 Pairs (5 JDs × 5 Resumes)
 
@@ -44,9 +47,13 @@ Rules:
       ... and so on until pair_2300 = jd_460 × resume_460
   - Score each pair honestly based on actual resume content vs JD requirements.
   - Aim for score distribution:
-      * Diagonal pairs (JD_i ↔ target resume_i): 82–95
-      * Off-diagonal pairs: vary realistically between 40–74 (minimum 40)
+      * Diagonal pairs (JD_i ↔ target resume_i): **90–95** (excellent_match preferred)
+      * Off-diagonal pairs: vary realistically between 50–79 (minimum 40).
+        Prefer moderate_match (60–74) and strong_match (75–79) for resumes with
+        overlapping domains; use weak_match (50–59) only for clearly mismatched domains.
       * Do NOT assign the same low score to all off-diagonal pairs.
+      * At least 2 off-diagonal pairs per JD should reach strong_match (75–89) to
+        ensure the model learns fine-grained discrimination, not just excellent vs. weak.
 
 ================================================================================
 SCORING RUBRIC  (rubric_v0.2)
@@ -180,14 +187,15 @@ Verify all of the following before writing your final answer:
   [ ] Exactly 5 JD objects in Block 1
   [ ] Exactly 25 pair objects in Block 2
   [ ] All 25 combinations are present (no duplicate, no missing pair)
-  [ ] Diagonal pairs (JD_i ↔ its target resume) score 82–95
+  [ ] Diagonal pairs (JD_i ↔ its target resume) score 90–95 (excellent_match)
   [ ] overall_score = weighted formula result (rounded to nearest integer):
         score = SM*0.35 + ER*0.30 + PR*0.15 + EC*0.10 + KDA*0.10
   [ ] label matches the overall_score range (see label mapping above)
   [ ] JD IDs follow resume numbering (resume_456 → jd_456)
   [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
   [ ] No JD copies verbatim phrases from the resume raw_text
-  [ ] Off-diagonal pairs have varied scores between 40–74 — no score below 40, no "poor_match" label
+  [ ] Off-diagonal pairs have varied scores between 50–79 — no score below 40, no "poor_match" label
+  [ ] At least 2 off-diagonal pairs per JD reach strong_match (75–89)
   [ ] Each label_notes mentions: strongest match reason + most important gap
 
 ================================================================================
