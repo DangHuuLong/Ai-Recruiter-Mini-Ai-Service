@@ -164,7 +164,7 @@ class DatasetValidator:
             self.error(f"Missing file: {path}")
             return records
 
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        for line_number, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), start=1):
             stripped = line.strip()
             if not stripped:
                 self.warning(f"{path}:{line_number} is empty and was skipped")
