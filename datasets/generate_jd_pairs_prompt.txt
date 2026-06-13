@@ -23,8 +23,8 @@ Rules for each JD:
       * Use experience ranges (e.g., "3–6 years", not "exactly 5 years").
       * Add 1–2 adjacent/preferred skills the target resume does not have.
       * Include 2–3 transferable soft skills (e.g., "strong analytical thinking",
-        "comfortable working in agile teams") so off-diagonal pairs can score
-        moderate_match (60-74) instead of always poor_match.
+        "comfortable working in agile teams") so off-diagonal pairs always score
+        at least weak_match (40–59) — never below 40.
   - Domain and level must match the target resume's field and seniority.
   - Design each JD so the diagonal pair scores 82–95.
 
@@ -45,7 +45,7 @@ Rules:
   - Score each pair honestly based on actual resume content vs JD requirements.
   - Aim for score distribution:
       * Diagonal pairs (JD_i ↔ target resume_i): 82–95
-      * Off-diagonal pairs: vary realistically between 15–70
+      * Off-diagonal pairs: vary realistically between 40–74 (minimum 40)
       * Do NOT assign the same low score to all off-diagonal pairs.
 
 ================================================================================
@@ -106,7 +106,10 @@ Label class mapping (from overall_score):
   75–89  → "strong_match"
   60–74  → "moderate_match"
   40–59  → "weak_match"
-  0–39   → "poor_match"
+
+  DO NOT use "poor_match". Scores below 40 are not allowed.
+  If an off-diagonal pair would naturally score below 40, redesign the JD
+  to include broader soft skills so the minimum achievable score is 40.
 
 ================================================================================
 OUTPUT FORMAT
@@ -184,7 +187,7 @@ Verify all of the following before writing your final answer:
   [ ] JD IDs follow resume numbering (resume_456 → jd_456)
   [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
   [ ] No JD copies verbatim phrases from the resume raw_text
-  [ ] Off-diagonal pairs have varied scores — not all the same low number
+  [ ] Off-diagonal pairs have varied scores between 40–74 — no score below 40, no "poor_match" label
   [ ] Each label_notes mentions: strongest match reason + most important gap
 
 ================================================================================
