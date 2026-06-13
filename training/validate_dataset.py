@@ -15,7 +15,8 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import dataclass
+from collections import Counter
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -110,6 +111,7 @@ class DatasetValidator:
     def __init__(self) -> None:
         self.errors: list[str] = []
         self.warnings: list[str] = []
+        self.label_counts: Counter[str] = Counter()
 
     def error(self, message: str) -> None:
         self.errors.append(message)
@@ -279,6 +281,8 @@ class DatasetValidator:
         label = data.get("label")
         if label not in ALLOWED_LABELS:
             self.error(f"{self.location(record)} label must be one of {sorted(ALLOWED_LABELS)}")
+        elif isinstance(label, str):
+            self.label_counts[label] += 1
 
         overall_score = data.get("overall_score")
         if not isinstance(overall_score, int):
@@ -397,6 +401,16 @@ def main() -> int:
         print("Warnings:")
         for warning in validator.warnings:
             print(f"  - {warning}")
+        print()
+
+    if validator.label_counts and not args.quiet:
+        total = sum(validator.label_counts.values())
+        print("Label distribution (CV-JD pairs):")
+        for label in sorted(ALLOWED_LABELS, key=lambda l: -validator.label_counts[l]):
+            count = validator.label_counts[label]
+            pct = count / total * 100 if total else 0
+            print(f"  {label:<20} {count:>4}  ({pct:.1f}%)")
+        print(f"  {'TOTAL':<20} {total:>4}")
         print()
 
     if validator.errors:
