@@ -22,11 +22,10 @@ Rules for each JD:
   - Requirements must be slightly broader than the resume:
       * Use experience ranges (e.g., "3–6 years", not "exactly 5 years").
       * Add 1–2 adjacent/preferred skills the target resume does not have.
-      * MANDATORY: Include 2–3 transferable soft skills (e.g., "strong analytical
-        thinking", "comfortable working in agile teams") so every off-diagonal pair
-        scores ≥ 40. Scores below 40 and "poor_match" labels are FORBIDDEN.
-        If a pair would naturally fall below 40, broaden the JD's soft skill or
-        domain_keywords list until the floor score reaches 40.
+      * Include transferable soft skills (e.g., "strong analytical thinking",
+        "comfortable working in agile teams") to add partial overlap for off-diagonal pairs.
+      * Pairs with a genuine domain mismatch may score below 40 (poor_match). Do NOT
+        artificially inflate scores — reserve poor_match for true mismatches only.
   - Domain and level must match the target resume's field and seniority.
   - Design each JD so the diagonal pair scores **90–95** (targeting excellent_match).
     Craft requirements to align tightly with the target resume's core stack so the
@@ -50,17 +49,20 @@ Rules:
   - Score each pair honestly based on actual resume content vs JD requirements.
   - Aim for score distribution:
       * Diagonal pairs (JD_i ↔ target resume_i): **90–95** (excellent_match preferred)
-      * Off-diagonal pairs: spread EVENLY across all three off-diagonal ranges.
-        For each JD, the 4 off-diagonal pairs MUST cover all three label ranges:
-          - weak_match   (40–59): exactly 1–2 pairs  — mismatched domain or missing core stack
-          - moderate_match (60–74): exactly 1–2 pairs — partial overlap, transferable skills
-          - strong_match  (75–89): exactly 1–2 pairs  — strong domain overlap, only minor gaps
-        No label range may have 0 off-diagonal pairs for a given JD.
-      * Do NOT assign the same score to all off-diagonal pairs.
+      * Off-diagonal pairs: SKEW toward strong_match. Per JD, the 4 off-diagonal pairs
+        should follow this distribution:
+          - poor_match    (0–39):  0–1 pairs — true domain mismatch, missing core stack entirely
+          - weak_match   (40–59): 0–1 pairs — mismatched domain or few transferable skills
+          - moderate_match (60–74): 1 pair   — partial overlap, transferable skills present
+          - strong_match  (75–89): 1–2 pairs — strong domain overlap, only minor gaps
+          - excellent_match (90–100): 0–1 pairs — only if the resume genuinely qualifies
+        At least 1 strong_match off-diagonal per JD. Do NOT assign the same score to all
+        off-diagonal pairs.
       * Target per batch of 25 pairs (20 off-diagonal + 5 diagonal):
-          ≥6 weak_match (off-diagonal), ≥6 moderate_match (off-diagonal),
-          ≥6 strong_match (off-diagonal), exactly 5 excellent_match (diagonal only).
-        Goal: all four labels at roughly 25% of the 25-pair batch.
+          ≥2 poor_match (off-diagonal), ≥3 weak_match (off-diagonal),
+          ≥4 moderate_match (off-diagonal), ≥8 strong_match (off-diagonal),
+          ≥5 excellent_match (diagonal; off-diagonal excellent only when truly warranted).
+        Goal: strong_match + excellent_match ≥ 50% of the 25-pair batch.
 
 ================================================================================
 SCORING RUBRIC  (rubric_v0.2)
@@ -120,10 +122,10 @@ Label class mapping (from overall_score):
   75–89  → "strong_match"
   60–74  → "moderate_match"
   40–59  → "weak_match"
+  0–39   → "poor_match"
 
-  *** "poor_match" DOES NOT EXIST in this rubric. ***
-  *** Scores below 40 are FORBIDDEN. If any pair scores < 40, redesign the JD. ***
-  Only four labels are valid: weak_match, moderate_match, strong_match, excellent_match.
+  All five labels are valid. Use poor_match only for genuine mismatches, not as a
+  default floor — scores must reflect actual resume-JD alignment.
 
 ================================================================================
 OUTPUT FORMAT
@@ -201,10 +203,11 @@ Verify all of the following before writing your final answer:
   [ ] JD IDs follow resume numbering (resume_456 → jd_456)
   [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
   [ ] No JD copies verbatim phrases from the resume raw_text
-  [ ] No score below 40 and no "poor_match" label anywhere in the output
-  [ ] Each JD has ≥1 off-diagonal pair in each label range: weak, moderate, strong
-  [ ] Batch off-diagonal totals: ≥6 weak_match, ≥6 moderate_match, ≥6 strong_match
-  [ ] All four label counts across 25 pairs are approximately equal (~25% each)
+  [ ] poor_match (score < 40) is used only for genuine domain mismatches (≤1 per JD)
+  [ ] Each JD has ≥1 strong_match off-diagonal pair
+  [ ] Batch off-diagonal totals: ≥2 poor_match, ≥3 weak_match, ≥4 moderate_match,
+      ≥8 strong_match; off-diagonal excellent only when truly warranted
+  [ ] strong_match + excellent_match ≥ 50% of all 25 pairs
   [ ] Each label_notes mentions: strongest match reason + most important gap
 
 ================================================================================
