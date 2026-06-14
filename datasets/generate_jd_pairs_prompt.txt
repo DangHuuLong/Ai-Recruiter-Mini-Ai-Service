@@ -48,12 +48,16 @@ Rules:
   - Score each pair honestly based on actual resume content vs JD requirements.
   - Aim for score distribution:
       * Diagonal pairs (JD_i ↔ target resume_i): **90–95** (excellent_match preferred)
-      * Off-diagonal pairs: vary realistically between 50–79 (minimum 40).
-        Prefer moderate_match (60–74) and strong_match (75–79) for resumes with
-        overlapping domains; use weak_match (50–59) only for clearly mismatched domains.
-      * Do NOT assign the same low score to all off-diagonal pairs.
-      * At least 2 off-diagonal pairs per JD should reach strong_match (75–89) to
-        ensure the model learns fine-grained discrimination, not just excellent vs. weak.
+      * Off-diagonal pairs: vary realistically between 40–89.
+        PRIMARY TARGET — moderate_match (60–74): at least 2 off-diagonal pairs per JD
+        MUST land in this range. Design JDs with some requirements the off-diagonal
+        resumes partially meet (shared domain, transferable skills, adjacent tech).
+        Use strong_match (75–89) for at most 1 off-diagonal pair per JD (only when
+        domain overlap is genuinely high). Use weak_match (40–59) for clearly
+        mismatched domains; do NOT overuse it.
+      * Do NOT assign the same score to all off-diagonal pairs.
+      * Target per batch of 25 pairs: ≥10 moderate_match, ≤5 strong_match (off-diagonal),
+        ≤5 weak_match.
 
 ================================================================================
 SCORING RUBRIC  (rubric_v0.2)
@@ -194,8 +198,10 @@ Verify all of the following before writing your final answer:
   [ ] JD IDs follow resume numbering (resume_456 → jd_456)
   [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
   [ ] No JD copies verbatim phrases from the resume raw_text
-  [ ] Off-diagonal pairs have varied scores between 50–79 — no score below 40, no "poor_match" label
-  [ ] At least 2 off-diagonal pairs per JD reach strong_match (75–89)
+  [ ] Off-diagonal pairs have varied scores between 40–89 — no score below 40, no "poor_match" label
+  [ ] At least 2 off-diagonal pairs per JD are moderate_match (60–74)
+  [ ] At most 1 off-diagonal pair per JD is strong_match (75–89)
+  [ ] Total moderate_match labels in the 25-pair batch ≥ 10
   [ ] Each label_notes mentions: strongest match reason + most important gap
 
 ================================================================================
