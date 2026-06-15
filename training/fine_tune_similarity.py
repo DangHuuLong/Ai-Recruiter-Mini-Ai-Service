@@ -95,7 +95,7 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
         raise FileNotFoundError(f"Missing JSONL file: {path}")
 
     records: list[dict[str, Any]] = []
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    for line_number, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), start=1):
         stripped = line.strip()
         if not stripped:
             continue
