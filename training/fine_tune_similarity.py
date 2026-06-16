@@ -429,24 +429,46 @@ def main() -> int:
         from datasets import Dataset as _HFDataset
         from sentence_transformers import SentenceTransformerTrainer
         from sentence_transformers.training_args import SentenceTransformerTrainingArguments
+        from sentence_transformers.sentence_transformer.evaluation import EmbeddingSimilarityEvaluator
 
         _train_dataset = _HFDataset.from_dict({
             "sentence1": [e.resume_text for e in train_examples],
             "sentence2": [e.job_description_text for e in train_examples],
             "label": [e.target_score / 100.0 for e in train_examples],
         })
+        _val_dataset = _HFDataset.from_dict({
+            "sentence1": [e.resume_text for e in validation_examples],
+            "sentence2": [e.job_description_text for e in validation_examples],
+            "label": [e.target_score / 100.0 for e in validation_examples],
+        })
+        _evaluator = EmbeddingSimilarityEvaluator(
+            sentences1=_val_dataset["sentence1"],
+            sentences2=_val_dataset["sentence2"],
+            scores=_val_dataset["label"],
+            name="val",
+        )
         _training_args = SentenceTransformerTrainingArguments(
             output_dir=str(output_dir),
             num_train_epochs=args.epochs,
             per_device_train_batch_size=args.batch_size,
+            per_device_eval_batch_size=args.batch_size * 2,
             warmup_steps=warmup_steps,
             learning_rate=args.learning_rate,
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_val_spearman_cosine",
+            greater_is_better=True,
+            save_total_limit=2,
+            fp16=True,
         )
         SentenceTransformerTrainer(
             model=model,
             args=_training_args,
             train_dataset=_train_dataset,
+            eval_dataset=_val_dataset,
             loss=train_loss,
+            evaluator=_evaluator,
         ).train()
         model.save_pretrained(str(output_dir))
 
