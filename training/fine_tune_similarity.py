@@ -429,7 +429,7 @@ def main() -> int:
         from datasets import Dataset as _HFDataset
         from sentence_transformers import SentenceTransformerTrainer
         from sentence_transformers.training_args import SentenceTransformerTrainingArguments
-        from sentence_transformers.sentence_transformer.evaluation import EmbeddingSimilarityEvaluator
+        from sentence_transformers.evaluation import EmbeddingSimilarityEvaluator
 
         _train_dataset = _HFDataset.from_dict({
             "sentence1": [e.resume_text for e in train_examples],
