@@ -95,7 +95,7 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
         raise FileNotFoundError(f"Missing JSONL file: {path}")
 
     records: list[dict[str, Any]] = []
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    for line_number, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), start=1):
         stripped = line.strip()
         if not stripped:
             continue
@@ -429,24 +429,40 @@ def main() -> int:
         from datasets import Dataset as _HFDataset
         from sentence_transformers import SentenceTransformerTrainer
         from sentence_transformers.training_args import SentenceTransformerTrainingArguments
+        from sentence_transformers.evaluation import EmbeddingSimilarityEvaluator
 
         _train_dataset = _HFDataset.from_dict({
             "sentence1": [e.resume_text for e in train_examples],
             "sentence2": [e.job_description_text for e in train_examples],
             "label": [e.target_score / 100.0 for e in train_examples],
         })
+        _evaluator = EmbeddingSimilarityEvaluator(
+            sentences1=[e.resume_text for e in validation_examples],
+            sentences2=[e.job_description_text for e in validation_examples],
+            scores=[e.target_score / 100.0 for e in validation_examples],
+            name="val",
+        )
         _training_args = SentenceTransformerTrainingArguments(
             output_dir=str(output_dir),
             num_train_epochs=args.epochs,
             per_device_train_batch_size=args.batch_size,
+            per_device_eval_batch_size=args.batch_size * 2,
             warmup_steps=warmup_steps,
             learning_rate=args.learning_rate,
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_val_spearman_cosine",
+            greater_is_better=True,
+            save_total_limit=2,
+            fp16=True,
         )
         SentenceTransformerTrainer(
             model=model,
             args=_training_args,
             train_dataset=_train_dataset,
             loss=train_loss,
+            evaluator=_evaluator,
         ).train()
         model.save_pretrained(str(output_dir))
 

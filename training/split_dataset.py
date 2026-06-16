@@ -80,7 +80,7 @@ class DatasetSplitPlanner:
         pairs: list[PairRecord] = []
         seen_ids: set[str] = set()
 
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        for line_number, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), start=1):
             stripped = line.strip()
             if not stripped:
                 self.warnings.append(f"{path}:{line_number} is empty and was skipped")

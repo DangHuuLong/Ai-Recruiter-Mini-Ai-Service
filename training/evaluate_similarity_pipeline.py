@@ -40,7 +40,7 @@ class EvalSample:
 
 def _load_jsonl(path: Path) -> list[dict[str, Any]]:
     records = []
-    with path.open(encoding="utf-8") as f:
+    with path.open(encoding="utf-8-sig") as f:
         for line in f:
             line = line.strip()
             if line:
