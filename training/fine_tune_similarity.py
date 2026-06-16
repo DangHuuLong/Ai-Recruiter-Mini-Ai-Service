@@ -436,15 +436,10 @@ def main() -> int:
             "sentence2": [e.job_description_text for e in train_examples],
             "label": [e.target_score / 100.0 for e in train_examples],
         })
-        _val_dataset = _HFDataset.from_dict({
-            "sentence1": [e.resume_text for e in validation_examples],
-            "sentence2": [e.job_description_text for e in validation_examples],
-            "label": [e.target_score / 100.0 for e in validation_examples],
-        })
         _evaluator = EmbeddingSimilarityEvaluator(
-            sentences1=_val_dataset["sentence1"],
-            sentences2=_val_dataset["sentence2"],
-            scores=_val_dataset["label"],
+            sentences1=[e.resume_text for e in validation_examples],
+            sentences2=[e.job_description_text for e in validation_examples],
+            scores=[e.target_score / 100.0 for e in validation_examples],
             name="val",
         )
         _training_args = SentenceTransformerTrainingArguments(
