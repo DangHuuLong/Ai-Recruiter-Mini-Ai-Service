@@ -466,7 +466,6 @@ def main() -> int:
             model=model,
             args=_training_args,
             train_dataset=_train_dataset,
-            eval_dataset=_val_dataset,
             loss=train_loss,
             evaluator=_evaluator,
         ).train()
