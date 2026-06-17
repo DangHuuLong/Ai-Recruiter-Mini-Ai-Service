@@ -152,6 +152,9 @@ def fine_tune(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    def _epoch_callback(score: float, epoch: int, steps: int) -> None:
+        print(f"  epoch {epoch:>2}/{epochs}  step {steps:>5}  val_spearman={score:.4f}", flush=True)
+
     model.fit(
         train_dataloader=train_dataloader,
         evaluator=evaluator,
@@ -162,7 +165,9 @@ def fine_tune(
         output_path=str(output_dir),
         loss_fct=torch.nn.MSELoss(),
         activation_fct=torch.nn.Sigmoid(),
-        show_progress_bar=True,
+        use_amp=True,
+        show_progress_bar=False,
+        callback=_epoch_callback,
     )
 
     print("\nFine-tuning complete.")
