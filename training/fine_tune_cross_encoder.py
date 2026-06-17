@@ -105,7 +105,7 @@ def _evaluate_split(
     true_scores = [r["score"] for r in records]
 
     preds = model.predict(pairs, batch_size=32, show_progress_bar=True)
-    return _compute_metrics(list(preds), true_scores)
+    return _compute_metrics([float(p) for p in preds], true_scores)
 
 
 # ── training ──────────────────────────────────────────────────────────────────
