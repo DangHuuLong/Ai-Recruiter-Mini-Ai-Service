@@ -153,7 +153,10 @@ def fine_tune(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     def _epoch_callback(score: float, epoch: int, steps: int) -> None:
-        print(f"  epoch {epoch:>2}/{epochs}  step {steps:>5}  val_spearman={score:.4f}", flush=True)
+        if steps == -1:
+            print(f"  [done]  val_spearman={score:.4f}", flush=True)
+        else:
+            print(f"  epoch {epoch + 1:>2}/{epochs}  step {steps:>5}  val_spearman={score:.4f}", flush=True)
 
     model.fit(
         train_dataloader=train_dataloader,
