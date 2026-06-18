@@ -168,7 +168,28 @@ Report saved at: `artifacts/reports/cross_encoder_pipeline_v0.1.json`
 
 ---
 
-## 7. Model Artifact
+## 7. Calibration Experiment
+
+After fine-tuning, an isotonic regression calibrator was fitted on the validation set to test whether post-hoc score adjustment could improve label accuracy.
+
+**Method**: `sklearn.isotonic.IsotonicRegression(out_of_bounds="clip")` fitted on 1,050 validation pairs. Calibration script: `training/calibrate_cross_encoder.py`.
+
+| Approach | MAE | RMSE | Label Acc |
+|----------|-----|------|-----------|
+| Cross-encoder raw | 10.0856 | 14.7551 | **58.38%** |
+| Cross-encoder calibrated | 9.8689 | 14.3406 | 57.33% ↓ |
+| 2-stage pipeline raw | 9.9292 | 13.9806 | **58.19%** |
+| 2-stage pipeline calibrated | 9.9164 | 14.0587 | 56.67% ↓ |
+
+**Finding**: Calibration reduced MAE marginally but lowered label accuracy on both validation (53.05% → 52.48%) and test (58.38% → 57.33%) splits.
+
+**Root cause**: Isotonic regression minimises squared error in score space — it has no knowledge of the discrete bucket boundaries (40 / 60 / 75 / 90). Scores near boundaries were shifted in directions that slightly reduced MAE but caused net-negative bucket crossings. Because the model was fine-tuned directly with `label = score/100` as the regression target, `sigmoid(logit)×100` is already reasonably calibrated to the true score distribution, leaving little room for isotonic calibration to help.
+
+**Decision**: Raw cross-encoder scores (`sigmoid(logit)×100`) are used in the final pipeline. The calibration infrastructure (`training/calibrate_cross_encoder.py` + `models/cross-encoder-cv-jd-v0.1/calibrator.pkl`) is retained — future, larger models may benefit more from post-hoc calibration if their raw output is less well-calibrated.
+
+---
+
+## 8. Model Artifact
 
 The final model is saved at `models/cross-encoder-cv-jd-v0.1/`.
 
@@ -179,6 +200,7 @@ The final model is saved at `models/cross-encoder-cv-jd-v0.1/`.
 | `tokenizer.json` + `tokenizer_config.json` | Tokenizer |
 | `special_tokens_map.json` | Special token definitions |
 | `CECorrelationEvaluator_val_results.csv` | Per-epoch Spearman/Pearson on validation set |
+| `calibrator.pkl` | Isotonic regression calibrator (see Section 7 — not used in final pipeline) |
 
 To use in inference:
 
@@ -195,22 +217,21 @@ def score(cv_text: str, jd_text: str) -> float:
 
 ---
 
-## 8. Limitations
+## 9. Limitations
 
 - **Recall ceiling**: 47.81% recall@50 for all pairs means the pipeline falls back to the weaker bi-encoder for ~52% of test pairs. Increasing top-K trades recall improvement against cross-encoder inference cost.
-- **Uncalibrated scores**: `sigmoid(logit) × 100` is not explicitly calibrated against the human-labeled score distribution. Score magnitudes may differ from the bi-encoder's cosine-based scores, making the fallback blend discontinuous.
-- **Inference speed**: The cross-encoder scores one pair at a time (no batch-level shortcut). At top-K=50 with 210 JDs, this is 10,500 cross-encoder calls versus 420 bi-encoder calls — roughly 25× slower.
+- **Score discontinuity at fallback boundary**: Reranked pairs use `sigmoid(logit)×100` while fallback pairs use `cosine×100` — the two score scales are not aligned, which may cause inconsistent rankings across the boundary.
+- **Inference speed**: The cross-encoder scores one pair at a time. At top-K=50 with 210 JDs, this is 10,500 cross-encoder calls versus 420 bi-encoder calls — roughly 25× slower.
 - **English-only**: Inherits the same language limitation as the bi-encoder; Vietnamese or mixed-language CVs/JDs may degrade performance.
-- **Label accuracy plateau**: 58% label accuracy is significantly better than bi-encoder (43%), but still means ~42% of pairs are assigned the wrong label bucket. The score rubric boundaries (40/60/75/90) may not align well with the model's score distribution.
+- **Label accuracy plateau**: 58% label accuracy still means ~42% of pairs are assigned the wrong label bucket. The score rubric boundaries (40/60/75/90) may not align well with the model's internal score distribution.
+- **Isotonic calibration ineffective**: Post-hoc score calibration did not improve label accuracy for this model (see Section 7). The fine-tuning objective already produced well-calibrated raw scores.
 
 ---
 
-## 9. Next Steps
+## 10. Next Steps
 
 | Action | Priority |
 |--------|----------|
-| Calibrate cross-encoder scores against validation score distribution | High |
 | Tune top-K threshold (try 30, 75, 100) and measure recall-vs-latency trade-off | High |
 | Fine-tune a larger cross-encoder (`ms-marco-MiniLM-L-12-v2`, 12 layers) | Medium |
-| Add score-level calibration (Platt scaling or isotonic regression) | Medium |
 | Explore ensemble: average bi-encoder and cross-encoder scores for reranked pairs | Low |
