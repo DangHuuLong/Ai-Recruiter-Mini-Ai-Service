@@ -48,8 +48,8 @@ class BoundaryAwareLoss(torch.nn.Module):
         ordinal = preds.new_zeros(1)
         for b in self._BOUNDARIES:
             target = (labels >= b).float()
-            pred_prob = torch.sigmoid(20.0 * (preds - b))  # soft threshold at boundary
-            ordinal = ordinal + F.binary_cross_entropy(pred_prob, target)
+            pred_logit = 20.0 * (preds - b)
+            ordinal = ordinal + F.binary_cross_entropy_with_logits(pred_logit, target)
         return mse + self._ALPHA * ordinal / len(self._BOUNDARIES)
 
 
