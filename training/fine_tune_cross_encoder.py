@@ -53,6 +53,29 @@ class BoundaryAwareLoss(torch.nn.Module):
         return mse + self._ALPHA * ordinal / len(self._BOUNDARIES)
 
 
+class CELabelAccEvaluator:
+    def __init__(self, sentence_pairs: list, labels_0_100: list[float], name: str = ""):
+        self.sentence_pairs = sentence_pairs
+        self.labels_0_100 = labels_0_100
+        self.name = name
+
+    @classmethod
+    def from_input_examples(cls, examples, name: str = "") -> "CELabelAccEvaluator":
+        return cls(
+            sentence_pairs=[ex.texts for ex in examples],
+            labels_0_100=[ex.label * 100 for ex in examples],
+            name=name,
+        )
+
+    def __call__(self, model, output_path=None, epoch: int = -1, steps: int = -1) -> float:
+        preds = model.predict(self.sentence_pairs, batch_size=32, show_progress_bar=False)
+        pred_100 = [float(p) * 100 for p in preds]
+        return sum(
+            1 for p, t in zip(pred_100, self.labels_0_100)
+            if _label_for_score(p) == _label_for_score(t)
+        ) / len(pred_100)
+
+
 # ── label helpers (mirrors evaluate_similarity_pipeline.py) ──────────────────
 
 def _label_for_score(score: float) -> str:
@@ -146,6 +169,7 @@ def fine_tune(
     max_eval_samples: int | None,
     report_path: Path | None,
     loss_type: str = "mse",
+    evaluator_type: str = "spearman",
 ) -> None:
     from sentence_transformers import CrossEncoder
     from sentence_transformers.cross_encoder.evaluation import CECorrelationEvaluator
@@ -157,6 +181,7 @@ def fine_tune(
     print(f"Data dir   : {data_dir}")
     print(f"Output dir : {output_dir}")
     print(f"Loss       : {loss_type}  ({loss_fct.__class__.__name__})")
+    print(f"Evaluator  : {evaluator_type}")
     print(f"Epochs     : {epochs}  |  Batch size: {batch_size}  |  Max length: {max_length}\n")
 
     train_examples = _load_examples(data_dir / "cross_encoder_train.jsonl", max_train_samples)
@@ -176,15 +201,20 @@ def fine_tune(
 
     train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=batch_size)
 
-    evaluator = CECorrelationEvaluator.from_input_examples(val_examples, name="val")
+    if evaluator_type == "label_acc":
+        evaluator = CELabelAccEvaluator.from_input_examples(val_examples, name="val")
+    else:
+        evaluator = CECorrelationEvaluator.from_input_examples(val_examples, name="val")
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    eval_metric = "label_acc" if evaluator_type == "label_acc" else "spearman"
+
     def _epoch_callback(score: float, epoch: int, steps: int) -> None:
         if steps == -1:
-            print(f"  [done]  val_spearman={score:.4f}", flush=True)
+            print(f"  [done]  val_{eval_metric}={score:.4f}", flush=True)
         else:
-            print(f"  epoch {epoch + 1:>2}/{epochs}  step {steps:>5}  val_spearman={score:.4f}", flush=True)
+            print(f"  epoch {epoch + 1:>2}/{epochs}  step {steps:>5}  val_{eval_metric}={score:.4f}", flush=True)
 
     model.fit(
         train_dataloader=train_dataloader,
@@ -223,6 +253,7 @@ def fine_tune(
         report = {
             "base_model": base_model,
             "loss": loss_type,
+            "evaluator": evaluator_type,
             "epochs": epochs,
             "batch_size": batch_size,
             "max_length": max_length,
@@ -285,6 +316,12 @@ def main() -> None:
         help="mse: standard MSELoss (v0.1/v0.2); boundary: MSE + ordinal BCE at rubric boundaries (v0.3+)",
     )
     parser.add_argument(
+        "--evaluator",
+        choices=["spearman", "label_acc"],
+        default="spearman",
+        dest="evaluator",
+    )
+    parser.add_argument(
         "--max-train-samples",
         type=int,
         default=None,
@@ -312,6 +349,7 @@ def main() -> None:
         max_eval_samples=args.max_eval_samples,
         report_path=args.report_path,
         loss_type=args.loss,
+        evaluator_type=args.evaluator,
     )
 
 
