@@ -90,6 +90,21 @@ def _sigmoid(x: float) -> float:
     return 1.0 / (1.0 + math.exp(-max(-500.0, min(500.0, x))))
 
 
+def _load_calibrator(path: str | None) -> Any:
+    """Load a fitted isotonic calibrator from path, or return None if not found."""
+    import pickle
+
+    if not path:
+        return None
+    p = Path(path)
+    if not p.exists():
+        return None
+    with p.open("rb") as f:
+        cal = pickle.load(f)
+    print(f"  [calibrator loaded from {p}]")
+    return cal
+
+
 # ── Stage 1: Bi-encoder ───────────────────────────────────────────────────────
 
 def run_biencoder(
@@ -284,7 +299,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--cross-encoder",
-        default="cross-encoder/ms-marco-MiniLM-L-6-v2",
+        default="models/cross-encoder-cv-jd-v0.1",
         dest="cross_encoder",
     )
     parser.add_argument("--top-k", type=int, default=50, dest="top_k")
@@ -315,6 +330,16 @@ def main() -> None:
         action="store_true",
         dest="skip_ce",
         help="Only run bi-encoder + recall@K (skips cross-encoder, fast)",
+    )
+    parser.add_argument(
+        "--calibrator",
+        default=None,
+        dest="calibrator",
+        help=(
+            "Path to calibrator.pkl. "
+            "If omitted, auto-detects <cross_encoder_dir>/calibrator.pkl. "
+            "Pass 'none' to disable."
+        ),
     )
     args = parser.parse_args()
 
@@ -358,7 +383,7 @@ def main() -> None:
         return
 
     # ── Stage 2: Cross-encoder on all test pairs ─────────────────────────────
-    print("── Cross-encoder only (pretrained, all pairs) ───────────────────")
+    print("── Cross-encoder only (all pairs) ───────────────────────────────")
     ce_scores = run_crossencoder(
         args.cross_encoder, samples,
         max_length=args.max_length,
@@ -367,14 +392,35 @@ def main() -> None:
     ce_preds = [ce_scores[s.pair_id] for s in samples]
     ce_metrics = compute_metrics(ce_preds, true_scores)
     print(
-        f"  MAE={ce_metrics.mae:.4f}  RMSE={ce_metrics.rmse:.4f}"
+        f"  raw  MAE={ce_metrics.mae:.4f}  RMSE={ce_metrics.rmse:.4f}"
         f"  LabelAcc={ce_metrics.label_accuracy:.4f}\n"
     )
 
+    # ── Optional calibration ──────────────────────────────────────────────────
+    cal_path = (
+        None if args.calibrator == "none"
+        else args.calibrator or str(Path(args.cross_encoder) / "calibrator.pkl")
+    )
+    calibrator = _load_calibrator(cal_path)
+    if calibrator is not None:
+        cal_raw = np.array([ce_scores[s.pair_id] for s in samples])
+        cal_vals = calibrator.predict(cal_raw).tolist()
+        ce_scores_cal: dict[str, float] = {s.pair_id: float(v) for s, v in zip(samples, cal_vals)}
+        ce_preds_cal = [ce_scores_cal[s.pair_id] for s in samples]
+        ce_metrics_cal = compute_metrics(ce_preds_cal, true_scores)
+        print(
+            f"  cal  MAE={ce_metrics_cal.mae:.4f}  RMSE={ce_metrics_cal.rmse:.4f}"
+            f"  LabelAcc={ce_metrics_cal.label_accuracy:.4f}\n"
+        )
+    else:
+        ce_scores_cal = ce_scores
+        ce_metrics_cal = None
+
     # ── 2-stage pipeline ─────────────────────────────────────────────────────
-    print(f"── 2-stage pipeline (bi-top-{args.top_k} → cross-encoder rerank) ──────")
+    cal_label = " cal" if ce_metrics_cal is not None else ""
+    print(f"── 2-stage pipeline (bi-top-{args.top_k} → cross-encoder rerank{cal_label}) ──")
     pipeline_scores, n_reranked = build_pipeline_scores(
-        samples, bi_scores, ce_scores, top_k_map
+        samples, bi_scores, ce_scores_cal, top_k_map
     )
     pipeline_preds = [pipeline_scores[s.pair_id] for s in samples]
     pipeline_metrics = compute_metrics(pipeline_preds, true_scores)
@@ -389,24 +435,36 @@ def main() -> None:
 
     # ── Summary table ─────────────────────────────────────────────────────────
     print("── Summary ──────────────────────────────────────────────────────")
-    _print_metrics_table([
+    table_rows: list[tuple[str, Any]] = [
         ("bi-encoder only (v0.3)", bi_metrics),
-        ("cross-encoder only (pretrained)", ce_metrics),
-        (f"2-stage pipeline (top-{args.top_k})", pipeline_metrics),
-    ])
-    print(
-        f"  * cross-encoder scores: sigmoid(logit)×100, uncalibrated.\n"
-        f"    Use recall@{args.top_k} as the primary quality indicator for stage 1.\n"
-    )
+        ("cross-encoder raw", ce_metrics),
+    ]
+    if ce_metrics_cal is not None:
+        table_rows.append(("cross-encoder calibrated", ce_metrics_cal))
+    table_rows.append((f"2-stage pipeline (top-{args.top_k}){cal_label}", pipeline_metrics))
+    _print_metrics_table(table_rows)
+    if ce_metrics_cal is None:
+        print(
+            f"  * cross-encoder scores: sigmoid(logit)×100, uncalibrated.\n"
+            f"    Run: python -m training.calibrate_cross_encoder\n"
+        )
 
     # ── Save report ───────────────────────────────────────────────────────────
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
+        ce_cal_entry: dict[str, Any] = {
+            "mae": ce_metrics_cal.mae,
+            "rmse": ce_metrics_cal.rmse,
+            "label_accuracy": ce_metrics_cal.label_accuracy,
+            "n_samples": ce_metrics_cal.n_samples,
+            "calibration": "isotonic_regression",
+        } if ce_metrics_cal is not None else {}
         report: dict[str, Any] = {
             "generated_at": datetime.utcnow().isoformat() + "Z",
             "config": {
                 "biencoder": args.biencoder,
                 "cross_encoder": args.cross_encoder,
+                "calibrator": cal_path,
                 "top_k": args.top_k,
                 "max_length": args.max_length,
             },
@@ -418,20 +476,25 @@ def main() -> None:
                     "label_accuracy": bi_metrics.label_accuracy,
                     "n_samples": bi_metrics.n_samples,
                 },
-                "cross_encoder_only": {
+                "cross_encoder_raw": {
                     "mae": ce_metrics.mae,
                     "rmse": ce_metrics.rmse,
                     "label_accuracy": ce_metrics.label_accuracy,
                     "n_samples": ce_metrics.n_samples,
                     "calibration": "sigmoid(logit)*100",
                 },
+                **({"cross_encoder_calibrated": ce_cal_entry} if ce_cal_entry else {}),
                 "pipeline": {
                     "mae": pipeline_metrics.mae,
                     "rmse": pipeline_metrics.rmse,
                     "label_accuracy": pipeline_metrics.label_accuracy,
                     "n_samples": pipeline_metrics.n_samples,
                     "n_reranked": n_reranked,
-                    "calibration": "sigmoid(logit)*100 for reranked, cosine*100 for fallback",
+                    "calibration": (
+                        "isotonic_regression for reranked, cosine*100 for fallback"
+                        if ce_metrics_cal is not None
+                        else "sigmoid(logit)*100 for reranked, cosine*100 for fallback"
+                    ),
                 },
             },
         }
