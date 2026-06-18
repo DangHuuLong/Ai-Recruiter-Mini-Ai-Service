@@ -27,6 +27,30 @@ from pathlib import Path
 from typing import Any
 
 import torch
+import torch.nn.functional as F
+
+
+# ── loss functions ────────────────────────────────────────────────────────────
+
+class BoundaryAwareLoss(torch.nn.Module):
+    """MSE + ordinal BCE at the 5-bucket boundaries (40/60/75/90).
+
+    preds and labels are both in [0, 1] because activation_fct=Sigmoid is
+    applied by CrossEncoder.fit() before this loss receives them.
+    The ordinal component penalises predictions that land on the wrong side
+    of a rubric boundary, directly targeting label accuracy.
+    """
+    _BOUNDARIES = [0.40, 0.60, 0.75, 0.90]
+    _ALPHA = 0.3  # weight of ordinal term relative to MSE
+
+    def forward(self, preds: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
+        mse = F.mse_loss(preds, labels)
+        ordinal = preds.new_zeros(1)
+        for b in self._BOUNDARIES:
+            target = (labels >= b).float()
+            pred_prob = torch.sigmoid(20.0 * (preds - b))  # soft threshold at boundary
+            ordinal = ordinal + F.binary_cross_entropy(pred_prob, target)
+        return mse + self._ALPHA * ordinal / len(self._BOUNDARIES)
 
 
 # ── label helpers (mirrors evaluate_similarity_pipeline.py) ──────────────────
@@ -121,14 +145,18 @@ def fine_tune(
     max_train_samples: int | None,
     max_eval_samples: int | None,
     report_path: Path | None,
+    loss_type: str = "mse",
 ) -> None:
     from sentence_transformers import CrossEncoder
     from sentence_transformers.cross_encoder.evaluation import CECorrelationEvaluator
     from torch.utils.data import DataLoader
 
+    loss_fct = BoundaryAwareLoss() if loss_type == "boundary" else torch.nn.MSELoss()
+
     print(f"Base model : {base_model}")
     print(f"Data dir   : {data_dir}")
     print(f"Output dir : {output_dir}")
+    print(f"Loss       : {loss_type}  ({loss_fct.__class__.__name__})")
     print(f"Epochs     : {epochs}  |  Batch size: {batch_size}  |  Max length: {max_length}\n")
 
     train_examples = _load_examples(data_dir / "cross_encoder_train.jsonl", max_train_samples)
@@ -166,7 +194,7 @@ def fine_tune(
         evaluation_steps=steps_per_epoch,
         save_best_model=True,
         output_path=str(output_dir),
-        loss_fct=torch.nn.MSELoss(),
+        loss_fct=loss_fct,
         activation_fct=torch.nn.Sigmoid(),
         use_amp=True,
         show_progress_bar=False,
@@ -194,6 +222,7 @@ def fine_tune(
         report_path.parent.mkdir(parents=True, exist_ok=True)
         report = {
             "base_model": base_model,
+            "loss": loss_type,
             "epochs": epochs,
             "batch_size": batch_size,
             "max_length": max_length,
@@ -250,6 +279,12 @@ def main() -> None:
         help="Fraction of total steps used for linear warmup",
     )
     parser.add_argument(
+        "--loss",
+        choices=["mse", "boundary"],
+        default="mse",
+        help="mse: standard MSELoss (v0.1/v0.2); boundary: MSE + ordinal BCE at rubric boundaries (v0.3+)",
+    )
+    parser.add_argument(
         "--max-train-samples",
         type=int,
         default=None,
@@ -276,6 +311,7 @@ def main() -> None:
         max_train_samples=args.max_train_samples,
         max_eval_samples=args.max_eval_samples,
         report_path=args.report_path,
+        loss_type=args.loss,
     )
 
 
