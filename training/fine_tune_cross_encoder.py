@@ -272,7 +272,7 @@ def fine_tune(
         save_best_model=True,
         output_path=str(output_dir),
         loss_fct=loss_fct,
-        activation_fct=None if is_classification else torch.nn.Sigmoid(),
+        activation_fct=torch.nn.Identity() if is_classification else torch.nn.Sigmoid(),
         use_amp=True,
         show_progress_bar=False,
         callback=_epoch_callback,
