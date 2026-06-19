@@ -239,6 +239,7 @@ def fine_tune(
         num_labels=5 if is_classification else 1,
         max_length=max_length,
         default_activation_function=torch.nn.Softmax(dim=-1) if is_classification else torch.nn.Sigmoid(),
+        automodel_args={"ignore_mismatched_sizes": True},
     )
 
     steps_per_epoch = math.ceil(len(train_examples) / batch_size)
