@@ -68,7 +68,13 @@ class CELabelAccEvaluator:
         )
 
     def __call__(self, model, output_path=None, epoch: int = -1, steps: int = -1) -> float:
+        import numpy as _np
         preds = model.predict(self.sentence_pairs, batch_size=32, show_progress_bar=False)
+        arr = _np.asarray(preds)
+        if arr.ndim == 2:
+            pred_classes = arr.argmax(axis=1).tolist()
+            true_classes = [_score_to_class_index(t) for t in self.labels_0_100]
+            return sum(1 for p, t in zip(pred_classes, true_classes) if p == t) / len(pred_classes)
         pred_100 = [float(p) * 100 for p in preds]
         return sum(
             1 for p, t in zip(pred_100, self.labels_0_100)
@@ -88,6 +94,31 @@ def _label_for_score(score: float) -> str:
     if score >= 40.0:
         return "weak_match"
     return "poor_match"
+
+
+def _score_to_class_index(score_0_100: float) -> int:
+    if score_0_100 >= 90.0:
+        return 4
+    if score_0_100 >= 75.0:
+        return 3
+    if score_0_100 >= 60.0:
+        return 2
+    if score_0_100 >= 40.0:
+        return 1
+    return 0
+
+
+_CLASS_CENTERS = [20.0, 50.0, 67.5, 82.5, 95.0]
+
+
+class ClassificationLoss(torch.nn.Module):
+    def forward(self, preds: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
+        class_targets = torch.tensor(
+            [_score_to_class_index(float(l) * 100) for l in labels],
+            dtype=torch.long,
+            device=preds.device,
+        )
+        return F.cross_entropy(preds, class_targets)
 
 
 # ── data loading ──────────────────────────────────────────────────────────────
@@ -118,6 +149,14 @@ def _load_raw(path: Path, max_samples: int | None = None) -> list[dict[str, Any]
 
 
 # ── evaluation ────────────────────────────────────────────────────────────────
+
+def _preds_to_score_100(preds) -> list[float]:
+    import numpy as _np
+    arr = _np.asarray(preds)
+    if arr.ndim == 2:
+        return (_np.array(_CLASS_CENTERS) @ arr.T).tolist()
+    return (arr * 100).tolist()
+
 
 def _compute_metrics(
     predictions_0_1: list[float],
@@ -152,7 +191,8 @@ def _evaluate_split(
     true_scores = [r["score"] for r in records]
 
     preds = model.predict(pairs, batch_size=32, show_progress_bar=True)
-    return _compute_metrics([float(p) for p in preds], true_scores)
+    scores_0_1 = [s / 100 for s in _preds_to_score_100(preds)]
+    return _compute_metrics(scores_0_1, true_scores)
 
 
 # ── training ──────────────────────────────────────────────────────────────────
@@ -175,7 +215,13 @@ def fine_tune(
     from sentence_transformers.cross_encoder.evaluation import CECorrelationEvaluator
     from torch.utils.data import DataLoader
 
-    loss_fct = BoundaryAwareLoss() if loss_type == "boundary" else torch.nn.MSELoss()
+    is_classification = loss_type == "classification"
+    if loss_type == "classification":
+        loss_fct = ClassificationLoss()
+    elif loss_type == "boundary":
+        loss_fct = BoundaryAwareLoss()
+    else:
+        loss_fct = torch.nn.MSELoss()
 
     print(f"Base model : {base_model}")
     print(f"Data dir   : {data_dir}")
@@ -190,9 +236,9 @@ def fine_tune(
 
     model = CrossEncoder(
         base_model,
-        num_labels=1,
+        num_labels=5 if is_classification else 1,
         max_length=max_length,
-        default_activation_function=torch.nn.Sigmoid(),
+        default_activation_function=torch.nn.Softmax(dim=-1) if is_classification else torch.nn.Sigmoid(),
     )
 
     steps_per_epoch = math.ceil(len(train_examples) / batch_size)
@@ -225,7 +271,7 @@ def fine_tune(
         save_best_model=True,
         output_path=str(output_dir),
         loss_fct=loss_fct,
-        activation_fct=torch.nn.Sigmoid(),
+        activation_fct=None if is_classification else torch.nn.Sigmoid(),
         use_amp=True,
         show_progress_bar=False,
         callback=_epoch_callback,
@@ -234,15 +280,23 @@ def fine_tune(
     print("\nFine-tuning complete.")
     print(f"Model written to: {output_dir}")
 
+    # Reload best checkpoint — fit() leaves in-memory model at last epoch
+    best_model = CrossEncoder(
+        str(output_dir),
+        num_labels=5 if is_classification else 1,
+        max_length=max_length,
+        default_activation_function=torch.nn.Softmax(dim=-1) if is_classification else torch.nn.Sigmoid(),
+    )
+
     print("\nEvaluating on validation split…")
-    val_metrics = _evaluate_split(model, data_dir, "validation", max_eval_samples)
+    val_metrics = _evaluate_split(best_model, data_dir, "validation", max_eval_samples)
     print(
         f"  MAE: {val_metrics['mae']:.4f}  RMSE: {val_metrics['rmse']:.4f}"
         f"  LabelAcc: {val_metrics['label_accuracy']:.4f}"
     )
 
     print("Evaluating on test split…")
-    test_metrics = _evaluate_split(model, data_dir, "test", max_eval_samples)
+    test_metrics = _evaluate_split(best_model, data_dir, "test", max_eval_samples)
     print(
         f"  MAE: {test_metrics['mae']:.4f}  RMSE: {test_metrics['rmse']:.4f}"
         f"  LabelAcc: {test_metrics['label_accuracy']:.4f}"
@@ -311,9 +365,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--loss",
-        choices=["mse", "boundary"],
+        choices=["mse", "boundary", "classification"],
         default="mse",
-        help="mse: standard MSELoss (v0.1/v0.2); boundary: MSE + ordinal BCE at rubric boundaries (v0.3+)",
+        help="mse: regression MSELoss; boundary: MSE + ordinal BCE; classification: 5-class CrossEntropy",
     )
     parser.add_argument(
         "--evaluator",
