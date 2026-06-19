@@ -123,16 +123,16 @@ class ClassificationLoss(torch.nn.Module):
 
 # ── data loading ──────────────────────────────────────────────────────────────
 
-def _load_examples(path: Path, max_samples: int | None = None):
+def _load_examples(path: Path, max_samples: int | None = None, class_indices: bool = False):
     from sentence_transformers import InputExample
 
     examples: list[InputExample] = []
     with path.open(encoding="utf-8") as f:
         for line in f:
             d = json.loads(line.strip())
-            examples.append(
-                InputExample(texts=[d["cv_text"], d["jd_text"]], label=float(d["label"]))
-            )
+            # classification: store class index (0–4) so internal CE loss receives correct long targets
+            label = float(_score_to_class_index(float(d["score"]))) if class_indices else float(d["label"])
+            examples.append(InputExample(texts=[d["cv_text"], d["jd_text"]], label=label))
             if max_samples and len(examples) >= max_samples:
                 break
     return examples
@@ -217,7 +217,9 @@ def fine_tune(
 
     is_classification = loss_type == "classification"
     if loss_type == "classification":
-        loss_fct = ClassificationLoss()
+        # loss_fct=None: use sentence-transformers' internal CrossEntropyLoss for num_labels=5.
+        # Labels must be integer class indices (0–4 stored as float) so .long() gives correct targets.
+        loss_fct = None
     elif loss_type == "boundary":
         loss_fct = BoundaryAwareLoss()
     else:
@@ -226,12 +228,13 @@ def fine_tune(
     print(f"Base model : {base_model}")
     print(f"Data dir   : {data_dir}")
     print(f"Output dir : {output_dir}")
-    print(f"Loss       : {loss_type}  ({loss_fct.__class__.__name__})")
+    loss_label = "CrossEntropyLoss (internal)" if is_classification else loss_fct.__class__.__name__
+    print(f"Loss       : {loss_type}  ({loss_label})")
     print(f"Evaluator  : {evaluator_type}")
     print(f"Epochs     : {epochs}  |  Batch size: {batch_size}  |  Max length: {max_length}\n")
 
-    train_examples = _load_examples(data_dir / "cross_encoder_train.jsonl", max_train_samples)
-    val_examples = _load_examples(data_dir / "cross_encoder_validation.jsonl", max_eval_samples)
+    train_examples = _load_examples(data_dir / "cross_encoder_train.jsonl", max_train_samples, class_indices=is_classification)
+    val_examples = _load_examples(data_dir / "cross_encoder_validation.jsonl", max_eval_samples, class_indices=is_classification)
     print(f"Train: {len(train_examples)} pairs  |  Val: {len(val_examples)} pairs\n")
 
     model = CrossEncoder(
