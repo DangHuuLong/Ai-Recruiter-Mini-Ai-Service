@@ -80,8 +80,9 @@ SCORER_ALIGNED_RUBRIC_KEYS = {
 }
 
 RUBRIC_KEYS_BY_VERSION = {
-    "rubric_v0.1": LEGACY_RUBRIC_KEYS,
-    "rubric_v0.2": SCORER_ALIGNED_RUBRIC_KEYS,
+    "rubric_v0.1":     LEGACY_RUBRIC_KEYS,
+    "rubric_v0.2":     SCORER_ALIGNED_RUBRIC_KEYS,
+    "rubric_v0.2_llm": SCORER_ALIGNED_RUBRIC_KEYS,
 }
 
 ALLOWED_LEVELS = {"intern", "junior", "middle", "senior", "unknown"}
