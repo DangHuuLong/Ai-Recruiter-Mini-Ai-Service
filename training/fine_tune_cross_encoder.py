@@ -249,21 +249,7 @@ def fine_tune(
     warmup_steps = int(steps_per_epoch * warmup_ratio)
     print(f"Steps/epoch: {steps_per_epoch}  |  Warmup steps: {warmup_steps}\n")
 
-    from torch.utils.data import WeightedRandomSampler
-
-    _LABEL_WEIGHT = {
-        "poor_match":      1.0,
-        "weak_match":      1.38,
-        "moderate_match":  3.50,
-        "strong_match":    3.93,
-        "excellent_match": 2.78,
-    }
-    sample_weights = [
-        _LABEL_WEIGHT.get(_label_for_score(ex.label * 100), 1.0)
-        for ex in train_examples
-    ]
-    sampler = WeightedRandomSampler(sample_weights, num_samples=len(sample_weights), replacement=True)
-    train_dataloader = DataLoader(train_examples, sampler=sampler, batch_size=batch_size)
+    train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=batch_size)
 
     if evaluator_type == "label_acc":
         evaluator = CELabelAccEvaluator.from_input_examples(val_examples, name="val")
