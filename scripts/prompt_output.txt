@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1586 | level: intern | exp: 0.4 yrs
-  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Data Auditing, Interpersonal Communication
-  background: Enthusiastic and highly motivated final-year Human Resources Management student specializing in modern Talent Acquisition frameworks, HRIS management, and structured employee onboarding programs. Poss
+  id: resume_1591 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Marketing, Content Strategy, Web Analytics, Copywriting, Data Entry
+  background: Enthusiastic and highly motivated final-year Marketing student specializing in modern Digital Marketing and Content Strategy frameworks, SEO basics, and social media engagement. Possesses a strong aca
 
-  id: resume_1587 | level: junior | exp: 1.5 yrs
-  skills: Recruiting, HRIS, Onboarding, Candidate Sourcing, Compliance Tracking, Data Management
-  background: Junior Talent Acquisition Coordinator with over a year of corporate human resources experience focusing on candidate lifecycle tracking, HRIS accuracy, and automated onboarding compliance. Skilled at 
+  id: resume_1592 | level: junior | exp: 1.5 yrs
+  skills: SEO, Social Media Marketing, Content Strategy, Web Analytics, Google Analytics, Campaign Management
+  background: Junior Digital Marketing Associate with over a year of corporate experience focusing on social media campaign tracking, SEO optimization, and content performance analysis. Skilled at executing end-to-
 
-  id: resume_1588 | level: middle | exp: 4.2 yrs
-  skills: Recruiting, HRIS, Onboarding, Employer Branding, Talent Analytics, Labor Compliance, Process Optimization
-  background: Versatile Talent Acquisition Specialist with over four years of dedicated professional experience orchestrating corporate recruitment campaigns and managing robust human resource information systems f
+  id: resume_1593 | level: middle | exp: 4.2 yrs
+  skills: SEO, Social Media Marketing, Content Strategy, Web Analytics, Conversion Rate Optimization, Email Marketing, Paid Search
+  background: Versatile Digital Marketing Specialist with over four years of dedicated professional experience orchestrating corporate content strategies and managing robust analytics infrastructures for high-growt
 
-  id: resume_1589 | level: senior | exp: 6.5 yrs
-  skills: Recruiting, HRIS, Onboarding, Workforce Planning, Diversity Recruiting, Labor Relations, Vendor Management
-  background: Accomplished Senior Talent Acquisition Partner with six years of commercial success driving organizational scale paths, constructing progressive human resource strategies, and leading complex employee
+  id: resume_1594 | level: senior | exp: 6.5 yrs
+  skills: SEO, Social Media Marketing, Content Strategy, Web Analytics, Brand Strategy, Technical SEO, Performance Marketing
+  background: Accomplished Senior Content Strategist with six years of commercial success driving organizational growth, constructing progressive digital marketing strategies, and leading complex multi-platform cam
 
-  id: resume_1590 | level: senior | exp: 8.7 yrs
-  skills: Recruiting, HRIS, Onboarding, Strategic Human Resources, Executive Search, Change Management, People Governance
-  background: Visionary Principal Talent Architect and Director of People Operations with over eight years of international achievement spearheading enterprise-tier corporate recruitment systems, global HRIS transf
+  id: resume_1595 | level: senior | exp: 8.7 yrs
+  skills: SEO, Social Media Marketing, Content Strategy, Web Analytics, Strategic Planning, Conversion Strategy, Market Expansion
+  background: Visionary Principal Digital Architect and Director of Marketing Strategy with over eight years of international achievement spearheading enterprise-tier content ecosystems, global SEO transformations,
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1586 | title: Human Resources and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruiting, HRIS
-  description: We are seeking a highly motivated and structured Human Resources and Talent Acquisition Intern to support our core people operations delivery group. In this position, you will work
+  id: jd_1591 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing
+  description: We are seeking a highly motivated and structured Digital Marketing Intern to support our core content delivery group. In this position, you will work closely with senior strategist
 
-  id: jd_1587 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Recruiting, HRIS
-  description: We are searching for a motivated Junior Talent Acquisition Coordinator to assist in maintaining and refining our corporate candidate management systems and interactive onboarding p
+  id: jd_1592 | title: Junior Digital Marketing Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Social Media Marketing
+  description: We are searching for a motivated Junior Digital Marketing Coordinator to assist in maintaining and refining our corporate content management systems and interactive analytics porta
 
-  id: jd_1588 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
-  description: We are looking for an experienced Talent Acquisition Specialist to assume full functional ownership of our corporate recruitment campaigns, advanced talent analytics dashboards, an
+  id: jd_1593 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs
+  required_skills: SEO, Social Media Marketing, Content Strategy, Web Analytics
+  description: We are looking for an experienced Digital Marketing Specialist to assume full functional ownership of our corporate content strategy, advanced SEO analytics dashboards, and core pe
 
-  id: jd_1589 | title: Senior Talent Acquisition Partner | level: senior | min_exp: 5 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
-  description: We are hiring a seasoned Senior Talent Acquisition Partner to govern the structural evolution, HRIS management scaling, and employee onboarding orchestration models of our worldwid
+  id: jd_1594 | title: Senior Content Strategist | level: senior | min_exp: 5 yrs
+  required_skills: SEO, Social Media Marketing, Content Strategy, Web Analytics
+  description: We are hiring a seasoned Senior Content Strategist to govern the structural evolution, SEO strategy scaling, and audience acquisition models of our worldwide corporate structures. 
 
-  id: jd_1590 | title: Principal Talent Specialist | level: senior | min_exp: 7 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
-  description: Join our enterprise platform core people operations group as a Principal Talent Specialist to establish our global recruitment vision, strategic human asset frameworks, and macro-l
+  id: jd_1595 | title: Principal Digital Marketing Specialist | level: senior | min_exp: 7 yrs
+  required_skills: SEO, Social Media Marketing, Content Strategy, Web Analytics
+  description: Join our enterprise platform core marketing group as a Principal Digital Marketing Specialist to establish our global content vision, strategic growth frameworks, and macro-level S
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7926  resume_1586 × jd_1586
-  pair_7927  resume_1586 × jd_1587
-  pair_7928  resume_1586 × jd_1588
-  pair_7929  resume_1586 × jd_1589
-  pair_7930  resume_1586 × jd_1590
-  pair_7931  resume_1587 × jd_1586
-  pair_7932  resume_1587 × jd_1587
-  pair_7933  resume_1587 × jd_1588
-  pair_7934  resume_1587 × jd_1589
-  pair_7935  resume_1587 × jd_1590
-  pair_7936  resume_1588 × jd_1586
-  pair_7937  resume_1588 × jd_1587
-  pair_7938  resume_1588 × jd_1588
-  pair_7939  resume_1588 × jd_1589
-  pair_7940  resume_1588 × jd_1590
-  pair_7941  resume_1589 × jd_1586
-  pair_7942  resume_1589 × jd_1587
-  pair_7943  resume_1589 × jd_1588
-  pair_7944  resume_1589 × jd_1589
-  pair_7945  resume_1589 × jd_1590
-  pair_7946  resume_1590 × jd_1586
-  pair_7947  resume_1590 × jd_1587
-  pair_7948  resume_1590 × jd_1588
-  pair_7949  resume_1590 × jd_1589
-  pair_7950  resume_1590 × jd_1590
+  pair_7951  resume_1591 × jd_1591
+  pair_7952  resume_1591 × jd_1592
+  pair_7953  resume_1591 × jd_1593
+  pair_7954  resume_1591 × jd_1594
+  pair_7955  resume_1591 × jd_1595
+  pair_7956  resume_1592 × jd_1591
+  pair_7957  resume_1592 × jd_1592
+  pair_7958  resume_1592 × jd_1593
+  pair_7959  resume_1592 × jd_1594
+  pair_7960  resume_1592 × jd_1595
+  pair_7961  resume_1593 × jd_1591
+  pair_7962  resume_1593 × jd_1592
+  pair_7963  resume_1593 × jd_1593
+  pair_7964  resume_1593 × jd_1594
+  pair_7965  resume_1593 × jd_1595
+  pair_7966  resume_1594 × jd_1591
+  pair_7967  resume_1594 × jd_1592
+  pair_7968  resume_1594 × jd_1593
+  pair_7969  resume_1594 × jd_1594
+  pair_7970  resume_1594 × jd_1595
+  pair_7971  resume_1595 × jd_1591
+  pair_7972  resume_1595 × jd_1592
+  pair_7973  resume_1595 × jd_1593
+  pair_7974  resume_1595 × jd_1594
+  pair_7975  resume_1595 × jd_1595
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
