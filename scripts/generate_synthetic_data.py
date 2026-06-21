@@ -28,8 +28,9 @@ PROJECT_ROOT = SCRIPTS_DIR.parent
 RESUMES_PATH = PROJECT_ROOT / "datasets" / "raw" / "resumes.jsonl"
 JDS_PATH     = PROJECT_ROOT / "datasets" / "raw" / "job_descriptions.jsonl"
 PAIRS_PATH   = PROJECT_ROOT / "datasets" / "processed" / "cv_jd_pairs.jsonl"
-TEMP_INPUT   = SCRIPTS_DIR / "temp_input.txt"
-SESSION_FILE = SCRIPTS_DIR / ".synthetic_session.json"
+TEMP_INPUT     = SCRIPTS_DIR / "temp_input.txt"
+PROMPT_OUTPUT  = SCRIPTS_DIR / "prompt_output.txt"
+SESSION_FILE   = SCRIPTS_DIR / ".synthetic_session.json"
 
 # ── constants ─────────────────────────────────────────────────────────────────
 
@@ -415,14 +416,11 @@ def action_generate_prompt() -> None:
 
     print(f"\n  Domain  : {domain}")
     print(f"  IDs     : resume_{resume_start}–{resume_start+4}  |  jd_{jd_start}–{jd_start+4}")
-    print("\n" + "=" * 60)
-    print("PROMPT — copy everything below this line:")
-    print("=" * 60)
-    print(prompt)
-    print("=" * 60)
-    print(f"\n  1. Copy the prompt above and paste it into your LLM.")
-    print(f"  2. Paste the LLM output into:  scripts/temp_input.txt")
-    print(f"  3. Press [2] to save.")
+    PROMPT_OUTPUT.write_text(prompt, encoding="utf-8")
+    print(f"\n  ✓ Prompt written to:  scripts/prompt_output.txt")
+    print(f"  → Open the file, copy all content, paste into your LLM.")
+    print(f"  → Paste LLM output into:  scripts/temp_input.txt")
+    print(f"  → Then press [2] to save.")
 
 
 def action_save() -> None:
@@ -504,14 +502,11 @@ def action_save() -> None:
         TEMP_INPUT.write_text("", encoding="utf-8")
 
         pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"])
-        print("\n" + "=" * 60)
-        print("PAIR PROMPT — copy everything below this line:")
-        print("=" * 60)
-        print(pair_prompt)
-        print("=" * 60)
-        print(f"\n  1. Copy the prompt above and paste it into your LLM.")
-        print(f"  2. Paste the LLM output into:  scripts/temp_input.txt")
-        print(f"  3. Press [2] to save pairs.")
+        PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
+        print(f"\n  ✓ Pair prompt written to:  scripts/prompt_output.txt")
+        print(f"  → Open the file, copy all content, paste into your LLM.")
+        print(f"  → Paste LLM output into:  scripts/temp_input.txt")
+        print(f"  → Then press [2] to save pairs.")
 
     # ── save pairs ────────────────────────────────────────────────────────────
     elif state == "waiting_pairs":
@@ -592,7 +587,7 @@ def main() -> None:
 
         print("\nMenu:")
         print("  [1]  Generate CV+JD prompt  (start new batch)")
-        print("  [2]  Save result            (paste output to scripts/temp_input.txt first)")
+        print("  [2]  Save result            (paste LLM output into scripts/temp_input.txt first)")
         print("  [0]  Exit")
 
         if state != "idle":
