@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1471 | level: intern | exp: 0.5 yrs
-  skills: Procurement, Inventory Management, ERP Systems, SAP ERP, Supply Chain Logistics, Data Analysis, Logistics Management
-  background: Ambitious Supply Chain Management student with a strong academic background in logistics orchestration, inventory management, and contemporary enterprise resource planning frameworks. Adept at conduct
+  id: resume_1476 | level: intern | exp: 0.5 yrs
+  skills: Financial Modeling, Financial Reporting, Fintech Compliance, SQL, Data Analysis, Corporate Finance, AML
+  background: Ambitious and analytically minded Finance and Accounting student with an academic focus on financial tech platforms, quantitative corporate modeling, and financial reporting protocols. Competent at as
 
-  id: resume_1472 | level: junior | exp: 1.5 yrs
-  skills: Procurement, Inventory Control, Oracle ERP, Supply Chain Analytics, Logistics Coordination, Vendor Compliance, Purchase Orders
-  background: Detail-oriented Junior Logistics Specialist with over one year of hands-on corporate experience tracking global supplier shipments, managing safety stock allocations, and executing transactional entri
+  id: resume_1477 | level: junior | exp: 1.5 yrs
+  skills: Financial Reporting, Fintech Compliance, NetSuite, SQL, Account Reconciliation, Corporate Accounting, KYC
+  background: Detail-oriented Junior Fintech Accountant with more than one year of professional corporate experience executing high-volume ledger modernizations, drafting monthly financial reporting packages, and e
 
   id: resume_1473 | level: middle | exp: 4.0 yrs
-  skills: Procurement, Inventory Optimization, ERP Customization, Microsoft Dynamics 365, Strategic Sourcing, Contract Negotiation, Demand Forecasting
-  background: Results-driven Supply Chain Specialist with four years of comprehensive experience managing multi-site procurement operations, optimizing inventory velocity, and spearheading Microsoft Dynamics 365 ER
+  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Anaplan, Data Analytics, Corporate Treasury, Regulatory Reporting
+  background: Results-driven Financial Analyst with four years of comprehensive corporate experience developing predictive financial modeling architectures, designing dynamic management reporting workflows, and imp
 
-  id: resume_1474 | level: senior | exp: 6.0 yrs
-  skills: Procurement Strategy, Inventory Management, SAP S/4HANA, Global Sourcing, Category Management, Supplier Risk Mitigation, Logistics Optimization
-  background: Accomplished Senior Procurement Manager with six years of industry achievement deploying enterprise global sourcing architectures, large-scale SAP S/4HANA ERP platforms, and highly automated material 
+  id: resume_1479 | level: senior | exp: 6.0 yrs
+  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Workday Financials, AML Systems, Corporate Treasury, Regulatory Frameworks
+  background: Accomplished Senior Financial Manager with six years of industry achievement deploying enterprise financial modeling structures, large-scale Workday Financials platforms, and highly automated regulato
 
-  id: resume_1475 | level: senior | exp: 8.5 yrs
-  skills: Supply Chain Architecture, Procurement, Inventory Strategy, Enterprise ERP, Network Optimization, Vendor-Managed Inventory, Risk Management, Logistics Leadership
-  background: Visionary Global Supply Chain Director with over eight years of international experience drafting corporate supply chain roadmaps, resilient multi-tier logistical architectures, and transformative ent
+  id: resume_1480 | level: senior | exp: 8.5 yrs
+  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Corporate Strategy, Capital Allocation, Enterprise ERP, Risk Management, Financial Leadership
+  background: Visionary FinTech Financial Director with over eight years of international experience designing corporate financial models, capital allocation strategies, and automated regulatory compliance framewor
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1471 | title: Supply Chain Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Procurement, Inventory Management, SAP ERP
-  description: We are looking for an analytical and motivated Supply Chain Management Intern to support our core inventory operations team. You will work closely with senior procurement specialis
+  id: jd_1476 | title: Fintech Finance and Accounting Intern | level: intern | min_exp: 0 yrs
+  required_skills: Financial Modeling, Financial Reporting, Fintech Compliance
+  description: We are looking for an analytical and motivated Finance and Accounting Intern to support our growing fintech corporate reporting group. You will work closely with senior financial a
 
-  id: jd_1472 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, Inventory Control, Oracle ERP
-  description: Our operational product support group is seeking a Junior Supply Chain Analyst to track, reconcile, and optimize our growing global inventory network. In this role, you will be res
+  id: jd_1477 | title: Junior Fintech Accountant | level: junior | min_exp: 1 yrs
+  required_skills: Financial Reporting, Fintech Compliance, NetSuite
+  description: Our operational finance support group is seeking a Junior Fintech Accountant to track, reconcile, and optimize our growing global digital transaction ledger. In this role, you will
 
-  id: jd_1473 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Procurement, Inventory Optimization, Microsoft Dynamics 365
-  description: We are searching for a seasoned Supply Chain Specialist to design, extend, and sustain our regional logistics fulfillment network. This role focuses on delivering excellent materia
+  id: jd_1478 | title: Fintech Financial Planning and Analysis Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, Financial Reporting, Anaplan
+  description: We are searching for a seasoned Financial Planning and Analysis Specialist to design, extend, and sustain our regional fintech financial modeling network. This role focuses on deli
 
-  id: jd_1474 | title: Senior Procurement Manager | level: senior | min_exp: 5 yrs
-  required_skills: Procurement Strategy, Inventory Management, SAP S/4HANA
-  description: Seeking a Senior Procurement Manager to guide the scaling, vendor portfolio maturation, and spend optimization of our enterprise global supply network. In this leadership position,
+  id: jd_1479 | title: Senior Fintech Finance Manager | level: senior | min_exp: 5 yrs
+  required_skills: Financial Modeling, Financial Reporting, Workday Financials
+  description: Seeking a Senior Fintech Finance Manager to guide the scaling, corporate governance consolidation, and reporting automation of our enterprise global payment network. In this leader
 
-  id: jd_1475 | title: Global Supply Chain Director | level: senior | min_exp: 7 yrs
-  required_skills: Procurement, Inventory Strategy, Enterprise ERP, Supply Chain Architecture
-  description: Join our operations executive leadership group as a Global Supply Chain Director to define our international logistical roadmap, fulfillment governance rules, and corporate enterpr
+  id: jd_1480 | title: Global FinTech Financial Director | level: senior | min_exp: 7 yrs
+  required_skills: Financial Modeling, Financial Reporting, Fintech Compliance, Supply Chain Architecture
+  description: Join our operations executive leadership group as a Global FinTech Financial Director to define our international regulatory roadmap, financial modeling standards, and corporate fi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7351  resume_1471 × jd_1471
-  pair_7352  resume_1471 × jd_1472
-  pair_7353  resume_1471 × jd_1473
-  pair_7354  resume_1471 × jd_1474
-  pair_7355  resume_1471 × jd_1475
-  pair_7356  resume_1472 × jd_1471
-  pair_7357  resume_1472 × jd_1472
-  pair_7358  resume_1472 × jd_1473
-  pair_7359  resume_1472 × jd_1474
-  pair_7360  resume_1472 × jd_1475
-  pair_7361  resume_1473 × jd_1471
-  pair_7362  resume_1473 × jd_1472
-  pair_7363  resume_1473 × jd_1473
-  pair_7364  resume_1473 × jd_1474
-  pair_7365  resume_1473 × jd_1475
-  pair_7366  resume_1474 × jd_1471
-  pair_7367  resume_1474 × jd_1472
-  pair_7368  resume_1474 × jd_1473
-  pair_7369  resume_1474 × jd_1474
-  pair_7370  resume_1474 × jd_1475
-  pair_7371  resume_1475 × jd_1471
-  pair_7372  resume_1475 × jd_1472
-  pair_7373  resume_1475 × jd_1473
-  pair_7374  resume_1475 × jd_1474
-  pair_7375  resume_1475 × jd_1475
+  pair_7376  resume_1476 × jd_1476
+  pair_7377  resume_1476 × jd_1477
+  pair_7378  resume_1476 × jd_1478
+  pair_7379  resume_1476 × jd_1479
+  pair_7380  resume_1476 × jd_1480
+  pair_7381  resume_1477 × jd_1476
+  pair_7382  resume_1477 × jd_1477
+  pair_7383  resume_1477 × jd_1478
+  pair_7384  resume_1477 × jd_1479
+  pair_7385  resume_1477 × jd_1480
+  pair_7386  resume_1473 × jd_1476
+  pair_7387  resume_1473 × jd_1477
+  pair_7388  resume_1473 × jd_1478
+  pair_7389  resume_1473 × jd_1479
+  pair_7390  resume_1473 × jd_1480
+  pair_7391  resume_1479 × jd_1476
+  pair_7392  resume_1479 × jd_1477
+  pair_7393  resume_1479 × jd_1478
+  pair_7394  resume_1479 × jd_1479
+  pair_7395  resume_1479 × jd_1480
+  pair_7396  resume_1480 × jd_1476
+  pair_7397  resume_1480 × jd_1477
+  pair_7398  resume_1480 × jd_1478
+  pair_7399  resume_1480 × jd_1479
+  pair_7400  resume_1480 × jd_1480
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
