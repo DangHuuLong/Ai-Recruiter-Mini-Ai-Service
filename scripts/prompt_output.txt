@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1456 | level: intern | exp: 0.5 yrs
-  skills: Python, React, Django, JavaScript, HTML5, CSS3, Full-Stack Development
-  background: Enthusiastic and highly motivated Information Technology student specializing in full-stack web development across modern software architectures. Proficient in building declarative frontend user inter
+  id: resume_1461 | level: intern | exp: 0.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML5, CSS3
+  background: Enthusiastic and highly motivated Software Engineering student specializing in client-side architectures, single-page web environments, and responsive interface design systems. Proficient in crafting 
 
-  id: resume_1457 | level: junior | exp: 1.5 yrs
-  skills: Python, React, FastAPI, JavaScript, RESTful APIs, State Management, SQL
-  background: Detail-oriented Junior Full-Stack Developer with over one year of active commercial experience designing, maintaining, and shipping pixel-perfect responsive web interfaces and server backends. Profici
+  id: resume_1462 | level: junior | exp: 1.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Responsive Design, API Integration, State Management
+  background: Detail-oriented Junior Frontend Developer with over one year of active industry experience building, styling, and shipping performance-optimized client-side interfaces and responsive layout frameworks
 
-  id: resume_1458 | level: middle | exp: 4.0 yrs
-  skills: Python, React, Flask, Next.js, Asynchronous Programming, API Design, Database Optimization
-  background: Results-driven Full-Stack Engineer with four years of deep commercial experience architecting scalable, high-performance web applications, server systems, and dynamic client blueprints. Expert in buil
+  id: resume_1463 | level: middle | exp: 4.0 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Component Architecture, Web Performance, State Management
+  background: Results-driven Frontend Engineer with four years of deep commercial experience engineering scalable user interfaces, composite component libraries, and optimized web runtime blueprints. Expert in stru
 
-  id: resume_1459 | level: senior | exp: 6.0 yrs
-  skills: Python, React, Django, Django REST Framework, Micro-Frontends, Performance Tuning, CI/CD, Web-Sockets
-  background: Accomplished Senior Full-Stack Engineer with six years of professional industry history delivering robust architectural patterns, reusable component ecosystems, and high-performance user journeys. Pro
+  id: resume_1464 | level: senior | exp: 6.0 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Performance Optimization, Design Systems, CI/CD
+  background: Accomplished Senior Frontend Engineer with six years of professional industry history delivering robust architectural patterns, complex layout systems, and highly optimized user journeys. Proven autho
 
-  id: resume_1460 | level: senior | exp: 8.5 yrs
-  skills: Python, React, Next.js, Enterprise Architecture, Design Systems, Global State Management, Scalability, Web Governance
-  background: Visionary Principal Full-Stack Architect with over eight years of experience defining enterprise web development roadmaps, global user interface blueprints, and secure multi-tier presentation layer sy
+  id: resume_1465 | level: senior | exp: 8.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Enterprise Architecture, Design Systems, Web Accessibility, Frontend Governance
+  background: Visionary Principal Frontend Architect with over eight years of global experience defining enterprise client engineering roadmaps, corporate design system primitives, and secure presentation layer top
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1456 | title: Full-Stack Web Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, Django
-  description: We are looking for an analytical and motivated Full-Stack Web Engineering Intern to support our user interface and core product team. You will work closely with senior engineering 
+  id: jd_1461 | title: Frontend Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, TypeScript, Tailwind CSS
+  description: We are looking for an analytical and motivated Frontend Engineering Intern to support our user interface and application product team. You will work closely with senior engineers t
 
-  id: jd_1457 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, FastAPI, RESTful APIs
-  description: Our application development team is seeking a Junior Full-Stack Developer to build, monitor, and optimize our growing web interface tier. In this role, you will be responsible for 
+  id: jd_1462 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS
+  description: Our application development team is seeking a Junior Frontend Developer to build, monitor, and optimize our growing client interface tier. In this role, you will be responsible for
 
-  id: jd_1458 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, Flask, State Management
-  description: We are recruiting a seasoned Full-Stack Engineer to design, scale, and maintain our enterprise client interface matrix. This position focuses on driving outstanding user experience
+  id: jd_1463 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Component Architecture
+  description: We are recruiting a seasoned Frontend Engineer to design, scale, and maintain our enterprise client interface matrix. This position focuses on driving outstanding user experiences 
 
-  id: jd_1459 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django, Django REST Framework, Micro-Frontends
-  description: Seeking a Senior Full-Stack Engineer to lead the scaling, architectural maturation, and performance optimization of our enterprise web platform interfaces. In this leadership role,
+  id: jd_1464 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends
+  description: Seeking a Senior Frontend Engineer to lead the scaling, architectural maturation, and performance optimization of our enterprise web platform interfaces. In this leadership role, y
 
-  id: jd_1460 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, Next.js, Enterprise Architecture, Design Systems
-  description: Join us as a Principal Full-Stack Architect to define our global user interface roadmap, architectural governance standards, and enterprise presentation blueprints. This high-level
+  id: jd_1465 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Enterprise Architecture
+  description: Join us as a Principal Frontend Architect to define our global user interface roadmap, architectural governance standards, and enterprise presentation blueprints. This high-level t
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7276  resume_1456 × jd_1456
-  pair_7277  resume_1456 × jd_1457
-  pair_7278  resume_1456 × jd_1458
-  pair_7279  resume_1456 × jd_1459
-  pair_7280  resume_1456 × jd_1460
-  pair_7281  resume_1457 × jd_1456
-  pair_7282  resume_1457 × jd_1457
-  pair_7283  resume_1457 × jd_1458
-  pair_7284  resume_1457 × jd_1459
-  pair_7285  resume_1457 × jd_1460
-  pair_7286  resume_1458 × jd_1456
-  pair_7287  resume_1458 × jd_1457
-  pair_7288  resume_1458 × jd_1458
-  pair_7289  resume_1458 × jd_1459
-  pair_7290  resume_1458 × jd_1460
-  pair_7291  resume_1459 × jd_1456
-  pair_7292  resume_1459 × jd_1457
-  pair_7293  resume_1459 × jd_1458
-  pair_7294  resume_1459 × jd_1459
-  pair_7295  resume_1459 × jd_1460
-  pair_7296  resume_1460 × jd_1456
-  pair_7297  resume_1460 × jd_1457
-  pair_7298  resume_1460 × jd_1458
-  pair_7299  resume_1460 × jd_1459
-  pair_7300  resume_1460 × jd_1460
+  pair_7301  resume_1461 × jd_1461
+  pair_7302  resume_1461 × jd_1462
+  pair_7303  resume_1461 × jd_1463
+  pair_7304  resume_1461 × jd_1464
+  pair_7305  resume_1461 × jd_1465
+  pair_7306  resume_1462 × jd_1461
+  pair_7307  resume_1462 × jd_1462
+  pair_7308  resume_1462 × jd_1463
+  pair_7309  resume_1462 × jd_1464
+  pair_7310  resume_1462 × jd_1465
+  pair_7311  resume_1463 × jd_1461
+  pair_7312  resume_1463 × jd_1462
+  pair_7313  resume_1463 × jd_1463
+  pair_7314  resume_1463 × jd_1464
+  pair_7315  resume_1463 × jd_1465
+  pair_7316  resume_1464 × jd_1461
+  pair_7317  resume_1464 × jd_1462
+  pair_7318  resume_1464 × jd_1463
+  pair_7319  resume_1464 × jd_1464
+  pair_7320  resume_1464 × jd_1465
+  pair_7321  resume_1465 × jd_1461
+  pair_7322  resume_1465 × jd_1462
+  pair_7323  resume_1465 × jd_1463
+  pair_7324  resume_1465 × jd_1464
+  pair_7325  resume_1465 × jd_1465
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
