@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1476 | level: intern | exp: 0.5 yrs
-  skills: Financial Modeling, Financial Reporting, Fintech Compliance, SQL, Data Analysis, Corporate Finance, AML
-  background: Ambitious and analytically minded Finance and Accounting student with an academic focus on financial tech platforms, quantitative corporate modeling, and financial reporting protocols. Competent at as
+  id: resume_1481 | level: intern | exp: 0.5 yrs
+  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, Agile Methodologies, Confluence
+  background: Enthusiastic Management Information Systems student possessing an academic foundation in business analysis frameworks, business process modeling notation (BPMN), and stakeholder interview techniques. 
 
-  id: resume_1477 | level: junior | exp: 1.5 yrs
-  skills: Financial Reporting, Fintech Compliance, NetSuite, SQL, Account Reconciliation, Corporate Accounting, KYC
-  background: Detail-oriented Junior Fintech Accountant with more than one year of professional corporate experience executing high-volume ledger modernizations, drafting monthly financial reporting packages, and e
+  id: resume_1482 | level: junior | exp: 1.5 yrs
+  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, User Acceptance Testing, Agile Methodologies
+  background: Diligent Junior Business Analyst with more than one year of professional corporate experience capturing enterprise requirements, drafting comprehensive process models, and coordinating communications 
 
-  id: resume_1473 | level: middle | exp: 4.0 yrs
-  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Anaplan, Data Analytics, Corporate Treasury, Regulatory Reporting
-  background: Results-driven Financial Analyst with four years of comprehensive corporate experience developing predictive financial modeling architectures, designing dynamic management reporting workflows, and imp
+  id: resume_1483 | level: middle | exp: 4.0 yrs
+  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, Agile Methodologies, Gap Analysis, Process Engineering
+  background: Analytical and results-oriented Business Analyst with four years of commercial experience executing complex requirement elicitation, optimizing process engineering with BPMN, and leading matrixed stak
 
-  id: resume_1479 | level: senior | exp: 6.0 yrs
-  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Workday Financials, AML Systems, Corporate Treasury, Regulatory Frameworks
-  background: Accomplished Senior Financial Manager with six years of industry achievement deploying enterprise financial modeling structures, large-scale Workday Financials platforms, and highly automated regulato
+  id: resume_1484 | level: senior | exp: 6.0 yrs
+  skills: Business Analysis, Project Management, Requirements Gathering, BPMN, Stakeholder Management, Agile Methodologies, Change Management, Jira
+  background: Accomplished Senior Business Analyst and Project Manager with six years of industry achievement deploying enterprise business analysis frameworks, large-scale process optimizations using BPMN, and sop
 
-  id: resume_1480 | level: senior | exp: 8.5 yrs
-  skills: Financial Modeling, Financial Reporting, Fintech Compliance, Corporate Strategy, Capital Allocation, Enterprise ERP, Risk Management, Financial Leadership
-  background: Visionary FinTech Financial Director with over eight years of international experience designing corporate financial models, capital allocation strategies, and automated regulatory compliance framewor
+  id: resume_1485 | level: senior | exp: 8.5 yrs
+  skills: Business Analysis, Project Management, Requirements Gathering, BPMN, Stakeholder Management, Corporate Strategy, Process Engineering, Agile Leadership
+  background: Visionary Principal Consultant and Strategy Lead with over eight years of global experience directing enterprise business analysis, macro-level process engineering using BPMN, and complex stakeholder 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1476 | title: Fintech Finance and Accounting Intern | level: intern | min_exp: 0 yrs
-  required_skills: Financial Modeling, Financial Reporting, Fintech Compliance
-  description: We are looking for an analytical and motivated Finance and Accounting Intern to support our growing fintech corporate reporting group. You will work closely with senior financial a
+  id: jd_1481 | title: Business Analysis and Project Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Business Analysis, Requirements Gathering, BPMN
+  description: We are looking for an analytical and motivated Business Analysis and Project Management Intern to support our growing digital transformation group. You will work closely with senio
 
-  id: jd_1477 | title: Junior Fintech Accountant | level: junior | min_exp: 1 yrs
-  required_skills: Financial Reporting, Fintech Compliance, NetSuite
-  description: Our operational finance support group is seeking a Junior Fintech Accountant to track, reconcile, and optimize our growing global digital transaction ledger. In this role, you will
+  id: jd_1482 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Business Analysis, Requirements Gathering, BPMN
+  description: Our operational transformation group is seeking a Junior Business Analyst to track, map, and optimize our growing global business workflows. In this role, you will be responsible f
 
-  id: jd_1478 | title: Fintech Financial Planning and Analysis Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Financial Modeling, Financial Reporting, Anaplan
-  description: We are searching for a seasoned Financial Planning and Analysis Specialist to design, extend, and sustain our regional fintech financial modeling network. This role focuses on deli
+  id: jd_1483 | title: Fintech Project Delivery and Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Business Analysis, Requirements Gathering, BPMN
+  description: We are searching for a seasoned Business Analyst to design, extend, and sustain our regional business architecture and workflow network. This role focuses on delivering excellent r
 
-  id: jd_1479 | title: Senior Fintech Finance Manager | level: senior | min_exp: 5 yrs
-  required_skills: Financial Modeling, Financial Reporting, Workday Financials
-  description: Seeking a Senior Fintech Finance Manager to guide the scaling, corporate governance consolidation, and reporting automation of our enterprise global payment network. In this leader
+  id: jd_1484 | title: Senior Business Analyst and Project Manager | level: senior | min_exp: 5 yrs
+  required_skills: Business Analysis, Project Management, BPMN
+  description: Seeking a Senior Business Analyst and Project Manager to guide the scaling, corporate governance consolidation, and reporting automation of our enterprise global operations network
 
-  id: jd_1480 | title: Global FinTech Financial Director | level: senior | min_exp: 7 yrs
-  required_skills: Financial Modeling, Financial Reporting, Fintech Compliance, Supply Chain Architecture
-  description: Join our operations executive leadership group as a Global FinTech Financial Director to define our international regulatory roadmap, financial modeling standards, and corporate fi
+  id: jd_1485 | title: Principal Transformation Consultant and Delivery Director | level: senior | min_exp: 7 yrs
+  required_skills: Business Analysis, Project Management, BPMN
+  description: Join our operations executive leadership group as a Principal Transformation Consultant and Delivery Director to define our international operational roadmap, business modeling sta
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7376  resume_1476 × jd_1476
-  pair_7377  resume_1476 × jd_1477
-  pair_7378  resume_1476 × jd_1478
-  pair_7379  resume_1476 × jd_1479
-  pair_7380  resume_1476 × jd_1480
-  pair_7381  resume_1477 × jd_1476
-  pair_7382  resume_1477 × jd_1477
-  pair_7383  resume_1477 × jd_1478
-  pair_7384  resume_1477 × jd_1479
-  pair_7385  resume_1477 × jd_1480
-  pair_7386  resume_1473 × jd_1476
-  pair_7387  resume_1473 × jd_1477
-  pair_7388  resume_1473 × jd_1478
-  pair_7389  resume_1473 × jd_1479
-  pair_7390  resume_1473 × jd_1480
-  pair_7391  resume_1479 × jd_1476
-  pair_7392  resume_1479 × jd_1477
-  pair_7393  resume_1479 × jd_1478
-  pair_7394  resume_1479 × jd_1479
-  pair_7395  resume_1479 × jd_1480
-  pair_7396  resume_1480 × jd_1476
-  pair_7397  resume_1480 × jd_1477
-  pair_7398  resume_1480 × jd_1478
-  pair_7399  resume_1480 × jd_1479
-  pair_7400  resume_1480 × jd_1480
+  pair_7401  resume_1481 × jd_1481
+  pair_7402  resume_1481 × jd_1482
+  pair_7403  resume_1481 × jd_1483
+  pair_7404  resume_1481 × jd_1484
+  pair_7405  resume_1481 × jd_1485
+  pair_7406  resume_1482 × jd_1481
+  pair_7407  resume_1482 × jd_1482
+  pair_7408  resume_1482 × jd_1483
+  pair_7409  resume_1482 × jd_1484
+  pair_7410  resume_1482 × jd_1485
+  pair_7411  resume_1483 × jd_1481
+  pair_7412  resume_1483 × jd_1482
+  pair_7413  resume_1483 × jd_1483
+  pair_7414  resume_1483 × jd_1484
+  pair_7415  resume_1483 × jd_1485
+  pair_7416  resume_1484 × jd_1481
+  pair_7417  resume_1484 × jd_1482
+  pair_7418  resume_1484 × jd_1483
+  pair_7419  resume_1484 × jd_1484
+  pair_7420  resume_1484 × jd_1485
+  pair_7421  resume_1485 × jd_1481
+  pair_7422  resume_1485 × jd_1482
+  pair_7423  resume_1485 × jd_1483
+  pair_7424  resume_1485 × jd_1484
+  pair_7425  resume_1485 × jd_1485
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.

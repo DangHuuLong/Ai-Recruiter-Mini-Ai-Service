@@ -388,6 +388,56 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
 
     return errs, warns
 
+
+def validate_cvjd_ids(
+    resumes: list[dict], jds: list[dict],
+    resume_start: int, jd_start: int,
+) -> list[str]:
+    errs: list[str] = []
+    expected_resume_ids = {f"resume_{resume_start + i}" for i in range(5)}
+    expected_jd_ids     = {f"jd_{jd_start + i}"        for i in range(5)}
+
+    actual_resume_ids = {r.get("id", f"<missing id on resume #{i}>") for i, r in enumerate(resumes)}
+    actual_jd_ids     = {j.get("id", f"<missing id on jd #{i}>")     for i, j in enumerate(jds)}
+
+    for rid in sorted(expected_resume_ids - actual_resume_ids):
+        errs.append(f"[ID] resume '{rid}' expected but missing from LLM output")
+    for rid in sorted(actual_resume_ids - expected_resume_ids):
+        errs.append(
+            f"[ID] resume '{rid}' is unexpected "
+            f"(expected resume_{resume_start}–resume_{resume_start + 4})"
+        )
+    for jid in sorted(expected_jd_ids - actual_jd_ids):
+        errs.append(f"[ID] JD '{jid}' expected but missing from LLM output")
+    for jid in sorted(actual_jd_ids - expected_jd_ids):
+        errs.append(
+            f"[ID] JD '{jid}' is unexpected "
+            f"(expected jd_{jd_start}–jd_{jd_start + 4})"
+        )
+    return errs
+
+
+def validate_pair_ids(pairs: list[dict], pair_start: int) -> list[str]:
+    errs: list[str] = []
+    expected_pair_ids = {f"pair_{pair_start + i}" for i in range(25)}
+
+    actual_ids: list[str] = [p.get("id", f"<missing id on line {i + 1}>") for i, p in enumerate(pairs)]
+
+    seen: set[str] = set()
+    for pid in actual_ids:
+        if pid in seen:
+            errs.append(f"[ID] pair '{pid}' is duplicated")
+        seen.add(pid)
+
+    for pid in sorted(expected_pair_ids - set(actual_ids)):
+        errs.append(f"[ID] pair '{pid}' expected but missing from LLM output")
+    for pid in sorted(set(actual_ids) - expected_pair_ids):
+        errs.append(
+            f"[ID] pair '{pid}' is unexpected "
+            f"(expected pair_{pair_start}–pair_{pair_start + 24})"
+        )
+    return errs
+
 # ── actions ────────────────────────────────────────────────────────────────────
 
 def action_generate_prompt() -> None:
@@ -473,7 +523,20 @@ def action_save() -> None:
             print(f"\n  [!] Expected 5 resumes + 5 JDs, got {len(resumes_new)} + {len(jds_new)}.")
             return
 
-        # Validate
+        # Validate IDs first
+        id_errors = validate_cvjd_ids(
+            resumes_new, jds_new,
+            session["resume_start"], session["jd_start"],
+        )
+        if id_errors:
+            print(f"\n  [!] {len(id_errors)} ID error(s) — NOT saved:")
+            for e in id_errors:
+                print(f"      ✗ {e}", file=sys.stderr)
+                print(f"      ✗ {e}")
+            print("\n      Fix the IDs in temp_input.txt and press [2] again.")
+            return
+
+        # Validate fields
         all_errors: list[str] = []
         for i, r in enumerate(resumes_new, 1):
             all_errors.extend(validate_resume(r, i))
@@ -540,6 +603,16 @@ def action_save() -> None:
             print("\n  [!] Parse errors:")
             for e in parse_errors:
                 print(f"      ✗ {e}")
+            return
+
+        # Validate pair IDs
+        pair_id_errors = validate_pair_ids(pairs_new, session["pair_start"])
+        if pair_id_errors:
+            print(f"\n  [!] {len(pair_id_errors)} pair ID error(s) — NOT saved:")
+            for e in pair_id_errors:
+                print(f"      ✗ {e}", file=sys.stderr)
+                print(f"      ✗ {e}")
+            print("\n      Fix the pair IDs in temp_input.txt and press [2] again.")
             return
 
         if all_errors:
