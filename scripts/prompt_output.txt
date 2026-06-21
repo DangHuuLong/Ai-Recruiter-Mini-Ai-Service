@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1516 | level: intern | exp: 0.4 yrs
-  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research, Canva, Google Search Console, Content Strategy, Microsoft Excel, Copywriting
-  background: Final-year Marketing student with 4 months of internship experience supporting digital campaigns and content planning. Assisted in keyword research, on-page SEO updates, and social media scheduling ac
+  id: resume_1521 | level: intern | exp: 0.5 yrs
+  skills: React Native, Flutter, Swift, Kotlin, Dart, JavaScript
+  background: Passionate Mobile Application Development final year student focused on building cross-platform and native client applications. Highly proficient in modern programming paradigms with deep theoretical 
 
-  id: resume_1517 | level: junior | exp: 1.8 yrs
-  skills: SEO, Social Media Marketing, Google Analytics, Content Strategy, Keyword Research, Email Marketing, Google Search Console, A/B Testing, Copywriting, Content Management Systems
-  background: Digital marketing specialist with 1.8 years of experience executing SEO and social media initiatives for online brands. Managed editorial calendars, optimized website content, and monitored campaign p
+  id: resume_1522 | level: junior | exp: 1.5 yrs
+  skills: React Native, Flutter, Swift, Kotlin, Mobile Development, Git
+  background: Motivated Junior Mobile Engineer with more than a year of professional experience building, packaging, and maintaining native and cross-platform applications. Capable of developing efficient component
 
-  id: resume_1518 | level: middle | exp: 4.2 yrs
-  skills: SEO, Content Strategy, Google Analytics, Social Media Marketing, Content Auditing, Data Visualization, Audience Research, Keyword Research, A/B Testing, Google Data Studio
-  background: Marketing professional with 4.2 years of experience developing integrated content and digital marketing strategies. Led SEO initiatives, managed cross-channel content campaigns, and analyzed performan
+  id: resume_1523 | level: middle | exp: 4.0 yrs
+  skills: React Native, Flutter, Swift, Kotlin, State Management, Mobile Architecture, CI/CD
+  background: Resourceful Mobile Application Specialist and Systems Developer with four years of commercial background optimizing digital user journeys, rewriting mobile logic layers, and building highly responsive
 
-  id: resume_1519 | level: senior | exp: 6.1 yrs
-  skills: SEO, Content Strategy, Google Analytics, Team Leadership, Social Media Marketing, Technical SEO, Campaign Analytics, Content Governance, Stakeholder Management, Looker Studio
-  background: Senior digital marketing manager with 6.1 years of experience leading SEO, content strategy, and social media programs for growth-focused organizations. Designed long-term content roadmaps, managed ed
+  id: resume_1524 | level: senior | exp: 6.0 yrs
+  skills: React Native, Flutter, Swift, Kotlin, Performance Tuning, Mobile Security, App Architecture
+  background: Accomplished Senior Mobile Engineer and Mobile Systems Lead with six years of industry achievement engineering high-performance mobile ecosystems, standardizing core client architectures, and managing
 
-  id: resume_1520 | level: senior | exp: 9.3 yrs
-  skills: SEO, Content Strategy, Advanced Analytics, Social Media Marketing, Editorial Leadership, Team Leadership, Audience Segmentation, Performance Marketing, Looker Studio, Strategic Planning
-  background: Principal content and digital strategy leader with over 9 years of experience building scalable SEO and content ecosystems. Led global content teams, established measurement frameworks, and drove inte
+  id: resume_1525 | level: senior | exp: 9.0 yrs
+  skills: React Native, Flutter, Swift, Kotlin, Mobile Strategy, Team Leadership, Architecture Design
+  background: Visionary Principal Mobile Architect and Client Engineering Director with nine years of international experience governing massive digital product initiatives, corporate app topologies, and resilient 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1516 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research
-  description: Seeking a Digital Marketing Intern to support SEO and content marketing activities. The role involves assisting with keyword research, social media scheduling, content publishing, 
+  id: jd_1521 | title: Mobile Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter
+  description: We are seeking an analytical and enthusiastic Mobile Engineering Intern to join our digital application team. You will work alongside senior software developers to gather layout re
 
-  id: jd_1517 | title: Junior SEO and Content Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Google Analytics, Content Strategy, Copywriting, Social Media Marketing
-  description: Looking for a Junior SEO and Content Specialist to execute content marketing initiatives across web and social channels. Responsibilities include creating optimized content, conduc
+  id: jd_1522 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Flutter
+  description: Our software delivery group is looking for an enthusiastic Junior Mobile Developer to configure, manage, and support our core client application requirements. In this role, you wil
 
-  id: jd_1518 | title: Content Strategist | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, SEO, Google Analytics, Audience Research, Social Media Marketing
-  description: Seeking a Content Strategist with experience developing data-driven content programs. Responsibilities include leading content audits, managing editorial planning, conducting audie
+  id: jd_1523 | title: Mobile Application Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React Native, Flutter, Swift, Kotlin
+  description: We are searching for a seasoned Mobile Application Engineer to evaluate, coordinate, and execute our strategic client deployment patterns and cross-platform architecture structures
 
-  id: jd_1519 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: SEO, Content Strategy, Google Analytics, Team Leadership, Social Media Marketing
-  description: Hiring a Senior Digital Marketing Manager to lead SEO, content, and social media initiatives. The role will define content roadmaps, oversee campaign performance, mentor team membe
+  id: jd_1524 | title: Senior Mobile Developer & Infrastructure Lead | level: senior | min_exp: 5 yrs
+  required_skills: React Native, Flutter, Swift, Kotlin
+  description: Seeking a Senior Mobile Developer and Infrastructure Lead to guide the modernization, process architecture restructuring, and strategic project execution of our corporate client en
 
-  id: jd_1520 | title: Principal Content Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: SEO, Content Strategy, Advanced Analytics, Editorial Leadership, Strategic Planning
-  description: Seeking an experienced Principal Content Strategy Lead to define enterprise-wide content and SEO direction. Responsibilities include leading strategic initiatives, establishing gov
+  id: jd_1525 | title: Principal Mobile Architect and Program Manager | level: senior | min_exp: 7 yrs
+  required_skills: React Native, Flutter, Swift, Kotlin
+  description: Join our core platform office as a Principal Mobile Architect and Program Manager to define our international business transformation roadmap, operational delivery standards, and c
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7576  resume_1516 × jd_1516
-  pair_7577  resume_1516 × jd_1517
-  pair_7578  resume_1516 × jd_1518
-  pair_7579  resume_1516 × jd_1519
-  pair_7580  resume_1516 × jd_1520
-  pair_7581  resume_1517 × jd_1516
-  pair_7582  resume_1517 × jd_1517
-  pair_7583  resume_1517 × jd_1518
-  pair_7584  resume_1517 × jd_1519
-  pair_7585  resume_1517 × jd_1520
-  pair_7586  resume_1518 × jd_1516
-  pair_7587  resume_1518 × jd_1517
-  pair_7588  resume_1518 × jd_1518
-  pair_7589  resume_1518 × jd_1519
-  pair_7590  resume_1518 × jd_1520
-  pair_7591  resume_1519 × jd_1516
-  pair_7592  resume_1519 × jd_1517
-  pair_7593  resume_1519 × jd_1518
-  pair_7594  resume_1519 × jd_1519
-  pair_7595  resume_1519 × jd_1520
-  pair_7596  resume_1520 × jd_1516
-  pair_7597  resume_1520 × jd_1517
-  pair_7598  resume_1520 × jd_1518
-  pair_7599  resume_1520 × jd_1519
-  pair_7600  resume_1520 × jd_1520
+  pair_7601  resume_1521 × jd_1521
+  pair_7602  resume_1521 × jd_1522
+  pair_7603  resume_1521 × jd_1523
+  pair_7604  resume_1521 × jd_1524
+  pair_7605  resume_1521 × jd_1525
+  pair_7606  resume_1522 × jd_1521
+  pair_7607  resume_1522 × jd_1522
+  pair_7608  resume_1522 × jd_1523
+  pair_7609  resume_1522 × jd_1524
+  pair_7610  resume_1522 × jd_1525
+  pair_7611  resume_1523 × jd_1521
+  pair_7612  resume_1523 × jd_1522
+  pair_7613  resume_1523 × jd_1523
+  pair_7614  resume_1523 × jd_1524
+  pair_7615  resume_1523 × jd_1525
+  pair_7616  resume_1524 × jd_1521
+  pair_7617  resume_1524 × jd_1522
+  pair_7618  resume_1524 × jd_1523
+  pair_7619  resume_1524 × jd_1524
+  pair_7620  resume_1524 × jd_1525
+  pair_7621  resume_1525 × jd_1521
+  pair_7622  resume_1525 × jd_1522
+  pair_7623  resume_1525 × jd_1523
+  pair_7624  resume_1525 × jd_1524
+  pair_7625  resume_1525 × jd_1525
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
