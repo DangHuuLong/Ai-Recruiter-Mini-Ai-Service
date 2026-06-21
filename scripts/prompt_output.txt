@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1416 | level: intern | exp: 0.4 yrs
-  skills: Requirements Elicitation, BPMN, Stakeholder Communication, Jira, Agile Methodologies
-  background: Enthusiastic Management Information Systems student seeking an internship in business analysis and project management. Proficient in eliciting baseline functional requirements, drafting business proce
+  id: resume_1421 | level: intern | exp: 0.3 yrs
+  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Candidate Screening
+  background: Enthusiastic Human Resources student seeking a talent acquisition internship to apply foundational knowledge of end-to-end corporate recruitment pipelines, applicant tracking configurations, and struc
 
-  id: resume_1417 | level: junior | exp: 1.5 yrs
-  skills: Requirements Analysis, BPMN, Stakeholder Management, Jira, Agile Methodologies, UML
-  background: Junior Business Analyst with more than a year of corporate experience managing technical requirements engineering, process documentation, and cross-functional stakeholder alignments. Professional expe
+  id: resume_1422 | level: junior | exp: 1.8 yrs
+  skills: Recruiting, HRIS, Onboarding, Sourcing, Candidate Engagement, Data Compliance
+  background: Junior HR Generalist with close to two years of professional experience managing talent acquisition workflows, core HRIS record keeping, and employee onboarding cycles. Dedicated to optimizing candida
 
-  id: resume_1413 | level: middle | exp: 4.0 yrs
-  skills: Requirements Engineering, BPMN, Stakeholder Engagement, Project Management, Agile Methodologies, Gap Analysis
-  background: Mid-Level Business Analyst and Project Manager with four years of comprehensive industry experience driving enterprise process optimization and structured requirement delivery matrices. Specializes in
+  id: resume_1423 | level: middle | exp: 4.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Sourcing, Data Analytics, Employer Branding
+  background: Mid-Level Talent Acquisition Specialist and HR Specialist with four years of comprehensive industry experience driving corporate staffing strategies, HRIS module implementations, and high-retention on
 
-  id: resume_1414 | level: senior | exp: 6.0 yrs
-  skills: Requirements Management, BPMN, Stakeholder Governance, Project Portfolio Management, Agile Methodologies, Change Management
-  background: Senior Business Analysis and Project Management Lead with six years of professional experience directing high-impact corporate transformations and enterprise system implementations. Expert in leveragi
+  id: resume_1424 | level: senior | exp: 6.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Sourcing, Workforce Planning, Change Management, Labor Law Compliance
+  background: Senior Talent Acquisition Manager and HR Lead with over six years of professional experience directing full-scale human capital programs, complex HRIS integrations, and enterprise-wide employee onboar
 
-  id: resume_1420 | level: senior | exp: 8.5 yrs
-  skills: Requirements Architecture, BPMN, Stakeholder Strategy, Project Portfolio Governance, Change Management, Executive Leadership
-  background: Accomplished Director of Business Analysis and Enterprise Project Strategy with over eight years of experience defining corporate transformation blueprints and engineering high-impact operational mana
+  id: resume_1425 | level: senior | exp: 9.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Executive Sourcing, Workforce Governance, Change Management, Strategic Leadership
+  background: Accomplished Director of Talent Acquisition and Enterprise HR Strategy with nine years of extensive experience defining global human capital blueprints and engineering high-impact corporate recruitmen
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1416 | title: Business Analyst and Project Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Elicitation, BPMN
-  description: We are seeking a passionate Business Analyst and Project Management Intern to join our core operations transformation squad. In this role, you will help gather, document, and clean
+  id: jd_1421 | title: Human Resources and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, HRIS
+  description: We are seeking a passionate Human Resources and Talent Acquisition Intern to join our core people operations squad. In this role, you will help gather, review, and organize candida
 
-  id: jd_1417 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, BPMN, Stakeholder Management
-  description: Join our enterprise transformation division as a Junior Business Analyst focusing on building next-generation automated workflows and corporate system updates. You will write clear
+  id: jd_1422 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Recruiting, HRIS, Onboarding
+  description: Join our employee success division as a Junior Talent Acquisition Specialist focusing on building next-generation talent pipelines and corporate sourcing updates. You will execute 
 
-  id: jd_1418 | title: Business Analyst & Project Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Engineering, BPMN, Stakeholder Engagement, Project Management
-  description: We are looking for a skilled Mid-Level Business Analyst and Project Specialist to take charge of our scalable business process and system implementation frameworks. You will archit
+  id: jd_1423 | title: Human Resources & Recruitment Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Sourcing
+  description: We are looking for a skilled Mid-Level Human Resources and Recruitment Specialist to take charge of our scalable talent acquisition networks and corporate onboarding frameworks. Yo
 
-  id: jd_1419 | title: Senior Business Analysis Consultant | level: senior | min_exp: 5 yrs
-  required_skills: Requirements Management, BPMN, Stakeholder Governance
-  description: Our expanding transformation division seeks a Senior Business Analysis Consultant to own the architecture of our enterprise requirement delivery frameworks. You will direct operati
+  id: jd_1424 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Sourcing
+  description: Our expanding people division seeks a Senior Talent Acquisition Manager to own the architecture of our enterprise recruitment and human capital frameworks. You will direct operatio
 
-  id: jd_1420 | title: Principal Enterprise Process Architect | level: senior | min_exp: 7 yrs
-  required_skills: Requirements Architecture, BPMN, Stakeholder Strategy, Leadership
-  description: We are hunting for a Principal Enterprise Process Architect to pioneer the structural expansion of our global cloud business management architecture. In this executive capacity, yo
+  id: jd_1425 | title: Principal Human Capital and Strategy Director | level: senior | min_exp: 7 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Leadership
+  description: We are hunting for a Principal Human Capital and Strategy Director to pioneer the strategic expansion of our global cloud workforce architecture. In this executive capacity, you wi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7076  resume_1416 × jd_1416
-  pair_7077  resume_1416 × jd_1417
-  pair_7078  resume_1416 × jd_1418
-  pair_7079  resume_1416 × jd_1419
-  pair_7080  resume_1416 × jd_1420
-  pair_7081  resume_1417 × jd_1416
-  pair_7082  resume_1417 × jd_1417
-  pair_7083  resume_1417 × jd_1418
-  pair_7084  resume_1417 × jd_1419
-  pair_7085  resume_1417 × jd_1420
-  pair_7086  resume_1413 × jd_1416
-  pair_7087  resume_1413 × jd_1417
-  pair_7088  resume_1413 × jd_1418
-  pair_7089  resume_1413 × jd_1419
-  pair_7090  resume_1413 × jd_1420
-  pair_7091  resume_1414 × jd_1416
-  pair_7092  resume_1414 × jd_1417
-  pair_7093  resume_1414 × jd_1418
-  pair_7094  resume_1414 × jd_1419
-  pair_7095  resume_1414 × jd_1420
-  pair_7096  resume_1420 × jd_1416
-  pair_7097  resume_1420 × jd_1417
-  pair_7098  resume_1420 × jd_1418
-  pair_7099  resume_1420 × jd_1419
-  pair_7100  resume_1420 × jd_1420
+  pair_7101  resume_1421 × jd_1421
+  pair_7102  resume_1421 × jd_1422
+  pair_7103  resume_1421 × jd_1423
+  pair_7104  resume_1421 × jd_1424
+  pair_7105  resume_1421 × jd_1425
+  pair_7106  resume_1422 × jd_1421
+  pair_7107  resume_1422 × jd_1422
+  pair_7108  resume_1422 × jd_1423
+  pair_7109  resume_1422 × jd_1424
+  pair_7110  resume_1422 × jd_1425
+  pair_7111  resume_1423 × jd_1421
+  pair_7112  resume_1423 × jd_1422
+  pair_7113  resume_1423 × jd_1423
+  pair_7114  resume_1423 × jd_1424
+  pair_7115  resume_1423 × jd_1425
+  pair_7116  resume_1424 × jd_1421
+  pair_7117  resume_1424 × jd_1422
+  pair_7118  resume_1424 × jd_1423
+  pair_7119  resume_1424 × jd_1424
+  pair_7120  resume_1424 × jd_1425
+  pair_7121  resume_1425 × jd_1421
+  pair_7122  resume_1425 × jd_1422
+  pair_7123  resume_1425 × jd_1423
+  pair_7124  resume_1425 × jd_1424
+  pair_7125  resume_1425 × jd_1425
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
