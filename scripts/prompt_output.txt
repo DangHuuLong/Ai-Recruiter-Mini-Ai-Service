@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1466 | level: intern | exp: 0.5 yrs
-  skills: Python, React, Django, JavaScript, RESTful APIs, SQL, Full-Stack Development
-  background: Highly motivated Computer Science student deeply focused on modern full-stack web engineering setups. Proficient in engineering clean functional component trees using React, handling lightweight data 
+  id: resume_1471 | level: intern | exp: 0.5 yrs
+  skills: Procurement, Inventory Management, ERP Systems, SAP ERP, Supply Chain Logistics, Data Analysis, Logistics Management
+  background: Ambitious Supply Chain Management student with a strong academic background in logistics orchestration, inventory management, and contemporary enterprise resource planning frameworks. Adept at conduct
 
-  id: resume_1467 | level: junior | exp: 1.5 yrs
-  skills: Python, React, FastAPI, TypeScript, State Management, Database Migrations, API Integration
-  background: Detail-oriented Junior Full-Stack Developer with over one year of active industry history designing, building, and refining multi-tier data applications and scalable user-facing workspaces. Proficient
+  id: resume_1472 | level: junior | exp: 1.5 yrs
+  skills: Procurement, Inventory Control, Oracle ERP, Supply Chain Analytics, Logistics Coordination, Vendor Compliance, Purchase Orders
+  background: Detail-oriented Junior Logistics Specialist with over one year of hands-on corporate experience tracking global supplier shipments, managing safety stock allocations, and executing transactional entri
 
-  id: resume_1468 | level: middle | exp: 4.0 yrs
-  skills: Python, React, Flask, Next.js, Asynchronous Processing, Database Optimization, State Management
-  background: Results-driven Full-Stack Engineer with four years of comprehensive commercial experience designing, optimizing, and scaling high-throughput web applications and complex computational backend pipeline
+  id: resume_1473 | level: middle | exp: 4.0 yrs
+  skills: Procurement, Inventory Optimization, ERP Customization, Microsoft Dynamics 365, Strategic Sourcing, Contract Negotiation, Demand Forecasting
+  background: Results-driven Supply Chain Specialist with four years of comprehensive experience managing multi-site procurement operations, optimizing inventory velocity, and spearheading Microsoft Dynamics 365 ER
 
-  id: resume_1469 | level: senior | exp: 6.0 yrs
-  skills: Python, React, Django, Django REST Framework, Micro-Frontends, Performance Tuning, CI/CD, System Architecture
-  background: Accomplished Senior Full-Stack Engineer with six years of industry achievement deploying enterprise application layers, high-performance system backends, and reusable frontend component landscapes. Pr
+  id: resume_1474 | level: senior | exp: 6.0 yrs
+  skills: Procurement Strategy, Inventory Management, SAP S/4HANA, Global Sourcing, Category Management, Supplier Risk Mitigation, Logistics Optimization
+  background: Accomplished Senior Procurement Manager with six years of industry achievement deploying enterprise global sourcing architectures, large-scale SAP S/4HANA ERP platforms, and highly automated material 
 
-  id: resume_1470 | level: senior | exp: 8.5 yrs
-  skills: Python, React, Next.js, Enterprise Architecture, Design Systems, Global State Management, Scalability, Cloud Engineering
-  background: Visionary Principal Full-Stack Architect with over eight years of global experience drafting corporate software roadmaps, distributed system blueprints, and resilient multi-tenant client topologies. E
+  id: resume_1475 | level: senior | exp: 8.5 yrs
+  skills: Supply Chain Architecture, Procurement, Inventory Strategy, Enterprise ERP, Network Optimization, Vendor-Managed Inventory, Risk Management, Logistics Leadership
+  background: Visionary Global Supply Chain Director with over eight years of international experience drafting corporate supply chain roadmaps, resilient multi-tier logistical architectures, and transformative ent
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1466 | title: Full-Stack Web Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, Django
-  description: We are looking for an analytical and motivated Full-Stack Web Engineering Intern to support our core digital product team. You will work closely with senior engineering leads to st
+  id: jd_1471 | title: Supply Chain Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Procurement, Inventory Management, SAP ERP
+  description: We are looking for an analytical and motivated Supply Chain Management Intern to support our core inventory operations team. You will work closely with senior procurement specialis
 
-  id: jd_1467 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, FastAPI, RESTful APIs
-  description: Our web application product group is seeking a Junior Full-Stack Developer to build, track, and polish our growing web interface tier. In this role, you will be responsible for tra
+  id: jd_1472 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Procurement, Inventory Control, Oracle ERP
+  description: Our operational product support group is seeking a Junior Supply Chain Analyst to track, reconcile, and optimize our growing global inventory network. In this role, you will be res
 
-  id: jd_1468 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, Flask, State Management
-  description: We are searching for a seasoned Full-Stack Engineer to design, extend, and sustain our enterprise client software network. This role focuses on delivering excellent consumer intera
+  id: jd_1473 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Procurement, Inventory Optimization, Microsoft Dynamics 365
+  description: We are searching for a seasoned Supply Chain Specialist to design, extend, and sustain our regional logistics fulfillment network. This role focuses on delivering excellent materia
 
-  id: jd_1469 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django, Django REST Framework, Micro-Frontends
-  description: Seeking a Senior Full-Stack Engineer to guide the scaling, blueprint maturation, and response optimization of our enterprise web platform nodes. In this leadership position, you wi
+  id: jd_1474 | title: Senior Procurement Manager | level: senior | min_exp: 5 yrs
+  required_skills: Procurement Strategy, Inventory Management, SAP S/4HANA
+  description: Seeking a Senior Procurement Manager to guide the scaling, vendor portfolio maturation, and spend optimization of our enterprise global supply network. In this leadership position,
 
-  id: jd_1470 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, Next.js, Enterprise Architecture, Design Systems
-  description: Join our technology group as a Principal Full-Stack Architect to define our global user experience roadmap, platform governance rules, and corporate presentation layer blueprints. 
+  id: jd_1475 | title: Global Supply Chain Director | level: senior | min_exp: 7 yrs
+  required_skills: Procurement, Inventory Strategy, Enterprise ERP, Supply Chain Architecture
+  description: Join our operations executive leadership group as a Global Supply Chain Director to define our international logistical roadmap, fulfillment governance rules, and corporate enterpr
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7326  resume_1466 × jd_1466
-  pair_7327  resume_1466 × jd_1467
-  pair_7328  resume_1466 × jd_1468
-  pair_7329  resume_1466 × jd_1469
-  pair_7330  resume_1466 × jd_1470
-  pair_7331  resume_1467 × jd_1466
-  pair_7332  resume_1467 × jd_1467
-  pair_7333  resume_1467 × jd_1468
-  pair_7334  resume_1467 × jd_1469
-  pair_7335  resume_1467 × jd_1470
-  pair_7336  resume_1468 × jd_1466
-  pair_7337  resume_1468 × jd_1467
-  pair_7338  resume_1468 × jd_1468
-  pair_7339  resume_1468 × jd_1469
-  pair_7340  resume_1468 × jd_1470
-  pair_7341  resume_1469 × jd_1466
-  pair_7342  resume_1469 × jd_1467
-  pair_7343  resume_1469 × jd_1468
-  pair_7344  resume_1469 × jd_1469
-  pair_7345  resume_1469 × jd_1470
-  pair_7346  resume_1470 × jd_1466
-  pair_7347  resume_1470 × jd_1467
-  pair_7348  resume_1470 × jd_1468
-  pair_7349  resume_1470 × jd_1469
-  pair_7350  resume_1470 × jd_1470
+  pair_7351  resume_1471 × jd_1471
+  pair_7352  resume_1471 × jd_1472
+  pair_7353  resume_1471 × jd_1473
+  pair_7354  resume_1471 × jd_1474
+  pair_7355  resume_1471 × jd_1475
+  pair_7356  resume_1472 × jd_1471
+  pair_7357  resume_1472 × jd_1472
+  pair_7358  resume_1472 × jd_1473
+  pair_7359  resume_1472 × jd_1474
+  pair_7360  resume_1472 × jd_1475
+  pair_7361  resume_1473 × jd_1471
+  pair_7362  resume_1473 × jd_1472
+  pair_7363  resume_1473 × jd_1473
+  pair_7364  resume_1473 × jd_1474
+  pair_7365  resume_1473 × jd_1475
+  pair_7366  resume_1474 × jd_1471
+  pair_7367  resume_1474 × jd_1472
+  pair_7368  resume_1474 × jd_1473
+  pair_7369  resume_1474 × jd_1474
+  pair_7370  resume_1474 × jd_1475
+  pair_7371  resume_1475 × jd_1471
+  pair_7372  resume_1475 × jd_1472
+  pair_7373  resume_1475 × jd_1473
+  pair_7374  resume_1475 × jd_1474
+  pair_7375  resume_1475 × jd_1475
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
