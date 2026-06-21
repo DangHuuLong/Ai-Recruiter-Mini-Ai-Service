@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1451 | level: intern | exp: 0.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Machine Learning, Data Analysis
-  background: Enthusiastic and highly motivated Data Science student specializing in predictive algorithms, statistical data analysis, and machine learning architectures. Proficient in web data structures and compu
+  id: resume_1456 | level: intern | exp: 0.5 yrs
+  skills: Python, React, Django, JavaScript, HTML5, CSS3, Full-Stack Development
+  background: Enthusiastic and highly motivated Information Technology student specializing in full-stack web development across modern software architectures. Proficient in building declarative frontend user inter
 
-  id: resume_1452 | level: junior | exp: 1.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Feature Engineering, Model Evaluation
-  background: Detail-oriented Junior Data Scientist with over one year of active commercial experience designing, optimizing, and shipping robust predictive pipelines and feature engineering layers. Proficient in m
+  id: resume_1457 | level: junior | exp: 1.5 yrs
+  skills: Python, React, FastAPI, JavaScript, RESTful APIs, State Management, SQL
+  background: Detail-oriented Junior Full-Stack Developer with over one year of active commercial experience designing, maintaining, and shipping pixel-perfect responsive web interfaces and server backends. Profici
 
-  id: resume_1453 | level: middle | exp: 4.0 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Deep Learning, Hyperparameter Tuning, Model Orchestration
-  background: Results-driven Data Scientist with four years of deep commercial experience architecting scalable machine learning frameworks, analytical pipelines, and automated hyperparameter tuning setups. Expert 
+  id: resume_1458 | level: middle | exp: 4.0 yrs
+  skills: Python, React, Flask, Next.js, Asynchronous Programming, API Design, Database Optimization
+  background: Results-driven Full-Stack Engineer with four years of deep commercial experience architecting scalable, high-performance web applications, server systems, and dynamic client blueprints. Expert in buil
 
-  id: resume_1454 | level: senior | exp: 6.0 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Distributed Training, Machine Learning Operations, Model Deployment
-  background: Accomplished Senior Machine Learning Engineer with six years of professional industry history delivering complex model blueprints, distributed training infrastructures, and high-performance analytical
+  id: resume_1459 | level: senior | exp: 6.0 yrs
+  skills: Python, React, Django, Django REST Framework, Micro-Frontends, Performance Tuning, CI/CD, Web-Sockets
+  background: Accomplished Senior Full-Stack Engineer with six years of professional industry history delivering robust architectural patterns, reusable component ecosystems, and high-performance user journeys. Pro
 
-  id: resume_1455 | level: senior | exp: 8.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Enterprise Architecture, Feature Stores, Model Lifecycle Management, Data Science Strategy
-  background: Visionary Principal Machine Learning Architect with over eight years of global experience defining enterprise data science roadmaps, distributed model blueprints, and strategic modeling systems. Maste
+  id: resume_1460 | level: senior | exp: 8.5 yrs
+  skills: Python, React, Next.js, Enterprise Architecture, Design Systems, Global State Management, Scalability, Web Governance
+  background: Visionary Principal Full-Stack Architect with over eight years of experience defining enterprise web development roadmaps, global user interface blueprints, and secure multi-tier presentation layer sy
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1451 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, pandas, scikit-learn
-  description: We are looking for an analytical and motivated Data Science Intern to support our predictive modeling product team. You will work closely with senior engineering staff to explore r
+  id: jd_1456 | title: Full-Stack Web Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React, Django
+  description: We are looking for an analytical and motivated Full-Stack Web Engineering Intern to support our user interface and core product team. You will work closely with senior engineering 
 
-  id: jd_1452 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
-  required_skills: Python, pandas, scikit-learn, PyTorch
-  description: Our application development team is seeking a Junior Data Scientist to build, monitor, and optimize our growing machine learning interface tier. In this role, you will be responsib
+  id: jd_1457 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, FastAPI, RESTful APIs
+  description: Our application development team is seeking a Junior Full-Stack Developer to build, monitor, and optimize our growing web interface tier. In this role, you will be responsible for 
 
-  id: jd_1453 | title: Data Scientist | level: middle | min_exp: 3 yrs
-  required_skills: Python, pandas, scikit-learn, PyTorch, Machine Learning
-  description: We are recruiting a seasoned Data Scientist to design, scale, and maintain our enterprise machine learning matrix. This position focuses on driving outstanding predictive experienc
+  id: jd_1458 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, Flask, State Management
+  description: We are recruiting a seasoned Full-Stack Engineer to design, scale, and maintain our enterprise client interface matrix. This position focuses on driving outstanding user experience
 
-  id: jd_1454 | title: Senior Machine Learning Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, pandas, scikit-learn, PyTorch, Machine Learning
-  description: Seeking a Senior Machine Learning Engineer to lead the scaling, architectural maturation, and performance optimization of our enterprise predictive web platform interfaces. In this
+  id: jd_1459 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, Django, Django REST Framework, Micro-Frontends
+  description: Seeking a Senior Full-Stack Engineer to lead the scaling, architectural maturation, and performance optimization of our enterprise web platform interfaces. In this leadership role,
 
-  id: jd_1455 | title: Principal Machine Learning Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, pandas, scikit-learn, PyTorch, Enterprise Architecture
-  description: Join us as a Principal Machine Learning Architect to define our global user intelligence roadmap, architectural governance standards, and enterprise data science blueprints. This h
+  id: jd_1460 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, React, Next.js, Enterprise Architecture, Design Systems
+  description: Join us as a Principal Full-Stack Architect to define our global user interface roadmap, architectural governance standards, and enterprise presentation blueprints. This high-level
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7251  resume_1451 × jd_1451
-  pair_7252  resume_1451 × jd_1452
-  pair_7253  resume_1451 × jd_1453
-  pair_7254  resume_1451 × jd_1454
-  pair_7255  resume_1451 × jd_1455
-  pair_7256  resume_1452 × jd_1451
-  pair_7257  resume_1452 × jd_1452
-  pair_7258  resume_1452 × jd_1453
-  pair_7259  resume_1452 × jd_1454
-  pair_7260  resume_1452 × jd_1455
-  pair_7261  resume_1453 × jd_1451
-  pair_7262  resume_1453 × jd_1452
-  pair_7263  resume_1453 × jd_1453
-  pair_7264  resume_1453 × jd_1454
-  pair_7265  resume_1453 × jd_1455
-  pair_7266  resume_1454 × jd_1451
-  pair_7267  resume_1454 × jd_1452
-  pair_7268  resume_1454 × jd_1453
-  pair_7269  resume_1454 × jd_1454
-  pair_7270  resume_1454 × jd_1455
-  pair_7271  resume_1455 × jd_1451
-  pair_7272  resume_1455 × jd_1452
-  pair_7273  resume_1455 × jd_1453
-  pair_7274  resume_1455 × jd_1454
-  pair_7275  resume_1455 × jd_1455
+  pair_7276  resume_1456 × jd_1456
+  pair_7277  resume_1456 × jd_1457
+  pair_7278  resume_1456 × jd_1458
+  pair_7279  resume_1456 × jd_1459
+  pair_7280  resume_1456 × jd_1460
+  pair_7281  resume_1457 × jd_1456
+  pair_7282  resume_1457 × jd_1457
+  pair_7283  resume_1457 × jd_1458
+  pair_7284  resume_1457 × jd_1459
+  pair_7285  resume_1457 × jd_1460
+  pair_7286  resume_1458 × jd_1456
+  pair_7287  resume_1458 × jd_1457
+  pair_7288  resume_1458 × jd_1458
+  pair_7289  resume_1458 × jd_1459
+  pair_7290  resume_1458 × jd_1460
+  pair_7291  resume_1459 × jd_1456
+  pair_7292  resume_1459 × jd_1457
+  pair_7293  resume_1459 × jd_1458
+  pair_7294  resume_1459 × jd_1459
+  pair_7295  resume_1459 × jd_1460
+  pair_7296  resume_1460 × jd_1456
+  pair_7297  resume_1460 × jd_1457
+  pair_7298  resume_1460 × jd_1458
+  pair_7299  resume_1460 × jd_1459
+  pair_7300  resume_1460 × jd_1460
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
