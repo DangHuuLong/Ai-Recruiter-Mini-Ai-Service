@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1411 | level: intern | exp: 0.4 yrs
-  skills: E-commerce, Marketplace Operations, Merchandising, Inventory Tracking, Microsoft Excel
-  background: Enthusiastic Business Administration student seeking an internship position within digital marketplace management and retail operations. Proficient in maintaining online storefront configurations, opt
+  id: resume_1416 | level: intern | exp: 0.4 yrs
+  skills: Requirements Elicitation, BPMN, Stakeholder Communication, Jira, Agile Methodologies
+  background: Enthusiastic Management Information Systems student seeking an internship in business analysis and project management. Proficient in eliciting baseline functional requirements, drafting business proce
 
-  id: resume_1412 | level: junior | exp: 1.5 yrs
-  skills: E-commerce, Marketplace Management, Merchandising, SKU Optimization, Retail Operations, Data Analytics
-  background: Junior E-commerce Specialist with more than a year of corporate experience managing digital marketplace storefronts, vendor relations, and digital merchandising schedules. Professional expertise lies 
+  id: resume_1417 | level: junior | exp: 1.5 yrs
+  skills: Requirements Analysis, BPMN, Stakeholder Management, Jira, Agile Methodologies, UML
+  background: Junior Business Analyst with more than a year of corporate experience managing technical requirements engineering, process documentation, and cross-functional stakeholder alignments. Professional expe
 
   id: resume_1413 | level: middle | exp: 4.0 yrs
-  skills: E-commerce, Marketplace Strategy, Merchandising, Retail Operations, Fulfillment Management, Vendor Relations
-  background: Mid-Level E-commerce Operations Manager with four years of comprehensive industry experience driving digital marketplace growth and scalable retail merchandising strategies. Specializes in building ef
+  skills: Requirements Engineering, BPMN, Stakeholder Engagement, Project Management, Agile Methodologies, Gap Analysis
+  background: Mid-Level Business Analyst and Project Manager with four years of comprehensive industry experience driving enterprise process optimization and structured requirement delivery matrices. Specializes in
 
   id: resume_1414 | level: senior | exp: 6.0 yrs
-  skills: E-commerce, Marketplace Operations, Merchandising Strategy, Retail Management, Inventory Optimization, Supply Chain
-  background: Senior E-commerce Operations and Merchandising Lead with six years of professional experience directing high-revenue digital marketplaces and enterprise retail networks. Expert in leveraging multi-cha
+  skills: Requirements Management, BPMN, Stakeholder Governance, Project Portfolio Management, Agile Methodologies, Change Management
+  background: Senior Business Analysis and Project Management Lead with six years of professional experience directing high-impact corporate transformations and enterprise system implementations. Expert in leveragi
 
-  id: resume_1415 | level: senior | exp: 8.5 yrs
-  skills: E-commerce, Marketplace Strategy, Retail Operations, Merchandising Leadership, Fulfillment Networks, Executive Strategy
-  background: Accomplished Director of Marketplace Strategy and Digital Retail with over eight years of experience defining corporate commercial trajectories and engineering high-volume e-commerce operational ecosy
+  id: resume_1420 | level: senior | exp: 8.5 yrs
+  skills: Requirements Architecture, BPMN, Stakeholder Strategy, Project Portfolio Governance, Change Management, Executive Leadership
+  background: Accomplished Director of Business Analysis and Enterprise Project Strategy with over eight years of experience defining corporate transformation blueprints and engineering high-impact operational mana
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1411 | title: E-commerce and Marketplace Intern | level: intern | min_exp: 0 yrs
-  required_skills: E-commerce, Marketplace Operations
-  description: We are seeking a passionate E-commerce and Marketplace Intern to join our core retail operations squad. In this role, you will help clean, process, and optimize digital product lis
+  id: jd_1416 | title: Business Analyst and Project Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Elicitation, BPMN
+  description: We are seeking a passionate Business Analyst and Project Management Intern to join our core operations transformation squad. In this role, you will help gather, document, and clean
 
-  id: jd_1412 | title: Junior E-commerce Operations Analyst | level: junior | min_exp: 1 yrs
-  required_skills: E-commerce, Marketplace Management, Retail Operations
-  description: Join our digital commerce division as a Junior E-commerce Operations Analyst focusing on building next-generation automated merchant and store workflows. You will write clear produ
+  id: jd_1417 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, BPMN, Stakeholder Management
+  description: Join our enterprise transformation division as a Junior Business Analyst focusing on building next-generation automated workflows and corporate system updates. You will write clear
 
-  id: jd_1413 | title: E-commerce Operations Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
-  required_skills: E-commerce, Marketplace Strategy, Merchandising, Retail Operations
-  description: We are looking for a skilled Mid-Level E-commerce Operations Specialist to take charge of our scalable marketplace and digital retail platforms. You will architect, implement, and 
+  id: jd_1418 | title: Business Analyst & Project Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Engineering, BPMN, Stakeholder Engagement, Project Management
+  description: We are looking for a skilled Mid-Level Business Analyst and Project Specialist to take charge of our scalable business process and system implementation frameworks. You will archit
 
-  id: jd_1414 | title: Senior E-commerce Marketplace Lead | level: senior | min_exp: 5 yrs
-  required_skills: E-commerce, Marketplace Operations, Merchandising Strategy
-  description: Our expanding commerce division seeks a Senior E-commerce Marketplace Lead to own the architecture of our high-volume digital merchant network. You will direct operational framewor
+  id: jd_1419 | title: Senior Business Analysis Consultant | level: senior | min_exp: 5 yrs
+  required_skills: Requirements Management, BPMN, Stakeholder Governance
+  description: Our expanding transformation division seeks a Senior Business Analysis Consultant to own the architecture of our enterprise requirement delivery frameworks. You will direct operati
 
-  id: jd_1415 | title: Principal Marketplace Architect & Retail Lead | level: senior | min_exp: 7 yrs
-  required_skills: E-commerce, Marketplace Strategy, Retail Operations, Leadership
-  description: We are hunting for a Principal Marketplace Architect and Retail Lead to pioneer the structural expansion of our global cloud commerce network. In this executive capacity, you will 
+  id: jd_1420 | title: Principal Enterprise Process Architect | level: senior | min_exp: 7 yrs
+  required_skills: Requirements Architecture, BPMN, Stakeholder Strategy, Leadership
+  description: We are hunting for a Principal Enterprise Process Architect to pioneer the structural expansion of our global cloud business management architecture. In this executive capacity, yo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7051  resume_1411 × jd_1411
-  pair_7052  resume_1411 × jd_1412
-  pair_7053  resume_1411 × jd_1413
-  pair_7054  resume_1411 × jd_1414
-  pair_7055  resume_1411 × jd_1415
-  pair_7056  resume_1412 × jd_1411
-  pair_7057  resume_1412 × jd_1412
-  pair_7058  resume_1412 × jd_1413
-  pair_7059  resume_1412 × jd_1414
-  pair_7060  resume_1412 × jd_1415
-  pair_7061  resume_1413 × jd_1411
-  pair_7062  resume_1413 × jd_1412
-  pair_7063  resume_1413 × jd_1413
-  pair_7064  resume_1413 × jd_1414
-  pair_7065  resume_1413 × jd_1415
-  pair_7066  resume_1414 × jd_1411
-  pair_7067  resume_1414 × jd_1412
-  pair_7068  resume_1414 × jd_1413
-  pair_7069  resume_1414 × jd_1414
-  pair_7070  resume_1414 × jd_1415
-  pair_7071  resume_1415 × jd_1411
-  pair_7072  resume_1415 × jd_1412
-  pair_7073  resume_1415 × jd_1413
-  pair_7074  resume_1415 × jd_1414
-  pair_7075  resume_1415 × jd_1415
+  pair_7076  resume_1416 × jd_1416
+  pair_7077  resume_1416 × jd_1417
+  pair_7078  resume_1416 × jd_1418
+  pair_7079  resume_1416 × jd_1419
+  pair_7080  resume_1416 × jd_1420
+  pair_7081  resume_1417 × jd_1416
+  pair_7082  resume_1417 × jd_1417
+  pair_7083  resume_1417 × jd_1418
+  pair_7084  resume_1417 × jd_1419
+  pair_7085  resume_1417 × jd_1420
+  pair_7086  resume_1413 × jd_1416
+  pair_7087  resume_1413 × jd_1417
+  pair_7088  resume_1413 × jd_1418
+  pair_7089  resume_1413 × jd_1419
+  pair_7090  resume_1413 × jd_1420
+  pair_7091  resume_1414 × jd_1416
+  pair_7092  resume_1414 × jd_1417
+  pair_7093  resume_1414 × jd_1418
+  pair_7094  resume_1414 × jd_1419
+  pair_7095  resume_1414 × jd_1420
+  pair_7096  resume_1420 × jd_1416
+  pair_7097  resume_1420 × jd_1417
+  pair_7098  resume_1420 × jd_1418
+  pair_7099  resume_1420 × jd_1419
+  pair_7100  resume_1420 × jd_1420
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
