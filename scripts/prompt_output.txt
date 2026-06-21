@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1406 | level: intern | exp: 0.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, Git, Jupyter Notebooks
-  background: Motivated data science student seeking an internship in machine learning development. Proficient in Python for statistical computing, handling structured datasets using pandas, and building foundation
+  id: resume_1411 | level: intern | exp: 0.4 yrs
+  skills: E-commerce, Marketplace Operations, Merchandising, Inventory Tracking, Microsoft Excel
+  background: Enthusiastic Business Administration student seeking an internship position within digital marketplace management and retail operations. Proficient in maintaining online storefront configurations, opt
 
-  id: resume_1407 | level: junior | exp: 1.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, SQL, Docker, Git
-  background: Junior Data Scientist with over a year of corporate experience designing, implementing, and validating statistical learning workflows. Professional expertise lies within Python frameworks including pa
+  id: resume_1412 | level: junior | exp: 1.5 yrs
+  skills: E-commerce, Marketplace Management, Merchandising, SKU Optimization, Retail Operations, Data Analytics
+  background: Junior E-commerce Specialist with more than a year of corporate experience managing digital marketplace storefronts, vendor relations, and digital merchandising schedules. Professional expertise lies 
 
-  id: resume_1408 | level: middle | exp: 4.0 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, MLflow, Docker, SQL, Data Pipelines
-  background: Mid-Level Machine Learning Engineer with four years of comprehensive industry expertise crafting high-performance predictive systems and intelligence layers. Specializes in building scalable productio
+  id: resume_1413 | level: middle | exp: 4.0 yrs
+  skills: E-commerce, Marketplace Strategy, Merchandising, Retail Operations, Fulfillment Management, Vendor Relations
+  background: Mid-Level E-commerce Operations Manager with four years of comprehensive industry experience driving digital marketplace growth and scalable retail merchandising strategies. Specializes in building ef
 
-  id: resume_1409 | level: senior | exp: 6.0 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, MLOps, AWS, Kubernetes, Docker, SQL, Architecture
-  background: Senior Data Scientist with six years of professional experience engineering elite algorithmic architectures and enterprise-scale predictive modeling systems. Expert in leveraging Python ecosystems, sc
+  id: resume_1414 | level: senior | exp: 6.0 yrs
+  skills: E-commerce, Marketplace Operations, Merchandising Strategy, Retail Management, Inventory Optimization, Supply Chain
+  background: Senior E-commerce Operations and Merchandising Lead with six years of professional experience directing high-revenue digital marketplaces and enterprise retail networks. Expert in leveraging multi-cha
 
-  id: resume_1410 | level: senior | exp: 8.5 yrs
-  skills: Python, scikit-learn, PyTorch, pandas, MLOps, Kubernetes, Cloud Architecture, Leadership, Strategy
-  background: Accomplished Lead Machine Learning Scientist with over eight years of experience defining corporate data strategies and engineering mission-critical intelligence infrastructure. Authoritative mastery 
+  id: resume_1415 | level: senior | exp: 8.5 yrs
+  skills: E-commerce, Marketplace Strategy, Retail Operations, Merchandising Leadership, Fulfillment Networks, Executive Strategy
+  background: Accomplished Director of Marketplace Strategy and Digital Retail with over eight years of experience defining corporate commercial trajectories and engineering high-volume e-commerce operational ecosy
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1406 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, pandas
-  description: We are seeking a passionate Data Science Intern to join our core analytics squad. In this role, you will help clean, process, and explore structured data streams using Python and p
+  id: jd_1411 | title: E-commerce and Marketplace Intern | level: intern | min_exp: 0 yrs
+  required_skills: E-commerce, Marketplace Operations
+  description: We are seeking a passionate E-commerce and Marketplace Intern to join our core retail operations squad. In this role, you will help clean, process, and optimize digital product lis
 
-  id: jd_1407 | title: Junior Machine Learning Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, scikit-learn, pandas
-  description: Join our product intelligence division as a Junior Machine Learning Engineer focusing on building next-generation automated modeling workflows. You will write high-quality processi
+  id: jd_1412 | title: Junior E-commerce Operations Analyst | level: junior | min_exp: 1 yrs
+  required_skills: E-commerce, Marketplace Management, Retail Operations
+  description: Join our digital commerce division as a Junior E-commerce Operations Analyst focusing on building next-generation automated merchant and store workflows. You will write clear produ
 
-  id: jd_1408 | title: Data Scientist (Mid-Level) | level: middle | min_exp: 3 yrs
-  required_skills: Python, scikit-learn, PyTorch, pandas
-  description: We are looking for a skilled Mid-Level Data Scientist to take charge of our scalable predictive layer. You will architect, implement, and maintain scalable modeling pipelines using
+  id: jd_1413 | title: E-commerce Operations Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
+  required_skills: E-commerce, Marketplace Strategy, Merchandising, Retail Operations
+  description: We are looking for a skilled Mid-Level E-commerce Operations Specialist to take charge of our scalable marketplace and digital retail platforms. You will architect, implement, and 
 
-  id: jd_1409 | title: Senior Machine Learning Systems Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, scikit-learn, PyTorch, MLOps
-  description: Our expanding platform team seeks a Senior Machine Learning Systems Engineer to own the architecture of our high-concurrency predictive network. You will direct technical patterns 
+  id: jd_1414 | title: Senior E-commerce Marketplace Lead | level: senior | min_exp: 5 yrs
+  required_skills: E-commerce, Marketplace Operations, Merchandising Strategy
+  description: Our expanding commerce division seeks a Senior E-commerce Marketplace Lead to own the architecture of our high-volume digital merchant network. You will direct operational framewor
 
-  id: jd_1410 | title: Principal ML Architect & Data Science Lead | level: senior | min_exp: 7 yrs
-  required_skills: Python, scikit-learn, PyTorch, pandas, MLOps, Leadership
-  description: We are hunting for a Lead Machine Learning Architect to pioneer the structural expansion of our global cloud intelligence platform. In this principal capacity, you will outline tec
+  id: jd_1415 | title: Principal Marketplace Architect & Retail Lead | level: senior | min_exp: 7 yrs
+  required_skills: E-commerce, Marketplace Strategy, Retail Operations, Leadership
+  description: We are hunting for a Principal Marketplace Architect and Retail Lead to pioneer the structural expansion of our global cloud commerce network. In this executive capacity, you will 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7026  resume_1406 × jd_1406
-  pair_7027  resume_1406 × jd_1407
-  pair_7028  resume_1406 × jd_1408
-  pair_7029  resume_1406 × jd_1409
-  pair_7030  resume_1406 × jd_1410
-  pair_7031  resume_1407 × jd_1406
-  pair_7032  resume_1407 × jd_1407
-  pair_7033  resume_1407 × jd_1408
-  pair_7034  resume_1407 × jd_1409
-  pair_7035  resume_1407 × jd_1410
-  pair_7036  resume_1408 × jd_1406
-  pair_7037  resume_1408 × jd_1407
-  pair_7038  resume_1408 × jd_1408
-  pair_7039  resume_1408 × jd_1409
-  pair_7040  resume_1408 × jd_1410
-  pair_7041  resume_1409 × jd_1406
-  pair_7042  resume_1409 × jd_1407
-  pair_7043  resume_1409 × jd_1408
-  pair_7044  resume_1409 × jd_1409
-  pair_7045  resume_1409 × jd_1410
-  pair_7046  resume_1410 × jd_1406
-  pair_7047  resume_1410 × jd_1407
-  pair_7048  resume_1410 × jd_1408
-  pair_7049  resume_1410 × jd_1409
-  pair_7050  resume_1410 × jd_1410
+  pair_7051  resume_1411 × jd_1411
+  pair_7052  resume_1411 × jd_1412
+  pair_7053  resume_1411 × jd_1413
+  pair_7054  resume_1411 × jd_1414
+  pair_7055  resume_1411 × jd_1415
+  pair_7056  resume_1412 × jd_1411
+  pair_7057  resume_1412 × jd_1412
+  pair_7058  resume_1412 × jd_1413
+  pair_7059  resume_1412 × jd_1414
+  pair_7060  resume_1412 × jd_1415
+  pair_7061  resume_1413 × jd_1411
+  pair_7062  resume_1413 × jd_1412
+  pair_7063  resume_1413 × jd_1413
+  pair_7064  resume_1413 × jd_1414
+  pair_7065  resume_1413 × jd_1415
+  pair_7066  resume_1414 × jd_1411
+  pair_7067  resume_1414 × jd_1412
+  pair_7068  resume_1414 × jd_1413
+  pair_7069  resume_1414 × jd_1414
+  pair_7070  resume_1414 × jd_1415
+  pair_7071  resume_1415 × jd_1411
+  pair_7072  resume_1415 × jd_1412
+  pair_7073  resume_1415 × jd_1413
+  pair_7074  resume_1415 × jd_1414
+  pair_7075  resume_1415 × jd_1415
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
