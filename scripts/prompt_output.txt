@@ -1,0 +1,100 @@
+You are a dataset labeler for an AI recruitment system.
+Score 25 CV-JD pairs using rubric v0.2.
+
+═══ RESUMES ═══
+  id: resume_1401 | level: intern | exp: 0.4 yrs
+  skills: Linux, Python, Wireshark, Nmap, Burp Suite, Splunk, TCP/IP, Bash, Vulnerability Assessment, Network Security
+  background: Final-year Cybersecurity student with hands-on academic experience in network security, vulnerability assessment, and security monitoring. Completed coursework in ethical hacking, TCP/IP networking, o
+
+  id: resume_1402 | level: junior | exp: 1.8 yrs
+  skills: Splunk, Nessus, Linux, Windows Security, Python, Wireshark, Incident Response, SIEM, Network Security, Burp Suite
+  background: Junior Information Security Analyst with nearly two years of experience supporting SOC operations and network security monitoring. Responsible for reviewing SIEM alerts, investigating suspicious event
+
+  id: resume_1403 | level: middle | exp: 4.2 yrs
+  skills: Splunk, ELK Stack, Penetration Testing, Python, Nmap, Burp Suite, Threat Hunting, IDS, Firewall Administration, MITRE ATT&CK
+  background: Information Security Engineer with four years of experience across security operations, network defense, and penetration testing engagements. Managed SIEM content development, detection tuning, and in
+
+  id: resume_1404 | level: senior | exp: 6.1 yrs
+  skills: Splunk, Elastic Stack, Incident Response, Threat Hunting, Penetration Testing, Python, PowerShell, Nessus, IDS, Cloud Security
+  background: Senior Cybersecurity Engineer with six years of experience leading security operations, incident response, and offensive security initiatives. Architected SIEM solutions, managed SOC improvements, and
+
+  id: resume_1405 | level: senior | exp: 9.5 yrs
+  skills: Splunk, Security Architecture, Threat Intelligence, Penetration Testing, Incident Response, Python, SIEM, Firewall Administration, IDS, Security Automation
+  background: Principal Information Security Specialist with more than nine years of experience designing enterprise security programs, leading blue team operations, and directing penetration testing initiatives. E
+
+═══ JOB DESCRIPTIONS ═══
+  id: jd_1401 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
+  required_skills: Linux, Network Security, SIEM, Python, Wireshark
+  description: Seeking a Cybersecurity Intern to support security monitoring, vulnerability assessment, and network defense activities. The role involves reviewing SIEM alerts, assisting with log
+
+  id: jd_1402 | title: Junior SOC Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Splunk,   SIEM, Linux, Incident Response, Python
+  description: The position focuses on security monitoring, SIEM operations, and incident triage in a growing security operations environment. Responsibilities include investigating alerts, analy
+
+  id: jd_1403 | title: Information Security Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Splunk, Penetration Testing, Python, Threat Hunting, Network Security
+  description: Looking for an Information Security Engineer to manage security monitoring, penetration testing, and threat hunting activities. The engineer will develop SIEM use cases, perform se
+
+  id: jd_1404 | title: Senior Cybersecurity Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Splunk, Incident Response, Penetration Testing, Python, IDS
+  description: Seeking a Senior Cybersecurity Engineer to lead incident response, security monitoring, and offensive security initiatives. Responsibilities include architecting SIEM solutions, le
+
+  id: jd_1405 | title: Principal Information Security Lead | level: senior | min_exp: 7 yrs
+  required_skills: SIEM, Splunk, Security Architecture, Incident Response, Security Automation
+  description: A principal-level security leader is required to drive enterprise security strategy, oversee SOC operations, and guide advanced security assessment programs. Responsibilities inclu
+
+═══ SCORING RUBRIC v0.2 ═══
+Score each criterion 0–100, then compute:
+  overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
+                        PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
+                        KEYWORD_DOMAIN_ALIGNMENT×0.10)
+
+Label mapping:
+  90–100 → excellent_match
+  75–89  → strong_match
+  60–74  → moderate_match
+  40–59  → weak_match      ← FORBIDDEN — do not generate
+  0–39   → poor_match      ← FORBIDDEN — do not generate
+
+ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
+KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
+all documents share the same domain — floor is 60.
+
+Avoid boundary zones — do NOT use scores in these ranges:
+  35–45, 55–65, 70–80, 85–95
+Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
+
+═══ PAIRING ORDER (25 pairs) ═══
+  pair_7001  resume_1401 × jd_1401
+  pair_7002  resume_1401 × jd_1402
+  pair_7003  resume_1401 × jd_1403
+  pair_7004  resume_1401 × jd_1404
+  pair_7005  resume_1401 × jd_1405
+  pair_7006  resume_1402 × jd_1401
+  pair_7007  resume_1402 × jd_1402
+  pair_7008  resume_1402 × jd_1403
+  pair_7009  resume_1402 × jd_1404
+  pair_7010  resume_1402 × jd_1405
+  pair_7011  resume_1403 × jd_1401
+  pair_7012  resume_1403 × jd_1402
+  pair_7013  resume_1403 × jd_1403
+  pair_7014  resume_1403 × jd_1404
+  pair_7015  resume_1403 × jd_1405
+  pair_7016  resume_1404 × jd_1401
+  pair_7017  resume_1404 × jd_1402
+  pair_7018  resume_1404 × jd_1403
+  pair_7019  resume_1404 × jd_1404
+  pair_7020  resume_1404 × jd_1405
+  pair_7021  resume_1405 × jd_1401
+  pair_7022  resume_1405 × jd_1402
+  pair_7023  resume_1405 × jd_1403
+  pair_7024  resume_1405 × jd_1404
+  pair_7025  resume_1405 × jd_1405
+
+═══ OUTPUT FORMAT ═══
+Output exactly 25 lines.
+Each line is a single JSON object (no array brackets, no commas between lines).
+No markdown, no explanation, no extra text — only 25 JSON lines.
+
+JSON schema per pair:
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
