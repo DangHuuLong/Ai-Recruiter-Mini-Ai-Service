@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1556 | level: intern | exp: 0.4 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Jira, Scrum
-  background: Enthusiastic and highly analytical final-year Business and Technology student specializing in technical product management methodologies. Possesses a strong academic understanding of modern software l
+  id: resume_1561 | level: intern | exp: 0.4 yrs
+  skills: Roadmap, Agile, Stakeholders, Product Management, Jira, User Stories
+  background: Enthusiastic and highly analytical final-year Management Information Systems student focusing on digital product management lifecycles. Academically trained in product roadmap visualization, user pers
 
-  id: resume_1557 | level: junior | exp: 1.5 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, User Stories, Product Analytics
-  background: Junior Product Manager with over a year of professional experience building, optimizing, and supporting customer-facing software applications within rapid tech environments. Competent at gathering det
+  id: resume_1562 | level: junior | exp: 1.5 yrs
+  skills: Roadmap, Agile, Stakeholders, Product Management, Backlog Grooming, Product Analytics
+  background: Junior Product Manager with over a year of corporate experience refining and driving growth for consumer-facing digital applications within high-velocity technical environments. Competent at executing
 
-  id: resume_1558 | level: middle | exp: 4.2 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Product Strategy, Scrum, SQL
-  background: Competent Product Manager and Technology Specialist with four years of commercial expertise spearheading digital application lifecycles, establishing user growth models, and deploying modern software 
+  id: resume_1563 | level: middle | exp: 4.2 yrs
+  skills: Roadmap, Agile, Stakeholders, Product Management, Scrum, Product Strategy, Market Discovery
+  background: Dynamic Technology Product Manager with over four years of specialized industry leadership steering complex software application lifecycles, defining modern platform requirements, and launching cloud 
 
-  id: resume_1559 | level: senior | exp: 6.5 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Product Discovery, Jira, Portfolio Management
-  background: Accomplished Senior Product Manager with six years of specialized commercial success driving large-scale digital transformations, structuring enterprise core systems, and governing cross-functional po
+  id: resume_1564 | level: senior | exp: 6.5 yrs
+  skills: Roadmap, Agile, Stakeholders, Product Management, Enterprise Scaling, Product Discovery, Jira
+  background: Accomplished Senior Product Manager with six years of specialized commercial success leading complex digital transformation initiatives, engineering scalable platform portfolios, and driving multi-tea
 
-  id: resume_1560 | level: senior | exp: 8.7 yrs
+  id: resume_1565 | level: senior | exp: 8.7 yrs
   skills: Roadmap, Agile, Stakeholders, Product Management, Product Governance, Scaled Agile, Executive Leadership
-  background: Visionary Principal Product Director and Head of Technology Platforms with over eight years of global commercial achievement spearheading planetary-scale software architectures, advanced cloud solutio
+  background: Visionary Principal Product Director and Head of Technical Platforms with over eight years of global achievement spearheading planetary-scale software architectures, secure cloud transformations, and 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1556 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  id: jd_1561 | title: Product Management Intern | level: intern | min_exp: 0 yrs
   required_skills: Roadmap, Agile
-  description: We are seeking a highly analytical Product Management Intern to assist our core product delivery team. In this role, you will work closely with senior product managers to inspect c
+  description: We are seeking a highly analytical Product Management Intern to support our technology platform delivery team. In this position, you will work closely with senior product managers 
 
-  id: jd_1557 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  id: jd_1562 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
   required_skills: Roadmap, Agile
-  description: We are searching for a motivated Junior Product Manager to assist in maintaining and refining our modern tech product delivery infrastructure. You will perform day-to-day user stor
+  description: We are searching for a motivated Junior Product Manager to assist in maintaining and refining our technical software delivery pipeline. You will perform day-to-day user story gener
 
-  id: jd_1558 | title: Technology Product Manager | level: middle | min_exp: 3 yrs
+  id: jd_1563 | title: Technology Product Manager | level: middle | min_exp: 3 yrs
   required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: We are looking for a skilled Technology Product Manager to assume total ownership of our enterprise cloud software applications, feature delivery lifecycles, and core product roadm
+  description: We are looking for an experienced Technology Product Manager to assume full functional ownership of our cloud platform software, release lifecycles, and core product roadmaps. The 
 
-  id: jd_1559 | title: Senior Product Architect | level: senior | min_exp: 5 yrs
+  id: jd_1564 | title: Senior Product Architect | level: senior | min_exp: 5 yrs
   required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: Hiring an experienced Senior Product Architect to govern the structural evolution, portfolio scaling, and automated product delivery paradigms of our worldwide platform. You will s
+  description: We are hiring a seasoned Senior Product Architect to govern the structural evolution, portfolio scaling, and automated workflow delivery models of our worldwide platform. You will 
 
-  id: jd_1560 | title: Principal Product Director | level: senior | min_exp: 7 yrs
+  id: jd_1565 | title: Principal Product Director | level: senior | min_exp: 7 yrs
   required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: Join our platform division as a Principal Product Director to establish our global technology blueprint, product frameworks, and enterprise delivery roadmap. You will guide planeta
+  description: Join our enterprise core platform group as a Principal Product Director to establish our global technical vision, strategic product frameworks, and multi-year product roadmap. You 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7776  resume_1556 × jd_1556
-  pair_7777  resume_1556 × jd_1557
-  pair_7778  resume_1556 × jd_1558
-  pair_7779  resume_1556 × jd_1559
-  pair_7780  resume_1556 × jd_1560
-  pair_7781  resume_1557 × jd_1556
-  pair_7782  resume_1557 × jd_1557
-  pair_7783  resume_1557 × jd_1558
-  pair_7784  resume_1557 × jd_1559
-  pair_7785  resume_1557 × jd_1560
-  pair_7786  resume_1558 × jd_1556
-  pair_7787  resume_1558 × jd_1557
-  pair_7788  resume_1558 × jd_1558
-  pair_7789  resume_1558 × jd_1559
-  pair_7790  resume_1558 × jd_1560
-  pair_7791  resume_1559 × jd_1556
-  pair_7792  resume_1559 × jd_1557
-  pair_7793  resume_1559 × jd_1558
-  pair_7794  resume_1559 × jd_1559
-  pair_7795  resume_1559 × jd_1560
-  pair_7796  resume_1560 × jd_1556
-  pair_7797  resume_1560 × jd_1557
-  pair_7798  resume_1560 × jd_1558
-  pair_7799  resume_1560 × jd_1559
-  pair_7800  resume_1560 × jd_1560
+  pair_7801  resume_1561 × jd_1561
+  pair_7802  resume_1561 × jd_1562
+  pair_7803  resume_1561 × jd_1563
+  pair_7804  resume_1561 × jd_1564
+  pair_7805  resume_1561 × jd_1565
+  pair_7806  resume_1562 × jd_1561
+  pair_7807  resume_1562 × jd_1562
+  pair_7808  resume_1562 × jd_1563
+  pair_7809  resume_1562 × jd_1564
+  pair_7810  resume_1562 × jd_1565
+  pair_7811  resume_1563 × jd_1561
+  pair_7812  resume_1563 × jd_1562
+  pair_7813  resume_1563 × jd_1563
+  pair_7814  resume_1563 × jd_1564
+  pair_7815  resume_1563 × jd_1565
+  pair_7816  resume_1564 × jd_1561
+  pair_7817  resume_1564 × jd_1562
+  pair_7818  resume_1564 × jd_1563
+  pair_7819  resume_1564 × jd_1564
+  pair_7820  resume_1564 × jd_1565
+  pair_7821  resume_1565 × jd_1561
+  pair_7822  resume_1565 × jd_1562
+  pair_7823  resume_1565 × jd_1563
+  pair_7824  resume_1565 × jd_1564
+  pair_7825  resume_1565 × jd_1565
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
