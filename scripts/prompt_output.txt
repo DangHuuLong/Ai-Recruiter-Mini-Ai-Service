@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1581 | level: intern | exp: 0.4 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Python, Vector Databases
-  background: Enthusiastic and highly analytical final-year Computer Science student specializing in Artificial Intelligence and Natural Language Processing. Possesses a strong academic foundation in deep learning,
+  id: resume_1586 | level: intern | exp: 0.4 yrs
+  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Data Auditing, Interpersonal Communication
+  background: Enthusiastic and highly motivated final-year Human Resources Management student specializing in modern Talent Acquisition frameworks, HRIS management, and structured employee onboarding programs. Poss
 
-  id: resume_1582 | level: junior | exp: 1.5 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Python, Vector Indexing, Prompt Engineering
-  background: Junior NLP Developer with over a year of commercial corporate experience building, testing, and monitoring generative AI microservices within high-velocity environments. Skilled at implementing robust
+  id: resume_1587 | level: junior | exp: 1.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Candidate Sourcing, Compliance Tracking, Data Management
+  background: Junior Talent Acquisition Coordinator with over a year of corporate human resources experience focusing on candidate lifecycle tracking, HRIS accuracy, and automated onboarding compliance. Skilled at 
 
-  id: resume_1583 | level: middle | exp: 4.2 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Vector Databases, Large Language Models, Data Chunking
-  background: Versatile AI and NLP Engineer with over four years of specialized industry experience orchestrating enterprise-tier generative AI systems and deploying robust language model infrastructures for high-t
+  id: resume_1588 | level: middle | exp: 4.2 yrs
+  skills: Recruiting, HRIS, Onboarding, Employer Branding, Talent Analytics, Labor Compliance, Process Optimization
+  background: Versatile Talent Acquisition Specialist with over four years of dedicated professional experience orchestrating corporate recruitment campaigns and managing robust human resource information systems f
 
-  id: resume_1584 | level: senior | exp: 6.5 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Model Optimization, GPU Clustering, Agent Orchestration
-  background: Accomplished Senior AI Engineer with six years of commercial success driving digital transformation paths, building high-performance NLP solutions, and leading automated machine learning pipelines. Re
+  id: resume_1589 | level: senior | exp: 6.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Workforce Planning, Diversity Recruiting, Labor Relations, Vendor Management
+  background: Accomplished Senior Talent Acquisition Partner with six years of commercial success driving organizational scale paths, constructing progressive human resource strategies, and leading complex employee
 
-  id: resume_1585 | level: senior | exp: 8.7 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, AI Governance, Model Evaluation, Strategic Planning
-  background: Visionary Principal AI Architect and NLP Engineering Practice Lead with over eight years of international achievement spearheading planetary-scale machine learning systems, global language model trans
+  id: resume_1590 | level: senior | exp: 8.7 yrs
+  skills: Recruiting, HRIS, Onboarding, Strategic Human Resources, Executive Search, Change Management, People Governance
+  background: Visionary Principal Talent Architect and Director of People Operations with over eight years of international achievement spearheading enterprise-tier corporate recruitment systems, global HRIS transf
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1581 | title: AI and NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Transformers, LangChain
-  description: We are seeking a highly analytical and technical AI and NLP Engineering Intern to support our core language platform delivery group. In this position, you will work closely with se
+  id: jd_1586 | title: Human Resources and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, HRIS
+  description: We are seeking a highly motivated and structured Human Resources and Talent Acquisition Intern to support our core people operations delivery group. In this position, you will work
 
-  id: jd_1582 | title: Junior AI Developer | level: junior | min_exp: 1 yrs
-  required_skills: Transformers, LangChain
-  description: We are searching for a motivated Junior AI Developer to assist in maintaining and refining our corporate customer support automation dashboards and interactive knowledge base porta
+  id: jd_1587 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Recruiting, HRIS
+  description: We are searching for a motivated Junior Talent Acquisition Coordinator to assist in maintaining and refining our corporate candidate management systems and interactive onboarding p
 
-  id: jd_1583 | title: AI and NLP Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are looking for an experienced AI and NLP Engineer to assume full functional ownership of our cloud monitoring intelligence layers, semantic text generation utilities, and core 
+  id: jd_1588 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
+  description: We are looking for an experienced Talent Acquisition Specialist to assume full functional ownership of our corporate recruitment campaigns, advanced talent analytics dashboards, an
 
-  id: jd_1584 | title: Senior AI Architect | level: senior | min_exp: 5 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are hiring a seasoned Senior AI Architect to govern the structural evolution, transformer model scaling, and retrieval-augmented generation orchestration models of our worldwide
+  id: jd_1589 | title: Senior Talent Acquisition Partner | level: senior | min_exp: 5 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
+  description: We are hiring a seasoned Senior Talent Acquisition Partner to govern the structural evolution, HRIS management scaling, and employee onboarding orchestration models of our worldwid
 
-  id: jd_1585 | title: Principal NLP Specialist | level: senior | min_exp: 7 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: Join our enterprise platform core cognitive intelligence group as a Principal NLP Specialist to establish our global artificial intelligence vision, strategic language application 
+  id: jd_1590 | title: Principal Talent Specialist | level: senior | min_exp: 7 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Candidate Sourcing
+  description: Join our enterprise platform core people operations group as a Principal Talent Specialist to establish our global recruitment vision, strategic human asset frameworks, and macro-l
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7901  resume_1581 × jd_1581
-  pair_7902  resume_1581 × jd_1582
-  pair_7903  resume_1581 × jd_1583
-  pair_7904  resume_1581 × jd_1584
-  pair_7905  resume_1581 × jd_1585
-  pair_7906  resume_1582 × jd_1581
-  pair_7907  resume_1582 × jd_1582
-  pair_7908  resume_1582 × jd_1583
-  pair_7909  resume_1582 × jd_1584
-  pair_7910  resume_1582 × jd_1585
-  pair_7911  resume_1583 × jd_1581
-  pair_7912  resume_1583 × jd_1582
-  pair_7913  resume_1583 × jd_1583
-  pair_7914  resume_1583 × jd_1584
-  pair_7915  resume_1583 × jd_1585
-  pair_7916  resume_1584 × jd_1581
-  pair_7917  resume_1584 × jd_1582
-  pair_7918  resume_1584 × jd_1583
-  pair_7919  resume_1584 × jd_1584
-  pair_7920  resume_1584 × jd_1585
-  pair_7921  resume_1585 × jd_1581
-  pair_7922  resume_1585 × jd_1582
-  pair_7923  resume_1585 × jd_1583
-  pair_7924  resume_1585 × jd_1584
-  pair_7925  resume_1585 × jd_1585
+  pair_7926  resume_1586 × jd_1586
+  pair_7927  resume_1586 × jd_1587
+  pair_7928  resume_1586 × jd_1588
+  pair_7929  resume_1586 × jd_1589
+  pair_7930  resume_1586 × jd_1590
+  pair_7931  resume_1587 × jd_1586
+  pair_7932  resume_1587 × jd_1587
+  pair_7933  resume_1587 × jd_1588
+  pair_7934  resume_1587 × jd_1589
+  pair_7935  resume_1587 × jd_1590
+  pair_7936  resume_1588 × jd_1586
+  pair_7937  resume_1588 × jd_1587
+  pair_7938  resume_1588 × jd_1588
+  pair_7939  resume_1588 × jd_1589
+  pair_7940  resume_1588 × jd_1590
+  pair_7941  resume_1589 × jd_1586
+  pair_7942  resume_1589 × jd_1587
+  pair_7943  resume_1589 × jd_1588
+  pair_7944  resume_1589 × jd_1589
+  pair_7945  resume_1589 × jd_1590
+  pair_7946  resume_1590 × jd_1586
+  pair_7947  resume_1590 × jd_1587
+  pair_7948  resume_1590 × jd_1588
+  pair_7949  resume_1590 × jd_1589
+  pair_7950  resume_1590 × jd_1590
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
