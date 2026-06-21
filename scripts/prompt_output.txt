@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1536 | level: intern | exp: 0.4 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, SQL, REST APIs
-  background: Enthusiastic and detail-oriented final-year Software Engineering student targeting a Backend API Development Internship. Possesses strong theoretical knowledge and solid academic foundations in relati
+  id: resume_1541 | level: intern | exp: 0.4 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Linux
+  background: Enthusiastic and analytical final-year Computer Science student specializing in database engineering paradigms and relational schema optimization. Possesses foundational academic knowledge of structur
 
-  id: resume_1537 | level: junior | exp: 1.8 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Git, REST APIs
-  background: Junior Backend Engineer with more than a year of professional experience designing, building, and optimizing structured server-side API systems. Proficient in engineering asynchronous microservices us
+  id: resume_1542 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL Tuning, Git
+  background: Junior Database Engineer with over a year of professional experience deploying, monitoring, and tuning transactional data store ecosystems. Proficient in managing schema modifications across PostgreSQ
 
-  id: resume_1538 | level: middle | exp: 4.3 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, Query Optimization
-  background: Resourceful Backend Software Engineer with four years of commercial expertise architecting scalable web application frameworks, deploying secure data pipelines, and engineering microservice meshes. De
+  id: resume_1543 | level: middle | exp: 4.2 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Replication, Performance Tuning
+  background: Competent Database Specialist and Platform Engineer with four years of commercial expertise building robust database infrastructure topologies, designing resilient logical data modeling strategies, an
 
-  id: resume_1539 | level: senior | exp: 6.2 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, API Security, Database Partitioning
-  background: Accomplished Senior Backend Engineer with six years of specialized experience designing robust server-side infrastructures, modernizing legacy backend platforms, and overseeing secure API architecture
+  id: resume_1544 | level: senior | exp: 6.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Sharding, Cluster High Availability, Compliance
+  background: Accomplished Senior Database Engineer with six years of specialized experience leading global enterprise database transformations, structuring highly resilient storage architectures, and regulating en
 
-  id: resume_1540 | level: senior | exp: 9.5 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Software Architecture, Team Leadership, System Design
-  background: Visionary Lead Backend Architect and Technical Director with over nine years of enterprise achievement spearheading planetary-scale web networks, global API patterns, and reliable core server-side inf
+  id: resume_1545 | level: senior | exp: 8.7 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Disaster Recovery, High Availability
+  background: Visionary Lead Database Architect and Director of Platform Engineering with over eight years of enterprise achievement spearheading planetary-scale data meshes, global platform strategies, and secure 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1536 | title: Backend API Developer Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, FastAPI
-  description: We are seeking an analytical and driven Backend API Developer Intern to assist our core product engineering group. In this role, you will work closely with senior developers to rev
+  id: jd_1541 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, Data Modeling
+  description: We are seeking a highly analytical Database Engineering Intern to assist our platform delivery team. In this role, you will work closely with senior systems engineers to inspect st
 
-  id: jd_1537 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, PostgreSQL
-  description: We are searching for a motivated Junior Backend Engineer to help maintain and refine our modern, high-load application programming interfaces. You will handle routine server-side e
+  id: jd_1542 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB
+  description: We are searching for a motivated Junior Database Engineer to assist in maintaining and refining our modern storage infrastructure systems. You will perform day-to-day schema provis
 
-  id: jd_1538 | title: Backend API Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL
-  description: We are looking for a skilled Backend API Engineer to assume complete ownership of our server microservices, query pipelines, and data delivery engines. The candidate will design hi
+  id: jd_1543 | title: Database Platform Engineer | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are looking for a skilled Database Platform Engineer to assume total ownership of our cloud storage engines, data delivery lifecycles, and cluster networks. The candidate will d
 
-  id: jd_1539 | title: Senior Backend Architect & API Lead | level: senior | min_exp: 5 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL
-  description: Hiring an experienced Senior Backend Architect and API Lead to govern the architectural evolution, security controls, and high-concurrency scaling of our core platform. You will sp
+  id: jd_1544 | title: Senior Database Architect | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Hiring an experienced Senior Database Architect to govern the structural evolution, stability, and automated storage models of our worldwide platform. You will spearhead data desig
 
-  id: jd_1540 | title: Principal Backend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL
-  description: Join our enterprise engineering team as a Principal Backend Architect to establish our worldwide server blueprints, core system frameworks, and high-concurrency API roadmaps. You w
+  id: jd_1545 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Join our platform division as a Principal Database Architect to establish our global database blueprint, data frameworks, and storage delivery roadmap. You will guide planetary-sca
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7676  resume_1536 × jd_1536
-  pair_7677  resume_1536 × jd_1537
-  pair_7678  resume_1536 × jd_1538
-  pair_7679  resume_1536 × jd_1539
-  pair_7680  resume_1536 × jd_1540
-  pair_7681  resume_1537 × jd_1536
-  pair_7682  resume_1537 × jd_1537
-  pair_7683  resume_1537 × jd_1538
-  pair_7684  resume_1537 × jd_1539
-  pair_7685  resume_1537 × jd_1540
-  pair_7686  resume_1538 × jd_1536
-  pair_7687  resume_1538 × jd_1537
-  pair_7688  resume_1538 × jd_1538
-  pair_7689  resume_1538 × jd_1539
-  pair_7690  resume_1538 × jd_1540
-  pair_7691  resume_1539 × jd_1536
-  pair_7692  resume_1539 × jd_1537
-  pair_7693  resume_1539 × jd_1538
-  pair_7694  resume_1539 × jd_1539
-  pair_7695  resume_1539 × jd_1540
-  pair_7696  resume_1540 × jd_1536
-  pair_7697  resume_1540 × jd_1537
-  pair_7698  resume_1540 × jd_1538
-  pair_7699  resume_1540 × jd_1539
-  pair_7700  resume_1540 × jd_1540
+  pair_7701  resume_1541 × jd_1541
+  pair_7702  resume_1541 × jd_1542
+  pair_7703  resume_1541 × jd_1543
+  pair_7704  resume_1541 × jd_1544
+  pair_7705  resume_1541 × jd_1545
+  pair_7706  resume_1542 × jd_1541
+  pair_7707  resume_1542 × jd_1542
+  pair_7708  resume_1542 × jd_1543
+  pair_7709  resume_1542 × jd_1544
+  pair_7710  resume_1542 × jd_1545
+  pair_7711  resume_1543 × jd_1541
+  pair_7712  resume_1543 × jd_1542
+  pair_7713  resume_1543 × jd_1543
+  pair_7714  resume_1543 × jd_1544
+  pair_7715  resume_1543 × jd_1545
+  pair_7716  resume_1544 × jd_1541
+  pair_7717  resume_1544 × jd_1542
+  pair_7718  resume_1544 × jd_1543
+  pair_7719  resume_1544 × jd_1544
+  pair_7720  resume_1544 × jd_1545
+  pair_7721  resume_1545 × jd_1541
+  pair_7722  resume_1545 × jd_1542
+  pair_7723  resume_1545 × jd_1543
+  pair_7724  resume_1545 × jd_1544
+  pair_7725  resume_1545 × jd_1545
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
