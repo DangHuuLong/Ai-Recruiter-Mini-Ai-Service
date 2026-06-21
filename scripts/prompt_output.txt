@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1526 | level: intern | exp: 0.4 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Database Design
-  background: Motivated and analytical final-year Computer Science student seeking a Data Engineering Internship. Possesses strong theoretical knowledge and academic foundation in relational database management sys
+  id: resume_1531 | level: intern | exp: 0.4 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Linux, Git
+  background: Enthusiastic final-year Computer Engineering student focusing on modern DevOps paradigms and cloud infrastructure orchestration. Possesses strong foundational knowledge of Amazon Web Services, includi
 
-  id: resume_1527 | level: junior | exp: 1.8 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Linux
-  background: Junior Database Engineer with over a year of professional experience managing, tuning, and maintaining production data systems. Proficient in executing relational schema designs and data modeling meth
+  id: resume_1532 | level: junior | exp: 1.7 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD
+  background: Junior DevOps Engineer with more than a year of professional experience deploying, monitoring, and maintaining production cloud infrastructure setups. Proficient in managing cloud resource instances a
 
-  id: resume_1528 | level: middle | exp: 4.2 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Replication, Database Administration
-  background: Resourceful Database Engineer with four years of commercial experience architecting data storage models, implementing enterprise schema designs, and maintaining production clusters. Demonstrated exper
+  id: resume_1533 | level: middle | exp: 4.1 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Monitoring
+  background: Capable Systems and DevOps Engineer with four years of commercial expertise building robust cloud delivery platforms, improving environment reliability, and maintaining container infrastructure. Advan
 
-  id: resume_1529 | level: senior | exp: 6.1 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, High Availability, Database Security
-  background: Accomplished Senior Database Engineer with six years of specialized experience designing resilient data architectures, orchestrating massive scale migrations, and setting up high-availability infrastr
+  id: resume_1534 | level: senior | exp: 6.3 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, ArgoCD, GitOps, Cloud Security
+  background: Accomplished Senior DevOps Engineer with six years of specialized experience leading cloud transformation patterns, optimizing cluster utilization, and engineering reliable delivery networks. Master o
 
-  id: resume_1530 | level: senior | exp: 9.3 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Team Leadership, Cloud Infrastructure
-  background: Visionary Lead Database Architect and Infrastructure Director with over nine years of enterprise-scale achievement designing distributed data fabrics, global schema systems, and resilient cloud storag
+  id: resume_1535 | level: senior | exp: 8.5 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Service Mesh, Platform Engineering, Infrastructure Architecture
+  background: Visionary Lead DevOps Architect and Site Reliability Director with over eight years of enterprise achievement spearheading planetary-scale cloud networks, platform strategies, and secure automation fr
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1526 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, Data Modeling
-  description: We are seeking an analytical Database Engineering Intern to support our infrastructure team. In this role, you will work closely with senior developers to review physical schema la
+  id: jd_1531 | title: Cloud & DevOps Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: AWS, Docker
+  description: We are seeking a highly analytical Cloud and DevOps Engineering Intern to assist our platform delivery team. In this role, you will work closely with senior systems engineers to in
 
-  id: jd_1527 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB
-  description: We are looking for an energetic Junior Database Engineer to manage, refine, and support our growing corporate data systems. You will handle baseline administrative duties including
+  id: jd_1532 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: AWS, Kubernetes
+  description: We are searching for a motivated Junior DevOps Engineer to assist in maintaining and refining our modern application infrastructure systems. You will perform day-to-day environment
 
-  id: jd_1528 | title: Database Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Seeking a skilled Database Engineer to take full ownership of our core storage engines, query pathways, and high-load schema topologies. This candidate will design sophisticated lo
+  id: jd_1533 | title: DevOps Platform Engineer | level: middle | min_exp: 3 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  description: We are looking for a skilled DevOps Platform Engineer to assume total ownership of our cloud delivery engines, deployment lifecycles, and cluster networks. The candidate will desig
 
-  id: jd_1529 | title: Senior Database Engineer & Infrastructure Lead | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Hiring a Senior Database Engineer and Infrastructure Lead to govern the modernization, reliability, and strategic planning of our data platform. You will spearhead architectural ch
+  id: jd_1534 | title: Senior DevOps & Infrastructure Architect | level: senior | min_exp: 5 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  description: Hiring an experienced Senior DevOps and Infrastructure Architect to govern the structural evolution, stability, and automated delivery models of our worldwide platform. You will sp
 
-  id: jd_1530 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Join our enterprise platform office as a Principal Database Architect to define our global data strategy, system topologies, and infrastructural roadmap. You will govern our planet
+  id: jd_1535 | title: Principal Platform Architect | level: senior | min_exp: 7 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  description: Join our platform division as a Principal Platform Architect to establish our global infrastructure blueprint, system frameworks, and cloud delivery roadmap. You will guide planeta
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7626  resume_1526 × jd_1526
-  pair_7627  resume_1526 × jd_1527
-  pair_7628  resume_1526 × jd_1528
-  pair_7629  resume_1526 × jd_1529
-  pair_7630  resume_1526 × jd_1530
-  pair_7631  resume_1527 × jd_1526
-  pair_7632  resume_1527 × jd_1527
-  pair_7633  resume_1527 × jd_1528
-  pair_7634  resume_1527 × jd_1529
-  pair_7635  resume_1527 × jd_1530
-  pair_7636  resume_1528 × jd_1526
-  pair_7637  resume_1528 × jd_1527
-  pair_7638  resume_1528 × jd_1528
-  pair_7639  resume_1528 × jd_1529
-  pair_7640  resume_1528 × jd_1530
-  pair_7641  resume_1529 × jd_1526
-  pair_7642  resume_1529 × jd_1527
-  pair_7643  resume_1529 × jd_1528
-  pair_7644  resume_1529 × jd_1529
-  pair_7645  resume_1529 × jd_1530
-  pair_7646  resume_1530 × jd_1526
-  pair_7647  resume_1530 × jd_1527
-  pair_7648  resume_1530 × jd_1528
-  pair_7649  resume_1530 × jd_1529
-  pair_7650  resume_1530 × jd_1530
+  pair_7651  resume_1531 × jd_1531
+  pair_7652  resume_1531 × jd_1532
+  pair_7653  resume_1531 × jd_1533
+  pair_7654  resume_1531 × jd_1534
+  pair_7655  resume_1531 × jd_1535
+  pair_7656  resume_1532 × jd_1531
+  pair_7657  resume_1532 × jd_1532
+  pair_7658  resume_1532 × jd_1533
+  pair_7659  resume_1532 × jd_1534
+  pair_7660  resume_1532 × jd_1535
+  pair_7661  resume_1533 × jd_1531
+  pair_7662  resume_1533 × jd_1532
+  pair_7663  resume_1533 × jd_1533
+  pair_7664  resume_1533 × jd_1534
+  pair_7665  resume_1533 × jd_1535
+  pair_7666  resume_1534 × jd_1531
+  pair_7667  resume_1534 × jd_1532
+  pair_7668  resume_1534 × jd_1533
+  pair_7669  resume_1534 × jd_1534
+  pair_7670  resume_1534 × jd_1535
+  pair_7671  resume_1535 × jd_1531
+  pair_7672  resume_1535 × jd_1532
+  pair_7673  resume_1535 × jd_1533
+  pair_7674  resume_1535 × jd_1534
+  pair_7675  resume_1535 × jd_1535
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
