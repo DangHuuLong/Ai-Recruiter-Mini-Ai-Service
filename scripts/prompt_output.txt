@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1426 | level: intern | exp: 0.5 yrs
-  skills: Procurement, Inventory Control, SAP ERP, Data Analysis, Logistics, Supply Chain Management, Microsoft Excel
-  background: Enthusiastic and detail-oriented business administration student specializing in supply chain management. Possesses strong foundational knowledge in procurement processes, inventory control, and basic
+  id: resume_1431 | level: intern | exp: 0.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Relational Database Design, Database Indexing
+  background: Enthusiastic Computer Science student with a strong passion for Database Engineering and backend systems. Possesses solid foundational knowledge in relational database design, data modeling, and entit
 
-  id: resume_1427 | level: junior | exp: 1.5 yrs
-  skills: Oracle ERP, Inventory Reconciliation, Procurement, Supplier Communication, Data Entry, Logistics Operations, Stock Control
-  background: Dedicated Supply Chain Specialist with over a year of hands-on experience in tracking inventory accuracy and administering procurement pipelines. Proven track record in utilizing Oracle ERP systems to
+  id: resume_1432 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Stored Procedures, Database Migration
+  background: Detail-oriented Junior Database Engineer with over one year of professional experience designing, maintaining, and tuning relational and non-relational database architectures. Proficient in managing P
 
-  id: resume_1428 | level: middle | exp: 4.0 yrs
-  skills: SAP MM, Procurement Negotiation, Inventory Strategy, Logistics Optimization, SQL, Supply Chain Analytics, KPI Reporting
-  background: Results-driven Supply Chain Analyst with four years of comprehensive experience managing complex procurement workflows, optimizing multi-site inventory strategies, and deploying enterprise level ERP m
+  id: resume_1433 | level: middle | exp: 4.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Execution Plan, Sharding, Database Replication, AWS RDS
+  background: Results-driven Database Engineer with four years of comprehensive experience architecting high-availability relational and NoSQL database topologies. Expert in multi-node PostgreSQL infrastructure dep
 
-  id: resume_1429 | level: senior | exp: 6.0 yrs
-  skills: Microsoft Dynamics 365, Strategic Sourcing, Global Logistics, Risk Mitigation, Lean Inventory, Budgeting, Process Improvement
-  background: Accomplished Senior Procurement and Logistics Manager with six years of professional experience leading end-to-end supply chain activities for manufacturing enterprises. Expert in strategic sourcing, 
+  id: resume_1434 | level: senior | exp: 6.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, PgBouncer, Database Migration, High Availability, Performance Tuning
+  background: Accomplished Senior Database Engineer with six years of deep experience driving data platform stability, advanced logical data modeling, and large-scale data migrations. Expert at scaling enterprise-l
 
-  id: resume_1430 | level: senior | exp: 8.5 yrs
-  skills: SAP S4HANA, Global Procurement Strategy, Warehouse Architecture, Demand Forecasting, Risk Management, Team Leadership, Automation
-  background: Visionary Director of Supply Chain Management with over eight years of experience defining corporate procurement strategies, multi-tiered warehouse optimization plans, and macro-level ERP roadmaps. Ad
+  id: resume_1435 | level: senior | exp: 8.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Disaster Recovery, Database Hardening, Infrastructure as Code
+  background: Visionary Principal Database Architect with over eight years of experience defining global data strategies, corporate data modeling standards, and next-generation storage infrastructure blueprints. Ma
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1426 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
-  required_skills: Microsoft Excel, Inventory Tracking, Procurement Basics
-  description: Seeking a motivated Supply Chain Intern to join our dynamic logistics team. The ideal candidate will assist with daily procurement operations, inventory tracking, and material reco
+  id: jd_1431 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, Data Modeling, SQL
+  description: We are looking for an analytical Database Engineering Intern to support our core platform team. You will work closely with senior database professionals to learn the fundamentals o
 
-  id: jd_1427 | title: Junior Inventory and Procurement Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Oracle ERP, Purchase Order Management, Vendor Communication
-  description: We are looking for a Junior Inventory and Procurement Specialist to support our expanding logistics division. In this role, you will be responsible for administering daily purchase
+  id: jd_1432 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Our backend operations team is seeking a Junior Database Engineer to manage, monitor, and optimize our growing multi-engine data tier. In this role, you will be responsible for mai
 
-  id: jd_1428 | title: Supply Chain Logistics Analyst | level: middle | min_exp: 3 yrs
-  required_skills: SAP MM, Demand Forecasting, Vendor Negotiation, Supply Chain Analytics
-  description: Our organization is recruiting an experienced Supply Chain Logistics Analyst to optimize our end-to-end procurement and inventory architecture. This role involves analyzing histori
+  id: jd_1433 | title: Database Engineer | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Replication, Query Optimization
+  description: We are recruiting a seasoned Database Engineer to design, scale, and optimize our enterprise data tier. This engineering role focuses on implementing high-availability database mod
 
-  id: jd_1429 | title: Senior Procurement and ERP Manager | level: senior | min_exp: 5 yrs
-  required_skills: Microsoft Dynamics 365, Strategic Sourcing, Risk Management, Team Leadership, Global Logistics
-  description: We are seeking a Senior Procurement and ERP Manager to direct our global supply chain strategy. This senior individual will lead strategic sourcing events, design robust inventory 
+  id: jd_1434 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, PgBouncer, Database Migration
+  description: Seeking a Senior Database Engineer to lead the scaling, optimization, and security of our high-volume transactional data layer. In this role, you will define complex logical data m
 
-  id: jd_1430 | title: Principal Supply Chain Architect | level: senior | min_exp: 7 yrs
-  required_skills: SAP S4HANA, Global Procurement Strategy, Enterprise Architecture, Predictive Modeling, Executive Leadership
-  description: Join us as a Principal Supply Chain Architect to define the macro blueprint for our international logistics ecosystem. This executive role demands a subject matter expert capable o
+  id: jd_1435 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Database Hardening
+  description: Join us as a Principal Database Architect to define our global database technology roadmap and enterprise storage blueprints. This technical leadership position requires an expert 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7126  resume_1426 × jd_1426
-  pair_7127  resume_1426 × jd_1427
-  pair_7128  resume_1426 × jd_1428
-  pair_7129  resume_1426 × jd_1429
-  pair_7130  resume_1426 × jd_1430
-  pair_7131  resume_1427 × jd_1426
-  pair_7132  resume_1427 × jd_1427
-  pair_7133  resume_1427 × jd_1428
-  pair_7134  resume_1427 × jd_1429
-  pair_7135  resume_1427 × jd_1430
-  pair_7136  resume_1428 × jd_1426
-  pair_7137  resume_1428 × jd_1427
-  pair_7138  resume_1428 × jd_1428
-  pair_7139  resume_1428 × jd_1429
-  pair_7140  resume_1428 × jd_1430
-  pair_7141  resume_1429 × jd_1426
-  pair_7142  resume_1429 × jd_1427
-  pair_7143  resume_1429 × jd_1428
-  pair_7144  resume_1429 × jd_1429
-  pair_7145  resume_1429 × jd_1430
-  pair_7146  resume_1430 × jd_1426
-  pair_7147  resume_1430 × jd_1427
-  pair_7148  resume_1430 × jd_1428
-  pair_7149  resume_1430 × jd_1429
-  pair_7150  resume_1430 × jd_1430
+  pair_7151  resume_1431 × jd_1431
+  pair_7152  resume_1431 × jd_1432
+  pair_7153  resume_1431 × jd_1433
+  pair_7154  resume_1431 × jd_1434
+  pair_7155  resume_1431 × jd_1435
+  pair_7156  resume_1432 × jd_1431
+  pair_7157  resume_1432 × jd_1432
+  pair_7158  resume_1432 × jd_1433
+  pair_7159  resume_1432 × jd_1434
+  pair_7160  resume_1432 × jd_1435
+  pair_7161  resume_1433 × jd_1431
+  pair_7162  resume_1433 × jd_1432
+  pair_7163  resume_1433 × jd_1433
+  pair_7164  resume_1433 × jd_1434
+  pair_7165  resume_1433 × jd_1435
+  pair_7166  resume_1434 × jd_1431
+  pair_7167  resume_1434 × jd_1432
+  pair_7168  resume_1434 × jd_1433
+  pair_7169  resume_1434 × jd_1434
+  pair_7170  resume_1434 × jd_1435
+  pair_7171  resume_1435 × jd_1431
+  pair_7172  resume_1435 × jd_1432
+  pair_7173  resume_1435 × jd_1433
+  pair_7174  resume_1435 × jd_1434
+  pair_7175  resume_1435 × jd_1435
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
