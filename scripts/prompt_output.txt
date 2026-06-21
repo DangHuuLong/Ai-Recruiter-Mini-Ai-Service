@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1401 | level: intern | exp: 0.4 yrs
-  skills: Linux, Python, Wireshark, Nmap, Burp Suite, Splunk, TCP/IP, Bash, Vulnerability Assessment, Network Security
-  background: Final-year Cybersecurity student with hands-on academic experience in network security, vulnerability assessment, and security monitoring. Completed coursework in ethical hacking, TCP/IP networking, o
+  id: resume_1406 | level: intern | exp: 0.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Git, Jupyter Notebooks
+  background: Motivated data science student seeking an internship in machine learning development. Proficient in Python for statistical computing, handling structured datasets using pandas, and building foundation
 
-  id: resume_1402 | level: junior | exp: 1.8 yrs
-  skills: Splunk, Nessus, Linux, Windows Security, Python, Wireshark, Incident Response, SIEM, Network Security, Burp Suite
-  background: Junior Information Security Analyst with nearly two years of experience supporting SOC operations and network security monitoring. Responsible for reviewing SIEM alerts, investigating suspicious event
+  id: resume_1407 | level: junior | exp: 1.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, SQL, Docker, Git
+  background: Junior Data Scientist with over a year of corporate experience designing, implementing, and validating statistical learning workflows. Professional expertise lies within Python frameworks including pa
 
-  id: resume_1403 | level: middle | exp: 4.2 yrs
-  skills: Splunk, ELK Stack, Penetration Testing, Python, Nmap, Burp Suite, Threat Hunting, IDS, Firewall Administration, MITRE ATT&CK
-  background: Information Security Engineer with four years of experience across security operations, network defense, and penetration testing engagements. Managed SIEM content development, detection tuning, and in
+  id: resume_1408 | level: middle | exp: 4.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, MLflow, Docker, SQL, Data Pipelines
+  background: Mid-Level Machine Learning Engineer with four years of comprehensive industry expertise crafting high-performance predictive systems and intelligence layers. Specializes in building scalable productio
 
-  id: resume_1404 | level: senior | exp: 6.1 yrs
-  skills: Splunk, Elastic Stack, Incident Response, Threat Hunting, Penetration Testing, Python, PowerShell, Nessus, IDS, Cloud Security
-  background: Senior Cybersecurity Engineer with six years of experience leading security operations, incident response, and offensive security initiatives. Architected SIEM solutions, managed SOC improvements, and
+  id: resume_1409 | level: senior | exp: 6.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, MLOps, AWS, Kubernetes, Docker, SQL, Architecture
+  background: Senior Data Scientist with six years of professional experience engineering elite algorithmic architectures and enterprise-scale predictive modeling systems. Expert in leveraging Python ecosystems, sc
 
-  id: resume_1405 | level: senior | exp: 9.5 yrs
-  skills: Splunk, Security Architecture, Threat Intelligence, Penetration Testing, Incident Response, Python, SIEM, Firewall Administration, IDS, Security Automation
-  background: Principal Information Security Specialist with more than nine years of experience designing enterprise security programs, leading blue team operations, and directing penetration testing initiatives. E
+  id: resume_1410 | level: senior | exp: 8.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, MLOps, Kubernetes, Cloud Architecture, Leadership, Strategy
+  background: Accomplished Lead Machine Learning Scientist with over eight years of experience defining corporate data strategies and engineering mission-critical intelligence infrastructure. Authoritative mastery 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1401 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
-  required_skills: Linux, Network Security, SIEM, Python, Wireshark
-  description: Seeking a Cybersecurity Intern to support security monitoring, vulnerability assessment, and network defense activities. The role involves reviewing SIEM alerts, assisting with log
+  id: jd_1406 | title: Data Science Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, pandas
+  description: We are seeking a passionate Data Science Intern to join our core analytics squad. In this role, you will help clean, process, and explore structured data streams using Python and p
 
-  id: jd_1402 | title: Junior SOC Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Splunk,   SIEM, Linux, Incident Response, Python
-  description: The position focuses on security monitoring, SIEM operations, and incident triage in a growing security operations environment. Responsibilities include investigating alerts, analy
+  id: jd_1407 | title: Junior Machine Learning Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, scikit-learn, pandas
+  description: Join our product intelligence division as a Junior Machine Learning Engineer focusing on building next-generation automated modeling workflows. You will write high-quality processi
 
-  id: jd_1403 | title: Information Security Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Splunk, Penetration Testing, Python, Threat Hunting, Network Security
-  description: Looking for an Information Security Engineer to manage security monitoring, penetration testing, and threat hunting activities. The engineer will develop SIEM use cases, perform se
+  id: jd_1408 | title: Data Scientist (Mid-Level) | level: middle | min_exp: 3 yrs
+  required_skills: Python, scikit-learn, PyTorch, pandas
+  description: We are looking for a skilled Mid-Level Data Scientist to take charge of our scalable predictive layer. You will architect, implement, and maintain scalable modeling pipelines using
 
-  id: jd_1404 | title: Senior Cybersecurity Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Splunk, Incident Response, Penetration Testing, Python, IDS
-  description: Seeking a Senior Cybersecurity Engineer to lead incident response, security monitoring, and offensive security initiatives. Responsibilities include architecting SIEM solutions, le
+  id: jd_1409 | title: Senior Machine Learning Systems Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, scikit-learn, PyTorch, MLOps
+  description: Our expanding platform team seeks a Senior Machine Learning Systems Engineer to own the architecture of our high-concurrency predictive network. You will direct technical patterns 
 
-  id: jd_1405 | title: Principal Information Security Lead | level: senior | min_exp: 7 yrs
-  required_skills: SIEM, Splunk, Security Architecture, Incident Response, Security Automation
-  description: A principal-level security leader is required to drive enterprise security strategy, oversee SOC operations, and guide advanced security assessment programs. Responsibilities inclu
+  id: jd_1410 | title: Principal ML Architect & Data Science Lead | level: senior | min_exp: 7 yrs
+  required_skills: Python, scikit-learn, PyTorch, pandas, MLOps, Leadership
+  description: We are hunting for a Lead Machine Learning Architect to pioneer the structural expansion of our global cloud intelligence platform. In this principal capacity, you will outline tec
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7001  resume_1401 × jd_1401
-  pair_7002  resume_1401 × jd_1402
-  pair_7003  resume_1401 × jd_1403
-  pair_7004  resume_1401 × jd_1404
-  pair_7005  resume_1401 × jd_1405
-  pair_7006  resume_1402 × jd_1401
-  pair_7007  resume_1402 × jd_1402
-  pair_7008  resume_1402 × jd_1403
-  pair_7009  resume_1402 × jd_1404
-  pair_7010  resume_1402 × jd_1405
-  pair_7011  resume_1403 × jd_1401
-  pair_7012  resume_1403 × jd_1402
-  pair_7013  resume_1403 × jd_1403
-  pair_7014  resume_1403 × jd_1404
-  pair_7015  resume_1403 × jd_1405
-  pair_7016  resume_1404 × jd_1401
-  pair_7017  resume_1404 × jd_1402
-  pair_7018  resume_1404 × jd_1403
-  pair_7019  resume_1404 × jd_1404
-  pair_7020  resume_1404 × jd_1405
-  pair_7021  resume_1405 × jd_1401
-  pair_7022  resume_1405 × jd_1402
-  pair_7023  resume_1405 × jd_1403
-  pair_7024  resume_1405 × jd_1404
-  pair_7025  resume_1405 × jd_1405
+  pair_7026  resume_1406 × jd_1406
+  pair_7027  resume_1406 × jd_1407
+  pair_7028  resume_1406 × jd_1408
+  pair_7029  resume_1406 × jd_1409
+  pair_7030  resume_1406 × jd_1410
+  pair_7031  resume_1407 × jd_1406
+  pair_7032  resume_1407 × jd_1407
+  pair_7033  resume_1407 × jd_1408
+  pair_7034  resume_1407 × jd_1409
+  pair_7035  resume_1407 × jd_1410
+  pair_7036  resume_1408 × jd_1406
+  pair_7037  resume_1408 × jd_1407
+  pair_7038  resume_1408 × jd_1408
+  pair_7039  resume_1408 × jd_1409
+  pair_7040  resume_1408 × jd_1410
+  pair_7041  resume_1409 × jd_1406
+  pair_7042  resume_1409 × jd_1407
+  pair_7043  resume_1409 × jd_1408
+  pair_7044  resume_1409 × jd_1409
+  pair_7045  resume_1409 × jd_1410
+  pair_7046  resume_1410 × jd_1406
+  pair_7047  resume_1410 × jd_1407
+  pair_7048  resume_1410 × jd_1408
+  pair_7049  resume_1410 × jd_1409
+  pair_7050  resume_1410 × jd_1410
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
