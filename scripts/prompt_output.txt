@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1511 | level: intern | exp: 0.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Linux, Shell Scripting
-  background: Enthusiastic System Engineering final year student focused on cloud automation and containerization infrastructure setups. Well-versed in the Linux ecosystem and scripting configurations. Proficient i
+  id: resume_1516 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research, Canva, Google Search Console, Content Strategy, Microsoft Excel, Copywriting
+  background: Final-year Marketing student with 4 months of internship experience supporting digital campaigns and content planning. Assisted in keyword research, on-page SEO updates, and social media scheduling ac
 
-  id: resume_1512 | level: junior | exp: 1.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Continuous Integration, Git
-  background: Motivated Junior DevOps Engineer with more than a year of professional experience deploying, packaging, and maintaining application code across staging systems. Capable of building clean Docker images
+  id: resume_1517 | level: junior | exp: 1.8 yrs
+  skills: SEO, Social Media Marketing, Google Analytics, Content Strategy, Keyword Research, Email Marketing, Google Search Console, A/B Testing, Copywriting, Content Management Systems
+  background: Digital marketing specialist with 1.8 years of experience executing SEO and social media initiatives for online brands. Managed editorial calendars, optimized website content, and monitored campaign p
 
-  id: resume_1513 | level: middle | exp: 4.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, CI/CD, Cloud Monitoring, Infrastructure as Code
-  background: Resourceful DevOps Specialist and Cloud Engineer with four years of commercial background optimizing application deployments, automating delivery pipelines, and maintaining highly available cloud layo
+  id: resume_1518 | level: middle | exp: 4.2 yrs
+  skills: SEO, Content Strategy, Google Analytics, Social Media Marketing, Content Auditing, Data Visualization, Audience Research, Keyword Research, A/B Testing, Google Data Studio
+  background: Marketing professional with 4.2 years of experience developing integrated content and digital marketing strategies. Led SEO initiatives, managed cross-channel content campaigns, and analyzed performan
 
-  id: resume_1514 | level: senior | exp: 6.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, GitOps, Cost Optimization, Site Reliability
-  background: Accomplished Senior DevOps Architect and Infrastructure Lead with six years of industry achievement engineering zero-downtime application configurations, standardizing enterprise delivery tools, and m
+  id: resume_1519 | level: senior | exp: 6.1 yrs
+  skills: SEO, Content Strategy, Google Analytics, Team Leadership, Social Media Marketing, Technical SEO, Campaign Analytics, Content Governance, Stakeholder Management, Looker Studio
+  background: Senior digital marketing manager with 6.1 years of experience leading SEO, content strategy, and social media programs for growth-focused organizations. Designed long-term content roadmaps, managed ed
 
-  id: resume_1515 | level: senior | exp: 9.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Disaster Recovery, Cloud Governance, Leadership
-  background: Visionary Principal Cloud Architect and DevOps Director with nine years of international experience governing massive digital transformation initiatives, enterprise infrastructure topologies, and resi
+  id: resume_1520 | level: senior | exp: 9.3 yrs
+  skills: SEO, Content Strategy, Advanced Analytics, Social Media Marketing, Editorial Leadership, Team Leadership, Audience Segmentation, Performance Marketing, Looker Studio, Strategic Planning
+  background: Principal content and digital strategy leader with over 9 years of experience building scalable SEO and content ecosystems. Led global content teams, established measurement frameworks, and drove inte
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1511 | title: Cloud Infrastructure Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker, Terraform
-  description: We are seeking an analytical and enthusiastic Cloud Infrastructure Intern to join our internal developer operations team. You will work alongside senior infrastructure engineers to
+  id: jd_1516 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research
+  description: Seeking a Digital Marketing Intern to support SEO and content marketing activities. The role involves assisting with keyword research, social media scheduling, content publishing, 
 
-  id: jd_1512 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Docker, Terraform
-  description: Our software delivery group is looking for an enthusiastic Junior DevOps Engineer to configure, manage, and support our core cloud runtime requirements. In this role, you will be r
+  id: jd_1517 | title: Junior SEO and Content Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Google Analytics, Content Strategy, Copywriting, Social Media Marketing
+  description: Looking for a Junior SEO and Content Specialist to execute content marketing initiatives across web and social channels. Responsibilities include creating optimized content, conduc
 
-  id: jd_1513 | title: Cloud Systems / DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: We are searching for a seasoned Cloud Systems and DevOps Engineer to evaluate, coordinate, and execute our strategic integration patterns and cloud delivery structures. You will ta
+  id: jd_1518 | title: Content Strategist | level: middle | min_exp: 3 yrs
+  required_skills: Content Strategy, SEO, Google Analytics, Audience Research, Social Media Marketing
+  description: Seeking a Content Strategist with experience developing data-driven content programs. Responsibilities include leading content audits, managing editorial planning, conducting audie
 
-  id: jd_1514 | title: Senior DevOps Engineer & Infrastructure Lead | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: Seeking a Senior DevOps Engineer and Infrastructure Lead to guide the modernization, process architecture restructuring, and strategic project execution of our corporate applicatio
+  id: jd_1519 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
+  required_skills: SEO, Content Strategy, Google Analytics, Team Leadership, Social Media Marketing
+  description: Hiring a Senior Digital Marketing Manager to lead SEO, content, and social media initiatives. The role will define content roadmaps, oversee campaign performance, mentor team membe
 
-  id: jd_1515 | title: Principal Cloud Architect and Program Manager | level: senior | min_exp: 7 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: Join our core platform office as a Principal Cloud Architect and Program Manager to define our international business transformation roadmap, operational delivery standards, and co
+  id: jd_1520 | title: Principal Content Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: SEO, Content Strategy, Advanced Analytics, Editorial Leadership, Strategic Planning
+  description: Seeking an experienced Principal Content Strategy Lead to define enterprise-wide content and SEO direction. Responsibilities include leading strategic initiatives, establishing gov
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7551  resume_1511 × jd_1511
-  pair_7552  resume_1511 × jd_1512
-  pair_7553  resume_1511 × jd_1513
-  pair_7554  resume_1511 × jd_1514
-  pair_7555  resume_1511 × jd_1515
-  pair_7556  resume_1512 × jd_1511
-  pair_7557  resume_1512 × jd_1512
-  pair_7558  resume_1512 × jd_1513
-  pair_7559  resume_1512 × jd_1514
-  pair_7560  resume_1512 × jd_1515
-  pair_7561  resume_1513 × jd_1511
-  pair_7562  resume_1513 × jd_1512
-  pair_7563  resume_1513 × jd_1513
-  pair_7564  resume_1513 × jd_1514
-  pair_7565  resume_1513 × jd_1515
-  pair_7566  resume_1514 × jd_1511
-  pair_7567  resume_1514 × jd_1512
-  pair_7568  resume_1514 × jd_1513
-  pair_7569  resume_1514 × jd_1514
-  pair_7570  resume_1514 × jd_1515
-  pair_7571  resume_1515 × jd_1511
-  pair_7572  resume_1515 × jd_1512
-  pair_7573  resume_1515 × jd_1513
-  pair_7574  resume_1515 × jd_1514
-  pair_7575  resume_1515 × jd_1515
+  pair_7576  resume_1516 × jd_1516
+  pair_7577  resume_1516 × jd_1517
+  pair_7578  resume_1516 × jd_1518
+  pair_7579  resume_1516 × jd_1519
+  pair_7580  resume_1516 × jd_1520
+  pair_7581  resume_1517 × jd_1516
+  pair_7582  resume_1517 × jd_1517
+  pair_7583  resume_1517 × jd_1518
+  pair_7584  resume_1517 × jd_1519
+  pair_7585  resume_1517 × jd_1520
+  pair_7586  resume_1518 × jd_1516
+  pair_7587  resume_1518 × jd_1517
+  pair_7588  resume_1518 × jd_1518
+  pair_7589  resume_1518 × jd_1519
+  pair_7590  resume_1518 × jd_1520
+  pair_7591  resume_1519 × jd_1516
+  pair_7592  resume_1519 × jd_1517
+  pair_7593  resume_1519 × jd_1518
+  pair_7594  resume_1519 × jd_1519
+  pair_7595  resume_1519 × jd_1520
+  pair_7596  resume_1520 × jd_1516
+  pair_7597  resume_1520 × jd_1517
+  pair_7598  resume_1520 × jd_1518
+  pair_7599  resume_1520 × jd_1519
+  pair_7600  resume_1520 × jd_1520
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
