@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1481 | level: intern | exp: 0.5 yrs
-  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, Agile Methodologies, Confluence
-  background: Enthusiastic Management Information Systems student possessing an academic foundation in business analysis frameworks, business process modeling notation (BPMN), and stakeholder interview techniques. 
+  id: resume_1486 | level: intern | exp: 0.5 yrs
+  skills: React Native, TypeScript, JavaScript, Kotlin, Android Studio, REST APIs, Redux, Git
+  background: Enthusiastic Computer Science student with a passionate focus on cross-platform mobile application engineering. Possesses a solid foundational understanding of React Native, JavaScript, and TypeScript
 
-  id: resume_1482 | level: junior | exp: 1.5 yrs
-  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, User Acceptance Testing, Agile Methodologies
-  background: Diligent Junior Business Analyst with more than one year of professional corporate experience capturing enterprise requirements, drafting comprehensive process models, and coordinating communications 
+  id: resume_1487 | level: junior | exp: 1.5 yrs
+  skills: React Native, Flutter, Dart, JavaScript, TypeScript, Android Studio, Xcode, Figma
+  background: Detail-oriented Junior Mobile Developer with over a year of commercial experience developing, debugging, and distributing robust cross-platform mobile apps. Proficient in crafting sleek user interface
 
-  id: resume_1483 | level: middle | exp: 4.0 yrs
-  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Management, Jira, Agile Methodologies, Gap Analysis, Process Engineering
-  background: Analytical and results-oriented Business Analyst with four years of commercial experience executing complex requirement elicitation, optimizing process engineering with BPMN, and leading matrixed stak
+  id: resume_1488 | level: middle | exp: 4.0 yrs
+  skills: Flutter, Swift, Dart, iOS Development, Android Development, App Store Optimization, REST APIs, Git
+  background: Resourceful Middle Mobile Engineer with four years of professional expertise architecting high-performance client applications across iOS and Android systems. Expert in Flutter and native Swift develo
 
-  id: resume_1484 | level: senior | exp: 6.0 yrs
-  skills: Business Analysis, Project Management, Requirements Gathering, BPMN, Stakeholder Management, Agile Methodologies, Change Management, Jira
-  background: Accomplished Senior Business Analyst and Project Manager with six years of industry achievement deploying enterprise business analysis frameworks, large-scale process optimizations using BPMN, and sop
+  id: resume_1489 | level: senior | exp: 6.0 yrs
+  skills: Swift, Kotlin, React Native, iOS Development, Android Development, CI/CD, MVVM, Mobile Architecture
+  background: Accomplished Senior Mobile Application Engineer with six years of specialized industry achievement designing native iOS and Android ecosystems using Swift, Kotlin, and React Native. Proven leader in c
 
-  id: resume_1485 | level: senior | exp: 8.5 yrs
-  skills: Business Analysis, Project Management, Requirements Gathering, BPMN, Stakeholder Management, Corporate Strategy, Process Engineering, Agile Leadership
-  background: Visionary Principal Consultant and Strategy Lead with over eight years of global experience directing enterprise business analysis, macro-level process engineering using BPMN, and complex stakeholder 
+  id: resume_1490 | level: senior | exp: 8.5 yrs
+  skills: Mobile Architecture, Swift, Kotlin, React Native, Flutter, Team Leadership, CI/CD, Design Systems
+  background: Visionary Principal Mobile Architect and Tech Lead with over eight years of global engineering history directing large-scale mobile application infrastructure, cross-platform product frameworks, and n
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1481 | title: Business Analysis and Project Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Business Analysis, Requirements Gathering, BPMN
-  description: We are looking for an analytical and motivated Business Analysis and Project Management Intern to support our growing digital transformation group. You will work closely with senio
+  id: jd_1486 | title: Mobile Engineering Intern (React Native / Flutter) | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter, TypeScript
+  description: We are looking for an analytical and motivated Mobile Engineering Intern to join our growing software engineering division. You will work closely with senior mobile developers to w
 
-  id: jd_1482 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Business Analysis, Requirements Gathering, BPMN
-  description: Our operational transformation group is seeking a Junior Business Analyst to track, map, and optimize our growing global business workflows. In this role, you will be responsible f
+  id: jd_1487 | title: Junior Mobile Application Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Flutter, TypeScript
+  description: Our application delivery group is seeking an enthusiastic Junior Mobile Application Developer to track, build, and optimize our growing global mobile software catalog. In this role
 
-  id: jd_1483 | title: Fintech Project Delivery and Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Business Analysis, Requirements Gathering, BPMN
-  description: We are searching for a seasoned Business Analyst to design, extend, and sustain our regional business architecture and workflow network. This role focuses on delivering excellent r
+  id: jd_1488 | title: Mobile Developer (React Native, Flutter, Swift) | level: middle | min_exp: 3 yrs
+  required_skills: React Native, Flutter, Swift
+  description: We are searching for a seasoned Mobile Developer to design, extend, and sustain our regional application network and digital delivery pipelines. This role focuses on delivering exc
 
-  id: jd_1484 | title: Senior Business Analyst and Project Manager | level: senior | min_exp: 5 yrs
-  required_skills: Business Analysis, Project Management, BPMN
-  description: Seeking a Senior Business Analyst and Project Manager to guide the scaling, corporate governance consolidation, and reporting automation of our enterprise global operations network
+  id: jd_1489 | title: Senior Mobile Solutions Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Swift, Kotlin, React Native
+  description: Seeking a Senior Mobile Solutions Engineer to guide the scaling, architectural restructuring, and deployment automation of our enterprise global mobile software suite. In this lead
 
-  id: jd_1485 | title: Principal Transformation Consultant and Delivery Director | level: senior | min_exp: 7 yrs
-  required_skills: Business Analysis, Project Management, BPMN
-  description: Join our operations executive leadership group as a Principal Transformation Consultant and Delivery Director to define our international operational roadmap, business modeling sta
+  id: jd_1490 | title: Principal Mobile Architect and Engineering Director | level: senior | min_exp: 7 yrs
+  required_skills: Swift, Kotlin, Mobile Architecture
+  description: Join our technology executive leadership group as a Principal Mobile Architect and Engineering Director to define our international mobile software roadmap, engineering standards, 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7401  resume_1481 × jd_1481
-  pair_7402  resume_1481 × jd_1482
-  pair_7403  resume_1481 × jd_1483
-  pair_7404  resume_1481 × jd_1484
-  pair_7405  resume_1481 × jd_1485
-  pair_7406  resume_1482 × jd_1481
-  pair_7407  resume_1482 × jd_1482
-  pair_7408  resume_1482 × jd_1483
-  pair_7409  resume_1482 × jd_1484
-  pair_7410  resume_1482 × jd_1485
-  pair_7411  resume_1483 × jd_1481
-  pair_7412  resume_1483 × jd_1482
-  pair_7413  resume_1483 × jd_1483
-  pair_7414  resume_1483 × jd_1484
-  pair_7415  resume_1483 × jd_1485
-  pair_7416  resume_1484 × jd_1481
-  pair_7417  resume_1484 × jd_1482
-  pair_7418  resume_1484 × jd_1483
-  pair_7419  resume_1484 × jd_1484
-  pair_7420  resume_1484 × jd_1485
-  pair_7421  resume_1485 × jd_1481
-  pair_7422  resume_1485 × jd_1482
-  pair_7423  resume_1485 × jd_1483
-  pair_7424  resume_1485 × jd_1484
-  pair_7425  resume_1485 × jd_1485
+  pair_7426  resume_1486 × jd_1486
+  pair_7427  resume_1486 × jd_1487
+  pair_7428  resume_1486 × jd_1488
+  pair_7429  resume_1486 × jd_1489
+  pair_7430  resume_1486 × jd_1490
+  pair_7431  resume_1487 × jd_1486
+  pair_7432  resume_1487 × jd_1487
+  pair_7433  resume_1487 × jd_1488
+  pair_7434  resume_1487 × jd_1489
+  pair_7435  resume_1487 × jd_1490
+  pair_7436  resume_1488 × jd_1486
+  pair_7437  resume_1488 × jd_1487
+  pair_7438  resume_1488 × jd_1488
+  pair_7439  resume_1488 × jd_1489
+  pair_7440  resume_1488 × jd_1490
+  pair_7441  resume_1489 × jd_1486
+  pair_7442  resume_1489 × jd_1487
+  pair_7443  resume_1489 × jd_1488
+  pair_7444  resume_1489 × jd_1489
+  pair_7445  resume_1489 × jd_1490
+  pair_7446  resume_1490 × jd_1486
+  pair_7447  resume_1490 × jd_1487
+  pair_7448  resume_1490 × jd_1488
+  pair_7449  resume_1490 × jd_1489
+  pair_7450  resume_1490 × jd_1490
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
