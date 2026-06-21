@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1446 | level: intern | exp: 0.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, NoSQL, Database Design
-  background: Enthusiastic and detail-oriented Computer Science student focused on Database Engineering, relational schema normalization, and modern NoSQL architectures. Possesses solid foundational knowledge of da
+  id: resume_1451 | level: intern | exp: 0.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Machine Learning, Data Analysis
+  background: Enthusiastic and highly motivated Data Science student specializing in predictive algorithms, statistical data analysis, and machine learning architectures. Proficient in web data structures and compu
 
-  id: resume_1447 | level: junior | exp: 1.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Administration, Index Optimization, JSON
-  background: Results-oriented Junior Database Engineer with over a year of active industry exposure administering relational platforms, designing flexible schemas, and managing in-memory application caches. Compet
+  id: resume_1452 | level: junior | exp: 1.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Feature Engineering, Model Evaluation
+  background: Detail-oriented Junior Data Scientist with over one year of active commercial experience designing, optimizing, and shipping robust predictive pipelines and feature engineering layers. Proficient in m
 
-  id: resume_1448 | level: middle | exp: 4.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Database Partitioning, Replica Sets, High Availability
-  background: Dynamic Database Engineer with four years of comprehensive professional experience designing, scaling, and managing sophisticated relational and non-relational database architectures. Expert in advanc
+  id: resume_1453 | level: middle | exp: 4.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Deep Learning, Hyperparameter Tuning, Model Orchestration
+  background: Results-driven Data Scientist with four years of deep commercial experience architecting scalable machine learning frameworks, analytical pipelines, and automated hyperparameter tuning setups. Expert 
 
-  id: resume_1449 | level: senior | exp: 6.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Sharding, Failover Automation, Enterprise Data Architecture, Performance Tuning
-  background: Accomplished Senior Database Engineer with six years of industry leadership orchestrating enterprise data architectures, distributed infrastructure layers, and complex data modeling frameworks. Except
+  id: resume_1454 | level: senior | exp: 6.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Distributed Training, Machine Learning Operations, Model Deployment
+  background: Accomplished Senior Machine Learning Engineer with six years of professional industry history delivering complex model blueprints, distributed training infrastructures, and high-performance analytical
 
-  id: resume_1450 | level: senior | exp: 8.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Disaster Recovery, Database Replication, Data Lifecycle Management
-  background: Visionary Principal Database Architect with over eight years of global experience drafting enterprise data platform roadmaps, distributed storage blueprints, and algorithmic governance strategies. Ren
+  id: resume_1455 | level: senior | exp: 8.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Enterprise Architecture, Feature Stores, Model Lifecycle Management, Data Science Strategy
+  background: Visionary Principal Machine Learning Architect with over eight years of global experience defining enterprise data science roadmaps, distributed model blueprints, and strategic modeling systems. Maste
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1446 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, MongoDB, Data Modeling
-  description: We are looking for an analytical and motivated Database Engineering Intern to support our central storage management team. You will work alongside experienced data scientists and d
+  id: jd_1451 | title: Data Science Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, pandas, scikit-learn
+  description: We are looking for an analytical and motivated Data Science Intern to support our predictive modeling product team. You will work closely with senior engineering staff to explore r
 
-  id: jd_1447 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Our data platform infrastructure team is seeking a Junior Database Engineer to maintain, scale, and monitor our multi-tier database systems. In this role, you will be responsible f
+  id: jd_1452 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
+  required_skills: Python, pandas, scikit-learn, PyTorch
+  description: Our application development team is seeking a Junior Data Scientist to build, monitor, and optimize our growing machine learning interface tier. In this role, you will be responsib
 
-  id: jd_1443 | title: Database Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization
-  description: We are recruiting a seasoned Database Engineer to architect, scale, and maintain our enterprise database infrastructure engine. This position focuses on driving storage efficiency 
+  id: jd_1453 | title: Data Scientist | level: middle | min_exp: 3 yrs
+  required_skills: Python, pandas, scikit-learn, PyTorch, Machine Learning
+  description: We are recruiting a seasoned Data Scientist to design, scale, and maintain our enterprise machine learning matrix. This position focuses on driving outstanding predictive experienc
 
-  id: jd_1449 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Sharding
-  description: Seeking a Senior Database Engineer to lead the scaling, architectural maturation, and quality assurance of our enterprise database platforms. In this leadership role, you will arch
+  id: jd_1454 | title: Senior Machine Learning Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, pandas, scikit-learn, PyTorch, Machine Learning
+  description: Seeking a Senior Machine Learning Engineer to lead the scaling, architectural maturation, and performance optimization of our enterprise predictive web platform interfaces. In this
 
-  id: jd_1450 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture
-  description: Join us as a Principal Database Architect to define our global database roadmap, architectural governance standards, and enterprise storage blueprints. This high-level technical le
+  id: jd_1455 | title: Principal Machine Learning Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, pandas, scikit-learn, PyTorch, Enterprise Architecture
+  description: Join us as a Principal Machine Learning Architect to define our global user intelligence roadmap, architectural governance standards, and enterprise data science blueprints. This h
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7226  resume_1446 × jd_1446
-  pair_7227  resume_1446 × jd_1447
-  pair_7228  resume_1446 × jd_1443
-  pair_7229  resume_1446 × jd_1449
-  pair_7230  resume_1446 × jd_1450
-  pair_7231  resume_1447 × jd_1446
-  pair_7232  resume_1447 × jd_1447
-  pair_7233  resume_1447 × jd_1443
-  pair_7234  resume_1447 × jd_1449
-  pair_7235  resume_1447 × jd_1450
-  pair_7236  resume_1448 × jd_1446
-  pair_7237  resume_1448 × jd_1447
-  pair_7238  resume_1448 × jd_1443
-  pair_7239  resume_1448 × jd_1449
-  pair_7240  resume_1448 × jd_1450
-  pair_7241  resume_1449 × jd_1446
-  pair_7242  resume_1449 × jd_1447
-  pair_7243  resume_1449 × jd_1443
-  pair_7244  resume_1449 × jd_1449
-  pair_7245  resume_1449 × jd_1450
-  pair_7246  resume_1450 × jd_1446
-  pair_7247  resume_1450 × jd_1447
-  pair_7248  resume_1450 × jd_1443
-  pair_7249  resume_1450 × jd_1449
-  pair_7250  resume_1450 × jd_1450
+  pair_7251  resume_1451 × jd_1451
+  pair_7252  resume_1451 × jd_1452
+  pair_7253  resume_1451 × jd_1453
+  pair_7254  resume_1451 × jd_1454
+  pair_7255  resume_1451 × jd_1455
+  pair_7256  resume_1452 × jd_1451
+  pair_7257  resume_1452 × jd_1452
+  pair_7258  resume_1452 × jd_1453
+  pair_7259  resume_1452 × jd_1454
+  pair_7260  resume_1452 × jd_1455
+  pair_7261  resume_1453 × jd_1451
+  pair_7262  resume_1453 × jd_1452
+  pair_7263  resume_1453 × jd_1453
+  pair_7264  resume_1453 × jd_1454
+  pair_7265  resume_1453 × jd_1455
+  pair_7266  resume_1454 × jd_1451
+  pair_7267  resume_1454 × jd_1452
+  pair_7268  resume_1454 × jd_1453
+  pair_7269  resume_1454 × jd_1454
+  pair_7270  resume_1454 × jd_1455
+  pair_7271  resume_1455 × jd_1451
+  pair_7272  resume_1455 × jd_1452
+  pair_7273  resume_1455 × jd_1453
+  pair_7274  resume_1455 × jd_1454
+  pair_7275  resume_1455 × jd_1455
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
