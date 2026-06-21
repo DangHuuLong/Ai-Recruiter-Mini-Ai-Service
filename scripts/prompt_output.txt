@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1496 | level: intern | exp: 0.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Git, JavaScript, Responsive Design, HTML5
-  background: Enthusiastic and self-driven Computer Science undergraduate specializing in modern frontend engineering architectures and responsive UI implementation. Possesses foundational academic and self-taught 
+  id: resume_1501 | level: intern | exp: 0.5 yrs
+  skills: Requirements Elicitation, BPMN, Stakeholder Communication, Jira, Confluence, Agile, User Stories, Microsoft Visio
+  background: Proactive and detail-oriented Business Administration final year student specializing in business analysis methodologies, project coordination, and requirements engineering frameworks. Possesses stron
 
-  id: resume_1497 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Zustand, REST API, Figma, Git
-  background: Detail-oriented Junior Frontend Developer with over a year of commercial experience developing high-performance web interfaces and responsive layouts. Adept at building application pages using React, 
+  id: resume_1502 | level: junior | exp: 1.5 yrs
+  skills: Requirements Analysis, BPMN, Agile Methodologies, Jira, User Acceptance Testing, Stakeholder Management, User Stories, Confluence
+  background: Motivated Junior Business Analyst and Project Coordinator with over a year of commercial experience managing stakeholder requirements and documenting corporate workflows. Adept at gathering, analyzing
 
-  id: resume_1498 | level: middle | exp: 4.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, React Query, Jest, Web Performance
-  background: Resourceful Frontend Engineer with four years of professional expertise crafting robust client-side software architectures and scalable single-page applications. Expert in advanced React patterns, end
+  id: resume_1503 | level: middle | exp: 4.0 yrs
+  skills: Requirements Engineering, BPMN, Project Management, Stakeholder Engagement, Agile Scrum, Risk Management, Gap Analysis, Jira
+  background: Resourceful Business Analyst and Project Manager with four years of professional expertise delivering enterprise-grade software solutions, process optimizations, and cross-functional digital transform
 
-  id: resume_1499 | level: senior | exp: 6.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Design Systems, Cypress, Micro-Frontends, CI/CD
-  background: Accomplished Senior Frontend Developer and Technical Lead with six years of industry achievement architecting high-scale web platforms, responsive design libraries, and user-centric web applications. 
+  id: resume_1504 | level: senior | exp: 6.0 yrs
+  skills: Business Analysis, BPMN, Project Management, Agile Delivery, Change Management, Stakeholder Matrix, Resource Allocation, Scope Management
+  background: Accomplished Senior Business Analyst and Delivery Lead with six years of industry achievement architecting enterprise systems, optimizing complex corporate processes, and steering cross-functional sof
 
-  id: resume_1500 | level: senior | exp: 8.5 yrs
-  skills: Frontend Architecture, React, TypeScript, Next.js, Tailwind CSS, Design Tokens, Engineering Leadership, Web Accessibility
-  background: Visionary Principal Frontend Architect and Engineering Director with over eight years of international experience governing massive digital transformation initiatives, enterprise core user interfaces,
+  id: resume_1505 | level: senior | exp: 8.5 yrs
+  skills: Business Architecture, BPMN, Program Management, Change Management, Strategic Alignment, Stakeholder Governance, Requirements Lifecycle, Enterprise Risk
+  background: Visionary Principal Business Architect and Program Director with over eight years of international experience governing massive digital transformation initiatives, enterprise core workflows, and speci
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1496 | title: Frontend Development Intern (React / Next.js) | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: We are seeking an analytical and enthusiastic Frontend Development Intern to join our digital engineering team. You will work alongside senior engineers to craft responsive user in
+  id: jd_1501 | title: Business Analysis and Project Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Elicitation, BPMN, Stakeholder Communication
+  description: We are seeking an analytical and enthusiastic Business Analysis and Project Intern to join our corporate operations team. You will work alongside senior project managers to gather 
 
-  id: jd_1497 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Next.js
-  description: Our product engineering group is looking for an enthusiastic Junior Frontend Developer to build, document, and support our responsive web application modules. In this role, you wil
+  id: jd_1502 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, BPMN, Agile Methodologies
+  description: Our product delivery group is looking for an enthusiastic Junior Business Analyst to elicit, document, and support our software system requirements. In this role, you will be respo
 
-  id: jd_1498 | title: Frontend Engineer - React / Next.js | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js
-  description: We are searching for a seasoned Frontend Engineer to evaluate, coordinate, and execute our strategic web application integrations and user interface delivery pipelines. This positi
+  id: jd_1503 | title: Business Analyst / Project Manager | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Engineering, BPMN, Project Management
+  description: We are searching for a seasoned Business Analyst and Project Manager to evaluate, coordinate, and execute our strategic software integration tracks and operational change initiativ
 
-  id: jd_1499 | title: Senior Frontend Engineer / UI Architect | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Next.js
-  description: Seeking a Senior Frontend Engineer and UI Architect to guide the modernization, interface architecture restructuring, and technical alignment of our consumer web systems. In this s
+  id: jd_1504 | title: Senior Business Analyst & Delivery Lead | level: senior | min_exp: 5 yrs
+  required_skills: Business Analysis, BPMN, Project Management
+  description: Seeking a Senior Business Analyst and Delivery Lead to guide the modernization, process architecture restructuring, and strategic project execution of our corporate platforms. In t
 
-  id: jd_1500 | title: Principal Frontend Architect and Tech Lead | level: senior | min_exp: 7 yrs
-  required_skills: React, TypeScript, Next.js
-  description: Join our core platform office as a Principal Frontend Architect and Tech Lead to define our international web software roadmap, rendering standards, and interface delivery architec
+  id: jd_1505 | title: Principal Business Architect and Program Manager | level: senior | min_exp: 7 yrs
+  required_skills: Business Architecture, BPMN, Program Management
+  description: Join our core platform office as a Principal Business Architect and Program Manager to define our international business transformation roadmap, operational standards, and program 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7476  resume_1496 × jd_1496
-  pair_7477  resume_1496 × jd_1497
-  pair_7478  resume_1496 × jd_1498
-  pair_7479  resume_1496 × jd_1499
-  pair_7480  resume_1496 × jd_1500
-  pair_7481  resume_1497 × jd_1496
-  pair_7482  resume_1497 × jd_1497
-  pair_7483  resume_1497 × jd_1498
-  pair_7484  resume_1497 × jd_1499
-  pair_7485  resume_1497 × jd_1500
-  pair_7486  resume_1498 × jd_1496
-  pair_7487  resume_1498 × jd_1497
-  pair_7488  resume_1498 × jd_1498
-  pair_7489  resume_1498 × jd_1499
-  pair_7490  resume_1498 × jd_1500
-  pair_7491  resume_1499 × jd_1496
-  pair_7492  resume_1499 × jd_1497
-  pair_7493  resume_1499 × jd_1498
-  pair_7494  resume_1499 × jd_1499
-  pair_7495  resume_1499 × jd_1500
-  pair_7496  resume_1500 × jd_1496
-  pair_7497  resume_1500 × jd_1497
-  pair_7498  resume_1500 × jd_1498
-  pair_7499  resume_1500 × jd_1499
-  pair_7500  resume_1500 × jd_1500
+  pair_7501  resume_1501 × jd_1501
+  pair_7502  resume_1501 × jd_1502
+  pair_7503  resume_1501 × jd_1503
+  pair_7504  resume_1501 × jd_1504
+  pair_7505  resume_1501 × jd_1505
+  pair_7506  resume_1502 × jd_1501
+  pair_7507  resume_1502 × jd_1502
+  pair_7508  resume_1502 × jd_1503
+  pair_7509  resume_1502 × jd_1504
+  pair_7510  resume_1502 × jd_1505
+  pair_7511  resume_1503 × jd_1501
+  pair_7512  resume_1503 × jd_1502
+  pair_7513  resume_1503 × jd_1503
+  pair_7514  resume_1503 × jd_1504
+  pair_7515  resume_1503 × jd_1505
+  pair_7516  resume_1504 × jd_1501
+  pair_7517  resume_1504 × jd_1502
+  pair_7518  resume_1504 × jd_1503
+  pair_7519  resume_1504 × jd_1504
+  pair_7520  resume_1504 × jd_1505
+  pair_7521  resume_1505 × jd_1501
+  pair_7522  resume_1505 × jd_1502
+  pair_7523  resume_1505 × jd_1503
+  pair_7524  resume_1505 × jd_1504
+  pair_7525  resume_1505 × jd_1505
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
