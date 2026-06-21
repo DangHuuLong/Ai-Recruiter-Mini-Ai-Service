@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1561 | level: intern | exp: 0.4 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Jira, User Stories
-  background: Enthusiastic and highly analytical final-year Management Information Systems student focusing on digital product management lifecycles. Academically trained in product roadmap visualization, user pers
+  id: resume_1566 | level: intern | exp: 0.3 yrs
+  skills: Figma, User Research, Prototyping, UI/UX Design, Usability Testing, Information Architecture
+  background: Enthusiastic and highly creative final-year Human-Computer Interaction student specializing in UI/UX Design and Product Design. Academically trained in user research methods, persona creation, and low
 
-  id: resume_1562 | level: junior | exp: 1.5 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Backlog Grooming, Product Analytics
-  background: Junior Product Manager with over a year of corporate experience refining and driving growth for consumer-facing digital applications within high-velocity technical environments. Competent at executing
+  id: resume_1567 | level: junior | exp: 1.5 yrs
+  skills: Figma, User Research, Prototyping, Wireframing, Visual Design, Interaction Design
+  background: Junior Product Designer with over a year of corporate experience creating and optimizing user-centered interfaces for mobile and web applications. Skilled at conducting qualitative user research inter
 
-  id: resume_1563 | level: middle | exp: 4.2 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Scrum, Product Strategy, Market Discovery
-  background: Dynamic Technology Product Manager with over four years of specialized industry leadership steering complex software application lifecycles, defining modern platform requirements, and launching cloud 
+  id: resume_1568 | level: middle | exp: 4.5 yrs
+  skills: Figma, User Research, Prototyping, Design Systems, UI/UX Design, Interaction Design, Accessibility
+  background: Versatile UI/UX Product Designer with over four years of specialized industry experience orchestrating end-to-end design lifecycles for high-traffic software platforms. Expert at translating abstract 
 
-  id: resume_1564 | level: senior | exp: 6.5 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Enterprise Scaling, Product Discovery, Jira
-  background: Accomplished Senior Product Manager with six years of specialized commercial success leading complex digital transformation initiatives, engineering scalable platform portfolios, and driving multi-tea
+  id: resume_1569 | level: senior | exp: 6.2 yrs
+  skills: Figma, User Research, Prototyping, Design System Architecture, Product Strategy, Usability Engineering, Stakeholder Management
+  background: Accomplished Senior Product Designer with six years of commercial success guiding digital transformation strategies, cultivating user empathy, and engineering scalable product experiences. Recognized 
 
-  id: resume_1565 | level: senior | exp: 8.7 yrs
-  skills: Roadmap, Agile, Stakeholders, Product Management, Product Governance, Scaled Agile, Executive Leadership
-  background: Visionary Principal Product Director and Head of Technical Platforms with over eight years of global achievement spearheading planetary-scale software architectures, secure cloud transformations, and 
+  id: resume_1570 | level: senior | exp: 8.5 yrs
+  skills: Figma, User Research, Prototyping, UX Strategy, Design Governance, Executive Alignment, Human-Computer Interaction
+  background: Visionary Principal Product Designer and UX Practice Lead with over eight years of international achievement spearheading planetary-scale application experiences, digital transformations, and design i
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1561 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Roadmap, Agile
-  description: We are seeking a highly analytical Product Management Intern to support our technology platform delivery team. In this position, you will work closely with senior product managers 
+  id: jd_1566 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, User Research
+  description: We are seeking an analytical and visually minded UI/UX Design Intern to support our central product design team. In this position, you will work closely with senior designers to in
 
-  id: jd_1562 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Roadmap, Agile
-  description: We are searching for a motivated Junior Product Manager to assist in maintaining and refining our technical software delivery pipeline. You will perform day-to-day user story gener
+  id: jd_1567 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, User Research
+  description: We are searching for a motivated Junior Product Designer to assist in maintaining and refining our technical interface design pipeline. You will perform day-to-day layout adjustmen
 
-  id: jd_1563 | title: Technology Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: We are looking for an experienced Technology Product Manager to assume full functional ownership of our cloud platform software, release lifecycles, and core product roadmaps. The 
+  id: jd_1568 | title: UI/UX Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Figma, User Research, Prototyping, UI/UX Design
+  description: We are looking for an experienced UI/UX Product Designer to assume full functional ownership of our cloud software user interfaces, responsive design languages, and core interactiv
 
-  id: jd_1564 | title: Senior Product Architect | level: senior | min_exp: 5 yrs
-  required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: We are hiring a seasoned Senior Product Architect to govern the structural evolution, portfolio scaling, and automated workflow delivery models of our worldwide platform. You will 
+  id: jd_1569 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: Figma, User Research, Prototyping, UI/UX Design
+  description: We are hiring a seasoned Senior Product Designer to govern the structural evolution, design system scaling, and interactive presentation models of our worldwide software platform. 
 
-  id: jd_1565 | title: Principal Product Director | level: senior | min_exp: 7 yrs
-  required_skills: Roadmap, Agile, Stakeholders, Product Management
-  description: Join our enterprise core platform group as a Principal Product Director to establish our global technical vision, strategic product frameworks, and multi-year product roadmap. You 
+  id: jd_1570 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  required_skills: Figma, User Research, Prototyping, UI/UX Design
+  description: Join our enterprise platform core experience group as a Principal Product Designer to establish our global user experience vision, strategic interface frameworks, and macro-level d
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7801  resume_1561 × jd_1561
-  pair_7802  resume_1561 × jd_1562
-  pair_7803  resume_1561 × jd_1563
-  pair_7804  resume_1561 × jd_1564
-  pair_7805  resume_1561 × jd_1565
-  pair_7806  resume_1562 × jd_1561
-  pair_7807  resume_1562 × jd_1562
-  pair_7808  resume_1562 × jd_1563
-  pair_7809  resume_1562 × jd_1564
-  pair_7810  resume_1562 × jd_1565
-  pair_7811  resume_1563 × jd_1561
-  pair_7812  resume_1563 × jd_1562
-  pair_7813  resume_1563 × jd_1563
-  pair_7814  resume_1563 × jd_1564
-  pair_7815  resume_1563 × jd_1565
-  pair_7816  resume_1564 × jd_1561
-  pair_7817  resume_1564 × jd_1562
-  pair_7818  resume_1564 × jd_1563
-  pair_7819  resume_1564 × jd_1564
-  pair_7820  resume_1564 × jd_1565
-  pair_7821  resume_1565 × jd_1561
-  pair_7822  resume_1565 × jd_1562
-  pair_7823  resume_1565 × jd_1563
-  pair_7824  resume_1565 × jd_1564
-  pair_7825  resume_1565 × jd_1565
+  pair_7826  resume_1566 × jd_1566
+  pair_7827  resume_1566 × jd_1567
+  pair_7828  resume_1566 × jd_1568
+  pair_7829  resume_1566 × jd_1569
+  pair_7830  resume_1566 × jd_1570
+  pair_7831  resume_1567 × jd_1566
+  pair_7832  resume_1567 × jd_1567
+  pair_7833  resume_1567 × jd_1568
+  pair_7834  resume_1567 × jd_1569
+  pair_7835  resume_1567 × jd_1570
+  pair_7836  resume_1568 × jd_1566
+  pair_7837  resume_1568 × jd_1567
+  pair_7838  resume_1568 × jd_1568
+  pair_7839  resume_1568 × jd_1569
+  pair_7840  resume_1568 × jd_1570
+  pair_7841  resume_1569 × jd_1566
+  pair_7842  resume_1569 × jd_1567
+  pair_7843  resume_1569 × jd_1568
+  pair_7844  resume_1569 × jd_1569
+  pair_7845  resume_1569 × jd_1570
+  pair_7846  resume_1570 × jd_1566
+  pair_7847  resume_1570 × jd_1567
+  pair_7848  resume_1570 × jd_1568
+  pair_7849  resume_1570 × jd_1569
+  pair_7850  resume_1570 × jd_1570
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
