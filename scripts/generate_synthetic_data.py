@@ -28,8 +28,9 @@ PROJECT_ROOT = SCRIPTS_DIR.parent
 RESUMES_PATH = PROJECT_ROOT / "datasets" / "raw" / "resumes.jsonl"
 JDS_PATH     = PROJECT_ROOT / "datasets" / "raw" / "job_descriptions.jsonl"
 PAIRS_PATH   = PROJECT_ROOT / "datasets" / "processed" / "cv_jd_pairs.jsonl"
-TEMP_INPUT   = SCRIPTS_DIR / "temp_input.txt"
-SESSION_FILE = SCRIPTS_DIR / ".synthetic_session.json"
+TEMP_INPUT     = SCRIPTS_DIR / "temp_input.txt"
+PROMPT_OUTPUT  = SCRIPTS_DIR / "prompt_output.txt"
+SESSION_FILE   = SCRIPTS_DIR / ".synthetic_session.json"
 
 # ── constants ─────────────────────────────────────────────────────────────────
 
@@ -387,6 +388,56 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
 
     return errs, warns
 
+
+def validate_cvjd_ids(
+    resumes: list[dict], jds: list[dict],
+    resume_start: int, jd_start: int,
+) -> list[str]:
+    errs: list[str] = []
+    expected_resume_ids = {f"resume_{resume_start + i}" for i in range(5)}
+    expected_jd_ids     = {f"jd_{jd_start + i}"        for i in range(5)}
+
+    actual_resume_ids = {r.get("id", f"<missing id on resume #{i}>") for i, r in enumerate(resumes)}
+    actual_jd_ids     = {j.get("id", f"<missing id on jd #{i}>")     for i, j in enumerate(jds)}
+
+    for rid in sorted(expected_resume_ids - actual_resume_ids):
+        errs.append(f"[ID] resume '{rid}' expected but missing from LLM output")
+    for rid in sorted(actual_resume_ids - expected_resume_ids):
+        errs.append(
+            f"[ID] resume '{rid}' is unexpected "
+            f"(expected resume_{resume_start}–resume_{resume_start + 4})"
+        )
+    for jid in sorted(expected_jd_ids - actual_jd_ids):
+        errs.append(f"[ID] JD '{jid}' expected but missing from LLM output")
+    for jid in sorted(actual_jd_ids - expected_jd_ids):
+        errs.append(
+            f"[ID] JD '{jid}' is unexpected "
+            f"(expected jd_{jd_start}–jd_{jd_start + 4})"
+        )
+    return errs
+
+
+def validate_pair_ids(pairs: list[dict], pair_start: int) -> list[str]:
+    errs: list[str] = []
+    expected_pair_ids = {f"pair_{pair_start + i}" for i in range(25)}
+
+    actual_ids: list[str] = [p.get("id", f"<missing id on line {i + 1}>") for i, p in enumerate(pairs)]
+
+    seen: set[str] = set()
+    for pid in actual_ids:
+        if pid in seen:
+            errs.append(f"[ID] pair '{pid}' is duplicated")
+        seen.add(pid)
+
+    for pid in sorted(expected_pair_ids - set(actual_ids)):
+        errs.append(f"[ID] pair '{pid}' expected but missing from LLM output")
+    for pid in sorted(set(actual_ids) - expected_pair_ids):
+        errs.append(
+            f"[ID] pair '{pid}' is unexpected "
+            f"(expected pair_{pair_start}–pair_{pair_start + 24})"
+        )
+    return errs
+
 # ── actions ────────────────────────────────────────────────────────────────────
 
 def action_generate_prompt() -> None:
@@ -415,14 +466,11 @@ def action_generate_prompt() -> None:
 
     print(f"\n  Domain  : {domain}")
     print(f"  IDs     : resume_{resume_start}–{resume_start+4}  |  jd_{jd_start}–{jd_start+4}")
-    print("\n" + "=" * 60)
-    print("PROMPT — copy everything below this line:")
-    print("=" * 60)
-    print(prompt)
-    print("=" * 60)
-    print(f"\n  1. Copy the prompt above and paste it into your LLM.")
-    print(f"  2. Paste the LLM output into:  scripts/temp_input.txt")
-    print(f"  3. Press [2] to save.")
+    PROMPT_OUTPUT.write_text(prompt, encoding="utf-8")
+    print(f"\n  ✓ Prompt written to:  scripts/prompt_output.txt")
+    print(f"  → Open the file, copy all content, paste into your LLM.")
+    print(f"  → Paste LLM output into:  scripts/temp_input.txt")
+    print(f"  → Then press [2] to save.")
 
 
 def action_save() -> None:
@@ -475,7 +523,20 @@ def action_save() -> None:
             print(f"\n  [!] Expected 5 resumes + 5 JDs, got {len(resumes_new)} + {len(jds_new)}.")
             return
 
-        # Validate
+        # Validate IDs first
+        id_errors = validate_cvjd_ids(
+            resumes_new, jds_new,
+            session["resume_start"], session["jd_start"],
+        )
+        if id_errors:
+            print(f"\n  [!] {len(id_errors)} ID error(s) — NOT saved:")
+            for e in id_errors:
+                print(f"      ✗ {e}", file=sys.stderr)
+                print(f"      ✗ {e}")
+            print("\n      Fix the IDs in temp_input.txt and press [2] again.")
+            return
+
+        # Validate fields
         all_errors: list[str] = []
         for i, r in enumerate(resumes_new, 1):
             all_errors.extend(validate_resume(r, i))
@@ -504,14 +565,11 @@ def action_save() -> None:
         TEMP_INPUT.write_text("", encoding="utf-8")
 
         pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"])
-        print("\n" + "=" * 60)
-        print("PAIR PROMPT — copy everything below this line:")
-        print("=" * 60)
-        print(pair_prompt)
-        print("=" * 60)
-        print(f"\n  1. Copy the prompt above and paste it into your LLM.")
-        print(f"  2. Paste the LLM output into:  scripts/temp_input.txt")
-        print(f"  3. Press [2] to save pairs.")
+        PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
+        print(f"\n  ✓ Pair prompt written to:  scripts/prompt_output.txt")
+        print(f"  → Open the file, copy all content, paste into your LLM.")
+        print(f"  → Paste LLM output into:  scripts/temp_input.txt")
+        print(f"  → Then press [2] to save pairs.")
 
     # ── save pairs ────────────────────────────────────────────────────────────
     elif state == "waiting_pairs":
@@ -545,6 +603,16 @@ def action_save() -> None:
             print("\n  [!] Parse errors:")
             for e in parse_errors:
                 print(f"      ✗ {e}")
+            return
+
+        # Validate pair IDs
+        pair_id_errors = validate_pair_ids(pairs_new, session["pair_start"])
+        if pair_id_errors:
+            print(f"\n  [!] {len(pair_id_errors)} pair ID error(s) — NOT saved:")
+            for e in pair_id_errors:
+                print(f"      ✗ {e}", file=sys.stderr)
+                print(f"      ✗ {e}")
+            print("\n      Fix the pair IDs in temp_input.txt and press [2] again.")
             return
 
         if all_errors:
@@ -592,7 +660,7 @@ def main() -> None:
 
         print("\nMenu:")
         print("  [1]  Generate CV+JD prompt  (start new batch)")
-        print("  [2]  Save result            (paste output to scripts/temp_input.txt first)")
+        print("  [2]  Save result            (paste LLM output into scripts/temp_input.txt first)")
         print("  [0]  Exit")
 
         if state != "idle":

@@ -1,0 +1,100 @@
+You are a dataset labeler for an AI recruitment system.
+Score 25 CV-JD pairs using rubric v0.2.
+
+═══ RESUMES ═══
+  id: resume_1596 | level: intern | exp: 0.4 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Database Design, Query Optimization, ER Modeling, Backup Management, Python
+  background: Final-year Computer Science student specializing in database engineering and backend data infrastructure. Completed academic coursework covering relational database design, NoSQL systems, indexing str
+
+  id: resume_1597 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Performance Tuning, Database Administration, Linux, Backup Recovery, Monitoring
+  background: Junior Database Engineer with one and a half years of experience supporting production databases for internal business systems. Regular responsibilities include maintaining PostgreSQL instances, monit
+
+  id: resume_1598 | level: middle | exp: 4.3 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Replication, Database Migration, High Availability, Automation, Performance Tuning
+  background: Database Engineer with more than four years of experience designing and operating scalable data platforms for transactional and analytics workloads. Expertise includes PostgreSQL administration, Mongo
+
+  id: resume_1599 | level: senior | exp: 6.4 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Sharding, Disaster Recovery, Capacity Planning, Security, Mentoring
+  background: Senior Database Engineer with over six years of experience architecting mission-critical database infrastructures supporting high-volume applications. Extensive expertise in PostgreSQL clustering, Mon
+
+  id: resume_1600 | level: senior | exp: 9.2 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Strategic Planning, Performance Engineering, Governance, Multi-Region Deployment, Leadership
+  background: Principal Database Architect with more than nine years of experience leading enterprise-scale database engineering and data architecture programs. Deep expertise across PostgreSQL, MongoDB, Redis, and
+
+═══ JOB DESCRIPTIONS ═══
+  id: jd_1596 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Seeking a motivated Database Engineering Intern to support database operations and development activities. The role involves assisting with PostgreSQL and MongoDB maintenance tasks
+
+  id: jd_1597 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Looking for a Junior Database Engineer to maintain and optimize operational databases supporting internal applications. Responsibilities include managing PostgreSQL environments, s
+
+  id: jd_1598 | title: Database Engineer | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: An experienced Database Engineer is required to manage scalable database platforms and improve overall performance. The role includes PostgreSQL administration, MongoDB cluster ope
+
+  id: jd_1599 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Seeking a Senior Database Engineer to architect and optimize mission-critical database environments. Responsibilities include leading PostgreSQL and MongoDB infrastructure initiati
+
+  id: jd_1600 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Seeking a Principal Database Architect to define long-term database strategy and lead enterprise-scale architecture initiatives. The position focuses on PostgreSQL, MongoDB, Redis,
+
+═══ SCORING RUBRIC v0.2 ═══
+Score each criterion 0–100, then compute:
+  overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
+                        PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
+                        KEYWORD_DOMAIN_ALIGNMENT×0.10)
+
+Label mapping:
+  90–100 → excellent_match
+  75–89  → strong_match
+  60–74  → moderate_match
+  40–59  → weak_match      ← FORBIDDEN — do not generate
+  0–39   → poor_match      ← FORBIDDEN — do not generate
+
+ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
+KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
+all documents share the same domain — floor is 60.
+
+Avoid boundary zones — do NOT use scores in these ranges:
+  35–45, 55–65, 70–80, 85–95
+Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
+
+═══ PAIRING ORDER (25 pairs) ═══
+  pair_7976  resume_1596 × jd_1596
+  pair_7977  resume_1596 × jd_1597
+  pair_7978  resume_1596 × jd_1598
+  pair_7979  resume_1596 × jd_1599
+  pair_7980  resume_1596 × jd_1600
+  pair_7981  resume_1597 × jd_1596
+  pair_7982  resume_1597 × jd_1597
+  pair_7983  resume_1597 × jd_1598
+  pair_7984  resume_1597 × jd_1599
+  pair_7985  resume_1597 × jd_1600
+  pair_7986  resume_1598 × jd_1596
+  pair_7987  resume_1598 × jd_1597
+  pair_7988  resume_1598 × jd_1598
+  pair_7989  resume_1598 × jd_1599
+  pair_7990  resume_1598 × jd_1600
+  pair_7991  resume_1599 × jd_1596
+  pair_7992  resume_1599 × jd_1597
+  pair_7993  resume_1599 × jd_1598
+  pair_7994  resume_1599 × jd_1599
+  pair_7995  resume_1599 × jd_1600
+  pair_7996  resume_1600 × jd_1596
+  pair_7997  resume_1600 × jd_1597
+  pair_7998  resume_1600 × jd_1598
+  pair_7999  resume_1600 × jd_1599
+  pair_8000  resume_1600 × jd_1600
+
+═══ OUTPUT FORMAT ═══
+Output exactly 25 lines.
+Each line is a single JSON object (no array brackets, no commas between lines).
+No markdown, no explanation, no extra text — only 25 JSON lines.
+
+JSON schema per pair:
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
