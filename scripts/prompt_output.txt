@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1576 | level: intern | exp: 0.4 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, Responsive Design
-  background: Passionate and highly motivated final-year Computer Science student specializing in modern Frontend Development with an emphasis on React, TypeScript, Next.js, and Tailwind CSS. Possesses strong acade
+  id: resume_1581 | level: intern | exp: 0.4 yrs
+  skills: Transformers, LangChain, RAG, Embeddings, Python, Vector Databases
+  background: Enthusiastic and highly analytical final-year Computer Science student specializing in Artificial Intelligence and Natural Language Processing. Possesses a strong academic foundation in deep learning,
 
-  id: resume_1577 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, State Management, Git
-  background: Junior Frontend Developer with over a year of commercial corporate experience writing, testing, and optimizing high-fidelity web applications. Skilled at implementing pixel-perfect UI dashboards using
+  id: resume_1582 | level: junior | exp: 1.5 yrs
+  skills: Transformers, LangChain, RAG, Embeddings, Python, Vector Indexing, Prompt Engineering
+  background: Junior NLP Developer with over a year of commercial corporate experience building, testing, and monitoring generative AI microservices within high-velocity environments. Skilled at implementing robust
 
-  id: resume_1578 | level: middle | exp: 4.2 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Web Accessibility, Frontend Architecture, Performance Optimization
-  background: Versatile Frontend Engineer with over four years of specialized industry experience orchestrating enterprise-tier client-side systems and building scalable user interfaces for high-traffic SaaS applic
+  id: resume_1583 | level: middle | exp: 4.2 yrs
+  skills: Transformers, LangChain, RAG, Embeddings, Vector Databases, Large Language Models, Data Chunking
+  background: Versatile AI and NLP Engineer with over four years of specialized industry experience orchestrating enterprise-tier generative AI systems and deploying robust language model infrastructures for high-t
 
-  id: resume_1579 | level: senior | exp: 6.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Design Systems, SaaS Architecture, Webpack
-  background: Accomplished Senior Frontend Engineer with six years of commercial success driving digital transformation paths, building high-performance web products, and leading modular software deployment pipelin
+  id: resume_1584 | level: senior | exp: 6.5 yrs
+  skills: Transformers, LangChain, RAG, Embeddings, Model Optimization, GPU Clustering, Agent Orchestration
+  background: Accomplished Senior AI Engineer with six years of commercial success driving digital transformation paths, building high-performance NLP solutions, and leading automated machine learning pipelines. Re
 
-  id: resume_1580 | level: senior | exp: 8.7 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Governance, Performance Engineering, Executive Alignment
-  background: Visionary Principal Frontend Architect and Web Engineering Practice Lead with over eight years of international achievement spearheading planetary-scale application architectures, global web applicati
+  id: resume_1585 | level: senior | exp: 8.7 yrs
+  skills: Transformers, LangChain, RAG, Embeddings, AI Governance, Model Evaluation, Strategic Planning
+  background: Visionary Principal AI Architect and NLP Engineering Practice Lead with over eight years of international achievement spearheading planetary-scale machine learning systems, global language model trans
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1576 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript
-  description: We are seeking a highly analytical and technical Frontend Development Intern to support our core web platform delivery group. In this position, you will work closely with senior en
+  id: jd_1581 | title: AI and NLP Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Transformers, LangChain
+  description: We are seeking a highly analytical and technical AI and NLP Engineering Intern to support our core language platform delivery group. In this position, you will work closely with se
 
-  id: jd_1577 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript
-  description: We are searching for a motivated Junior Frontend Developer to assist in maintaining and refining our customer threat monitoring dashboards and interactive client portals. You will 
+  id: jd_1582 | title: Junior AI Developer | level: junior | min_exp: 1 yrs
+  required_skills: Transformers, LangChain
+  description: We are searching for a motivated Junior AI Developer to assist in maintaining and refining our corporate customer support automation dashboards and interactive knowledge base porta
 
-  id: jd_1578 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: We are looking for an experienced Frontend Engineer to assume full functional ownership of our cloud monitoring client applications, responsive product screens, and core data-fetch
+  id: jd_1583 | title: AI and NLP Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Transformers, LangChain, RAG, Embeddings
+  description: We are looking for an experienced AI and NLP Engineer to assume full functional ownership of our cloud monitoring intelligence layers, semantic text generation utilities, and core 
 
-  id: jd_1579 | title: Senior Frontend Architect | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: We are hiring a seasoned Senior Frontend Architect to govern the structural evolution, Next.js framework scaling, and client-side web orchestration models of our worldwide cloud vi
+  id: jd_1584 | title: Senior AI Architect | level: senior | min_exp: 5 yrs
+  required_skills: Transformers, LangChain, RAG, Embeddings
+  description: We are hiring a seasoned Senior AI Architect to govern the structural evolution, transformer model scaling, and retrieval-augmented generation orchestration models of our worldwide
 
-  id: jd_1580 | title: Principal Web Specialist | level: senior | min_exp: 7 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: Join our enterprise platform core visualization group as a Principal Web Specialist to establish our global frontend vision, strategic web application frameworks, and macro-level c
+  id: jd_1585 | title: Principal NLP Specialist | level: senior | min_exp: 7 yrs
+  required_skills: Transformers, LangChain, RAG, Embeddings
+  description: Join our enterprise platform core cognitive intelligence group as a Principal NLP Specialist to establish our global artificial intelligence vision, strategic language application 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7876  resume_1576 × jd_1576
-  pair_7877  resume_1576 × jd_1577
-  pair_7878  resume_1576 × jd_1578
-  pair_7879  resume_1576 × jd_1579
-  pair_7880  resume_1576 × jd_1580
-  pair_7881  resume_1577 × jd_1576
-  pair_7882  resume_1577 × jd_1577
-  pair_7883  resume_1577 × jd_1578
-  pair_7884  resume_1577 × jd_1579
-  pair_7885  resume_1577 × jd_1580
-  pair_7886  resume_1578 × jd_1576
-  pair_7887  resume_1578 × jd_1577
-  pair_7888  resume_1578 × jd_1578
-  pair_7889  resume_1578 × jd_1579
-  pair_7890  resume_1578 × jd_1580
-  pair_7891  resume_1579 × jd_1576
-  pair_7892  resume_1579 × jd_1577
-  pair_7893  resume_1579 × jd_1578
-  pair_7894  resume_1579 × jd_1579
-  pair_7895  resume_1579 × jd_1580
-  pair_7896  resume_1580 × jd_1576
-  pair_7897  resume_1580 × jd_1577
-  pair_7898  resume_1580 × jd_1578
-  pair_7899  resume_1580 × jd_1579
-  pair_7900  resume_1580 × jd_1580
+  pair_7901  resume_1581 × jd_1581
+  pair_7902  resume_1581 × jd_1582
+  pair_7903  resume_1581 × jd_1583
+  pair_7904  resume_1581 × jd_1584
+  pair_7905  resume_1581 × jd_1585
+  pair_7906  resume_1582 × jd_1581
+  pair_7907  resume_1582 × jd_1582
+  pair_7908  resume_1582 × jd_1583
+  pair_7909  resume_1582 × jd_1584
+  pair_7910  resume_1582 × jd_1585
+  pair_7911  resume_1583 × jd_1581
+  pair_7912  resume_1583 × jd_1582
+  pair_7913  resume_1583 × jd_1583
+  pair_7914  resume_1583 × jd_1584
+  pair_7915  resume_1583 × jd_1585
+  pair_7916  resume_1584 × jd_1581
+  pair_7917  resume_1584 × jd_1582
+  pair_7918  resume_1584 × jd_1583
+  pair_7919  resume_1584 × jd_1584
+  pair_7920  resume_1584 × jd_1585
+  pair_7921  resume_1585 × jd_1581
+  pair_7922  resume_1585 × jd_1582
+  pair_7923  resume_1585 × jd_1583
+  pair_7924  resume_1585 × jd_1584
+  pair_7925  resume_1585 × jd_1585
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
