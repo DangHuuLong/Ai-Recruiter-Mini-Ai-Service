@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1421 | level: intern | exp: 0.3 yrs
-  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Candidate Screening
-  background: Enthusiastic Human Resources student seeking a talent acquisition internship to apply foundational knowledge of end-to-end corporate recruitment pipelines, applicant tracking configurations, and struc
+  id: resume_1426 | level: intern | exp: 0.5 yrs
+  skills: Procurement, Inventory Control, SAP ERP, Data Analysis, Logistics, Supply Chain Management, Microsoft Excel
+  background: Enthusiastic and detail-oriented business administration student specializing in supply chain management. Possesses strong foundational knowledge in procurement processes, inventory control, and basic
 
-  id: resume_1422 | level: junior | exp: 1.8 yrs
-  skills: Recruiting, HRIS, Onboarding, Sourcing, Candidate Engagement, Data Compliance
-  background: Junior HR Generalist with close to two years of professional experience managing talent acquisition workflows, core HRIS record keeping, and employee onboarding cycles. Dedicated to optimizing candida
+  id: resume_1427 | level: junior | exp: 1.5 yrs
+  skills: Oracle ERP, Inventory Reconciliation, Procurement, Supplier Communication, Data Entry, Logistics Operations, Stock Control
+  background: Dedicated Supply Chain Specialist with over a year of hands-on experience in tracking inventory accuracy and administering procurement pipelines. Proven track record in utilizing Oracle ERP systems to
 
-  id: resume_1423 | level: middle | exp: 4.0 yrs
-  skills: Recruiting, HRIS, Onboarding, Talent Sourcing, Data Analytics, Employer Branding
-  background: Mid-Level Talent Acquisition Specialist and HR Specialist with four years of comprehensive industry experience driving corporate staffing strategies, HRIS module implementations, and high-retention on
+  id: resume_1428 | level: middle | exp: 4.0 yrs
+  skills: SAP MM, Procurement Negotiation, Inventory Strategy, Logistics Optimization, SQL, Supply Chain Analytics, KPI Reporting
+  background: Results-driven Supply Chain Analyst with four years of comprehensive experience managing complex procurement workflows, optimizing multi-site inventory strategies, and deploying enterprise level ERP m
 
-  id: resume_1424 | level: senior | exp: 6.5 yrs
-  skills: Recruiting, HRIS, Onboarding, Talent Sourcing, Workforce Planning, Change Management, Labor Law Compliance
-  background: Senior Talent Acquisition Manager and HR Lead with over six years of professional experience directing full-scale human capital programs, complex HRIS integrations, and enterprise-wide employee onboar
+  id: resume_1429 | level: senior | exp: 6.0 yrs
+  skills: Microsoft Dynamics 365, Strategic Sourcing, Global Logistics, Risk Mitigation, Lean Inventory, Budgeting, Process Improvement
+  background: Accomplished Senior Procurement and Logistics Manager with six years of professional experience leading end-to-end supply chain activities for manufacturing enterprises. Expert in strategic sourcing, 
 
-  id: resume_1425 | level: senior | exp: 9.0 yrs
-  skills: Recruiting, HRIS, Onboarding, Executive Sourcing, Workforce Governance, Change Management, Strategic Leadership
-  background: Accomplished Director of Talent Acquisition and Enterprise HR Strategy with nine years of extensive experience defining global human capital blueprints and engineering high-impact corporate recruitmen
+  id: resume_1430 | level: senior | exp: 8.5 yrs
+  skills: SAP S4HANA, Global Procurement Strategy, Warehouse Architecture, Demand Forecasting, Risk Management, Team Leadership, Automation
+  background: Visionary Director of Supply Chain Management with over eight years of experience defining corporate procurement strategies, multi-tiered warehouse optimization plans, and macro-level ERP roadmaps. Ad
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1421 | title: Human Resources and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruiting, HRIS
-  description: We are seeking a passionate Human Resources and Talent Acquisition Intern to join our core people operations squad. In this role, you will help gather, review, and organize candida
+  id: jd_1426 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
+  required_skills: Microsoft Excel, Inventory Tracking, Procurement Basics
+  description: Seeking a motivated Supply Chain Intern to join our dynamic logistics team. The ideal candidate will assist with daily procurement operations, inventory tracking, and material reco
 
-  id: jd_1422 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Recruiting, HRIS, Onboarding
-  description: Join our employee success division as a Junior Talent Acquisition Specialist focusing on building next-generation talent pipelines and corporate sourcing updates. You will execute 
+  id: jd_1427 | title: Junior Inventory and Procurement Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Oracle ERP, Purchase Order Management, Vendor Communication
+  description: We are looking for a Junior Inventory and Procurement Specialist to support our expanding logistics division. In this role, you will be responsible for administering daily purchase
 
-  id: jd_1423 | title: Human Resources & Recruitment Specialist (Mid-Level) | level: middle | min_exp: 3 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Talent Sourcing
-  description: We are looking for a skilled Mid-Level Human Resources and Recruitment Specialist to take charge of our scalable talent acquisition networks and corporate onboarding frameworks. Yo
+  id: jd_1428 | title: Supply Chain Logistics Analyst | level: middle | min_exp: 3 yrs
+  required_skills: SAP MM, Demand Forecasting, Vendor Negotiation, Supply Chain Analytics
+  description: Our organization is recruiting an experienced Supply Chain Logistics Analyst to optimize our end-to-end procurement and inventory architecture. This role involves analyzing histori
 
-  id: jd_1424 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Talent Sourcing
-  description: Our expanding people division seeks a Senior Talent Acquisition Manager to own the architecture of our enterprise recruitment and human capital frameworks. You will direct operatio
+  id: jd_1429 | title: Senior Procurement and ERP Manager | level: senior | min_exp: 5 yrs
+  required_skills: Microsoft Dynamics 365, Strategic Sourcing, Risk Management, Team Leadership, Global Logistics
+  description: We are seeking a Senior Procurement and ERP Manager to direct our global supply chain strategy. This senior individual will lead strategic sourcing events, design robust inventory 
 
-  id: jd_1425 | title: Principal Human Capital and Strategy Director | level: senior | min_exp: 7 yrs
-  required_skills: Recruiting, HRIS, Onboarding, Leadership
-  description: We are hunting for a Principal Human Capital and Strategy Director to pioneer the strategic expansion of our global cloud workforce architecture. In this executive capacity, you wi
+  id: jd_1430 | title: Principal Supply Chain Architect | level: senior | min_exp: 7 yrs
+  required_skills: SAP S4HANA, Global Procurement Strategy, Enterprise Architecture, Predictive Modeling, Executive Leadership
+  description: Join us as a Principal Supply Chain Architect to define the macro blueprint for our international logistics ecosystem. This executive role demands a subject matter expert capable o
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7101  resume_1421 × jd_1421
-  pair_7102  resume_1421 × jd_1422
-  pair_7103  resume_1421 × jd_1423
-  pair_7104  resume_1421 × jd_1424
-  pair_7105  resume_1421 × jd_1425
-  pair_7106  resume_1422 × jd_1421
-  pair_7107  resume_1422 × jd_1422
-  pair_7108  resume_1422 × jd_1423
-  pair_7109  resume_1422 × jd_1424
-  pair_7110  resume_1422 × jd_1425
-  pair_7111  resume_1423 × jd_1421
-  pair_7112  resume_1423 × jd_1422
-  pair_7113  resume_1423 × jd_1423
-  pair_7114  resume_1423 × jd_1424
-  pair_7115  resume_1423 × jd_1425
-  pair_7116  resume_1424 × jd_1421
-  pair_7117  resume_1424 × jd_1422
-  pair_7118  resume_1424 × jd_1423
-  pair_7119  resume_1424 × jd_1424
-  pair_7120  resume_1424 × jd_1425
-  pair_7121  resume_1425 × jd_1421
-  pair_7122  resume_1425 × jd_1422
-  pair_7123  resume_1425 × jd_1423
-  pair_7124  resume_1425 × jd_1424
-  pair_7125  resume_1425 × jd_1425
+  pair_7126  resume_1426 × jd_1426
+  pair_7127  resume_1426 × jd_1427
+  pair_7128  resume_1426 × jd_1428
+  pair_7129  resume_1426 × jd_1429
+  pair_7130  resume_1426 × jd_1430
+  pair_7131  resume_1427 × jd_1426
+  pair_7132  resume_1427 × jd_1427
+  pair_7133  resume_1427 × jd_1428
+  pair_7134  resume_1427 × jd_1429
+  pair_7135  resume_1427 × jd_1430
+  pair_7136  resume_1428 × jd_1426
+  pair_7137  resume_1428 × jd_1427
+  pair_7138  resume_1428 × jd_1428
+  pair_7139  resume_1428 × jd_1429
+  pair_7140  resume_1428 × jd_1430
+  pair_7141  resume_1429 × jd_1426
+  pair_7142  resume_1429 × jd_1427
+  pair_7143  resume_1429 × jd_1428
+  pair_7144  resume_1429 × jd_1429
+  pair_7145  resume_1429 × jd_1430
+  pair_7146  resume_1430 × jd_1426
+  pair_7147  resume_1430 × jd_1427
+  pair_7148  resume_1430 × jd_1428
+  pair_7149  resume_1430 × jd_1429
+  pair_7150  resume_1430 × jd_1430
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
