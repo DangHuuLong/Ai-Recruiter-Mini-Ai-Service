@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1676 | level: intern | exp: 0.5 yrs
-  skills: Financial Modeling, Corporate Accounting, Regulatory Compliance, Financial Reporting, Data Analysis, Ledger Reconciliation
-  background: An ambitious Fintech Finance Intern with a strong academic foundation in financial modeling, corporate accounting, and regulatory compliance frameworks. Possesses a practical understanding of building
+  id: resume_1681 | level: intern | exp: 0.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL Query Optimization, Database Migration
+  background: An enthusiastic Database Engineering Intern with foundational knowledge in relational and non-relational database architectures, conceptual data modeling, and basic pipeline optimization. Possesses ha
 
-  id: resume_1677 | level: junior | exp: 1.5 yrs
-  skills: Financial Reporting, Fintech Compliance, Financial Modeling, Data Extraction, Ledger Reconciliation, Variance Analysis
-  background: Proactive Junior Fintech Financial Analyst with close to two years of professional experience specializing in financial reporting, corporate compliance, and automated variance analysis. Adept at maint
+  id: resume_1682 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Index Curation, Database Administration, Performance Tuning
+  background: Detail-oriented Junior Database Engineer with over a year of corporate experience managing relational databases, document-based stores, and high-performance in-memory lookups. Competent in conducting 
 
-  id: resume_1678 | level: middle | exp: 4.0 yrs
-  skills: Financial Modeling, Fintech Compliance, Financial Reporting, Data Analysis, Process Automation, ERP Implementation
-  background: Dynamic Fintech Finance and Accounting Manager with four years of extensive experience directing financial modeling operations, internal compliance audits, and advanced corporate reporting pipelines. 
+  id: resume_1683 | level: middle | exp: 4.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Replication, Query Optimization, Sharding Strategy
+  background: Dynamic Database Engineer and Data Architect with four years of professional experience directing advanced relational query tuning, NoSQL scalability frameworks, and strategic data modeling. Accomplis
 
-  id: resume_1679 | level: senior | exp: 6.0 yrs
-  skills: Financial Modeling, Regulatory Compliance, Financial Reporting, Enterprise ERP, Treasury Management, Business Intelligence
-  background: Accomplished Senior Fintech Financial Controller with over six years of deep corporate expertise heading advanced financial modeling, strategic regulatory compliance, and multi-jurisdictional reportin
+  id: resume_1684 | level: senior | exp: 6.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Disaster Recovery, Cluster Automation, Capacity Planning
+  background: Accomplished Senior Database Engineer with six years of deep expertise leading complex multi-cluster data infrastructure, distributed data modeling, and predictive cache tuning. Proven expert in creat
 
-  id: resume_1680 | level: senior | exp: 8.5 yrs
-  skills: Financial Modeling Architecture, Global Regulatory Compliance, Financial Reporting, Technical Accounting, Risk Management, Liquidity Management
-  background: Visionary Fintech Financial Director and Principal Compliance Strategist with more than eight years of expert experience driving global financial modeling architectures, international regulatory repor
+  id: resume_1685 | level: senior | exp: 8.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Distributed Database Architecture, High Availability Systems, Systems Leadership
+  background: Visionary Database Operations Director and Principal Systems Architect with over eight years of expert experience driving global data storage frameworks, distributed database engineering, and advanced
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1676 | title: Fintech Finance and Accounting Intern | level: intern | min_exp: 0 yrs
-  required_skills: Financial Modeling, Corporate Accounting, Regulatory Compliance, Financial Reporting
-  description: We are seeking an enthusiastic Fintech Finance and Accounting Intern to support our growing financial operations and compliance tracking team. In this role, you will assist with da
+  id: jd_1681 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are seeking an enthusiastic Database Engineering Intern to support our rapidly expanding core infrastructure management team. In this role, you will assist with daily data manag
 
-  id: jd_1677 | title: Junior Fintech Financial Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Financial Reporting, Fintech Compliance, Financial Modeling, Variance Analysis
-  description: We are looking for a proactive Junior Fintech Financial Analyst to manage daily corporate accounting workflows, financial modeling tasks, and regulatory reporting operations across
+  id: jd_1682 | title: Junior Database Specialist | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are looking for a proactive Junior Database Specialist to manage multi-engine data environments and daily data modeling tasks across our backend systems. The ideal candidate wil
 
-  id: jd_1678 | title: Fintech Finance and Compliance Manager | level: middle | min_exp: 3 yrs
-  required_skills: Financial Modeling, Fintech Compliance, Financial Reporting, Data Analysis
-  description: Our organization is seeking an experienced Fintech Finance and Compliance Manager to engineer and execute robust corporate financial modeling and regulatory reporting strategies. Y
+  id: jd_1683 | title: Database Engineer and Data Architect | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Our organization is seeking an experienced Database Engineer and Data Architect to engineer and execute robust distributed data storage strategies. You will manage full-cycle schem
 
-  id: jd_1679 | title: Senior Fintech Financial Controller | level: senior | min_exp: 5 yrs
-  required_skills: Financial Modeling, Regulatory Compliance, Financial Reporting, Enterprise ERP
-  description: We are searching for a highly strategic Senior Fintech Financial Controller to lead enterprise-wide financial modeling campaigns, comprehensive ERP software integrations, and globa
+  id: jd_1684 | title: Senior Database Systems Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are searching for a highly strategic Senior Database Systems Engineer to lead enterprise-wide data modeling campaigns, comprehensive infrastructure integrations, and scalable cl
 
-  id: jd_1680 | title: Principal Director, Global Fintech Finance and Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Financial Modeling Architecture, Global Regulatory Compliance, Financial Reporting, Technical Accounting
-  description: We are looking for a visionary Principal Director of Global Fintech Finance and Strategy to lead our international financial modeling infrastructure, corporate financial reporting 
+  id: jd_1685 | title: Principal Database Solutions Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are looking for a visionary Principal Database Solutions Architect to lead our international storage infrastructure, global replication environments, and advanced algorithmic da
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8376  resume_1676 × jd_1676
-  pair_8377  resume_1676 × jd_1677
-  pair_8378  resume_1676 × jd_1678
-  pair_8379  resume_1676 × jd_1679
-  pair_8380  resume_1676 × jd_1680
-  pair_8381  resume_1677 × jd_1676
-  pair_8382  resume_1677 × jd_1677
-  pair_8383  resume_1677 × jd_1678
-  pair_8384  resume_1677 × jd_1679
-  pair_8385  resume_1677 × jd_1680
-  pair_8386  resume_1678 × jd_1676
-  pair_8387  resume_1678 × jd_1677
-  pair_8388  resume_1678 × jd_1678
-  pair_8389  resume_1678 × jd_1679
-  pair_8390  resume_1678 × jd_1680
-  pair_8391  resume_1679 × jd_1676
-  pair_8392  resume_1679 × jd_1677
-  pair_8393  resume_1679 × jd_1678
-  pair_8394  resume_1679 × jd_1679
-  pair_8395  resume_1679 × jd_1680
-  pair_8396  resume_1680 × jd_1676
-  pair_8397  resume_1680 × jd_1677
-  pair_8398  resume_1680 × jd_1678
-  pair_8399  resume_1680 × jd_1679
-  pair_8400  resume_1680 × jd_1680
+  pair_8401  resume_1681 × jd_1681
+  pair_8402  resume_1681 × jd_1682
+  pair_8403  resume_1681 × jd_1683
+  pair_8404  resume_1681 × jd_1684
+  pair_8405  resume_1681 × jd_1685
+  pair_8406  resume_1682 × jd_1681
+  pair_8407  resume_1682 × jd_1682
+  pair_8408  resume_1682 × jd_1683
+  pair_8409  resume_1682 × jd_1684
+  pair_8410  resume_1682 × jd_1685
+  pair_8411  resume_1683 × jd_1681
+  pair_8412  resume_1683 × jd_1682
+  pair_8413  resume_1683 × jd_1683
+  pair_8414  resume_1683 × jd_1684
+  pair_8415  resume_1683 × jd_1685
+  pair_8416  resume_1684 × jd_1681
+  pair_8417  resume_1684 × jd_1682
+  pair_8418  resume_1684 × jd_1683
+  pair_8419  resume_1684 × jd_1684
+  pair_8420  resume_1684 × jd_1685
+  pair_8421  resume_1685 × jd_1681
+  pair_8422  resume_1685 × jd_1682
+  pair_8423  resume_1685 × jd_1683
+  pair_8424  resume_1685 × jd_1684
+  pair_8425  resume_1685 × jd_1685
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
