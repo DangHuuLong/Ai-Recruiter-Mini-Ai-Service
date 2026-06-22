@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1771 | level: intern | exp: 0.3 yrs
-  skills: SEO, Social Media Management, Content Creation, Google Analytics, Copywriting
-  background: Enthusiastic Marketing student seeking an internship to apply my passion for digital content and social media. During my coursework, I have developed foundational skills in SEO keyword research, conte
+  id: resume_1776 | level: intern | exp: 0.3 yrs
+  skills: React, Python, Flask, JavaScript, HTML5
+  background: Computer Science student with a strong passion for web development seeking an internship. Through my academic projects, I have developed a solid foundation in building responsive user interfaces with 
 
-  id: resume_1772 | level: junior | exp: 1.8 yrs
-  skills: SEO, Content Strategy, Social Media, Google Analytics, Facebook Ads
-  background: Junior Digital Marketer with two years of professional experience managing social media accounts and executing content strategies. My background includes developing SEO-optimized blog posts, managing 
+  id: resume_1777 | level: junior | exp: 1.5 yrs
+  skills: React, Django, FastAPI, PostgreSQL, JavaScript
+  background: Junior Full-Stack Developer with two years of professional experience in designing and implementing web applications. I have successfully built and maintained several features using React for the fron
 
-  id: resume_1773 | level: middle | exp: 4.5 yrs
-  skills: Content Strategy, SEO, Marketing Automation, Data Analysis, Digital Marketing
-  background: Versatile Content Strategist with four years of experience architecting and delivering high-performance digital marketing campaigns. My expertise lies in designing comprehensive SEO roadmaps, developi
+  id: resume_1778 | level: middle | exp: 4.2 yrs
+  skills: React, Python, Django, Docker, System Design
+  background: Mid-level Full-Stack Engineer with four years of professional experience in creating high-performance web applications. My expertise is primarily focused on developing complex single-page applications
 
-  id: resume_1774 | level: senior | exp: 6.5 yrs
-  skills: Digital Strategy, SEO Scaling, Campaign Management, Analytics Modeling, Conversion Optimization
-  background: Senior Digital Marketing Manager with six years of experience leading the development of complex, enterprise-grade content strategies. I specialize in designing scalable marketing architectures using 
+  id: resume_1779 | level: senior | exp: 6.5 yrs
+  skills: React, Python, Microservices, Cloud Architecture, System Design
+  background: Senior Full-Stack Web Developer with six years of experience building enterprise-grade applications. I specialize in architecting scalable React-based frontends and high-availability backend services 
 
-  id: resume_1775 | level: senior | exp: 9.8 yrs
-  skills: Marketing Architecture, Enterprise Strategy, Growth Modeling, Global Campaign Leadership, Executive Communication
-  background: Principal Marketing Architect with over nine years of experience in shaping enterprise marketing strategy and delivering high-scale digital solutions. I am an expert in the underlying design patterns 
+  id: resume_1780 | level: senior | exp: 9.8 yrs
+  skills: System Architecture, React Ecosystem, Python, Technical Leadership, Scalability
+  background: Principal Full-Stack Architect with over nine years of experience in designing and leading enterprise-wide web ecosystems. My core expertise is in building scalable, modular web architectures that lev
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1771 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Management, Content Creation
-  description: We are seeking a Digital Marketing Intern to support our creative team. This role is perfect for students passionate about building digital presence using SEO, social media, and co
+  id: jd_1776 | title: Full-Stack Web Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, Python, JavaScript
+  description: We are seeking a Full-Stack Web Intern to join our engineering team. This role is perfect for students looking to gain hands-on experience in building modern web applications using
 
-  id: jd_1772 | title: Junior Digital Marketer | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media, Google Analytics
-  description: We are looking for a Junior Digital Marketer to join our growing marketing team. You will focus on content strategy, managing our social media presence, and using SEO to drive orga
+  id: jd_1777 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, Python, Django
+  description: We are looking for a Junior Full-Stack Developer to join our growing development team. You will focus on building robust user interfaces with React and developing backend services 
 
-  id: jd_1773 | title: Content Strategist | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, SEO, Data Analysis
-  description: We are seeking an experienced Content Strategist to own key components of our marketing efforts. You will design and implement complex content calendars, optimize SEO-driven copy, 
+  id: jd_1778 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React, Python, System Design
+  description: We are seeking an experienced Full-Stack Engineer to own key components of our application architecture. You will be responsible for creating high-performance React components, des
 
-  id: jd_1774 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Digital Strategy, SEO Scaling, Campaign Management
-  description: We are looking for a Senior Digital Marketing Manager to lead our complex growth initiatives. You will be responsible for defining growth strategy, managing SEO-driven traffic scal
+  id: jd_1779 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
+  required_skills: React, Python, Microservices
+  description: We are looking for a Senior Full-Stack Developer to lead our complex development initiatives. You will be responsible for defining architectural roadmaps, managing high-performance
 
-  id: jd_1775 | title: Principal Marketing Architect | level: senior | min_exp: 7 yrs
-  required_skills: Marketing Architecture, Enterprise Strategy, Growth Modeling
-  description: We are seeking a Principal Marketing Architect to drive the strategic growth of our enterprise digital ecosystem. You will define the roadmap for our content and performance stacks
+  id: jd_1780 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: System Architecture, React Ecosystem, Python
+  description: We are seeking a Principal Full-Stack Architect to drive the strategic development of our enterprise ecosystem. You will define the long-term roadmap for our React and Python platf
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8851  resume_1771 × jd_1771
-  pair_8852  resume_1771 × jd_1772
-  pair_8853  resume_1771 × jd_1773
-  pair_8854  resume_1771 × jd_1774
-  pair_8855  resume_1771 × jd_1775
-  pair_8856  resume_1772 × jd_1771
-  pair_8857  resume_1772 × jd_1772
-  pair_8858  resume_1772 × jd_1773
-  pair_8859  resume_1772 × jd_1774
-  pair_8860  resume_1772 × jd_1775
-  pair_8861  resume_1773 × jd_1771
-  pair_8862  resume_1773 × jd_1772
-  pair_8863  resume_1773 × jd_1773
-  pair_8864  resume_1773 × jd_1774
-  pair_8865  resume_1773 × jd_1775
-  pair_8866  resume_1774 × jd_1771
-  pair_8867  resume_1774 × jd_1772
-  pair_8868  resume_1774 × jd_1773
-  pair_8869  resume_1774 × jd_1774
-  pair_8870  resume_1774 × jd_1775
-  pair_8871  resume_1775 × jd_1771
-  pair_8872  resume_1775 × jd_1772
-  pair_8873  resume_1775 × jd_1773
-  pair_8874  resume_1775 × jd_1774
-  pair_8875  resume_1775 × jd_1775
+  pair_8876  resume_1776 × jd_1776
+  pair_8877  resume_1776 × jd_1777
+  pair_8878  resume_1776 × jd_1778
+  pair_8879  resume_1776 × jd_1779
+  pair_8880  resume_1776 × jd_1780
+  pair_8881  resume_1777 × jd_1776
+  pair_8882  resume_1777 × jd_1777
+  pair_8883  resume_1777 × jd_1778
+  pair_8884  resume_1777 × jd_1779
+  pair_8885  resume_1777 × jd_1780
+  pair_8886  resume_1778 × jd_1776
+  pair_8887  resume_1778 × jd_1777
+  pair_8888  resume_1778 × jd_1778
+  pair_8889  resume_1778 × jd_1779
+  pair_8890  resume_1778 × jd_1780
+  pair_8891  resume_1779 × jd_1776
+  pair_8892  resume_1779 × jd_1777
+  pair_8893  resume_1779 × jd_1778
+  pair_8894  resume_1779 × jd_1779
+  pair_8895  resume_1779 × jd_1780
+  pair_8896  resume_1780 × jd_1776
+  pair_8897  resume_1780 × jd_1777
+  pair_8898  resume_1780 × jd_1778
+  pair_8899  resume_1780 × jd_1779
+  pair_8900  resume_1780 × jd_1780
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
