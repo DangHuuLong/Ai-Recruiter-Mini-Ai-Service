@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1596 | level: intern | exp: 0.4 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Database Design, Query Optimization, ER Modeling, Backup Management, Python
-  background: Final-year Computer Science student specializing in database engineering and backend data infrastructure. Completed academic coursework covering relational database design, NoSQL systems, indexing str
+  id: resume_1796 | level: intern | exp: 0.2 yrs
+  skills: Python, PyTorch, NLP, Transformers, RAG
+  background: Computer Science student with a strong focus on Natural Language Processing and machine learning. Through coursework and independent study, I have gained hands-on experience in building basic language
 
-  id: resume_1597 | level: junior | exp: 1.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Performance Tuning, Database Administration, Linux, Backup Recovery, Monitoring
-  background: Junior Database Engineer with one and a half years of experience supporting production databases for internal business systems. Regular responsibilities include maintaining PostgreSQL instances, monit
+  id: resume_1797 | level: junior | exp: 1.8 yrs
+  skills: Python, LangChain, RAG, Embeddings, Transformers
+  background: Junior AI/NLP Engineer with two years of professional experience in developing and deploying machine learning solutions. My work focuses on building scalable NLP pipelines, implementing vector databas
 
-  id: resume_1598 | level: middle | exp: 4.3 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Replication, Database Migration, High Availability, Automation, Performance Tuning
-  background: Database Engineer with more than four years of experience designing and operating scalable data platforms for transactional and analytics workloads. Expertise includes PostgreSQL administration, Mongo
+  id: resume_1798 | level: middle | exp: 4.5 yrs
+  skills: Python, LangChain, Transformers, Vector Databases, RAG
+  background: Mid-level AI Engineer with four years of experience specializing in deep learning and natural language processing. I have a proven track record of designing, training, and deploying advanced language 
 
-  id: resume_1599 | level: senior | exp: 6.4 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Sharding, Disaster Recovery, Capacity Planning, Security, Mentoring
-  background: Senior Database Engineer with over six years of experience architecting mission-critical database infrastructures supporting high-volume applications. Extensive expertise in PostgreSQL clustering, Mon
+  id: resume_1799 | level: senior | exp: 6.8 yrs
+  skills: Python, LangChain, Transformers, Distributed Systems, NLP
+  background: Senior NLP Engineer with six years of experience developing high-performance artificial intelligence systems. My expertise lies in designing and optimizing transformer architectures, building complex 
 
-  id: resume_1600 | level: senior | exp: 9.2 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Strategic Planning, Performance Engineering, Governance, Multi-Region Deployment, Leadership
-  background: Principal Database Architect with more than nine years of experience leading enterprise-scale database engineering and data architecture programs. Deep expertise across PostgreSQL, MongoDB, Redis, and
+  id: resume_1800 | level: senior | exp: 9.5 yrs
+  skills: System Architecture, LLM Strategy, NLP, RAG, Distributed Systems
+  background: Principal AI Architect with over nine years of experience in developing and directing large-scale intelligent systems. I specialize in the architectural design of generative AI ecosystems, overseeing 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1596 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Seeking a motivated Database Engineering Intern to support database operations and development activities. The role involves assisting with PostgreSQL and MongoDB maintenance tasks
+  id: jd_1796 | title: AI/NLP Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, NLP, Transformers
+  description: We are seeking an AI/NLP Engineering Intern to join our research and development team. You will support the team in building and experimenting with transformer models, developing b
 
-  id: jd_1597 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Looking for a Junior Database Engineer to maintain and optimize operational databases supporting internal applications. Responsibilities include managing PostgreSQL environments, s
+  id: jd_1797 | title: Junior AI/NLP Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, LangChain, RAG, Embeddings
+  description: We are looking for a Junior AI/NLP Engineer to help us build and maintain our generative AI services. You will focus on developing production-ready RAG pipelines, working with Lang
 
-  id: jd_1598 | title: Database Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: An experienced Database Engineer is required to manage scalable database platforms and improve overall performance. The role includes PostgreSQL administration, MongoDB cluster ope
+  id: jd_1798 | title: AI/NLP Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, LangChain, Transformers, Vector Databases
+  description: We are seeking an experienced AI/NLP Engineer to take ownership of key components of our generative AI platform. You will design and implement sophisticated RAG systems, build comp
 
-  id: jd_1599 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Seeking a Senior Database Engineer to architect and optimize mission-critical database environments. Responsibilities include leading PostgreSQL and MongoDB infrastructure initiati
+  id: jd_1799 | title: Senior AI/NLP Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, LangChain, Transformers, Distributed Systems
+  description: We are looking for a Senior AI/NLP Engineer to lead our complex AI growth initiatives. You will define strategic model roadmaps, architect scalable RAG ecosystems, and oversee the 
 
-  id: jd_1600 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Seeking a Principal Database Architect to define long-term database strategy and lead enterprise-scale architecture initiatives. The position focuses on PostgreSQL, MongoDB, Redis,
+  id: jd_1800 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
+  required_skills: System Architecture, LLM Strategy, NLP, RAG
+  description: We are seeking a Principal AI Architect to drive the long-term strategic evolution of our enterprise-level AI ecosystem. You will define the vision for our generative AI models, ov
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_7976  resume_1596 × jd_1596
-  pair_7977  resume_1596 × jd_1597
-  pair_7978  resume_1596 × jd_1598
-  pair_7979  resume_1596 × jd_1599
-  pair_7980  resume_1596 × jd_1600
-  pair_7981  resume_1597 × jd_1596
-  pair_7982  resume_1597 × jd_1597
-  pair_7983  resume_1597 × jd_1598
-  pair_7984  resume_1597 × jd_1599
-  pair_7985  resume_1597 × jd_1600
-  pair_7986  resume_1598 × jd_1596
-  pair_7987  resume_1598 × jd_1597
-  pair_7988  resume_1598 × jd_1598
-  pair_7989  resume_1598 × jd_1599
-  pair_7990  resume_1598 × jd_1600
-  pair_7991  resume_1599 × jd_1596
-  pair_7992  resume_1599 × jd_1597
-  pair_7993  resume_1599 × jd_1598
-  pair_7994  resume_1599 × jd_1599
-  pair_7995  resume_1599 × jd_1600
-  pair_7996  resume_1600 × jd_1596
-  pair_7997  resume_1600 × jd_1597
-  pair_7998  resume_1600 × jd_1598
-  pair_7999  resume_1600 × jd_1599
-  pair_8000  resume_1600 × jd_1600
+  pair_8976  resume_1796 × jd_1796
+  pair_8977  resume_1796 × jd_1797
+  pair_8978  resume_1796 × jd_1798
+  pair_8979  resume_1796 × jd_1799
+  pair_8980  resume_1796 × jd_1800
+  pair_8981  resume_1797 × jd_1796
+  pair_8982  resume_1797 × jd_1797
+  pair_8983  resume_1797 × jd_1798
+  pair_8984  resume_1797 × jd_1799
+  pair_8985  resume_1797 × jd_1800
+  pair_8986  resume_1798 × jd_1796
+  pair_8987  resume_1798 × jd_1797
+  pair_8988  resume_1798 × jd_1798
+  pair_8989  resume_1798 × jd_1799
+  pair_8990  resume_1798 × jd_1800
+  pair_8991  resume_1799 × jd_1796
+  pair_8992  resume_1799 × jd_1797
+  pair_8993  resume_1799 × jd_1798
+  pair_8994  resume_1799 × jd_1799
+  pair_8995  resume_1799 × jd_1800
+  pair_8996  resume_1800 × jd_1796
+  pair_8997  resume_1800 × jd_1797
+  pair_8998  resume_1800 × jd_1798
+  pair_8999  resume_1800 × jd_1799
+  pair_9000  resume_1800 × jd_1800
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
