@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1641 | level: intern | exp: 0.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Linux, Git, DevOps
-  background: Ambitious Computer Science student specializing in DevOps and Cloud Infrastructure ecosystems. Possesses a solid academic foundation in cloud architecture principles, infrastructure virtualization, an
+  id: resume_1646 | level: intern | exp: 0.5 yrs
+  skills: Healthcare Administration, Clinical Operations, EMR, HIPAA, Epic Systems, Data Auditing, Patient Scheduling
+  background: Enthusiastic Healthcare Administration student specializing in clinical operations and Electronic Medical Record system environments. Possesses a solid academic foundation in medical compliance protoc
 
-  id: resume_1642 | level: junior | exp: 1.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, CI/CD, Git, Bash
-  background: Junior DevOps Engineer with more than a year of hands-on industry experience deploying high-availability cloud setups and maintaining scalable container clusters. Skilled at constructing stable server
+  id: resume_1647 | level: junior | exp: 1.5 yrs
+  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, HIPAA, Patient Intake, Billing Systems
+  background: Junior Clinical Operations Specialist with more than a year of hands-on industry experience monitoring clinic workflows and maintaining Electronic Medical Record platforms. Skilled at constructing smo
 
-  id: resume_1643 | level: middle | exp: 4.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Ansible, CI/CD, Prometheus, Linux
-  background: Results-oriented Mid-Level DevOps Engineer with four years of enterprise domain experience building resilient cloud systems, managing production clusters, and orchestrating immutable infrastructure me
+  id: resume_1648 | level: middle | exp: 4.0 yrs
+  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, Cerner, HIPAA, Workflow Optimization, Quality Improvement
+  background: Results-oriented Mid-Level Clinical Operations Manager with four years of comprehensive healthcare administration experience building resilient care workflows, managing multi-departmental EMR systems,
 
-  id: resume_1644 | level: senior | exp: 6.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Prometheus, Grafana, CI/CD, Security Auditing
-  background: Senior Systems and DevOps Engineer with over six years of exceptional leadership experience architecting multi-region cloud infrastructures, high-performance computing clusters, and secure deployment 
+  id: resume_1649 | level: senior | exp: 6.0 yrs
+  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, HIPAA, Regulatory Compliance, Resource Allocation, Risk Management
+  background: Senior Healthcare Operations Architect with over six years of exceptional leadership experience directing large-scale clinical programs, high-performance patient delivery tracks, and strategic Electro
 
-  id: resume_1645 | level: senior | exp: 9.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Cloud Architecture, Site Reliability, Cost Optimization, Governance
-  background: Principal Infrastructure Architect and Systems Director with nine years of distinguished corporate tenure defining global enterprise cloud visions, high-scale automation structures, and fault-tolerant
+  id: resume_1650 | level: senior | exp: 9.0 yrs
+  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, Healthcare IT, Strategic Planning, Budget Optimization, Governance
+  background: Principal Clinical Operations Director and Healthcare Systems Architect with nine years of distinguished corporate tenure defining global enterprise health visions, high-scale automation structures, a
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1641 | title: DevOps and Cloud Infrastructure Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker, Terraform
-  description: We are looking for a highly motivated and analytical DevOps and Cloud Infrastructure Intern to join our core operations team. In this introductory role, you will assist in writing 
+  id: jd_1646 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Healthcare Administration, Clinical Operations, EMR
+  description: We are looking for a highly motivated and analytical Healthcare Administration Intern to join our clinical operations team. In this introductory role, you will assist in writing cl
 
-  id: jd_1642 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Docker, Terraform
-  description: Join our expanding systems engineering squad as a Junior DevOps Engineer focused on infrastructure precision and platform pipeline optimization. We design and operate high-performa
+  id: jd_1647 | title: Junior Clinical Operations Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Healthcare Administration, Clinical Operations, EMR
+  description: Join our expanding clinic engineering squad as a Junior Clinical Operations Coordinator focused on facility precision and platform pathway optimization. We design and operate high-
 
-  id: jd_1643 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are searching for an analytical and strategic DevOps Engineer to accelerate the platform deployment velocity of our core microservice frameworks. You will occupy a central posit
+  id: jd_1648 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
+  required_skills: Healthcare Administration, Clinical Operations, EMR
+  description: We are searching for an analytical and strategic Clinical Operations Manager to accelerate the care coordination velocity of our core medical frameworks. You will occupy a central 
 
-  id: jd_1644 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are seeking a highly experienced Senior DevOps Engineer to guide the multi-year infrastructure roadmap of our enterprise cloud computing ecosystem. In this senior role, you will
+  id: jd_1649 | title: Senior Healthcare Operations Director | level: senior | min_exp: 5 yrs
+  required_skills: Healthcare Administration, Clinical Operations, EMR
+  description: We are seeking a highly experienced Senior Healthcare Operations Director to guide the multi-year facility roadmap of our enterprise health services ecosystem. In this senior role,
 
-  id: jd_1645 | title: Principal Infrastructure Architect | level: senior | min_exp: 7 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are seeking a forward-thinking Principal Infrastructure Architect to manage the macro platform topology and strategic availability of our global enterprise cloud business soluti
+  id: jd_1650 | title: Principal Clinical Operations Architect | level: senior | min_exp: 7 yrs
+  required_skills: Healthcare Administration, Clinical Operations, EMR
+  description: We are seeking a forward-thinking Principal Clinical Operations Architect to manage the macro platform topology and strategic availability of our global enterprise health business 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8201  resume_1641 × jd_1641
-  pair_8202  resume_1641 × jd_1642
-  pair_8203  resume_1641 × jd_1643
-  pair_8204  resume_1641 × jd_1644
-  pair_8205  resume_1641 × jd_1645
-  pair_8206  resume_1642 × jd_1641
-  pair_8207  resume_1642 × jd_1642
-  pair_8208  resume_1642 × jd_1643
-  pair_8209  resume_1642 × jd_1644
-  pair_8210  resume_1642 × jd_1645
-  pair_8211  resume_1643 × jd_1641
-  pair_8212  resume_1643 × jd_1642
-  pair_8213  resume_1643 × jd_1643
-  pair_8214  resume_1643 × jd_1644
-  pair_8215  resume_1643 × jd_1645
-  pair_8216  resume_1644 × jd_1641
-  pair_8217  resume_1644 × jd_1642
-  pair_8218  resume_1644 × jd_1643
-  pair_8219  resume_1644 × jd_1644
-  pair_8220  resume_1644 × jd_1645
-  pair_8221  resume_1645 × jd_1641
-  pair_8222  resume_1645 × jd_1642
-  pair_8223  resume_1645 × jd_1643
-  pair_8224  resume_1645 × jd_1644
-  pair_8225  resume_1645 × jd_1645
+  pair_8226  resume_1646 × jd_1646
+  pair_8227  resume_1646 × jd_1647
+  pair_8228  resume_1646 × jd_1648
+  pair_8229  resume_1646 × jd_1649
+  pair_8230  resume_1646 × jd_1650
+  pair_8231  resume_1647 × jd_1646
+  pair_8232  resume_1647 × jd_1647
+  pair_8233  resume_1647 × jd_1648
+  pair_8234  resume_1647 × jd_1649
+  pair_8235  resume_1647 × jd_1650
+  pair_8236  resume_1648 × jd_1646
+  pair_8237  resume_1648 × jd_1647
+  pair_8238  resume_1648 × jd_1648
+  pair_8239  resume_1648 × jd_1649
+  pair_8240  resume_1648 × jd_1650
+  pair_8241  resume_1649 × jd_1646
+  pair_8242  resume_1649 × jd_1647
+  pair_8243  resume_1649 × jd_1648
+  pair_8244  resume_1649 × jd_1649
+  pair_8245  resume_1649 × jd_1650
+  pair_8246  resume_1650 × jd_1646
+  pair_8247  resume_1650 × jd_1647
+  pair_8248  resume_1650 × jd_1648
+  pair_8249  resume_1650 × jd_1649
+  pair_8250  resume_1650 × jd_1650
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
