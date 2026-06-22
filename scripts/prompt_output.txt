@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1761 | level: intern | exp: 0.3 yrs
-  skills: Python, React, SQL, HTML, CSS
-  background: Enthusiastic Computer Science student seeking a full-stack development internship to apply my passion for building web applications. During my coursework, I have developed foundational skills in Pytho
+  id: resume_1766 | level: intern | exp: 0.3 yrs
+  skills: Network Security, Penetration Testing, Vulnerability Scanning, Wireshark, Nmap
+  background: Eager Cybersecurity student seeking an internship to apply my academic knowledge in information security. I have completed foundational coursework in network security, threat detection, and basic pene
 
-  id: resume_1762 | level: junior | exp: 1.8 yrs
-  skills: Python, React, Django, SQL, Git
-  background: Junior Full-Stack Developer with two years of professional experience building and maintaining web applications. My background includes developing robust backend services using Python and Django/FastA
+  id: resume_1767 | level: junior | exp: 1.5 yrs
+  skills: SIEM, Splunk, Nessus, Threat Detection, Network Security
+  background: Junior Security Analyst with two years of professional experience in monitoring network traffic and identifying potential security threats. My background includes working with SIEM platforms to manage
 
-  id: resume_1763 | level: middle | exp: 4.5 yrs
-  skills: Python, React, PostgreSQL, AWS, Agile
-  background: Versatile Full-Stack Developer with four years of experience architecting and delivering high-performance web applications. My expertise lies in designing scalable backend systems using Python and imp
+  id: resume_1768 | level: middle | exp: 4.2 yrs
+  skills: Penetration Testing, SIEM, Incident Response, Network Security, Python
+  background: Mid-level Cybersecurity Engineer with four years of professional experience in designing and implementing robust security solutions. My expertise focuses on network defense, penetration testing, and i
 
-  id: resume_1764 | level: senior | exp: 6.5 yrs
-  skills: Python, React, System Architecture, Docker, CI/CD
-  background: Senior Full-Stack Engineer with six years of experience leading the development of complex, enterprise-grade web applications. I specialize in designing scalable system architectures using Python for 
+  id: resume_1769 | level: senior | exp: 6.8 yrs
+  skills: Penetration Testing, Network Security, SIEM, Incident Response, Cloud Security
+  background: Senior Security Consultant with six years of experience leading large-scale information security initiatives in complex technology environments. I specialize in penetration testing, advanced threat hu
 
-  id: resume_1765 | level: senior | exp: 9.8 yrs
-  skills: Python, React, Cloud Architecture, Kubernetes, Strategic Leadership
-  background: Principal Full-Stack Architect with over nine years of experience in shaping enterprise web strategy and delivering high-scale software solutions. I am an expert in the underlying design patterns for 
+  id: resume_1770 | level: senior | exp: 9.5 yrs
+  skills: Security Architecture, SIEM Governance, Strategic Roadmap, Threat Intelligence, Network Defense
+  background: Principal Information Security Architect with over nine years of experience in shaping enterprise-wide security strategies and leading sophisticated defensive operations. My expertise includes definin
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1761 | title: Web Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, HTML
-  description: We are seeking a Web Development Intern to support our engineering team. This role is perfect for students passionate about building web applications using Python and React. You wi
+  id: jd_1766 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
+  required_skills: Network Security, Penetration Testing, Vulnerability Scanning
+  description: We are seeking a Cybersecurity Intern to support our security operations center. This role is perfect for students who want to gain real-world experience in network security, threa
 
-  id: jd_1762 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, SQL
-  description: We are looking for a Junior Full-Stack Developer to join our growing engineering team. You will focus on feature development, building robust APIs with Python, and creating engagin
+  id: jd_1767 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SIEM, Threat Detection, Network Security
+  description: We are looking for a Junior Security Analyst to join our security operations team. You will focus on monitoring SIEM dashboards, investigating alerts, and coordinating with the eng
 
-  id: jd_1763 | title: Full-Stack Developer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, PostgreSQL
-  description: We are seeking an experienced Full-Stack Developer to own key components of our web applications. You will design and implement complex backend logic with Python, optimize React-ba
+  id: jd_1768 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Penetration Testing, SIEM, Incident Response
+  description: We are seeking a mid-level Cybersecurity Engineer to own key components of our network defense infrastructure. You will be responsible for managing our SIEM environment, developing
 
-  id: jd_1764 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Docker
-  description: We are looking for a Senior Full-Stack Engineer to lead our complex web application development initiatives. You will be responsible for system architecture, managing backend scali
+  id: jd_1769 | title: Senior Security Consultant | level: senior | min_exp: 5 yrs
+  required_skills: Penetration Testing, Network Security, SIEM
+  description: We are looking for a Senior Security Consultant to lead our high-priority security initiatives. You will work on advanced threat hunting, network security design, and managing comp
 
-  id: jd_1765 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, Cloud Architecture
-  description: We are seeking a Principal Full-Stack Architect to drive the technical strategy for our enterprise web ecosystem. You will define the roadmap for our Python and React stacks, overs
+  id: jd_1770 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
+  required_skills: Security Architecture, SIEM Governance, Strategic Roadmap
+  description: We are seeking a Principal Security Architect to drive our enterprise security strategy. You will set the direction for our global network defense, oversee SIEM governance, and eng
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8801  resume_1761 × jd_1761
-  pair_8802  resume_1761 × jd_1762
-  pair_8803  resume_1761 × jd_1763
-  pair_8804  resume_1761 × jd_1764
-  pair_8805  resume_1761 × jd_1765
-  pair_8806  resume_1762 × jd_1761
-  pair_8807  resume_1762 × jd_1762
-  pair_8808  resume_1762 × jd_1763
-  pair_8809  resume_1762 × jd_1764
-  pair_8810  resume_1762 × jd_1765
-  pair_8811  resume_1763 × jd_1761
-  pair_8812  resume_1763 × jd_1762
-  pair_8813  resume_1763 × jd_1763
-  pair_8814  resume_1763 × jd_1764
-  pair_8815  resume_1763 × jd_1765
-  pair_8816  resume_1764 × jd_1761
-  pair_8817  resume_1764 × jd_1762
-  pair_8818  resume_1764 × jd_1763
-  pair_8819  resume_1764 × jd_1764
-  pair_8820  resume_1764 × jd_1765
-  pair_8821  resume_1765 × jd_1761
-  pair_8822  resume_1765 × jd_1762
-  pair_8823  resume_1765 × jd_1763
-  pair_8824  resume_1765 × jd_1764
-  pair_8825  resume_1765 × jd_1765
+  pair_8826  resume_1766 × jd_1766
+  pair_8827  resume_1766 × jd_1767
+  pair_8828  resume_1766 × jd_1768
+  pair_8829  resume_1766 × jd_1769
+  pair_8830  resume_1766 × jd_1770
+  pair_8831  resume_1767 × jd_1766
+  pair_8832  resume_1767 × jd_1767
+  pair_8833  resume_1767 × jd_1768
+  pair_8834  resume_1767 × jd_1769
+  pair_8835  resume_1767 × jd_1770
+  pair_8836  resume_1768 × jd_1766
+  pair_8837  resume_1768 × jd_1767
+  pair_8838  resume_1768 × jd_1768
+  pair_8839  resume_1768 × jd_1769
+  pair_8840  resume_1768 × jd_1770
+  pair_8841  resume_1769 × jd_1766
+  pair_8842  resume_1769 × jd_1767
+  pair_8843  resume_1769 × jd_1768
+  pair_8844  resume_1769 × jd_1769
+  pair_8845  resume_1769 × jd_1770
+  pair_8846  resume_1770 × jd_1766
+  pair_8847  resume_1770 × jd_1767
+  pair_8848  resume_1770 × jd_1768
+  pair_8849  resume_1770 × jd_1769
+  pair_8850  resume_1770 × jd_1770
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
