@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1671 | level: intern | exp: 0.5 yrs
-  skills: Marketplace Management, E-commerce Operations, Digital Merchandising, Product Listing Optimization, Shopify, Inventory Tracking, Sales Analytics
-  background: An enthusiastic and energetic E-commerce Operations Intern with foundational knowledge in online marketplace dynamics, digital merchandising, and supply chain logistics. Possesses hands-on familiarity
+  id: resume_1676 | level: intern | exp: 0.5 yrs
+  skills: Financial Modeling, Corporate Accounting, Regulatory Compliance, Financial Reporting, Data Analysis, Ledger Reconciliation
+  background: An ambitious Fintech Finance Intern with a strong academic foundation in financial modeling, corporate accounting, and regulatory compliance frameworks. Possesses a practical understanding of building
 
-  id: resume_1672 | level: junior | exp: 1.5 yrs
-  skills: Amazon Seller Central, E-commerce Operations, Digital Merchandising, Catalog Management, Inventory Modeling, Conversion Rate Optimization, Vendor Relations
-  background: Detail-oriented Junior E-commerce Operations Specialist with over a year of corporate experience managing digital marketplace storefronts, vendor relations, and cross-channel retail merchandising. Com
+  id: resume_1677 | level: junior | exp: 1.5 yrs
+  skills: Financial Reporting, Fintech Compliance, Financial Modeling, Data Extraction, Ledger Reconciliation, Variance Analysis
+  background: Proactive Junior Fintech Financial Analyst with close to two years of professional experience specializing in financial reporting, corporate compliance, and automated variance analysis. Adept at maint
 
-  id: resume_1673 | level: middle | exp: 4.0 yrs
-  skills: Marketplace Strategy, E-commerce Operations, Digital Merchandising, Product Information Management, Web Analytics, Inventory Automation, Supply Chain Logistics
-  background: Dynamic E-commerce Operations and Merchandising Manager with four years of professional experience directing digital marketplace execution, commercial strategy, and supply chain logistics. Accomplishe
+  id: resume_1678 | level: middle | exp: 4.0 yrs
+  skills: Financial Modeling, Fintech Compliance, Financial Reporting, Data Analysis, Process Automation, ERP Implementation
+  background: Dynamic Fintech Finance and Accounting Manager with four years of extensive experience directing financial modeling operations, internal compliance audits, and advanced corporate reporting pipelines. 
 
-  id: resume_1674 | level: senior | exp: 6.0 yrs
-  skills: Digital Merchandising, Adobe Commerce, Predictive Data Analytics, ERP Integration, Supply Chain Management, Omni-Channel Retail, Demand Planning
-  background: Accomplished Senior E-commerce Merchandising Partner with six years of deep expertise leading complex multi-channel marketplace infrastructure, product commercial operations, and predictive inventory 
+  id: resume_1679 | level: senior | exp: 6.0 yrs
+  skills: Financial Modeling, Regulatory Compliance, Financial Reporting, Enterprise ERP, Treasury Management, Business Intelligence
+  background: Accomplished Senior Fintech Financial Controller with over six years of deep corporate expertise heading advanced financial modeling, strategic regulatory compliance, and multi-jurisdictional reportin
 
-  id: resume_1675 | level: senior | exp: 8.5 yrs
-  skills: Digital Marketplace Ecosystems, Omni-Channel Operations, Salesforce Commerce Cloud, Retail Systems Architecture, Strategic Leadership, Global Supply Chain, Predictive Margin Management
-  background: Visionary E-commerce Operations Director and Principal Retail Strategist with over eight years of expert experience driving global digital marketplace ecosystems, omni-channel operations, and advanced
+  id: resume_1680 | level: senior | exp: 8.5 yrs
+  skills: Financial Modeling Architecture, Global Regulatory Compliance, Financial Reporting, Technical Accounting, Risk Management, Liquidity Management
+  background: Visionary Fintech Financial Director and Principal Compliance Strategist with more than eight years of expert experience driving global financial modeling architectures, international regulatory repor
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1671 | title: E-commerce Operations and Merchandising Intern | level: intern | min_exp: 0 yrs
-  required_skills: E-commerce Operations, Digital Merchandising, Catalog Management, Inventory Tracking
-  description: We are seeking an enthusiastic E-commerce Operations and Merchandising Intern to support our rapidly expanding digital storefront management team. In this role, you will assist wit
+  id: jd_1676 | title: Fintech Finance and Accounting Intern | level: intern | min_exp: 0 yrs
+  required_skills: Financial Modeling, Corporate Accounting, Regulatory Compliance, Financial Reporting
+  description: We are seeking an enthusiastic Fintech Finance and Accounting Intern to support our growing financial operations and compliance tracking team. In this role, you will assist with da
 
-  id: jd_1672 | title: Junior E-commerce Platform Specialist | level: junior | min_exp: 1 yrs
-  required_skills: E-commerce Operations, Digital Merchandising, Product Listing Optimization, Conversion Rate Optimization
-  description: We are looking for a proactive Junior E-commerce Platform Specialist to manage multi-channel product listings and daily retail merchandising operations across our growing storefron
+  id: jd_1677 | title: Junior Fintech Financial Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Financial Reporting, Fintech Compliance, Financial Modeling, Variance Analysis
+  description: We are looking for a proactive Junior Fintech Financial Analyst to manage daily corporate accounting workflows, financial modeling tasks, and regulatory reporting operations across
 
-  id: jd_1673 | title: E-commerce Operations and Digital Merchandising Manager | level: middle | min_exp: 3 yrs
-  required_skills: E-commerce Operations, Digital Merchandising, Product Information Management, Marketplace Strategy
-  description: Our organization is seeking an experienced E-commerce Operations and Digital Merchandising Manager to engineer and execute robust multi-platform marketplace strategies. You will ma
+  id: jd_1678 | title: Fintech Finance and Compliance Manager | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, Fintech Compliance, Financial Reporting, Data Analysis
+  description: Our organization is seeking an experienced Fintech Finance and Compliance Manager to engineer and execute robust corporate financial modeling and regulatory reporting strategies. Y
 
-  id: jd_1674 | title: Senior Omni-Channel E-commerce Manager | level: senior | min_exp: 5 yrs
-  required_skills: Digital Merchandising, E-commerce Operations, Demand Planning, Omni-Channel Retail
-  description: We are searching for a highly strategic Senior Omni-Channel E-commerce Manager to lead enterprise-wide digital merchandising campaigns, comprehensive platform integrations, and sca
+  id: jd_1679 | title: Senior Fintech Financial Controller | level: senior | min_exp: 5 yrs
+  required_skills: Financial Modeling, Regulatory Compliance, Financial Reporting, Enterprise ERP
+  description: We are searching for a highly strategic Senior Fintech Financial Controller to lead enterprise-wide financial modeling campaigns, comprehensive ERP software integrations, and globa
 
-  id: jd_1675 | title: Principal Director, Global E-commerce & Retail Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Digital Marketplace Ecosystems, Omni-Channel Operations, Retail Systems Architecture, Strategic Leadership
-  description: We are looking for a visionary Principal Director of Global E-commerce and Retail Strategy to lead our international digital marketplace infrastructure, omni-channel operations, an
+  id: jd_1680 | title: Principal Director, Global Fintech Finance and Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Financial Modeling Architecture, Global Regulatory Compliance, Financial Reporting, Technical Accounting
+  description: We are looking for a visionary Principal Director of Global Fintech Finance and Strategy to lead our international financial modeling infrastructure, corporate financial reporting 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8351  resume_1671 × jd_1671
-  pair_8352  resume_1671 × jd_1672
-  pair_8353  resume_1671 × jd_1673
-  pair_8354  resume_1671 × jd_1674
-  pair_8355  resume_1671 × jd_1675
-  pair_8356  resume_1672 × jd_1671
-  pair_8357  resume_1672 × jd_1672
-  pair_8358  resume_1672 × jd_1673
-  pair_8359  resume_1672 × jd_1674
-  pair_8360  resume_1672 × jd_1675
-  pair_8361  resume_1673 × jd_1671
-  pair_8362  resume_1673 × jd_1672
-  pair_8363  resume_1673 × jd_1673
-  pair_8364  resume_1673 × jd_1674
-  pair_8365  resume_1673 × jd_1675
-  pair_8366  resume_1674 × jd_1671
-  pair_8367  resume_1674 × jd_1672
-  pair_8368  resume_1674 × jd_1673
-  pair_8369  resume_1674 × jd_1674
-  pair_8370  resume_1674 × jd_1675
-  pair_8371  resume_1675 × jd_1671
-  pair_8372  resume_1675 × jd_1672
-  pair_8373  resume_1675 × jd_1673
-  pair_8374  resume_1675 × jd_1674
-  pair_8375  resume_1675 × jd_1675
+  pair_8376  resume_1676 × jd_1676
+  pair_8377  resume_1676 × jd_1677
+  pair_8378  resume_1676 × jd_1678
+  pair_8379  resume_1676 × jd_1679
+  pair_8380  resume_1676 × jd_1680
+  pair_8381  resume_1677 × jd_1676
+  pair_8382  resume_1677 × jd_1677
+  pair_8383  resume_1677 × jd_1678
+  pair_8384  resume_1677 × jd_1679
+  pair_8385  resume_1677 × jd_1680
+  pair_8386  resume_1678 × jd_1676
+  pair_8387  resume_1678 × jd_1677
+  pair_8388  resume_1678 × jd_1678
+  pair_8389  resume_1678 × jd_1679
+  pair_8390  resume_1678 × jd_1680
+  pair_8391  resume_1679 × jd_1676
+  pair_8392  resume_1679 × jd_1677
+  pair_8393  resume_1679 × jd_1678
+  pair_8394  resume_1679 × jd_1679
+  pair_8395  resume_1679 × jd_1680
+  pair_8396  resume_1680 × jd_1676
+  pair_8397  resume_1680 × jd_1677
+  pair_8398  resume_1680 × jd_1678
+  pair_8399  resume_1680 × jd_1679
+  pair_8400  resume_1680 × jd_1680
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
