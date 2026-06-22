@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1746 | level: intern | exp: 0.2 yrs
-  skills: React, Python, FastAPI, HTML, CSS
-  background: Enthusiastic computer science student seeking an internship to apply my passion for full-stack web development. I have hands-on experience building simple web applications using React for the frontend
+  id: resume_1751 | level: intern | exp: 0.3 yrs
+  skills: Python, NLP, Transformers, Embeddings
+  background: Eager AI and machine learning student looking for an internship to apply my academic background in natural language processing. During my coursework, I have gained foundational experience working with
 
-  id: resume_1747 | level: junior | exp: 1.8 yrs
-  skills: React, Python, Django, PostgreSQL, JavaScript
-  background: Junior Full-Stack Developer with two years of experience building and maintaining web applications. I have a proven track record of developing responsive user interfaces using React and robust backend
+  id: resume_1752 | level: junior | exp: 1.5 yrs
+  skills: Python, LangChain, RAG, Transformers, Vector Databases
+  background: Junior AI Engineer with two years of professional experience developing NLP-driven applications. My background includes building and deploying RAG pipelines using LangChain to improve information retr
 
-  id: resume_1748 | level: middle | exp: 4.5 yrs
-  skills: React, Python, Flask, FastAPI, Docker, AWS
-  background: Mid-level Full-Stack Developer with four years of professional experience in designing and implementing scalable web applications. My expertise spans the entire development lifecycle, from gathering r
+  id: resume_1753 | level: middle | exp: 4.2 yrs
+  skills: Python, LangChain, RAG, Transformers, Model Fine-Tuning
+  background: Versatile NLP Engineer with four years of professional experience architecting generative AI solutions. My expertise focuses on building enterprise-grade RAG systems that leverage advanced embedding s
 
-  id: resume_1749 | level: senior | exp: 6.8 yrs
-  skills: React, Python, Django, TypeScript, Kubernetes, System Design
-  background: Senior Full-Stack Developer with over six years of experience driving large-scale digital initiatives. My career has focused on architecting robust systems that handle high traffic while maintaining e
+  id: resume_1754 | level: senior | exp: 6.5 yrs
+  skills: Python, LangChain, RAG, Transformers, System Architecture
+  background: Senior AI Engineer with six years of experience driving large-scale NLP and generative AI initiatives. I specialize in architecting sophisticated RAG systems that utilize state-of-the-art embedding mo
 
-  id: resume_1750 | level: senior | exp: 9.5 yrs
-  skills: React, Python, System Architecture, Cloud Infrastructure, Distributed Systems
-  background: Principal Software Architect with over nine years of experience in delivering enterprise-grade web solutions. I have a long history of successfully leading diverse engineering teams and overseeing com
+  id: resume_1755 | level: senior | exp: 9.2 yrs
+  skills: Python, LangChain, RAG, Transformers, Enterprise Architecture
+  background: Principal AI Architect with over nine years of experience in shaping enterprise AI strategy and delivering cutting-edge NLP solutions. I am an expert in the underlying mathematics and architecture of 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1746 | title: Full-Stack Developer Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, Python, Web Development
-  description: We are seeking a Full-Stack Developer Intern to join our engineering team. This role is perfect for students who want to apply their knowledge of React and Python to real-world app
+  id: jd_1751 | title: AI Research Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, Transformers, NLP
+  description: We are seeking an AI Research Intern to support our NLP team. This role is perfect for students passionate about exploring transformers, vector embeddings, and retrieval-augmented 
 
-  id: jd_1747 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, Python, JavaScript
-  description: We are looking for a Junior Full-Stack Developer to help us build and scale our web products. You will work on both the React frontend and the Python backend, ensuring our applicat
+  id: jd_1752 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, LangChain, Transformers
+  description: We are looking for a Junior AI Engineer to contribute to our growing NLP department. You will focus on building and refining RAG applications using LangChain, generating effective 
 
-  id: jd_1748 | title: Full-Stack Developer | level: middle | min_exp: 3 yrs
-  required_skills: React, Python, Docker
-  description: We are seeking a mid-level Full-Stack Developer to take ownership of key features in our platform. You will design, develop, and deploy full-stack solutions using React and Python.
+  id: jd_1753 | title: NLP Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, RAG, LangChain
+  description: We are seeking an experienced NLP Engineer to own our document retrieval and generative AI capabilities. You will design and implement complex RAG architectures using LangChain, op
 
-  id: jd_1749 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
-  required_skills: React, Python, System Design
-  description: We are looking for a Senior Full-Stack Developer to lead our product development efforts. You will be responsible for defining technical strategies, architecting scalable solutions
+  id: jd_1754 | title: Senior NLP Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, Transformers, RAG
+  description: We are looking for a Senior NLP Engineer to lead our enterprise-scale generative AI projects. You will be responsible for defining the architecture of our RAG pipelines, ensuring h
 
-  id: jd_1750 | title: Principal Software Architect | level: senior | min_exp: 7 yrs
-  required_skills: React, Python, System Architecture
-  description: We are seeking a Principal Software Architect to lead the design and implementation of our global web architecture. You will define the future of our tech stack, ensuring that our 
+  id: jd_1755 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, Transformers, RAG
+  description: We are seeking a Principal AI Architect to drive the strategic development of our global AI infrastructure. You will define the roadmap for our NLP and generative AI ecosystems, ov
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8726  resume_1746 × jd_1746
-  pair_8727  resume_1746 × jd_1747
-  pair_8728  resume_1746 × jd_1748
-  pair_8729  resume_1746 × jd_1749
-  pair_8730  resume_1746 × jd_1750
-  pair_8731  resume_1747 × jd_1746
-  pair_8732  resume_1747 × jd_1747
-  pair_8733  resume_1747 × jd_1748
-  pair_8734  resume_1747 × jd_1749
-  pair_8735  resume_1747 × jd_1750
-  pair_8736  resume_1748 × jd_1746
-  pair_8737  resume_1748 × jd_1747
-  pair_8738  resume_1748 × jd_1748
-  pair_8739  resume_1748 × jd_1749
-  pair_8740  resume_1748 × jd_1750
-  pair_8741  resume_1749 × jd_1746
-  pair_8742  resume_1749 × jd_1747
-  pair_8743  resume_1749 × jd_1748
-  pair_8744  resume_1749 × jd_1749
-  pair_8745  resume_1749 × jd_1750
-  pair_8746  resume_1750 × jd_1746
-  pair_8747  resume_1750 × jd_1747
-  pair_8748  resume_1750 × jd_1748
-  pair_8749  resume_1750 × jd_1749
-  pair_8750  resume_1750 × jd_1750
+  pair_8751  resume_1751 × jd_1751
+  pair_8752  resume_1751 × jd_1752
+  pair_8753  resume_1751 × jd_1753
+  pair_8754  resume_1751 × jd_1754
+  pair_8755  resume_1751 × jd_1755
+  pair_8756  resume_1752 × jd_1751
+  pair_8757  resume_1752 × jd_1752
+  pair_8758  resume_1752 × jd_1753
+  pair_8759  resume_1752 × jd_1754
+  pair_8760  resume_1752 × jd_1755
+  pair_8761  resume_1753 × jd_1751
+  pair_8762  resume_1753 × jd_1752
+  pair_8763  resume_1753 × jd_1753
+  pair_8764  resume_1753 × jd_1754
+  pair_8765  resume_1753 × jd_1755
+  pair_8766  resume_1754 × jd_1751
+  pair_8767  resume_1754 × jd_1752
+  pair_8768  resume_1754 × jd_1753
+  pair_8769  resume_1754 × jd_1754
+  pair_8770  resume_1754 × jd_1755
+  pair_8771  resume_1755 × jd_1751
+  pair_8772  resume_1755 × jd_1752
+  pair_8773  resume_1755 × jd_1753
+  pair_8774  resume_1755 × jd_1754
+  pair_8775  resume_1755 × jd_1755
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
