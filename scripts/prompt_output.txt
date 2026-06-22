@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1721 | level: intern | exp: 0.4 yrs
-  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Copywriting
-  background: Enthusiastic Digital Marketing intern with a passion for creative content creation and data-driven marketing strategies. Recently completed coursework in search engine optimization, social media trend
+  id: resume_1726 | level: intern | exp: 0.3 yrs
+  skills: Agile Methodology, User Research, Backlog Management, Jira, Product Documentation
+  background: Eager Product Management intern with a strong foundation in agile methodology, user research, and backlog prioritization. Recently completed coursework in product lifecycle management and market analy
 
-  id: resume_1722 | level: junior | exp: 1.5 yrs
-  skills: SEO, Social Media Strategy, Google Analytics, Content Marketing, Email Marketing
-  background: Detail-oriented Junior Digital Marketing Specialist with over one year of experience executing comprehensive content and social media strategies. Proficient in performing on-page and off-page SEO, man
+  id: resume_1727 | level: junior | exp: 1.8 yrs
+  skills: Agile, Product Roadmap, User Stories, Stakeholder Management, Market Analysis
+  background: Detail-oriented Junior Product Manager with over one year of professional experience managing feature releases and stakeholder communications in agile environments. Proficient in defining product requ
 
-  id: resume_1723 | level: middle | exp: 4.2 yrs
-  skills: SEO, Content Strategy, Social Media Management, Google Analytics, PPC
-  background: A dynamic Digital Marketing Manager with four years of comprehensive experience leading digital content and growth initiatives. Expert in architecting full-funnel content strategies, optimizing SEO fr
+  id: resume_1728 | level: middle | exp: 4.5 yrs
+  skills: Agile Leadership, Strategic Planning, Roadmap Management, Data Analytics, Stakeholder Management
+  background: A dynamic Product Manager with four years of comprehensive experience managing full-stack product development and strategic roadmap execution. Expert in architecting complex product feature sets, lead
 
-  id: resume_1724 | level: senior | exp: 6.8 yrs
-  skills: SEO, Content Strategy, Data Analytics, Performance Marketing, Digital Roadmapping
-  background: An accomplished Senior Digital Marketing Strategist with six years of deep expertise in driving enterprise-level content transformations and digital growth frameworks. Strategically focused on archite
+  id: resume_1729 | level: senior | exp: 6.5 yrs
+  skills: Product Roadmap, Agile Leadership, Strategic Planning, Market Research, Stakeholder Management
+  background: An accomplished Senior Product Manager with six years of deep expertise leading enterprise-level software products and complex stakeholder engagement initiatives. Strategically focused on architecting
 
-  id: resume_1725 | level: senior | exp: 9.5 yrs
-  skills: Digital Strategy, Content Leadership, SEO, Data Analytics, Stakeholder Management
-  background: A visionary Head of Digital Marketing and Content Strategy with over eight years of experience designing global, high-impact digital experiences and growth frameworks. Master of designing and implemen
+  id: resume_1730 | level: senior | exp: 9.2 yrs
+  skills: Product Strategy, Agile Governance, Roadmap Prioritization, Stakeholder Management, Market Strategy
+  background: A visionary Principal Product Manager with over eight years of experience designing global, fault-tolerant product ecosystems and high-performance development frameworks. Master of designing and imple
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1721 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Marketing, Content Writing
-  description: We are seeking an enthusiastic Digital Marketing Intern to support our creative content team and social media managers. This internship provides hands-on experience in content draf
+  id: jd_1726 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Agile Methodology, User Stories, Backlog Management
+  description: We are seeking an enthusiastic Product Management Intern to support our rapidly expanding product engineering and strategy team. This internship provides hands-on experience in dra
 
-  id: jd_1722 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media Marketing, Content Marketing
-  description: We are looking for a proactive Junior Digital Marketing Specialist to manage our daily social media operations and improve our organic search visibility. In this role, you will ass
+  id: jd_1727 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Product Roadmap, User Stories
+  description: We are looking for a proactive Junior Product Manager to manage daily feature releases and support product performance within our modern technical infrastructure. In this role, you
 
-  id: jd_1723 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Content Strategy, Social Media Management
-  description: Our organization is seeking an experienced Digital Marketing Manager to lead our content strategy and multi-channel growth efforts. You will manage complex marketing funnels, lead 
+  id: jd_1728 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Agile Leadership, Strategic Planning, Roadmap Management
+  description: Our organization is seeking an experienced Product Manager to lead full-cycle product development and strategic roadmap execution. You will manage complex feature sets, drive user 
 
-  id: jd_1724 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
-  required_skills: SEO, Content Strategy, Data Analytics
-  description: We are searching for a highly strategic Senior Digital Marketing Strategist to lead enterprise-wide content marketing campaigns, comprehensive digital reliability initiatives, and 
+  id: jd_1729 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Roadmap, Agile Leadership, Strategic Planning
+  description: We are searching for a highly strategic Senior Product Manager to lead enterprise-level product development, comprehensive roadmap planning, and cross-functional reliability initia
 
-  id: jd_1725 | title: Head of Digital Marketing and Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Digital Strategy, Content Leadership, SEO
-  description: We are looking for a visionary Head of Digital Marketing and Strategy to lead our global content marketing, growth architecture, and brand governance strategies. This leadership ro
+  id: jd_1730 | title: Principal Product Manager | level: senior | min_exp: 7 yrs
+  required_skills: Product Strategy, Agile Governance, Roadmap Prioritization
+  description: We are looking for a visionary Principal Product Manager to lead our global product strategy, roadmap governance, and organizational alignment. This leadership role involves defini
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8601  resume_1721 × jd_1721
-  pair_8602  resume_1721 × jd_1722
-  pair_8603  resume_1721 × jd_1723
-  pair_8604  resume_1721 × jd_1724
-  pair_8605  resume_1721 × jd_1725
-  pair_8606  resume_1722 × jd_1721
-  pair_8607  resume_1722 × jd_1722
-  pair_8608  resume_1722 × jd_1723
-  pair_8609  resume_1722 × jd_1724
-  pair_8610  resume_1722 × jd_1725
-  pair_8611  resume_1723 × jd_1721
-  pair_8612  resume_1723 × jd_1722
-  pair_8613  resume_1723 × jd_1723
-  pair_8614  resume_1723 × jd_1724
-  pair_8615  resume_1723 × jd_1725
-  pair_8616  resume_1724 × jd_1721
-  pair_8617  resume_1724 × jd_1722
-  pair_8618  resume_1724 × jd_1723
-  pair_8619  resume_1724 × jd_1724
-  pair_8620  resume_1724 × jd_1725
-  pair_8621  resume_1725 × jd_1721
-  pair_8622  resume_1725 × jd_1722
-  pair_8623  resume_1725 × jd_1723
-  pair_8624  resume_1725 × jd_1724
-  pair_8625  resume_1725 × jd_1725
+  pair_8626  resume_1726 × jd_1726
+  pair_8627  resume_1726 × jd_1727
+  pair_8628  resume_1726 × jd_1728
+  pair_8629  resume_1726 × jd_1729
+  pair_8630  resume_1726 × jd_1730
+  pair_8631  resume_1727 × jd_1726
+  pair_8632  resume_1727 × jd_1727
+  pair_8633  resume_1727 × jd_1728
+  pair_8634  resume_1727 × jd_1729
+  pair_8635  resume_1727 × jd_1730
+  pair_8636  resume_1728 × jd_1726
+  pair_8637  resume_1728 × jd_1727
+  pair_8638  resume_1728 × jd_1728
+  pair_8639  resume_1728 × jd_1729
+  pair_8640  resume_1728 × jd_1730
+  pair_8641  resume_1729 × jd_1726
+  pair_8642  resume_1729 × jd_1727
+  pair_8643  resume_1729 × jd_1728
+  pair_8644  resume_1729 × jd_1729
+  pair_8645  resume_1729 × jd_1730
+  pair_8646  resume_1730 × jd_1726
+  pair_8647  resume_1730 × jd_1727
+  pair_8648  resume_1730 × jd_1728
+  pair_8649  resume_1730 × jd_1729
+  pair_8650  resume_1730 × jd_1730
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
