@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1726 | level: intern | exp: 0.3 yrs
-  skills: Agile Methodology, User Research, Backlog Management, Jira, Product Documentation
-  background: Eager Product Management intern with a strong foundation in agile methodology, user research, and backlog prioritization. Recently completed coursework in product lifecycle management and market analy
+  id: resume_1731 | level: intern | exp: 0.4 yrs
+  skills: BPMN, Requirements Gathering, Process Modeling, Documentation, Agile Basics
+  background: Enthusiastic Business Analysis intern with a solid academic background in process modeling and requirements gathering. Skilled in documenting business processes using BPMN and supporting stakeholders 
 
-  id: resume_1727 | level: junior | exp: 1.8 yrs
-  skills: Agile, Product Roadmap, User Stories, Stakeholder Management, Market Analysis
-  background: Detail-oriented Junior Product Manager with over one year of professional experience managing feature releases and stakeholder communications in agile environments. Proficient in defining product requ
+  id: resume_1732 | level: junior | exp: 1.5 yrs
+  skills: BPMN, Requirements Analysis, Stakeholder Management, Functional Specifications, Project Coordination
+  background: Detail-oriented Junior Business Analyst with over one year of experience in gathering requirements and modeling business processes in professional environments. Proficient in creating BPMN diagrams, c
 
-  id: resume_1728 | level: middle | exp: 4.5 yrs
-  skills: Agile Leadership, Strategic Planning, Roadmap Management, Data Analytics, Stakeholder Management
-  background: A dynamic Product Manager with four years of comprehensive experience managing full-stack product development and strategic roadmap execution. Expert in architecting complex product feature sets, lead
+  id: resume_1733 | level: middle | exp: 4.2 yrs
+  skills: BPMN, Project Management, Stakeholder Management, Requirements Elicitation, Risk Management
+  background: A dynamic Business Analyst and Project Coordinator with four years of experience driving requirement elicitation and cross-functional project management. Expert in facilitating large stakeholder works
 
-  id: resume_1729 | level: senior | exp: 6.5 yrs
-  skills: Product Roadmap, Agile Leadership, Strategic Planning, Market Research, Stakeholder Management
-  background: An accomplished Senior Product Manager with six years of deep expertise leading enterprise-level software products and complex stakeholder engagement initiatives. Strategically focused on architecting
+  id: resume_1734 | level: senior | exp: 6.8 yrs
+  skills: BPMN, Project Portfolio Management, Stakeholder Management, Advanced Requirements Elicitation, Change Management
+  background: An accomplished Senior Business Analyst and Project Lead with six years of deep expertise in driving enterprise-level requirements strategies and managing large-scale, complex projects. Strategically 
 
-  id: resume_1730 | level: senior | exp: 9.2 yrs
-  skills: Product Strategy, Agile Governance, Roadmap Prioritization, Stakeholder Management, Market Strategy
-  background: A visionary Principal Product Manager with over eight years of experience designing global, fault-tolerant product ecosystems and high-performance development frameworks. Master of designing and imple
+  id: resume_1735 | level: senior | exp: 9.5 yrs
+  skills: BPMN, Project Governance, Enterprise Requirements Strategy, Stakeholder Management, Strategic Planning
+  background: A visionary Principal Business Analyst and Project Director with over eight years of experience directing high-impact project ecosystems and enterprise-level process transformations. Master of designi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1726 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Agile Methodology, User Stories, Backlog Management
-  description: We are seeking an enthusiastic Product Management Intern to support our rapidly expanding product engineering and strategy team. This internship provides hands-on experience in dra
+  id: jd_1731 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: BPMN, Requirements Gathering, Process Modeling
+  description: We are seeking an enthusiastic Business Analysis Intern to support our project management and business analysis team. This internship provides hands-on experience in documenting bu
 
-  id: jd_1727 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Agile, Product Roadmap, User Stories
-  description: We are looking for a proactive Junior Product Manager to manage daily feature releases and support product performance within our modern technical infrastructure. In this role, you
+  id: jd_1732 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: BPMN, Requirements Analysis, Stakeholder Management
+  description: We are looking for a proactive Junior Business Analyst to assist in requirements gathering, process modeling, and daily stakeholder engagement. In this role, you will help define b
 
-  id: jd_1728 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Agile Leadership, Strategic Planning, Roadmap Management
-  description: Our organization is seeking an experienced Product Manager to lead full-cycle product development and strategic roadmap execution. You will manage complex feature sets, drive user 
+  id: jd_1733 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: BPMN, Project Management, Stakeholder Management
+  description: Our organization is seeking an experienced Business Analyst and Project Coordinator to lead requirement elicitation and manage cross-functional stakeholder groups. You will be resp
 
-  id: jd_1729 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Roadmap, Agile Leadership, Strategic Planning
-  description: We are searching for a highly strategic Senior Product Manager to lead enterprise-level product development, comprehensive roadmap planning, and cross-functional reliability initia
+  id: jd_1734 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: BPMN, Project Portfolio Management, Stakeholder Management
+  description: We are searching for a highly strategic Senior Business Analyst and Project Lead to drive enterprise-level requirements strategy and manage complex project portfolios. You will be 
 
-  id: jd_1730 | title: Principal Product Manager | level: senior | min_exp: 7 yrs
-  required_skills: Product Strategy, Agile Governance, Roadmap Prioritization
-  description: We are looking for a visionary Principal Product Manager to lead our global product strategy, roadmap governance, and organizational alignment. This leadership role involves defini
+  id: jd_1735 | title: Principal Business Analyst | level: senior | min_exp: 7 yrs
+  required_skills: BPMN, Project Governance, Enterprise Requirements Strategy
+  description: We are looking for a visionary Principal Business Analyst and Project Director to lead global project strategy, requirement governance, and organizational alignment. This role invo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8626  resume_1726 × jd_1726
-  pair_8627  resume_1726 × jd_1727
-  pair_8628  resume_1726 × jd_1728
-  pair_8629  resume_1726 × jd_1729
-  pair_8630  resume_1726 × jd_1730
-  pair_8631  resume_1727 × jd_1726
-  pair_8632  resume_1727 × jd_1727
-  pair_8633  resume_1727 × jd_1728
-  pair_8634  resume_1727 × jd_1729
-  pair_8635  resume_1727 × jd_1730
-  pair_8636  resume_1728 × jd_1726
-  pair_8637  resume_1728 × jd_1727
-  pair_8638  resume_1728 × jd_1728
-  pair_8639  resume_1728 × jd_1729
-  pair_8640  resume_1728 × jd_1730
-  pair_8641  resume_1729 × jd_1726
-  pair_8642  resume_1729 × jd_1727
-  pair_8643  resume_1729 × jd_1728
-  pair_8644  resume_1729 × jd_1729
-  pair_8645  resume_1729 × jd_1730
-  pair_8646  resume_1730 × jd_1726
-  pair_8647  resume_1730 × jd_1727
-  pair_8648  resume_1730 × jd_1728
-  pair_8649  resume_1730 × jd_1729
-  pair_8650  resume_1730 × jd_1730
+  pair_8651  resume_1731 × jd_1731
+  pair_8652  resume_1731 × jd_1732
+  pair_8653  resume_1731 × jd_1733
+  pair_8654  resume_1731 × jd_1734
+  pair_8655  resume_1731 × jd_1735
+  pair_8656  resume_1732 × jd_1731
+  pair_8657  resume_1732 × jd_1732
+  pair_8658  resume_1732 × jd_1733
+  pair_8659  resume_1732 × jd_1734
+  pair_8660  resume_1732 × jd_1735
+  pair_8661  resume_1733 × jd_1731
+  pair_8662  resume_1733 × jd_1732
+  pair_8663  resume_1733 × jd_1733
+  pair_8664  resume_1733 × jd_1734
+  pair_8665  resume_1733 × jd_1735
+  pair_8666  resume_1734 × jd_1731
+  pair_8667  resume_1734 × jd_1732
+  pair_8668  resume_1734 × jd_1733
+  pair_8669  resume_1734 × jd_1734
+  pair_8670  resume_1734 × jd_1735
+  pair_8671  resume_1735 × jd_1731
+  pair_8672  resume_1735 × jd_1732
+  pair_8673  resume_1735 × jd_1733
+  pair_8674  resume_1735 × jd_1734
+  pair_8675  resume_1735 × jd_1735
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
