@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1751 | level: intern | exp: 0.3 yrs
-  skills: Python, NLP, Transformers, Embeddings
-  background: Eager AI and machine learning student looking for an internship to apply my academic background in natural language processing. During my coursework, I have gained foundational experience working with
+  id: resume_1756 | level: intern | exp: 0.3 yrs
+  skills: Market Research, Agile, Stakeholder Management, User Stories
+  background: Ambitious business student seeking a product management internship to apply my analytical and organizational skills. During my academic projects, I have gained foundational experience in market resear
 
-  id: resume_1752 | level: junior | exp: 1.5 yrs
-  skills: Python, LangChain, RAG, Transformers, Vector Databases
-  background: Junior AI Engineer with two years of professional experience developing NLP-driven applications. My background includes building and deploying RAG pipelines using LangChain to improve information retr
+  id: resume_1757 | level: junior | exp: 1.8 yrs
+  skills: Agile, Jira, Product Roadmap, User Stories, Stakeholder Management
+  background: Junior Product Manager with two years of experience in supporting the product lifecycle for SaaS applications. My responsibilities have included managing backlogs, writing detailed user stories, and c
 
-  id: resume_1753 | level: middle | exp: 4.2 yrs
-  skills: Python, LangChain, RAG, Transformers, Model Fine-Tuning
-  background: Versatile NLP Engineer with four years of professional experience architecting generative AI solutions. My expertise focuses on building enterprise-grade RAG systems that leverage advanced embedding s
+  id: resume_1758 | level: middle | exp: 4.2 yrs
+  skills: Product Roadmap, Agile, Stakeholder Management, Data Analytics, Product Strategy
+  background: Mid-level Product Manager with four years of professional experience in driving product strategy and delivery. I have a proven track record of owning the product roadmap for mid-to-large-scale feature
 
-  id: resume_1754 | level: senior | exp: 6.5 yrs
-  skills: Python, LangChain, RAG, Transformers, System Architecture
-  background: Senior AI Engineer with six years of experience driving large-scale NLP and generative AI initiatives. I specialize in architecting sophisticated RAG systems that utilize state-of-the-art embedding mo
+  id: resume_1759 | level: senior | exp: 6.8 yrs
+  skills: Product Strategy, Roadmap Planning, Stakeholder Management, Agile, Leadership
+  background: Senior Product Manager with over six years of experience delivering high-impact products in the technology sector. My career has focused on end-to-end ownership of product strategy, from ideation and 
 
-  id: resume_1755 | level: senior | exp: 9.2 yrs
-  skills: Python, LangChain, RAG, Transformers, Enterprise Architecture
-  background: Principal AI Architect with over nine years of experience in shaping enterprise AI strategy and delivering cutting-edge NLP solutions. I am an expert in the underlying mathematics and architecture of 
+  id: resume_1760 | level: senior | exp: 9.5 yrs
+  skills: Strategic Roadmap, Stakeholder Management, Product Vision, Agile Governance, Portfolio Management
+  background: Principal Product Leader with over nine years of experience in shaping multi-product strategies and driving enterprise-grade solutions. My expertise includes defining high-level product visions, align
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1751 | title: AI Research Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Transformers, NLP
-  description: We are seeking an AI Research Intern to support our NLP team. This role is perfect for students passionate about exploring transformers, vector embeddings, and retrieval-augmented 
+  id: jd_1756 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Market Research, Agile, Stakeholder Management
+  description: We are seeking a Product Management Intern to support our agile product teams. This role is perfect for students who want to gain real-world experience in product development, stak
 
-  id: jd_1752 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, LangChain, Transformers
-  description: We are looking for a Junior AI Engineer to contribute to our growing NLP department. You will focus on building and refining RAG applications using LangChain, generating effective 
+  id: jd_1757 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Product Roadmap, User Stories
+  description: We are looking for a Junior Product Manager to join our agile product development group. You will focus on managing the product backlog, coordinating with design and engineering te
 
-  id: jd_1753 | title: NLP Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, RAG, LangChain
-  description: We are seeking an experienced NLP Engineer to own our document retrieval and generative AI capabilities. You will design and implement complex RAG architectures using LangChain, op
+  id: jd_1758 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Roadmap, Agile, Stakeholder Management
+  description: We are seeking a mid-level Product Manager to own key segments of our product roadmap. You will be responsible for translating business goals into actionable features, leading cros
 
-  id: jd_1754 | title: Senior NLP Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, Transformers, RAG
-  description: We are looking for a Senior NLP Engineer to lead our enterprise-scale generative AI projects. You will be responsible for defining the architecture of our RAG pipelines, ensuring h
+  id: jd_1759 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Strategy, Roadmap Planning, Stakeholder Management
+  description: We are looking for a Senior Product Manager to lead our high-priority product initiatives. You will work on defining product vision, managing complex roadmaps, and navigating stake
 
-  id: jd_1755 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, Transformers, RAG
-  description: We are seeking a Principal AI Architect to drive the strategic development of our global AI infrastructure. You will define the roadmap for our NLP and generative AI ecosystems, ov
+  id: jd_1760 | title: Principal Product Leader | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Roadmap, Stakeholder Management, Product Vision
+  description: We are seeking a Principal Product Leader to drive our overall product strategy. You will set the direction for our global product roadmap, align efforts across multiple business u
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8751  resume_1751 × jd_1751
-  pair_8752  resume_1751 × jd_1752
-  pair_8753  resume_1751 × jd_1753
-  pair_8754  resume_1751 × jd_1754
-  pair_8755  resume_1751 × jd_1755
-  pair_8756  resume_1752 × jd_1751
-  pair_8757  resume_1752 × jd_1752
-  pair_8758  resume_1752 × jd_1753
-  pair_8759  resume_1752 × jd_1754
-  pair_8760  resume_1752 × jd_1755
-  pair_8761  resume_1753 × jd_1751
-  pair_8762  resume_1753 × jd_1752
-  pair_8763  resume_1753 × jd_1753
-  pair_8764  resume_1753 × jd_1754
-  pair_8765  resume_1753 × jd_1755
-  pair_8766  resume_1754 × jd_1751
-  pair_8767  resume_1754 × jd_1752
-  pair_8768  resume_1754 × jd_1753
-  pair_8769  resume_1754 × jd_1754
-  pair_8770  resume_1754 × jd_1755
-  pair_8771  resume_1755 × jd_1751
-  pair_8772  resume_1755 × jd_1752
-  pair_8773  resume_1755 × jd_1753
-  pair_8774  resume_1755 × jd_1754
-  pair_8775  resume_1755 × jd_1755
+  pair_8776  resume_1756 × jd_1756
+  pair_8777  resume_1756 × jd_1757
+  pair_8778  resume_1756 × jd_1758
+  pair_8779  resume_1756 × jd_1759
+  pair_8780  resume_1756 × jd_1760
+  pair_8781  resume_1757 × jd_1756
+  pair_8782  resume_1757 × jd_1757
+  pair_8783  resume_1757 × jd_1758
+  pair_8784  resume_1757 × jd_1759
+  pair_8785  resume_1757 × jd_1760
+  pair_8786  resume_1758 × jd_1756
+  pair_8787  resume_1758 × jd_1757
+  pair_8788  resume_1758 × jd_1758
+  pair_8789  resume_1758 × jd_1759
+  pair_8790  resume_1758 × jd_1760
+  pair_8791  resume_1759 × jd_1756
+  pair_8792  resume_1759 × jd_1757
+  pair_8793  resume_1759 × jd_1758
+  pair_8794  resume_1759 × jd_1759
+  pair_8795  resume_1759 × jd_1760
+  pair_8796  resume_1760 × jd_1756
+  pair_8797  resume_1760 × jd_1757
+  pair_8798  resume_1760 × jd_1758
+  pair_8799  resume_1760 × jd_1759
+  pair_8800  resume_1760 × jd_1760
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
