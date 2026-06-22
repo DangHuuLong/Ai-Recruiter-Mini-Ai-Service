@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1736 | level: intern | exp: 0.3 yrs
-  skills: Python, FastAPI, PostgreSQL, Git, REST APIs
-  background: Eager computer science student seeking an internship in backend development. Passionate about building robust APIs and working with relational databases. During academic projects, I have developed a s
+  id: resume_1741 | level: intern | exp: 0.3 yrs
+  skills: Requirements Gathering, BPMN, Process Modeling, Documentation
+  background: Motivated business analysis student seeking an internship to develop professional skills in requirements gathering and process modeling. During my academic studies, I have gained foundational knowledg
 
-  id: resume_1737 | level: junior | exp: 1.5 yrs
-  skills: Node.js, Python, FastAPI, PostgreSQL, SQL
-  background: Junior Backend Developer with over one year of professional experience in designing and implementing scalable APIs. Proficient in developing high-performance services using Node.js and Python. I have 
+  id: resume_1742 | level: junior | exp: 1.8 yrs
+  skills: Requirements Gathering, BPMN, Stakeholder Management, Agile
+  background: Junior Business Analyst with two years of experience in facilitating requirements gathering sessions and developing process models. Proficient in using BPMN for workflow visualization and maintaining 
 
-  id: resume_1738 | level: middle | exp: 4.5 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, System Design
-  background: Seasoned Backend Engineer with four years of hands-on experience building and maintaining complex distributed systems. Expert in architecting efficient API services using Python and FastAPI. I possess
+  id: resume_1743 | level: middle | exp: 4.2 yrs
+  skills: Requirements Elicitation, BPMN, Stakeholder Management, Project Management, Risk Management
+  background: Versatile Business Analyst with four years of professional experience managing complex project requirements and stakeholder communication. Expert in creating high-fidelity BPMN models and translating 
 
-  id: resume_1739 | level: senior | exp: 6.5 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, Distributed Systems
-  background: Senior Backend Developer with over six years of experience specializing in server-side development and database architecture. Extensive background in creating highly scalable APIs using Python, FastAP
+  id: resume_1744 | level: senior | exp: 6.5 yrs
+  skills: Requirements Analysis, BPMN, Stakeholder Management, Project Portfolio Management, Change Management
+  background: Senior Business Analyst with over six years of experience driving large-scale digital transformation initiatives. Specializing in advanced requirements engineering, enterprise-level BPMN process model
 
-  id: resume_1740 | level: senior | exp: 9.0 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, System Architecture, Cloud Infrastructure
-  background: Principal Backend Architect with over eight years of experience delivering robust, high-performance backend platforms. Master of design patterns and system architecture, with a focus on building scala
+  id: resume_1745 | level: senior | exp: 9.0 yrs
+  skills: Requirements Strategy, BPMN, Project Governance, Strategic Planning, Stakeholder Management
+  background: Principal Business Architect with over eight years of experience delivering strategic business solutions. Expert in enterprise requirements strategy, complex project governance, and organizational pro
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1736 | title: Backend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Node.js, PostgreSQL
-  description: We are seeking a talented Backend Development Intern to join our engineering team. This role is perfect for those who are passionate about building APIs and working with databases.
+  id: jd_1741 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, BPMN, Documentation
+  description: We are seeking a Business Analysis Intern to support our project teams. This role is designed for students who want to gain hands-on experience in requirements gathering and proces
 
-  id: jd_1737 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, FastAPI, PostgreSQL
-  description: We are looking for a proactive Junior Backend Developer to join our team. In this role, you will contribute to the development of our core API services. You will work primarily wit
+  id: jd_1742 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: BPMN, Requirements Analysis, Stakeholder Management
+  description: We are looking for a Junior Business Analyst to join our team to support active projects. In this role, you will be responsible for gathering requirements from stakeholders, creati
 
-  id: jd_1738 | title: Backend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, FastAPI, PostgreSQL
-  description: We are seeking an experienced Backend Engineer to help us build and scale our backend systems. You will lead feature development, improve API performance, and manage our PostgreSQL
+  id: jd_1743 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: BPMN, Project Management, Stakeholder Management
+  description: We are seeking an experienced Business Analyst to take ownership of project requirements and process improvement. You will lead requirements elicitation, create detailed BPMN proce
 
-  id: jd_1739 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL
-  description: We are looking for a strategic Senior Backend Developer to drive the evolution of our platform. You will lead the development of our backend systems, architecting highly scalable s
+  id: jd_1744 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: BPMN, Project Portfolio Management, Stakeholder Management
+  description: We are looking for a Senior Business Analyst to lead our enterprise-level projects. You will be responsible for overseeing the requirements analysis process, developing comprehensi
 
-  id: jd_1740 | title: Principal Backend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL
-  description: We are looking for a visionary Principal Backend Architect to oversee our platform architecture and engineering standards. You will focus on building robust, high-availability back
+  id: jd_1745 | title: Principal Business Analyst | level: senior | min_exp: 7 yrs
+  required_skills: BPMN, Project Governance, Enterprise Requirements Strategy
+  description: We are seeking a Principal Business Analyst to provide strategic direction and oversight for our organizational projects. You will lead the enterprise requirements strategy, define
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8676  resume_1736 × jd_1736
-  pair_8677  resume_1736 × jd_1737
-  pair_8678  resume_1736 × jd_1738
-  pair_8679  resume_1736 × jd_1739
-  pair_8680  resume_1736 × jd_1740
-  pair_8681  resume_1737 × jd_1736
-  pair_8682  resume_1737 × jd_1737
-  pair_8683  resume_1737 × jd_1738
-  pair_8684  resume_1737 × jd_1739
-  pair_8685  resume_1737 × jd_1740
-  pair_8686  resume_1738 × jd_1736
-  pair_8687  resume_1738 × jd_1737
-  pair_8688  resume_1738 × jd_1738
-  pair_8689  resume_1738 × jd_1739
-  pair_8690  resume_1738 × jd_1740
-  pair_8691  resume_1739 × jd_1736
-  pair_8692  resume_1739 × jd_1737
-  pair_8693  resume_1739 × jd_1738
-  pair_8694  resume_1739 × jd_1739
-  pair_8695  resume_1739 × jd_1740
-  pair_8696  resume_1740 × jd_1736
-  pair_8697  resume_1740 × jd_1737
-  pair_8698  resume_1740 × jd_1738
-  pair_8699  resume_1740 × jd_1739
-  pair_8700  resume_1740 × jd_1740
+  pair_8701  resume_1741 × jd_1741
+  pair_8702  resume_1741 × jd_1742
+  pair_8703  resume_1741 × jd_1743
+  pair_8704  resume_1741 × jd_1744
+  pair_8705  resume_1741 × jd_1745
+  pair_8706  resume_1742 × jd_1741
+  pair_8707  resume_1742 × jd_1742
+  pair_8708  resume_1742 × jd_1743
+  pair_8709  resume_1742 × jd_1744
+  pair_8710  resume_1742 × jd_1745
+  pair_8711  resume_1743 × jd_1741
+  pair_8712  resume_1743 × jd_1742
+  pair_8713  resume_1743 × jd_1743
+  pair_8714  resume_1743 × jd_1744
+  pair_8715  resume_1743 × jd_1745
+  pair_8716  resume_1744 × jd_1741
+  pair_8717  resume_1744 × jd_1742
+  pair_8718  resume_1744 × jd_1743
+  pair_8719  resume_1744 × jd_1744
+  pair_8720  resume_1744 × jd_1745
+  pair_8721  resume_1745 × jd_1741
+  pair_8722  resume_1745 × jd_1742
+  pair_8723  resume_1745 × jd_1743
+  pair_8724  resume_1745 × jd_1744
+  pair_8725  resume_1745 × jd_1745
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
