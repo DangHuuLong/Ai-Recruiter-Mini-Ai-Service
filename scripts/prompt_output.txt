@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1626 | level: intern | exp: 0.5 yrs
-  skills: Product Roadmap, Agile Methodologies, Stakeholder Management, Jira, User Research, User Stories, Product Analytics
-  background: Ambitious and analytical Management Information Systems student focusing on technical Product Management and agile development ecosystems. Possesses a solid academic background in synthesizing user re
+  id: resume_1631 | level: intern | exp: 0.5 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, RESTful APIs, SQL, Git
+  background: Enthusiastic Computer Science student focusing heavily on Backend API Development ecosystems. Possesses a solid academic foundation in structured software architecture, database normalized tables, and
 
-  id: resume_1627 | level: junior | exp: 1.5 yrs
-  skills: Product Roadmap, Agile Methodologies, Stakeholder Engagement, Jira, Product Lifecycle Management, User Analytics, Backlog Grooming
-  background: Junior Product Manager with more than a year of hands-on industry experience delivering software product additions, coordinating cross-functional engineering loops, and driving core product roadmaps. 
+  id: resume_1632 | level: junior | exp: 1.5 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, REST APIs, Git, JWT
+  background: Junior Backend Engineer with more than a year of hands-on industry experience building production APIs and maintaining scalable database clusters. Skilled at constructing performant server architectur
 
-  id: resume_1628 | level: middle | exp: 4.0 yrs
-  skills: Product Roadmap, Agile Project Management, Stakeholder Management, Jira, Data Analytics, Feature Prioritization, Product Strategy
-  background: Results-driven Mid-Level Product Manager with four years of comprehensive professional experience designing and launching high-traffic digital product modules, managing enterprise agile delivery teams
+  id: resume_1633 | level: middle | exp: 4.0 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Docker, AWS, CI/CD
+  background: Results-oriented Mid-Level Backend Developer with four years of enterprise domain experience building resilient microservice grids and high-traffic application routers. Expert at architecting asynchro
 
-  id: resume_1629 | level: senior | exp: 6.0 yrs
-  skills: Product Roadmap, Agile Delivery, Stakeholder Governance, Jira, Product Strategy, Risk Management, Cross-Functional Leadership
-  background: Senior Technical Product Manager with over six years of exceptional leadership experience architecting scalable product strategies, orchestrating multi-million dollar product roadmaps, and mastering e
+  id: resume_1634 | level: senior | exp: 6.0 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Kubernetes, Kafka, AWS, Microservices
+  background: Senior Backend Software Engineer with over six years of exceptional industry experience architecting multi-tier cloud applications, high-performance API structures, and distributed databases. Recogniz
 
-  id: resume_1630 | level: senior | exp: 9.0 yrs
-  skills: Product Roadmap, Agile Scaling, Executive Stakeholder Management, Jira, Portfolio Architecture, Product Strategy, Change Leadership
-  background: Principal Product Director and Technical Portfolio Architect with nine years of distinguished corporate experience defining international software product strategies, high-impact platform growth archi
+  id: resume_1635 | level: senior | exp: 9.0 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Cloud Architecture, Kubernetes, Kafka, CI/CD Automation
+  background: Principal Backend Architect and Engineering Director with nine years of distinguished corporate tenure designing elite global software networks, highly distributed cloud mesh foundations, and real-tim
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1626 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Product Roadmap, Agile Methodologies, Stakeholder Management
-  description: We are searching for a highly enthusiastic and analytical Product Management Intern to join our software delivery division. In this introductory role, you will assist in gathering 
+  id: jd_1631 | title: Backend API Developer Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, FastAPI, Node.js
+  description: We are looking for a highly motivated and analytical Backend API Developer Intern to join our engineering core. In this introductory role, you will assist in writing clean server-s
 
-  id: jd_1627 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Product Roadmap, Agile Methodologies, Stakeholder Engagement
-  description: Join our rapidly expanding tech solutions squad as a Junior Product Manager focused on software delivery precision and feature optimization. We design and iterate high-performance 
+  id: jd_1632 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: Join our expanding software engineering squad as a Junior Backend Engineer focused on API precision and data pipeline optimization. We design and operate high-performance software 
 
-  id: jd_1628 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Product Roadmap, Agile Project Management, Stakeholder Management
-  description: We are searching for an analytical and strategic Product Manager to accelerate the execution velocity of our digital product solutions. You will occupy a central position in orches
+  id: jd_1633 | title: Backend Software Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, FastAPI, Node.js
+  description: We are searching for an analytical and technical Backend Software Engineer to accelerate the delivery velocity of our core microservice frameworks. You will occupy a central positi
 
-  id: jd_1629 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Roadmap, Agile Delivery, Stakeholder Governance
-  description: We are seeking a highly experienced Senior Product Manager to guide the multi-year product roadmap of our enterprise software ecosystems. In this senior role, you will be responsib
+  id: jd_1634 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: We are seeking a highly experienced Senior Backend Developer to guide the multi-year architectural roadmap of our enterprise web services ecosystem. In this senior role, you will b
 
-  id: jd_1630 | title: Principal Product Director | level: senior | min_exp: 7 yrs
-  required_skills: Product Roadmap, Agile Scaling, Executive Stakeholder Management
-  description: We are seeking a forward-thinking Principal Product Director to manage the macro product roadmap and strategic development of our global enterprise software solutions. In this high
+  id: jd_1635 | title: Principal Backend Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: We are seeking a forward-thinking Principal Backend Architect to manage the macro backend topology and strategic engineering of our global enterprise software solutions. In this hi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8126  resume_1626 × jd_1626
-  pair_8127  resume_1626 × jd_1627
-  pair_8128  resume_1626 × jd_1628
-  pair_8129  resume_1626 × jd_1629
-  pair_8130  resume_1626 × jd_1630
-  pair_8131  resume_1627 × jd_1626
-  pair_8132  resume_1627 × jd_1627
-  pair_8133  resume_1627 × jd_1628
-  pair_8134  resume_1627 × jd_1629
-  pair_8135  resume_1627 × jd_1630
-  pair_8136  resume_1628 × jd_1626
-  pair_8137  resume_1628 × jd_1627
-  pair_8138  resume_1628 × jd_1628
-  pair_8139  resume_1628 × jd_1629
-  pair_8140  resume_1628 × jd_1630
-  pair_8141  resume_1629 × jd_1626
-  pair_8142  resume_1629 × jd_1627
-  pair_8143  resume_1629 × jd_1628
-  pair_8144  resume_1629 × jd_1629
-  pair_8145  resume_1629 × jd_1630
-  pair_8146  resume_1630 × jd_1626
-  pair_8147  resume_1630 × jd_1627
-  pair_8148  resume_1630 × jd_1628
-  pair_8149  resume_1630 × jd_1629
-  pair_8150  resume_1630 × jd_1630
+  pair_8151  resume_1631 × jd_1631
+  pair_8152  resume_1631 × jd_1632
+  pair_8153  resume_1631 × jd_1633
+  pair_8154  resume_1631 × jd_1634
+  pair_8155  resume_1631 × jd_1635
+  pair_8156  resume_1632 × jd_1631
+  pair_8157  resume_1632 × jd_1632
+  pair_8158  resume_1632 × jd_1633
+  pair_8159  resume_1632 × jd_1634
+  pair_8160  resume_1632 × jd_1635
+  pair_8161  resume_1633 × jd_1631
+  pair_8162  resume_1633 × jd_1632
+  pair_8163  resume_1633 × jd_1633
+  pair_8164  resume_1633 × jd_1634
+  pair_8165  resume_1633 × jd_1635
+  pair_8166  resume_1634 × jd_1631
+  pair_8167  resume_1634 × jd_1632
+  pair_8168  resume_1634 × jd_1633
+  pair_8169  resume_1634 × jd_1634
+  pair_8170  resume_1634 × jd_1635
+  pair_8171  resume_1635 × jd_1631
+  pair_8172  resume_1635 × jd_1632
+  pair_8173  resume_1635 × jd_1633
+  pair_8174  resume_1635 × jd_1634
+  pair_8175  resume_1635 × jd_1635
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
