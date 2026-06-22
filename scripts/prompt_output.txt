@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1711 | level: intern | exp: 0.4 yrs
-  skills: UI Design, UX Design, Figma, Prototyping, User Research, Wireframing
-  background: An eager and creative UI/UX Design Intern with a foundational grasp of user-centered design principles, wireframing, and interactive prototyping. Recently completed coursework focusing on user researc
+  id: resume_1716 | level: intern | exp: 0.3 yrs
+  skills: PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Database Administration
+  background: An eager Database Engineering intern with a solid academic foundation in relational and non-relational database systems. Recently completed intensive training in PostgreSQL schema design, basic query 
 
-  id: resume_1712 | level: junior | exp: 1.5 yrs
-  skills: UI Design, UX Design, Figma, Prototyping, User Research, Design Systems, Wireframing
-  background: A detail-oriented Junior UI/UX Designer with over a year of professional experience in crafting intuitive digital interfaces and conducting user-focused design research. Proficient in developing wiref
+  id: resume_1717 | level: junior | exp: 1.8 yrs
+  skills: PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Query Optimization, Database Maintenance
+  background: A detail-oriented Junior Database Engineer with over a year of professional experience in developing and maintaining scalable database solutions. Proficient in designing PostgreSQL schemas, optimizing
 
-  id: resume_1713 | level: middle | exp: 4.0 yrs
-  skills: UI Design, UX Design, Figma, Prototyping, User Research, Design Systems, Product Strategy
-  background: A dynamic Product Designer with four years of extensive experience leading UI/UX initiatives from concept to delivery in complex product environments. Expert in user research methodologies, including 
+  id: resume_1718 | level: middle | exp: 4.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Tuning, Performance Optimization, Replication
+  background: A dynamic Database Engineer with four years of comprehensive experience managing high-availability database infrastructures. Expert in architecting complex data models for both relational and NoSQL en
 
-  id: resume_1714 | level: senior | exp: 6.0 yrs
-  skills: UI Design, UX Design, Figma, Prototyping, User Research, Design Systems, Product Leadership
-  background: An accomplished Senior Product Designer with six years of experience driving large-scale digital product transformations, enterprise design strategies, and user-centered design excellence. Expert in d
+  id: resume_1719 | level: senior | exp: 6.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Performance Engineering, Sharding, Disaster Recovery
+  background: An accomplished Senior Database Engineer with six years of deep expertise leading enterprise-level database architectures and data-intensive systems. Strategically focused on architecting resilient da
 
-  id: resume_1715 | level: senior | exp: 8.5 yrs
-  skills: UI Design, UX Design, Figma, Prototyping, User Research, Design Strategy, Design Operations
-  background: A visionary Lead Product Designer and Design Operations Consultant with over eight years of expert experience in global product architecture, design governance, and advanced interactive design ecosyst
+  id: resume_1720 | level: senior | exp: 9.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Systems Architecture, Data Governance, Strategy
+  background: A visionary Principal Database Architect and Data Systems Expert with over eight years of experience designing global, fault-tolerant database ecosystems and high-performance data frameworks. Master o
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1711 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
-  required_skills: UI Design, UX Design, Figma, Prototyping
-  description: We are seeking an enthusiastic UI/UX Design Intern to support our creative design team in crafting intuitive digital experiences. This role offers hands-on experience in wireframin
+  id: jd_1716 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are seeking an enthusiastic Database Engineering Intern to support our rapidly expanding database administration and systems management team. This internship provides hands-on e
 
-  id: jd_1712 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs
-  required_skills: UI Design, UX Design, Figma, Prototyping
-  description: We are looking for a proactive Junior UI/UX Designer to contribute to our product design efforts. You will be responsible for creating wireframes, building interactive prototypes, 
+  id: jd_1717 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are looking for a proactive Junior Database Engineer to manage daily database operations and performance within our modern technical infrastructure. In this role, you will assis
 
-  id: jd_1713 | title: UI/UX Product Designer | level: middle | min_exp: 3 yrs
-  required_skills: UI Design, UX Design, Figma, Prototyping
-  description: Our organization is seeking an experienced UI/UX Product Designer to manage and evolve our design system and product experiences. You will lead design sprints, conduct deep user re
+  id: jd_1718 | title: Database and Performance Specialist | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: Our organization is seeking an experienced Database and Performance Specialist to design and execute robust, high-performance database architectures. You will manage complex data m
 
-  id: jd_1714 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
-  required_skills: UI Design, UX Design, Figma, Prototyping
-  description: We are searching for a highly strategic Senior Product Designer to lead enterprise design initiatives and shape the future of our product portfolio. You will be responsible for com
+  id: jd_1719 | title: Senior Database Systems Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are searching for a highly strategic Senior Database Systems Engineer to lead enterprise-wide data persistence campaigns, comprehensive database reliability initiatives, and sca
 
-  id: jd_1715 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
-  required_skills: UI Design, UX Design, Figma, Prototyping
-  description: We are looking for a visionary Principal Product Designer to lead our global design efforts, architecture, and design operations strategy. This leadership role involves defining th
+  id: jd_1720 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  description: We are looking for a visionary Principal Database Architect to lead our global data persistence, architecture, and governance strategies. This leadership role involves defining the
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8551  resume_1711 × jd_1711
-  pair_8552  resume_1711 × jd_1712
-  pair_8553  resume_1711 × jd_1713
-  pair_8554  resume_1711 × jd_1714
-  pair_8555  resume_1711 × jd_1715
-  pair_8556  resume_1712 × jd_1711
-  pair_8557  resume_1712 × jd_1712
-  pair_8558  resume_1712 × jd_1713
-  pair_8559  resume_1712 × jd_1714
-  pair_8560  resume_1712 × jd_1715
-  pair_8561  resume_1713 × jd_1711
-  pair_8562  resume_1713 × jd_1712
-  pair_8563  resume_1713 × jd_1713
-  pair_8564  resume_1713 × jd_1714
-  pair_8565  resume_1713 × jd_1715
-  pair_8566  resume_1714 × jd_1711
-  pair_8567  resume_1714 × jd_1712
-  pair_8568  resume_1714 × jd_1713
-  pair_8569  resume_1714 × jd_1714
-  pair_8570  resume_1714 × jd_1715
-  pair_8571  resume_1715 × jd_1711
-  pair_8572  resume_1715 × jd_1712
-  pair_8573  resume_1715 × jd_1713
-  pair_8574  resume_1715 × jd_1714
-  pair_8575  resume_1715 × jd_1715
+  pair_8576  resume_1716 × jd_1716
+  pair_8577  resume_1716 × jd_1717
+  pair_8578  resume_1716 × jd_1718
+  pair_8579  resume_1716 × jd_1719
+  pair_8580  resume_1716 × jd_1720
+  pair_8581  resume_1717 × jd_1716
+  pair_8582  resume_1717 × jd_1717
+  pair_8583  resume_1717 × jd_1718
+  pair_8584  resume_1717 × jd_1719
+  pair_8585  resume_1717 × jd_1720
+  pair_8586  resume_1718 × jd_1716
+  pair_8587  resume_1718 × jd_1717
+  pair_8588  resume_1718 × jd_1718
+  pair_8589  resume_1718 × jd_1719
+  pair_8590  resume_1718 × jd_1720
+  pair_8591  resume_1719 × jd_1716
+  pair_8592  resume_1719 × jd_1717
+  pair_8593  resume_1719 × jd_1718
+  pair_8594  resume_1719 × jd_1719
+  pair_8595  resume_1719 × jd_1720
+  pair_8596  resume_1720 × jd_1716
+  pair_8597  resume_1720 × jd_1717
+  pair_8598  resume_1720 × jd_1718
+  pair_8599  resume_1720 × jd_1719
+  pair_8600  resume_1720 × jd_1720
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
