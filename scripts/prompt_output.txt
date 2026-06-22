@@ -2,44 +2,44 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1786 | level: intern | exp: 0.3 yrs
+  id: resume_1791 | level: intern | exp: 0.3 yrs
   skills: SEO, Social Media Marketing, Content Creation, Google Analytics
   background: Marketing student seeking an internship to gain practical experience in digital marketing and content creation. Throughout my academic career, I have developed a strong passion for social media engage
 
-  id: resume_1787 | level: junior | exp: 1.5 yrs
+  id: resume_1792 | level: junior | exp: 1.5 yrs
   skills: SEO, Social Media Strategy, Google Analytics, Content Writing
   background: Junior Digital Marketing Specialist with two years of professional experience in executing multi-channel digital campaigns. My background includes managing organic social media strategy, performing ke
 
-  id: resume_1788 | level: middle | exp: 4.2 yrs
+  id: resume_1793 | level: middle | exp: 4.2 yrs
   skills: SEO Strategy, Content Marketing, Data Analysis, Social Media Management
   background: Mid-level Digital Marketing Manager with four years of professional experience in crafting and executing comprehensive content strategies. My expertise is focused on integrating SEO initiatives with s
 
-  id: resume_1789 | level: senior | exp: 6.5 yrs
+  id: resume_1794 | level: senior | exp: 6.5 yrs
   skills: Content Strategy, SEO Strategy, Performance Marketing, Team Leadership
   background: Senior Digital Marketing Strategist with six years of experience leading enterprise-wide marketing efforts. I specialize in building long-term content strategies that align with business objectives, s
 
-  id: resume_1790 | level: senior | exp: 9.8 yrs
+  id: resume_1795 | level: senior | exp: 9.8 yrs
   skills: Marketing Strategy, Advanced Analytics, SEO, Organizational Leadership
   background: Principal Marketing Architect with over nine years of experience in designing and leading enterprise-level digital ecosystems. My core expertise is in building scalable, modular content strategies tha
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1786 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  id: jd_1791 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
   required_skills: SEO, Social Media Marketing, Content Creation
   description: We are seeking a Digital Marketing Intern to join our marketing team. This role is perfect for students looking to gain hands-on experience in executing social media strategies, ba
 
-  id: jd_1787 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  id: jd_1792 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
   required_skills: SEO, Social Media Strategy, Google Analytics
   description: We are looking for a Junior Digital Marketing Specialist to join our growing marketing team. You will focus on building organic social media engagement and driving SEO results thro
 
-  id: jd_1788 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
+  id: jd_1793 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
   required_skills: SEO Strategy, Content Marketing, Data Analysis
   description: We are seeking an experienced Digital Marketing Manager to own key components of our content and acquisition strategy. You will be responsible for creating high-performance content
 
-  id: jd_1789 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
+  id: jd_1794 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
   required_skills: Content Strategy, SEO Strategy, Performance Marketing
   description: We are looking for a Senior Digital Marketing Strategist to lead our complex digital growth initiatives. You will be responsible for defining strategic marketing roadmaps, managing
 
-  id: jd_1790 | title: Principal Marketing Architect | level: senior | min_exp: 7 yrs
+  id: jd_1795 | title: Principal Marketing Architect | level: senior | min_exp: 7 yrs
   required_skills: Marketing Strategy, Advanced Analytics, SEO
   description: We are seeking a Principal Marketing Architect to drive the strategic evolution of our enterprise digital ecosystem. You will define the long-term vision for our content, SEO, and 
 
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8926  resume_1786 × jd_1786
-  pair_8927  resume_1786 × jd_1787
-  pair_8928  resume_1786 × jd_1788
-  pair_8929  resume_1786 × jd_1789
-  pair_8930  resume_1786 × jd_1790
-  pair_8931  resume_1787 × jd_1786
-  pair_8932  resume_1787 × jd_1787
-  pair_8933  resume_1787 × jd_1788
-  pair_8934  resume_1787 × jd_1789
-  pair_8935  resume_1787 × jd_1790
-  pair_8936  resume_1788 × jd_1786
-  pair_8937  resume_1788 × jd_1787
-  pair_8938  resume_1788 × jd_1788
-  pair_8939  resume_1788 × jd_1789
-  pair_8940  resume_1788 × jd_1790
-  pair_8941  resume_1789 × jd_1786
-  pair_8942  resume_1789 × jd_1787
-  pair_8943  resume_1789 × jd_1788
-  pair_8944  resume_1789 × jd_1789
-  pair_8945  resume_1789 × jd_1790
-  pair_8946  resume_1790 × jd_1786
-  pair_8947  resume_1790 × jd_1787
-  pair_8948  resume_1790 × jd_1788
-  pair_8949  resume_1790 × jd_1789
-  pair_8950  resume_1790 × jd_1790
+  pair_8951  resume_1791 × jd_1791
+  pair_8952  resume_1791 × jd_1792
+  pair_8953  resume_1791 × jd_1793
+  pair_8954  resume_1791 × jd_1794
+  pair_8955  resume_1791 × jd_1795
+  pair_8956  resume_1792 × jd_1791
+  pair_8957  resume_1792 × jd_1792
+  pair_8958  resume_1792 × jd_1793
+  pair_8959  resume_1792 × jd_1794
+  pair_8960  resume_1792 × jd_1795
+  pair_8961  resume_1793 × jd_1791
+  pair_8962  resume_1793 × jd_1792
+  pair_8963  resume_1793 × jd_1793
+  pair_8964  resume_1793 × jd_1794
+  pair_8965  resume_1793 × jd_1795
+  pair_8966  resume_1794 × jd_1791
+  pair_8967  resume_1794 × jd_1792
+  pair_8968  resume_1794 × jd_1793
+  pair_8969  resume_1794 × jd_1794
+  pair_8970  resume_1794 × jd_1795
+  pair_8971  resume_1795 × jd_1791
+  pair_8972  resume_1795 × jd_1792
+  pair_8973  resume_1795 × jd_1793
+  pair_8974  resume_1795 × jd_1794
+  pair_8975  resume_1795 × jd_1795
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
