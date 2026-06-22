@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1646 | level: intern | exp: 0.5 yrs
-  skills: Healthcare Administration, Clinical Operations, EMR, HIPAA, Epic Systems, Data Auditing, Patient Scheduling
-  background: Enthusiastic Healthcare Administration student specializing in clinical operations and Electronic Medical Record system environments. Possesses a solid academic foundation in medical compliance protoc
+  id: resume_1651 | level: intern | exp: 0.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, SQL, Git, Data Science
+  background: Enthusiastic Data Science student specializing in machine learning algorithms and statistical data analysis. Possesses a solid academic foundation in predictive modeling, exploratory data analysis, an
 
-  id: resume_1647 | level: junior | exp: 1.5 yrs
-  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, HIPAA, Patient Intake, Billing Systems
-  background: Junior Clinical Operations Specialist with more than a year of hands-on industry experience monitoring clinic workflows and maintaining Electronic Medical Record platforms. Skilled at constructing smo
+  id: resume_1652 | level: junior | exp: 1.5 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, SQL, Docker, Git
+  background: Junior Data Scientist with more than a year of hands-on industry experience deploying predictive models and maintaining scalable machine learning pipelines. Skilled at constructing stable data process
 
-  id: resume_1648 | level: middle | exp: 4.0 yrs
-  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, Cerner, HIPAA, Workflow Optimization, Quality Improvement
-  background: Results-oriented Mid-Level Clinical Operations Manager with four years of comprehensive healthcare administration experience building resilient care workflows, managing multi-departmental EMR systems,
+  id: resume_1653 | level: middle | exp: 4.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, SQL, Docker, MLOps, Linux
+  background: Results-oriented Mid-Level Data Scientist with four years of enterprise domain experience building resilient machine learning systems, managing production models, and orchestrating immutable data pipe
 
-  id: resume_1649 | level: senior | exp: 6.0 yrs
-  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, HIPAA, Regulatory Compliance, Resource Allocation, Risk Management
-  background: Senior Healthcare Operations Architect with over six years of exceptional leadership experience directing large-scale clinical programs, high-performance patient delivery tracks, and strategic Electro
+  id: resume_1654 | level: senior | exp: 6.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, MLOps, AWS, Docker, SQL
+  background: Senior Machine Learning and Data Scientist with over six years of exceptional leadership experience architecting multi-region analytical infrastructures, high-performance training clusters, and secure
 
-  id: resume_1650 | level: senior | exp: 9.0 yrs
-  skills: Healthcare Administration, Clinical Operations, EMR, Epic Systems, Healthcare IT, Strategic Planning, Budget Optimization, Governance
-  background: Principal Clinical Operations Director and Healthcare Systems Architect with nine years of distinguished corporate tenure defining global enterprise health visions, high-scale automation structures, a
+  id: resume_1655 | level: senior | exp: 9.0 yrs
+  skills: Python, scikit-learn, PyTorch, pandas, Data Architecture, MLOps, Strategy, Optimization
+  background: Principal Machine Learning Architect and Data Science Director with nine years of distinguished corporate tenure defining global enterprise analytical visions, high-scale automation structures, and fa
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1646 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
-  required_skills: Healthcare Administration, Clinical Operations, EMR
-  description: We are looking for a highly motivated and analytical Healthcare Administration Intern to join our clinical operations team. In this introductory role, you will assist in writing cl
+  id: jd_1651 | title: Data Science and Machine Learning Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, scikit-learn, pandas
+  description: We are looking for a highly motivated and analytical Data Science and Machine Learning Intern to join our core intelligence team. In this introductory role, you will assist in writ
 
-  id: jd_1647 | title: Junior Clinical Operations Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Healthcare Administration, Clinical Operations, EMR
-  description: Join our expanding clinic engineering squad as a Junior Clinical Operations Coordinator focused on facility precision and platform pathway optimization. We design and operate high-
+  id: jd_1652 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
+  required_skills: Python, scikit-learn, pandas
+  description: Join our expanding intelligence engineering squad as a Junior Data Scientist focused on model precision and pipeline optimization. We design and operate high-performance predictive
 
-  id: jd_1648 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
-  required_skills: Healthcare Administration, Clinical Operations, EMR
-  description: We are searching for an analytical and strategic Clinical Operations Manager to accelerate the care coordination velocity of our core medical frameworks. You will occupy a central 
+  id: jd_1653 | title: Data Scientist | level: middle | min_exp: 3 yrs
+  required_skills: Python, scikit-learn, PyTorch
+  description: We are searching for an analytical and strategic Data Scientist to accelerate the model deployment velocity of our core machine learning frameworks. You will occupy a central posit
 
-  id: jd_1649 | title: Senior Healthcare Operations Director | level: senior | min_exp: 5 yrs
-  required_skills: Healthcare Administration, Clinical Operations, EMR
-  description: We are seeking a highly experienced Senior Healthcare Operations Director to guide the multi-year facility roadmap of our enterprise health services ecosystem. In this senior role,
+  id: jd_1654 | title: Senior Data Scientist | level: senior | min_exp: 5 yrs
+  required_skills: Python, scikit-learn, PyTorch
+  description: We are seeking a highly experienced Senior Data Scientist to guide the multi-year model architecture roadmap of our enterprise machine learning ecosystem. In this senior role, you 
 
-  id: jd_1650 | title: Principal Clinical Operations Architect | level: senior | min_exp: 7 yrs
-  required_skills: Healthcare Administration, Clinical Operations, EMR
-  description: We are seeking a forward-thinking Principal Clinical Operations Architect to manage the macro platform topology and strategic availability of our global enterprise health business 
+  id: jd_1655 | title: Principal Data Scientist | level: senior | min_exp: 7 yrs
+  required_skills: Python, scikit-learn, PyTorch
+  description: We are seeking a forward-thinking Principal Data Scientist to manage the macro platform topology and strategic availability of our global enterprise machine learning business solut
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8226  resume_1646 × jd_1646
-  pair_8227  resume_1646 × jd_1647
-  pair_8228  resume_1646 × jd_1648
-  pair_8229  resume_1646 × jd_1649
-  pair_8230  resume_1646 × jd_1650
-  pair_8231  resume_1647 × jd_1646
-  pair_8232  resume_1647 × jd_1647
-  pair_8233  resume_1647 × jd_1648
-  pair_8234  resume_1647 × jd_1649
-  pair_8235  resume_1647 × jd_1650
-  pair_8236  resume_1648 × jd_1646
-  pair_8237  resume_1648 × jd_1647
-  pair_8238  resume_1648 × jd_1648
-  pair_8239  resume_1648 × jd_1649
-  pair_8240  resume_1648 × jd_1650
-  pair_8241  resume_1649 × jd_1646
-  pair_8242  resume_1649 × jd_1647
-  pair_8243  resume_1649 × jd_1648
-  pair_8244  resume_1649 × jd_1649
-  pair_8245  resume_1649 × jd_1650
-  pair_8246  resume_1650 × jd_1646
-  pair_8247  resume_1650 × jd_1647
-  pair_8248  resume_1650 × jd_1648
-  pair_8249  resume_1650 × jd_1649
-  pair_8250  resume_1650 × jd_1650
+  pair_8251  resume_1651 × jd_1651
+  pair_8252  resume_1651 × jd_1652
+  pair_8253  resume_1651 × jd_1653
+  pair_8254  resume_1651 × jd_1654
+  pair_8255  resume_1651 × jd_1655
+  pair_8256  resume_1652 × jd_1651
+  pair_8257  resume_1652 × jd_1652
+  pair_8258  resume_1652 × jd_1653
+  pair_8259  resume_1652 × jd_1654
+  pair_8260  resume_1652 × jd_1655
+  pair_8261  resume_1653 × jd_1651
+  pair_8262  resume_1653 × jd_1652
+  pair_8263  resume_1653 × jd_1653
+  pair_8264  resume_1653 × jd_1654
+  pair_8265  resume_1653 × jd_1655
+  pair_8266  resume_1654 × jd_1651
+  pair_8267  resume_1654 × jd_1652
+  pair_8268  resume_1654 × jd_1653
+  pair_8269  resume_1654 × jd_1654
+  pair_8270  resume_1654 × jd_1655
+  pair_8271  resume_1655 × jd_1651
+  pair_8272  resume_1655 × jd_1652
+  pair_8273  resume_1655 × jd_1653
+  pair_8274  resume_1655 × jd_1654
+  pair_8275  resume_1655 × jd_1655
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
