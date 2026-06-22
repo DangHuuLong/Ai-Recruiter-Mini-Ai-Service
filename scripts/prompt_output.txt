@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1691 | level: intern | exp: 0.5 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Python, Vector Databases
-  background: An enthusiastic AI and NLP Engineering Intern with foundational knowledge in deep learning architectures, large language models, and text processing workflows. Possesses hands-on familiarity with fine
+  id: resume_1696 | level: intern | exp: 0.5 yrs
+  skills: Clinical Operations, EMR, Medical Coordination, Epic, Healthcare Administration, Patient Scheduling
+  background: An enthusiastic Healthcare Administration and Medical Coordination Intern with foundational training in clinical operations, medical billing frameworks, and electronic medical records management. Poss
 
-  id: resume_1692 | level: junior | exp: 1.5 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Vector Search, Model Evaluation, Python
-  background: Detail-oriented Junior AI and NLP Engineer with over a year of corporate experience implementing transformer models, generative pipelines, and high-performance embedding generation strategies. Compete
+  id: resume_1697 | level: junior | exp: 1.5 yrs
+  skills: Clinical Operations, EMR, Medical Coordination, Epic, HIPAA Compliance, Patient Care Workflows, Data Quality Audits
+  background: Detail-oriented Junior Healthcare Administrator and Medical Coordinator with over a year of professional experience managing facility clinical operations, electronic medical records software, and depa
 
-  id: resume_1693 | level: middle | exp: 4.0 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Prompt Engineering, Vector Databases, LLMOps
-  background: Dynamic AI and NLP Engineer with four years of extensive experience directing advanced language engineering frameworks, production-grade RAG architectures, and custom embedding fine-tuning. Accomplish
+  id: resume_1698 | level: middle | exp: 4.0 yrs
+  skills: Clinical Operations, EMR, Medical Coordination, Epic, Healthcare Compliance, Change Management, Resource Allocation
+  background: Dynamic Healthcare Administration Specialist and Clinical Operations Manager with four years of extensive experience directing comprehensive patient coordination frameworks, electronic medical records
 
-  id: resume_1694 | level: senior | exp: 6.0 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Model Quantization, Guardrails, Agentic Architectures
-  background: Accomplished Senior AI and NLP Engineer with six years of deep expertise leading complex multi-model pipelines, distributed RAG orchestration architectures, and predictive embedding designs. Proven ex
+  id: resume_1699 | level: senior | exp: 6.0 yrs
+  skills: Clinical Operations, EMR, Medical Coordination, Epic, Risk Management, Facility Metrics, Capacity Planning
+  background: Accomplished Senior Healthcare Administrator and Medical Coordination Director with six years of deep expertise leading complex clinical operations, multi-site medical staffing models, and enterprise-
 
-  id: resume_1695 | level: senior | exp: 8.5 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, Distributed AI Systems, Model Fine-Tuning, Executive Leadership
-  background: Visionary AI Engineering Director and Principal NLP Systems Architect with over eight years of expert experience driving global machine learning frameworks, distributed language processing engineering
+  id: resume_1700 | level: senior | exp: 8.5 yrs
+  skills: Clinical Operations, EMR, Medical Coordination, Epic, Enterprise Healthcare Strategy, Program Governance, Strategic Planning
+  background: Visionary Clinical Operations Director and Principal Healthcare Enterprise Consultant with over eight years of expert experience driving global medical coordination networks, distributed healthcare ma
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1691 | title: AI and NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are seeking an enthusiastic AI and NLP Engineering Intern to support our rapidly expanding core product development and corporate generative platform management team. In this ro
+  id: jd_1696 | title: Healthcare Administration and Medical Coordination Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations, EMR, Medical Coordination, Epic
+  description: We are seeking an enthusiastic Healthcare Administration and Medical Coordination Intern to support our rapidly expanding clinical operations and hospital management team. In this 
 
-  id: jd_1692 | title: Junior AI and NLP Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are looking for a proactive Junior AI and NLP Engineer to manage cross-functional language models and daily semantic text processing workflows across our backend computing syste
+  id: jd_1697 | title: Junior Healthcare Administrator and Medical Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Clinical Operations, EMR, Medical Coordination, Epic
+  description: We are looking for a proactive Junior Healthcare Administrator and Medical Coordinator to manage cross-functional patient environments and daily clinical operations within our mode
 
-  id: jd_1693 | title: AI and NLP Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: Our organization is seeking an experienced AI and NLP Specialist to engineer and execute robust distributed language processing strategies. You will manage full-cycle model configu
+  id: jd_1698 | title: Healthcare Administration and EMR Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR, Medical Coordination, Epic
+  description: Our organization is seeking an experienced Healthcare Administration and EMR Specialist to engineer and execute robust distributed clinical operations strategies. You will manage f
 
-  id: jd_1694 | title: Senior AI Systems and NLP Architect | level: senior | min_exp: 5 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are searching for a highly strategic Senior AI Systems and NLP Architect to lead enterprise-wide semantic modeling campaigns, comprehensive model pipelines, and scalable generat
+  id: jd_1699 | title: Senior Healthcare Systems and Operations Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Operations, EMR, Medical Coordination, Epic
+  description: We are searching for a highly strategic Senior Healthcare Systems and Operations Engineer to lead enterprise-wide data tracking campaigns, comprehensive clinical operations, and sc
 
-  id: jd_1695 | title: Principal Generative AI Solutions Architect | level: senior | min_exp: 7 yrs
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  description: We are looking for a visionary Principal Generative AI Solutions Architect to lead our international model infrastructure, global vector optimization ecosystems, and advanced conte
+  id: jd_1700 | title: Principal Clinical Operations and EMR Architect | level: senior | min_exp: 7 yrs
+  required_skills: Clinical Operations, EMR, Medical Coordination, Epic
+  description: We are looking for a visionary Principal Clinical Operations and EMR Architect to lead our international healthcare infrastructure, global medical system optimization ecosystems, a
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8451  resume_1691 × jd_1691
-  pair_8452  resume_1691 × jd_1692
-  pair_8453  resume_1691 × jd_1693
-  pair_8454  resume_1691 × jd_1694
-  pair_8455  resume_1691 × jd_1695
-  pair_8456  resume_1692 × jd_1691
-  pair_8457  resume_1692 × jd_1692
-  pair_8458  resume_1692 × jd_1693
-  pair_8459  resume_1692 × jd_1694
-  pair_8460  resume_1692 × jd_1695
-  pair_8461  resume_1693 × jd_1691
-  pair_8462  resume_1693 × jd_1692
-  pair_8463  resume_1693 × jd_1693
-  pair_8464  resume_1693 × jd_1694
-  pair_8465  resume_1693 × jd_1695
-  pair_8466  resume_1694 × jd_1691
-  pair_8467  resume_1694 × jd_1692
-  pair_8468  resume_1694 × jd_1693
-  pair_8469  resume_1694 × jd_1694
-  pair_8470  resume_1694 × jd_1695
-  pair_8471  resume_1695 × jd_1691
-  pair_8472  resume_1695 × jd_1692
-  pair_8473  resume_1695 × jd_1693
-  pair_8474  resume_1695 × jd_1694
-  pair_8475  resume_1695 × jd_1695
+  pair_8476  resume_1696 × jd_1696
+  pair_8477  resume_1696 × jd_1697
+  pair_8478  resume_1696 × jd_1698
+  pair_8479  resume_1696 × jd_1699
+  pair_8480  resume_1696 × jd_1700
+  pair_8481  resume_1697 × jd_1696
+  pair_8482  resume_1697 × jd_1697
+  pair_8483  resume_1697 × jd_1698
+  pair_8484  resume_1697 × jd_1699
+  pair_8485  resume_1697 × jd_1700
+  pair_8486  resume_1698 × jd_1696
+  pair_8487  resume_1698 × jd_1697
+  pair_8488  resume_1698 × jd_1698
+  pair_8489  resume_1698 × jd_1699
+  pair_8490  resume_1698 × jd_1700
+  pair_8491  resume_1699 × jd_1696
+  pair_8492  resume_1699 × jd_1697
+  pair_8493  resume_1699 × jd_1698
+  pair_8494  resume_1699 × jd_1699
+  pair_8495  resume_1699 × jd_1700
+  pair_8496  resume_1700 × jd_1696
+  pair_8497  resume_1700 × jd_1697
+  pair_8498  resume_1700 × jd_1698
+  pair_8499  resume_1700 × jd_1699
+  pair_8500  resume_1700 × jd_1700
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
