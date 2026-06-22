@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1621 | level: intern | exp: 0.5 yrs
-  skills: Requirements Elicitation, BPMN, Stakeholder Management, Jira, Confluence, Agile, User Stories, Data Analysis
-  background: Enthusiastic Business Administration student specializing in Business Analysis and Project Management structures. Possesses a strong academic foundation in technical requirements elicitation, quantita
+  id: resume_1626 | level: intern | exp: 0.5 yrs
+  skills: Product Roadmap, Agile Methodologies, Stakeholder Management, Jira, User Research, User Stories, Product Analytics
+  background: Ambitious and analytical Management Information Systems student focusing on technical Product Management and agile development ecosystems. Possesses a solid academic background in synthesizing user re
 
-  id: resume_1622 | level: junior | exp: 1.5 yrs
-  skills: Requirements Analysis, BPMN, Stakeholder Engagement, Jira, User Acceptance Testing, Agile Methodologies, SQL
-  background: Junior Business Analyst with more than a year of professional experience managing software requirements engineering pipelines and structural project management artifacts. Skilled at bridging communica
+  id: resume_1627 | level: junior | exp: 1.5 yrs
+  skills: Product Roadmap, Agile Methodologies, Stakeholder Engagement, Jira, Product Lifecycle Management, User Analytics, Backlog Grooming
+  background: Junior Product Manager with more than a year of hands-on industry experience delivering software product additions, coordinating cross-functional engineering loops, and driving core product roadmaps. 
 
-  id: resume_1623 | level: middle | exp: 4.0 yrs
-  skills: Requirements Engineering, BPMN, Stakeholder Management, Jira, Gap Analysis, Agile Project Management, Scrum, SQL
-  background: Results-oriented Mid-Level Business Analyst and Project Manager with four years of enterprise domain experience leading agile software deliveries and process automation frameworks. Expert in end-to-en
+  id: resume_1628 | level: middle | exp: 4.0 yrs
+  skills: Product Roadmap, Agile Project Management, Stakeholder Management, Jira, Data Analytics, Feature Prioritization, Product Strategy
+  background: Results-driven Mid-Level Product Manager with four years of comprehensive professional experience designing and launching high-traffic digital product modules, managing enterprise agile delivery teams
 
-  id: resume_1624 | level: senior | exp: 6.0 yrs
-  skills: Requirements Management, BPMN, Stakeholder Governance, Jira, Change Management, Agile Portfolio Management, Risk Mitigation, Scrum
-  background: Senior Business Analysis and Delivery Lead with over six years of exceptional history orchestrating multi-million dollar software engineering frameworks and complex enterprise system integrations. Exp
+  id: resume_1629 | level: senior | exp: 6.0 yrs
+  skills: Product Roadmap, Agile Delivery, Stakeholder Governance, Jira, Product Strategy, Risk Management, Cross-Functional Leadership
+  background: Senior Technical Product Manager with over six years of exceptional leadership experience architecting scalable product strategies, orchestrating multi-million dollar product roadmaps, and mastering e
 
-  id: resume_1625 | level: senior | exp: 9.0 yrs
-  skills: Requirements Governance, BPMN, Executive Stakeholder Management, Jira, Portfolio Architecture, Change Leadership, Agile Scaling, Risk Analysis
-  background: Principal Business Architect and Project Portfolio Director with nine years of distinguished corporate experience designing international software delivery meshes, high-impact enterprise data blueprin
+  id: resume_1630 | level: senior | exp: 9.0 yrs
+  skills: Product Roadmap, Agile Scaling, Executive Stakeholder Management, Jira, Portfolio Architecture, Product Strategy, Change Leadership
+  background: Principal Product Director and Technical Portfolio Architect with nine years of distinguished corporate experience defining international software product strategies, high-impact platform growth archi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1621 | title: Business Analysis & Project Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Elicitation, BPMN, Stakeholder Management
-  description: We are looking for a highly motivated and detail-oriented Business Analysis & Project Management Intern to join our software delivery office. In this role, you will assist in gathe
+  id: jd_1626 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Product Roadmap, Agile Methodologies, Stakeholder Management
+  description: We are searching for a highly enthusiastic and analytical Product Management Intern to join our software delivery division. In this introductory role, you will assist in gathering 
 
-  id: jd_1622 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, BPMN, Stakeholder Engagement
-  description: Join our expanding digital solutions squadron as a Junior Business Analyst focused on workflow efficiency and software delivery accuracy. We engineer and operate enterprise softwar
+  id: jd_1627 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Product Roadmap, Agile Methodologies, Stakeholder Engagement
+  description: Join our rapidly expanding tech solutions squad as a Junior Product Manager focused on software delivery precision and feature optimization. We design and iterate high-performance 
 
-  id: jd_1623 | title: Business Systems Analyst / Project Manager | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Engineering, BPMN, Stakeholder Management
-  description: We are searching for an analytical Mid-Level Business Systems Analyst / Project Manager to accelerate the delivery speed of our enterprise application networks. You will assume a c
+  id: jd_1628 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Roadmap, Agile Project Management, Stakeholder Management
+  description: We are searching for an analytical and strategic Product Manager to accelerate the execution velocity of our digital product solutions. You will occupy a central position in orches
 
-  id: jd_1624 | title: Senior Business Analyst & Delivery Lead | level: senior | min_exp: 5 yrs
-  required_skills: Requirements Management, BPMN, Stakeholder Governance, Performance Tuning
-  description: We are hunting for an experienced Senior Business Analyst & Delivery Lead to direct the technical requirement roadmap of our enterprise software solutions division. You will be res
+  id: jd_1629 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Roadmap, Agile Delivery, Stakeholder Governance
+  description: We are seeking a highly experienced Senior Product Manager to guide the multi-year product roadmap of our enterprise software ecosystems. In this senior role, you will be responsib
 
-  id: jd_1625 | title: Principal Business Consultant & Portfolio Director | level: senior | min_exp: 7 yrs
-  required_skills: Requirements Governance, BPMN, Executive Stakeholder Management, Architecture
-  description: We are seeking a visionary Principal Business Consultant & Portfolio Director to govern the strategic delivery roadmap of our global corporate technology ecosystems. In this execut
+  id: jd_1630 | title: Principal Product Director | level: senior | min_exp: 7 yrs
+  required_skills: Product Roadmap, Agile Scaling, Executive Stakeholder Management
+  description: We are seeking a forward-thinking Principal Product Director to manage the macro product roadmap and strategic development of our global enterprise software solutions. In this high
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8101  resume_1621 × jd_1621
-  pair_8102  resume_1621 × jd_1622
-  pair_8103  resume_1621 × jd_1623
-  pair_8104  resume_1621 × jd_1624
-  pair_8105  resume_1621 × jd_1625
-  pair_8106  resume_1622 × jd_1621
-  pair_8107  resume_1622 × jd_1622
-  pair_8108  resume_1622 × jd_1623
-  pair_8109  resume_1622 × jd_1624
-  pair_8110  resume_1622 × jd_1625
-  pair_8111  resume_1623 × jd_1621
-  pair_8112  resume_1623 × jd_1622
-  pair_8113  resume_1623 × jd_1623
-  pair_8114  resume_1623 × jd_1624
-  pair_8115  resume_1623 × jd_1625
-  pair_8116  resume_1624 × jd_1621
-  pair_8117  resume_1624 × jd_1622
-  pair_8118  resume_1624 × jd_1623
-  pair_8119  resume_1624 × jd_1624
-  pair_8120  resume_1624 × jd_1625
-  pair_8121  resume_1625 × jd_1621
-  pair_8122  resume_1625 × jd_1622
-  pair_8123  resume_1625 × jd_1623
-  pair_8124  resume_1625 × jd_1624
-  pair_8125  resume_1625 × jd_1625
+  pair_8126  resume_1626 × jd_1626
+  pair_8127  resume_1626 × jd_1627
+  pair_8128  resume_1626 × jd_1628
+  pair_8129  resume_1626 × jd_1629
+  pair_8130  resume_1626 × jd_1630
+  pair_8131  resume_1627 × jd_1626
+  pair_8132  resume_1627 × jd_1627
+  pair_8133  resume_1627 × jd_1628
+  pair_8134  resume_1627 × jd_1629
+  pair_8135  resume_1627 × jd_1630
+  pair_8136  resume_1628 × jd_1626
+  pair_8137  resume_1628 × jd_1627
+  pair_8138  resume_1628 × jd_1628
+  pair_8139  resume_1628 × jd_1629
+  pair_8140  resume_1628 × jd_1630
+  pair_8141  resume_1629 × jd_1626
+  pair_8142  resume_1629 × jd_1627
+  pair_8143  resume_1629 × jd_1628
+  pair_8144  resume_1629 × jd_1629
+  pair_8145  resume_1629 × jd_1630
+  pair_8146  resume_1630 × jd_1626
+  pair_8147  resume_1630 × jd_1627
+  pair_8148  resume_1630 × jd_1628
+  pair_8149  resume_1630 × jd_1629
+  pair_8150  resume_1630 × jd_1630
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
