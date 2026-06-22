@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1601 | level: intern | exp: 0.5 yrs
-  skills: Python, PyTorch, Transformers, LangChain, Hugging Face, ChromaDB, Embeddings, RAG
-  background: Enthusiastic computer science student passionate about Generative AI and NLP engineering. Possesses solid foundational knowledge in Large Language Models, particularly Transformers architectures, PyTo
+  id: resume_1606 | level: intern | exp: 0.5 yrs
+  skills: Requirements Elicitation, BPMN, Stakeholder Management, Jira, Confluence, Microsoft Visio, Agile, User Stories
+  background: Ambitious and detail-oriented Business Administration student seeking an internship position in Business Analysis and Project Management. Possesses solid foundational knowledge in eliciting business r
 
-  id: resume_1602 | level: junior | exp: 1.5 yrs
-  skills: Python, LangChain, Transformers, LlamaIndex, Pinecone, FastAPI, Docker, Hugging Face
-  background: Junior AI Engineer with over a year of professional experience building NLP and Generative AI applications. Proficient in integrating Large Language Models using LangChain and LlamaIndex to design rob
+  id: resume_1607 | level: junior | exp: 1.5 yrs
+  skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Communication, Jira, Confluence, UAT Testing, Agile
+  background: Junior Business Analyst with more than a year of professional experience specializing in business analysis and project coordination. Proficient in analyzing complex systems, gathering detailed busines
 
-  id: resume_1603 | level: middle | exp: 4.0 yrs
-  skills: Python, PyTorch, Transformers, LangChain, Qdrant, FAISS, Kubernetes, MLOps
-  background: Mid-Level NLP Engineer with four years of hands-on experience designing and deploying scalable artificial intelligence solutions. Specializes in advanced NLP architectures, including BERT, GPT, and cu
+  id: resume_1608 | level: middle | exp: 4.0 yrs
+  skills: Business Analysis, Project Management, BPMN, Requirements Lifecycle, Stakeholder Engagement, Agile, Scrum, Miro, UAT
+  background: Dedicated Mid-Level Business Analyst and Project Manager with four years of comprehensive experience delivering software solutions. Expert in end-to-end requirements lifecycle management, advanced bus
 
-  id: resume_1604 | level: senior | exp: 6.0 yrs
-  skills: Python, PyTorch, Transformers, LangChain, LangGraph, Milvus, AWS, GCP, Quantization
-  background: Senior AI Engineer with over six years of experience leading engineering teams in architecting high-performance NLP systems and generative workflows. Deep technical expertise in custom Transformer arc
+  id: resume_1609 | level: senior | exp: 6.0 yrs
+  skills: Enterprise Analysis, Project Management, BPMN, Stakeholder Matrix, Agile Scaling, Risk Mitigation, Budgeting, Change Management
+  background: Senior Business Analyst and Project Manager with over six years of proven success driving enterprise digital transformations. Expert in managing strategic business requirements, complex stakeholder ma
 
-  id: resume_1605 | level: senior | exp: 8.0 yrs
-  skills: Python, PyTorch, Transformers, LangChain, Weaviate, Pinecone, Distributed Training, MLOps, Architecture
-  background: Principal AI and NLP Lead with eight years of strategic experience pioneering language technology and cognitive architectures at an enterprise scale. Visionary engineer specializing in advanced Transf
+  id: resume_1610 | level: senior | exp: 8.0 yrs
+  skills: Portfolio Management, Business Transformation, BPMN, Executive Stakeholders, Governance, Risk Forecasting, Agile Leadership, Change Cultivation
+  background: Principal Consultant and Lead Project Manager with eight years of executive experience architecting enterprise business solutions and portfolio structures. Visionary practitioner specializing in deep 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1601 | title: AI & NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, PyTorch, Transformers
-  description: We are seeking a talented and enthusiastic AI & NLP Engineering Intern to join our innovative development team. In this role, you will help design and evaluate cutting-edge convers
+  id: jd_1606 | title: Business Analyst & Project Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Elicitation, BPMN, Stakeholder Management
+  description: We are seeking a highly motivated and detail-oriented Business Analyst & Project Intern to join our strategy and project delivery office. In this role, you will help gather, synthe
 
-  id: jd_1602 | title: Junior AI Engineer - NLP & RAG | level: junior | min_exp: 1 yrs
-  required_skills: Python, LangChain, Transformers, Embeddings
-  description: Join our growing engineering team as a Junior AI Engineer focused on NLP and modern Large Language Model integrations. We build intelligent software solutions powered by text embed
+  id: jd_1607 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Business Analysis, Requirements Gathering, BPMN, Stakeholder Communication
+  description: Join our growing product management and operational team as a Junior Business Analyst focused on process enhancement and system integration projects. We build and refine complex so
 
-  id: jd_1603 | title: NLP Engineer - Generative AI Applications | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, Transformers, LangChain, Embeddings
-  description: We are searching for a Mid-Level NLP Engineer to accelerate the development of our high-volume Generative AI solutions. You will lead the design of complex, multi-agent Retrieval-A
+  id: jd_1608 | title: Business Analyst / Project Manager | level: middle | min_exp: 3 yrs
+  required_skills: Business Analysis, Project Management, BPMN, Requirements Lifecycle, Stakeholder Engagement
+  description: We are searching for a skilled Mid-Level Business Analyst / Project Manager to accelerate the delivery of our enterprise platform solutions. You will take the lead in orchestrating
 
-  id: jd_1604 | title: Senior AI Infrastructure & NLP Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, PyTorch, Transformers, LangChain, Embeddings, RAG
-  description: We are seeking an expert Senior AI Infrastructure and NLP Engineer to lead the technical roadmap of our generative intelligence platform. You will be responsible for architecting r
+  id: jd_1609 | title: Senior Business Analyst & Delivery Lead | level: senior | min_exp: 5 yrs
+  required_skills: Enterprise Analysis, Project Management, BPMN, Stakeholder Matrix, Agile Scaling
+  description: We are looking for an experienced Senior Business Analyst & Delivery Lead to direct the technical roadmap of our enterprise operations division. You will be responsible for archite
 
-  id: jd_1605 | title: Principal AI Architect - NLP & LangChain Ecosystems | level: senior | min_exp: 7 yrs
-  required_skills: Python, PyTorch, Transformers, LangChain, Embeddings, RAG, Architecture
-  description: We are looking for a visionary Principal AI Architect to lead the strategic engineering of our next-generation NLP platform. In this high-impact executive engineering role, you wil
+  id: jd_1610 | title: Principal Business Consultant & PM Lead | level: senior | min_exp: 7 yrs
+  required_skills: Portfolio Management, Business Transformation, BPMN, Executive Stakeholders, Governance
+  description: We are seeking a visionary Principal Business Consultant & PM Lead to govern the strategic roadmap of our global operations infrastructure. In this executive-level engineering and 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8001  resume_1601 × jd_1601
-  pair_8002  resume_1601 × jd_1602
-  pair_8003  resume_1601 × jd_1603
-  pair_8004  resume_1601 × jd_1604
-  pair_8005  resume_1601 × jd_1605
-  pair_8006  resume_1602 × jd_1601
-  pair_8007  resume_1602 × jd_1602
-  pair_8008  resume_1602 × jd_1603
-  pair_8009  resume_1602 × jd_1604
-  pair_8010  resume_1602 × jd_1605
-  pair_8011  resume_1603 × jd_1601
-  pair_8012  resume_1603 × jd_1602
-  pair_8013  resume_1603 × jd_1603
-  pair_8014  resume_1603 × jd_1604
-  pair_8015  resume_1603 × jd_1605
-  pair_8016  resume_1604 × jd_1601
-  pair_8017  resume_1604 × jd_1602
-  pair_8018  resume_1604 × jd_1603
-  pair_8019  resume_1604 × jd_1604
-  pair_8020  resume_1604 × jd_1605
-  pair_8021  resume_1605 × jd_1601
-  pair_8022  resume_1605 × jd_1602
-  pair_8023  resume_1605 × jd_1603
-  pair_8024  resume_1605 × jd_1604
-  pair_8025  resume_1605 × jd_1605
+  pair_8026  resume_1606 × jd_1606
+  pair_8027  resume_1606 × jd_1607
+  pair_8028  resume_1606 × jd_1608
+  pair_8029  resume_1606 × jd_1609
+  pair_8030  resume_1606 × jd_1610
+  pair_8031  resume_1607 × jd_1606
+  pair_8032  resume_1607 × jd_1607
+  pair_8033  resume_1607 × jd_1608
+  pair_8034  resume_1607 × jd_1609
+  pair_8035  resume_1607 × jd_1610
+  pair_8036  resume_1608 × jd_1606
+  pair_8037  resume_1608 × jd_1607
+  pair_8038  resume_1608 × jd_1608
+  pair_8039  resume_1608 × jd_1609
+  pair_8040  resume_1608 × jd_1610
+  pair_8041  resume_1609 × jd_1606
+  pair_8042  resume_1609 × jd_1607
+  pair_8043  resume_1609 × jd_1608
+  pair_8044  resume_1609 × jd_1609
+  pair_8045  resume_1609 × jd_1610
+  pair_8046  resume_1610 × jd_1606
+  pair_8047  resume_1610 × jd_1607
+  pair_8048  resume_1610 × jd_1608
+  pair_8049  resume_1610 × jd_1609
+  pair_8050  resume_1610 × jd_1610
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
