@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1656 | level: intern | exp: 0.5 yrs
-  skills: Pentesting, SIEM, Network Security, Linux, Wireshark, Nmap, Cybersecurity
-  background: Ambitious Information Security student focusing on network defense architectures, ethical hacking methodologies, and real-time monitoring solutions. Possesses a solid foundational understanding of ent
+  id: resume_1661 | level: intern | exp: 0.5 yrs
+  skills: Applicant Tracking Systems, Onboarding, Recruitment, HRIS Data Entry, Candidate Screening, Interviewer Scheduling, Employer Branding
+  background: An enthusiastic HR and Talent Acquisition Intern with foundational exposure to end-to-end recruitment pipelines, applicant tracking systems, and onboarding documentation. Possesses strong organization
 
-  id: resume_1657 | level: junior | exp: 1.5 yrs
-  skills: Pentesting, SIEM, Network Security, Wireshark, Splunk, Linux, Git
-  background: Junior Security Analyst with more than a year of hands-on industry experience monitoring network telemetry channels and maintaining stable security monitoring pipelines. Skilled at constructing repeat
+  id: resume_1662 | level: junior | exp: 1.5 yrs
+  skills: Technical Sourcing, Workday, Interview Coordination, New Hire Orientation, Data Integrity, Talent Acquisition, Compliance Auditing
+  background: Results-driven Junior Human Resources Specialist with over a year of hands-on experience specializing in technical recruiting, HRIS maintenance, and employee onboarding operations. Demonstrated track 
 
-  id: resume_1658 | level: middle | exp: 4.0 yrs
-  skills: Pentesting, SIEM, Network Security, Splunk, Wireshark, Linux, Python, Firewalls
-  background: Results-oriented Mid-Level Cybersecurity Specialist with four years of enterprise domain experience executing network security engagements, managing centralized SIEM engines, and orchestrating complex
+  id: resume_1663 | level: middle | exp: 4.0 yrs
+  skills: Full Lifecycle Recruiting, BambooHR, Onboarding Strategy, Data Analysis, Behavioral Interviewing, Talent Pipelines, Benefits Administration
+  background: Dynamic Talent Acquisition and HR Generalist with four years of professional experience managing full-lifecycle recruiting strategies, onboarding architectures, and HRIS optimization. Proven expertise
 
-  id: resume_1659 | level: senior | exp: 6.0 yrs
-  skills: Pentesting, SIEM, Network Security, Splunk, Firewalls, Python, Linux, IDS/IPS
-  background: Senior Cybersecurity Consultant with over six years of exceptional leadership experience architecting multi-region security infrastructures, high-availability SIEM engineering architectures, and secur
+  id: resume_1664 | level: senior | exp: 6.0 yrs
+  skills: Strategic Sourcing, SAP SuccessFactors, Workforce Planning, Employer Branding, Predictive Analytics, DEI Recruiting, Onboarding Architecture
+  background: Accomplished Senior Talent Acquisition Partner with six years of deep expertise leading strategic recruitment operations, advanced HRIS architecture deployment, and scalable onboarding initiatives. Ex
 
-  id: resume_1660 | level: senior | exp: 9.0 yrs
-  skills: Pentesting, SIEM, Network Security, Data Architecture, Security Strategy, Risk Management, Compliance, Optimization
-  background: Principal Cybersecurity Architect and Information Security Director with nine years of distinguished corporate tenure defining global enterprise defensive visions, high-scale security engineering stru
+  id: resume_1665 | level: senior | exp: 8.5 yrs
+  skills: Executive Search, Workday Integration, Global Talent Acquisition, Workforce Optimization, Greenhouse, Strategic Leadership, Compliance Controls
+  background: Visionary Talent Acquisition Lead and Principal HR Strategist with over eight years of leadership experience designing global recruitment ecosystems, enterprise-grade HRIS integrations, and cultural o
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1656 | title: Cybersecurity and Information Security Intern | level: intern | min_exp: 0 yrs
-  required_skills: Pentesting, SIEM, Network Security
-  description: We are looking for a highly motivated and analytical Cybersecurity and Information Security Intern to join our core protection team. In this introductory role, you will assist in w
+  id: jd_1661 | title: Human Resources and Recruiting Intern | level: intern | min_exp: 0 yrs
+  required_skills: Applicant Tracking Systems, Interview Scheduling, Onboarding Assistance, Data Entry
+  description: We are looking for an enthusiastic Human Resources and Recruiting Intern to support our rapidly expanding talent operations team. In this role, you will assist with day-to-day recr
 
-  id: jd_1657 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Pentesting, SIEM, Network Security
-  description: Join our expanding security engineering squad as a Junior Security Analyst focused on incident precision and network boundary optimization. We design and operate high-performance d
+  id: jd_1662 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Candidate Sourcing, HRIS Operations, New Hire Orientation, Screening
+  description: We are seeking a proactive Junior Talent Acquisition Specialist to manage full-lifecycle recruiting and onboarding operations for our growing business units. The ideal candidate wi
 
-  id: jd_1658 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Pentesting, SIEM, Network Security
-  description: We are searching for an analytical and strategic Cybersecurity Engineer to accelerate the threat remediation velocity of our core enterprise frameworks. You will occupy a central p
+  id: jd_1663 | title: Human Resources and Talent Acquisition Partner | level: middle | min_exp: 3 yrs
+  required_skills: Full Cycle Recruiting, HRIS Optimization, Onboarding Architecture, Talent Mapping
+  description: Our organization is seeking an experienced Human Resources and Talent Acquisition Partner to design and execute robust recruitment and employee onboarding strategies. You will mana
 
-  id: jd_1659 | title: Senior Cybersecurity Architect | level: senior | min_exp: 5 yrs
-  required_skills: Pentesting, SIEM, Network Security
-  description: We are seeking a highly experienced Senior Cybersecurity Architect to guide the multi-year defensive infrastructure roadmap of our enterprise security ecosystem. In this senior rol
+  id: jd_1664 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Workforce Planning, Enterprise HRIS, Onboarding Strategy, Predictive Analytics
+  description: We are hunting for a strategic Senior Talent Acquisition Manager to direct enterprise-level recruiting campaigns, comprehensive HRIS deployment, and high-impact onboarding programs
 
-  id: jd_1660 | title: Principal Security Director | level: senior | min_exp: 7 yrs
-  required_skills: Pentesting, SIEM, Network Security
-  description: We are seeking a forward-thinking Principal Security Director to manage the macro defensive infrastructure and strategic resilience of our global enterprise security operations. In
+  id: jd_1665 | title: Principal Director, Talent Acquisition & HRIS | level: senior | min_exp: 7 yrs
+  required_skills: Executive Search, Global TA Strategy, HRIS Architecture, Strategic Leadership
+  description: We are looking for a visionary Principal Director of Talent Acquisition and HRIS to spearhead our global human resources infrastructure, executive recruiting, and cultural onboardi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8276  resume_1656 × jd_1656
-  pair_8277  resume_1656 × jd_1657
-  pair_8278  resume_1656 × jd_1658
-  pair_8279  resume_1656 × jd_1659
-  pair_8280  resume_1656 × jd_1660
-  pair_8281  resume_1657 × jd_1656
-  pair_8282  resume_1657 × jd_1657
-  pair_8283  resume_1657 × jd_1658
-  pair_8284  resume_1657 × jd_1659
-  pair_8285  resume_1657 × jd_1660
-  pair_8286  resume_1658 × jd_1656
-  pair_8287  resume_1658 × jd_1657
-  pair_8288  resume_1658 × jd_1658
-  pair_8289  resume_1658 × jd_1659
-  pair_8290  resume_1658 × jd_1660
-  pair_8291  resume_1659 × jd_1656
-  pair_8292  resume_1659 × jd_1657
-  pair_8293  resume_1659 × jd_1658
-  pair_8294  resume_1659 × jd_1659
-  pair_8295  resume_1659 × jd_1660
-  pair_8296  resume_1660 × jd_1656
-  pair_8297  resume_1660 × jd_1657
-  pair_8298  resume_1660 × jd_1658
-  pair_8299  resume_1660 × jd_1659
-  pair_8300  resume_1660 × jd_1660
+  pair_8301  resume_1661 × jd_1661
+  pair_8302  resume_1661 × jd_1662
+  pair_8303  resume_1661 × jd_1663
+  pair_8304  resume_1661 × jd_1664
+  pair_8305  resume_1661 × jd_1665
+  pair_8306  resume_1662 × jd_1661
+  pair_8307  resume_1662 × jd_1662
+  pair_8308  resume_1662 × jd_1663
+  pair_8309  resume_1662 × jd_1664
+  pair_8310  resume_1662 × jd_1665
+  pair_8311  resume_1663 × jd_1661
+  pair_8312  resume_1663 × jd_1662
+  pair_8313  resume_1663 × jd_1663
+  pair_8314  resume_1663 × jd_1664
+  pair_8315  resume_1663 × jd_1665
+  pair_8316  resume_1664 × jd_1661
+  pair_8317  resume_1664 × jd_1662
+  pair_8318  resume_1664 × jd_1663
+  pair_8319  resume_1664 × jd_1664
+  pair_8320  resume_1664 × jd_1665
+  pair_8321  resume_1665 × jd_1661
+  pair_8322  resume_1665 × jd_1662
+  pair_8323  resume_1665 × jd_1663
+  pair_8324  resume_1665 × jd_1664
+  pair_8325  resume_1665 × jd_1665
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
