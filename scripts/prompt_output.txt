@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1666 | level: intern | exp: 0.5 yrs
-  skills: Network Security, Penetration Testing, Wireshark, Vulnerability Scanning, Linux Administration, Log Monitoring
-  background: An enthusiastic and highly motivated Cybersecurity Intern with foundational knowledge in network security, penetration testing methodologies, and security information and event management systems. Pos
+  id: resume_1671 | level: intern | exp: 0.5 yrs
+  skills: Marketplace Management, E-commerce Operations, Digital Merchandising, Product Listing Optimization, Shopify, Inventory Tracking, Sales Analytics
+  background: An enthusiastic and energetic E-commerce Operations Intern with foundational knowledge in online marketplace dynamics, digital merchandising, and supply chain logistics. Possesses hands-on familiarity
 
-  id: resume_1667 | level: junior | exp: 1.5 yrs
-  skills: SIEM, Splunk, Incident Triage, Firewall Configuration, Vulnerability Assessment, Threat Detection
-  background: Detail-oriented Junior Cybersecurity Analyst with over a year of corporate experience specializing in security operations center activities, SIEM administration, and network defense infrastructure. Pr
+  id: resume_1672 | level: junior | exp: 1.5 yrs
+  skills: Amazon Seller Central, E-commerce Operations, Digital Merchandising, Catalog Management, Inventory Modeling, Conversion Rate Optimization, Vendor Relations
+  background: Detail-oriented Junior E-commerce Operations Specialist with over a year of corporate experience managing digital marketplace storefronts, vendor relations, and cross-channel retail merchandising. Com
 
-  id: resume_1668 | level: middle | exp: 4.0 yrs
-  skills: Penetration Testing, SIEM Architecture, QRadar, Incident Response, Intrusion Detection, Web Application Security, Automation
-  background: Dynamic Information Security Consultant with four years of professional experience across advanced penetration testing, enterprise SIEM architecture, and network security engineering. Proven track rec
+  id: resume_1673 | level: middle | exp: 4.0 yrs
+  skills: Marketplace Strategy, E-commerce Operations, Digital Merchandising, Product Information Management, Web Analytics, Inventory Automation, Supply Chain Logistics
+  background: Dynamic E-commerce Operations and Merchandising Manager with four years of professional experience directing digital marketplace execution, commercial strategy, and supply chain logistics. Accomplishe
 
-  id: resume_1669 | level: senior | exp: 6.0 yrs
-  skills: Threat Hunting, Splunk Enterprise Security, Zero Trust Architecture, Vulnerability Management, Malware Analysis, Red Teaming, Network Hardening
-  background: Accomplished Senior Cybersecurity Engineer with six years of deep expertise leading enterprise network infrastructure security, advanced penetration testing initiatives, and scalable SIEM implementati
+  id: resume_1674 | level: senior | exp: 6.0 yrs
+  skills: Digital Merchandising, Adobe Commerce, Predictive Data Analytics, ERP Integration, Supply Chain Management, Omni-Channel Retail, Demand Planning
+  background: Accomplished Senior E-commerce Merchandising Partner with six years of deep expertise leading complex multi-channel marketplace infrastructure, product commercial operations, and predictive inventory 
 
-  id: resume_1670 | level: senior | exp: 8.5 yrs
-  skills: Security Architecture, Cloud Security, Incident Response, Global Threat Hunting, Risk Management, Offensive Operations, SIEM Integration
-  background: Visionary Security Architect and Principal Cybersecurity Leader with over eight years of expert experience driving global information security ecosystems, advanced offensive operations, and automated 
+  id: resume_1675 | level: senior | exp: 8.5 yrs
+  skills: Digital Marketplace Ecosystems, Omni-Channel Operations, Salesforce Commerce Cloud, Retail Systems Architecture, Strategic Leadership, Global Supply Chain, Predictive Margin Management
+  background: Visionary E-commerce Operations Director and Principal Retail Strategist with over eight years of expert experience driving global digital marketplace ecosystems, omni-channel operations, and advanced
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1666 | title: Cybersecurity and Network Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Network Security, Wireshark, Vulnerability Documentation, Linux Basics
-  description: We are seeking an enthusiastic Cybersecurity and Network Operations Intern to support our rapidly growing security operations team. In this role, you will assist with daily securit
+  id: jd_1671 | title: E-commerce Operations and Merchandising Intern | level: intern | min_exp: 0 yrs
+  required_skills: E-commerce Operations, Digital Merchandising, Catalog Management, Inventory Tracking
+  description: We are seeking an enthusiastic E-commerce Operations and Merchandising Intern to support our rapidly expanding digital storefront management team. In this role, you will assist wit
 
-  id: jd_1667 | title: Junior Cyber Security Operations Analyst | level: junior | min_exp: 1 yrs
-  required_skills: SIEM, Incident Triage, Vulnerability Assessment, Network Operations
-  description: We are looking for a proactive Junior Cyber Security Operations Analyst to manage real-time monitoring and incident triage activities within our security ecosystem. The ideal candi
+  id: jd_1672 | title: Junior E-commerce Platform Specialist | level: junior | min_exp: 1 yrs
+  required_skills: E-commerce Operations, Digital Merchandising, Product Listing Optimization, Conversion Rate Optimization
+  description: We are looking for a proactive Junior E-commerce Platform Specialist to manage multi-channel product listings and daily retail merchandising operations across our growing storefron
 
-  id: jd_1668 | title: Information Security and Penetration Testing Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Penetration Testing, SIEM, Network Security, Incident Response
-  description: Our firm is looking for an experienced Information Security and Penetration Testing Specialist to engineer and execute comprehensive vulnerability assessments and secure network st
+  id: jd_1673 | title: E-commerce Operations and Digital Merchandising Manager | level: middle | min_exp: 3 yrs
+  required_skills: E-commerce Operations, Digital Merchandising, Product Information Management, Marketplace Strategy
+  description: Our organization is seeking an experienced E-commerce Operations and Digital Merchandising Manager to engineer and execute robust multi-platform marketplace strategies. You will ma
 
-  id: jd_1669 | title: Senior Cybersecurity Infrastructure Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Threat Hunting, Enterprise SIEM, Network Hardening, Penetration Testing
-  description: We are searching for a highly strategic Senior Cybersecurity Infrastructure Engineer to lead enterprise-wide threat hunting operations, advanced penetration testing initiatives, an
+  id: jd_1674 | title: Senior Omni-Channel E-commerce Manager | level: senior | min_exp: 5 yrs
+  required_skills: Digital Merchandising, E-commerce Operations, Demand Planning, Omni-Channel Retail
+  description: We are searching for a highly strategic Senior Omni-Channel E-commerce Manager to lead enterprise-wide digital merchandising campaigns, comprehensive platform integrations, and sca
 
-  id: jd_1670 | title: Principal Architect, Cyber Defense & SIEM Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Security Architecture, SIEM Integration, Global Threat Hunting, Offensive Operations
-  description: We are looking for a visionary Principal Architect of Cyber Defense and SIEM Strategy to lead our international security infrastructure, advanced threat tracking, and high-level of
+  id: jd_1675 | title: Principal Director, Global E-commerce & Retail Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Digital Marketplace Ecosystems, Omni-Channel Operations, Retail Systems Architecture, Strategic Leadership
+  description: We are looking for a visionary Principal Director of Global E-commerce and Retail Strategy to lead our international digital marketplace infrastructure, omni-channel operations, an
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8326  resume_1666 × jd_1666
-  pair_8327  resume_1666 × jd_1667
-  pair_8328  resume_1666 × jd_1668
-  pair_8329  resume_1666 × jd_1669
-  pair_8330  resume_1666 × jd_1670
-  pair_8331  resume_1667 × jd_1666
-  pair_8332  resume_1667 × jd_1667
-  pair_8333  resume_1667 × jd_1668
-  pair_8334  resume_1667 × jd_1669
-  pair_8335  resume_1667 × jd_1670
-  pair_8336  resume_1668 × jd_1666
-  pair_8337  resume_1668 × jd_1667
-  pair_8338  resume_1668 × jd_1668
-  pair_8339  resume_1668 × jd_1669
-  pair_8340  resume_1668 × jd_1670
-  pair_8341  resume_1669 × jd_1666
-  pair_8342  resume_1669 × jd_1667
-  pair_8343  resume_1669 × jd_1668
-  pair_8344  resume_1669 × jd_1669
-  pair_8345  resume_1669 × jd_1670
-  pair_8346  resume_1670 × jd_1666
-  pair_8347  resume_1670 × jd_1667
-  pair_8348  resume_1670 × jd_1668
-  pair_8349  resume_1670 × jd_1669
-  pair_8350  resume_1670 × jd_1670
+  pair_8351  resume_1671 × jd_1671
+  pair_8352  resume_1671 × jd_1672
+  pair_8353  resume_1671 × jd_1673
+  pair_8354  resume_1671 × jd_1674
+  pair_8355  resume_1671 × jd_1675
+  pair_8356  resume_1672 × jd_1671
+  pair_8357  resume_1672 × jd_1672
+  pair_8358  resume_1672 × jd_1673
+  pair_8359  resume_1672 × jd_1674
+  pair_8360  resume_1672 × jd_1675
+  pair_8361  resume_1673 × jd_1671
+  pair_8362  resume_1673 × jd_1672
+  pair_8363  resume_1673 × jd_1673
+  pair_8364  resume_1673 × jd_1674
+  pair_8365  resume_1673 × jd_1675
+  pair_8366  resume_1674 × jd_1671
+  pair_8367  resume_1674 × jd_1672
+  pair_8368  resume_1674 × jd_1673
+  pair_8369  resume_1674 × jd_1674
+  pair_8370  resume_1674 × jd_1675
+  pair_8371  resume_1675 × jd_1671
+  pair_8372  resume_1675 × jd_1672
+  pair_8373  resume_1675 × jd_1673
+  pair_8374  resume_1675 × jd_1674
+  pair_8375  resume_1675 × jd_1675
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
