@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1781 | level: intern | exp: 0.3 yrs
-  skills: Python, PyTorch, LangChain, Transformers, RAG
-  background: Artificial Intelligence student seeking an internship to gain practical experience in Natural Language Processing. I have completed academic projects focused on fine-tuning BERT-based models for text 
+  id: resume_1786 | level: intern | exp: 0.3 yrs
+  skills: SEO, Social Media Marketing, Content Creation, Google Analytics
+  background: Marketing student seeking an internship to gain practical experience in digital marketing and content creation. Throughout my academic career, I have developed a strong passion for social media engage
 
-  id: resume_1782 | level: junior | exp: 1.5 yrs
-  skills: Python, LangChain, Transformers, Vector Databases, NLP
-  background: Junior AI Engineer with two years of professional experience developing and deploying NLP solutions. My background includes building robust RAG pipelines, optimizing large language model (LLM) perform
+  id: resume_1787 | level: junior | exp: 1.5 yrs
+  skills: SEO, Social Media Strategy, Google Analytics, Content Writing
+  background: Junior Digital Marketing Specialist with two years of professional experience in executing multi-channel digital campaigns. My background includes managing organic social media strategy, performing ke
 
-  id: resume_1783 | level: middle | exp: 4.2 yrs
-  skills: Python, LangChain, Transformers, RAG, System Design
-  background: Mid-level AI/NLP Engineer with four years of professional experience architecting and scaling advanced AI systems. My expertise focuses on designing sophisticated RAG architectures, automating LLM wor
+  id: resume_1788 | level: middle | exp: 4.2 yrs
+  skills: SEO Strategy, Content Marketing, Data Analysis, Social Media Management
+  background: Mid-level Digital Marketing Manager with four years of professional experience in crafting and executing comprehensive content strategies. My expertise is focused on integrating SEO initiatives with s
 
-  id: resume_1784 | level: senior | exp: 6.5 yrs
-  skills: Transformers, LangChain, RAG, Cloud Architecture, System Design
-  background: Senior NLP Engineer with six years of experience building enterprise-grade transformer-based systems. I specialize in architecting complex AI ecosystems, scaling RAG pipelines for massive datasets, an
+  id: resume_1789 | level: senior | exp: 6.5 yrs
+  skills: Content Strategy, SEO Strategy, Performance Marketing, Team Leadership
+  background: Senior Digital Marketing Strategist with six years of experience leading enterprise-wide marketing efforts. I specialize in building long-term content strategies that align with business objectives, s
 
-  id: resume_1785 | level: senior | exp: 9.8 yrs
-  skills: System Architecture, Transformer Ecosystem, RAG, Technical Leadership, Scalability
-  background: Principal AI Architect with over nine years of experience in shaping enterprise NLP strategy and delivering high-scale AI solutions. My core expertise is in building scalable, modular AI architectures
+  id: resume_1790 | level: senior | exp: 9.8 yrs
+  skills: Marketing Strategy, Advanced Analytics, SEO, Organizational Leadership
+  background: Principal Marketing Architect with over nine years of experience in designing and leading enterprise-level digital ecosystems. My core expertise is in building scalable, modular content strategies tha
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1781 | title: AI/NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Transformers, LangChain, Python
-  description: We are seeking an AI/NLP Engineering Intern to join our research team. This role is perfect for students looking to gain hands-on experience in building modern language application
+  id: jd_1786 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing, Content Creation
+  description: We are seeking a Digital Marketing Intern to join our marketing team. This role is perfect for students looking to gain hands-on experience in executing social media strategies, ba
 
-  id: jd_1782 | title: Junior AI/NLP Engineer | level: junior | min_exp: 1 yrs
-  required_skills: LangChain, RAG, Python
-  description: We are looking for a Junior AI/NLP Engineer to join our growing development team. You will focus on building robust RAG systems with LangChain and developing advanced NLP features.
+  id: jd_1787 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Social Media Strategy, Google Analytics
+  description: We are looking for a Junior Digital Marketing Specialist to join our growing marketing team. You will focus on building organic social media engagement and driving SEO results thro
 
-  id: jd_1783 | title: NLP Engineer | level: middle | min_exp: 3 yrs
-  required_skills: RAG, Transformers, Python
-  description: We are seeking an experienced NLP Engineer to own key components of our AI architecture. You will be responsible for creating high-performance RAG systems, designing scalable embed
+  id: jd_1788 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
+  required_skills: SEO Strategy, Content Marketing, Data Analysis
+  description: We are seeking an experienced Digital Marketing Manager to own key components of our content and acquisition strategy. You will be responsible for creating high-performance content
 
-  id: jd_1784 | title: Senior AI/NLP Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Transformers, LangChain, RAG
-  description: We are looking for a Senior AI/NLP Engineer to lead our complex development initiatives. You will be responsible for defining architectural roadmaps, managing high-performance RAG 
+  id: jd_1789 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
+  required_skills: Content Strategy, SEO Strategy, Performance Marketing
+  description: We are looking for a Senior Digital Marketing Strategist to lead our complex digital growth initiatives. You will be responsible for defining strategic marketing roadmaps, managing
 
-  id: jd_1785 | title: Principal AI/NLP Architect | level: senior | min_exp: 7 yrs
-  required_skills: System Architecture, Transformer Ecosystem, RAG
-  description: We are seeking a Principal AI/NLP Architect to drive the strategic development of our enterprise AI ecosystem. You will define the long-term roadmap for our Transformer and RAG pla
+  id: jd_1790 | title: Principal Marketing Architect | level: senior | min_exp: 7 yrs
+  required_skills: Marketing Strategy, Advanced Analytics, SEO
+  description: We are seeking a Principal Marketing Architect to drive the strategic evolution of our enterprise digital ecosystem. You will define the long-term vision for our content, SEO, and 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8901  resume_1781 × jd_1781
-  pair_8902  resume_1781 × jd_1782
-  pair_8903  resume_1781 × jd_1783
-  pair_8904  resume_1781 × jd_1784
-  pair_8905  resume_1781 × jd_1785
-  pair_8906  resume_1782 × jd_1781
-  pair_8907  resume_1782 × jd_1782
-  pair_8908  resume_1782 × jd_1783
-  pair_8909  resume_1782 × jd_1784
-  pair_8910  resume_1782 × jd_1785
-  pair_8911  resume_1783 × jd_1781
-  pair_8912  resume_1783 × jd_1782
-  pair_8913  resume_1783 × jd_1783
-  pair_8914  resume_1783 × jd_1784
-  pair_8915  resume_1783 × jd_1785
-  pair_8916  resume_1784 × jd_1781
-  pair_8917  resume_1784 × jd_1782
-  pair_8918  resume_1784 × jd_1783
-  pair_8919  resume_1784 × jd_1784
-  pair_8920  resume_1784 × jd_1785
-  pair_8921  resume_1785 × jd_1781
-  pair_8922  resume_1785 × jd_1782
-  pair_8923  resume_1785 × jd_1783
-  pair_8924  resume_1785 × jd_1784
-  pair_8925  resume_1785 × jd_1785
+  pair_8926  resume_1786 × jd_1786
+  pair_8927  resume_1786 × jd_1787
+  pair_8928  resume_1786 × jd_1788
+  pair_8929  resume_1786 × jd_1789
+  pair_8930  resume_1786 × jd_1790
+  pair_8931  resume_1787 × jd_1786
+  pair_8932  resume_1787 × jd_1787
+  pair_8933  resume_1787 × jd_1788
+  pair_8934  resume_1787 × jd_1789
+  pair_8935  resume_1787 × jd_1790
+  pair_8936  resume_1788 × jd_1786
+  pair_8937  resume_1788 × jd_1787
+  pair_8938  resume_1788 × jd_1788
+  pair_8939  resume_1788 × jd_1789
+  pair_8940  resume_1788 × jd_1790
+  pair_8941  resume_1789 × jd_1786
+  pair_8942  resume_1789 × jd_1787
+  pair_8943  resume_1789 × jd_1788
+  pair_8944  resume_1789 × jd_1789
+  pair_8945  resume_1789 × jd_1790
+  pair_8946  resume_1790 × jd_1786
+  pair_8947  resume_1790 × jd_1787
+  pair_8948  resume_1790 × jd_1788
+  pair_8949  resume_1790 × jd_1789
+  pair_8950  resume_1790 × jd_1790
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
