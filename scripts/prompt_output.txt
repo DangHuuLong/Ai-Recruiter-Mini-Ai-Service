@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1716 | level: intern | exp: 0.3 yrs
-  skills: PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Database Administration
-  background: An eager Database Engineering intern with a solid academic foundation in relational and non-relational database systems. Recently completed intensive training in PostgreSQL schema design, basic query 
+  id: resume_1721 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Copywriting
+  background: Enthusiastic Digital Marketing intern with a passion for creative content creation and data-driven marketing strategies. Recently completed coursework in search engine optimization, social media trend
 
-  id: resume_1717 | level: junior | exp: 1.8 yrs
-  skills: PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Query Optimization, Database Maintenance
-  background: A detail-oriented Junior Database Engineer with over a year of professional experience in developing and maintaining scalable database solutions. Proficient in designing PostgreSQL schemas, optimizing
+  id: resume_1722 | level: junior | exp: 1.5 yrs
+  skills: SEO, Social Media Strategy, Google Analytics, Content Marketing, Email Marketing
+  background: Detail-oriented Junior Digital Marketing Specialist with over one year of experience executing comprehensive content and social media strategies. Proficient in performing on-page and off-page SEO, man
 
-  id: resume_1718 | level: middle | exp: 4.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Tuning, Performance Optimization, Replication
-  background: A dynamic Database Engineer with four years of comprehensive experience managing high-availability database infrastructures. Expert in architecting complex data models for both relational and NoSQL en
+  id: resume_1723 | level: middle | exp: 4.2 yrs
+  skills: SEO, Content Strategy, Social Media Management, Google Analytics, PPC
+  background: A dynamic Digital Marketing Manager with four years of comprehensive experience leading digital content and growth initiatives. Expert in architecting full-funnel content strategies, optimizing SEO fr
 
-  id: resume_1719 | level: senior | exp: 6.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Performance Engineering, Sharding, Disaster Recovery
-  background: An accomplished Senior Database Engineer with six years of deep expertise leading enterprise-level database architectures and data-intensive systems. Strategically focused on architecting resilient da
+  id: resume_1724 | level: senior | exp: 6.8 yrs
+  skills: SEO, Content Strategy, Data Analytics, Performance Marketing, Digital Roadmapping
+  background: An accomplished Senior Digital Marketing Strategist with six years of deep expertise in driving enterprise-level content transformations and digital growth frameworks. Strategically focused on archite
 
-  id: resume_1720 | level: senior | exp: 9.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Systems Architecture, Data Governance, Strategy
-  background: A visionary Principal Database Architect and Data Systems Expert with over eight years of experience designing global, fault-tolerant database ecosystems and high-performance data frameworks. Master o
+  id: resume_1725 | level: senior | exp: 9.5 yrs
+  skills: Digital Strategy, Content Leadership, SEO, Data Analytics, Stakeholder Management
+  background: A visionary Head of Digital Marketing and Content Strategy with over eight years of experience designing global, high-impact digital experiences and growth frameworks. Master of designing and implemen
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1716 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are seeking an enthusiastic Database Engineering Intern to support our rapidly expanding database administration and systems management team. This internship provides hands-on e
+  id: jd_1721 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing, Content Writing
+  description: We are seeking an enthusiastic Digital Marketing Intern to support our creative content team and social media managers. This internship provides hands-on experience in content draf
 
-  id: jd_1717 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are looking for a proactive Junior Database Engineer to manage daily database operations and performance within our modern technical infrastructure. In this role, you will assis
+  id: jd_1722 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Social Media Marketing, Content Marketing
+  description: We are looking for a proactive Junior Digital Marketing Specialist to manage our daily social media operations and improve our organic search visibility. In this role, you will ass
 
-  id: jd_1718 | title: Database and Performance Specialist | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Our organization is seeking an experienced Database and Performance Specialist to design and execute robust, high-performance database architectures. You will manage complex data m
+  id: jd_1723 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
+  required_skills: SEO, Content Strategy, Social Media Management
+  description: Our organization is seeking an experienced Digital Marketing Manager to lead our content strategy and multi-channel growth efforts. You will manage complex marketing funnels, lead 
 
-  id: jd_1719 | title: Senior Database Systems Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are searching for a highly strategic Senior Database Systems Engineer to lead enterprise-wide data persistence campaigns, comprehensive database reliability initiatives, and sca
+  id: jd_1724 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
+  required_skills: SEO, Content Strategy, Data Analytics
+  description: We are searching for a highly strategic Senior Digital Marketing Strategist to lead enterprise-wide content marketing campaigns, comprehensive digital reliability initiatives, and 
 
-  id: jd_1720 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are looking for a visionary Principal Database Architect to lead our global data persistence, architecture, and governance strategies. This leadership role involves defining the
+  id: jd_1725 | title: Head of Digital Marketing and Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Digital Strategy, Content Leadership, SEO
+  description: We are looking for a visionary Head of Digital Marketing and Strategy to lead our global content marketing, growth architecture, and brand governance strategies. This leadership ro
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8576  resume_1716 × jd_1716
-  pair_8577  resume_1716 × jd_1717
-  pair_8578  resume_1716 × jd_1718
-  pair_8579  resume_1716 × jd_1719
-  pair_8580  resume_1716 × jd_1720
-  pair_8581  resume_1717 × jd_1716
-  pair_8582  resume_1717 × jd_1717
-  pair_8583  resume_1717 × jd_1718
-  pair_8584  resume_1717 × jd_1719
-  pair_8585  resume_1717 × jd_1720
-  pair_8586  resume_1718 × jd_1716
-  pair_8587  resume_1718 × jd_1717
-  pair_8588  resume_1718 × jd_1718
-  pair_8589  resume_1718 × jd_1719
-  pair_8590  resume_1718 × jd_1720
-  pair_8591  resume_1719 × jd_1716
-  pair_8592  resume_1719 × jd_1717
-  pair_8593  resume_1719 × jd_1718
-  pair_8594  resume_1719 × jd_1719
-  pair_8595  resume_1719 × jd_1720
-  pair_8596  resume_1720 × jd_1716
-  pair_8597  resume_1720 × jd_1717
-  pair_8598  resume_1720 × jd_1718
-  pair_8599  resume_1720 × jd_1719
-  pair_8600  resume_1720 × jd_1720
+  pair_8601  resume_1721 × jd_1721
+  pair_8602  resume_1721 × jd_1722
+  pair_8603  resume_1721 × jd_1723
+  pair_8604  resume_1721 × jd_1724
+  pair_8605  resume_1721 × jd_1725
+  pair_8606  resume_1722 × jd_1721
+  pair_8607  resume_1722 × jd_1722
+  pair_8608  resume_1722 × jd_1723
+  pair_8609  resume_1722 × jd_1724
+  pair_8610  resume_1722 × jd_1725
+  pair_8611  resume_1723 × jd_1721
+  pair_8612  resume_1723 × jd_1722
+  pair_8613  resume_1723 × jd_1723
+  pair_8614  resume_1723 × jd_1724
+  pair_8615  resume_1723 × jd_1725
+  pair_8616  resume_1724 × jd_1721
+  pair_8617  resume_1724 × jd_1722
+  pair_8618  resume_1724 × jd_1723
+  pair_8619  resume_1724 × jd_1724
+  pair_8620  resume_1724 × jd_1725
+  pair_8621  resume_1725 × jd_1721
+  pair_8622  resume_1725 × jd_1722
+  pair_8623  resume_1725 × jd_1723
+  pair_8624  resume_1725 × jd_1724
+  pair_8625  resume_1725 × jd_1725
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
