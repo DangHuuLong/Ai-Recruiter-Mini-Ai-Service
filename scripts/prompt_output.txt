@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1931 | level: intern | exp: 0.2 yrs
-  skills: Clinical Operations, Emr, Patient Coordination, Healthcare Administration, Data Entry
-  background: Health administration student eager to learn the fundamentals of clinical operations and medical coordination. My academic background focuses on healthcare delivery systems, HIPAA compliance, and the 
+  id: resume_1936 | level: intern | exp: 0.3 yrs
+  skills: Aws, Docker, Kubernetes, Python, Linux
+  background: Computer science student passionate about cloud automation and infrastructure as code. I have developed a foundational understanding of AWS services, containerization with Docker, and basic orchestrat
 
-  id: resume_1932 | level: junior | exp: 1.8 yrs
-  skills: Clinical Operations, Emr, Patient Scheduling, Medical Billing, Hipaa Compliance
-  background: Organized clinical coordinator with nearly two years of experience in medical office settings. I am skilled in facilitating daily patient schedules, managing EMR record updates, and ensuring clinical 
+  id: resume_1937 | level: junior | exp: 1.5 yrs
+  skills: Aws, Docker, Kubernetes, Terraform, Ci/Cd
+  background: Motivated DevOps professional with nearly two years of hands-on experience in managing cloud infrastructure and CI/CD pipelines. My background includes configuring AWS services, creating Docker images
 
-  id: resume_1933 | level: middle | exp: 4.5 yrs
-  skills: Clinical Operations, Emr Management, Healthcare Compliance, Patient Throughput, Staff Coordination
-  background: Dynamic healthcare administrator with four years of experience leading clinical operations and enhancing EMR utilization. I specialize in medical coordination, staff training, and process improvement 
+  id: resume_1938 | level: middle | exp: 4.2 yrs
+  skills: Aws, Docker, Kubernetes, Terraform, Infrastructure Automation
+  background: Versatile DevOps engineer with four years of professional experience driving cloud infrastructure projects and optimizing containerized environments. I specialize in designing scalable AWS architectur
 
-  id: resume_1934 | level: senior | exp: 6.8 yrs
-  skills: Clinical Operations Strategy, Emr Systems, Healthcare Compliance, Resource Management, Operational Auditing
-  background: Experienced healthcare operations manager with over six years of expertise in clinical systems and medical administration. I have a strong track record of designing efficient clinical workflows, archi
+  id: resume_1939 | level: senior | exp: 6.5 yrs
+  skills: Aws, Kubernetes, Terraform, Sre Practices, Cloud Strategy
+  background: Senior DevOps strategist with over six years of expertise in architecting high-availability cloud ecosystems and managing enterprise-grade infrastructure. I have deep knowledge of AWS cloud services, 
 
-  id: resume_1935 | level: senior | exp: 9.2 yrs
-  skills: Healthcare Architecture, Clinical Operations, Emr Governance, Strategic Planning, Risk Management
-  background: Principal clinical administrator with over eight years of experience defining clinical strategy and overseeing enterprise-wide medical operations. My expertise lies in building complex healthcare mana
+  id: resume_1940 | level: senior | exp: 9.5 yrs
+  skills: Aws, Kubernetes, Terraform, Sre Governance, System Architecture
+  background: Principal DevOps architect with over nine years of experience defining infrastructure strategy and leading large-scale cloud transformations. I possess deep mastery in architecting secure, resilient A
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1931 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
-  required_skills: Clinical Operations, Emr, Patient Coordination, Documentation
-  description: We are seeking a motivated Healthcare Administration Intern to support our clinical operations team. This role provides hands-on experience in medical office coordination, EMR data
+  id: jd_1936 | title: DevOps Intern | level: intern | min_exp: 0 yrs
+  required_skills: Aws, Docker, Linux, Automation
+  description: We are looking for a motivated DevOps Intern to support our infrastructure and cloud operations team. You will gain hands-on experience with AWS, Docker, and basic automation tasks
 
-  id: jd_1932 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Clinical Operations, Emr, Patient Scheduling, Hipaa Compliance
-  description: Our clinical team is looking for a detail-oriented Junior Clinical Coordinator to handle daily patient management and administrative support. You will be instrumental in ensuring t
+  id: jd_1937 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Aws, Docker, Kubernetes, Terraform
+  description: Our team is seeking a Junior DevOps Engineer to focus on cloud infrastructure management, CI/CD automation, and container orchestration. You will be responsible for deploying infra
 
-  id: jd_1933 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
-  required_skills: Clinical Operations, Emr Management, Healthcare Compliance, Staff Coordination
-  description: We are searching for a skilled Clinical Operations Manager to lead operational efficiency and EMR integration within our busy clinical departments. You will bridge the gap between 
+  id: jd_1938 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Aws, Docker, Kubernetes, Terraform
+  description: We are looking for a skilled DevOps Engineer to lead our infrastructure automation efforts and drive the evolution of our cloud ecosystem. You will be responsible for designing sca
 
-  id: jd_1934 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Clinical Operations Strategy, Emr Systems, Healthcare Compliance, Resource Management
-  description: We are looking for a visionary Senior Healthcare Operations Manager to guide our enterprise clinical initiatives. You will take ownership of our operational strategy, ensuring that
+  id: jd_1939 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Aws, Kubernetes, Terraform, Infrastructure Automation
+  description: We are seeking a Senior DevOps Engineer to guide our enterprise cloud strategy and infrastructure architecture. You will be responsible for defining roadmaps, mentoring the team, a
 
-  id: jd_1935 | title: Principal Clinical Administrator | level: senior | min_exp: 7 yrs
-  required_skills: Healthcare Architecture, Clinical Operations, Emr Governance, Strategic Planning
-  description: We are seeking a Principal Clinical Administrator to shape our future clinical strategy at an enterprise level. This is a leadership position for someone experienced in architectin
+  id: jd_1940 | title: Principal DevOps Architect | level: senior | min_exp: 7 yrs
+  required_skills: Aws, Kubernetes, Terraform, System Architecture
+  description: We are looking for a Principal DevOps Architect to define our enterprise-wide infrastructure strategy and drive complex cloud transformations. You will be responsible for building 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9651  resume_1931 × jd_1931
-  pair_9652  resume_1931 × jd_1932
-  pair_9653  resume_1931 × jd_1933
-  pair_9654  resume_1931 × jd_1934
-  pair_9655  resume_1931 × jd_1935
-  pair_9656  resume_1932 × jd_1931
-  pair_9657  resume_1932 × jd_1932
-  pair_9658  resume_1932 × jd_1933
-  pair_9659  resume_1932 × jd_1934
-  pair_9660  resume_1932 × jd_1935
-  pair_9661  resume_1933 × jd_1931
-  pair_9662  resume_1933 × jd_1932
-  pair_9663  resume_1933 × jd_1933
-  pair_9664  resume_1933 × jd_1934
-  pair_9665  resume_1933 × jd_1935
-  pair_9666  resume_1934 × jd_1931
-  pair_9667  resume_1934 × jd_1932
-  pair_9668  resume_1934 × jd_1933
-  pair_9669  resume_1934 × jd_1934
-  pair_9670  resume_1934 × jd_1935
-  pair_9671  resume_1935 × jd_1931
-  pair_9672  resume_1935 × jd_1932
-  pair_9673  resume_1935 × jd_1933
-  pair_9674  resume_1935 × jd_1934
-  pair_9675  resume_1935 × jd_1935
+  pair_9676  resume_1936 × jd_1936
+  pair_9677  resume_1936 × jd_1937
+  pair_9678  resume_1936 × jd_1938
+  pair_9679  resume_1936 × jd_1939
+  pair_9680  resume_1936 × jd_1940
+  pair_9681  resume_1937 × jd_1936
+  pair_9682  resume_1937 × jd_1937
+  pair_9683  resume_1937 × jd_1938
+  pair_9684  resume_1937 × jd_1939
+  pair_9685  resume_1937 × jd_1940
+  pair_9686  resume_1938 × jd_1936
+  pair_9687  resume_1938 × jd_1937
+  pair_9688  resume_1938 × jd_1938
+  pair_9689  resume_1938 × jd_1939
+  pair_9690  resume_1938 × jd_1940
+  pair_9691  resume_1939 × jd_1936
+  pair_9692  resume_1939 × jd_1937
+  pair_9693  resume_1939 × jd_1938
+  pair_9694  resume_1939 × jd_1939
+  pair_9695  resume_1939 × jd_1940
+  pair_9696  resume_1940 × jd_1936
+  pair_9697  resume_1940 × jd_1937
+  pair_9698  resume_1940 × jd_1938
+  pair_9699  resume_1940 × jd_1939
+  pair_9700  resume_1940 × jd_1940
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
