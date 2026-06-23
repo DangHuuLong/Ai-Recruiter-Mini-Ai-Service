@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1981 | level: intern | exp: 0.3 yrs
-  skills: React Native, Javascript, Mobile Ui Design, Api Integration
-  background: Computer science student with a strong passion for mobile application development and cross-platform frameworks. During my academic projects, I have developed a foundational understanding of mobile UI
+  id: resume_1986 | level: intern | exp: 0.3 yrs
+  skills: Python, React, Flask, Api Design
+  background: Computer science student with a strong passion for full-stack web development. During my academic projects, I have developed a foundational understanding of Python-based backend development using Flas
 
-  id: resume_1982 | level: junior | exp: 1.8 yrs
-  skills: React Native, Flutter, Mobile Performance Optimization, Rest Api Integration
-  background: Junior mobile developer with nearly two years of professional experience building and maintaining cross-platform applications. My background includes developing features with React Native and Flutter,
+  id: resume_1987 | level: junior | exp: 1.8 yrs
+  skills: Python, Django, React, Rest Api Integration
+  background: Junior full-stack developer with nearly two years of professional experience building and maintaining web applications. My background includes developing features with Python, Django, and React, integ
 
-  id: resume_1983 | level: middle | exp: 4.2 yrs
-  skills: Swift, Kotlin, React Native, Mobile Architecture
-  background: Dynamic mobile engineer with four years of experience leading cross-platform development initiatives and native mobile enhancements. I specialize in bridging the gap between design specifications and 
+  id: resume_1988 | level: middle | exp: 4.2 yrs
+  skills: Python, Fastapi, React, Web Architecture
+  background: Dynamic full-stack engineer with four years of experience leading web development initiatives and performance enhancements. I specialize in bridging the gap between design specifications and technical
 
-  id: resume_1984 | level: senior | exp: 6.5 yrs
-  skills: React Native, Swift, Kotlin, Mobile Architecture
-  background: Experienced mobile architect and lead developer with over six years of expertise in large-scale mobile development and enterprise-wide application integration. I have a proven track record of architec
+  id: resume_1989 | level: senior | exp: 6.5 yrs
+  skills: Python, React, Django, Web Architecture
+  background: Experienced full-stack architect and lead developer with over six years of expertise in large-scale web development and enterprise-wide application integration. I have a proven track record of archite
 
-  id: resume_1985 | level: senior | exp: 9.5 yrs
-  skills: Mobile Architecture, Swift, Kotlin, Flutter
-  background: Principal mobile strategist with over nine years of experience defining comprehensive mobile visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex mobile
+  id: resume_1990 | level: senior | exp: 9.5 yrs
+  skills: Web Architecture, Python, Django, React
+  background: Principal web strategist with over nine years of experience defining comprehensive web visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex web architec
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1981 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React Native, Javascript, Mobile Ui Design, Api Integration
-  description: We are seeking a motivated Mobile Development Intern to support our cross-platform and mobile engineering team. This role provides hands-on experience in mobile UI development, com
+  id: jd_1986 | title: Web Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React, Flask, Api Design
+  description: We are seeking a motivated Web Development Intern to support our full-stack web engineering team. This role provides hands-on experience in frontend UI development, component testi
 
-  id: jd_1982 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
-  required_skills: React Native, Flutter, Mobile Performance Optimization, Rest Api Integration
-  description: Our team is looking for a detail-oriented Junior Mobile Developer to handle cross-platform feature development and application maintenance. You will be instrumental in ensuring tha
+  id: jd_1987 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, Django, React, Rest Api Integration
+  description: Our team is looking for a detail-oriented Junior Full-Stack Developer to handle web feature development and application maintenance. You will be instrumental in ensuring that Pytho
 
-  id: jd_1983 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Swift, Kotlin, React Native, Mobile Architecture
-  description: We are searching for a skilled Mobile Engineer to lead cross-platform and native feature development. You will bridge the gap between design specifications and technical execution,
+  id: jd_1988 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, Fastapi, React, Web Architecture
+  description: We are searching for a skilled Full-Stack Engineer to lead development and feature execution. You will bridge the gap between design specifications and technical execution, ensurin
 
-  id: jd_1984 | title: Senior Mobile Developer | level: senior | min_exp: 5 yrs
-  required_skills: React Native, Swift, Kotlin, Mobile Architecture
-  description: We are looking for a visionary Senior Mobile Developer to guide our enterprise mobile initiatives. You will take ownership of our mobile architecture, ensuring that cross-platform 
+  id: jd_1989 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, Django, Web Architecture
+  description: We are looking for a visionary Senior Full-Stack Developer to guide our enterprise web initiatives. You will take ownership of our web architecture, ensuring that backend and front
 
-  id: jd_1985 | title: Principal Mobile Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Mobile Architecture, Swift, Kotlin, Flutter
-  description: We are seeking a Principal Mobile Strategist to shape our future mobile engineering strategy at an enterprise level. This is a leadership position for someone experienced in archit
+  id: jd_1990 | title: Principal Web Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Web Architecture, Python, Django, React
+  description: We are seeking a Principal Web Strategist to shape our future web engineering strategy at an enterprise level. This is a leadership position for someone experienced in architecting
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9901  resume_1981 × jd_1981
-  pair_9902  resume_1981 × jd_1982
-  pair_9903  resume_1981 × jd_1983
-  pair_9904  resume_1981 × jd_1984
-  pair_9905  resume_1981 × jd_1985
-  pair_9906  resume_1982 × jd_1981
-  pair_9907  resume_1982 × jd_1982
-  pair_9908  resume_1982 × jd_1983
-  pair_9909  resume_1982 × jd_1984
-  pair_9910  resume_1982 × jd_1985
-  pair_9911  resume_1983 × jd_1981
-  pair_9912  resume_1983 × jd_1982
-  pair_9913  resume_1983 × jd_1983
-  pair_9914  resume_1983 × jd_1984
-  pair_9915  resume_1983 × jd_1985
-  pair_9916  resume_1984 × jd_1981
-  pair_9917  resume_1984 × jd_1982
-  pair_9918  resume_1984 × jd_1983
-  pair_9919  resume_1984 × jd_1984
-  pair_9920  resume_1984 × jd_1985
-  pair_9921  resume_1985 × jd_1981
-  pair_9922  resume_1985 × jd_1982
-  pair_9923  resume_1985 × jd_1983
-  pair_9924  resume_1985 × jd_1984
-  pair_9925  resume_1985 × jd_1985
+  pair_9926  resume_1986 × jd_1986
+  pair_9927  resume_1986 × jd_1987
+  pair_9928  resume_1986 × jd_1988
+  pair_9929  resume_1986 × jd_1989
+  pair_9930  resume_1986 × jd_1990
+  pair_9931  resume_1987 × jd_1986
+  pair_9932  resume_1987 × jd_1987
+  pair_9933  resume_1987 × jd_1988
+  pair_9934  resume_1987 × jd_1989
+  pair_9935  resume_1987 × jd_1990
+  pair_9936  resume_1988 × jd_1986
+  pair_9937  resume_1988 × jd_1987
+  pair_9938  resume_1988 × jd_1988
+  pair_9939  resume_1988 × jd_1989
+  pair_9940  resume_1988 × jd_1990
+  pair_9941  resume_1989 × jd_1986
+  pair_9942  resume_1989 × jd_1987
+  pair_9943  resume_1989 × jd_1988
+  pair_9944  resume_1989 × jd_1989
+  pair_9945  resume_1989 × jd_1990
+  pair_9946  resume_1990 × jd_1986
+  pair_9947  resume_1990 × jd_1987
+  pair_9948  resume_1990 × jd_1988
+  pair_9949  resume_1990 × jd_1989
+  pair_9950  resume_1990 × jd_1990
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
