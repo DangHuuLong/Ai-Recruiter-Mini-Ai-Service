@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2111 | level: intern | exp: 0.3 yrs
-  skills: Requirements Gathering, Process Mapping, Microsoft Visio, Agile Methodologies, Stakeholder Communication
-  background: I am a motivated Business Administration student in my final year with a strong focus on systems thinking and organizational efficiency. Seeking an internship to leverage my academic background in req
+  id: resume_2116 | level: intern | exp: 0.3 yrs
+  skills: Agile Methodologies, User Research, Wireframing, Backlog Prioritization, Competitive Analysis
+  background: I am a Computer Science student in my final year with a keen interest in product management and user-centered design. Throughout my academic career, I have focused on understanding the intersection of
 
-  id: resume_2112 | level: junior | exp: 1.8 yrs
-  skills: BPMN 2.0, Jira, Confluence, User Stories, Stakeholder Facilitation
-  background: A detail-oriented Junior Business Analyst with 1.8 years of experience in bridging the gap between technical teams and business stakeholders. I specialize in eliciting requirements, creating comprehen
+  id: resume_2117 | level: junior | exp: 1.5 yrs
+  skills: Product Backlog Management, User Stories, Jira, Confluence, Data Analytics
+  background: A results-driven Junior Product Manager with 1.5 years of experience in supporting the development of SaaS applications. I have successfully managed small-scale product features, from initial discover
 
-  id: resume_2113 | level: middle | exp: 4.5 yrs
-  skills: Scrum, Gap Analysis, BPMN, Project Scope Management, Change Management
-  background: A strategic Business Analyst and Project Coordinator with 4.5 years of experience in managing multi-phase digital transformation projects. I have a proven track record of facilitating stakeholder cons
+  id: resume_2118 | level: middle | exp: 4.0 yrs
+  skills: Product Roadmap Development, A/B Testing, Stakeholder Management, Agile Leadership, User Journey Mapping
+  background: A versatile Product Manager with 4 years of experience delivering high-impact features for consumer mobile applications. I have a strong track record of defining long-term product roadmaps, conducting
 
-  id: resume_2114 | level: senior | exp: 6.5 yrs
-  skills: Portfolio Management, Strategic Alignment, Requirements Engineering, Conflict Resolution, Vendor Management
-  background: An accomplished Senior Business Analyst with 6.5 years of professional experience in large-scale organizational process design and project portfolio management. I specialize in architecting complex bu
+  id: resume_2119 | level: senior | exp: 6.0 yrs
+  skills: Product Strategy, Portfolio Management, Digital Transformation, Mentorship, Governance Frameworks
+  background: An accomplished Senior Product Manager with 6 years of experience driving complex, enterprise-grade software products. I specialize in developing product strategy, managing global stakeholder relation
 
-  id: resume_2115 | level: senior | exp: 10.0 yrs
-  skills: Enterprise Strategy, Business Capability Modeling, Governance Frameworks, Digital Transformation, Change Leadership
-  background: A Principal Business Architect with 10 years of experience in defining corporate operational strategy and directing enterprise-wide project management offices. I have a long-standing history of shapin
+  id: resume_2120 | level: senior | exp: 10.5 yrs
+  skills: Product Strategy, Enterprise Architecture, Organizational Leadership, Market Expansion, Agile Scaling
+  background: A Principal Product Strategist with over 10 years of experience in defining corporate technology vision and leading high-performing Product Management Organizations. I have an extensive background in 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2111 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, Process Mapping, Office Software
-  description: We are seeking a motivated intern to assist our business analysis team with requirements documentation, process mapping, and stakeholder support. Great learning opportunity.
+  id: jd_2116 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Market Research, Feature Documentation, Communication
+  description: We are seeking a proactive intern to support our product team with market research, feature documentation, and backlog maintenance. Ideal for students interested in product lifecyc
 
-  id: jd_2112 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Elicitation, User Stories, BPMN
-  description: Join our team as a Junior Business Analyst. You will assist in eliciting requirements, documenting user stories, and modeling processes using BPMN for agile teams.
+  id: jd_2117 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Backlog Management, User Stories, Agile
+  description: Join our team as a Junior Product Manager. You will manage specific features for our web platform, working closely with engineers and designers in an Agile environment.
 
-  id: jd_2113 | title: Middle Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Scrum, Gap Analysis, Business Analysis
-  description: We are looking for a Business Analyst to manage requirements and lead process improvement initiatives. You will work within a Scrum framework to deliver business-critical features.
+  id: jd_2118 | title: Middle Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Roadmap, Data Analysis, Stakeholder Management
+  description: We are looking for a Product Manager to own the roadmap for our consumer application. You will lead cross-functional teams to deliver value-driven product updates.
 
-  id: jd_2114 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Portfolio Management, Strategic Alignment, Requirements Engineering
-  description: Our organization needs a Senior Business Analyst to manage complex requirements, portfolio alignment, and executive stakeholder relations. Lead high-impact project lifecycles.
+  id: jd_2119 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Strategy, Portfolio Management, Leadership
+  description: Our organization needs a Senior Product Manager to oversee our enterprise product portfolio. You will lead strategic planning, manage complex dependencies, and guide product teams.
 
-  id: jd_2115 | title: Principal Business Architect | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Strategy, Business Capability Modeling, Governance Frameworks
-  description: We are seeking a Principal Business Architect to define our operational strategy. You will oversee enterprise governance, business capability design, and digital transformation ini
+  id: jd_2120 | title: Principal Product Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Product Strategy, Enterprise Architecture, Organizational Leadership
+  description: We are seeking a Principal Product Strategist to define our corporate technology vision. You will oversee enterprise product architecture, ecosystem design, and growth strategy.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~9 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~6 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~9 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10551  resume_2111 × jd_2111
-  pair_10552  resume_2111 × jd_2112
-  pair_10553  resume_2111 × jd_2113
-  pair_10554  resume_2111 × jd_2114
-  pair_10555  resume_2111 × jd_2115
-  pair_10556  resume_2112 × jd_2111
-  pair_10557  resume_2112 × jd_2112
-  pair_10558  resume_2112 × jd_2113
-  pair_10559  resume_2112 × jd_2114
-  pair_10560  resume_2112 × jd_2115
-  pair_10561  resume_2113 × jd_2111
-  pair_10562  resume_2113 × jd_2112
-  pair_10563  resume_2113 × jd_2113
-  pair_10564  resume_2113 × jd_2114
-  pair_10565  resume_2113 × jd_2115
-  pair_10566  resume_2114 × jd_2111
-  pair_10567  resume_2114 × jd_2112
-  pair_10568  resume_2114 × jd_2113
-  pair_10569  resume_2114 × jd_2114
-  pair_10570  resume_2114 × jd_2115
-  pair_10571  resume_2115 × jd_2111
-  pair_10572  resume_2115 × jd_2112
-  pair_10573  resume_2115 × jd_2113
-  pair_10574  resume_2115 × jd_2114
-  pair_10575  resume_2115 × jd_2115
+  pair_10576  resume_2116 × jd_2116
+  pair_10577  resume_2116 × jd_2117
+  pair_10578  resume_2116 × jd_2118
+  pair_10579  resume_2116 × jd_2119
+  pair_10580  resume_2116 × jd_2120
+  pair_10581  resume_2117 × jd_2116
+  pair_10582  resume_2117 × jd_2117
+  pair_10583  resume_2117 × jd_2118
+  pair_10584  resume_2117 × jd_2119
+  pair_10585  resume_2117 × jd_2120
+  pair_10586  resume_2118 × jd_2116
+  pair_10587  resume_2118 × jd_2117
+  pair_10588  resume_2118 × jd_2118
+  pair_10589  resume_2118 × jd_2119
+  pair_10590  resume_2118 × jd_2120
+  pair_10591  resume_2119 × jd_2116
+  pair_10592  resume_2119 × jd_2117
+  pair_10593  resume_2119 × jd_2118
+  pair_10594  resume_2119 × jd_2119
+  pair_10595  resume_2119 × jd_2120
+  pair_10596  resume_2120 × jd_2116
+  pair_10597  resume_2120 × jd_2117
+  pair_10598  resume_2120 × jd_2118
+  pair_10599  resume_2120 × jd_2119
+  pair_10600  resume_2120 × jd_2120
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
