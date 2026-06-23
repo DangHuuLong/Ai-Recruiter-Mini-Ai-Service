@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2141 | level: intern | exp: 0.2 yrs
-  skills: Financial Accounting, Corporate Finance, Data Analysis, Spreadsheets
-  background: Highly motivated finance student seeking an internship within a fast-paced fintech environment. Completed coursework in financial accounting and basic corporate finance. Enthusiastic about learning fi
+  id: resume_2146 | level: intern | exp: 0.3 yrs
+  skills: Recruitment Support, Data Entry, Scheduling, Spreadsheets, Employee Onboarding
+  background: Highly motivated Human Resources student seeking an entry-level internship to gain hands-on experience in talent acquisition and employee onboarding. Completed rigorous coursework in organizational be
 
-  id: resume_2142 | level: junior | exp: 2.0 yrs
-  skills: Financial Reporting, Journal Entries, Account Reconciliation, Regulatory Compliance
-  background: Results-oriented finance professional with two years of experience in accounting and financial reporting. Proven ability to assist with month-end closing processes, prepare journal entries, and reconc
+  id: resume_2147 | level: junior | exp: 2.0 yrs
+  skills: Candidate Sourcing, HRIS Management, Onboarding, Regulatory Compliance, Administrative Support
+  background: Results-oriented HR professional with two years of experience in recruitment coordination and basic employee lifecycle management. Proven ability to assist with high-volume recruitment efforts, source
 
-  id: resume_2143 | level: middle | exp: 4.5 yrs
-  skills: Financial Modeling, Variance Analysis, Forecasting, Budgeting, Compliance
-  background: Dedicated finance professional with four years of experience specializing in financial modeling and management reporting within the fintech industry. Expert in constructing detailed financial models f
+  id: resume_2148 | level: middle | exp: 4.5 yrs
+  skills: Full-Cycle Recruiting, HRIS Administration, Talent Mapping, Performance Management, Employee Engagement
+  background: Versatile HR specialist with four years of comprehensive experience in full-cycle talent acquisition, HRIS administration, and strategic onboarding programs. Expert at developing recruitment pipelines
 
-  id: resume_2144 | level: senior | exp: 6.5 yrs
-  skills: Strategic Planning, Financial Operations, Regulatory Compliance, Team Leadership, Risk Assessment
-  background: Senior finance professional with six years of experience in strategic financial planning and regulatory compliance within fintech organizations. Expert in managing large-scale financial reporting, com
+  id: resume_2149 | level: senior | exp: 6.5 yrs
+  skills: Strategic Recruitment, Workforce Planning, HRIS Integration, Talent Analytics, Team Mentorship
+  background: Accomplished senior HR professional with six years of deep expertise in strategic talent acquisition and integrated workforce management. Specialist in architecting robust onboarding frameworks and de
 
-  id: resume_2145 | level: senior | exp: 9.0 yrs
-  skills: Enterprise Financial Management, Strategic Decision Making, Financial Modeling, Risk Management, Audit Oversight
-  background: Principal finance leader with over eight years of experience directing high-impact financial strategies for fintech enterprises. Specialist in complex financial modeling, multi-entity financial report
+  id: resume_2150 | level: senior | exp: 9.5 yrs
+  skills: Executive HR Leadership, Workforce Analytics, Organizational Development, Labor Relations, HR Strategy
+  background: Principal HR leader with over nine years of experience directing high-impact talent strategies for enterprise environments. Expert in designing global recruitment roadmaps, optimizing HRIS infrastruct
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2141 | title: Finance Intern | level: intern | min_exp: 0 yrs
-  required_skills: Financial Reporting, Data Entry, Financial Analysis, Spreadsheets
-  description: We are seeking a motivated Finance Intern to support our finance department. This internship is designed for students eager to gain hands-on experience in a fast-paced fintech envi
+  id: jd_2146 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruitment Support, Data Entry, Scheduling, Spreadsheets
+  description: We are seeking a proactive Human Resources Intern to support our talent acquisition and onboarding efforts. This role is ideal for a student looking to build a foundation in HR adm
 
-  id: jd_2142 | title: Junior Financial Accountant | level: junior | min_exp: 1 yrs
-  required_skills: Financial Reporting, Account Reconciliation, Journal Entries, Accounting Principles
-  description: We are looking for a Junior Financial Accountant to join our expanding team. The ideal candidate will have 1-2 years of experience and a strong foundation in accounting principles.
+  id: jd_2147 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Candidate Sourcing, HRIS Management, Onboarding, Regulatory Compliance
+  description: We are looking for a detail-oriented Junior HR Coordinator to support our expanding team. The ideal candidate will manage core HR tasks including recruitment coordination, record m
 
-  id: jd_2143 | title: Financial Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Financial Modeling, Variance Analysis, Forecasting, Budgeting
-  description: We are seeking an experienced Financial Analyst to join our fintech finance team. This role focuses on financial modeling, budgeting, and detailed variance analysis. You will be re
+  id: jd_2148 | title: HR Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Full-Cycle Recruiting, HRIS Administration, Talent Mapping, Performance Management
+  description: We are seeking an experienced HR Specialist to join our human resources team. This role focuses on full-cycle talent acquisition and the optimization of our onboarding and HRIS pro
 
-  id: jd_2144 | title: Senior Financial Controller | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Planning, Financial Operations, Regulatory Compliance, Team Leadership
-  description: We are looking for a Senior Financial Controller to lead our finance operations. This senior-level role involves strategic financial planning, complex reporting, and ensuring rigor
+  id: jd_2149 | title: Senior HR Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Recruitment, Workforce Planning, HRIS Integration, Talent Analytics
+  description: We are looking for a strategic Senior HR Manager to lead our talent operations. This senior-level role demands expertise in building scalable recruitment frameworks, integrating ad
 
-  id: jd_2145 | title: Head of Financial Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Financial Management, Strategic Decision Making, Financial Modeling, Risk Management
-  description: We are seeking a visionary Head of Financial Strategy to drive our financial roadmap. This principal-level position demands expertise in high-level financial modeling, complex repo
+  id: jd_2150 | title: Head of HR Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Executive HR Leadership, Workforce Analytics, Organizational Development, HR Strategy
+  description: We are seeking a visionary Head of HR Strategy to define our organization’s approach to talent and human resources. This principal-level position demands deep expertise in global r
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~1 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~9 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~3 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10701  resume_2141 × jd_2141
-  pair_10702  resume_2141 × jd_2142
-  pair_10703  resume_2141 × jd_2143
-  pair_10704  resume_2141 × jd_2144
-  pair_10705  resume_2141 × jd_2145
-  pair_10706  resume_2142 × jd_2141
-  pair_10707  resume_2142 × jd_2142
-  pair_10708  resume_2142 × jd_2143
-  pair_10709  resume_2142 × jd_2144
-  pair_10710  resume_2142 × jd_2145
-  pair_10711  resume_2143 × jd_2141
-  pair_10712  resume_2143 × jd_2142
-  pair_10713  resume_2143 × jd_2143
-  pair_10714  resume_2143 × jd_2144
-  pair_10715  resume_2143 × jd_2145
-  pair_10716  resume_2144 × jd_2141
-  pair_10717  resume_2144 × jd_2142
-  pair_10718  resume_2144 × jd_2143
-  pair_10719  resume_2144 × jd_2144
-  pair_10720  resume_2144 × jd_2145
-  pair_10721  resume_2145 × jd_2141
-  pair_10722  resume_2145 × jd_2142
-  pair_10723  resume_2145 × jd_2143
-  pair_10724  resume_2145 × jd_2144
-  pair_10725  resume_2145 × jd_2145
+  pair_10726  resume_2146 × jd_2146
+  pair_10727  resume_2146 × jd_2147
+  pair_10728  resume_2146 × jd_2148
+  pair_10729  resume_2146 × jd_2149
+  pair_10730  resume_2146 × jd_2150
+  pair_10731  resume_2147 × jd_2146
+  pair_10732  resume_2147 × jd_2147
+  pair_10733  resume_2147 × jd_2148
+  pair_10734  resume_2147 × jd_2149
+  pair_10735  resume_2147 × jd_2150
+  pair_10736  resume_2148 × jd_2146
+  pair_10737  resume_2148 × jd_2147
+  pair_10738  resume_2148 × jd_2148
+  pair_10739  resume_2148 × jd_2149
+  pair_10740  resume_2148 × jd_2150
+  pair_10741  resume_2149 × jd_2146
+  pair_10742  resume_2149 × jd_2147
+  pair_10743  resume_2149 × jd_2148
+  pair_10744  resume_2149 × jd_2149
+  pair_10745  resume_2149 × jd_2150
+  pair_10746  resume_2150 × jd_2146
+  pair_10747  resume_2150 × jd_2147
+  pair_10748  resume_2150 × jd_2148
+  pair_10749  resume_2150 × jd_2149
+  pair_10750  resume_2150 × jd_2150
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
