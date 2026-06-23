@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1946 | level: intern | exp: 0.3 yrs
-  skills: Requirements Gathering, Process Mapping, Bpm, Stakeholder Communication
-  background: Business student with a keen interest in business analysis and project management methodologies. Throughout my academic career, I have developed a foundational understanding of requirements gathering,
+  id: resume_1951 | level: intern | exp: 0.2 yrs
+  skills: Inventory Control, Procurement Fundamentals, Logistics Operations, Erp Systems
+  background: Supply chain management student with a strong interest in logistics operations and procurement fundamentals. Throughout my academic career, I have developed a foundational understanding of inventory c
 
-  id: resume_1947 | level: junior | exp: 1.5 yrs
-  skills: Requirements Documentation, Process Modeling, Bpm, Stakeholder Management
-  background: Junior business analyst with two years of professional experience supporting project delivery and process improvement initiatives. My background includes facilitating requirement gathering sessions, d
+  id: resume_1952 | level: junior | exp: 1.8 yrs
+  skills: Purchase Order Processing, Inventory Monitoring, Logistics Coordination, Erp Systems
+  background: Junior logistics coordinator with nearly two years of professional experience supporting procurement and warehouse operations. My background includes facilitating purchase order processing, monitoring
 
-  id: resume_1948 | level: middle | exp: 4.2 yrs
-  skills: Requirements Analysis, Bpm, Process Re-engineering, Stakeholder Elicitation
-  background: Dynamic business analyst with four years of experience leading requirements analysis and managing project lifecycle tasks. I specialize in bridging the gap between business objectives and technical im
+  id: resume_1953 | level: middle | exp: 4.5 yrs
+  skills: Strategic Procurement, Inventory Optimization, Vendor Management, Erp Implementation
+  background: Dynamic supply chain specialist with four years of experience leading procurement initiatives and managing complex inventory logistics. I specialize in bridging the gap between supply chain strategy a
 
-  id: resume_1949 | level: senior | exp: 6.5 yrs
-  skills: Strategic Analysis, Bpm, Stakeholder Engagement, Project Strategy
-  background: Experienced business analyst and project lead with over six years of expertise in large-scale system integration and process optimization. I have a proven track record of architecting comprehensive bu
+  id: resume_1954 | level: senior | exp: 6.8 yrs
+  skills: Logistics Strategy, Procurement Optimization, Supply Network Risk, Erp Management
+  background: Experienced supply chain manager with over six years of expertise in large-scale logistics integration and procurement optimization. I have a proven track record of architecting comprehensive supply c
 
-  id: resume_1950 | level: senior | exp: 9.5 yrs
-  skills: Process Architecture, Bpm, Project Governance, Stakeholder Strategy
-  background: Principal business analyst with over nine years of experience defining global analysis strategy and overseeing enterprise-wide project management frameworks. My expertise lies in building complex proc
+  id: resume_1955 | level: senior | exp: 9.2 yrs
+  skills: Supply Chain Architecture, Strategic Sourcing, Vendor Governance, Erp Governance
+  background: Principal supply chain administrator with over nine years of experience defining global procurement strategy and overseeing enterprise-wide logistics management frameworks. My expertise lies in buildi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1946 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, Process Mapping, Bpm, Stakeholder Support
-  description: We are seeking a motivated Business Analysis Intern to support our project management team. This role provides hands-on experience in requirements gathering, process mapping, and s
+  id: jd_1951 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
+  required_skills: Inventory Control, Procurement Fundamentals, Logistics Operations, Erp Systems
+  description: We are seeking a motivated Supply Chain Intern to support our logistics and procurement team. This role provides hands-on experience in inventory control, demand forecasting, and E
 
-  id: jd_1947 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Documentation, Process Modeling, Bpm, Stakeholder Management
-  description: Our team is looking for a detail-oriented Junior Business Analyst to handle requirement documentation and project lifecycle support. You will be instrumental in ensuring that busin
+  id: jd_1952 | title: Junior Logistics Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Purchase Order Processing, Inventory Monitoring, Logistics Coordination, Erp Systems
+  description: Our team is looking for a detail-oriented Junior Logistics Coordinator to handle procurement support and inventory tracking. You will be instrumental in ensuring that purchase orde
 
-  id: jd_1948 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Analysis, Bpm, Process Re-engineering, Stakeholder Elicitation
-  description: We are searching for a skilled Business Analyst to lead requirement elicitation and manage project lifecycle tasks within our active departments. You will bridge the gap between bu
+  id: jd_1953 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Strategic Procurement, Inventory Optimization, Vendor Management, Erp Implementation
+  description: We are searching for a skilled Supply Chain Specialist to lead procurement initiatives and manage inventory logistics within our active departments. You will bridge the gap between
 
-  id: jd_1949 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Analysis, Bpm, Stakeholder Engagement, Project Strategy
-  description: We are looking for a visionary Senior Business Analyst to guide our enterprise project initiatives. You will take ownership of our requirements strategy, ensuring that project mana
+  id: jd_1954 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Logistics Strategy, Procurement Optimization, Supply Network Risk, Erp Management
+  description: We are looking for a visionary Senior Supply Chain Manager to guide our enterprise logistics initiatives. You will take ownership of our procurement strategy, ensuring that ERP man
 
-  id: jd_1950 | title: Principal Business Analyst | level: senior | min_exp: 7 yrs
-  required_skills: Process Architecture, Bpm, Project Governance, Stakeholder Strategy
-  description: We are seeking a Principal Business Analyst to shape our future analysis strategy at an enterprise level. This is a leadership position for someone experienced in architecting proc
+  id: jd_1955 | title: Principal Supply Chain Administrator | level: senior | min_exp: 7 yrs
+  required_skills: Supply Chain Architecture, Strategic Sourcing, Vendor Governance, Erp Governance
+  description: We are seeking a Principal Supply Chain Administrator to shape our future logistics strategy at an enterprise level. This is a leadership position for someone experienced in archit
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9726  resume_1946 × jd_1946
-  pair_9727  resume_1946 × jd_1947
-  pair_9728  resume_1946 × jd_1948
-  pair_9729  resume_1946 × jd_1949
-  pair_9730  resume_1946 × jd_1950
-  pair_9731  resume_1947 × jd_1946
-  pair_9732  resume_1947 × jd_1947
-  pair_9733  resume_1947 × jd_1948
-  pair_9734  resume_1947 × jd_1949
-  pair_9735  resume_1947 × jd_1950
-  pair_9736  resume_1948 × jd_1946
-  pair_9737  resume_1948 × jd_1947
-  pair_9738  resume_1948 × jd_1948
-  pair_9739  resume_1948 × jd_1949
-  pair_9740  resume_1948 × jd_1950
-  pair_9741  resume_1949 × jd_1946
-  pair_9742  resume_1949 × jd_1947
-  pair_9743  resume_1949 × jd_1948
-  pair_9744  resume_1949 × jd_1949
-  pair_9745  resume_1949 × jd_1950
-  pair_9746  resume_1950 × jd_1946
-  pair_9747  resume_1950 × jd_1947
-  pair_9748  resume_1950 × jd_1948
-  pair_9749  resume_1950 × jd_1949
-  pair_9750  resume_1950 × jd_1950
+  pair_9751  resume_1951 × jd_1951
+  pair_9752  resume_1951 × jd_1952
+  pair_9753  resume_1951 × jd_1953
+  pair_9754  resume_1951 × jd_1954
+  pair_9755  resume_1951 × jd_1955
+  pair_9756  resume_1952 × jd_1951
+  pair_9757  resume_1952 × jd_1952
+  pair_9758  resume_1952 × jd_1953
+  pair_9759  resume_1952 × jd_1954
+  pair_9760  resume_1952 × jd_1955
+  pair_9761  resume_1953 × jd_1951
+  pair_9762  resume_1953 × jd_1952
+  pair_9763  resume_1953 × jd_1953
+  pair_9764  resume_1953 × jd_1954
+  pair_9765  resume_1953 × jd_1955
+  pair_9766  resume_1954 × jd_1951
+  pair_9767  resume_1954 × jd_1952
+  pair_9768  resume_1954 × jd_1953
+  pair_9769  resume_1954 × jd_1954
+  pair_9770  resume_1954 × jd_1955
+  pair_9771  resume_1955 × jd_1951
+  pair_9772  resume_1955 × jd_1952
+  pair_9773  resume_1955 × jd_1953
+  pair_9774  resume_1955 × jd_1954
+  pair_9775  resume_1955 × jd_1955
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
