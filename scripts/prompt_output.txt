@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2061 | level: intern | exp: 0.2 yrs
-  skills: Python, Django, React, JavaScript
-  background: Enthusiastic computer science student currently in my final year with a passion for web development. Through coursework and personal projects, I have developed a strong foundation in Python and Django
+  id: resume_2066 | level: intern | exp: 0.3 yrs
+  skills: Retail Analytics, Inventory Management, Shopify, Excel
+  background: Business administration student in final year with a keen interest in e-commerce operations and digital marketplace dynamics. Through academic projects, I have gained foundational knowledge in invento
 
-  id: resume_2062 | level: junior | exp: 1.8 yrs
-  skills: Python, Flask, React, SQL, Redux
-  background: Junior Full-Stack Developer with 1.8 years of hands-on experience building and maintaining web applications. My professional experience involves developing RESTful APIs with Python and Flask, alongsid
+  id: resume_2067 | level: junior | exp: 1.5 yrs
+  skills: Catalog Management, Retail Operations, Promotional Planning, Data Analysis
+  background: E-commerce operations assistant with 1.5 years of experience in managing digital marketplace accounts and coordinating retail fulfillment. I have successfully maintained product catalogs, executed pro
 
-  id: resume_2063 | level: middle | exp: 4.5 yrs
-  skills: Python, FastAPI, React, PostgreSQL, CI/CD
-  background: Full-Stack Developer with over 4 years of experience delivering robust web solutions in high-traffic environments. My expertise lies in designing scalable back-end services with Python and FastAPI, an
+  id: resume_2068 | level: middle | exp: 4.2 yrs
+  skills: Category Management, Assortment Planning, Price Optimization, Retail Analytics
+  background: E-commerce Merchandising Manager with 4 years of experience driving category growth and operational efficiency on major digital marketplaces. My expertise lies in strategic assortment planning, price 
 
-  id: resume_2064 | level: senior | exp: 6.5 yrs
-  skills: Python, Django, React, TypeScript, System Design
-  background: Senior Full-Stack Engineer with over 6 years of experience architecting large-scale web applications. I have extensive experience in building high-performance systems using Python, Django, and React w
+  id: resume_2069 | level: senior | exp: 6.8 yrs
+  skills: Operations Management, Logistics, Demand Forecasting, Process Automation
+  background: Senior E-commerce Operations Manager with 6 years of experience building and optimizing multi-channel retail ecosystems. I have led high-performing teams in managing complex logistics, fulfillment ope
 
-  id: resume_2065 | level: senior | exp: 9.5 yrs
-  skills: Python, Django, React, AWS, Architecture
-  background: Lead Full-Stack Architect with over 9 years of professional experience driving digital transformation initiatives. I specialize in designing multi-tier application architectures, leading cross-functio
+  id: resume_2070 | level: senior | exp: 9.5 yrs
+  skills: E-commerce Strategy, Multi-Channel Retail, Supply Chain Governance, Strategic Leadership
+  background: Principal E-commerce Strategist with over 9 years of experience directing digital retail transformations for multinational organizations. I specialize in building sustainable marketplace strategies, m
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2061 | title: Full-Stack Web Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React
-  description: We are looking for a dedicated intern to support our web development team. You will assist with basic front-end component creation using React and contribute to simple Python API e
+  id: jd_2066 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Retail Operations, Inventory Management
+  description: We are seeking a motivated E-commerce operations intern to assist our retail team. You will support daily marketplace tasks, data entry, and inventory updates. This role is perfect
 
-  id: jd_2062 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, JavaScript
-  description: We are hiring a Junior Full-Stack Developer to work on our web applications. You will be expected to contribute to both Python-based backend services and React-driven frontend comp
+  id: jd_2067 | title: Junior E-commerce Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Catalog Management, Retail Operations, Data Analysis
+  description: We are hiring a Junior E-commerce Specialist to manage our online catalog and support promotional planning. You will be responsible for maintaining accurate product listings, monit
 
-  id: jd_2063 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, Django
-  description: We are seeking a mid-level Full-Stack Engineer to lead development tasks for our core web product. You will design scalable features using Python and React, ensuring a seamless use
+  id: jd_2068 | title: E-commerce Merchandising Manager | level: middle | min_exp: 3 yrs
+  required_skills: Category Management, Assortment Planning, Retail Analytics
+  description: We are looking for a Merchandising Manager to drive our product assortment and pricing strategies. You will manage high-volume categories, optimize conversion paths, and use retail
 
-  id: jd_2064 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django
-  description: We are looking for a Senior Full-Stack Developer to architect and deliver high-performance web applications. You will focus on complex features, system scalability, and maintaining
+  id: jd_2069 | title: Senior Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Operations Management, Logistics, Demand Forecasting
+  description: We are seeking a Senior Operations Manager to oversee our fulfillment network and optimize inventory workflows. You will manage complex logistics, mentor operations staff, and lead
 
-  id: jd_2065 | title: Lead Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, Architecture
-  description: We are hiring a Lead Full-Stack Architect to define the technical strategy for our web products. You will oversee large-scale development projects, mentor senior engineers, and ens
+  id: jd_2070 | title: Principal Retail Strategist | level: senior | min_exp: 7 yrs
+  required_skills: E-commerce Strategy, Strategic Leadership, Multi-Channel Retail
+  description: We are hiring a Principal Retail Strategist to define our global digital marketplace strategy. You will lead cross-functional transformation projects, oversee international supply 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~15 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~1 pairs
+  strong_match: ~13 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~2 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10301  resume_2061 × jd_2061
-  pair_10302  resume_2061 × jd_2062
-  pair_10303  resume_2061 × jd_2063
-  pair_10304  resume_2061 × jd_2064
-  pair_10305  resume_2061 × jd_2065
-  pair_10306  resume_2062 × jd_2061
-  pair_10307  resume_2062 × jd_2062
-  pair_10308  resume_2062 × jd_2063
-  pair_10309  resume_2062 × jd_2064
-  pair_10310  resume_2062 × jd_2065
-  pair_10311  resume_2063 × jd_2061
-  pair_10312  resume_2063 × jd_2062
-  pair_10313  resume_2063 × jd_2063
-  pair_10314  resume_2063 × jd_2064
-  pair_10315  resume_2063 × jd_2065
-  pair_10316  resume_2064 × jd_2061
-  pair_10317  resume_2064 × jd_2062
-  pair_10318  resume_2064 × jd_2063
-  pair_10319  resume_2064 × jd_2064
-  pair_10320  resume_2064 × jd_2065
-  pair_10321  resume_2065 × jd_2061
-  pair_10322  resume_2065 × jd_2062
-  pair_10323  resume_2065 × jd_2063
-  pair_10324  resume_2065 × jd_2064
-  pair_10325  resume_2065 × jd_2065
+  pair_10326  resume_2066 × jd_2066
+  pair_10327  resume_2066 × jd_2067
+  pair_10328  resume_2066 × jd_2068
+  pair_10329  resume_2066 × jd_2069
+  pair_10330  resume_2066 × jd_2070
+  pair_10331  resume_2067 × jd_2066
+  pair_10332  resume_2067 × jd_2067
+  pair_10333  resume_2067 × jd_2068
+  pair_10334  resume_2067 × jd_2069
+  pair_10335  resume_2067 × jd_2070
+  pair_10336  resume_2068 × jd_2066
+  pair_10337  resume_2068 × jd_2067
+  pair_10338  resume_2068 × jd_2068
+  pair_10339  resume_2068 × jd_2069
+  pair_10340  resume_2068 × jd_2070
+  pair_10341  resume_2069 × jd_2066
+  pair_10342  resume_2069 × jd_2067
+  pair_10343  resume_2069 × jd_2068
+  pair_10344  resume_2069 × jd_2069
+  pair_10345  resume_2069 × jd_2070
+  pair_10346  resume_2070 × jd_2066
+  pair_10347  resume_2070 × jd_2067
+  pair_10348  resume_2070 × jd_2068
+  pair_10349  resume_2070 × jd_2069
+  pair_10350  resume_2070 × jd_2070
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
