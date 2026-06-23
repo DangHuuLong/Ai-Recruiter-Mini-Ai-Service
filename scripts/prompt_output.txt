@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1906 | level: intern | exp: 0.3 yrs
-  skills: Talent Acquisition, HRIS, Onboarding, Data Entry, Communication
-  background: Motivated and highly organized Human Resources student with a strong passion for talent acquisition and organizational culture. Throughout my academic career, I have focused on understanding the funda
+  id: resume_1911 | level: intern | exp: 0.2 yrs
+  skills: PostgreSQL, Sql, Database Design, Normalization, Data Modeling
+  background: Enthusiastic Computer Science student with a strong focus on database technologies and data management. During my academic career, I have developed a solid foundation in relational database design, SQ
 
-  id: resume_1907 | level: junior | exp: 1.8 yrs
-  skills: Talent Acquisition, HRIS, Onboarding, Applicant Tracking, Interview Scheduling
-  background: Detail-oriented Junior HR Specialist with nearly two years of professional experience in talent acquisition and recruitment coordination. I have successfully managed high-volume candidate pipelines, u
+  id: resume_1912 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Query Optimization, Schema Design
+  background: Detail-oriented Junior Database Engineer with nearly two years of professional experience in managing and optimizing PostgreSQL environments. I have hands-on experience in query performance tuning, ro
 
-  id: resume_1908 | level: middle | exp: 4.0 yrs
-  skills: Full-Cycle Recruitment, HRIS, Onboarding, Talent Acquisition, Data Analytics
-  background: Versatile Human Resources professional with four years of hands-on experience in full-cycle recruitment, HRIS management, and structured onboarding initiatives. I have a proven track record of managin
+  id: resume_1913 | level: middle | exp: 4.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Performance Tuning, Database Architecture
+  background: Versatile Database Engineer with four years of professional experience in designing, implementing, and scaling high-performance database architectures. I specialize in PostgreSQL performance optimizat
 
-  id: resume_1909 | level: senior | exp: 6.5 yrs
-  skills: Talent Acquisition Strategy, HRIS, Onboarding, Team Leadership, Data-Driven Recruitment
-  background: Senior Talent Acquisition Lead with over six years of experience driving large-scale recruitment strategies and optimizing human resources infrastructure. I have comprehensive expertise in building hi
+  id: resume_1914 | level: senior | exp: 6.5 yrs
+  skills: PostgreSQL, Redis, MongoDB, Scalability, Database Strategy
+  background: Senior Database Engineer with over six years of experience driving complex data engineering initiatives and optimizing enterprise-grade database environments. I have deep expertise in PostgreSQL clust
 
-  id: resume_1910 | level: senior | exp: 8.5 yrs
-  skills: HR Strategy, Talent Acquisition, HRIS Implementation, Workforce Planning, Executive Leadership
-  background: Principal HR Strategist and Talent Acquisition Expert with eight years of executive experience defining and overseeing human capital management frameworks. My career focus has been on architecting end
+  id: resume_1915 | level: senior | exp: 8.5 yrs
+  skills: Database Architecture, PostgreSQL, MongoDB, Distributed Systems, Data Strategy
+  background: Principal Database Architect with eight years of extensive experience in designing and overseeing resilient, enterprise-level data architectures. My focus is on architecting complex multi-database eco
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1906 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
-  required_skills: Talent Acquisition, HRIS, Onboarding, Communication
-  description: We are looking for an enthusiastic Human Resources Intern to support our talent acquisition and onboarding team. This role is perfect for a student eager to learn the fundamentals 
+  id: jd_1911 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, Sql, Database Design, Data Modeling
+  description: We are looking for a motivated Database Engineering Intern to support our infrastructure team. This role is perfect for a student eager to learn the fundamentals of relational data
 
-  id: jd_1907 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Talent Acquisition, HRIS, Onboarding, Applicant Tracking
-  description: Our team is seeking a Junior HR Coordinator to focus on talent acquisition and employee lifecycle support. You will be responsible for managing initial candidate screenings, coordi
+  id: jd_1912 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Query Optimization
+  description: Our team is seeking a Junior Database Engineer to focus on database maintenance, query performance, and basic NoSQL administration. You will be responsible for managing routine Pos
 
-  id: jd_1908 | title: Mobile Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Full-Cycle Recruitment, HRIS, Onboarding, Talent Acquisition
-  description: We are looking for a skilled Talent Acquisition Specialist to drive recruitment for our core technical and product teams. You will be responsible for building robust candidate pipe
+  id: jd_1913 | title: Database Systems Engineer | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Database Architecture
+  description: We are looking for a skilled Database Systems Engineer to drive the reliability and performance of our core data layers. You will be responsible for architecting robust PostgreSQL 
 
-  id: jd_1909 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
-  required_skills: Talent Acquisition Strategy, HRIS, Onboarding, Team Leadership
-  description: We are seeking a Senior Talent Acquisition Manager to drive our enterprise-level hiring initiatives. You will take ownership of the technical and strategic roadmap for recruitment,
+  id: jd_1914 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Scalability
+  description: We are seeking a Senior Database Engineer to drive our enterprise-level database initiatives. You will take ownership of the technical and strategic roadmap for our data infrastruc
 
-  id: jd_1910 | title: Principal HR Architect | level: senior | min_exp: 7 yrs
-  required_skills: HR Strategy, Talent Acquisition, HRIS Implementation, Workforce Planning
-  description: We are looking for a visionary Principal HR Architect to define our enterprise-level talent strategy. You will be responsible for overseeing the entire HR systems landscape, talent
+  id: jd_1915 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: Database Architecture, PostgreSQL, MongoDB, Data Strategy
+  description: We are looking for a visionary Principal Database Architect to define our enterprise-level data strategy. You will be responsible for overseeing the entire data persistence landsca
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9526  resume_1906 × jd_1906
-  pair_9527  resume_1906 × jd_1907
-  pair_9528  resume_1906 × jd_1908
-  pair_9529  resume_1906 × jd_1909
-  pair_9530  resume_1906 × jd_1910
-  pair_9531  resume_1907 × jd_1906
-  pair_9532  resume_1907 × jd_1907
-  pair_9533  resume_1907 × jd_1908
-  pair_9534  resume_1907 × jd_1909
-  pair_9535  resume_1907 × jd_1910
-  pair_9536  resume_1908 × jd_1906
-  pair_9537  resume_1908 × jd_1907
-  pair_9538  resume_1908 × jd_1908
-  pair_9539  resume_1908 × jd_1909
-  pair_9540  resume_1908 × jd_1910
-  pair_9541  resume_1909 × jd_1906
-  pair_9542  resume_1909 × jd_1907
-  pair_9543  resume_1909 × jd_1908
-  pair_9544  resume_1909 × jd_1909
-  pair_9545  resume_1909 × jd_1910
-  pair_9546  resume_1910 × jd_1906
-  pair_9547  resume_1910 × jd_1907
-  pair_9548  resume_1910 × jd_1908
-  pair_9549  resume_1910 × jd_1909
-  pair_9550  resume_1910 × jd_1910
+  pair_9551  resume_1911 × jd_1911
+  pair_9552  resume_1911 × jd_1912
+  pair_9553  resume_1911 × jd_1913
+  pair_9554  resume_1911 × jd_1914
+  pair_9555  resume_1911 × jd_1915
+  pair_9556  resume_1912 × jd_1911
+  pair_9557  resume_1912 × jd_1912
+  pair_9558  resume_1912 × jd_1913
+  pair_9559  resume_1912 × jd_1914
+  pair_9560  resume_1912 × jd_1915
+  pair_9561  resume_1913 × jd_1911
+  pair_9562  resume_1913 × jd_1912
+  pair_9563  resume_1913 × jd_1913
+  pair_9564  resume_1913 × jd_1914
+  pair_9565  resume_1913 × jd_1915
+  pair_9566  resume_1914 × jd_1911
+  pair_9567  resume_1914 × jd_1912
+  pair_9568  resume_1914 × jd_1913
+  pair_9569  resume_1914 × jd_1914
+  pair_9570  resume_1914 × jd_1915
+  pair_9571  resume_1915 × jd_1911
+  pair_9572  resume_1915 × jd_1912
+  pair_9573  resume_1915 × jd_1913
+  pair_9574  resume_1915 × jd_1914
+  pair_9575  resume_1915 × jd_1915
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
