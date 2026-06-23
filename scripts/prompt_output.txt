@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2081 | level: intern | exp: 0.2 yrs
-  skills: Agile Methodologies, Product Development, Documentation, User Research
-  background: Computer Science undergraduate with a passion for product development and user experience. During my academic career, I have supported student-led technology projects by assisting in the collection of
+  id: resume_2086 | level: intern | exp: 0.2 yrs
+  skills: Procurement Basics, Inventory Tracking, Data Analysis, Logistics Principles
+  background: Enthusiastic Supply Chain Management student with a strong academic foundation in logistics principles and operations research. Throughout my undergraduate studies, I have gained exposure to basic pro
 
-  id: resume_2082 | level: junior | exp: 1.5 yrs
-  skills: Product Backlog, User Stories, Agile, Stakeholder Communication
-  background: Junior Product Manager with 1.5 years of experience in supporting the development of web-based applications. I have been responsible for maintaining product backlogs, writing detailed user stories, an
+  id: resume_2087 | level: junior | exp: 1.5 yrs
+  skills: Inventory Management, Procurement Support, ERP Systems, Vendor Coordination
+  background: Junior Logistics Coordinator with 1.5 years of professional experience in managing warehouse inventory and supporting procurement workflows. I am well-versed in maintaining accurate stock levels, gene
 
-  id: resume_2083 | level: middle | exp: 4.5 yrs
-  skills: Roadmap Planning, Strategy Development, Agile Leadership, Data Analysis
-  background: Product Manager with 4 years of experience driving the strategy and execution of complex technology products. My background includes end-to-end product ownership, from initial market research and road
+  id: resume_2088 | level: middle | exp: 4.2 yrs
+  skills: Procurement Optimization, Demand Forecasting, Inventory Control, Data Analytics
+  background: Supply Chain Analyst with 4 years of experience focusing on procurement optimization, demand forecasting, and inventory control within complex supply networks. I have a proven track record of leveragi
 
-  id: resume_2084 | level: senior | exp: 6.8 yrs
-  skills: Product Strategy, Market Analysis, Portfolio Management, Change Management
-  background: Senior Product Manager with 6 years of expertise in leading the product lifecycle for enterprise-grade SaaS solutions. I have a proven record of managing long-term product roadmaps, aligning stakehold
+  id: resume_2089 | level: senior | exp: 6.5 yrs
+  skills: Strategic Sourcing, Global Logistics, ERP Architecture, Operational Excellence
+  background: Senior Supply Chain Manager with over 6 years of experience in strategic sourcing, complex warehouse operations, and global logistics management. I specialize in scaling supply chain capabilities, opt
 
-  id: resume_2085 | level: senior | exp: 9.5 yrs
-  skills: Organizational Strategy, Product Vision, Leadership, Strategic Planning
-  background: Principal Product Lead with 9+ years of experience defining and executing product vision at the organizational level. My career is marked by the successful launch and scale of multiple market-leading 
+  id: resume_2090 | level: senior | exp: 10.5 yrs
+  skills: Enterprise Supply Chain Strategy, Digital Transformation, Change Management, Leadership
+  background: Principal Supply Chain Strategist with 10 years of experience defining and executing enterprise-level supply chain architectures. I have a long history of successfully navigating complex global logist
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2081 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Agile, Product Development
-  description: We are seeking a Product Management intern to join our dynamic team. You will assist in gathering user feedback, support the maintenance of our product backlog, and learn about the
+  id: jd_2086 | title: Supply Chain Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Procurement Basics, Inventory Management
+  description: We are looking for a highly motivated Supply Chain Management intern to join our logistics team. You will support procurement documentation, assist in daily inventory audits, and l
 
-  id: jd_2082 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Backlog Management, User Stories, Agile
-  description: We are looking for a Junior Product Manager to support our development teams. You will be responsible for translating high-level requirements into user stories, managing the day-to
+  id: jd_2087 | title: Junior Logistics Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Inventory Management, Procurement Support, ERP Systems
+  description: We are seeking a Junior Logistics Coordinator to manage our daily inventory and vendor communications. You will be responsible for maintaining accurate records within our ERP syste
 
-  id: jd_2083 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Roadmap Development, Product Strategy, Cross-functional Leadership
-  description: We are seeking a Product Manager to own the strategy and execution of a core product line. You will develop the roadmap, analyze market trends, and lead the cross-functional effort
+  id: jd_2088 | title: Supply Chain Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Procurement Optimization, Demand Forecasting, Inventory Control
+  description: We are looking for a Supply Chain Analyst to optimize our procurement processes and demand planning. You will use data analytics to drive decisions, oversee inventory replenishment
 
-  id: jd_2084 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Portfolio Management, Strategic Leadership, Change Management
-  description: We are looking for a Senior Product Manager to oversee complex product initiatives. You will define long-term strategy, manage high-stakes stakeholder relationships, and guide the 
+  id: jd_2089 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Sourcing, Global Logistics, ERP Architecture
+  description: We are seeking a Senior Supply Chain Manager to lead our global logistics and strategic sourcing. You will guide process re-engineering, manage complex ERP implementations, and ens
 
-  id: jd_2085 | title: Principal Product Lead | level: senior | min_exp: 7 yrs
-  required_skills: Organizational Strategy, Product Vision, Leadership, Mentorship
-  description: We are hiring a Principal Product Lead to drive our enterprise technology vision. You will set architectural product standards, mentor senior staff, and lead strategic initiatives 
+  id: jd_2090 | title: Principal Supply Chain Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Supply Chain Strategy, Digital Transformation, Leadership
+  description: We are hiring a Principal Supply Chain Strategist to define our enterprise-wide supply chain vision. You will lead large-scale digital transformations, mentor senior teams, and dri
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
-  excellent_match: ~13 pairs
-  moderate_match: ~4 pairs
+  strong_match: ~5 pairs
+  excellent_match: ~16 pairs
+  moderate_match: ~3 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10401  resume_2081 × jd_2081
-  pair_10402  resume_2081 × jd_2082
-  pair_10403  resume_2081 × jd_2083
-  pair_10404  resume_2081 × jd_2084
-  pair_10405  resume_2081 × jd_2085
-  pair_10406  resume_2082 × jd_2081
-  pair_10407  resume_2082 × jd_2082
-  pair_10408  resume_2082 × jd_2083
-  pair_10409  resume_2082 × jd_2084
-  pair_10410  resume_2082 × jd_2085
-  pair_10411  resume_2083 × jd_2081
-  pair_10412  resume_2083 × jd_2082
-  pair_10413  resume_2083 × jd_2083
-  pair_10414  resume_2083 × jd_2084
-  pair_10415  resume_2083 × jd_2085
-  pair_10416  resume_2084 × jd_2081
-  pair_10417  resume_2084 × jd_2082
-  pair_10418  resume_2084 × jd_2083
-  pair_10419  resume_2084 × jd_2084
-  pair_10420  resume_2084 × jd_2085
-  pair_10421  resume_2085 × jd_2081
-  pair_10422  resume_2085 × jd_2082
-  pair_10423  resume_2085 × jd_2083
-  pair_10424  resume_2085 × jd_2084
-  pair_10425  resume_2085 × jd_2085
+  pair_10426  resume_2086 × jd_2086
+  pair_10427  resume_2086 × jd_2087
+  pair_10428  resume_2086 × jd_2088
+  pair_10429  resume_2086 × jd_2089
+  pair_10430  resume_2086 × jd_2090
+  pair_10431  resume_2087 × jd_2086
+  pair_10432  resume_2087 × jd_2087
+  pair_10433  resume_2087 × jd_2088
+  pair_10434  resume_2087 × jd_2089
+  pair_10435  resume_2087 × jd_2090
+  pair_10436  resume_2088 × jd_2086
+  pair_10437  resume_2088 × jd_2087
+  pair_10438  resume_2088 × jd_2088
+  pair_10439  resume_2088 × jd_2089
+  pair_10440  resume_2088 × jd_2090
+  pair_10441  resume_2089 × jd_2086
+  pair_10442  resume_2089 × jd_2087
+  pair_10443  resume_2089 × jd_2088
+  pair_10444  resume_2089 × jd_2089
+  pair_10445  resume_2089 × jd_2090
+  pair_10446  resume_2090 × jd_2086
+  pair_10447  resume_2090 × jd_2087
+  pair_10448  resume_2090 × jd_2088
+  pair_10449  resume_2090 × jd_2089
+  pair_10450  resume_2090 × jd_2090
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
