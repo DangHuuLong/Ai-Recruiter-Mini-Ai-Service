@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2181 | level: intern | exp: 0.3 yrs
-  skills: React, Tailwind CSS, JavaScript, HTML, CSS
-  background: Enthusiastic Computer Science student with a strong passion for frontend development. I have spent the last six months building small web applications using React and Tailwind CSS. Through my academic
+  id: resume_2186 | level: intern | exp: 0.3 yrs
+  skills: Data Entry, Social Media Coordination, Inventory Management, Marketplace Optimization, Spreadsheet Analysis
+  background: Eager business student with a strong interest in digital marketplaces and consumer trends. During my recent academic projects, I focused on analyzing conversion rates for small-scale online storefront
 
-  id: resume_2182 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Tailwind CSS, Next.js, Git
-  background: Junior Frontend Developer with 1.5 years of experience building and maintaining web applications. I am proficient in React, TypeScript, and Tailwind CSS. In my previous role, I focused on developing r
+  id: resume_2187 | level: junior | exp: 1.5 yrs
+  skills: E-commerce Platforms, Inventory Tracking, Order Fulfillment, Search Algorithm Optimization, Product Listing Management
+  background: Results-driven E-commerce Associate with two years of experience in online marketplace management and inventory tracking. I have successfully managed product listings on major platforms, ensuring accu
 
-  id: resume_2183 | level: middle | exp: 4.0 yrs
-  skills: React, Next.js, TypeScript, Tailwind CSS, State Management
-  background: Frontend Developer with 4 years of experience specializing in high-performance web applications. I have deep expertise in React, Next.js, and TypeScript. My background includes building scalable archi
+  id: resume_2188 | level: middle | exp: 4.0 yrs
+  skills: Category Management, Visual Merchandising, A/B Testing, Performance Analytics, Vendor Relations
+  background: Experienced E-commerce Merchandiser with four years of expertise in optimizing online storefronts for enhanced user engagement and sales growth. I specialize in category management, visual merchandisi
 
-  id: resume_2184 | level: senior | exp: 6.5 yrs
-  skills: React, Next.js, TypeScript, Tailwind CSS, Architectural Design
-  background: Senior Frontend Developer with over 6 years of experience building mission-critical web applications. I have a proven track record of designing scalable frontend architectures using React, Next.js, an
+  id: resume_2189 | level: senior | exp: 6.5 yrs
+  skills: Operational Strategy, Logistics Management, Team Leadership, Supply Chain Modeling, Marketplace Policy Compliance
+  background: Strategic E-commerce Operations Manager with six years of experience directing large-scale marketplace operations and logistics networks. I have a proven track record of scaling e-commerce businesses,
 
-  id: resume_2185 | level: senior | exp: 8.5 yrs
-  skills: React, Next.js, TypeScript, Tailwind CSS, Engineering Leadership
-  background: Principal Frontend Engineer with over 8 years of experience leading engineering teams and delivering world-class web products. I specialize in high-scale frontend architecture, CI/CD optimization, and
+  id: resume_2190 | level: senior | exp: 9.5 yrs
+  skills: Commercial Strategy, Digital Transformation, Market Expansion, Budget Management, Stakeholder Management
+  background: Principal E-commerce Strategist with over nine years of experience in retail digital transformation and global marketplace expansion. I possess an extensive background in defining commercial strategie
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2181 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, Tailwind CSS
-  description: We are looking for a passionate intern to support our frontend team. You will assist in developing UI components, maintaining codebases, and learning how to integrate modern fronte
+  id: jd_2186 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Data Entry, Spreadsheet Management, Marketplace Operations
+  description: We are seeking a proactive intern to support our operations team in daily marketplace tasks. This role is ideal for a student interested in the mechanics of online retail and opera
 
-  id: jd_2182 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: Our team is growing and we are seeking a Junior Frontend Developer. You will be responsible for building new features, fixing bugs, and ensuring our web applications are performant
+  id: jd_2187 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs
+  required_skills: E-commerce Platforms, Order Fulfillment, Product Listing Management
+  description: Our team is growing and we are looking for a Junior E-commerce Associate to manage day-to-day listing and fulfillment tasks. The successful candidate will be responsible for ensuri
 
-  id: jd_2183 | title: Frontend Developer | level: middle | min_exp: 3 yrs
-  required_skills: React, Next.js, TypeScript
-  description: We are looking for a capable Frontend Developer to join our product team. You will be responsible for creating scalable and efficient web applications using Next.js and React. In t
+  id: jd_2188 | title: E-commerce Merchandiser | level: middle | min_exp: 3 yrs
+  required_skills: Category Management, Visual Merchandising, Performance Analytics
+  description: We are looking for a mid-level E-commerce Merchandiser to drive conversion and enhance customer experience across our online storefronts. You will lead category management initiati
 
-  id: jd_2184 | title: Senior Frontend Developer | level: senior | min_exp: 5 yrs
-  required_skills: React, Next.js, TypeScript
-  description: We are seeking a Senior Frontend Developer to lead our architectural efforts. You will be responsible for defining the technical vision for our web applications, ensuring high perf
+  id: jd_2189 | title: Senior E-commerce Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Operational Strategy, Logistics Management, Supply Chain Modeling
+  description: We are seeking a Senior E-commerce Operations Manager to lead our fulfillment and supply chain strategy. This role is pivotal in optimizing our operational infrastructure to suppor
 
-  id: jd_2185 | title: Principal Frontend Engineer | level: senior | min_exp: 7 yrs
-  required_skills: React, Next.js, TypeScript
-  description: We are looking for a Principal Frontend Engineer to take on our most critical technical challenges. You will define the future of our frontend stack, oversee engineering excellence
+  id: jd_2190 | title: Principal E-commerce Strategist | level: senior | min_exp: 8 yrs
+  required_skills: Commercial Strategy, Digital Transformation, Strategic Planning
+  description: We are looking for a Principal E-commerce Strategist to guide our global digital transformation. This high-level position involves defining long-term commercial goals, identifying 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~10 pairs
-  weak_match: ~7 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~14 pairs
+  moderate_match: ~3 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10901  resume_2181 × jd_2181
-  pair_10902  resume_2181 × jd_2182
-  pair_10903  resume_2181 × jd_2183
-  pair_10904  resume_2181 × jd_2184
-  pair_10905  resume_2181 × jd_2185
-  pair_10906  resume_2182 × jd_2181
-  pair_10907  resume_2182 × jd_2182
-  pair_10908  resume_2182 × jd_2183
-  pair_10909  resume_2182 × jd_2184
-  pair_10910  resume_2182 × jd_2185
-  pair_10911  resume_2183 × jd_2181
-  pair_10912  resume_2183 × jd_2182
-  pair_10913  resume_2183 × jd_2183
-  pair_10914  resume_2183 × jd_2184
-  pair_10915  resume_2183 × jd_2185
-  pair_10916  resume_2184 × jd_2181
-  pair_10917  resume_2184 × jd_2182
-  pair_10918  resume_2184 × jd_2183
-  pair_10919  resume_2184 × jd_2184
-  pair_10920  resume_2184 × jd_2185
-  pair_10921  resume_2185 × jd_2181
-  pair_10922  resume_2185 × jd_2182
-  pair_10923  resume_2185 × jd_2183
-  pair_10924  resume_2185 × jd_2184
-  pair_10925  resume_2185 × jd_2185
+  pair_10926  resume_2186 × jd_2186
+  pair_10927  resume_2186 × jd_2187
+  pair_10928  resume_2186 × jd_2188
+  pair_10929  resume_2186 × jd_2189
+  pair_10930  resume_2186 × jd_2190
+  pair_10931  resume_2187 × jd_2186
+  pair_10932  resume_2187 × jd_2187
+  pair_10933  resume_2187 × jd_2188
+  pair_10934  resume_2187 × jd_2189
+  pair_10935  resume_2187 × jd_2190
+  pair_10936  resume_2188 × jd_2186
+  pair_10937  resume_2188 × jd_2187
+  pair_10938  resume_2188 × jd_2188
+  pair_10939  resume_2188 × jd_2189
+  pair_10940  resume_2188 × jd_2190
+  pair_10941  resume_2189 × jd_2186
+  pair_10942  resume_2189 × jd_2187
+  pair_10943  resume_2189 × jd_2188
+  pair_10944  resume_2189 × jd_2189
+  pair_10945  resume_2189 × jd_2190
+  pair_10946  resume_2190 × jd_2186
+  pair_10947  resume_2190 × jd_2187
+  pair_10948  resume_2190 × jd_2188
+  pair_10949  resume_2190 × jd_2189
+  pair_10950  resume_2190 × jd_2190
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
