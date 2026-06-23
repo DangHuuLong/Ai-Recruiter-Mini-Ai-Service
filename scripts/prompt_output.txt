@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2051 | level: intern | exp: 0.3 yrs
-  skills: Canva, Google Analytics, Social Media Marketing, SEO Basics
-  background: Enthusiastic marketing student in my final year with a keen interest in digital storytelling and search engine optimization. I have completed coursework in consumer behavior, digital advertising, and 
+  id: resume_2056 | level: intern | exp: 0.3 yrs
+  skills: AWS, Docker, Linux, CI/CD Basics
+  background: Motivated computer science student in my final year with a strong foundational interest in cloud infrastructure and automation. Through academic projects, I have gained hands-on experience deploying b
 
-  id: resume_2052 | level: junior | exp: 1.5 yrs
-  skills: SEMrush, Hootsuite, WordPress, SEO
-  background: Junior Digital Marketing Specialist with 1.5 years of experience in content planning, SEO implementation, and social media community management. I have successfully executed multi-platform social medi
+  id: resume_2057 | level: junior | exp: 1.5 yrs
+  skills: AWS, Kubernetes, Terraform, Jenkins
+  background: Junior DevOps Engineer with 1.5 years of experience in cloud infrastructure management, server administration, and automation. I have successfully managed AWS resources, implemented CI/CD pipelines us
 
-  id: resume_2053 | level: middle | exp: 4.2 yrs
-  skills: HubSpot, Ahrefs, Content Strategy, Google Analytics
-  background: Digital Content Strategist with four years of professional experience in developing comprehensive content ecosystems and optimizing digital presence. I have successfully managed end-to-end content lif
+  id: resume_2058 | level: middle | exp: 4.2 yrs
+  skills: Terraform, AWS, Kubernetes, Prometheus
+  background: DevOps Engineer with four years of professional experience in designing, implementing, and scaling complex cloud infrastructures. I have lead initiatives to transition monolithic applications to micro
 
-  id: resume_2054 | level: senior | exp: 6.5 yrs
-  skills: Performance Marketing, SEO/SEM Strategy, Team Leadership, Advanced Analytics
-  background: Senior Digital Marketing Manager with over six years of experience directing high-level brand strategies and overseeing performance marketing operations. I have successfully managed complex, multi-mil
+  id: resume_2059 | level: senior | exp: 6.5 yrs
+  skills: AWS, Kubernetes, Terraform, Observability
+  background: Senior Site Reliability Engineer with over six years of experience managing enterprise-grade cloud environments. I have architected global infrastructures, implemented advanced automated scaling solut
 
-  id: resume_2055 | level: senior | exp: 9.8 yrs
-  skills: Content Governance, Marketing Automation, Executive Leadership, Data-Driven Strategy
-  background: Principal Content Strategist with over nine years of experience defining and executing enterprise-level digital marketing roadmaps. I specialize in large-scale content governance, AI-driven marketing 
+  id: resume_2060 | level: senior | exp: 9.8 yrs
+  skills: AWS, Multi-Cloud Architecture, Governance, Cloud Security
+  background: Principal Cloud Architect with over nine years of experience defining enterprise-level cloud strategies and building highly resilient platform solutions. I specialize in large-scale digital transforma
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2051 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: Social Media Marketing, SEO Basics
-  description: We are seeking a highly motivated digital marketing intern to support our creative and analytical teams. This role provides hands-on experience in daily social media scheduling, ba
+  id: jd_2056 | title: DevOps Intern | level: intern | min_exp: 0 yrs
+  required_skills: AWS, Docker
+  description: We are seeking a motivated DevOps intern to assist our infrastructure team. This role provides hands-on experience in basic cloud tasks, server maintenance, and documentation. You 
 
-  id: jd_2052 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Social Media Marketing, SEO, Analytics
-  description: We are hiring a Junior Digital Marketing Specialist to manage social media communities and implement basic SEO tactics. You will be responsible for creating content, monitoring per
+  id: jd_2057 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: AWS, Kubernetes, Terraform
+  description: We are hiring a Junior DevOps Engineer to manage cloud infrastructure and implement CI/CD processes. You will be responsible for provisioning resources, maintaining Kubernetes clus
 
-  id: jd_2053 | title: Digital Content Strategist | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, Google Analytics, SEO
-  description: We are looking for a Digital Content Strategist to lead our content planning and optimization initiatives. You will be responsible for defining content strategy, analyzing performa
+  id: jd_2058 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Terraform, AWS, Kubernetes
+  description: We are looking for a DevOps Engineer to lead infrastructure optimization and scaling initiatives. You will design resilient cloud environments, manage Kubernetes deployments, and i
 
-  id: jd_2054 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Performance Marketing, SEO/SEM Strategy, Team Leadership
-  description: We are seeking a Senior Digital Marketing Manager to oversee performance marketing and brand growth strategies. You will manage large-scale digital campaigns, lead cross-functional
+  id: jd_2059 | title: Senior Site Reliability Engineer | level: senior | min_exp: 5 yrs
+  required_skills: AWS, Kubernetes, Terraform
+  description: We are seeking a Senior SRE to oversee global cloud environments and enhance system reliability. You will lead disaster recovery planning, optimize infrastructure performance, and 
 
-  id: jd_2055 | title: Principal Content Architect | level: senior | min_exp: 7 yrs
-  required_skills: Content Governance, Marketing Automation, Executive Leadership
-  description: We are hiring a Principal Content Architect to define our enterprise-wide digital content strategy. You will oversee massive digital transformations, lead architectural changes in 
+  id: jd_2060 | title: Principal Cloud Architect | level: senior | min_exp: 7 yrs
+  required_skills: AWS, Governance, Cloud Security
+  description: We are hiring a Principal Cloud Architect to define our enterprise-wide cloud strategy. You will oversee massive digital transformations, lead architectural changes, and build high
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,7 +66,7 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~16 pairs
+  strong_match: ~15 pairs
   excellent_match: ~8 pairs
   moderate_match: ~1 pairs
   weak_match: ~1 pairs
@@ -74,31 +74,31 @@ Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10251  resume_2051 × jd_2051
-  pair_10252  resume_2051 × jd_2052
-  pair_10253  resume_2051 × jd_2053
-  pair_10254  resume_2051 × jd_2054
-  pair_10255  resume_2051 × jd_2055
-  pair_10256  resume_2052 × jd_2051
-  pair_10257  resume_2052 × jd_2052
-  pair_10258  resume_2052 × jd_2053
-  pair_10259  resume_2052 × jd_2054
-  pair_10260  resume_2052 × jd_2055
-  pair_10261  resume_2053 × jd_2051
-  pair_10262  resume_2053 × jd_2052
-  pair_10263  resume_2053 × jd_2053
-  pair_10264  resume_2053 × jd_2054
-  pair_10265  resume_2053 × jd_2055
-  pair_10266  resume_2054 × jd_2051
-  pair_10267  resume_2054 × jd_2052
-  pair_10268  resume_2054 × jd_2053
-  pair_10269  resume_2054 × jd_2054
-  pair_10270  resume_2054 × jd_2055
-  pair_10271  resume_2055 × jd_2051
-  pair_10272  resume_2055 × jd_2052
-  pair_10273  resume_2055 × jd_2053
-  pair_10274  resume_2055 × jd_2054
-  pair_10275  resume_2055 × jd_2055
+  pair_10276  resume_2056 × jd_2056
+  pair_10277  resume_2056 × jd_2057
+  pair_10278  resume_2056 × jd_2058
+  pair_10279  resume_2056 × jd_2059
+  pair_10280  resume_2056 × jd_2060
+  pair_10281  resume_2057 × jd_2056
+  pair_10282  resume_2057 × jd_2057
+  pair_10283  resume_2057 × jd_2058
+  pair_10284  resume_2057 × jd_2059
+  pair_10285  resume_2057 × jd_2060
+  pair_10286  resume_2058 × jd_2056
+  pair_10287  resume_2058 × jd_2057
+  pair_10288  resume_2058 × jd_2058
+  pair_10289  resume_2058 × jd_2059
+  pair_10290  resume_2058 × jd_2060
+  pair_10291  resume_2059 × jd_2056
+  pair_10292  resume_2059 × jd_2057
+  pair_10293  resume_2059 × jd_2058
+  pair_10294  resume_2059 × jd_2059
+  pair_10295  resume_2059 × jd_2060
+  pair_10296  resume_2060 × jd_2056
+  pair_10297  resume_2060 × jd_2057
+  pair_10298  resume_2060 × jd_2058
+  pair_10299  resume_2060 × jd_2059
+  pair_10300  resume_2060 × jd_2060
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
