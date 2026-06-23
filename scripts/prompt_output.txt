@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1866 | level: intern | exp: 0.5 yrs
-  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Data Entry
-  background: Highly motivated and detail-oriented Business Administration graduate specializing in e-commerce marketplace operations, digital storefront configurations, and retail merchandising frameworks. Possess
+  id: resume_1871 | level: intern | exp: 0.5 yrs
+  skills: Pentesting, SIEM, Network Security, Vulnerability Scanning, Linux
+  background: Enthusiastic Information Security student with a strong academic foundation in network defense architectures, fundamental penetration testing methodologies, and security information and event manageme
 
-  id: resume_1867 | level: junior | exp: 1.5 yrs
-  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis
-  background: Junior Marketplace Operations Specialist with one and a half years of professional e-commerce merchant experience structuring digital storefront workflows, modifying multi-channel supplier schedules, 
+  id: resume_1872 | level: junior | exp: 1.5 yrs
+  skills: SIEM, Pentesting, Network Security, Incident Response, Vulnerability Management
+  background: Junior Security Analyst with one and a half years of professional experience in monitoring security information and event management (SIEM) systems, conducting regular vulnerability assessments, and s
 
-  id: resume_1868 | level: middle | exp: 4.0 yrs
-  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization
-  background: Middle E-commerce Operations Manager with four years of dedicated retail facility expertise optimizing mid-market brand acquisition pipelines, configuring centralized marketplace setups, and crafting 
+  id: resume_1873 | level: middle | exp: 4.0 yrs
+  skills: SIEM, Pentesting, Network Security, Incident Response, Threat Intelligence, Firewall Management
+  background: Middle Cybersecurity Specialist with four years of dedicated experience architecting network defense solutions, leading penetration testing engagements, and managing complex security information and e
 
-  id: resume_1869 | level: senior | exp: 6.0 yrs
-  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization, Project Management
-  background: Senior E-commerce Operations Director and Merchant Solutions Architect with more than six years of comprehensive corporate mastery formulating enterprise-scale marketplace administration models, manag
+  id: resume_1874 | level: senior | exp: 6.0 yrs
+  skills: SIEM, Pentesting, Network Security, Incident Response, Threat Hunting, Cloud Security, Security Architecture
+  background: Senior Cybersecurity Strategist and Security Infrastructure Architect with over six years of comprehensive experience constructing enterprise-grade defense architectures, directing complex penetration
 
-  id: resume_1870 | level: senior | exp: 8.5 yrs
-  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization, Project Management, Strategic Leadership
-  background: Principal E-commerce Operations Architect and Director of Enterprise Merchant Services with over eight years of distinguished retail leadership shaping high-volume marketplace coordination architectur
+  id: resume_1875 | level: senior | exp: 8.5 yrs
+  skills: SIEM, Pentesting, Network Security, Incident Response, Threat Intelligence, Strategic Leadership, Governance, Cloud Security
+  background: Principal Cybersecurity Architect and Director of Security Operations with more than eight years of executive corporate guidance engineering top-tier security defense infrastructures, global incident 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1866 | title: Marketplace Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Marketplace Operations, Merchandising, E-commerce
-  description: We are seeking a motivated Marketplace Operations Intern to join our digital storefront team. In this position, you will work closely with seasoned merchant coordination and retail
+  id: jd_1871 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
+  required_skills: Pentesting, SIEM, Network Security
+  description: We are looking for an energetic Cybersecurity Intern to support our core security operations group. In this placement, you will operate alongside experienced security engineers and
 
-  id: jd_1867 | title: Junior Marketplace Operations Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management
-  description: Our digital marketplace collective is searching for an analytical Junior Marketplace Operations Specialist to support and expand our core multi-vendor setups. You will focus closel
+  id: jd_1872 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SIEM, Pentesting, Network Security, Incident Response
+  description: Our security operations collective is searching for an analytical Junior Security Analyst to manage and optimize our core network defense pipelines. You will focus closely on monit
 
-  id: jd_1868 | title: E-commerce Operations and Merchandising Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management
-  description: We are searching for a high-performing E-commerce Operations and Merchandising Specialist to manage, refine, and accelerate our organic digital storefront ecosystems and corporate 
+  id: jd_1873 | title: Security Operations Specialist | level: middle | min_exp: 3 yrs
+  required_skills: SIEM, Pentesting, Network Security, Incident Response
+  description: We are searching for a high-performing Security Operations Specialist to manage, refine, and accelerate our defensive ecosystems and organizational security channels. In this assig
 
-  id: jd_1869 | title: Senior E-commerce Operations Architect | level: senior | min_exp: 5 yrs
-  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain
-  description: We are seeking an experienced Senior E-commerce Operations Architect to blueprint, expand, and safeguard our enterprise-scale marketplace pipelines and inventory analytics networks
+  id: jd_1874 | title: Senior Security Architect | level: senior | min_exp: 5 yrs
+  required_skills: SIEM, Pentesting, Network Security, Incident Response, Security Architecture
+  description: We are seeking an experienced Senior Security Architect to blueprint, expand, and safeguard our enterprise-scale security defense pipelines and threat analytics networks. You will 
 
-  id: jd_1870 | title: Principal Marketplace Operations Director | level: senior | min_exp: 7 yrs
-  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain
-  description: We are seeking a Principal Marketplace Operations Director to chart the long-term technical roadmap and foundational system architecture of our global consumer platforms and corpor
+  id: jd_1875 | title: Principal Security Operations Director | level: senior | min_exp: 7 yrs
+  required_skills: SIEM, Pentesting, Network Security, Incident Response, Security Architecture
+  description: We are seeking a Principal Security Operations Director to chart the long-term technical roadmap and foundational system architecture of our global security platforms and corporate
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9326  resume_1866 × jd_1866
-  pair_9327  resume_1866 × jd_1867
-  pair_9328  resume_1866 × jd_1868
-  pair_9329  resume_1866 × jd_1869
-  pair_9330  resume_1866 × jd_1870
-  pair_9331  resume_1867 × jd_1866
-  pair_9332  resume_1867 × jd_1867
-  pair_9333  resume_1867 × jd_1868
-  pair_9334  resume_1867 × jd_1869
-  pair_9335  resume_1867 × jd_1870
-  pair_9336  resume_1868 × jd_1866
-  pair_9337  resume_1868 × jd_1867
-  pair_9338  resume_1868 × jd_1868
-  pair_9339  resume_1868 × jd_1869
-  pair_9340  resume_1868 × jd_1870
-  pair_9341  resume_1869 × jd_1866
-  pair_9342  resume_1869 × jd_1867
-  pair_9343  resume_1869 × jd_1868
-  pair_9344  resume_1869 × jd_1869
-  pair_9345  resume_1869 × jd_1870
-  pair_9346  resume_1870 × jd_1866
-  pair_9347  resume_1870 × jd_1867
-  pair_9348  resume_1870 × jd_1868
-  pair_9349  resume_1870 × jd_1869
-  pair_9350  resume_1870 × jd_1870
+  pair_9351  resume_1871 × jd_1871
+  pair_9352  resume_1871 × jd_1872
+  pair_9353  resume_1871 × jd_1873
+  pair_9354  resume_1871 × jd_1874
+  pair_9355  resume_1871 × jd_1875
+  pair_9356  resume_1872 × jd_1871
+  pair_9357  resume_1872 × jd_1872
+  pair_9358  resume_1872 × jd_1873
+  pair_9359  resume_1872 × jd_1874
+  pair_9360  resume_1872 × jd_1875
+  pair_9361  resume_1873 × jd_1871
+  pair_9362  resume_1873 × jd_1872
+  pair_9363  resume_1873 × jd_1873
+  pair_9364  resume_1873 × jd_1874
+  pair_9365  resume_1873 × jd_1875
+  pair_9366  resume_1874 × jd_1871
+  pair_9367  resume_1874 × jd_1872
+  pair_9368  resume_1874 × jd_1873
+  pair_9369  resume_1874 × jd_1874
+  pair_9370  resume_1874 × jd_1875
+  pair_9371  resume_1875 × jd_1871
+  pair_9372  resume_1875 × jd_1872
+  pair_9373  resume_1875 × jd_1873
+  pair_9374  resume_1875 × jd_1874
+  pair_9375  resume_1875 × jd_1875
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
