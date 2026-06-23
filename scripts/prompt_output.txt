@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2191 | level: intern | exp: 0.3 yrs
-  skills: Python, FastAPI, PostgreSQL, Git, RESTful APIs
-  background: Computer Science student with a foundational understanding of backend development and RESTful APIs. During academic coursework, I have gained experience building small applications using Python and Fa
+  id: resume_2196 | level: intern | exp: 0.2 yrs
+  skills: Supply Chain Management, Logistics Operations, Inventory Control, ERP Systems, Microsoft Excel
+  background: Enthusiastic Supply Chain Management student with a solid understanding of logistics operations and inventory control principles. Currently completing a Bachelor's degree, I have developed foundationa
 
-  id: resume_2192 | level: junior | exp: 1.8 yrs
-  skills: Node.js, Express, PostgreSQL, Docker, API Design
-  background: Junior Backend Developer with two years of professional experience in building and maintaining API services. I have a strong command of Node.js and have worked extensively with Express to deliver high
+  id: resume_2197 | level: junior | exp: 1.5 yrs
+  skills: Procurement, Vendor Management, Oracle NetSuite, Demand Forecasting, Process Improvement
+  background: Junior Procurement Analyst with two years of professional experience in managing purchasing processes and vendor relations. I have worked extensively with ERP systems to track purchase orders, monitor
 
-  id: resume_2193 | level: middle | exp: 4.2 yrs
-  skills: Python, FastAPI, PostgreSQL, Microservices, CI/CD
-  background: Mid-level Backend Engineer with four years of hands-on experience designing scalable APIs and microservices. I specialize in Python and FastAPI, focusing on building robust, high-traffic systems. I ha
+  id: resume_2198 | level: middle | exp: 4.0 yrs
+  skills: Logistics, Inventory Optimization, SAP S/4HANA, Contract Negotiation, Strategic Planning
+  background: Experienced Supply Chain Coordinator with four years of expertise in end-to-end logistics and inventory optimization. I specialize in managing large-scale procurement operations, coordinating internat
 
-  id: resume_2194 | level: senior | exp: 6.5 yrs
-  skills: System Architecture, Python, Node.js, PostgreSQL, Cloud Infrastructure
-  background: Senior Backend Developer with six years of experience building and optimizing large-scale API ecosystems. I have extensive experience with both Python and Node.js environments, leading projects from a
+  id: resume_2199 | level: senior | exp: 6.5 yrs
+  skills: Strategic Sourcing, Lean Logistics, Microsoft Dynamics 365, Change Management, Budgeting
+  background: Senior Supply Chain Manager with over six years of experience directing procurement, inventory, and logistics strategies. I have successfully managed complex supply chains for large-scale operations, 
 
-  id: resume_2195 | level: senior | exp: 9.2 yrs
-  skills: Distributed Systems, Backend Architecture, Strategic Leadership, Database Internals, Python
-  background: Principal Backend Architect with over nine years of experience in leading engineering teams and designing highly complex, distributed backend architectures. I have a deep expertise in Python, FastAPI,
+  id: resume_2200 | level: senior | exp: 9.5 yrs
+  skills: Supply Chain Architecture, Predictive Analytics, Cloud ERP, Technical Strategy, Leadership
+  background: Principal Supply Chain Architect with over nine years of experience in designing and leading high-scale, global supply chain architectures. I specialize in integrating complex ERP environments, optimi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2191 | title: Backend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, FastAPI, Database Fundamentals
-  description: We are seeking an eager Backend Development Intern to join our engineering team. This role is ideal for a student or fresh graduate looking to gain hands-on experience in building 
+  id: jd_2196 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
+  required_skills: Logistics, Inventory Control, Microsoft Excel
+  description: We are seeking a motivated Supply Chain Intern to join our logistics team. This role provides hands-on experience in procurement support, inventory documentation, and basic data an
 
-  id: jd_2192 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Node.js, PostgreSQL, API Design
-  description: Our team is looking for a Junior Backend Engineer to help us build and maintain high-quality API services. You will be responsible for creating new endpoints, optimizing existing d
+  id: jd_2197 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Procurement, ERP Systems, Data Analysis
+  description: We are looking for a Junior Supply Chain Analyst to help us streamline our procurement processes. In this role, you will work with our ERP software to track purchase orders, reconc
 
-  id: jd_2193 | title: Backend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, FastAPI, PostgreSQL
-  description: We are searching for a skilled Backend Engineer to join our team. In this role, you will be responsible for designing and implementing scalable backend services using Python and Fa
+  id: jd_2198 | title: Supply Chain Coordinator | level: middle | min_exp: 3 yrs
+  required_skills: Logistics, Inventory Optimization, ERP Systems
+  description: We are searching for a skilled Supply Chain Coordinator to manage our logistics and inventory workflows. You will lead procurement initiatives, coordinate with international carrie
 
-  id: jd_2194 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
-  required_skills: System Architecture, Python, PostgreSQL
-  description: We are seeking an experienced Senior Backend Developer to lead our backend engineering initiatives. You will take ownership of our core system architecture, ensuring high scalabili
+  id: jd_2199 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Sourcing, ERP Systems, Logistics
+  description: We are seeking an experienced Senior Supply Chain Manager to lead our procurement and logistics departments. You will define our supply chain strategy, implement advanced ERP solut
 
-  id: jd_2195 | title: Principal Backend Architect | level: senior | min_exp: 8 yrs
-  required_skills: Distributed Systems, Backend Architecture, Strategic Leadership
-  description: We are looking for a Principal Backend Architect to define the future of our backend ecosystem. This is a high-level role requiring extensive experience in designing highly availab
+  id: jd_2200 | title: Principal Supply Chain Architect | level: senior | min_exp: 8 yrs
+  required_skills: Supply Chain Architecture, Predictive Analytics, Technical Strategy
+  description: We are looking for a Principal Supply Chain Architect to define our future logistics and procurement infrastructure. This is a strategic role focused on large-scale system architec
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
+  strong_match: ~2 pairs
   excellent_match: ~10 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~6 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10951  resume_2191 × jd_2191
-  pair_10952  resume_2191 × jd_2192
-  pair_10953  resume_2191 × jd_2193
-  pair_10954  resume_2191 × jd_2194
-  pair_10955  resume_2191 × jd_2195
-  pair_10956  resume_2192 × jd_2191
-  pair_10957  resume_2192 × jd_2192
-  pair_10958  resume_2192 × jd_2193
-  pair_10959  resume_2192 × jd_2194
-  pair_10960  resume_2192 × jd_2195
-  pair_10961  resume_2193 × jd_2191
-  pair_10962  resume_2193 × jd_2192
-  pair_10963  resume_2193 × jd_2193
-  pair_10964  resume_2193 × jd_2194
-  pair_10965  resume_2193 × jd_2195
-  pair_10966  resume_2194 × jd_2191
-  pair_10967  resume_2194 × jd_2192
-  pair_10968  resume_2194 × jd_2193
-  pair_10969  resume_2194 × jd_2194
-  pair_10970  resume_2194 × jd_2195
-  pair_10971  resume_2195 × jd_2191
-  pair_10972  resume_2195 × jd_2192
-  pair_10973  resume_2195 × jd_2193
-  pair_10974  resume_2195 × jd_2194
-  pair_10975  resume_2195 × jd_2195
+  pair_10976  resume_2196 × jd_2196
+  pair_10977  resume_2196 × jd_2197
+  pair_10978  resume_2196 × jd_2198
+  pair_10979  resume_2196 × jd_2199
+  pair_10980  resume_2196 × jd_2200
+  pair_10981  resume_2197 × jd_2196
+  pair_10982  resume_2197 × jd_2197
+  pair_10983  resume_2197 × jd_2198
+  pair_10984  resume_2197 × jd_2199
+  pair_10985  resume_2197 × jd_2200
+  pair_10986  resume_2198 × jd_2196
+  pair_10987  resume_2198 × jd_2197
+  pair_10988  resume_2198 × jd_2198
+  pair_10989  resume_2198 × jd_2199
+  pair_10990  resume_2198 × jd_2200
+  pair_10991  resume_2199 × jd_2196
+  pair_10992  resume_2199 × jd_2197
+  pair_10993  resume_2199 × jd_2198
+  pair_10994  resume_2199 × jd_2199
+  pair_10995  resume_2199 × jd_2200
+  pair_10996  resume_2200 × jd_2196
+  pair_10997  resume_2200 × jd_2197
+  pair_10998  resume_2200 × jd_2198
+  pair_10999  resume_2200 × jd_2199
+  pair_11000  resume_2200 × jd_2200
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
