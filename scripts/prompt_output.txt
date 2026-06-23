@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1961 | level: intern | exp: 0.2 yrs
-  skills: Recruitment Coordination, Hris Support, Employee Onboarding, Data Entry
-  background: Human resources management student with a keen interest in talent acquisition and employee onboarding processes. During my academic studies, I have gained foundational knowledge in recruitment coordin
+  id: resume_1966 | level: intern | exp: 0.3 yrs
+  skills: Social Media Management, Seo Basics, Content Writing, Web Analytics
+  background: Marketing student with a deep passion for digital storytelling and content creation. Throughout my academic career, I have developed a foundational understanding of social media platform management, s
 
-  id: resume_1962 | level: junior | exp: 1.8 yrs
-  skills: Applicant Tracking Systems, Candidate Sourcing, Employee Onboarding, Hris Administration
-  background: Junior talent acquisition coordinator with nearly two years of professional experience managing end-to-end recruitment pipelines and new hire onboarding. My background includes facilitating job postin
+  id: resume_1967 | level: junior | exp: 1.8 yrs
+  skills: Seo Optimization, Social Media Advertising, Performance Analytics, Copywriting
+  background: Junior digital marketing coordinator with nearly two years of professional experience executing content strategies and social media campaigns. My background includes managing brand presence across mul
 
-  id: resume_1963 | level: middle | exp: 4.5 yrs
-  skills: Strategic Recruitment, Hris Management, Full-Cycle Recruiting, Onboarding Strategy
-  background: Dynamic human resources specialist with four years of experience leading recruitment strategies and optimizing HRIS operations. I specialize in the full lifecycle of talent acquisition, from sourcing 
+  id: resume_1968 | level: middle | exp: 4.2 yrs
+  skills: Content Strategy, Technical Seo, Digital Marketing Analytics, Roi Optimization
+  background: Dynamic digital marketing specialist with four years of experience leading multi-platform content strategies and optimizing marketing performance. I specialize in bridging the gap between content crea
 
-  id: resume_1964 | level: senior | exp: 6.8 yrs
-  skills: Talent Strategy, Hris Leadership, Recruitment Analytics, Onboarding Excellence
-  background: Experienced talent acquisition manager with over six years of expertise in large-scale recruitment strategy and global HRIS integration. I have a proven track record of architecting comprehensive tale
+  id: resume_1969 | level: senior | exp: 6.5 yrs
+  skills: Content Architecture, Search Engine Strategy, Performance Marketing, Strategic Leadership
+  background: Experienced marketing manager and content strategist with over six years of expertise in large-scale digital campaigns and multi-channel system integration. I have a proven track record of architectin
 
-  id: resume_1965 | level: senior | exp: 9.2 yrs
-  skills: Talent Architecture, Strategic Sourcing, Recruitment Governance, Hris Governance
-  background: Principal human resources leader with over nine years of experience defining global talent strategy and overseeing enterprise-wide HRIS management frameworks. My expertise lies in building complex hum
+  id: resume_1970 | level: senior | exp: 9.5 yrs
+  skills: Marketing Architecture, Content Leadership, Search Engine Optimization, Data Strategy
+  background: Principal digital strategist with over nine years of experience defining comprehensive marketing visions and overseeing enterprise-wide content frameworks. My expertise lies in building complex digita
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1961 | title: Talent Acquisition Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruitment Coordination, Hris Support, Employee Onboarding, Data Entry
-  description: We are seeking a motivated Talent Acquisition Intern to support our recruitment and HR team. This role provides hands-on experience in sourcing, applicant tracking, and HRIS data s
+  id: jd_1966 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: Social Media Management, Seo Basics, Content Writing, Web Analytics
+  description: We are seeking a motivated Digital Marketing Intern to support our creative content and marketing team. This role provides hands-on experience in social media content drafting, SEO
 
-  id: jd_1962 | title: Junior Talent Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Applicant Tracking Systems, Candidate Sourcing, Employee Onboarding, Hris Administration
-  description: Our team is looking for a detail-oriented Junior Talent Coordinator to handle recruitment support and new hire onboarding. You will be instrumental in ensuring that applicants are 
+  id: jd_1967 | title: Junior Digital Marketer | level: junior | min_exp: 1 yrs
+  required_skills: Seo Optimization, Social Media Advertising, Performance Analytics, Copywriting
+  description: Our team is looking for a detail-oriented Junior Digital Marketer to handle content creation and campaign maintenance. You will be instrumental in ensuring that social media messag
 
-  id: jd_1963 | title: HR Specialist (Talent Acquisition) | level: middle | min_exp: 3 yrs
-  required_skills: Strategic Recruitment, Hris Management, Full-Cycle Recruiting, Onboarding Strategy
-  description: We are searching for a skilled HR Specialist to manage full-cycle recruitment initiatives and oversee onboarding programs within our departments. You will bridge the gap between hi
+  id: jd_1968 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Content Strategy, Technical Seo, Digital Marketing Analytics, Roi Optimization
+  description: We are searching for a skilled Digital Marketing Specialist to lead content strategy initiatives and manage technical marketing tasks. You will bridge the gap between creative exec
 
-  id: jd_1964 | title: Senior Talent Manager | level: senior | min_exp: 5 yrs
-  required_skills: Talent Strategy, Hris Leadership, Recruitment Analytics, Onboarding Excellence
-  description: We are looking for a visionary Senior Talent Manager to guide our enterprise recruitment initiatives. You will take ownership of our talent strategy, ensuring that HRIS platforms a
+  id: jd_1969 | title: Senior Content Strategist | level: senior | min_exp: 5 yrs
+  required_skills: Content Architecture, Search Engine Strategy, Performance Marketing, Strategic Leadership
+  description: We are looking for a visionary Senior Content Strategist to guide our enterprise marketing initiatives. You will take ownership of our digital content strategy, ensuring that brand
 
-  id: jd_1965 | title: Principal Talent Architect | level: senior | min_exp: 7 yrs
-  required_skills: Talent Architecture, Strategic Sourcing, Recruitment Governance, Hris Governance
-  description: We are seeking a Principal Talent Architect to shape our future hiring strategy at an enterprise level. This is a leadership position for someone experienced in architecting talent
+  id: jd_1970 | title: Principal Digital Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Marketing Architecture, Content Leadership, Search Engine Optimization, Data Strategy
+  description: We are seeking a Principal Digital Strategist to shape our future marketing engineering strategy at an enterprise level. This is a leadership position for someone experienced in ar
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9801  resume_1961 × jd_1961
-  pair_9802  resume_1961 × jd_1962
-  pair_9803  resume_1961 × jd_1963
-  pair_9804  resume_1961 × jd_1964
-  pair_9805  resume_1961 × jd_1965
-  pair_9806  resume_1962 × jd_1961
-  pair_9807  resume_1962 × jd_1962
-  pair_9808  resume_1962 × jd_1963
-  pair_9809  resume_1962 × jd_1964
-  pair_9810  resume_1962 × jd_1965
-  pair_9811  resume_1963 × jd_1961
-  pair_9812  resume_1963 × jd_1962
-  pair_9813  resume_1963 × jd_1963
-  pair_9814  resume_1963 × jd_1964
-  pair_9815  resume_1963 × jd_1965
-  pair_9816  resume_1964 × jd_1961
-  pair_9817  resume_1964 × jd_1962
-  pair_9818  resume_1964 × jd_1963
-  pair_9819  resume_1964 × jd_1964
-  pair_9820  resume_1964 × jd_1965
-  pair_9821  resume_1965 × jd_1961
-  pair_9822  resume_1965 × jd_1962
-  pair_9823  resume_1965 × jd_1963
-  pair_9824  resume_1965 × jd_1964
-  pair_9825  resume_1965 × jd_1965
+  pair_9826  resume_1966 × jd_1966
+  pair_9827  resume_1966 × jd_1967
+  pair_9828  resume_1966 × jd_1968
+  pair_9829  resume_1966 × jd_1969
+  pair_9830  resume_1966 × jd_1970
+  pair_9831  resume_1967 × jd_1966
+  pair_9832  resume_1967 × jd_1967
+  pair_9833  resume_1967 × jd_1968
+  pair_9834  resume_1967 × jd_1969
+  pair_9835  resume_1967 × jd_1970
+  pair_9836  resume_1968 × jd_1966
+  pair_9837  resume_1968 × jd_1967
+  pair_9838  resume_1968 × jd_1968
+  pair_9839  resume_1968 × jd_1969
+  pair_9840  resume_1968 × jd_1970
+  pair_9841  resume_1969 × jd_1966
+  pair_9842  resume_1969 × jd_1967
+  pair_9843  resume_1969 × jd_1968
+  pair_9844  resume_1969 × jd_1969
+  pair_9845  resume_1969 × jd_1970
+  pair_9846  resume_1970 × jd_1966
+  pair_9847  resume_1970 × jd_1967
+  pair_9848  resume_1970 × jd_1968
+  pair_9849  resume_1970 × jd_1969
+  pair_9850  resume_1970 × jd_1970
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
