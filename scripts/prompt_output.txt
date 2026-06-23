@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2131 | level: intern | exp: 0.3 yrs
-  skills: Python, Node.js, PostgreSQL, Git, Restful Api
-  background: Highly motivated computer science student with a strong passion for backend development. Gained foundational knowledge through coursework and personal projects focused on building RESTful APIs. Profic
+  id: resume_2136 | level: intern | exp: 0.2 yrs
+  skills: Seo, Social Media Management, Google Analytics, Copywriting, Content Creation
+  background: Eager marketing student with a strong passion for digital storytelling and content creation. Throughout university studies, developed foundational skills in search engine optimization and social media
 
-  id: resume_2132 | level: junior | exp: 2.0 yrs
-  skills: Python, Fastapi, Node.js, PostgreSQL, Docker
-  background: Dedicated software developer with two years of professional experience focusing on backend service architecture. Proven track record in developing and maintaining robust APIs using Python, FastAPI, an
+  id: resume_2137 | level: junior | exp: 2.0 yrs
+  skills: Seo, Social Media Marketing, Google Analytics, Content Strategy, Canva
+  background: Results-oriented digital marketing assistant with two years of professional experience in executing social media campaigns and enhancing SEO strategies. Successfully contributed to content planning, k
 
-  id: resume_2133 | level: middle | exp: 4.5 yrs
-  skills: Python, Fastapi, Node.js, PostgreSQL, Kubernetes, Docker
-  background: Backend engineer with four years of hands-on experience designing and implementing scalable API architectures. Extensive proficiency in Python, FastAPI, and Node.js, combined with deep knowledge of Po
+  id: resume_2138 | level: middle | exp: 4.5 yrs
+  skills: Seo, Social Media Strategy, Google Analytics, Data Analysis, Content Marketing
+  background: Versatile digital marketing specialist with four years of comprehensive experience in building and executing data-driven content strategies. Proven expertise in SEO auditing, link-building outreach, a
 
-  id: resume_2134 | level: senior | exp: 6.5 yrs
-  skills: Python, Fastapi, Node.js, PostgreSQL, System Architecture, Aws
-  background: Senior backend developer with six years of experience building and scaling mission-critical web applications. Expert in architecting high-performance APIs using Python, FastAPI, and Node.js. Extensive
+  id: resume_2139 | level: senior | exp: 6.5 yrs
+  skills: Seo Strategy, Social Media Management, Advanced Analytics, Leadership, Content Strategy
+  background: Senior digital marketing strategist with over six years of experience managing high-performance content and social media teams. Expert in developing multi-channel marketing strategies that align with 
 
-  id: resume_2135 | level: senior | exp: 8.5 yrs
-  skills: Python, Fastapi, Node.js, PostgreSQL, System Design, Cloud Infrastructure
-  background: Principal Backend Engineer with over eight years of experience building scalable, enterprise-grade distributed systems. Highly expert in full-cycle backend development using Python, FastAPI, and Node.
+  id: resume_2140 | level: senior | exp: 8.5 yrs
+  skills: Digital Strategy, Seo, Content Architecture, Data Strategy, Team Leadership
+  background: Principal Digital Marketing Strategist with over eight years of experience delivering enterprise-grade content and growth strategies. Highly expert in full-cycle digital transformation, advanced SEO, 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2131 | title: Backend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, PostgreSQL, FastApi
-  description: We are looking for an enthusiastic intern to join our backend development team. You will have the opportunity to work on real-world projects under the mentorship of senior engineer
+  id: jd_2136 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: Seo, Social Media Marketing, Content Creation
+  description: We are seeking a proactive intern to assist our digital marketing team in daily content and social media tasks. This role is ideal for a student looking to learn the ropes of SEO a
 
-  id: jd_2132 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, PostgreSQL, FastApi
-  description: Seeking a junior backend developer to build scalable APIs and services. You will contribute to the development of our core product, writing clean code and ensuring system stability
+  id: jd_2137 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Seo, Social Media Management, Analytics
+  description: Looking for a junior specialist to execute multi-channel digital campaigns. You will be responsible for day-to-day social media management and content coordination. You should have
 
-  id: jd_2133 | title: Backend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, FastApi, PostgreSQL, Node.js
-  description: We are hiring a mid-level backend engineer to help us architect our next generation of microservices. You will work on high-traffic APIs using Python, FastAPI, and Node.js. A deep 
+  id: jd_2138 | title: Digital Marketing Strategist | level: middle | min_exp: 3 yrs
+  required_skills: Content Strategy, Seo, Data Analysis, Google Analytics
+  description: We are looking for a mid-level strategist to lead our content and SEO efforts. You will be responsible for planning and executing comprehensive digital roadmaps to drive organic gr
 
-  id: jd_2134 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
-  required_skills: Python, FastApi, PostgreSQL, Node.js, System Architecture
-  description: We are looking for a senior backend developer to take ownership of our core API platforms. You will design resilient, distributed systems using Python and FastAPI, while also lever
+  id: jd_2139 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
+  required_skills: Seo Strategy, Content Strategy, Leadership, Advanced Analytics
+  description: We are seeking a senior manager to take ownership of our brand's digital ecosystem. You will drive high-level strategy, manage marketing budgets, and lead a high-performing team. Y
 
-  id: jd_2135 | title: Principal Backend Engineer | level: senior | min_exp: 7 yrs
-  required_skills: Python, FastApi, Node.js, PostgreSQL, System Design
-  description: Join us as a Principal Backend Engineer. You will lead our technical strategy, designing highly scalable and secure systems that support our growing enterprise customer base. You w
+  id: jd_2140 | title: Principal Marketing Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Digital Strategy, Seo, Content Architecture, Data Strategy, Team Leadership
+  description: Join us as a Principal Marketing Strategist to define our global digital transformation. You will orchestrate complex strategies for enterprise growth, focusing on data-backed deci
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~6 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~2 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~5 pairs
   weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10651  resume_2131 × jd_2131
-  pair_10652  resume_2131 × jd_2132
-  pair_10653  resume_2131 × jd_2133
-  pair_10654  resume_2131 × jd_2134
-  pair_10655  resume_2131 × jd_2135
-  pair_10656  resume_2132 × jd_2131
-  pair_10657  resume_2132 × jd_2132
-  pair_10658  resume_2132 × jd_2133
-  pair_10659  resume_2132 × jd_2134
-  pair_10660  resume_2132 × jd_2135
-  pair_10661  resume_2133 × jd_2131
-  pair_10662  resume_2133 × jd_2132
-  pair_10663  resume_2133 × jd_2133
-  pair_10664  resume_2133 × jd_2134
-  pair_10665  resume_2133 × jd_2135
-  pair_10666  resume_2134 × jd_2131
-  pair_10667  resume_2134 × jd_2132
-  pair_10668  resume_2134 × jd_2133
-  pair_10669  resume_2134 × jd_2134
-  pair_10670  resume_2134 × jd_2135
-  pair_10671  resume_2135 × jd_2131
-  pair_10672  resume_2135 × jd_2132
-  pair_10673  resume_2135 × jd_2133
-  pair_10674  resume_2135 × jd_2134
-  pair_10675  resume_2135 × jd_2135
+  pair_10676  resume_2136 × jd_2136
+  pair_10677  resume_2136 × jd_2137
+  pair_10678  resume_2136 × jd_2138
+  pair_10679  resume_2136 × jd_2139
+  pair_10680  resume_2136 × jd_2140
+  pair_10681  resume_2137 × jd_2136
+  pair_10682  resume_2137 × jd_2137
+  pair_10683  resume_2137 × jd_2138
+  pair_10684  resume_2137 × jd_2139
+  pair_10685  resume_2137 × jd_2140
+  pair_10686  resume_2138 × jd_2136
+  pair_10687  resume_2138 × jd_2137
+  pair_10688  resume_2138 × jd_2138
+  pair_10689  resume_2138 × jd_2139
+  pair_10690  resume_2138 × jd_2140
+  pair_10691  resume_2139 × jd_2136
+  pair_10692  resume_2139 × jd_2137
+  pair_10693  resume_2139 × jd_2138
+  pair_10694  resume_2139 × jd_2139
+  pair_10695  resume_2139 × jd_2140
+  pair_10696  resume_2140 × jd_2136
+  pair_10697  resume_2140 × jd_2137
+  pair_10698  resume_2140 × jd_2138
+  pair_10699  resume_2140 × jd_2139
+  pair_10700  resume_2140 × jd_2140
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
