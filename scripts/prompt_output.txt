@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2021 | level: intern | exp: 0.3 yrs
-  skills: Python, Transformers, Embeddings, Deep Learning
-  background: Motivated AI enthusiast currently finishing a computer science degree with a focus on natural language processing. I have spent the last six months building a strong understanding of transformer archi
+  id: resume_2026 | level: intern | exp: 0.2 yrs
+  skills: Figma, Wireframing, Prototyping, Visual Design
+  background: Enthusiastic design student currently in my final year of study, passionate about creating intuitive user interfaces. I have developed a strong foundation in visual design principles, wireframing, and
 
-  id: resume_2022 | level: junior | exp: 1.8 yrs
-  skills: Python, LangChain, RAG, Vector Databases
-  background: Junior AI engineer with over a year of professional experience in developing NLP applications. I have worked extensively on production-ready RAG systems, managing vector databases and fine-tuning embe
+  id: resume_2027 | level: junior | exp: 1.5 yrs
+  skills: Figma, Prototyping, User Research, Interaction Design
+  background: Junior Product Designer with over a year of professional experience focused on end-to-end mobile and web design. I am skilled in translating user requirements into clear, functional wireframes and int
 
-  id: resume_2023 | level: middle | exp: 4.2 yrs
-  skills: LangChain, RAG, PyTorch, Transformers
-  background: Versatile NLP engineer with four years of experience designing and deploying scalable AI solutions. My work focuses on building robust RAG pipelines, managing complex LLM workflows with LangChain, and
+  id: resume_2028 | level: middle | exp: 4.5 yrs
+  skills: Figma, Design Systems, User Research, Information Architecture
+  background: Versatile Product Designer with four years of experience crafting digital products for diverse user bases. I specialize in the full design lifecycle, from conducting formative user research to deliver
 
-  id: resume_2024 | level: senior | exp: 6.8 yrs
-  skills: LLM Ops, Transformers, RAG, System Architecture
-  background: Senior NLP engineer with six years of experience leading the development of complex AI systems. I specialize in architecting sophisticated transformer-based solutions, optimizing production RAG pipeli
+  id: resume_2029 | level: senior | exp: 6.5 yrs
+  skills: Figma, User Experience Strategy, Design Leadership, Prototyping
+  background: Senior Product Designer with six years of experience driving design strategy for high-growth tech products. I possess deep expertise in user experience research, complex interaction patterns, and scal
 
-  id: resume_2025 | level: senior | exp: 9.5 yrs
-  skills: Strategic AI Planning, LLM Scaling, Autonomous Agents, Transformers
-  background: Principal AI lead with over nine years of experience in defining the future of language processing within enterprise organizations. My focus is on long-term strategy, building autonomous AI agents, an
+  id: resume_2030 | level: senior | exp: 9.8 yrs
+  skills: Strategic Design, Design Ops, Product Strategy, Figma
+  background: Principal Product Design Lead with over nine years of experience in shaping design organizations and shipping impactful digital products at scale. My focus is on long-term product vision, advanced des
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2021 | title: NLP Research Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Transformers
-  description: We are seeking an inquisitive NLP research intern to join our AI lab. This position is perfect for a student eager to get hands-on experience with transformer architectures and dat
+  id: jd_2026 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, Wireframing
+  description: We are seeking a creative UI/UX design intern to join our product team. This internship provides an excellent opportunity to learn professional design workflows while working on re
 
-  id: jd_2022 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, LangChain, RAG
-  description: We are hiring a Junior NLP Engineer to help build our next-generation RAG services. You will work on integrating LLMs into our product, managing vector databases, and building Lang
+  id: jd_2027 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, Prototyping, User Research
+  description: We are looking for a Junior Product Designer to help us build intuitive and engaging user experiences. You will be responsible for translating product concepts into functional desi
 
-  id: jd_2023 | title: NLP Software Engineer | level: middle | min_exp: 3 yrs
-  required_skills: LangChain, RAG, PyTorch, Transformers
-  description: We are looking for a skilled NLP Software Engineer to drive our search and intelligence initiatives. You will be responsible for building robust RAG pipelines, fine-tuning embeddin
+  id: jd_2028 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Figma, Design Systems, User Research
+  description: We are seeking a talented Product Designer to own core parts of our platform experience. You will work through the full product lifecycle, from initial research and ideation to det
 
-  id: jd_2024 | title: Senior AI Architect | level: senior | min_exp: 5 yrs
-  required_skills: LLM Ops, Transformers, RAG, System Architecture
-  description: We are seeking a Senior AI Architect to oversee our AI platform development. You will design scalable system architectures for LLM deployments, implement robust LLM Ops, and manage
+  id: jd_2029 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: Figma, User Experience Strategy, Design Leadership
+  description: We are looking for a Senior Product Designer to drive our design strategy. You will tackle complex navigation problems, define interaction patterns, and ensure a cohesive experienc
 
-  id: jd_2025 | title: Principal AI Lead | level: senior | min_exp: 7 yrs
-  required_skills: Strategic AI Planning, LLM Scaling, Autonomous Agents, Transformers
-  description: We are hiring a Principal AI Lead to define the long-term AI strategy for our organization. You will lead cross-functional teams in developing autonomous agents and advanced langua
+  id: jd_2030 | title: Principal Design Lead | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Design, Design Ops, Product Strategy
+  description: We are hiring a Principal Design Lead to shape our design culture and product direction. You will oversee the evolution of our platform's design ecosystem, optimize design processe
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -74,31 +74,31 @@ Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10101  resume_2021 × jd_2021
-  pair_10102  resume_2021 × jd_2022
-  pair_10103  resume_2021 × jd_2023
-  pair_10104  resume_2021 × jd_2024
-  pair_10105  resume_2021 × jd_2025
-  pair_10106  resume_2022 × jd_2021
-  pair_10107  resume_2022 × jd_2022
-  pair_10108  resume_2022 × jd_2023
-  pair_10109  resume_2022 × jd_2024
-  pair_10110  resume_2022 × jd_2025
-  pair_10111  resume_2023 × jd_2021
-  pair_10112  resume_2023 × jd_2022
-  pair_10113  resume_2023 × jd_2023
-  pair_10114  resume_2023 × jd_2024
-  pair_10115  resume_2023 × jd_2025
-  pair_10116  resume_2024 × jd_2021
-  pair_10117  resume_2024 × jd_2022
-  pair_10118  resume_2024 × jd_2023
-  pair_10119  resume_2024 × jd_2024
-  pair_10120  resume_2024 × jd_2025
-  pair_10121  resume_2025 × jd_2021
-  pair_10122  resume_2025 × jd_2022
-  pair_10123  resume_2025 × jd_2023
-  pair_10124  resume_2025 × jd_2024
-  pair_10125  resume_2025 × jd_2025
+  pair_10126  resume_2026 × jd_2026
+  pair_10127  resume_2026 × jd_2027
+  pair_10128  resume_2026 × jd_2028
+  pair_10129  resume_2026 × jd_2029
+  pair_10130  resume_2026 × jd_2030
+  pair_10131  resume_2027 × jd_2026
+  pair_10132  resume_2027 × jd_2027
+  pair_10133  resume_2027 × jd_2028
+  pair_10134  resume_2027 × jd_2029
+  pair_10135  resume_2027 × jd_2030
+  pair_10136  resume_2028 × jd_2026
+  pair_10137  resume_2028 × jd_2027
+  pair_10138  resume_2028 × jd_2028
+  pair_10139  resume_2028 × jd_2029
+  pair_10140  resume_2028 × jd_2030
+  pair_10141  resume_2029 × jd_2026
+  pair_10142  resume_2029 × jd_2027
+  pair_10143  resume_2029 × jd_2028
+  pair_10144  resume_2029 × jd_2029
+  pair_10145  resume_2029 × jd_2030
+  pair_10146  resume_2030 × jd_2026
+  pair_10147  resume_2030 × jd_2027
+  pair_10148  resume_2030 × jd_2028
+  pair_10149  resume_2030 × jd_2029
+  pair_10150  resume_2030 × jd_2030
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
