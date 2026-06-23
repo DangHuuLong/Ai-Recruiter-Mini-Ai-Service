@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2066 | level: intern | exp: 0.3 yrs
-  skills: Retail Analytics, Inventory Management, Shopify, Excel
-  background: Business administration student in final year with a keen interest in e-commerce operations and digital marketplace dynamics. Through academic projects, I have gained foundational knowledge in invento
+  id: resume_2071 | level: intern | exp: 0.2 yrs
+  skills: AWS, Docker, Linux, Terraform
+  background: Computer Science student with a foundational understanding of cloud infrastructure and automation. I am eager to learn and apply my knowledge of AWS and Linux in a real-world setting. I have completed
 
-  id: resume_2067 | level: junior | exp: 1.5 yrs
-  skills: Catalog Management, Retail Operations, Promotional Planning, Data Analysis
-  background: E-commerce operations assistant with 1.5 years of experience in managing digital marketplace accounts and coordinating retail fulfillment. I have successfully maintained product catalogs, executed pro
+  id: resume_2072 | level: junior | exp: 1.5 yrs
+  skills: Kubernetes, Docker, Terraform, CI/CD
+  background: Junior DevOps engineer with 1.5 years of experience in maintaining cloud environments and streamlining development workflows. I have practical experience in managing containerized applications using K
 
-  id: resume_2068 | level: middle | exp: 4.2 yrs
-  skills: Category Management, Assortment Planning, Price Optimization, Retail Analytics
-  background: E-commerce Merchandising Manager with 4 years of experience driving category growth and operational efficiency on major digital marketplaces. My expertise lies in strategic assortment planning, price 
+  id: resume_2073 | level: middle | exp: 4.0 yrs
+  skills: AWS, Kubernetes, Terraform, Infrastructure as Code
+  background: DevOps Engineer with 4 years of experience designing and maintaining resilient cloud infrastructure. My expertise lies in automating infrastructure provisioning, optimizing Kubernetes cluster performa
 
-  id: resume_2069 | level: senior | exp: 6.8 yrs
-  skills: Operations Management, Logistics, Demand Forecasting, Process Automation
-  background: Senior E-commerce Operations Manager with 6 years of experience building and optimizing multi-channel retail ecosystems. I have led high-performing teams in managing complex logistics, fulfillment ope
+  id: resume_2074 | level: senior | exp: 6.5 yrs
+  skills: AWS, Kubernetes, Terraform, SRE
+  background: Senior DevOps Architect with 6 years of experience driving digital transformation through robust cloud infrastructure and operational excellence. I specialize in designing highly scalable, secure, and
 
-  id: resume_2070 | level: senior | exp: 9.5 yrs
-  skills: E-commerce Strategy, Multi-Channel Retail, Supply Chain Governance, Strategic Leadership
-  background: Principal E-commerce Strategist with over 9 years of experience directing digital retail transformations for multinational organizations. I specialize in building sustainable marketplace strategies, m
+  id: resume_2075 | level: senior | exp: 9.5 yrs
+  skills: Cloud Architecture, Hybrid Cloud, Platform Engineering, DevOps Strategy
+  background: Principal Cloud Infrastructure Engineer with over 9 years of experience architecting and leading complex enterprise-level DevOps transformations. I have extensive experience building multi-cloud solut
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2066 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Retail Operations, Inventory Management
-  description: We are seeking a motivated E-commerce operations intern to assist our retail team. You will support daily marketplace tasks, data entry, and inventory updates. This role is perfect
+  id: jd_2071 | title: DevOps Intern | level: intern | min_exp: 0 yrs
+  required_skills: AWS, Linux
+  description: We are seeking an enthusiastic DevOps intern to support our infrastructure team. You will learn about AWS management, assist in monitoring tasks, and help maintain simple infrastru
 
-  id: jd_2067 | title: Junior E-commerce Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Catalog Management, Retail Operations, Data Analysis
-  description: We are hiring a Junior E-commerce Specialist to manage our online catalog and support promotional planning. You will be responsible for maintaining accurate product listings, monit
+  id: jd_2072 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Docker, Kubernetes, CI/CD
+  description: We are looking for a Junior DevOps Engineer to manage our development and staging environments. You will be responsible for containerizing services, maintaining CI/CD pipelines, an
 
-  id: jd_2068 | title: E-commerce Merchandising Manager | level: middle | min_exp: 3 yrs
-  required_skills: Category Management, Assortment Planning, Retail Analytics
-  description: We are looking for a Merchandising Manager to drive our product assortment and pricing strategies. You will manage high-volume categories, optimize conversion paths, and use retail
+  id: jd_2073 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
+  required_skills: AWS, Kubernetes, Terraform
+  description: We are seeking a DevOps Engineer to take ownership of our cloud infrastructure. You will architect robust systems on AWS, implement advanced infrastructure-as-code, and improve the
 
-  id: jd_2069 | title: Senior Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Operations Management, Logistics, Demand Forecasting
-  description: We are seeking a Senior Operations Manager to oversee our fulfillment network and optimize inventory workflows. You will manage complex logistics, mentor operations staff, and lead
+  id: jd_2074 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
+  required_skills: AWS, Kubernetes, Terraform, SRE
+  description: We are looking for a Senior DevOps Engineer to lead our infrastructure team. You will define our cloud-native strategy, oversee SRE operations, and build secure, automated workflow
 
-  id: jd_2070 | title: Principal Retail Strategist | level: senior | min_exp: 7 yrs
-  required_skills: E-commerce Strategy, Strategic Leadership, Multi-Channel Retail
-  description: We are hiring a Principal Retail Strategist to define our global digital marketplace strategy. You will lead cross-functional transformation projects, oversee international supply 
+  id: jd_2075 | title: Principal Infrastructure Architect | level: senior | min_exp: 7 yrs
+  required_skills: Cloud Architecture, Platform Engineering, DevOps Strategy
+  description: We are hiring a Principal Infrastructure Architect to drive our enterprise cloud transformation. You will define long-term architectural standards, lead high-stakes platform migrat
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~13 pairs
-  excellent_match: ~10 pairs
+  strong_match: ~12 pairs
+  excellent_match: ~11 pairs
   moderate_match: ~2 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10326  resume_2066 × jd_2066
-  pair_10327  resume_2066 × jd_2067
-  pair_10328  resume_2066 × jd_2068
-  pair_10329  resume_2066 × jd_2069
-  pair_10330  resume_2066 × jd_2070
-  pair_10331  resume_2067 × jd_2066
-  pair_10332  resume_2067 × jd_2067
-  pair_10333  resume_2067 × jd_2068
-  pair_10334  resume_2067 × jd_2069
-  pair_10335  resume_2067 × jd_2070
-  pair_10336  resume_2068 × jd_2066
-  pair_10337  resume_2068 × jd_2067
-  pair_10338  resume_2068 × jd_2068
-  pair_10339  resume_2068 × jd_2069
-  pair_10340  resume_2068 × jd_2070
-  pair_10341  resume_2069 × jd_2066
-  pair_10342  resume_2069 × jd_2067
-  pair_10343  resume_2069 × jd_2068
-  pair_10344  resume_2069 × jd_2069
-  pair_10345  resume_2069 × jd_2070
-  pair_10346  resume_2070 × jd_2066
-  pair_10347  resume_2070 × jd_2067
-  pair_10348  resume_2070 × jd_2068
-  pair_10349  resume_2070 × jd_2069
-  pair_10350  resume_2070 × jd_2070
+  pair_10351  resume_2071 × jd_2071
+  pair_10352  resume_2071 × jd_2072
+  pair_10353  resume_2071 × jd_2073
+  pair_10354  resume_2071 × jd_2074
+  pair_10355  resume_2071 × jd_2075
+  pair_10356  resume_2072 × jd_2071
+  pair_10357  resume_2072 × jd_2072
+  pair_10358  resume_2072 × jd_2073
+  pair_10359  resume_2072 × jd_2074
+  pair_10360  resume_2072 × jd_2075
+  pair_10361  resume_2073 × jd_2071
+  pair_10362  resume_2073 × jd_2072
+  pair_10363  resume_2073 × jd_2073
+  pair_10364  resume_2073 × jd_2074
+  pair_10365  resume_2073 × jd_2075
+  pair_10366  resume_2074 × jd_2071
+  pair_10367  resume_2074 × jd_2072
+  pair_10368  resume_2074 × jd_2073
+  pair_10369  resume_2074 × jd_2074
+  pair_10370  resume_2074 × jd_2075
+  pair_10371  resume_2075 × jd_2071
+  pair_10372  resume_2075 × jd_2072
+  pair_10373  resume_2075 × jd_2073
+  pair_10374  resume_2075 × jd_2074
+  pair_10375  resume_2075 × jd_2075
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
