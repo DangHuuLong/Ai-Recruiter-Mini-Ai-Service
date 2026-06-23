@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1966 | level: intern | exp: 0.3 yrs
-  skills: Social Media Management, Seo Basics, Content Writing, Web Analytics
-  background: Marketing student with a deep passion for digital storytelling and content creation. Throughout my academic career, I have developed a foundational understanding of social media platform management, s
+  id: resume_1971 | level: intern | exp: 0.3 yrs
+  skills: Requirements Gathering, Bpmn Modeling, Stakeholder Communication, Project Documentation
+  background: Business information student with a keen interest in business analysis and project coordination. Throughout my academic career, I have developed a foundational understanding of requirements gathering,
 
-  id: resume_1967 | level: junior | exp: 1.8 yrs
-  skills: Seo Optimization, Social Media Advertising, Performance Analytics, Copywriting
-  background: Junior digital marketing coordinator with nearly two years of professional experience executing content strategies and social media campaigns. My background includes managing brand presence across mul
+  id: resume_1972 | level: junior | exp: 1.8 yrs
+  skills: Requirements Analysis, Bpmn Diagrams, Stakeholder Workshops, Project Coordination
+  background: Junior business analyst with nearly two years of professional experience supporting requirements gathering and process improvement initiatives. My background includes facilitating stakeholder workshop
 
-  id: resume_1968 | level: middle | exp: 4.2 yrs
-  skills: Content Strategy, Technical Seo, Digital Marketing Analytics, Roi Optimization
-  background: Dynamic digital marketing specialist with four years of experience leading multi-platform content strategies and optimizing marketing performance. I specialize in bridging the gap between content crea
+  id: resume_1973 | level: middle | exp: 4.2 yrs
+  skills: Requirements Management, Bpmn 2.0, Stakeholder Management, Project Lifecycle Management
+  background: Dynamic business analyst with four years of experience leading requirements gathering and project lifecycle management. I specialize in bridging the gap between business objectives and technical imple
 
-  id: resume_1969 | level: senior | exp: 6.5 yrs
-  skills: Content Architecture, Search Engine Strategy, Performance Marketing, Strategic Leadership
-  background: Experienced marketing manager and content strategist with over six years of expertise in large-scale digital campaigns and multi-channel system integration. I have a proven track record of architectin
+  id: resume_1974 | level: senior | exp: 6.5 yrs
+  skills: Requirements Architecture, Bpmn Modeling, Strategic Stakeholder Management, Project Portfolio Management
+  background: Experienced business analyst and project lead with over six years of expertise in large-scale requirements engineering and enterprise-wide process integration. I have a proven track record of architec
 
-  id: resume_1970 | level: senior | exp: 9.5 yrs
-  skills: Marketing Architecture, Content Leadership, Search Engine Optimization, Data Strategy
-  background: Principal digital strategist with over nine years of experience defining comprehensive marketing visions and overseeing enterprise-wide content frameworks. My expertise lies in building complex digita
+  id: resume_1975 | level: senior | exp: 9.5 yrs
+  skills: Business Architecture, Project Governance, Requirements Engineering, Stakeholder Strategy
+  background: Principal business strategist with over nine years of experience defining comprehensive organizational visions and overseeing enterprise-wide project governance frameworks. My expertise lies in buildi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1966 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: Social Media Management, Seo Basics, Content Writing, Web Analytics
-  description: We are seeking a motivated Digital Marketing Intern to support our creative content and marketing team. This role provides hands-on experience in social media content drafting, SEO
+  id: jd_1971 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, Bpmn Modeling, Stakeholder Communication, Project Documentation
+  description: We are seeking a motivated Business Analysis Intern to support our project management and analysis team. This role provides hands-on experience in requirements documentation, busin
 
-  id: jd_1967 | title: Junior Digital Marketer | level: junior | min_exp: 1 yrs
-  required_skills: Seo Optimization, Social Media Advertising, Performance Analytics, Copywriting
-  description: Our team is looking for a detail-oriented Junior Digital Marketer to handle content creation and campaign maintenance. You will be instrumental in ensuring that social media messag
+  id: jd_1972 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, Bpmn Diagrams, Stakeholder Workshops, Project Coordination
+  description: Our team is looking for a detail-oriented Junior Business Analyst to handle requirements engineering and process maintenance. You will be instrumental in ensuring that business nee
 
-  id: jd_1968 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, Technical Seo, Digital Marketing Analytics, Roi Optimization
-  description: We are searching for a skilled Digital Marketing Specialist to lead content strategy initiatives and manage technical marketing tasks. You will bridge the gap between creative exec
+  id: jd_1973 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Management, Bpmn 2.0, Stakeholder Management, Project Lifecycle Management
+  description: We are searching for a skilled Business Analyst to lead requirements gathering initiatives and manage project lifecycle tasks. You will bridge the gap between business objectives a
 
-  id: jd_1969 | title: Senior Content Strategist | level: senior | min_exp: 5 yrs
-  required_skills: Content Architecture, Search Engine Strategy, Performance Marketing, Strategic Leadership
-  description: We are looking for a visionary Senior Content Strategist to guide our enterprise marketing initiatives. You will take ownership of our digital content strategy, ensuring that brand
+  id: jd_1974 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Requirements Architecture, Bpmn Modeling, Strategic Stakeholder Management, Project Portfolio Management
+  description: We are looking for a visionary Senior Business Analyst to guide our enterprise project initiatives. You will take ownership of our requirements architecture, ensuring that project 
 
-  id: jd_1970 | title: Principal Digital Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Marketing Architecture, Content Leadership, Search Engine Optimization, Data Strategy
-  description: We are seeking a Principal Digital Strategist to shape our future marketing engineering strategy at an enterprise level. This is a leadership position for someone experienced in ar
+  id: jd_1975 | title: Principal Business Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Business Architecture, Project Governance, Requirements Engineering, Stakeholder Strategy
+  description: We are seeking a Principal Business Strategist to shape our future project engineering strategy at an enterprise level. This is a leadership position for someone experienced in arc
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9826  resume_1966 × jd_1966
-  pair_9827  resume_1966 × jd_1967
-  pair_9828  resume_1966 × jd_1968
-  pair_9829  resume_1966 × jd_1969
-  pair_9830  resume_1966 × jd_1970
-  pair_9831  resume_1967 × jd_1966
-  pair_9832  resume_1967 × jd_1967
-  pair_9833  resume_1967 × jd_1968
-  pair_9834  resume_1967 × jd_1969
-  pair_9835  resume_1967 × jd_1970
-  pair_9836  resume_1968 × jd_1966
-  pair_9837  resume_1968 × jd_1967
-  pair_9838  resume_1968 × jd_1968
-  pair_9839  resume_1968 × jd_1969
-  pair_9840  resume_1968 × jd_1970
-  pair_9841  resume_1969 × jd_1966
-  pair_9842  resume_1969 × jd_1967
-  pair_9843  resume_1969 × jd_1968
-  pair_9844  resume_1969 × jd_1969
-  pair_9845  resume_1969 × jd_1970
-  pair_9846  resume_1970 × jd_1966
-  pair_9847  resume_1970 × jd_1967
-  pair_9848  resume_1970 × jd_1968
-  pair_9849  resume_1970 × jd_1969
-  pair_9850  resume_1970 × jd_1970
+  pair_9851  resume_1971 × jd_1971
+  pair_9852  resume_1971 × jd_1972
+  pair_9853  resume_1971 × jd_1973
+  pair_9854  resume_1971 × jd_1974
+  pair_9855  resume_1971 × jd_1975
+  pair_9856  resume_1972 × jd_1971
+  pair_9857  resume_1972 × jd_1972
+  pair_9858  resume_1972 × jd_1973
+  pair_9859  resume_1972 × jd_1974
+  pair_9860  resume_1972 × jd_1975
+  pair_9861  resume_1973 × jd_1971
+  pair_9862  resume_1973 × jd_1972
+  pair_9863  resume_1973 × jd_1973
+  pair_9864  resume_1973 × jd_1974
+  pair_9865  resume_1973 × jd_1975
+  pair_9866  resume_1974 × jd_1971
+  pair_9867  resume_1974 × jd_1972
+  pair_9868  resume_1974 × jd_1973
+  pair_9869  resume_1974 × jd_1974
+  pair_9870  resume_1974 × jd_1975
+  pair_9871  resume_1975 × jd_1971
+  pair_9872  resume_1975 × jd_1972
+  pair_9873  resume_1975 × jd_1973
+  pair_9874  resume_1975 × jd_1974
+  pair_9875  resume_1975 × jd_1975
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
