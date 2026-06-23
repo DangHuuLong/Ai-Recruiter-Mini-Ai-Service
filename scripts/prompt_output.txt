@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1911 | level: intern | exp: 0.2 yrs
-  skills: PostgreSQL, Sql, Database Design, Normalization, Data Modeling
-  background: Enthusiastic Computer Science student with a strong focus on database technologies and data management. During my academic career, I have developed a solid foundation in relational database design, SQ
+  id: resume_1916 | level: intern | exp: 0.3 yrs
+  skills: Requirements Gathering, Bpmn, Process Mapping, Stakeholder Management, Project Management
+  background: Motivated Business Administration student with a strong interest in business analysis and project management methodologies. During my academic career, I have developed a solid foundation in requiremen
 
-  id: resume_1912 | level: junior | exp: 1.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Query Optimization, Schema Design
-  background: Detail-oriented Junior Database Engineer with nearly two years of professional experience in managing and optimizing PostgreSQL environments. I have hands-on experience in query performance tuning, ro
+  id: resume_1917 | level: junior | exp: 1.8 yrs
+  skills: Requirements Elicitation, Bpmn, Stakeholder Management, Project Coordination, User Stories
+  background: Detail-oriented Junior Business Analyst with nearly two years of professional experience in requirements elicitation and project coordination. I have hands-on experience in facilitating stakeholder wo
 
-  id: resume_1913 | level: middle | exp: 4.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Performance Tuning, Database Architecture
-  background: Versatile Database Engineer with four years of professional experience in designing, implementing, and scaling high-performance database architectures. I specialize in PostgreSQL performance optimizat
+  id: resume_1918 | level: middle | exp: 4.5 yrs
+  skills: Business Analysis, Requirements Management, Bpmn, Stakeholder Management, Project Delivery
+  background: Versatile Business Analyst and Project Coordinator with four years of professional experience in driving large-scale requirements initiatives and managing project lifecycles. I specialize in complex r
 
-  id: resume_1914 | level: senior | exp: 6.5 yrs
-  skills: PostgreSQL, Redis, MongoDB, Scalability, Database Strategy
-  background: Senior Database Engineer with over six years of experience driving complex data engineering initiatives and optimizing enterprise-grade database environments. I have deep expertise in PostgreSQL clust
+  id: resume_1919 | level: senior | exp: 6.8 yrs
+  skills: Business Analysis Strategy, Requirements Engineering, Bpmn, Stakeholder Management, Agile Project Management
+  background: Senior Business Analyst with over six years of experience driving complex project initiatives and optimizing organizational business processes. I have deep expertise in enterprise-level requirements g
 
-  id: resume_1915 | level: senior | exp: 8.5 yrs
-  skills: Database Architecture, PostgreSQL, MongoDB, Distributed Systems, Data Strategy
-  background: Principal Database Architect with eight years of extensive experience in designing and overseeing resilient, enterprise-level data architectures. My focus is on architecting complex multi-database eco
+  id: resume_1920 | level: senior | exp: 8.2 yrs
+  skills: Business Architecture, Requirements Governance, Bpmn, Strategic Planning, Stakeholder Governance
+  background: Principal Business Architect with eight years of extensive experience in designing and overseeing large-scale business transformation projects. My focus is on architecting complex stakeholder engageme
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1911 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, Sql, Database Design, Data Modeling
-  description: We are looking for a motivated Database Engineering Intern to support our infrastructure team. This role is perfect for a student eager to learn the fundamentals of relational data
+  id: jd_1916 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, Bpmn, Documentation, Communication
+  description: We are looking for a motivated Business Analysis Intern to support our project management team. This role is perfect for a student eager to learn the fundamentals of requirements g
 
-  id: jd_1912 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Query Optimization
-  description: Our team is seeking a Junior Database Engineer to focus on database maintenance, query performance, and basic NoSQL administration. You will be responsible for managing routine Pos
+  id: jd_1917 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Elicitation, Bpmn, Stakeholder Management, Documentation
+  description: Our team is seeking a Junior Business Analyst to focus on requirements elicitation, process documentation, and stakeholder coordination. You will be responsible for gathering and c
 
-  id: jd_1913 | title: Database Systems Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Database Architecture
-  description: We are looking for a skilled Database Systems Engineer to drive the reliability and performance of our core data layers. You will be responsible for architecting robust PostgreSQL 
+  id: jd_1918 | title: Business Analyst Project Coordinator | level: middle | min_exp: 3 yrs
+  required_skills: Business Analysis, Requirements Management, Bpmn, Stakeholder Management
+  description: We are looking for a skilled Business Analyst to drive project lifecycle management and stakeholder alignment. You will be responsible for managing requirements throughout the proj
 
-  id: jd_1914 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Scalability
-  description: We are seeking a Senior Database Engineer to drive our enterprise-level database initiatives. You will take ownership of the technical and strategic roadmap for our data infrastruc
+  id: jd_1919 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Business Analysis Strategy, Requirements Engineering, Bpmn, Stakeholder Management
+  description: We are seeking a Senior Business Analyst to drive our enterprise-level requirements initiatives. You will take ownership of the strategic roadmap for business analysis, lead requir
 
-  id: jd_1915 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: Database Architecture, PostgreSQL, MongoDB, Data Strategy
-  description: We are looking for a visionary Principal Database Architect to define our enterprise-level data strategy. You will be responsible for overseeing the entire data persistence landsca
+  id: jd_1920 | title: Principal Business Architect | level: senior | min_exp: 7 yrs
+  required_skills: Business Architecture, Requirements Governance, Bpmn, Stakeholder Governance
+  description: We are looking for a visionary Principal Business Architect to define our enterprise-level business strategy. You will be responsible for overseeing the entire business process lan
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9551  resume_1911 × jd_1911
-  pair_9552  resume_1911 × jd_1912
-  pair_9553  resume_1911 × jd_1913
-  pair_9554  resume_1911 × jd_1914
-  pair_9555  resume_1911 × jd_1915
-  pair_9556  resume_1912 × jd_1911
-  pair_9557  resume_1912 × jd_1912
-  pair_9558  resume_1912 × jd_1913
-  pair_9559  resume_1912 × jd_1914
-  pair_9560  resume_1912 × jd_1915
-  pair_9561  resume_1913 × jd_1911
-  pair_9562  resume_1913 × jd_1912
-  pair_9563  resume_1913 × jd_1913
-  pair_9564  resume_1913 × jd_1914
-  pair_9565  resume_1913 × jd_1915
-  pair_9566  resume_1914 × jd_1911
-  pair_9567  resume_1914 × jd_1912
-  pair_9568  resume_1914 × jd_1913
-  pair_9569  resume_1914 × jd_1914
-  pair_9570  resume_1914 × jd_1915
-  pair_9571  resume_1915 × jd_1911
-  pair_9572  resume_1915 × jd_1912
-  pair_9573  resume_1915 × jd_1913
-  pair_9574  resume_1915 × jd_1914
-  pair_9575  resume_1915 × jd_1915
+  pair_9576  resume_1916 × jd_1916
+  pair_9577  resume_1916 × jd_1917
+  pair_9578  resume_1916 × jd_1918
+  pair_9579  resume_1916 × jd_1919
+  pair_9580  resume_1916 × jd_1920
+  pair_9581  resume_1917 × jd_1916
+  pair_9582  resume_1917 × jd_1917
+  pair_9583  resume_1917 × jd_1918
+  pair_9584  resume_1917 × jd_1919
+  pair_9585  resume_1917 × jd_1920
+  pair_9586  resume_1918 × jd_1916
+  pair_9587  resume_1918 × jd_1917
+  pair_9588  resume_1918 × jd_1918
+  pair_9589  resume_1918 × jd_1919
+  pair_9590  resume_1918 × jd_1920
+  pair_9591  resume_1919 × jd_1916
+  pair_9592  resume_1919 × jd_1917
+  pair_9593  resume_1919 × jd_1918
+  pair_9594  resume_1919 × jd_1919
+  pair_9595  resume_1919 × jd_1920
+  pair_9596  resume_1920 × jd_1916
+  pair_9597  resume_1920 × jd_1917
+  pair_9598  resume_1920 × jd_1918
+  pair_9599  resume_1920 × jd_1919
+  pair_9600  resume_1920 × jd_1920
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
