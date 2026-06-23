@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2186 | level: intern | exp: 0.3 yrs
-  skills: Data Entry, Social Media Coordination, Inventory Management, Marketplace Optimization, Spreadsheet Analysis
-  background: Eager business student with a strong interest in digital marketplaces and consumer trends. During my recent academic projects, I focused on analyzing conversion rates for small-scale online storefront
+  id: resume_2191 | level: intern | exp: 0.3 yrs
+  skills: Python, FastAPI, PostgreSQL, Git, RESTful APIs
+  background: Computer Science student with a foundational understanding of backend development and RESTful APIs. During academic coursework, I have gained experience building small applications using Python and Fa
 
-  id: resume_2187 | level: junior | exp: 1.5 yrs
-  skills: E-commerce Platforms, Inventory Tracking, Order Fulfillment, Search Algorithm Optimization, Product Listing Management
-  background: Results-driven E-commerce Associate with two years of experience in online marketplace management and inventory tracking. I have successfully managed product listings on major platforms, ensuring accu
+  id: resume_2192 | level: junior | exp: 1.8 yrs
+  skills: Node.js, Express, PostgreSQL, Docker, API Design
+  background: Junior Backend Developer with two years of professional experience in building and maintaining API services. I have a strong command of Node.js and have worked extensively with Express to deliver high
 
-  id: resume_2188 | level: middle | exp: 4.0 yrs
-  skills: Category Management, Visual Merchandising, A/B Testing, Performance Analytics, Vendor Relations
-  background: Experienced E-commerce Merchandiser with four years of expertise in optimizing online storefronts for enhanced user engagement and sales growth. I specialize in category management, visual merchandisi
+  id: resume_2193 | level: middle | exp: 4.2 yrs
+  skills: Python, FastAPI, PostgreSQL, Microservices, CI/CD
+  background: Mid-level Backend Engineer with four years of hands-on experience designing scalable APIs and microservices. I specialize in Python and FastAPI, focusing on building robust, high-traffic systems. I ha
 
-  id: resume_2189 | level: senior | exp: 6.5 yrs
-  skills: Operational Strategy, Logistics Management, Team Leadership, Supply Chain Modeling, Marketplace Policy Compliance
-  background: Strategic E-commerce Operations Manager with six years of experience directing large-scale marketplace operations and logistics networks. I have a proven track record of scaling e-commerce businesses,
+  id: resume_2194 | level: senior | exp: 6.5 yrs
+  skills: System Architecture, Python, Node.js, PostgreSQL, Cloud Infrastructure
+  background: Senior Backend Developer with six years of experience building and optimizing large-scale API ecosystems. I have extensive experience with both Python and Node.js environments, leading projects from a
 
-  id: resume_2190 | level: senior | exp: 9.5 yrs
-  skills: Commercial Strategy, Digital Transformation, Market Expansion, Budget Management, Stakeholder Management
-  background: Principal E-commerce Strategist with over nine years of experience in retail digital transformation and global marketplace expansion. I possess an extensive background in defining commercial strategie
+  id: resume_2195 | level: senior | exp: 9.2 yrs
+  skills: Distributed Systems, Backend Architecture, Strategic Leadership, Database Internals, Python
+  background: Principal Backend Architect with over nine years of experience in leading engineering teams and designing highly complex, distributed backend architectures. I have a deep expertise in Python, FastAPI,
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2186 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Data Entry, Spreadsheet Management, Marketplace Operations
-  description: We are seeking a proactive intern to support our operations team in daily marketplace tasks. This role is ideal for a student interested in the mechanics of online retail and opera
+  id: jd_2191 | title: Backend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, FastAPI, Database Fundamentals
+  description: We are seeking an eager Backend Development Intern to join our engineering team. This role is ideal for a student or fresh graduate looking to gain hands-on experience in building 
 
-  id: jd_2187 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs
-  required_skills: E-commerce Platforms, Order Fulfillment, Product Listing Management
-  description: Our team is growing and we are looking for a Junior E-commerce Associate to manage day-to-day listing and fulfillment tasks. The successful candidate will be responsible for ensuri
+  id: jd_2192 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Node.js, PostgreSQL, API Design
+  description: Our team is looking for a Junior Backend Engineer to help us build and maintain high-quality API services. You will be responsible for creating new endpoints, optimizing existing d
 
-  id: jd_2188 | title: E-commerce Merchandiser | level: middle | min_exp: 3 yrs
-  required_skills: Category Management, Visual Merchandising, Performance Analytics
-  description: We are looking for a mid-level E-commerce Merchandiser to drive conversion and enhance customer experience across our online storefronts. You will lead category management initiati
+  id: jd_2193 | title: Backend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: We are searching for a skilled Backend Engineer to join our team. In this role, you will be responsible for designing and implementing scalable backend services using Python and Fa
 
-  id: jd_2189 | title: Senior E-commerce Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Operational Strategy, Logistics Management, Supply Chain Modeling
-  description: We are seeking a Senior E-commerce Operations Manager to lead our fulfillment and supply chain strategy. This role is pivotal in optimizing our operational infrastructure to suppor
+  id: jd_2194 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
+  required_skills: System Architecture, Python, PostgreSQL
+  description: We are seeking an experienced Senior Backend Developer to lead our backend engineering initiatives. You will take ownership of our core system architecture, ensuring high scalabili
 
-  id: jd_2190 | title: Principal E-commerce Strategist | level: senior | min_exp: 8 yrs
-  required_skills: Commercial Strategy, Digital Transformation, Strategic Planning
-  description: We are looking for a Principal E-commerce Strategist to guide our global digital transformation. This high-level position involves defining long-term commercial goals, identifying 
+  id: jd_2195 | title: Principal Backend Architect | level: senior | min_exp: 8 yrs
+  required_skills: Distributed Systems, Backend Architecture, Strategic Leadership
+  description: We are looking for a Principal Backend Architect to define the future of our backend ecosystem. This is a high-level role requiring extensive experience in designing highly availab
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~14 pairs
-  moderate_match: ~3 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~2 pairs
   weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10926  resume_2186 × jd_2186
-  pair_10927  resume_2186 × jd_2187
-  pair_10928  resume_2186 × jd_2188
-  pair_10929  resume_2186 × jd_2189
-  pair_10930  resume_2186 × jd_2190
-  pair_10931  resume_2187 × jd_2186
-  pair_10932  resume_2187 × jd_2187
-  pair_10933  resume_2187 × jd_2188
-  pair_10934  resume_2187 × jd_2189
-  pair_10935  resume_2187 × jd_2190
-  pair_10936  resume_2188 × jd_2186
-  pair_10937  resume_2188 × jd_2187
-  pair_10938  resume_2188 × jd_2188
-  pair_10939  resume_2188 × jd_2189
-  pair_10940  resume_2188 × jd_2190
-  pair_10941  resume_2189 × jd_2186
-  pair_10942  resume_2189 × jd_2187
-  pair_10943  resume_2189 × jd_2188
-  pair_10944  resume_2189 × jd_2189
-  pair_10945  resume_2189 × jd_2190
-  pair_10946  resume_2190 × jd_2186
-  pair_10947  resume_2190 × jd_2187
-  pair_10948  resume_2190 × jd_2188
-  pair_10949  resume_2190 × jd_2189
-  pair_10950  resume_2190 × jd_2190
+  pair_10951  resume_2191 × jd_2191
+  pair_10952  resume_2191 × jd_2192
+  pair_10953  resume_2191 × jd_2193
+  pair_10954  resume_2191 × jd_2194
+  pair_10955  resume_2191 × jd_2195
+  pair_10956  resume_2192 × jd_2191
+  pair_10957  resume_2192 × jd_2192
+  pair_10958  resume_2192 × jd_2193
+  pair_10959  resume_2192 × jd_2194
+  pair_10960  resume_2192 × jd_2195
+  pair_10961  resume_2193 × jd_2191
+  pair_10962  resume_2193 × jd_2192
+  pair_10963  resume_2193 × jd_2193
+  pair_10964  resume_2193 × jd_2194
+  pair_10965  resume_2193 × jd_2195
+  pair_10966  resume_2194 × jd_2191
+  pair_10967  resume_2194 × jd_2192
+  pair_10968  resume_2194 × jd_2193
+  pair_10969  resume_2194 × jd_2194
+  pair_10970  resume_2194 × jd_2195
+  pair_10971  resume_2195 × jd_2191
+  pair_10972  resume_2195 × jd_2192
+  pair_10973  resume_2195 × jd_2193
+  pair_10974  resume_2195 × jd_2194
+  pair_10975  resume_2195 × jd_2195
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
