@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2001 | level: intern | exp: 0.3 yrs
-  skills: Python, Pandas, Scikit-Learn, Data Visualization, Statistics
-  background: Highly motivated computer science student with a strong academic foundation in data structures and algorithms, seeking an internship to apply theoretical knowledge in real-world data science projects.
+  id: resume_2006 | level: intern | exp: 0.2 yrs
+  skills: Agile, User Research, Communication, Task Management
+  background: Enthusiastic business administration student with a keen interest in product management and technology trends. Throughout academic projects, I have developed a foundational understanding of user resea
 
-  id: resume_2002 | level: junior | exp: 1.5 yrs
-  skills: Python, Pandas, Scikit-Learn, SQL, Data Preprocessing
-  background: Detail-oriented data scientist with over a year of professional experience focused on data wrangling, preprocessing, and developing predictive models. Proven ability to translate business requirements
+  id: resume_2007 | level: junior | exp: 1.5 yrs
+  skills: Agile, Roadmapping, User Stories, Jira
+  background: Detail-oriented junior product manager with over one year of experience supporting the full product development lifecycle. Proven ability to assist in the maintenance of product roadmaps and the execu
 
-  id: resume_2003 | level: middle | exp: 4.0 yrs
-  skills: Python, PyTorch, Scikit-Learn, Pandas, Feature Engineering
-  background: Results-driven data scientist with four years of hands-on experience building, deploying, and optimizing machine learning models in production environments. Proficient in the end-to-end data science l
+  id: resume_2008 | level: middle | exp: 4.0 yrs
+  skills: Product Roadmap, Agile, Stakeholder Management, Data Analysis
+  background: Versatile product manager with four years of professional experience driving successful software product releases. Expert in managing complex product roadmaps and leading cross-functional squads withi
 
-  id: resume_2004 | level: senior | exp: 6.5 yrs
-  skills: Python, PyTorch, Scikit-Learn, Cloud Computing, System Architecture
-  background: Senior data scientist with six years of experience designing and implementing scalable machine learning architectures. Expert in Python-based development, specializing in deep learning frameworks like
+  id: resume_2009 | level: senior | exp: 6.5 yrs
+  skills: Strategic Planning, Product Roadmap, Agile Leadership, Stakeholder Management
+  background: Senior product manager with over six years of experience shaping and executing product strategy in competitive technology sectors. I possess a deep understanding of market dynamics, user behavior, and
 
-  id: resume_2005 | level: senior | exp: 9.0 yrs
-  skills: Python, PyTorch, Scikit-Learn, Leadership, Strategic Planning
-  background: Principal data scientist with over eight years of experience delivering advanced AI solutions and leading high-performing technical teams. Expert in designing complex neural network architectures with
+  id: resume_2010 | level: senior | exp: 9.5 yrs
+  skills: Product Vision, Stakeholder Governance, Agile Scaling, Executive Communication
+  background: Principal product leader with over eight years of experience building, scaling, and managing sophisticated technology platforms. I provide strategic vision for product roadmaps, ensuring that long-ter
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2001 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Pandas, Scikit-Learn
-  description: We are seeking a proactive data science intern to support our core research team. This position is ideal for a student looking to gain practical experience with Python, pandas, and
+  id: jd_2006 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Agile, Communication, Research
+  description: We are seeking a proactive product management intern to support our core development teams. This position is ideal for a student looking to gain hands-on experience in the agile pr
 
-  id: jd_2002 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
-  required_skills: Python, Pandas, Scikit-Learn, SQL
-  description: Join our growing analytics team as a Junior Data Scientist. You will be responsible for developing and maintaining predictive models, automating data pipelines, and conducting stat
+  id: jd_2007 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Product Roadmap, Stakeholder Management
+  description: Join our product team as a Junior Product Manager. You will be responsible for managing backlog items, assisting in the creation of product roadmaps, and collaborating with cross-f
 
-  id: jd_2003 | title: Data Scientist | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, Scikit-Learn, Pandas
-  description: We are looking for a skilled Data Scientist to join our team to help build end-to-end machine learning solutions. You will be responsible for designing and deploying models that im
+  id: jd_2008 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Roadmap, Agile, Stakeholder Management, Data Analysis
+  description: We are looking for a skilled Product Manager to help lead our product strategy and execution. You will be responsible for owning the roadmap for key product features, conducting us
 
-  id: jd_2004 | title: Senior Data Scientist | level: senior | min_exp: 5 yrs
-  required_skills: Python, PyTorch, Scikit-Learn, System Architecture
-  description: We are hiring a Senior Data Scientist to lead our machine learning initiatives. You will work on architecting scalable solutions for complex data problems. You must have extensive 
+  id: jd_2009 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Planning, Product Roadmap, Agile Leadership, Stakeholder Management
+  description: We are hiring a Senior Product Manager to lead our strategic initiatives. You will work on architecting long-term product roadmaps and managing relationships with diverse business 
 
-  id: jd_2005 | title: Principal Data Scientist | level: senior | min_exp: 7 yrs
-  required_skills: Python, PyTorch, Scikit-Learn, Leadership
-  description: We are seeking a visionary Principal Data Scientist to set the technical direction for our AI efforts. You will be responsible for building innovative deep learning models, mentori
+  id: jd_2010 | title: Principal Product Manager | level: senior | min_exp: 7 yrs
+  required_skills: Product Vision, Stakeholder Governance, Agile Scaling, Executive Communication
+  description: We are seeking a visionary Principal Product Manager to set the technical direction for our platform. You will be responsible for building innovative product features, governing st
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10001  resume_2001 × jd_2001
-  pair_10002  resume_2001 × jd_2002
-  pair_10003  resume_2001 × jd_2003
-  pair_10004  resume_2001 × jd_2004
-  pair_10005  resume_2001 × jd_2005
-  pair_10006  resume_2002 × jd_2001
-  pair_10007  resume_2002 × jd_2002
-  pair_10008  resume_2002 × jd_2003
-  pair_10009  resume_2002 × jd_2004
-  pair_10010  resume_2002 × jd_2005
-  pair_10011  resume_2003 × jd_2001
-  pair_10012  resume_2003 × jd_2002
-  pair_10013  resume_2003 × jd_2003
-  pair_10014  resume_2003 × jd_2004
-  pair_10015  resume_2003 × jd_2005
-  pair_10016  resume_2004 × jd_2001
-  pair_10017  resume_2004 × jd_2002
-  pair_10018  resume_2004 × jd_2003
-  pair_10019  resume_2004 × jd_2004
-  pair_10020  resume_2004 × jd_2005
-  pair_10021  resume_2005 × jd_2001
-  pair_10022  resume_2005 × jd_2002
-  pair_10023  resume_2005 × jd_2003
-  pair_10024  resume_2005 × jd_2004
-  pair_10025  resume_2005 × jd_2005
+  pair_10026  resume_2006 × jd_2006
+  pair_10027  resume_2006 × jd_2007
+  pair_10028  resume_2006 × jd_2008
+  pair_10029  resume_2006 × jd_2009
+  pair_10030  resume_2006 × jd_2010
+  pair_10031  resume_2007 × jd_2006
+  pair_10032  resume_2007 × jd_2007
+  pair_10033  resume_2007 × jd_2008
+  pair_10034  resume_2007 × jd_2009
+  pair_10035  resume_2007 × jd_2010
+  pair_10036  resume_2008 × jd_2006
+  pair_10037  resume_2008 × jd_2007
+  pair_10038  resume_2008 × jd_2008
+  pair_10039  resume_2008 × jd_2009
+  pair_10040  resume_2008 × jd_2010
+  pair_10041  resume_2009 × jd_2006
+  pair_10042  resume_2009 × jd_2007
+  pair_10043  resume_2009 × jd_2008
+  pair_10044  resume_2009 × jd_2009
+  pair_10045  resume_2009 × jd_2010
+  pair_10046  resume_2010 × jd_2006
+  pair_10047  resume_2010 × jd_2007
+  pair_10048  resume_2010 × jd_2008
+  pair_10049  resume_2010 × jd_2009
+  pair_10050  resume_2010 × jd_2010
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
