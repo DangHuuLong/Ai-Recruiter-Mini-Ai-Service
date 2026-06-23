@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1971 | level: intern | exp: 0.3 yrs
-  skills: Requirements Gathering, Bpmn Modeling, Stakeholder Communication, Project Documentation
-  background: Business information student with a keen interest in business analysis and project coordination. Throughout my academic career, I have developed a foundational understanding of requirements gathering,
+  id: resume_1976 | level: intern | exp: 0.3 yrs
+  skills: Marketplace Management, Inventory Tracking, Digital Merchandising, Retail Analytics
+  background: Retail management student passionate about e-commerce operations and digital merchandising. During my studies, I have developed a solid foundation in marketplace management, inventory tracking, and co
 
-  id: resume_1972 | level: junior | exp: 1.8 yrs
-  skills: Requirements Analysis, Bpmn Diagrams, Stakeholder Workshops, Project Coordination
-  background: Junior business analyst with nearly two years of professional experience supporting requirements gathering and process improvement initiatives. My background includes facilitating stakeholder workshop
+  id: resume_1977 | level: junior | exp: 1.8 yrs
+  skills: Marketplace Operations, Product Merchandising, Catalog Management, E-commerce Analytics
+  background: Junior e-commerce coordinator with nearly two years of professional experience in marketplace operations and product merchandising. My background includes managing product catalogs across multiple cha
 
-  id: resume_1973 | level: middle | exp: 4.2 yrs
-  skills: Requirements Management, Bpmn 2.0, Stakeholder Management, Project Lifecycle Management
-  background: Dynamic business analyst with four years of experience leading requirements gathering and project lifecycle management. I specialize in bridging the gap between business objectives and technical imple
+  id: resume_1978 | level: middle | exp: 4.2 yrs
+  skills: E-commerce Strategy, Category Management, Inventory Optimization, Retail Data Analysis
+  background: Dynamic e-commerce operations specialist with four years of experience leading multi-channel retail strategies and optimizing online merchandising. I specialize in bridging the gap between inventory o
 
-  id: resume_1974 | level: senior | exp: 6.5 yrs
-  skills: Requirements Architecture, Bpmn Modeling, Strategic Stakeholder Management, Project Portfolio Management
-  background: Experienced business analyst and project lead with over six years of expertise in large-scale requirements engineering and enterprise-wide process integration. I have a proven track record of architec
+  id: resume_1979 | level: senior | exp: 6.5 yrs
+  skills: E-commerce Management, Retail Strategy, Marketplace Growth, Operational Leadership
+  background: Experienced e-commerce manager and digital retail strategist with over six years of expertise in large-scale marketplace management and multi-channel operations. I have a proven track record of archit
 
-  id: resume_1975 | level: senior | exp: 9.5 yrs
-  skills: Business Architecture, Project Governance, Requirements Engineering, Stakeholder Strategy
-  background: Principal business strategist with over nine years of experience defining comprehensive organizational visions and overseeing enterprise-wide project governance frameworks. My expertise lies in buildi
+  id: resume_1980 | level: senior | exp: 9.5 yrs
+  skills: Digital Commerce Architecture, Retail Operations, Category Leadership, Data Strategy
+  background: Principal digital commerce strategist with over nine years of experience defining comprehensive retail visions and overseeing enterprise-wide e-commerce frameworks. My expertise lies in building compl
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1971 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, Bpmn Modeling, Stakeholder Communication, Project Documentation
-  description: We are seeking a motivated Business Analysis Intern to support our project management and analysis team. This role provides hands-on experience in requirements documentation, busin
+  id: jd_1976 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Marketplace Management, Inventory Tracking, Digital Merchandising, Retail Analytics
+  description: We are seeking a motivated E-commerce Operations Intern to support our digital retail and merchandising team. This role provides hands-on experience in marketplace product listing,
 
-  id: jd_1972 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, Bpmn Diagrams, Stakeholder Workshops, Project Coordination
-  description: Our team is looking for a detail-oriented Junior Business Analyst to handle requirements engineering and process maintenance. You will be instrumental in ensuring that business nee
+  id: jd_1977 | title: Junior E-commerce Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Marketplace Operations, Product Merchandising, Catalog Management, E-commerce Analytics
+  description: Our team is looking for a detail-oriented Junior E-commerce Coordinator to handle product catalog maintenance and operational support. You will be instrumental in ensuring that mar
 
-  id: jd_1973 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Management, Bpmn 2.0, Stakeholder Management, Project Lifecycle Management
-  description: We are searching for a skilled Business Analyst to lead requirements gathering initiatives and manage project lifecycle tasks. You will bridge the gap between business objectives a
+  id: jd_1978 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs
+  required_skills: E-commerce Strategy, Category Management, Inventory Optimization, Retail Data Analysis
+  description: We are searching for a skilled E-commerce Operations Specialist to lead category management initiatives and optimize retail performance. You will bridge the gap between inventory o
 
-  id: jd_1974 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Requirements Architecture, Bpmn Modeling, Strategic Stakeholder Management, Project Portfolio Management
-  description: We are looking for a visionary Senior Business Analyst to guide our enterprise project initiatives. You will take ownership of our requirements architecture, ensuring that project 
+  id: jd_1979 | title: Senior E-commerce Manager | level: senior | min_exp: 5 yrs
+  required_skills: E-commerce Management, Retail Strategy, Marketplace Growth, Operational Leadership
+  description: We are looking for a visionary Senior E-commerce Manager to guide our enterprise retail initiatives. You will take ownership of our digital commerce strategy, ensuring that merchan
 
-  id: jd_1975 | title: Principal Business Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Business Architecture, Project Governance, Requirements Engineering, Stakeholder Strategy
-  description: We are seeking a Principal Business Strategist to shape our future project engineering strategy at an enterprise level. This is a leadership position for someone experienced in arc
+  id: jd_1980 | title: Principal Digital Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Digital Commerce Architecture, Retail Operations, Category Leadership, Data Strategy
+  description: We are seeking a Principal Digital Strategist to shape our future retail architecture at an enterprise level. This is a leadership position for someone experienced in architecting 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9851  resume_1971 × jd_1971
-  pair_9852  resume_1971 × jd_1972
-  pair_9853  resume_1971 × jd_1973
-  pair_9854  resume_1971 × jd_1974
-  pair_9855  resume_1971 × jd_1975
-  pair_9856  resume_1972 × jd_1971
-  pair_9857  resume_1972 × jd_1972
-  pair_9858  resume_1972 × jd_1973
-  pair_9859  resume_1972 × jd_1974
-  pair_9860  resume_1972 × jd_1975
-  pair_9861  resume_1973 × jd_1971
-  pair_9862  resume_1973 × jd_1972
-  pair_9863  resume_1973 × jd_1973
-  pair_9864  resume_1973 × jd_1974
-  pair_9865  resume_1973 × jd_1975
-  pair_9866  resume_1974 × jd_1971
-  pair_9867  resume_1974 × jd_1972
-  pair_9868  resume_1974 × jd_1973
-  pair_9869  resume_1974 × jd_1974
-  pair_9870  resume_1974 × jd_1975
-  pair_9871  resume_1975 × jd_1971
-  pair_9872  resume_1975 × jd_1972
-  pair_9873  resume_1975 × jd_1973
-  pair_9874  resume_1975 × jd_1974
-  pair_9875  resume_1975 × jd_1975
+  pair_9876  resume_1976 × jd_1976
+  pair_9877  resume_1976 × jd_1977
+  pair_9878  resume_1976 × jd_1978
+  pair_9879  resume_1976 × jd_1979
+  pair_9880  resume_1976 × jd_1980
+  pair_9881  resume_1977 × jd_1976
+  pair_9882  resume_1977 × jd_1977
+  pair_9883  resume_1977 × jd_1978
+  pair_9884  resume_1977 × jd_1979
+  pair_9885  resume_1977 × jd_1980
+  pair_9886  resume_1978 × jd_1976
+  pair_9887  resume_1978 × jd_1977
+  pair_9888  resume_1978 × jd_1978
+  pair_9889  resume_1978 × jd_1979
+  pair_9890  resume_1978 × jd_1980
+  pair_9891  resume_1979 × jd_1976
+  pair_9892  resume_1979 × jd_1977
+  pair_9893  resume_1979 × jd_1978
+  pair_9894  resume_1979 × jd_1979
+  pair_9895  resume_1979 × jd_1980
+  pair_9896  resume_1980 × jd_1976
+  pair_9897  resume_1980 × jd_1977
+  pair_9898  resume_1980 × jd_1978
+  pair_9899  resume_1980 × jd_1979
+  pair_9900  resume_1980 × jd_1980
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
