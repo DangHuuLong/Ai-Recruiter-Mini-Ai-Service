@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1806 | level: intern | exp: 0.5 yrs
-  skills: SEO, Social Media, Google Analytics, Content Strategy, Keyword Research, Copywriting
-  background: Enthusiastic and creative marketing student seeking a digital marketing and content strategy internship. Possesses foundational academic experience in optimizing digital content for visibility and aud
+  id: resume_1811 | level: intern | exp: 0.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML5
+  background: Enthusiastic and highly motivated computer science student seeking a Frontend Development internship. Possesses strong foundational knowledge of web development technologies and building responsive in
 
-  id: resume_1807 | level: junior | exp: 1.5 yrs
-  skills: SEO, Social Media, Google Analytics, Content Strategy, Google Search Console, Content Marketing
-  background: Junior Digital Marketing Specialist with one and a half years of professional agency experience driving organic visibility and content performance. Adept at conducting exhaustive on-page SEO audits, r
+  id: resume_1812 | level: junior | exp: 1.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, REST APIs
+  background: Junior Frontend Engineer with one and a half years of professional industry experience specializing in building, refining, and maintaining modern user-facing applications. Expertly develops modular UI
 
-  id: resume_1808 | level: middle | exp: 4.0 yrs
-  skills: SEO, Social Media, Google Analytics, Content Strategy, Technical SEO, Ahrefs, GA4
-  background: Middle Digital Marketing Manager with four years of dedicated experience directing comprehensive organic growth architectures and multi-channel content strategies. Specializes in advanced technical SE
+  id: resume_1813 | level: middle | exp: 4.0 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, State Management, Web Vitals, CI/CD
+  background: Middle Frontend Engineer with four years of dedicated professional experience executing high-performance web development and application lifecycle management. Specializes in advanced React architectur
 
-  id: resume_1809 | level: senior | exp: 6.0 yrs
-  skills: SEO, Social Media, Google Analytics, Content Strategy, Google Tag Manager, Looker Studio, Content Engineering
-  background: Senior Digital Marketing Strategist offering over six years of comprehensive expertise in engineering, protecting, and executing high-impact search performance frameworks and editorial matrices. Exper
+  id: resume_1814 | level: senior | exp: 6.0 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Performance Optimization, Webpack, Accessibility
+  background: Senior Frontend Engineer offering over six years of comprehensive expertise in architecting, scaling, and safeguarding complex distributed web application ecosystems. Expert in advanced React performa
 
-  id: resume_1810 | level: senior | exp: 8.5 yrs
-  skills: SEO, Social Media, Google Analytics, Content Strategy, Enterprise Growth, Marketing Analytics, Attribution Modeling
-  background: Principal Content Strategist and Growth Director with more than eight years of distinguished experience steering corporate digital identity roadmaps and customer acquisition visions. Visionary expert 
+  id: resume_1815 | level: senior | exp: 8.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture, Design Systems, Web Security, Build Tools
+  background: Principal Frontend Engineer and Architect with more than eight years of distinguished experience steering user interface visions and technical frontend product strategies. Visionary expert in designin
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1806 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media, Google Analytics
-  description: We are seeking an enthusiastic Digital Marketing Intern to join our organic growth group. In this role, you will work closely with seasoned content and marketing professionals to l
+  id: jd_1811 | title: Frontend Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, Tailwind CSS, JavaScript
+  description: We are seeking an enthusiastic Frontend Engineering Intern to join our web application team. In this role, you will work closely with seasoned interface professionals to learn the 
 
-  id: jd_1807 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media, Google Analytics, Content Strategy
-  description: Our growth team is looking for a Junior Digital Marketing Specialist to execute and enhance our expanding organic visibility models. You will focus heavily on maintaining the daily
+  id: jd_1812 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Tailwind CSS, JavaScript
+  description: Our web application group is looking for a Junior Frontend Engineer to manage and optimize our growing client-side software layers. You will focus heavily on maintaining the daily 
 
-  id: jd_1808 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Social Media, Google Analytics, Content Strategy, Technical SEO
-  description: We are hunting for a skilled Digital Marketing Manager to oversee, optimize, and scale our core organic search and multi-channel content strategy pipelines. In this role, you will 
+  id: jd_1813 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Performance Optimization
+  description: We are hunting for a skilled Frontend Engineer to oversee, optimize, and scale our core web application and responsive client-side interface pipelines. In this role, you will take 
 
-  id: jd_1809 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
-  required_skills: SEO, Social Media, Google Analytics, Content Strategy, Technical SEO, Looker Studio
-  description: We are looking for a Senior Digital Marketing Strategist to design, scale, and secure our corporate distributed organic growth networks and campaign funnels. You will lead the stru
+  id: jd_1814 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Web Vitals
+  description: We are looking for a Senior Frontend Engineer to design, scale, and secure our enterprise distributed web application networks and interface systems. You will lead the structural a
 
-  id: jd_1810 | title: Principal Content Strategist | level: senior | min_exp: 7 yrs
-  required_skills: SEO, Social Media, Google Analytics, Content Strategy, Enterprise Growth
-  description: We are seeking a Principal Content Strategist to define the future growth trajectory and core messaging blueprint of our worldwide brand network. You will spearhead the macro-level
+  id: jd_1815 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture
+  description: We are seeking a Principal Frontend Architect to define the future user experience trajectory and core client-side blueprint of our worldwide digital web ecosystem. You will spearh
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9026  resume_1806 × jd_1806
-  pair_9027  resume_1806 × jd_1807
-  pair_9028  resume_1806 × jd_1808
-  pair_9029  resume_1806 × jd_1809
-  pair_9030  resume_1806 × jd_1810
-  pair_9031  resume_1807 × jd_1806
-  pair_9032  resume_1807 × jd_1807
-  pair_9033  resume_1807 × jd_1808
-  pair_9034  resume_1807 × jd_1809
-  pair_9035  resume_1807 × jd_1810
-  pair_9036  resume_1808 × jd_1806
-  pair_9037  resume_1808 × jd_1807
-  pair_9038  resume_1808 × jd_1808
-  pair_9039  resume_1808 × jd_1809
-  pair_9040  resume_1808 × jd_1810
-  pair_9041  resume_1809 × jd_1806
-  pair_9042  resume_1809 × jd_1807
-  pair_9043  resume_1809 × jd_1808
-  pair_9044  resume_1809 × jd_1809
-  pair_9045  resume_1809 × jd_1810
-  pair_9046  resume_1810 × jd_1806
-  pair_9047  resume_1810 × jd_1807
-  pair_9048  resume_1810 × jd_1808
-  pair_9049  resume_1810 × jd_1809
-  pair_9050  resume_1810 × jd_1810
+  pair_9051  resume_1811 × jd_1811
+  pair_9052  resume_1811 × jd_1812
+  pair_9053  resume_1811 × jd_1813
+  pair_9054  resume_1811 × jd_1814
+  pair_9055  resume_1811 × jd_1815
+  pair_9056  resume_1812 × jd_1811
+  pair_9057  resume_1812 × jd_1812
+  pair_9058  resume_1812 × jd_1813
+  pair_9059  resume_1812 × jd_1814
+  pair_9060  resume_1812 × jd_1815
+  pair_9061  resume_1813 × jd_1811
+  pair_9062  resume_1813 × jd_1812
+  pair_9063  resume_1813 × jd_1813
+  pair_9064  resume_1813 × jd_1814
+  pair_9065  resume_1813 × jd_1815
+  pair_9066  resume_1814 × jd_1811
+  pair_9067  resume_1814 × jd_1812
+  pair_9068  resume_1814 × jd_1813
+  pair_9069  resume_1814 × jd_1814
+  pair_9070  resume_1814 × jd_1815
+  pair_9071  resume_1815 × jd_1811
+  pair_9072  resume_1815 × jd_1812
+  pair_9073  resume_1815 × jd_1813
+  pair_9074  resume_1815 × jd_1814
+  pair_9075  resume_1815 × jd_1815
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
