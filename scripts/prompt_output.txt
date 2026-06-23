@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2136 | level: intern | exp: 0.2 yrs
-  skills: Seo, Social Media Management, Google Analytics, Copywriting, Content Creation
-  background: Eager marketing student with a strong passion for digital storytelling and content creation. Throughout university studies, developed foundational skills in search engine optimization and social media
+  id: resume_2141 | level: intern | exp: 0.2 yrs
+  skills: Financial Accounting, Corporate Finance, Data Analysis, Spreadsheets
+  background: Highly motivated finance student seeking an internship within a fast-paced fintech environment. Completed coursework in financial accounting and basic corporate finance. Enthusiastic about learning fi
 
-  id: resume_2137 | level: junior | exp: 2.0 yrs
-  skills: Seo, Social Media Marketing, Google Analytics, Content Strategy, Canva
-  background: Results-oriented digital marketing assistant with two years of professional experience in executing social media campaigns and enhancing SEO strategies. Successfully contributed to content planning, k
+  id: resume_2142 | level: junior | exp: 2.0 yrs
+  skills: Financial Reporting, Journal Entries, Account Reconciliation, Regulatory Compliance
+  background: Results-oriented finance professional with two years of experience in accounting and financial reporting. Proven ability to assist with month-end closing processes, prepare journal entries, and reconc
 
-  id: resume_2138 | level: middle | exp: 4.5 yrs
-  skills: Seo, Social Media Strategy, Google Analytics, Data Analysis, Content Marketing
-  background: Versatile digital marketing specialist with four years of comprehensive experience in building and executing data-driven content strategies. Proven expertise in SEO auditing, link-building outreach, a
+  id: resume_2143 | level: middle | exp: 4.5 yrs
+  skills: Financial Modeling, Variance Analysis, Forecasting, Budgeting, Compliance
+  background: Dedicated finance professional with four years of experience specializing in financial modeling and management reporting within the fintech industry. Expert in constructing detailed financial models f
 
-  id: resume_2139 | level: senior | exp: 6.5 yrs
-  skills: Seo Strategy, Social Media Management, Advanced Analytics, Leadership, Content Strategy
-  background: Senior digital marketing strategist with over six years of experience managing high-performance content and social media teams. Expert in developing multi-channel marketing strategies that align with 
+  id: resume_2144 | level: senior | exp: 6.5 yrs
+  skills: Strategic Planning, Financial Operations, Regulatory Compliance, Team Leadership, Risk Assessment
+  background: Senior finance professional with six years of experience in strategic financial planning and regulatory compliance within fintech organizations. Expert in managing large-scale financial reporting, com
 
-  id: resume_2140 | level: senior | exp: 8.5 yrs
-  skills: Digital Strategy, Seo, Content Architecture, Data Strategy, Team Leadership
-  background: Principal Digital Marketing Strategist with over eight years of experience delivering enterprise-grade content and growth strategies. Highly expert in full-cycle digital transformation, advanced SEO, 
+  id: resume_2145 | level: senior | exp: 9.0 yrs
+  skills: Enterprise Financial Management, Strategic Decision Making, Financial Modeling, Risk Management, Audit Oversight
+  background: Principal finance leader with over eight years of experience directing high-impact financial strategies for fintech enterprises. Specialist in complex financial modeling, multi-entity financial report
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2136 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: Seo, Social Media Marketing, Content Creation
-  description: We are seeking a proactive intern to assist our digital marketing team in daily content and social media tasks. This role is ideal for a student looking to learn the ropes of SEO a
+  id: jd_2141 | title: Finance Intern | level: intern | min_exp: 0 yrs
+  required_skills: Financial Reporting, Data Entry, Financial Analysis, Spreadsheets
+  description: We are seeking a motivated Finance Intern to support our finance department. This internship is designed for students eager to gain hands-on experience in a fast-paced fintech envi
 
-  id: jd_2137 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Seo, Social Media Management, Analytics
-  description: Looking for a junior specialist to execute multi-channel digital campaigns. You will be responsible for day-to-day social media management and content coordination. You should have
+  id: jd_2142 | title: Junior Financial Accountant | level: junior | min_exp: 1 yrs
+  required_skills: Financial Reporting, Account Reconciliation, Journal Entries, Accounting Principles
+  description: We are looking for a Junior Financial Accountant to join our expanding team. The ideal candidate will have 1-2 years of experience and a strong foundation in accounting principles.
 
-  id: jd_2138 | title: Digital Marketing Strategist | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, Seo, Data Analysis, Google Analytics
-  description: We are looking for a mid-level strategist to lead our content and SEO efforts. You will be responsible for planning and executing comprehensive digital roadmaps to drive organic gr
+  id: jd_2143 | title: Financial Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, Variance Analysis, Forecasting, Budgeting
+  description: We are seeking an experienced Financial Analyst to join our fintech finance team. This role focuses on financial modeling, budgeting, and detailed variance analysis. You will be re
 
-  id: jd_2139 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Seo Strategy, Content Strategy, Leadership, Advanced Analytics
-  description: We are seeking a senior manager to take ownership of our brand's digital ecosystem. You will drive high-level strategy, manage marketing budgets, and lead a high-performing team. Y
+  id: jd_2144 | title: Senior Financial Controller | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Planning, Financial Operations, Regulatory Compliance, Team Leadership
+  description: We are looking for a Senior Financial Controller to lead our finance operations. This senior-level role involves strategic financial planning, complex reporting, and ensuring rigor
 
-  id: jd_2140 | title: Principal Marketing Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Digital Strategy, Seo, Content Architecture, Data Strategy, Team Leadership
-  description: Join us as a Principal Marketing Strategist to define our global digital transformation. You will orchestrate complex strategies for enterprise growth, focusing on data-backed deci
+  id: jd_2145 | title: Head of Financial Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Financial Management, Strategic Decision Making, Financial Modeling, Risk Management
+  description: We are seeking a visionary Head of Financial Strategy to drive our financial roadmap. This principal-level position demands expertise in high-level financial modeling, complex repo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~5 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~8 pairs
   weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10676  resume_2136 × jd_2136
-  pair_10677  resume_2136 × jd_2137
-  pair_10678  resume_2136 × jd_2138
-  pair_10679  resume_2136 × jd_2139
-  pair_10680  resume_2136 × jd_2140
-  pair_10681  resume_2137 × jd_2136
-  pair_10682  resume_2137 × jd_2137
-  pair_10683  resume_2137 × jd_2138
-  pair_10684  resume_2137 × jd_2139
-  pair_10685  resume_2137 × jd_2140
-  pair_10686  resume_2138 × jd_2136
-  pair_10687  resume_2138 × jd_2137
-  pair_10688  resume_2138 × jd_2138
-  pair_10689  resume_2138 × jd_2139
-  pair_10690  resume_2138 × jd_2140
-  pair_10691  resume_2139 × jd_2136
-  pair_10692  resume_2139 × jd_2137
-  pair_10693  resume_2139 × jd_2138
-  pair_10694  resume_2139 × jd_2139
-  pair_10695  resume_2139 × jd_2140
-  pair_10696  resume_2140 × jd_2136
-  pair_10697  resume_2140 × jd_2137
-  pair_10698  resume_2140 × jd_2138
-  pair_10699  resume_2140 × jd_2139
-  pair_10700  resume_2140 × jd_2140
+  pair_10701  resume_2141 × jd_2141
+  pair_10702  resume_2141 × jd_2142
+  pair_10703  resume_2141 × jd_2143
+  pair_10704  resume_2141 × jd_2144
+  pair_10705  resume_2141 × jd_2145
+  pair_10706  resume_2142 × jd_2141
+  pair_10707  resume_2142 × jd_2142
+  pair_10708  resume_2142 × jd_2143
+  pair_10709  resume_2142 × jd_2144
+  pair_10710  resume_2142 × jd_2145
+  pair_10711  resume_2143 × jd_2141
+  pair_10712  resume_2143 × jd_2142
+  pair_10713  resume_2143 × jd_2143
+  pair_10714  resume_2143 × jd_2144
+  pair_10715  resume_2143 × jd_2145
+  pair_10716  resume_2144 × jd_2141
+  pair_10717  resume_2144 × jd_2142
+  pair_10718  resume_2144 × jd_2143
+  pair_10719  resume_2144 × jd_2144
+  pair_10720  resume_2144 × jd_2145
+  pair_10721  resume_2145 × jd_2141
+  pair_10722  resume_2145 × jd_2142
+  pair_10723  resume_2145 × jd_2143
+  pair_10724  resume_2145 × jd_2144
+  pair_10725  resume_2145 × jd_2145
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
