@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1986 | level: intern | exp: 0.3 yrs
-  skills: Python, React, Flask, Api Design
-  background: Computer science student with a strong passion for full-stack web development. During my academic projects, I have developed a foundational understanding of Python-based backend development using Flas
+  id: resume_1991 | level: intern | exp: 0.3 yrs
+  skills: Recruitment Sourcing, Candidate Screening, Onboarding, Hr Compliance
+  background: Human resources student with a strong passion for talent acquisition and organizational development. During my academic internships, I have developed a foundational understanding of recruitment sourci
 
-  id: resume_1987 | level: junior | exp: 1.8 yrs
-  skills: Python, Django, React, Rest Api Integration
-  background: Junior full-stack developer with nearly two years of professional experience building and maintaining web applications. My background includes developing features with Python, Django, and React, integ
+  id: resume_1992 | level: junior | exp: 1.8 yrs
+  skills: Full-Cycle Recruiting, Candidate Experience, Hris Management, Onboarding Coordination
+  background: Junior talent acquisition specialist with nearly two years of professional experience managing recruitment processes and employee onboarding. My background includes coordinating candidate interviews, 
 
-  id: resume_1988 | level: middle | exp: 4.2 yrs
-  skills: Python, Fastapi, React, Web Architecture
-  background: Dynamic full-stack engineer with four years of experience leading web development initiatives and performance enhancements. I specialize in bridging the gap between design specifications and technical
+  id: resume_1993 | level: middle | exp: 4.2 yrs
+  skills: Talent Acquisition Strategy, Recruiting Analytics, Hris Implementation, Employee Retention
+  background: Dynamic human resources generalist with four years of experience leading talent acquisition initiatives and enhancing HR operational performance. I specialize in bridging the gap between strategic hir
 
-  id: resume_1989 | level: senior | exp: 6.5 yrs
-  skills: Python, React, Django, Web Architecture
-  background: Experienced full-stack architect and lead developer with over six years of expertise in large-scale web development and enterprise-wide application integration. I have a proven track record of archite
+  id: resume_1994 | level: senior | exp: 6.5 yrs
+  skills: Strategic Talent Acquisition, Hris Strategy, Change Management, Leadership
+  background: Experienced talent acquisition manager and senior HR lead with over six years of expertise in large-scale recruiting and enterprise-wide organizational development. I have a proven track record of arc
 
-  id: resume_1990 | level: senior | exp: 9.5 yrs
-  skills: Web Architecture, Python, Django, React
-  background: Principal web strategist with over nine years of experience defining comprehensive web visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex web architec
+  id: resume_1995 | level: senior | exp: 9.5 yrs
+  skills: Organizational Design, Talent Management Strategy, Leadership, Workforce Planning
+  background: Principal HR strategist with over nine years of experience defining comprehensive organizational visions and overseeing enterprise-wide HR frameworks. My expertise lies in building complex talent arch
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1986 | title: Web Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, Flask, Api Design
-  description: We are seeking a motivated Web Development Intern to support our full-stack web engineering team. This role provides hands-on experience in frontend UI development, component testi
+  id: jd_1991 | title: Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruitment Sourcing, Candidate Screening, Onboarding, Hr Compliance
+  description: We are seeking a motivated Talent Acquisition Intern to support our recruiting and HR team. This role provides hands-on experience in sourcing candidates, managing recruitment data
 
-  id: jd_1987 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, Django, React, Rest Api Integration
-  description: Our team is looking for a detail-oriented Junior Full-Stack Developer to handle web feature development and application maintenance. You will be instrumental in ensuring that Pytho
+  id: jd_1992 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Full-Cycle Recruiting, Candidate Experience, Hris Management, Onboarding Coordination
+  description: Our team is looking for a detail-oriented Junior Talent Acquisition Specialist to handle recruiting operations and employee onboarding. You will be instrumental in ensuring that ou
 
-  id: jd_1988 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, Fastapi, React, Web Architecture
-  description: We are searching for a skilled Full-Stack Engineer to lead development and feature execution. You will bridge the gap between design specifications and technical execution, ensurin
+  id: jd_1993 | title: Human Resources Generalist | level: middle | min_exp: 3 yrs
+  required_skills: Talent Acquisition Strategy, Recruiting Analytics, Hris Implementation, Employee Retention
+  description: We are searching for a skilled Human Resources Generalist to lead talent acquisition initiatives and HR operations. You will bridge the gap between hiring goals and organizational 
 
-  id: jd_1989 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django, Web Architecture
-  description: We are looking for a visionary Senior Full-Stack Developer to guide our enterprise web initiatives. You will take ownership of our web architecture, ensuring that backend and front
+  id: jd_1994 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Talent Acquisition, Hris Strategy, Change Management, Leadership
+  description: We are looking for a visionary Senior Talent Acquisition Manager to guide our enterprise hiring initiatives. You will take ownership of our talent architecture, ensuring that recru
 
-  id: jd_1990 | title: Principal Web Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Web Architecture, Python, Django, React
-  description: We are seeking a Principal Web Strategist to shape our future web engineering strategy at an enterprise level. This is a leadership position for someone experienced in architecting
+  id: jd_1995 | title: Principal HR Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Organizational Design, Talent Management Strategy, Leadership, Workforce Planning
+  description: We are seeking a Principal HR Strategist to shape our future talent engineering strategy at an enterprise level. This is a leadership position for someone experienced in architecti
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9926  resume_1986 × jd_1986
-  pair_9927  resume_1986 × jd_1987
-  pair_9928  resume_1986 × jd_1988
-  pair_9929  resume_1986 × jd_1989
-  pair_9930  resume_1986 × jd_1990
-  pair_9931  resume_1987 × jd_1986
-  pair_9932  resume_1987 × jd_1987
-  pair_9933  resume_1987 × jd_1988
-  pair_9934  resume_1987 × jd_1989
-  pair_9935  resume_1987 × jd_1990
-  pair_9936  resume_1988 × jd_1986
-  pair_9937  resume_1988 × jd_1987
-  pair_9938  resume_1988 × jd_1988
-  pair_9939  resume_1988 × jd_1989
-  pair_9940  resume_1988 × jd_1990
-  pair_9941  resume_1989 × jd_1986
-  pair_9942  resume_1989 × jd_1987
-  pair_9943  resume_1989 × jd_1988
-  pair_9944  resume_1989 × jd_1989
-  pair_9945  resume_1989 × jd_1990
-  pair_9946  resume_1990 × jd_1986
-  pair_9947  resume_1990 × jd_1987
-  pair_9948  resume_1990 × jd_1988
-  pair_9949  resume_1990 × jd_1989
-  pair_9950  resume_1990 × jd_1990
+  pair_9951  resume_1991 × jd_1991
+  pair_9952  resume_1991 × jd_1992
+  pair_9953  resume_1991 × jd_1993
+  pair_9954  resume_1991 × jd_1994
+  pair_9955  resume_1991 × jd_1995
+  pair_9956  resume_1992 × jd_1991
+  pair_9957  resume_1992 × jd_1992
+  pair_9958  resume_1992 × jd_1993
+  pair_9959  resume_1992 × jd_1994
+  pair_9960  resume_1992 × jd_1995
+  pair_9961  resume_1993 × jd_1991
+  pair_9962  resume_1993 × jd_1992
+  pair_9963  resume_1993 × jd_1993
+  pair_9964  resume_1993 × jd_1994
+  pair_9965  resume_1993 × jd_1995
+  pair_9966  resume_1994 × jd_1991
+  pair_9967  resume_1994 × jd_1992
+  pair_9968  resume_1994 × jd_1993
+  pair_9969  resume_1994 × jd_1994
+  pair_9970  resume_1994 × jd_1995
+  pair_9971  resume_1995 × jd_1991
+  pair_9972  resume_1995 × jd_1992
+  pair_9973  resume_1995 × jd_1993
+  pair_9974  resume_1995 × jd_1994
+  pair_9975  resume_1995 × jd_1995
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
