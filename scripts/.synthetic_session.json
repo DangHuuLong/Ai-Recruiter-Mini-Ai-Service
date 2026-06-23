@@ -1,7 +1,3 @@
 {
-  "state": "waiting_cvjd",
-  "domain": "Digital Marketing and Content Strategy (SEO, social media, analytics)",
-  "resume_start": 2041,
-  "jd_start": 2041,
-  "pair_start": 10201
+  "state": "idle"
 }
