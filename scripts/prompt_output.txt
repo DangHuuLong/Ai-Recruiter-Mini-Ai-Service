@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2056 | level: intern | exp: 0.3 yrs
-  skills: AWS, Docker, Linux, CI/CD Basics
-  background: Motivated computer science student in my final year with a strong foundational interest in cloud infrastructure and automation. Through academic projects, I have gained hands-on experience deploying b
+  id: resume_2061 | level: intern | exp: 0.2 yrs
+  skills: Python, Django, React, JavaScript
+  background: Enthusiastic computer science student currently in my final year with a passion for web development. Through coursework and personal projects, I have developed a strong foundation in Python and Django
 
-  id: resume_2057 | level: junior | exp: 1.5 yrs
-  skills: AWS, Kubernetes, Terraform, Jenkins
-  background: Junior DevOps Engineer with 1.5 years of experience in cloud infrastructure management, server administration, and automation. I have successfully managed AWS resources, implemented CI/CD pipelines us
+  id: resume_2062 | level: junior | exp: 1.8 yrs
+  skills: Python, Flask, React, SQL, Redux
+  background: Junior Full-Stack Developer with 1.8 years of hands-on experience building and maintaining web applications. My professional experience involves developing RESTful APIs with Python and Flask, alongsid
 
-  id: resume_2058 | level: middle | exp: 4.2 yrs
-  skills: Terraform, AWS, Kubernetes, Prometheus
-  background: DevOps Engineer with four years of professional experience in designing, implementing, and scaling complex cloud infrastructures. I have lead initiatives to transition monolithic applications to micro
+  id: resume_2063 | level: middle | exp: 4.5 yrs
+  skills: Python, FastAPI, React, PostgreSQL, CI/CD
+  background: Full-Stack Developer with over 4 years of experience delivering robust web solutions in high-traffic environments. My expertise lies in designing scalable back-end services with Python and FastAPI, an
 
-  id: resume_2059 | level: senior | exp: 6.5 yrs
-  skills: AWS, Kubernetes, Terraform, Observability
-  background: Senior Site Reliability Engineer with over six years of experience managing enterprise-grade cloud environments. I have architected global infrastructures, implemented advanced automated scaling solut
+  id: resume_2064 | level: senior | exp: 6.5 yrs
+  skills: Python, Django, React, TypeScript, System Design
+  background: Senior Full-Stack Engineer with over 6 years of experience architecting large-scale web applications. I have extensive experience in building high-performance systems using Python, Django, and React w
 
-  id: resume_2060 | level: senior | exp: 9.8 yrs
-  skills: AWS, Multi-Cloud Architecture, Governance, Cloud Security
-  background: Principal Cloud Architect with over nine years of experience defining enterprise-level cloud strategies and building highly resilient platform solutions. I specialize in large-scale digital transforma
+  id: resume_2065 | level: senior | exp: 9.5 yrs
+  skills: Python, Django, React, AWS, Architecture
+  background: Lead Full-Stack Architect with over 9 years of professional experience driving digital transformation initiatives. I specialize in designing multi-tier application architectures, leading cross-functio
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2056 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker
-  description: We are seeking a motivated DevOps intern to assist our infrastructure team. This role provides hands-on experience in basic cloud tasks, server maintenance, and documentation. You 
+  id: jd_2061 | title: Full-Stack Web Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React
+  description: We are looking for a dedicated intern to support our web development team. You will assist with basic front-end component creation using React and contribute to simple Python API e
 
-  id: jd_2057 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are hiring a Junior DevOps Engineer to manage cloud infrastructure and implement CI/CD processes. You will be responsible for provisioning resources, maintaining Kubernetes clus
+  id: jd_2062 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, JavaScript
+  description: We are hiring a Junior Full-Stack Developer to work on our web applications. You will be expected to contribute to both Python-based backend services and React-driven frontend comp
 
-  id: jd_2058 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Terraform, AWS, Kubernetes
-  description: We are looking for a DevOps Engineer to lead infrastructure optimization and scaling initiatives. You will design resilient cloud environments, manage Kubernetes deployments, and i
+  id: jd_2063 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, Django
+  description: We are seeking a mid-level Full-Stack Engineer to lead development tasks for our core web product. You will design scalable features using Python and React, ensuring a seamless use
 
-  id: jd_2059 | title: Senior Site Reliability Engineer | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are seeking a Senior SRE to oversee global cloud environments and enhance system reliability. You will lead disaster recovery planning, optimize infrastructure performance, and 
+  id: jd_2064 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, Django
+  description: We are looking for a Senior Full-Stack Developer to architect and deliver high-performance web applications. You will focus on complex features, system scalability, and maintaining
 
-  id: jd_2060 | title: Principal Cloud Architect | level: senior | min_exp: 7 yrs
-  required_skills: AWS, Governance, Cloud Security
-  description: We are hiring a Principal Cloud Architect to define our enterprise-wide cloud strategy. You will oversee massive digital transformations, lead architectural changes, and build high
+  id: jd_2065 | title: Lead Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, React, Architecture
+  description: We are hiring a Lead Full-Stack Architect to define the technical strategy for our web products. You will oversee large-scale development projects, mentor senior engineers, and ens
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -67,38 +67,38 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
   strong_match: ~15 pairs
-  excellent_match: ~8 pairs
+  excellent_match: ~9 pairs
   moderate_match: ~1 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10276  resume_2056 × jd_2056
-  pair_10277  resume_2056 × jd_2057
-  pair_10278  resume_2056 × jd_2058
-  pair_10279  resume_2056 × jd_2059
-  pair_10280  resume_2056 × jd_2060
-  pair_10281  resume_2057 × jd_2056
-  pair_10282  resume_2057 × jd_2057
-  pair_10283  resume_2057 × jd_2058
-  pair_10284  resume_2057 × jd_2059
-  pair_10285  resume_2057 × jd_2060
-  pair_10286  resume_2058 × jd_2056
-  pair_10287  resume_2058 × jd_2057
-  pair_10288  resume_2058 × jd_2058
-  pair_10289  resume_2058 × jd_2059
-  pair_10290  resume_2058 × jd_2060
-  pair_10291  resume_2059 × jd_2056
-  pair_10292  resume_2059 × jd_2057
-  pair_10293  resume_2059 × jd_2058
-  pair_10294  resume_2059 × jd_2059
-  pair_10295  resume_2059 × jd_2060
-  pair_10296  resume_2060 × jd_2056
-  pair_10297  resume_2060 × jd_2057
-  pair_10298  resume_2060 × jd_2058
-  pair_10299  resume_2060 × jd_2059
-  pair_10300  resume_2060 × jd_2060
+  pair_10301  resume_2061 × jd_2061
+  pair_10302  resume_2061 × jd_2062
+  pair_10303  resume_2061 × jd_2063
+  pair_10304  resume_2061 × jd_2064
+  pair_10305  resume_2061 × jd_2065
+  pair_10306  resume_2062 × jd_2061
+  pair_10307  resume_2062 × jd_2062
+  pair_10308  resume_2062 × jd_2063
+  pair_10309  resume_2062 × jd_2064
+  pair_10310  resume_2062 × jd_2065
+  pair_10311  resume_2063 × jd_2061
+  pair_10312  resume_2063 × jd_2062
+  pair_10313  resume_2063 × jd_2063
+  pair_10314  resume_2063 × jd_2064
+  pair_10315  resume_2063 × jd_2065
+  pair_10316  resume_2064 × jd_2061
+  pair_10317  resume_2064 × jd_2062
+  pair_10318  resume_2064 × jd_2063
+  pair_10319  resume_2064 × jd_2064
+  pair_10320  resume_2064 × jd_2065
+  pair_10321  resume_2065 × jd_2061
+  pair_10322  resume_2065 × jd_2062
+  pair_10323  resume_2065 × jd_2063
+  pair_10324  resume_2065 × jd_2064
+  pair_10325  resume_2065 × jd_2065
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
