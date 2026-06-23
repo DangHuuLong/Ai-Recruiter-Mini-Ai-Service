@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1796 | level: intern | exp: 0.2 yrs
-  skills: Python, PyTorch, NLP, Transformers, RAG
-  background: Computer Science student with a strong focus on Natural Language Processing and machine learning. Through coursework and independent study, I have gained hands-on experience in building basic language
+  id: resume_1996 | level: intern | exp: 0.3 yrs
+  skills: React Native, Flutter, Mobile Ui/Ux, Api Integration
+  background: Computer science student with a strong passion for mobile application development. During my academic projects, I have developed a foundational understanding of cross-platform mobile development using
 
-  id: resume_1797 | level: junior | exp: 1.8 yrs
-  skills: Python, LangChain, RAG, Embeddings, Transformers
-  background: Junior AI/NLP Engineer with two years of professional experience in developing and deploying machine learning solutions. My work focuses on building scalable NLP pipelines, implementing vector databas
+  id: resume_1997 | level: junior | exp: 1.8 yrs
+  skills: Swift, Kotlin, React Native, Mobile Performance
+  background: Junior mobile developer with nearly two years of professional experience building and maintaining mobile applications for iOS and Android platforms. My background includes developing features with Swi
 
-  id: resume_1798 | level: middle | exp: 4.5 yrs
-  skills: Python, LangChain, Transformers, Vector Databases, RAG
-  background: Mid-level AI Engineer with four years of experience specializing in deep learning and natural language processing. I have a proven track record of designing, training, and deploying advanced language 
+  id: resume_1998 | level: middle | exp: 4.2 yrs
+  skills: Flutter, Swift, Kotlin, Mobile Architecture
+  background: Dynamic mobile engineer with four years of experience leading mobile development initiatives and performance enhancements. I specialize in bridging the gap between design specifications and technical 
 
-  id: resume_1799 | level: senior | exp: 6.8 yrs
-  skills: Python, LangChain, Transformers, Distributed Systems, NLP
-  background: Senior NLP Engineer with six years of experience developing high-performance artificial intelligence systems. My expertise lies in designing and optimizing transformer architectures, building complex 
+  id: resume_1999 | level: senior | exp: 6.5 yrs
+  skills: React Native, Swift, Kotlin, Mobile Architecture
+  background: Experienced mobile architect and lead developer with over six years of expertise in large-scale mobile development and enterprise-wide application integration. I have a proven track record of architec
 
-  id: resume_1800 | level: senior | exp: 9.5 yrs
-  skills: System Architecture, LLM Strategy, NLP, RAG, Distributed Systems
-  background: Principal AI Architect with over nine years of experience in developing and directing large-scale intelligent systems. I specialize in the architectural design of generative AI ecosystems, overseeing 
+  id: resume_2000 | level: senior | exp: 9.5 yrs
+  skills: Mobile Architecture, Swift, Kotlin, Flutter
+  background: Principal mobile strategist with over nine years of experience defining comprehensive mobile visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex mobile
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1796 | title: AI/NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, NLP, Transformers
-  description: We are seeking an AI/NLP Engineering Intern to join our research and development team. You will support the team in building and experimenting with transformer models, developing b
+  id: jd_1996 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter, Mobile Ui/Ux, Api Integration
+  description: We are seeking a motivated Mobile Development Intern to support our mobile engineering team. This role provides hands-on experience in mobile UI development, component testing, and
 
-  id: jd_1797 | title: Junior AI/NLP Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, LangChain, RAG, Embeddings
-  description: We are looking for a Junior AI/NLP Engineer to help us build and maintain our generative AI services. You will focus on developing production-ready RAG pipelines, working with Lang
+  id: jd_1997 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: Swift, Kotlin, React Native, Mobile Performance
+  description: Our team is looking for a detail-oriented Junior Mobile Developer to handle mobile feature development and application maintenance. You will be instrumental in ensuring that Swift,
 
-  id: jd_1798 | title: AI/NLP Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, LangChain, Transformers, Vector Databases
-  description: We are seeking an experienced AI/NLP Engineer to take ownership of key components of our generative AI platform. You will design and implement sophisticated RAG systems, build comp
+  id: jd_1998 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Flutter, Swift, Kotlin, Mobile Architecture
+  description: We are searching for a skilled Mobile Engineer to lead development and feature execution. You will bridge the gap between design specifications and technical execution, ensuring th
 
-  id: jd_1799 | title: Senior AI/NLP Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, LangChain, Transformers, Distributed Systems
-  description: We are looking for a Senior AI/NLP Engineer to lead our complex AI growth initiatives. You will define strategic model roadmaps, architect scalable RAG ecosystems, and oversee the 
+  id: jd_1999 | title: Senior Mobile Developer | level: senior | min_exp: 5 yrs
+  required_skills: React Native, Swift, Kotlin, Mobile Architecture
+  description: We are looking for a visionary Senior Mobile Developer to guide our enterprise mobile initiatives. You will take ownership of our mobile architecture, ensuring that native and cros
 
-  id: jd_1800 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: System Architecture, LLM Strategy, NLP, RAG
-  description: We are seeking a Principal AI Architect to drive the long-term strategic evolution of our enterprise-level AI ecosystem. You will define the vision for our generative AI models, ov
+  id: jd_2000 | title: Principal Mobile Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Mobile Architecture, Swift, Kotlin, Flutter
+  description: We are seeking a Principal Mobile Strategist to shape our future mobile engineering strategy at an enterprise level. This is a leadership position for someone experienced in archit
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_8976  resume_1796 × jd_1796
-  pair_8977  resume_1796 × jd_1797
-  pair_8978  resume_1796 × jd_1798
-  pair_8979  resume_1796 × jd_1799
-  pair_8980  resume_1796 × jd_1800
-  pair_8981  resume_1797 × jd_1796
-  pair_8982  resume_1797 × jd_1797
-  pair_8983  resume_1797 × jd_1798
-  pair_8984  resume_1797 × jd_1799
-  pair_8985  resume_1797 × jd_1800
-  pair_8986  resume_1798 × jd_1796
-  pair_8987  resume_1798 × jd_1797
-  pair_8988  resume_1798 × jd_1798
-  pair_8989  resume_1798 × jd_1799
-  pair_8990  resume_1798 × jd_1800
-  pair_8991  resume_1799 × jd_1796
-  pair_8992  resume_1799 × jd_1797
-  pair_8993  resume_1799 × jd_1798
-  pair_8994  resume_1799 × jd_1799
-  pair_8995  resume_1799 × jd_1800
-  pair_8996  resume_1800 × jd_1796
-  pair_8997  resume_1800 × jd_1797
-  pair_8998  resume_1800 × jd_1798
-  pair_8999  resume_1800 × jd_1799
-  pair_9000  resume_1800 × jd_1800
+  pair_9976  resume_1996 × jd_1996
+  pair_9977  resume_1996 × jd_1997
+  pair_9978  resume_1996 × jd_1998
+  pair_9979  resume_1996 × jd_1999
+  pair_9980  resume_1996 × jd_2000
+  pair_9981  resume_1997 × jd_1996
+  pair_9982  resume_1997 × jd_1997
+  pair_9983  resume_1997 × jd_1998
+  pair_9984  resume_1997 × jd_1999
+  pair_9985  resume_1997 × jd_2000
+  pair_9986  resume_1998 × jd_1996
+  pair_9987  resume_1998 × jd_1997
+  pair_9988  resume_1998 × jd_1998
+  pair_9989  resume_1998 × jd_1999
+  pair_9990  resume_1998 × jd_2000
+  pair_9991  resume_1999 × jd_1996
+  pair_9992  resume_1999 × jd_1997
+  pair_9993  resume_1999 × jd_1998
+  pair_9994  resume_1999 × jd_1999
+  pair_9995  resume_1999 × jd_2000
+  pair_9996  resume_2000 × jd_1996
+  pair_9997  resume_2000 × jd_1997
+  pair_9998  resume_2000 × jd_1998
+  pair_9999  resume_2000 × jd_1999
+  pair_10000  resume_2000 × jd_2000
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
