@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1811 | level: intern | exp: 0.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML5
-  background: Enthusiastic and highly motivated computer science student seeking a Frontend Development internship. Possesses strong foundational knowledge of web development technologies and building responsive in
+  id: resume_1816 | level: intern | exp: 0.5 yrs
+  skills: Financial Modeling, Financial Reporting, Compliance, Excel, SQL
+  background: Ambitious and analytical finance student seeking an internship position in Finance and Accounting within a fast-paced Fintech ecosystem. Demonstrates a strong foundational understanding of financial m
 
-  id: resume_1812 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, REST APIs
-  background: Junior Frontend Engineer with one and a half years of professional industry experience specializing in building, refining, and maintaining modern user-facing applications. Expertly develops modular UI
+  id: resume_1817 | level: junior | exp: 1.5 yrs
+  skills: Financial Modeling, Financial Reporting, Compliance, SQL, Data Analysis, Reconciliation
+  background: Junior Fintech Finance Analyst with one and a half years of professional corporate experience specializing in execution of financial modeling, automated reporting, and regulatory compliance protocols.
 
-  id: resume_1813 | level: middle | exp: 4.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, State Management, Web Vitals, CI/CD
-  background: Middle Frontend Engineer with four years of dedicated professional experience executing high-performance web development and application lifecycle management. Specializes in advanced React architectur
+  id: resume_1818 | level: middle | exp: 4.0 yrs
+  skills: Financial Modeling, Financial Reporting, Compliance, Python, Risk Management, Corporate Finance
+  background: Middle Financial Analyst with four years of dedicated professional experience delivering sophisticated financial modeling, regulatory reporting, and robust compliance management within the digital ban
 
-  id: resume_1814 | level: senior | exp: 6.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Performance Optimization, Webpack, Accessibility
-  background: Senior Frontend Engineer offering over six years of comprehensive expertise in architecting, scaling, and safeguarding complex distributed web application ecosystems. Expert in advanced React performa
+  id: resume_1819 | level: senior | exp: 6.0 yrs
+  skills: Financial Modeling, Financial Reporting, Compliance, Internal Controls, Corporate Tax, Auditing
+  background: Senior Finance Manager with more than six years of comprehensive expertise in engineering financial models, supervising regulatory reporting architectures, and steering institutional compliance across
 
-  id: resume_1815 | level: senior | exp: 8.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture, Design Systems, Web Security, Build Tools
-  background: Principal Frontend Engineer and Architect with more than eight years of distinguished experience steering user interface visions and technical frontend product strategies. Visionary expert in designin
+  id: resume_1820 | level: senior | exp: 8.5 yrs
+  skills: Financial Modeling, Financial Reporting, Compliance, Treasury Management, Strategic Planning, Fintech Architecture
+  background: Principal Financial Architect and Director with more than eight years of distinguished experience steering corporate finance visions, regulatory reporting paths, and enterprise compliance strategies w
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1811 | title: Frontend Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, Tailwind CSS, JavaScript
-  description: We are seeking an enthusiastic Frontend Engineering Intern to join our web application team. In this role, you will work closely with seasoned interface professionals to learn the 
+  id: jd_1816 | title: Fintech Finance Intern | level: intern | min_exp: 0 yrs
+  required_skills: Financial Modeling, Financial Reporting, Excel
+  description: We are seeking an enthusiastic Fintech Finance Intern to join our corporate operations group. In this role, you will work closely with seasoned financial professionals to learn the
 
-  id: jd_1812 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Tailwind CSS, JavaScript
-  description: Our web application group is looking for a Junior Frontend Engineer to manage and optimize our growing client-side software layers. You will focus heavily on maintaining the daily 
+  id: jd_1817 | title: Junior Fintech Finance Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Financial Modeling, Financial Reporting, Compliance, Excel
+  description: Our corporate operations team is looking for a Junior Fintech Finance Analyst to manage and optimize our growing transaction-led software layers. You will focus heavily on maintain
 
-  id: jd_1813 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Performance Optimization
-  description: We are hunting for a skilled Frontend Engineer to oversee, optimize, and scale our core web application and responsive client-side interface pipelines. In this role, you will take 
+  id: jd_1818 | title: Fintech Finance Manager | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, Financial Reporting, Compliance, Excel, Accounting
+  description: We are hunting for a skilled Fintech Finance Manager to oversee, optimize, and scale our core corporate accounting and financial reporting pipelines. In this role, you will take ow
 
-  id: jd_1814 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Web Vitals
-  description: We are looking for a Senior Frontend Engineer to design, scale, and secure our enterprise distributed web application networks and interface systems. You will lead the structural a
+  id: jd_1819 | title: Senior Fintech Finance Director | level: senior | min_exp: 5 yrs
+  required_skills: Financial Modeling, Financial Reporting, Compliance, Risk Management, Accounting, Internal Controls
+  description: We are looking for a Senior Fintech Finance Director to design, scale, and secure our enterprise distributed capital networks and financial accounting structures. You will lead the
 
-  id: jd_1815 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture
-  description: We are seeking a Principal Frontend Architect to define the future user experience trajectory and core client-side blueprint of our worldwide digital web ecosystem. You will spearh
+  id: jd_1820 | title: Principal Fintech Finance Architect | level: senior | min_exp: 7 yrs
+  required_skills: Financial Modeling, Financial Reporting, Compliance, Treasury Management, Strategic Planning
+  description: We are seeking a Principal Fintech Finance Architect to define the future financial strategy and core accounting blueprint of our worldwide payment ecosystem. You will spearhead th
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9051  resume_1811 × jd_1811
-  pair_9052  resume_1811 × jd_1812
-  pair_9053  resume_1811 × jd_1813
-  pair_9054  resume_1811 × jd_1814
-  pair_9055  resume_1811 × jd_1815
-  pair_9056  resume_1812 × jd_1811
-  pair_9057  resume_1812 × jd_1812
-  pair_9058  resume_1812 × jd_1813
-  pair_9059  resume_1812 × jd_1814
-  pair_9060  resume_1812 × jd_1815
-  pair_9061  resume_1813 × jd_1811
-  pair_9062  resume_1813 × jd_1812
-  pair_9063  resume_1813 × jd_1813
-  pair_9064  resume_1813 × jd_1814
-  pair_9065  resume_1813 × jd_1815
-  pair_9066  resume_1814 × jd_1811
-  pair_9067  resume_1814 × jd_1812
-  pair_9068  resume_1814 × jd_1813
-  pair_9069  resume_1814 × jd_1814
-  pair_9070  resume_1814 × jd_1815
-  pair_9071  resume_1815 × jd_1811
-  pair_9072  resume_1815 × jd_1812
-  pair_9073  resume_1815 × jd_1813
-  pair_9074  resume_1815 × jd_1814
-  pair_9075  resume_1815 × jd_1815
+  pair_9076  resume_1816 × jd_1816
+  pair_9077  resume_1816 × jd_1817
+  pair_9078  resume_1816 × jd_1818
+  pair_9079  resume_1816 × jd_1819
+  pair_9080  resume_1816 × jd_1820
+  pair_9081  resume_1817 × jd_1816
+  pair_9082  resume_1817 × jd_1817
+  pair_9083  resume_1817 × jd_1818
+  pair_9084  resume_1817 × jd_1819
+  pair_9085  resume_1817 × jd_1820
+  pair_9086  resume_1818 × jd_1816
+  pair_9087  resume_1818 × jd_1817
+  pair_9088  resume_1818 × jd_1818
+  pair_9089  resume_1818 × jd_1819
+  pair_9090  resume_1818 × jd_1820
+  pair_9091  resume_1819 × jd_1816
+  pair_9092  resume_1819 × jd_1817
+  pair_9093  resume_1819 × jd_1818
+  pair_9094  resume_1819 × jd_1819
+  pair_9095  resume_1819 × jd_1820
+  pair_9096  resume_1820 × jd_1816
+  pair_9097  resume_1820 × jd_1817
+  pair_9098  resume_1820 × jd_1818
+  pair_9099  resume_1820 × jd_1819
+  pair_9100  resume_1820 × jd_1820
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
