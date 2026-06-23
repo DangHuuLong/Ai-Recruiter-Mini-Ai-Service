@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1826 | level: intern | exp: 0.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, HTML5, CSS3
-  background: Enthusiastic and highly motivated Information Technology student specializing in modern frontend development ecosystems. Possesses a strong foundational understanding of building interactive user inte
+  id: resume_1831 | level: intern | exp: 0.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Sourcing
+  background: Enthusiastic Business Administration student with a passionate specialization in Human Resources and Talent Acquisition infrastructure. Demonstrates a clear operational understanding of modern talent 
 
-  id: resume_1827 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Git, REST API, Jest
-  background: Junior Frontend Developer with one and a half years of professional software engineering experience building, deploying, and optimizing performant web architectures and interactive web applications. H
+  id: resume_1832 | level: junior | exp: 1.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Sourcing, Talent Acquisition, Compliance
+  background: Junior HR Generalist and Talent Acquisition Specialist with one and a half years of professional industry experience implementing end-to-end recruitment pipelines, auditing HRIS system directories, an
 
-  id: resume_1828 | level: middle | exp: 4.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, Webpack, Docker, GraphQL
-  background: Middle Frontend Engineer with four years of dedicated engineering experience delivering sophisticated web platforms, robust web application architectures, and pixel-perfect customer dashboards. Specia
+  id: resume_1833 | level: middle | exp: 4.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Acquisition, Workforce Planning, Data Analytics, Employer Branding
+  background: Middle Talent Acquisition Partner and HR Engineer with four years of dedicated professional experience expanding mid-tier tech corporations, configuring centralized HRIS environments, and designing mu
 
-  id: resume_1829 | level: senior | exp: 6.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, System Architecture, Cypress, CI/CD, Webpack
-  background: Senior Frontend Architect with more than six years of comprehensive engineering expertise designing scalable web development platforms, managing distributed interface layouts, and leading multi-tenant
+  id: resume_1834 | level: senior | exp: 6.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Acquisition, System Architecture, Change Management, Performance Management
+  background: Senior Human Resources and Talent Acquisition Architect with more than six years of comprehensive corporate expertise engineering scalable global workforce strategies, managing multi-tier HRIS platfor
 
-  id: resume_1830 | level: senior | exp: 8.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Web Performance, GraphQL, Monorepos
-  background: Principal Frontend Scientist and Technical Director with more than eight years of distinguished engineering leadership shaping web application strategies, large-scale monorepo configurations, and glob
+  id: resume_1835 | level: senior | exp: 8.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Acquisition, Strategic Leadership, Global Compliance, HR Analytics, Workforce Architecture
+  background: Principal HR Scientist and Global Talent Acquisition Director with more than eight years of distinguished organizational leadership shaping high-volume corporate recruitment blueprints, enterprise mon
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1826 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: We are seeking an enthusiastic Frontend Development Intern to join our advanced digital applications group. In this role, you will work closely with seasoned web engineering profes
+  id: jd_1831 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, HRIS, Onboarding
+  description: We are seeking an enthusiastic Human Resources Intern to join our corporate talent acquisition group. In this role, you will work closely with seasoned recruitment professionals to
 
-  id: jd_1827 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: Our web engineering team is looking for a Junior Frontend Developer to manage and optimize our growing user interface layers. You will focus heavily on maintaining the daily reliab
+  id: jd_1832 | title: Junior HR Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Sourcing
+  description: Our corporate human resources team is looking for a Junior HR Specialist to manage and optimize our growing user experience and talent tracking layers. You will focus heavily on ma
 
-  id: jd_1828 | title: Frontend Solutions Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: We are hunting for a skilled Frontend Solutions Engineer to oversee, optimize, and scale our core user experience systems and client-side web configurations. In this role, you will
+  id: jd_1833 | title: Talent Acquisition Partner | level: middle | min_exp: 3 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Acquisition
+  description: We are hunting for a skilled Talent Acquisition Partner to oversee, optimize, and scale our core human capital systems and corporate recruitment configurations. In this role, you w
 
-  id: jd_1829 | title: Senior Frontend Infrastructure Architect | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, System Architecture
-  description: We are looking for a Senior Frontend Infrastructure Architect to design, scale, and secure our enterprise web application layers and digital product configurations. You will lead t
+  id: jd_1834 | title: Senior HR Infrastructure Manager | level: senior | min_exp: 5 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Acquisition, System Architecture
+  description: We are looking for a Senior HR Infrastructure Manager to design, scale, and secure our enterprise human resource management layers and talent acquisition configurations. You will l
 
-  id: jd_1830 | title: Principal Frontend Scientist and Web Architect | level: senior | min_exp: 7 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Web Performance
-  description: We are seeking a Principal Frontend Scientist and Web Architect to define the future technology roadmap and core architectural blueprint of our worldwide web application platforms.
+  id: jd_1835 | title: Principal HR Architect and Talent Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Acquisition, HR Analytics
+  description: We are seeking a Principal HR Architect and Talent Strategist to define the future technology roadmap and core architectural blueprint of our worldwide human resource and recruitin
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9126  resume_1826 × jd_1826
-  pair_9127  resume_1826 × jd_1827
-  pair_9128  resume_1826 × jd_1828
-  pair_9129  resume_1826 × jd_1829
-  pair_9130  resume_1826 × jd_1830
-  pair_9131  resume_1827 × jd_1826
-  pair_9132  resume_1827 × jd_1827
-  pair_9133  resume_1827 × jd_1828
-  pair_9134  resume_1827 × jd_1829
-  pair_9135  resume_1827 × jd_1830
-  pair_9136  resume_1828 × jd_1826
-  pair_9137  resume_1828 × jd_1827
-  pair_9138  resume_1828 × jd_1828
-  pair_9139  resume_1828 × jd_1829
-  pair_9140  resume_1828 × jd_1830
-  pair_9141  resume_1829 × jd_1826
-  pair_9142  resume_1829 × jd_1827
-  pair_9143  resume_1829 × jd_1828
-  pair_9144  resume_1829 × jd_1829
-  pair_9145  resume_1829 × jd_1830
-  pair_9146  resume_1830 × jd_1826
-  pair_9147  resume_1830 × jd_1827
-  pair_9148  resume_1830 × jd_1828
-  pair_9149  resume_1830 × jd_1829
-  pair_9150  resume_1830 × jd_1830
+  pair_9151  resume_1831 × jd_1831
+  pair_9152  resume_1831 × jd_1832
+  pair_9153  resume_1831 × jd_1833
+  pair_9154  resume_1831 × jd_1834
+  pair_9155  resume_1831 × jd_1835
+  pair_9156  resume_1832 × jd_1831
+  pair_9157  resume_1832 × jd_1832
+  pair_9158  resume_1832 × jd_1833
+  pair_9159  resume_1832 × jd_1834
+  pair_9160  resume_1832 × jd_1835
+  pair_9161  resume_1833 × jd_1831
+  pair_9162  resume_1833 × jd_1832
+  pair_9163  resume_1833 × jd_1833
+  pair_9164  resume_1833 × jd_1834
+  pair_9165  resume_1833 × jd_1835
+  pair_9166  resume_1834 × jd_1831
+  pair_9167  resume_1834 × jd_1832
+  pair_9168  resume_1834 × jd_1833
+  pair_9169  resume_1834 × jd_1834
+  pair_9170  resume_1834 × jd_1835
+  pair_9171  resume_1835 × jd_1831
+  pair_9172  resume_1835 × jd_1832
+  pair_9173  resume_1835 × jd_1833
+  pair_9174  resume_1835 × jd_1834
+  pair_9175  resume_1835 × jd_1835
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
