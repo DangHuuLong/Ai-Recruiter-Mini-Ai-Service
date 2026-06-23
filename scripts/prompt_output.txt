@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2006 | level: intern | exp: 0.2 yrs
-  skills: Agile, User Research, Communication, Task Management
-  background: Enthusiastic business administration student with a keen interest in product management and technology trends. Throughout academic projects, I have developed a foundational understanding of user resea
+  id: resume_2011 | level: intern | exp: 0.3 yrs
+  skills: React Native, Flutter, Java, UI Design
+  background: Eager computer science student with a passion for building intuitive mobile applications. Through academic projects, I have developed a basic understanding of cross-platform development using React Na
 
-  id: resume_2007 | level: junior | exp: 1.5 yrs
-  skills: Agile, Roadmapping, User Stories, Jira
-  background: Detail-oriented junior product manager with over one year of experience supporting the full product development lifecycle. Proven ability to assist in the maintenance of product roadmaps and the execu
+  id: resume_2012 | level: junior | exp: 1.5 yrs
+  skills: React Native, Flutter, Kotlin, Swift, REST APIs
+  background: Motivated mobile developer with over a year of professional experience building and maintaining cross-platform applications. Proficient in React Native and Flutter, with a strong focus on delivering r
 
-  id: resume_2008 | level: middle | exp: 4.0 yrs
-  skills: Product Roadmap, Agile, Stakeholder Management, Data Analysis
-  background: Versatile product manager with four years of professional experience driving successful software product releases. Expert in managing complex product roadmaps and leading cross-functional squads withi
+  id: resume_2013 | level: middle | exp: 4.0 yrs
+  skills: Swift, Kotlin, React Native, Performance Tuning, Agile
+  background: Professional mobile developer with four years of hands-on experience in native and cross-platform development. Proven track record of architecting scalable applications using Swift, Kotlin, and React 
 
-  id: resume_2009 | level: senior | exp: 6.5 yrs
-  skills: Strategic Planning, Product Roadmap, Agile Leadership, Stakeholder Management
-  background: Senior product manager with over six years of experience shaping and executing product strategy in competitive technology sectors. I possess a deep understanding of market dynamics, user behavior, and
+  id: resume_2014 | level: senior | exp: 6.5 yrs
+  skills: Flutter, Swift, Kotlin, CI/CD, System Design
+  background: Senior mobile engineer with over six years of experience specializing in building high-performance, complex mobile ecosystems. Expert in Flutter and advanced Swift/Kotlin development for enterprise-sc
 
-  id: resume_2010 | level: senior | exp: 9.5 yrs
-  skills: Product Vision, Stakeholder Governance, Agile Scaling, Executive Communication
-  background: Principal product leader with over eight years of experience building, scaling, and managing sophisticated technology platforms. I provide strategic vision for product roadmaps, ensuring that long-ter
+  id: resume_2015 | level: senior | exp: 9.5 yrs
+  skills: System Architecture, React Native, Flutter, Kotlin, Team Leadership
+  background: Principal mobile lead with over nine years of experience defining technical vision for world-class mobile platforms. Expert in complex systems architecture, including native and cross-platform integra
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2006 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Agile, Communication, Research
-  description: We are seeking a proactive product management intern to support our core development teams. This position is ideal for a student looking to gain hands-on experience in the agile pr
+  id: jd_2011 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter
+  description: We are looking for a highly motivated mobile development intern to help our team build and test new features for our consumer apps. You will work closely with our mobile engineers 
 
-  id: jd_2007 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Agile, Product Roadmap, Stakeholder Management
-  description: Join our product team as a Junior Product Manager. You will be responsible for managing backlog items, assisting in the creation of product roadmaps, and collaborating with cross-f
+  id: jd_2012 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Flutter, REST APIs
+  description: Join our growing mobile engineering team as a Junior Mobile Developer. You will be responsible for developing new features, optimizing app performance, and maintaining existing cod
 
-  id: jd_2008 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Product Roadmap, Agile, Stakeholder Management, Data Analysis
-  description: We are looking for a skilled Product Manager to help lead our product strategy and execution. You will be responsible for owning the roadmap for key product features, conducting us
+  id: jd_2013 | title: Mobile Software Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Swift, Kotlin, React Native, Performance Tuning
+  description: We are seeking a skilled Mobile Software Engineer to help build robust applications using Swift, Kotlin, and cross-platform frameworks. You will be responsible for end-to-end featu
 
-  id: jd_2009 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Planning, Product Roadmap, Agile Leadership, Stakeholder Management
-  description: We are hiring a Senior Product Manager to lead our strategic initiatives. You will work on architecting long-term product roadmaps and managing relationships with diverse business 
+  id: jd_2014 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Flutter, Swift, Kotlin, CI/CD
+  description: We are hiring a Senior Mobile Engineer to lead feature development and improve our mobile app ecosystem. You will be responsible for defining technical strategy, leading automated 
 
-  id: jd_2010 | title: Principal Product Manager | level: senior | min_exp: 7 yrs
-  required_skills: Product Vision, Stakeholder Governance, Agile Scaling, Executive Communication
-  description: We are seeking a visionary Principal Product Manager to set the technical direction for our platform. You will be responsible for building innovative product features, governing st
+  id: jd_2015 | title: Principal Mobile Engineer | level: senior | min_exp: 7 yrs
+  required_skills: System Architecture, React Native, Flutter, Kotlin, Leadership
+  description: We are looking for a visionary Principal Mobile Engineer to set the technical direction for our mobile platforms. You will be responsible for scaling our infrastructure, defining t
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -51,45 +51,54 @@ Score each criterion 0–100, then compute:
 
 Label mapping:
   90–100 → excellent_match
-  75–89  → strong_match
+  75–89  → strong_match       ← PRIMARY TARGET — maximise this label
   60–74  → moderate_match
-  40–59  → weak_match      ← FORBIDDEN — do not generate
-  0–39   → poor_match      ← FORBIDDEN — do not generate
+  40–59  → weak_match
+  0–39   → poor_match         ← FORBIDDEN — do not generate
 
-ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
-KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
-all documents share the same domain — floor is 60.
+Scores below 40 are forbidden. Floor is 40.
+Prioritise strong_match (75–89): aim for at least half the pairs in this range.
 
 Avoid boundary zones — do NOT use scores in these ranges:
   35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
+Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
+
+═══ TARGET LABEL DISTRIBUTION ═══
+The dataset is currently imbalanced. Bias your scoring to hit these counts.
+strong_match is the PRIMARY target — give it the highest allocation.
+  strong_match: ~18 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~1 pairs
+Adjust criterion scores within valid ranges to reach these targets while
+keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10026  resume_2006 × jd_2006
-  pair_10027  resume_2006 × jd_2007
-  pair_10028  resume_2006 × jd_2008
-  pair_10029  resume_2006 × jd_2009
-  pair_10030  resume_2006 × jd_2010
-  pair_10031  resume_2007 × jd_2006
-  pair_10032  resume_2007 × jd_2007
-  pair_10033  resume_2007 × jd_2008
-  pair_10034  resume_2007 × jd_2009
-  pair_10035  resume_2007 × jd_2010
-  pair_10036  resume_2008 × jd_2006
-  pair_10037  resume_2008 × jd_2007
-  pair_10038  resume_2008 × jd_2008
-  pair_10039  resume_2008 × jd_2009
-  pair_10040  resume_2008 × jd_2010
-  pair_10041  resume_2009 × jd_2006
-  pair_10042  resume_2009 × jd_2007
-  pair_10043  resume_2009 × jd_2008
-  pair_10044  resume_2009 × jd_2009
-  pair_10045  resume_2009 × jd_2010
-  pair_10046  resume_2010 × jd_2006
-  pair_10047  resume_2010 × jd_2007
-  pair_10048  resume_2010 × jd_2008
-  pair_10049  resume_2010 × jd_2009
-  pair_10050  resume_2010 × jd_2010
+  pair_10051  resume_2011 × jd_2011
+  pair_10052  resume_2011 × jd_2012
+  pair_10053  resume_2011 × jd_2013
+  pair_10054  resume_2011 × jd_2014
+  pair_10055  resume_2011 × jd_2015
+  pair_10056  resume_2012 × jd_2011
+  pair_10057  resume_2012 × jd_2012
+  pair_10058  resume_2012 × jd_2013
+  pair_10059  resume_2012 × jd_2014
+  pair_10060  resume_2012 × jd_2015
+  pair_10061  resume_2013 × jd_2011
+  pair_10062  resume_2013 × jd_2012
+  pair_10063  resume_2013 × jd_2013
+  pair_10064  resume_2013 × jd_2014
+  pair_10065  resume_2013 × jd_2015
+  pair_10066  resume_2014 × jd_2011
+  pair_10067  resume_2014 × jd_2012
+  pair_10068  resume_2014 × jd_2013
+  pair_10069  resume_2014 × jd_2014
+  pair_10070  resume_2014 × jd_2015
+  pair_10071  resume_2015 × jd_2011
+  pair_10072  resume_2015 × jd_2012
+  pair_10073  resume_2015 × jd_2013
+  pair_10074  resume_2015 × jd_2014
+  pair_10075  resume_2015 × jd_2015
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
@@ -97,4 +106,4 @@ Each line is a single JSON object (no array brackets, no commas between lines).
 No markdown, no explanation, no extra text — only 25 JSON lines.
 
 JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 40–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
