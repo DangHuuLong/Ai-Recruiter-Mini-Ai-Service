@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1901 | level: intern | exp: 0.3 yrs
-  skills: Flutter, React Native, Dart, Javascript
-  background: Computer Science student with a strong passion for mobile application development. During my academic career, I have focused on cross-platform frameworks, completing several coursework projects using 
+  id: resume_1906 | level: intern | exp: 0.3 yrs
+  skills: Talent Acquisition, HRIS, Onboarding, Data Entry, Communication
+  background: Motivated and highly organized Human Resources student with a strong passion for talent acquisition and organizational culture. Throughout my academic career, I have focused on understanding the funda
 
-  id: resume_1902 | level: junior | exp: 1.5 yrs
-  skills: React Native, Kotlin, Javascript, Android SDK
-  background: Junior Mobile Developer with nearly two years of professional experience in building and maintaining mobile applications. I have a strong foundation in both React Native and Kotlin, allowing me to con
+  id: resume_1907 | level: junior | exp: 1.8 yrs
+  skills: Talent Acquisition, HRIS, Onboarding, Applicant Tracking, Interview Scheduling
+  background: Detail-oriented Junior HR Specialist with nearly two years of professional experience in talent acquisition and recruitment coordination. I have successfully managed high-volume candidate pipelines, u
 
-  id: resume_1903 | level: middle | exp: 4.0 yrs
-  skills: Swift, Flutter, Dart, Mobile Architecture
-  background: Mid-level Mobile Developer with four years of professional experience developing robust mobile applications for both iOS and Android platforms. I possess advanced skills in Swift and Flutter, with a p
+  id: resume_1908 | level: middle | exp: 4.0 yrs
+  skills: Full-Cycle Recruitment, HRIS, Onboarding, Talent Acquisition, Data Analytics
+  background: Versatile Human Resources professional with four years of hands-on experience in full-cycle recruitment, HRIS management, and structured onboarding initiatives. I have a proven track record of managin
 
-  id: resume_1904 | level: senior | exp: 6.5 yrs
-  skills: Swift, Kotlin, React Native, CI/CD
-  background: Senior Mobile Engineer with six years of experience building scalable, enterprise-grade mobile solutions. I have deep expertise in Swift, Kotlin, and React Native, allowing me to lead development acro
+  id: resume_1909 | level: senior | exp: 6.5 yrs
+  skills: Talent Acquisition Strategy, HRIS, Onboarding, Team Leadership, Data-Driven Recruitment
+  background: Senior Talent Acquisition Lead with over six years of experience driving large-scale recruitment strategies and optimizing human resources infrastructure. I have comprehensive expertise in building hi
 
-  id: resume_1905 | level: senior | exp: 8.5 yrs
-  skills: Swift, Kotlin, Mobile Strategy, Team Leadership
-  background: Principal Mobile Architect with over eight years of experience defining and overseeing mobile technology strategies for large-scale enterprise applications. I have extensive experience with native dev
+  id: resume_1910 | level: senior | exp: 8.5 yrs
+  skills: HR Strategy, Talent Acquisition, HRIS Implementation, Workforce Planning, Executive Leadership
+  background: Principal HR Strategist and Talent Acquisition Expert with eight years of executive experience defining and overseeing human capital management frameworks. My career focus has been on architecting end
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1901 | title: Mobile Development Internship | level: intern | min_exp: 0 yrs
-  required_skills: Flutter, React Native
-  description: We are looking for a Mobile Development Intern to support our engineering team in building and refining mobile applications. This role offers an excellent opportunity to learn abou
+  id: jd_1906 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
+  required_skills: Talent Acquisition, HRIS, Onboarding, Communication
+  description: We are looking for an enthusiastic Human Resources Intern to support our talent acquisition and onboarding team. This role is perfect for a student eager to learn the fundamentals 
 
-  id: jd_1902 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
-  required_skills: React Native, Kotlin
-  description: Our team is seeking a Junior Mobile Developer to work on our native and cross-platform mobile apps. You will work closely with our designers and senior developers to implement feat
+  id: jd_1907 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Talent Acquisition, HRIS, Onboarding, Applicant Tracking
+  description: Our team is seeking a Junior HR Coordinator to focus on talent acquisition and employee lifecycle support. You will be responsible for managing initial candidate screenings, coordi
 
-  id: jd_1903 | title: Mobile Developer | level: middle | min_exp: 3 yrs
-  required_skills: Swift, Flutter
-  description: We are looking for a skilled Mobile Developer to lead technical development on our core products. You will be responsible for building robust applications using Swift and Flutter. 
+  id: jd_1908 | title: Mobile Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Full-Cycle Recruitment, HRIS, Onboarding, Talent Acquisition
+  description: We are looking for a skilled Talent Acquisition Specialist to drive recruitment for our core technical and product teams. You will be responsible for building robust candidate pipe
 
-  id: jd_1904 | title: Senior Mobile Developer | level: senior | min_exp: 5 yrs
-  required_skills: Swift, Kotlin, React Native
-  description: We are seeking a Senior Mobile Developer to drive our mobile engineering initiatives. You will take ownership of the technical roadmap, lead team development, and ensure that our a
+  id: jd_1909 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Talent Acquisition Strategy, HRIS, Onboarding, Team Leadership
+  description: We are seeking a Senior Talent Acquisition Manager to drive our enterprise-level hiring initiatives. You will take ownership of the technical and strategic roadmap for recruitment,
 
-  id: jd_1905 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
-  required_skills: Swift, Kotlin
-  description: We are looking for a visionary Principal Mobile Architect to define our enterprise-level mobile strategy. You will be responsible for overseeing the architecture of our mobile prod
+  id: jd_1910 | title: Principal HR Architect | level: senior | min_exp: 7 yrs
+  required_skills: HR Strategy, Talent Acquisition, HRIS Implementation, Workforce Planning
+  description: We are looking for a visionary Principal HR Architect to define our enterprise-level talent strategy. You will be responsible for overseeing the entire HR systems landscape, talent
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9501  resume_1901 × jd_1901
-  pair_9502  resume_1901 × jd_1902
-  pair_9503  resume_1901 × jd_1903
-  pair_9504  resume_1901 × jd_1904
-  pair_9505  resume_1901 × jd_1905
-  pair_9506  resume_1902 × jd_1901
-  pair_9507  resume_1902 × jd_1902
-  pair_9508  resume_1902 × jd_1903
-  pair_9509  resume_1902 × jd_1904
-  pair_9510  resume_1902 × jd_1905
-  pair_9511  resume_1903 × jd_1901
-  pair_9512  resume_1903 × jd_1902
-  pair_9513  resume_1903 × jd_1903
-  pair_9514  resume_1903 × jd_1904
-  pair_9515  resume_1903 × jd_1905
-  pair_9516  resume_1904 × jd_1901
-  pair_9517  resume_1904 × jd_1902
-  pair_9518  resume_1904 × jd_1903
-  pair_9519  resume_1904 × jd_1904
-  pair_9520  resume_1904 × jd_1905
-  pair_9521  resume_1905 × jd_1901
-  pair_9522  resume_1905 × jd_1902
-  pair_9523  resume_1905 × jd_1903
-  pair_9524  resume_1905 × jd_1904
-  pair_9525  resume_1905 × jd_1905
+  pair_9526  resume_1906 × jd_1906
+  pair_9527  resume_1906 × jd_1907
+  pair_9528  resume_1906 × jd_1908
+  pair_9529  resume_1906 × jd_1909
+  pair_9530  resume_1906 × jd_1910
+  pair_9531  resume_1907 × jd_1906
+  pair_9532  resume_1907 × jd_1907
+  pair_9533  resume_1907 × jd_1908
+  pair_9534  resume_1907 × jd_1909
+  pair_9535  resume_1907 × jd_1910
+  pair_9536  resume_1908 × jd_1906
+  pair_9537  resume_1908 × jd_1907
+  pair_9538  resume_1908 × jd_1908
+  pair_9539  resume_1908 × jd_1909
+  pair_9540  resume_1908 × jd_1910
+  pair_9541  resume_1909 × jd_1906
+  pair_9542  resume_1909 × jd_1907
+  pair_9543  resume_1909 × jd_1908
+  pair_9544  resume_1909 × jd_1909
+  pair_9545  resume_1909 × jd_1910
+  pair_9546  resume_1910 × jd_1906
+  pair_9547  resume_1910 × jd_1907
+  pair_9548  resume_1910 × jd_1908
+  pair_9549  resume_1910 × jd_1909
+  pair_9550  resume_1910 × jd_1910
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
