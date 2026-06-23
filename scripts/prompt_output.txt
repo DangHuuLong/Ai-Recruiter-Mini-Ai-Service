@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2121 | level: intern | exp: 0.3 yrs
-  skills: React, TypeScript, Tailwind CSS, JavaScript, HTML5, CSS3
-  background: I am a passionate Computer Science student in my final year with a strong focus on frontend web development. I have spent the last six months building responsive web applications using React and Tailw
+  id: resume_2126 | level: intern | exp: 0.3 yrs
+  skills: React, TypeScript, Tailwind CSS, JavaScript, Git
+  background: I am a computer science student currently in my final year with a strong foundational knowledge of web development. Over the past few months, I have focused on mastering React, TypeScript, and Tailwin
 
-  id: resume_2122 | level: junior | exp: 1.8 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, REST API
-  background: As a Junior Frontend Developer with 1.8 years of hands-on experience, I have developed expertise in building dynamic user interfaces using React and TypeScript. My professional background includes wor
+  id: resume_2127 | level: junior | exp: 1.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript
+  background: As a Junior Frontend Developer with 1.5 years of experience, I have developed a strong proficiency in building modern web interfaces. My daily work involves implementing responsive layouts using React
 
-  id: resume_2123 | level: middle | exp: 4.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, CI/CD
-  background: I am a dedicated Frontend Developer with 4.5 years of experience specializing in building complex, high-traffic web applications. My core expertise lies in architecting robust frontend systems using R
+  id: resume_2128 | level: middle | exp: 4.0 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, Jest
+  background: I am a seasoned Frontend Developer with 4 years of hands-on experience in architecting and delivering complex frontend solutions. I have an expert-level understanding of React, TypeScript, and Next.js
 
-  id: resume_2124 | level: senior | exp: 6.5 yrs
+  id: resume_2129 | level: senior | exp: 6.0 yrs
   skills: React, TypeScript, Next.js, Tailwind CSS, System Design, Mentorship
-  background: An accomplished Senior Frontend Engineer with 6.5 years of experience in designing and implementing large-scale, scalable frontend architectures. I have extensive experience in leading cross-functiona
+  background: With over 6 years of experience, I have established myself as a Senior Frontend Engineer dedicated to high-performance, accessible, and scalable web solutions. My expertise lies in designing architect
 
-  id: resume_2125 | level: senior | exp: 10.5 yrs
-  skills: Frontend Architecture, React, TypeScript, Next.js, Governance Frameworks, Leadership
-  background: A Principal Frontend Architect with over 10 years of experience in shaping the technical strategy for modern frontend platforms. I have a long-standing history of directing frontend engineering organi
+  id: resume_2130 | level: senior | exp: 9.0 yrs
+  skills: Frontend Architecture, React, TypeScript, Next.js, Strategic Leadership, Governance
+  background: I am a Principal Frontend Engineer with 9 years of experience focusing on frontend strategy, organizational technical governance, and high-level architecture. My career is defined by transforming comp
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2121 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, JavaScript, Tailwind CSS
-  description: We are seeking a motivated intern to assist our frontend team in building and refining user interfaces. Great learning opportunity in a modern tech stack.
+  id: jd_2126 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, HTML, CSS
+  description: Join us for a hands-on internship where you will learn to build responsive web interfaces. We use React and Tailwind CSS and welcome motivated students.
 
-  id: jd_2122 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Next.js
-  description: Join our team as a Junior Frontend Developer. You will focus on building modular components using React and TypeScript and optimizing performance with Next.js.
+  id: jd_2127 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Tailwind CSS
+  description: We are looking for a Junior Frontend Developer to join our product team. You will build and optimize user-facing features using React and TypeScript.
 
-  id: jd_2123 | title: Middle Frontend Developer | level: middle | min_exp: 3 yrs
+  id: jd_2128 | title: Middle Frontend Developer | level: middle | min_exp: 3 yrs
   required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: We are looking for a Middle Frontend Developer to lead feature development and improve our application's performance. Expert knowledge of React and Next.js is essential.
+  description: Our team is growing and we need a Middle Frontend Developer to lead feature development and ensure code quality in our React applications.
 
-  id: jd_2124 | title: Senior Frontend Developer | level: senior | min_exp: 5 yrs
+  id: jd_2129 | title: Senior Frontend Developer | level: senior | min_exp: 5 yrs
   required_skills: React, TypeScript, Next.js, System Design
-  description: Our organization needs a Senior Frontend Developer to lead architectural initiatives and mentor the team. Focus on high-impact performance and scalability.
+  description: We seek a Senior Frontend Developer to drive architectural excellence. You will design scalable systems and mentor our engineering team.
 
-  id: jd_2125 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  id: jd_2130 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
   required_skills: Frontend Architecture, React, TypeScript, Next.js
-  description: We are seeking a Principal Frontend Architect to define our technical frontend vision. You will govern enterprise standards, architecture, and digital transformation initiatives.
+  description: We need a Principal Frontend Architect to define our global frontend vision and lead our organizational technical strategy.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~1 pairs
+  strong_match: ~8 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~10 pairs
   weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10601  resume_2121 × jd_2121
-  pair_10602  resume_2121 × jd_2122
-  pair_10603  resume_2121 × jd_2123
-  pair_10604  resume_2121 × jd_2124
-  pair_10605  resume_2121 × jd_2125
-  pair_10606  resume_2122 × jd_2121
-  pair_10607  resume_2122 × jd_2122
-  pair_10608  resume_2122 × jd_2123
-  pair_10609  resume_2122 × jd_2124
-  pair_10610  resume_2122 × jd_2125
-  pair_10611  resume_2123 × jd_2121
-  pair_10612  resume_2123 × jd_2122
-  pair_10613  resume_2123 × jd_2123
-  pair_10614  resume_2123 × jd_2124
-  pair_10615  resume_2123 × jd_2125
-  pair_10616  resume_2124 × jd_2121
-  pair_10617  resume_2124 × jd_2122
-  pair_10618  resume_2124 × jd_2123
-  pair_10619  resume_2124 × jd_2124
-  pair_10620  resume_2124 × jd_2125
-  pair_10621  resume_2125 × jd_2121
-  pair_10622  resume_2125 × jd_2122
-  pair_10623  resume_2125 × jd_2123
-  pair_10624  resume_2125 × jd_2124
-  pair_10625  resume_2125 × jd_2125
+  pair_10626  resume_2126 × jd_2126
+  pair_10627  resume_2126 × jd_2127
+  pair_10628  resume_2126 × jd_2128
+  pair_10629  resume_2126 × jd_2129
+  pair_10630  resume_2126 × jd_2130
+  pair_10631  resume_2127 × jd_2126
+  pair_10632  resume_2127 × jd_2127
+  pair_10633  resume_2127 × jd_2128
+  pair_10634  resume_2127 × jd_2129
+  pair_10635  resume_2127 × jd_2130
+  pair_10636  resume_2128 × jd_2126
+  pair_10637  resume_2128 × jd_2127
+  pair_10638  resume_2128 × jd_2128
+  pair_10639  resume_2128 × jd_2129
+  pair_10640  resume_2128 × jd_2130
+  pair_10641  resume_2129 × jd_2126
+  pair_10642  resume_2129 × jd_2127
+  pair_10643  resume_2129 × jd_2128
+  pair_10644  resume_2129 × jd_2129
+  pair_10645  resume_2129 × jd_2130
+  pair_10646  resume_2130 × jd_2126
+  pair_10647  resume_2130 × jd_2127
+  pair_10648  resume_2130 × jd_2128
+  pair_10649  resume_2130 × jd_2129
+  pair_10650  resume_2130 × jd_2130
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
