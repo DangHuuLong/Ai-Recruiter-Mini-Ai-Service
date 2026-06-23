@@ -35,8 +35,8 @@ SESSION_FILE   = SCRIPTS_DIR / ".synthetic_session.json"
 # ── constants ─────────────────────────────────────────────────────────────────
 
 BOUNDARY_ZONES   = [(35, 45), (55, 65), (70, 80), (85, 95)]
-FORBIDDEN_LABELS = {"poor_match", "weak_match"}
-ALLOWED_LABELS   = {"moderate_match", "strong_match", "excellent_match"}
+FORBIDDEN_LABELS = {"poor_match"}
+ALLOWED_LABELS   = {"weak_match", "moderate_match", "strong_match", "excellent_match"}
 
 SCORE_RANGES = {
     "poor_match":      (0,  39),
@@ -148,17 +148,54 @@ def show_stats() -> None:
         bar   = "█" * int(pct / 2.5)
         print(f"    {label:<20} {count:>5}  ({pct:4.1f}%)  {bar}")
 
-    target = max(dist.get("poor_match", 0), dist.get("weak_match", 0))
+    target = max((dist.get(label, 0) for label in ALLOWED_LABELS), default=0)
     mod_need = max(0, target - dist.get("moderate_match", 0))
     str_need = max(0, target - dist.get("strong_match", 0))
     exc_need = max(0, target - dist.get("excellent_match", 0))
     total_need = mod_need + str_need + exc_need
-    print(f"\n  Still needed to balance:")
+    print(f"\n  Still needed to balance (target = {target} each):")
     print(f"    moderate_match  +{mod_need:>4}  (~{mod_need  // 25 + (1 if mod_need  % 25 else 0):>2} groups)")
     print(f"    strong_match    +{str_need:>4}  (~{str_need  // 25 + (1 if str_need  % 25 else 0):>2} groups)")
     print(f"    excellent_match +{exc_need:>4}  (~{exc_need  // 25 + (1 if exc_need  % 25 else 0):>2} groups)")
     print(f"    Total new pairs needed: ~{total_need}")
     print("=" * 56)
+
+
+def compute_label_targets(n_pairs: int = 25) -> dict[str, int]:
+    """Return how many of each allowed label to target in a batch.
+
+    Labels with fewer existing pairs receive more weight (inverse-count weighting).
+    """
+    pairs = load_jsonl(PAIRS_PATH)
+    dist  = Counter(p.get("label") for p in pairs if p.get("label") in ALLOWED_LABELS)
+
+    labels = sorted(ALLOWED_LABELS)  # stable order
+
+    if not dist:
+        per       = n_pairs // len(labels)
+        remainder = n_pairs - per * len(labels)
+        targets   = {label: per for label in labels}
+        for i, label in enumerate(labels):
+            if i < remainder:
+                targets[label] += 1
+        return targets
+
+    # Inverse weight: label with fewer pairs gets higher weight
+    max_count = max(dist.get(label, 0) for label in labels)
+    # +1 so labels at max_count still get a small weight
+    weights   = {label: max_count - dist.get(label, 0) + 1 for label in labels}
+    total_w   = sum(weights.values())
+
+    targets: dict[str, int] = {}
+    remaining = n_pairs
+    for i, label in enumerate(sorted(labels, key=lambda l: weights[l], reverse=True)):
+        if i == len(labels) - 1:
+            targets[label] = max(1, remaining)
+        else:
+            count = max(1, round(n_pairs * weights[label] / total_w))
+            targets[label] = count
+            remaining -= count
+    return targets
 
 # ── next IDs ───────────────────────────────────────────────────────────────────
 
@@ -192,12 +229,13 @@ Generate exactly 5 resumes and 5 job descriptions in the domain: {domain}
 
 ═══ CRITICAL CONSTRAINT ═══
 These 10 documents will be cross-paired into 25 CV-JD pairs.
-EVERY pair must score between 60 and 100 (moderate / strong / excellent match).
-ZERO pairs may score below 60 (no poor_match, no weak_match).
+Target score range: 40–100 (weak / moderate / strong / excellent match).
+ZERO pairs may score below 40 (no poor_match allowed).
 
-To satisfy this: place ALL resumes and JDs in the SAME domain ({domain}).
-Vary only seniority level so even the weakest cross-pairing shares enough
-domain overlap to score ≥ 60.
+Place ALL resumes and JDs in the SAME domain ({domain}).
+Vary seniority level so cross-pairings naturally spread across the score range:
+extreme mismatches (intern ↔ senior lead) may score 40–59 (weak_match),
+while same-level pairings should score 75–100 (strong / excellent).
 
 Seniority ladder to use (one level per document):
   Level 1 → intern   (0.0 – 0.5 yrs)
@@ -220,7 +258,12 @@ No markdown, no explanation, no extra text — only 10 JSON lines.
 {{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<intern|junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<100–180 word prose — no company name>","responsibilities":["<item>",...],"requirements":["<item>",...],"nice_to_have":["<item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}}"""
 
 
-def build_pair_prompt(resumes: list[dict], jds: list[dict], pair_start: int) -> str:
+def build_pair_prompt(
+    resumes: list[dict],
+    jds: list[dict],
+    pair_start: int,
+    label_targets: dict[str, int] | None = None,
+) -> str:
     def resume_summary(r: dict) -> str:
         return (
             f"  id: {r['id']} | level: {r.get('candidate_level')} | "
@@ -255,6 +298,24 @@ def build_pair_prompt(resumes: list[dict], jds: list[dict], pair_start: int) -> 
         for i, (_, rid, jid) in enumerate(pair_ids)
     )
 
+    if label_targets:
+        label_order = ["strong_match", "excellent_match", "moderate_match", "weak_match"]
+        dist_lines = "\n".join(
+            f"  {label}: ~{label_targets.get(label, 0)} pairs"
+            for label in label_order
+            if label in label_targets
+        )
+        distribution_section = f"""
+═══ TARGET LABEL DISTRIBUTION ═══
+The dataset is currently imbalanced. Bias your scoring to hit these counts.
+strong_match is the PRIMARY target — give it the highest allocation.
+{dist_lines}
+Adjust criterion scores within valid ranges to reach these targets while
+keeping every score honest and consistent with the documents.
+"""
+    else:
+        distribution_section = ""
+
     return f"""You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
@@ -272,19 +333,18 @@ Score each criterion 0–100, then compute:
 
 Label mapping:
   90–100 → excellent_match
-  75–89  → strong_match
+  75–89  → strong_match       ← PRIMARY TARGET — maximise this label
   60–74  → moderate_match
-  40–59  → weak_match      ← FORBIDDEN — do not generate
-  0–39   → poor_match      ← FORBIDDEN — do not generate
+  40–59  → weak_match
+  0–39   → poor_match         ← FORBIDDEN — do not generate
 
-ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
-KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
-all documents share the same domain — floor is 60.
+Scores below 40 are forbidden. Floor is 40.
+Prioritise strong_match (75–89): aim for at least half the pairs in this range.
 
 Avoid boundary zones — do NOT use scores in these ranges:
   35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
-
+Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
+{distribution_section}
 ═══ PAIRING ORDER (25 pairs) ═══
 {pair_order}
 
@@ -294,7 +354,7 @@ Each line is a single JSON object (no array brackets, no commas between lines).
 No markdown, no explanation, no extra text — only 25 JSON lines.
 
 JSON schema per pair:
-{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
+{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 40–100>,"criterion_scores":{{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
 
 # ── validation ─────────────────────────────────────────────────────────────────
 
@@ -354,7 +414,7 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
             errs.append(f"pair {pid}: missing field '{field}'")
 
     if label in FORBIDDEN_LABELS:
-        errs.append(f"pair {pid}: label '{label}' is forbidden (poor/weak not allowed in synthetic data)")
+        errs.append(f"pair {pid}: label '{label}' is forbidden (poor_match not allowed in synthetic data)")
     elif label not in ALLOWED_LABELS:
         errs.append(f"pair {pid}: unknown label '{label}'")
 
@@ -362,8 +422,8 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
         errs.append(f"pair {pid}: missing overall_score")
     else:
         score = int(score)
-        if score < 60:
-            errs.append(f"pair {pid}: overall_score {score} is below 60 — forbidden")
+        if score < 40:
+            errs.append(f"pair {pid}: overall_score {score} is below 40 — forbidden")
         if in_boundary_zone(score):
             warns.append(f"pair {pid}: score {score} is in a boundary zone {BOUNDARY_ZONES}")
         if label in SCORE_RANGES:
@@ -564,7 +624,9 @@ def action_save() -> None:
 
         TEMP_INPUT.write_text("", encoding="utf-8")
 
-        pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"])
+        label_targets = compute_label_targets(25)
+        pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"], label_targets)
+        print(f"  Label targets this batch: " + "  ".join(f"{k}: {v}" for k, v in sorted(label_targets.items())))
         PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
         print(f"\n  ✓ Pair prompt written to:  scripts/prompt_output.txt")
         print(f"  → Open the file, copy all content, paste into your LLM.")
