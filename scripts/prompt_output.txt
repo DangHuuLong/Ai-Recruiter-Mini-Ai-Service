@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1996 | level: intern | exp: 0.3 yrs
-  skills: React Native, Flutter, Mobile Ui/Ux, Api Integration
-  background: Computer science student with a strong passion for mobile application development. During my academic projects, I have developed a foundational understanding of cross-platform mobile development using
+  id: resume_2196 | level: intern | exp: 0.2 yrs
+  skills: Supply Chain Management, Logistics Operations, Inventory Control, ERP Systems, Microsoft Excel
+  background: Enthusiastic Supply Chain Management student with a solid understanding of logistics operations and inventory control principles. Currently completing a Bachelor's degree, I have developed foundationa
 
-  id: resume_1997 | level: junior | exp: 1.8 yrs
-  skills: Swift, Kotlin, React Native, Mobile Performance
-  background: Junior mobile developer with nearly two years of professional experience building and maintaining mobile applications for iOS and Android platforms. My background includes developing features with Swi
+  id: resume_2197 | level: junior | exp: 1.5 yrs
+  skills: Procurement, Vendor Management, Oracle NetSuite, Demand Forecasting, Process Improvement
+  background: Junior Procurement Analyst with two years of professional experience in managing purchasing processes and vendor relations. I have worked extensively with ERP systems to track purchase orders, monitor
 
-  id: resume_1998 | level: middle | exp: 4.2 yrs
-  skills: Flutter, Swift, Kotlin, Mobile Architecture
-  background: Dynamic mobile engineer with four years of experience leading mobile development initiatives and performance enhancements. I specialize in bridging the gap between design specifications and technical 
+  id: resume_2198 | level: middle | exp: 4.0 yrs
+  skills: Logistics, Inventory Optimization, SAP S/4HANA, Contract Negotiation, Strategic Planning
+  background: Experienced Supply Chain Coordinator with four years of expertise in end-to-end logistics and inventory optimization. I specialize in managing large-scale procurement operations, coordinating internat
 
-  id: resume_1999 | level: senior | exp: 6.5 yrs
-  skills: React Native, Swift, Kotlin, Mobile Architecture
-  background: Experienced mobile architect and lead developer with over six years of expertise in large-scale mobile development and enterprise-wide application integration. I have a proven track record of architec
+  id: resume_2199 | level: senior | exp: 6.5 yrs
+  skills: Strategic Sourcing, Lean Logistics, Microsoft Dynamics 365, Change Management, Budgeting
+  background: Senior Supply Chain Manager with over six years of experience directing procurement, inventory, and logistics strategies. I have successfully managed complex supply chains for large-scale operations, 
 
-  id: resume_2000 | level: senior | exp: 9.5 yrs
-  skills: Mobile Architecture, Swift, Kotlin, Flutter
-  background: Principal mobile strategist with over nine years of experience defining comprehensive mobile visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex mobile
+  id: resume_2200 | level: senior | exp: 9.5 yrs
+  skills: Supply Chain Architecture, Predictive Analytics, Cloud ERP, Technical Strategy, Leadership
+  background: Principal Supply Chain Architect with over nine years of experience in designing and leading high-scale, global supply chain architectures. I specialize in integrating complex ERP environments, optimi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1996 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React Native, Flutter, Mobile Ui/Ux, Api Integration
-  description: We are seeking a motivated Mobile Development Intern to support our mobile engineering team. This role provides hands-on experience in mobile UI development, component testing, and
+  id: jd_2196 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
+  required_skills: Logistics, Inventory Control, Microsoft Excel
+  description: We are seeking a motivated Supply Chain Intern to join our logistics team. This role provides hands-on experience in procurement support, inventory documentation, and basic data an
 
-  id: jd_1997 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
-  required_skills: Swift, Kotlin, React Native, Mobile Performance
-  description: Our team is looking for a detail-oriented Junior Mobile Developer to handle mobile feature development and application maintenance. You will be instrumental in ensuring that Swift,
+  id: jd_2197 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Procurement, ERP Systems, Data Analysis
+  description: We are looking for a Junior Supply Chain Analyst to help us streamline our procurement processes. In this role, you will work with our ERP software to track purchase orders, reconc
 
-  id: jd_1998 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Flutter, Swift, Kotlin, Mobile Architecture
-  description: We are searching for a skilled Mobile Engineer to lead development and feature execution. You will bridge the gap between design specifications and technical execution, ensuring th
+  id: jd_2198 | title: Supply Chain Coordinator | level: middle | min_exp: 3 yrs
+  required_skills: Logistics, Inventory Optimization, ERP Systems
+  description: We are searching for a skilled Supply Chain Coordinator to manage our logistics and inventory workflows. You will lead procurement initiatives, coordinate with international carrie
 
-  id: jd_1999 | title: Senior Mobile Developer | level: senior | min_exp: 5 yrs
-  required_skills: React Native, Swift, Kotlin, Mobile Architecture
-  description: We are looking for a visionary Senior Mobile Developer to guide our enterprise mobile initiatives. You will take ownership of our mobile architecture, ensuring that native and cros
+  id: jd_2199 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Sourcing, ERP Systems, Logistics
+  description: We are seeking an experienced Senior Supply Chain Manager to lead our procurement and logistics departments. You will define our supply chain strategy, implement advanced ERP solut
 
-  id: jd_2000 | title: Principal Mobile Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Mobile Architecture, Swift, Kotlin, Flutter
-  description: We are seeking a Principal Mobile Strategist to shape our future mobile engineering strategy at an enterprise level. This is a leadership position for someone experienced in archit
+  id: jd_2200 | title: Principal Supply Chain Architect | level: senior | min_exp: 8 yrs
+  required_skills: Supply Chain Architecture, Predictive Analytics, Technical Strategy
+  description: We are looking for a Principal Supply Chain Architect to define our future logistics and procurement infrastructure. This is a strategic role focused on large-scale system architec
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -51,45 +51,54 @@ Score each criterion 0–100, then compute:
 
 Label mapping:
   90–100 → excellent_match
-  75–89  → strong_match
+  75–89  → strong_match       ← PRIMARY TARGET — maximise this label
   60–74  → moderate_match
-  40–59  → weak_match      ← FORBIDDEN — do not generate
-  0–39   → poor_match      ← FORBIDDEN — do not generate
+  40–59  → weak_match
+  0–39   → poor_match         ← FORBIDDEN — do not generate
 
-ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
-KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
-all documents share the same domain — floor is 60.
+Scores below 40 are forbidden. Floor is 40.
+Prioritise strong_match (75–89): aim for at least half the pairs in this range.
 
 Avoid boundary zones — do NOT use scores in these ranges:
   35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
+Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
+
+═══ TARGET LABEL DISTRIBUTION ═══
+The dataset is currently imbalanced. Bias your scoring to hit these counts.
+strong_match is the PRIMARY target — give it the highest allocation.
+  strong_match: ~2 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~8 pairs
+Adjust criterion scores within valid ranges to reach these targets while
+keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9976  resume_1996 × jd_1996
-  pair_9977  resume_1996 × jd_1997
-  pair_9978  resume_1996 × jd_1998
-  pair_9979  resume_1996 × jd_1999
-  pair_9980  resume_1996 × jd_2000
-  pair_9981  resume_1997 × jd_1996
-  pair_9982  resume_1997 × jd_1997
-  pair_9983  resume_1997 × jd_1998
-  pair_9984  resume_1997 × jd_1999
-  pair_9985  resume_1997 × jd_2000
-  pair_9986  resume_1998 × jd_1996
-  pair_9987  resume_1998 × jd_1997
-  pair_9988  resume_1998 × jd_1998
-  pair_9989  resume_1998 × jd_1999
-  pair_9990  resume_1998 × jd_2000
-  pair_9991  resume_1999 × jd_1996
-  pair_9992  resume_1999 × jd_1997
-  pair_9993  resume_1999 × jd_1998
-  pair_9994  resume_1999 × jd_1999
-  pair_9995  resume_1999 × jd_2000
-  pair_9996  resume_2000 × jd_1996
-  pair_9997  resume_2000 × jd_1997
-  pair_9998  resume_2000 × jd_1998
-  pair_9999  resume_2000 × jd_1999
-  pair_10000  resume_2000 × jd_2000
+  pair_10976  resume_2196 × jd_2196
+  pair_10977  resume_2196 × jd_2197
+  pair_10978  resume_2196 × jd_2198
+  pair_10979  resume_2196 × jd_2199
+  pair_10980  resume_2196 × jd_2200
+  pair_10981  resume_2197 × jd_2196
+  pair_10982  resume_2197 × jd_2197
+  pair_10983  resume_2197 × jd_2198
+  pair_10984  resume_2197 × jd_2199
+  pair_10985  resume_2197 × jd_2200
+  pair_10986  resume_2198 × jd_2196
+  pair_10987  resume_2198 × jd_2197
+  pair_10988  resume_2198 × jd_2198
+  pair_10989  resume_2198 × jd_2199
+  pair_10990  resume_2198 × jd_2200
+  pair_10991  resume_2199 × jd_2196
+  pair_10992  resume_2199 × jd_2197
+  pair_10993  resume_2199 × jd_2198
+  pair_10994  resume_2199 × jd_2199
+  pair_10995  resume_2199 × jd_2200
+  pair_10996  resume_2200 × jd_2196
+  pair_10997  resume_2200 × jd_2197
+  pair_10998  resume_2200 × jd_2198
+  pair_10999  resume_2200 × jd_2199
+  pair_11000  resume_2200 × jd_2200
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
@@ -97,4 +106,4 @@ Each line is a single JSON object (no array brackets, no commas between lines).
 No markdown, no explanation, no extra text — only 25 JSON lines.
 
 JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 40–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
