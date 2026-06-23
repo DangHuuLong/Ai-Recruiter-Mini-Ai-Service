@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1976 | level: intern | exp: 0.3 yrs
-  skills: Marketplace Management, Inventory Tracking, Digital Merchandising, Retail Analytics
-  background: Retail management student passionate about e-commerce operations and digital merchandising. During my studies, I have developed a solid foundation in marketplace management, inventory tracking, and co
+  id: resume_1981 | level: intern | exp: 0.3 yrs
+  skills: React Native, Javascript, Mobile Ui Design, Api Integration
+  background: Computer science student with a strong passion for mobile application development and cross-platform frameworks. During my academic projects, I have developed a foundational understanding of mobile UI
 
-  id: resume_1977 | level: junior | exp: 1.8 yrs
-  skills: Marketplace Operations, Product Merchandising, Catalog Management, E-commerce Analytics
-  background: Junior e-commerce coordinator with nearly two years of professional experience in marketplace operations and product merchandising. My background includes managing product catalogs across multiple cha
+  id: resume_1982 | level: junior | exp: 1.8 yrs
+  skills: React Native, Flutter, Mobile Performance Optimization, Rest Api Integration
+  background: Junior mobile developer with nearly two years of professional experience building and maintaining cross-platform applications. My background includes developing features with React Native and Flutter,
 
-  id: resume_1978 | level: middle | exp: 4.2 yrs
-  skills: E-commerce Strategy, Category Management, Inventory Optimization, Retail Data Analysis
-  background: Dynamic e-commerce operations specialist with four years of experience leading multi-channel retail strategies and optimizing online merchandising. I specialize in bridging the gap between inventory o
+  id: resume_1983 | level: middle | exp: 4.2 yrs
+  skills: Swift, Kotlin, React Native, Mobile Architecture
+  background: Dynamic mobile engineer with four years of experience leading cross-platform development initiatives and native mobile enhancements. I specialize in bridging the gap between design specifications and 
 
-  id: resume_1979 | level: senior | exp: 6.5 yrs
-  skills: E-commerce Management, Retail Strategy, Marketplace Growth, Operational Leadership
-  background: Experienced e-commerce manager and digital retail strategist with over six years of expertise in large-scale marketplace management and multi-channel operations. I have a proven track record of archit
+  id: resume_1984 | level: senior | exp: 6.5 yrs
+  skills: React Native, Swift, Kotlin, Mobile Architecture
+  background: Experienced mobile architect and lead developer with over six years of expertise in large-scale mobile development and enterprise-wide application integration. I have a proven track record of architec
 
-  id: resume_1980 | level: senior | exp: 9.5 yrs
-  skills: Digital Commerce Architecture, Retail Operations, Category Leadership, Data Strategy
-  background: Principal digital commerce strategist with over nine years of experience defining comprehensive retail visions and overseeing enterprise-wide e-commerce frameworks. My expertise lies in building compl
+  id: resume_1985 | level: senior | exp: 9.5 yrs
+  skills: Mobile Architecture, Swift, Kotlin, Flutter
+  background: Principal mobile strategist with over nine years of experience defining comprehensive mobile visions and overseeing enterprise-wide development frameworks. My expertise lies in building complex mobile
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1976 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Marketplace Management, Inventory Tracking, Digital Merchandising, Retail Analytics
-  description: We are seeking a motivated E-commerce Operations Intern to support our digital retail and merchandising team. This role provides hands-on experience in marketplace product listing,
+  id: jd_1981 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Javascript, Mobile Ui Design, Api Integration
+  description: We are seeking a motivated Mobile Development Intern to support our cross-platform and mobile engineering team. This role provides hands-on experience in mobile UI development, com
 
-  id: jd_1977 | title: Junior E-commerce Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Marketplace Operations, Product Merchandising, Catalog Management, E-commerce Analytics
-  description: Our team is looking for a detail-oriented Junior E-commerce Coordinator to handle product catalog maintenance and operational support. You will be instrumental in ensuring that mar
+  id: jd_1982 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Flutter, Mobile Performance Optimization, Rest Api Integration
+  description: Our team is looking for a detail-oriented Junior Mobile Developer to handle cross-platform feature development and application maintenance. You will be instrumental in ensuring tha
 
-  id: jd_1978 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs
-  required_skills: E-commerce Strategy, Category Management, Inventory Optimization, Retail Data Analysis
-  description: We are searching for a skilled E-commerce Operations Specialist to lead category management initiatives and optimize retail performance. You will bridge the gap between inventory o
+  id: jd_1983 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Swift, Kotlin, React Native, Mobile Architecture
+  description: We are searching for a skilled Mobile Engineer to lead cross-platform and native feature development. You will bridge the gap between design specifications and technical execution,
 
-  id: jd_1979 | title: Senior E-commerce Manager | level: senior | min_exp: 5 yrs
-  required_skills: E-commerce Management, Retail Strategy, Marketplace Growth, Operational Leadership
-  description: We are looking for a visionary Senior E-commerce Manager to guide our enterprise retail initiatives. You will take ownership of our digital commerce strategy, ensuring that merchan
+  id: jd_1984 | title: Senior Mobile Developer | level: senior | min_exp: 5 yrs
+  required_skills: React Native, Swift, Kotlin, Mobile Architecture
+  description: We are looking for a visionary Senior Mobile Developer to guide our enterprise mobile initiatives. You will take ownership of our mobile architecture, ensuring that cross-platform 
 
-  id: jd_1980 | title: Principal Digital Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Digital Commerce Architecture, Retail Operations, Category Leadership, Data Strategy
-  description: We are seeking a Principal Digital Strategist to shape our future retail architecture at an enterprise level. This is a leadership position for someone experienced in architecting 
+  id: jd_1985 | title: Principal Mobile Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Mobile Architecture, Swift, Kotlin, Flutter
+  description: We are seeking a Principal Mobile Strategist to shape our future mobile engineering strategy at an enterprise level. This is a leadership position for someone experienced in archit
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9876  resume_1976 × jd_1976
-  pair_9877  resume_1976 × jd_1977
-  pair_9878  resume_1976 × jd_1978
-  pair_9879  resume_1976 × jd_1979
-  pair_9880  resume_1976 × jd_1980
-  pair_9881  resume_1977 × jd_1976
-  pair_9882  resume_1977 × jd_1977
-  pair_9883  resume_1977 × jd_1978
-  pair_9884  resume_1977 × jd_1979
-  pair_9885  resume_1977 × jd_1980
-  pair_9886  resume_1978 × jd_1976
-  pair_9887  resume_1978 × jd_1977
-  pair_9888  resume_1978 × jd_1978
-  pair_9889  resume_1978 × jd_1979
-  pair_9890  resume_1978 × jd_1980
-  pair_9891  resume_1979 × jd_1976
-  pair_9892  resume_1979 × jd_1977
-  pair_9893  resume_1979 × jd_1978
-  pair_9894  resume_1979 × jd_1979
-  pair_9895  resume_1979 × jd_1980
-  pair_9896  resume_1980 × jd_1976
-  pair_9897  resume_1980 × jd_1977
-  pair_9898  resume_1980 × jd_1978
-  pair_9899  resume_1980 × jd_1979
-  pair_9900  resume_1980 × jd_1980
+  pair_9901  resume_1981 × jd_1981
+  pair_9902  resume_1981 × jd_1982
+  pair_9903  resume_1981 × jd_1983
+  pair_9904  resume_1981 × jd_1984
+  pair_9905  resume_1981 × jd_1985
+  pair_9906  resume_1982 × jd_1981
+  pair_9907  resume_1982 × jd_1982
+  pair_9908  resume_1982 × jd_1983
+  pair_9909  resume_1982 × jd_1984
+  pair_9910  resume_1982 × jd_1985
+  pair_9911  resume_1983 × jd_1981
+  pair_9912  resume_1983 × jd_1982
+  pair_9913  resume_1983 × jd_1983
+  pair_9914  resume_1983 × jd_1984
+  pair_9915  resume_1983 × jd_1985
+  pair_9916  resume_1984 × jd_1981
+  pair_9917  resume_1984 × jd_1982
+  pair_9918  resume_1984 × jd_1983
+  pair_9919  resume_1984 × jd_1984
+  pair_9920  resume_1984 × jd_1985
+  pair_9921  resume_1985 × jd_1981
+  pair_9922  resume_1985 × jd_1982
+  pair_9923  resume_1985 × jd_1983
+  pair_9924  resume_1985 × jd_1984
+  pair_9925  resume_1985 × jd_1985
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
