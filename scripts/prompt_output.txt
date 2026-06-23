@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2096 | level: intern | exp: 0.2 yrs
-  skills: React, TypeScript, Tailwind CSS, JavaScript, HTML, CSS, Git
-  background: An eager Computer Science undergraduate with a strong focus on modern frontend technologies. Through academic projects and independent study, I have gained hands-on experience building interactive web
+  id: resume_2101 | level: intern | exp: 0.3 yrs
+  skills: Medical Terminology, EMR Systems, Healthcare Compliance, Patient Records, Data Entry
+  background: An enthusiastic Health Administration student currently in the final year of a Bachelor degree, seeking an internship to gain practical experience in clinical operations. I have developed a solid foun
 
-  id: resume_2097 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, Redux, PostCSS
-  background: A detail-oriented Frontend Developer with 1.5 years of professional experience building web applications. I specialize in developing reusable components using React, TypeScript, and Tailwind CSS. My p
+  id: resume_2102 | level: junior | exp: 1.5 yrs
+  skills: EMR Management, Epic, HIPAA Compliance, Insurance Verification, Patient Scheduling
+  background: A detail-oriented Healthcare Administrative Coordinator with 1.5 years of experience in high-volume outpatient settings. I specialize in medical record maintenance, insurance verification, and appoint
 
-  id: resume_2098 | level: middle | exp: 4.0 yrs
-  skills: Next.js, React, TypeScript, Tailwind CSS, GraphQL, Jest, Framer Motion
-  background: A proactive Frontend Engineer with 4 years of experience architecting scalable web applications. My expertise lies in building complex, data-driven interfaces using Next.js, React, and TypeScript. I h
+  id: resume_2103 | level: middle | exp: 4.0 yrs
+  skills: Clinical Operations, EMR Optimization, Staff Supervision, Data Analysis, Regulatory Compliance
+  background: A proactive Clinical Operations Specialist with 4 years of experience driving efficiency in multi-specialty medical practices. My expertise lies in managing complex EMR systems, optimizing daily clini
 
-  id: resume_2099 | level: senior | exp: 6.5 yrs
-  skills: Next.js, React, TypeScript, Tailwind CSS, Micro-Frontends, Performance Optimization, Accessibility
-  background: A seasoned Senior Frontend Engineer with over 6 years of experience building mission-critical web platforms. I possess deep knowledge of the React ecosystem, specifically focused on server-side render
+  id: resume_2104 | level: senior | exp: 6.5 yrs
+  skills: Strategic Planning, Clinical Operations Management, Budgeting, EMR Implementation, Policy Development
+  background: A strategic Senior Healthcare Administrator with over 6 years of experience directing clinical operations and administrative strategy. I possess deep expertise in EMR implementation, system-wide proce
 
-  id: resume_2100 | level: senior | exp: 9.8 yrs
-  skills: Next.js, React, TypeScript, System Architecture, Design Systems, Performance Engineering, Leadership
-  background: A Staff Frontend Architect with 9+ years of professional experience leading technical strategy for complex web infrastructures. I specialize in establishing high-performance frontend engineering ecosy
+  id: resume_2105 | level: senior | exp: 9.8 yrs
+  skills: Healthcare Systems Design, Clinical Governance, Change Management, EMR Strategy, Risk Management
+  background: An accomplished Principal Clinical Operations Lead with 9+ years of professional experience in healthcare system design and administration. I specialize in architecting high-performance clinical workf
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2096 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: We are looking for a motivated intern to assist in our frontend development team. You will learn to use modern tools like React and Tailwind CSS to build user interfaces.
+  id: jd_2101 | title: Clinical Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Data Entry, Office Software, Attention To Detail
+  description: We are seeking a motivated intern to assist our clinical operations team with administrative tasks, EMR data entry, and patient records support. Excellent learning opportunity.
 
-  id: jd_2097 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: Join our team as a Junior Frontend Developer. You will help build our product's interface using React, TypeScript, and Next.js. We value growth and technical curiosity.
+  id: jd_2102 | title: Junior Healthcare Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: EMR Management, HIPAA Compliance, Patient Scheduling
+  description: Join our growing team as a Junior Healthcare Coordinator. You will handle daily clinical documentation, insurance verification, and patient scheduling using EMR software.
 
-  id: jd_2098 | title: Middle Frontend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, Next.js, TypeScript, Tailwind CSS
-  description: We are seeking a Mid-level Frontend Engineer to own critical features. You will focus on building robust interfaces using Next.js and TypeScript, working closely with backend teams
+  id: jd_2103 | title: Middle Clinical Operations Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR Optimization, Data Analysis
+  description: We are looking for a Mid-level Operations Specialist to optimize clinical workflows. You will lead EMR data initiatives and support administrative policy implementation.
 
-  id: jd_2099 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: React, Next.js, TypeScript, Tailwind CSS
-  description: Our platform needs a Senior Frontend Engineer to lead UI development efforts. You will focus on high-performance architecture using React, Next.js, and Tailwind CSS.
+  id: jd_2104 | title: Senior Healthcare Administrator | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Planning, Clinical Operations Management, EMR Implementation
+  description: Our medical network requires a Senior Healthcare Administrator to oversee clinical strategy. You will lead large-scale EMR implementations and drive organizational process change.
 
-  id: jd_2100 | title: Lead Frontend Architect | level: senior | min_exp: 7 yrs
-  required_skills: React, Next.js, TypeScript, System Architecture
-  description: We are looking for a Lead Architect to define our frontend strategy. You will design our ecosystem using Next.js, TypeScript, and React to ensure excellence at scale.
+  id: jd_2105 | title: Lead Clinical Operations Architect | level: senior | min_exp: 7 yrs
+  required_skills: Healthcare Systems Design, Clinical Governance, EMR Strategy
+  description: We are looking for a Lead Architect to define our clinical strategy. You will design our healthcare ecosystem, focusing on EMR governance and system-wide operational excellence.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~14 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~2 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~6 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10476  resume_2096 × jd_2096
-  pair_10477  resume_2096 × jd_2097
-  pair_10478  resume_2096 × jd_2098
-  pair_10479  resume_2096 × jd_2099
-  pair_10480  resume_2096 × jd_2100
-  pair_10481  resume_2097 × jd_2096
-  pair_10482  resume_2097 × jd_2097
-  pair_10483  resume_2097 × jd_2098
-  pair_10484  resume_2097 × jd_2099
-  pair_10485  resume_2097 × jd_2100
-  pair_10486  resume_2098 × jd_2096
-  pair_10487  resume_2098 × jd_2097
-  pair_10488  resume_2098 × jd_2098
-  pair_10489  resume_2098 × jd_2099
-  pair_10490  resume_2098 × jd_2100
-  pair_10491  resume_2099 × jd_2096
-  pair_10492  resume_2099 × jd_2097
-  pair_10493  resume_2099 × jd_2098
-  pair_10494  resume_2099 × jd_2099
-  pair_10495  resume_2099 × jd_2100
-  pair_10496  resume_2100 × jd_2096
-  pair_10497  resume_2100 × jd_2097
-  pair_10498  resume_2100 × jd_2098
-  pair_10499  resume_2100 × jd_2099
-  pair_10500  resume_2100 × jd_2100
+  pair_10501  resume_2101 × jd_2101
+  pair_10502  resume_2101 × jd_2102
+  pair_10503  resume_2101 × jd_2103
+  pair_10504  resume_2101 × jd_2104
+  pair_10505  resume_2101 × jd_2105
+  pair_10506  resume_2102 × jd_2101
+  pair_10507  resume_2102 × jd_2102
+  pair_10508  resume_2102 × jd_2103
+  pair_10509  resume_2102 × jd_2104
+  pair_10510  resume_2102 × jd_2105
+  pair_10511  resume_2103 × jd_2101
+  pair_10512  resume_2103 × jd_2102
+  pair_10513  resume_2103 × jd_2103
+  pair_10514  resume_2103 × jd_2104
+  pair_10515  resume_2103 × jd_2105
+  pair_10516  resume_2104 × jd_2101
+  pair_10517  resume_2104 × jd_2102
+  pair_10518  resume_2104 × jd_2103
+  pair_10519  resume_2104 × jd_2104
+  pair_10520  resume_2104 × jd_2105
+  pair_10521  resume_2105 × jd_2101
+  pair_10522  resume_2105 × jd_2102
+  pair_10523  resume_2105 × jd_2103
+  pair_10524  resume_2105 × jd_2104
+  pair_10525  resume_2105 × jd_2105
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
