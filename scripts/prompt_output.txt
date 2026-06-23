@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2071 | level: intern | exp: 0.2 yrs
-  skills: AWS, Docker, Linux, Terraform
-  background: Computer Science student with a foundational understanding of cloud infrastructure and automation. I am eager to learn and apply my knowledge of AWS and Linux in a real-world setting. I have completed
+  id: resume_2076 | level: intern | exp: 0.3 yrs
+  skills: Requirement Gathering, BPMN, Documentation, Data Analysis
+  background: Business Administration student with a strong interest in business processes and organizational efficiency. During my academic career, I have developed a solid foundation in requirement gathering and 
 
-  id: resume_2072 | level: junior | exp: 1.5 yrs
-  skills: Kubernetes, Docker, Terraform, CI/CD
-  background: Junior DevOps engineer with 1.5 years of experience in maintaining cloud environments and streamlining development workflows. I have practical experience in managing containerized applications using K
+  id: resume_2077 | level: junior | exp: 1.5 yrs
+  skills: Requirements Elicitation, User Stories, BPMN, Agile
+  background: Junior Business Analyst with 1.5 years of experience in capturing requirements and facilitating communication between business stakeholders and technical teams. I have been actively involved in docume
 
-  id: resume_2073 | level: middle | exp: 4.0 yrs
-  skills: AWS, Kubernetes, Terraform, Infrastructure as Code
-  background: DevOps Engineer with 4 years of experience designing and maintaining resilient cloud infrastructure. My expertise lies in automating infrastructure provisioning, optimizing Kubernetes cluster performa
+  id: resume_2078 | level: middle | exp: 4.2 yrs
+  skills: Strategic Analysis, BPMN, Project Management, Stakeholder Engagement
+  background: Business Analyst with 4 years of experience delivering strategic value through requirement analysis and process optimization. My expertise encompasses the end-to-end lifecycle of project management, f
 
-  id: resume_2074 | level: senior | exp: 6.5 yrs
-  skills: AWS, Kubernetes, Terraform, SRE
-  background: Senior DevOps Architect with 6 years of experience driving digital transformation through robust cloud infrastructure and operational excellence. I specialize in designing highly scalable, secure, and
+  id: resume_2079 | level: senior | exp: 6.5 yrs
+  skills: Business Transformation, Gap Analysis, Stakeholder Management, Project Portfolio Management
+  background: Senior Business Analyst with 6 years of expertise in large-scale business transformation and complex project management. I specialize in aligning enterprise-wide objectives with actionable technical r
 
-  id: resume_2075 | level: senior | exp: 9.5 yrs
-  skills: Cloud Architecture, Hybrid Cloud, Platform Engineering, DevOps Strategy
-  background: Principal Cloud Infrastructure Engineer with over 9 years of experience architecting and leading complex enterprise-level DevOps transformations. I have extensive experience building multi-cloud solut
+  id: resume_2080 | level: senior | exp: 9.8 yrs
+  skills: Business Architecture, Strategic Planning, Change Management, Leadership
+  background: Principal Business Architect with 9+ years of experience leading complex enterprise-level projects and defining strategic operational frameworks. My career is defined by my ability to synthesize enter
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2071 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Linux
-  description: We are seeking an enthusiastic DevOps intern to support our infrastructure team. You will learn about AWS management, assist in monitoring tasks, and help maintain simple infrastru
+  id: jd_2076 | title: Business Analyst Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, Documentation
+  description: We are seeking an enthusiastic Business Analyst intern to support our project management team. You will learn about requirements documentation, assist in process mapping tasks, and
 
-  id: jd_2072 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Docker, Kubernetes, CI/CD
-  description: We are looking for a Junior DevOps Engineer to manage our development and staging environments. You will be responsible for containerizing services, maintaining CI/CD pipelines, an
+  id: jd_2077 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Elicitation, User Stories, Project Coordination
+  description: We are looking for a Junior Business Analyst to manage requirements and support project execution. You will be responsible for creating user stories, maintaining project documentat
 
-  id: jd_2073 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: AWS, Kubernetes, Terraform
-  description: We are seeking a DevOps Engineer to take ownership of our cloud infrastructure. You will architect robust systems on AWS, implement advanced infrastructure-as-code, and improve the
+  id: jd_2078 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Analysis, BPMN, Project Management
+  description: We are seeking a Business Analyst to take ownership of project requirements and process design. You will facilitate stakeholder workshops, map complex business processes, and impro
 
-  id: jd_2074 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Kubernetes, Terraform, SRE
-  description: We are looking for a Senior DevOps Engineer to lead our infrastructure team. You will define our cloud-native strategy, oversee SRE operations, and build secure, automated workflow
+  id: jd_2079 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Business Transformation, Gap Analysis, Stakeholder Management, Project Management
+  description: We are looking for a Senior Business Analyst to lead our business analysis team. You will define our analytical strategy, oversee stakeholder portfolios, and build secure, automate
 
-  id: jd_2075 | title: Principal Infrastructure Architect | level: senior | min_exp: 7 yrs
-  required_skills: Cloud Architecture, Platform Engineering, DevOps Strategy
-  description: We are hiring a Principal Infrastructure Architect to drive our enterprise cloud transformation. You will define long-term architectural standards, lead high-stakes platform migrat
+  id: jd_2080 | title: Principal Business Architect | level: senior | min_exp: 7 yrs
+  required_skills: Business Architecture, Strategic Planning, Change Management, Leadership
+  description: We are hiring a Principal Business Architect to drive our enterprise business transformation. You will define long-term architectural standards, lead high-stakes organizational pro
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~12 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~2 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~12 pairs
+  moderate_match: ~3 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10351  resume_2071 × jd_2071
-  pair_10352  resume_2071 × jd_2072
-  pair_10353  resume_2071 × jd_2073
-  pair_10354  resume_2071 × jd_2074
-  pair_10355  resume_2071 × jd_2075
-  pair_10356  resume_2072 × jd_2071
-  pair_10357  resume_2072 × jd_2072
-  pair_10358  resume_2072 × jd_2073
-  pair_10359  resume_2072 × jd_2074
-  pair_10360  resume_2072 × jd_2075
-  pair_10361  resume_2073 × jd_2071
-  pair_10362  resume_2073 × jd_2072
-  pair_10363  resume_2073 × jd_2073
-  pair_10364  resume_2073 × jd_2074
-  pair_10365  resume_2073 × jd_2075
-  pair_10366  resume_2074 × jd_2071
-  pair_10367  resume_2074 × jd_2072
-  pair_10368  resume_2074 × jd_2073
-  pair_10369  resume_2074 × jd_2074
-  pair_10370  resume_2074 × jd_2075
-  pair_10371  resume_2075 × jd_2071
-  pair_10372  resume_2075 × jd_2072
-  pair_10373  resume_2075 × jd_2073
-  pair_10374  resume_2075 × jd_2074
-  pair_10375  resume_2075 × jd_2075
+  pair_10376  resume_2076 × jd_2076
+  pair_10377  resume_2076 × jd_2077
+  pair_10378  resume_2076 × jd_2078
+  pair_10379  resume_2076 × jd_2079
+  pair_10380  resume_2076 × jd_2080
+  pair_10381  resume_2077 × jd_2076
+  pair_10382  resume_2077 × jd_2077
+  pair_10383  resume_2077 × jd_2078
+  pair_10384  resume_2077 × jd_2079
+  pair_10385  resume_2077 × jd_2080
+  pair_10386  resume_2078 × jd_2076
+  pair_10387  resume_2078 × jd_2077
+  pair_10388  resume_2078 × jd_2078
+  pair_10389  resume_2078 × jd_2079
+  pair_10390  resume_2078 × jd_2080
+  pair_10391  resume_2079 × jd_2076
+  pair_10392  resume_2079 × jd_2077
+  pair_10393  resume_2079 × jd_2078
+  pair_10394  resume_2079 × jd_2079
+  pair_10395  resume_2079 × jd_2080
+  pair_10396  resume_2080 × jd_2076
+  pair_10397  resume_2080 × jd_2077
+  pair_10398  resume_2080 × jd_2078
+  pair_10399  resume_2080 × jd_2079
+  pair_10400  resume_2080 × jd_2080
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
