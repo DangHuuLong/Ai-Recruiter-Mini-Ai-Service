@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2041 | level: intern | exp: 0.3 yrs
-  skills: SEO, Social Media Management, Content Creation, Google Analytics
-  background: Enthusiastic Marketing student in my final year with a keen interest in digital content creation and social media management. I have spent the last six months developing my skills in basic SEO techniq
+  id: resume_2046 | level: intern | exp: 0.3 yrs
+  skills: Excel, Inventory Management, Procurement Basics, Logistics Coordination
+  background: Motivated supply chain management student in my final year with a strong academic interest in logistics and procurement processes. I have completed coursework in inventory control, demand forecasting,
 
-  id: resume_2042 | level: junior | exp: 1.5 yrs
-  skills: SEO, Google Analytics, Meta Ads, Content Strategy
-  background: Junior Digital Marketer with over a year of experience focusing on SEO optimization, social media growth, and content performance tracking. In my previous role, I supported the development and executi
+  id: resume_2047 | level: junior | exp: 1.5 yrs
+  skills: SAP, Inventory Control, Procurement, Data Analysis
+  background: Junior Supply Chain Analyst with 1.5 years of experience in inventory control and procurement support. I have successfully managed daily warehouse operations, tracked shipment statuses, and maintained
 
-  id: resume_2043 | level: middle | exp: 4.2 yrs
-  skills: SEO, Content Strategy, HubSpot, Google Analytics, Campaign Management
-  background: Versatile Digital Marketing Specialist with four years of professional experience in developing comprehensive content strategies, leading SEO initiatives, and managing cross-channel marketing campaign
+  id: resume_2048 | level: middle | exp: 4.2 yrs
+  skills: Oracle ERP, Supply Chain Analytics, Strategic Sourcing, Vendor Management
+  background: Supply Chain Specialist with four years of professional experience in procurement strategy, vendor management, and logistics optimization. I have effectively managed supplier relationships, negotiated
 
-  id: resume_2044 | level: senior | exp: 6.8 yrs
-  skills: Digital Strategy, SEO, Marketing Automation, Team Leadership, Performance Analytics
-  background: Senior Digital Marketing Manager with six years of experience driving large-scale marketing strategies and overseeing digital brand presence for established brands. My focus is on data-driven content 
+  id: resume_2049 | level: senior | exp: 6.5 yrs
+  skills: Global Supply Chain, Strategic Procurement, Logistics Strategy, Team Leadership
+  background: Senior Supply Chain Manager with over six years of experience directing large-scale global logistics operations and strategic procurement projects. I have successfully overseen end-to-end supply chain
 
-  id: resume_2045 | level: senior | exp: 9.5 yrs
-  skills: Marketing Strategy, Digital Transformation, Executive Leadership, Performance Modeling
-  background: Principal Digital Marketing Lead with over nine years of experience in defining comprehensive marketing roadmaps and leading digital transformation for major global entities. I specialize in long-term
+  id: resume_2050 | level: senior | exp: 9.8 yrs
+  skills: Supply Chain Strategy, Digital Transformation, Executive Leadership, Process Engineering
+  background: Principal Supply Chain Architect with over nine years of experience defining and executing enterprise-level supply chain strategies. I specialize in digital transformation, long-term procurement roadm
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2041 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Management
-  description: We are looking for a creative Digital Marketing intern to assist our team with social media content and SEO research. This internship offers valuable exposure to the end-to-end con
+  id: jd_2046 | title: Supply Chain Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Excel, Inventory Management
+  description: We are seeking a highly motivated Supply Chain management intern to support our logistics and procurement departments. This role provides hands-on experience in day-to-day warehous
 
-  id: jd_2042 | title: Junior Digital Marketer | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Google Analytics, Content Strategy
-  description: We are hiring a Junior Digital Marketer to contribute to our SEO and advertising efforts. You will be responsible for implementing content strategies, managing social media ad spen
+  id: jd_2047 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SAP, Inventory Control, Procurement
+  description: We are hiring a Junior Supply Chain Analyst to manage stock levels and assist with procurement activities. You will be responsible for maintaining warehouse accuracy using SAP, pro
 
-  id: jd_2043 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Content Strategy, HubSpot, Google Analytics
-  description: We are seeking a talented Digital Marketing Specialist to lead our core content and SEO initiatives. You will be responsible for shaping cross-channel strategies, managing content 
+  id: jd_2048 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Oracle ERP, Supply Chain Analytics, Strategic Sourcing
+  description: We are looking for a Supply Chain Specialist to lead our procurement and logistics optimization projects. You will be responsible for vendor management, strategic sourcing, and sup
 
-  id: jd_2044 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Digital Strategy, SEO, Performance Analytics, Team Leadership
-  description: We are looking for a Senior Digital Marketing Manager to oversee our entire digital presence. You will design scalable growth strategies, manage complex marketing funnels, and lead
+  id: jd_2049 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Global Supply Chain, Strategic Procurement, Logistics Strategy, Team Leadership
+  description: We are seeking a Senior Supply Chain Manager to oversee global logistics operations and strategic procurement. You will develop end-to-end planning strategies, manage large-scale w
 
-  id: jd_2045 | title: Principal Digital Marketing Lead | level: senior | min_exp: 7 yrs
-  required_skills: Marketing Strategy, Digital Transformation, Executive Leadership
-  description: We are hiring a Principal Digital Marketing Lead to drive our global marketing roadmap and digital innovation. You will oversee enterprise marketing architectures, lead cross-funct
+  id: jd_2050 | title: Principal Supply Chain Architect | level: senior | min_exp: 7 yrs
+  required_skills: Supply Chain Strategy, Digital Transformation, Executive Leadership
+  description: We are hiring a Principal Supply Chain Architect to define our enterprise-wide supply chain strategy. You will oversee massive digital transformations, lead architectural changes i
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -67,38 +67,38 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
   strong_match: ~17 pairs
-  excellent_match: ~7 pairs
+  excellent_match: ~8 pairs
   moderate_match: ~1 pairs
   weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10201  resume_2041 × jd_2041
-  pair_10202  resume_2041 × jd_2042
-  pair_10203  resume_2041 × jd_2043
-  pair_10204  resume_2041 × jd_2044
-  pair_10205  resume_2041 × jd_2045
-  pair_10206  resume_2042 × jd_2041
-  pair_10207  resume_2042 × jd_2042
-  pair_10208  resume_2042 × jd_2043
-  pair_10209  resume_2042 × jd_2044
-  pair_10210  resume_2042 × jd_2045
-  pair_10211  resume_2043 × jd_2041
-  pair_10212  resume_2043 × jd_2042
-  pair_10213  resume_2043 × jd_2043
-  pair_10214  resume_2043 × jd_2044
-  pair_10215  resume_2043 × jd_2045
-  pair_10216  resume_2044 × jd_2041
-  pair_10217  resume_2044 × jd_2042
-  pair_10218  resume_2044 × jd_2043
-  pair_10219  resume_2044 × jd_2044
-  pair_10220  resume_2044 × jd_2045
-  pair_10221  resume_2045 × jd_2041
-  pair_10222  resume_2045 × jd_2042
-  pair_10223  resume_2045 × jd_2043
-  pair_10224  resume_2045 × jd_2044
-  pair_10225  resume_2045 × jd_2045
+  pair_10226  resume_2046 × jd_2046
+  pair_10227  resume_2046 × jd_2047
+  pair_10228  resume_2046 × jd_2048
+  pair_10229  resume_2046 × jd_2049
+  pair_10230  resume_2046 × jd_2050
+  pair_10231  resume_2047 × jd_2046
+  pair_10232  resume_2047 × jd_2047
+  pair_10233  resume_2047 × jd_2048
+  pair_10234  resume_2047 × jd_2049
+  pair_10235  resume_2047 × jd_2050
+  pair_10236  resume_2048 × jd_2046
+  pair_10237  resume_2048 × jd_2047
+  pair_10238  resume_2048 × jd_2048
+  pair_10239  resume_2048 × jd_2049
+  pair_10240  resume_2048 × jd_2050
+  pair_10241  resume_2049 × jd_2046
+  pair_10242  resume_2049 × jd_2047
+  pair_10243  resume_2049 × jd_2048
+  pair_10244  resume_2049 × jd_2049
+  pair_10245  resume_2049 × jd_2050
+  pair_10246  resume_2050 × jd_2046
+  pair_10247  resume_2050 × jd_2047
+  pair_10248  resume_2050 × jd_2048
+  pair_10249  resume_2050 × jd_2049
+  pair_10250  resume_2050 × jd_2050
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
