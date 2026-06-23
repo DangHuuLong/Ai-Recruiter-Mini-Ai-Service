@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2166 | level: intern | exp: 0.3 yrs
-  skills: Patient Scheduling, Data Entry, EMR Familiarity, HIPAA Compliance, Health Information Management
-  background: Highly motivated healthcare administration student seeking to leverage academic knowledge of clinical operations. Currently enrolled in a health management program with a strong interest in improving 
+  id: resume_2171 | level: intern | exp: 0.2 yrs
+  skills: Figma, User Research, Prototyping, Wireframing, Visual Design
+  background: Eager UI/UX design student with a passion for human-centered design principles. Currently pursuing a degree in digital media and seeking an internship to apply academic knowledge of design systems and
 
-  id: resume_2167 | level: junior | exp: 1.5 yrs
-  skills: Clinical Operations, EMR Management, Patient Intake, Medical Scheduling, Regulatory Compliance
-  background: Detail-oriented Junior Clinical Operations Coordinator with experience in streamlining patient intake processes and maintaining EMR data integrity. Proficient in managing daily clinic scheduling, resp
+  id: resume_2172 | level: junior | exp: 1.5 yrs
+  skills: Figma, User Research, Interaction Design, Prototyping, Design Systems
+  background: Junior Product Designer with experience in translating user needs into intuitive digital interfaces. Proficient in executing end-to-end design processes including user research, wireframing, and creat
 
-  id: resume_2168 | level: middle | exp: 4.2 yrs
-  skills: Clinical Operations, EMR Implementation, Workflow Optimization, Performance Metrics, Staff Training
-  background: Experienced Healthcare Coordinator with over four years in clinical operations and EMR systems administration. Skilled in managing complex clinic workflows, interdisciplinary team communication, and p
+  id: resume_2173 | level: middle | exp: 4.2 yrs
+  skills: Figma, Product Strategy, User Research, Accessibility, Design Systems
+  background: Product Designer with over four years of experience crafting seamless digital experiences for diverse user bases. Skilled in leading user research initiatives, developing complex interactive prototype
 
-  id: resume_2169 | level: senior | exp: 6.5 yrs
-  skills: Strategic Planning, Clinical Operations, EMR Oversight, Regulatory Compliance, Project Leadership
-  background: Senior Healthcare Operations Manager with 6 years of experience driving excellence in large clinical environments. Expertise in strategic planning, EMR oversight, and cross-departmental coordination t
+  id: resume_2174 | level: senior | exp: 6.5 yrs
+  skills: Design Strategy, Figma, Information Architecture, Prototyping, Team Leadership
+  background: Senior UX Designer with 6 years of experience driving design strategy for complex digital products. Expertise in conducting comprehensive user research, architecting information structures, and delive
 
-  id: resume_2170 | level: senior | exp: 8.5 yrs
-  skills: Systems Architecture, Clinical Governance, EMR Interoperability, Executive Leadership, Process Innovation
-  background: Principal Clinical Operations Lead with over 8 years of extensive experience in healthcare administration and medical informatics. Proven expert in architecting clinical systems and managing high-stak
+  id: resume_2175 | level: senior | exp: 8.5 yrs
+  skills: Product Strategy, Design Operations, Figma, Information Architecture, Executive Leadership
+  background: Principal Product Designer with 8+ years of experience defining and executing product vision through design excellence. Proven expert in architecting high-scale design systems, leading user-centric re
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2166 | title: Clinical Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Data Entry, Patient Scheduling
-  description: We are seeking a dedicated intern to support our clinical operations team. This role is perfect for a student interested in medical coordination and EMR systems.
+  id: jd_2171 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, Wireframing
+  description: We are seeking a creative intern to support our UI/UX team. This role is ideal for a student eager to learn about design systems and prototyping.
 
-  id: jd_2167 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Patient Intake, EMR Management
-  description: Looking for a motivated Junior Coordinator to manage patient intake and clinic workflows. You will ensure EMR accuracy and support our clinical staff.
+  id: jd_2172 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, Prototyping, User Research
+  description: Looking for a Junior Designer to help craft intuitive user interfaces. You will work on wireframes, prototyping, and conduct research to inform design decisions.
 
-  id: jd_2168 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs
-  required_skills: Clinical Operations, EMR Implementation, Workflow Optimization
-  description: Join our team as a Clinical Operations Coordinator to optimize clinic efficiency and manage EMR system upgrades. Lead workflow improvements and training.
+  id: jd_2173 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Figma, Product Strategy, User Research
+  description: Join our team as a Product Designer to solve complex design problems. You will lead research initiatives, scale our design system, and create seamless experiences.
 
-  id: jd_2169 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Planning, Clinical Operations, EMR Oversight
-  description: We are looking for a Senior Manager to oversee strategic clinical operations. You will lead cross-departmental teams to improve outcomes and EMR governance.
+  id: jd_2174 | title: Senior UX Designer | level: senior | min_exp: 5 yrs
+  required_skills: Design Strategy, Figma, Information Architecture
+  description: We are seeking a Senior UX Designer to drive our design strategy. You will lead design teams, oversee complex information architecture, and improve usability.
 
-  id: jd_2170 | title: Principal Clinical Operations Lead | level: senior | min_exp: 7 yrs
-  required_skills: Systems Architecture, Clinical Governance, EMR Interoperability
-  description: Lead the future of clinical informatics. We need a Principal Lead to architect clinical systems and ensure governance at the highest level.
+  id: jd_2175 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  required_skills: Product Strategy, Design Operations, Figma
+  description: Lead our product vision as a Principal Designer. You will architect design systems, drive operational excellence, and influence long-term product roadmaps.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~9 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~9 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10826  resume_2166 × jd_2166
-  pair_10827  resume_2166 × jd_2167
-  pair_10828  resume_2166 × jd_2168
-  pair_10829  resume_2166 × jd_2169
-  pair_10830  resume_2166 × jd_2170
-  pair_10831  resume_2167 × jd_2166
-  pair_10832  resume_2167 × jd_2167
-  pair_10833  resume_2167 × jd_2168
-  pair_10834  resume_2167 × jd_2169
-  pair_10835  resume_2167 × jd_2170
-  pair_10836  resume_2168 × jd_2166
-  pair_10837  resume_2168 × jd_2167
-  pair_10838  resume_2168 × jd_2168
-  pair_10839  resume_2168 × jd_2169
-  pair_10840  resume_2168 × jd_2170
-  pair_10841  resume_2169 × jd_2166
-  pair_10842  resume_2169 × jd_2167
-  pair_10843  resume_2169 × jd_2168
-  pair_10844  resume_2169 × jd_2169
-  pair_10845  resume_2169 × jd_2170
-  pair_10846  resume_2170 × jd_2166
-  pair_10847  resume_2170 × jd_2167
-  pair_10848  resume_2170 × jd_2168
-  pair_10849  resume_2170 × jd_2169
-  pair_10850  resume_2170 × jd_2170
+  pair_10851  resume_2171 × jd_2171
+  pair_10852  resume_2171 × jd_2172
+  pair_10853  resume_2171 × jd_2173
+  pair_10854  resume_2171 × jd_2174
+  pair_10855  resume_2171 × jd_2175
+  pair_10856  resume_2172 × jd_2171
+  pair_10857  resume_2172 × jd_2172
+  pair_10858  resume_2172 × jd_2173
+  pair_10859  resume_2172 × jd_2174
+  pair_10860  resume_2172 × jd_2175
+  pair_10861  resume_2173 × jd_2171
+  pair_10862  resume_2173 × jd_2172
+  pair_10863  resume_2173 × jd_2173
+  pair_10864  resume_2173 × jd_2174
+  pair_10865  resume_2173 × jd_2175
+  pair_10866  resume_2174 × jd_2171
+  pair_10867  resume_2174 × jd_2172
+  pair_10868  resume_2174 × jd_2173
+  pair_10869  resume_2174 × jd_2174
+  pair_10870  resume_2174 × jd_2175
+  pair_10871  resume_2175 × jd_2171
+  pair_10872  resume_2175 × jd_2172
+  pair_10873  resume_2175 × jd_2173
+  pair_10874  resume_2175 × jd_2174
+  pair_10875  resume_2175 × jd_2175
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
