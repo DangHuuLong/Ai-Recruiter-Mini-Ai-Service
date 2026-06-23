@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2101 | level: intern | exp: 0.3 yrs
-  skills: Medical Terminology, EMR Systems, Healthcare Compliance, Patient Records, Data Entry
-  background: An enthusiastic Health Administration student currently in the final year of a Bachelor degree, seeking an internship to gain practical experience in clinical operations. I have developed a solid foun
+  id: resume_2106 | level: intern | exp: 0.3 yrs
+  skills: Microsoft Excel, Financial Modeling, Data Reconciliation, Accounting Fundamentals, Budgeting
+  background: I am a dedicated Finance student in my final year, actively seeking an internship to apply my academic knowledge of accounting and financial theory within a fast-paced fintech environment. Through my 
 
-  id: resume_2102 | level: junior | exp: 1.5 yrs
-  skills: EMR Management, Epic, HIPAA Compliance, Insurance Verification, Patient Scheduling
-  background: A detail-oriented Healthcare Administrative Coordinator with 1.5 years of experience in high-volume outpatient settings. I specialize in medical record maintenance, insurance verification, and appoint
+  id: resume_2107 | level: junior | exp: 1.5 yrs
+  skills: Variance Analysis, GAAP Compliance, Financial Reporting, ERP Systems, Excel
+  background: A results-driven Junior Finance Analyst with 1.5 years of experience in fintech accounting operations. My daily responsibilities involve assisting with month-end closing procedures, preparing financia
 
-  id: resume_2103 | level: middle | exp: 4.0 yrs
-  skills: Clinical Operations, EMR Optimization, Staff Supervision, Data Analysis, Regulatory Compliance
-  background: A proactive Clinical Operations Specialist with 4 years of experience driving efficiency in multi-specialty medical practices. My expertise lies in managing complex EMR systems, optimizing daily clini
+  id: resume_2108 | level: middle | exp: 4.0 yrs
+  skills: Financial Planning, Treasury Management, SOX Compliance, SQL, Trend Analysis
+  background: A proactive Finance Specialist with 4 years of professional experience in fintech accounting and financial planning. My expertise lies in developing complex financial models for forecasting, managing 
 
-  id: resume_2104 | level: senior | exp: 6.5 yrs
-  skills: Strategic Planning, Clinical Operations Management, Budgeting, EMR Implementation, Policy Development
-  background: A strategic Senior Healthcare Administrator with over 6 years of experience directing clinical operations and administrative strategy. I possess deep expertise in EMR implementation, system-wide proce
+  id: resume_2109 | level: senior | exp: 6.5 yrs
+  skills: Financial Modeling, Tax Planning, Internal Audit, Risk Management, Strategy Development
+  background: A strategic Senior Financial Controller with over 6 years of experience in fintech growth environments. I specialize in complex financial modeling, advanced reporting structures, and comprehensive com
 
-  id: resume_2105 | level: senior | exp: 9.8 yrs
-  skills: Healthcare Systems Design, Clinical Governance, Change Management, EMR Strategy, Risk Management
-  background: An accomplished Principal Clinical Operations Lead with 9+ years of professional experience in healthcare system design and administration. I specialize in architecting high-performance clinical workf
+  id: resume_2110 | level: senior | exp: 9.8 yrs
+  skills: Corporate Finance, Strategic Capital Allocation, M&A Due Diligence, Regulatory Affairs, Systems Architecture
+  background: An accomplished Lead Finance Architect with 9+ years of professional experience in fintech corporate strategy and accounting oversight. I specialize in building scalable financial ecosystems, spearhea
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2101 | title: Clinical Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Data Entry, Office Software, Attention To Detail
-  description: We are seeking a motivated intern to assist our clinical operations team with administrative tasks, EMR data entry, and patient records support. Excellent learning opportunity.
+  id: jd_2106 | title: Fintech Finance Intern | level: intern | min_exp: 0 yrs
+  required_skills: Microsoft Excel, Accounting Fundamentals, Data Entry
+  description: We are seeking a motivated intern to assist our finance team with accounting tasks, financial data entry, and basic reporting. Great opportunity to learn fintech operations.
 
-  id: jd_2102 | title: Junior Healthcare Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: EMR Management, HIPAA Compliance, Patient Scheduling
-  description: Join our growing team as a Junior Healthcare Coordinator. You will handle daily clinical documentation, insurance verification, and patient scheduling using EMR software.
+  id: jd_2107 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Financial Reporting, Variance Analysis, GAAP Compliance
+  description: Join our team as a Junior Finance Analyst. You will assist with monthly financial reporting, variance analysis, and ensure compliance with regulatory standards.
 
-  id: jd_2103 | title: Middle Clinical Operations Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Clinical Operations, EMR Optimization, Data Analysis
-  description: We are looking for a Mid-level Operations Specialist to optimize clinical workflows. You will lead EMR data initiatives and support administrative policy implementation.
+  id: jd_2108 | title: Middle Finance Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Financial Planning, Treasury Management, SOX Compliance
+  description: We are looking for a Finance Specialist to own forecasting and treasury functions. You will manage compliance frameworks and perform data-driven financial modeling.
 
-  id: jd_2104 | title: Senior Healthcare Administrator | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Planning, Clinical Operations Management, EMR Implementation
-  description: Our medical network requires a Senior Healthcare Administrator to oversee clinical strategy. You will lead large-scale EMR implementations and drive organizational process change.
+  id: jd_2109 | title: Senior Financial Controller | level: senior | min_exp: 5 yrs
+  required_skills: Financial Modeling, Tax Planning, Internal Audit
+  description: Our platform needs a Senior Financial Controller to lead our finance operations. You will drive financial modeling, tax strategy, and organizational risk management.
 
-  id: jd_2105 | title: Lead Clinical Operations Architect | level: senior | min_exp: 7 yrs
-  required_skills: Healthcare Systems Design, Clinical Governance, EMR Strategy
-  description: We are looking for a Lead Architect to define our clinical strategy. You will design our healthcare ecosystem, focusing on EMR governance and system-wide operational excellence.
+  id: jd_2110 | title: Lead Finance Architect | level: senior | min_exp: 7 yrs
+  required_skills: Corporate Finance, Strategic Capital Allocation, M&A Due Diligence
+  description: We are looking for a Lead Finance Architect to define our financial ecosystem. You will lead technical accounting, strategic planning, and global regulatory affairs.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~1 pairs
-  moderate_match: ~6 pairs
-  weak_match: ~9 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~10 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10501  resume_2101 × jd_2101
-  pair_10502  resume_2101 × jd_2102
-  pair_10503  resume_2101 × jd_2103
-  pair_10504  resume_2101 × jd_2104
-  pair_10505  resume_2101 × jd_2105
-  pair_10506  resume_2102 × jd_2101
-  pair_10507  resume_2102 × jd_2102
-  pair_10508  resume_2102 × jd_2103
-  pair_10509  resume_2102 × jd_2104
-  pair_10510  resume_2102 × jd_2105
-  pair_10511  resume_2103 × jd_2101
-  pair_10512  resume_2103 × jd_2102
-  pair_10513  resume_2103 × jd_2103
-  pair_10514  resume_2103 × jd_2104
-  pair_10515  resume_2103 × jd_2105
-  pair_10516  resume_2104 × jd_2101
-  pair_10517  resume_2104 × jd_2102
-  pair_10518  resume_2104 × jd_2103
-  pair_10519  resume_2104 × jd_2104
-  pair_10520  resume_2104 × jd_2105
-  pair_10521  resume_2105 × jd_2101
-  pair_10522  resume_2105 × jd_2102
-  pair_10523  resume_2105 × jd_2103
-  pair_10524  resume_2105 × jd_2104
-  pair_10525  resume_2105 × jd_2105
+  pair_10526  resume_2106 × jd_2106
+  pair_10527  resume_2106 × jd_2107
+  pair_10528  resume_2106 × jd_2108
+  pair_10529  resume_2106 × jd_2109
+  pair_10530  resume_2106 × jd_2110
+  pair_10531  resume_2107 × jd_2106
+  pair_10532  resume_2107 × jd_2107
+  pair_10533  resume_2107 × jd_2108
+  pair_10534  resume_2107 × jd_2109
+  pair_10535  resume_2107 × jd_2110
+  pair_10536  resume_2108 × jd_2106
+  pair_10537  resume_2108 × jd_2107
+  pair_10538  resume_2108 × jd_2108
+  pair_10539  resume_2108 × jd_2109
+  pair_10540  resume_2108 × jd_2110
+  pair_10541  resume_2109 × jd_2106
+  pair_10542  resume_2109 × jd_2107
+  pair_10543  resume_2109 × jd_2108
+  pair_10544  resume_2109 × jd_2109
+  pair_10545  resume_2109 × jd_2110
+  pair_10546  resume_2110 × jd_2106
+  pair_10547  resume_2110 × jd_2107
+  pair_10548  resume_2110 × jd_2108
+  pair_10549  resume_2110 × jd_2109
+  pair_10550  resume_2110 × jd_2110
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
