@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2026 | level: intern | exp: 0.2 yrs
-  skills: Figma, Wireframing, Prototyping, Visual Design
-  background: Enthusiastic design student currently in my final year of study, passionate about creating intuitive user interfaces. I have developed a strong foundation in visual design principles, wireframing, and
+  id: resume_2031 | level: intern | exp: 0.3 yrs
+  skills: Python, React, Django, SQL, HTML, CSS
+  background: Ambitious computer science student nearing graduation with a passion for building full-stack web applications. Over the past few months, I have focused on learning the MERN stack and Python, specifica
 
-  id: resume_2027 | level: junior | exp: 1.5 yrs
-  skills: Figma, Prototyping, User Research, Interaction Design
-  background: Junior Product Designer with over a year of professional experience focused on end-to-end mobile and web design. I am skilled in translating user requirements into clear, functional wireframes and int
+  id: resume_2032 | level: junior | exp: 1.7 yrs
+  skills: Python, React, FastAPI, PostgreSQL, Git, Docker
+  background: Junior Full-Stack Developer with over a year of professional experience building web applications. I specialize in developing scalable Python-based backends using FastAPI and Flask, while creating int
 
-  id: resume_2028 | level: middle | exp: 4.5 yrs
-  skills: Figma, Design Systems, User Research, Information Architecture
-  background: Versatile Product Designer with four years of experience crafting digital products for diverse user bases. I specialize in the full design lifecycle, from conducting formative user research to deliver
+  id: resume_2033 | level: middle | exp: 4.2 yrs
+  skills: Python, React, Django, TypeScript, PostgreSQL, AWS
+  background: Versatile Full-Stack Engineer with four years of professional experience in designing and scaling complex web applications. My expertise lies in architecting robust backend systems in Python with Djan
 
-  id: resume_2029 | level: senior | exp: 6.5 yrs
-  skills: Figma, User Experience Strategy, Design Leadership, Prototyping
-  background: Senior Product Designer with six years of experience driving design strategy for high-growth tech products. I possess deep expertise in user experience research, complex interaction patterns, and scal
+  id: resume_2034 | level: senior | exp: 6.8 yrs
+  skills: Python, React, Distributed Systems, PostgreSQL, Kubernetes, CI/CD
+  background: Senior Full-Stack Engineer with six years of experience building and scaling high-availability enterprise web applications. I specialize in architecting distributed systems using Python and React, man
 
-  id: resume_2030 | level: senior | exp: 9.8 yrs
-  skills: Strategic Design, Design Ops, Product Strategy, Figma
-  background: Principal Product Design Lead with over nine years of experience in shaping design organizations and shipping impactful digital products at scale. My focus is on long-term product vision, advanced des
+  id: resume_2035 | level: senior | exp: 9.5 yrs
+  skills: Technical Leadership, Python, React, System Design, Strategy
+  background: Principal Engineering Lead with over nine years of experience in shaping engineering culture and shipping large-scale digital products. My focus is on long-term architecture, scaling development teams
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2026 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
-  required_skills: Figma, Wireframing
-  description: We are seeking a creative UI/UX design intern to join our product team. This internship provides an excellent opportunity to learn professional design workflows while working on re
+  id: jd_2031 | title: Full-Stack Web Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React
+  description: We are seeking an inquisitive full-stack web intern to join our engineering team. This position is perfect for a student eager to get hands-on experience with Python backend servic
 
-  id: jd_2027 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
-  required_skills: Figma, Prototyping, User Research
-  description: We are looking for a Junior Product Designer to help us build intuitive and engaging user experiences. You will be responsible for translating product concepts into functional desi
+  id: jd_2032 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, PostgreSQL
+  description: We are hiring a Junior Full-Stack Developer to help build our core web services. You will work on integrating Python backend APIs into our React product, managing databases, and wr
 
-  id: jd_2028 | title: Product Designer | level: middle | min_exp: 3 yrs
-  required_skills: Figma, Design Systems, User Research
-  description: We are seeking a talented Product Designer to own core parts of our platform experience. You will work through the full product lifecycle, from initial research and ideation to det
+  id: jd_2033 | title: Software Engineer (Full-Stack) | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, Django, PostgreSQL
+  description: We are looking for a skilled Software Engineer to drive our core product and platform initiatives. You will be responsible for building robust backend systems in Python, developing
 
-  id: jd_2029 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
-  required_skills: Figma, User Experience Strategy, Design Leadership
-  description: We are looking for a Senior Product Designer to drive our design strategy. You will tackle complex navigation problems, define interaction patterns, and ensure a cohesive experienc
+  id: jd_2034 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, Distributed Systems, PostgreSQL
+  description: We are seeking a Senior Full-Stack Engineer to oversee our web platform development. You will design scalable system architectures, implement robust CI/CD, and manage complex backe
 
-  id: jd_2030 | title: Principal Design Lead | level: senior | min_exp: 7 yrs
-  required_skills: Strategic Design, Design Ops, Product Strategy
-  description: We are hiring a Principal Design Lead to shape our design culture and product direction. You will oversee the evolution of our platform's design ecosystem, optimize design processe
+  id: jd_2035 | title: Principal Engineering Lead | level: senior | min_exp: 7 yrs
+  required_skills: Technical Leadership, Python, React, System Design
+  description: We are hiring a Principal Engineering Lead to define the long-term engineering strategy for our web products. You will lead cross-functional teams in developing next-generation arc
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -74,31 +74,31 @@ Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10126  resume_2026 × jd_2026
-  pair_10127  resume_2026 × jd_2027
-  pair_10128  resume_2026 × jd_2028
-  pair_10129  resume_2026 × jd_2029
-  pair_10130  resume_2026 × jd_2030
-  pair_10131  resume_2027 × jd_2026
-  pair_10132  resume_2027 × jd_2027
-  pair_10133  resume_2027 × jd_2028
-  pair_10134  resume_2027 × jd_2029
-  pair_10135  resume_2027 × jd_2030
-  pair_10136  resume_2028 × jd_2026
-  pair_10137  resume_2028 × jd_2027
-  pair_10138  resume_2028 × jd_2028
-  pair_10139  resume_2028 × jd_2029
-  pair_10140  resume_2028 × jd_2030
-  pair_10141  resume_2029 × jd_2026
-  pair_10142  resume_2029 × jd_2027
-  pair_10143  resume_2029 × jd_2028
-  pair_10144  resume_2029 × jd_2029
-  pair_10145  resume_2029 × jd_2030
-  pair_10146  resume_2030 × jd_2026
-  pair_10147  resume_2030 × jd_2027
-  pair_10148  resume_2030 × jd_2028
-  pair_10149  resume_2030 × jd_2029
-  pair_10150  resume_2030 × jd_2030
+  pair_10151  resume_2031 × jd_2031
+  pair_10152  resume_2031 × jd_2032
+  pair_10153  resume_2031 × jd_2033
+  pair_10154  resume_2031 × jd_2034
+  pair_10155  resume_2031 × jd_2035
+  pair_10156  resume_2032 × jd_2031
+  pair_10157  resume_2032 × jd_2032
+  pair_10158  resume_2032 × jd_2033
+  pair_10159  resume_2032 × jd_2034
+  pair_10160  resume_2032 × jd_2035
+  pair_10161  resume_2033 × jd_2031
+  pair_10162  resume_2033 × jd_2032
+  pair_10163  resume_2033 × jd_2033
+  pair_10164  resume_2033 × jd_2034
+  pair_10165  resume_2033 × jd_2035
+  pair_10166  resume_2034 × jd_2031
+  pair_10167  resume_2034 × jd_2032
+  pair_10168  resume_2034 × jd_2033
+  pair_10169  resume_2034 × jd_2034
+  pair_10170  resume_2034 × jd_2035
+  pair_10171  resume_2035 × jd_2031
+  pair_10172  resume_2035 × jd_2032
+  pair_10173  resume_2035 × jd_2033
+  pair_10174  resume_2035 × jd_2034
+  pair_10175  resume_2035 × jd_2035
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
