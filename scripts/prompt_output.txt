@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2126 | level: intern | exp: 0.3 yrs
-  skills: React, TypeScript, Tailwind CSS, JavaScript, Git
-  background: I am a computer science student currently in my final year with a strong foundational knowledge of web development. Over the past few months, I have focused on mastering React, TypeScript, and Tailwin
+  id: resume_2131 | level: intern | exp: 0.3 yrs
+  skills: Python, Node.js, PostgreSQL, Git, Restful Api
+  background: Highly motivated computer science student with a strong passion for backend development. Gained foundational knowledge through coursework and personal projects focused on building RESTful APIs. Profic
 
-  id: resume_2127 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript
-  background: As a Junior Frontend Developer with 1.5 years of experience, I have developed a strong proficiency in building modern web interfaces. My daily work involves implementing responsive layouts using React
+  id: resume_2132 | level: junior | exp: 2.0 yrs
+  skills: Python, Fastapi, Node.js, PostgreSQL, Docker
+  background: Dedicated software developer with two years of professional experience focusing on backend service architecture. Proven track record in developing and maintaining robust APIs using Python, FastAPI, an
 
-  id: resume_2128 | level: middle | exp: 4.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, Jest
-  background: I am a seasoned Frontend Developer with 4 years of hands-on experience in architecting and delivering complex frontend solutions. I have an expert-level understanding of React, TypeScript, and Next.js
+  id: resume_2133 | level: middle | exp: 4.5 yrs
+  skills: Python, Fastapi, Node.js, PostgreSQL, Kubernetes, Docker
+  background: Backend engineer with four years of hands-on experience designing and implementing scalable API architectures. Extensive proficiency in Python, FastAPI, and Node.js, combined with deep knowledge of Po
 
-  id: resume_2129 | level: senior | exp: 6.0 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, System Design, Mentorship
-  background: With over 6 years of experience, I have established myself as a Senior Frontend Engineer dedicated to high-performance, accessible, and scalable web solutions. My expertise lies in designing architect
+  id: resume_2134 | level: senior | exp: 6.5 yrs
+  skills: Python, Fastapi, Node.js, PostgreSQL, System Architecture, Aws
+  background: Senior backend developer with six years of experience building and scaling mission-critical web applications. Expert in architecting high-performance APIs using Python, FastAPI, and Node.js. Extensive
 
-  id: resume_2130 | level: senior | exp: 9.0 yrs
-  skills: Frontend Architecture, React, TypeScript, Next.js, Strategic Leadership, Governance
-  background: I am a Principal Frontend Engineer with 9 years of experience focusing on frontend strategy, organizational technical governance, and high-level architecture. My career is defined by transforming comp
+  id: resume_2135 | level: senior | exp: 8.5 yrs
+  skills: Python, Fastapi, Node.js, PostgreSQL, System Design, Cloud Infrastructure
+  background: Principal Backend Engineer with over eight years of experience building scalable, enterprise-grade distributed systems. Highly expert in full-cycle backend development using Python, FastAPI, and Node.
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2126 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, HTML, CSS
-  description: Join us for a hands-on internship where you will learn to build responsive web interfaces. We use React and Tailwind CSS and welcome motivated students.
+  id: jd_2131 | title: Backend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, PostgreSQL, FastApi
+  description: We are looking for an enthusiastic intern to join our backend development team. You will have the opportunity to work on real-world projects under the mentorship of senior engineer
 
-  id: jd_2127 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Tailwind CSS
-  description: We are looking for a Junior Frontend Developer to join our product team. You will build and optimize user-facing features using React and TypeScript.
+  id: jd_2132 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, PostgreSQL, FastApi
+  description: Seeking a junior backend developer to build scalable APIs and services. You will contribute to the development of our core product, writing clean code and ensuring system stability
 
-  id: jd_2128 | title: Middle Frontend Developer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  description: Our team is growing and we need a Middle Frontend Developer to lead feature development and ensure code quality in our React applications.
+  id: jd_2133 | title: Backend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, FastApi, PostgreSQL, Node.js
+  description: We are hiring a mid-level backend engineer to help us architect our next generation of microservices. You will work on high-traffic APIs using Python, FastAPI, and Node.js. A deep 
 
-  id: jd_2129 | title: Senior Frontend Developer | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Next.js, System Design
-  description: We seek a Senior Frontend Developer to drive architectural excellence. You will design scalable systems and mentor our engineering team.
+  id: jd_2134 | title: Senior Backend Developer | level: senior | min_exp: 5 yrs
+  required_skills: Python, FastApi, PostgreSQL, Node.js, System Architecture
+  description: We are looking for a senior backend developer to take ownership of our core API platforms. You will design resilient, distributed systems using Python and FastAPI, while also lever
 
-  id: jd_2130 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Frontend Architecture, React, TypeScript, Next.js
-  description: We need a Principal Frontend Architect to define our global frontend vision and lead our organizational technical strategy.
+  id: jd_2135 | title: Principal Backend Engineer | level: senior | min_exp: 7 yrs
+  required_skills: Python, FastApi, Node.js, PostgreSQL, System Design
+  description: Join us as a Principal Backend Engineer. You will lead our technical strategy, designing highly scalable and secure systems that support our growing enterprise customer base. You w
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
-  excellent_match: ~1 pairs
-  moderate_match: ~10 pairs
-  weak_match: ~6 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10626  resume_2126 × jd_2126
-  pair_10627  resume_2126 × jd_2127
-  pair_10628  resume_2126 × jd_2128
-  pair_10629  resume_2126 × jd_2129
-  pair_10630  resume_2126 × jd_2130
-  pair_10631  resume_2127 × jd_2126
-  pair_10632  resume_2127 × jd_2127
-  pair_10633  resume_2127 × jd_2128
-  pair_10634  resume_2127 × jd_2129
-  pair_10635  resume_2127 × jd_2130
-  pair_10636  resume_2128 × jd_2126
-  pair_10637  resume_2128 × jd_2127
-  pair_10638  resume_2128 × jd_2128
-  pair_10639  resume_2128 × jd_2129
-  pair_10640  resume_2128 × jd_2130
-  pair_10641  resume_2129 × jd_2126
-  pair_10642  resume_2129 × jd_2127
-  pair_10643  resume_2129 × jd_2128
-  pair_10644  resume_2129 × jd_2129
-  pair_10645  resume_2129 × jd_2130
-  pair_10646  resume_2130 × jd_2126
-  pair_10647  resume_2130 × jd_2127
-  pair_10648  resume_2130 × jd_2128
-  pair_10649  resume_2130 × jd_2129
-  pair_10650  resume_2130 × jd_2130
+  pair_10651  resume_2131 × jd_2131
+  pair_10652  resume_2131 × jd_2132
+  pair_10653  resume_2131 × jd_2133
+  pair_10654  resume_2131 × jd_2134
+  pair_10655  resume_2131 × jd_2135
+  pair_10656  resume_2132 × jd_2131
+  pair_10657  resume_2132 × jd_2132
+  pair_10658  resume_2132 × jd_2133
+  pair_10659  resume_2132 × jd_2134
+  pair_10660  resume_2132 × jd_2135
+  pair_10661  resume_2133 × jd_2131
+  pair_10662  resume_2133 × jd_2132
+  pair_10663  resume_2133 × jd_2133
+  pair_10664  resume_2133 × jd_2134
+  pair_10665  resume_2133 × jd_2135
+  pair_10666  resume_2134 × jd_2131
+  pair_10667  resume_2134 × jd_2132
+  pair_10668  resume_2134 × jd_2133
+  pair_10669  resume_2134 × jd_2134
+  pair_10670  resume_2134 × jd_2135
+  pair_10671  resume_2135 × jd_2131
+  pair_10672  resume_2135 × jd_2132
+  pair_10673  resume_2135 × jd_2133
+  pair_10674  resume_2135 × jd_2134
+  pair_10675  resume_2135 × jd_2135
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
