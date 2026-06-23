@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1881 | level: intern | exp: 0.5 yrs
-  skills: Figma, User Research, Prototyping, Wireframing, Usability Testing
-  background: Enthusiastic Design student with a passion for creating intuitive digital experiences. During my academic projects, I have developed a solid foundation in user research methodologies, including conduc
+  id: resume_1886 | level: intern | exp: 0.3 yrs
+  skills: Aws, Docker, Linux, Bash, Git
+  background: Motivated Computer Science student with a strong interest in cloud infrastructure and DevOps practices. Through my coursework and home lab environment, I have gained hands-on experience setting up bas
 
-  id: resume_1882 | level: junior | exp: 1.5 yrs
-  skills: Figma, User Research, Prototyping, Design Systems, UI Design, Mobile Design
-  background: Junior Product Designer with one and a half years of professional experience creating engaging user interfaces for web and mobile applications. I have a strong background in translating user requireme
+  id: resume_1887 | level: junior | exp: 1.5 yrs
+  skills: Aws, Docker, Terraform, Kubernetes, Jenkins
+  background: Junior DevOps Engineer with one and a half years of professional experience managing cloud resources and automating deployment processes. I have a strong foundation in AWS services, particularly EC2 a
 
-  id: resume_1883 | level: middle | exp: 4.0 yrs
-  skills: Figma, User Research, Prototyping, Information Architecture, Interaction Design, Accessibility
-  background: Mid-level Product Designer with four years of hands-on experience in end-to-end design for complex digital products. I specialize in applying user research to drive design decisions and creating seaml
+  id: resume_1888 | level: middle | exp: 4.0 yrs
+  skills: Aws, Kubernetes, Terraform, Docker, Prometheus
+  background: Mid-level DevOps Engineer with four years of professional experience focused on building scalable, resilient cloud infrastructure. My expertise spans AWS cloud services, advanced Kubernetes orchestrat
 
-  id: resume_1884 | level: senior | exp: 6.0 yrs
-  skills: Figma, User Research, Prototyping, Design Systems, Strategy, Mentorship, UI Design
-  background: Senior UI/UX Designer with over six years of experience building and optimizing large-scale product experiences. I possess deep knowledge of user research methodologies and have successfully integrate
+  id: resume_1889 | level: senior | exp: 6.5 yrs
+  skills: Aws, Kubernetes, Terraform, Golang, Observability
+  background: Senior DevOps Engineer with over six years of experience specializing in high-scale cloud platforms and site reliability engineering. I have architected global, multi-region AWS environments and manag
 
-  id: resume_1885 | level: senior | exp: 8.5 yrs
-  skills: Figma, User Research, Prototyping, Design Systems, Leadership, Product Strategy, UX Strategy
-  background: Principal Product Designer with eight years of experience defining and executing long-term product design strategy. I have a proven track record of leading multi-disciplinary teams in creating complex
+  id: resume_1890 | level: senior | exp: 8.5 yrs
+  skills: Aws, Kubernetes, Terraform, Python, Security
+  background: Principal Cloud Architect with over eight years of experience defining and executing enterprise cloud strategy. I have a long history of building robust, scalable, and secure cloud ecosystems on AWS. 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1881 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
-  required_skills: Figma, Prototyping
-  description: We are seeking a creative UI/UX Design Intern to support our product design team. You will assist in conducting user research, building interactive prototypes in Figma, and maintai
+  id: jd_1886 | title: DevOps Internship | level: intern | min_exp: 0 yrs
+  required_skills: Aws, Docker
+  description: We are seeking a DevOps Intern to support our engineering team in building and maintaining cloud-native infrastructure. You will work on automating CI/CD tasks, managing containeri
 
-  id: jd_1882 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs
-  required_skills: Figma, User Research, Prototyping
-  description: Our team is looking for a Junior UI/UX Designer to help us craft delightful and intuitive user experiences. You will work closely with other designers to translate user needs into 
+  id: jd_1887 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Aws, Docker, Terraform
+  description: Our team is looking for a Junior DevOps Engineer to assist in managing our growing cloud infrastructure. You will be responsible for deploying infrastructure using Terraform, maint
 
-  id: jd_1883 | title: Product Designer | level: middle | min_exp: 3 yrs
-  required_skills: Figma, User Research, Prototyping, Information Architecture
-  description: We are searching for a talented Product Designer to join our product group. You will lead the design of key product features, ensuring they are not only beautiful but also solve re
+  id: jd_1888 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Aws, Kubernetes, Terraform, Docker
+  description: We are searching for a skilled DevOps Engineer to lead infrastructure efforts for our core product. You will design, build, and maintain our cloud environments, focusing on scalabi
 
-  id: jd_1884 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
-  required_skills: Figma, User Research, Prototyping, Design Systems
-  description: We are seeking a Senior Product Designer to own and evolve the user experience of our flagship product. You will work at the intersection of business strategy and user needs, using
+  id: jd_1889 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Aws, Kubernetes, Terraform, Docker
+  description: We are seeking a Senior DevOps Engineer to take ownership of our cloud infrastructure and deployment strategy. You will lead technical initiatives, ensure high-level reliability, a
 
-  id: jd_1885 | title: Principal Design Architect | level: senior | min_exp: 7 yrs
-  required_skills: Figma, User Research, Prototyping, Design Systems
-  description: We are looking for a visionary Principal Design Architect to lead our overall design strategy and product experience. You will be responsible for the long-term architectural vision
+  id: jd_1890 | title: Principal Cloud Architect | level: senior | min_exp: 7 yrs
+  required_skills: Aws, Kubernetes, Terraform, Python
+  description: We are looking for a visionary Principal Cloud Architect to lead our organization's cloud strategy and engineering standards. You will define the long-term vision for our infrastru
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9401  resume_1881 × jd_1881
-  pair_9402  resume_1881 × jd_1882
-  pair_9403  resume_1881 × jd_1883
-  pair_9404  resume_1881 × jd_1884
-  pair_9405  resume_1881 × jd_1885
-  pair_9406  resume_1882 × jd_1881
-  pair_9407  resume_1882 × jd_1882
-  pair_9408  resume_1882 × jd_1883
-  pair_9409  resume_1882 × jd_1884
-  pair_9410  resume_1882 × jd_1885
-  pair_9411  resume_1883 × jd_1881
-  pair_9412  resume_1883 × jd_1882
-  pair_9413  resume_1883 × jd_1883
-  pair_9414  resume_1883 × jd_1884
-  pair_9415  resume_1883 × jd_1885
-  pair_9416  resume_1884 × jd_1881
-  pair_9417  resume_1884 × jd_1882
-  pair_9418  resume_1884 × jd_1883
-  pair_9419  resume_1884 × jd_1884
-  pair_9420  resume_1884 × jd_1885
-  pair_9421  resume_1885 × jd_1881
-  pair_9422  resume_1885 × jd_1882
-  pair_9423  resume_1885 × jd_1883
-  pair_9424  resume_1885 × jd_1884
-  pair_9425  resume_1885 × jd_1885
+  pair_9426  resume_1886 × jd_1886
+  pair_9427  resume_1886 × jd_1887
+  pair_9428  resume_1886 × jd_1888
+  pair_9429  resume_1886 × jd_1889
+  pair_9430  resume_1886 × jd_1890
+  pair_9431  resume_1887 × jd_1886
+  pair_9432  resume_1887 × jd_1887
+  pair_9433  resume_1887 × jd_1888
+  pair_9434  resume_1887 × jd_1889
+  pair_9435  resume_1887 × jd_1890
+  pair_9436  resume_1888 × jd_1886
+  pair_9437  resume_1888 × jd_1887
+  pair_9438  resume_1888 × jd_1888
+  pair_9439  resume_1888 × jd_1889
+  pair_9440  resume_1888 × jd_1890
+  pair_9441  resume_1889 × jd_1886
+  pair_9442  resume_1889 × jd_1887
+  pair_9443  resume_1889 × jd_1888
+  pair_9444  resume_1889 × jd_1889
+  pair_9445  resume_1889 × jd_1890
+  pair_9446  resume_1890 × jd_1886
+  pair_9447  resume_1890 × jd_1887
+  pair_9448  resume_1890 × jd_1888
+  pair_9449  resume_1890 × jd_1889
+  pair_9450  resume_1890 × jd_1890
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
