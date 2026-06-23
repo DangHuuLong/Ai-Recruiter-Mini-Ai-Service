@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1926 | level: intern | exp: 0.3 yrs
-  skills: Network Security, Penetration Testing, Cryptography, Vulnerability Assessment, Siem
-  background: Cybersecurity student with a strong passion for ethical hacking and network security. During my academic career, I have developed a solid foundation in vulnerability assessment, basic cryptography, an
+  id: resume_1931 | level: intern | exp: 0.2 yrs
+  skills: Clinical Operations, Emr, Patient Coordination, Healthcare Administration, Data Entry
+  background: Health administration student eager to learn the fundamentals of clinical operations and medical coordination. My academic background focuses on healthcare delivery systems, HIPAA compliance, and the 
 
-  id: resume_1927 | level: junior | exp: 1.7 yrs
-  skills: Network Security, Siem, Threat Detection, Vulnerability Scanning, Incident Response
-  background: Detail-oriented Junior Security Analyst with nearly two years of professional experience in network monitoring and threat detection. I have hands-on experience in managing SIEM alerts, performing rout
+  id: resume_1932 | level: junior | exp: 1.8 yrs
+  skills: Clinical Operations, Emr, Patient Scheduling, Medical Billing, Hipaa Compliance
+  background: Organized clinical coordinator with nearly two years of experience in medical office settings. I am skilled in facilitating daily patient schedules, managing EMR record updates, and ensuring clinical 
 
-  id: resume_1928 | level: middle | exp: 4.5 yrs
-  skills: Incident Response, Network Security, Siem Orchestration, Penetration Testing, Vulnerability Management
-  background: Versatile Security Engineer with four years of professional experience in driving security operations and managing robust network defenses. I specialize in incident response, advanced SIEM orchestrati
+  id: resume_1933 | level: middle | exp: 4.5 yrs
+  skills: Clinical Operations, Emr Management, Healthcare Compliance, Patient Throughput, Staff Coordination
+  background: Dynamic healthcare administrator with four years of experience leading clinical operations and enhancing EMR utilization. I specialize in medical coordination, staff training, and process improvement 
 
-  id: resume_1929 | level: senior | exp: 6.5 yrs
-  skills: Red Teaming, Siem Architecture, Incident Response Strategy, Network Defense, Security Governance
-  background: Senior Cybersecurity Analyst with over six years of experience driving complex security initiatives and optimizing enterprise-grade defense environments. I have deep expertise in red teaming exercises
+  id: resume_1934 | level: senior | exp: 6.8 yrs
+  skills: Clinical Operations Strategy, Emr Systems, Healthcare Compliance, Resource Management, Operational Auditing
+  background: Experienced healthcare operations manager with over six years of expertise in clinical systems and medical administration. I have a strong track record of designing efficient clinical workflows, archi
 
-  id: resume_1930 | level: senior | exp: 8.2 yrs
-  skills: Security Architecture, Zero Trust, Siem Governance, Threat Intelligence, Strategic Planning
-  background: Principal Information Security Architect with eight years of extensive experience in designing and overseeing large-scale cybersecurity ecosystems. My focus is on architecting complex defense-in-depth
+  id: resume_1935 | level: senior | exp: 9.2 yrs
+  skills: Healthcare Architecture, Clinical Operations, Emr Governance, Strategic Planning, Risk Management
+  background: Principal clinical administrator with over eight years of experience defining clinical strategy and overseeing enterprise-wide medical operations. My expertise lies in building complex healthcare mana
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1926 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
-  required_skills: Network Security, Vulnerability Assessment, Siem, Documentation
-  description: We are looking for a motivated Cybersecurity Intern to support our security operations center. This role is perfect for a student eager to learn the fundamentals of network monitor
+  id: jd_1931 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations, Emr, Patient Coordination, Documentation
+  description: We are seeking a motivated Healthcare Administration Intern to support our clinical operations team. This role provides hands-on experience in medical office coordination, EMR data
 
-  id: jd_1927 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Network Security, Siem, Vulnerability Scanning, Incident Response
-  description: Our team is seeking a Junior Security Analyst to focus on network security monitoring, SIEM management, and vulnerability scanning. You will be responsible for triaging security al
+  id: jd_1932 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Clinical Operations, Emr, Patient Scheduling, Hipaa Compliance
+  description: Our clinical team is looking for a detail-oriented Junior Clinical Coordinator to handle daily patient management and administrative support. You will be instrumental in ensuring t
 
-  id: jd_1928 | title: Security Operations Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Incident Response, Network Security, Siem Orchestration, Penetration Testing
-  description: We are looking for a skilled Security Engineer to drive our security operations and incident response. You will be responsible for managing complex SIEM environments, conducting pe
+  id: jd_1933 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, Emr Management, Healthcare Compliance, Staff Coordination
+  description: We are searching for a skilled Clinical Operations Manager to lead operational efficiency and EMR integration within our busy clinical departments. You will bridge the gap between 
 
-  id: jd_1929 | title: Senior Security Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Red Teaming, Siem Architecture, Incident Response Strategy, Network Defense
-  description: We are seeking a Senior Security Analyst to drive our enterprise-level network defense and threat intelligence initiatives. You will take ownership of the strategic roadmap for sec
+  id: jd_1934 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Operations Strategy, Emr Systems, Healthcare Compliance, Resource Management
+  description: We are looking for a visionary Senior Healthcare Operations Manager to guide our enterprise clinical initiatives. You will take ownership of our operational strategy, ensuring that
 
-  id: jd_1930 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
-  required_skills: Security Architecture, Zero Trust, Siem Governance, Threat Intelligence
-  description: We are looking for a visionary Principal Security Architect to define our enterprise-level security strategy. You will be responsible for overseeing the entire security landscape, 
+  id: jd_1935 | title: Principal Clinical Administrator | level: senior | min_exp: 7 yrs
+  required_skills: Healthcare Architecture, Clinical Operations, Emr Governance, Strategic Planning
+  description: We are seeking a Principal Clinical Administrator to shape our future clinical strategy at an enterprise level. This is a leadership position for someone experienced in architectin
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9626  resume_1926 × jd_1926
-  pair_9627  resume_1926 × jd_1927
-  pair_9628  resume_1926 × jd_1928
-  pair_9629  resume_1926 × jd_1929
-  pair_9630  resume_1926 × jd_1930
-  pair_9631  resume_1927 × jd_1926
-  pair_9632  resume_1927 × jd_1927
-  pair_9633  resume_1927 × jd_1928
-  pair_9634  resume_1927 × jd_1929
-  pair_9635  resume_1927 × jd_1930
-  pair_9636  resume_1928 × jd_1926
-  pair_9637  resume_1928 × jd_1927
-  pair_9638  resume_1928 × jd_1928
-  pair_9639  resume_1928 × jd_1929
-  pair_9640  resume_1928 × jd_1930
-  pair_9641  resume_1929 × jd_1926
-  pair_9642  resume_1929 × jd_1927
-  pair_9643  resume_1929 × jd_1928
-  pair_9644  resume_1929 × jd_1929
-  pair_9645  resume_1929 × jd_1930
-  pair_9646  resume_1930 × jd_1926
-  pair_9647  resume_1930 × jd_1927
-  pair_9648  resume_1930 × jd_1928
-  pair_9649  resume_1930 × jd_1929
-  pair_9650  resume_1930 × jd_1930
+  pair_9651  resume_1931 × jd_1931
+  pair_9652  resume_1931 × jd_1932
+  pair_9653  resume_1931 × jd_1933
+  pair_9654  resume_1931 × jd_1934
+  pair_9655  resume_1931 × jd_1935
+  pair_9656  resume_1932 × jd_1931
+  pair_9657  resume_1932 × jd_1932
+  pair_9658  resume_1932 × jd_1933
+  pair_9659  resume_1932 × jd_1934
+  pair_9660  resume_1932 × jd_1935
+  pair_9661  resume_1933 × jd_1931
+  pair_9662  resume_1933 × jd_1932
+  pair_9663  resume_1933 × jd_1933
+  pair_9664  resume_1933 × jd_1934
+  pair_9665  resume_1933 × jd_1935
+  pair_9666  resume_1934 × jd_1931
+  pair_9667  resume_1934 × jd_1932
+  pair_9668  resume_1934 × jd_1933
+  pair_9669  resume_1934 × jd_1934
+  pair_9670  resume_1934 × jd_1935
+  pair_9671  resume_1935 × jd_1931
+  pair_9672  resume_1935 × jd_1932
+  pair_9673  resume_1935 × jd_1933
+  pair_9674  resume_1935 × jd_1934
+  pair_9675  resume_1935 × jd_1935
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
