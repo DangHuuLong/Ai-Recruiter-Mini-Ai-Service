@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1851 | level: intern | exp: 0.5 yrs
-  skills: SEO, Social Media, Analytics, Digital Marketing, Content Strategy
-  background: Enthusiastic and analytical Marketing graduate focusing on modern organic growth pathways, digital storytelling architectures, and data-driven engagement funnels. Demonstrates a clear operational unde
+  id: resume_1856 | level: intern | exp: 0.5 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Patient Scheduling, Data Entry
+  background: Highly organized and detail-oriented Healthcare Administration graduate specializing in inpatient clinical operations workflows, data-driven facility mapping, and digital health records tracking. Poss
 
-  id: resume_1852 | level: junior | exp: 1.5 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Copywriting, Google Analytics
-  background: Junior Digital Marketing Coordinator with one and a half years of professional agency experience structuring high-converting organic acquisition funnels, modifying complex social media matrices, and t
+  id: resume_1857 | level: junior | exp: 1.5 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Patient Care Workflows, Regulatory Compliance
+  background: Junior Clinical Coordinator with one and a half years of professional multi-specialty clinic experience structuring patient care workflows, modifying complex provider schedules, and managing digital e
 
-  id: resume_1853 | level: middle | exp: 4.0 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Marketing Automation, Keyword Research, Content Management
-  background: Middle Content Strategist and Digital Growth Specialist with four years of dedicated corporate expertise optimizing mid-market consumer acquisition pipelines, configuring centralized web tracking setu
+  id: resume_1858 | level: middle | exp: 4.0 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Workflow Optimization, Data Analysis, Resource Management
+  background: Middle Clinical Operations Manager with four years of dedicated healthcare facility expertise optimizing mid-market provider acquisition pipelines, configuring centralized care tracking setups, and cr
 
-  id: resume_1854 | level: senior | exp: 6.0 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, System Architecture, Brand Management, Conversion Optimization
-  background: Senior Digital Marketing Manager and Content Solutions Director with more than six years of comprehensive corporate mastery formulating enterprise-scale brand acquisition models, managing multi-tier d
+  id: resume_1859 | level: senior | exp: 6.0 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, System Architecture, Risk Management, Budgeting, Process Mapping
+  background: Senior Healthcare Operations Director and Content Solutions Architect with more than six years of comprehensive corporate mastery formulating enterprise-scale clinical administration models, managing 
 
-  id: resume_1855 | level: senior | exp: 8.5 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Strategic Leadership, Global Compliance, Digital Marketing, Data Governance
-  background: Principal Content Strategist and Director of Enterprise Digital Growth with over eight years of distinguished corporate leadership shaping high-volume audience acquisition architectures, global conten
+  id: resume_1860 | level: senior | exp: 8.5 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Strategic Leadership, Global Compliance, Data Governance, Risk Assessment, Change Management
+  background: Principal Clinical Operations Architect and Director of Enterprise Health Services with over eight years of distinguished healthcare leadership shaping high-volume care coordination architectures, glo
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1851 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media, Analytics
-  description: We are seeking a motivated Digital Marketing Intern to join our growth operations team. In this position, you will work closely with seasoned content and optimization professionals
+  id: jd_1856 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration
+  description: We are seeking a motivated Healthcare Administration Intern to join our clinical operations team. In this position, you will work closely with seasoned medical coordination and opt
 
-  id: jd_1852 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy
-  description: Our creative growth collective is searching for a Junior Digital Marketing Specialist to support and expand our core audience acquisition setups. You will focus closely on protecti
+  id: jd_1857 | title: Junior Clinical Operations Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Patient Care Workflows
+  description: Our medical development collective is searching for a Junior Clinical Operations Specialist to support and expand our core care coordination setups. You will focus closely on prote
 
-  id: jd_1853 | title: Digital Marketing and Content Specialist | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy
-  description: We are searching for a talented Digital Marketing and Content Specialist to oversee, optimize, and scale our core organic distribution networks and brand messaging environments. In
+  id: jd_1858 | title: Clinical Operations and Coordination Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Workflow Optimization
+  description: We are searching for a talented Clinical Operations and Coordination Specialist to oversee, optimize, and scale our core organic healthcare networks and provider messaging environm
 
-  id: jd_1854 | title: Senior Digital Growth Architect | level: senior | min_exp: 5 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy, System Architecture
-  description: We are looking for a Senior Digital Growth Architect to sketch, scale, and insulate our enterprise organic networks and marketing analytics pipelines. You will guide the high-level
+  id: jd_1859 | title: Senior Healthcare Operations Architect | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, System Architecture, Risk Management
+  description: We are looking for a Senior Healthcare Operations Architect to sketch, scale, and insulate our enterprise clinical networks and healthcare administration pipelines. You will guide 
 
-  id: jd_1855 | title: Principal Growth Director and Content Strategist | level: senior | min_exp: 7 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy, Digital Marketing
-  description: We are seeking a Principal Growth Director and Content Strategist to outline the long-term technical roadmap and foundational architecture of our global consumer channels and digit
+  id: jd_1860 | title: Principal Clinical Operations Director | level: senior | min_exp: 7 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Strategic Leadership, Global Compliance
+  description: We are seeking a Principal Clinical Operations Director to outline the long-term technical roadmap and foundational architecture of our global healthcare channels and healthcare ad
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9251  resume_1851 × jd_1851
-  pair_9252  resume_1851 × jd_1852
-  pair_9253  resume_1851 × jd_1853
-  pair_9254  resume_1851 × jd_1854
-  pair_9255  resume_1851 × jd_1855
-  pair_9256  resume_1852 × jd_1851
-  pair_9257  resume_1852 × jd_1852
-  pair_9258  resume_1852 × jd_1853
-  pair_9259  resume_1852 × jd_1854
-  pair_9260  resume_1852 × jd_1855
-  pair_9261  resume_1853 × jd_1851
-  pair_9262  resume_1853 × jd_1852
-  pair_9263  resume_1853 × jd_1853
-  pair_9264  resume_1853 × jd_1854
-  pair_9265  resume_1853 × jd_1855
-  pair_9266  resume_1854 × jd_1851
-  pair_9267  resume_1854 × jd_1852
-  pair_9268  resume_1854 × jd_1853
-  pair_9269  resume_1854 × jd_1854
-  pair_9270  resume_1854 × jd_1855
-  pair_9271  resume_1855 × jd_1851
-  pair_9272  resume_1855 × jd_1852
-  pair_9273  resume_1855 × jd_1853
-  pair_9274  resume_1855 × jd_1854
-  pair_9275  resume_1855 × jd_1855
+  pair_9276  resume_1856 × jd_1856
+  pair_9277  resume_1856 × jd_1857
+  pair_9278  resume_1856 × jd_1858
+  pair_9279  resume_1856 × jd_1859
+  pair_9280  resume_1856 × jd_1860
+  pair_9281  resume_1857 × jd_1856
+  pair_9282  resume_1857 × jd_1857
+  pair_9283  resume_1857 × jd_1858
+  pair_9284  resume_1857 × jd_1859
+  pair_9285  resume_1857 × jd_1860
+  pair_9286  resume_1858 × jd_1856
+  pair_9287  resume_1858 × jd_1857
+  pair_9288  resume_1858 × jd_1858
+  pair_9289  resume_1858 × jd_1859
+  pair_9290  resume_1858 × jd_1860
+  pair_9291  resume_1859 × jd_1856
+  pair_9292  resume_1859 × jd_1857
+  pair_9293  resume_1859 × jd_1858
+  pair_9294  resume_1859 × jd_1859
+  pair_9295  resume_1859 × jd_1860
+  pair_9296  resume_1860 × jd_1856
+  pair_9297  resume_1860 × jd_1857
+  pair_9298  resume_1860 × jd_1858
+  pair_9299  resume_1860 × jd_1859
+  pair_9300  resume_1860 × jd_1860
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
