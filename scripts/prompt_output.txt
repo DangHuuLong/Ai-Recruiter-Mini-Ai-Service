@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2116 | level: intern | exp: 0.3 yrs
-  skills: Agile Methodologies, User Research, Wireframing, Backlog Prioritization, Competitive Analysis
-  background: I am a Computer Science student in my final year with a keen interest in product management and user-centered design. Throughout my academic career, I have focused on understanding the intersection of
+  id: resume_2121 | level: intern | exp: 0.3 yrs
+  skills: React, TypeScript, Tailwind CSS, JavaScript, HTML5, CSS3
+  background: I am a passionate Computer Science student in my final year with a strong focus on frontend web development. I have spent the last six months building responsive web applications using React and Tailw
 
-  id: resume_2117 | level: junior | exp: 1.5 yrs
-  skills: Product Backlog Management, User Stories, Jira, Confluence, Data Analytics
-  background: A results-driven Junior Product Manager with 1.5 years of experience in supporting the development of SaaS applications. I have successfully managed small-scale product features, from initial discover
+  id: resume_2122 | level: junior | exp: 1.8 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, REST API
+  background: As a Junior Frontend Developer with 1.8 years of hands-on experience, I have developed expertise in building dynamic user interfaces using React and TypeScript. My professional background includes wor
 
-  id: resume_2118 | level: middle | exp: 4.0 yrs
-  skills: Product Roadmap Development, A/B Testing, Stakeholder Management, Agile Leadership, User Journey Mapping
-  background: A versatile Product Manager with 4 years of experience delivering high-impact features for consumer mobile applications. I have a strong track record of defining long-term product roadmaps, conducting
+  id: resume_2123 | level: middle | exp: 4.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, CI/CD
+  background: I am a dedicated Frontend Developer with 4.5 years of experience specializing in building complex, high-traffic web applications. My core expertise lies in architecting robust frontend systems using R
 
-  id: resume_2119 | level: senior | exp: 6.0 yrs
-  skills: Product Strategy, Portfolio Management, Digital Transformation, Mentorship, Governance Frameworks
-  background: An accomplished Senior Product Manager with 6 years of experience driving complex, enterprise-grade software products. I specialize in developing product strategy, managing global stakeholder relation
+  id: resume_2124 | level: senior | exp: 6.5 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, System Design, Mentorship
+  background: An accomplished Senior Frontend Engineer with 6.5 years of experience in designing and implementing large-scale, scalable frontend architectures. I have extensive experience in leading cross-functiona
 
-  id: resume_2120 | level: senior | exp: 10.5 yrs
-  skills: Product Strategy, Enterprise Architecture, Organizational Leadership, Market Expansion, Agile Scaling
-  background: A Principal Product Strategist with over 10 years of experience in defining corporate technology vision and leading high-performing Product Management Organizations. I have an extensive background in 
+  id: resume_2125 | level: senior | exp: 10.5 yrs
+  skills: Frontend Architecture, React, TypeScript, Next.js, Governance Frameworks, Leadership
+  background: A Principal Frontend Architect with over 10 years of experience in shaping the technical strategy for modern frontend platforms. I have a long-standing history of directing frontend engineering organi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2116 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Market Research, Feature Documentation, Communication
-  description: We are seeking a proactive intern to support our product team with market research, feature documentation, and backlog maintenance. Ideal for students interested in product lifecyc
+  id: jd_2121 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, JavaScript, Tailwind CSS
+  description: We are seeking a motivated intern to assist our frontend team in building and refining user interfaces. Great learning opportunity in a modern tech stack.
 
-  id: jd_2117 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Backlog Management, User Stories, Agile
-  description: Join our team as a Junior Product Manager. You will manage specific features for our web platform, working closely with engineers and designers in an Agile environment.
+  id: jd_2122 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Next.js
+  description: Join our team as a Junior Frontend Developer. You will focus on building modular components using React and TypeScript and optimizing performance with Next.js.
 
-  id: jd_2118 | title: Middle Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Product Roadmap, Data Analysis, Stakeholder Management
-  description: We are looking for a Product Manager to own the roadmap for our consumer application. You will lead cross-functional teams to deliver value-driven product updates.
+  id: jd_2123 | title: Middle Frontend Developer | level: middle | min_exp: 3 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS
+  description: We are looking for a Middle Frontend Developer to lead feature development and improve our application's performance. Expert knowledge of React and Next.js is essential.
 
-  id: jd_2119 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Strategy, Portfolio Management, Leadership
-  description: Our organization needs a Senior Product Manager to oversee our enterprise product portfolio. You will lead strategic planning, manage complex dependencies, and guide product teams.
+  id: jd_2124 | title: Senior Frontend Developer | level: senior | min_exp: 5 yrs
+  required_skills: React, TypeScript, Next.js, System Design
+  description: Our organization needs a Senior Frontend Developer to lead architectural initiatives and mentor the team. Focus on high-impact performance and scalability.
 
-  id: jd_2120 | title: Principal Product Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Product Strategy, Enterprise Architecture, Organizational Leadership
-  description: We are seeking a Principal Product Strategist to define our corporate technology vision. You will oversee enterprise product architecture, ecosystem design, and growth strategy.
+  id: jd_2125 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  required_skills: Frontend Architecture, React, TypeScript, Next.js
+  description: We are seeking a Principal Frontend Architect to define our technical frontend vision. You will govern enterprise standards, architecture, and digital transformation initiatives.
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~9 pairs
-  weak_match: ~7 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~11 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10576  resume_2116 × jd_2116
-  pair_10577  resume_2116 × jd_2117
-  pair_10578  resume_2116 × jd_2118
-  pair_10579  resume_2116 × jd_2119
-  pair_10580  resume_2116 × jd_2120
-  pair_10581  resume_2117 × jd_2116
-  pair_10582  resume_2117 × jd_2117
-  pair_10583  resume_2117 × jd_2118
-  pair_10584  resume_2117 × jd_2119
-  pair_10585  resume_2117 × jd_2120
-  pair_10586  resume_2118 × jd_2116
-  pair_10587  resume_2118 × jd_2117
-  pair_10588  resume_2118 × jd_2118
-  pair_10589  resume_2118 × jd_2119
-  pair_10590  resume_2118 × jd_2120
-  pair_10591  resume_2119 × jd_2116
-  pair_10592  resume_2119 × jd_2117
-  pair_10593  resume_2119 × jd_2118
-  pair_10594  resume_2119 × jd_2119
-  pair_10595  resume_2119 × jd_2120
-  pair_10596  resume_2120 × jd_2116
-  pair_10597  resume_2120 × jd_2117
-  pair_10598  resume_2120 × jd_2118
-  pair_10599  resume_2120 × jd_2119
-  pair_10600  resume_2120 × jd_2120
+  pair_10601  resume_2121 × jd_2121
+  pair_10602  resume_2121 × jd_2122
+  pair_10603  resume_2121 × jd_2123
+  pair_10604  resume_2121 × jd_2124
+  pair_10605  resume_2121 × jd_2125
+  pair_10606  resume_2122 × jd_2121
+  pair_10607  resume_2122 × jd_2122
+  pair_10608  resume_2122 × jd_2123
+  pair_10609  resume_2122 × jd_2124
+  pair_10610  resume_2122 × jd_2125
+  pair_10611  resume_2123 × jd_2121
+  pair_10612  resume_2123 × jd_2122
+  pair_10613  resume_2123 × jd_2123
+  pair_10614  resume_2123 × jd_2124
+  pair_10615  resume_2123 × jd_2125
+  pair_10616  resume_2124 × jd_2121
+  pair_10617  resume_2124 × jd_2122
+  pair_10618  resume_2124 × jd_2123
+  pair_10619  resume_2124 × jd_2124
+  pair_10620  resume_2124 × jd_2125
+  pair_10621  resume_2125 × jd_2121
+  pair_10622  resume_2125 × jd_2122
+  pair_10623  resume_2125 × jd_2123
+  pair_10624  resume_2125 × jd_2124
+  pair_10625  resume_2125 × jd_2125
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
