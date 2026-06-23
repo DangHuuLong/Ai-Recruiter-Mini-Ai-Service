@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2151 | level: intern | exp: 0.2 yrs
-  skills: AWS Basics, Docker, Linux, Bash Scripting, Python
-  background: Enthusiastic Computer Science student with a strong passion for DevOps and cloud-native technologies. Currently completing coursework in system administration and networking. Highly motivated to learn
+  id: resume_2156 | level: intern | exp: 0.3 yrs
+  skills: Medical Terminology, HIPAA Compliance, Patient Intake, EMR Basics, Office Coordination
+  background: Health Administration student eager to gain practical experience in medical office coordination and patient support services. Currently enrolled in coursework covering healthcare systems, medical term
 
-  id: resume_2152 | level: junior | exp: 2.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, CI/CD
-  background: Results-driven junior DevOps engineer with two years of experience in cloud infrastructure management and automation. Proven ability to assist in maintaining production environments using Terraform an
+  id: resume_2157 | level: junior | exp: 2.0 yrs
+  skills: Clinical Operations, EMR Management, Insurance Verification, Patient Scheduling, Regulatory Compliance
+  background: Results-oriented healthcare administrative professional with two years of experience in clinical operations support and medical record management. Proven ability to handle patient registration, insura
 
-  id: resume_2153 | level: middle | exp: 4.5 yrs
-  skills: Kubernetes, AWS, Terraform, Monitoring, CI/CD Architecture
-  background: Versatile DevOps specialist with four years of hands-on experience in full-lifecycle cloud infrastructure management. Expert at architecting scalable and resilient solutions using Kubernetes, AWS, and
+  id: resume_2158 | level: middle | exp: 4.5 yrs
+  skills: Patient Flow Management, EMR Optimization, Quality Improvement, Healthcare Compliance, Staff Supervision
+  background: Versatile healthcare administrator with four years of comprehensive experience in full-cycle clinical coordination, EMR optimization, and quality improvement initiatives. Expert at managing complex sc
 
-  id: resume_2154 | level: senior | exp: 6.5 yrs
-  skills: Enterprise Kubernetes, Advanced Terraform, Cloud Networking, Observability, SRE Principles
-  background: Accomplished senior DevOps engineer with six years of deep expertise in cloud infrastructure strategy and large-scale orchestration. Specialist in designing enterprise-grade Kubernetes ecosystems and 
+  id: resume_2159 | level: senior | exp: 6.5 yrs
+  skills: Strategic Operations, Clinical Analytics, EMR Integration, Healthcare Resource Management, Team Mentorship
+  background: Accomplished senior healthcare operations professional with six years of deep expertise in strategic clinical administration and integrated workforce management. Specialist in architecting robust pati
 
-  id: resume_2155 | level: senior | exp: 9.5 yrs
-  skills: Cloud Governance, Multi-Cloud Architecture, Distributed Systems, Security-First Design, Technical Strategy
-  background: Principal DevOps architect with over nine years of experience directing high-impact cloud transformations for global enterprise organizations. Expert in designing comprehensive infrastructure roadmaps
+  id: resume_2160 | level: senior | exp: 9.5 yrs
+  skills: Executive Healthcare Leadership, Healthcare Analytics, Organizational Development, Clinical Governance, Strategic Planning
+  background: Principal healthcare leader with over nine years of experience directing high-impact clinical strategies for enterprise medical environments. Expert in designing global patient experience roadmaps, op
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2151 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS Basics, Docker, Linux
-  description: We are seeking a proactive DevOps Intern to support our infrastructure automation and cloud monitoring efforts. This role is ideal for a student looking to build a foundation in cl
+  id: jd_2156 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Medical Terminology, HIPAA Compliance, Patient Intake
+  description: We are seeking a proactive Healthcare Administration Intern to support our clinical operations and patient intake efforts. This role is ideal for a student looking to build a found
 
-  id: jd_2152 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: We are looking for a detail-oriented Junior DevOps Engineer to support our cloud infrastructure. The ideal candidate will manage core DevOps tasks including infrastructure automati
+  id: jd_2157 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Clinical Operations, EMR Management, Insurance Verification, Patient Scheduling
+  description: We are looking for a detail-oriented Junior Clinical Coordinator to support our expanding clinic. The ideal candidate will manage core administrative tasks including clinical opera
 
-  id: jd_2153 | title: DevOps Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Kubernetes, AWS, Terraform, Monitoring
-  description: We are seeking an experienced DevOps Specialist to join our engineering team. This role focuses on architecting scalable cloud solutions, advanced infrastructure orchestration, and
+  id: jd_2158 | title: Healthcare Administrator | level: middle | min_exp: 3 yrs
+  required_skills: Patient Flow Management, EMR Optimization, Quality Improvement, Healthcare Compliance
+  description: We are seeking an experienced Healthcare Administrator to join our management team. This role focuses on clinical coordination, the optimization of patient flow, and enhancing our 
 
-  id: jd_2154 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Enterprise Kubernetes, Advanced Terraform, Cloud Networking, Observability
-  description: We are looking for a strategic Senior DevOps Engineer to lead our infrastructure operations. This senior-level role demands expertise in building high-availability Kubernetes ecosy
+  id: jd_2159 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Operations, Clinical Analytics, EMR Integration, Healthcare Resource Management
+  description: We are looking for a strategic Senior Healthcare Operations Manager to lead our clinical support operations. This senior-level role demands expertise in building scalable patient c
 
-  id: jd_2155 | title: Principal DevOps Architect | level: senior | min_exp: 7 yrs
-  required_skills: Cloud Governance, Multi-Cloud Architecture, Distributed Systems, Security-First Design
-  description: We are seeking a visionary Principal DevOps Architect to define our organization’s approach to cloud infrastructure. This principal-level position demands deep expertise in global 
+  id: jd_2160 | title: Head of Clinical Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Executive Healthcare Leadership, Healthcare Analytics, Organizational Development, Clinical Governance
+  description: We are seeking a visionary Head of Clinical Strategy to define our organization’s approach to clinical administration. This principal-level position demands deep expertise in globa
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
+  strong_match: ~2 pairs
   excellent_match: ~9 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~1 pairs
+  moderate_match: ~6 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10751  resume_2151 × jd_2151
-  pair_10752  resume_2151 × jd_2152
-  pair_10753  resume_2151 × jd_2153
-  pair_10754  resume_2151 × jd_2154
-  pair_10755  resume_2151 × jd_2155
-  pair_10756  resume_2152 × jd_2151
-  pair_10757  resume_2152 × jd_2152
-  pair_10758  resume_2152 × jd_2153
-  pair_10759  resume_2152 × jd_2154
-  pair_10760  resume_2152 × jd_2155
-  pair_10761  resume_2153 × jd_2151
-  pair_10762  resume_2153 × jd_2152
-  pair_10763  resume_2153 × jd_2153
-  pair_10764  resume_2153 × jd_2154
-  pair_10765  resume_2153 × jd_2155
-  pair_10766  resume_2154 × jd_2151
-  pair_10767  resume_2154 × jd_2152
-  pair_10768  resume_2154 × jd_2153
-  pair_10769  resume_2154 × jd_2154
-  pair_10770  resume_2154 × jd_2155
-  pair_10771  resume_2155 × jd_2151
-  pair_10772  resume_2155 × jd_2152
-  pair_10773  resume_2155 × jd_2153
-  pair_10774  resume_2155 × jd_2154
-  pair_10775  resume_2155 × jd_2155
+  pair_10776  resume_2156 × jd_2156
+  pair_10777  resume_2156 × jd_2157
+  pair_10778  resume_2156 × jd_2158
+  pair_10779  resume_2156 × jd_2159
+  pair_10780  resume_2156 × jd_2160
+  pair_10781  resume_2157 × jd_2156
+  pair_10782  resume_2157 × jd_2157
+  pair_10783  resume_2157 × jd_2158
+  pair_10784  resume_2157 × jd_2159
+  pair_10785  resume_2157 × jd_2160
+  pair_10786  resume_2158 × jd_2156
+  pair_10787  resume_2158 × jd_2157
+  pair_10788  resume_2158 × jd_2158
+  pair_10789  resume_2158 × jd_2159
+  pair_10790  resume_2158 × jd_2160
+  pair_10791  resume_2159 × jd_2156
+  pair_10792  resume_2159 × jd_2157
+  pair_10793  resume_2159 × jd_2158
+  pair_10794  resume_2159 × jd_2159
+  pair_10795  resume_2159 × jd_2160
+  pair_10796  resume_2160 × jd_2156
+  pair_10797  resume_2160 × jd_2157
+  pair_10798  resume_2160 × jd_2158
+  pair_10799  resume_2160 × jd_2159
+  pair_10800  resume_2160 × jd_2160
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
