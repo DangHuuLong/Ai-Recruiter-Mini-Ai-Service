@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1951 | level: intern | exp: 0.2 yrs
-  skills: Inventory Control, Procurement Fundamentals, Logistics Operations, Erp Systems
-  background: Supply chain management student with a strong interest in logistics operations and procurement fundamentals. Throughout my academic career, I have developed a foundational understanding of inventory c
+  id: resume_1956 | level: intern | exp: 0.3 yrs
+  skills: React Native, Flutter, Mobile Ui Design, Api Integration
+  background: Computer science student with a strong passion for mobile application development. Throughout my academic career, I have developed a foundational understanding of cross-platform frameworks and mobile 
 
-  id: resume_1952 | level: junior | exp: 1.8 yrs
-  skills: Purchase Order Processing, Inventory Monitoring, Logistics Coordination, Erp Systems
-  background: Junior logistics coordinator with nearly two years of professional experience supporting procurement and warehouse operations. My background includes facilitating purchase order processing, monitoring
+  id: resume_1957 | level: junior | exp: 1.8 yrs
+  skills: React Native, Flutter, Mobile Ui, Api Integration
+  background: Junior mobile developer with nearly two years of professional experience building and maintaining cross-platform applications. My background includes developing features for React Native and Flutter a
 
-  id: resume_1953 | level: middle | exp: 4.5 yrs
-  skills: Strategic Procurement, Inventory Optimization, Vendor Management, Erp Implementation
-  background: Dynamic supply chain specialist with four years of experience leading procurement initiatives and managing complex inventory logistics. I specialize in bridging the gap between supply chain strategy a
+  id: resume_1958 | level: middle | exp: 4.2 yrs
+  skills: React Native, Flutter, Swift, Kotlin
+  background: Dynamic mobile engineer with four years of experience leading cross-platform development and implementing complex application features. I specialize in bridging the gap between design vision and techn
 
-  id: resume_1954 | level: senior | exp: 6.8 yrs
-  skills: Logistics Strategy, Procurement Optimization, Supply Network Risk, Erp Management
-  background: Experienced supply chain manager with over six years of expertise in large-scale logistics integration and procurement optimization. I have a proven track record of architecting comprehensive supply c
+  id: resume_1959 | level: senior | exp: 6.5 yrs
+  skills: React Native, Flutter, Mobile Architecture, Strategic Engineering
+  background: Experienced mobile architect and lead developer with over six years of expertise in large-scale mobile application development and system integration. I have a proven track record of architecting comp
 
-  id: resume_1955 | level: senior | exp: 9.2 yrs
-  skills: Supply Chain Architecture, Strategic Sourcing, Vendor Governance, Erp Governance
-  background: Principal supply chain administrator with over nine years of experience defining global procurement strategy and overseeing enterprise-wide logistics management frameworks. My expertise lies in buildi
+  id: resume_1960 | level: senior | exp: 9.5 yrs
+  skills: Mobile Architecture, React Native, Swift, Kotlin
+  background: Principal mobile engineer with over nine years of experience defining mobile strategy and overseeing enterprise-wide mobile development frameworks. My expertise lies in building complex mobile archite
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1951 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
-  required_skills: Inventory Control, Procurement Fundamentals, Logistics Operations, Erp Systems
-  description: We are seeking a motivated Supply Chain Intern to support our logistics and procurement team. This role provides hands-on experience in inventory control, demand forecasting, and E
+  id: jd_1956 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter, Mobile Ui Design, Api Integration
+  description: We are seeking a motivated Mobile Development Intern to support our mobile product team. This role provides hands-on experience in mobile UI design, basic feature implementation, a
 
-  id: jd_1952 | title: Junior Logistics Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Purchase Order Processing, Inventory Monitoring, Logistics Coordination, Erp Systems
-  description: Our team is looking for a detail-oriented Junior Logistics Coordinator to handle procurement support and inventory tracking. You will be instrumental in ensuring that purchase orde
+  id: jd_1957 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Flutter, Mobile Ui, Api Integration
+  description: Our team is looking for a detail-oriented Junior Mobile Developer to handle feature implementation and mobile maintenance. You will be instrumental in ensuring that mobile componen
 
-  id: jd_1953 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Strategic Procurement, Inventory Optimization, Vendor Management, Erp Implementation
-  description: We are searching for a skilled Supply Chain Specialist to lead procurement initiatives and manage inventory logistics within our active departments. You will bridge the gap between
+  id: jd_1958 | title: Mobile Software Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React Native, Flutter, Swift, Kotlin
+  description: We are searching for a skilled Mobile Software Engineer to lead feature development and manage technical tasks within our mobile teams. You will bridge the gap between design and h
 
-  id: jd_1954 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Logistics Strategy, Procurement Optimization, Supply Network Risk, Erp Management
-  description: We are looking for a visionary Senior Supply Chain Manager to guide our enterprise logistics initiatives. You will take ownership of our procurement strategy, ensuring that ERP man
+  id: jd_1959 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  required_skills: React Native, Flutter, Mobile Architecture, Strategic Engineering
+  description: We are looking for a visionary Senior Mobile Engineer to guide our enterprise mobile initiatives. You will take ownership of our mobile engineering strategy, ensuring that architec
 
-  id: jd_1955 | title: Principal Supply Chain Administrator | level: senior | min_exp: 7 yrs
-  required_skills: Supply Chain Architecture, Strategic Sourcing, Vendor Governance, Erp Governance
-  description: We are seeking a Principal Supply Chain Administrator to shape our future logistics strategy at an enterprise level. This is a leadership position for someone experienced in archit
+  id: jd_1960 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Mobile Architecture, React Native, Swift, Kotlin
+  description: We are seeking a Principal Mobile Architect to shape our future mobile engineering strategy at an enterprise level. This is a leadership position for someone experienced in archite
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9751  resume_1951 × jd_1951
-  pair_9752  resume_1951 × jd_1952
-  pair_9753  resume_1951 × jd_1953
-  pair_9754  resume_1951 × jd_1954
-  pair_9755  resume_1951 × jd_1955
-  pair_9756  resume_1952 × jd_1951
-  pair_9757  resume_1952 × jd_1952
-  pair_9758  resume_1952 × jd_1953
-  pair_9759  resume_1952 × jd_1954
-  pair_9760  resume_1952 × jd_1955
-  pair_9761  resume_1953 × jd_1951
-  pair_9762  resume_1953 × jd_1952
-  pair_9763  resume_1953 × jd_1953
-  pair_9764  resume_1953 × jd_1954
-  pair_9765  resume_1953 × jd_1955
-  pair_9766  resume_1954 × jd_1951
-  pair_9767  resume_1954 × jd_1952
-  pair_9768  resume_1954 × jd_1953
-  pair_9769  resume_1954 × jd_1954
-  pair_9770  resume_1954 × jd_1955
-  pair_9771  resume_1955 × jd_1951
-  pair_9772  resume_1955 × jd_1952
-  pair_9773  resume_1955 × jd_1953
-  pair_9774  resume_1955 × jd_1954
-  pair_9775  resume_1955 × jd_1955
+  pair_9776  resume_1956 × jd_1956
+  pair_9777  resume_1956 × jd_1957
+  pair_9778  resume_1956 × jd_1958
+  pair_9779  resume_1956 × jd_1959
+  pair_9780  resume_1956 × jd_1960
+  pair_9781  resume_1957 × jd_1956
+  pair_9782  resume_1957 × jd_1957
+  pair_9783  resume_1957 × jd_1958
+  pair_9784  resume_1957 × jd_1959
+  pair_9785  resume_1957 × jd_1960
+  pair_9786  resume_1958 × jd_1956
+  pair_9787  resume_1958 × jd_1957
+  pair_9788  resume_1958 × jd_1958
+  pair_9789  resume_1958 × jd_1959
+  pair_9790  resume_1958 × jd_1960
+  pair_9791  resume_1959 × jd_1956
+  pair_9792  resume_1959 × jd_1957
+  pair_9793  resume_1959 × jd_1958
+  pair_9794  resume_1959 × jd_1959
+  pair_9795  resume_1959 × jd_1960
+  pair_9796  resume_1960 × jd_1956
+  pair_9797  resume_1960 × jd_1957
+  pair_9798  resume_1960 × jd_1958
+  pair_9799  resume_1960 × jd_1959
+  pair_9800  resume_1960 × jd_1960
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
