@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1861 | level: intern | exp: 0.5 yrs
-  skills: SEO, Social Media, Analytics, Digital Marketing, Content Strategy
-  background: Highly motivated Marketing graduate focusing on scalable organic traffic loops, modern search engine optimization architectures, and data-driven audience discovery models. Possesses a solid academic b
+  id: resume_1866 | level: intern | exp: 0.5 yrs
+  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Data Entry
+  background: Highly motivated and detail-oriented Business Administration graduate specializing in e-commerce marketplace operations, digital storefront configurations, and retail merchandising frameworks. Possess
 
-  id: resume_1862 | level: junior | exp: 1.5 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Copywriting, Google Analytics
-  background: Junior Content Marketing Specialist with one and a half years of professional agency history organizing high-performing organic growth channels, tracking multi-channel social media systems, and analyz
+  id: resume_1867 | level: junior | exp: 1.5 yrs
+  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis
+  background: Junior Marketplace Operations Specialist with one and a half years of professional e-commerce merchant experience structuring digital storefront workflows, modifying multi-channel supplier schedules, 
 
-  id: resume_1863 | level: middle | exp: 4.0 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Marketing Automation, Keyword Research, Content Management
-  background: Middle Digital Analyst and Content Architect with four years of dedicated corporate history scaling medium-sized business acquisition funnels, configuring unified site performance trackers, and design
+  id: resume_1868 | level: middle | exp: 4.0 yrs
+  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization
+  background: Middle E-commerce Operations Manager with four years of dedicated retail facility expertise optimizing mid-market brand acquisition pipelines, configuring centralized marketplace setups, and crafting 
 
-  id: resume_1864 | level: senior | exp: 6.0 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, System Architecture, Brand Management, Conversion Optimization
-  background: Senior Digital Marketing Strategist and Growth Infrastructure Architect with over six years of comprehensive corporate execution constructing large-scale customer acquisition systems, building integra
+  id: resume_1869 | level: senior | exp: 6.0 yrs
+  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization, Project Management
+  background: Senior E-commerce Operations Director and Merchant Solutions Architect with more than six years of comprehensive corporate mastery formulating enterprise-scale marketplace administration models, manag
 
-  id: resume_1865 | level: senior | exp: 8.5 yrs
-  skills: SEO, Social Media, Analytics, Content Strategy, Strategic Leadership, Global Compliance, Digital Marketing, Data Governance
-  background: Principal Growth Architect and Director of Enterprise Brand Strategy with more than eight years of executive corporate guidance engineering top-tier consumer acquisition infrastructures, global conten
+  id: resume_1870 | level: senior | exp: 8.5 yrs
+  skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain, Data Analysis, Process Optimization, Project Management, Strategic Leadership
+  background: Principal E-commerce Operations Architect and Director of Enterprise Merchant Services with over eight years of distinguished retail leadership shaping high-volume marketplace coordination architectur
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1861 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media, Analytics
-  description: We are looking for an energetic Digital Marketing Intern to support our core growth operations group. In this placement, you will operate alongside experienced search optimization 
+  id: jd_1866 | title: Marketplace Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Marketplace Operations, Merchandising, E-commerce
+  description: We are seeking a motivated Marketplace Operations Intern to join our digital storefront team. In this position, you will work closely with seasoned merchant coordination and retail
 
-  id: jd_1862 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy
-  description: Our organic visibility collective is searching for an analytical Junior Digital Marketing Specialist to manage and optimize our core customer acquisition pipelines. You will focus 
+  id: jd_1867 | title: Junior Marketplace Operations Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management
+  description: Our digital marketplace collective is searching for an analytical Junior Marketplace Operations Specialist to support and expand our core multi-vendor setups. You will focus closel
 
-  id: jd_1863 | title: Digital Marketing and Content Specialist | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy
-  description: We are searching for a high-performing Digital Marketing and Content Specialist to manage, refine, and accelerate our organic content ecosystems and corporate messaging channels. I
+  id: jd_1868 | title: E-commerce Operations and Merchandising Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management
+  description: We are searching for a high-performing E-commerce Operations and Merchandising Specialist to manage, refine, and accelerate our organic digital storefront ecosystems and corporate 
 
-  id: jd_1864 | title: Senior Digital Growth Architect | level: senior | min_exp: 5 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy, System Architecture
-  description: We are seeking an experienced Senior Digital Growth Architect to blueprint, expand, and safeguard our enterprise-scale organic growth pipelines and digital analytics networks. You 
+  id: jd_1869 | title: Senior E-commerce Operations Architect | level: senior | min_exp: 5 yrs
+  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain
+  description: We are seeking an experienced Senior E-commerce Operations Architect to blueprint, expand, and safeguard our enterprise-scale marketplace pipelines and inventory analytics networks
 
-  id: jd_1865 | title: Principal Growth Director and Content Strategist | level: senior | min_exp: 7 yrs
-  required_skills: SEO, Social Media, Analytics, Content Strategy, Digital Marketing
-  description: We are seeking a Principal Growth Director and Content Strategist to chart the long-term technical roadmap and foundational system architecture of our global consumer platforms and
+  id: jd_1870 | title: Principal Marketplace Operations Director | level: senior | min_exp: 7 yrs
+  required_skills: Marketplace Operations, Merchandising, E-commerce, Inventory Management, Supply Chain
+  description: We are seeking a Principal Marketplace Operations Director to chart the long-term technical roadmap and foundational system architecture of our global consumer platforms and corpor
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9301  resume_1861 × jd_1861
-  pair_9302  resume_1861 × jd_1862
-  pair_9303  resume_1861 × jd_1863
-  pair_9304  resume_1861 × jd_1864
-  pair_9305  resume_1861 × jd_1865
-  pair_9306  resume_1862 × jd_1861
-  pair_9307  resume_1862 × jd_1862
-  pair_9308  resume_1862 × jd_1863
-  pair_9309  resume_1862 × jd_1864
-  pair_9310  resume_1862 × jd_1865
-  pair_9311  resume_1863 × jd_1861
-  pair_9312  resume_1863 × jd_1862
-  pair_9313  resume_1863 × jd_1863
-  pair_9314  resume_1863 × jd_1864
-  pair_9315  resume_1863 × jd_1865
-  pair_9316  resume_1864 × jd_1861
-  pair_9317  resume_1864 × jd_1862
-  pair_9318  resume_1864 × jd_1863
-  pair_9319  resume_1864 × jd_1864
-  pair_9320  resume_1864 × jd_1865
-  pair_9321  resume_1865 × jd_1861
-  pair_9322  resume_1865 × jd_1862
-  pair_9323  resume_1865 × jd_1863
-  pair_9324  resume_1865 × jd_1864
-  pair_9325  resume_1865 × jd_1865
+  pair_9326  resume_1866 × jd_1866
+  pair_9327  resume_1866 × jd_1867
+  pair_9328  resume_1866 × jd_1868
+  pair_9329  resume_1866 × jd_1869
+  pair_9330  resume_1866 × jd_1870
+  pair_9331  resume_1867 × jd_1866
+  pair_9332  resume_1867 × jd_1867
+  pair_9333  resume_1867 × jd_1868
+  pair_9334  resume_1867 × jd_1869
+  pair_9335  resume_1867 × jd_1870
+  pair_9336  resume_1868 × jd_1866
+  pair_9337  resume_1868 × jd_1867
+  pair_9338  resume_1868 × jd_1868
+  pair_9339  resume_1868 × jd_1869
+  pair_9340  resume_1868 × jd_1870
+  pair_9341  resume_1869 × jd_1866
+  pair_9342  resume_1869 × jd_1867
+  pair_9343  resume_1869 × jd_1868
+  pair_9344  resume_1869 × jd_1869
+  pair_9345  resume_1869 × jd_1870
+  pair_9346  resume_1870 × jd_1866
+  pair_9347  resume_1870 × jd_1867
+  pair_9348  resume_1870 × jd_1868
+  pair_9349  resume_1870 × jd_1869
+  pair_9350  resume_1870 × jd_1870
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
