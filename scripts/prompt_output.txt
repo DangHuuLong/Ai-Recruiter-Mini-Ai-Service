@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1886 | level: intern | exp: 0.3 yrs
-  skills: Aws, Docker, Linux, Bash, Git
-  background: Motivated Computer Science student with a strong interest in cloud infrastructure and DevOps practices. Through my coursework and home lab environment, I have gained hands-on experience setting up bas
+  id: resume_1891 | level: intern | exp: 0.3 yrs
+  skills: React Native, Flutter, Java, Javascript, Dart
+  background: Computer Science student with a strong passion for mobile application development. I have spent the last six months building basic mobile interfaces and learning the fundamentals of cross-platform dev
 
-  id: resume_1887 | level: junior | exp: 1.5 yrs
-  skills: Aws, Docker, Terraform, Kubernetes, Jenkins
-  background: Junior DevOps Engineer with one and a half years of professional experience managing cloud resources and automating deployment processes. I have a strong foundation in AWS services, particularly EC2 a
+  id: resume_1892 | level: junior | exp: 1.5 yrs
+  skills: React Native, Kotlin, Swift, Javascript, Android SDK
+  background: Junior Mobile Developer with one and a half years of professional experience building and deploying mobile applications. I have worked primarily with React Native and Kotlin, focusing on developing in
 
-  id: resume_1888 | level: middle | exp: 4.0 yrs
-  skills: Aws, Kubernetes, Terraform, Docker, Prometheus
-  background: Mid-level DevOps Engineer with four years of professional experience focused on building scalable, resilient cloud infrastructure. My expertise spans AWS cloud services, advanced Kubernetes orchestrat
+  id: resume_1893 | level: middle | exp: 4.0 yrs
+  skills: Swift, Kotlin, Flutter, React Native, Mobile Architecture
+  background: Mid-level Mobile Developer with four years of professional experience specializing in both native and cross-platform mobile development. My background includes building robust applications using Swift
 
-  id: resume_1889 | level: senior | exp: 6.5 yrs
-  skills: Aws, Kubernetes, Terraform, Golang, Observability
-  background: Senior DevOps Engineer with over six years of experience specializing in high-scale cloud platforms and site reliability engineering. I have architected global, multi-region AWS environments and manag
+  id: resume_1894 | level: senior | exp: 6.5 yrs
+  skills: Swift, Kotlin, React Native, Flutter, Architecture, Mentorship
+  background: Senior Mobile Engineer with over six years of experience building scalable mobile ecosystems for global products. I specialize in architecting complex mobile applications using Swift, Kotlin, and Reac
 
-  id: resume_1890 | level: senior | exp: 8.5 yrs
-  skills: Aws, Kubernetes, Terraform, Python, Security
-  background: Principal Cloud Architect with over eight years of experience defining and executing enterprise cloud strategy. I have a long history of building robust, scalable, and secure cloud ecosystems on AWS. 
+  id: resume_1895 | level: senior | exp: 8.5 yrs
+  skills: Swift, Kotlin, Flutter, React Native, Strategy, Performance Optimization
+  background: Principal Mobile Architect with over eight years of experience defining and executing long-term mobile engineering strategies. My core expertise is in building secure, high-performance mobile applicat
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1886 | title: DevOps Internship | level: intern | min_exp: 0 yrs
-  required_skills: Aws, Docker
-  description: We are seeking a DevOps Intern to support our engineering team in building and maintaining cloud-native infrastructure. You will work on automating CI/CD tasks, managing containeri
+  id: jd_1891 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, Flutter
+  description: We are looking for a dedicated Mobile Development Intern to join our team and contribute to our mobile application projects. This role is perfect for someone starting their career 
 
-  id: jd_1887 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Aws, Docker, Terraform
-  description: Our team is looking for a Junior DevOps Engineer to assist in managing our growing cloud infrastructure. You will be responsible for deploying infrastructure using Terraform, maint
+  id: jd_1892 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, Kotlin
+  description: We are seeking a Junior Mobile Developer to help us build and maintain high-quality mobile applications. You will be responsible for implementing features, ensuring application sta
 
-  id: jd_1888 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Aws, Kubernetes, Terraform, Docker
-  description: We are searching for a skilled DevOps Engineer to lead infrastructure efforts for our core product. You will design, build, and maintain our cloud environments, focusing on scalabi
+  id: jd_1893 | title: Mobile Developer | level: middle | min_exp: 3 yrs
+  required_skills: Swift, Kotlin, Flutter
+  description: We are searching for an experienced Mobile Developer to join our team. You will be tasked with building robust, scalable mobile applications and optimizing their performance. This 
 
-  id: jd_1889 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Aws, Kubernetes, Terraform, Docker
-  description: We are seeking a Senior DevOps Engineer to take ownership of our cloud infrastructure and deployment strategy. You will lead technical initiatives, ensure high-level reliability, a
+  id: jd_1894 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Swift, Kotlin, React Native, Flutter
+  description: Our team is looking for a Senior Mobile Engineer to lead technical efforts and shape the future of our mobile applications. You will be responsible for defining mobile architecture
 
-  id: jd_1890 | title: Principal Cloud Architect | level: senior | min_exp: 7 yrs
-  required_skills: Aws, Kubernetes, Terraform, Python
-  description: We are looking for a visionary Principal Cloud Architect to lead our organization's cloud strategy and engineering standards. You will define the long-term vision for our infrastru
+  id: jd_1895 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Swift, Kotlin, Flutter, React Native
+  description: We are seeking a visionary Principal Mobile Architect to drive the long-term vision of our mobile platform. You will be responsible for setting high-level technical standards, over
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9426  resume_1886 × jd_1886
-  pair_9427  resume_1886 × jd_1887
-  pair_9428  resume_1886 × jd_1888
-  pair_9429  resume_1886 × jd_1889
-  pair_9430  resume_1886 × jd_1890
-  pair_9431  resume_1887 × jd_1886
-  pair_9432  resume_1887 × jd_1887
-  pair_9433  resume_1887 × jd_1888
-  pair_9434  resume_1887 × jd_1889
-  pair_9435  resume_1887 × jd_1890
-  pair_9436  resume_1888 × jd_1886
-  pair_9437  resume_1888 × jd_1887
-  pair_9438  resume_1888 × jd_1888
-  pair_9439  resume_1888 × jd_1889
-  pair_9440  resume_1888 × jd_1890
-  pair_9441  resume_1889 × jd_1886
-  pair_9442  resume_1889 × jd_1887
-  pair_9443  resume_1889 × jd_1888
-  pair_9444  resume_1889 × jd_1889
-  pair_9445  resume_1889 × jd_1890
-  pair_9446  resume_1890 × jd_1886
-  pair_9447  resume_1890 × jd_1887
-  pair_9448  resume_1890 × jd_1888
-  pair_9449  resume_1890 × jd_1889
-  pair_9450  resume_1890 × jd_1890
+  pair_9451  resume_1891 × jd_1891
+  pair_9452  resume_1891 × jd_1892
+  pair_9453  resume_1891 × jd_1893
+  pair_9454  resume_1891 × jd_1894
+  pair_9455  resume_1891 × jd_1895
+  pair_9456  resume_1892 × jd_1891
+  pair_9457  resume_1892 × jd_1892
+  pair_9458  resume_1892 × jd_1893
+  pair_9459  resume_1892 × jd_1894
+  pair_9460  resume_1892 × jd_1895
+  pair_9461  resume_1893 × jd_1891
+  pair_9462  resume_1893 × jd_1892
+  pair_9463  resume_1893 × jd_1893
+  pair_9464  resume_1893 × jd_1894
+  pair_9465  resume_1893 × jd_1895
+  pair_9466  resume_1894 × jd_1891
+  pair_9467  resume_1894 × jd_1892
+  pair_9468  resume_1894 × jd_1893
+  pair_9469  resume_1894 × jd_1894
+  pair_9470  resume_1894 × jd_1895
+  pair_9471  resume_1895 × jd_1891
+  pair_9472  resume_1895 × jd_1892
+  pair_9473  resume_1895 × jd_1893
+  pair_9474  resume_1895 × jd_1894
+  pair_9475  resume_1895 × jd_1895
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
