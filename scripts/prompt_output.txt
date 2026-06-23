@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1941 | level: intern | exp: 0.2 yrs
-  skills: E-commerce Operations, Retail Analytics, Marketplace Management, Inventory Tracking, Customer Experience
-  background: Business student with a strong interest in e-commerce operations and digital retail strategy. Throughout my academic career, I have focused on market trends, consumer behavior, and the fundamental dri
+  id: resume_1946 | level: intern | exp: 0.3 yrs
+  skills: Requirements Gathering, Process Mapping, Bpm, Stakeholder Communication
+  background: Business student with a keen interest in business analysis and project management methodologies. Throughout my academic career, I have developed a foundational understanding of requirements gathering,
 
-  id: resume_1942 | level: junior | exp: 1.8 yrs
-  skills: Catalog Management, Order Fulfillment, Vendor Coordination, Marketplace Optimization, Data Analysis
-  background: Organized e-commerce coordinator with nearly two years of professional experience in online retail and marketplace management. My background includes managing product listings, monitoring inventory le
+  id: resume_1947 | level: junior | exp: 1.5 yrs
+  skills: Requirements Documentation, Process Modeling, Bpm, Stakeholder Management
+  background: Junior business analyst with two years of professional experience supporting project delivery and process improvement initiatives. My background includes facilitating requirement gathering sessions, d
 
-  id: resume_1943 | level: middle | exp: 4.5 yrs
-  skills: Category Management, Supply Chain Optimization, Merchandising Strategy, Pricing Optimization, Conversion Rate Optimization
-  background: Dynamic e-commerce operations specialist with four years of experience leading online retail initiatives and optimizing digital marketplace performance. I specialize in category management, supply cha
+  id: resume_1948 | level: middle | exp: 4.2 yrs
+  skills: Requirements Analysis, Bpm, Process Re-engineering, Stakeholder Elicitation
+  background: Dynamic business analyst with four years of experience leading requirements analysis and managing project lifecycle tasks. I specialize in bridging the gap between business objectives and technical im
 
-  id: resume_1944 | level: senior | exp: 6.8 yrs
-  skills: Operational Strategy, Marketplace Growth, Supply Chain Management, Performance Auditing, Strategic Planning
-  background: Experienced e-commerce operations manager with over six years of expertise in digital retail leadership and marketplace strategy. I have a proven track record of designing efficient operational workfl
+  id: resume_1949 | level: senior | exp: 6.5 yrs
+  skills: Strategic Analysis, Bpm, Stakeholder Engagement, Project Strategy
+  background: Experienced business analyst and project lead with over six years of expertise in large-scale system integration and process optimization. I have a proven track record of architecting comprehensive bu
 
-  id: resume_1945 | level: senior | exp: 9.2 yrs
-  skills: Retail Architecture, E-commerce Operations, Marketplace Governance, Strategic Planning, Risk Management
-  background: Principal e-commerce administrator with over nine years of experience defining global digital retail strategy and overseeing enterprise-wide marketplace operations. My expertise lies in building compl
+  id: resume_1950 | level: senior | exp: 9.5 yrs
+  skills: Process Architecture, Bpm, Project Governance, Stakeholder Strategy
+  background: Principal business analyst with over nine years of experience defining global analysis strategy and overseeing enterprise-wide project management frameworks. My expertise lies in building complex proc
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1941 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: E-commerce Operations, Catalog Management, Retail Analytics, Inventory Tracking
-  description: We are seeking a motivated E-commerce Operations Intern to support our retail team. This role provides hands-on experience in catalog management, inventory tracking, and operationa
+  id: jd_1946 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, Process Mapping, Bpm, Stakeholder Support
+  description: We are seeking a motivated Business Analysis Intern to support our project management team. This role provides hands-on experience in requirements gathering, process mapping, and s
 
-  id: jd_1942 | title: Junior E-commerce Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: E-commerce Operations, Catalog Management, Inventory Tracking, Marketplace Management
-  description: Our retail team is looking for a detail-oriented Junior E-commerce Coordinator to handle daily marketplace management and operational support. You will be instrumental in ensuring 
+  id: jd_1947 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Documentation, Process Modeling, Bpm, Stakeholder Management
+  description: Our team is looking for a detail-oriented Junior Business Analyst to handle requirement documentation and project lifecycle support. You will be instrumental in ensuring that busin
 
-  id: jd_1943 | title: E-commerce Operations Manager | level: middle | min_exp: 3 yrs
-  required_skills: E-commerce Operations, Category Management, Merchandising Strategy, Supply Chain Optimization
-  description: We are searching for a skilled E-commerce Operations Manager to lead operational efficiency and merchandising performance within our busy digital departments. You will bridge the g
+  id: jd_1948 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Analysis, Bpm, Process Re-engineering, Stakeholder Elicitation
+  description: We are searching for a skilled Business Analyst to lead requirement elicitation and manage project lifecycle tasks within our active departments. You will bridge the gap between bu
 
-  id: jd_1944 | title: Senior E-commerce Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Operational Strategy, Marketplace Growth, Supply Chain Management, Performance Auditing
-  description: We are looking for a visionary Senior E-commerce Operations Manager to guide our enterprise retail initiatives. You will take ownership of our operational strategy, ensuring that d
+  id: jd_1949 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Strategic Analysis, Bpm, Stakeholder Engagement, Project Strategy
+  description: We are looking for a visionary Senior Business Analyst to guide our enterprise project initiatives. You will take ownership of our requirements strategy, ensuring that project mana
 
-  id: jd_1945 | title: Principal E-commerce Administrator | level: senior | min_exp: 7 yrs
-  required_skills: Retail Architecture, E-commerce Operations, Marketplace Governance, Strategic Planning
-  description: We are seeking a Principal E-commerce Administrator to shape our future retail strategy at an enterprise level. This is a leadership position for someone experienced in architectin
+  id: jd_1950 | title: Principal Business Analyst | level: senior | min_exp: 7 yrs
+  required_skills: Process Architecture, Bpm, Project Governance, Stakeholder Strategy
+  description: We are seeking a Principal Business Analyst to shape our future analysis strategy at an enterprise level. This is a leadership position for someone experienced in architecting proc
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9701  resume_1941 × jd_1941
-  pair_9702  resume_1941 × jd_1942
-  pair_9703  resume_1941 × jd_1943
-  pair_9704  resume_1941 × jd_1944
-  pair_9705  resume_1941 × jd_1945
-  pair_9706  resume_1942 × jd_1941
-  pair_9707  resume_1942 × jd_1942
-  pair_9708  resume_1942 × jd_1943
-  pair_9709  resume_1942 × jd_1944
-  pair_9710  resume_1942 × jd_1945
-  pair_9711  resume_1943 × jd_1941
-  pair_9712  resume_1943 × jd_1942
-  pair_9713  resume_1943 × jd_1943
-  pair_9714  resume_1943 × jd_1944
-  pair_9715  resume_1943 × jd_1945
-  pair_9716  resume_1944 × jd_1941
-  pair_9717  resume_1944 × jd_1942
-  pair_9718  resume_1944 × jd_1943
-  pair_9719  resume_1944 × jd_1944
-  pair_9720  resume_1944 × jd_1945
-  pair_9721  resume_1945 × jd_1941
-  pair_9722  resume_1945 × jd_1942
-  pair_9723  resume_1945 × jd_1943
-  pair_9724  resume_1945 × jd_1944
-  pair_9725  resume_1945 × jd_1945
+  pair_9726  resume_1946 × jd_1946
+  pair_9727  resume_1946 × jd_1947
+  pair_9728  resume_1946 × jd_1948
+  pair_9729  resume_1946 × jd_1949
+  pair_9730  resume_1946 × jd_1950
+  pair_9731  resume_1947 × jd_1946
+  pair_9732  resume_1947 × jd_1947
+  pair_9733  resume_1947 × jd_1948
+  pair_9734  resume_1947 × jd_1949
+  pair_9735  resume_1947 × jd_1950
+  pair_9736  resume_1948 × jd_1946
+  pair_9737  resume_1948 × jd_1947
+  pair_9738  resume_1948 × jd_1948
+  pair_9739  resume_1948 × jd_1949
+  pair_9740  resume_1948 × jd_1950
+  pair_9741  resume_1949 × jd_1946
+  pair_9742  resume_1949 × jd_1947
+  pair_9743  resume_1949 × jd_1948
+  pair_9744  resume_1949 × jd_1949
+  pair_9745  resume_1949 × jd_1950
+  pair_9746  resume_1950 × jd_1946
+  pair_9747  resume_1950 × jd_1947
+  pair_9748  resume_1950 × jd_1948
+  pair_9749  resume_1950 × jd_1949
+  pair_9750  resume_1950 × jd_1950
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
