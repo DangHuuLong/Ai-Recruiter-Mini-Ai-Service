@@ -1,100 +1,100 @@
-You are a dataset labeler for an AI recruitment system.
-Score 25 CV-JD pairs using rubric v0.2.
+  You are a dataset labeler for an AI recruitment system.
+  Score 25 CV-JD pairs using rubric v0.2.
 
-═══ RESUMES ═══
-  id: resume_1796 | level: intern | exp: 0.2 yrs
-  skills: Python, PyTorch, NLP, Transformers, RAG
-  background: Computer Science student with a strong focus on Natural Language Processing and machine learning. Through coursework and independent study, I have gained hands-on experience in building basic language
+  ═══ RESUMES ═══
+    id: resume_1801 | level: intern | exp: 0.5 yrs
+    skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Python
+    background: Enthusiastic computer science student seeking a data engineering internship. Hands-on academic experience focusing on database fundamentals, data modeling, and modern storage architectures. Highly pro
 
-  id: resume_1797 | level: junior | exp: 1.8 yrs
-  skills: Python, LangChain, RAG, Embeddings, Transformers
-  background: Junior AI/NLP Engineer with two years of professional experience in developing and deploying machine learning solutions. My work focuses on building scalable NLP pipelines, implementing vector databas
+    id: resume_1802 | level: junior | exp: 1.5 yrs
+    skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Python, ETL
+    background: Junior Database Engineer with one and a half years of professional industry experience specializing in the administration, engineering, and maintenance of PostgreSQL instances. Adept at developing opt
 
-  id: resume_1798 | level: middle | exp: 4.5 yrs
-  skills: Python, LangChain, Transformers, Vector Databases, RAG
-  background: Mid-level AI Engineer with four years of experience specializing in deep learning and natural language processing. I have a proven track record of designing, training, and deploying advanced language 
+    id: resume_1803 | level: middle | exp: 4.0 yrs
+    skills: PostgreSQL, MongoDB, Redis, Data Modeling, PgBouncer, SQL, Database Replication
+    background: Middle Database Engineer with four years of dedicated professional experience executing high-availability data architecture management and schema optimization. Specializes in advanced PostgreSQL admin
 
-  id: resume_1799 | level: senior | exp: 6.8 yrs
-  skills: Python, LangChain, Transformers, Distributed Systems, NLP
-  background: Senior NLP Engineer with six years of experience developing high-performance artificial intelligence systems. My expertise lies in designing and optimizing transformer architectures, building complex 
+    id: resume_1804 | level: senior | exp: 6.0 yrs
+    skills: PostgreSQL, MongoDB, Redis, Data Modeling, Redis Sentinel, Table Partitioning, Python, Go
+    background: Senior Database Engineer offering over six years of comprehensive expertise in architecting, scaling, and safeguarding distributed corporate data infrastructures. Expert in advanced PostgreSQL optimiz
 
-  id: resume_1800 | level: senior | exp: 9.5 yrs
-  skills: System Architecture, LLM Strategy, NLP, RAG, Distributed Systems
-  background: Principal AI Architect with over nine years of experience in developing and directing large-scale intelligent systems. I specialize in the architectural design of generative AI ecosystems, overseeing 
+    id: resume_1805 | level: senior | exp: 8.5 yrs
+    skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Infrastructure as Code, Disaster Recovery
+    background: Principal Database Engineer and Architect with more than eight years of distinguished experience steering data engineering visions and infrastructure strategies. Visionary expert in designing highly d
 
-═══ JOB DESCRIPTIONS ═══
-  id: jd_1796 | title: AI/NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, NLP, Transformers
-  description: We are seeking an AI/NLP Engineering Intern to join our research and development team. You will support the team in building and experimenting with transformer models, developing b
+  ═══ JOB DESCRIPTIONS ═══
+    id: jd_1801 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+    required_skills: PostgreSQL, SQL, Data Modeling
+    description: We are seeking an enthusiastic Database Engineering Intern to join our data platform group. In this role, you will work closely with senior database professionals to learn the rope
 
-  id: jd_1797 | title: Junior AI/NLP Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, LangChain, RAG, Embeddings
-  description: We are looking for a Junior AI/NLP Engineer to help us build and maintain our generative AI services. You will focus on developing production-ready RAG pipelines, working with Lang
+    id: jd_1802 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+    required_skills: PostgreSQL, MongoDB, Redis, SQL
+    description: Our infrastructure team is looking for a Junior Database Engineer to manage and optimize our growing data layers. You will focus heavily on maintaining the daily reliability and pe
 
-  id: jd_1798 | title: AI/NLP Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, LangChain, Transformers, Vector Databases
-  description: We are seeking an experienced AI/NLP Engineer to take ownership of key components of our generative AI platform. You will design and implement sophisticated RAG systems, build comp
+    id: jd_1803 | title: Database Engineer | level: middle | min_exp: 3 yrs
+    required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization
+    description: We are hunting for a skilled Database Engineer to oversee, optimize, and scale our core transactional and analytical storage tiers. In this role, you will take ownership of our Pos
 
-  id: jd_1799 | title: Senior AI/NLP Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, LangChain, Transformers, Distributed Systems
-  description: We are looking for a Senior AI/NLP Engineer to lead our complex AI growth initiatives. You will define strategic model roadmaps, architect scalable RAG ecosystems, and oversee the 
+    id: jd_1804 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
+    required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Table Partitioning, Sharding
+    description: We are looking for a Senior Database Engineer to design, scale, and secure our enterprise distributed database systems. You will lead the structural design of our relational and no
 
-  id: jd_1800 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: System Architecture, LLM Strategy, NLP, RAG
-  description: We are seeking a Principal AI Architect to drive the long-term strategic evolution of our enterprise-level AI ecosystem. You will define the vision for our generative AI models, ov
+    id: jd_1805 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+    required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture
+    description: We are seeking a Principal Database Architect to define the future vision and core blueprint of our global enterprise data platform. You will spearhead the macro-level engineering 
 
-═══ SCORING RUBRIC v0.2 ═══
-Score each criterion 0–100, then compute:
-  overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
-                        PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
-                        KEYWORD_DOMAIN_ALIGNMENT×0.10)
+  ═══ SCORING RUBRIC v0.2 ═══
+  Score each criterion 0–100, then compute:
+    overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
+                          PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
+                          KEYWORD_DOMAIN_ALIGNMENT×0.10)
 
-Label mapping:
-  90–100 → excellent_match
-  75–89  → strong_match
-  60–74  → moderate_match
-  40–59  → weak_match      ← FORBIDDEN — do not generate
-  0–39   → poor_match      ← FORBIDDEN — do not generate
+  Label mapping:
+    90–100 → excellent_match
+    75–89  → strong_match
+    60–74  → moderate_match
+    40–59  → weak_match      ← FORBIDDEN — do not generate
+    0–39   → poor_match      ← FORBIDDEN — do not generate
 
-ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
-KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
-all documents share the same domain — floor is 60.
+  ALL 25 pairs MUST score ≥ 60. If a calculation yields < 60, raise
+  KEYWORD_DOMAIN_ALIGNMENT and EDUCATION_CERTIFICATION to reflect that
+  all documents share the same domain — floor is 60.
 
-Avoid boundary zones — do NOT use scores in these ranges:
-  35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
+  Avoid boundary zones — do NOT use scores in these ranges:
+    35–45, 55–65, 70–80, 85–95
+  Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
-═══ PAIRING ORDER (25 pairs) ═══
-  pair_8976  resume_1796 × jd_1796
-  pair_8977  resume_1796 × jd_1797
-  pair_8978  resume_1796 × jd_1798
-  pair_8979  resume_1796 × jd_1799
-  pair_8980  resume_1796 × jd_1800
-  pair_8981  resume_1797 × jd_1796
-  pair_8982  resume_1797 × jd_1797
-  pair_8983  resume_1797 × jd_1798
-  pair_8984  resume_1797 × jd_1799
-  pair_8985  resume_1797 × jd_1800
-  pair_8986  resume_1798 × jd_1796
-  pair_8987  resume_1798 × jd_1797
-  pair_8988  resume_1798 × jd_1798
-  pair_8989  resume_1798 × jd_1799
-  pair_8990  resume_1798 × jd_1800
-  pair_8991  resume_1799 × jd_1796
-  pair_8992  resume_1799 × jd_1797
-  pair_8993  resume_1799 × jd_1798
-  pair_8994  resume_1799 × jd_1799
-  pair_8995  resume_1799 × jd_1800
-  pair_8996  resume_1800 × jd_1796
-  pair_8997  resume_1800 × jd_1797
-  pair_8998  resume_1800 × jd_1798
-  pair_8999  resume_1800 × jd_1799
-  pair_9000  resume_1800 × jd_1800
+  ═══ PAIRING ORDER (25 pairs) ═══
+    pair_9001  resume_1801 × jd_1801
+    pair_9002  resume_1801 × jd_1802
+    pair_9003  resume_1801 × jd_1803
+    pair_9004  resume_1801 × jd_1804
+    pair_9005  resume_1801 × jd_1805
+    pair_9006  resume_1802 × jd_1801
+    pair_9007  resume_1802 × jd_1802
+    pair_9008  resume_1802 × jd_1803
+    pair_9009  resume_1802 × jd_1804
+    pair_9010  resume_1802 × jd_1805
+    pair_9011  resume_1803 × jd_1801
+    pair_9012  resume_1803 × jd_1802
+    pair_9013  resume_1803 × jd_1803
+    pair_9014  resume_1803 × jd_1804
+    pair_9015  resume_1803 × jd_1805
+    pair_9016  resume_1804 × jd_1801
+    pair_9017  resume_1804 × jd_1802
+    pair_9018  resume_1804 × jd_1803
+    pair_9019  resume_1804 × jd_1804
+    pair_9020  resume_1804 × jd_1805
+    pair_9021  resume_1805 × jd_1801
+    pair_9022  resume_1805 × jd_1802
+    pair_9023  resume_1805 × jd_1803
+    pair_9024  resume_1805 × jd_1804
+    pair_9025  resume_1805 × jd_1805
 
-═══ OUTPUT FORMAT ═══
-Output exactly 25 lines.
-Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation, no extra text — only 25 JSON lines.
+  ═══ OUTPUT FORMAT ═══
+  Output exactly 25 lines.
+  Each line is a single JSON object (no array brackets, no commas between lines).
+  No markdown, no explanation, no extra text — only 25 JSON lines.
 
-JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+  JSON schema per pair:
+  {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<moderate_match|strong_match|excellent_match>","overall_score":<int 60–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
