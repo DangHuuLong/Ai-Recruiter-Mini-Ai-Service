@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1936 | level: intern | exp: 0.3 yrs
-  skills: Aws, Docker, Kubernetes, Python, Linux
-  background: Computer science student passionate about cloud automation and infrastructure as code. I have developed a foundational understanding of AWS services, containerization with Docker, and basic orchestrat
+  id: resume_1941 | level: intern | exp: 0.2 yrs
+  skills: E-commerce Operations, Retail Analytics, Marketplace Management, Inventory Tracking, Customer Experience
+  background: Business student with a strong interest in e-commerce operations and digital retail strategy. Throughout my academic career, I have focused on market trends, consumer behavior, and the fundamental dri
 
-  id: resume_1937 | level: junior | exp: 1.5 yrs
-  skills: Aws, Docker, Kubernetes, Terraform, Ci/Cd
-  background: Motivated DevOps professional with nearly two years of hands-on experience in managing cloud infrastructure and CI/CD pipelines. My background includes configuring AWS services, creating Docker images
+  id: resume_1942 | level: junior | exp: 1.8 yrs
+  skills: Catalog Management, Order Fulfillment, Vendor Coordination, Marketplace Optimization, Data Analysis
+  background: Organized e-commerce coordinator with nearly two years of professional experience in online retail and marketplace management. My background includes managing product listings, monitoring inventory le
 
-  id: resume_1938 | level: middle | exp: 4.2 yrs
-  skills: Aws, Docker, Kubernetes, Terraform, Infrastructure Automation
-  background: Versatile DevOps engineer with four years of professional experience driving cloud infrastructure projects and optimizing containerized environments. I specialize in designing scalable AWS architectur
+  id: resume_1943 | level: middle | exp: 4.5 yrs
+  skills: Category Management, Supply Chain Optimization, Merchandising Strategy, Pricing Optimization, Conversion Rate Optimization
+  background: Dynamic e-commerce operations specialist with four years of experience leading online retail initiatives and optimizing digital marketplace performance. I specialize in category management, supply cha
 
-  id: resume_1939 | level: senior | exp: 6.5 yrs
-  skills: Aws, Kubernetes, Terraform, Sre Practices, Cloud Strategy
-  background: Senior DevOps strategist with over six years of expertise in architecting high-availability cloud ecosystems and managing enterprise-grade infrastructure. I have deep knowledge of AWS cloud services, 
+  id: resume_1944 | level: senior | exp: 6.8 yrs
+  skills: Operational Strategy, Marketplace Growth, Supply Chain Management, Performance Auditing, Strategic Planning
+  background: Experienced e-commerce operations manager with over six years of expertise in digital retail leadership and marketplace strategy. I have a proven track record of designing efficient operational workfl
 
-  id: resume_1940 | level: senior | exp: 9.5 yrs
-  skills: Aws, Kubernetes, Terraform, Sre Governance, System Architecture
-  background: Principal DevOps architect with over nine years of experience defining infrastructure strategy and leading large-scale cloud transformations. I possess deep mastery in architecting secure, resilient A
+  id: resume_1945 | level: senior | exp: 9.2 yrs
+  skills: Retail Architecture, E-commerce Operations, Marketplace Governance, Strategic Planning, Risk Management
+  background: Principal e-commerce administrator with over nine years of experience defining global digital retail strategy and overseeing enterprise-wide marketplace operations. My expertise lies in building compl
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1936 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: Aws, Docker, Linux, Automation
-  description: We are looking for a motivated DevOps Intern to support our infrastructure and cloud operations team. You will gain hands-on experience with AWS, Docker, and basic automation tasks
+  id: jd_1941 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: E-commerce Operations, Catalog Management, Retail Analytics, Inventory Tracking
+  description: We are seeking a motivated E-commerce Operations Intern to support our retail team. This role provides hands-on experience in catalog management, inventory tracking, and operationa
 
-  id: jd_1937 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Aws, Docker, Kubernetes, Terraform
-  description: Our team is seeking a Junior DevOps Engineer to focus on cloud infrastructure management, CI/CD automation, and container orchestration. You will be responsible for deploying infra
+  id: jd_1942 | title: Junior E-commerce Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: E-commerce Operations, Catalog Management, Inventory Tracking, Marketplace Management
+  description: Our retail team is looking for a detail-oriented Junior E-commerce Coordinator to handle daily marketplace management and operational support. You will be instrumental in ensuring 
 
-  id: jd_1938 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Aws, Docker, Kubernetes, Terraform
-  description: We are looking for a skilled DevOps Engineer to lead our infrastructure automation efforts and drive the evolution of our cloud ecosystem. You will be responsible for designing sca
+  id: jd_1943 | title: E-commerce Operations Manager | level: middle | min_exp: 3 yrs
+  required_skills: E-commerce Operations, Category Management, Merchandising Strategy, Supply Chain Optimization
+  description: We are searching for a skilled E-commerce Operations Manager to lead operational efficiency and merchandising performance within our busy digital departments. You will bridge the g
 
-  id: jd_1939 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Aws, Kubernetes, Terraform, Infrastructure Automation
-  description: We are seeking a Senior DevOps Engineer to guide our enterprise cloud strategy and infrastructure architecture. You will be responsible for defining roadmaps, mentoring the team, a
+  id: jd_1944 | title: Senior E-commerce Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Operational Strategy, Marketplace Growth, Supply Chain Management, Performance Auditing
+  description: We are looking for a visionary Senior E-commerce Operations Manager to guide our enterprise retail initiatives. You will take ownership of our operational strategy, ensuring that d
 
-  id: jd_1940 | title: Principal DevOps Architect | level: senior | min_exp: 7 yrs
-  required_skills: Aws, Kubernetes, Terraform, System Architecture
-  description: We are looking for a Principal DevOps Architect to define our enterprise-wide infrastructure strategy and drive complex cloud transformations. You will be responsible for building 
+  id: jd_1945 | title: Principal E-commerce Administrator | level: senior | min_exp: 7 yrs
+  required_skills: Retail Architecture, E-commerce Operations, Marketplace Governance, Strategic Planning
+  description: We are seeking a Principal E-commerce Administrator to shape our future retail strategy at an enterprise level. This is a leadership position for someone experienced in architectin
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9676  resume_1936 × jd_1936
-  pair_9677  resume_1936 × jd_1937
-  pair_9678  resume_1936 × jd_1938
-  pair_9679  resume_1936 × jd_1939
-  pair_9680  resume_1936 × jd_1940
-  pair_9681  resume_1937 × jd_1936
-  pair_9682  resume_1937 × jd_1937
-  pair_9683  resume_1937 × jd_1938
-  pair_9684  resume_1937 × jd_1939
-  pair_9685  resume_1937 × jd_1940
-  pair_9686  resume_1938 × jd_1936
-  pair_9687  resume_1938 × jd_1937
-  pair_9688  resume_1938 × jd_1938
-  pair_9689  resume_1938 × jd_1939
-  pair_9690  resume_1938 × jd_1940
-  pair_9691  resume_1939 × jd_1936
-  pair_9692  resume_1939 × jd_1937
-  pair_9693  resume_1939 × jd_1938
-  pair_9694  resume_1939 × jd_1939
-  pair_9695  resume_1939 × jd_1940
-  pair_9696  resume_1940 × jd_1936
-  pair_9697  resume_1940 × jd_1937
-  pair_9698  resume_1940 × jd_1938
-  pair_9699  resume_1940 × jd_1939
-  pair_9700  resume_1940 × jd_1940
+  pair_9701  resume_1941 × jd_1941
+  pair_9702  resume_1941 × jd_1942
+  pair_9703  resume_1941 × jd_1943
+  pair_9704  resume_1941 × jd_1944
+  pair_9705  resume_1941 × jd_1945
+  pair_9706  resume_1942 × jd_1941
+  pair_9707  resume_1942 × jd_1942
+  pair_9708  resume_1942 × jd_1943
+  pair_9709  resume_1942 × jd_1944
+  pair_9710  resume_1942 × jd_1945
+  pair_9711  resume_1943 × jd_1941
+  pair_9712  resume_1943 × jd_1942
+  pair_9713  resume_1943 × jd_1943
+  pair_9714  resume_1943 × jd_1944
+  pair_9715  resume_1943 × jd_1945
+  pair_9716  resume_1944 × jd_1941
+  pair_9717  resume_1944 × jd_1942
+  pair_9718  resume_1944 × jd_1943
+  pair_9719  resume_1944 × jd_1944
+  pair_9720  resume_1944 × jd_1945
+  pair_9721  resume_1945 × jd_1941
+  pair_9722  resume_1945 × jd_1942
+  pair_9723  resume_1945 × jd_1943
+  pair_9724  resume_1945 × jd_1944
+  pair_9725  resume_1945 × jd_1945
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
