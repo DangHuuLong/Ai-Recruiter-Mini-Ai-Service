@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_1836 | level: intern | exp: 0.5 yrs
-  skills: Python, React, Django, PostgreSQL, Git, REST API
-  background: Enthusiastic and highly motivated Computer Science student specializing in modern full-stack web architectures. Possesses a strong foundational understanding of building interactive user interfaces wi
+  id: resume_1841 | level: intern | exp: 0.5 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Medical Scheduling, Patient Intake
+  background: Enthusiastic Healthcare Administration student with a passionate specialization in clinical operations and Electronic Medical Record system data flows. Demonstrates a clear operational understanding o
 
-  id: resume_1837 | level: junior | exp: 1.5 yrs
-  skills: Python, React, FastAPI, SQL, JavaScript, Git, Docker
-  background: Junior Full-Stack Web Developer with one and a half years of professional software engineering experience constructing, testing, and maintaining data-driven web solutions. Proficient in organizing sta
+  id: resume_1842 | level: junior | exp: 1.5 yrs
+  skills: Clinical Operations, EMR, Medical Sourcing, Healthcare Compliance, Patient Relations, Medical Scheduling
+  background: Junior Healthcare Operations Coordinator with one and a half years of professional industry experience coordinating daily clinical operations, updating complex EMR system directories, and standardizin
 
-  id: resume_1838 | level: middle | exp: 4.0 yrs
-  skills: Python, React, Flask, PostgreSQL, Redis, Celery, Docker, AWS
-  background: Middle Full-Stack Developer with four years of dedicated industry experience designing, building, and maintaining multi-tier enterprise web platforms and client dashboard modules. Specializes in tailo
+  id: resume_1843 | level: middle | exp: 4.0 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination, Workforce Planning, Healthcare Analytics, Medical Billing
+  background: Middle Clinical Coordinator and Healthcare Systems Specialist with four years of dedicated professional experience optimizing mid-tier outpatient networks, configuring centralized EMR tracking environ
 
-  id: resume_1839 | level: senior | exp: 6.0 yrs
-  skills: Python, React, Django, System Architecture, PostgreSQL, Docker, CI/CD, Kubernetes
-  background: Senior Full-Stack Architect with more than six years of comprehensive engineering expertise designing scalable cloud architectures, leading system integration pipelines, and driving distributed web en
+  id: resume_1844 | level: senior | exp: 6.0 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination, System Architecture, Change Management, Performance Management
+  background: Senior Healthcare Operations Director and Medical Infrastructure Specialist with more than six years of comprehensive corporate expertise engineering scalable hospital workforce strategies, managing m
 
-  id: resume_1840 | level: senior | exp: 8.5 yrs
-  skills: Python, React, FastAPI, Django, System Architecture, Microservices, Cloud Computing, Web Performance
-  background: Principal Full-Stack Scientist and Technology Director with more than eight years of distinguished engineering leadership shaping high-volume web application blueprints, corporate backend architecture
+  id: resume_1845 | level: senior | exp: 8.5 yrs
+  skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination, Strategic Leadership, Global Compliance, Healthcare Analytics, Workforce Architecture
+  background: Principal Healthcare Systems Engineer and Global Clinical Operations Executive with more than eight years of distinguished organizational leadership shaping high-volume hospital recruitment blueprints
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_1836 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, PostgreSQL
-  description: We are seeking an enthusiastic Full-Stack Development Intern to join our digital solutions engineering division. In this position, you will work alongside seasoned software profess
+  id: jd_1841 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration
+  description: We are seeking an enthusiastic Healthcare Administration Intern to join our corporate clinical operations group. In this role, you will work closely with seasoned healthcare coordi
 
-  id: jd_1837 | title: Junior Full-Stack Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, FastAPI, SQL
-  description: Our web engineering group is looking for a Junior Full-Stack Engineer to manage and expand our growing application ecosystem. You will focus on maintaining the operational efficien
+  id: jd_1842 | title: Junior Clinical Operations Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Medical Scheduling
+  description: Our clinical management team is looking for a Junior Clinical Operations Specialist to manage and optimize our growing patient experience and resource tracking layers. You will foc
 
-  id: jd_1838 | title: Full-Stack Web Solutions Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, Flask, PostgreSQL
-  description: We are searching for a skilled Full-Stack Web Solutions Specialist to oversee, optimize, and scale our core application architectures and client-facing web operations. In this role
+  id: jd_1843 | title: Clinical Care Coordinator | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination
+  description: We are hunting for a skilled Clinical Care Coordinator to oversee, optimize, and scale our core medical administration systems and corporate recruitment configurations. In this rol
 
-  id: jd_1839 | title: Senior Full-Stack Developer and Systems Architect | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django, PostgreSQL, System Architecture
-  description: We are seeking a Senior Full-Stack Developer and Systems Architect to outline, scale, and protect our enterprise software systems and core application platforms. You will guide the
+  id: jd_1844 | title: Senior Healthcare Infrastructure Manager | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination, System Architecture
+  description: We are looking for a Senior Healthcare Infrastructure Manager to outline, scale, and protect our enterprise medical administration layers and clinical operations configurations. Yo
 
-  id: jd_1840 | title: Principal Full-Stack Scientist and Web Engineering Director | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, FastAPI, System Architecture, Cloud Computing
-  description: We are looking for a Principal Full-Stack Scientist and Web Engineering Director to outline the technical lifecycle roadmap and systemic foundation of our global digital transactio
+  id: jd_1845 | title: Principal Clinical Architect and Health Strategist | level: senior | min_exp: 7 yrs
+  required_skills: Clinical Operations, EMR, Healthcare Administration, Care Coordination, Healthcare Analytics
+  description: We are seeking a Principal Clinical Architect and Health Strategist to outline the strategic technology roadmap and core operational blueprint of our worldwide hospital management 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -65,31 +65,31 @@ Avoid boundary zones — do NOT use scores in these ranges:
 Use clear mid-range scores instead: e.g. 62, 68, 77, 83, 92.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_9176  resume_1836 × jd_1836
-  pair_9177  resume_1836 × jd_1837
-  pair_9178  resume_1836 × jd_1838
-  pair_9179  resume_1836 × jd_1839
-  pair_9180  resume_1836 × jd_1840
-  pair_9181  resume_1837 × jd_1836
-  pair_9182  resume_1837 × jd_1837
-  pair_9183  resume_1837 × jd_1838
-  pair_9184  resume_1837 × jd_1839
-  pair_9185  resume_1837 × jd_1840
-  pair_9186  resume_1838 × jd_1836
-  pair_9187  resume_1838 × jd_1837
-  pair_9188  resume_1838 × jd_1838
-  pair_9189  resume_1838 × jd_1839
-  pair_9190  resume_1838 × jd_1840
-  pair_9191  resume_1839 × jd_1836
-  pair_9192  resume_1839 × jd_1837
-  pair_9193  resume_1839 × jd_1838
-  pair_9194  resume_1839 × jd_1839
-  pair_9195  resume_1839 × jd_1840
-  pair_9196  resume_1840 × jd_1836
-  pair_9197  resume_1840 × jd_1837
-  pair_9198  resume_1840 × jd_1838
-  pair_9199  resume_1840 × jd_1839
-  pair_9200  resume_1840 × jd_1840
+  pair_9201  resume_1841 × jd_1841
+  pair_9202  resume_1841 × jd_1842
+  pair_9203  resume_1841 × jd_1843
+  pair_9204  resume_1841 × jd_1844
+  pair_9205  resume_1841 × jd_1845
+  pair_9206  resume_1842 × jd_1841
+  pair_9207  resume_1842 × jd_1842
+  pair_9208  resume_1842 × jd_1843
+  pair_9209  resume_1842 × jd_1844
+  pair_9210  resume_1842 × jd_1845
+  pair_9211  resume_1843 × jd_1841
+  pair_9212  resume_1843 × jd_1842
+  pair_9213  resume_1843 × jd_1843
+  pair_9214  resume_1843 × jd_1844
+  pair_9215  resume_1843 × jd_1845
+  pair_9216  resume_1844 × jd_1841
+  pair_9217  resume_1844 × jd_1842
+  pair_9218  resume_1844 × jd_1843
+  pair_9219  resume_1844 × jd_1844
+  pair_9220  resume_1844 × jd_1845
+  pair_9221  resume_1845 × jd_1841
+  pair_9222  resume_1845 × jd_1842
+  pair_9223  resume_1845 × jd_1843
+  pair_9224  resume_1845 × jd_1844
+  pair_9225  resume_1845 × jd_1845
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
