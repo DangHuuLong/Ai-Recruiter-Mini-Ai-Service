@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2201 | level: intern | exp: 0.5 yrs
-  skills: Financial Modeling, Excel, Financial Reporting, Accounting, Data Analysis
-  background: Aspiring Fintech finance professional with recent internship experience in accounting and data analysis. Possesses foundational knowledge of corporate finance principles, financial reporting standards
+  id: resume_2206 | level: intern | exp: 0.5 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, Data Visualization
+  background: Aspiring Data Scientist with foundational experience in Python programming, machine learning algorithms, and data manipulation. Proficient in engineering features and analyzing datasets using pandas a
 
-  id: resume_2202 | level: junior | exp: 1.5 yrs
-  skills: Financial Analysis, Variance Analysis, Excel, Accounting Software, Compliance Monitoring
-  background: Junior Financial Analyst with over one year of experience in the fintech sector focusing on financial reporting and accounting operations. Experienced in executing daily reconciliation processes, prep
+  id: resume_2207 | level: junior | exp: 1.5 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, Model Deployment
+  background: Junior Machine Learning Engineer with over one year of professional experience designing, training, and deploying predictive models. Proficient in building structured data engineering pipelines using 
 
-  id: resume_2203 | level: middle | exp: 4.0 yrs
-  skills: Financial Modeling, SQL, Tableau, Regulatory Compliance, Corporate Finance
-  background: Fintech Finance Specialist with four years of progressive experience specializing in financial modeling, forecasting, and regulatory compliance. Proven expertise in building robust dynamic financial m
+  id: resume_2208 | level: middle | exp: 4.0 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, Docker, SQL
+  background: Data Scientist with four years of progressive professional experience specializing in machine learning, statistical modeling, and predictive analytics. Expert in manipulating large-scale transactional
 
-  id: resume_2204 | level: senior | exp: 6.0 yrs
-  skills: Advanced Financial Modeling, Corporate Valuation, Risk Assessment, Fintech Compliance, ERP Implementation
-  background: Senior Financial Modeler and Compliance Analyst with over six years of dedicated experience in the fintech domain. Expert in designing sophisticated financial models for corporate valuation, capital a
+  id: resume_2209 | level: senior | exp: 6.0 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, MLOps, AWS, Docker
+  background: Senior Machine Learning Engineer with six years of industry experience specializing in production-level artificial intelligence and deep learning architectures. Expert in crafting scalable data proces
 
-  id: resume_2205 | level: senior | exp: 8.5 yrs
-  skills: Strategic Financial Planning, Enterprise Governance, Fintech Compliance, M&A Finance, Team Leadership
-  background: Principal Finance Director with more than eight years of leadership experience driving financial strategy and compliance in top-tier fintech enterprises. Mastery in orchestrating enterprise-wide finan
+  id: resume_2210 | level: senior | exp: 8.5 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, MLOps, Team Leadership, AI Strategy
+  background: Lead Data Scientist and Principal Machine Learning Architect with over eight years of experience directing AI strategies and engineering teams. Mastery in translating complex business visions into sca
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2201 | title: Fintech Finance Intern | level: intern | min_exp: 0 yrs
-  required_skills: Excel, Accounting Principles, Financial Reporting
-  description: We are seeking a motivated Finance Intern to join our dynamic fintech team. In this role, you will assist with daily accounting tasks, participate in the preparation of regular fin
+  id: jd_2206 | title: Data Science Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, Pandas, Scikit-Learn
+  description: We are looking for an enthusiastic Data Science Intern to join our machine learning team. In this role, you will assist with parsing raw datasets, cleaning transactional records us
 
-  id: jd_2202 | title: Junior Accountant - Fintech Operations | level: junior | min_exp: 1 yrs
-  required_skills: Transaction Reconciliation, Financial Reporting, Excel
-  description: Our expanding fintech platform is looking for a Junior Accountant to manage daily corporate financial operations and reporting workflows. You will be responsible for reconciling hi
+  id: jd_2207 | title: Junior Machine Learning Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, Pandas, Scikit-Learn, PyTorch
+  description: Our data team is seeking a Junior Machine Learning Engineer to build and optimize predictive models. You will design data manipulation pipelines using pandas, construct robust feat
 
-  id: jd_2203 | title: Fintech Financial Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Financial Modeling, SQL, Regulatory Compliance
-  description: We are looking for an experienced Financial Analyst to drive financial modeling and reporting capabilities for our core fintech products. In this role, you will develop, maintain, 
+  id: jd_2208 | title: Data Scientist | level: middle | min_exp: 3 yrs
+  required_skills: Python, Pandas, Scikit-Learn, PyTorch
+  description: We are searching for an experienced Data Scientist to drive advanced analytics and predictive modeling initiatives across our core products. In this role, you will manipulate large
 
-  id: jd_2204 | title: Senior Manager, Financial Planning and Compliance | level: senior | min_exp: 5 yrs
-  required_skills: Advanced Financial Modeling, Corporate Valuation, Fintech Compliance
-  description: Join our leading fintech company as a Senior Manager of Financial Planning and Compliance. You will lead the development of highly sophisticated financial models to support corpora
+  id: jd_2209 | title: Senior Machine Learning Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, PyTorch, Scikit-Learn, MLOps, AWS
+  description: Join our enterprise AI team as a Senior Machine Learning Engineer. You will be responsible for architecting and deploying production-ready deep learning models and scalable scikit-
 
-  id: jd_2205 | title: Director of Finance and Compliance - Principal Lead | level: senior | min_exp: 7 yrs
-  required_skills: Strategic Financial Planning, Enterprise Governance, Fintech Compliance
-  description: We are seeking a Principal Director of Finance and Compliance to orchestrate our overarching fintech financial strategy and regulatory governance. In this leadership role, you will
+  id: jd_2210 | title: Principal Data Scientist - AI Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, PyTorch, Scikit-Learn, Team Leadership, AI Strategy
+  description: We are looking for a Principal Data Scientist to establish our core artificial intelligence vision and lead our elite data engineering group. You will oversee the design of scalabl
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -67,38 +67,38 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
   strong_match: ~7 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~1 pairs
-  weak_match: ~6 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11001  resume_2201 × jd_2201
-  pair_11002  resume_2201 × jd_2202
-  pair_11003  resume_2201 × jd_2203
-  pair_11004  resume_2201 × jd_2204
-  pair_11005  resume_2201 × jd_2205
-  pair_11006  resume_2202 × jd_2201
-  pair_11007  resume_2202 × jd_2202
-  pair_11008  resume_2202 × jd_2203
-  pair_11009  resume_2202 × jd_2204
-  pair_11010  resume_2202 × jd_2205
-  pair_11011  resume_2203 × jd_2201
-  pair_11012  resume_2203 × jd_2202
-  pair_11013  resume_2203 × jd_2203
-  pair_11014  resume_2203 × jd_2204
-  pair_11015  resume_2203 × jd_2205
-  pair_11016  resume_2204 × jd_2201
-  pair_11017  resume_2204 × jd_2202
-  pair_11018  resume_2204 × jd_2203
-  pair_11019  resume_2204 × jd_2204
-  pair_11020  resume_2204 × jd_2205
-  pair_11021  resume_2205 × jd_2201
-  pair_11022  resume_2205 × jd_2202
-  pair_11023  resume_2205 × jd_2203
-  pair_11024  resume_2205 × jd_2204
-  pair_11025  resume_2205 × jd_2205
+  pair_11026  resume_2206 × jd_2206
+  pair_11027  resume_2206 × jd_2207
+  pair_11028  resume_2206 × jd_2208
+  pair_11029  resume_2206 × jd_2209
+  pair_11030  resume_2206 × jd_2210
+  pair_11031  resume_2207 × jd_2206
+  pair_11032  resume_2207 × jd_2207
+  pair_11033  resume_2207 × jd_2208
+  pair_11034  resume_2207 × jd_2209
+  pair_11035  resume_2207 × jd_2210
+  pair_11036  resume_2208 × jd_2206
+  pair_11037  resume_2208 × jd_2207
+  pair_11038  resume_2208 × jd_2208
+  pair_11039  resume_2208 × jd_2209
+  pair_11040  resume_2208 × jd_2210
+  pair_11041  resume_2209 × jd_2206
+  pair_11042  resume_2209 × jd_2207
+  pair_11043  resume_2209 × jd_2208
+  pair_11044  resume_2209 × jd_2209
+  pair_11045  resume_2209 × jd_2210
+  pair_11046  resume_2210 × jd_2206
+  pair_11047  resume_2210 × jd_2207
+  pair_11048  resume_2210 × jd_2208
+  pair_11049  resume_2210 × jd_2209
+  pair_11050  resume_2210 × jd_2210
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
