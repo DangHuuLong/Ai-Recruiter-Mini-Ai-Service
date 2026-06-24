@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2196 | level: intern | exp: 0.2 yrs
-  skills: Supply Chain Management, Logistics Operations, Inventory Control, ERP Systems, Microsoft Excel
-  background: Enthusiastic Supply Chain Management student with a solid understanding of logistics operations and inventory control principles. Currently completing a Bachelor's degree, I have developed foundationa
+  id: resume_2201 | level: intern | exp: 0.5 yrs
+  skills: Financial Modeling, Excel, Financial Reporting, Accounting, Data Analysis
+  background: Aspiring Fintech finance professional with recent internship experience in accounting and data analysis. Possesses foundational knowledge of corporate finance principles, financial reporting standards
 
-  id: resume_2197 | level: junior | exp: 1.5 yrs
-  skills: Procurement, Vendor Management, Oracle NetSuite, Demand Forecasting, Process Improvement
-  background: Junior Procurement Analyst with two years of professional experience in managing purchasing processes and vendor relations. I have worked extensively with ERP systems to track purchase orders, monitor
+  id: resume_2202 | level: junior | exp: 1.5 yrs
+  skills: Financial Analysis, Variance Analysis, Excel, Accounting Software, Compliance Monitoring
+  background: Junior Financial Analyst with over one year of experience in the fintech sector focusing on financial reporting and accounting operations. Experienced in executing daily reconciliation processes, prep
 
-  id: resume_2198 | level: middle | exp: 4.0 yrs
-  skills: Logistics, Inventory Optimization, SAP S/4HANA, Contract Negotiation, Strategic Planning
-  background: Experienced Supply Chain Coordinator with four years of expertise in end-to-end logistics and inventory optimization. I specialize in managing large-scale procurement operations, coordinating internat
+  id: resume_2203 | level: middle | exp: 4.0 yrs
+  skills: Financial Modeling, SQL, Tableau, Regulatory Compliance, Corporate Finance
+  background: Fintech Finance Specialist with four years of progressive experience specializing in financial modeling, forecasting, and regulatory compliance. Proven expertise in building robust dynamic financial m
 
-  id: resume_2199 | level: senior | exp: 6.5 yrs
-  skills: Strategic Sourcing, Lean Logistics, Microsoft Dynamics 365, Change Management, Budgeting
-  background: Senior Supply Chain Manager with over six years of experience directing procurement, inventory, and logistics strategies. I have successfully managed complex supply chains for large-scale operations, 
+  id: resume_2204 | level: senior | exp: 6.0 yrs
+  skills: Advanced Financial Modeling, Corporate Valuation, Risk Assessment, Fintech Compliance, ERP Implementation
+  background: Senior Financial Modeler and Compliance Analyst with over six years of dedicated experience in the fintech domain. Expert in designing sophisticated financial models for corporate valuation, capital a
 
-  id: resume_2200 | level: senior | exp: 9.5 yrs
-  skills: Supply Chain Architecture, Predictive Analytics, Cloud ERP, Technical Strategy, Leadership
-  background: Principal Supply Chain Architect with over nine years of experience in designing and leading high-scale, global supply chain architectures. I specialize in integrating complex ERP environments, optimi
+  id: resume_2205 | level: senior | exp: 8.5 yrs
+  skills: Strategic Financial Planning, Enterprise Governance, Fintech Compliance, M&A Finance, Team Leadership
+  background: Principal Finance Director with more than eight years of leadership experience driving financial strategy and compliance in top-tier fintech enterprises. Mastery in orchestrating enterprise-wide finan
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2196 | title: Supply Chain Intern | level: intern | min_exp: 0 yrs
-  required_skills: Logistics, Inventory Control, Microsoft Excel
-  description: We are seeking a motivated Supply Chain Intern to join our logistics team. This role provides hands-on experience in procurement support, inventory documentation, and basic data an
+  id: jd_2201 | title: Fintech Finance Intern | level: intern | min_exp: 0 yrs
+  required_skills: Excel, Accounting Principles, Financial Reporting
+  description: We are seeking a motivated Finance Intern to join our dynamic fintech team. In this role, you will assist with daily accounting tasks, participate in the preparation of regular fin
 
-  id: jd_2197 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, ERP Systems, Data Analysis
-  description: We are looking for a Junior Supply Chain Analyst to help us streamline our procurement processes. In this role, you will work with our ERP software to track purchase orders, reconc
+  id: jd_2202 | title: Junior Accountant - Fintech Operations | level: junior | min_exp: 1 yrs
+  required_skills: Transaction Reconciliation, Financial Reporting, Excel
+  description: Our expanding fintech platform is looking for a Junior Accountant to manage daily corporate financial operations and reporting workflows. You will be responsible for reconciling hi
 
-  id: jd_2198 | title: Supply Chain Coordinator | level: middle | min_exp: 3 yrs
-  required_skills: Logistics, Inventory Optimization, ERP Systems
-  description: We are searching for a skilled Supply Chain Coordinator to manage our logistics and inventory workflows. You will lead procurement initiatives, coordinate with international carrie
+  id: jd_2203 | title: Fintech Financial Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, SQL, Regulatory Compliance
+  description: We are looking for an experienced Financial Analyst to drive financial modeling and reporting capabilities for our core fintech products. In this role, you will develop, maintain, 
 
-  id: jd_2199 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Sourcing, ERP Systems, Logistics
-  description: We are seeking an experienced Senior Supply Chain Manager to lead our procurement and logistics departments. You will define our supply chain strategy, implement advanced ERP solut
+  id: jd_2204 | title: Senior Manager, Financial Planning and Compliance | level: senior | min_exp: 5 yrs
+  required_skills: Advanced Financial Modeling, Corporate Valuation, Fintech Compliance
+  description: Join our leading fintech company as a Senior Manager of Financial Planning and Compliance. You will lead the development of highly sophisticated financial models to support corpora
 
-  id: jd_2200 | title: Principal Supply Chain Architect | level: senior | min_exp: 8 yrs
-  required_skills: Supply Chain Architecture, Predictive Analytics, Technical Strategy
-  description: We are looking for a Principal Supply Chain Architect to define our future logistics and procurement infrastructure. This is a strategic role focused on large-scale system architec
+  id: jd_2205 | title: Director of Finance and Compliance - Principal Lead | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Financial Planning, Enterprise Governance, Fintech Compliance
+  description: We are seeking a Principal Director of Finance and Compliance to orchestrate our overarching fintech financial strategy and regulatory governance. In this leadership role, you will
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~5 pairs
-  weak_match: ~8 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~11 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_10976  resume_2196 × jd_2196
-  pair_10977  resume_2196 × jd_2197
-  pair_10978  resume_2196 × jd_2198
-  pair_10979  resume_2196 × jd_2199
-  pair_10980  resume_2196 × jd_2200
-  pair_10981  resume_2197 × jd_2196
-  pair_10982  resume_2197 × jd_2197
-  pair_10983  resume_2197 × jd_2198
-  pair_10984  resume_2197 × jd_2199
-  pair_10985  resume_2197 × jd_2200
-  pair_10986  resume_2198 × jd_2196
-  pair_10987  resume_2198 × jd_2197
-  pair_10988  resume_2198 × jd_2198
-  pair_10989  resume_2198 × jd_2199
-  pair_10990  resume_2198 × jd_2200
-  pair_10991  resume_2199 × jd_2196
-  pair_10992  resume_2199 × jd_2197
-  pair_10993  resume_2199 × jd_2198
-  pair_10994  resume_2199 × jd_2199
-  pair_10995  resume_2199 × jd_2200
-  pair_10996  resume_2200 × jd_2196
-  pair_10997  resume_2200 × jd_2197
-  pair_10998  resume_2200 × jd_2198
-  pair_10999  resume_2200 × jd_2199
-  pair_11000  resume_2200 × jd_2200
+  pair_11001  resume_2201 × jd_2201
+  pair_11002  resume_2201 × jd_2202
+  pair_11003  resume_2201 × jd_2203
+  pair_11004  resume_2201 × jd_2204
+  pair_11005  resume_2201 × jd_2205
+  pair_11006  resume_2202 × jd_2201
+  pair_11007  resume_2202 × jd_2202
+  pair_11008  resume_2202 × jd_2203
+  pair_11009  resume_2202 × jd_2204
+  pair_11010  resume_2202 × jd_2205
+  pair_11011  resume_2203 × jd_2201
+  pair_11012  resume_2203 × jd_2202
+  pair_11013  resume_2203 × jd_2203
+  pair_11014  resume_2203 × jd_2204
+  pair_11015  resume_2203 × jd_2205
+  pair_11016  resume_2204 × jd_2201
+  pair_11017  resume_2204 × jd_2202
+  pair_11018  resume_2204 × jd_2203
+  pair_11019  resume_2204 × jd_2204
+  pair_11020  resume_2204 × jd_2205
+  pair_11021  resume_2205 × jd_2201
+  pair_11022  resume_2205 × jd_2202
+  pair_11023  resume_2205 × jd_2203
+  pair_11024  resume_2205 × jd_2204
+  pair_11025  resume_2205 × jd_2205
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
