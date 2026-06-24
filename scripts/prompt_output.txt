@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2431 | level: intern | exp: 0.3 yrs
-  skills: Network Security, Linux, Scripting, Vulnerability Assessment
-  background: I am a passionate computer science student eager to start a career in information security. During my academic studies, I have focused on foundational network security principles, basic cryptography, 
+  id: resume_2436 | level: intern | exp: 0.2 yrs
+  skills: Linux, Docker, AWS, Shell Scripting
+  background: I am a computer science student with a strong interest in cloud technologies and automation. Through my academic projects, I have gained hands-on experience with basic Linux administration and contain
 
-  id: resume_2432 | level: junior | exp: 1.5 yrs
-  skills: Incident Response, SIEM, Threat Detection, Firewall Management
-  background: As a Junior Security Analyst with 1.5 years of experience, I am specialized in incident response, log monitoring, and basic threat detection. My professional experience includes actively working with 
+  id: resume_2437 | level: junior | exp: 1.5 yrs
+  skills: AWS, Terraform, Docker, CI/CD
+  background: As a Junior DevOps Engineer with 1.5 years of experience, I specialize in maintaining cloud infrastructure and optimizing CI/CD workflows. I have practical experience managing AWS environments, utiliz
 
-  id: resume_2433 | level: middle | exp: 4.0 yrs
-  skills: Penetration Testing, Network Security, Vulnerability Management, Security Auditing
-  background: I am a cybersecurity professional with 4 years of experience, focusing on penetration testing, network security architecture, and proactive threat assessment. Throughout my career, I have performed co
+  id: resume_2438 | level: middle | exp: 4.0 yrs
+  skills: Kubernetes, Terraform, AWS, CI/CD
+  background: I am a DevOps Engineer with 4 years of experience specializing in Kubernetes orchestration, microservices management, and scalable cloud architecture. Throughout my career, I have successfully designe
 
-  id: resume_2434 | level: senior | exp: 6.5 yrs
-  skills: Security Architecture, Cloud Security, Threat Hunting, SIEM Engineering
-  background: Senior Security Engineer with over 6 years of experience in designing, implementing, and maintaining enterprise-level security solutions. My expertise includes security architecture design, advanced t
+  id: resume_2439 | level: senior | exp: 6.5 yrs
+  skills: Cloud Architecture, Kubernetes, Terraform, AWS
+  background: Senior Cloud Engineer with over 6 years of experience in architecting and maintaining highly scalable, secure, and performant cloud infrastructures. My expertise spans cloud migration strategies, adva
 
-  id: resume_2435 | level: senior | exp: 10.5 yrs
-  skills: Strategic Leadership, Security Governance, Cyber Risk Management, Infrastructure Security
-  background: Principal Cybersecurity Architect with 10 years of experience in strategic security leadership, infrastructure security modernization, and cyber risk management. My career has centered on architecting
+  id: resume_2440 | level: senior | exp: 10.5 yrs
+  skills: Strategic Leadership, Cloud Architecture, Kubernetes, Terraform
+  background: Principal DevOps Architect with 10 years of experience in strategic infrastructure design, cloud-native transformation, and team leadership. My career has focused on architecting resilient, large-scal
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2431 | title: Information Security Intern | level: intern | min_exp: 0 yrs
-  required_skills: Network Security, Linux, Vulnerability Assessment
-  description: We are looking for a motivated Information Security Intern to join our security team. This internship offers hands-on experience in network monitoring, basic security assessment ta
+  id: jd_2436 | title: DevOps Intern | level: intern | min_exp: 0 yrs
+  required_skills: AWS, Docker, Linux
+  description: We are seeking a motivated DevOps Intern to support our engineering team with infrastructure tasks. This internship provides hands-on experience with cloud tools, basic automation,
 
-  id: jd_2432 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
-  required_skills: SIEM, Incident Response, Threat Detection
-  description: Our security operations team is hiring a Junior Security Analyst to help detect and respond to security threats. You will be responsible for SIEM monitoring, investigating alerts, 
+  id: jd_2437 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: AWS, Terraform, Docker
+  description: Our infrastructure team is looking for a Junior DevOps Engineer to focus on provisioning and automation. You will use Terraform to manage cloud resources, improve CI/CD pipelines, 
 
-  id: jd_2433 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Penetration Testing, Network Security, Vulnerability Management
-  description: We are seeking a Cybersecurity Engineer to perform penetration testing, manage vulnerability programs, and improve our network security architecture. You will be instrumental in id
+  id: jd_2438 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Kubernetes, Terraform, AWS
+  description: We are looking for a DevOps Engineer to take ownership of our Kubernetes-based infrastructure. You will optimize our microservices architecture, implement advanced scaling strategi
 
-  id: jd_2434 | title: Senior Security Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Security Architecture, Threat Hunting, SIEM Engineering
-  description: We are hiring a Senior Security Engineer to design and implement advanced security solutions. You will lead security architecture initiatives, manage complex SIEM environments, and
+  id: jd_2439 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Cloud Architecture, Kubernetes, Terraform
+  description: We are hiring a Senior DevOps Engineer to lead our infrastructure architecture. You will design secure cloud environments, implement enterprise-level automation, and drive the mode
 
-  id: jd_2435 | title: Principal Cybersecurity Architect | level: senior | min_exp: 7 yrs
-  required_skills: Strategic Leadership, Security Governance, Cyber Risk Management
-  description: We are looking for a Principal Cybersecurity Architect to drive our enterprise security strategy. You will lead infrastructure modernization, oversee cyber risk management programs
+  id: jd_2440 | title: Principal DevOps Architect | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Leadership, Cloud Architecture, Kubernetes
+  description: We are looking for a Principal DevOps Architect to drive our enterprise cloud strategy. You will oversee large-scale infrastructure transformation, define long-term architectural s
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~6 pairs
+  strong_match: ~4 pairs
+  excellent_match: ~14 pairs
+  moderate_match: ~4 pairs
+  weak_match: ~3 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12151  resume_2431 × jd_2431
-  pair_12152  resume_2431 × jd_2432
-  pair_12153  resume_2431 × jd_2433
-  pair_12154  resume_2431 × jd_2434
-  pair_12155  resume_2431 × jd_2435
-  pair_12156  resume_2432 × jd_2431
-  pair_12157  resume_2432 × jd_2432
-  pair_12158  resume_2432 × jd_2433
-  pair_12159  resume_2432 × jd_2434
-  pair_12160  resume_2432 × jd_2435
-  pair_12161  resume_2433 × jd_2431
-  pair_12162  resume_2433 × jd_2432
-  pair_12163  resume_2433 × jd_2433
-  pair_12164  resume_2433 × jd_2434
-  pair_12165  resume_2433 × jd_2435
-  pair_12166  resume_2434 × jd_2431
-  pair_12167  resume_2434 × jd_2432
-  pair_12168  resume_2434 × jd_2433
-  pair_12169  resume_2434 × jd_2434
-  pair_12170  resume_2434 × jd_2435
-  pair_12171  resume_2435 × jd_2431
-  pair_12172  resume_2435 × jd_2432
-  pair_12173  resume_2435 × jd_2433
-  pair_12174  resume_2435 × jd_2434
-  pair_12175  resume_2435 × jd_2435
+  pair_12176  resume_2436 × jd_2436
+  pair_12177  resume_2436 × jd_2437
+  pair_12178  resume_2436 × jd_2438
+  pair_12179  resume_2436 × jd_2439
+  pair_12180  resume_2436 × jd_2440
+  pair_12181  resume_2437 × jd_2436
+  pair_12182  resume_2437 × jd_2437
+  pair_12183  resume_2437 × jd_2438
+  pair_12184  resume_2437 × jd_2439
+  pair_12185  resume_2437 × jd_2440
+  pair_12186  resume_2438 × jd_2436
+  pair_12187  resume_2438 × jd_2437
+  pair_12188  resume_2438 × jd_2438
+  pair_12189  resume_2438 × jd_2439
+  pair_12190  resume_2438 × jd_2440
+  pair_12191  resume_2439 × jd_2436
+  pair_12192  resume_2439 × jd_2437
+  pair_12193  resume_2439 × jd_2438
+  pair_12194  resume_2439 × jd_2439
+  pair_12195  resume_2439 × jd_2440
+  pair_12196  resume_2440 × jd_2436
+  pair_12197  resume_2440 × jd_2437
+  pair_12198  resume_2440 × jd_2438
+  pair_12199  resume_2440 × jd_2439
+  pair_12200  resume_2440 × jd_2440
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
