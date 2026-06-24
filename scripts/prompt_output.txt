@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2471 | level: intern | exp: 0.4 yrs
-  skills: Python, Transformers, LangChain, RAG, Embeddings, Hugging Face, FastAPI, Vector Databases, Prompt Engineering, Git
-  background: Final-year Computer Science student specializing in Natural Language Processing and generative AI with four months of internship experience at an AI startup. Assisted in building retrieval pipelines f
+  id: resume_2476 | level: intern | exp: 0.4 yrs
+  skills: Flutter, React Native, Dart, JavaScript, REST API, Firebase, SQLite, Git, Unit Testing, Agile
+  background: Final-year Computer Science student specializing in mobile application development with four months of internship experience at a startup building consumer mobile products. Assisted senior engineers i
 
-  id: resume_2472 | level: junior | exp: 1.7 yrs
-  skills: Python, Transformers, LangChain, RAG, Embeddings, FastAPI, Hugging Face, Vector Databases, Prompt Engineering, Evaluation Metrics
-  background: AI Engineer with 1.7 years of professional experience developing NLP applications and conversational AI solutions. Worked on customer support automation projects involving transformer-based models, se
+  id: resume_2477 | level: junior | exp: 1.6 yrs
+  skills: React Native, Flutter, Redux, JavaScript, Dart, Firebase, REST API, Git, Crashlytics, Agile
+  background: Mobile developer with 1.6 years of professional experience delivering cross-platform applications for retail and service businesses. Primarily worked with React Native and Flutter to build customer-fa
 
-  id: resume_2473 | level: middle | exp: 4.3 yrs
-  skills: Python, Transformers, LangChain, RAG, Embeddings, MLOps, Hugging Face, Vector Databases, Model Evaluation, Distributed Inference
-  background: Machine Learning Engineer with 4.3 years of experience building and deploying NLP and generative AI systems across healthcare and enterprise domains. Led development of retrieval-augmented application
+  id: resume_2478 | level: middle | exp: 4.4 yrs
+  skills: Flutter, Kotlin, Clean Architecture, MVVM, CI/CD, Fastlane, Firebase, Unit Testing, Performance Optimization, GitHub Actions
+  background: Software engineer with 4.4 years of experience building scalable mobile applications across fintech and healthcare domains. Specialized in Flutter and native Android development using Kotlin while con
 
-  id: resume_2474 | level: senior | exp: 6.4 yrs
-  skills: Transformers, LangChain, RAG, Embeddings, MLOps, Leadership, AI Architecture, Model Evaluation, Distributed Inference, Prompt Engineering
-  background: Senior AI Engineer with 6.4 years of experience leading development of large-scale NLP and generative AI products. Specialized in architecting retrieval-augmented generation platforms, optimizing tran
+  id: resume_2479 | level: senior | exp: 6.3 yrs
+  skills: Swift, iOS, Flutter, Clean Architecture, CI/CD, Fastlane, Dependency Injection, Performance Optimization, Technical Leadership, Bitrise
+  background: Senior mobile engineer with 6.3 years of experience delivering enterprise-grade mobile products and leading technical initiatives across distributed teams. Expertise includes native iOS development wi
 
-  id: resume_2475 | level: senior | exp: 9.5 yrs
-  skills: AI Architecture, Leadership, Transformers, RAG, Embeddings, AI Governance, MLOps, Distributed Systems, Strategic Planning, Model Evaluation
-  background: Principal AI Architect with 9.5 years of experience defining technical strategy for enterprise AI and NLP initiatives. Led large engineering organizations delivering LLM-based products, retrieval plat
+  id: resume_2480 | level: senior | exp: 9.1 yrs
+  skills: Swift, Kotlin, Architecture, Leadership, Mobile DevOps, Security, Performance Optimization, CI/CD, Accessibility, Governance
+  background: Principal mobile architect with 9.1 years of experience leading mobile engineering organizations and defining long-term technical strategies for high-scale consumer platforms. Deep expertise spans nat
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2471 | title: AI/NLP Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Transformers, LangChain, Embeddings
-  description: Seeking an AI/NLP engineering intern to support development of retrieval-based AI applications. The intern will assist with data preparation, prompt engineering, experimentation, a
+  id: jd_2476 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Flutter, Git, REST API, Firebase
+  description: Seeking a motivated mobile development intern to support implementation of cross-platform applications. The intern will assist with UI development, bug fixing, API integration, and
 
-  id: jd_2472 | title: Junior Generative AI Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Transformers, RAG, Prompt Engineering, FastAPI
-  description: Looking for a junior generative AI engineer to build conversational AI applications and retrieval services. The engineer will integrate LLM APIs, optimize prompts, and maintain vec
+  id: jd_2477 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, JavaScript, REST API, Git
+  description: Looking for a junior React Native developer to build and maintain customer-facing mobile applications. The engineer will develop new screens, integrate backend services, and resolv
 
-  id: jd_2473 | title: Machine Learning Engineer - NLP | level: middle | min_exp: 3 yrs
-  required_skills: Transformers, RAG, MLOps, Model Evaluation
-  description: An organization is seeking a machine learning engineer to design and deploy production NLP systems. The role involves developing retrieval-augmented applications, optimizing embedd
+  id: jd_2478 | title: Mid-Level Flutter Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Flutter, MVVM, CI/CD, Firebase
+  description: A product team is hiring a mid-level Flutter engineer to deliver scalable customer-facing applications. Responsibilities include architecture participation, feature implementation,
 
-  id: jd_2474 | title: Senior AI Platform Engineer | level: senior | min_exp: 5 yrs
-  required_skills: AI Architecture, Leadership, RAG, Distributed Inference
-  description: Seeking a senior AI platform engineer to lead architecture and delivery of enterprise generative AI systems. The role requires extensive experience designing RAG platforms, optimiz
+  id: jd_2479 | title: Senior iOS Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Swift, iOS, Clean Architecture, CI/CD
+  description: Seeking a senior iOS engineer to lead development of critical mobile capabilities across multiple applications. The role requires ownership of architecture, technical design, and m
 
-  id: jd_2475 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: AI Architecture, Leadership, AI Governance, Strategic Planning
-  description: A principal AI architect is required to define enterprise AI strategy and oversee long-term development of generative AI platforms. The role involves establishing governance framew
+  id: jd_2480 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Swift, Kotlin, Architecture, Leadership
+  description: An experienced principal mobile architect is required to define long-term technical strategy for a portfolio of mobile products. The role involves leading architectural decisions, 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~8 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12351  resume_2471 × jd_2471
-  pair_12352  resume_2471 × jd_2472
-  pair_12353  resume_2471 × jd_2473
-  pair_12354  resume_2471 × jd_2474
-  pair_12355  resume_2471 × jd_2475
-  pair_12356  resume_2472 × jd_2471
-  pair_12357  resume_2472 × jd_2472
-  pair_12358  resume_2472 × jd_2473
-  pair_12359  resume_2472 × jd_2474
-  pair_12360  resume_2472 × jd_2475
-  pair_12361  resume_2473 × jd_2471
-  pair_12362  resume_2473 × jd_2472
-  pair_12363  resume_2473 × jd_2473
-  pair_12364  resume_2473 × jd_2474
-  pair_12365  resume_2473 × jd_2475
-  pair_12366  resume_2474 × jd_2471
-  pair_12367  resume_2474 × jd_2472
-  pair_12368  resume_2474 × jd_2473
-  pair_12369  resume_2474 × jd_2474
-  pair_12370  resume_2474 × jd_2475
-  pair_12371  resume_2475 × jd_2471
-  pair_12372  resume_2475 × jd_2472
-  pair_12373  resume_2475 × jd_2473
-  pair_12374  resume_2475 × jd_2474
-  pair_12375  resume_2475 × jd_2475
+  pair_12376  resume_2476 × jd_2476
+  pair_12377  resume_2476 × jd_2477
+  pair_12378  resume_2476 × jd_2478
+  pair_12379  resume_2476 × jd_2479
+  pair_12380  resume_2476 × jd_2480
+  pair_12381  resume_2477 × jd_2476
+  pair_12382  resume_2477 × jd_2477
+  pair_12383  resume_2477 × jd_2478
+  pair_12384  resume_2477 × jd_2479
+  pair_12385  resume_2477 × jd_2480
+  pair_12386  resume_2478 × jd_2476
+  pair_12387  resume_2478 × jd_2477
+  pair_12388  resume_2478 × jd_2478
+  pair_12389  resume_2478 × jd_2479
+  pair_12390  resume_2478 × jd_2480
+  pair_12391  resume_2479 × jd_2476
+  pair_12392  resume_2479 × jd_2477
+  pair_12393  resume_2479 × jd_2478
+  pair_12394  resume_2479 × jd_2479
+  pair_12395  resume_2479 × jd_2480
+  pair_12396  resume_2480 × jd_2476
+  pair_12397  resume_2480 × jd_2477
+  pair_12398  resume_2480 × jd_2478
+  pair_12399  resume_2480 × jd_2479
+  pair_12400  resume_2480 × jd_2480
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
