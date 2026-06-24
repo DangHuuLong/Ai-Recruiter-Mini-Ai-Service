@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2551 | level: intern | exp: 0.4 yrs
-  skills: Requirements Gathering, BPMN, Stakeholder Communication, User Stories, Process Mapping, Requirement Traceability, Documentation, User Acceptance Testing, Project Coordination, Reporting
-  background: Final-year Business Information Systems student with four months of internship experience supporting business analysis activities on internal process improvement initiatives. Assisted analysts in gath
+  id: resume_2556 | level: intern | exp: 0.4 yrs
+  skills: Python, Transformers, LangChain, Embeddings, RAG, Prompt Engineering, Text Preprocessing, Vector Databases, Model Evaluation, API Integration
+  background: Final-year computer science student with four months of internship experience supporting AI application development and NLP experimentation. Assisted in preparing datasets, evaluating transformer-base
 
-  id: resume_2552 | level: junior | exp: 1.6 yrs
-  skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, Acceptance Criteria, Process Improvement, UAT, Change Requests, Workshop Facilitation, Project Reporting
-  background: Business analyst with 1.6 years of experience supporting software delivery and business process improvement projects. Worked closely with stakeholders to gather functional requirements, facilitate wor
+  id: resume_2557 | level: junior | exp: 1.7 yrs
+  skills: Python, Transformers, LangChain, Embeddings, Semantic Search, RAG, Prompt Engineering, Vector Databases, LLM Integration, Evaluation Frameworks
+  background: AI engineer with 1.7 years of experience developing NLP features and retrieval-enhanced applications. Worked on transformer-based text classification and semantic search solutions for business users. 
 
-  id: resume_2553 | level: middle | exp: 4.1 yrs
-  skills: Business Analysis, BPMN, Requirements Management, Stakeholder Engagement, Gap Analysis, Process Improvement, Project Governance, Risk Management, UAT Coordination, Business Impact Analysis
-  background: Business analyst with 4.1 years of experience delivering business transformation and process optimization initiatives. Led requirement elicitation sessions with cross-functional stakeholders and produ
+  id: resume_2558 | level: middle | exp: 4.3 yrs
+  skills: Transformers, LangChain, RAG Architecture, Embeddings, Vector Databases, Model Evaluation, NLP System Design, Inference Optimization, Information Retrieval, MLOps
+  background: AI and NLP engineer with 4.3 years of experience designing production-grade language systems and retrieval architectures. Led development of retrieval-augmented generation platforms supporting enterpr
 
-  id: resume_2554 | level: senior | exp: 6.3 yrs
-  skills: Strategic Business Analysis, BPMN, Stakeholder Leadership, Project Management, Roadmapping, Risk Management, Business Case Development, Governance, Requirements Prioritization, Change Management
-  background: Senior business analyst and project management professional with 6.3 years of experience leading strategic change initiatives and complex delivery programs. Directed requirement discovery, stakeholder
+  id: resume_2559 | level: senior | exp: 6.5 yrs
+  skills: AI Architecture, Transformers, LangChain, RAG, Embeddings, Technical Leadership, MLOps, Platform Strategy, Model Governance, Scalability
+  background: Senior AI engineer with 6.5 years of experience leading NLP platform development and generative AI initiatives. Directed architecture decisions for transformer-based products, retrieval systems, and e
 
-  id: resume_2555 | level: senior | exp: 9.2 yrs
-  skills: Enterprise Business Analysis, BPMN Governance, Portfolio Management, Executive Stakeholder Management, Program Leadership, Process Architecture, Transformation Strategy, Benefits Realization, Capability Development, Governance Frameworks
-  background: Principal business analysis and project leadership specialist with 9.2 years of experience guiding enterprise transformation programs and portfolio-level governance. Established business analysis fram
+  id: resume_2560 | level: senior | exp: 9.4 yrs
+  skills: Enterprise AI Strategy, Platform Architecture, AI Governance, Transformers, RAG Ecosystems, Embeddings, Technical Roadmaps, Executive Leadership, Scalability Planning, Capability Development
+  background: Principal AI and NLP architect with 9.4 years of experience defining enterprise AI strategy and leading large-scale language technology programs. Established architecture standards for transformer pla
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2551 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Documentation, User Acceptance Testing
-  description: Seeking a business analysis intern to support requirement gathering, process documentation, and stakeholder communication activities. The role will assist with BPMN process mapping
+  id: jd_2556 | title: AI NLP Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Transformers, LangChain, Embeddings, RAG, Model Evaluation
+  description: Seeking an AI and NLP engineering intern to support experimentation with transformer models and retrieval pipelines. The role includes preparing text datasets, generating embedding
 
-  id: jd_2552 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, UAT
-  description: Looking for a junior business analyst to support requirements management and business process improvement initiatives. Responsibilities include stakeholder interviews, user story d
+  id: jd_2557 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Transformers, LangChain, Embeddings, LLM Integration, RAG
+  description: Looking for a junior NLP engineer to develop retrieval-enhanced AI applications using transformer models and modern orchestration frameworks. Responsibilities include building Lang
 
-  id: jd_2553 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Management, BPMN, Stakeholder Engagement, Gap Analysis, Project Governance
-  description: Seeking an experienced business analyst to lead requirement elicitation, stakeholder workshops, and process optimization initiatives. The role involves maintaining requirement trac
+  id: jd_2558 | title: AI NLP Engineer | level: middle | min_exp: 3 yrs
+  required_skills: RAG Architecture, Transformers, Embeddings, Information Retrieval, Vector Databases
+  description: Seeking an experienced AI engineer to design and optimize retrieval-augmented generation solutions for enterprise use cases. Responsibilities include vector database design, evalua
 
-  id: jd_2554 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Stakeholder Leadership, BPMN, Project Management, Risk Management, Requirements Prioritization
-  description: Hiring a senior business analyst to drive strategic initiatives and lead stakeholder alignment efforts across complex projects. Responsibilities include requirement prioritization,
+  id: jd_2559 | title: Senior AI Engineer | level: senior | min_exp: 5 yrs
+  required_skills: AI Architecture, RAG, Technical Leadership, MLOps, Scalability
+  description: Hiring a senior AI engineer to lead architecture and delivery of enterprise generative AI systems. The role includes defining technical standards, guiding RAG implementations, mana
 
-  id: jd_2555 | title: Principal Business Analysis Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Business Analysis, Portfolio Management, Executive Stakeholder Management, Process Architecture, Governance Frameworks
-  description: An experienced principal-level leader is required to define enterprise business analysis standards and oversee transformation portfolios. Responsibilities include establishing gove
+  id: jd_2560 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise AI Strategy, Platform Architecture, AI Governance, Technical Roadmaps, Scalability Planning
+  description: An experienced principal-level AI leader is required to define enterprise AI strategy and oversee platform transformation initiatives. Responsibilities include architecture governa
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~9 pairs
-  excellent_match: ~6 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~6 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~7 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12751  resume_2551 × jd_2551
-  pair_12752  resume_2551 × jd_2552
-  pair_12753  resume_2551 × jd_2553
-  pair_12754  resume_2551 × jd_2554
-  pair_12755  resume_2551 × jd_2555
-  pair_12756  resume_2552 × jd_2551
-  pair_12757  resume_2552 × jd_2552
-  pair_12758  resume_2552 × jd_2553
-  pair_12759  resume_2552 × jd_2554
-  pair_12760  resume_2552 × jd_2555
-  pair_12761  resume_2553 × jd_2551
-  pair_12762  resume_2553 × jd_2552
-  pair_12763  resume_2553 × jd_2553
-  pair_12764  resume_2553 × jd_2554
-  pair_12765  resume_2553 × jd_2555
-  pair_12766  resume_2554 × jd_2551
-  pair_12767  resume_2554 × jd_2552
-  pair_12768  resume_2554 × jd_2553
-  pair_12769  resume_2554 × jd_2554
-  pair_12770  resume_2554 × jd_2555
-  pair_12771  resume_2555 × jd_2551
-  pair_12772  resume_2555 × jd_2552
-  pair_12773  resume_2555 × jd_2553
-  pair_12774  resume_2555 × jd_2554
-  pair_12775  resume_2555 × jd_2555
+  pair_12776  resume_2556 × jd_2556
+  pair_12777  resume_2556 × jd_2557
+  pair_12778  resume_2556 × jd_2558
+  pair_12779  resume_2556 × jd_2559
+  pair_12780  resume_2556 × jd_2560
+  pair_12781  resume_2557 × jd_2556
+  pair_12782  resume_2557 × jd_2557
+  pair_12783  resume_2557 × jd_2558
+  pair_12784  resume_2557 × jd_2559
+  pair_12785  resume_2557 × jd_2560
+  pair_12786  resume_2558 × jd_2556
+  pair_12787  resume_2558 × jd_2557
+  pair_12788  resume_2558 × jd_2558
+  pair_12789  resume_2558 × jd_2559
+  pair_12790  resume_2558 × jd_2560
+  pair_12791  resume_2559 × jd_2556
+  pair_12792  resume_2559 × jd_2557
+  pair_12793  resume_2559 × jd_2558
+  pair_12794  resume_2559 × jd_2559
+  pair_12795  resume_2559 × jd_2560
+  pair_12796  resume_2560 × jd_2556
+  pair_12797  resume_2560 × jd_2557
+  pair_12798  resume_2560 × jd_2558
+  pair_12799  resume_2560 × jd_2559
+  pair_12800  resume_2560 × jd_2560
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
