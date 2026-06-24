@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2661 | level: intern | exp: 0.4 yrs
-  skills: Product Research, User Stories, Agile Development, Backlog Management, Stakeholder Communication, Sprint Planning, Requirements Documentation, Roadmap Support, Product Analytics, Competitive Analysis
-  background: Final-year business and technology student with 0.4 years of internship experience supporting product management activities for a web application team. Assisted product managers with backlog maintenan
+  id: resume_2666 | level: intern | exp: 0.4 yrs
+  skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding, Applicant Tracking Systems, Resume Review, HR Documentation, Candidate Communication, Recruitment Reporting
+  background: Final-year human resources student with 0.4 years of internship experience supporting recruiting and onboarding activities. Assisted recruiters with screening resumes, coordinating interview schedules
 
-  id: resume_2662 | level: junior | exp: 1.5 yrs
-  skills: Product Management, Agile Delivery, User Story Mapping, Backlog Prioritization, Stakeholder Management, Product Analytics, Requirements Gathering, Release Coordination, Roadmap Tracking, Customer Feedback Analysis
-  background: Junior product coordinator with 1.5 years of experience supporting software product delivery. Worked closely with product managers, engineers, and designers to refine requirements, manage sprint backl
+  id: resume_2667 | level: junior | exp: 1.5 yrs
+  skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems, Employee Records Management, Candidate Communication, Compliance Tracking, Recruitment Reporting, Stakeholder Management
+  background: Human resources coordinator with 1.5 years of experience supporting talent acquisition and onboarding programs. Managed interview coordination, candidate communications, applicant tracking system admi
 
-  id: resume_2663 | level: middle | exp: 4.2 yrs
-  skills: Product Strategy, Roadmap Planning, Agile Product Management, Stakeholder Alignment, Product Analytics, Requirements Prioritization, Customer Discovery, Go To Market Coordination, Feature Validation, Cross Functional Leadership
-  background: Product manager with 4.2 years of experience leading technology product initiatives from discovery through launch. Managed product roadmaps, defined requirements, and partnered with engineering and de
+  id: resume_2668 | level: middle | exp: 4.3 yrs
+  skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Workforce Reporting, Candidate Assessment, Process Improvement, Compliance Management, Employee Relations Support, Stakeholder Collaboration
+  background: Human resources specialist with 4.3 years of experience managing recruitment operations, onboarding programs, and HR administration initiatives. Led full-cycle recruiting activities, coordinated hirin
 
-  id: resume_2664 | level: senior | exp: 6.3 yrs
-  skills: Product Leadership, Product Vision, Strategic Roadmaps, Portfolio Management, Executive Stakeholder Management, Agile Leadership, Product Governance, Market Analysis, Team Mentoring, Outcome Measurement
-  background: Senior product leader with 6.3 years of experience managing product portfolios and guiding cross-functional teams. Defined product vision, strategic roadmaps, and prioritization frameworks across mult
+  id: resume_2669 | level: senior | exp: 6.2 yrs
+  skills: Talent Acquisition Leadership, Workforce Planning, HR Operations, Onboarding Governance, HRIS Strategy, Recruitment Metrics, Employer Branding, Compliance Leadership, Team Development, Stakeholder Leadership
+  background: Senior talent acquisition manager with 6.2 years of experience leading recruiting operations, workforce planning programs, and onboarding governance initiatives. Managed recruiting teams responsible f
 
-  id: resume_2665 | level: senior | exp: 9.1 yrs
-  skills: Enterprise Product Strategy, Product Portfolio Governance, Executive Leadership, Product Transformation, Strategic Planning, Investment Prioritization, Organizational Leadership, Capability Development, Executive Stakeholder Alignment, Roadmap Governance
-  background: Principal product executive with 9.1 years of experience defining enterprise product strategy and overseeing large-scale technology portfolios. Established governance frameworks, investment roadmaps, 
+  id: resume_2670 | level: senior | exp: 9.4 yrs
+  skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, Talent Acquisition Strategy, HR Transformation, Workforce Strategy, HR Technology Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
+  background: Principal human resources executive with 9.4 years of experience defining enterprise talent strategy and leading organizational transformation initiatives. Established governance frameworks for talent
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2661 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Product Research, User Stories, Agile Development, Backlog Management, Stakeholder Communication
-  description: Seeking a product management intern to support roadmap planning, backlog organization, and stakeholder communication activities. The role assists product managers with user stories
+  id: jd_2666 | title: HR and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding
+  description: Seeking an HR intern to support recruiting, onboarding, and HR administration activities. Responsibilities include candidate screening, interview scheduling, ATS maintenance, onboa
 
-  id: jd_2662 | title: Junior Product Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Product Management, Agile Delivery, Backlog Prioritization, Requirements Gathering, Stakeholder Management
-  description: Looking for a junior product professional to support product delivery and backlog coordination. Responsibilities include requirements gathering, roadmap tracking, stakeholder commu
+  id: jd_2667 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems
+  description: Looking for a junior HR professional to coordinate recruiting and onboarding activities. Responsibilities include ATS administration, candidate communication, interview coordinatio
 
-  id: jd_2663 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Product Strategy, Roadmap Planning, Stakeholder Alignment, Requirements Prioritization, Customer Discovery
-  description: Seeking an experienced product manager to own roadmap planning, customer discovery, and feature prioritization. Responsibilities include stakeholder alignment, analytics review, re
+  id: jd_2668 | title: HR Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Process Improvement
+  description: Seeking an experienced HR specialist to manage recruitment programs, onboarding initiatives, and HR operations. Responsibilities include full-cycle recruiting, workforce reporting,
 
-  id: jd_2664 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Leadership, Product Vision, Strategic Roadmaps, Executive Stakeholder Management, Product Governance
-  description: Hiring a senior product manager to define product vision, manage strategic roadmaps, and lead stakeholder engagement. The role includes portfolio planning, mentoring product team m
+  id: jd_2669 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Talent Acquisition Leadership, Workforce Planning, Onboarding Governance, Recruitment Metrics, Stakeholder Leadership
+  description: Hiring a senior talent acquisition manager to lead recruiting operations and workforce planning initiatives. Responsibilities include onboarding governance, recruitment metrics ove
 
-  id: jd_2665 | title: Principal Product Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Product Strategy, Product Portfolio Governance, Executive Leadership, Product Transformation, Strategic Planning
-  description: An experienced product executive is required to define enterprise product strategy and oversee transformation initiatives. Responsibilities include governance development, strategi
+  id: jd_2670 | title: Principal HR Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, HR Transformation, Workforce Strategy
+  description: An experienced HR executive is required to define enterprise talent strategy and oversee transformation initiatives. Responsibilities include governance development, workforce stra
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~11 pairs
-  excellent_match: ~2 pairs
-  moderate_match: ~5 pairs
-  weak_match: ~7 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~4 pairs
+  weak_match: ~10 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13301  resume_2661 × jd_2661
-  pair_13302  resume_2661 × jd_2662
-  pair_13303  resume_2661 × jd_2663
-  pair_13304  resume_2661 × jd_2664
-  pair_13305  resume_2661 × jd_2665
-  pair_13306  resume_2662 × jd_2661
-  pair_13307  resume_2662 × jd_2662
-  pair_13308  resume_2662 × jd_2663
-  pair_13309  resume_2662 × jd_2664
-  pair_13310  resume_2662 × jd_2665
-  pair_13311  resume_2663 × jd_2661
-  pair_13312  resume_2663 × jd_2662
-  pair_13313  resume_2663 × jd_2663
-  pair_13314  resume_2663 × jd_2664
-  pair_13315  resume_2663 × jd_2665
-  pair_13316  resume_2664 × jd_2661
-  pair_13317  resume_2664 × jd_2662
-  pair_13318  resume_2664 × jd_2663
-  pair_13319  resume_2664 × jd_2664
-  pair_13320  resume_2664 × jd_2665
-  pair_13321  resume_2665 × jd_2661
-  pair_13322  resume_2665 × jd_2662
-  pair_13323  resume_2665 × jd_2663
-  pair_13324  resume_2665 × jd_2664
-  pair_13325  resume_2665 × jd_2665
+  pair_13326  resume_2666 × jd_2666
+  pair_13327  resume_2666 × jd_2667
+  pair_13328  resume_2666 × jd_2668
+  pair_13329  resume_2666 × jd_2669
+  pair_13330  resume_2666 × jd_2670
+  pair_13331  resume_2667 × jd_2666
+  pair_13332  resume_2667 × jd_2667
+  pair_13333  resume_2667 × jd_2668
+  pair_13334  resume_2667 × jd_2669
+  pair_13335  resume_2667 × jd_2670
+  pair_13336  resume_2668 × jd_2666
+  pair_13337  resume_2668 × jd_2667
+  pair_13338  resume_2668 × jd_2668
+  pair_13339  resume_2668 × jd_2669
+  pair_13340  resume_2668 × jd_2670
+  pair_13341  resume_2669 × jd_2666
+  pair_13342  resume_2669 × jd_2667
+  pair_13343  resume_2669 × jd_2668
+  pair_13344  resume_2669 × jd_2669
+  pair_13345  resume_2669 × jd_2670
+  pair_13346  resume_2670 × jd_2666
+  pair_13347  resume_2670 × jd_2667
+  pair_13348  resume_2670 × jd_2668
+  pair_13349  resume_2670 × jd_2669
+  pair_13350  resume_2670 × jd_2670
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
