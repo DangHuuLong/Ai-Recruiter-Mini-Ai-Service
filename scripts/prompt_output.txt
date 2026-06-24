@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2656 | level: intern | exp: 0.4 yrs
-  skills: Clinical Operations, EMR, Patient Scheduling, Patient Intake, Medical Documentation, Healthcare Administration, Data Entry, Compliance Support, Patient Communication, Reporting
-  background: Final-year healthcare administration student with 0.4 years of internship experience supporting clinical operations and patient coordination activities. Assisted staff with appointment scheduling, EMR
+  id: resume_2661 | level: intern | exp: 0.4 yrs
+  skills: Product Research, User Stories, Agile Development, Backlog Management, Stakeholder Communication, Sprint Planning, Requirements Documentation, Roadmap Support, Product Analytics, Competitive Analysis
+  background: Final-year business and technology student with 0.4 years of internship experience supporting product management activities for a web application team. Assisted product managers with backlog maintenan
 
-  id: resume_2657 | level: junior | exp: 1.5 yrs
-  skills: EMR Administration, Patient Scheduling, Referral Coordination, Medical Records, Patient Communication, Healthcare Coordination, Reporting, Compliance Tracking, Administrative Support, Care Coordination
-  background: Healthcare coordinator with 1.5 years of experience supporting patient services and administrative operations. Managed appointment scheduling, patient communications, EMR updates, referral coordinatio
+  id: resume_2662 | level: junior | exp: 1.5 yrs
+  skills: Product Management, Agile Delivery, User Story Mapping, Backlog Prioritization, Stakeholder Management, Product Analytics, Requirements Gathering, Release Coordination, Roadmap Tracking, Customer Feedback Analysis
+  background: Junior product coordinator with 1.5 years of experience supporting software product delivery. Worked closely with product managers, engineers, and designers to refine requirements, manage sprint backl
 
-  id: resume_2658 | level: middle | exp: 4.1 yrs
-  skills: Clinical Operations, EMR Optimization, Medical Coordination, Workflow Improvement, Operational Reporting, Compliance Management, Patient Flow Management, Healthcare Analytics, Staff Coordination, Process Improvement
-  background: Healthcare operations specialist with 4.1 years of experience managing clinical administration programs and medical coordination initiatives. Led process improvements across patient scheduling, EMR wo
+  id: resume_2663 | level: middle | exp: 4.2 yrs
+  skills: Product Strategy, Roadmap Planning, Agile Product Management, Stakeholder Alignment, Product Analytics, Requirements Prioritization, Customer Discovery, Go To Market Coordination, Feature Validation, Cross Functional Leadership
+  background: Product manager with 4.2 years of experience leading technology product initiatives from discovery through launch. Managed product roadmaps, defined requirements, and partnered with engineering and de
 
-  id: resume_2659 | level: senior | exp: 6.2 yrs
-  skills: Clinical Operations Leadership, EMR Governance, Medical Coordination Leadership, Healthcare Compliance, Quality Improvement, Operational Strategy, Team Leadership, Performance Management, Patient Access Management, Stakeholder Management
-  background: Senior healthcare administration manager with 6.2 years of experience leading clinical operations and medical coordination programs. Directed teams responsible for patient access, scheduling services,
+  id: resume_2664 | level: senior | exp: 6.3 yrs
+  skills: Product Leadership, Product Vision, Strategic Roadmaps, Portfolio Management, Executive Stakeholder Management, Agile Leadership, Product Governance, Market Analysis, Team Mentoring, Outcome Measurement
+  background: Senior product leader with 6.3 years of experience managing product portfolios and guiding cross-functional teams. Defined product vision, strategic roadmaps, and prioritization frameworks across mult
 
-  id: resume_2660 | level: senior | exp: 9.3 yrs
-  skills: Healthcare Strategy, Enterprise Clinical Operations, EMR Strategy, Operational Governance, Healthcare Transformation, Executive Leadership, Strategic Roadmaps, Organizational Leadership, Capability Development, Performance Governance
-  background: Principal healthcare operations executive with 9.3 years of experience defining enterprise clinical administration strategy and overseeing transformation programs. Established governance frameworks fo
+  id: resume_2665 | level: senior | exp: 9.1 yrs
+  skills: Enterprise Product Strategy, Product Portfolio Governance, Executive Leadership, Product Transformation, Strategic Planning, Investment Prioritization, Organizational Leadership, Capability Development, Executive Stakeholder Alignment, Roadmap Governance
+  background: Principal product executive with 9.1 years of experience defining enterprise product strategy and overseeing large-scale technology portfolios. Established governance frameworks, investment roadmaps, 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2656 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
-  required_skills: Clinical Operations, EMR, Patient Scheduling, Patient Intake, Medical Documentation
-  description: Seeking a healthcare administration intern to support clinical operations, patient intake, EMR updates, and documentation activities. The role assists administrative teams with sch
+  id: jd_2661 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Product Research, User Stories, Agile Development, Backlog Management, Stakeholder Communication
+  description: Seeking a product management intern to support roadmap planning, backlog organization, and stakeholder communication activities. The role assists product managers with user stories
 
-  id: jd_2657 | title: Healthcare Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: EMR Administration, Patient Scheduling, Referral Coordination, Medical Records, Care Coordination
-  description: Looking for a junior healthcare coordinator to manage scheduling, referrals, EMR administration, and patient communications. Responsibilities include maintaining records, coordinat
+  id: jd_2662 | title: Junior Product Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Product Management, Agile Delivery, Backlog Prioritization, Requirements Gathering, Stakeholder Management
+  description: Looking for a junior product professional to support product delivery and backlog coordination. Responsibilities include requirements gathering, roadmap tracking, stakeholder commu
 
-  id: jd_2658 | title: Healthcare Operations Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Clinical Operations, EMR Optimization, Workflow Improvement, Operational Reporting, Process Improvement
-  description: Seeking an experienced healthcare operations specialist to improve clinical workflows, optimize EMR usage, and coordinate operational programs. Responsibilities include process imp
+  id: jd_2663 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Strategy, Roadmap Planning, Stakeholder Alignment, Requirements Prioritization, Customer Discovery
+  description: Seeking an experienced product manager to own roadmap planning, customer discovery, and feature prioritization. Responsibilities include stakeholder alignment, analytics review, re
 
-  id: jd_2659 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Clinical Operations Leadership, EMR Governance, Healthcare Compliance, Quality Improvement, Team Leadership
-  description: Hiring a senior manager to lead clinical operations programs, oversee EMR governance, and manage healthcare administration teams. Responsibilities include quality improvement, perf
+  id: jd_2664 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Leadership, Product Vision, Strategic Roadmaps, Executive Stakeholder Management, Product Governance
+  description: Hiring a senior product manager to define product vision, manage strategic roadmaps, and lead stakeholder engagement. The role includes portfolio planning, mentoring product team m
 
-  id: jd_2660 | title: Principal Healthcare Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Healthcare Strategy, Enterprise Clinical Operations, EMR Strategy, Healthcare Transformation, Strategic Roadmaps
-  description: An experienced healthcare executive is required to define enterprise clinical operations strategy and oversee transformation initiatives. Responsibilities include governance develo
+  id: jd_2665 | title: Principal Product Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Product Strategy, Product Portfolio Governance, Executive Leadership, Product Transformation, Strategic Planning
+  description: An experienced product executive is required to define enterprise product strategy and oversee transformation initiatives. Responsibilities include governance development, strategi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~5 pairs
+  strong_match: ~11 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13276  resume_2656 × jd_2656
-  pair_13277  resume_2656 × jd_2657
-  pair_13278  resume_2656 × jd_2658
-  pair_13279  resume_2656 × jd_2659
-  pair_13280  resume_2656 × jd_2660
-  pair_13281  resume_2657 × jd_2656
-  pair_13282  resume_2657 × jd_2657
-  pair_13283  resume_2657 × jd_2658
-  pair_13284  resume_2657 × jd_2659
-  pair_13285  resume_2657 × jd_2660
-  pair_13286  resume_2658 × jd_2656
-  pair_13287  resume_2658 × jd_2657
-  pair_13288  resume_2658 × jd_2658
-  pair_13289  resume_2658 × jd_2659
-  pair_13290  resume_2658 × jd_2660
-  pair_13291  resume_2659 × jd_2656
-  pair_13292  resume_2659 × jd_2657
-  pair_13293  resume_2659 × jd_2658
-  pair_13294  resume_2659 × jd_2659
-  pair_13295  resume_2659 × jd_2660
-  pair_13296  resume_2660 × jd_2656
-  pair_13297  resume_2660 × jd_2657
-  pair_13298  resume_2660 × jd_2658
-  pair_13299  resume_2660 × jd_2659
-  pair_13300  resume_2660 × jd_2660
+  pair_13301  resume_2661 × jd_2661
+  pair_13302  resume_2661 × jd_2662
+  pair_13303  resume_2661 × jd_2663
+  pair_13304  resume_2661 × jd_2664
+  pair_13305  resume_2661 × jd_2665
+  pair_13306  resume_2662 × jd_2661
+  pair_13307  resume_2662 × jd_2662
+  pair_13308  resume_2662 × jd_2663
+  pair_13309  resume_2662 × jd_2664
+  pair_13310  resume_2662 × jd_2665
+  pair_13311  resume_2663 × jd_2661
+  pair_13312  resume_2663 × jd_2662
+  pair_13313  resume_2663 × jd_2663
+  pair_13314  resume_2663 × jd_2664
+  pair_13315  resume_2663 × jd_2665
+  pair_13316  resume_2664 × jd_2661
+  pair_13317  resume_2664 × jd_2662
+  pair_13318  resume_2664 × jd_2663
+  pair_13319  resume_2664 × jd_2664
+  pair_13320  resume_2664 × jd_2665
+  pair_13321  resume_2665 × jd_2661
+  pair_13322  resume_2665 × jd_2662
+  pair_13323  resume_2665 × jd_2663
+  pair_13324  resume_2665 × jd_2664
+  pair_13325  resume_2665 × jd_2665
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
