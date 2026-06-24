@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2291 | level: intern | exp: 0.4 yrs
-  skills: Python, Scikit-Learn, PyTorch, Pandas, Machine Learning, Exploratory Data Analysis
-  background: Eager and highly analytical Data Science undergraduate searching for an internship position to apply algorithmic knowledge to business frameworks. Equipped with a strong foundational grasp of data man
+  id: resume_2296 | level: intern | exp: 0.3 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Linux, CI/CD
+  background: Eager and highly motivated Information Technology student striving to secure an internship in DevOps and Cloud Infrastructure. Possess solid academic foundations in modern infrastructure deployment mo
 
-  id: resume_2292 | level: junior | exp: 1.6 yrs
-  skills: Python, Scikit-Learn, PyTorch, Pandas, Gradient Boosting, Data Aggregation
-  background: Junior Data Scientist with over one and a half years of corporate experience deploying predictive modeling structures and statistical analytics systems. Adept at orchestrating deep pipeline cleaning r
+  id: resume_2297 | level: junior | exp: 1.5 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, IAM, Linux
+  background: Junior DevOps and Cloud Infrastructure Engineer with close to two years of professional tenure provisioning modern computing resources and sustaining delivery workflows. Proficient in managing cloud a
 
-  id: resume_2293 | level: middle | exp: 4.0 yrs
-  skills: Python, Scikit-Learn, PyTorch, Pandas, Machine Learning Pipelines, Docker, Model Validation
-  background: Analytical and results-driven Mid-level Machine Learning Engineer with four years of commercial expertise building, validating, and managing predictive systems. Proficient at scaling heavy dataset tra
+  id: resume_2298 | level: middle | exp: 4.0 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, CI/CD Pipelines, Shell Scripting, Cloud Security
+  background: Analytical Mid-level DevOps Specialist with four years of commercial experience engineering automated deployment infrastructure and designing elastic multi-tier cloud environments. Expert at managing 
 
-  id: resume_2294 | level: senior | exp: 6.2 yrs
-  skills: Python, Scikit-Learn, PyTorch, Pandas, Kubernetes, MLOps, Feature Engineering, System Architecture
-  background: Senior Machine Learning Engineer with over six years of seasoned mastery architecting enterprise intelligence structures and distributed modeling services. Deeply specialized in optimizing high-throug
+  id: resume_2299 | level: senior | exp: 6.5 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Service Mesh, Infrastructure Architecture, MLOps, Shell Scripting
+  background: Senior Infrastructure Engineer with over six years of deep operational mastery engineering resilient cloud architectures, continuous integration networks, and containerized deployment arrays. Proven a
 
-  id: resume_2295 | level: senior | exp: 9.5 yrs
-  skills: Python, Scikit-Learn, PyTorch, Pandas, Distributed AI, AI Governance, Cloud Infrastructure, Team Leadership
-  background: Principal Data Scientist and AI Systems Architect with over nine years of exceptional technological leadership directing enterprise intelligence roadmaps. Renowned authority in crafting distributed de
+  id: resume_2300 | level: senior | exp: 9.8 yrs
+  skills: AWS, Docker, Kubernetes, Terraform, Cloud Strategy, Site Reliability Engineering, Multi-Cloud, Enterprise Governance
+  background: Principal Cloud Architect and DevOps Engineering Director with over nine years of expert technical tenure designing hyper-scale global infrastructure blueprints and defining enterprise operations poli
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2291 | title: Data Science and Machine Learning Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Scikit-Learn, Pandas
-  description: We are seeking an energetic and analytically minded Data Science and Machine Learning Intern to join our predictive product squad. In this preparatory position, you will assist wit
+  id: jd_2296 | title: DevOps and Cloud Infrastructure Intern | level: intern | min_exp: 0 yrs
+  required_skills: AWS, Docker, Terraform
+  description: We are hunting for an enthusiastic and analytical DevOps and Cloud Infrastructure Intern to support our platform operations group. In this preparatory position, you will assist wit
 
-  id: jd_2292 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
-  required_skills: Python, Scikit-Learn, Pandas
-  description: Our predictive algorithms division is looking for a Junior Data Scientist to manage, update, and optimize our core predictive modeling workflows. You will handle daily feature upda
+  id: jd_2297 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
+  required_skills: AWS, Docker, Terraform
+  description: Our platform reliability department is looking for a Junior DevOps Engineer to manage, update, and optimize our core cloud execution nodes. You will handle daily infrastructure mod
 
-  id: jd_2293 | title: Machine Learning Engineer (PyTorch & Scikit-Learn) | level: middle | min_exp: 3 yrs
-  required_skills: Python, Scikit-Learn, PyTorch, Pandas
-  description: We are hunting for a skilled Mid-level Machine Learning Engineer to design, deploy, and safeguard our corporate algorithmic production models. You will be responsible for building 
+  id: jd_2298 | title: DevOps and Infrastructure Specialist (Kubernetes) | level: middle | min_exp: 3 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  description: We are searching for a skilled Mid-level DevOps and Infrastructure Specialist to orchestrate, secure, and stabilize our modern containerized product environments. You will be taske
 
-  id: jd_2294 | title: Senior Machine Learning Infrastructure Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, Scikit-Learn, PyTorch, Pandas, Kubernetes
-  description: We are seeking a Senior Machine Learning Infrastructure Engineer to drive the performance, scale, and lifecycle automation of our global AI platform. In this technical lead positio
+  id: jd_2299 | title: Senior Infrastructure & Platform Architect | level: senior | min_exp: 5 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  description: We are looking for a Senior Infrastructure and Platform Architect to drive the scaling models, security compliance, and delivery orchestration of our global multi-region cloud serv
 
-  id: jd_2295 | title: Principal Data Scientist / AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, Scikit-Learn, PyTorch, Pandas, Distributed AI, Team Leadership
-  description: We are looking for a Principal Data Scientist to establish the strategic technological vision, model governance matrices, and algorithmic blueprints of our enterprise intelligence 
+  id: jd_2300 | title: Principal Infrastructure Architect / DevOps Director | level: senior | min_exp: 7 yrs
+  required_skills: AWS, Docker, Kubernetes, Terraform, Team Leadership
+  description: We are looking for a Principal Infrastructure Architect to command the strategic technical vision, platform compliance guidelines, and automated blueprint patterns of our global mu
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~9 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~12 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11451  resume_2291 × jd_2291
-  pair_11452  resume_2291 × jd_2292
-  pair_11453  resume_2291 × jd_2293
-  pair_11454  resume_2291 × jd_2294
-  pair_11455  resume_2291 × jd_2295
-  pair_11456  resume_2292 × jd_2291
-  pair_11457  resume_2292 × jd_2292
-  pair_11458  resume_2292 × jd_2293
-  pair_11459  resume_2292 × jd_2294
-  pair_11460  resume_2292 × jd_2295
-  pair_11461  resume_2293 × jd_2291
-  pair_11462  resume_2293 × jd_2292
-  pair_11463  resume_2293 × jd_2293
-  pair_11464  resume_2293 × jd_2294
-  pair_11465  resume_2293 × jd_2295
-  pair_11466  resume_2294 × jd_2291
-  pair_11467  resume_2294 × jd_2292
-  pair_11468  resume_2294 × jd_2293
-  pair_11469  resume_2294 × jd_2294
-  pair_11470  resume_2294 × jd_2295
-  pair_11471  resume_2295 × jd_2291
-  pair_11472  resume_2295 × jd_2292
-  pair_11473  resume_2295 × jd_2293
-  pair_11474  resume_2295 × jd_2294
-  pair_11475  resume_2295 × jd_2295
+  pair_11476  resume_2296 × jd_2296
+  pair_11477  resume_2296 × jd_2297
+  pair_11478  resume_2296 × jd_2298
+  pair_11479  resume_2296 × jd_2299
+  pair_11480  resume_2296 × jd_2300
+  pair_11481  resume_2297 × jd_2296
+  pair_11482  resume_2297 × jd_2297
+  pair_11483  resume_2297 × jd_2298
+  pair_11484  resume_2297 × jd_2299
+  pair_11485  resume_2297 × jd_2300
+  pair_11486  resume_2298 × jd_2296
+  pair_11487  resume_2298 × jd_2297
+  pair_11488  resume_2298 × jd_2298
+  pair_11489  resume_2298 × jd_2299
+  pair_11490  resume_2298 × jd_2300
+  pair_11491  resume_2299 × jd_2296
+  pair_11492  resume_2299 × jd_2297
+  pair_11493  resume_2299 × jd_2298
+  pair_11494  resume_2299 × jd_2299
+  pair_11495  resume_2299 × jd_2300
+  pair_11496  resume_2300 × jd_2296
+  pair_11497  resume_2300 × jd_2297
+  pair_11498  resume_2300 × jd_2298
+  pair_11499  resume_2300 × jd_2299
+  pair_11500  resume_2300 × jd_2300
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
