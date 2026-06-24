@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2531 | level: intern | exp: 0.4 yrs
+  id: resume_2536 | level: intern | exp: 0.4 yrs
   skills: Electronic Medical Records, Patient Scheduling, Patient Registration, Medical Terminology, Clinical Operations, Insurance Verification, Microsoft Excel, Data Entry, Patient Coordination, Customer Service
-  background: Final-year Healthcare Administration student with four months of internship experience supporting outpatient clinic operations at a community health center. Assisted front-desk and nursing staff with 
+  background: Final-year Healthcare Administration student with four months of internship experience supporting outpatient clinic operations in a regional medical center. Assisted front-desk staff with patient regi
 
-  id: resume_2532 | level: junior | exp: 1.6 yrs
+  id: resume_2537 | level: junior | exp: 1.7 yrs
   skills: Electronic Medical Records, Patient Coordination, Insurance Verification, Referral Management, Appointment Scheduling, Healthcare Documentation, Prior Authorization, Clinical Operations, Microsoft Excel, Patient Communication
-  background: Healthcare coordinator with 1.6 years of experience supporting ambulatory clinic administration and patient care coordination. Managed appointment scheduling, insurance verification, referral processi
+  background: Healthcare coordinator with 1.7 years of experience supporting patient care administration and clinic operations in ambulatory settings. Responsible for managing appointment scheduling, insurance veri
 
-  id: resume_2533 | level: middle | exp: 4.1 yrs
+  id: resume_2538 | level: middle | exp: 4.4 yrs
   skills: Clinical Operations, EMR Optimization, Quality Improvement, Healthcare Analytics, Patient Flow Management, Workflow Improvement, Compliance Monitoring, Staff Training, Performance Reporting, Care Coordination
-  background: Healthcare operations specialist with 4.1 years of experience managing clinical administration and operational improvement initiatives in outpatient environments. Led projects involving EMR optimizati
+  background: Healthcare operations specialist with 4.4 years of experience managing clinical administration and operational improvement initiatives across outpatient facilities. Led projects focused on EMR optimiz
 
-  id: resume_2534 | level: senior | exp: 6.5 yrs
+  id: resume_2539 | level: senior | exp: 6.3 yrs
   skills: Team Leadership, Clinical Operations, EMR Governance, Strategic Planning, Quality Management, Regulatory Compliance, Budget Management, Care Coordination, Performance Management, Stakeholder Management
-  background: Senior healthcare operations manager with 6.5 years of experience leading clinical administration teams across multi-site healthcare organizations. Directed operational performance initiatives, manage
+  background: Senior healthcare operations manager with 6.3 years of experience leading clinical administration teams and operational performance initiatives across multi-site healthcare organizations. Directed tea
 
-  id: resume_2535 | level: senior | exp: 9.3 yrs
+  id: resume_2540 | level: senior | exp: 9.2 yrs
   skills: Healthcare Strategy, Operational Leadership, Enterprise EMR Strategy, Change Management, Executive Leadership, Quality Governance, Financial Planning, Organizational Development, Regulatory Oversight, Healthcare Transformation
-  background: Principal healthcare administrator with 9.3 years of experience directing enterprise healthcare operations and transformation programs. Defined long-term healthcare strategy, governed enterprise EMR i
+  background: Principal healthcare administrator with 9.2 years of experience directing enterprise healthcare operations and transformation programs across large healthcare networks. Defined long-term healthcare st
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2531 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  id: jd_2536 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
   required_skills: Electronic Medical Records, Patient Scheduling, Patient Registration, Clinical Operations, Medical Terminology
-  description: Seeking a healthcare administration intern to support daily clinic operations and patient coordination activities. The role involves assisting with appointment scheduling, patient 
+  description: Seeking a healthcare administration intern to support daily clinic operations and patient coordination activities. Responsibilities include assisting with appointment scheduling, p
 
-  id: jd_2532 | title: Medical Coordination Specialist | level: junior | min_exp: 1 yrs
+  id: jd_2537 | title: Medical Coordination Specialist | level: junior | min_exp: 1 yrs
   required_skills: Patient Coordination, Insurance Verification, Referral Management, Electronic Medical Records, Healthcare Documentation
-  description: Looking for a medical coordination specialist to support patient care administration and referral processes in an outpatient environment. Responsibilities include managing referral
+  description: Looking for a medical coordination specialist to support patient care administration and referral management activities. Responsibilities include insurance verification, referral p
 
-  id: jd_2533 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs
+  id: jd_2538 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs
   required_skills: Clinical Operations, Quality Improvement, Healthcare Analytics, Patient Flow Management, Workflow Improvement
-  description: Seeking a clinical operations specialist to optimize workflows and support quality improvement initiatives across outpatient facilities. The position focuses on analyzing operation
+  description: Seeking a clinical operations specialist to optimize workflows and support quality improvement initiatives across outpatient facilities. Responsibilities include analyzing operatio
 
-  id: jd_2534 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
+  id: jd_2539 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
   required_skills: Team Leadership, Clinical Operations, EMR Governance, Regulatory Compliance, Performance Management
   description: Hiring a senior clinical operations manager to lead healthcare administration teams and oversee operational performance across multiple facilities. Responsibilities include establi
 
-  id: jd_2535 | title: Director of Healthcare Operations | level: senior | min_exp: 7 yrs
+  id: jd_2540 | title: Director of Healthcare Operations | level: senior | min_exp: 7 yrs
   required_skills: Healthcare Strategy, Operational Leadership, Enterprise EMR Strategy, Change Management, Executive Leadership
-  description: An experienced healthcare leader is required to define long-term operational strategy and oversee enterprise transformation initiatives. Responsibilities include establishing gover
+  description: An experienced healthcare leader is required to define long-term operational strategy and oversee enterprise transformation initiatives. Responsibilities include establishing enter
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~3 pairs
-  moderate_match: ~6 pairs
-  weak_match: ~6 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~7 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12651  resume_2531 × jd_2531
-  pair_12652  resume_2531 × jd_2532
-  pair_12653  resume_2531 × jd_2533
-  pair_12654  resume_2531 × jd_2534
-  pair_12655  resume_2531 × jd_2535
-  pair_12656  resume_2532 × jd_2531
-  pair_12657  resume_2532 × jd_2532
-  pair_12658  resume_2532 × jd_2533
-  pair_12659  resume_2532 × jd_2534
-  pair_12660  resume_2532 × jd_2535
-  pair_12661  resume_2533 × jd_2531
-  pair_12662  resume_2533 × jd_2532
-  pair_12663  resume_2533 × jd_2533
-  pair_12664  resume_2533 × jd_2534
-  pair_12665  resume_2533 × jd_2535
-  pair_12666  resume_2534 × jd_2531
-  pair_12667  resume_2534 × jd_2532
-  pair_12668  resume_2534 × jd_2533
-  pair_12669  resume_2534 × jd_2534
-  pair_12670  resume_2534 × jd_2535
-  pair_12671  resume_2535 × jd_2531
-  pair_12672  resume_2535 × jd_2532
-  pair_12673  resume_2535 × jd_2533
-  pair_12674  resume_2535 × jd_2534
-  pair_12675  resume_2535 × jd_2535
+  pair_12676  resume_2536 × jd_2536
+  pair_12677  resume_2536 × jd_2537
+  pair_12678  resume_2536 × jd_2538
+  pair_12679  resume_2536 × jd_2539
+  pair_12680  resume_2536 × jd_2540
+  pair_12681  resume_2537 × jd_2536
+  pair_12682  resume_2537 × jd_2537
+  pair_12683  resume_2537 × jd_2538
+  pair_12684  resume_2537 × jd_2539
+  pair_12685  resume_2537 × jd_2540
+  pair_12686  resume_2538 × jd_2536
+  pair_12687  resume_2538 × jd_2537
+  pair_12688  resume_2538 × jd_2538
+  pair_12689  resume_2538 × jd_2539
+  pair_12690  resume_2538 × jd_2540
+  pair_12691  resume_2539 × jd_2536
+  pair_12692  resume_2539 × jd_2537
+  pair_12693  resume_2539 × jd_2538
+  pair_12694  resume_2539 × jd_2539
+  pair_12695  resume_2539 × jd_2540
+  pair_12696  resume_2540 × jd_2536
+  pair_12697  resume_2540 × jd_2537
+  pair_12698  resume_2540 × jd_2538
+  pair_12699  resume_2540 × jd_2539
+  pair_12700  resume_2540 × jd_2540
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
