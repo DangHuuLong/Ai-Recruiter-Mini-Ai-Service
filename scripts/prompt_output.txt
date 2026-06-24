@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2361 | level: intern | exp: 0.3 yrs
-  skills: Network Security, Cryptography, Vulnerability Scanning, Linux, Firewall Configuration
-  background: I am a final-year student pursuing a Bachelor degree in Computer Science with a specialized focus on information security. Through my academic coursework, I have developed a solid foundational underst
+  id: resume_2366 | level: intern | exp: 0.2 yrs
+  skills: PostgreSQL, MongoDB, SQL, Data Modeling, Linux
+  background: I am a final-year Computer Science student with a keen interest in database management systems and data architecture. Through my academic projects, I have gained hands-on experience in designing basic
 
-  id: resume_2362 | level: junior | exp: 1.5 yrs
-  skills: SIEM, Incident Response, Log Analysis, Network Security, Vulnerability Scanning
-  background: As a Junior Security Analyst with 1.5 years of experience, I have focused on monitoring network traffic and triaging security alerts. My day-to-day responsibilities involve utilizing SIEM platforms to
+  id: resume_2367 | level: junior | exp: 1.5 yrs
+  skills: PostgreSQL, Redis, SQL, Query Optimization, Python
+  background: As a Junior Database Engineer with 1.5 years of professional experience, I have focused on supporting database operations, executing query optimization, and assisting in the migration of legacy data s
 
-  id: resume_2363 | level: middle | exp: 4.0 yrs
-  skills: SIEM, Incident Response, Penetration Testing, Cloud Security, Automation, Network Security
-  background: I am an experienced Security Engineer with 4 years of background in building secure infrastructure and managing security operations. My expertise spans cloud security, endpoint protection, and the imp
+  id: resume_2368 | level: middle | exp: 4.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Schema Design, Database Tuning, CI/CD
+  background: I am a Database Engineer with 4 years of experience specializing in backend infrastructure and data engineering. My expertise lies in designing scalable relational and non-relational database architec
 
-  id: resume_2364 | level: senior | exp: 6.0 yrs
-  skills: Security Strategy, Threat Detection, SIEM Management, Incident Management, Network Architecture, Penetration Testing
-  background: Senior Information Security Analyst with 6 years of experience in leading security strategy and large-scale threat detection programs. I specialize in designing defense-in-depth architectures, managin
+  id: resume_2369 | level: senior | exp: 6.5 yrs
+  skills: PostgreSQL, MongoDB, Redis, Data Architecture, Performance Engineering, Leadership
+  background: Senior Database Engineer with 6 years of experience managing enterprise-grade database ecosystems. I possess deep expertise in database architecture, high availability, and performance engineering in 
 
-  id: resume_2365 | level: senior | exp: 8.5 yrs
-  skills: Security Governance, Enterprise Risk Management, Network Architecture, Penetration Testing, Incident Response, Security Leadership
-  background: Principal Cybersecurity Architect with over 8 years of experience setting security governance, enterprise risk strategy, and long-term security roadmaps. I specialize in designing and overseeing secur
+  id: resume_2370 | level: senior | exp: 9.0 yrs
+  skills: PostgreSQL, MongoDB, Redis, Architecture Design, Distributed Systems, Data Governance
+  background: Principal Database Architect with over 8 years of experience building highly resilient and performant database systems at scale. I specialize in the full lifecycle of data platform design, including a
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2361 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
-  required_skills: Network Security, Vulnerability Scanning, Linux
-  description: We are seeking a motivated Cybersecurity Intern to support our security operations center. In this role, you will work with experienced analysts to monitor logs, assist in basic vu
+  id: jd_2366 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: PostgreSQL, SQL, Data Modeling
+  description: We are seeking a motivated Database Engineering Intern to support our data team. You will assist with database schema updates, run maintenance queries, and learn how to optimize pe
 
-  id: jd_2362 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
-  required_skills: SIEM, Incident Response, Log Analysis, Network Security
-  description: We are looking for a Junior Security Analyst to join our SOC team. You will be responsible for monitoring our network, analyzing security alerts, and participating in incident resp
+  id: jd_2367 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
+  required_skills: PostgreSQL, SQL, Query Optimization
+  description: We are looking for a Junior Database Engineer to join our growing data team. You will be responsible for maintaining production database health, assisting with query tuning, and ma
 
-  id: jd_2363 | title: Security Engineer | level: middle | min_exp: 3 yrs
-  required_skills: SIEM, Incident Response, Penetration Testing, Cloud Security, Network Security
-  description: We are seeking an experienced Security Engineer to own our internal security infrastructure. You will be responsible for managing SIEM operations, performing penetration testing, a
+  id: jd_2368 | title: Database Engineer | level: middle | min_exp: 3 yrs
+  required_skills: PostgreSQL, MongoDB, Data Modeling, Database Tuning
+  description: We are seeking an experienced Database Engineer to manage our core data platform. You will be responsible for scaling our database clusters, designing efficient data models, and en
 
-  id: jd_2364 | title: Senior Security Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Security Strategy, Threat Detection, SIEM Management, Incident Management, Penetration Testing
-  description: Our team is seeking a Senior Security Analyst to lead our threat detection and incident management strategy. You will be responsible for defining security controls, overseeing larg
+  id: jd_2369 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Data Architecture, Performance Engineering
+  description: Our team is looking for a Senior Database Engineer to lead our data infrastructure strategy. You will oversee multi-cluster database environments, optimize complex queries, and dri
 
-  id: jd_2365 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
-  required_skills: Security Governance, Enterprise Risk Management, Network Architecture, Penetration Testing, Security Leadership
-  description: We are looking for a visionary Principal Security Architect to drive our enterprise-level security strategy. You will oversee secure architecture design, governance, and long-term 
+  id: jd_2370 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
+  required_skills: PostgreSQL, MongoDB, Redis, Architecture Design, Data Governance
+  description: We are seeking a visionary Principal Database Architect to oversee our enterprise-level data strategy. You will manage the design and governance of our entire data ecosystem. This 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~8 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~10 pairs
   weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11801  resume_2361 × jd_2361
-  pair_11802  resume_2361 × jd_2362
-  pair_11803  resume_2361 × jd_2363
-  pair_11804  resume_2361 × jd_2364
-  pair_11805  resume_2361 × jd_2365
-  pair_11806  resume_2362 × jd_2361
-  pair_11807  resume_2362 × jd_2362
-  pair_11808  resume_2362 × jd_2363
-  pair_11809  resume_2362 × jd_2364
-  pair_11810  resume_2362 × jd_2365
-  pair_11811  resume_2363 × jd_2361
-  pair_11812  resume_2363 × jd_2362
-  pair_11813  resume_2363 × jd_2363
-  pair_11814  resume_2363 × jd_2364
-  pair_11815  resume_2363 × jd_2365
-  pair_11816  resume_2364 × jd_2361
-  pair_11817  resume_2364 × jd_2362
-  pair_11818  resume_2364 × jd_2363
-  pair_11819  resume_2364 × jd_2364
-  pair_11820  resume_2364 × jd_2365
-  pair_11821  resume_2365 × jd_2361
-  pair_11822  resume_2365 × jd_2362
-  pair_11823  resume_2365 × jd_2363
-  pair_11824  resume_2365 × jd_2364
-  pair_11825  resume_2365 × jd_2365
+  pair_11826  resume_2366 × jd_2366
+  pair_11827  resume_2366 × jd_2367
+  pair_11828  resume_2366 × jd_2368
+  pair_11829  resume_2366 × jd_2369
+  pair_11830  resume_2366 × jd_2370
+  pair_11831  resume_2367 × jd_2366
+  pair_11832  resume_2367 × jd_2367
+  pair_11833  resume_2367 × jd_2368
+  pair_11834  resume_2367 × jd_2369
+  pair_11835  resume_2367 × jd_2370
+  pair_11836  resume_2368 × jd_2366
+  pair_11837  resume_2368 × jd_2367
+  pair_11838  resume_2368 × jd_2368
+  pair_11839  resume_2368 × jd_2369
+  pair_11840  resume_2368 × jd_2370
+  pair_11841  resume_2369 × jd_2366
+  pair_11842  resume_2369 × jd_2367
+  pair_11843  resume_2369 × jd_2368
+  pair_11844  resume_2369 × jd_2369
+  pair_11845  resume_2369 × jd_2370
+  pair_11846  resume_2370 × jd_2366
+  pair_11847  resume_2370 × jd_2367
+  pair_11848  resume_2370 × jd_2368
+  pair_11849  resume_2370 × jd_2369
+  pair_11850  resume_2370 × jd_2370
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
