@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2371 | level: intern | exp: 0.3 yrs
-  skills: Python, PyTorch, Transformers, LangChain, RAG, Embeddings
-  background: I am a final-year Computer Science student passionate about Natural Language Processing and generative AI. Through academic coursework and personal projects, I have developed a strong foundation in Py
+  id: resume_2376 | level: intern | exp: 0.3 yrs
+  skills: Recruitment, Onboarding, HRIS, ATS, Data Entry
+  background: I am a final-year Human Resources student eager to launch my career in talent acquisition and people operations. Through my recent university internship, I gained exposure to the end-to-end recruitmen
 
-  id: resume_2372 | level: junior | exp: 1.5 yrs
-  skills: Python, PyTorch, LangChain, RAG, Transformers, Hugging Face
-  background: As a Junior AI Engineer with 1.5 years of experience, I focus on building and deploying NLP pipelines. My professional work involves utilizing pre-trained Transformers for text classification and sent
+  id: resume_2377 | level: junior | exp: 1.5 yrs
+  skills: Full-Cycle Recruiting, HRIS, Onboarding, Candidate Sourcing, ATS
+  background: I am a Junior Talent Acquisition Specialist with 1.5 years of professional experience in full-cycle recruiting and HR operations. In my current role, I manage high-volume job postings, screen candidat
 
-  id: resume_2373 | level: middle | exp: 4.2 yrs
-  skills: Python, PyTorch, LangChain, RAG, Transformers, System Design
-  background: I am an AI Engineer with 4 years of experience, specializing in Natural Language Processing and large-scale model integration. My background covers the end-to-end development of AI agents, from data p
+  id: resume_2378 | level: middle | exp: 4.2 yrs
+  skills: Recruitment, HRIS, Onboarding, Employee Relations, Talent Strategy
+  background: I am an HR Generalist with 4 years of experience, balancing talent acquisition, employee relations, and HRIS management. My expertise spans the entire talent lifecycle, from creating competitive job d
 
-  id: resume_2374 | level: senior | exp: 6.8 yrs
-  skills: Python, PyTorch, LangChain, RAG, Transformers, Model Deployment
-  background: Senior AI Engineer with 6 years of experience building and optimizing production-grade NLP systems. I possess a deep understanding of Transformer architectures, advanced RAG strategies, and LLM fine-t
+  id: resume_2379 | level: senior | exp: 6.5 yrs
+  skills: Strategic Recruitment, HRIS, Onboarding, Team Leadership, Talent Analytics
+  background: Senior Talent Acquisition Manager with 6 years of experience scaling teams in fast-paced environments. I have deep expertise in building robust recruiting strategies, optimizing HRIS workflows, and cr
 
-  id: resume_2375 | level: senior | exp: 9.5 yrs
-  skills: Python, PyTorch, Transformers, RAG, System Architecture, MLOps
-  background: Principal AI Architect with over 8 years of experience in the field of AI and Natural Language Processing. I specialize in building state-of-the-art generative AI systems, ranging from foundation mode
+  id: resume_2380 | level: senior | exp: 9.2 yrs
+  skills: Talent Strategy, HRIS, Onboarding, Organizational Design, Change Management
+  background: Principal HR Operations & Talent Lead with over 8 years of experience building scalable people infrastructures. I specialize in the full lifecycle of human capital management, from high-level talent a
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2371 | title: AI Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, PyTorch, Transformers
-  description: We are seeking a motivated AI Engineering Intern to join our NLP team. You will support our research and development efforts by testing new Transformer architectures and building p
+  id: jd_2376 | title: Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruitment, Onboarding, HRIS
+  description: We are seeking a motivated Talent Acquisition Intern to support our busy recruitment team. You will assist with candidate outreach, scheduling, and basic HRIS data updates. This is
 
-  id: jd_2372 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, PyTorch, RAG, LangChain
-  description: We are looking for a Junior AI Engineer to focus on NLP applications. You will be responsible for developing and maintaining RAG systems, managing embedding pipelines, and working 
+  id: jd_2377 | title: Junior Recruiter | level: junior | min_exp: 1 yrs
+  required_skills: Recruitment, Onboarding, ATS
+  description: We are looking for a Junior Recruiter to join our talent team. You will be responsible for posting jobs, sourcing candidates, and facilitating smooth onboarding for new hires. The 
 
-  id: jd_2373 | title: AI Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, LangChain, RAG, Transformers
-  description: We are seeking an experienced AI Engineer to build scalable NLP solutions. You will be responsible for designing advanced RAG architectures, tuning models for specific business tas
+  id: jd_2378 | title: HR Generalist | level: middle | min_exp: 3 yrs
+  required_skills: Recruitment, HRIS, Onboarding, Employee Relations
+  description: We are seeking an experienced HR Generalist to manage our core people operations. You will be responsible for overseeing the full recruitment lifecycle, maintaining our HRIS, and e
 
-  id: jd_2374 | title: Senior AI Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, PyTorch, Transformers, RAG, LangChain, System Design
-  description: We are looking for a Senior AI Engineer to lead our NLP infrastructure strategy. You will define how we deploy and monitor complex LLM systems and advanced RAG agents. This role re
+  id: jd_2379 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Recruitment, HRIS, Onboarding, Talent Strategy
+  description: Our team is looking for a Senior Talent Acquisition Manager to lead our talent strategy. You will oversee large-scale hiring, refine our recruitment processes, and drive global onb
 
-  id: jd_2375 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, PyTorch, Transformers, RAG, System Architecture, MLOps
-  description: We are seeking a visionary Principal AI Architect to govern our enterprise AI strategy. You will oversee the lifecycle of foundation models, from training architecture to productio
+  id: jd_2380 | title: Principal HR Operations Lead | level: senior | min_exp: 7 yrs
+  required_skills: Recruitment, HRIS, Onboarding, Talent Strategy, Change Management
+  description: We are seeking a visionary Principal HR Operations Lead to oversee our enterprise people infrastructure. You will manage the design and governance of our global talent acquisition 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~6 pairs
+  strong_match: ~3 pairs
+  excellent_match: ~2 pairs
   moderate_match: ~11 pairs
-  weak_match: ~7 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11851  resume_2371 × jd_2371
-  pair_11852  resume_2371 × jd_2372
-  pair_11853  resume_2371 × jd_2373
-  pair_11854  resume_2371 × jd_2374
-  pair_11855  resume_2371 × jd_2375
-  pair_11856  resume_2372 × jd_2371
-  pair_11857  resume_2372 × jd_2372
-  pair_11858  resume_2372 × jd_2373
-  pair_11859  resume_2372 × jd_2374
-  pair_11860  resume_2372 × jd_2375
-  pair_11861  resume_2373 × jd_2371
-  pair_11862  resume_2373 × jd_2372
-  pair_11863  resume_2373 × jd_2373
-  pair_11864  resume_2373 × jd_2374
-  pair_11865  resume_2373 × jd_2375
-  pair_11866  resume_2374 × jd_2371
-  pair_11867  resume_2374 × jd_2372
-  pair_11868  resume_2374 × jd_2373
-  pair_11869  resume_2374 × jd_2374
-  pair_11870  resume_2374 × jd_2375
-  pair_11871  resume_2375 × jd_2371
-  pair_11872  resume_2375 × jd_2372
-  pair_11873  resume_2375 × jd_2373
-  pair_11874  resume_2375 × jd_2374
-  pair_11875  resume_2375 × jd_2375
+  pair_11876  resume_2376 × jd_2376
+  pair_11877  resume_2376 × jd_2377
+  pair_11878  resume_2376 × jd_2378
+  pair_11879  resume_2376 × jd_2379
+  pair_11880  resume_2376 × jd_2380
+  pair_11881  resume_2377 × jd_2376
+  pair_11882  resume_2377 × jd_2377
+  pair_11883  resume_2377 × jd_2378
+  pair_11884  resume_2377 × jd_2379
+  pair_11885  resume_2377 × jd_2380
+  pair_11886  resume_2378 × jd_2376
+  pair_11887  resume_2378 × jd_2377
+  pair_11888  resume_2378 × jd_2378
+  pair_11889  resume_2378 × jd_2379
+  pair_11890  resume_2378 × jd_2380
+  pair_11891  resume_2379 × jd_2376
+  pair_11892  resume_2379 × jd_2377
+  pair_11893  resume_2379 × jd_2378
+  pair_11894  resume_2379 × jd_2379
+  pair_11895  resume_2379 × jd_2380
+  pair_11896  resume_2380 × jd_2376
+  pair_11897  resume_2380 × jd_2377
+  pair_11898  resume_2380 × jd_2378
+  pair_11899  resume_2380 × jd_2379
+  pair_11900  resume_2380 × jd_2380
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
