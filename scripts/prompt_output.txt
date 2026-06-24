@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2266 | level: intern | exp: 0.3 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, REST APIs, Pytest
-  background: Enthusiastic computer science student seeking a backend engineering role. Experienced in building lightweight web services using Python and Node.js through academic coursework and a self-directed boot
+  id: resume_2271 | level: intern | exp: 0.3 yrs
+  skills: Financial Accounting, Excel Pivot Tables, Data Reconciliation, Python Programming, Corporate Finance, GAAP
+  background: Ambitious and analytical finance student looking to break into the fintech space. Currently completing academic modules heavily focused on basic financial accounting principles, statistical modeling, 
 
-  id: resume_2267 | level: junior | exp: 1.5 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, REST APIs, Alembic, Git
-  background: Junior Backend Engineer with over a year of experience writing and delivering robust server-side applications. Proficient in Python web frameworks, specifically FastAPI, and runtime systems such as No
+  id: resume_2272 | level: junior | exp: 1.5 yrs
+  skills: Financial Modeling, SQL Queries, Cash Flow Analysis, Regulatory Compliance, Balance Sheet Reporting, Excel Macros
+  background: Junior Financial Analyst with over one year of professional experience within an emerging digital banking platform. Responsible for executing daily transaction ledger reconciliations and monitoring sh
 
-  id: resume_2268 | level: middle | exp: 4.0 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, Celery, OAuth2, JWT
-  background: Results-driven Mid-level Backend Developer with four years of commercial experience designing resilient, scalable distributed systems. Deep expertise in high-performance Python architectures using Fas
+  id: resume_2273 | level: middle | exp: 4.0 yrs
+  skills: Financial Modeling, Regulatory Reporting, Python Data Analysis, Variance Analysis, Risk Mitigation, Fintech Compliance
+  background: Middle-level Fintech Finance Specialist with four years of documented experience overseeing corporate financial modeling and regulatory reporting infrastructure. Adept at constructing detailed predict
 
-  id: resume_2269 | level: senior | exp: 6.0 yrs
-  skills: Python, FastAPI, Node.js, TypeScript, PostgreSQL, Kubernetes, CI/CD, Docker
-  background: Senior Backend Specialist with six years of industry experience deploying mission-critical cloud native applications and real-time streaming architectures. Masterful knowledge of Python microservices 
+  id: resume_2274 | level: senior | exp: 6.2 yrs
+  skills: Financial Architecture, Asset Liability Management, Capitalization Table Modeling, International Compliance, Process Optimization, Python
+  background: Accomplished Senior Financial Modeling and Compliance Manager with over six years of rigorous experience leading financial operations inside high-growth fintech enterprises. Specialist in architecture
 
-  id: resume_2270 | level: senior | exp: 8.5 yrs
-  skills: Python, FastAPI, Node.js, TypeScript, PostgreSQL, Cloud Architecture, System Design, Team Leadership
-  background: Principal Backend Architect and Team Lead with over eight years of hands-on technical direction in fast-paced software organizations. Expert in structural backend engineering using Python, FastAPI, No
+  id: resume_2275 | level: senior | exp: 9.5 yrs
+  skills: Strategic Financial Leadership, Liquidity Optimization, Global Compliance Architecture, Pre IPO Strategy, Machine Learning Finance, Corporate Governance
+  background: Principal Director of Fintech Financial Strategy and Corporate Governance with nearly a decade of executive-level exposure in global digital finance ecosystems. Renowned for engineering complex algori
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2266 | title: Backend API Developer Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Node.js, PostgreSQL
-  description: We are looking for an enthusiastic Backend API Developer Intern to join our software team. In this introductory role, you will assist in building, documenting, and maintaining ligh
+  id: jd_2271 | title: Fintech Finance and Accounting Intern | level: intern | min_exp: 0 yrs
+  required_skills: Microsoft Excel, Financial Accounting, Data Entry, Analytical Thinking
+  description: We are looking for a enthusiastic Finance and Accounting Intern to join our growing fintech operation. In this role, you will work closely with junior and senior analysts to suppor
 
-  id: jd_2267 | title: Junior Backend Engineer (Python / FastAPI) | level: junior | min_exp: 1 yrs
-  required_skills: Python, FastAPI, PostgreSQL
-  description: Our team is seeking a Junior Backend Engineer to help scale our core web products. You will be responsible for developing functional server-side applications using Python and FastA
+  id: jd_2272 | title: Junior Fintech Financial Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SQL, Financial Modeling, Ledger Reconciliation, Variance Analysis
+  description: Our financial technology team is seeking a Junior Financial Analyst to take ownership of core digital ledger reconciliations and transactional reporting. You will monitor daily cas
 
-  id: jd_2268 | title: Backend API Developer (FastAPI & Node.js) | level: middle | min_exp: 3 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Docker
-  description: We are searching for a Mid-level Backend API Developer to own the architecture of our distributed backend microservices. You will spend your days building high-performance endpoint
+  id: jd_2273 | title: Fintech Finance and Compliance Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Financial Modeling, Python, Fintech Compliance, Regulatory Reporting, Corporate Treasury
+  description: We are searching for a Finance and Compliance Specialist to manage our core forecasting models and international reporting commitments. You will build predictive revenue metrics, f
 
-  id: jd_2269 | title: Senior Backend Engineer - Core Platform | level: senior | min_exp: 5 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Kubernetes, CI/CD
-  description: Join us as a Senior Backend Engineer and take charge of designing high-availability platform services. You will architect multi-tenant web applications using Python, FastAPI, Node.
+  id: jd_2274 | title: Senior Financial Modeling Manager | level: senior | min_exp: 5 yrs
+  required_skills: Financial Architecture, Asset Liability Management, Corporate Governance, Team Leadership, Quantitative Modeling
+  description: A premier digital lending enterprise is seeking a Senior Financial Modeling Manager to lead its capital architecture and regulatory compliance divisions. In this role, you will be 
 
-  id: jd_2270 | title: Lead / Principal Backend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Cloud Architecture, System Design, Team Leadership
-  description: We are seeking a Lead Backend Architect to drive the strategic roadmap and infrastructure blueprint of our software platforms. You will direct the engineering standards across mult
+  id: jd_2275 | title: Principal Fintech Finance Director | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Financial Leadership, Liquidity Optimization, Pre IPO Strategy, Global Compliance, Corporate Governance
+  description: We are looking for a Principal Fintech Finance Director to establish the long-term fiscal strategy and regulatory compliance guardrails for our global digital banking framework. Th
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -74,31 +74,31 @@ Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11326  resume_2266 × jd_2266
-  pair_11327  resume_2266 × jd_2267
-  pair_11328  resume_2266 × jd_2268
-  pair_11329  resume_2266 × jd_2269
-  pair_11330  resume_2266 × jd_2270
-  pair_11331  resume_2267 × jd_2266
-  pair_11332  resume_2267 × jd_2267
-  pair_11333  resume_2267 × jd_2268
-  pair_11334  resume_2267 × jd_2269
-  pair_11335  resume_2267 × jd_2270
-  pair_11336  resume_2268 × jd_2266
-  pair_11337  resume_2268 × jd_2267
-  pair_11338  resume_2268 × jd_2268
-  pair_11339  resume_2268 × jd_2269
-  pair_11340  resume_2268 × jd_2270
-  pair_11341  resume_2269 × jd_2266
-  pair_11342  resume_2269 × jd_2267
-  pair_11343  resume_2269 × jd_2268
-  pair_11344  resume_2269 × jd_2269
-  pair_11345  resume_2269 × jd_2270
-  pair_11346  resume_2270 × jd_2266
-  pair_11347  resume_2270 × jd_2267
-  pair_11348  resume_2270 × jd_2268
-  pair_11349  resume_2270 × jd_2269
-  pair_11350  resume_2270 × jd_2270
+  pair_11351  resume_2271 × jd_2271
+  pair_11352  resume_2271 × jd_2272
+  pair_11353  resume_2271 × jd_2273
+  pair_11354  resume_2271 × jd_2274
+  pair_11355  resume_2271 × jd_2275
+  pair_11356  resume_2272 × jd_2271
+  pair_11357  resume_2272 × jd_2272
+  pair_11358  resume_2272 × jd_2273
+  pair_11359  resume_2272 × jd_2274
+  pair_11360  resume_2272 × jd_2275
+  pair_11361  resume_2273 × jd_2271
+  pair_11362  resume_2273 × jd_2272
+  pair_11363  resume_2273 × jd_2273
+  pair_11364  resume_2273 × jd_2274
+  pair_11365  resume_2273 × jd_2275
+  pair_11366  resume_2274 × jd_2271
+  pair_11367  resume_2274 × jd_2272
+  pair_11368  resume_2274 × jd_2273
+  pair_11369  resume_2274 × jd_2274
+  pair_11370  resume_2274 × jd_2275
+  pair_11371  resume_2275 × jd_2271
+  pair_11372  resume_2275 × jd_2272
+  pair_11373  resume_2275 × jd_2273
+  pair_11374  resume_2275 × jd_2274
+  pair_11375  resume_2275 × jd_2275
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
