@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2461 | level: intern | exp: 0.4 yrs
-  skills: Requirements Gathering, User Stories, BPMN, UML, Jira, Confluence, Stakeholder Communication, Process Mapping, User Acceptance Testing, Agile
-  background: Final-year Information Systems student with four months of internship experience supporting business analysis activities in a software development environment. Assisted senior analysts in gathering bu
+  id: resume_2466 | level: intern | exp: 0.4 yrs
+  skills: Linux, Python, Wireshark, Nmap, Splunk, Bash, TCP/IP, Vulnerability Assessment, Network Security, Incident Documentation
+  background: Final-year Cybersecurity student with four months of internship experience supporting security monitoring and vulnerability assessment activities in a university SOC environment. Assisted analysts wit
 
-  id: resume_2462 | level: junior | exp: 1.6 yrs
-  skills: Requirements Analysis, User Stories, BPMN, Jira, Confluence, Stakeholder Management, Agile, User Acceptance Testing, Process Improvement, Documentation
-  background: Junior Business Analyst with 1.6 years of professional experience supporting software delivery projects in fintech and e-commerce environments. Responsible for eliciting requirements, documenting func
+  id: resume_2467 | level: junior | exp: 1.5 yrs
+  skills: Splunk, Microsoft Sentinel, SIEM, Incident Response, Threat Hunting, Nessus, Linux, Python, Network Security, MITRE ATT&CK
+  background: Junior Security Operations Analyst with 1.5 years of experience working in a managed SOC environment. Monitored security events, triaged alerts, and escalated incidents involving malware, phishing, an
 
-  id: resume_2463 | level: middle | exp: 4.2 yrs
-  skills: Requirements Analysis, BPMN, Stakeholder Management, Business Process Analysis, Jira, Confluence, Agile, Change Management, User Acceptance Testing, SQL
-  background: Business Analyst with 4.2 years of experience delivering enterprise software and digital transformation projects across banking and logistics domains. Led requirement workshops, facilitated stakeholde
+  id: resume_2468 | level: middle | exp: 4.6 yrs
+  skills: Splunk, Elastic Stack, Burp Suite, Metasploit, Threat Hunting, SOAR, MITRE ATT&CK, Python, Incident Response, Nessus
+  background: Cybersecurity Engineer with 4.6 years of experience across security operations, penetration testing, and detection engineering. Designed and maintained SIEM use cases, performed threat hunting activit
 
-  id: resume_2464 | level: senior | exp: 6.4 yrs
-  skills: Stakeholder Management, BPMN, Project Management, Requirements Analysis, Risk Management, Change Management, Agile, Jira, Business Architecture, Leadership
-  background: Senior Business Analyst and Project Lead with 6.4 years of experience managing complex software delivery programs and business transformation initiatives. Led requirement discovery, stakeholder engage
+  id: resume_2469 | level: senior | exp: 6.5 yrs
+  skills: Splunk, Microsoft Sentinel, SOAR, Incident Response, Threat Intelligence, Cloud Security, Security Architecture, Leadership, MITRE ATT&CK, Risk Assessment
+  background: Senior Information Security Engineer with 6.5 years of experience leading enterprise security operations and incident response programs. Managed SIEM architecture initiatives, coordinated major incide
 
-  id: resume_2465 | level: senior | exp: 9.1 yrs
-  skills: Program Management, Governance, Stakeholder Management, BPMN, Enterprise Architecture, Change Management, Risk Management, Leadership, Business Analysis, Agile Portfolio Management
-  background: Principal Business Transformation Manager with 9.1 years of experience leading enterprise change initiatives, strategic programs, and large-scale business process transformation projects. Directed bus
+  id: resume_2470 | level: senior | exp: 9.2 yrs
+  skills: Security Architecture, Governance, Risk Management, SIEM, SOAR, Cloud Security, Threat Intelligence, Leadership, Zero Trust, Incident Response
+  background: Principal Cybersecurity Architect with 9.2 years of experience defining enterprise security strategy and leading large-scale cybersecurity transformation initiatives. Oversaw security architecture, go
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2461 | title: Business Analyst Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Agile
-  description: Seeking a business analyst intern to support requirement gathering, documentation, and process analysis activities for software delivery projects. The intern will assist senior ana
+  id: jd_2466 | title: Cybersecurity Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Linux, Network Security, Python, Splunk
+  description: Seeking a cybersecurity intern to support security monitoring, vulnerability assessments, and incident documentation activities. The intern will assist analysts with reviewing SIEM
 
-  id: jd_2462 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, User Stories, BPMN, Stakeholder Management
-  description: Looking for a junior business analyst to support software development projects by gathering requirements, documenting user stories, and coordinating with stakeholders. Candidates s
+  id: jd_2467 | title: Junior SOC Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SIEM, Splunk, Incident Response, Linux
+  description: Looking for a junior SOC analyst to monitor security events, triage alerts, and support incident response activities. Candidates should have experience using SIEM platforms, perfor
 
-  id: jd_2463 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Business Process Analysis, BPMN, Stakeholder Management, Change Management
-  description: An organization is seeking a business analyst to lead requirement elicitation, process analysis, and stakeholder engagement activities across enterprise initiatives. Candidates sho
+  id: jd_2468 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Splunk, MITRE ATT&CK, Burp Suite, Threat Hunting
+  description: An organization is seeking a cybersecurity engineer to design detection capabilities, conduct penetration testing, and improve enterprise monitoring systems. Candidates should poss
 
-  id: jd_2464 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Requirements Analysis, Project Management, Risk Management, Leadership
-  description: Seeking a senior business analyst to lead complex transformation projects and manage stakeholder relationships across multiple business units. The role requires extensive experienc
+  id: jd_2469 | title: Senior Incident Response Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Incident Response, Splunk, Leadership, Threat Intelligence
+  description: Seeking a senior incident response engineer to lead complex security investigations and improve enterprise detection capabilities. The role requires extensive SIEM experience, thre
 
-  id: jd_2465 | title: Principal Business Transformation Manager | level: senior | min_exp: 7 yrs
-  required_skills: Program Management, Governance, Stakeholder Management, Leadership
-  description: A principal business transformation manager is required to define enterprise transformation strategies and oversee portfolio-level delivery governance. The role involves leading pr
+  id: jd_2470 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
+  required_skills: Security Architecture, Leadership, Risk Management, Governance
+  description: A principal security architect is required to define enterprise security strategy and oversee long-term cybersecurity initiatives. The role involves establishing security architect
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~10 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~9 pairs
   weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12301  resume_2461 × jd_2461
-  pair_12302  resume_2461 × jd_2462
-  pair_12303  resume_2461 × jd_2463
-  pair_12304  resume_2461 × jd_2464
-  pair_12305  resume_2461 × jd_2465
-  pair_12306  resume_2462 × jd_2461
-  pair_12307  resume_2462 × jd_2462
-  pair_12308  resume_2462 × jd_2463
-  pair_12309  resume_2462 × jd_2464
-  pair_12310  resume_2462 × jd_2465
-  pair_12311  resume_2463 × jd_2461
-  pair_12312  resume_2463 × jd_2462
-  pair_12313  resume_2463 × jd_2463
-  pair_12314  resume_2463 × jd_2464
-  pair_12315  resume_2463 × jd_2465
-  pair_12316  resume_2464 × jd_2461
-  pair_12317  resume_2464 × jd_2462
-  pair_12318  resume_2464 × jd_2463
-  pair_12319  resume_2464 × jd_2464
-  pair_12320  resume_2464 × jd_2465
-  pair_12321  resume_2465 × jd_2461
-  pair_12322  resume_2465 × jd_2462
-  pair_12323  resume_2465 × jd_2463
-  pair_12324  resume_2465 × jd_2464
-  pair_12325  resume_2465 × jd_2465
+  pair_12326  resume_2466 × jd_2466
+  pair_12327  resume_2466 × jd_2467
+  pair_12328  resume_2466 × jd_2468
+  pair_12329  resume_2466 × jd_2469
+  pair_12330  resume_2466 × jd_2470
+  pair_12331  resume_2467 × jd_2466
+  pair_12332  resume_2467 × jd_2467
+  pair_12333  resume_2467 × jd_2468
+  pair_12334  resume_2467 × jd_2469
+  pair_12335  resume_2467 × jd_2470
+  pair_12336  resume_2468 × jd_2466
+  pair_12337  resume_2468 × jd_2467
+  pair_12338  resume_2468 × jd_2468
+  pair_12339  resume_2468 × jd_2469
+  pair_12340  resume_2468 × jd_2470
+  pair_12341  resume_2469 × jd_2466
+  pair_12342  resume_2469 × jd_2467
+  pair_12343  resume_2469 × jd_2468
+  pair_12344  resume_2469 × jd_2469
+  pair_12345  resume_2469 × jd_2470
+  pair_12346  resume_2470 × jd_2466
+  pair_12347  resume_2470 × jd_2467
+  pair_12348  resume_2470 × jd_2468
+  pair_12349  resume_2470 × jd_2469
+  pair_12350  resume_2470 × jd_2470
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
