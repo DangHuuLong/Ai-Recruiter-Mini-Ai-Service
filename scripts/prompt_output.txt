@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2516 | level: intern | exp: 0.4 yrs
-  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research, Google Search Console, Microsoft Excel, Content Calendar Management, Community Management, Data Analysis
-  background: Final-year Marketing student specializing in digital marketing and content strategy with four months of internship experience supporting online campaign execution for a consumer brand. Assisted the ma
+  id: resume_2521 | level: intern | exp: 0.4 yrs
+  skills: Python, FastAPI, PostgreSQL, REST APIs, SQL, Git, Docker, API Testing, JavaScript, Agile Development
+  background: Final-year Computer Science student specializing in backend API development with four months of internship experience supporting internal platform development. Assisted senior engineers in implementin
 
-  id: resume_2517 | level: junior | exp: 1.8 yrs
-  skills: SEO, Google Analytics, Social Media Marketing, Content Strategy, Google Search Console, Keyword Research, Content Management Systems, Campaign Reporting, On-Page Optimization, Email Marketing
-  background: Digital marketing specialist with 1.8 years of experience managing SEO initiatives and social media campaigns for e-commerce and service businesses. Responsible for keyword research, on-page optimizat
+  id: resume_2522 | level: junior | exp: 1.8 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, REST APIs, JWT Authentication, Docker, CI/CD, SQL Optimization, API Documentation
+  background: Backend developer with 1.8 years of experience building and maintaining web APIs for business applications. Developed RESTful services using Python, FastAPI, and Node.js while integrating PostgreSQL d
 
-  id: resume_2518 | level: middle | exp: 4.2 yrs
-  skills: Content Strategy, SEO, Marketing Analytics, Conversion Rate Optimization, Google Analytics, Content Performance Analysis, Audience Segmentation, Editorial Planning, A/B Testing, Digital Campaign Management
-  background: Content marketing and digital strategy professional with 4.2 years of experience developing integrated content programs and optimizing digital performance. Led SEO initiatives, content planning activi
+  id: resume_2523 | level: middle | exp: 4.4 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, Redis, System Design, Automated Testing, Performance Optimization, Message Queues
+  background: Backend engineer with 4.4 years of experience designing and delivering scalable API platforms for SaaS products. Led development of microservices using Python, FastAPI, and Node.js while optimizing Po
 
-  id: resume_2519 | level: senior | exp: 6.3 yrs
-  skills: Digital Strategy, Team Leadership, SEO Strategy, Marketing Analytics, Content Governance, Budget Management, Marketing Automation, Stakeholder Management, Performance Optimization, Social Media Strategy
-  background: Senior digital marketing manager with 6.3 years of experience leading multi-channel marketing programs and content strategy initiatives for regional organizations. Directed SEO programs, social media 
+  id: resume_2524 | level: senior | exp: 6.1 yrs
+  skills: Python, FastAPI, Node.js, Backend Architecture, Team Leadership, PostgreSQL, CI/CD, Microservices, System Design, Performance Optimization
+  background: Senior backend engineer with 6.1 years of experience leading development of high-availability API platforms across fintech and SaaS environments. Specialized in backend architecture, microservices des
 
-  id: resume_2520 | level: senior | exp: 9.4 yrs
-  skills: Marketing Strategy, Executive Leadership, Digital Transformation, Content Governance, Enterprise Analytics, Change Management, Organizational Leadership, Strategic Planning, Marketing Operations, Business Growth Strategy
-  background: Principal digital marketing executive with 9.4 years of experience defining enterprise marketing strategy and leading large-scale content transformation programs. Directed cross-functional teams respo
+  id: resume_2525 | level: senior | exp: 9.3 yrs
+  skills: Backend Strategy, Architecture Governance, Engineering Leadership, Distributed Systems, Platform Architecture, PostgreSQL Strategy, Technical Roadmaps, Cloud Architecture, Scalability, Organizational Leadership
+  background: Principal backend architect with 9.3 years of experience defining engineering strategy and architecture for enterprise API platforms. Led organization-wide initiatives involving backend modernization,
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2516 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Marketing, Google Analytics, Keyword Research, Content Writing
-  description: Seeking a digital marketing intern to support SEO and social media activities across multiple digital channels. Responsibilities include keyword research, content scheduling, socia
+  id: jd_2521 | title: Backend API Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, FastAPI, PostgreSQL, REST APIs, SQL
+  description: Seeking a backend development intern to support implementation and testing of REST APIs using Python and FastAPI. Responsibilities include developing simple endpoints, writing SQL 
 
-  id: jd_2517 | title: Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Google Analytics, Content Strategy, Campaign Reporting, Google Search Console
-  description: Looking for a digital marketing specialist to execute SEO and content initiatives across websites and social media channels. Responsibilities include optimizing website content, ma
+  id: jd_2522 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, FastAPI, PostgreSQL, API Documentation, Docker
+  description: Looking for a junior backend developer to build and maintain APIs using Python, FastAPI, and PostgreSQL. The role includes implementing authentication, integrating external service
 
-  id: jd_2518 | title: Content Strategy Manager | level: middle | min_exp: 3 yrs
-  required_skills: Content Strategy, Marketing Analytics, Conversion Rate Optimization, A/B Testing, Audience Segmentation
-  description: Seeking a content strategy manager to lead integrated content programs and optimize digital performance across owned channels. Responsibilities include developing editorial strateg
+  id: jd_2523 | title: Backend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, Microservices, Performance Optimization, Automated Testing, PostgreSQL
+  description: Seeking a backend engineer to design scalable services and optimize API performance. Responsibilities include developing microservices, improving database performance, implementing
 
-  id: jd_2519 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Team Leadership, SEO Strategy, Marketing Analytics, Budget Management, Stakeholder Management
-  description: Hiring a senior digital marketing manager to lead multi-channel campaigns, oversee marketing operations, and mentor digital marketing teams. Responsibilities include defining SEO s
+  id: jd_2524 | title: Senior Backend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Backend Architecture, Team Leadership, CI/CD, System Design, PostgreSQL
+  description: Hiring a senior backend engineer to lead architecture decisions and guide backend development teams. Responsibilities include defining engineering standards, overseeing microservic
 
-  id: jd_2520 | title: Director of Digital Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Marketing Strategy, Executive Leadership, Enterprise Analytics, Change Management, Strategic Planning
-  description: An experienced marketing leader is required to define long-term digital strategy and oversee enterprise content and analytics transformation initiatives. Responsibilities include e
+  id: jd_2525 | title: Principal Backend Architect | level: senior | min_exp: 7 yrs
+  required_skills: Architecture Governance, Engineering Leadership, Platform Architecture, Technical Roadmaps, Distributed Systems
+  description: An experienced backend leader is required to define long-term platform architecture and engineering strategy. Responsibilities include establishing architecture governance, guiding
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~12 pairs
-  moderate_match: ~5 pairs
-  weak_match: ~7 pairs
+  strong_match: ~11 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~7 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12576  resume_2516 × jd_2516
-  pair_12577  resume_2516 × jd_2517
-  pair_12578  resume_2516 × jd_2518
-  pair_12579  resume_2516 × jd_2519
-  pair_12580  resume_2516 × jd_2520
-  pair_12581  resume_2517 × jd_2516
-  pair_12582  resume_2517 × jd_2517
-  pair_12583  resume_2517 × jd_2518
-  pair_12584  resume_2517 × jd_2519
-  pair_12585  resume_2517 × jd_2520
-  pair_12586  resume_2518 × jd_2516
-  pair_12587  resume_2518 × jd_2517
-  pair_12588  resume_2518 × jd_2518
-  pair_12589  resume_2518 × jd_2519
-  pair_12590  resume_2518 × jd_2520
-  pair_12591  resume_2519 × jd_2516
-  pair_12592  resume_2519 × jd_2517
-  pair_12593  resume_2519 × jd_2518
-  pair_12594  resume_2519 × jd_2519
-  pair_12595  resume_2519 × jd_2520
-  pair_12596  resume_2520 × jd_2516
-  pair_12597  resume_2520 × jd_2517
-  pair_12598  resume_2520 × jd_2518
-  pair_12599  resume_2520 × jd_2519
-  pair_12600  resume_2520 × jd_2520
+  pair_12601  resume_2521 × jd_2521
+  pair_12602  resume_2521 × jd_2522
+  pair_12603  resume_2521 × jd_2523
+  pair_12604  resume_2521 × jd_2524
+  pair_12605  resume_2521 × jd_2525
+  pair_12606  resume_2522 × jd_2521
+  pair_12607  resume_2522 × jd_2522
+  pair_12608  resume_2522 × jd_2523
+  pair_12609  resume_2522 × jd_2524
+  pair_12610  resume_2522 × jd_2525
+  pair_12611  resume_2523 × jd_2521
+  pair_12612  resume_2523 × jd_2522
+  pair_12613  resume_2523 × jd_2523
+  pair_12614  resume_2523 × jd_2524
+  pair_12615  resume_2523 × jd_2525
+  pair_12616  resume_2524 × jd_2521
+  pair_12617  resume_2524 × jd_2522
+  pair_12618  resume_2524 × jd_2523
+  pair_12619  resume_2524 × jd_2524
+  pair_12620  resume_2524 × jd_2525
+  pair_12621  resume_2525 × jd_2521
+  pair_12622  resume_2525 × jd_2522
+  pair_12623  resume_2525 × jd_2523
+  pair_12624  resume_2525 × jd_2524
+  pair_12625  resume_2525 × jd_2525
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
