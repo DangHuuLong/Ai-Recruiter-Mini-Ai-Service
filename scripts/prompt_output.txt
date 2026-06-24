@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2596 | level: intern | exp: 0.4 yrs
-  skills: Procurement Support, Inventory Tracking, ERP Data Entry, Purchase Orders, Logistics Coordination, Spreadsheet Analysis, Supplier Communication, Stock Reconciliation, Warehouse Operations, Reporting
-  background: Final-year supply chain management student with four months of internship experience supporting procurement and logistics operations. Assisted with purchase order tracking, inventory reconciliation, s
+  id: resume_2601 | level: intern | exp: 0.4 yrs
+  skills: Python, React, REST APIs, JavaScript, HTML, CSS, Git, SQL, Frontend Development, Backend Development
+  background: Final-year computer science student with 0.4 years of internship experience supporting full-stack web development projects. Assisted developers with building React user interfaces, updating Python bac
 
-  id: resume_2597 | level: junior | exp: 1.5 yrs
-  skills: Procurement, Inventory Control, ERP Systems, Order Fulfillment, Supplier Management, Logistics Operations, Demand Planning Support, Reporting, Warehouse Coordination, Data Analysis
-  background: Supply chain coordinator with 1.5 years of experience supporting procurement, inventory management, and logistics execution. Managed purchase order updates, monitored supplier deliveries, and maintain
+  id: resume_2602 | level: junior | exp: 1.5 yrs
+  skills: Python, React, REST APIs, SQL, Git, Docker, Authentication, JavaScript, Testing, Deployment
+  background: Full-stack web developer with 1.5 years of experience building business applications using Python and React. Developed reusable frontend components, integrated REST APIs, and maintained backend servic
 
-  id: resume_2598 | level: middle | exp: 4.2 yrs
-  skills: Procurement Management, Inventory Optimization, ERP Administration, Demand Planning, Supplier Performance, Logistics Management, Forecasting, Process Improvement, Warehouse Planning, KPI Reporting
-  background: Supply chain specialist with 4.2 years of experience managing procurement activities, inventory optimization programs, and logistics performance initiatives. Led projects focused on inventory planning
+  id: resume_2603 | level: middle | exp: 4.2 yrs
+  skills: Python, React, System Design, REST APIs, SQL, CI/CD, Docker, Automated Testing, Cloud Deployment, Performance Optimization
+  background: Full-stack engineer with 4.2 years of experience designing and delivering scalable web applications using Python and React. Led development of frontend interfaces, backend services, and API integratio
 
-  id: resume_2599 | level: senior | exp: 6.4 yrs
-  skills: Supply Chain Leadership, Procurement Strategy, Inventory Governance, ERP Transformation, Supplier Leadership, Logistics Strategy, Operational Excellence, Risk Management, Team Leadership, Performance Management
-  background: Senior supply chain manager with 6.4 years of experience leading procurement, inventory strategy, and logistics operations across multi-site environments. Directed teams responsible for sourcing coord
+  id: resume_2604 | level: senior | exp: 6.4 yrs
+  skills: Python Architecture, React, Technical Leadership, System Design, CI/CD, Cloud Architecture, Performance Optimization, Security, Release Management, Mentoring
+  background: Senior full-stack engineer with 6.4 years of experience leading development of large-scale web platforms. Specialized in Python backend architecture, React application design, and technical leadership
 
-  id: resume_2600 | level: senior | exp: 9.3 yrs
-  skills: Enterprise Supply Chain Strategy, Procurement Governance, Inventory Strategy, ERP Governance, Executive Leadership, Logistics Transformation, Strategic Roadmaps, Network Optimization, Organizational Leadership, Capability Development
-  background: Principal supply chain executive with 9.3 years of experience defining enterprise procurement strategy, inventory governance frameworks, and logistics transformation programs. Led large-scale initiati
+  id: resume_2605 | level: senior | exp: 9.1 yrs
+  skills: Platform Architecture, Engineering Leadership, Python Strategy, React Governance, Scalability, Technical Roadmaps, Cloud Strategy, Architecture Governance, Organizational Leadership, Transformation Management
+  background: Principal full-stack technology leader with 9.1 years of experience defining platform strategy and overseeing engineering transformation programs. Established architectural governance standards for Py
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2596 | title: Supply Chain Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Procurement Support, Inventory Tracking, ERP Data Entry, Purchase Orders, Supplier Communication
-  description: Seeking a supply chain operations intern to support procurement administration, inventory tracking, and ERP data maintenance activities. Responsibilities include monitoring purchas
+  id: jd_2601 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React, REST APIs, Git, JavaScript
+  description: Seeking a full-stack development intern to support React frontend implementation and Python backend maintenance. Responsibilities include API integration, testing, bug fixing, docu
 
-  id: jd_2597 | title: Junior Supply Chain Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, Inventory Control, ERP Systems, Order Fulfillment, Supplier Management
-  description: Looking for a junior supply chain coordinator to manage procurement transactions, inventory control activities, and logistics support processes. The position works with suppliers, 
+  id: jd_2602 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, SQL, Testing, Deployment
+  description: Looking for a junior full-stack developer to build React interfaces and Python services. The role includes database integration, testing, deployment support, and collaboration with
 
-  id: jd_2598 | title: Supply Chain Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Procurement Management, Inventory Optimization, ERP Administration, Demand Planning, Supplier Performance
-  description: Seeking an experienced supply chain analyst to drive inventory optimization, procurement planning, and logistics performance improvements. Responsibilities include forecasting, sup
+  id: jd_2603 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, System Design, Automated Testing, CI/CD
+  description: Seeking an experienced full-stack engineer to design scalable applications using Python and React. Responsibilities include system design, automated testing, CI/CD implementation, 
 
-  id: jd_2599 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Supply Chain Leadership, Procurement Strategy, Inventory Governance, Supplier Leadership, Logistics Strategy
-  description: Hiring a senior supply chain manager to lead procurement strategy, inventory governance, supplier management, and logistics operations. The position oversees operational performanc
+  id: jd_2604 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Technical Leadership, System Design, CI/CD, Performance Optimization, Cloud Architecture
+  description: Hiring a senior full-stack engineer to lead architecture decisions and mentor development teams. Responsibilities include cloud architecture planning, performance optimization, rel
 
-  id: jd_2600 | title: Principal Supply Chain Transformation Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Supply Chain Strategy, Procurement Governance, Inventory Strategy, ERP Governance, Executive Leadership
-  description: An experienced principal leader is required to define enterprise supply chain strategy and oversee procurement, inventory, and logistics transformation programs. Responsibilities i
+  id: jd_2605 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
+  description: An experienced technology leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include architecture governance, r
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~9 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~9 pairs
+  moderate_match: ~2 pairs
   weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12976  resume_2596 × jd_2596
-  pair_12977  resume_2596 × jd_2597
-  pair_12978  resume_2596 × jd_2598
-  pair_12979  resume_2596 × jd_2599
-  pair_12980  resume_2596 × jd_2600
-  pair_12981  resume_2597 × jd_2596
-  pair_12982  resume_2597 × jd_2597
-  pair_12983  resume_2597 × jd_2598
-  pair_12984  resume_2597 × jd_2599
-  pair_12985  resume_2597 × jd_2600
-  pair_12986  resume_2598 × jd_2596
-  pair_12987  resume_2598 × jd_2597
-  pair_12988  resume_2598 × jd_2598
-  pair_12989  resume_2598 × jd_2599
-  pair_12990  resume_2598 × jd_2600
-  pair_12991  resume_2599 × jd_2596
-  pair_12992  resume_2599 × jd_2597
-  pair_12993  resume_2599 × jd_2598
-  pair_12994  resume_2599 × jd_2599
-  pair_12995  resume_2599 × jd_2600
-  pair_12996  resume_2600 × jd_2596
-  pair_12997  resume_2600 × jd_2597
-  pair_12998  resume_2600 × jd_2598
-  pair_12999  resume_2600 × jd_2599
-  pair_13000  resume_2600 × jd_2600
+  pair_13001  resume_2601 × jd_2601
+  pair_13002  resume_2601 × jd_2602
+  pair_13003  resume_2601 × jd_2603
+  pair_13004  resume_2601 × jd_2604
+  pair_13005  resume_2601 × jd_2605
+  pair_13006  resume_2602 × jd_2601
+  pair_13007  resume_2602 × jd_2602
+  pair_13008  resume_2602 × jd_2603
+  pair_13009  resume_2602 × jd_2604
+  pair_13010  resume_2602 × jd_2605
+  pair_13011  resume_2603 × jd_2601
+  pair_13012  resume_2603 × jd_2602
+  pair_13013  resume_2603 × jd_2603
+  pair_13014  resume_2603 × jd_2604
+  pair_13015  resume_2603 × jd_2605
+  pair_13016  resume_2604 × jd_2601
+  pair_13017  resume_2604 × jd_2602
+  pair_13018  resume_2604 × jd_2603
+  pair_13019  resume_2604 × jd_2604
+  pair_13020  resume_2604 × jd_2605
+  pair_13021  resume_2605 × jd_2601
+  pair_13022  resume_2605 × jd_2602
+  pair_13023  resume_2605 × jd_2603
+  pair_13024  resume_2605 × jd_2604
+  pair_13025  resume_2605 × jd_2605
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
