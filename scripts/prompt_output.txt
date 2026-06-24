@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2636 | level: intern | exp: 0.4 yrs
-  skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals, Feature Engineering, Data Visualization, SQL, Model Evaluation, Statistics
-  background: Final-year data science student with 0.4 years of internship experience supporting analytics and machine learning initiatives. Assisted senior analysts with preparing datasets, validating records, and
+  id: resume_2641 | level: intern | exp: 0.4 yrs
+  skills: Python, FastAPI, PostgreSQL, REST APIs, API Testing, Git, SQL, Debugging, Agile Development, Technical Documentation
+  background: Final-year computer science student with 0.4 years of internship experience supporting backend API development for web applications. Assisted engineers with building REST endpoints, validating request
 
-  id: resume_2637 | level: junior | exp: 1.6 yrs
-  skills: Python, Pandas, Scikit-Learn, SQL, Data Analysis, Feature Engineering, Model Validation, Reporting Automation, Data Visualization, Experiment Tracking
-  background: Data analyst and junior machine learning practitioner with 1.6 years of experience supporting predictive analytics projects. Developed data preparation workflows, automated reporting tasks, and mainta
+  id: resume_2642 | level: junior | exp: 1.5 yrs
+  skills: Python, FastAPI, PostgreSQL, API Development, Authentication, Automated Testing, Git, Logging, Performance Tuning, Agile Delivery
+  background: Backend developer with 1.5 years of experience building and maintaining API services for digital products. Developed REST APIs using Python and FastAPI, implemented business logic, and integrated Post
 
-  id: resume_2638 | level: middle | exp: 4.3 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Machine Learning, Model Deployment, Feature Engineering, Statistical Analysis, Model Monitoring, Experiment Design
-  background: Machine learning engineer with 4.3 years of experience designing predictive models and data products. Led end-to-end workflows covering data acquisition, preprocessing, model development, evaluation, 
+  id: resume_2643 | level: middle | exp: 4.2 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, CI/CD, API Architecture, Performance Optimization, System Integration, Monitoring
+  background: Backend engineer with 4.2 years of experience designing scalable API platforms and data services. Built microservices using Python, FastAPI, and Node.js while optimizing PostgreSQL schemas and query p
 
-  id: resume_2639 | level: senior | exp: 6.4 yrs
-  skills: Data Science Leadership, Machine Learning Strategy, PyTorch, Scikit-Learn, Model Governance, MLOps, Stakeholder Management, Experimentation Frameworks, Team Leadership, Analytics Strategy
-  background: Senior data science manager with 6.4 years of experience leading machine learning programs and analytics teams. Directed development of predictive modeling solutions, experimentation frameworks, and m
+  id: resume_2644 | level: senior | exp: 6.4 yrs
+  skills: Technical Leadership, Python, FastAPI, Node.js, PostgreSQL, Distributed Systems, Security, Scalability, CI/CD Leadership, Architecture Review
+  background: Senior backend engineer with 6.4 years of experience leading API development initiatives across cloud-based platforms. Directed teams building high-availability services using Python, FastAPI, Node.js
 
-  id: resume_2640 | level: senior | exp: 9.2 yrs
-  skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Portfolio Leadership, Responsible AI, Analytics Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
-  background: Principal machine learning and data strategy leader with 9.2 years of experience overseeing enterprise-scale analytics transformation. Defined long-term AI roadmaps, governance frameworks, and capabil
+  id: resume_2645 | level: senior | exp: 9.1 yrs
+  skills: Backend Platform Strategy, Architecture Governance, Engineering Leadership, API Governance, Python Governance, Node.js Governance, Scalability Strategy, Organizational Leadership, Strategic Roadmaps, Technology Transformation
+  background: Principal backend technology leader with 9.1 years of experience defining platform strategy and governing enterprise API ecosystems. Established architecture standards covering Python, FastAPI, Node.j
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2636 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals
-  description: Seeking a data science intern to support analytics and machine learning projects. Responsibilities include data cleaning, exploratory analysis, dataset preparation, and reporting. 
+  id: jd_2641 | title: Backend API Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, FastAPI, PostgreSQL, REST APIs, API Testing
+  description: Seeking an intern to support backend API development activities using Python and FastAPI. Responsibilities include implementing small features, testing endpoints, documenting APIs,
 
-  id: jd_2637 | title: Junior Machine Learning Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Python, Pandas, Scikit-Learn, Feature Engineering, Model Validation
-  description: Looking for a junior machine learning analyst to support model development and reporting initiatives. The position involves feature engineering, data analysis, validation activitie
+  id: jd_2642 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, FastAPI, PostgreSQL, API Development, Automated Testing
+  description: Looking for a junior backend developer to build and maintain API services using Python, FastAPI, and PostgreSQL. The position includes feature delivery, testing, debugging, and dep
 
-  id: jd_2638 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, Machine Learning, Model Deployment, Experiment Design
-  description: Seeking an experienced machine learning engineer to design, deploy, and optimize predictive models. Responsibilities include model development, experiment design, deployment suppor
+  id: jd_2643 | title: Backend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, Node.js, PostgreSQL, Microservices, API Architecture
+  description: Seeking an experienced backend engineer to design scalable services using Python, FastAPI, Node.js, and PostgreSQL. Responsibilities include architecture design, integration develo
 
-  id: jd_2639 | title: Senior Data Science Manager | level: senior | min_exp: 5 yrs
-  required_skills: Data Science Leadership, Machine Learning Strategy, Model Governance, Stakeholder Management, Team Leadership
-  description: Hiring a senior manager to lead data science teams and machine learning initiatives. Responsibilities include governance, roadmap planning, stakeholder management, and oversight of
+  id: jd_2644 | title: Senior Backend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Technical Leadership, Python, FastAPI, Scalability, Architecture Review
+  description: Hiring a senior backend engineer to lead architecture initiatives and mentor development teams. The role focuses on scalable services, security, CI/CD practices, and backend platfo
 
-  id: jd_2640 | title: Principal AI Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Strategic Roadmaps
-  description: An experienced AI leader is required to define enterprise machine learning strategy and oversee transformation programs. Responsibilities include governance development, executive 
+  id: jd_2645 | title: Principal Backend Platform Architect | level: senior | min_exp: 7 yrs
+  required_skills: Backend Platform Strategy, Architecture Governance, Engineering Leadership, Strategic Roadmaps, Technology Transformation
+  description: An experienced technology leader is required to define backend platform strategy and oversee enterprise API transformation initiatives. Responsibilities include governance developm
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~7 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13176  resume_2636 × jd_2636
-  pair_13177  resume_2636 × jd_2637
-  pair_13178  resume_2636 × jd_2638
-  pair_13179  resume_2636 × jd_2639
-  pair_13180  resume_2636 × jd_2640
-  pair_13181  resume_2637 × jd_2636
-  pair_13182  resume_2637 × jd_2637
-  pair_13183  resume_2637 × jd_2638
-  pair_13184  resume_2637 × jd_2639
-  pair_13185  resume_2637 × jd_2640
-  pair_13186  resume_2638 × jd_2636
-  pair_13187  resume_2638 × jd_2637
-  pair_13188  resume_2638 × jd_2638
-  pair_13189  resume_2638 × jd_2639
-  pair_13190  resume_2638 × jd_2640
-  pair_13191  resume_2639 × jd_2636
-  pair_13192  resume_2639 × jd_2637
-  pair_13193  resume_2639 × jd_2638
-  pair_13194  resume_2639 × jd_2639
-  pair_13195  resume_2639 × jd_2640
-  pair_13196  resume_2640 × jd_2636
-  pair_13197  resume_2640 × jd_2637
-  pair_13198  resume_2640 × jd_2638
-  pair_13199  resume_2640 × jd_2639
-  pair_13200  resume_2640 × jd_2640
+  pair_13201  resume_2641 × jd_2641
+  pair_13202  resume_2641 × jd_2642
+  pair_13203  resume_2641 × jd_2643
+  pair_13204  resume_2641 × jd_2644
+  pair_13205  resume_2641 × jd_2645
+  pair_13206  resume_2642 × jd_2641
+  pair_13207  resume_2642 × jd_2642
+  pair_13208  resume_2642 × jd_2643
+  pair_13209  resume_2642 × jd_2644
+  pair_13210  resume_2642 × jd_2645
+  pair_13211  resume_2643 × jd_2641
+  pair_13212  resume_2643 × jd_2642
+  pair_13213  resume_2643 × jd_2643
+  pair_13214  resume_2643 × jd_2644
+  pair_13215  resume_2643 × jd_2645
+  pair_13216  resume_2644 × jd_2641
+  pair_13217  resume_2644 × jd_2642
+  pair_13218  resume_2644 × jd_2643
+  pair_13219  resume_2644 × jd_2644
+  pair_13220  resume_2644 × jd_2645
+  pair_13221  resume_2645 × jd_2641
+  pair_13222  resume_2645 × jd_2642
+  pair_13223  resume_2645 × jd_2643
+  pair_13224  resume_2645 × jd_2644
+  pair_13225  resume_2645 × jd_2645
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
