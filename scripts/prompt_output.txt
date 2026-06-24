@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2641 | level: intern | exp: 0.4 yrs
-  skills: Python, FastAPI, PostgreSQL, REST APIs, API Testing, Git, SQL, Debugging, Agile Development, Technical Documentation
-  background: Final-year computer science student with 0.4 years of internship experience supporting backend API development for web applications. Assisted engineers with building REST endpoints, validating request
+  id: resume_2646 | level: intern | exp: 0.4 yrs
+  skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding, Resume Review, Applicant Tracking Systems, HR Documentation, Stakeholder Communication, Recruitment Reporting
+  background: Final-year human resources student with 0.4 years of internship experience supporting recruiting and onboarding activities. Assisted recruiters with candidate screening, interview scheduling, job post
 
-  id: resume_2642 | level: junior | exp: 1.5 yrs
-  skills: Python, FastAPI, PostgreSQL, API Development, Authentication, Automated Testing, Git, Logging, Performance Tuning, Agile Delivery
-  background: Backend developer with 1.5 years of experience building and maintaining API services for digital products. Developed REST APIs using Python and FastAPI, implemented business logic, and integrated Post
+  id: resume_2647 | level: junior | exp: 1.5 yrs
+  skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems, Candidate Communication, Recruitment Reporting, Compliance Tracking, Employee Records Management, Stakeholder Management
+  background: HR coordinator with 1.5 years of experience supporting talent acquisition and employee onboarding programs. Managed interview scheduling, candidate communications, and recruitment pipeline tracking th
 
-  id: resume_2643 | level: middle | exp: 4.2 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, CI/CD, API Architecture, Performance Optimization, System Integration, Monitoring
-  background: Backend engineer with 4.2 years of experience designing scalable API platforms and data services. Built microservices using Python, FastAPI, and Node.js while optimizing PostgreSQL schemas and query p
+  id: resume_2648 | level: middle | exp: 4.2 yrs
+  skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Workforce Reporting, Candidate Assessment, Process Improvement, Employee Relations Support, Compliance Management, Stakeholder Collaboration
+  background: Human resources specialist with 4.2 years of experience managing recruitment programs, onboarding initiatives, and HR operations. Led full-cycle recruiting activities including sourcing coordination, 
 
-  id: resume_2644 | level: senior | exp: 6.4 yrs
-  skills: Technical Leadership, Python, FastAPI, Node.js, PostgreSQL, Distributed Systems, Security, Scalability, CI/CD Leadership, Architecture Review
-  background: Senior backend engineer with 6.4 years of experience leading API development initiatives across cloud-based platforms. Directed teams building high-availability services using Python, FastAPI, Node.js
+  id: resume_2649 | level: senior | exp: 6.3 yrs
+  skills: Talent Acquisition Leadership, Workforce Planning, HR Operations, Onboarding Governance, HRIS Strategy, Recruitment Metrics, Employer Branding, Compliance Leadership, Team Development, Stakeholder Leadership
+  background: Senior talent acquisition manager with 6.3 years of experience leading recruiting operations, workforce planning, and HR programs. Directed teams responsible for sourcing strategies, recruitment deliv
 
-  id: resume_2645 | level: senior | exp: 9.1 yrs
-  skills: Backend Platform Strategy, Architecture Governance, Engineering Leadership, API Governance, Python Governance, Node.js Governance, Scalability Strategy, Organizational Leadership, Strategic Roadmaps, Technology Transformation
-  background: Principal backend technology leader with 9.1 years of experience defining platform strategy and governing enterprise API ecosystems. Established architecture standards covering Python, FastAPI, Node.j
+  id: resume_2650 | level: senior | exp: 9.4 yrs
+  skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, Talent Acquisition Strategy, HR Transformation, Workforce Strategy, HR Technology Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
+  background: Principal human resources executive with 9.4 years of experience defining enterprise talent strategy and leading organizational transformation initiatives. Established governance frameworks for recrui
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2641 | title: Backend API Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, FastAPI, PostgreSQL, REST APIs, API Testing
-  description: Seeking an intern to support backend API development activities using Python and FastAPI. Responsibilities include implementing small features, testing endpoints, documenting APIs,
+  id: jd_2646 | title: HR and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding
+  description: Seeking an HR intern to support recruiting, onboarding, and HR administration activities. Responsibilities include candidate screening support, interview scheduling, ATS updates, o
 
-  id: jd_2642 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, FastAPI, PostgreSQL, API Development, Automated Testing
-  description: Looking for a junior backend developer to build and maintain API services using Python, FastAPI, and PostgreSQL. The position includes feature delivery, testing, debugging, and dep
+  id: jd_2647 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems
+  description: Looking for a junior HR professional to coordinate recruiting activities and onboarding processes. Responsibilities include candidate communication, ATS administration, recruitment
 
-  id: jd_2643 | title: Backend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, Node.js, PostgreSQL, Microservices, API Architecture
-  description: Seeking an experienced backend engineer to design scalable services using Python, FastAPI, Node.js, and PostgreSQL. Responsibilities include architecture design, integration develo
+  id: jd_2648 | title: HR Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Process Improvement
+  description: Seeking an experienced HR specialist to manage recruiting programs, onboarding initiatives, and HR operations. Responsibilities include full-cycle recruiting support, workforce rep
 
-  id: jd_2644 | title: Senior Backend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Technical Leadership, Python, FastAPI, Scalability, Architecture Review
-  description: Hiring a senior backend engineer to lead architecture initiatives and mentor development teams. The role focuses on scalable services, security, CI/CD practices, and backend platfo
+  id: jd_2649 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
+  required_skills: Talent Acquisition Leadership, Workforce Planning, Onboarding Governance, Recruitment Metrics, Stakeholder Leadership
+  description: Hiring a senior talent acquisition manager to lead recruiting operations and workforce planning initiatives. Responsibilities include overseeing onboarding governance, recruitment 
 
-  id: jd_2645 | title: Principal Backend Platform Architect | level: senior | min_exp: 7 yrs
-  required_skills: Backend Platform Strategy, Architecture Governance, Engineering Leadership, Strategic Roadmaps, Technology Transformation
-  description: An experienced technology leader is required to define backend platform strategy and oversee enterprise API transformation initiatives. Responsibilities include governance developm
+  id: jd_2650 | title: Principal HR Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, HR Transformation, Workforce Strategy
+  description: An experienced HR executive is required to define enterprise talent strategy and oversee organizational transformation initiatives. Responsibilities include governance development,
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~1 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~6 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~6 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13201  resume_2641 × jd_2641
-  pair_13202  resume_2641 × jd_2642
-  pair_13203  resume_2641 × jd_2643
-  pair_13204  resume_2641 × jd_2644
-  pair_13205  resume_2641 × jd_2645
-  pair_13206  resume_2642 × jd_2641
-  pair_13207  resume_2642 × jd_2642
-  pair_13208  resume_2642 × jd_2643
-  pair_13209  resume_2642 × jd_2644
-  pair_13210  resume_2642 × jd_2645
-  pair_13211  resume_2643 × jd_2641
-  pair_13212  resume_2643 × jd_2642
-  pair_13213  resume_2643 × jd_2643
-  pair_13214  resume_2643 × jd_2644
-  pair_13215  resume_2643 × jd_2645
-  pair_13216  resume_2644 × jd_2641
-  pair_13217  resume_2644 × jd_2642
-  pair_13218  resume_2644 × jd_2643
-  pair_13219  resume_2644 × jd_2644
-  pair_13220  resume_2644 × jd_2645
-  pair_13221  resume_2645 × jd_2641
-  pair_13222  resume_2645 × jd_2642
-  pair_13223  resume_2645 × jd_2643
-  pair_13224  resume_2645 × jd_2644
-  pair_13225  resume_2645 × jd_2645
+  pair_13226  resume_2646 × jd_2646
+  pair_13227  resume_2646 × jd_2647
+  pair_13228  resume_2646 × jd_2648
+  pair_13229  resume_2646 × jd_2649
+  pair_13230  resume_2646 × jd_2650
+  pair_13231  resume_2647 × jd_2646
+  pair_13232  resume_2647 × jd_2647
+  pair_13233  resume_2647 × jd_2648
+  pair_13234  resume_2647 × jd_2649
+  pair_13235  resume_2647 × jd_2650
+  pair_13236  resume_2648 × jd_2646
+  pair_13237  resume_2648 × jd_2647
+  pair_13238  resume_2648 × jd_2648
+  pair_13239  resume_2648 × jd_2649
+  pair_13240  resume_2648 × jd_2650
+  pair_13241  resume_2649 × jd_2646
+  pair_13242  resume_2649 × jd_2647
+  pair_13243  resume_2649 × jd_2648
+  pair_13244  resume_2649 × jd_2649
+  pair_13245  resume_2649 × jd_2650
+  pair_13246  resume_2650 × jd_2646
+  pair_13247  resume_2650 × jd_2647
+  pair_13248  resume_2650 × jd_2648
+  pair_13249  resume_2650 × jd_2649
+  pair_13250  resume_2650 × jd_2650
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
