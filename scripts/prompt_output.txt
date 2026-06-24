@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2211 | level: intern | exp: 0.5 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Data Engineering
-  background: Enthusiastic Data Science student with a strong theoretical foundation in machine learning and data engineering primitives. Proficient in executing clean data manipulation workflows, predictive featur
+  id: resume_2216 | level: intern | exp: 0.5 yrs
+  skills: Agile, Roadmap, Stakeholder Management, Jira, Product Lifecycle
+  background: Aspiring Product Management intern with foundational academic training in software product life cycles and modern technology workflows. Adept at coordinating team cross-functional updates and synthesi
 
-  id: resume_2212 | level: junior | exp: 1.5 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Git
-  background: Junior Machine Learning Specialist with over one year of professional experience designing, maintaining, and reviewing predictive classification models. Adept at transforming complex tabular datasets 
+  id: resume_2217 | level: junior | exp: 1.5 yrs
+  skills: Agile, Roadmap, Stakeholder Management, User Stories, Product Analytics
+  background: Junior Product Manager with over one year of professional corporate experience collaborating with software engineering squads to launch mobile feature modules. Proficient at managing the product backl
 
-  id: resume_2213 | level: middle | exp: 4.0 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Docker, AWS, SQL
-  background: Data Scientist with four years of progressive professional experience specializing in advanced predictive modeling and distributed data transformation workflows. Advanced expertise in building highly 
+  id: resume_2218 | level: middle | exp: 4.0 yrs
+  skills: Roadmap, Agile, Stakeholder Management, SaaS, Product Strategy, SQL
+  background: Dynamic Product Manager with four years of progressive industry experience guiding cloud-native SaaS feature modules from initial discovery phases to global rollouts. Highly proficient in designing co
 
-  id: resume_2214 | level: senior | exp: 6.0 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, MLOps, AWS, Docker, Kubernetes
-  background: Senior Machine Learning Architect with six years of industry experience specializing in designing scalable production-ready artificial intelligence solutions. Expert in building highly parallelized da
+  id: resume_2219 | level: senior | exp: 6.0 yrs
+  skills: Roadmap, Agile, Stakeholder Management, Cloud Infrastructure, API Strategy, Data Analytics
+  background: Senior Product Manager with over six years of technical leadership experience specializing in driving expansive digital infrastructure transformations. Trusted expert at architecting high-level produc
 
-  id: resume_2215 | level: senior | exp: 8.5 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, MLOps, Team Leadership, AI Strategy
-  background: Principal Data Scientist and Lead Machine Learning Engineer with over eight years of experience shaping artificial intelligence roadmaps and managing elite technical teams. Unrivaled master in buildin
+  id: resume_2220 | level: senior | exp: 9.0 yrs
+  skills: Roadmap, Agile, Stakeholder Management, Product Strategy, Team Leadership, Change Management
+  background: Principal Product Director and Lead Technology Strategist with nine years of experience shaping international corporate technology portfolios and managing elite product division leads. Master at frami
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2211 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Pandas, Scikit-Learn
-  description: We are seeking an enthusiastic Data Science Intern to join our core engineering squad. In this role, you will help process raw text files, clean messy structured databases using pa
+  id: jd_2216 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Agile, Roadmap, Stakeholder Management
+  description: We are seeking an enthusiastic Product Management Intern to assist our cloud features squad. In this role, you will help synthesize user discovery data, transcribe detailed feature
 
-  id: jd_2212 | title: Junior Machine Learning Engineer | level: junior | min_exp: 1 yrs
-  required_skills: Python, Pandas, Scikit-Learn, PyTorch
-  description: Our predictive analytics team is looking for a Junior Machine Learning Engineer to deploy and monitor predictive models. You will design robust feature transformation steps with pa
+  id: jd_2217 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Roadmap, Stakeholder Management, User Stories
+  description: Our application growth squad is looking for a Junior Product Manager to drive feature delivery loops. You will build granular product roadmap tracking grids, draft clear user stori
 
-  id: jd_2213 | title: Data Scientist | level: middle | min_exp: 3 yrs
-  required_skills: Python, Pandas, Scikit-Learn, PyTorch
-  description: We are looking for an experienced Data Scientist to innovate advanced analytics models and scale predictive systems across our consumer applications. In this position, you will cle
+  id: jd_2218 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Roadmap, Agile, Stakeholder Management, SaaS
+  description: We are hunting for an experienced Product Manager to run cloud SaaS features and build innovative application experiences. In this position, you will draft comprehensive product ro
 
-  id: jd_2214 | title: Senior Machine Learning Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, PyTorch, Scikit-Learn, MLOps, AWS
-  description: Join our enterprise artificial intelligence group as a Senior Machine Learning Engineer. You will be responsible for defining and deploying production-level deep learning systems a
+  id: jd_2219 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Roadmap, Agile, Stakeholder Management, Cloud Infrastructure, API Strategy
+  description: Join our platform division as a Senior Product Manager. You will be responsible for orchestrating complex digital systems and mapping foundational technical product roadmap archite
 
-  id: jd_2215 | title: Principal Data Scientist - AI Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, PyTorch, Scikit-Learn, Team Leadership, AI Strategy
-  description: We are searching for a Principal Data Scientist to anchor our core machine learning strategy and lead our specialized artificial intelligence division. You will oversee the develop
+  id: jd_2220 | title: Principal Product Director | level: senior | min_exp: 7 yrs
+  required_skills: Roadmap, Agile, Stakeholder Management, Product Strategy, Team Leadership
+  description: We are searching for a Principal Product Director to anchor our core platform vision and guide our high-impact technology portfolio. You will oversee long-range product roadmap por
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~6 pairs
-  weak_match: ~9 pairs
+  strong_match: ~8 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11051  resume_2211 × jd_2211
-  pair_11052  resume_2211 × jd_2212
-  pair_11053  resume_2211 × jd_2213
-  pair_11054  resume_2211 × jd_2214
-  pair_11055  resume_2211 × jd_2215
-  pair_11056  resume_2212 × jd_2211
-  pair_11057  resume_2212 × jd_2212
-  pair_11058  resume_2212 × jd_2213
-  pair_11059  resume_2212 × jd_2214
-  pair_11060  resume_2212 × jd_2215
-  pair_11061  resume_2213 × jd_2211
-  pair_11062  resume_2213 × jd_2212
-  pair_11063  resume_2213 × jd_2213
-  pair_11064  resume_2213 × jd_2214
-  pair_11065  resume_2213 × jd_2215
-  pair_11066  resume_2214 × jd_2211
-  pair_11067  resume_2214 × jd_2212
-  pair_11068  resume_2214 × jd_2213
-  pair_11069  resume_2214 × jd_2214
-  pair_11070  resume_2214 × jd_2215
-  pair_11071  resume_2215 × jd_2211
-  pair_11072  resume_2215 × jd_2212
-  pair_11073  resume_2215 × jd_2213
-  pair_11074  resume_2215 × jd_2214
-  pair_11075  resume_2215 × jd_2215
+  pair_11076  resume_2216 × jd_2216
+  pair_11077  resume_2216 × jd_2217
+  pair_11078  resume_2216 × jd_2218
+  pair_11079  resume_2216 × jd_2219
+  pair_11080  resume_2216 × jd_2220
+  pair_11081  resume_2217 × jd_2216
+  pair_11082  resume_2217 × jd_2217
+  pair_11083  resume_2217 × jd_2218
+  pair_11084  resume_2217 × jd_2219
+  pair_11085  resume_2217 × jd_2220
+  pair_11086  resume_2218 × jd_2216
+  pair_11087  resume_2218 × jd_2217
+  pair_11088  resume_2218 × jd_2218
+  pair_11089  resume_2218 × jd_2219
+  pair_11090  resume_2218 × jd_2220
+  pair_11091  resume_2219 × jd_2216
+  pair_11092  resume_2219 × jd_2217
+  pair_11093  resume_2219 × jd_2218
+  pair_11094  resume_2219 × jd_2219
+  pair_11095  resume_2219 × jd_2220
+  pair_11096  resume_2220 × jd_2216
+  pair_11097  resume_2220 × jd_2217
+  pair_11098  resume_2220 × jd_2218
+  pair_11099  resume_2220 × jd_2219
+  pair_11100  resume_2220 × jd_2220
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
