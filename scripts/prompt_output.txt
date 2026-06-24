@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2481 | level: intern | exp: 0.4 yrs
-  skills: Python, Django, React, JavaScript, REST API, PostgreSQL, Git, HTML, CSS, Unit Testing
-  background: Final-year Computer Science student specializing in full-stack web development with four months of internship experience at a software startup. Contributed to internal web applications by implementing
+  id: resume_2486 | level: intern | exp: 0.4 yrs
+  skills: Flutter, React Native, Dart, JavaScript, REST API, Firebase, SQLite, Git, Unit Testing, Agile
+  background: Final-year Computer Science student specializing in mobile application development with four months of internship experience at a startup building consumer applications. Contributed to Flutter-based f
 
-  id: resume_2482 | level: junior | exp: 1.8 yrs
-  skills: Python, Django, React, JavaScript, REST API, PostgreSQL, Docker, Git, CI/CD, Agile
-  background: Junior Full-Stack Developer with 1.8 years of professional experience delivering web applications for e-commerce and SaaS platforms. Worked extensively with React and Python-based backend frameworks t
+  id: resume_2487 | level: junior | exp: 1.7 yrs
+  skills: React Native, Flutter, Redux, JavaScript, Dart, Firebase, REST API, Git, Crashlytics, Agile
+  background: Mobile developer with 1.7 years of professional experience delivering cross-platform applications for retail and service industries. Primarily worked with React Native and Flutter to develop customer-
 
-  id: resume_2483 | level: middle | exp: 4.2 yrs
-  skills: Python, FastAPI, React, TypeScript, PostgreSQL, Docker, CI/CD, AWS, Unit Testing, System Design
-  background: Full-Stack Software Engineer with 4.2 years of experience designing and delivering scalable web applications across fintech and healthcare domains. Specialized in building backend services with Python
+  id: resume_2488 | level: middle | exp: 4.5 yrs
+  skills: Flutter, Kotlin, Clean Architecture, MVVM, CI/CD, Fastlane, Firebase, Unit Testing, Performance Optimization, GitHub Actions
+  background: Software engineer with 4.5 years of experience building scalable mobile applications across fintech and healthcare domains. Specialized in Flutter and native Android development using Kotlin while con
 
-  id: resume_2484 | level: senior | exp: 6.3 yrs
-  skills: Python, React, Microservices, AWS, CI/CD, System Design, Technical Leadership, Docker, Kubernetes, Software Architecture
-  background: Senior Full-Stack Engineer with 6.3 years of experience leading development of enterprise web platforms and mentoring distributed engineering teams. Extensive expertise in architecting Python-based ba
+  id: resume_2489 | level: senior | exp: 6.6 yrs
+  skills: Swift, iOS, Flutter, Clean Architecture, CI/CD, Fastlane, Dependency Injection, Performance Optimization, Technical Leadership, Bitrise
+  background: Senior mobile engineer with 6.6 years of experience delivering enterprise-grade mobile products and leading technical initiatives across distributed teams. Expertise includes native iOS development wi
 
-  id: resume_2485 | level: senior | exp: 9.4 yrs
-  skills: Software Architecture, Python, React, Distributed Systems, Leadership, Cloud Architecture, Governance, System Design, DevOps, Security
-  background: Principal Full-Stack Architect with 9.4 years of experience defining technical strategy and leading large-scale software modernization initiatives. Deep expertise in Python ecosystems, frontend archit
+  id: resume_2490 | level: senior | exp: 9.3 yrs
+  skills: Swift, Kotlin, Architecture, Leadership, Mobile DevOps, Security, Performance Optimization, CI/CD, Accessibility, Governance
+  background: Principal mobile architect with 9.3 years of experience leading mobile engineering organizations and defining long-term technical strategies for high-scale consumer platforms. Deep expertise spans nat
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2481 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, REST API, Git
-  description: Seeking a full-stack development intern to support development of internal web applications. The intern will assist with implementing React components, developing backend APIs usin
+  id: jd_2486 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Flutter, Git, REST API, Firebase
+  description: Seeking a motivated mobile development intern to support implementation of cross-platform applications. The intern will assist with UI development, bug fixing, API integration, and
 
-  id: jd_2482 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, PostgreSQL, Docker
-  description: Looking for a junior full-stack developer to build and maintain customer-facing web applications. Responsibilities include implementing frontend features with React, developing bac
+  id: jd_2487 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, JavaScript, REST API, Git
+  description: Looking for a junior React Native developer to build and maintain customer-facing mobile applications. The engineer will develop new screens, integrate backend services, and resolv
 
-  id: jd_2483 | title: Mid-Level Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, AWS, CI/CD
-  description: An organization is seeking a mid-level full-stack engineer to design and implement scalable web applications. The role involves building backend APIs, optimizing database performan
+  id: jd_2488 | title: Mid-Level Flutter Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Flutter, MVVM, CI/CD, Firebase
+  description: A product team is hiring a mid-level Flutter engineer to deliver scalable customer-facing applications. Responsibilities include architecture participation, feature implementation,
 
-  id: jd_2484 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, System Design, Technical Leadership
-  description: Seeking a senior full-stack engineer to lead technical initiatives and deliver highly scalable web platforms. The role requires extensive experience designing distributed systems, 
+  id: jd_2489 | title: Senior iOS Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Swift, iOS, Clean Architecture, CI/CD
+  description: Seeking a senior iOS engineer to lead development of critical mobile capabilities across multiple applications. The role requires ownership of architecture, technical design, and m
 
-  id: jd_2485 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Software Architecture, Leadership, Cloud Architecture, Governance
-  description: A principal full-stack architect is required to define long-term technical strategy and oversee enterprise web platform modernization. The role involves establishing architectural 
+  id: jd_2490 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Swift, Kotlin, Architecture, Leadership
+  description: An experienced principal mobile architect is required to define long-term technical strategy for a portfolio of mobile products. The role involves leading architectural decisions, 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~5 pairs
-  excellent_match: ~12 pairs
-  moderate_match: ~3 pairs
-  weak_match: ~5 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12401  resume_2481 × jd_2481
-  pair_12402  resume_2481 × jd_2482
-  pair_12403  resume_2481 × jd_2483
-  pair_12404  resume_2481 × jd_2484
-  pair_12405  resume_2481 × jd_2485
-  pair_12406  resume_2482 × jd_2481
-  pair_12407  resume_2482 × jd_2482
-  pair_12408  resume_2482 × jd_2483
-  pair_12409  resume_2482 × jd_2484
-  pair_12410  resume_2482 × jd_2485
-  pair_12411  resume_2483 × jd_2481
-  pair_12412  resume_2483 × jd_2482
-  pair_12413  resume_2483 × jd_2483
-  pair_12414  resume_2483 × jd_2484
-  pair_12415  resume_2483 × jd_2485
-  pair_12416  resume_2484 × jd_2481
-  pair_12417  resume_2484 × jd_2482
-  pair_12418  resume_2484 × jd_2483
-  pair_12419  resume_2484 × jd_2484
-  pair_12420  resume_2484 × jd_2485
-  pair_12421  resume_2485 × jd_2481
-  pair_12422  resume_2485 × jd_2482
-  pair_12423  resume_2485 × jd_2483
-  pair_12424  resume_2485 × jd_2484
-  pair_12425  resume_2485 × jd_2485
+  pair_12426  resume_2486 × jd_2486
+  pair_12427  resume_2486 × jd_2487
+  pair_12428  resume_2486 × jd_2488
+  pair_12429  resume_2486 × jd_2489
+  pair_12430  resume_2486 × jd_2490
+  pair_12431  resume_2487 × jd_2486
+  pair_12432  resume_2487 × jd_2487
+  pair_12433  resume_2487 × jd_2488
+  pair_12434  resume_2487 × jd_2489
+  pair_12435  resume_2487 × jd_2490
+  pair_12436  resume_2488 × jd_2486
+  pair_12437  resume_2488 × jd_2487
+  pair_12438  resume_2488 × jd_2488
+  pair_12439  resume_2488 × jd_2489
+  pair_12440  resume_2488 × jd_2490
+  pair_12441  resume_2489 × jd_2486
+  pair_12442  resume_2489 × jd_2487
+  pair_12443  resume_2489 × jd_2488
+  pair_12444  resume_2489 × jd_2489
+  pair_12445  resume_2489 × jd_2490
+  pair_12446  resume_2490 × jd_2486
+  pair_12447  resume_2490 × jd_2487
+  pair_12448  resume_2490 × jd_2488
+  pair_12449  resume_2490 × jd_2489
+  pair_12450  resume_2490 × jd_2490
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
