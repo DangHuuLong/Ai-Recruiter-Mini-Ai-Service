@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2511 | level: intern | exp: 0.4 yrs
-  skills: Inventory Management, Microsoft Excel, ERP Systems, Procurement Support, Purchase Order Processing, Warehouse Operations, Data Analysis, SKU Management, Supplier Coordination, Stock Reconciliation
-  background: Final-year Supply Chain Management student with four months of internship experience supporting warehouse and procurement operations in a consumer goods environment. Assisted the logistics team in mai
+  id: resume_2516 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Marketing, Google Analytics, Content Writing, Keyword Research, Google Search Console, Microsoft Excel, Content Calendar Management, Community Management, Data Analysis
+  background: Final-year Marketing student specializing in digital marketing and content strategy with four months of internship experience supporting online campaign execution for a consumer brand. Assisted the ma
 
-  id: resume_2512 | level: junior | exp: 1.8 yrs
-  skills: Procurement, Inventory Control, ERP Systems, Purchase Orders, Supplier Management, Microsoft Excel, Logistics Coordination, Demand Planning, Warehouse Management, Inventory Analysis
-  background: Supply chain coordinator with 1.8 years of experience supporting procurement and inventory operations in retail and distribution environments. Responsible for maintaining ERP inventory records, proces
+  id: resume_2517 | level: junior | exp: 1.8 yrs
+  skills: SEO, Google Analytics, Social Media Marketing, Content Strategy, Google Search Console, Keyword Research, Content Management Systems, Campaign Reporting, On-Page Optimization, Email Marketing
+  background: Digital marketing specialist with 1.8 years of experience managing SEO initiatives and social media campaigns for e-commerce and service businesses. Responsible for keyword research, on-page optimizat
 
-  id: resume_2513 | level: middle | exp: 4.5 yrs
-  skills: Demand Forecasting, Inventory Planning, ERP Optimization, Supplier Management, Procurement, Supply Chain Analytics, Process Improvement, Warehouse Operations, KPI Reporting, Logistics Management
-  background: Supply chain specialist with 4.5 years of experience managing procurement, inventory planning, and logistics operations across manufacturing and distribution networks. Led initiatives focused on deman
+  id: resume_2518 | level: middle | exp: 4.2 yrs
+  skills: Content Strategy, SEO, Marketing Analytics, Conversion Rate Optimization, Google Analytics, Content Performance Analysis, Audience Segmentation, Editorial Planning, A/B Testing, Digital Campaign Management
+  background: Content marketing and digital strategy professional with 4.2 years of experience developing integrated content programs and optimizing digital performance. Led SEO initiatives, content planning activi
 
-  id: resume_2514 | level: senior | exp: 6.2 yrs
-  skills: Team Leadership, Strategic Procurement, ERP Implementation, Inventory Strategy, Supplier Negotiation, Demand Planning, Logistics Optimization, Budget Management, Process Improvement, Stakeholder Management
-  background: Senior supply chain manager with 6.2 years of experience leading procurement, inventory, and logistics operations for regional distribution networks. Directed cross-functional teams responsible for de
+  id: resume_2519 | level: senior | exp: 6.3 yrs
+  skills: Digital Strategy, Team Leadership, SEO Strategy, Marketing Analytics, Content Governance, Budget Management, Marketing Automation, Stakeholder Management, Performance Optimization, Social Media Strategy
+  background: Senior digital marketing manager with 6.3 years of experience leading multi-channel marketing programs and content strategy initiatives for regional organizations. Directed SEO programs, social media 
 
-  id: resume_2515 | level: senior | exp: 9.4 yrs
-  skills: Supply Chain Strategy, Enterprise ERP Strategy, Executive Leadership, Change Management, Procurement Governance, Network Optimization, Financial Planning, Risk Management, Organizational Leadership, Supply Chain Transformation
-  background: Principal supply chain leader with 9.4 years of experience defining enterprise procurement and logistics strategies for multinational organizations. Directed large-scale supply chain transformation pr
+  id: resume_2520 | level: senior | exp: 9.4 yrs
+  skills: Marketing Strategy, Executive Leadership, Digital Transformation, Content Governance, Enterprise Analytics, Change Management, Organizational Leadership, Strategic Planning, Marketing Operations, Business Growth Strategy
+  background: Principal digital marketing executive with 9.4 years of experience defining enterprise marketing strategy and leading large-scale content transformation programs. Directed cross-functional teams respo
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2511 | title: Supply Chain Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Inventory Management, Microsoft Excel, ERP Systems, Procurement Support, Purchase Order Processing
-  description: Seeking a supply chain operations intern to support daily procurement and inventory activities. Responsibilities include updating ERP transactions, processing purchase documentatio
+  id: jd_2516 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing, Google Analytics, Keyword Research, Content Writing
+  description: Seeking a digital marketing intern to support SEO and social media activities across multiple digital channels. Responsibilities include keyword research, content scheduling, socia
 
-  id: jd_2512 | title: Procurement and Inventory Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, Inventory Control, ERP Systems, Supplier Management, Microsoft Excel
-  description: Looking for a procurement and inventory coordinator to manage purchasing activities, inventory replenishment, and supplier communications. The role requires maintaining ERP records
+  id: jd_2517 | title: Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Google Analytics, Content Strategy, Campaign Reporting, Google Search Console
+  description: Looking for a digital marketing specialist to execute SEO and content initiatives across websites and social media channels. Responsibilities include optimizing website content, ma
 
-  id: jd_2513 | title: Supply Chain Planning Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Demand Forecasting, Inventory Planning, ERP Optimization, Supplier Management, Supply Chain Analytics
-  description: Seeking a supply chain planning specialist to oversee demand forecasting, inventory planning, and ERP optimization initiatives. Responsibilities include analyzing supply chain perf
+  id: jd_2518 | title: Content Strategy Manager | level: middle | min_exp: 3 yrs
+  required_skills: Content Strategy, Marketing Analytics, Conversion Rate Optimization, A/B Testing, Audience Segmentation
+  description: Seeking a content strategy manager to lead integrated content programs and optimize digital performance across owned channels. Responsibilities include developing editorial strateg
 
-  id: jd_2514 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Team Leadership, Strategic Procurement, ERP Implementation, Demand Planning, Stakeholder Management
-  description: Hiring a senior supply chain manager to lead procurement, inventory, and logistics functions across regional operations. The role oversees strategic sourcing, ERP implementation, d
+  id: jd_2519 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
+  required_skills: Team Leadership, SEO Strategy, Marketing Analytics, Budget Management, Stakeholder Management
+  description: Hiring a senior digital marketing manager to lead multi-channel campaigns, oversee marketing operations, and mentor digital marketing teams. Responsibilities include defining SEO s
 
-  id: jd_2515 | title: Director of Supply Chain Transformation | level: senior | min_exp: 7 yrs
-  required_skills: Supply Chain Strategy, Enterprise ERP Strategy, Executive Leadership, Change Management, Procurement Governance
-  description: An experienced supply chain leader is required to define enterprise strategy and lead transformation initiatives across procurement, planning, and logistics functions. Responsibili
+  id: jd_2520 | title: Director of Digital Strategy | level: senior | min_exp: 7 yrs
+  required_skills: Marketing Strategy, Executive Leadership, Enterprise Analytics, Change Management, Strategic Planning
+  description: An experienced marketing leader is required to define long-term digital strategy and oversee enterprise content and analytics transformation initiatives. Responsibilities include e
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~3 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~12 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12551  resume_2511 × jd_2511
-  pair_12552  resume_2511 × jd_2512
-  pair_12553  resume_2511 × jd_2513
-  pair_12554  resume_2511 × jd_2514
-  pair_12555  resume_2511 × jd_2515
-  pair_12556  resume_2512 × jd_2511
-  pair_12557  resume_2512 × jd_2512
-  pair_12558  resume_2512 × jd_2513
-  pair_12559  resume_2512 × jd_2514
-  pair_12560  resume_2512 × jd_2515
-  pair_12561  resume_2513 × jd_2511
-  pair_12562  resume_2513 × jd_2512
-  pair_12563  resume_2513 × jd_2513
-  pair_12564  resume_2513 × jd_2514
-  pair_12565  resume_2513 × jd_2515
-  pair_12566  resume_2514 × jd_2511
-  pair_12567  resume_2514 × jd_2512
-  pair_12568  resume_2514 × jd_2513
-  pair_12569  resume_2514 × jd_2514
-  pair_12570  resume_2514 × jd_2515
-  pair_12571  resume_2515 × jd_2511
-  pair_12572  resume_2515 × jd_2512
-  pair_12573  resume_2515 × jd_2513
-  pair_12574  resume_2515 × jd_2514
-  pair_12575  resume_2515 × jd_2515
+  pair_12576  resume_2516 × jd_2516
+  pair_12577  resume_2516 × jd_2517
+  pair_12578  resume_2516 × jd_2518
+  pair_12579  resume_2516 × jd_2519
+  pair_12580  resume_2516 × jd_2520
+  pair_12581  resume_2517 × jd_2516
+  pair_12582  resume_2517 × jd_2517
+  pair_12583  resume_2517 × jd_2518
+  pair_12584  resume_2517 × jd_2519
+  pair_12585  resume_2517 × jd_2520
+  pair_12586  resume_2518 × jd_2516
+  pair_12587  resume_2518 × jd_2517
+  pair_12588  resume_2518 × jd_2518
+  pair_12589  resume_2518 × jd_2519
+  pair_12590  resume_2518 × jd_2520
+  pair_12591  resume_2519 × jd_2516
+  pair_12592  resume_2519 × jd_2517
+  pair_12593  resume_2519 × jd_2518
+  pair_12594  resume_2519 × jd_2519
+  pair_12595  resume_2519 × jd_2520
+  pair_12596  resume_2520 × jd_2516
+  pair_12597  resume_2520 × jd_2517
+  pair_12598  resume_2520 × jd_2518
+  pair_12599  resume_2520 × jd_2519
+  pair_12600  resume_2520 × jd_2520
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
