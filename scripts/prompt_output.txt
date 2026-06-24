@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2421 | level: intern | exp: 0.3 yrs
-  skills: PostgreSQL, SQL, Data Modeling, NoSQL
-  background: I am a computer science student passionate about database engineering and data architecture. During my studies, I have gained foundational knowledge in relational and non-relational database systems. 
+  id: resume_2426 | level: intern | exp: 0.2 yrs
+  skills: Patient Scheduling, EMR, Medical Terminology, Data Entry
+  background: I am a dedicated healthcare administration student currently completing my degree. I have developed a strong foundational understanding of patient record management, medical terminology, and basic cli
 
-  id: resume_2422 | level: junior | exp: 1.8 yrs
-  skills: PostgreSQL, MongoDB, Redis, SQL, Database Schema Design
-  background: As a Junior Database Engineer with 1.8 years of experience, I specialize in maintaining and optimizing PostgreSQL and MongoDB databases for high-traffic web applications. I am proficient in writing co
+  id: resume_2427 | level: junior | exp: 1.5 yrs
+  skills: Clinical Operations, EMR, Patient Coordination, HIPAA Compliance
+  background: As a Junior Clinical Operations Coordinator with 1.5 years of experience, I specialize in managing patient flow, EMR data integrity, and administrative clinical support. My professional background inc
 
-  id: resume_2423 | level: middle | exp: 4.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Query Optimization, Data Architecture
-  background: I am a Database Engineer with 4 years of experience focusing on scalable database solutions. My expertise lies in designing robust data models using PostgreSQL and implementing efficient NoSQL strateg
+  id: resume_2428 | level: middle | exp: 4.0 yrs
+  skills: Healthcare Operations, EMR Implementation, Team Management, Compliance Management
+  background: I am a Healthcare Administration professional with 4 years of experience specializing in clinical operations and healthcare management. My expertise encompasses EMR deployment, clinical staff coordina
 
-  id: resume_2424 | level: senior | exp: 6.2 yrs
-  skills: PostgreSQL, MongoDB, Redis, Performance Tuning, Sharding
-  background: Senior Database Engineer with 6 years of experience managing complex data ecosystems. I specialize in architecting highly scalable database solutions, optimizing multi-terabyte PostgreSQL environments
+  id: resume_2429 | level: senior | exp: 6.5 yrs
+  skills: Clinical Service Optimization, EMR Governance, Operations Management, Health Analytics
+  background: Senior Healthcare Operations Manager with over 6 years of experience focused on clinical service optimization and enterprise-level EMR governance. My background includes architecting efficient clinica
 
-  id: resume_2425 | level: senior | exp: 9.5 yrs
-  skills: Data Architecture, Distributed Systems, PostgreSQL, MongoDB, Performance Modeling
-  background: Principal Database Architect with over 9 years of experience in designing enterprise-grade database platforms. I have extensive expertise in deep database internals, kernel-level optimizations, and th
+  id: resume_2430 | level: senior | exp: 10.5 yrs
+  skills: Strategic Leadership, Clinical Platform Modernization, Enterprise Risk Management, Operations Strategy
+  background: Principal Clinical Administrator with 10 years of experience in strategic healthcare leadership and clinical platform modernization. My career has focused on transforming clinical operations through a
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2421 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, SQL, Data Modeling
-  description: We are seeking a Database Engineering Intern to support our data infrastructure team. You will assist with database documentation, basic schema updates, and testing small-scale que
+  id: jd_2426 | title: Clinical Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: EMR, Clinical Operations, Patient Scheduling
+  description: We are seeking a motivated Clinical Operations Intern to support our administrative team in managing day-to-day clinical tasks. This role provides an excellent opportunity to learn
 
-  id: jd_2422 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, SQL, Database Schema Design
-  description: Join our team as a Junior Database Engineer to manage our development and staging database environments. You will be responsible for query tuning, basic database administration, an
+  id: jd_2427 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: EMR, Patient Coordination, HIPAA Compliance
+  description: Join our clinic as a Junior Clinical Coordinator to manage patient intake and ensure smooth daily operations. You will be responsible for maintaining patient data integrity, suppor
 
-  id: jd_2423 | title: Database Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Query Optimization
-  description: We are looking for a mid-level Database Engineer to help scale our production infrastructure. You will be responsible for end-to-end database management, performance tuning, and de
+  id: jd_2428 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
+  required_skills: Healthcare Operations, EMR Implementation, Team Management
+  description: We are looking for a Clinical Operations Manager to oversee our administrative clinical services. You will be responsible for optimizing workflows, managing clinical staff, and ens
 
-  id: jd_2424 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Distributed Systems
-  description: We need a Senior Database Engineer to lead our database reliability efforts. You will manage high-volume PostgreSQL and NoSQL environments, architect sharding strategies, and overs
+  id: jd_2429 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Service Optimization, EMR Governance, Operations Management
+  description: We are seeking a Senior Healthcare Operations Manager to drive clinical service optimization. You will oversee multiple clinical departments, manage operational budgets, and lead e
 
-  id: jd_2425 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: Data Architecture, PostgreSQL, MongoDB
-  description: We are looking for a Principal Database Architect to define our global data strategy. You will oversee the design of enterprise-grade storage layers, drive database modernization, 
+  id: jd_2430 | title: Principal Clinical Administrator | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Leadership, Clinical Platform Modernization, Enterprise Risk Management
+  description: We are looking for a Principal Clinical Administrator to shape our strategic healthcare delivery. You will lead modernization efforts, manage high-level risk initiatives, and overs
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~9 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~7 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~11 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12101  resume_2421 × jd_2421
-  pair_12102  resume_2421 × jd_2422
-  pair_12103  resume_2421 × jd_2423
-  pair_12104  resume_2421 × jd_2424
-  pair_12105  resume_2421 × jd_2425
-  pair_12106  resume_2422 × jd_2421
-  pair_12107  resume_2422 × jd_2422
-  pair_12108  resume_2422 × jd_2423
-  pair_12109  resume_2422 × jd_2424
-  pair_12110  resume_2422 × jd_2425
-  pair_12111  resume_2423 × jd_2421
-  pair_12112  resume_2423 × jd_2422
-  pair_12113  resume_2423 × jd_2423
-  pair_12114  resume_2423 × jd_2424
-  pair_12115  resume_2423 × jd_2425
-  pair_12116  resume_2424 × jd_2421
-  pair_12117  resume_2424 × jd_2422
-  pair_12118  resume_2424 × jd_2423
-  pair_12119  resume_2424 × jd_2424
-  pair_12120  resume_2424 × jd_2425
-  pair_12121  resume_2425 × jd_2421
-  pair_12122  resume_2425 × jd_2422
-  pair_12123  resume_2425 × jd_2423
-  pair_12124  resume_2425 × jd_2424
-  pair_12125  resume_2425 × jd_2425
+  pair_12126  resume_2426 × jd_2426
+  pair_12127  resume_2426 × jd_2427
+  pair_12128  resume_2426 × jd_2428
+  pair_12129  resume_2426 × jd_2429
+  pair_12130  resume_2426 × jd_2430
+  pair_12131  resume_2427 × jd_2426
+  pair_12132  resume_2427 × jd_2427
+  pair_12133  resume_2427 × jd_2428
+  pair_12134  resume_2427 × jd_2429
+  pair_12135  resume_2427 × jd_2430
+  pair_12136  resume_2428 × jd_2426
+  pair_12137  resume_2428 × jd_2427
+  pair_12138  resume_2428 × jd_2428
+  pair_12139  resume_2428 × jd_2429
+  pair_12140  resume_2428 × jd_2430
+  pair_12141  resume_2429 × jd_2426
+  pair_12142  resume_2429 × jd_2427
+  pair_12143  resume_2429 × jd_2428
+  pair_12144  resume_2429 × jd_2429
+  pair_12145  resume_2429 × jd_2430
+  pair_12146  resume_2430 × jd_2426
+  pair_12147  resume_2430 × jd_2427
+  pair_12148  resume_2430 × jd_2428
+  pair_12149  resume_2430 × jd_2429
+  pair_12150  resume_2430 × jd_2430
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
