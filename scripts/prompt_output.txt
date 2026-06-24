@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2231 | level: intern | exp: 0.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL
-  background: Ambitious and detail-oriented Computer Science student focused on database engineering, structural data modeling, and performance tuning. Possesses foundational academic knowledge of relational algebr
+  id: resume_2236 | level: intern | exp: 0.5 yrs
+  skills: Python, React, Django, JavaScript, SQL
+  background: Enthusiastic and motivated Computer Science student passionate about full-stack web development using modern JavaScript frameworks and Python backends. Possesses foundational academic knowledge of sof
 
-  id: resume_2232 | level: junior | exp: 1.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Administration
-  background: Junior Database Engineer with over a year of corporate experience implementing relational schemas and managing modern database engine clusters. Proficient in maintaining relational tables within Postg
+  id: resume_2237 | level: junior | exp: 1.5 yrs
+  skills: Python, React, FastAPI, PostgreSQL, Git
+  background: Junior Full-Stack Web Developer with over a year of corporate experience writing interactive user interfaces and implementing performant backend architectures. Proficient in crafting component-based f
 
-  id: resume_2233 | level: middle | exp: 4.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Replication
-  background: Dynamic Database Engineer offering four years of progressive industry expertise architecting transactional schemas and configuring non-relational database ecosystems. Expert at building complex physic
+  id: resume_2238 | level: middle | exp: 4.0 yrs
+  skills: Python, React, Flask, Docker, Celery, Redux
+  background: Dynamic Full-Stack Engineer offering four years of progressive industry expertise architecting robust web applications and designing scalable cloud integrations. Expert at building single-page applica
 
-  id: resume_2234 | level: senior | exp: 6.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, High Availability, Performance Tuning
-  background: Senior Database Engineer with over six years of comprehensive technical leadership designing high-throughput relational infrastructures and enterprise database storage patterns. Expert at engineering 
+  id: resume_2239 | level: senior | exp: 6.0 yrs
+  skills: Python, React, Django, TypeScript, Kubernetes, AWS
+  background: Senior Full-Stack Web Engineer with over six years of comprehensive technical leadership engineering cloud-native consumer applications and high-throughput backend fabrics. Expert at designing complex
 
-  id: resume_2235 | level: senior | exp: 9.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture, Distributed Systems
-  background: Principal Database Architect with nine years of extensive executive experience steering global enterprise data storage strategies and directing elite infrastructure business divisions. Master at confi
+  id: resume_2240 | level: senior | exp: 9.0 yrs
+  skills: Python, React, Django, Architecture, GraphQL, Cloud Infrastructure
+  background: Principal Full-Stack Architect with nine years of extensive experience steering global web platform transformations and directing elite software application business units. Master at configuring compr
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2231 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, MongoDB, Redis
-  description: We are seeking an enthusiastic Database Engineering Intern to support our core data platform squad. In this internship role, you will assist with writing standard SQL scripts, upda
+  id: jd_2236 | title: Full-Stack Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React, Django
+  description: We are seeking an enthusiastic Full-Stack Engineering Intern to support our core web platform squad. In this internship role, you will assist with writing standard Python web scrip
 
-  id: jd_2232 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: Our central core infrastructure squad is looking for a Junior Database Engineer to drive our data platform stability. You will coordinate end-to-end relational schema updates, crea
+  id: jd_2237 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, FastAPI, PostgreSQL
+  description: Our central core application squad is looking for a Junior Full-Stack Developer to drive our web platform stability. You will coordinate end-to-end user interface updates, create s
 
-  id: jd_2233 | title: Database Engineer | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are hunting for an experienced Database Engineer to drive high-availability data pipelines and architect optimal application data models. In this role, you will build comprehens
+  id: jd_2238 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, Flask, Docker
+  description: We are hunting for an experienced Full-Stack Engineer to drive high-availability web applications and architect optimal user experiences. In this role, you will build comprehensive
 
-  id: jd_2234 | title: Senior Database Engineer | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, High Availability
-  description: Join our core database infrastructure division as a Senior Database Engineer. You will be responsible for orchestrating complex data storage scaling strategies and architecting ent
+  id: jd_2239 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, Django, TypeScript, Kubernetes
+  description: Join our core software division as a Senior Full-Stack Engineer. You will be responsible for orchestrating complex application scaling strategies and architecting enterprise-wide w
 
-  id: jd_2235 | title: Principal Database Architect | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Architecture
-  description: We are searching for a Principal Database Architect to anchor our human capital vision and guide our high-impact data platform portfolio. You will oversee long-range database engin
+  id: jd_2240 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: Python, React, Django, Architecture, GraphQL
+  description: We are searching for a Principal Full-Stack Architect to anchor our human capital vision and guide our high-impact web platform portfolio. You will oversee long-range software engi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~6 pairs
-  excellent_match: ~3 pairs
-  moderate_match: ~10 pairs
-  weak_match: ~6 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~7 pairs
+  moderate_match: ~11 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11151  resume_2231 × jd_2231
-  pair_11152  resume_2231 × jd_2232
-  pair_11153  resume_2231 × jd_2233
-  pair_11154  resume_2231 × jd_2234
-  pair_11155  resume_2231 × jd_2235
-  pair_11156  resume_2232 × jd_2231
-  pair_11157  resume_2232 × jd_2232
-  pair_11158  resume_2232 × jd_2233
-  pair_11159  resume_2232 × jd_2234
-  pair_11160  resume_2232 × jd_2235
-  pair_11161  resume_2233 × jd_2231
-  pair_11162  resume_2233 × jd_2232
-  pair_11163  resume_2233 × jd_2233
-  pair_11164  resume_2233 × jd_2234
-  pair_11165  resume_2233 × jd_2235
-  pair_11166  resume_2234 × jd_2231
-  pair_11167  resume_2234 × jd_2232
-  pair_11168  resume_2234 × jd_2233
-  pair_11169  resume_2234 × jd_2234
-  pair_11170  resume_2234 × jd_2235
-  pair_11171  resume_2235 × jd_2231
-  pair_11172  resume_2235 × jd_2232
-  pair_11173  resume_2235 × jd_2233
-  pair_11174  resume_2235 × jd_2234
-  pair_11175  resume_2235 × jd_2235
+  pair_11176  resume_2236 × jd_2236
+  pair_11177  resume_2236 × jd_2237
+  pair_11178  resume_2236 × jd_2238
+  pair_11179  resume_2236 × jd_2239
+  pair_11180  resume_2236 × jd_2240
+  pair_11181  resume_2237 × jd_2236
+  pair_11182  resume_2237 × jd_2237
+  pair_11183  resume_2237 × jd_2238
+  pair_11184  resume_2237 × jd_2239
+  pair_11185  resume_2237 × jd_2240
+  pair_11186  resume_2238 × jd_2236
+  pair_11187  resume_2238 × jd_2237
+  pair_11188  resume_2238 × jd_2238
+  pair_11189  resume_2238 × jd_2239
+  pair_11190  resume_2238 × jd_2240
+  pair_11191  resume_2239 × jd_2236
+  pair_11192  resume_2239 × jd_2237
+  pair_11193  resume_2239 × jd_2238
+  pair_11194  resume_2239 × jd_2239
+  pair_11195  resume_2239 × jd_2240
+  pair_11196  resume_2240 × jd_2236
+  pair_11197  resume_2240 × jd_2237
+  pair_11198  resume_2240 × jd_2238
+  pair_11199  resume_2240 × jd_2239
+  pair_11200  resume_2240 × jd_2240
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
