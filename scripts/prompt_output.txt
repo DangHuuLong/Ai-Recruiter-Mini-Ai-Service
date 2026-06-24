@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2456 | level: intern | exp: 0.4 yrs
-  skills: Microsoft Excel, Financial Reporting, Financial Modeling, Reconciliation, Financial Analysis, Budgeting, Accounting, Variance Analysis, Data Analysis, Compliance
-  background: Final-year Finance student specializing in fintech and financial analysis with four months of internship experience in a digital payments startup. Assisted the finance team with monthly reporting, tra
+  id: resume_2461 | level: intern | exp: 0.4 yrs
+  skills: Requirements Gathering, User Stories, BPMN, UML, Jira, Confluence, Stakeholder Communication, Process Mapping, User Acceptance Testing, Agile
+  background: Final-year Information Systems student with four months of internship experience supporting business analysis activities in a software development environment. Assisted senior analysts in gathering bu
 
-  id: resume_2457 | level: junior | exp: 1.8 yrs
-  skills: Microsoft Excel, Financial Reporting, Financial Modeling, Forecasting, Variance Analysis, Reconciliation, ERP Systems, Audit Support, Compliance, KPI Analysis
-  background: Junior Financial Analyst with 1.8 years of experience supporting finance operations within a fintech lending environment. Responsible for preparing monthly financial reports, reconciling transactions,
+  id: resume_2462 | level: junior | exp: 1.6 yrs
+  skills: Requirements Analysis, User Stories, BPMN, Jira, Confluence, Stakeholder Management, Agile, User Acceptance Testing, Process Improvement, Documentation
+  background: Junior Business Analyst with 1.6 years of professional experience supporting software delivery projects in fintech and e-commerce environments. Responsible for eliciting requirements, documenting func
 
-  id: resume_2458 | level: middle | exp: 4.4 yrs
-  skills: Financial Reporting, Financial Modeling, Forecasting, Compliance, Budgeting, Cash Flow Analysis, ERP Systems, Audit Management, Variance Analysis, Internal Controls
-  background: Finance and Compliance Analyst with 4.4 years of experience in fintech organizations specializing in financial reporting, regulatory compliance, and financial planning. Led preparation of monthly and 
+  id: resume_2463 | level: middle | exp: 4.2 yrs
+  skills: Requirements Analysis, BPMN, Stakeholder Management, Business Process Analysis, Jira, Confluence, Agile, Change Management, User Acceptance Testing, SQL
+  background: Business Analyst with 4.2 years of experience delivering enterprise software and digital transformation projects across banking and logistics domains. Led requirement workshops, facilitated stakeholde
 
-  id: resume_2459 | level: senior | exp: 6.2 yrs
-  skills: Financial Planning, Financial Modeling, Financial Reporting, Compliance, Budgeting, Leadership, Risk Management, Internal Controls, ERP Systems, Cash Flow Analysis
-  background: Senior Finance Manager with 6.2 years of experience leading financial planning, reporting, and compliance functions in fintech companies. Managed end-to-end budgeting processes, developed complex fina
+  id: resume_2464 | level: senior | exp: 6.4 yrs
+  skills: Stakeholder Management, BPMN, Project Management, Requirements Analysis, Risk Management, Change Management, Agile, Jira, Business Architecture, Leadership
+  background: Senior Business Analyst and Project Lead with 6.4 years of experience managing complex software delivery programs and business transformation initiatives. Led requirement discovery, stakeholder engage
 
-  id: resume_2460 | level: senior | exp: 9.3 yrs
-  skills: Financial Strategy, Financial Modeling, Governance, Risk Management, Compliance, Leadership, Financial Reporting, Budgeting, Internal Controls, Audit Management
-  background: Principal Finance Director with 9.3 years of experience defining financial strategy and governance across high-growth fintech organizations. Directed financial planning, compliance, and enterprise rep
+  id: resume_2465 | level: senior | exp: 9.1 yrs
+  skills: Program Management, Governance, Stakeholder Management, BPMN, Enterprise Architecture, Change Management, Risk Management, Leadership, Business Analysis, Agile Portfolio Management
+  background: Principal Business Transformation Manager with 9.1 years of experience leading enterprise change initiatives, strategic programs, and large-scale business process transformation projects. Directed bus
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2456 | title: Finance Intern - Fintech Operations | level: intern | min_exp: 0 yrs
-  required_skills: Microsoft Excel, Financial Reporting, Accounting, Financial Analysis
-  description: Seeking a finance intern to support reporting, reconciliation, and analytical activities within a fintech operations team. The intern will assist with transaction reviews, prepare 
+  id: jd_2461 | title: Business Analyst Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Agile
+  description: Seeking a business analyst intern to support requirement gathering, documentation, and process analysis activities for software delivery projects. The intern will assist senior ana
 
-  id: jd_2457 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Microsoft Excel, Financial Modeling, Variance Analysis, Reconciliation
-  description: Looking for a junior financial analyst to prepare financial reports, support budgeting processes, and analyze business performance metrics. Candidates should have experience with E
+  id: jd_2462 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, User Stories, BPMN, Stakeholder Management
+  description: Looking for a junior business analyst to support software development projects by gathering requirements, documenting user stories, and coordinating with stakeholders. Candidates s
 
-  id: jd_2458 | title: Finance and Compliance Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Financial Reporting, Compliance, Forecasting, Internal Controls
-  description: An organization is seeking a finance and compliance analyst to manage regulatory reporting, financial planning, and compliance activities across fintech operations. Candidates shou
+  id: jd_2463 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Business Process Analysis, BPMN, Stakeholder Management, Change Management
+  description: An organization is seeking a business analyst to lead requirement elicitation, process analysis, and stakeholder engagement activities across enterprise initiatives. Candidates sho
 
-  id: jd_2459 | title: Senior Finance Manager | level: senior | min_exp: 5 yrs
-  required_skills: Financial Modeling, Leadership, Compliance, Financial Planning
-  description: Seeking a senior finance manager to lead budgeting, financial planning, and compliance initiatives within a growing fintech organization. The role requires extensive experience in 
+  id: jd_2464 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Requirements Analysis, Project Management, Risk Management, Leadership
+  description: Seeking a senior business analyst to lead complex transformation projects and manage stakeholder relationships across multiple business units. The role requires extensive experienc
 
-  id: jd_2460 | title: Director of Finance and Governance | level: senior | min_exp: 7 yrs
-  required_skills: Governance, Leadership, Risk Management, Compliance
-  description: A senior finance leader is required to define financial governance strategy and oversee enterprise finance operations across multiple fintech products. The role involves establishi
+  id: jd_2465 | title: Principal Business Transformation Manager | level: senior | min_exp: 7 yrs
+  required_skills: Program Management, Governance, Stakeholder Management, Leadership
+  description: A principal business transformation manager is required to define enterprise transformation strategies and oversee portfolio-level delivery governance. The role involves leading pr
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~9 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~10 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12276  resume_2456 × jd_2456
-  pair_12277  resume_2456 × jd_2457
-  pair_12278  resume_2456 × jd_2458
-  pair_12279  resume_2456 × jd_2459
-  pair_12280  resume_2456 × jd_2460
-  pair_12281  resume_2457 × jd_2456
-  pair_12282  resume_2457 × jd_2457
-  pair_12283  resume_2457 × jd_2458
-  pair_12284  resume_2457 × jd_2459
-  pair_12285  resume_2457 × jd_2460
-  pair_12286  resume_2458 × jd_2456
-  pair_12287  resume_2458 × jd_2457
-  pair_12288  resume_2458 × jd_2458
-  pair_12289  resume_2458 × jd_2459
-  pair_12290  resume_2458 × jd_2460
-  pair_12291  resume_2459 × jd_2456
-  pair_12292  resume_2459 × jd_2457
-  pair_12293  resume_2459 × jd_2458
-  pair_12294  resume_2459 × jd_2459
-  pair_12295  resume_2459 × jd_2460
-  pair_12296  resume_2460 × jd_2456
-  pair_12297  resume_2460 × jd_2457
-  pair_12298  resume_2460 × jd_2458
-  pair_12299  resume_2460 × jd_2459
-  pair_12300  resume_2460 × jd_2460
+  pair_12301  resume_2461 × jd_2461
+  pair_12302  resume_2461 × jd_2462
+  pair_12303  resume_2461 × jd_2463
+  pair_12304  resume_2461 × jd_2464
+  pair_12305  resume_2461 × jd_2465
+  pair_12306  resume_2462 × jd_2461
+  pair_12307  resume_2462 × jd_2462
+  pair_12308  resume_2462 × jd_2463
+  pair_12309  resume_2462 × jd_2464
+  pair_12310  resume_2462 × jd_2465
+  pair_12311  resume_2463 × jd_2461
+  pair_12312  resume_2463 × jd_2462
+  pair_12313  resume_2463 × jd_2463
+  pair_12314  resume_2463 × jd_2464
+  pair_12315  resume_2463 × jd_2465
+  pair_12316  resume_2464 × jd_2461
+  pair_12317  resume_2464 × jd_2462
+  pair_12318  resume_2464 × jd_2463
+  pair_12319  resume_2464 × jd_2464
+  pair_12320  resume_2464 × jd_2465
+  pair_12321  resume_2465 × jd_2461
+  pair_12322  resume_2465 × jd_2462
+  pair_12323  resume_2465 × jd_2463
+  pair_12324  resume_2465 × jd_2464
+  pair_12325  resume_2465 × jd_2465
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
