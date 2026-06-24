@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2646 | level: intern | exp: 0.4 yrs
-  skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding, Resume Review, Applicant Tracking Systems, HR Documentation, Stakeholder Communication, Recruitment Reporting
-  background: Final-year human resources student with 0.4 years of internship experience supporting recruiting and onboarding activities. Assisted recruiters with candidate screening, interview scheduling, job post
+  id: resume_2651 | level: intern | exp: 0.4 yrs
+  skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals, Feature Engineering, SQL, Data Visualization, Model Evaluation, Statistics
+  background: Final-year data science student with 0.4 years of internship experience supporting analytics and machine learning projects. Assisted with collecting, cleaning, and validating datasets used for predict
 
-  id: resume_2647 | level: junior | exp: 1.5 yrs
-  skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems, Candidate Communication, Recruitment Reporting, Compliance Tracking, Employee Records Management, Stakeholder Management
-  background: HR coordinator with 1.5 years of experience supporting talent acquisition and employee onboarding programs. Managed interview scheduling, candidate communications, and recruitment pipeline tracking th
+  id: resume_2652 | level: junior | exp: 1.5 yrs
+  skills: Python, Pandas, Scikit-Learn, SQL, Feature Engineering, Model Validation, Data Analysis, Reporting Automation, Data Visualization, Experiment Tracking
+  background: Data analyst and junior machine learning practitioner with 1.5 years of experience supporting predictive analytics initiatives. Developed data pipelines using Python and pandas, automated reporting pr
 
-  id: resume_2648 | level: middle | exp: 4.2 yrs
-  skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Workforce Reporting, Candidate Assessment, Process Improvement, Employee Relations Support, Compliance Management, Stakeholder Collaboration
-  background: Human resources specialist with 4.2 years of experience managing recruitment programs, onboarding initiatives, and HR operations. Led full-cycle recruiting activities including sourcing coordination, 
+  id: resume_2653 | level: middle | exp: 4.2 yrs
+  skills: Python, Pandas, Scikit-Learn, PyTorch, Machine Learning, Model Deployment, Feature Engineering, Statistical Analysis, Model Monitoring, Experiment Design
+  background: Machine learning engineer with 4.2 years of experience designing predictive models and data products. Led projects covering data acquisition, preprocessing, model development, evaluation, and deployme
 
-  id: resume_2649 | level: senior | exp: 6.3 yrs
-  skills: Talent Acquisition Leadership, Workforce Planning, HR Operations, Onboarding Governance, HRIS Strategy, Recruitment Metrics, Employer Branding, Compliance Leadership, Team Development, Stakeholder Leadership
-  background: Senior talent acquisition manager with 6.3 years of experience leading recruiting operations, workforce planning, and HR programs. Directed teams responsible for sourcing strategies, recruitment deliv
+  id: resume_2654 | level: senior | exp: 6.3 yrs
+  skills: Data Science Leadership, Machine Learning Strategy, PyTorch, Scikit-Learn, Model Governance, MLOps, Stakeholder Management, Experimentation Frameworks, Team Leadership, Analytics Strategy
+  background: Senior data science manager with 6.3 years of experience leading machine learning programs and analytics teams. Directed model development initiatives using PyTorch and scikit-learn while establishing
 
-  id: resume_2650 | level: senior | exp: 9.4 yrs
-  skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, Talent Acquisition Strategy, HR Transformation, Workforce Strategy, HR Technology Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
-  background: Principal human resources executive with 9.4 years of experience defining enterprise talent strategy and leading organizational transformation initiatives. Established governance frameworks for recrui
+  id: resume_2655 | level: senior | exp: 9.1 yrs
+  skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Portfolio Leadership, Responsible AI, Analytics Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
+  background: Principal AI and analytics executive with 9.1 years of experience defining enterprise machine learning strategy and leading transformation initiatives. Established governance frameworks for responsibl
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2646 | title: HR and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding
-  description: Seeking an HR intern to support recruiting, onboarding, and HR administration activities. Responsibilities include candidate screening support, interview scheduling, ATS updates, o
+  id: jd_2651 | title: Data Science Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals
+  description: Seeking a data science intern to support analytics and machine learning projects. The role involves preparing datasets, performing exploratory analysis, creating visual reports, an
 
-  id: jd_2647 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems
-  description: Looking for a junior HR professional to coordinate recruiting activities and onboarding processes. Responsibilities include candidate communication, ATS administration, recruitment
+  id: jd_2652 | title: Junior Machine Learning Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Python, Pandas, Scikit-Learn, Feature Engineering, Model Validation
+  description: Looking for a junior machine learning analyst to support model development and analytics delivery. Responsibilities include feature engineering, validation testing, reporting autom
 
-  id: jd_2648 | title: HR Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Process Improvement
-  description: Seeking an experienced HR specialist to manage recruiting programs, onboarding initiatives, and HR operations. Responsibilities include full-cycle recruiting support, workforce rep
+  id: jd_2653 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, PyTorch, Machine Learning, Model Deployment, Experiment Design
+  description: Seeking an experienced machine learning engineer to design and deploy predictive models. The role includes experiment design, model deployment, monitoring, and performance optimiza
 
-  id: jd_2649 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
-  required_skills: Talent Acquisition Leadership, Workforce Planning, Onboarding Governance, Recruitment Metrics, Stakeholder Leadership
-  description: Hiring a senior talent acquisition manager to lead recruiting operations and workforce planning initiatives. Responsibilities include overseeing onboarding governance, recruitment 
+  id: jd_2654 | title: Senior Data Science Manager | level: senior | min_exp: 5 yrs
+  required_skills: Data Science Leadership, Machine Learning Strategy, Model Governance, Stakeholder Management, Team Leadership
+  description: Hiring a senior data science manager to lead machine learning teams and oversee analytics programs. Responsibilities include governance, stakeholder management, roadmap planning, a
 
-  id: jd_2650 | title: Principal HR Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, HR Transformation, Workforce Strategy
-  description: An experienced HR executive is required to define enterprise talent strategy and oversee organizational transformation initiatives. Responsibilities include governance development,
+  id: jd_2655 | title: Principal AI Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Strategic Roadmaps
+  description: An experienced AI executive is required to define enterprise strategy and oversee large-scale transformation programs. The position focuses on governance, executive stakeholder eng
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~6 pairs
-  weak_match: ~8 pairs
+  strong_match: ~11 pairs
+  excellent_match: ~1 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13226  resume_2646 × jd_2646
-  pair_13227  resume_2646 × jd_2647
-  pair_13228  resume_2646 × jd_2648
-  pair_13229  resume_2646 × jd_2649
-  pair_13230  resume_2646 × jd_2650
-  pair_13231  resume_2647 × jd_2646
-  pair_13232  resume_2647 × jd_2647
-  pair_13233  resume_2647 × jd_2648
-  pair_13234  resume_2647 × jd_2649
-  pair_13235  resume_2647 × jd_2650
-  pair_13236  resume_2648 × jd_2646
-  pair_13237  resume_2648 × jd_2647
-  pair_13238  resume_2648 × jd_2648
-  pair_13239  resume_2648 × jd_2649
-  pair_13240  resume_2648 × jd_2650
-  pair_13241  resume_2649 × jd_2646
-  pair_13242  resume_2649 × jd_2647
-  pair_13243  resume_2649 × jd_2648
-  pair_13244  resume_2649 × jd_2649
-  pair_13245  resume_2649 × jd_2650
-  pair_13246  resume_2650 × jd_2646
-  pair_13247  resume_2650 × jd_2647
-  pair_13248  resume_2650 × jd_2648
-  pair_13249  resume_2650 × jd_2649
-  pair_13250  resume_2650 × jd_2650
+  pair_13251  resume_2651 × jd_2651
+  pair_13252  resume_2651 × jd_2652
+  pair_13253  resume_2651 × jd_2653
+  pair_13254  resume_2651 × jd_2654
+  pair_13255  resume_2651 × jd_2655
+  pair_13256  resume_2652 × jd_2651
+  pair_13257  resume_2652 × jd_2652
+  pair_13258  resume_2652 × jd_2653
+  pair_13259  resume_2652 × jd_2654
+  pair_13260  resume_2652 × jd_2655
+  pair_13261  resume_2653 × jd_2651
+  pair_13262  resume_2653 × jd_2652
+  pair_13263  resume_2653 × jd_2653
+  pair_13264  resume_2653 × jd_2654
+  pair_13265  resume_2653 × jd_2655
+  pair_13266  resume_2654 × jd_2651
+  pair_13267  resume_2654 × jd_2652
+  pair_13268  resume_2654 × jd_2653
+  pair_13269  resume_2654 × jd_2654
+  pair_13270  resume_2654 × jd_2655
+  pair_13271  resume_2655 × jd_2651
+  pair_13272  resume_2655 × jd_2652
+  pair_13273  resume_2655 × jd_2653
+  pair_13274  resume_2655 × jd_2654
+  pair_13275  resume_2655 × jd_2655
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
