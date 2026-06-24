@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2496 | level: intern | exp: 0.4 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML, CSS, REST API Integration, Git, Responsive Design
-  background: Final-year Computer Science student specializing in frontend development with four months of internship experience building user interfaces for internal web applications. Assisted senior developers in
+  id: resume_2501 | level: intern | exp: 0.4 yrs
+  skills: Python, Transformers, LangChain, Embeddings, Hugging Face, Natural Language Processing, Vector Databases, Prompt Engineering, Semantic Search, PyTorch
+  background: Final-year Computer Science student specializing in natural language processing with four months of internship experience supporting AI application development. Assisted in building retrieval pipeline
 
-  id: resume_2497 | level: junior | exp: 1.7 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, REST APIs, JavaScript, Jest, Accessibility, Performance Optimization
-  background: Frontend developer with 1.7 years of experience building and maintaining customer-facing web applications using React and TypeScript. Developed responsive interfaces, integrated APIs, and collaborated
+  id: resume_2502 | level: junior | exp: 1.8 yrs
+  skills: Python, Transformers, LangChain, Embeddings, RAG, Hugging Face, Vector Databases, Prompt Engineering, FastAPI, LLM Evaluation
+  background: AI engineer with 1.8 years of experience developing NLP and generative AI applications. Built and maintained conversational systems using Transformer-based models, retrieval pipelines, and prompt engi
 
-  id: resume_2498 | level: middle | exp: 4.3 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, React Query, Jest, Cypress, Performance Optimization, Design Systems, Server Side Rendering
-  background: Frontend engineer with 4.3 years of experience designing scalable web applications using React, TypeScript, and Next.js. Led development of reusable component systems, established frontend architectur
+  id: resume_2503 | level: middle | exp: 4.4 yrs
+  skills: Python, Transformers, RAG, LangChain, Embeddings, LLM Evaluation, Vector Databases, MLOps, Prompt Engineering, Model Fine-Tuning
+  background: NLP engineer with 4.4 years of experience designing and deploying production-grade language AI systems. Led development of retrieval-augmented generation solutions, semantic search platforms, and docu
 
-  id: resume_2499 | level: senior | exp: 6.2 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Team Leadership, System Design, CI/CD, Frontend Architecture, Testing Strategy, Performance Optimization
-  background: Senior frontend engineer with 6.2 years of experience leading frontend initiatives for high-traffic web platforms. Specialized in React ecosystem technologies, scalable architecture design, and fronte
+  id: resume_2504 | level: senior | exp: 6.3 yrs
+  skills: Transformers, RAG Architecture, Team Leadership, LangChain, Embeddings, MLOps, Distributed Inference, LLM Evaluation, Cloud Platforms, AI System Design
+  background: Senior AI engineer with 6.3 years of experience leading NLP and generative AI initiatives across enterprise environments. Specialized in large language model applications, retrieval architectures, and
 
-  id: resume_2500 | level: senior | exp: 9.1 yrs
-  skills: React, TypeScript, Next.js, Frontend Strategy, Engineering Leadership, Architecture Governance, Design Systems, Performance Monitoring, Technical Roadmaps, Scalability
-  background: Principal frontend architect with 9.1 years of experience leading enterprise-scale frontend platforms and engineering teams. Defined long-term frontend strategies, established organization-wide standa
+  id: resume_2505 | level: senior | exp: 9.2 yrs
+  skills: AI Strategy, Transformers, Architecture Governance, Engineering Leadership, RAG Architecture, Embeddings, Technical Roadmaps, AI Governance, Distributed Systems, Platform Architecture
+  background: Principal AI architect with 9.2 years of experience defining strategy and architecture for large-scale NLP and generative AI platforms. Led organization-wide initiatives involving Transformer adoption
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2496 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript, HTML, CSS, Responsive Design
-  description: Seeking a frontend development intern to assist with building responsive web interfaces using React and TypeScript. The role involves implementing UI components, fixing bugs, integ
+  id: jd_2501 | title: NLP Engineering Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, Transformers, Embeddings, Natural Language Processing, Prompt Engineering
+  description: Seeking an NLP engineering intern to support development of retrieval-augmented applications and conversational AI systems. Responsibilities include preparing datasets, generating 
 
-  id: jd_2497 | title: Junior React Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Redux
-  description: Looking for a junior React developer to build and maintain web applications using React, TypeScript, and Next.js. Responsibilities include implementing features, integrating APIs, 
+  id: jd_2502 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, LangChain, Transformers, RAG, Hugging Face
+  description: Looking for a junior AI engineer to build and maintain NLP applications using modern language models and retrieval techniques. Responsibilities include developing LangChain workflo
 
-  id: jd_2498 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Next.js, Jest, Performance Optimization
-  description: Seeking a frontend engineer to design and deliver scalable web applications using React and Next.js. The role includes developing reusable component libraries, improving performanc
+  id: jd_2503 | title: NLP Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Transformers, RAG, Embeddings, MLOps, LLM Evaluation
+  description: Seeking an NLP engineer to design and deploy production-grade retrieval and language understanding systems. Responsibilities include fine-tuning Transformer models, building embedd
 
-  id: jd_2499 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: React, TypeScript, Frontend Architecture, Team Leadership, Performance Optimization
-  description: Hiring a senior frontend engineer to lead development of complex web platforms using React, TypeScript, and Next.js. Responsibilities include defining architecture standards, mento
+  id: jd_2504 | title: Senior Generative AI Engineer | level: senior | min_exp: 5 yrs
+  required_skills: RAG Architecture, Team Leadership, Distributed Inference, LLM Evaluation, AI System Design
+  description: Hiring a senior generative AI engineer to lead development of enterprise-scale language applications. The role involves defining architecture standards, mentoring engineers, optimi
 
-  id: jd_2500 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
-  required_skills: React, TypeScript, Frontend Strategy, Engineering Leadership, Architecture Governance
-  description: An experienced frontend leader is needed to define technical strategy and oversee enterprise frontend platforms. Responsibilities include setting architecture direction, mentoring 
+  id: jd_2505 | title: Principal AI Architect | level: senior | min_exp: 7 yrs
+  required_skills: AI Strategy, Architecture Governance, Engineering Leadership, Technical Roadmaps, Platform Architecture
+  description: An experienced AI leader is required to define long-term architecture and strategy for enterprise language platforms. Responsibilities include governing AI standards, leading senio
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~2 pairs
-  moderate_match: ~9 pairs
-  weak_match: ~11 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~11 pairs
+  moderate_match: ~4 pairs
+  weak_match: ~1 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12476  resume_2496 × jd_2496
-  pair_12477  resume_2496 × jd_2497
-  pair_12478  resume_2496 × jd_2498
-  pair_12479  resume_2496 × jd_2499
-  pair_12480  resume_2496 × jd_2500
-  pair_12481  resume_2497 × jd_2496
-  pair_12482  resume_2497 × jd_2497
-  pair_12483  resume_2497 × jd_2498
-  pair_12484  resume_2497 × jd_2499
-  pair_12485  resume_2497 × jd_2500
-  pair_12486  resume_2498 × jd_2496
-  pair_12487  resume_2498 × jd_2497
-  pair_12488  resume_2498 × jd_2498
-  pair_12489  resume_2498 × jd_2499
-  pair_12490  resume_2498 × jd_2500
-  pair_12491  resume_2499 × jd_2496
-  pair_12492  resume_2499 × jd_2497
-  pair_12493  resume_2499 × jd_2498
-  pair_12494  resume_2499 × jd_2499
-  pair_12495  resume_2499 × jd_2500
-  pair_12496  resume_2500 × jd_2496
-  pair_12497  resume_2500 × jd_2497
-  pair_12498  resume_2500 × jd_2498
-  pair_12499  resume_2500 × jd_2499
-  pair_12500  resume_2500 × jd_2500
+  pair_12501  resume_2501 × jd_2501
+  pair_12502  resume_2501 × jd_2502
+  pair_12503  resume_2501 × jd_2503
+  pair_12504  resume_2501 × jd_2504
+  pair_12505  resume_2501 × jd_2505
+  pair_12506  resume_2502 × jd_2501
+  pair_12507  resume_2502 × jd_2502
+  pair_12508  resume_2502 × jd_2503
+  pair_12509  resume_2502 × jd_2504
+  pair_12510  resume_2502 × jd_2505
+  pair_12511  resume_2503 × jd_2501
+  pair_12512  resume_2503 × jd_2502
+  pair_12513  resume_2503 × jd_2503
+  pair_12514  resume_2503 × jd_2504
+  pair_12515  resume_2503 × jd_2505
+  pair_12516  resume_2504 × jd_2501
+  pair_12517  resume_2504 × jd_2502
+  pair_12518  resume_2504 × jd_2503
+  pair_12519  resume_2504 × jd_2504
+  pair_12520  resume_2504 × jd_2505
+  pair_12521  resume_2505 × jd_2501
+  pair_12522  resume_2505 × jd_2502
+  pair_12523  resume_2505 × jd_2503
+  pair_12524  resume_2505 × jd_2504
+  pair_12525  resume_2505 × jd_2505
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
