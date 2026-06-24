@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2306 | level: intern | exp: 0.3 yrs
-  skills: AWS, Docker, Git, Shell Scripting, Linux
-  background: Computer science student with a keen interest in cloud computing and infrastructure automation. Completed academic labs deploying basic web servers using Docker containers on AWS EC2 instances. Famili
+  id: resume_2311 | level: intern | exp: 0.2 yrs
+  skills: Jira, Agile, User Research, Scrum, Roadmapping
+  background: Business student with a passionate focus on digital product development and user experience. Currently supporting product teams by documenting user stories and assisting in the maintenance of Jira boa
 
-  id: resume_2307 | level: junior | exp: 1.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD
-  background: Junior DevOps Engineer with 1.5 years of experience in managing cloud-native infrastructure and automated deployment pipelines. Proficient in maintaining AWS environments using Terraform to provision 
+  id: resume_2312 | level: junior | exp: 1.5 yrs
+  skills: Agile, Jira, Product Strategy, Analytics, User Stories
+  background: Junior Product Manager with 1.5 years of experience in managing feature lifecycles for consumer-facing web applications. Proficient in translating stakeholder feedback into actionable requirements and
 
-  id: resume_2308 | level: middle | exp: 4.0 yrs
-  skills: AWS, Terraform, Kubernetes, Helm, Prometheus, Grafana, Linux
-  background: Results-oriented DevOps Engineer with 4 years of experience architecting and scaling cloud infrastructure. Expert in designing highly available multi-region AWS environments using advanced Terraform m
+  id: resume_2313 | level: middle | exp: 4.0 yrs
+  skills: Product Roadmap, Agile, Stakeholder Management, Market Research, SaaS
+  background: Product Manager with 4 years of experience driving product vision and execution for SaaS platforms. Skilled at defining product roadmaps and aligning stakeholder expectations across executive leadersh
 
-  id: resume_2309 | level: senior | exp: 6.0 yrs
-  skills: AWS, Kubernetes, Terraform, ArgoCD, GitOps, Python
-  background: Senior DevOps Engineer with 6 years of experience building resilient cloud infrastructure and distributed systems. Deep expertise in designing AWS global architectures that prioritize security, high a
+  id: resume_2314 | level: senior | exp: 6.0 yrs
+  skills: Product Strategy, Agile Leadership, Stakeholder Management, Data Analytics, Portfolio Management
+  background: Senior Product Manager with 6 years of experience scaling software products in fast-paced tech environments. Expert in long-term strategic planning, crafting product roadmaps that balance technical de
 
-  id: resume_2310 | level: senior | exp: 8.5 yrs
-  skills: AWS, Kubernetes, Terraform, Multi-Cloud, Site Reliability Engineering, Cloud Governance
-  background: Principal DevOps Architect with 8+ years of industry experience leading large-scale cloud transformations and site reliability initiatives. Specializes in designing complex multi-cloud strategies and 
+  id: resume_2315 | level: senior | exp: 8.5 yrs
+  skills: Product Governance, Strategic Roadmap, C-Suite Communication, Enterprise SaaS, Agile Transformation
+  background: Principal Product Lead with 8+ years of experience directing product strategy for large-scale enterprise technology solutions. Expert in organizational-wide product governance, aligning multiple cross
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2306 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker, Linux
-  description: Seeking a motivated intern to assist our infrastructure team in managing cloud resources and automating routine tasks. You will gain hands-on experience with AWS, learn to containe
+  id: jd_2311 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Jira, Agile, Communication
+  description: Seeking a passionate product management intern to join our team. You will support our product managers in documenting user stories, conducting market research, and maintaining our 
 
-  id: jd_2307 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Terraform, Docker, Kubernetes
-  description: Looking for a junior engineer to join our team and contribute to maintaining our cloud infrastructure. You will work on automating deployments using CI/CD pipelines, provisioning A
+  id: jd_2312 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Jira, User Stories
+  description: Looking for a Junior Product Manager to help manage the feature roadmap for our growing platform. You will work within an agile team, translating requirements from stakeholders int
 
-  id: jd_2308 | title: Mid-level DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: AWS, Terraform, Kubernetes, CI/CD
-  description: Join our platform team as a mid-level DevOps Engineer. You will be responsible for scaling our cloud infrastructure, optimizing Kubernetes clusters, and driving our infrastructure-
+  id: jd_2313 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Roadmap, Agile, Stakeholder Management
+  description: We are looking for an experienced Product Manager to own our SaaS product roadmap and drive cross-functional alignment. You will manage stakeholder relationships, prioritize featur
 
-  id: jd_2309 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Terraform, Kubernetes, GitOps
-  description: We are seeking a seasoned Senior DevOps Engineer to take ownership of our global cloud architecture. You will define our cloud-native strategy, optimize our Kubernetes environments
+  id: jd_2314 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Strategy, Agile Leadership, Stakeholder Management
+  description: We are seeking a Senior Product Manager to lead strategy for our core technology platform. You will be responsible for defining the long-term product roadmap, influencing senior le
 
-  id: jd_2310 | title: Principal Cloud Architect | level: senior | min_exp: 7 yrs
-  required_skills: AWS, Kubernetes, Terraform, Multi-Cloud
-  description: We are looking for a Principal Cloud Architect to lead our cloud-native strategy and oversee our enterprise infrastructure transformation. You will be responsible for setting techn
+  id: jd_2315 | title: Principal Product Lead | level: senior | min_exp: 7 yrs
+  required_skills: Product Governance, Strategic Roadmap, C-Suite Communication
+  description: We are looking for a Principal Product Lead to spearhead our enterprise product strategy and infrastructure governance. You will manage multiple product lines, align with the C-sui
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
+  strong_match: ~9 pairs
   excellent_match: ~8 pairs
-  moderate_match: ~6 pairs
-  weak_match: ~10 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11526  resume_2306 × jd_2306
-  pair_11527  resume_2306 × jd_2307
-  pair_11528  resume_2306 × jd_2308
-  pair_11529  resume_2306 × jd_2309
-  pair_11530  resume_2306 × jd_2310
-  pair_11531  resume_2307 × jd_2306
-  pair_11532  resume_2307 × jd_2307
-  pair_11533  resume_2307 × jd_2308
-  pair_11534  resume_2307 × jd_2309
-  pair_11535  resume_2307 × jd_2310
-  pair_11536  resume_2308 × jd_2306
-  pair_11537  resume_2308 × jd_2307
-  pair_11538  resume_2308 × jd_2308
-  pair_11539  resume_2308 × jd_2309
-  pair_11540  resume_2308 × jd_2310
-  pair_11541  resume_2309 × jd_2306
-  pair_11542  resume_2309 × jd_2307
-  pair_11543  resume_2309 × jd_2308
-  pair_11544  resume_2309 × jd_2309
-  pair_11545  resume_2309 × jd_2310
-  pair_11546  resume_2310 × jd_2306
-  pair_11547  resume_2310 × jd_2307
-  pair_11548  resume_2310 × jd_2308
-  pair_11549  resume_2310 × jd_2309
-  pair_11550  resume_2310 × jd_2310
+  pair_11551  resume_2311 × jd_2311
+  pair_11552  resume_2311 × jd_2312
+  pair_11553  resume_2311 × jd_2313
+  pair_11554  resume_2311 × jd_2314
+  pair_11555  resume_2311 × jd_2315
+  pair_11556  resume_2312 × jd_2311
+  pair_11557  resume_2312 × jd_2312
+  pair_11558  resume_2312 × jd_2313
+  pair_11559  resume_2312 × jd_2314
+  pair_11560  resume_2312 × jd_2315
+  pair_11561  resume_2313 × jd_2311
+  pair_11562  resume_2313 × jd_2312
+  pair_11563  resume_2313 × jd_2313
+  pair_11564  resume_2313 × jd_2314
+  pair_11565  resume_2313 × jd_2315
+  pair_11566  resume_2314 × jd_2311
+  pair_11567  resume_2314 × jd_2312
+  pair_11568  resume_2314 × jd_2313
+  pair_11569  resume_2314 × jd_2314
+  pair_11570  resume_2314 × jd_2315
+  pair_11571  resume_2315 × jd_2311
+  pair_11572  resume_2315 × jd_2312
+  pair_11573  resume_2315 × jd_2313
+  pair_11574  resume_2315 × jd_2314
+  pair_11575  resume_2315 × jd_2315
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
