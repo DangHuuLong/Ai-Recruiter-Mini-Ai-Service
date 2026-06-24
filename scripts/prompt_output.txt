@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2651 | level: intern | exp: 0.4 yrs
-  skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals, Feature Engineering, SQL, Data Visualization, Model Evaluation, Statistics
-  background: Final-year data science student with 0.4 years of internship experience supporting analytics and machine learning projects. Assisted with collecting, cleaning, and validating datasets used for predict
+  id: resume_2656 | level: intern | exp: 0.4 yrs
+  skills: Clinical Operations, EMR, Patient Scheduling, Patient Intake, Medical Documentation, Healthcare Administration, Data Entry, Compliance Support, Patient Communication, Reporting
+  background: Final-year healthcare administration student with 0.4 years of internship experience supporting clinical operations and patient coordination activities. Assisted staff with appointment scheduling, EMR
 
-  id: resume_2652 | level: junior | exp: 1.5 yrs
-  skills: Python, Pandas, Scikit-Learn, SQL, Feature Engineering, Model Validation, Data Analysis, Reporting Automation, Data Visualization, Experiment Tracking
-  background: Data analyst and junior machine learning practitioner with 1.5 years of experience supporting predictive analytics initiatives. Developed data pipelines using Python and pandas, automated reporting pr
+  id: resume_2657 | level: junior | exp: 1.5 yrs
+  skills: EMR Administration, Patient Scheduling, Referral Coordination, Medical Records, Patient Communication, Healthcare Coordination, Reporting, Compliance Tracking, Administrative Support, Care Coordination
+  background: Healthcare coordinator with 1.5 years of experience supporting patient services and administrative operations. Managed appointment scheduling, patient communications, EMR updates, referral coordinatio
 
-  id: resume_2653 | level: middle | exp: 4.2 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Machine Learning, Model Deployment, Feature Engineering, Statistical Analysis, Model Monitoring, Experiment Design
-  background: Machine learning engineer with 4.2 years of experience designing predictive models and data products. Led projects covering data acquisition, preprocessing, model development, evaluation, and deployme
+  id: resume_2658 | level: middle | exp: 4.1 yrs
+  skills: Clinical Operations, EMR Optimization, Medical Coordination, Workflow Improvement, Operational Reporting, Compliance Management, Patient Flow Management, Healthcare Analytics, Staff Coordination, Process Improvement
+  background: Healthcare operations specialist with 4.1 years of experience managing clinical administration programs and medical coordination initiatives. Led process improvements across patient scheduling, EMR wo
 
-  id: resume_2654 | level: senior | exp: 6.3 yrs
-  skills: Data Science Leadership, Machine Learning Strategy, PyTorch, Scikit-Learn, Model Governance, MLOps, Stakeholder Management, Experimentation Frameworks, Team Leadership, Analytics Strategy
-  background: Senior data science manager with 6.3 years of experience leading machine learning programs and analytics teams. Directed model development initiatives using PyTorch and scikit-learn while establishing
+  id: resume_2659 | level: senior | exp: 6.2 yrs
+  skills: Clinical Operations Leadership, EMR Governance, Medical Coordination Leadership, Healthcare Compliance, Quality Improvement, Operational Strategy, Team Leadership, Performance Management, Patient Access Management, Stakeholder Management
+  background: Senior healthcare administration manager with 6.2 years of experience leading clinical operations and medical coordination programs. Directed teams responsible for patient access, scheduling services,
 
-  id: resume_2655 | level: senior | exp: 9.1 yrs
-  skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Portfolio Leadership, Responsible AI, Analytics Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
-  background: Principal AI and analytics executive with 9.1 years of experience defining enterprise machine learning strategy and leading transformation initiatives. Established governance frameworks for responsibl
+  id: resume_2660 | level: senior | exp: 9.3 yrs
+  skills: Healthcare Strategy, Enterprise Clinical Operations, EMR Strategy, Operational Governance, Healthcare Transformation, Executive Leadership, Strategic Roadmaps, Organizational Leadership, Capability Development, Performance Governance
+  background: Principal healthcare operations executive with 9.3 years of experience defining enterprise clinical administration strategy and overseeing transformation programs. Established governance frameworks fo
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2651 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Pandas, Data Cleaning, Exploratory Data Analysis, Machine Learning Fundamentals
-  description: Seeking a data science intern to support analytics and machine learning projects. The role involves preparing datasets, performing exploratory analysis, creating visual reports, an
+  id: jd_2656 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations, EMR, Patient Scheduling, Patient Intake, Medical Documentation
+  description: Seeking a healthcare administration intern to support clinical operations, patient intake, EMR updates, and documentation activities. The role assists administrative teams with sch
 
-  id: jd_2652 | title: Junior Machine Learning Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Python, Pandas, Scikit-Learn, Feature Engineering, Model Validation
-  description: Looking for a junior machine learning analyst to support model development and analytics delivery. Responsibilities include feature engineering, validation testing, reporting autom
+  id: jd_2657 | title: Healthcare Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: EMR Administration, Patient Scheduling, Referral Coordination, Medical Records, Care Coordination
+  description: Looking for a junior healthcare coordinator to manage scheduling, referrals, EMR administration, and patient communications. Responsibilities include maintaining records, coordinat
 
-  id: jd_2653 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, Machine Learning, Model Deployment, Experiment Design
-  description: Seeking an experienced machine learning engineer to design and deploy predictive models. The role includes experiment design, model deployment, monitoring, and performance optimiza
+  id: jd_2658 | title: Healthcare Operations Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR Optimization, Workflow Improvement, Operational Reporting, Process Improvement
+  description: Seeking an experienced healthcare operations specialist to improve clinical workflows, optimize EMR usage, and coordinate operational programs. Responsibilities include process imp
 
-  id: jd_2654 | title: Senior Data Science Manager | level: senior | min_exp: 5 yrs
-  required_skills: Data Science Leadership, Machine Learning Strategy, Model Governance, Stakeholder Management, Team Leadership
-  description: Hiring a senior data science manager to lead machine learning teams and oversee analytics programs. Responsibilities include governance, stakeholder management, roadmap planning, a
+  id: jd_2659 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Clinical Operations Leadership, EMR Governance, Healthcare Compliance, Quality Improvement, Team Leadership
+  description: Hiring a senior manager to lead clinical operations programs, oversee EMR governance, and manage healthcare administration teams. Responsibilities include quality improvement, perf
 
-  id: jd_2655 | title: Principal AI Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise AI Strategy, Machine Learning Governance, Executive Stakeholder Management, Data Science Transformation, Strategic Roadmaps
-  description: An experienced AI executive is required to define enterprise strategy and oversee large-scale transformation programs. The position focuses on governance, executive stakeholder eng
+  id: jd_2660 | title: Principal Healthcare Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Healthcare Strategy, Enterprise Clinical Operations, EMR Strategy, Healthcare Transformation, Strategic Roadmaps
+  description: An experienced healthcare executive is required to define enterprise clinical operations strategy and oversee transformation initiatives. Responsibilities include governance develo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~11 pairs
-  excellent_match: ~1 pairs
-  moderate_match: ~8 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~11 pairs
+  moderate_match: ~7 pairs
   weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13251  resume_2651 × jd_2651
-  pair_13252  resume_2651 × jd_2652
-  pair_13253  resume_2651 × jd_2653
-  pair_13254  resume_2651 × jd_2654
-  pair_13255  resume_2651 × jd_2655
-  pair_13256  resume_2652 × jd_2651
-  pair_13257  resume_2652 × jd_2652
-  pair_13258  resume_2652 × jd_2653
-  pair_13259  resume_2652 × jd_2654
-  pair_13260  resume_2652 × jd_2655
-  pair_13261  resume_2653 × jd_2651
-  pair_13262  resume_2653 × jd_2652
-  pair_13263  resume_2653 × jd_2653
-  pair_13264  resume_2653 × jd_2654
-  pair_13265  resume_2653 × jd_2655
-  pair_13266  resume_2654 × jd_2651
-  pair_13267  resume_2654 × jd_2652
-  pair_13268  resume_2654 × jd_2653
-  pair_13269  resume_2654 × jd_2654
-  pair_13270  resume_2654 × jd_2655
-  pair_13271  resume_2655 × jd_2651
-  pair_13272  resume_2655 × jd_2652
-  pair_13273  resume_2655 × jd_2653
-  pair_13274  resume_2655 × jd_2654
-  pair_13275  resume_2655 × jd_2655
+  pair_13276  resume_2656 × jd_2656
+  pair_13277  resume_2656 × jd_2657
+  pair_13278  resume_2656 × jd_2658
+  pair_13279  resume_2656 × jd_2659
+  pair_13280  resume_2656 × jd_2660
+  pair_13281  resume_2657 × jd_2656
+  pair_13282  resume_2657 × jd_2657
+  pair_13283  resume_2657 × jd_2658
+  pair_13284  resume_2657 × jd_2659
+  pair_13285  resume_2657 × jd_2660
+  pair_13286  resume_2658 × jd_2656
+  pair_13287  resume_2658 × jd_2657
+  pair_13288  resume_2658 × jd_2658
+  pair_13289  resume_2658 × jd_2659
+  pair_13290  resume_2658 × jd_2660
+  pair_13291  resume_2659 × jd_2656
+  pair_13292  resume_2659 × jd_2657
+  pair_13293  resume_2659 × jd_2658
+  pair_13294  resume_2659 × jd_2659
+  pair_13295  resume_2659 × jd_2660
+  pair_13296  resume_2660 × jd_2656
+  pair_13297  resume_2660 × jd_2657
+  pair_13298  resume_2660 × jd_2658
+  pair_13299  resume_2660 × jd_2659
+  pair_13300  resume_2660 × jd_2660
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
