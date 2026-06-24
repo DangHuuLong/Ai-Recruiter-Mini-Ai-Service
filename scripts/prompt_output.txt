@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2221 | level: intern | exp: 0.5 yrs
-  skills: Agile, Roadmap, Stakeholder Management, Jira, Product Backlog
-  background: Ambitious and analytical Product Management intern offering a foundational academic background in technical product management frameworks, Agile engineering methodologies, and collaborative stakeholde
+  id: resume_2226 | level: intern | exp: 0.5 yrs
+  skills: Recruiting, Onboarding, HRIS, Candidate Sourcing, Data Entry
+  background: Enthusiastic and detail-oriented Human Resources student looking to build a career in talent acquisition and people operations. Possesses foundational academic knowledge of corporate recruiting lifecy
 
-  id: resume_2222 | level: junior | exp: 1.5 yrs
-  skills: Agile, Roadmap, Stakeholder Management, User Stories, Product Analytics
-  background: Junior Product Manager with over one year of professional corporate tenure driving technical feature milestones in partnership with software engineering teams. Proficient in managing daily Agile scrum
+  id: resume_2227 | level: junior | exp: 1.5 yrs
+  skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems, Candidate Screening
+  background: Junior Human Resources Coordinator with more than a year of professional corporate experience executing end-to-end sourcing strategies and candidate onboarding procedures. Proficient in optimizing dai
 
-  id: resume_2223 | level: middle | exp: 4.0 yrs
-  skills: Roadmap, Agile, Stakeholder Management, SaaS, Product Strategy, SQL
-  background: Dynamic Product Manager with four years of progressive industry experience orchestrating enterprise cloud-native SaaS modules from initial concept phases to global deployments. Highly accomplished at 
+  id: resume_2228 | level: middle | exp: 4.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Sourcing, Hiring Metrics, Interviewing
+  background: Dynamic Talent Acquisition Specialist with four years of progressive industry experience managing mid-level engineering and corporate recruitment processes. Expert at formulating multichannel candidat
 
-  id: resume_2224 | level: senior | exp: 6.0 yrs
-  skills: Roadmap, Agile, Stakeholder Management, Cloud Infrastructure, API Strategy, Data Analytics
-  background: Senior Product Manager with six years of technical leadership experience specializing in architecting scalable digital infrastructure initiatives and microservice architectures. Proven expert at desig
+  id: resume_2229 | level: senior | exp: 6.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Employer Branding, Stakeholder Management, Data Compliance
+  background: Senior Human Resources Manager with over six years of comprehensive professional leadership specializing in scaling talent acquisition platforms and modernizing people operations. Expert at architecti
 
-  id: resume_2225 | level: senior | exp: 9.0 yrs
-  skills: Roadmap, Agile, Stakeholder Management, Product Strategy, Team Leadership, Change Management
-  background: Principal Product Director and Lead Technology Strategist with nine years of experience guiding multi-million dollar technology portfolios and steering elite product management divisions. Master at fo
+  id: resume_2230 | level: senior | exp: 9.0 yrs
+  skills: Recruiting, HRIS, Onboarding, Talent Strategy, Workforce Planning, Executive Leadership
+  background: Principal Director of Talent and Corporate Strategy with nine years of extensive executive experience steering global recruitment operations and directing elite human resource business divisions. Mast
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2221 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Agile, Roadmap, Stakeholder Management
-  description: We are seeking an enthusiastic Product Management Intern to support our cloud application development squad. In this internship role, you will help synthesize qualitative user rese
+  id: jd_2226 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
+  required_skills: Recruiting, HRIS, Onboarding
+  description: We are seeking an enthusiastic Human Resources Intern to support our growing talent acquisition squad. In this internship role, you will assist with scheduling candidate interviews
 
-  id: jd_2222 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Agile, Roadmap, Stakeholder Management, User Stories
-  description: Our core product growth squad is looking for a Junior Product Manager to spearhead continuous feature delivery cycles. You will draft granular product roadmap tracking structures, 
+  id: jd_2227 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Applicant Tracking Systems
+  description: Our central talent acquisition squad is looking for a Junior Talent Acquisition Coordinator to drive our recruitment pipelines. You will coordinate end-to-end interview patterns, p
 
-  id: jd_2223 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Roadmap, Agile, Stakeholder Management, SaaS
-  description: We are hunting for an experienced Product Manager to guide cloud SaaS features and architect modern software application experiences. In this role, you will design comprehensive mu
+  id: jd_2228 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Sourcing
+  description: We are hunting for an experienced Talent Acquisition Specialist to drive professional hiring pipelines and architect optimal employee onboarding experiences. In this role, you will
 
-  id: jd_2224 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Roadmap, Agile, Stakeholder Management, Cloud Infrastructure, API Strategy
-  description: Join our internal platform division as a Senior Product Manager. You will be responsible for orchestrating complex cloud systems and designing core technical product roadmap struct
+  id: jd_2229 | title: Senior Human Resources Manager | level: senior | min_exp: 5 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Employer Branding, Stakeholder Management
+  description: Join our internal people operations division as a Senior Human Resources Manager. You will be responsible for orchestrating complex workforce growth strategies and architecting ent
 
-  id: jd_2225 | title: Principal Product Director | level: senior | min_exp: 7 yrs
-  required_skills: Roadmap, Agile, Stakeholder Management, Product Strategy, Team Leadership
-  description: We are searching for a Principal Product Director to anchor our core platform vision and guide our high-impact technology portfolio. You will oversee long-range product roadmap por
+  id: jd_2230 | title: Principal Director of Talent | level: senior | min_exp: 7 yrs
+  required_skills: Recruiting, HRIS, Onboarding, Talent Strategy, Workforce Planning
+  description: We are searching for a Principal Director of Talent to anchor our human capital vision and guide our high-impact people operations portfolio. You will oversee long-range talent acq
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~7 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~12 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11101  resume_2221 × jd_2221
-  pair_11102  resume_2221 × jd_2222
-  pair_11103  resume_2221 × jd_2223
-  pair_11104  resume_2221 × jd_2224
-  pair_11105  resume_2221 × jd_2225
-  pair_11106  resume_2222 × jd_2221
-  pair_11107  resume_2222 × jd_2222
-  pair_11108  resume_2222 × jd_2223
-  pair_11109  resume_2222 × jd_2224
-  pair_11110  resume_2222 × jd_2225
-  pair_11111  resume_2223 × jd_2221
-  pair_11112  resume_2223 × jd_2222
-  pair_11113  resume_2223 × jd_2223
-  pair_11114  resume_2223 × jd_2224
-  pair_11115  resume_2223 × jd_2225
-  pair_11116  resume_2224 × jd_2221
-  pair_11117  resume_2224 × jd_2222
-  pair_11118  resume_2224 × jd_2223
-  pair_11119  resume_2224 × jd_2224
-  pair_11120  resume_2224 × jd_2225
-  pair_11121  resume_2225 × jd_2221
-  pair_11122  resume_2225 × jd_2222
-  pair_11123  resume_2225 × jd_2223
-  pair_11124  resume_2225 × jd_2224
-  pair_11125  resume_2225 × jd_2225
+  pair_11126  resume_2226 × jd_2226
+  pair_11127  resume_2226 × jd_2227
+  pair_11128  resume_2226 × jd_2228
+  pair_11129  resume_2226 × jd_2229
+  pair_11130  resume_2226 × jd_2230
+  pair_11131  resume_2227 × jd_2226
+  pair_11132  resume_2227 × jd_2227
+  pair_11133  resume_2227 × jd_2228
+  pair_11134  resume_2227 × jd_2229
+  pair_11135  resume_2227 × jd_2230
+  pair_11136  resume_2228 × jd_2226
+  pair_11137  resume_2228 × jd_2227
+  pair_11138  resume_2228 × jd_2228
+  pair_11139  resume_2228 × jd_2229
+  pair_11140  resume_2228 × jd_2230
+  pair_11141  resume_2229 × jd_2226
+  pair_11142  resume_2229 × jd_2227
+  pair_11143  resume_2229 × jd_2228
+  pair_11144  resume_2229 × jd_2229
+  pair_11145  resume_2229 × jd_2230
+  pair_11146  resume_2230 × jd_2226
+  pair_11147  resume_2230 × jd_2227
+  pair_11148  resume_2230 × jd_2228
+  pair_11149  resume_2230 × jd_2229
+  pair_11150  resume_2230 × jd_2230
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
