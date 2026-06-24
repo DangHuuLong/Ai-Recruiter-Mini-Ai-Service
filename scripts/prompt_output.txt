@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2626 | level: intern | exp: 0.4 yrs
-  skills: React Native, JavaScript, TypeScript, Mobile Testing, API Integration, Git, UI Development, Bug Tracking, Agile Development, Cross Platform Development
-  background: Final-year computer science student with 0.4 years of internship experience supporting mobile application development. Assisted engineers with React Native feature updates, UI testing, bug tracking, a
+  id: resume_2631 | level: intern | exp: 0.4 yrs
+  skills: React Native, JavaScript, TypeScript, Mobile Testing, API Integration, Git, UI Development, Agile Development, Debugging, Cross Platform Development
+  background: Final-year computer science student with 0.4 years of internship experience supporting mobile application development projects. Assisted engineers with React Native feature updates, UI implementation,
 
-  id: resume_2627 | level: junior | exp: 1.6 yrs
+  id: resume_2632 | level: junior | exp: 1.6 yrs
   skills: React Native, TypeScript, JavaScript, API Integration, Mobile Debugging, Push Notifications, Authentication, Git, App Deployment, Agile Delivery
-  background: Mobile developer with 1.6 years of experience building and maintaining cross-platform applications. Developed React Native features, integrated backend APIs, resolved production defects, and supported
+  background: Mobile developer with 1.6 years of professional experience building and maintaining cross-platform applications. Worked primarily with React Native and TypeScript to deliver customer-facing features, 
 
-  id: resume_2628 | level: middle | exp: 4.3 yrs
+  id: resume_2633 | level: middle | exp: 4.4 yrs
   skills: Flutter, React Native, Mobile Architecture, Performance Optimization, CI/CD, Automated Testing, API Integration, State Management, Release Management, Android And iOS Development
-  background: Mobile engineer with 4.3 years of experience delivering consumer and business applications using Flutter, React Native, and native integrations. Led feature development, application architecture impro
+  background: Mobile engineer with 4.4 years of experience delivering scalable applications across Android and iOS ecosystems. Designed and implemented features using Flutter and React Native while contributing to 
 
-  id: resume_2629 | level: senior | exp: 6.5 yrs
+  id: resume_2634 | level: senior | exp: 6.6 yrs
   skills: Kotlin, Swift, Technical Leadership, Mobile Architecture, Performance Engineering, Security, CI/CD, Release Strategy, Mentoring, Cross Functional Leadership
-  background: Senior mobile engineer with 6.5 years of experience leading development teams building large-scale Android and iOS applications. Specialized in Kotlin, Swift, mobile architecture, performance engineer
+  background: Senior mobile engineer with 6.6 years of experience leading development of enterprise and consumer applications. Specialized in Kotlin and Swift development, mobile architecture, performance engineeri
 
-  id: resume_2630 | level: senior | exp: 9.2 yrs
+  id: resume_2635 | level: senior | exp: 9.3 yrs
   skills: Mobile Platform Strategy, Engineering Leadership, Architecture Governance, Flutter Governance, React Native Governance, Strategic Roadmaps, Organizational Leadership, Mobile Transformation, Scalability, Executive Stakeholder Management
-  background: Principal mobile technology leader with 9.2 years of experience defining mobile platform strategy and overseeing engineering transformation programs. Established governance standards for React Native,
+  background: Principal mobile technology leader with 9.3 years of experience defining platform strategy and governing large mobile ecosystems. Established architecture governance frameworks covering Flutter, React
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2626 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  id: jd_2631 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
   required_skills: React Native, JavaScript, Mobile Testing, API Integration, Git
-  description: Seeking a mobile development intern to support React Native application enhancements, testing activities, and API integration tasks. The role works with developers to implement use
+  description: Seeking a mobile development intern to support React Native application enhancements and testing activities. The role assists engineers with API integration, interface updates, bug
 
-  id: jd_2627 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  id: jd_2632 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
   required_skills: React Native, TypeScript, API Integration, Mobile Debugging, App Deployment
   description: Looking for a junior mobile developer to build and maintain cross-platform applications using React Native. Responsibilities include feature development, debugging, API integration
 
-  id: jd_2628 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
+  id: jd_2633 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
   required_skills: Flutter, Mobile Architecture, Automated Testing, CI/CD, Performance Optimization
-  description: Seeking an experienced mobile engineer to design and deliver scalable applications using Flutter and related technologies. Responsibilities include architecture planning, automated
+  description: Seeking an experienced mobile engineer to design scalable applications using Flutter and modern engineering practices. Responsibilities include architecture planning, automated tes
 
-  id: jd_2629 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  id: jd_2634 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
   required_skills: Kotlin, Swift, Technical Leadership, Mobile Architecture, Performance Engineering
-  description: Hiring a senior mobile engineer to lead architecture decisions and guide development teams across Android and iOS platforms. Responsibilities include technical leadership, performa
+  description: Hiring a senior mobile engineer to guide architecture decisions and mentor development teams across Android and iOS platforms. Responsibilities include technical leadership, perfor
 
-  id: jd_2630 | title: Principal Mobile Platform Architect | level: senior | min_exp: 7 yrs
+  id: jd_2635 | title: Principal Mobile Platform Architect | level: senior | min_exp: 7 yrs
   required_skills: Mobile Platform Strategy, Engineering Leadership, Architecture Governance, Strategic Roadmaps, Mobile Transformation
-  description: An experienced mobile technology leader is required to define platform strategy and oversee enterprise mobile transformation initiatives. Responsibilities include architecture gove
+  description: An experienced technology leader is required to define mobile platform strategy and oversee transformation initiatives. Responsibilities include architecture governance, roadmap de
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~9 pairs
-  excellent_match: ~2 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~7 pairs
+  strong_match: ~8 pairs
+  excellent_match: ~3 pairs
+  moderate_match: ~6 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13126  resume_2626 × jd_2626
-  pair_13127  resume_2626 × jd_2627
-  pair_13128  resume_2626 × jd_2628
-  pair_13129  resume_2626 × jd_2629
-  pair_13130  resume_2626 × jd_2630
-  pair_13131  resume_2627 × jd_2626
-  pair_13132  resume_2627 × jd_2627
-  pair_13133  resume_2627 × jd_2628
-  pair_13134  resume_2627 × jd_2629
-  pair_13135  resume_2627 × jd_2630
-  pair_13136  resume_2628 × jd_2626
-  pair_13137  resume_2628 × jd_2627
-  pair_13138  resume_2628 × jd_2628
-  pair_13139  resume_2628 × jd_2629
-  pair_13140  resume_2628 × jd_2630
-  pair_13141  resume_2629 × jd_2626
-  pair_13142  resume_2629 × jd_2627
-  pair_13143  resume_2629 × jd_2628
-  pair_13144  resume_2629 × jd_2629
-  pair_13145  resume_2629 × jd_2630
-  pair_13146  resume_2630 × jd_2626
-  pair_13147  resume_2630 × jd_2627
-  pair_13148  resume_2630 × jd_2628
-  pair_13149  resume_2630 × jd_2629
-  pair_13150  resume_2630 × jd_2630
+  pair_13151  resume_2631 × jd_2631
+  pair_13152  resume_2631 × jd_2632
+  pair_13153  resume_2631 × jd_2633
+  pair_13154  resume_2631 × jd_2634
+  pair_13155  resume_2631 × jd_2635
+  pair_13156  resume_2632 × jd_2631
+  pair_13157  resume_2632 × jd_2632
+  pair_13158  resume_2632 × jd_2633
+  pair_13159  resume_2632 × jd_2634
+  pair_13160  resume_2632 × jd_2635
+  pair_13161  resume_2633 × jd_2631
+  pair_13162  resume_2633 × jd_2632
+  pair_13163  resume_2633 × jd_2633
+  pair_13164  resume_2633 × jd_2634
+  pair_13165  resume_2633 × jd_2635
+  pair_13166  resume_2634 × jd_2631
+  pair_13167  resume_2634 × jd_2632
+  pair_13168  resume_2634 × jd_2633
+  pair_13169  resume_2634 × jd_2634
+  pair_13170  resume_2634 × jd_2635
+  pair_13171  resume_2635 × jd_2631
+  pair_13172  resume_2635 × jd_2632
+  pair_13173  resume_2635 × jd_2633
+  pair_13174  resume_2635 × jd_2634
+  pair_13175  resume_2635 × jd_2635
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
