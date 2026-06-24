@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2426 | level: intern | exp: 0.2 yrs
-  skills: Patient Scheduling, EMR, Medical Terminology, Data Entry
-  background: I am a dedicated healthcare administration student currently completing my degree. I have developed a strong foundational understanding of patient record management, medical terminology, and basic cli
+  id: resume_2431 | level: intern | exp: 0.3 yrs
+  skills: Network Security, Linux, Scripting, Vulnerability Assessment
+  background: I am a passionate computer science student eager to start a career in information security. During my academic studies, I have focused on foundational network security principles, basic cryptography, 
 
-  id: resume_2427 | level: junior | exp: 1.5 yrs
-  skills: Clinical Operations, EMR, Patient Coordination, HIPAA Compliance
-  background: As a Junior Clinical Operations Coordinator with 1.5 years of experience, I specialize in managing patient flow, EMR data integrity, and administrative clinical support. My professional background inc
+  id: resume_2432 | level: junior | exp: 1.5 yrs
+  skills: Incident Response, SIEM, Threat Detection, Firewall Management
+  background: As a Junior Security Analyst with 1.5 years of experience, I am specialized in incident response, log monitoring, and basic threat detection. My professional experience includes actively working with 
 
-  id: resume_2428 | level: middle | exp: 4.0 yrs
-  skills: Healthcare Operations, EMR Implementation, Team Management, Compliance Management
-  background: I am a Healthcare Administration professional with 4 years of experience specializing in clinical operations and healthcare management. My expertise encompasses EMR deployment, clinical staff coordina
+  id: resume_2433 | level: middle | exp: 4.0 yrs
+  skills: Penetration Testing, Network Security, Vulnerability Management, Security Auditing
+  background: I am a cybersecurity professional with 4 years of experience, focusing on penetration testing, network security architecture, and proactive threat assessment. Throughout my career, I have performed co
 
-  id: resume_2429 | level: senior | exp: 6.5 yrs
-  skills: Clinical Service Optimization, EMR Governance, Operations Management, Health Analytics
-  background: Senior Healthcare Operations Manager with over 6 years of experience focused on clinical service optimization and enterprise-level EMR governance. My background includes architecting efficient clinica
+  id: resume_2434 | level: senior | exp: 6.5 yrs
+  skills: Security Architecture, Cloud Security, Threat Hunting, SIEM Engineering
+  background: Senior Security Engineer with over 6 years of experience in designing, implementing, and maintaining enterprise-level security solutions. My expertise includes security architecture design, advanced t
 
-  id: resume_2430 | level: senior | exp: 10.5 yrs
-  skills: Strategic Leadership, Clinical Platform Modernization, Enterprise Risk Management, Operations Strategy
-  background: Principal Clinical Administrator with 10 years of experience in strategic healthcare leadership and clinical platform modernization. My career has focused on transforming clinical operations through a
+  id: resume_2435 | level: senior | exp: 10.5 yrs
+  skills: Strategic Leadership, Security Governance, Cyber Risk Management, Infrastructure Security
+  background: Principal Cybersecurity Architect with 10 years of experience in strategic security leadership, infrastructure security modernization, and cyber risk management. My career has centered on architecting
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2426 | title: Clinical Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: EMR, Clinical Operations, Patient Scheduling
-  description: We are seeking a motivated Clinical Operations Intern to support our administrative team in managing day-to-day clinical tasks. This role provides an excellent opportunity to learn
+  id: jd_2431 | title: Information Security Intern | level: intern | min_exp: 0 yrs
+  required_skills: Network Security, Linux, Vulnerability Assessment
+  description: We are looking for a motivated Information Security Intern to join our security team. This internship offers hands-on experience in network monitoring, basic security assessment ta
 
-  id: jd_2427 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: EMR, Patient Coordination, HIPAA Compliance
-  description: Join our clinic as a Junior Clinical Coordinator to manage patient intake and ensure smooth daily operations. You will be responsible for maintaining patient data integrity, suppor
+  id: jd_2432 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SIEM, Incident Response, Threat Detection
+  description: Our security operations team is hiring a Junior Security Analyst to help detect and respond to security threats. You will be responsible for SIEM monitoring, investigating alerts, 
 
-  id: jd_2428 | title: Clinical Operations Manager | level: middle | min_exp: 3 yrs
-  required_skills: Healthcare Operations, EMR Implementation, Team Management
-  description: We are looking for a Clinical Operations Manager to oversee our administrative clinical services. You will be responsible for optimizing workflows, managing clinical staff, and ens
+  id: jd_2433 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Penetration Testing, Network Security, Vulnerability Management
+  description: We are seeking a Cybersecurity Engineer to perform penetration testing, manage vulnerability programs, and improve our network security architecture. You will be instrumental in id
 
-  id: jd_2429 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Clinical Service Optimization, EMR Governance, Operations Management
-  description: We are seeking a Senior Healthcare Operations Manager to drive clinical service optimization. You will oversee multiple clinical departments, manage operational budgets, and lead e
+  id: jd_2434 | title: Senior Security Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Security Architecture, Threat Hunting, SIEM Engineering
+  description: We are hiring a Senior Security Engineer to design and implement advanced security solutions. You will lead security architecture initiatives, manage complex SIEM environments, and
 
-  id: jd_2430 | title: Principal Clinical Administrator | level: senior | min_exp: 7 yrs
-  required_skills: Strategic Leadership, Clinical Platform Modernization, Enterprise Risk Management
-  description: We are looking for a Principal Clinical Administrator to shape our strategic healthcare delivery. You will lead modernization efforts, manage high-level risk initiatives, and overs
+  id: jd_2435 | title: Principal Cybersecurity Architect | level: senior | min_exp: 7 yrs
+  required_skills: Strategic Leadership, Security Governance, Cyber Risk Management
+  description: We are looking for a Principal Cybersecurity Architect to drive our enterprise security strategy. You will lead infrastructure modernization, oversee cyber risk management programs
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~6 pairs
-  moderate_match: ~11 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~7 pairs
+  moderate_match: ~2 pairs
   weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12126  resume_2426 × jd_2426
-  pair_12127  resume_2426 × jd_2427
-  pair_12128  resume_2426 × jd_2428
-  pair_12129  resume_2426 × jd_2429
-  pair_12130  resume_2426 × jd_2430
-  pair_12131  resume_2427 × jd_2426
-  pair_12132  resume_2427 × jd_2427
-  pair_12133  resume_2427 × jd_2428
-  pair_12134  resume_2427 × jd_2429
-  pair_12135  resume_2427 × jd_2430
-  pair_12136  resume_2428 × jd_2426
-  pair_12137  resume_2428 × jd_2427
-  pair_12138  resume_2428 × jd_2428
-  pair_12139  resume_2428 × jd_2429
-  pair_12140  resume_2428 × jd_2430
-  pair_12141  resume_2429 × jd_2426
-  pair_12142  resume_2429 × jd_2427
-  pair_12143  resume_2429 × jd_2428
-  pair_12144  resume_2429 × jd_2429
-  pair_12145  resume_2429 × jd_2430
-  pair_12146  resume_2430 × jd_2426
-  pair_12147  resume_2430 × jd_2427
-  pair_12148  resume_2430 × jd_2428
-  pair_12149  resume_2430 × jd_2429
-  pair_12150  resume_2430 × jd_2430
+  pair_12151  resume_2431 × jd_2431
+  pair_12152  resume_2431 × jd_2432
+  pair_12153  resume_2431 × jd_2433
+  pair_12154  resume_2431 × jd_2434
+  pair_12155  resume_2431 × jd_2435
+  pair_12156  resume_2432 × jd_2431
+  pair_12157  resume_2432 × jd_2432
+  pair_12158  resume_2432 × jd_2433
+  pair_12159  resume_2432 × jd_2434
+  pair_12160  resume_2432 × jd_2435
+  pair_12161  resume_2433 × jd_2431
+  pair_12162  resume_2433 × jd_2432
+  pair_12163  resume_2433 × jd_2433
+  pair_12164  resume_2433 × jd_2434
+  pair_12165  resume_2433 × jd_2435
+  pair_12166  resume_2434 × jd_2431
+  pair_12167  resume_2434 × jd_2432
+  pair_12168  resume_2434 × jd_2433
+  pair_12169  resume_2434 × jd_2434
+  pair_12170  resume_2434 × jd_2435
+  pair_12171  resume_2435 × jd_2431
+  pair_12172  resume_2435 × jd_2432
+  pair_12173  resume_2435 × jd_2433
+  pair_12174  resume_2435 × jd_2434
+  pair_12175  resume_2435 × jd_2435
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
