@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2446 | level: intern | exp: 0.4 yrs
-  skills: Flutter, React Native, Kotlin, Dart, JavaScript, REST API, SQLite, Git, Firebase, Unit Testing
-  background: Final-year Computer Science student focused on mobile application development with four months of academic and freelance experience. Built several Android and cross-platform applications as part of co
+  id: resume_2451 | level: intern | exp: 0.4 yrs
+  skills: Linux, Python, Wireshark, Nmap, Burp Suite, Splunk, TCP/IP, Bash, Vulnerability Assessment, Network Security
+  background: Final-year Cybersecurity student with four months of internship and laboratory experience in information security. Built foundational skills in network security, vulnerability assessment, and security
 
-  id: resume_2447 | level: junior | exp: 1.6 yrs
-  skills: React Native, Flutter, Redux, Firebase, Dart, JavaScript, Kotlin, REST API, Git, Crashlytics
-  background: Mobile developer with 1.6 years of professional experience building consumer-facing applications using React Native and Flutter. Worked in a small product team delivering new features, fixing defects,
+  id: resume_2452 | level: junior | exp: 1.7 yrs
+  skills: Splunk, Microsoft Sentinel, Nessus, Python, Linux, Incident Response, SIEM, Network Security, Threat Hunting, Vulnerability Management
+  background: Information Security Analyst with 1.7 years of professional experience supporting security operations and vulnerability management activities. Worked within a SOC environment monitoring alerts, triagi
 
-  id: resume_2448 | level: middle | exp: 4.2 yrs
-  skills: Flutter, Kotlin, React Native, MVVM, Clean Architecture, Fastlane, CI/CD, Firebase, GitHub Actions, Unit Testing
-  background: Software engineer with 4.2 years of experience delivering scalable mobile applications across healthcare and fintech domains. Specialized in Flutter and native Android development with Kotlin, while a
+  id: resume_2453 | level: middle | exp: 4.3 yrs
+  skills: Splunk, Elastic Stack, Nessus, Burp Suite, Metasploit, Threat Hunting, MITRE ATT&CK, Python, SOAR, Incident Response
+  background: Cybersecurity Engineer with 4.3 years of experience across security operations, penetration testing, and detection engineering. Responsible for designing SIEM use cases, performing threat hunting acti
 
-  id: resume_2449 | level: senior | exp: 6.3 yrs
-  skills: Swift, Flutter, iOS, Clean Architecture, Fastlane, Bitrise, Dependency Injection, Performance Optimization, CI/CD, Technical Leadership
-  background: Senior mobile engineer with 6.3 years of experience building and scaling enterprise mobile products. Expertise spans native iOS development with Swift, Flutter-based cross-platform applications, and m
+  id: resume_2454 | level: senior | exp: 6.1 yrs
+  skills: Splunk, Microsoft Sentinel, SOAR, Incident Response, Threat Intelligence, MITRE ATT&CK, Python, Cloud Security, Security Architecture, Leadership
+  background: Senior Information Security Engineer with 6.1 years of experience leading security operations, incident response, and enterprise defense initiatives. Expertise includes SIEM architecture, threat intel
 
-  id: resume_2450 | level: senior | exp: 9.1 yrs
-  skills: Swift, Kotlin, Flutter, Architecture, Mobile DevOps, Security, Performance Optimization, Leadership, CI/CD, Accessibility
-  background: Principal-level mobile developer with 9.1 years of experience leading mobile engineering initiatives for high-traffic consumer platforms. Deep expertise in native iOS using Swift, Android using Kotlin
+  id: resume_2455 | level: senior | exp: 9.4 yrs
+  skills: Security Architecture, SIEM, SOAR, Threat Intelligence, Cloud Security, Risk Assessment, Leadership, Zero Trust, Incident Response, Governance
+  background: Principal Cybersecurity Architect with 9.4 years of experience defining enterprise security strategy, leading blue team operations, and overseeing large-scale security programs. Deep expertise in secu
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2446 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Flutter, React Native, Git, REST API
-  description: Seeking a motivated intern to support development of cross-platform mobile applications. The role involves implementing small features, fixing bugs, and participating in testing ac
+  id: jd_2451 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
+  required_skills: Linux, Network Security, SIEM, Python
+  description: Seeking a cybersecurity intern to support security monitoring, vulnerability assessment, and incident documentation activities. The intern will assist SOC analysts in reviewing ale
 
-  id: jd_2447 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs
-  required_skills: React Native, JavaScript, REST API, Git
-  description: Looking for a junior mobile engineer to develop and maintain React Native applications used by regional customers. The engineer will build new screens, integrate APIs, and support 
+  id: jd_2452 | title: Junior SOC Analyst | level: junior | min_exp: 1 yrs
+  required_skills: SIEM, Splunk, Linux, Incident Response
+  description: Looking for a junior SOC analyst to monitor security events, triage alerts, and support incident response activities. Candidates should have experience with SIEM platforms, vulnera
 
-  id: jd_2448 | title: Mid-Level Flutter Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Flutter, MVVM, CI/CD, Firebase
-  description: A product team is hiring a mid-level Flutter engineer to deliver customer-facing mobile applications. The engineer will design scalable features, collaborate on architecture decisi
+  id: jd_2453 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Splunk, MITRE ATT&CK, Threat Hunting, Burp Suite
+  description: An organization is seeking a cybersecurity engineer to design detection content, conduct threat hunting, and perform security assessments across enterprise environments. Candidates
 
-  id: jd_2449 | title: Senior iOS Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Swift, iOS, Clean Architecture, CI/CD
-  description: Seeking a senior iOS engineer to lead development of critical mobile capabilities across multiple applications. The role requires ownership of architecture, technical design, and d
+  id: jd_2454 | title: Senior Incident Response Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Incident Response, Splunk, Leadership, Threat Intelligence
+  description: Seeking a senior incident response engineer to lead major security investigations and improve enterprise detection capabilities. The role requires extensive experience in SIEM plat
 
-  id: jd_2450 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
-  required_skills: Swift, Kotlin, Architecture, Leadership
-  description: An experienced principal mobile architect is required to define long-term technical strategy for a portfolio of mobile products. The role involves leading architectural decisions, 
+  id: jd_2455 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
+  required_skills: Security Architecture, Leadership, Risk Assessment, Governance
+  description: A principal security architect is required to define enterprise security strategy and guide long-term cybersecurity initiatives. The role involves establishing security architectur
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~6 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~3 pairs
-  weak_match: ~8 pairs
+  strong_match: ~3 pairs
+  excellent_match: ~4 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~10 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12226  resume_2446 × jd_2446
-  pair_12227  resume_2446 × jd_2447
-  pair_12228  resume_2446 × jd_2448
-  pair_12229  resume_2446 × jd_2449
-  pair_12230  resume_2446 × jd_2450
-  pair_12231  resume_2447 × jd_2446
-  pair_12232  resume_2447 × jd_2447
-  pair_12233  resume_2447 × jd_2448
-  pair_12234  resume_2447 × jd_2449
-  pair_12235  resume_2447 × jd_2450
-  pair_12236  resume_2448 × jd_2446
-  pair_12237  resume_2448 × jd_2447
-  pair_12238  resume_2448 × jd_2448
-  pair_12239  resume_2448 × jd_2449
-  pair_12240  resume_2448 × jd_2450
-  pair_12241  resume_2449 × jd_2446
-  pair_12242  resume_2449 × jd_2447
-  pair_12243  resume_2449 × jd_2448
-  pair_12244  resume_2449 × jd_2449
-  pair_12245  resume_2449 × jd_2450
-  pair_12246  resume_2450 × jd_2446
-  pair_12247  resume_2450 × jd_2447
-  pair_12248  resume_2450 × jd_2448
-  pair_12249  resume_2450 × jd_2449
-  pair_12250  resume_2450 × jd_2450
+  pair_12251  resume_2451 × jd_2451
+  pair_12252  resume_2451 × jd_2452
+  pair_12253  resume_2451 × jd_2453
+  pair_12254  resume_2451 × jd_2454
+  pair_12255  resume_2451 × jd_2455
+  pair_12256  resume_2452 × jd_2451
+  pair_12257  resume_2452 × jd_2452
+  pair_12258  resume_2452 × jd_2453
+  pair_12259  resume_2452 × jd_2454
+  pair_12260  resume_2452 × jd_2455
+  pair_12261  resume_2453 × jd_2451
+  pair_12262  resume_2453 × jd_2452
+  pair_12263  resume_2453 × jd_2453
+  pair_12264  resume_2453 × jd_2454
+  pair_12265  resume_2453 × jd_2455
+  pair_12266  resume_2454 × jd_2451
+  pair_12267  resume_2454 × jd_2452
+  pair_12268  resume_2454 × jd_2453
+  pair_12269  resume_2454 × jd_2454
+  pair_12270  resume_2454 × jd_2455
+  pair_12271  resume_2455 × jd_2451
+  pair_12272  resume_2455 × jd_2452
+  pair_12273  resume_2455 × jd_2453
+  pair_12274  resume_2455 × jd_2454
+  pair_12275  resume_2455 × jd_2455
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
