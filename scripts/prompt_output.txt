@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2296 | level: intern | exp: 0.3 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Linux, CI/CD
-  background: Eager and highly motivated Information Technology student striving to secure an internship in DevOps and Cloud Infrastructure. Possess solid academic foundations in modern infrastructure deployment mo
+  id: resume_2301 | level: intern | exp: 0.4 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, REST APIs, Git
+  background: Enthusiastic and motivated Computer Science student seeking a backend engineering internship to apply strong foundations in Python and relational database management. Familiar with building basic REST
 
-  id: resume_2297 | level: junior | exp: 1.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, IAM, Linux
-  background: Junior DevOps and Cloud Infrastructure Engineer with close to two years of professional tenure provisioning modern computing resources and sustaining delivery workflows. Proficient in managing cloud a
+  id: resume_2302 | level: junior | exp: 1.5 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Express, SQL, Pytest
+  background: Junior Backend API Developer with over a year of corporate industry experience building scalable application interfaces and implementing robust database connections. Proficient in engineering web micr
 
-  id: resume_2298 | level: middle | exp: 4.0 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, CI/CD Pipelines, Shell Scripting, Cloud Security
-  background: Analytical Mid-level DevOps Specialist with four years of commercial experience engineering automated deployment infrastructure and designing elastic multi-tier cloud environments. Expert at managing 
+  id: resume_2303 | level: middle | exp: 4.0 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, SQL Optimization, REST APIs, Docker
+  background: Analytical Mid-level Backend Engineer with four years of commercial experience designing resilient application interfaces, highly optimized relational storage tiers, and distributed data systems. Expe
 
-  id: resume_2299 | level: senior | exp: 6.5 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Service Mesh, Infrastructure Architecture, MLOps, Shell Scripting
-  background: Senior Infrastructure Engineer with over six years of deep operational mastery engineering resilient cloud architectures, continuous integration networks, and containerized deployment arrays. Proven a
+  id: resume_2304 | level: senior | exp: 6.2 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, Kafka, System Architecture, Database Partitioning, Microservices
+  background: Senior Backend Software Engineer with over six years of technical excellence architecting high-performance enterprise application layers, asynchronous microservices networks, and scalable data models.
 
-  id: resume_2300 | level: senior | exp: 9.8 yrs
-  skills: AWS, Docker, Kubernetes, Terraform, Cloud Strategy, Site Reliability Engineering, Multi-Cloud, Enterprise Governance
-  background: Principal Cloud Architect and DevOps Engineering Director with over nine years of expert technical tenure designing hyper-scale global infrastructure blueprints and defining enterprise operations poli
+  id: resume_2305 | level: senior | exp: 9.5 yrs
+  skills: Python, FastAPI, Node.js, PostgreSQL, System Design, API Governance, Distributed Systems, Team Leadership
+  background: Principal Backend Architect and Engineering Director with over nine years of exceptional industry tenure designing hyper-scale web applications, distributed transactional frameworks, and data governan
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2296 | title: DevOps and Cloud Infrastructure Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker, Terraform
-  description: We are hunting for an enthusiastic and analytical DevOps and Cloud Infrastructure Intern to support our platform operations group. In this preparatory position, you will assist wit
+  id: jd_2301 | title: Backend API Developer Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: We are searching for an enthusiastic Backend API Developer Intern to support our core system development group. In this entry position, you will assist with configuring basic web e
 
-  id: jd_2297 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Docker, Terraform
-  description: Our platform reliability department is looking for a Junior DevOps Engineer to manage, update, and optimize our core cloud execution nodes. You will handle daily infrastructure mod
+  id: jd_2302 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs
+  required_skills: Python, FastAPI, PostgreSQL
+  description: Our application delivery department is seeking a Junior Backend Engineer to manage, update, and optimize our core web service layers. You will handle routine API route development 
 
-  id: jd_2298 | title: DevOps and Infrastructure Specialist (Kubernetes) | level: middle | min_exp: 3 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: We are searching for a skilled Mid-level DevOps and Infrastructure Specialist to orchestrate, secure, and stabilize our modern containerized product environments. You will be taske
+  id: jd_2303 | title: Backend API Specialist (FastAPI & Node) | level: middle | min_exp: 3 yrs
+  required_skills: Python, FastAPI, Node.js, PostgreSQL
+  description: We are hunting for a highly analytical Mid-level Backend API Specialist to orchestrate, secure, and accelerate our modern web product ecosystems. You will be tasked with designing 
 
-  id: jd_2299 | title: Senior Infrastructure & Platform Architect | level: senior | min_exp: 5 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  description: We are looking for a Senior Infrastructure and Platform Architect to drive the scaling models, security compliance, and delivery orchestration of our global multi-region cloud serv
+  id: jd_2304 | title: Senior Backend Architect & Platform Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Python, FastAPI, Node.js, PostgreSQL
+  description: We are looking for a Senior Backend Architect and Platform Engineer to drive the engineering standards, data scaling models, and interface governance of our global distributed clou
 
-  id: jd_2300 | title: Principal Infrastructure Architect / DevOps Director | level: senior | min_exp: 7 yrs
-  required_skills: AWS, Docker, Kubernetes, Terraform, Team Leadership
-  description: We are looking for a Principal Infrastructure Architect to command the strategic technical vision, platform compliance guidelines, and automated blueprint patterns of our global mu
+  id: jd_2305 | title: Principal API Architect / Backend Engineering Director | level: senior | min_exp: 7 yrs
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Team Leadership
+  description: We are looking for a Principal API Architect to command the strategic development vision, data governance models, and interface compliance standards of our global backend platforms
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~1 pairs
-  weak_match: ~12 pairs
+  strong_match: ~8 pairs
+  excellent_match: ~4 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11476  resume_2296 × jd_2296
-  pair_11477  resume_2296 × jd_2297
-  pair_11478  resume_2296 × jd_2298
-  pair_11479  resume_2296 × jd_2299
-  pair_11480  resume_2296 × jd_2300
-  pair_11481  resume_2297 × jd_2296
-  pair_11482  resume_2297 × jd_2297
-  pair_11483  resume_2297 × jd_2298
-  pair_11484  resume_2297 × jd_2299
-  pair_11485  resume_2297 × jd_2300
-  pair_11486  resume_2298 × jd_2296
-  pair_11487  resume_2298 × jd_2297
-  pair_11488  resume_2298 × jd_2298
-  pair_11489  resume_2298 × jd_2299
-  pair_11490  resume_2298 × jd_2300
-  pair_11491  resume_2299 × jd_2296
-  pair_11492  resume_2299 × jd_2297
-  pair_11493  resume_2299 × jd_2298
-  pair_11494  resume_2299 × jd_2299
-  pair_11495  resume_2299 × jd_2300
-  pair_11496  resume_2300 × jd_2296
-  pair_11497  resume_2300 × jd_2297
-  pair_11498  resume_2300 × jd_2298
-  pair_11499  resume_2300 × jd_2299
-  pair_11500  resume_2300 × jd_2300
+  pair_11501  resume_2301 × jd_2301
+  pair_11502  resume_2301 × jd_2302
+  pair_11503  resume_2301 × jd_2303
+  pair_11504  resume_2301 × jd_2304
+  pair_11505  resume_2301 × jd_2305
+  pair_11506  resume_2302 × jd_2301
+  pair_11507  resume_2302 × jd_2302
+  pair_11508  resume_2302 × jd_2303
+  pair_11509  resume_2302 × jd_2304
+  pair_11510  resume_2302 × jd_2305
+  pair_11511  resume_2303 × jd_2301
+  pair_11512  resume_2303 × jd_2302
+  pair_11513  resume_2303 × jd_2303
+  pair_11514  resume_2303 × jd_2304
+  pair_11515  resume_2303 × jd_2305
+  pair_11516  resume_2304 × jd_2301
+  pair_11517  resume_2304 × jd_2302
+  pair_11518  resume_2304 × jd_2303
+  pair_11519  resume_2304 × jd_2304
+  pair_11520  resume_2304 × jd_2305
+  pair_11521  resume_2305 × jd_2301
+  pair_11522  resume_2305 × jd_2302
+  pair_11523  resume_2305 × jd_2303
+  pair_11524  resume_2305 × jd_2304
+  pair_11525  resume_2305 × jd_2305
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
