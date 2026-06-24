@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2316 | level: intern | exp: 0.3 yrs
-  skills: Figma, Wireframing, User Research, Interaction Design, Prototyping
-  background: Design student with a strong passion for human-centered digital experiences. Currently enrolled in a Bachelor of Design program, focusing on foundational UI principles and interaction design. Complete
+  id: resume_2321 | level: intern | exp: 0.2 yrs
+  skills: Figma, Prototyping, User Research, Wireframing, Accessibility
+  background: Enthusiastic design student with a focus on UI/UX principles and digital product design. Currently in the final year of a Bachelor program, I have dedicated my time to mastering Figma, building intera
 
-  id: resume_2317 | level: junior | exp: 1.5 yrs
-  skills: Figma, UI Design, Usability Testing, Accessibility, Prototyping
-  background: Junior Product Designer with 1.5 years of professional experience in crafting intuitive mobile and web interfaces. Proficient in transforming user requirements into clean, functional designs using Fig
+  id: resume_2322 | level: junior | exp: 1.5 yrs
+  skills: Figma, UI Design, Prototyping, Usability Testing, A/B Testing
+  background: Junior Product Designer with 1.5 years of experience in creating intuitive, user-centered digital interfaces. Proficient in the end-to-end design process, from translating product requirements into hi
 
-  id: resume_2318 | level: middle | exp: 4.0 yrs
-  skills: Design Systems, Figma, User Research, Prototyping, Stakeholder Management
-  background: Product Designer with 4 years of experience building scalable design systems and improving product-market fit for B2B SaaS platforms. Expert in conducting comprehensive user research, from contextual 
+  id: resume_2323 | level: middle | exp: 4.0 yrs
+  skills: Figma, Design Systems, User Research, Prototyping, Journey Mapping
+  background: Product Designer with 4 years of professional experience in developing scalable design systems and leading UX research initiatives for SaaS platforms. Expert in utilizing Figma for high-fidelity proto
 
-  id: resume_2319 | level: senior | exp: 6.0 yrs
-  skills: Product Strategy, Figma, UX Research, Mentorship, A/B Testing
-  background: Senior Product Designer with 6 years of experience driving design strategy for complex consumer applications. Expert in leading end-to-end design lifecycles, from early discovery and research to final
+  id: resume_2324 | level: senior | exp: 6.0 yrs
+  skills: Product Strategy, Figma, UX Research, Mentorship, Data-Informed Design
+  background: Senior Product Designer with 6 years of experience driving product vision and design strategy for high-growth consumer technology platforms. Expert in leading the entire design lifecycle, from user di
 
-  id: resume_2320 | level: senior | exp: 8.5 yrs
+  id: resume_2325 | level: senior | exp: 8.5 yrs
   skills: Design Leadership, Strategic Design, Governance, C-Suite Communication, Enterprise Strategy
-  background: Principal Product Designer with 8+ years of experience leading design transformations in large-scale enterprise environments. Proven leader in setting high-level design vision, managing complex cross-
+  background: Principal Product Designer with over 8 years of experience leading strategic design initiatives and organizational design transformation in complex enterprise environments. Proven leader in establishi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2316 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  id: jd_2321 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
   required_skills: Figma, UI Design, Prototyping
-  description: We are seeking a creative and eager design intern to join our product team. You will support our senior designers in creating mockups, conducting light user research, and updating 
+  description: We are looking for a creative and eager design intern to support our product design team. You will work alongside senior designers to create mockups, participate in user research s
 
-  id: jd_2317 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  id: jd_2322 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
   required_skills: Figma, UI Design, Prototyping
-  description: Looking for a Junior Product Designer to help us build beautiful, functional interfaces for our platform. You will work closely with product managers and developers to turn concept
+  description: We are seeking a Junior Product Designer to help us build clean, functional, and delightful interfaces. In this role, you will work closely with product managers and engineers to t
 
-  id: jd_2318 | title: Product Designer | level: middle | min_exp: 3 yrs
+  id: jd_2323 | title: Product Designer | level: middle | min_exp: 3 yrs
   required_skills: Design Systems, Figma, User Research
-  description: Join our platform team as a Product Designer to own the design for our core SaaS features. You will be responsible for end-to-end design, from early user research and discovery to 
+  description: Join our product team as a Product Designer to own the design for our core SaaS platform features. You will be responsible for the end-to-end design process, from early user resear
 
-  id: jd_2319 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  id: jd_2324 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
   required_skills: Product Strategy, Figma, UX Research
-  description: We are seeking a seasoned Senior Product Designer to define design strategy for our fast-growing platform. You will guide product direction, mentor junior designers, and lead compl
+  description: We are seeking a seasoned Senior Product Designer to help define our platform's design strategy and user experience vision. You will guide product direction, mentor junior designer
 
-  id: jd_2320 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  id: jd_2325 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
   required_skills: Design Leadership, Strategic Design, Governance
-  description: We are looking for a Principal Product Designer to oversee our design governance and organizational design strategy. In this leadership role, you will define design standards acros
+  description: We are looking for a Principal Product Designer to lead our design governance and organizational design strategy. In this leadership role, you will set design standards across our 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~12 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~5 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~9 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11576  resume_2316 × jd_2316
-  pair_11577  resume_2316 × jd_2317
-  pair_11578  resume_2316 × jd_2318
-  pair_11579  resume_2316 × jd_2319
-  pair_11580  resume_2316 × jd_2320
-  pair_11581  resume_2317 × jd_2316
-  pair_11582  resume_2317 × jd_2317
-  pair_11583  resume_2317 × jd_2318
-  pair_11584  resume_2317 × jd_2319
-  pair_11585  resume_2317 × jd_2320
-  pair_11586  resume_2318 × jd_2316
-  pair_11587  resume_2318 × jd_2317
-  pair_11588  resume_2318 × jd_2318
-  pair_11589  resume_2318 × jd_2319
-  pair_11590  resume_2318 × jd_2320
-  pair_11591  resume_2319 × jd_2316
-  pair_11592  resume_2319 × jd_2317
-  pair_11593  resume_2319 × jd_2318
-  pair_11594  resume_2319 × jd_2319
-  pair_11595  resume_2319 × jd_2320
-  pair_11596  resume_2320 × jd_2316
-  pair_11597  resume_2320 × jd_2317
-  pair_11598  resume_2320 × jd_2318
-  pair_11599  resume_2320 × jd_2319
-  pair_11600  resume_2320 × jd_2320
+  pair_11601  resume_2321 × jd_2321
+  pair_11602  resume_2321 × jd_2322
+  pair_11603  resume_2321 × jd_2323
+  pair_11604  resume_2321 × jd_2324
+  pair_11605  resume_2321 × jd_2325
+  pair_11606  resume_2322 × jd_2321
+  pair_11607  resume_2322 × jd_2322
+  pair_11608  resume_2322 × jd_2323
+  pair_11609  resume_2322 × jd_2324
+  pair_11610  resume_2322 × jd_2325
+  pair_11611  resume_2323 × jd_2321
+  pair_11612  resume_2323 × jd_2322
+  pair_11613  resume_2323 × jd_2323
+  pair_11614  resume_2323 × jd_2324
+  pair_11615  resume_2323 × jd_2325
+  pair_11616  resume_2324 × jd_2321
+  pair_11617  resume_2324 × jd_2322
+  pair_11618  resume_2324 × jd_2323
+  pair_11619  resume_2324 × jd_2324
+  pair_11620  resume_2324 × jd_2325
+  pair_11621  resume_2325 × jd_2321
+  pair_11622  resume_2325 × jd_2322
+  pair_11623  resume_2325 × jd_2323
+  pair_11624  resume_2325 × jd_2324
+  pair_11625  resume_2325 × jd_2325
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
