@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2601 | level: intern | exp: 0.4 yrs
-  skills: Python, React, REST APIs, JavaScript, HTML, CSS, Git, SQL, Frontend Development, Backend Development
-  background: Final-year computer science student with 0.4 years of internship experience supporting full-stack web development projects. Assisted developers with building React user interfaces, updating Python bac
+  id: resume_2606 | level: intern | exp: 0.4 yrs
+  skills: Clinical Operations Support, EMR Documentation, Patient Scheduling, Medical Records Coordination, Appointment Management, Healthcare Reporting, Patient Communication, Referral Tracking, Data Entry, Administrative Support
+  background: Final-year healthcare administration student with 0.4 years of internship experience supporting clinical operations and patient coordination activities. Assisted administrative staff with appointment 
 
-  id: resume_2602 | level: junior | exp: 1.5 yrs
-  skills: Python, React, REST APIs, SQL, Git, Docker, Authentication, JavaScript, Testing, Deployment
-  background: Full-stack web developer with 1.5 years of experience building business applications using Python and React. Developed reusable frontend components, integrated REST APIs, and maintained backend servic
+  id: resume_2607 | level: junior | exp: 1.6 yrs
+  skills: Patient Coordination, EMR Management, Clinical Scheduling, Insurance Verification, Referral Management, Healthcare Reporting, Patient Intake, Documentation Audits, Operational Support, Service Coordination
+  background: Healthcare coordinator with 1.6 years of experience supporting patient services, EMR administration, and clinical scheduling functions. Managed appointment workflows, maintained patient records, and c
 
-  id: resume_2603 | level: middle | exp: 4.2 yrs
-  skills: Python, React, System Design, REST APIs, SQL, CI/CD, Docker, Automated Testing, Cloud Deployment, Performance Optimization
-  background: Full-stack engineer with 4.2 years of experience designing and delivering scalable web applications using Python and React. Led development of frontend interfaces, backend services, and API integratio
+  id: resume_2608 | level: middle | exp: 4.2 yrs
+  skills: Clinical Operations, EMR Optimization, Patient Flow Management, Quality Assurance, Operational Analysis, Healthcare Compliance, Process Improvement, Performance Reporting, Stakeholder Coordination, Documentation Governance
+  background: Healthcare administration professional with 4.2 years of experience managing clinical operations, patient service processes, and EMR-driven workflow improvements. Led initiatives involving patient flo
 
-  id: resume_2604 | level: senior | exp: 6.4 yrs
-  skills: Python Architecture, React, Technical Leadership, System Design, CI/CD, Cloud Architecture, Performance Optimization, Security, Release Management, Mentoring
-  background: Senior full-stack engineer with 6.4 years of experience leading development of large-scale web platforms. Specialized in Python backend architecture, React application design, and technical leadership
+  id: resume_2609 | level: senior | exp: 6.3 yrs
+  skills: Healthcare Operations Leadership, EMR Governance, Clinical Administration, Quality Improvement, Compliance Management, Patient Experience, Operational Planning, Team Leadership, Risk Management, Performance Management
+  background: Senior healthcare operations manager with 6.3 years of experience leading clinical administration programs, EMR initiatives, and healthcare service delivery improvements. Directed multidisciplinary te
 
-  id: resume_2605 | level: senior | exp: 9.1 yrs
-  skills: Platform Architecture, Engineering Leadership, Python Strategy, React Governance, Scalability, Technical Roadmaps, Cloud Strategy, Architecture Governance, Organizational Leadership, Transformation Management
-  background: Principal full-stack technology leader with 9.1 years of experience defining platform strategy and overseeing engineering transformation programs. Established architectural governance standards for Py
+  id: resume_2610 | level: senior | exp: 9.1 yrs
+  skills: Enterprise Healthcare Strategy, Clinical Operations Governance, EMR Strategy, Executive Stakeholder Management, Healthcare Transformation, Operational Excellence, Strategic Roadmaps, Capability Development, Governance Frameworks, Organizational Leadership
+  background: Principal healthcare administration leader with 9.1 years of experience overseeing enterprise clinical operations, healthcare transformation programs, and EMR governance strategies. Established operat
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2601 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, REST APIs, Git, JavaScript
-  description: Seeking a full-stack development intern to support React frontend implementation and Python backend maintenance. Responsibilities include API integration, testing, bug fixing, docu
+  id: jd_2606 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
+  required_skills: Clinical Operations Support, EMR Documentation, Patient Scheduling, Medical Records Coordination, Appointment Management
+  description: Seeking an intern to support healthcare administration and clinical coordination activities. Responsibilities include maintaining EMR records, assisting with appointment scheduling
 
-  id: jd_2602 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, SQL, Testing, Deployment
-  description: Looking for a junior full-stack developer to build React interfaces and Python services. The role includes database integration, testing, deployment support, and collaboration with
+  id: jd_2607 | title: Medical Coordination Specialist | level: junior | min_exp: 1 yrs
+  required_skills: Patient Coordination, EMR Management, Clinical Scheduling, Insurance Verification, Referral Management
+  description: Looking for a junior healthcare professional to coordinate patient services and maintain accurate EMR records. Responsibilities include scheduling appointments, managing referrals,
 
-  id: jd_2603 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, System Design, Automated Testing, CI/CD
-  description: Seeking an experienced full-stack engineer to design scalable applications using Python and React. Responsibilities include system design, automated testing, CI/CD implementation, 
+  id: jd_2608 | title: Healthcare Operations Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Clinical Operations, EMR Optimization, Patient Flow Management, Quality Assurance, Operational Analysis
+  description: Seeking an experienced healthcare operations analyst to improve clinical workflows and support EMR-driven operational initiatives. Responsibilities include analyzing patient flow, 
 
-  id: jd_2604 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Technical Leadership, System Design, CI/CD, Performance Optimization, Cloud Architecture
-  description: Hiring a senior full-stack engineer to lead architecture decisions and mentor development teams. Responsibilities include cloud architecture planning, performance optimization, rel
+  id: jd_2609 | title: Senior Healthcare Operations Manager | level: senior | min_exp: 5 yrs
+  required_skills: Healthcare Operations Leadership, EMR Governance, Clinical Administration, Quality Improvement, Compliance Management
+  description: Hiring a senior manager to lead healthcare operations, clinical administration programs, and EMR governance initiatives. Responsibilities include overseeing quality improvement eff
 
-  id: jd_2605 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
-  description: An experienced technology leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include architecture governance, r
+  id: jd_2610 | title: Principal Healthcare Transformation Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Healthcare Strategy, Clinical Operations Governance, EMR Strategy, Executive Stakeholder Management, Healthcare Transformation
+  description: An experienced healthcare leader is required to define enterprise operations strategy and oversee clinical transformation programs. Responsibilities include governance development,
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~7 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~11 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13001  resume_2601 × jd_2601
-  pair_13002  resume_2601 × jd_2602
-  pair_13003  resume_2601 × jd_2603
-  pair_13004  resume_2601 × jd_2604
-  pair_13005  resume_2601 × jd_2605
-  pair_13006  resume_2602 × jd_2601
-  pair_13007  resume_2602 × jd_2602
-  pair_13008  resume_2602 × jd_2603
-  pair_13009  resume_2602 × jd_2604
-  pair_13010  resume_2602 × jd_2605
-  pair_13011  resume_2603 × jd_2601
-  pair_13012  resume_2603 × jd_2602
-  pair_13013  resume_2603 × jd_2603
-  pair_13014  resume_2603 × jd_2604
-  pair_13015  resume_2603 × jd_2605
-  pair_13016  resume_2604 × jd_2601
-  pair_13017  resume_2604 × jd_2602
-  pair_13018  resume_2604 × jd_2603
-  pair_13019  resume_2604 × jd_2604
-  pair_13020  resume_2604 × jd_2605
-  pair_13021  resume_2605 × jd_2601
-  pair_13022  resume_2605 × jd_2602
-  pair_13023  resume_2605 × jd_2603
-  pair_13024  resume_2605 × jd_2604
-  pair_13025  resume_2605 × jd_2605
+  pair_13026  resume_2606 × jd_2606
+  pair_13027  resume_2606 × jd_2607
+  pair_13028  resume_2606 × jd_2608
+  pair_13029  resume_2606 × jd_2609
+  pair_13030  resume_2606 × jd_2610
+  pair_13031  resume_2607 × jd_2606
+  pair_13032  resume_2607 × jd_2607
+  pair_13033  resume_2607 × jd_2608
+  pair_13034  resume_2607 × jd_2609
+  pair_13035  resume_2607 × jd_2610
+  pair_13036  resume_2608 × jd_2606
+  pair_13037  resume_2608 × jd_2607
+  pair_13038  resume_2608 × jd_2608
+  pair_13039  resume_2608 × jd_2609
+  pair_13040  resume_2608 × jd_2610
+  pair_13041  resume_2609 × jd_2606
+  pair_13042  resume_2609 × jd_2607
+  pair_13043  resume_2609 × jd_2608
+  pair_13044  resume_2609 × jd_2609
+  pair_13045  resume_2609 × jd_2610
+  pair_13046  resume_2610 × jd_2606
+  pair_13047  resume_2610 × jd_2607
+  pair_13048  resume_2610 × jd_2608
+  pair_13049  resume_2610 × jd_2609
+  pair_13050  resume_2610 × jd_2610
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
