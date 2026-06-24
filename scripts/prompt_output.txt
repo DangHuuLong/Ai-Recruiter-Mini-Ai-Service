@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2576 | level: intern | exp: 0.4 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML, CSS, Git, Responsive Design, REST API Integration
-  background: Final-year computer science student with four months of internship experience supporting frontend development projects. Assisted with building React components, updating TypeScript interfaces, and imp
+  id: resume_2581 | level: intern | exp: 0.4 yrs
+  skills: Requirements Gathering, BPMN, Stakeholder Communication, User Stories, Process Mapping, Requirement Traceability, Documentation, User Acceptance Testing, Project Coordination, Reporting
+  background: Final-year student in Business Information Systems with 0.4 years of internship experience supporting business analysis and project coordination activities. Assisted senior analysts in gathering requi
 
-  id: resume_2577 | level: junior | exp: 1.5 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, State Management, API Integration, Testing, Git, Responsive Design, Performance Tuning
-  background: Frontend developer with 1.5 years of experience building web interfaces for business applications. Developed reusable React components, implemented TypeScript-based state management, and maintained Ne
+  id: resume_2582 | level: junior | exp: 1.7 yrs
+  skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, Acceptance Criteria, Process Improvement, UAT, Change Requests, Workshop Facilitation, Project Reporting
+  background: Business analyst with 1.7 years of experience supporting software delivery and process improvement projects. Worked with stakeholders to gather and analyze requirements, facilitate workshops, and main
 
-  id: resume_2578 | level: middle | exp: 4.1 yrs
-  skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture, Performance Optimization, Accessibility, Component Design, Testing Automation, CI/CD
-  background: Frontend engineer with 4.1 years of experience delivering scalable web applications. Led implementation of complex React and Next.js interfaces, established TypeScript standards, and improved maintain
+  id: resume_2583 | level: middle | exp: 4.3 yrs
+  skills: Business Analysis, BPMN, Requirements Management, Stakeholder Engagement, Gap Analysis, Process Improvement, Project Governance, Risk Management, UAT Coordination, Business Impact Analysis
+  background: Business analyst with 4.3 years of experience delivering business transformation and process optimization initiatives. Led requirement elicitation sessions, managed stakeholder engagement, and maintai
 
-  id: resume_2579 | level: senior | exp: 6.2 yrs
-  skills: React Architecture, TypeScript Governance, Next.js, Tailwind CSS, Technical Leadership, Performance Optimization, Design Systems, Mentoring, Release Management, Frontend Strategy
-  background: Senior frontend engineer with 6.2 years of experience leading development of large-scale web platforms. Specialized in React and Next.js architecture, frontend performance optimization, and engineerin
+  id: resume_2584 | level: senior | exp: 6.4 yrs
+  skills: Strategic Business Analysis, BPMN, Stakeholder Leadership, Project Management, Roadmapping, Risk Management, Business Case Development, Governance, Requirements Prioritization, Change Management
+  background: Senior business analysis and project management professional with 6.4 years of experience leading strategic change initiatives and complex delivery programs. Directed stakeholder alignment efforts, fa
 
-  id: resume_2580 | level: senior | exp: 9.4 yrs
-  skills: Frontend Platform Architecture, React Strategy, Next.js Governance, TypeScript Strategy, Engineering Leadership, Scalability, Technical Roadmaps, Architecture Governance, Organizational Leadership, Transformation Management
-  background: Principal frontend technology leader with 9.4 years of experience defining web platform strategy and overseeing engineering transformation programs. Established architectural standards for React and N
+  id: resume_2585 | level: senior | exp: 9.1 yrs
+  skills: Enterprise Business Analysis, BPMN Governance, Portfolio Management, Executive Stakeholder Management, Program Leadership, Process Architecture, Transformation Strategy, Benefits Realization, Capability Development, Governance Frameworks
+  background: Principal business analysis and transformation leader with 9.1 years of experience guiding enterprise programs and portfolio-level governance initiatives. Established business analysis standards, BPMN
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2576 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Responsive Design
-  description: Seeking a frontend development intern to support implementation of responsive user interfaces using React, TypeScript, Next.js, and Tailwind CSS. Responsibilities include UI update
+  id: jd_2581 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Documentation, User Acceptance Testing
+  description: Seeking a business analysis intern to support requirements gathering, stakeholder communication, BPMN process documentation, and project coordination activities. The role assists a
 
-  id: jd_2577 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
-  required_skills: React, TypeScript, Next.js, Testing, API Integration
-  description: Looking for a junior frontend developer to build web interfaces using React and TypeScript. The role includes Next.js development, API integration, testing, and collaboration with 
+  id: jd_2582 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, UAT
+  description: Looking for a junior business analyst to support requirements management and business process improvement initiatives. Responsibilities include stakeholder interviews, user story d
 
-  id: jd_2578 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: React, TypeScript, Frontend Architecture, Performance Optimization, Testing Automation
-  description: Seeking an experienced frontend engineer to design scalable applications using React and Next.js. Responsibilities include frontend architecture, performance optimization, testing 
+  id: jd_2583 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Management, BPMN, Stakeholder Engagement, Gap Analysis, Project Governance
+  description: Seeking an experienced business analyst to lead requirement elicitation, stakeholder workshops, and process optimization initiatives. The role involves maintaining requirements, co
 
-  id: jd_2579 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Technical Leadership, React Architecture, Performance Optimization, Design Systems, Release Management
-  description: Hiring a senior frontend engineer to lead architecture decisions and mentor development teams. Responsibilities include design system governance, performance optimization, release 
+  id: jd_2584 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Stakeholder Leadership, BPMN, Project Management, Risk Management, Requirements Prioritization
+  description: Hiring a senior business analyst to drive strategic initiatives and lead stakeholder alignment across complex projects. Responsibilities include requirement prioritization, governa
 
-  id: jd_2580 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Frontend Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
-  description: An experienced frontend leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include architecture governance, tec
+  id: jd_2585 | title: Principal Business Analysis Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Business Analysis, Portfolio Management, Executive Stakeholder Management, Process Architecture, Governance Frameworks
+  description: An experienced principal-level leader is required to define enterprise business analysis standards and oversee transformation portfolios. Responsibilities include establishing gove
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~4 pairs
-  moderate_match: ~11 pairs
-  weak_match: ~7 pairs
+  strong_match: ~11 pairs
+  excellent_match: ~7 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12876  resume_2576 × jd_2576
-  pair_12877  resume_2576 × jd_2577
-  pair_12878  resume_2576 × jd_2578
-  pair_12879  resume_2576 × jd_2579
-  pair_12880  resume_2576 × jd_2580
-  pair_12881  resume_2577 × jd_2576
-  pair_12882  resume_2577 × jd_2577
-  pair_12883  resume_2577 × jd_2578
-  pair_12884  resume_2577 × jd_2579
-  pair_12885  resume_2577 × jd_2580
-  pair_12886  resume_2578 × jd_2576
-  pair_12887  resume_2578 × jd_2577
-  pair_12888  resume_2578 × jd_2578
-  pair_12889  resume_2578 × jd_2579
-  pair_12890  resume_2578 × jd_2580
-  pair_12891  resume_2579 × jd_2576
-  pair_12892  resume_2579 × jd_2577
-  pair_12893  resume_2579 × jd_2578
-  pair_12894  resume_2579 × jd_2579
-  pair_12895  resume_2579 × jd_2580
-  pair_12896  resume_2580 × jd_2576
-  pair_12897  resume_2580 × jd_2577
-  pair_12898  resume_2580 × jd_2578
-  pair_12899  resume_2580 × jd_2579
-  pair_12900  resume_2580 × jd_2580
+  pair_12901  resume_2581 × jd_2581
+  pair_12902  resume_2581 × jd_2582
+  pair_12903  resume_2581 × jd_2583
+  pair_12904  resume_2581 × jd_2584
+  pair_12905  resume_2581 × jd_2585
+  pair_12906  resume_2582 × jd_2581
+  pair_12907  resume_2582 × jd_2582
+  pair_12908  resume_2582 × jd_2583
+  pair_12909  resume_2582 × jd_2584
+  pair_12910  resume_2582 × jd_2585
+  pair_12911  resume_2583 × jd_2581
+  pair_12912  resume_2583 × jd_2582
+  pair_12913  resume_2583 × jd_2583
+  pair_12914  resume_2583 × jd_2584
+  pair_12915  resume_2583 × jd_2585
+  pair_12916  resume_2584 × jd_2581
+  pair_12917  resume_2584 × jd_2582
+  pair_12918  resume_2584 × jd_2583
+  pair_12919  resume_2584 × jd_2584
+  pair_12920  resume_2584 × jd_2585
+  pair_12921  resume_2585 × jd_2581
+  pair_12922  resume_2585 × jd_2582
+  pair_12923  resume_2585 × jd_2583
+  pair_12924  resume_2585 × jd_2584
+  pair_12925  resume_2585 × jd_2585
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
