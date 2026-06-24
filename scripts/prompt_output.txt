@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2621 | level: intern | exp: 0.4 yrs
-  skills: Financial Reporting, Financial Modeling, Account Reconciliation, Spreadsheet Analysis, Compliance Support, Budget Tracking, Data Analysis, Ledger Review, Transaction Monitoring, Documentation
-  background: Final-year finance student with 0.4 years of internship experience supporting accounting and financial operations within a digital payments environment. Assisted analysts with monthly reporting packs,
+  id: resume_2626 | level: intern | exp: 0.4 yrs
+  skills: React Native, JavaScript, TypeScript, Mobile Testing, API Integration, Git, UI Development, Bug Tracking, Agile Development, Cross Platform Development
+  background: Final-year computer science student with 0.4 years of internship experience supporting mobile application development. Assisted engineers with React Native feature updates, UI testing, bug tracking, a
 
-  id: resume_2622 | level: junior | exp: 1.5 yrs
-  skills: Financial Reporting, Financial Modeling, Accounting Support, Compliance Reporting, Forecasting, Budgeting, Account Reconciliation, Data Analysis, Audit Support, Performance Metrics
-  background: Finance analyst with 1.5 years of experience supporting accounting, reporting, and operational finance functions for fintech products. Prepared monthly financial reports, maintained forecasting models
+  id: resume_2627 | level: junior | exp: 1.6 yrs
+  skills: React Native, TypeScript, JavaScript, API Integration, Mobile Debugging, Push Notifications, Authentication, Git, App Deployment, Agile Delivery
+  background: Mobile developer with 1.6 years of experience building and maintaining cross-platform applications. Developed React Native features, integrated backend APIs, resolved production defects, and supported
 
-  id: resume_2623 | level: middle | exp: 4.1 yrs
-  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Forecasting, Budget Management, Variance Analysis, Audit Coordination, Process Improvement, Management Reporting, Data Analytics
-  background: Finance and accounting professional with 4.1 years of experience delivering financial reporting, forecasting, compliance monitoring, and analytical support in fintech environments. Led preparation of 
+  id: resume_2628 | level: middle | exp: 4.3 yrs
+  skills: Flutter, React Native, Mobile Architecture, Performance Optimization, CI/CD, Automated Testing, API Integration, State Management, Release Management, Android And iOS Development
+  background: Mobile engineer with 4.3 years of experience delivering consumer and business applications using Flutter, React Native, and native integrations. Led feature development, application architecture impro
 
-  id: resume_2624 | level: senior | exp: 6.3 yrs
-  skills: Finance Leadership, Financial Planning, Compliance Governance, Financial Modeling, Reporting Strategy, Risk Management, Audit Leadership, Budget Oversight, Stakeholder Management, Team Development
-  background: Senior finance manager with 6.3 years of experience leading accounting, reporting, compliance, and financial planning functions for fintech organizations. Directed teams responsible for financial repo
+  id: resume_2629 | level: senior | exp: 6.5 yrs
+  skills: Kotlin, Swift, Technical Leadership, Mobile Architecture, Performance Engineering, Security, CI/CD, Release Strategy, Mentoring, Cross Functional Leadership
+  background: Senior mobile engineer with 6.5 years of experience leading development teams building large-scale Android and iOS applications. Specialized in Kotlin, Swift, mobile architecture, performance engineer
 
-  id: resume_2625 | level: senior | exp: 9.4 yrs
-  skills: Enterprise Finance Strategy, Financial Governance, Compliance Strategy, Executive Leadership, Transformation Management, Strategic Roadmaps, Capital Planning, Performance Governance, Organizational Leadership, Risk Governance
-  background: Principal finance executive with 9.4 years of experience defining financial strategy, governance frameworks, and transformation programs within fintech businesses. Led enterprise initiatives covering 
+  id: resume_2630 | level: senior | exp: 9.2 yrs
+  skills: Mobile Platform Strategy, Engineering Leadership, Architecture Governance, Flutter Governance, React Native Governance, Strategic Roadmaps, Organizational Leadership, Mobile Transformation, Scalability, Executive Stakeholder Management
+  background: Principal mobile technology leader with 9.2 years of experience defining mobile platform strategy and overseeing engineering transformation programs. Established governance standards for React Native,
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2621 | title: Finance and Accounting Intern | level: intern | min_exp: 0 yrs
-  required_skills: Financial Reporting, Financial Modeling, Account Reconciliation, Compliance Support, Spreadsheet Analysis
-  description: Seeking an intern to support financial reporting, reconciliation activities, and compliance documentation within a fintech environment. Responsibilities include preparing reports, 
+  id: jd_2626 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React Native, JavaScript, Mobile Testing, API Integration, Git
+  description: Seeking a mobile development intern to support React Native application enhancements, testing activities, and API integration tasks. The role works with developers to implement use
 
-  id: jd_2622 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Financial Reporting, Financial Modeling, Forecasting, Account Reconciliation, Compliance Reporting
-  description: Looking for a junior finance analyst to support reporting, forecasting, and accounting operations. The role includes financial analysis, compliance reporting, account reconciliatio
+  id: jd_2627 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, TypeScript, API Integration, Mobile Debugging, App Deployment
+  description: Looking for a junior mobile developer to build and maintain cross-platform applications using React Native. Responsibilities include feature development, debugging, API integration
 
-  id: jd_2623 | title: Fintech Finance Manager | level: middle | min_exp: 3 yrs
-  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Forecasting, Variance Analysis
-  description: Seeking an experienced finance professional to manage financial reporting, forecasting, compliance monitoring, and business analysis. Responsibilities include model development, va
+  id: jd_2628 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Flutter, Mobile Architecture, Automated Testing, CI/CD, Performance Optimization
+  description: Seeking an experienced mobile engineer to design and deliver scalable applications using Flutter and related technologies. Responsibilities include architecture planning, automated
 
-  id: jd_2624 | title: Senior Finance Manager | level: senior | min_exp: 5 yrs
-  required_skills: Finance Leadership, Financial Planning, Compliance Governance, Reporting Strategy, Risk Management
-  description: Hiring a senior finance manager to oversee financial planning, reporting governance, compliance programs, and audit activities. Responsibilities include leading teams, managing bud
+  id: jd_2629 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Kotlin, Swift, Technical Leadership, Mobile Architecture, Performance Engineering
+  description: Hiring a senior mobile engineer to lead architecture decisions and guide development teams across Android and iOS platforms. Responsibilities include technical leadership, performa
 
-  id: jd_2625 | title: Principal Finance Transformation Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Finance Strategy, Financial Governance, Compliance Strategy, Executive Leadership, Transformation Management
-  description: An experienced finance executive is required to define enterprise finance strategy and lead transformation initiatives. Responsibilities include governance development, compliance 
+  id: jd_2630 | title: Principal Mobile Platform Architect | level: senior | min_exp: 7 yrs
+  required_skills: Mobile Platform Strategy, Engineering Leadership, Architecture Governance, Strategic Roadmaps, Mobile Transformation
+  description: An experienced mobile technology leader is required to define platform strategy and oversee enterprise mobile transformation initiatives. Responsibilities include architecture gove
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~12 pairs
-  moderate_match: ~5 pairs
-  weak_match: ~5 pairs
+  strong_match: ~9 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~7 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13101  resume_2621 × jd_2621
-  pair_13102  resume_2621 × jd_2622
-  pair_13103  resume_2621 × jd_2623
-  pair_13104  resume_2621 × jd_2624
-  pair_13105  resume_2621 × jd_2625
-  pair_13106  resume_2622 × jd_2621
-  pair_13107  resume_2622 × jd_2622
-  pair_13108  resume_2622 × jd_2623
-  pair_13109  resume_2622 × jd_2624
-  pair_13110  resume_2622 × jd_2625
-  pair_13111  resume_2623 × jd_2621
-  pair_13112  resume_2623 × jd_2622
-  pair_13113  resume_2623 × jd_2623
-  pair_13114  resume_2623 × jd_2624
-  pair_13115  resume_2623 × jd_2625
-  pair_13116  resume_2624 × jd_2621
-  pair_13117  resume_2624 × jd_2622
-  pair_13118  resume_2624 × jd_2623
-  pair_13119  resume_2624 × jd_2624
-  pair_13120  resume_2624 × jd_2625
-  pair_13121  resume_2625 × jd_2621
-  pair_13122  resume_2625 × jd_2622
-  pair_13123  resume_2625 × jd_2623
-  pair_13124  resume_2625 × jd_2624
-  pair_13125  resume_2625 × jd_2625
+  pair_13126  resume_2626 × jd_2626
+  pair_13127  resume_2626 × jd_2627
+  pair_13128  resume_2626 × jd_2628
+  pair_13129  resume_2626 × jd_2629
+  pair_13130  resume_2626 × jd_2630
+  pair_13131  resume_2627 × jd_2626
+  pair_13132  resume_2627 × jd_2627
+  pair_13133  resume_2627 × jd_2628
+  pair_13134  resume_2627 × jd_2629
+  pair_13135  resume_2627 × jd_2630
+  pair_13136  resume_2628 × jd_2626
+  pair_13137  resume_2628 × jd_2627
+  pair_13138  resume_2628 × jd_2628
+  pair_13139  resume_2628 × jd_2629
+  pair_13140  resume_2628 × jd_2630
+  pair_13141  resume_2629 × jd_2626
+  pair_13142  resume_2629 × jd_2627
+  pair_13143  resume_2629 × jd_2628
+  pair_13144  resume_2629 × jd_2629
+  pair_13145  resume_2629 × jd_2630
+  pair_13146  resume_2630 × jd_2626
+  pair_13147  resume_2630 × jd_2627
+  pair_13148  resume_2630 × jd_2628
+  pair_13149  resume_2630 × jd_2629
+  pair_13150  resume_2630 × jd_2630
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
