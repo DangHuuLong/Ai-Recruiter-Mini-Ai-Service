@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2546 | level: intern | exp: 0.4 yrs
-  skills: Flutter, React Native, Dart, JavaScript, REST APIs, Firebase, Git, UI Development, State Management, Mobile Testing
-  background: Final-year Computer Science student specializing in mobile application development with four months of internship experience supporting Android and cross-platform projects. Assisted senior developers 
+  id: resume_2551 | level: intern | exp: 0.4 yrs
+  skills: Requirements Gathering, BPMN, Stakeholder Communication, User Stories, Process Mapping, Requirement Traceability, Documentation, User Acceptance Testing, Project Coordination, Reporting
+  background: Final-year Business Information Systems student with four months of internship experience supporting business analysis activities on internal process improvement initiatives. Assisted analysts in gath
 
-  id: resume_2547 | level: junior | exp: 1.7 yrs
-  skills: React Native, Flutter, REST APIs, Firebase, Git, Mobile Testing, State Management, JavaScript, Dart, App Deployment
-  background: Mobile developer with 1.7 years of experience building cross-platform applications for retail and service businesses. Developed and maintained applications using React Native and Flutter while integra
+  id: resume_2552 | level: junior | exp: 1.6 yrs
+  skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, Acceptance Criteria, Process Improvement, UAT, Change Requests, Workshop Facilitation, Project Reporting
+  background: Business analyst with 1.6 years of experience supporting software delivery and business process improvement projects. Worked closely with stakeholders to gather functional requirements, facilitate wor
 
-  id: resume_2548 | level: middle | exp: 4.2 yrs
-  skills: Flutter, Kotlin, React Native, System Design, Performance Optimization, Automated Testing, REST APIs, CI/CD, State Management, Android Architecture
-  background: Mobile engineer with 4.2 years of experience designing and delivering scalable mobile applications across Android and cross-platform ecosystems. Led feature development using Flutter, React Native, an
+  id: resume_2553 | level: middle | exp: 4.1 yrs
+  skills: Business Analysis, BPMN, Requirements Management, Stakeholder Engagement, Gap Analysis, Process Improvement, Project Governance, Risk Management, UAT Coordination, Business Impact Analysis
+  background: Business analyst with 4.1 years of experience delivering business transformation and process optimization initiatives. Led requirement elicitation sessions with cross-functional stakeholders and produ
 
-  id: resume_2549 | level: senior | exp: 6.4 yrs
-  skills: Kotlin, Flutter, Mobile Architecture, Team Leadership, CI/CD, Performance Optimization, System Design, Release Management, Technical Leadership, Android Development
-  background: Senior mobile engineer with 6.4 years of experience leading development of high-traffic mobile products across fintech and e-commerce sectors. Specialized in native Android and cross-platform architec
+  id: resume_2554 | level: senior | exp: 6.3 yrs
+  skills: Strategic Business Analysis, BPMN, Stakeholder Leadership, Project Management, Roadmapping, Risk Management, Business Case Development, Governance, Requirements Prioritization, Change Management
+  background: Senior business analyst and project management professional with 6.3 years of experience leading strategic change initiatives and complex delivery programs. Directed requirement discovery, stakeholder
 
-  id: resume_2550 | level: senior | exp: 9.5 yrs
-  skills: Mobile Strategy, Platform Architecture, Engineering Leadership, Organizational Leadership, Technical Roadmaps, Scalability, Architecture Governance, Change Management, Executive Communication, Mobile Transformation
-  background: Principal mobile architect with 9.5 years of experience defining enterprise mobile strategy and leading large-scale engineering transformations. Directed cross-functional teams responsible for multipl
+  id: resume_2555 | level: senior | exp: 9.2 yrs
+  skills: Enterprise Business Analysis, BPMN Governance, Portfolio Management, Executive Stakeholder Management, Program Leadership, Process Architecture, Transformation Strategy, Benefits Realization, Capability Development, Governance Frameworks
+  background: Principal business analysis and project leadership specialist with 9.2 years of experience guiding enterprise transformation programs and portfolio-level governance. Established business analysis fram
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2546 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Flutter, React Native, REST APIs, Git, Mobile Testing
-  description: Seeking a mobile development intern to support implementation and testing of mobile applications using Flutter and React Native. Responsibilities include developing UI components, 
+  id: jd_2551 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
+  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Documentation, User Acceptance Testing
+  description: Seeking a business analysis intern to support requirement gathering, process documentation, and stakeholder communication activities. The role will assist with BPMN process mapping
 
-  id: jd_2547 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
-  required_skills: Flutter, React Native, Firebase, REST APIs, App Deployment
-  description: Looking for a junior mobile developer to build and maintain cross-platform applications using Flutter and React Native. The role includes implementing features, integrating backend
+  id: jd_2552 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, UAT
+  description: Looking for a junior business analyst to support requirements management and business process improvement initiatives. Responsibilities include stakeholder interviews, user story d
 
-  id: jd_2548 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Kotlin, System Design, Performance Optimization, Automated Testing, Flutter
-  description: Seeking a mobile engineer to design scalable mobile applications and improve performance across Android and cross-platform products. Responsibilities include architecture design, a
+  id: jd_2553 | title: Business Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Requirements Management, BPMN, Stakeholder Engagement, Gap Analysis, Project Governance
+  description: Seeking an experienced business analyst to lead requirement elicitation, stakeholder workshops, and process optimization initiatives. The role involves maintaining requirement trac
 
-  id: jd_2549 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Mobile Architecture, Team Leadership, CI/CD, Kotlin, Performance Optimization
-  description: Hiring a senior mobile engineer to lead architecture decisions and guide mobile development teams. Responsibilities include establishing engineering standards, managing releases, o
+  id: jd_2554 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
+  required_skills: Stakeholder Leadership, BPMN, Project Management, Risk Management, Requirements Prioritization
+  description: Hiring a senior business analyst to drive strategic initiatives and lead stakeholder alignment efforts across complex projects. Responsibilities include requirement prioritization,
 
-  id: jd_2550 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
-  required_skills: Mobile Strategy, Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability
-  description: An experienced mobile leader is required to define enterprise mobile strategy and oversee platform transformation initiatives. Responsibilities include establishing architecture go
+  id: jd_2555 | title: Principal Business Analysis Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Business Analysis, Portfolio Management, Executive Stakeholder Management, Process Architecture, Governance Frameworks
+  description: An experienced principal-level leader is required to define enterprise business analysis standards and oversee transformation portfolios. Responsibilities include establishing gove
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
+  strong_match: ~9 pairs
   excellent_match: ~6 pairs
-  moderate_match: ~10 pairs
-  weak_match: ~7 pairs
+  moderate_match: ~4 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12726  resume_2546 × jd_2546
-  pair_12727  resume_2546 × jd_2547
-  pair_12728  resume_2546 × jd_2548
-  pair_12729  resume_2546 × jd_2549
-  pair_12730  resume_2546 × jd_2550
-  pair_12731  resume_2547 × jd_2546
-  pair_12732  resume_2547 × jd_2547
-  pair_12733  resume_2547 × jd_2548
-  pair_12734  resume_2547 × jd_2549
-  pair_12735  resume_2547 × jd_2550
-  pair_12736  resume_2548 × jd_2546
-  pair_12737  resume_2548 × jd_2547
-  pair_12738  resume_2548 × jd_2548
-  pair_12739  resume_2548 × jd_2549
-  pair_12740  resume_2548 × jd_2550
-  pair_12741  resume_2549 × jd_2546
-  pair_12742  resume_2549 × jd_2547
-  pair_12743  resume_2549 × jd_2548
-  pair_12744  resume_2549 × jd_2549
-  pair_12745  resume_2549 × jd_2550
-  pair_12746  resume_2550 × jd_2546
-  pair_12747  resume_2550 × jd_2547
-  pair_12748  resume_2550 × jd_2548
-  pair_12749  resume_2550 × jd_2549
-  pair_12750  resume_2550 × jd_2550
+  pair_12751  resume_2551 × jd_2551
+  pair_12752  resume_2551 × jd_2552
+  pair_12753  resume_2551 × jd_2553
+  pair_12754  resume_2551 × jd_2554
+  pair_12755  resume_2551 × jd_2555
+  pair_12756  resume_2552 × jd_2551
+  pair_12757  resume_2552 × jd_2552
+  pair_12758  resume_2552 × jd_2553
+  pair_12759  resume_2552 × jd_2554
+  pair_12760  resume_2552 × jd_2555
+  pair_12761  resume_2553 × jd_2551
+  pair_12762  resume_2553 × jd_2552
+  pair_12763  resume_2553 × jd_2553
+  pair_12764  resume_2553 × jd_2554
+  pair_12765  resume_2553 × jd_2555
+  pair_12766  resume_2554 × jd_2551
+  pair_12767  resume_2554 × jd_2552
+  pair_12768  resume_2554 × jd_2553
+  pair_12769  resume_2554 × jd_2554
+  pair_12770  resume_2554 × jd_2555
+  pair_12771  resume_2555 × jd_2551
+  pair_12772  resume_2555 × jd_2552
+  pair_12773  resume_2555 × jd_2553
+  pair_12774  resume_2555 × jd_2554
+  pair_12775  resume_2555 × jd_2555
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
