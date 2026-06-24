@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2236 | level: intern | exp: 0.5 yrs
-  skills: Python, React, Django, JavaScript, SQL
-  background: Enthusiastic and motivated Computer Science student passionate about full-stack web development using modern JavaScript frameworks and Python backends. Possesses foundational academic knowledge of sof
+  id: resume_2241 | level: intern | exp: 0.5 yrs
+  skills: Agile, Scrum, Jira, Confluence, Market Research, Competitive Analysis
+  background: Aspiring Product Manager and current Business Administration student eager to launch a career in technology product management. Strong foundational understanding of agile frameworks, product lifecycle
 
-  id: resume_2237 | level: junior | exp: 1.5 yrs
-  skills: Python, React, FastAPI, PostgreSQL, Git
-  background: Junior Full-Stack Web Developer with over a year of corporate experience writing interactive user interfaces and implementing performant backend architectures. Proficient in crafting component-based f
+  id: resume_2242 | level: junior | exp: 1.5 yrs
+  skills: Agile, Jira, Product Roadmap, User Stories, Google Analytics, Mixpanel, Stakeholder Management
+  background: Junior Product Manager with over a year of corporate experience assisting in the delivery of digital software products within an agile ecosystem. Proficient in managing and prioritizing product backlo
 
-  id: resume_2238 | level: middle | exp: 4.0 yrs
-  skills: Python, React, Flask, Docker, Celery, Redux
-  background: Dynamic Full-Stack Engineer offering four years of progressive industry expertise architecting robust web applications and designing scalable cloud integrations. Expert at building single-page applica
+  id: resume_2243 | level: middle | exp: 4.0 yrs
+  skills: Product Strategy, Product Roadmap, Agile, Scrum, Stakeholder Management, Data Analytics, SaaS
+  background: Results-oriented Product Manager offering four years of progressive experience leading cross-functional teams to build, launch, and scale SaaS products. Proven track record in defining comprehensive p
 
-  id: resume_2239 | level: senior | exp: 6.0 yrs
-  skills: Python, React, Django, TypeScript, Kubernetes, AWS
-  background: Senior Full-Stack Web Engineer with over six years of comprehensive technical leadership engineering cloud-native consumer applications and high-throughput backend fabrics. Expert at designing complex
+  id: resume_2244 | level: senior | exp: 6.0 yrs
+  skills: Product Strategy, Multi-Year Roadmaps, Agile Leadership, Executive Stakeholder Management, Product Discovery, Cloud Solutions, Mentorship
+  background: Accomplished Senior Product Manager with over six years of comprehensive technical expertise leading high-performing agile development teams and delivering enterprise cloud software. Adept at architec
 
-  id: resume_2240 | level: senior | exp: 9.0 yrs
-  skills: Python, React, Django, Architecture, GraphQL, Cloud Infrastructure
-  background: Principal Full-Stack Architect with nine years of extensive experience steering global web platform transformations and directing elite software application business units. Master at configuring compr
+  id: resume_2245 | level: senior | exp: 9.0 yrs
+  skills: Product Governance, Macro Strategy, Agile at Scale, Executive Alignment, Resource Allocation, Portfolio Management, Vendor Relations
+  background: Visionary Principal Product Lead with over nine years of exceptional experience steering global tech platforms, directing cross-functional product departments, and governing high-impact software portf
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2236 | title: Full-Stack Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, Django
-  description: We are seeking an enthusiastic Full-Stack Engineering Intern to support our core web platform squad. In this internship role, you will assist with writing standard Python web scrip
+  id: jd_2241 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: Agile, Product Roadmap, Market Research
+  description: We are seeking an enthusiastic Product Management Intern to support our growing core application team. In this internship role, you will assist with mapping out short-term product 
 
-  id: jd_2237 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, FastAPI, PostgreSQL
-  description: Our central core application squad is looking for a Junior Full-Stack Developer to drive our web platform stability. You will coordinate end-to-end user interface updates, create s
+  id: jd_2242 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
+  required_skills: Agile, Jira, Product Roadmap, User Stories
+  description: Our software delivery group is looking for a Junior Product Manager to drive feature stability and growth across our core web applications. In this role, you will coordinate end-to
 
-  id: jd_2238 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, Flask, Docker
-  description: We are hunting for an experienced Full-Stack Engineer to drive high-availability web applications and architect optimal user experiences. In this role, you will build comprehensive
+  id: jd_2243 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Strategy, Product Roadmap, Agile, Stakeholder Management
+  description: We are hunting for an experienced Product Manager to drive high-availability SaaS applications and optimize our core digital product portfolio. In this mid-level role, you will bui
 
-  id: jd_2239 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Python, React, Django, TypeScript, Kubernetes
-  description: Join our core software division as a Senior Full-Stack Engineer. You will be responsible for orchestrating complex application scaling strategies and architecting enterprise-wide w
+  id: jd_2244 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Strategy, Multi-Year Roadmaps, Agile Leadership, Executive Stakeholder Management
+  description: Join our enterprise software division as a Senior Product Manager. You will be responsible for orchestrating complex application scaling strategies, architecting enterprise-wide mu
 
-  id: jd_2240 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Python, React, Django, Architecture, GraphQL
-  description: We are searching for a Principal Full-Stack Architect to anchor our human capital vision and guide our high-impact web platform portfolio. You will oversee long-range software engi
+  id: jd_2245 | title: Principal Product Architect | level: senior | min_exp: 7 yrs
+  required_skills: Product Governance, Macro Strategy, Agile at Scale, Executive Alignment
+  description: We are searching for a Principal Product Architect to anchor our digital portfolio vision and guide our high-impact global web platform portfolio. In this leadership role, you will
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~11 pairs
-  weak_match: ~7 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11176  resume_2236 × jd_2236
-  pair_11177  resume_2236 × jd_2237
-  pair_11178  resume_2236 × jd_2238
-  pair_11179  resume_2236 × jd_2239
-  pair_11180  resume_2236 × jd_2240
-  pair_11181  resume_2237 × jd_2236
-  pair_11182  resume_2237 × jd_2237
-  pair_11183  resume_2237 × jd_2238
-  pair_11184  resume_2237 × jd_2239
-  pair_11185  resume_2237 × jd_2240
-  pair_11186  resume_2238 × jd_2236
-  pair_11187  resume_2238 × jd_2237
-  pair_11188  resume_2238 × jd_2238
-  pair_11189  resume_2238 × jd_2239
-  pair_11190  resume_2238 × jd_2240
-  pair_11191  resume_2239 × jd_2236
-  pair_11192  resume_2239 × jd_2237
-  pair_11193  resume_2239 × jd_2238
-  pair_11194  resume_2239 × jd_2239
-  pair_11195  resume_2239 × jd_2240
-  pair_11196  resume_2240 × jd_2236
-  pair_11197  resume_2240 × jd_2237
-  pair_11198  resume_2240 × jd_2238
-  pair_11199  resume_2240 × jd_2239
-  pair_11200  resume_2240 × jd_2240
+  pair_11201  resume_2241 × jd_2241
+  pair_11202  resume_2241 × jd_2242
+  pair_11203  resume_2241 × jd_2243
+  pair_11204  resume_2241 × jd_2244
+  pair_11205  resume_2241 × jd_2245
+  pair_11206  resume_2242 × jd_2241
+  pair_11207  resume_2242 × jd_2242
+  pair_11208  resume_2242 × jd_2243
+  pair_11209  resume_2242 × jd_2244
+  pair_11210  resume_2242 × jd_2245
+  pair_11211  resume_2243 × jd_2241
+  pair_11212  resume_2243 × jd_2242
+  pair_11213  resume_2243 × jd_2243
+  pair_11214  resume_2243 × jd_2244
+  pair_11215  resume_2243 × jd_2245
+  pair_11216  resume_2244 × jd_2241
+  pair_11217  resume_2244 × jd_2242
+  pair_11218  resume_2244 × jd_2243
+  pair_11219  resume_2244 × jd_2244
+  pair_11220  resume_2244 × jd_2245
+  pair_11221  resume_2245 × jd_2241
+  pair_11222  resume_2245 × jd_2242
+  pair_11223  resume_2245 × jd_2243
+  pair_11224  resume_2245 × jd_2244
+  pair_11225  resume_2245 × jd_2245
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
