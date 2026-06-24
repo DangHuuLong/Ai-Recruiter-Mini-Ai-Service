@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2351 | level: intern | exp: 0.3 yrs
-  skills: Requirements Gathering, BPMN, Documentation, Stakeholder Communication, Information Systems
-  background: Final year Information Systems student with a strong academic foundation in business process modeling and requirements gathering. I have successfully completed university-level projects that involved 
+  id: resume_2356 | level: intern | exp: 0.3 yrs
+  skills: Figma, User Research, Wireframing, Prototyping, Interaction Design, User Journey Mapping
+  background: As a motivated final year student pursuing a Bachelor degree in Interaction Design, I have developed a strong passion for human-centered design principles. Throughout my academic journey, I have gaine
 
-  id: resume_2352 | level: junior | exp: 1.5 yrs
-  skills: Requirements Engineering, Traceability Matrix, Stakeholder Workshops, Process Mapping, Agile Methodology
-  background: Junior Business Analyst with 1.5 years of experience in capturing requirements and supporting project delivery. I have been instrumental in bridging the communication gap between business stakeholders
+  id: resume_2357 | level: junior | exp: 1.5 yrs
+  skills: Figma, User Research, Prototyping, Mobile Design, Component Design, Usability Testing
+  background: I am a Junior Product Designer with 1.5 years of professional experience focusing on mobile-first interfaces and user testing. In my previous role, I supported the design process from initial wirefram
 
-  id: resume_2353 | level: middle | exp: 4.0 yrs
-  skills: Business Process Modeling, Stakeholder Facilitation, Requirement Elicitation, Functional Specification, User Stories
-  background: Business Analyst with 4 years of experience focusing on stakeholder management and complex business process re-engineering. I have extensive experience in leading requirement elicitation sessions, man
+  id: resume_2358 | level: middle | exp: 4.0 yrs
+  skills: Product Strategy, Design Systems, Figma, Rapid Prototyping, User Research, Mentorship
+  background: With 4 years of experience as a Product Designer, I specialize in end-to-end design strategy for SaaS platforms. My expertise lies in balancing business objectives with user needs through extensive di
 
-  id: resume_2354 | level: senior | exp: 6.0 yrs
-  skills: Strategic Planning, Organizational Change, Process Optimization, Team Leadership, Risk Management
-  background: Senior Business Analyst with 6 years of experience driving large-scale digital transformation initiatives and complex project delivery. I specialize in strategic requirements analysis, stakeholder man
+  id: resume_2359 | level: senior | exp: 6.0 yrs
+  skills: UI/UX Strategy, Design Systems, Figma, Prototyping, Design Sprints, Stakeholder Management
+  background: Senior Product Designer with 6 years of experience driving design excellence in high-growth technology companies. I have extensive experience in defining design languages, managing complex product eco
 
-  id: resume_2355 | level: senior | exp: 8.5 yrs
-  skills: Enterprise Architecture, Strategic Alignment, Program Governance, Executive Leadership, Process Management
-  background: Principal Business Architect with over 8 years of experience in enterprise business analysis, project governance, and stakeholder alignment at the executive level. I specialize in designing integrated
+  id: resume_2360 | level: senior | exp: 8.5 yrs
+  skills: Product Leadership, Design Governance, Enterprise Design, UI/UX Strategy, Figma, Cross-functional Leadership
+  background: Principal Product Designer with over 8 years of experience in setting product vision and design governance for enterprise-level applications. I specialize in complex ecosystem design, organizational c
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2351 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, BPMN, Documentation
-  description: Join our team as a Business Analysis intern to gain foundational experience in requirements gathering and project support. You will work alongside experienced business analysts to 
+  id: jd_2356 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, Wireframing, Prototyping
+  description: We are looking for a creative UI/UX Design Intern to join our design team for the summer. In this role, you will get hands-on experience by supporting our lead designers with daily
 
-  id: jd_2352 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Engineering, Traceability Matrix, Stakeholder Workshops
-  description: We are looking for a Junior Business Analyst to join our team and support our project delivery efforts. In this role, you will be responsible for capturing and documenting project 
+  id: jd_2357 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, User Research, Prototyping, Mobile Design
+  description: Join our growing product design team as a Junior Product Designer. We are looking for someone with a solid grasp of user-centered design to help us build beautiful and functional m
 
-  id: jd_2353 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Business Process Modeling, Stakeholder Facilitation, Requirement Elicitation
-  description: Our team is seeking a skilled Business Analyst to lead project requirement analysis and business process modeling. In this role, you will work closely with stakeholders to elicit, 
+  id: jd_2358 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Figma, User Research, Prototyping, Design Systems, Product Strategy
+  description: We are seeking a mid-level Product Designer to take ownership of key features in our flagship SaaS platform. This role requires someone who can seamlessly switch between high-level
 
-  id: jd_2354 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Planning, Organizational Change, Process Optimization
-  description: We are seeking a strategic Senior Business Analyst to lead our enterprise project initiatives. You will be responsible for defining project roadmaps, conducting high-level requirem
+  id: jd_2359 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: Figma, User Research, Prototyping, Design Systems, UI/UX Strategy, Design Sprints
+  description: As a Senior Product Designer, you will play a pivotal role in shaping our product's visual language and user experience. You will work on complex, cross-platform challenges, ensuri
 
-  id: jd_2355 | title: Principal Business Architect | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Architecture, Strategic Alignment, Program Governance
-  description: We are looking for a visionary Principal Business Architect to lead our organizational business strategy and enterprise governance. In this role, you will be responsible for design
+  id: jd_2360 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  required_skills: Figma, UI/UX Strategy, Design Governance, Enterprise Design, Product Leadership
+  description: We are looking for a visionary Principal Product Designer to drive our design governance and long-term product vision. You will work at the intersection of business, technology, an
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~8 pairs
+  strong_match: ~11 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11751  resume_2351 × jd_2351
-  pair_11752  resume_2351 × jd_2352
-  pair_11753  resume_2351 × jd_2353
-  pair_11754  resume_2351 × jd_2354
-  pair_11755  resume_2351 × jd_2355
-  pair_11756  resume_2352 × jd_2351
-  pair_11757  resume_2352 × jd_2352
-  pair_11758  resume_2352 × jd_2353
-  pair_11759  resume_2352 × jd_2354
-  pair_11760  resume_2352 × jd_2355
-  pair_11761  resume_2353 × jd_2351
-  pair_11762  resume_2353 × jd_2352
-  pair_11763  resume_2353 × jd_2353
-  pair_11764  resume_2353 × jd_2354
-  pair_11765  resume_2353 × jd_2355
-  pair_11766  resume_2354 × jd_2351
-  pair_11767  resume_2354 × jd_2352
-  pair_11768  resume_2354 × jd_2353
-  pair_11769  resume_2354 × jd_2354
-  pair_11770  resume_2354 × jd_2355
-  pair_11771  resume_2355 × jd_2351
-  pair_11772  resume_2355 × jd_2352
-  pair_11773  resume_2355 × jd_2353
-  pair_11774  resume_2355 × jd_2354
-  pair_11775  resume_2355 × jd_2355
+  pair_11776  resume_2356 × jd_2356
+  pair_11777  resume_2356 × jd_2357
+  pair_11778  resume_2356 × jd_2358
+  pair_11779  resume_2356 × jd_2359
+  pair_11780  resume_2356 × jd_2360
+  pair_11781  resume_2357 × jd_2356
+  pair_11782  resume_2357 × jd_2357
+  pair_11783  resume_2357 × jd_2358
+  pair_11784  resume_2357 × jd_2359
+  pair_11785  resume_2357 × jd_2360
+  pair_11786  resume_2358 × jd_2356
+  pair_11787  resume_2358 × jd_2357
+  pair_11788  resume_2358 × jd_2358
+  pair_11789  resume_2358 × jd_2359
+  pair_11790  resume_2358 × jd_2360
+  pair_11791  resume_2359 × jd_2356
+  pair_11792  resume_2359 × jd_2357
+  pair_11793  resume_2359 × jd_2358
+  pair_11794  resume_2359 × jd_2359
+  pair_11795  resume_2359 × jd_2360
+  pair_11796  resume_2360 × jd_2356
+  pair_11797  resume_2360 × jd_2357
+  pair_11798  resume_2360 × jd_2358
+  pair_11799  resume_2360 × jd_2359
+  pair_11800  resume_2360 × jd_2360
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
