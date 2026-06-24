@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2411 | level: intern | exp: 0.3 yrs
-  skills: Python, Pandas, Scikit-Learn, Data Visualization, SQL
-  background: I am a data science student with a strong passion for machine learning and statistical analysis. Through my academic projects, I have gained hands-on experience using Python libraries such as pandas a
+  id: resume_2416 | level: intern | exp: 0.2 yrs
+  skills: Excel, Marketplace Operations, Inventory Management, Data Analysis
+  background: I am a dedicated retail management student seeking an internship to gain practical experience in e-commerce operations. I have a strong interest in understanding how online marketplaces function and h
 
-  id: resume_2412 | level: junior | exp: 1.8 yrs
-  skills: Python, Pandas, Scikit-Learn, PyTorch, SQL
-  background: As a Junior Data Scientist with 1.8 years of experience, I have worked on various classification and regression projects. I am proficient in using pandas for data cleaning, scikit-learn for model trai
+  id: resume_2417 | level: junior | exp: 1.5 yrs
+  skills: Shopify, Google Analytics, Product Merchandising, Inventory Coordination
+  background: As a Junior E-commerce Associate with 1.5 years of experience, I have developed a solid foundation in marketplace administration and product merchandising. I have successfully managed product catalogs
 
-  id: resume_2413 | level: middle | exp: 4.0 yrs
-  skills: Python, PyTorch, Pandas, Cloud Computing, Machine Learning Ops
-  background: I am a Data Scientist with 4 years of experience focusing on developing and deploying machine learning solutions. My expertise includes building complex recommendation systems, time-series forecasting
+  id: resume_2418 | level: middle | exp: 4.0 yrs
+  skills: Digital Strategy, Supply Chain Management, CRM, Performance Marketing
+  background: I am an E-commerce Manager with 4 years of experience in scaling online retail businesses. I specialize in developing comprehensive merchandising strategies, managing end-to-end marketplace operations
 
-  id: resume_2414 | level: senior | exp: 6.0 yrs
-  skills: Python, PyTorch, Scikit-Learn, System Design, Mentorship
-  background: Senior Data Scientist with 6 years of experience in designing and leading enterprise-level machine learning projects. My core strengths include developing large-scale neural networks, architecting end
+  id: resume_2419 | level: senior | exp: 6.5 yrs
+  skills: Omnichannel Strategy, Strategic Planning, Retail Analytics, Team Leadership
+  background: Senior E-commerce Lead with 6 years of experience driving large-scale digital transformation in the retail industry. I have extensive experience in building robust operational frameworks, managing hig
 
-  id: resume_2415 | level: senior | exp: 9.5 yrs
-  skills: Python, PyTorch, Distributed Systems, Data Strategy, Leadership
-  background: Principal Data Scientist with over 9 years of experience shaping data strategy and engineering cultures. I specialize in building highly scalable, distributed machine learning systems and pioneering a
+  id: resume_2420 | level: senior | exp: 9.5 yrs
+  skills: Business Strategy, Global Operations, Retail Tech, Financial Modeling
+  background: Principal Retail Strategy Consultant with over 9 years of experience in directing global e-commerce initiatives. I specialize in complex marketplace ecosystem development, advanced merchandising analy
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2411 | title: Data Science Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, Pandas, Scikit-Learn
-  description: We are seeking a Data Science Intern to assist our data team. You will help with data preprocessing, basic exploratory analysis, and supporting model evaluation. This is a great ro
+  id: jd_2416 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Retail Fundamentals, Excel, Data Entry
+  description: We are looking for an enthusiastic E-commerce Operations Intern to support our retail team. You will assist with product listing updates, inventory reporting, and basic market rese
 
-  id: jd_2412 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs
-  required_skills: Python, Scikit-Learn, PyTorch
-  description: Our team is looking for a Junior Data Scientist to build and refine machine learning models. You will be responsible for preparing datasets, implementing predictive models using sc
+  id: jd_2417 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs
+  required_skills: Shopify, E-commerce Operations, Product Merchandising
+  description: Join our team as a Junior E-commerce Associate to help manage our daily operations. You will be responsible for uploading product content, tracking sales metrics, and coordinating 
 
-  id: jd_2413 | title: Data Scientist | level: middle | min_exp: 3 yrs
-  required_skills: Python, PyTorch, Pandas
-  description: We are looking for a Data Scientist to take ownership of end-to-end ML solutions. You will build and deploy models for recommendation or forecasting, work with large datasets, and 
+  id: jd_2418 | title: E-commerce Manager | level: middle | min_exp: 3 yrs
+  required_skills: Digital Strategy, Supply Chain Management, Data Analysis
+  description: We are seeking an experienced E-commerce Manager to oversee our online store. You will lead the merchandising strategy, manage operational workflows, and drive revenue growth throu
 
-  id: jd_2414 | title: Senior Data Scientist | level: senior | min_exp: 5 yrs
-  required_skills: Python, PyTorch, Scikit-Learn
-  description: We need a Senior Data Scientist to lead our model architecture and drive innovation. You will design neural networks, implement complex ML pipelines, and mentor junior staff. We ar
+  id: jd_2419 | title: Senior E-commerce Operations Lead | level: senior | min_exp: 5 yrs
+  required_skills: Omnichannel Strategy, Retail Analytics, Team Leadership
+  description: We need a Senior E-commerce Operations Lead to transform our digital platform. You will be responsible for architecting operational frameworks, managing high-volume marketplaces, a
 
-  id: jd_2415 | title: Principal Data Scientist | level: senior | min_exp: 7 yrs
-  required_skills: Python, PyTorch, Distributed Systems
-  description: We are searching for a Principal Data Scientist to lead our data strategy and engineering culture. You will direct research initiatives, scale our ML systems, and define technical 
+  id: jd_2420 | title: Principal Retail Strategy Consultant | level: senior | min_exp: 7 yrs
+  required_skills: Business Strategy, Global Operations, Retail Technology
+  description: We are searching for a Principal Retail Strategy Consultant to guide our global e-commerce initiatives. You will define long-term digital strategy, lead massive operational transfo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~4 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~3 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~5 pairs
+  moderate_match: ~10 pairs
   weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12051  resume_2411 × jd_2411
-  pair_12052  resume_2411 × jd_2412
-  pair_12053  resume_2411 × jd_2413
-  pair_12054  resume_2411 × jd_2414
-  pair_12055  resume_2411 × jd_2415
-  pair_12056  resume_2412 × jd_2411
-  pair_12057  resume_2412 × jd_2412
-  pair_12058  resume_2412 × jd_2413
-  pair_12059  resume_2412 × jd_2414
-  pair_12060  resume_2412 × jd_2415
-  pair_12061  resume_2413 × jd_2411
-  pair_12062  resume_2413 × jd_2412
-  pair_12063  resume_2413 × jd_2413
-  pair_12064  resume_2413 × jd_2414
-  pair_12065  resume_2413 × jd_2415
-  pair_12066  resume_2414 × jd_2411
-  pair_12067  resume_2414 × jd_2412
-  pair_12068  resume_2414 × jd_2413
-  pair_12069  resume_2414 × jd_2414
-  pair_12070  resume_2414 × jd_2415
-  pair_12071  resume_2415 × jd_2411
-  pair_12072  resume_2415 × jd_2412
-  pair_12073  resume_2415 × jd_2413
-  pair_12074  resume_2415 × jd_2414
-  pair_12075  resume_2415 × jd_2415
+  pair_12076  resume_2416 × jd_2416
+  pair_12077  resume_2416 × jd_2417
+  pair_12078  resume_2416 × jd_2418
+  pair_12079  resume_2416 × jd_2419
+  pair_12080  resume_2416 × jd_2420
+  pair_12081  resume_2417 × jd_2416
+  pair_12082  resume_2417 × jd_2417
+  pair_12083  resume_2417 × jd_2418
+  pair_12084  resume_2417 × jd_2419
+  pair_12085  resume_2417 × jd_2420
+  pair_12086  resume_2418 × jd_2416
+  pair_12087  resume_2418 × jd_2417
+  pair_12088  resume_2418 × jd_2418
+  pair_12089  resume_2418 × jd_2419
+  pair_12090  resume_2418 × jd_2420
+  pair_12091  resume_2419 × jd_2416
+  pair_12092  resume_2419 × jd_2417
+  pair_12093  resume_2419 × jd_2418
+  pair_12094  resume_2419 × jd_2419
+  pair_12095  resume_2419 × jd_2420
+  pair_12096  resume_2420 × jd_2416
+  pair_12097  resume_2420 × jd_2417
+  pair_12098  resume_2420 × jd_2418
+  pair_12099  resume_2420 × jd_2419
+  pair_12100  resume_2420 × jd_2420
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
