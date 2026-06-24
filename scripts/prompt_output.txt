@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2586 | level: intern | exp: 0.4 yrs
-  skills: SEO, Social Media Management, Content Creation, Keyword Research, Google Analytics, Content Scheduling, Marketing Reporting, Competitor Analysis, CMS, Email Marketing Support
-  background: Final-year marketing student with 0.4 years of internship experience supporting digital marketing campaigns and content publishing activities. Assisted with keyword research, SEO content updates, soci
+  id: resume_2591 | level: intern | exp: 0.4 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML, CSS, Git, Responsive Design, REST API Integration
+  background: Final-year computer science student with 0.4 years of internship experience supporting frontend development initiatives for web applications. Contributed to React and Next.js user interface updates, i
 
-  id: resume_2587 | level: junior | exp: 1.6 yrs
-  skills: SEO, Content Marketing, Social Media Management, Google Analytics, Keyword Research, Content Strategy Support, Email Marketing, Audience Segmentation, Campaign Reporting, Conversion Tracking
-  background: Digital marketing specialist with 1.6 years of experience executing SEO and content marketing initiatives for online campaigns. Managed social media publishing schedules, coordinated blog content prod
+  id: resume_2592 | level: junior | exp: 1.6 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, State Management, API Integration, Testing, Git, Responsive Design, Performance Tuning
+  background: Frontend developer with 1.6 years of experience building business applications using React, TypeScript, Next.js, and Tailwind CSS. Developed reusable components, implemented state management patterns,
 
-  id: resume_2588 | level: middle | exp: 4.4 yrs
-  skills: SEO Strategy, Content Strategy, Social Media Strategy, Marketing Analytics, Conversion Optimization, Campaign Management, Audience Insights, Editorial Planning, Performance Reporting, Stakeholder Management
-  background: Digital marketing and content strategist with 4.4 years of experience managing integrated campaigns across search, content, and social channels. Led SEO planning, editorial strategy development, and p
+  id: resume_2593 | level: middle | exp: 4.3 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Frontend Architecture, Performance Optimization, Accessibility, Component Design, Testing Automation, CI/CD
+  background: Frontend engineer with 4.3 years of experience designing and delivering scalable web applications. Led implementation of React and Next.js interfaces across multiple products while establishing TypeSc
 
-  id: resume_2589 | level: senior | exp: 6.3 yrs
-  skills: Digital Marketing Leadership, SEO Strategy, Content Governance, Marketing Analytics, Audience Growth, Campaign Leadership, Conversion Optimization, Brand Strategy, Team Management, Marketing Operations
-  background: Senior digital marketing manager with 6.3 years of experience leading content strategy, SEO programs, and multi-channel audience growth initiatives. Directed teams responsible for campaign planning, s
+  id: resume_2594 | level: senior | exp: 6.5 yrs
+  skills: React Architecture, TypeScript Governance, Next.js, Tailwind CSS, Technical Leadership, Performance Optimization, Design Systems, Mentoring, Release Management, Frontend Strategy
+  background: Senior frontend engineer with 6.5 years of experience leading development of large-scale web platforms. Specialized in React architecture, Next.js application design, and frontend performance optimiza
 
-  id: resume_2590 | level: senior | exp: 9.2 yrs
-  skills: Enterprise Marketing Strategy, Content Governance, Executive Stakeholder Management, Marketing Transformation, SEO Governance, Analytics Leadership, Growth Roadmaps, Organizational Leadership, Capability Development, Performance Governance
-  background: Principal digital marketing and content executive with 9.2 years of experience defining enterprise marketing strategy and overseeing large-scale digital transformation programs. Established governance
+  id: resume_2595 | level: senior | exp: 9.2 yrs
+  skills: Frontend Platform Architecture, React Strategy, Next.js Governance, TypeScript Strategy, Engineering Leadership, Scalability, Technical Roadmaps, Architecture Governance, Organizational Leadership, Transformation Management
+  background: Principal frontend technology leader with 9.2 years of experience defining platform strategy and overseeing engineering transformation programs. Established architectural governance standards for Reac
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2586 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media Management, Content Creation, Keyword Research, Google Analytics
-  description: Seeking a digital marketing intern to support SEO research, content publishing, and social media activities. Responsibilities include assisting with keyword analysis, updating webs
+  id: jd_2591 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Responsive Design
+  description: Seeking a frontend development intern to support implementation of responsive user interfaces using React, TypeScript, Next.js, and Tailwind CSS. Responsibilities include UI update
 
-  id: jd_2587 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Content Marketing, Social Media Management, Google Analytics, Keyword Research
-  description: Looking for a junior digital marketing specialist to execute SEO and content marketing initiatives across digital channels. Responsibilities include managing content schedules, mon
+  id: jd_2592 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Next.js, Testing, API Integration
+  description: Looking for a junior frontend developer to build user-facing features using React, TypeScript, and Next.js. Responsibilities include API integration, testing, performance improveme
 
-  id: jd_2588 | title: Digital Marketing Strategist | level: middle | min_exp: 3 yrs
-  required_skills: SEO Strategy, Content Strategy, Marketing Analytics, Campaign Management, Editorial Planning
-  description: Seeking an experienced digital marketing strategist to lead SEO planning, content strategy development, and campaign optimization efforts. Responsibilities include audience analysi
+  id: jd_2593 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React, TypeScript, Frontend Architecture, Performance Optimization, Testing Automation
+  description: Seeking an experienced frontend engineer to design scalable web applications using React and Next.js. Responsibilities include frontend architecture, performance optimization, test
 
-  id: jd_2589 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
-  required_skills: Digital Marketing Leadership, SEO Strategy, Content Governance, Marketing Analytics, Audience Growth
-  description: Hiring a senior digital marketing manager to lead content strategy, SEO programs, and audience growth initiatives. Responsibilities include managing marketing teams, defining perfo
+  id: jd_2594 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Technical Leadership, React Architecture, Performance Optimization, Design Systems, Release Management
+  description: Hiring a senior frontend engineer to lead architecture decisions and mentor development teams. Responsibilities include design system governance, performance optimization, release 
 
-  id: jd_2590 | title: Principal Marketing Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Marketing Strategy, Executive Stakeholder Management, Marketing Transformation, Growth Roadmaps, Performance Governance
-  description: An experienced marketing leader is required to define enterprise marketing strategy and oversee digital transformation initiatives. Responsibilities include governance development,
+  id: jd_2595 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  required_skills: Frontend Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
+  description: An experienced frontend leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include architecture governance, roa
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
+  strong_match: ~12 pairs
   excellent_match: ~6 pairs
-  moderate_match: ~10 pairs
-  weak_match: ~8 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12926  resume_2586 × jd_2586
-  pair_12927  resume_2586 × jd_2587
-  pair_12928  resume_2586 × jd_2588
-  pair_12929  resume_2586 × jd_2589
-  pair_12930  resume_2586 × jd_2590
-  pair_12931  resume_2587 × jd_2586
-  pair_12932  resume_2587 × jd_2587
-  pair_12933  resume_2587 × jd_2588
-  pair_12934  resume_2587 × jd_2589
-  pair_12935  resume_2587 × jd_2590
-  pair_12936  resume_2588 × jd_2586
-  pair_12937  resume_2588 × jd_2587
-  pair_12938  resume_2588 × jd_2588
-  pair_12939  resume_2588 × jd_2589
-  pair_12940  resume_2588 × jd_2590
-  pair_12941  resume_2589 × jd_2586
-  pair_12942  resume_2589 × jd_2587
-  pair_12943  resume_2589 × jd_2588
-  pair_12944  resume_2589 × jd_2589
-  pair_12945  resume_2589 × jd_2590
-  pair_12946  resume_2590 × jd_2586
-  pair_12947  resume_2590 × jd_2587
-  pair_12948  resume_2590 × jd_2588
-  pair_12949  resume_2590 × jd_2589
-  pair_12950  resume_2590 × jd_2590
+  pair_12951  resume_2591 × jd_2591
+  pair_12952  resume_2591 × jd_2592
+  pair_12953  resume_2591 × jd_2593
+  pair_12954  resume_2591 × jd_2594
+  pair_12955  resume_2591 × jd_2595
+  pair_12956  resume_2592 × jd_2591
+  pair_12957  resume_2592 × jd_2592
+  pair_12958  resume_2592 × jd_2593
+  pair_12959  resume_2592 × jd_2594
+  pair_12960  resume_2592 × jd_2595
+  pair_12961  resume_2593 × jd_2591
+  pair_12962  resume_2593 × jd_2592
+  pair_12963  resume_2593 × jd_2593
+  pair_12964  resume_2593 × jd_2594
+  pair_12965  resume_2593 × jd_2595
+  pair_12966  resume_2594 × jd_2591
+  pair_12967  resume_2594 × jd_2592
+  pair_12968  resume_2594 × jd_2593
+  pair_12969  resume_2594 × jd_2594
+  pair_12970  resume_2594 × jd_2595
+  pair_12971  resume_2595 × jd_2591
+  pair_12972  resume_2595 × jd_2592
+  pair_12973  resume_2595 × jd_2593
+  pair_12974  resume_2595 × jd_2594
+  pair_12975  resume_2595 × jd_2595
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
