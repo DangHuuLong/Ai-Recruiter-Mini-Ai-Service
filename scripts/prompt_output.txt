@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2611 | level: intern | exp: 0.4 yrs
-  skills: Procurement Support, Inventory Tracking, ERP Data Entry, Purchase Orders, Supplier Communication, Logistics Coordination, Stock Reconciliation, Warehouse Operations, Reporting, Spreadsheet Analysis
-  background: Final-year student in Supply Chain Management with 0.4 years of internship experience supporting procurement and logistics operations. Assisted with purchase order processing, inventory checks, suppli
+  id: resume_2616 | level: intern | exp: 0.4 yrs
+  skills: Product Research, User Stories, Agile Methodology, Backlog Management, Stakeholder Communication, Requirements Gathering, Roadmap Support, Sprint Planning, Product Analytics, Documentation
+  background: Final-year student in information systems with 0.4 years of internship experience supporting product management activities for a software team. Assisted product managers with backlog maintenance, user
 
-  id: resume_2612 | level: junior | exp: 1.6 yrs
-  skills: Procurement, Inventory Control, ERP Systems, Order Fulfillment, Supplier Management, Logistics Operations, Demand Planning Support, Reporting, Warehouse Coordination, Data Analysis
-  background: Supply chain coordinator with 1.6 years of experience supporting procurement, inventory control, and logistics execution activities. Managed purchase order updates, monitored supplier deliveries, and 
+  id: resume_2617 | level: junior | exp: 1.5 yrs
+  skills: Product Coordination, Backlog Management, User Stories, Agile Delivery, Stakeholder Management, Requirements Analysis, Roadmap Planning, Product Analytics, Market Research, Release Coordination
+  background: Product coordinator with 1.5 years of experience supporting software product development and agile delivery. Worked closely with product managers to maintain backlogs, refine user stories, and coordin
 
-  id: resume_2613 | level: middle | exp: 4.4 yrs
-  skills: Procurement Management, Inventory Optimization, ERP Administration, Demand Planning, Supplier Performance, Logistics Management, Forecasting, Process Improvement, Warehouse Planning, KPI Reporting
-  background: Supply chain analyst with 4.4 years of experience managing procurement planning, inventory optimization, and logistics performance initiatives. Led projects focused on forecasting accuracy, supplier p
+  id: resume_2618 | level: middle | exp: 4.3 yrs
+  skills: Product Strategy, Roadmap Management, Agile Leadership, Stakeholder Alignment, Requirements Management, Product Analytics, Customer Research, Prioritization, Release Planning, Cross Functional Collaboration
+  background: Product manager with 4.3 years of experience leading software products from discovery through delivery. Managed product roadmaps, prioritized feature investments, and collaborated with engineering, de
 
-  id: resume_2614 | level: senior | exp: 6.5 yrs
-  skills: Supply Chain Leadership, Procurement Strategy, Inventory Governance, ERP Transformation, Supplier Leadership, Logistics Strategy, Operational Excellence, Risk Management, Team Leadership, Performance Management
-  background: Senior supply chain manager with 6.5 years of experience leading procurement strategy, inventory governance, and logistics operations. Directed teams responsible for sourcing coordination, supplier ma
+  id: resume_2619 | level: senior | exp: 6.4 yrs
+  skills: Product Leadership, Strategic Roadmaps, Stakeholder Leadership, Agile Governance, Portfolio Management, Product Strategy, Business Case Development, Risk Management, Performance Metrics, Team Mentoring
+  background: Senior product manager with 6.4 years of experience leading product portfolios and guiding cross-functional teams through complex technology initiatives. Owned strategic roadmaps, managed stakeholder 
 
-  id: resume_2615 | level: senior | exp: 9.4 yrs
-  skills: Enterprise Supply Chain Strategy, Procurement Governance, Inventory Strategy, ERP Governance, Executive Leadership, Logistics Transformation, Strategic Roadmaps, Network Optimization, Organizational Leadership, Capability Development
-  background: Principal supply chain executive with 9.4 years of experience defining enterprise procurement strategy, inventory governance frameworks, and logistics transformation programs. Established governance s
+  id: resume_2620 | level: senior | exp: 9.5 yrs
+  skills: Enterprise Product Strategy, Portfolio Governance, Executive Stakeholder Management, Product Transformation, Strategic Roadmaps, Investment Prioritization, Organizational Leadership, Capability Development, Product Governance, Operating Model Design
+  background: Principal product executive with 9.5 years of experience defining enterprise product strategy and overseeing large-scale technology portfolios. Established governance frameworks for roadmap planning, 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2611 | title: Supply Chain Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Procurement Support, Inventory Tracking, ERP Data Entry, Purchase Orders, Supplier Communication
-  description: Seeking a supply chain operations intern to support procurement administration, inventory tracking, ERP data maintenance, and supplier communication activities. The role assists op
+  id: jd_2616 | title: Product Management Intern | level: intern | min_exp: 0 yrs
+  required_skills: User Stories, Agile Methodology, Backlog Management, Stakeholder Communication, Roadmap Support
+  description: Seeking a product management intern to support roadmap tracking, backlog organization, and stakeholder communication activities. Responsibilities include documenting user stories, 
 
-  id: jd_2612 | title: Junior Supply Chain Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, Inventory Control, ERP Systems, Order Fulfillment, Supplier Management
-  description: Looking for a junior supply chain coordinator to manage procurement transactions, inventory control activities, ERP updates, and supplier interactions. The position supports logist
+  id: jd_2617 | title: Associate Product Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Product Coordination, Backlog Management, Agile Delivery, Requirements Analysis, Stakeholder Management
+  description: Looking for a junior product professional to coordinate agile delivery activities and support roadmap execution. Responsibilities include backlog refinement, stakeholder coordinati
 
-  id: jd_2613 | title: Supply Chain Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Procurement Management, Inventory Optimization, ERP Administration, Demand Planning, Supplier Performance
-  description: Seeking an experienced supply chain analyst to drive procurement planning, inventory optimization, ERP administration, and logistics performance improvements. Responsibilities incl
+  id: jd_2618 | title: Product Manager | level: middle | min_exp: 3 yrs
+  required_skills: Product Strategy, Roadmap Management, Stakeholder Alignment, Product Analytics, Prioritization
+  description: Seeking an experienced product manager to own roadmap development, prioritization, and cross-functional execution. Responsibilities include customer research, stakeholder alignment
 
-  id: jd_2614 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Supply Chain Leadership, Procurement Strategy, Inventory Governance, Supplier Leadership, Logistics Strategy
-  description: Hiring a senior supply chain manager to lead procurement strategy, inventory governance, supplier leadership, and logistics operations. The position oversees performance management
+  id: jd_2619 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
+  required_skills: Product Leadership, Strategic Roadmaps, Stakeholder Leadership, Agile Governance, Portfolio Management
+  description: Hiring a senior product manager to lead strategic roadmap initiatives and coordinate delivery across multiple teams. Responsibilities include stakeholder leadership, portfolio plan
 
-  id: jd_2615 | title: Principal Supply Chain Transformation Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Supply Chain Strategy, Procurement Governance, Inventory Strategy, ERP Governance, Executive Leadership
-  description: An experienced principal leader is required to define enterprise supply chain strategy and oversee procurement, inventory, ERP, and logistics transformation programs. Responsibilit
+  id: jd_2620 | title: Principal Product Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Product Strategy, Portfolio Governance, Executive Stakeholder Management, Product Transformation, Strategic Roadmaps
+  description: An experienced product executive is required to define enterprise product strategy and oversee transformation initiatives. Responsibilities include governance development, executiv
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~6 pairs
-  excellent_match: ~11 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~6 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_13051  resume_2611 × jd_2611
-  pair_13052  resume_2611 × jd_2612
-  pair_13053  resume_2611 × jd_2613
-  pair_13054  resume_2611 × jd_2614
-  pair_13055  resume_2611 × jd_2615
-  pair_13056  resume_2612 × jd_2611
-  pair_13057  resume_2612 × jd_2612
-  pair_13058  resume_2612 × jd_2613
-  pair_13059  resume_2612 × jd_2614
-  pair_13060  resume_2612 × jd_2615
-  pair_13061  resume_2613 × jd_2611
-  pair_13062  resume_2613 × jd_2612
-  pair_13063  resume_2613 × jd_2613
-  pair_13064  resume_2613 × jd_2614
-  pair_13065  resume_2613 × jd_2615
-  pair_13066  resume_2614 × jd_2611
-  pair_13067  resume_2614 × jd_2612
-  pair_13068  resume_2614 × jd_2613
-  pair_13069  resume_2614 × jd_2614
-  pair_13070  resume_2614 × jd_2615
-  pair_13071  resume_2615 × jd_2611
-  pair_13072  resume_2615 × jd_2612
-  pair_13073  resume_2615 × jd_2613
-  pair_13074  resume_2615 × jd_2614
-  pair_13075  resume_2615 × jd_2615
+  pair_13076  resume_2616 × jd_2616
+  pair_13077  resume_2616 × jd_2617
+  pair_13078  resume_2616 × jd_2618
+  pair_13079  resume_2616 × jd_2619
+  pair_13080  resume_2616 × jd_2620
+  pair_13081  resume_2617 × jd_2616
+  pair_13082  resume_2617 × jd_2617
+  pair_13083  resume_2617 × jd_2618
+  pair_13084  resume_2617 × jd_2619
+  pair_13085  resume_2617 × jd_2620
+  pair_13086  resume_2618 × jd_2616
+  pair_13087  resume_2618 × jd_2617
+  pair_13088  resume_2618 × jd_2618
+  pair_13089  resume_2618 × jd_2619
+  pair_13090  resume_2618 × jd_2620
+  pair_13091  resume_2619 × jd_2616
+  pair_13092  resume_2619 × jd_2617
+  pair_13093  resume_2619 × jd_2618
+  pair_13094  resume_2619 × jd_2619
+  pair_13095  resume_2619 × jd_2620
+  pair_13096  resume_2620 × jd_2616
+  pair_13097  resume_2620 × jd_2617
+  pair_13098  resume_2620 × jd_2618
+  pair_13099  resume_2620 × jd_2619
+  pair_13100  resume_2620 × jd_2620
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
