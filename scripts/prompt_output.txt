@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2581 | level: intern | exp: 0.4 yrs
-  skills: Requirements Gathering, BPMN, Stakeholder Communication, User Stories, Process Mapping, Requirement Traceability, Documentation, User Acceptance Testing, Project Coordination, Reporting
-  background: Final-year student in Business Information Systems with 0.4 years of internship experience supporting business analysis and project coordination activities. Assisted senior analysts in gathering requi
+  id: resume_2586 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Management, Content Creation, Keyword Research, Google Analytics, Content Scheduling, Marketing Reporting, Competitor Analysis, CMS, Email Marketing Support
+  background: Final-year marketing student with 0.4 years of internship experience supporting digital marketing campaigns and content publishing activities. Assisted with keyword research, SEO content updates, soci
 
-  id: resume_2582 | level: junior | exp: 1.7 yrs
-  skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, Acceptance Criteria, Process Improvement, UAT, Change Requests, Workshop Facilitation, Project Reporting
-  background: Business analyst with 1.7 years of experience supporting software delivery and process improvement projects. Worked with stakeholders to gather and analyze requirements, facilitate workshops, and main
+  id: resume_2587 | level: junior | exp: 1.6 yrs
+  skills: SEO, Content Marketing, Social Media Management, Google Analytics, Keyword Research, Content Strategy Support, Email Marketing, Audience Segmentation, Campaign Reporting, Conversion Tracking
+  background: Digital marketing specialist with 1.6 years of experience executing SEO and content marketing initiatives for online campaigns. Managed social media publishing schedules, coordinated blog content prod
 
-  id: resume_2583 | level: middle | exp: 4.3 yrs
-  skills: Business Analysis, BPMN, Requirements Management, Stakeholder Engagement, Gap Analysis, Process Improvement, Project Governance, Risk Management, UAT Coordination, Business Impact Analysis
-  background: Business analyst with 4.3 years of experience delivering business transformation and process optimization initiatives. Led requirement elicitation sessions, managed stakeholder engagement, and maintai
+  id: resume_2588 | level: middle | exp: 4.4 yrs
+  skills: SEO Strategy, Content Strategy, Social Media Strategy, Marketing Analytics, Conversion Optimization, Campaign Management, Audience Insights, Editorial Planning, Performance Reporting, Stakeholder Management
+  background: Digital marketing and content strategist with 4.4 years of experience managing integrated campaigns across search, content, and social channels. Led SEO planning, editorial strategy development, and p
 
-  id: resume_2584 | level: senior | exp: 6.4 yrs
-  skills: Strategic Business Analysis, BPMN, Stakeholder Leadership, Project Management, Roadmapping, Risk Management, Business Case Development, Governance, Requirements Prioritization, Change Management
-  background: Senior business analysis and project management professional with 6.4 years of experience leading strategic change initiatives and complex delivery programs. Directed stakeholder alignment efforts, fa
+  id: resume_2589 | level: senior | exp: 6.3 yrs
+  skills: Digital Marketing Leadership, SEO Strategy, Content Governance, Marketing Analytics, Audience Growth, Campaign Leadership, Conversion Optimization, Brand Strategy, Team Management, Marketing Operations
+  background: Senior digital marketing manager with 6.3 years of experience leading content strategy, SEO programs, and multi-channel audience growth initiatives. Directed teams responsible for campaign planning, s
 
-  id: resume_2585 | level: senior | exp: 9.1 yrs
-  skills: Enterprise Business Analysis, BPMN Governance, Portfolio Management, Executive Stakeholder Management, Program Leadership, Process Architecture, Transformation Strategy, Benefits Realization, Capability Development, Governance Frameworks
-  background: Principal business analysis and transformation leader with 9.1 years of experience guiding enterprise programs and portfolio-level governance initiatives. Established business analysis standards, BPMN
+  id: resume_2590 | level: senior | exp: 9.2 yrs
+  skills: Enterprise Marketing Strategy, Content Governance, Executive Stakeholder Management, Marketing Transformation, SEO Governance, Analytics Leadership, Growth Roadmaps, Organizational Leadership, Capability Development, Performance Governance
+  background: Principal digital marketing and content executive with 9.2 years of experience defining enterprise marketing strategy and overseeing large-scale digital transformation programs. Established governance
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2581 | title: Business Analysis Intern | level: intern | min_exp: 0 yrs
-  required_skills: Requirements Gathering, BPMN, Stakeholder Communication, Documentation, User Acceptance Testing
-  description: Seeking a business analysis intern to support requirements gathering, stakeholder communication, BPMN process documentation, and project coordination activities. The role assists a
+  id: jd_2586 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Management, Content Creation, Keyword Research, Google Analytics
+  description: Seeking a digital marketing intern to support SEO research, content publishing, and social media activities. Responsibilities include assisting with keyword analysis, updating webs
 
-  id: jd_2582 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs
-  required_skills: Requirements Analysis, BPMN, Stakeholder Management, User Stories, UAT
-  description: Looking for a junior business analyst to support requirements management and business process improvement initiatives. Responsibilities include stakeholder interviews, user story d
+  id: jd_2587 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Content Marketing, Social Media Management, Google Analytics, Keyword Research
+  description: Looking for a junior digital marketing specialist to execute SEO and content marketing initiatives across digital channels. Responsibilities include managing content schedules, mon
 
-  id: jd_2583 | title: Business Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Requirements Management, BPMN, Stakeholder Engagement, Gap Analysis, Project Governance
-  description: Seeking an experienced business analyst to lead requirement elicitation, stakeholder workshops, and process optimization initiatives. The role involves maintaining requirements, co
+  id: jd_2588 | title: Digital Marketing Strategist | level: middle | min_exp: 3 yrs
+  required_skills: SEO Strategy, Content Strategy, Marketing Analytics, Campaign Management, Editorial Planning
+  description: Seeking an experienced digital marketing strategist to lead SEO planning, content strategy development, and campaign optimization efforts. Responsibilities include audience analysi
 
-  id: jd_2584 | title: Senior Business Analyst | level: senior | min_exp: 5 yrs
-  required_skills: Stakeholder Leadership, BPMN, Project Management, Risk Management, Requirements Prioritization
-  description: Hiring a senior business analyst to drive strategic initiatives and lead stakeholder alignment across complex projects. Responsibilities include requirement prioritization, governa
+  id: jd_2589 | title: Senior Digital Marketing Manager | level: senior | min_exp: 5 yrs
+  required_skills: Digital Marketing Leadership, SEO Strategy, Content Governance, Marketing Analytics, Audience Growth
+  description: Hiring a senior digital marketing manager to lead content strategy, SEO programs, and audience growth initiatives. Responsibilities include managing marketing teams, defining perfo
 
-  id: jd_2585 | title: Principal Business Analysis Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Business Analysis, Portfolio Management, Executive Stakeholder Management, Process Architecture, Governance Frameworks
-  description: An experienced principal-level leader is required to define enterprise business analysis standards and oversee transformation portfolios. Responsibilities include establishing gove
+  id: jd_2590 | title: Principal Marketing Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Enterprise Marketing Strategy, Executive Stakeholder Management, Marketing Transformation, Growth Roadmaps, Performance Governance
+  description: An experienced marketing leader is required to define enterprise marketing strategy and oversee digital transformation initiatives. Responsibilities include governance development,
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~11 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~5 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~10 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12901  resume_2581 × jd_2581
-  pair_12902  resume_2581 × jd_2582
-  pair_12903  resume_2581 × jd_2583
-  pair_12904  resume_2581 × jd_2584
-  pair_12905  resume_2581 × jd_2585
-  pair_12906  resume_2582 × jd_2581
-  pair_12907  resume_2582 × jd_2582
-  pair_12908  resume_2582 × jd_2583
-  pair_12909  resume_2582 × jd_2584
-  pair_12910  resume_2582 × jd_2585
-  pair_12911  resume_2583 × jd_2581
-  pair_12912  resume_2583 × jd_2582
-  pair_12913  resume_2583 × jd_2583
-  pair_12914  resume_2583 × jd_2584
-  pair_12915  resume_2583 × jd_2585
-  pair_12916  resume_2584 × jd_2581
-  pair_12917  resume_2584 × jd_2582
-  pair_12918  resume_2584 × jd_2583
-  pair_12919  resume_2584 × jd_2584
-  pair_12920  resume_2584 × jd_2585
-  pair_12921  resume_2585 × jd_2581
-  pair_12922  resume_2585 × jd_2582
-  pair_12923  resume_2585 × jd_2583
-  pair_12924  resume_2585 × jd_2584
-  pair_12925  resume_2585 × jd_2585
+  pair_12926  resume_2586 × jd_2586
+  pair_12927  resume_2586 × jd_2587
+  pair_12928  resume_2586 × jd_2588
+  pair_12929  resume_2586 × jd_2589
+  pair_12930  resume_2586 × jd_2590
+  pair_12931  resume_2587 × jd_2586
+  pair_12932  resume_2587 × jd_2587
+  pair_12933  resume_2587 × jd_2588
+  pair_12934  resume_2587 × jd_2589
+  pair_12935  resume_2587 × jd_2590
+  pair_12936  resume_2588 × jd_2586
+  pair_12937  resume_2588 × jd_2587
+  pair_12938  resume_2588 × jd_2588
+  pair_12939  resume_2588 × jd_2589
+  pair_12940  resume_2588 × jd_2590
+  pair_12941  resume_2589 × jd_2586
+  pair_12942  resume_2589 × jd_2587
+  pair_12943  resume_2589 × jd_2588
+  pair_12944  resume_2589 × jd_2589
+  pair_12945  resume_2589 × jd_2590
+  pair_12946  resume_2590 × jd_2586
+  pair_12947  resume_2590 × jd_2587
+  pair_12948  resume_2590 × jd_2588
+  pair_12949  resume_2590 × jd_2589
+  pair_12950  resume_2590 × jd_2590
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
