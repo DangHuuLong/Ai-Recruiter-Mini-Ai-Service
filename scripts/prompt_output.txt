@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2401 | level: intern | exp: 0.3 yrs
-  skills: Figma, Wireframing, Typography, User Research, Prototyping
-  background: I am a passionate UI/UX design student currently finishing my degree. I have a strong foundation in visual hierarchy, typography, and basic wireframing. Through academic projects, I have learned to tr
+  id: resume_2406 | level: intern | exp: 0.3 yrs
+  skills: Python, JavaScript, React, Flask, HTML
+  background: I am a computer science student passionate about full-stack web development. Through my academic coursework, I have developed a strong foundation in Python and JavaScript. I have built simple web appl
 
-  id: resume_2402 | level: junior | exp: 1.8 yrs
-  skills: Figma, UI Design, High-Fidelity Prototyping, User Research, User Flows
-  background: As a Junior Product Designer with 1.8 years of experience, I have contributed to the end-to-end design process for mobile and web applications. My work focuses on creating responsive UI designs, devel
+  id: resume_2407 | level: junior | exp: 1.5 yrs
+  skills: Django, React, Redux, PostgreSQL, JavaScript
+  background: As a Junior Full-Stack Developer with 1.5 years of experience, I have successfully contributed to the development and maintenance of web applications. I am proficient in building robust back-end servi
 
-  id: resume_2403 | level: middle | exp: 4.5 yrs
-  skills: Design Systems, Figma, User Research, Interaction Design, Data-Driven Design
-  background: I am a Product Designer with 4.5 years of experience delivering user-centric solutions. My background includes leading design discovery workshops, conducting comprehensive user research, and architect
+  id: resume_2408 | level: middle | exp: 4.0 yrs
+  skills: FastAPI, Python, React, Docker, AWS
+  background: I am a versatile Full-Stack Developer with 4 years of experience crafting high-performance web applications. My expertise lies in designing scalable architectures using FastAPI and Python for the back
 
-  id: resume_2404 | level: senior | exp: 6.5 yrs
-  skills: Product Strategy, Design Systems, Accessibility, UX Architecture, Mentorship
-  background: Senior Product Designer with 6.5 years of experience focused on product strategy and high-level UX architecture. I have successfully led design teams through complex product launches, emphasizing acce
+  id: resume_2409 | level: senior | exp: 6.0 yrs
+  skills: Django, FastAPI, React, TypeScript, System Design
+  background: Senior Full-Stack Developer with 6 years of experience in leading the development of enterprise-grade web solutions. My core strength is in bridging complex backend logic with highly intuitive, access
 
-  id: resume_2405 | level: senior | exp: 9.5 yrs
-  skills: UX Strategy, Design Operations, Product Roadmapping, User Research, Change Management
-  background: Principal Product Designer with over 9 years of experience in shaping digital ecosystems and organizational design culture. I specialize in visionary UX strategy, complex user research methodology, an
+  id: resume_2410 | level: senior | exp: 9.0 yrs
+  skills: Python, React, Distributed Systems, Kubernetes, Technical Leadership
+  background: Principal Full-Stack Engineer with 9 years of experience driving technological innovation and engineering excellence. I specialize in building highly scalable, distributed systems using Python and com
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2401 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
-  required_skills: Figma, Wireframing, User Research
-  description: We are looking for a motivated UI/UX Design Intern to assist our product team. You will support designers with wireframing, creating UI assets in Figma, and helping with user resea
+  id: jd_2406 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, JavaScript, React
+  description: We are seeking a Full-Stack Development Intern to support our engineering team. You will assist with coding small features, debugging issues, and learning our stack. This role offe
 
-  id: jd_2402 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
-  required_skills: Figma, UI Design, Prototyping
-  description: Our team is seeking a Junior Product Designer to contribute to our core product offerings. You will be responsible for creating responsive UI designs, developing high-fidelity prot
+  id: jd_2407 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Django, React, PostgreSQL
+  description: Our team is looking for a Junior Full-Stack Developer to work on our web applications. You will be responsible for developing new features, maintaining existing code, and ensuring 
 
-  id: jd_2403 | title: Product Designer | level: middle | min_exp: 3 yrs
-  required_skills: Design Systems, Figma, User Research
-  description: We are looking for a Product Designer to take ownership of end-to-end design processes. You will lead design discovery, build scalable systems in Figma, and use research data to gu
+  id: jd_2408 | title: Full-Stack Software Engineer | level: middle | min_exp: 3 yrs
+  required_skills: FastAPI, Python, React
+  description: We are looking for an experienced Full-Stack Software Engineer to build scalable features. You will design backend services using FastAPI and Python, and build responsive frontend 
 
-  id: jd_2404 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
-  required_skills: Product Strategy, Design Systems, Accessibility
-  description: Our team needs a Senior Product Designer to drive product vision and UX strategy. You will lead complex projects, mentor junior designers, and refine our design language. We are se
+  id: jd_2409 | title: Senior Full-Stack Developer | level: senior | min_exp: 5 yrs
+  required_skills: Python, React, System Design
+  description: We need a Senior Full-Stack Developer to lead our core product development. You will handle complex system design, improve performance, and mentor other engineers. Your focus will 
 
-  id: jd_2405 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
-  required_skills: UX Strategy, Design Operations, Product Roadmapping
-  description: We are seeking a visionary Principal Product Designer to lead our design strategy and operations. You will shape our product roadmap, lead high-level research initiatives, and scal
+  id: jd_2410 | title: Principal Full-Stack Engineer | level: senior | min_exp: 7 yrs
+  required_skills: Python, React, Distributed Systems
+  description: We are searching for a Principal Full-Stack Engineer to lead our technical strategy. You will oversee architectural shifts, guide team standards, and ensure our systems are resilie
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
+  strong_match: ~7 pairs
   excellent_match: ~10 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~7 pairs
+  moderate_match: ~1 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12001  resume_2401 × jd_2401
-  pair_12002  resume_2401 × jd_2402
-  pair_12003  resume_2401 × jd_2403
-  pair_12004  resume_2401 × jd_2404
-  pair_12005  resume_2401 × jd_2405
-  pair_12006  resume_2402 × jd_2401
-  pair_12007  resume_2402 × jd_2402
-  pair_12008  resume_2402 × jd_2403
-  pair_12009  resume_2402 × jd_2404
-  pair_12010  resume_2402 × jd_2405
-  pair_12011  resume_2403 × jd_2401
-  pair_12012  resume_2403 × jd_2402
-  pair_12013  resume_2403 × jd_2403
-  pair_12014  resume_2403 × jd_2404
-  pair_12015  resume_2403 × jd_2405
-  pair_12016  resume_2404 × jd_2401
-  pair_12017  resume_2404 × jd_2402
-  pair_12018  resume_2404 × jd_2403
-  pair_12019  resume_2404 × jd_2404
-  pair_12020  resume_2404 × jd_2405
-  pair_12021  resume_2405 × jd_2401
-  pair_12022  resume_2405 × jd_2402
-  pair_12023  resume_2405 × jd_2403
-  pair_12024  resume_2405 × jd_2404
-  pair_12025  resume_2405 × jd_2405
+  pair_12026  resume_2406 × jd_2406
+  pair_12027  resume_2406 × jd_2407
+  pair_12028  resume_2406 × jd_2408
+  pair_12029  resume_2406 × jd_2409
+  pair_12030  resume_2406 × jd_2410
+  pair_12031  resume_2407 × jd_2406
+  pair_12032  resume_2407 × jd_2407
+  pair_12033  resume_2407 × jd_2408
+  pair_12034  resume_2407 × jd_2409
+  pair_12035  resume_2407 × jd_2410
+  pair_12036  resume_2408 × jd_2406
+  pair_12037  resume_2408 × jd_2407
+  pair_12038  resume_2408 × jd_2408
+  pair_12039  resume_2408 × jd_2409
+  pair_12040  resume_2408 × jd_2410
+  pair_12041  resume_2409 × jd_2406
+  pair_12042  resume_2409 × jd_2407
+  pair_12043  resume_2409 × jd_2408
+  pair_12044  resume_2409 × jd_2409
+  pair_12045  resume_2409 × jd_2410
+  pair_12046  resume_2410 × jd_2406
+  pair_12047  resume_2410 × jd_2407
+  pair_12048  resume_2410 × jd_2408
+  pair_12049  resume_2410 × jd_2409
+  pair_12050  resume_2410 × jd_2410
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
