@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2441 | level: intern | exp: 0.3 yrs
-  skills: SEO, Social Media, Analytics, Content Creation
-  background: I am a marketing student eager to start a career in digital content and social media management. Through my academic coursework, I have developed a foundational understanding of search engine optimiza
+  id: resume_2446 | level: intern | exp: 0.4 yrs
+  skills: Flutter, React Native, Kotlin, Dart, JavaScript, REST API, SQLite, Git, Firebase, Unit Testing
+  background: Final-year Computer Science student focused on mobile application development with four months of academic and freelance experience. Built several Android and cross-platform applications as part of co
 
-  id: resume_2442 | level: junior | exp: 1.8 yrs
-  skills: SEO, Social Media Management, Google Analytics, Content Strategy
-  background: As a Junior Digital Marketing Specialist with 1.8 years of experience, I am focused on executing content strategies that drive engagement and conversions. I have practical experience managing social m
+  id: resume_2447 | level: junior | exp: 1.6 yrs
+  skills: React Native, Flutter, Redux, Firebase, Dart, JavaScript, Kotlin, REST API, Git, Crashlytics
+  background: Mobile developer with 1.6 years of professional experience building consumer-facing applications using React Native and Flutter. Worked in a small product team delivering new features, fixing defects,
 
-  id: resume_2443 | level: middle | exp: 4.2 yrs
-  skills: SEO, Content Strategy, Data Analytics, Performance Marketing
-  background: I am a Digital Marketing Manager with 4 years of experience, specializing in end-to-end content strategy, SEO, and performance marketing. My career has focused on crafting data-driven strategies that 
+  id: resume_2448 | level: middle | exp: 4.2 yrs
+  skills: Flutter, Kotlin, React Native, MVVM, Clean Architecture, Fastlane, CI/CD, Firebase, GitHub Actions, Unit Testing
+  background: Software engineer with 4.2 years of experience delivering scalable mobile applications across healthcare and fintech domains. Specialized in Flutter and native Android development with Kotlin, while a
 
-  id: resume_2444 | level: senior | exp: 6.8 yrs
-  skills: Digital Strategy, SEO, Performance Marketing, Analytics
-  background: Senior Digital Strategist with over 6 years of experience in orchestrating high-growth digital initiatives and content ecosystems. I excel at developing comprehensive marketing roadmaps, integrating t
+  id: resume_2449 | level: senior | exp: 6.3 yrs
+  skills: Swift, Flutter, iOS, Clean Architecture, Fastlane, Bitrise, Dependency Injection, Performance Optimization, CI/CD, Technical Leadership
+  background: Senior mobile engineer with 6.3 years of experience building and scaling enterprise mobile products. Expertise spans native iOS development with Swift, Flutter-based cross-platform applications, and m
 
-  id: resume_2445 | level: senior | exp: 10.5 yrs
-  skills: Content Strategy, Strategic Leadership, SEO, Analytics
-  background: Principal Content Strategist with 10 years of experience in global brand architecture, editorial leadership, and digital growth. I have dedicated my career to building scalable content ecosystems and 
+  id: resume_2450 | level: senior | exp: 9.1 yrs
+  skills: Swift, Kotlin, Flutter, Architecture, Mobile DevOps, Security, Performance Optimization, Leadership, CI/CD, Accessibility
+  background: Principal-level mobile developer with 9.1 years of experience leading mobile engineering initiatives for high-traffic consumer platforms. Deep expertise in native iOS using Swift, Android using Kotlin
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2441 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
-  required_skills: SEO, Social Media, Content Creation
-  description: We are looking for a Marketing Intern to assist our team with content creation, social media scheduling, and basic analytics. This role offers great exposure to SEO fundamentals an
+  id: jd_2446 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Flutter, React Native, Git, REST API
+  description: Seeking a motivated intern to support development of cross-platform mobile applications. The role involves implementing small features, fixing bugs, and participating in testing ac
 
-  id: jd_2442 | title: Junior Marketing Specialist | level: junior | min_exp: 1 yrs
-  required_skills: SEO, Social Media Management, Analytics
-  description: Join our growing marketing team as a Junior Marketing Specialist. You will be responsible for executing social media strategies, managing daily content updates, and monitoring camp
+  id: jd_2447 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs
+  required_skills: React Native, JavaScript, REST API, Git
+  description: Looking for a junior mobile engineer to develop and maintain React Native applications used by regional customers. The engineer will build new screens, integrate APIs, and support 
 
-  id: jd_2443 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
-  required_skills: SEO, Content Strategy, Data Analytics
-  description: We are seeking a Digital Marketing Manager to own our content strategy and SEO initiatives. You will lead campaigns that drive traffic and engagement, optimize conversion funnels, 
+  id: jd_2448 | title: Mid-Level Flutter Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Flutter, MVVM, CI/CD, Firebase
+  description: A product team is hiring a mid-level Flutter engineer to deliver customer-facing mobile applications. The engineer will design scalable features, collaborate on architecture decisi
 
-  id: jd_2444 | title: Senior Digital Strategist | level: senior | min_exp: 5 yrs
-  required_skills: Digital Strategy, SEO, Performance Marketing
-  description: We are hiring a Senior Digital Strategist to lead our global marketing efforts. You will develop comprehensive digital roadmaps, integrate technical SEO strategies, and scale our h
+  id: jd_2449 | title: Senior iOS Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Swift, iOS, Clean Architecture, CI/CD
+  description: Seeking a senior iOS engineer to lead development of critical mobile capabilities across multiple applications. The role requires ownership of architecture, technical design, and d
 
-  id: jd_2445 | title: Principal Content Architect | level: senior | min_exp: 7 yrs
-  required_skills: Content Strategy, Strategic Leadership, SEO
-  description: We are looking for a Principal Content Architect to lead our enterprise content vision. You will oversee large-scale editorial strategies, establish global governance standards, an
+  id: jd_2450 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Swift, Kotlin, Architecture, Leadership
+  description: An experienced principal mobile architect is required to define long-term technical strategy for a portfolio of mobile products. The role involves leading architectural decisions, 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~7 pairs
-  excellent_match: ~2 pairs
-  moderate_match: ~8 pairs
+  strong_match: ~6 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~3 pairs
   weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12201  resume_2441 × jd_2441
-  pair_12202  resume_2441 × jd_2442
-  pair_12203  resume_2441 × jd_2443
-  pair_12204  resume_2441 × jd_2444
-  pair_12205  resume_2441 × jd_2445
-  pair_12206  resume_2442 × jd_2441
-  pair_12207  resume_2442 × jd_2442
-  pair_12208  resume_2442 × jd_2443
-  pair_12209  resume_2442 × jd_2444
-  pair_12210  resume_2442 × jd_2445
-  pair_12211  resume_2443 × jd_2441
-  pair_12212  resume_2443 × jd_2442
-  pair_12213  resume_2443 × jd_2443
-  pair_12214  resume_2443 × jd_2444
-  pair_12215  resume_2443 × jd_2445
-  pair_12216  resume_2444 × jd_2441
-  pair_12217  resume_2444 × jd_2442
-  pair_12218  resume_2444 × jd_2443
-  pair_12219  resume_2444 × jd_2444
-  pair_12220  resume_2444 × jd_2445
-  pair_12221  resume_2445 × jd_2441
-  pair_12222  resume_2445 × jd_2442
-  pair_12223  resume_2445 × jd_2443
-  pair_12224  resume_2445 × jd_2444
-  pair_12225  resume_2445 × jd_2445
+  pair_12226  resume_2446 × jd_2446
+  pair_12227  resume_2446 × jd_2447
+  pair_12228  resume_2446 × jd_2448
+  pair_12229  resume_2446 × jd_2449
+  pair_12230  resume_2446 × jd_2450
+  pair_12231  resume_2447 × jd_2446
+  pair_12232  resume_2447 × jd_2447
+  pair_12233  resume_2447 × jd_2448
+  pair_12234  resume_2447 × jd_2449
+  pair_12235  resume_2447 × jd_2450
+  pair_12236  resume_2448 × jd_2446
+  pair_12237  resume_2448 × jd_2447
+  pair_12238  resume_2448 × jd_2448
+  pair_12239  resume_2448 × jd_2449
+  pair_12240  resume_2448 × jd_2450
+  pair_12241  resume_2449 × jd_2446
+  pair_12242  resume_2449 × jd_2447
+  pair_12243  resume_2449 × jd_2448
+  pair_12244  resume_2449 × jd_2449
+  pair_12245  resume_2449 × jd_2450
+  pair_12246  resume_2450 × jd_2446
+  pair_12247  resume_2450 × jd_2447
+  pair_12248  resume_2450 × jd_2448
+  pair_12249  resume_2450 × jd_2449
+  pair_12250  resume_2450 × jd_2450
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
