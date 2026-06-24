@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2566 | level: intern | exp: 0.4 yrs
-  skills: Python, React, REST APIs, JavaScript, HTML, CSS, Git, SQL, Frontend Development, Backend Development
-  background: Final-year computer science student with four months of internship experience supporting web application development. Assisted engineers in building React user interfaces, testing API integrations, an
+  id: resume_2571 | level: intern | exp: 0.4 yrs
+  skills: Marketplace Operations, Product Listings, Inventory Tracking, Merchandising Support, Order Management, Retail Reporting, Spreadsheet Analysis, Catalog Management, Customer Service Coordination, Pricing Updates
+  background: Final-year business student with four months of internship experience supporting online retail operations and marketplace administration. Assisted with product listing updates, catalog reviews, invent
 
-  id: resume_2567 | level: junior | exp: 1.6 yrs
-  skills: Python, React, REST APIs, SQL, Git, Docker, Authentication, JavaScript, Testing, Deployment
-  background: Full-stack web developer with 1.6 years of experience building business applications using Python and React. Developed frontend features, integrated REST APIs, and maintained backend services supporti
+  id: resume_2572 | level: junior | exp: 1.5 yrs
+  skills: Marketplace Management, Inventory Control, Product Merchandising, Order Fulfillment, Vendor Coordination, Retail Analytics, Catalog Optimization, Pricing Management, Promotional Campaigns, Marketplace Compliance
+  background: E-commerce coordinator with 1.5 years of experience supporting marketplace operations and digital merchandising activities. Managed product uploads, inventory updates, order issue resolution, and prom
 
-  id: resume_2568 | level: middle | exp: 4.2 yrs
-  skills: Python, React, System Design, REST APIs, SQL, CI/CD, Docker, Automated Testing, Cloud Deployment, Performance Optimization
-  background: Full-stack engineer with 4.2 years of experience designing and delivering scalable web applications. Led implementation of React frontends and Python backend services supporting enterprise workflows. 
+  id: resume_2573 | level: middle | exp: 4.1 yrs
+  skills: Marketplace Strategy, Merchandising, Category Management, Inventory Optimization, Retail Analytics, Vendor Management, Promotional Planning, Operations Management, Sales Analysis, Customer Experience
+  background: E-commerce and retail specialist with 4.1 years of experience managing marketplace growth, merchandising execution, and operational performance. Led category-level initiatives involving assortment pla
 
-  id: resume_2569 | level: senior | exp: 6.3 yrs
-  skills: Python Architecture, React, Technical Leadership, System Design, CI/CD, Cloud Architecture, Performance Optimization, Security, Release Management, Mentoring
-  background: Senior full-stack engineer with 6.3 years of experience leading development of large-scale web products. Specialized in Python backend architecture, React application design, and engineering leadershi
+  id: resume_2574 | level: senior | exp: 6.2 yrs
+  skills: E-commerce Leadership, Marketplace Expansion, Merchandising Strategy, Vendor Leadership, Operations Governance, Commercial Planning, Retail Performance Management, Team Leadership, Pricing Strategy, Customer Retention
+  background: Senior e-commerce manager with 6.2 years of experience leading online retail operations, merchandising programs, and marketplace expansion initiatives. Directed cross-functional teams responsible for 
 
-  id: resume_2570 | level: senior | exp: 9.1 yrs
-  skills: Platform Architecture, Engineering Leadership, Python Strategy, React Governance, Scalability, Technical Roadmaps, Cloud Strategy, Architecture Governance, Organizational Leadership, Transformation Management
-  background: Principal full-stack technology leader with 9.1 years of experience defining web platform strategy and overseeing engineering transformation initiatives. Established architectural governance for Pytho
+  id: resume_2575 | level: senior | exp: 9.3 yrs
+  skills: Marketplace Strategy, Retail Transformation, Executive Leadership, Merchandising Governance, Commercial Strategy, Operational Excellence, Portfolio Leadership, Customer Experience Strategy, Growth Roadmaps, Capability Development
+  background: Principal retail and marketplace executive with 9.3 years of experience defining e-commerce strategy and overseeing large-scale retail transformation programs. Led multi-channel commerce initiatives c
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2566 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, React, REST APIs, Git, JavaScript
-  description: Seeking a full-stack development intern to support React frontend implementation and Python backend maintenance. Responsibilities include API integration, testing, bug fixing, and 
+  id: jd_2571 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Marketplace Operations, Product Listings, Inventory Tracking, Merchandising Support, Retail Reporting
+  description: Seeking an intern to support marketplace operations, product listing maintenance, inventory tracking, and merchandising activities. The role will assist with catalog updates, repor
 
-  id: jd_2567 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, React, SQL, Testing, Deployment
-  description: Looking for a junior full-stack developer to build React interfaces and Python services. The role includes database integration, testing, deployment support, and collaboration with
+  id: jd_2572 | title: Junior Marketplace Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Marketplace Management, Inventory Control, Product Merchandising, Order Fulfillment, Vendor Coordination
+  description: Looking for a junior marketplace coordinator to manage product catalogs, inventory updates, promotional campaigns, and order fulfillment support. The role collaborates with vendors
 
-  id: jd_2568 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, React, System Design, Automated Testing, CI/CD
-  description: Seeking an experienced full-stack engineer to design scalable applications using Python and React. Responsibilities include API architecture, database optimization, automated testi
+  id: jd_2573 | title: E-commerce Merchandising Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Marketplace Strategy, Merchandising, Category Management, Inventory Optimization, Retail Analytics
+  description: Seeking an experienced professional to drive category performance, merchandising initiatives, inventory optimization, and retail analytics. Responsibilities include vendor collabor
 
-  id: jd_2569 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Technical Leadership, System Design, CI/CD, Performance Optimization, Cloud Architecture
-  description: Hiring a senior full-stack engineer to lead architecture decisions and guide development teams. Responsibilities include performance optimization, cloud architecture planning, rele
+  id: jd_2574 | title: Senior E-commerce Manager | level: senior | min_exp: 5 yrs
+  required_skills: E-commerce Leadership, Marketplace Expansion, Merchandising Strategy, Vendor Leadership, Commercial Planning
+  description: Hiring a senior manager to lead marketplace expansion, merchandising strategy, commercial planning, and operational governance. The position oversees teams, vendor relationships, a
 
-  id: jd_2570 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
-  required_skills: Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
-  description: An experienced technology leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include governance, roadmap develo
+  id: jd_2575 | title: Principal Retail Strategy Lead | level: senior | min_exp: 7 yrs
+  required_skills: Marketplace Strategy, Retail Transformation, Executive Leadership, Commercial Strategy, Capability Development
+  description: An experienced leader is required to define enterprise marketplace strategy and oversee retail transformation initiatives. Responsibilities include governance development, executiv
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~2 pairs
-  excellent_match: ~6 pairs
-  moderate_match: ~11 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~8 pairs
+  moderate_match: ~1 pairs
   weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12826  resume_2566 × jd_2566
-  pair_12827  resume_2566 × jd_2567
-  pair_12828  resume_2566 × jd_2568
-  pair_12829  resume_2566 × jd_2569
-  pair_12830  resume_2566 × jd_2570
-  pair_12831  resume_2567 × jd_2566
-  pair_12832  resume_2567 × jd_2567
-  pair_12833  resume_2567 × jd_2568
-  pair_12834  resume_2567 × jd_2569
-  pair_12835  resume_2567 × jd_2570
-  pair_12836  resume_2568 × jd_2566
-  pair_12837  resume_2568 × jd_2567
-  pair_12838  resume_2568 × jd_2568
-  pair_12839  resume_2568 × jd_2569
-  pair_12840  resume_2568 × jd_2570
-  pair_12841  resume_2569 × jd_2566
-  pair_12842  resume_2569 × jd_2567
-  pair_12843  resume_2569 × jd_2568
-  pair_12844  resume_2569 × jd_2569
-  pair_12845  resume_2569 × jd_2570
-  pair_12846  resume_2570 × jd_2566
-  pair_12847  resume_2570 × jd_2567
-  pair_12848  resume_2570 × jd_2568
-  pair_12849  resume_2570 × jd_2569
-  pair_12850  resume_2570 × jd_2570
+  pair_12851  resume_2571 × jd_2571
+  pair_12852  resume_2571 × jd_2572
+  pair_12853  resume_2571 × jd_2573
+  pair_12854  resume_2571 × jd_2574
+  pair_12855  resume_2571 × jd_2575
+  pair_12856  resume_2572 × jd_2571
+  pair_12857  resume_2572 × jd_2572
+  pair_12858  resume_2572 × jd_2573
+  pair_12859  resume_2572 × jd_2574
+  pair_12860  resume_2572 × jd_2575
+  pair_12861  resume_2573 × jd_2571
+  pair_12862  resume_2573 × jd_2572
+  pair_12863  resume_2573 × jd_2573
+  pair_12864  resume_2573 × jd_2574
+  pair_12865  resume_2573 × jd_2575
+  pair_12866  resume_2574 × jd_2571
+  pair_12867  resume_2574 × jd_2572
+  pair_12868  resume_2574 × jd_2573
+  pair_12869  resume_2574 × jd_2574
+  pair_12870  resume_2574 × jd_2575
+  pair_12871  resume_2575 × jd_2571
+  pair_12872  resume_2575 × jd_2572
+  pair_12873  resume_2575 × jd_2573
+  pair_12874  resume_2575 × jd_2574
+  pair_12875  resume_2575 × jd_2575
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
