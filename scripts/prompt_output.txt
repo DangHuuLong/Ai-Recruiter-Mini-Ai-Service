@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2436 | level: intern | exp: 0.2 yrs
-  skills: Linux, Docker, AWS, Shell Scripting
-  background: I am a computer science student with a strong interest in cloud technologies and automation. Through my academic projects, I have gained hands-on experience with basic Linux administration and contain
+  id: resume_2441 | level: intern | exp: 0.3 yrs
+  skills: SEO, Social Media, Analytics, Content Creation
+  background: I am a marketing student eager to start a career in digital content and social media management. Through my academic coursework, I have developed a foundational understanding of search engine optimiza
 
-  id: resume_2437 | level: junior | exp: 1.5 yrs
-  skills: AWS, Terraform, Docker, CI/CD
-  background: As a Junior DevOps Engineer with 1.5 years of experience, I specialize in maintaining cloud infrastructure and optimizing CI/CD workflows. I have practical experience managing AWS environments, utiliz
+  id: resume_2442 | level: junior | exp: 1.8 yrs
+  skills: SEO, Social Media Management, Google Analytics, Content Strategy
+  background: As a Junior Digital Marketing Specialist with 1.8 years of experience, I am focused on executing content strategies that drive engagement and conversions. I have practical experience managing social m
 
-  id: resume_2438 | level: middle | exp: 4.0 yrs
-  skills: Kubernetes, Terraform, AWS, CI/CD
-  background: I am a DevOps Engineer with 4 years of experience specializing in Kubernetes orchestration, microservices management, and scalable cloud architecture. Throughout my career, I have successfully designe
+  id: resume_2443 | level: middle | exp: 4.2 yrs
+  skills: SEO, Content Strategy, Data Analytics, Performance Marketing
+  background: I am a Digital Marketing Manager with 4 years of experience, specializing in end-to-end content strategy, SEO, and performance marketing. My career has focused on crafting data-driven strategies that 
 
-  id: resume_2439 | level: senior | exp: 6.5 yrs
-  skills: Cloud Architecture, Kubernetes, Terraform, AWS
-  background: Senior Cloud Engineer with over 6 years of experience in architecting and maintaining highly scalable, secure, and performant cloud infrastructures. My expertise spans cloud migration strategies, adva
+  id: resume_2444 | level: senior | exp: 6.8 yrs
+  skills: Digital Strategy, SEO, Performance Marketing, Analytics
+  background: Senior Digital Strategist with over 6 years of experience in orchestrating high-growth digital initiatives and content ecosystems. I excel at developing comprehensive marketing roadmaps, integrating t
 
-  id: resume_2440 | level: senior | exp: 10.5 yrs
-  skills: Strategic Leadership, Cloud Architecture, Kubernetes, Terraform
-  background: Principal DevOps Architect with 10 years of experience in strategic infrastructure design, cloud-native transformation, and team leadership. My career has focused on architecting resilient, large-scal
+  id: resume_2445 | level: senior | exp: 10.5 yrs
+  skills: Content Strategy, Strategic Leadership, SEO, Analytics
+  background: Principal Content Strategist with 10 years of experience in global brand architecture, editorial leadership, and digital growth. I have dedicated my career to building scalable content ecosystems and 
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2436 | title: DevOps Intern | level: intern | min_exp: 0 yrs
-  required_skills: AWS, Docker, Linux
-  description: We are seeking a motivated DevOps Intern to support our engineering team with infrastructure tasks. This internship provides hands-on experience with cloud tools, basic automation,
+  id: jd_2441 | title: Digital Marketing Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media, Content Creation
+  description: We are looking for a Marketing Intern to assist our team with content creation, social media scheduling, and basic analytics. This role offers great exposure to SEO fundamentals an
 
-  id: jd_2437 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs
-  required_skills: AWS, Terraform, Docker
-  description: Our infrastructure team is looking for a Junior DevOps Engineer to focus on provisioning and automation. You will use Terraform to manage cloud resources, improve CI/CD pipelines, 
+  id: jd_2442 | title: Junior Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Social Media Management, Analytics
+  description: Join our growing marketing team as a Junior Marketing Specialist. You will be responsible for executing social media strategies, managing daily content updates, and monitoring camp
 
-  id: jd_2438 | title: DevOps Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Kubernetes, Terraform, AWS
-  description: We are looking for a DevOps Engineer to take ownership of our Kubernetes-based infrastructure. You will optimize our microservices architecture, implement advanced scaling strategi
+  id: jd_2443 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
+  required_skills: SEO, Content Strategy, Data Analytics
+  description: We are seeking a Digital Marketing Manager to own our content strategy and SEO initiatives. You will lead campaigns that drive traffic and engagement, optimize conversion funnels, 
 
-  id: jd_2439 | title: Senior DevOps Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Cloud Architecture, Kubernetes, Terraform
-  description: We are hiring a Senior DevOps Engineer to lead our infrastructure architecture. You will design secure cloud environments, implement enterprise-level automation, and drive the mode
+  id: jd_2444 | title: Senior Digital Strategist | level: senior | min_exp: 5 yrs
+  required_skills: Digital Strategy, SEO, Performance Marketing
+  description: We are hiring a Senior Digital Strategist to lead our global marketing efforts. You will develop comprehensive digital roadmaps, integrate technical SEO strategies, and scale our h
 
-  id: jd_2440 | title: Principal DevOps Architect | level: senior | min_exp: 7 yrs
-  required_skills: Strategic Leadership, Cloud Architecture, Kubernetes
-  description: We are looking for a Principal DevOps Architect to drive our enterprise cloud strategy. You will oversee large-scale infrastructure transformation, define long-term architectural s
+  id: jd_2445 | title: Principal Content Architect | level: senior | min_exp: 7 yrs
+  required_skills: Content Strategy, Strategic Leadership, SEO
+  description: We are looking for a Principal Content Architect to lead our enterprise content vision. You will oversee large-scale editorial strategies, establish global governance standards, an
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~4 pairs
-  excellent_match: ~14 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~3 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~8 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12176  resume_2436 × jd_2436
-  pair_12177  resume_2436 × jd_2437
-  pair_12178  resume_2436 × jd_2438
-  pair_12179  resume_2436 × jd_2439
-  pair_12180  resume_2436 × jd_2440
-  pair_12181  resume_2437 × jd_2436
-  pair_12182  resume_2437 × jd_2437
-  pair_12183  resume_2437 × jd_2438
-  pair_12184  resume_2437 × jd_2439
-  pair_12185  resume_2437 × jd_2440
-  pair_12186  resume_2438 × jd_2436
-  pair_12187  resume_2438 × jd_2437
-  pair_12188  resume_2438 × jd_2438
-  pair_12189  resume_2438 × jd_2439
-  pair_12190  resume_2438 × jd_2440
-  pair_12191  resume_2439 × jd_2436
-  pair_12192  resume_2439 × jd_2437
-  pair_12193  resume_2439 × jd_2438
-  pair_12194  resume_2439 × jd_2439
-  pair_12195  resume_2439 × jd_2440
-  pair_12196  resume_2440 × jd_2436
-  pair_12197  resume_2440 × jd_2437
-  pair_12198  resume_2440 × jd_2438
-  pair_12199  resume_2440 × jd_2439
-  pair_12200  resume_2440 × jd_2440
+  pair_12201  resume_2441 × jd_2441
+  pair_12202  resume_2441 × jd_2442
+  pair_12203  resume_2441 × jd_2443
+  pair_12204  resume_2441 × jd_2444
+  pair_12205  resume_2441 × jd_2445
+  pair_12206  resume_2442 × jd_2441
+  pair_12207  resume_2442 × jd_2442
+  pair_12208  resume_2442 × jd_2443
+  pair_12209  resume_2442 × jd_2444
+  pair_12210  resume_2442 × jd_2445
+  pair_12211  resume_2443 × jd_2441
+  pair_12212  resume_2443 × jd_2442
+  pair_12213  resume_2443 × jd_2443
+  pair_12214  resume_2443 × jd_2444
+  pair_12215  resume_2443 × jd_2445
+  pair_12216  resume_2444 × jd_2441
+  pair_12217  resume_2444 × jd_2442
+  pair_12218  resume_2444 × jd_2443
+  pair_12219  resume_2444 × jd_2444
+  pair_12220  resume_2444 × jd_2445
+  pair_12221  resume_2445 × jd_2441
+  pair_12222  resume_2445 × jd_2442
+  pair_12223  resume_2445 × jd_2443
+  pair_12224  resume_2445 × jd_2444
+  pair_12225  resume_2445 × jd_2445
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
