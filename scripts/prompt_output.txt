@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2541 | level: intern | exp: 0.4 yrs
-  skills: Inventory Management, Procurement, ERP Systems, Microsoft Excel, Warehouse Operations, Demand Forecasting, Data Analysis, Supplier Coordination, Logistics Coordination, Stock Reconciliation
-  background: Final-year Supply Chain Management student with four months of internship experience supporting warehouse and procurement operations for a manufacturing company. Assisted inventory counting, updated s
+  id: resume_2546 | level: intern | exp: 0.4 yrs
+  skills: Flutter, React Native, Dart, JavaScript, REST APIs, Firebase, Git, UI Development, State Management, Mobile Testing
+  background: Final-year Computer Science student specializing in mobile application development with four months of internship experience supporting Android and cross-platform projects. Assisted senior developers 
 
-  id: resume_2542 | level: junior | exp: 1.6 yrs
-  skills: Procurement, Inventory Management, ERP Systems, Purchase Orders, Supplier Management, Microsoft Excel, Logistics Coordination, Demand Planning, Inventory Analysis, Warehouse Operations
-  background: Supply chain coordinator with 1.6 years of experience supporting procurement and inventory operations in retail and distribution environments. Managed purchase orders, monitored supplier deliveries, m
+  id: resume_2547 | level: junior | exp: 1.7 yrs
+  skills: React Native, Flutter, REST APIs, Firebase, Git, Mobile Testing, State Management, JavaScript, Dart, App Deployment
+  background: Mobile developer with 1.7 years of experience building cross-platform applications for retail and service businesses. Developed and maintained applications using React Native and Flutter while integra
 
-  id: resume_2543 | level: middle | exp: 4.3 yrs
-  skills: Inventory Optimization, ERP Systems, Demand Forecasting, Procurement Planning, Supplier Performance Management, Logistics Analytics, Process Improvement, Warehouse Optimization, KPI Reporting, Inventory Control
-  background: Supply chain analyst with 4.3 years of experience managing procurement planning, inventory optimization, and logistics performance initiatives. Led ERP-based inventory projects, analyzed demand trends
+  id: resume_2548 | level: middle | exp: 4.2 yrs
+  skills: Flutter, Kotlin, React Native, System Design, Performance Optimization, Automated Testing, REST APIs, CI/CD, State Management, Android Architecture
+  background: Mobile engineer with 4.2 years of experience designing and delivering scalable mobile applications across Android and cross-platform ecosystems. Led feature development using Flutter, React Native, an
 
-  id: resume_2544 | level: senior | exp: 6.2 yrs
-  skills: Strategic Sourcing, Team Leadership, ERP Transformation, Inventory Strategy, Supplier Negotiation, Budget Management, Logistics Optimization, Stakeholder Management, Supply Planning, Performance Management
-  background: Senior supply chain manager with 6.2 years of experience leading procurement, inventory, and logistics operations across multi-site organizations. Directed supply planning teams, managed ERP transform
+  id: resume_2549 | level: senior | exp: 6.4 yrs
+  skills: Kotlin, Flutter, Mobile Architecture, Team Leadership, CI/CD, Performance Optimization, System Design, Release Management, Technical Leadership, Android Development
+  background: Senior mobile engineer with 6.4 years of experience leading development of high-traffic mobile products across fintech and e-commerce sectors. Specialized in native Android and cross-platform architec
 
-  id: resume_2545 | level: senior | exp: 9.1 yrs
-  skills: Supply Chain Strategy, Executive Leadership, ERP Governance, Organizational Leadership, Global Procurement, Inventory Governance, Change Management, Financial Planning, Logistics Strategy, Transformation Management
-  background: Principal supply chain leader with 9.1 years of experience defining enterprise supply chain strategy and leading large-scale transformation programs. Directed global procurement strategies, governed E
+  id: resume_2550 | level: senior | exp: 9.5 yrs
+  skills: Mobile Strategy, Platform Architecture, Engineering Leadership, Organizational Leadership, Technical Roadmaps, Scalability, Architecture Governance, Change Management, Executive Communication, Mobile Transformation
+  background: Principal mobile architect with 9.5 years of experience defining enterprise mobile strategy and leading large-scale engineering transformations. Directed cross-functional teams responsible for multipl
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2541 | title: Supply Chain Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Inventory Management, Procurement, ERP Systems, Microsoft Excel, Warehouse Operations
-  description: Seeking a supply chain intern to support inventory and procurement activities. Responsibilities include maintaining ERP records, assisting stock counts, preparing procurement docum
+  id: jd_2546 | title: Mobile Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Flutter, React Native, REST APIs, Git, Mobile Testing
+  description: Seeking a mobile development intern to support implementation and testing of mobile applications using Flutter and React Native. Responsibilities include developing UI components, 
 
-  id: jd_2542 | title: Procurement and Inventory Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Procurement, Inventory Management, ERP Systems, Purchase Orders, Supplier Management
-  description: Looking for a coordinator to manage purchase orders, maintain ERP inventory records, and support supplier communication. The role involves inventory analysis, logistics coordinatio
+  id: jd_2547 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs
+  required_skills: Flutter, React Native, Firebase, REST APIs, App Deployment
+  description: Looking for a junior mobile developer to build and maintain cross-platform applications using Flutter and React Native. The role includes implementing features, integrating backend
 
-  id: jd_2543 | title: Supply Chain Analyst | level: middle | min_exp: 3 yrs
-  required_skills: Inventory Optimization, Demand Forecasting, ERP Systems, Procurement Planning, Process Improvement
-  description: Seeking a supply chain analyst to optimize inventory performance and improve procurement planning processes. Responsibilities include forecasting demand, analyzing logistics KPIs, 
+  id: jd_2548 | title: Mobile Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Kotlin, System Design, Performance Optimization, Automated Testing, Flutter
+  description: Seeking a mobile engineer to design scalable mobile applications and improve performance across Android and cross-platform products. Responsibilities include architecture design, a
 
-  id: jd_2544 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
-  required_skills: Strategic Sourcing, Team Leadership, ERP Transformation, Inventory Strategy, Supplier Negotiation
-  description: Hiring a senior manager to oversee procurement, inventory strategy, and logistics performance across regional operations. Responsibilities include leading teams, negotiating suppli
+  id: jd_2549 | title: Senior Mobile Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Mobile Architecture, Team Leadership, CI/CD, Kotlin, Performance Optimization
+  description: Hiring a senior mobile engineer to lead architecture decisions and guide mobile development teams. Responsibilities include establishing engineering standards, managing releases, o
 
-  id: jd_2545 | title: Director of Supply Chain Strategy | level: senior | min_exp: 7 yrs
-  required_skills: Supply Chain Strategy, Executive Leadership, ERP Governance, Global Procurement, Change Management
-  description: An experienced leader is required to define enterprise supply chain strategy and oversee transformation initiatives. Responsibilities include governing ERP modernization, directing
+  id: jd_2550 | title: Principal Mobile Architect | level: senior | min_exp: 7 yrs
+  required_skills: Mobile Strategy, Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability
+  description: An experienced mobile leader is required to define enterprise mobile strategy and oversee platform transformation initiatives. Responsibilities include establishing architecture go
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~8 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~5 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~10 pairs
+  weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12701  resume_2541 × jd_2541
-  pair_12702  resume_2541 × jd_2542
-  pair_12703  resume_2541 × jd_2543
-  pair_12704  resume_2541 × jd_2544
-  pair_12705  resume_2541 × jd_2545
-  pair_12706  resume_2542 × jd_2541
-  pair_12707  resume_2542 × jd_2542
-  pair_12708  resume_2542 × jd_2543
-  pair_12709  resume_2542 × jd_2544
-  pair_12710  resume_2542 × jd_2545
-  pair_12711  resume_2543 × jd_2541
-  pair_12712  resume_2543 × jd_2542
-  pair_12713  resume_2543 × jd_2543
-  pair_12714  resume_2543 × jd_2544
-  pair_12715  resume_2543 × jd_2545
-  pair_12716  resume_2544 × jd_2541
-  pair_12717  resume_2544 × jd_2542
-  pair_12718  resume_2544 × jd_2543
-  pair_12719  resume_2544 × jd_2544
-  pair_12720  resume_2544 × jd_2545
-  pair_12721  resume_2545 × jd_2541
-  pair_12722  resume_2545 × jd_2542
-  pair_12723  resume_2545 × jd_2543
-  pair_12724  resume_2545 × jd_2544
-  pair_12725  resume_2545 × jd_2545
+  pair_12726  resume_2546 × jd_2546
+  pair_12727  resume_2546 × jd_2547
+  pair_12728  resume_2546 × jd_2548
+  pair_12729  resume_2546 × jd_2549
+  pair_12730  resume_2546 × jd_2550
+  pair_12731  resume_2547 × jd_2546
+  pair_12732  resume_2547 × jd_2547
+  pair_12733  resume_2547 × jd_2548
+  pair_12734  resume_2547 × jd_2549
+  pair_12735  resume_2547 × jd_2550
+  pair_12736  resume_2548 × jd_2546
+  pair_12737  resume_2548 × jd_2547
+  pair_12738  resume_2548 × jd_2548
+  pair_12739  resume_2548 × jd_2549
+  pair_12740  resume_2548 × jd_2550
+  pair_12741  resume_2549 × jd_2546
+  pair_12742  resume_2549 × jd_2547
+  pair_12743  resume_2549 × jd_2548
+  pair_12744  resume_2549 × jd_2549
+  pair_12745  resume_2549 × jd_2550
+  pair_12746  resume_2550 × jd_2546
+  pair_12747  resume_2550 × jd_2547
+  pair_12748  resume_2550 × jd_2548
+  pair_12749  resume_2550 × jd_2549
+  pair_12750  resume_2550 × jd_2550
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
