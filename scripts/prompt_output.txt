@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2381 | level: intern | exp: 0.3 yrs
-  skills: Linux, Python, Networking, Vulnerability Assessment, Security Basics
-  background: I am a final-year Cybersecurity student with a strong passion for ethical hacking and network defense. During my academic career, I have participated in multiple Capture The Flag competitions, develop
+  id: resume_2386 | level: intern | exp: 0.3 yrs
+  skills: Figma, Prototyping, Wireframing, User Research, Visual Design
+  background: I am a final-year Digital Design student with a deep passion for creating intuitive user interfaces and meaningful user experiences. During my academic career, I have focused on understanding design p
 
-  id: resume_2382 | level: junior | exp: 1.5 yrs
-  skills: SIEM, Incident Response, PowerShell, Bash, Firewall Management
-  background: I am a Junior Security Analyst with 1.5 years of experience in monitoring security alerts and maintaining network integrity. In my current role, I actively manage SIEM configurations, investigate secu
+  id: resume_2387 | level: junior | exp: 1.5 yrs
+  skills: Figma, User Research, Prototyping, Usability Testing, Design Systems
+  background: I am a Junior Product Designer with 1.5 years of professional experience crafting user-focused digital products. In my current role, I contribute to the full design process, from initial concept gener
 
-  id: resume_2383 | level: middle | exp: 4.2 yrs
-  skills: Network Security, Penetration Testing, SIEM, Cloud Security, Forensics
-  background: I am an Information Security Engineer with 4 years of experience specializing in network security and threat detection. My professional background includes architecting secure network segments, implem
+  id: resume_2388 | level: middle | exp: 4.2 yrs
+  skills: Figma, User Research, Design Systems, Accessibility, Interaction Design
+  background: I am a Product Designer with 4 years of experience specializing in cross-platform digital products and design systems. My background spans the entire lifecycle of product design, including conducting 
 
-  id: resume_2384 | level: senior | exp: 6.8 yrs
-  skills: Threat Intelligence, Security Operations, Zero Trust, IAM, Incident Response
-  background: Senior Cybersecurity Engineer with 6 years of experience managing large-scale security operations. My focus is on developing comprehensive threat intelligence programs, automating incident response, a
+  id: resume_2389 | level: senior | exp: 6.5 yrs
+  skills: Figma, Strategy, Design Operations, User Research, Prototyping
+  background: Senior Product Designer with 6 years of experience driving design strategy for high-growth digital products. I specialize in leading end-to-end design initiatives, defining design operations, and crea
 
-  id: resume_2385 | level: senior | exp: 9.5 yrs
-  skills: Security Strategy, Cloud Architecture, DevSecOps, Risk Management, Network Security
-  background: Principal Cybersecurity Architect with over 8 years of experience building and governing enterprise-grade security ecosystems. I specialize in high-level security strategy, cross-domain risk managemen
+  id: resume_2390 | level: senior | exp: 9.2 yrs
+  skills: Figma, Design Strategy, Systemic Design, Mentorship, Product Architecture
+  background: Principal Product Designer with over 8 years of experience building scalable product strategies and design ecosystems. I focus on high-level architecture, long-term design roadmaps, and mentoring desi
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2381 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
-  required_skills: Networking, Linux, Security Basics
-  description: We are seeking a motivated Cybersecurity Intern to join our Security Operations Center. You will support our analysts by testing new security monitoring techniques, reviewing logs,
+  id: jd_2386 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, Prototyping, Wireframing
+  description: We are looking for a creative UI/UX Design Intern to support our product team. You will assist with wireframing, creating high-fidelity prototypes, and updating design assets. This
 
-  id: jd_2382 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs
-  required_skills: SIEM, Incident Response, Networking
-  description: We are looking for a Junior Security Analyst to join our team. You will be responsible for monitoring security alerts in our SIEM, conducting initial incident triage, and participa
+  id: jd_2387 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, User Research, Prototyping
+  description: We are seeking a Junior Product Designer to join our creative team. You will be responsible for translating user requirements into intuitive interfaces, conducting usability testin
 
-  id: jd_2383 | title: Security Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Network Security, Penetration Testing, SIEM, Cloud Security
-  description: We are seeking an experienced Security Engineer to build scalable security solutions. You will be responsible for architecting secure network segments, implementing penetration tes
+  id: jd_2388 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Figma, User Research, Design Systems, Prototyping
+  description: Our team is looking for a versatile Product Designer to help shape our core product experience. You will manage the design process end-to-end, contributing to user research, system
 
-  id: jd_2384 | title: Senior Security Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Threat Intelligence, Security Operations, Zero Trust, IAM, Incident Response
-  description: We are looking for a Senior Security Engineer to lead our security operations strategy. You will define how we monitor and protect our infrastructure, including managing advanced X
+  id: jd_2389 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: Figma, User Research, Design Strategy, Prototyping
+  description: We are seeking a Senior Product Designer to lead design strategy and execution. You will define the user experience for complex product initiatives, mentor junior designers, and dr
 
-  id: jd_2385 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
-  required_skills: Security Strategy, Cloud Architecture, DevSecOps, Risk Management, Network Security
-  description: We are seeking a visionary Principal Security Architect to govern our enterprise security strategy. You will oversee the lifecycle of global security ecosystems, from architectural
+  id: jd_2390 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  required_skills: Figma, Design Strategy, Systemic Design, Product Architecture
+  description: We are looking for a visionary Principal Product Designer to govern our global product design ecosystem. You will architect design frameworks, lead systemic design initiatives, and
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~1 pairs
-  weak_match: ~8 pairs
+  strong_match: ~10 pairs
+  excellent_match: ~5 pairs
+  moderate_match: ~5 pairs
+  weak_match: ~5 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11901  resume_2381 × jd_2381
-  pair_11902  resume_2381 × jd_2382
-  pair_11903  resume_2381 × jd_2383
-  pair_11904  resume_2381 × jd_2384
-  pair_11905  resume_2381 × jd_2385
-  pair_11906  resume_2382 × jd_2381
-  pair_11907  resume_2382 × jd_2382
-  pair_11908  resume_2382 × jd_2383
-  pair_11909  resume_2382 × jd_2384
-  pair_11910  resume_2382 × jd_2385
-  pair_11911  resume_2383 × jd_2381
-  pair_11912  resume_2383 × jd_2382
-  pair_11913  resume_2383 × jd_2383
-  pair_11914  resume_2383 × jd_2384
-  pair_11915  resume_2383 × jd_2385
-  pair_11916  resume_2384 × jd_2381
-  pair_11917  resume_2384 × jd_2382
-  pair_11918  resume_2384 × jd_2383
-  pair_11919  resume_2384 × jd_2384
-  pair_11920  resume_2384 × jd_2385
-  pair_11921  resume_2385 × jd_2381
-  pair_11922  resume_2385 × jd_2382
-  pair_11923  resume_2385 × jd_2383
-  pair_11924  resume_2385 × jd_2384
-  pair_11925  resume_2385 × jd_2385
+  pair_11926  resume_2386 × jd_2386
+  pair_11927  resume_2386 × jd_2387
+  pair_11928  resume_2386 × jd_2388
+  pair_11929  resume_2386 × jd_2389
+  pair_11930  resume_2386 × jd_2390
+  pair_11931  resume_2387 × jd_2386
+  pair_11932  resume_2387 × jd_2387
+  pair_11933  resume_2387 × jd_2388
+  pair_11934  resume_2387 × jd_2389
+  pair_11935  resume_2387 × jd_2390
+  pair_11936  resume_2388 × jd_2386
+  pair_11937  resume_2388 × jd_2387
+  pair_11938  resume_2388 × jd_2388
+  pair_11939  resume_2388 × jd_2389
+  pair_11940  resume_2388 × jd_2390
+  pair_11941  resume_2389 × jd_2386
+  pair_11942  resume_2389 × jd_2387
+  pair_11943  resume_2389 × jd_2388
+  pair_11944  resume_2389 × jd_2389
+  pair_11945  resume_2389 × jd_2390
+  pair_11946  resume_2390 × jd_2386
+  pair_11947  resume_2390 × jd_2387
+  pair_11948  resume_2390 × jd_2388
+  pair_11949  resume_2390 × jd_2389
+  pair_11950  resume_2390 × jd_2390
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
