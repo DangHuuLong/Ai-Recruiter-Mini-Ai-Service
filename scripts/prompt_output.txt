@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2506 | level: intern | exp: 0.4 yrs
-  skills: Electronic Medical Records, Patient Scheduling, Medical Terminology, Patient Registration, Healthcare Administration, Microsoft Excel, Insurance Verification, Clinical Operations, Data Entry, Customer Service
-  background: Final-year Healthcare Administration student with four months of internship experience supporting outpatient clinic operations and patient coordination activities. Assisted administrative staff with a
+  id: resume_2511 | level: intern | exp: 0.4 yrs
+  skills: Inventory Management, Microsoft Excel, ERP Systems, Procurement Support, Purchase Order Processing, Warehouse Operations, Data Analysis, SKU Management, Supplier Coordination, Stock Reconciliation
+  background: Final-year Supply Chain Management student with four months of internship experience supporting warehouse and procurement operations in a consumer goods environment. Assisted the logistics team in mai
 
-  id: resume_2507 | level: junior | exp: 1.7 yrs
-  skills: Electronic Medical Records, Patient Coordination, Insurance Verification, Referral Management, Clinical Operations, Appointment Scheduling, Healthcare Documentation, Prior Authorization, Microsoft Excel, Patient Communication
-  background: Healthcare coordinator with 1.7 years of experience supporting clinical operations and patient care administration in ambulatory settings. Managed appointment scheduling, insurance verification, refer
+  id: resume_2512 | level: junior | exp: 1.8 yrs
+  skills: Procurement, Inventory Control, ERP Systems, Purchase Orders, Supplier Management, Microsoft Excel, Logistics Coordination, Demand Planning, Warehouse Management, Inventory Analysis
+  background: Supply chain coordinator with 1.8 years of experience supporting procurement and inventory operations in retail and distribution environments. Responsible for maintaining ERP inventory records, proces
 
-  id: resume_2508 | level: middle | exp: 4.3 yrs
-  skills: Clinical Operations, EMR Optimization, Quality Improvement, Patient Flow Management, Healthcare Analytics, Compliance Monitoring, Staff Training, Performance Reporting, Care Coordination, Workflow Improvement
-  background: Healthcare operations specialist with 4.3 years of experience managing clinical administration and operational improvement initiatives across outpatient facilities. Led projects focused on optimizing 
+  id: resume_2513 | level: middle | exp: 4.5 yrs
+  skills: Demand Forecasting, Inventory Planning, ERP Optimization, Supplier Management, Procurement, Supply Chain Analytics, Process Improvement, Warehouse Operations, KPI Reporting, Logistics Management
+  background: Supply chain specialist with 4.5 years of experience managing procurement, inventory planning, and logistics operations across manufacturing and distribution networks. Led initiatives focused on deman
 
-  id: resume_2509 | level: senior | exp: 6.4 yrs
-  skills: Team Leadership, Clinical Operations, EMR Governance, Strategic Planning, Quality Management, Regulatory Compliance, Budget Management, Care Coordination, Performance Management, Stakeholder Management
-  background: Senior healthcare operations manager with 6.4 years of experience leading clinical administration teams and operational transformation initiatives across multi-site healthcare organizations. Managed e
+  id: resume_2514 | level: senior | exp: 6.2 yrs
+  skills: Team Leadership, Strategic Procurement, ERP Implementation, Inventory Strategy, Supplier Negotiation, Demand Planning, Logistics Optimization, Budget Management, Process Improvement, Stakeholder Management
+  background: Senior supply chain manager with 6.2 years of experience leading procurement, inventory, and logistics operations for regional distribution networks. Directed cross-functional teams responsible for de
 
-  id: resume_2510 | level: senior | exp: 9.1 yrs
-  skills: Healthcare Strategy, Operational Leadership, Enterprise EMR Strategy, Change Management, Executive Leadership, Quality Governance, Financial Planning, Organizational Development, Regulatory Oversight, Healthcare Transformation
-  background: Principal healthcare administrator with 9.1 years of experience directing large-scale healthcare operations and organizational transformation programs. Led enterprise-wide initiatives involving clinic
+  id: resume_2515 | level: senior | exp: 9.4 yrs
+  skills: Supply Chain Strategy, Enterprise ERP Strategy, Executive Leadership, Change Management, Procurement Governance, Network Optimization, Financial Planning, Risk Management, Organizational Leadership, Supply Chain Transformation
+  background: Principal supply chain leader with 9.4 years of experience defining enterprise procurement and logistics strategies for multinational organizations. Directed large-scale supply chain transformation pr
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2506 | title: Healthcare Administration Intern | level: intern | min_exp: 0 yrs
-  required_skills: Electronic Medical Records, Patient Scheduling, Patient Registration, Clinical Operations, Medical Terminology
-  description: Seeking a healthcare administration intern to support daily clinic operations and patient coordination activities. Responsibilities include assisting with appointment scheduling, p
+  id: jd_2511 | title: Supply Chain Operations Intern | level: intern | min_exp: 0 yrs
+  required_skills: Inventory Management, Microsoft Excel, ERP Systems, Procurement Support, Purchase Order Processing
+  description: Seeking a supply chain operations intern to support daily procurement and inventory activities. Responsibilities include updating ERP transactions, processing purchase documentatio
 
-  id: jd_2507 | title: Medical Coordination Specialist | level: junior | min_exp: 1 yrs
-  required_skills: Patient Coordination, Insurance Verification, Referral Management, Electronic Medical Records, Healthcare Documentation
-  description: Looking for a medical coordination specialist to support patient care administration and care coordination activities. Responsibilities include referral management, insurance verif
+  id: jd_2512 | title: Procurement and Inventory Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: Procurement, Inventory Control, ERP Systems, Supplier Management, Microsoft Excel
+  description: Looking for a procurement and inventory coordinator to manage purchasing activities, inventory replenishment, and supplier communications. The role requires maintaining ERP records
 
-  id: jd_2508 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Clinical Operations, Quality Improvement, Healthcare Analytics, Patient Flow Management, Workflow Improvement
-  description: Seeking a clinical operations specialist to optimize healthcare workflows and support quality improvement initiatives across outpatient facilities. Responsibilities include analyzi
+  id: jd_2513 | title: Supply Chain Planning Specialist | level: middle | min_exp: 3 yrs
+  required_skills: Demand Forecasting, Inventory Planning, ERP Optimization, Supplier Management, Supply Chain Analytics
+  description: Seeking a supply chain planning specialist to oversee demand forecasting, inventory planning, and ERP optimization initiatives. Responsibilities include analyzing supply chain perf
 
-  id: jd_2509 | title: Senior Clinical Operations Manager | level: senior | min_exp: 5 yrs
-  required_skills: Team Leadership, Clinical Operations, EMR Governance, Regulatory Compliance, Performance Management
-  description: Hiring a senior clinical operations manager to lead multi-site healthcare administration teams and oversee operational performance. Responsibilities include managing clinical opera
+  id: jd_2514 | title: Senior Supply Chain Manager | level: senior | min_exp: 5 yrs
+  required_skills: Team Leadership, Strategic Procurement, ERP Implementation, Demand Planning, Stakeholder Management
+  description: Hiring a senior supply chain manager to lead procurement, inventory, and logistics functions across regional operations. The role oversees strategic sourcing, ERP implementation, d
 
-  id: jd_2510 | title: Director of Healthcare Operations | level: senior | min_exp: 7 yrs
-  required_skills: Healthcare Strategy, Operational Leadership, Enterprise EMR Strategy, Change Management, Executive Leadership
-  description: An experienced healthcare leader is required to define long-term operational strategy and oversee enterprise healthcare transformation initiatives. Responsibilities include leading
+  id: jd_2515 | title: Director of Supply Chain Transformation | level: senior | min_exp: 7 yrs
+  required_skills: Supply Chain Strategy, Enterprise ERP Strategy, Executive Leadership, Change Management, Procurement Governance
+  description: An experienced supply chain leader is required to define enterprise strategy and lead transformation initiatives across procurement, planning, and logistics functions. Responsibili
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~10 pairs
+  strong_match: ~8 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~4 pairs
+  weak_match: ~3 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12526  resume_2506 × jd_2506
-  pair_12527  resume_2506 × jd_2507
-  pair_12528  resume_2506 × jd_2508
-  pair_12529  resume_2506 × jd_2509
-  pair_12530  resume_2506 × jd_2510
-  pair_12531  resume_2507 × jd_2506
-  pair_12532  resume_2507 × jd_2507
-  pair_12533  resume_2507 × jd_2508
-  pair_12534  resume_2507 × jd_2509
-  pair_12535  resume_2507 × jd_2510
-  pair_12536  resume_2508 × jd_2506
-  pair_12537  resume_2508 × jd_2507
-  pair_12538  resume_2508 × jd_2508
-  pair_12539  resume_2508 × jd_2509
-  pair_12540  resume_2508 × jd_2510
-  pair_12541  resume_2509 × jd_2506
-  pair_12542  resume_2509 × jd_2507
-  pair_12543  resume_2509 × jd_2508
-  pair_12544  resume_2509 × jd_2509
-  pair_12545  resume_2509 × jd_2510
-  pair_12546  resume_2510 × jd_2506
-  pair_12547  resume_2510 × jd_2507
-  pair_12548  resume_2510 × jd_2508
-  pair_12549  resume_2510 × jd_2509
-  pair_12550  resume_2510 × jd_2510
+  pair_12551  resume_2511 × jd_2511
+  pair_12552  resume_2511 × jd_2512
+  pair_12553  resume_2511 × jd_2513
+  pair_12554  resume_2511 × jd_2514
+  pair_12555  resume_2511 × jd_2515
+  pair_12556  resume_2512 × jd_2511
+  pair_12557  resume_2512 × jd_2512
+  pair_12558  resume_2512 × jd_2513
+  pair_12559  resume_2512 × jd_2514
+  pair_12560  resume_2512 × jd_2515
+  pair_12561  resume_2513 × jd_2511
+  pair_12562  resume_2513 × jd_2512
+  pair_12563  resume_2513 × jd_2513
+  pair_12564  resume_2513 × jd_2514
+  pair_12565  resume_2513 × jd_2515
+  pair_12566  resume_2514 × jd_2511
+  pair_12567  resume_2514 × jd_2512
+  pair_12568  resume_2514 × jd_2513
+  pair_12569  resume_2514 × jd_2514
+  pair_12570  resume_2514 × jd_2515
+  pair_12571  resume_2515 × jd_2511
+  pair_12572  resume_2515 × jd_2512
+  pair_12573  resume_2515 × jd_2513
+  pair_12574  resume_2515 × jd_2514
+  pair_12575  resume_2515 × jd_2515
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
