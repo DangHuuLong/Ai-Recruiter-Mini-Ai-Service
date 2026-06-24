@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2561 | level: intern | exp: 0.4 yrs
-  skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding, Resume Review, HR Administration, Applicant Tracking Systems, Documentation, Reporting
-  background: Final-year Human Resources student with four months of internship experience supporting recruitment and employee onboarding activities. Assisted recruiters with candidate screening, interview scheduli
+  id: resume_2566 | level: intern | exp: 0.4 yrs
+  skills: Python, React, REST APIs, JavaScript, HTML, CSS, Git, SQL, Frontend Development, Backend Development
+  background: Final-year computer science student with four months of internship experience supporting web application development. Assisted engineers in building React user interfaces, testing API integrations, an
 
-  id: resume_2562 | level: junior | exp: 1.5 yrs
-  skills: Talent Acquisition, Recruiting, HRIS, Onboarding, Candidate Screening, Interview Coordination, Applicant Tracking Systems, Recruitment Reporting, Sourcing Support, Compliance Documentation
-  background: Human resources coordinator with 1.5 years of experience supporting recruiting and employee onboarding programs. Managed interview scheduling, candidate communication, and applicant tracking workflows
+  id: resume_2567 | level: junior | exp: 1.6 yrs
+  skills: Python, React, REST APIs, SQL, Git, Docker, Authentication, JavaScript, Testing, Deployment
+  background: Full-stack web developer with 1.6 years of experience building business applications using Python and React. Developed frontend features, integrated REST APIs, and maintained backend services supporti
 
-  id: resume_2563 | level: middle | exp: 4.2 yrs
-  skills: Talent Acquisition, Recruitment Strategy, HRIS Administration, Onboarding Programs, Workforce Planning, Recruitment Analytics, Stakeholder Management, Sourcing, Interview Management, Process Improvement
-  background: Human resources and talent acquisition specialist with 4.2 years of experience managing end-to-end recruitment and onboarding initiatives. Led hiring activities across multiple departments while partn
+  id: resume_2568 | level: middle | exp: 4.2 yrs
+  skills: Python, React, System Design, REST APIs, SQL, CI/CD, Docker, Automated Testing, Cloud Deployment, Performance Optimization
+  background: Full-stack engineer with 4.2 years of experience designing and delivering scalable web applications. Led implementation of React frontends and Python backend services supporting enterprise workflows. 
 
-  id: resume_2564 | level: senior | exp: 6.4 yrs
-  skills: Talent Acquisition Leadership, Workforce Planning, HRIS Strategy, Recruitment Management, Employer Branding, Stakeholder Leadership, Onboarding Governance, Talent Management, Recruitment Metrics, Change Management
-  background: Senior talent acquisition and HR operations professional with 6.4 years of experience leading recruitment programs and workforce initiatives. Directed hiring strategies, managed recruiting teams, and 
+  id: resume_2569 | level: senior | exp: 6.3 yrs
+  skills: Python Architecture, React, Technical Leadership, System Design, CI/CD, Cloud Architecture, Performance Optimization, Security, Release Management, Mentoring
+  background: Senior full-stack engineer with 6.3 years of experience leading development of large-scale web products. Specialized in Python backend architecture, React application design, and engineering leadershi
 
-  id: resume_2565 | level: senior | exp: 9.1 yrs
-  skills: Enterprise Talent Strategy, HR Governance, Workforce Strategy, Executive Stakeholder Management, HR Transformation, Talent Analytics, Succession Planning, Organizational Development, HR Technology Leadership, Capability Development
-  background: Principal human resources and talent acquisition leader with 9.1 years of experience defining enterprise workforce strategies and overseeing large-scale talent programs. Established organizational tal
+  id: resume_2570 | level: senior | exp: 9.1 yrs
+  skills: Platform Architecture, Engineering Leadership, Python Strategy, React Governance, Scalability, Technical Roadmaps, Cloud Strategy, Architecture Governance, Organizational Leadership, Transformation Management
+  background: Principal full-stack technology leader with 9.1 years of experience defining web platform strategy and overseeing engineering transformation initiatives. Established architectural governance for Pytho
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2561 | title: HR and Recruiting Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruiting, Candidate Screening, HRIS, Onboarding, Interview Scheduling
-  description: Seeking an HR and recruiting intern to support candidate screening, onboarding coordination, and HR administration activities. Responsibilities include maintaining HRIS records, sc
+  id: jd_2566 | title: Full-Stack Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: Python, React, REST APIs, Git, JavaScript
+  description: Seeking a full-stack development intern to support React frontend implementation and Python backend maintenance. Responsibilities include API integration, testing, bug fixing, and 
 
-  id: jd_2562 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Talent Acquisition, Recruiting, HRIS, Onboarding, Applicant Tracking Systems
-  description: Looking for a junior talent acquisition coordinator to support recruiting campaigns and onboarding activities. The role includes candidate communication, applicant tracking managem
+  id: jd_2567 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs
+  required_skills: Python, React, SQL, Testing, Deployment
+  description: Looking for a junior full-stack developer to build React interfaces and Python services. The role includes database integration, testing, deployment support, and collaboration with
 
-  id: jd_2563 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Talent Acquisition, Recruitment Strategy, Workforce Planning, Recruitment Analytics, Stakeholder Management
-  description: Seeking an experienced talent acquisition specialist to manage recruitment processes and support workforce planning initiatives. Responsibilities include recruitment strategy execu
+  id: jd_2568 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs
+  required_skills: Python, React, System Design, Automated Testing, CI/CD
+  description: Seeking an experienced full-stack engineer to design scalable applications using Python and React. Responsibilities include API architecture, database optimization, automated testi
 
-  id: jd_2564 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
-  required_skills: Talent Acquisition Leadership, Workforce Planning, Recruitment Management, Employer Branding, Stakeholder Leadership
-  description: Hiring a senior talent acquisition manager to lead recruiting operations and workforce planning initiatives. Responsibilities include recruitment management, employer branding, sta
+  id: jd_2569 | title: Senior Full-Stack Engineer | level: senior | min_exp: 5 yrs
+  required_skills: Technical Leadership, System Design, CI/CD, Performance Optimization, Cloud Architecture
+  description: Hiring a senior full-stack engineer to lead architecture decisions and guide development teams. Responsibilities include performance optimization, cloud architecture planning, rele
 
-  id: jd_2565 | title: Principal HR and Talent Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Talent Strategy, HR Governance, Workforce Strategy, Executive Stakeholder Management, Capability Development
-  description: An experienced HR leader is required to define enterprise workforce strategy and oversee talent transformation initiatives. Responsibilities include establishing HR governance fram
+  id: jd_2570 | title: Principal Full-Stack Architect | level: senior | min_exp: 7 yrs
+  required_skills: Platform Architecture, Engineering Leadership, Technical Roadmaps, Scalability, Architecture Governance
+  description: An experienced technology leader is required to define platform architecture and oversee engineering transformation initiatives. Responsibilities include governance, roadmap develo
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
-  excellent_match: ~7 pairs
-  moderate_match: ~1 pairs
-  weak_match: ~7 pairs
+  strong_match: ~2 pairs
+  excellent_match: ~6 pairs
+  moderate_match: ~11 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12801  resume_2561 × jd_2561
-  pair_12802  resume_2561 × jd_2562
-  pair_12803  resume_2561 × jd_2563
-  pair_12804  resume_2561 × jd_2564
-  pair_12805  resume_2561 × jd_2565
-  pair_12806  resume_2562 × jd_2561
-  pair_12807  resume_2562 × jd_2562
-  pair_12808  resume_2562 × jd_2563
-  pair_12809  resume_2562 × jd_2564
-  pair_12810  resume_2562 × jd_2565
-  pair_12811  resume_2563 × jd_2561
-  pair_12812  resume_2563 × jd_2562
-  pair_12813  resume_2563 × jd_2563
-  pair_12814  resume_2563 × jd_2564
-  pair_12815  resume_2563 × jd_2565
-  pair_12816  resume_2564 × jd_2561
-  pair_12817  resume_2564 × jd_2562
-  pair_12818  resume_2564 × jd_2563
-  pair_12819  resume_2564 × jd_2564
-  pair_12820  resume_2564 × jd_2565
-  pair_12821  resume_2565 × jd_2561
-  pair_12822  resume_2565 × jd_2562
-  pair_12823  resume_2565 × jd_2563
-  pair_12824  resume_2565 × jd_2564
-  pair_12825  resume_2565 × jd_2565
+  pair_12826  resume_2566 × jd_2566
+  pair_12827  resume_2566 × jd_2567
+  pair_12828  resume_2566 × jd_2568
+  pair_12829  resume_2566 × jd_2569
+  pair_12830  resume_2566 × jd_2570
+  pair_12831  resume_2567 × jd_2566
+  pair_12832  resume_2567 × jd_2567
+  pair_12833  resume_2567 × jd_2568
+  pair_12834  resume_2567 × jd_2569
+  pair_12835  resume_2567 × jd_2570
+  pair_12836  resume_2568 × jd_2566
+  pair_12837  resume_2568 × jd_2567
+  pair_12838  resume_2568 × jd_2568
+  pair_12839  resume_2568 × jd_2569
+  pair_12840  resume_2568 × jd_2570
+  pair_12841  resume_2569 × jd_2566
+  pair_12842  resume_2569 × jd_2567
+  pair_12843  resume_2569 × jd_2568
+  pair_12844  resume_2569 × jd_2569
+  pair_12845  resume_2569 × jd_2570
+  pair_12846  resume_2570 × jd_2566
+  pair_12847  resume_2570 × jd_2567
+  pair_12848  resume_2570 × jd_2568
+  pair_12849  resume_2570 × jd_2569
+  pair_12850  resume_2570 × jd_2570
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
