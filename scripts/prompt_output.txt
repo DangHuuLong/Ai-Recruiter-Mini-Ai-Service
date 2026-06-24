@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2241 | level: intern | exp: 0.5 yrs
-  skills: Agile, Scrum, Jira, Confluence, Market Research, Competitive Analysis
-  background: Aspiring Product Manager and current Business Administration student eager to launch a career in technology product management. Strong foundational understanding of agile frameworks, product lifecycle
+  id: resume_2246 | level: intern | exp: 0.5 yrs
+  skills: SEO, Social Media Marketing, Google Analytics, Content Creation, Keyword Research, Canva
+  background: Enthusiastic Marketing student and aspiring Digital Marketer looking to kickstart a professional career in digital marketing and content strategy. Solid foundational understanding of basic search engi
 
-  id: resume_2242 | level: junior | exp: 1.5 yrs
-  skills: Agile, Jira, Product Roadmap, User Stories, Google Analytics, Mixpanel, Stakeholder Management
-  background: Junior Product Manager with over a year of corporate experience assisting in the delivery of digital software products within an agile ecosystem. Proficient in managing and prioritizing product backlo
+  id: resume_2247 | level: junior | exp: 1.5 yrs
+  skills: SEO, Social Media Management, Google Analytics, Semrush, Ahrefs, Content Optimization, Email Marketing
+  background: Junior Digital Marketing Specialist with over a year of agency experience executing data-driven digital marketing campaigns and content optimization strategies. Proficient in handling daily organic so
 
-  id: resume_2243 | level: middle | exp: 4.0 yrs
-  skills: Product Strategy, Product Roadmap, Agile, Scrum, Stakeholder Management, Data Analytics, SaaS
-  background: Results-oriented Product Manager offering four years of progressive experience leading cross-functional teams to build, launch, and scale SaaS products. Proven track record in defining comprehensive p
+  id: resume_2248 | level: middle | exp: 4.0 yrs
+  skills: Digital Marketing, Content Strategy, SEO, Google Analytics, HubSpot, Paid Search, Conversion Rate Optimization
+  background: Results-driven Digital Marketing and Content Manager offering four years of progressive corporate experience designing, launching, and scaling multi-channel digital strategies. Proven track record in 
 
-  id: resume_2244 | level: senior | exp: 6.0 yrs
-  skills: Product Strategy, Multi-Year Roadmaps, Agile Leadership, Executive Stakeholder Management, Product Discovery, Cloud Solutions, Mentorship
-  background: Accomplished Senior Product Manager with over six years of comprehensive technical expertise leading high-performing agile development teams and delivering enterprise cloud software. Adept at architec
+  id: resume_2249 | level: senior | exp: 6.0 yrs
+  skills: Digital Marketing, Content Strategy, SEO Leadership, Budget Management, Data Governance, Executive Alignment, Mentorship
+  background: Accomplished Senior Digital Marketing Manager with over six years of comprehensive technical leadership directing high-performing marketing teams and producing enterprise-scale digital content strateg
 
-  id: resume_2245 | level: senior | exp: 9.0 yrs
-  skills: Product Governance, Macro Strategy, Agile at Scale, Executive Alignment, Resource Allocation, Portfolio Management, Vendor Relations
-  background: Visionary Principal Product Lead with over nine years of exceptional experience steering global tech platforms, directing cross-functional product departments, and governing high-impact software portf
+  id: resume_2250 | level: senior | exp: 9.0 yrs
+  skills: Content Governance, Macro Strategy, Marketing Attribution, Executive Board Alignment, Global Budget Optimization, Portfolio Management, Vendor Relations
+  background: Visionary Principal Content and Marketing Director with over nine years of exceptional industry experience steering global digital platforms, directing cross-functional marketing departments, and gove
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2241 | title: Product Management Intern | level: intern | min_exp: 0 yrs
-  required_skills: Agile, Product Roadmap, Market Research
-  description: We are seeking an enthusiastic Product Management Intern to support our growing core application team. In this internship role, you will assist with mapping out short-term product 
+  id: jd_2246 | title: Digital Marketing and Content Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Marketing, Google Analytics
+  description: We are seeking an enthusiastic Digital Marketing and Content Intern to support our growing audience acquisition squad. In this internship role, you will assist with drafting short-
 
-  id: jd_2242 | title: Junior Product Manager | level: junior | min_exp: 1 yrs
-  required_skills: Agile, Jira, Product Roadmap, User Stories
-  description: Our software delivery group is looking for a Junior Product Manager to drive feature stability and growth across our core web applications. In this role, you will coordinate end-to
+  id: jd_2247 | title: Junior Digital Marketing Specialist | level: junior | min_exp: 1 yrs
+  required_skills: SEO, Social Media Management, Google Analytics, Content Optimization
+  description: Our growth marketing group is looking for a Junior Digital Marketing Specialist to drive visibility and brand affinity across our digital platform network. In this role, you will c
 
-  id: jd_2243 | title: Product Manager | level: middle | min_exp: 3 yrs
-  required_skills: Product Strategy, Product Roadmap, Agile, Stakeholder Management
-  description: We are hunting for an experienced Product Manager to drive high-availability SaaS applications and optimize our core digital product portfolio. In this mid-level role, you will bui
+  id: jd_2248 | title: Digital Marketing Manager | level: middle | min_exp: 3 yrs
+  required_skills: Digital Marketing, Content Strategy, SEO, Google Analytics
+  description: We are hunting for an experienced Digital Marketing Manager to drive high-yield content marketing frameworks and optimize our core customer acquisition engines. In this mid-level r
 
-  id: jd_2244 | title: Senior Product Manager | level: senior | min_exp: 5 yrs
-  required_skills: Product Strategy, Multi-Year Roadmaps, Agile Leadership, Executive Stakeholder Management
-  description: Join our enterprise software division as a Senior Product Manager. You will be responsible for orchestrating complex application scaling strategies, architecting enterprise-wide mu
+  id: jd_2249 | title: Senior Digital Marketing and Strategy Manager | level: senior | min_exp: 5 yrs
+  required_skills: Digital Marketing, Content Strategy, SEO Leadership, Budget Management
+  description: Join our customer growth division as a Senior Digital Marketing and Strategy Manager. You will be responsible for orchestrating complex organic visibility strategies, architecting 
 
-  id: jd_2245 | title: Principal Product Architect | level: senior | min_exp: 7 yrs
-  required_skills: Product Governance, Macro Strategy, Agile at Scale, Executive Alignment
-  description: We are searching for a Principal Product Architect to anchor our digital portfolio vision and guide our high-impact global web platform portfolio. In this leadership role, you will
+  id: jd_2250 | title: Principal Content Architect and Director | level: senior | min_exp: 7 yrs
+  required_skills: Content Governance, Macro Strategy, Marketing Attribution, Executive Board Alignment
+  description: We are searching for a Principal Content Architect and Director to anchor our international brand visibility vision and guide our high-impact global digital platform portfolio. In 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~10 pairs
+  strong_match: ~1 pairs
   excellent_match: ~8 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~5 pairs
+  moderate_match: ~10 pairs
+  weak_match: ~6 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11201  resume_2241 × jd_2241
-  pair_11202  resume_2241 × jd_2242
-  pair_11203  resume_2241 × jd_2243
-  pair_11204  resume_2241 × jd_2244
-  pair_11205  resume_2241 × jd_2245
-  pair_11206  resume_2242 × jd_2241
-  pair_11207  resume_2242 × jd_2242
-  pair_11208  resume_2242 × jd_2243
-  pair_11209  resume_2242 × jd_2244
-  pair_11210  resume_2242 × jd_2245
-  pair_11211  resume_2243 × jd_2241
-  pair_11212  resume_2243 × jd_2242
-  pair_11213  resume_2243 × jd_2243
-  pair_11214  resume_2243 × jd_2244
-  pair_11215  resume_2243 × jd_2245
-  pair_11216  resume_2244 × jd_2241
-  pair_11217  resume_2244 × jd_2242
-  pair_11218  resume_2244 × jd_2243
-  pair_11219  resume_2244 × jd_2244
-  pair_11220  resume_2244 × jd_2245
-  pair_11221  resume_2245 × jd_2241
-  pair_11222  resume_2245 × jd_2242
-  pair_11223  resume_2245 × jd_2243
-  pair_11224  resume_2245 × jd_2244
-  pair_11225  resume_2245 × jd_2245
+  pair_11226  resume_2246 × jd_2246
+  pair_11227  resume_2246 × jd_2247
+  pair_11228  resume_2246 × jd_2248
+  pair_11229  resume_2246 × jd_2249
+  pair_11230  resume_2246 × jd_2250
+  pair_11231  resume_2247 × jd_2246
+  pair_11232  resume_2247 × jd_2247
+  pair_11233  resume_2247 × jd_2248
+  pair_11234  resume_2247 × jd_2249
+  pair_11235  resume_2247 × jd_2250
+  pair_11236  resume_2248 × jd_2246
+  pair_11237  resume_2248 × jd_2247
+  pair_11238  resume_2248 × jd_2248
+  pair_11239  resume_2248 × jd_2249
+  pair_11240  resume_2248 × jd_2250
+  pair_11241  resume_2249 × jd_2246
+  pair_11242  resume_2249 × jd_2247
+  pair_11243  resume_2249 × jd_2248
+  pair_11244  resume_2249 × jd_2249
+  pair_11245  resume_2249 × jd_2250
+  pair_11246  resume_2250 × jd_2246
+  pair_11247  resume_2250 × jd_2247
+  pair_11248  resume_2250 × jd_2248
+  pair_11249  resume_2250 × jd_2249
+  pair_11250  resume_2250 × jd_2250
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
