@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2276 | level: intern | exp: 0.4 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, Entity Relationship Diagrams
-  background: Passionate and detail-oriented Computer Science undergraduate looking to kickstart a career as a Database Engineering Intern. Acquired strong theoretical knowledge of relational database management sy
+  id: resume_2281 | level: intern | exp: 0.4 yrs
+  skills: SEO, Social Media Management, Content Creation, Keyword Research, Google Analytics, Copywriting
+  background: Eager and creative Marketing undergraduate looking to secure a Digital Marketing Intern position. Acquired foundational knowledge of search engine optimization, audience segmentation, and content crea
 
-  id: resume_2277 | level: junior | exp: 1.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Query Optimization, Data Migration, Index Tuning
-  background: Junior Database Engineer with over a year of corporate experience managing, maintaining, and configuring relational and non-relational database nodes. Adept at tuning slow-running queries and updating
+  id: resume_2282 | level: junior | exp: 1.8 yrs
+  skills: SEO Audits, Social Media Scheduling, Google Analytics, Keyword Research, Content Optimization, E-commerce Marketing
+  background: Junior Digital Marketing Coordinator with close to two years of professional experience managing, building, and optimizing organic growth pipelines for an emerging e-commerce portal. Adept at conducti
 
-  id: resume_2278 | level: middle | exp: 4.0 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Cluster Replication, ETL Pipelines, Shell Scripting
-  background: Resourceful Mid-level Database Engineer with four years of commercial experience engineering, stabilizing, and scaling distributed enterprise database systems. Deep technical expertise in configuring 
+  id: resume_2283 | level: middle | exp: 4.0 yrs
+  skills: SEO Strategy, Content Strategy, Google Analytics 4, Looker Studio, Social Media Analytics, Link Building
+  background: Analytical Mid-level Content Specialist with four years of commercial expertise planning, executing, and scaling cross-channel digital marketing operations. Deep technical proficiency in configuring c
 
-  id: resume_2279 | level: senior | exp: 6.5 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Sharding, Connection Pooling, Capacity Forecasting, Database Telemetry
-  background: Senior Database Infrastructure Engineer with over six years of seasoned expertise deploying high-availability database networks and modern cross-platform data environments. Mastery over advanced Postg
+  id: resume_2284 | level: senior | exp: 6.5 yrs
+  skills: Technical SEO, Content Strategy, Google Analytics 4, Attribution Modeling, Site Migrations, Data Driven Marketing, Project Management
+  background: Senior Digital Marketing and SEO Strategy Architect with over six years of seasoned expertise deploying multi-platform organic growth structures and international content architectures. Master of adva
 
-  id: resume_2280 | level: senior | exp: 9.2 yrs
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Data Governance, Disaster Recovery, High Availability
-  background: Principal Database Architect and Systems Infrastructure Lead with over nine years of expert technical guidance inside enterprise technology domains. Renowned specialist in building multi-region, distr
+  id: resume_2285 | level: senior | exp: 9.5 yrs
+  skills: Omnichannel Marketing, Content Strategy, Data Analytics, Brand Governance, Enterprise Growth, Executive Leadership, Budget Allocation
+  background: Principal Director of Brand Growth and Enterprise Marketing Strategy with over nine years of expert leadership in global digital media environments. Renowned visionary in building multi-regional, high
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2276 | title: Database Engineering Intern | level: intern | min_exp: 0 yrs
-  required_skills: PostgreSQL, SQL, Data Modeling
-  description: We are searching for a highly motivated Database Engineering Intern to support our infrastructure team. In this starting position, you will help design, test, and document data mod
+  id: jd_2281 | title: Digital Marketing and Content Intern | level: intern | min_exp: 0 yrs
+  required_skills: SEO, Social Media Management, Content Creation
+  description: We are searching for a highly motivated Digital Marketing and Content Intern to support our creative growth team. In this starting position, you will help design, script, and sched
 
-  id: jd_2277 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs
-  required_skills: PostgreSQL, MongoDB, Query Optimization
-  description: Our data engineering group is looking for a Junior Database Engineer to manage, update, and optimize our core app storage setups. You will handle daily database health updates, ana
+  id: jd_2282 | title: Junior Digital Marketing Coordinator | level: junior | min_exp: 1 yrs
+  required_skills: SEO Audits, Social Media Scheduling, Google Analytics
+  description: Our growth marketing group is looking for a Junior Digital Marketing Coordinator to manage, update, and optimize our organic brand storage setups. You will handle daily social medi
 
-  id: jd_2278 | title: Database Engineer (PostgreSQL & NoSQL) | level: middle | min_exp: 3 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  description: We are seeking an experienced Mid-level Database Engineer to architect, secure, and manage our multi-platform production data tier. You will be responsible for defining technical d
+  id: jd_2283 | title: Digital Marketing and Content Specialist | level: middle | min_exp: 3 yrs
+  required_skills: SEO Strategy, Content Strategy, Google Analytics 4, Looker Studio
+  description: We are seeking an experienced Mid-level Digital Marketing Specialist to architect, secure, and manage our cross-platform organic distribution tier. You will be responsible for defi
 
-  id: jd_2279 | title: Senior Database Infrastructure Specialist | level: senior | min_exp: 5 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, High Availability
-  description: We are looking for a Senior Database Infrastructure Specialist to drive the scale, automation, and resilience of our enterprise data setups. In this senior role, you will design di
+  id: jd_2284 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 5 yrs
+  required_skills: Technical SEO, Content Strategy, Google Analytics 4, Data Driven Marketing
+  description: We are looking for a Senior Digital Marketing Strategist to drive the scale, automation, and resilience of our corporate brand growth pipelines. In this senior role, you will desig
 
-  id: jd_2280 | title: Principal Database Architect / Team Lead | level: senior | min_exp: 7 yrs
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Enterprise Architecture, Team Leadership
-  description: We are looking for a Principal Database Architect to oversee the long-term technology roadmaps, engineering frameworks, and storage blueprints of our data networks. You will direct
+  id: jd_2285 | title: Principal Brand Growth Director | level: senior | min_exp: 7 yrs
+  required_skills: Omnichannel Marketing, Content Strategy, Data Analytics, Brand Governance, Team Leadership
+  description: We are looking for a Principal Brand Growth Director to oversee the long-term corporate identity roadmaps, content frameworks, and organic expansion strategies of our marketing eco
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -67,38 +67,38 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
   strong_match: ~1 pairs
-  excellent_match: ~8 pairs
+  excellent_match: ~7 pairs
   moderate_match: ~10 pairs
-  weak_match: ~7 pairs
+  weak_match: ~8 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11376  resume_2276 × jd_2276
-  pair_11377  resume_2276 × jd_2277
-  pair_11378  resume_2276 × jd_2278
-  pair_11379  resume_2276 × jd_2279
-  pair_11380  resume_2276 × jd_2280
-  pair_11381  resume_2277 × jd_2276
-  pair_11382  resume_2277 × jd_2277
-  pair_11383  resume_2277 × jd_2278
-  pair_11384  resume_2277 × jd_2279
-  pair_11385  resume_2277 × jd_2280
-  pair_11386  resume_2278 × jd_2276
-  pair_11387  resume_2278 × jd_2277
-  pair_11388  resume_2278 × jd_2278
-  pair_11389  resume_2278 × jd_2279
-  pair_11390  resume_2278 × jd_2280
-  pair_11391  resume_2279 × jd_2276
-  pair_11392  resume_2279 × jd_2277
-  pair_11393  resume_2279 × jd_2278
-  pair_11394  resume_2279 × jd_2279
-  pair_11395  resume_2279 × jd_2280
-  pair_11396  resume_2280 × jd_2276
-  pair_11397  resume_2280 × jd_2277
-  pair_11398  resume_2280 × jd_2278
-  pair_11399  resume_2280 × jd_2279
-  pair_11400  resume_2280 × jd_2280
+  pair_11401  resume_2281 × jd_2281
+  pair_11402  resume_2281 × jd_2282
+  pair_11403  resume_2281 × jd_2283
+  pair_11404  resume_2281 × jd_2284
+  pair_11405  resume_2281 × jd_2285
+  pair_11406  resume_2282 × jd_2281
+  pair_11407  resume_2282 × jd_2282
+  pair_11408  resume_2282 × jd_2283
+  pair_11409  resume_2282 × jd_2284
+  pair_11410  resume_2282 × jd_2285
+  pair_11411  resume_2283 × jd_2281
+  pair_11412  resume_2283 × jd_2282
+  pair_11413  resume_2283 × jd_2283
+  pair_11414  resume_2283 × jd_2284
+  pair_11415  resume_2283 × jd_2285
+  pair_11416  resume_2284 × jd_2281
+  pair_11417  resume_2284 × jd_2282
+  pair_11418  resume_2284 × jd_2283
+  pair_11419  resume_2284 × jd_2284
+  pair_11420  resume_2284 × jd_2285
+  pair_11421  resume_2285 × jd_2281
+  pair_11422  resume_2285 × jd_2282
+  pair_11423  resume_2285 × jd_2283
+  pair_11424  resume_2285 × jd_2284
+  pair_11425  resume_2285 × jd_2285
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
