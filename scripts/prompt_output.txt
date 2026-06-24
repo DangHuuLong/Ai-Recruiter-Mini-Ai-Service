@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2451 | level: intern | exp: 0.4 yrs
-  skills: Linux, Python, Wireshark, Nmap, Burp Suite, Splunk, TCP/IP, Bash, Vulnerability Assessment, Network Security
-  background: Final-year Cybersecurity student with four months of internship and laboratory experience in information security. Built foundational skills in network security, vulnerability assessment, and security
+  id: resume_2456 | level: intern | exp: 0.4 yrs
+  skills: Microsoft Excel, Financial Reporting, Financial Modeling, Reconciliation, Financial Analysis, Budgeting, Accounting, Variance Analysis, Data Analysis, Compliance
+  background: Final-year Finance student specializing in fintech and financial analysis with four months of internship experience in a digital payments startup. Assisted the finance team with monthly reporting, tra
 
-  id: resume_2452 | level: junior | exp: 1.7 yrs
-  skills: Splunk, Microsoft Sentinel, Nessus, Python, Linux, Incident Response, SIEM, Network Security, Threat Hunting, Vulnerability Management
-  background: Information Security Analyst with 1.7 years of professional experience supporting security operations and vulnerability management activities. Worked within a SOC environment monitoring alerts, triagi
+  id: resume_2457 | level: junior | exp: 1.8 yrs
+  skills: Microsoft Excel, Financial Reporting, Financial Modeling, Forecasting, Variance Analysis, Reconciliation, ERP Systems, Audit Support, Compliance, KPI Analysis
+  background: Junior Financial Analyst with 1.8 years of experience supporting finance operations within a fintech lending environment. Responsible for preparing monthly financial reports, reconciling transactions,
 
-  id: resume_2453 | level: middle | exp: 4.3 yrs
-  skills: Splunk, Elastic Stack, Nessus, Burp Suite, Metasploit, Threat Hunting, MITRE ATT&CK, Python, SOAR, Incident Response
-  background: Cybersecurity Engineer with 4.3 years of experience across security operations, penetration testing, and detection engineering. Responsible for designing SIEM use cases, performing threat hunting acti
+  id: resume_2458 | level: middle | exp: 4.4 yrs
+  skills: Financial Reporting, Financial Modeling, Forecasting, Compliance, Budgeting, Cash Flow Analysis, ERP Systems, Audit Management, Variance Analysis, Internal Controls
+  background: Finance and Compliance Analyst with 4.4 years of experience in fintech organizations specializing in financial reporting, regulatory compliance, and financial planning. Led preparation of monthly and 
 
-  id: resume_2454 | level: senior | exp: 6.1 yrs
-  skills: Splunk, Microsoft Sentinel, SOAR, Incident Response, Threat Intelligence, MITRE ATT&CK, Python, Cloud Security, Security Architecture, Leadership
-  background: Senior Information Security Engineer with 6.1 years of experience leading security operations, incident response, and enterprise defense initiatives. Expertise includes SIEM architecture, threat intel
+  id: resume_2459 | level: senior | exp: 6.2 yrs
+  skills: Financial Planning, Financial Modeling, Financial Reporting, Compliance, Budgeting, Leadership, Risk Management, Internal Controls, ERP Systems, Cash Flow Analysis
+  background: Senior Finance Manager with 6.2 years of experience leading financial planning, reporting, and compliance functions in fintech companies. Managed end-to-end budgeting processes, developed complex fina
 
-  id: resume_2455 | level: senior | exp: 9.4 yrs
-  skills: Security Architecture, SIEM, SOAR, Threat Intelligence, Cloud Security, Risk Assessment, Leadership, Zero Trust, Incident Response, Governance
-  background: Principal Cybersecurity Architect with 9.4 years of experience defining enterprise security strategy, leading blue team operations, and overseeing large-scale security programs. Deep expertise in secu
+  id: resume_2460 | level: senior | exp: 9.3 yrs
+  skills: Financial Strategy, Financial Modeling, Governance, Risk Management, Compliance, Leadership, Financial Reporting, Budgeting, Internal Controls, Audit Management
+  background: Principal Finance Director with 9.3 years of experience defining financial strategy and governance across high-growth fintech organizations. Directed financial planning, compliance, and enterprise rep
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2451 | title: Cybersecurity Intern | level: intern | min_exp: 0 yrs
-  required_skills: Linux, Network Security, SIEM, Python
-  description: Seeking a cybersecurity intern to support security monitoring, vulnerability assessment, and incident documentation activities. The intern will assist SOC analysts in reviewing ale
+  id: jd_2456 | title: Finance Intern - Fintech Operations | level: intern | min_exp: 0 yrs
+  required_skills: Microsoft Excel, Financial Reporting, Accounting, Financial Analysis
+  description: Seeking a finance intern to support reporting, reconciliation, and analytical activities within a fintech operations team. The intern will assist with transaction reviews, prepare 
 
-  id: jd_2452 | title: Junior SOC Analyst | level: junior | min_exp: 1 yrs
-  required_skills: SIEM, Splunk, Linux, Incident Response
-  description: Looking for a junior SOC analyst to monitor security events, triage alerts, and support incident response activities. Candidates should have experience with SIEM platforms, vulnera
+  id: jd_2457 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs
+  required_skills: Microsoft Excel, Financial Modeling, Variance Analysis, Reconciliation
+  description: Looking for a junior financial analyst to prepare financial reports, support budgeting processes, and analyze business performance metrics. Candidates should have experience with E
 
-  id: jd_2453 | title: Cybersecurity Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Splunk, MITRE ATT&CK, Threat Hunting, Burp Suite
-  description: An organization is seeking a cybersecurity engineer to design detection content, conduct threat hunting, and perform security assessments across enterprise environments. Candidates
+  id: jd_2458 | title: Finance and Compliance Analyst | level: middle | min_exp: 3 yrs
+  required_skills: Financial Reporting, Compliance, Forecasting, Internal Controls
+  description: An organization is seeking a finance and compliance analyst to manage regulatory reporting, financial planning, and compliance activities across fintech operations. Candidates shou
 
-  id: jd_2454 | title: Senior Incident Response Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Incident Response, Splunk, Leadership, Threat Intelligence
-  description: Seeking a senior incident response engineer to lead major security investigations and improve enterprise detection capabilities. The role requires extensive experience in SIEM plat
+  id: jd_2459 | title: Senior Finance Manager | level: senior | min_exp: 5 yrs
+  required_skills: Financial Modeling, Leadership, Compliance, Financial Planning
+  description: Seeking a senior finance manager to lead budgeting, financial planning, and compliance initiatives within a growing fintech organization. The role requires extensive experience in 
 
-  id: jd_2455 | title: Principal Security Architect | level: senior | min_exp: 7 yrs
-  required_skills: Security Architecture, Leadership, Risk Assessment, Governance
-  description: A principal security architect is required to define enterprise security strategy and guide long-term cybersecurity initiatives. The role involves establishing security architectur
+  id: jd_2460 | title: Director of Finance and Governance | level: senior | min_exp: 7 yrs
+  required_skills: Governance, Leadership, Risk Management, Compliance
+  description: A senior finance leader is required to define financial governance strategy and oversee enterprise finance operations across multiple fintech products. The role involves establishi
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~3 pairs
-  excellent_match: ~4 pairs
-  moderate_match: ~8 pairs
-  weak_match: ~10 pairs
+  strong_match: ~7 pairs
+  excellent_match: ~7 pairs
+  moderate_match: ~2 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12251  resume_2451 × jd_2451
-  pair_12252  resume_2451 × jd_2452
-  pair_12253  resume_2451 × jd_2453
-  pair_12254  resume_2451 × jd_2454
-  pair_12255  resume_2451 × jd_2455
-  pair_12256  resume_2452 × jd_2451
-  pair_12257  resume_2452 × jd_2452
-  pair_12258  resume_2452 × jd_2453
-  pair_12259  resume_2452 × jd_2454
-  pair_12260  resume_2452 × jd_2455
-  pair_12261  resume_2453 × jd_2451
-  pair_12262  resume_2453 × jd_2452
-  pair_12263  resume_2453 × jd_2453
-  pair_12264  resume_2453 × jd_2454
-  pair_12265  resume_2453 × jd_2455
-  pair_12266  resume_2454 × jd_2451
-  pair_12267  resume_2454 × jd_2452
-  pair_12268  resume_2454 × jd_2453
-  pair_12269  resume_2454 × jd_2454
-  pair_12270  resume_2454 × jd_2455
-  pair_12271  resume_2455 × jd_2451
-  pair_12272  resume_2455 × jd_2452
-  pair_12273  resume_2455 × jd_2453
-  pair_12274  resume_2455 × jd_2454
-  pair_12275  resume_2455 × jd_2455
+  pair_12276  resume_2456 × jd_2456
+  pair_12277  resume_2456 × jd_2457
+  pair_12278  resume_2456 × jd_2458
+  pair_12279  resume_2456 × jd_2459
+  pair_12280  resume_2456 × jd_2460
+  pair_12281  resume_2457 × jd_2456
+  pair_12282  resume_2457 × jd_2457
+  pair_12283  resume_2457 × jd_2458
+  pair_12284  resume_2457 × jd_2459
+  pair_12285  resume_2457 × jd_2460
+  pair_12286  resume_2458 × jd_2456
+  pair_12287  resume_2458 × jd_2457
+  pair_12288  resume_2458 × jd_2458
+  pair_12289  resume_2458 × jd_2459
+  pair_12290  resume_2458 × jd_2460
+  pair_12291  resume_2459 × jd_2456
+  pair_12292  resume_2459 × jd_2457
+  pair_12293  resume_2459 × jd_2458
+  pair_12294  resume_2459 × jd_2459
+  pair_12295  resume_2459 × jd_2460
+  pair_12296  resume_2460 × jd_2456
+  pair_12297  resume_2460 × jd_2457
+  pair_12298  resume_2460 × jd_2458
+  pair_12299  resume_2460 × jd_2459
+  pair_12300  resume_2460 × jd_2460
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
