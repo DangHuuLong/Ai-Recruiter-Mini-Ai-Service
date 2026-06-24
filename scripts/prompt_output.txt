@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2396 | level: intern | exp: 0.3 yrs
-  skills: Recruitment Basics, HRIS, Onboarding Support, Administrative Support, Data Entry
-  background: I am a dedicated human resources student currently in my final year with a strong focus on organizational behavior and talent acquisition fundamentals. Throughout my academic career, I have actively p
+  id: resume_2401 | level: intern | exp: 0.3 yrs
+  skills: Figma, Wireframing, Typography, User Research, Prototyping
+  background: I am a passionate UI/UX design student currently finishing my degree. I have a strong foundation in visual hierarchy, typography, and basic wireframing. Through academic projects, I have learned to tr
 
-  id: resume_2397 | level: junior | exp: 1.5 yrs
-  skills: Candidate Sourcing, Screening Interviews, HRIS, Onboarding Coordination, Employee Records
-  background: As a Junior Human Resources Coordinator with 1.5 years of professional experience, I have successfully managed end-to-end recruitment pipelines for entry-level positions. My expertise includes sourcin
+  id: resume_2402 | level: junior | exp: 1.8 yrs
+  skills: Figma, UI Design, High-Fidelity Prototyping, User Research, User Flows
+  background: As a Junior Product Designer with 1.8 years of experience, I have contributed to the end-to-end design process for mobile and web applications. My work focuses on creating responsive UI designs, devel
 
-  id: resume_2398 | level: middle | exp: 4.2 yrs
-  skills: Talent Acquisition, HRIS Administration, Data Analytics, Compliance Management, Stakeholder Management
-  background: I am a Human Resources Specialist with 4 years of experience dedicated to talent acquisition and lifecycle management. I have spearheaded large-scale recruitment drives, collaborated with department l
+  id: resume_2403 | level: middle | exp: 4.5 yrs
+  skills: Design Systems, Figma, User Research, Interaction Design, Data-Driven Design
+  background: I am a Product Designer with 4.5 years of experience delivering user-centric solutions. My background includes leading design discovery workshops, conducting comprehensive user research, and architect
 
-  id: resume_2399 | level: senior | exp: 6.5 yrs
-  skills: High-Volume Recruiting, Employer Branding, Strategic Talent Planning, Mentorship, Analytics
-  background: Senior Talent Acquisition Partner with 6.5 years of experience in high-volume recruiting and employer branding. I have managed end-to-end recruitment for technical and non-technical roles, mentored ju
+  id: resume_2404 | level: senior | exp: 6.5 yrs
+  skills: Product Strategy, Design Systems, Accessibility, UX Architecture, Mentorship
+  background: Senior Product Designer with 6.5 years of experience focused on product strategy and high-level UX architecture. I have successfully led design teams through complex product launches, emphasizing acce
 
-  id: resume_2400 | level: senior | exp: 9.2 yrs
-  skills: Human Capital Strategy, HRIS Architecture, Change Management, Global Talent Acquisition, Organizational Design
-  background: Principal HR Strategist with over 9 years of experience governing enterprise-grade talent and organizational systems. I specialize in high-level human capital strategy, complex HRIS transformation, an
+  id: resume_2405 | level: senior | exp: 9.5 yrs
+  skills: UX Strategy, Design Operations, Product Roadmapping, User Research, Change Management
+  background: Principal Product Designer with over 9 years of experience in shaping digital ecosystems and organizational design culture. I specialize in visionary UX strategy, complex user research methodology, an
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2396 | title: Human Resources Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruitment Basics, Administrative Support, Onboarding Support
-  description: We are seeking a motivated HR Intern to join our People Operations team. You will support our recruitment efforts, assist with candidate scheduling, and contribute to administrativ
+  id: jd_2401 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, Wireframing, User Research
+  description: We are looking for a motivated UI/UX Design Intern to assist our product team. You will support designers with wireframing, creating UI assets in Figma, and helping with user resea
 
-  id: jd_2397 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Candidate Sourcing, Screening Interviews, Onboarding Coordination
-  description: We are looking for a Junior HR Coordinator to manage recruitment coordination and initial onboarding for our growing team. You will be responsible for sourcing candidates, managing
+  id: jd_2402 | title: Junior Product Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, UI Design, Prototyping
+  description: Our team is seeking a Junior Product Designer to contribute to our core product offerings. You will be responsible for creating responsive UI designs, developing high-fidelity prot
 
-  id: jd_2398 | title: Human Resources Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Talent Acquisition, HRIS Administration, Data Analytics
-  description: Our team is seeking an experienced HR Specialist to own the talent acquisition process and improve our HRIS analytics. You will collaborate with department heads to meet hiring goa
+  id: jd_2403 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Design Systems, Figma, User Research
+  description: We are looking for a Product Designer to take ownership of end-to-end design processes. You will lead design discovery, build scalable systems in Figma, and use research data to gu
 
-  id: jd_2399 | title: Senior Talent Acquisition Partner | level: senior | min_exp: 5 yrs
-  required_skills: High-Volume Recruiting, Employer Branding, Strategic Talent Planning
-  description: We are looking for a Senior Talent Acquisition Partner to define and lead our global hiring strategy. You will partner with executive leadership, manage employer branding, and buil
+  id: jd_2404 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: Product Strategy, Design Systems, Accessibility
+  description: Our team needs a Senior Product Designer to drive product vision and UX strategy. You will lead complex projects, mentor junior designers, and refine our design language. We are se
 
-  id: jd_2400 | title: Principal HR Strategist | level: senior | min_exp: 7 yrs
-  required_skills: Human Capital Strategy, HRIS Architecture, Change Management
-  description: We are seeking a visionary Principal HR Strategist to govern our enterprise talent ecosystems. You will oversee global HRIS transformation, lead organizational design initiatives, 
+  id: jd_2405 | title: Principal Product Designer | level: senior | min_exp: 7 yrs
+  required_skills: UX Strategy, Design Operations, Product Roadmapping
+  description: We are seeking a visionary Principal Product Designer to lead our design strategy and operations. You will shape our product roadmap, lead high-level research initiatives, and scal
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~9 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~1 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~10 pairs
+  moderate_match: ~8 pairs
   weak_match: ~7 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_11976  resume_2396 × jd_2396
-  pair_11977  resume_2396 × jd_2397
-  pair_11978  resume_2396 × jd_2398
-  pair_11979  resume_2396 × jd_2399
-  pair_11980  resume_2396 × jd_2400
-  pair_11981  resume_2397 × jd_2396
-  pair_11982  resume_2397 × jd_2397
-  pair_11983  resume_2397 × jd_2398
-  pair_11984  resume_2397 × jd_2399
-  pair_11985  resume_2397 × jd_2400
-  pair_11986  resume_2398 × jd_2396
-  pair_11987  resume_2398 × jd_2397
-  pair_11988  resume_2398 × jd_2398
-  pair_11989  resume_2398 × jd_2399
-  pair_11990  resume_2398 × jd_2400
-  pair_11991  resume_2399 × jd_2396
-  pair_11992  resume_2399 × jd_2397
-  pair_11993  resume_2399 × jd_2398
-  pair_11994  resume_2399 × jd_2399
-  pair_11995  resume_2399 × jd_2400
-  pair_11996  resume_2400 × jd_2396
-  pair_11997  resume_2400 × jd_2397
-  pair_11998  resume_2400 × jd_2398
-  pair_11999  resume_2400 × jd_2399
-  pair_12000  resume_2400 × jd_2400
+  pair_12001  resume_2401 × jd_2401
+  pair_12002  resume_2401 × jd_2402
+  pair_12003  resume_2401 × jd_2403
+  pair_12004  resume_2401 × jd_2404
+  pair_12005  resume_2401 × jd_2405
+  pair_12006  resume_2402 × jd_2401
+  pair_12007  resume_2402 × jd_2402
+  pair_12008  resume_2402 × jd_2403
+  pair_12009  resume_2402 × jd_2404
+  pair_12010  resume_2402 × jd_2405
+  pair_12011  resume_2403 × jd_2401
+  pair_12012  resume_2403 × jd_2402
+  pair_12013  resume_2403 × jd_2403
+  pair_12014  resume_2403 × jd_2404
+  pair_12015  resume_2403 × jd_2405
+  pair_12016  resume_2404 × jd_2401
+  pair_12017  resume_2404 × jd_2402
+  pair_12018  resume_2404 × jd_2403
+  pair_12019  resume_2404 × jd_2404
+  pair_12020  resume_2404 × jd_2405
+  pair_12021  resume_2405 × jd_2401
+  pair_12022  resume_2405 × jd_2402
+  pair_12023  resume_2405 × jd_2403
+  pair_12024  resume_2405 × jd_2404
+  pair_12025  resume_2405 × jd_2405
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
