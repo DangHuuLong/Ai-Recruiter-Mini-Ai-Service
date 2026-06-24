@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2521 | level: intern | exp: 0.4 yrs
-  skills: Python, FastAPI, PostgreSQL, REST APIs, SQL, Git, Docker, API Testing, JavaScript, Agile Development
-  background: Final-year Computer Science student specializing in backend API development with four months of internship experience supporting internal platform development. Assisted senior engineers in implementin
+  id: resume_2526 | level: intern | exp: 0.4 yrs
+  skills: Figma, User Research, Wireframing, Prototyping, Usability Testing, Information Architecture, Design Systems, Responsive Design, User Interviews, Accessibility
+  background: Final-year Interaction Design student with four months of internship experience supporting UI and UX activities for mobile and web applications. Assisted senior designers in creating wireframes, prepa
 
-  id: resume_2522 | level: junior | exp: 1.8 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, REST APIs, JWT Authentication, Docker, CI/CD, SQL Optimization, API Documentation
-  background: Backend developer with 1.8 years of experience building and maintaining web APIs for business applications. Developed RESTful services using Python, FastAPI, and Node.js while integrating PostgreSQL d
+  id: resume_2527 | level: junior | exp: 1.8 yrs
+  skills: Figma, User Research, Prototyping, Usability Testing, Journey Mapping, Design Systems, Responsive Design, Accessibility, Wireframing, Interaction Design
+  background: UI/UX designer with 1.8 years of experience designing customer-facing web and mobile experiences for service-based businesses. Responsible for conducting user research, developing wireframes, creating
 
-  id: resume_2523 | level: middle | exp: 4.4 yrs
-  skills: Python, FastAPI, Node.js, PostgreSQL, Microservices, Redis, System Design, Automated Testing, Performance Optimization, Message Queues
-  background: Backend engineer with 4.4 years of experience designing and delivering scalable API platforms for SaaS products. Led development of microservices using Python, FastAPI, and Node.js while optimizing Po
+  id: resume_2528 | level: middle | exp: 4.3 yrs
+  skills: Figma, Product Design, User Research, Design Systems, Information Architecture, Usability Testing, A/B Testing, Interaction Design, Stakeholder Workshops, Design Operations
+  background: Product designer with 4.3 years of experience designing scalable digital products across SaaS and e-commerce environments. Led end-to-end design initiatives including user research, workflow analysis,
 
-  id: resume_2524 | level: senior | exp: 6.1 yrs
-  skills: Python, FastAPI, Node.js, Backend Architecture, Team Leadership, PostgreSQL, CI/CD, Microservices, System Design, Performance Optimization
-  background: Senior backend engineer with 6.1 years of experience leading development of high-availability API platforms across fintech and SaaS environments. Specialized in backend architecture, microservices des
+  id: resume_2529 | level: senior | exp: 6.2 yrs
+  skills: UX Strategy, Team Leadership, Figma, Design System Governance, Stakeholder Management, User Research, Design Operations, Prototyping, Workshop Facilitation, Product Strategy
+  background: Senior product designer with 6.2 years of experience leading UX strategy and product design initiatives for high-growth digital platforms. Specialized in user-centered design, cross-functional leaders
 
-  id: resume_2525 | level: senior | exp: 9.3 yrs
-  skills: Backend Strategy, Architecture Governance, Engineering Leadership, Distributed Systems, Platform Architecture, PostgreSQL Strategy, Technical Roadmaps, Cloud Architecture, Scalability, Organizational Leadership
-  background: Principal backend architect with 9.3 years of experience defining engineering strategy and architecture for enterprise API platforms. Led organization-wide initiatives involving backend modernization,
+  id: resume_2530 | level: senior | exp: 9.1 yrs
+  skills: Design Leadership, UX Vision, Organizational Leadership, Design Governance, Enterprise Design Systems, Strategic Planning, Research Strategy, Portfolio Management, Change Management, Executive Communication
+  background: Principal product design leader with 9.1 years of experience defining organizational design vision and leading enterprise product transformation initiatives. Established long-term UX strategies, gover
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2521 | title: Backend API Development Intern | level: intern | min_exp: 0 yrs
-  required_skills: Python, FastAPI, PostgreSQL, REST APIs, SQL
-  description: Seeking a backend development intern to support implementation and testing of REST APIs using Python and FastAPI. Responsibilities include developing simple endpoints, writing SQL 
+  id: jd_2526 | title: UI/UX Design Intern | level: intern | min_exp: 0 yrs
+  required_skills: Figma, User Research, Prototyping, Wireframing, Usability Testing
+  description: Seeking a UI/UX design intern to support user-centered design activities for web and mobile products. Responsibilities include creating wireframes, building prototypes in Figma, pa
 
-  id: jd_2522 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs
-  required_skills: Python, FastAPI, PostgreSQL, API Documentation, Docker
-  description: Looking for a junior backend developer to build and maintain APIs using Python, FastAPI, and PostgreSQL. The role includes implementing authentication, integrating external service
+  id: jd_2527 | title: UI/UX Designer | level: junior | min_exp: 1 yrs
+  required_skills: Figma, User Research, Prototyping, Design Systems, Responsive Design
+  description: Looking for a UI/UX designer to design intuitive user experiences across digital products. The role involves conducting user research, creating interactive prototypes, maintaining 
 
-  id: jd_2523 | title: Backend Engineer | level: middle | min_exp: 3 yrs
-  required_skills: Python, Microservices, Performance Optimization, Automated Testing, PostgreSQL
-  description: Seeking a backend engineer to design scalable services and optimize API performance. Responsibilities include developing microservices, improving database performance, implementing
+  id: jd_2528 | title: Product Designer | level: middle | min_exp: 3 yrs
+  required_skills: Product Design, User Research, Design Systems, Information Architecture, Stakeholder Workshops
+  description: Seeking a product designer to lead end-to-end product design initiatives for digital platforms. Responsibilities include conducting research, facilitating workshops, building scala
 
-  id: jd_2524 | title: Senior Backend Engineer | level: senior | min_exp: 5 yrs
-  required_skills: Backend Architecture, Team Leadership, CI/CD, System Design, PostgreSQL
-  description: Hiring a senior backend engineer to lead architecture decisions and guide backend development teams. Responsibilities include defining engineering standards, overseeing microservic
+  id: jd_2529 | title: Senior Product Designer | level: senior | min_exp: 5 yrs
+  required_skills: UX Strategy, Team Leadership, User Research, Stakeholder Management, Design Operations
+  description: Hiring a senior product designer to lead UX initiatives, mentor design teams, and establish design standards across multiple product lines. Responsibilities include driving UX stra
 
-  id: jd_2525 | title: Principal Backend Architect | level: senior | min_exp: 7 yrs
-  required_skills: Architecture Governance, Engineering Leadership, Platform Architecture, Technical Roadmaps, Distributed Systems
-  description: An experienced backend leader is required to define long-term platform architecture and engineering strategy. Responsibilities include establishing architecture governance, guiding
+  id: jd_2530 | title: Principal Design Director | level: senior | min_exp: 7 yrs
+  required_skills: Design Leadership, UX Vision, Organizational Leadership, Design Governance, Strategic Planning
+  description: An experienced design leader is required to define enterprise UX vision and oversee large-scale product transformation programs. Responsibilities include establishing governance fr
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~11 pairs
-  excellent_match: ~2 pairs
-  moderate_match: ~7 pairs
-  weak_match: ~5 pairs
+  strong_match: ~1 pairs
+  excellent_match: ~9 pairs
+  moderate_match: ~6 pairs
+  weak_match: ~9 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12601  resume_2521 × jd_2521
-  pair_12602  resume_2521 × jd_2522
-  pair_12603  resume_2521 × jd_2523
-  pair_12604  resume_2521 × jd_2524
-  pair_12605  resume_2521 × jd_2525
-  pair_12606  resume_2522 × jd_2521
-  pair_12607  resume_2522 × jd_2522
-  pair_12608  resume_2522 × jd_2523
-  pair_12609  resume_2522 × jd_2524
-  pair_12610  resume_2522 × jd_2525
-  pair_12611  resume_2523 × jd_2521
-  pair_12612  resume_2523 × jd_2522
-  pair_12613  resume_2523 × jd_2523
-  pair_12614  resume_2523 × jd_2524
-  pair_12615  resume_2523 × jd_2525
-  pair_12616  resume_2524 × jd_2521
-  pair_12617  resume_2524 × jd_2522
-  pair_12618  resume_2524 × jd_2523
-  pair_12619  resume_2524 × jd_2524
-  pair_12620  resume_2524 × jd_2525
-  pair_12621  resume_2525 × jd_2521
-  pair_12622  resume_2525 × jd_2522
-  pair_12623  resume_2525 × jd_2523
-  pair_12624  resume_2525 × jd_2524
-  pair_12625  resume_2525 × jd_2525
+  pair_12626  resume_2526 × jd_2526
+  pair_12627  resume_2526 × jd_2527
+  pair_12628  resume_2526 × jd_2528
+  pair_12629  resume_2526 × jd_2529
+  pair_12630  resume_2526 × jd_2530
+  pair_12631  resume_2527 × jd_2526
+  pair_12632  resume_2527 × jd_2527
+  pair_12633  resume_2527 × jd_2528
+  pair_12634  resume_2527 × jd_2529
+  pair_12635  resume_2527 × jd_2530
+  pair_12636  resume_2528 × jd_2526
+  pair_12637  resume_2528 × jd_2527
+  pair_12638  resume_2528 × jd_2528
+  pair_12639  resume_2528 × jd_2529
+  pair_12640  resume_2528 × jd_2530
+  pair_12641  resume_2529 × jd_2526
+  pair_12642  resume_2529 × jd_2527
+  pair_12643  resume_2529 × jd_2528
+  pair_12644  resume_2529 × jd_2529
+  pair_12645  resume_2529 × jd_2530
+  pair_12646  resume_2530 × jd_2526
+  pair_12647  resume_2530 × jd_2527
+  pair_12648  resume_2530 × jd_2528
+  pair_12649  resume_2530 × jd_2529
+  pair_12650  resume_2530 × jd_2530
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
