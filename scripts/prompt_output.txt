@@ -2,46 +2,46 @@ You are a dataset labeler for an AI recruitment system.
 Score 25 CV-JD pairs using rubric v0.2.
 
 ═══ RESUMES ═══
-  id: resume_2491 | level: intern | exp: 0.4 yrs
-  skills: Marketplace Operations, Microsoft Excel, Inventory Management, Product Listing, Sales Reporting, Customer Service, SKU Management, Google Sheets, Data Analysis, Merchandising
-  background: Final-year Business Administration student specializing in e-commerce operations with four months of internship experience supporting online marketplace activities. Assisted the operations team in mai
+  id: resume_2496 | level: intern | exp: 0.4 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, JavaScript, HTML, CSS, REST API Integration, Git, Responsive Design
+  background: Final-year Computer Science student specializing in frontend development with four months of internship experience building user interfaces for internal web applications. Assisted senior developers in
 
-  id: resume_2492 | level: junior | exp: 1.8 yrs
-  skills: Marketplace Management, Microsoft Excel, ERP Systems, Inventory Control, Order Management, Product Catalog, Merchandising Analysis, Customer Support, Sales Analytics, Pricing Management
-  background: E-commerce operations specialist with 1.8 years of experience managing marketplace activities for online retail brands. Responsible for maintaining product catalogs, optimizing listings, and coordinat
+  id: resume_2497 | level: junior | exp: 1.7 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, REST APIs, JavaScript, Jest, Accessibility, Performance Optimization
+  background: Frontend developer with 1.7 years of experience building and maintaining customer-facing web applications using React and TypeScript. Developed responsive interfaces, integrated APIs, and collaborated
 
-  id: resume_2493 | level: middle | exp: 4.2 yrs
-  skills: Category Management, Demand Forecasting, Business Intelligence, Marketplace Operations, Vendor Management, Pricing Strategy, Inventory Planning, Microsoft Excel, Power BI, Merchandising Strategy
-  background: Retail merchandising and e-commerce professional with 4.2 years of experience managing online assortment performance and marketplace operations. Led category management activities including assortment
+  id: resume_2498 | level: middle | exp: 4.3 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, React Query, Jest, Cypress, Performance Optimization, Design Systems, Server Side Rendering
+  background: Frontend engineer with 4.3 years of experience designing scalable web applications using React, TypeScript, and Next.js. Led development of reusable component systems, established frontend architectur
 
-  id: resume_2494 | level: senior | exp: 6.1 yrs
-  skills: Team Leadership, Marketplace Strategy, Omnichannel Retail, Inventory Planning, Forecasting, Vendor Negotiation, Business Analytics, Category Management, Process Improvement, Stakeholder Management
-  background: Senior e-commerce manager with 6.1 years of experience leading marketplace operations, merchandising initiatives, and cross-functional retail teams. Oversaw end-to-end online business performance incl
+  id: resume_2499 | level: senior | exp: 6.2 yrs
+  skills: React, TypeScript, Next.js, Tailwind CSS, Team Leadership, System Design, CI/CD, Frontend Architecture, Testing Strategy, Performance Optimization
+  background: Senior frontend engineer with 6.2 years of experience leading frontend initiatives for high-traffic web platforms. Specialized in React ecosystem technologies, scalable architecture design, and fronte
 
-  id: resume_2495 | level: senior | exp: 9.3 yrs
-  skills: Commercial Strategy, Retail Operations, Marketplace Leadership, Financial Planning, Change Management, Omnichannel Strategy, Supplier Management, Demand Forecasting, People Management, Profitability Analysis
-  background: Principal retail operations leader with 9.3 years of experience directing large-scale e-commerce businesses and marketplace growth strategies. Led multi-functional teams spanning merchandising, operat
+  id: resume_2500 | level: senior | exp: 9.1 yrs
+  skills: React, TypeScript, Next.js, Frontend Strategy, Engineering Leadership, Architecture Governance, Design Systems, Performance Monitoring, Technical Roadmaps, Scalability
+  background: Principal frontend architect with 9.1 years of experience leading enterprise-scale frontend platforms and engineering teams. Defined long-term frontend strategies, established organization-wide standa
 
 ═══ JOB DESCRIPTIONS ═══
-  id: jd_2491 | title: E-commerce Operations Intern | level: intern | min_exp: 0 yrs
-  required_skills: Microsoft Excel, Product Listing, Inventory Management, Sales Reporting, Marketplace Operations
-  description: Seeking an intern to support daily e-commerce and marketplace operations. The role will assist with product listing updates, inventory checks, order monitoring, and sales reporting
+  id: jd_2496 | title: Frontend Development Intern | level: intern | min_exp: 0 yrs
+  required_skills: React, TypeScript, HTML, CSS, Responsive Design
+  description: Seeking a frontend development intern to assist with building responsive web interfaces using React and TypeScript. The role involves implementing UI components, fixing bugs, integ
 
-  id: jd_2492 | title: Marketplace Operations Executive | level: junior | min_exp: 1 yrs
-  required_skills: Marketplace Management, Order Management, Inventory Control, Microsoft Excel, Sales Analytics
-  description: Looking for a junior marketplace operations executive to manage product catalogs, support order fulfillment, and coordinate inventory updates across online channels. The role requi
+  id: jd_2497 | title: Junior React Developer | level: junior | min_exp: 1 yrs
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Redux
+  description: Looking for a junior React developer to build and maintain web applications using React, TypeScript, and Next.js. Responsibilities include implementing features, integrating APIs, 
 
-  id: jd_2493 | title: Category Merchandising Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Category Management, Demand Forecasting, Vendor Management, Inventory Planning, Pricing Strategy
-  description: Seeking a category merchandising specialist to drive assortment performance across e-commerce channels. Responsibilities include category planning, demand forecasting, pricing anal
+  id: jd_2498 | title: Frontend Engineer | level: middle | min_exp: 3 yrs
+  required_skills: React, TypeScript, Next.js, Jest, Performance Optimization
+  description: Seeking a frontend engineer to design and deliver scalable web applications using React and Next.js. The role includes developing reusable component libraries, improving performanc
 
-  id: jd_2494 | title: Senior Marketplace Manager | level: senior | min_exp: 5 yrs
-  required_skills: Marketplace Strategy, Team Leadership, Forecasting, Business Analytics, Stakeholder Management
-  description: Hiring a senior marketplace manager to lead online retail performance across multiple channels. The role oversees marketplace strategy, inventory governance, team management, and p
+  id: jd_2499 | title: Senior Frontend Engineer | level: senior | min_exp: 5 yrs
+  required_skills: React, TypeScript, Frontend Architecture, Team Leadership, Performance Optimization
+  description: Hiring a senior frontend engineer to lead development of complex web platforms using React, TypeScript, and Next.js. Responsibilities include defining architecture standards, mento
 
-  id: jd_2495 | title: Head of E-commerce Operations | level: senior | min_exp: 7 yrs
-  required_skills: Commercial Strategy, Retail Operations, Financial Planning, Change Management, People Management
-  description: An experienced leader is required to oversee strategic e-commerce operations and commercial growth initiatives. This role will define long-term marketplace strategy, lead senior ma
+  id: jd_2500 | title: Principal Frontend Architect | level: senior | min_exp: 7 yrs
+  required_skills: React, TypeScript, Frontend Strategy, Engineering Leadership, Architecture Governance
+  description: An experienced frontend leader is needed to define technical strategy and oversee enterprise frontend platforms. Responsibilities include setting architecture direction, mentoring 
 
 ═══ SCORING RUBRIC v0.2 ═══
 Score each criterion 0–100, then compute:
@@ -66,39 +66,39 @@ Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
 ═══ TARGET LABEL DISTRIBUTION ═══
 The dataset is currently imbalanced. Bias your scoring to hit these counts.
 strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~8 pairs
-  excellent_match: ~9 pairs
-  moderate_match: ~2 pairs
-  weak_match: ~6 pairs
+  strong_match: ~3 pairs
+  excellent_match: ~2 pairs
+  moderate_match: ~9 pairs
+  weak_match: ~11 pairs
 Adjust criterion scores within valid ranges to reach these targets while
 keeping every score honest and consistent with the documents.
 
 ═══ PAIRING ORDER (25 pairs) ═══
-  pair_12451  resume_2491 × jd_2491
-  pair_12452  resume_2491 × jd_2492
-  pair_12453  resume_2491 × jd_2493
-  pair_12454  resume_2491 × jd_2494
-  pair_12455  resume_2491 × jd_2495
-  pair_12456  resume_2492 × jd_2491
-  pair_12457  resume_2492 × jd_2492
-  pair_12458  resume_2492 × jd_2493
-  pair_12459  resume_2492 × jd_2494
-  pair_12460  resume_2492 × jd_2495
-  pair_12461  resume_2493 × jd_2491
-  pair_12462  resume_2493 × jd_2492
-  pair_12463  resume_2493 × jd_2493
-  pair_12464  resume_2493 × jd_2494
-  pair_12465  resume_2493 × jd_2495
-  pair_12466  resume_2494 × jd_2491
-  pair_12467  resume_2494 × jd_2492
-  pair_12468  resume_2494 × jd_2493
-  pair_12469  resume_2494 × jd_2494
-  pair_12470  resume_2494 × jd_2495
-  pair_12471  resume_2495 × jd_2491
-  pair_12472  resume_2495 × jd_2492
-  pair_12473  resume_2495 × jd_2493
-  pair_12474  resume_2495 × jd_2494
-  pair_12475  resume_2495 × jd_2495
+  pair_12476  resume_2496 × jd_2496
+  pair_12477  resume_2496 × jd_2497
+  pair_12478  resume_2496 × jd_2498
+  pair_12479  resume_2496 × jd_2499
+  pair_12480  resume_2496 × jd_2500
+  pair_12481  resume_2497 × jd_2496
+  pair_12482  resume_2497 × jd_2497
+  pair_12483  resume_2497 × jd_2498
+  pair_12484  resume_2497 × jd_2499
+  pair_12485  resume_2497 × jd_2500
+  pair_12486  resume_2498 × jd_2496
+  pair_12487  resume_2498 × jd_2497
+  pair_12488  resume_2498 × jd_2498
+  pair_12489  resume_2498 × jd_2499
+  pair_12490  resume_2498 × jd_2500
+  pair_12491  resume_2499 × jd_2496
+  pair_12492  resume_2499 × jd_2497
+  pair_12493  resume_2499 × jd_2498
+  pair_12494  resume_2499 × jd_2499
+  pair_12495  resume_2499 × jd_2500
+  pair_12496  resume_2500 × jd_2496
+  pair_12497  resume_2500 × jd_2497
+  pair_12498  resume_2500 × jd_2498
+  pair_12499  resume_2500 × jd_2499
+  pair_12500  resume_2500 × jd_2500
 
 ═══ OUTPUT FORMAT ═══
 Output exactly 25 lines.
