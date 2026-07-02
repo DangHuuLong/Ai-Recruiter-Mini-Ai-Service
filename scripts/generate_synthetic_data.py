@@ -319,6 +319,7 @@ def build_pair_prompt(
     jds: list[dict],
     pair_start: int,
     label_targets: dict[str, int] | None = None,
+    current_dist: dict[str, int] | None = None,
 ) -> str:
     def resume_summary(r: dict) -> str:
         raw_words = len(r.get("raw_text", "").split())
@@ -358,21 +359,33 @@ def build_pair_prompt(
         for i, (_, rid, jid) in enumerate(pair_ids)
     )
 
+    label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
     if label_targets:
-        label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
-        dist_lines = "\n".join(
-            f"  {label}: ~{label_targets.get(label, 0)} pairs"
-            for label in label_order
-            if label in label_targets
-        )
+        total_existing = sum((current_dist or {}).values())
+        target_per_class = max((current_dist or {}).get(l, 0) for l in label_order) if current_dist else 0
+
+        rows = []
+        for label in label_order:
+            existing = (current_dist or {}).get(label, 0)
+            target   = label_targets.get(label, 0)
+            deficit  = max(0, target_per_class - existing) if current_dist else "?"
+            rows.append(f"  {label:<20}  existing: {existing:>4}  →  this batch: {target} pairs  (still need ~{deficit} total)")
+
+        dist_lines = "\n".join(rows)
         distribution_section = f"""
 ════════════════════════════════════
-TARGET LABEL DISTRIBUTION
+LABEL BALANCE — PRIORITY GUIDANCE
 ════════════════════════════════════
-Bias your scoring to hit these counts for this batch:
+Overall dataset so far: {total_existing} pairs total.
+Labels with fewer existing pairs MUST be prioritised in this batch.
+
 {dist_lines}
-Adjust criterion scores within valid windows to reach these targets
-while keeping every score honest and consistent with the documents.
+
+Rules:
+• Score pairs so this batch hits the "this batch" counts above.
+• Labels with high deficit get priority — bend seniority interpretation to reach them.
+• All scores must remain honest and consistent with the documents.
+• Adjust criterion scores within valid windows only.
 """
     else:
         distribution_section = ""
@@ -464,7 +477,7 @@ Each line is a single JSON object (no array brackets, no commas between lines).
 No markdown, no explanation — only {N_PAIRS} JSON lines.
 
 JSON schema per pair:
-{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
+{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
 
 # ── validation ─────────────────────────────────────────────────────────────────
 
@@ -784,8 +797,11 @@ def action_save() -> None:
         TEMP_INPUT.write_text("", encoding="utf-8")
 
         label_targets = compute_label_targets(N_PAIRS)
-        pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"], label_targets)
-        print(f"  Label targets this batch: " + "  ".join(f"{k}: {v}" for k, v in sorted(label_targets.items())))
+        current_dist  = dict(Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS))
+        pair_prompt   = build_pair_prompt(resumes_new, jds_new, session["pair_start"], label_targets, current_dist)
+        label_order   = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
+        print(f"  Current distribution: " + "  ".join(f"{l}: {current_dist.get(l, 0)}" for l in label_order))
+        print(f"  Batch targets:        " + "  ".join(f"{l}: {label_targets.get(l, 0)}" for l in label_order))
         PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
         print(f"\n  ✓ Pair prompt written to:  scripts/prompt_output.txt")
         print(f"  → Copy all content, paste into your LLM.")
