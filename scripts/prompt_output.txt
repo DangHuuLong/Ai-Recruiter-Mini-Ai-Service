@@ -1,109 +1,140 @@
 You are a dataset labeler for an AI recruitment system.
-Score 25 CV-JD pairs using rubric v0.2.
+Score 9 CV-JD pairs using rubric v0.2.
 
-═══ RESUMES ═══
-  id: resume_2666 | level: intern | exp: 0.4 yrs
-  skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding, Applicant Tracking Systems, Resume Review, HR Documentation, Candidate Communication, Recruitment Reporting
-  background: Final-year human resources student with 0.4 years of internship experience supporting recruiting and onboarding activities. Assisted recruiters with screening resumes, coordinating interview schedules
+════════════════════════════════════
+RESUMES
+════════════════════════════════════
+  id: resume_22 | level: junior | exp: 0.75 yrs | raw_text: 259 words
+  skills: Epic Systems, EMR, Clinical Operations, HIPAA Compliance, Patient Scheduling, Microsoft Excel, SQL, React, Node.js, PostgreSQL, HL7
+  projects: Clinitrack Portal
+  background: An ambitious and highly analytical healthcare management graduate seeking an introductory position in healthcare operations. Recently wrapped up an intensive nine-month stint working as a Clinical Operations Intern at a fast-growing tech-enabled clinic startup. Collaborated closely with a five-perso
 
-  id: resume_2667 | level: junior | exp: 1.5 yrs
-  skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems, Employee Records Management, Candidate Communication, Compliance Tracking, Recruitment Reporting, Stakeholder Management
-  background: Human resources coordinator with 1.5 years of experience supporting talent acquisition and onboarding programs. Managed interview coordination, candidate communications, applicant tracking system admi
+  id: resume_23 | level: middle | exp: 4.0 yrs | raw_text: 254 words
+  skills: Cerner Millennium, EMR, Clinical Operations, Medical Coordination, SQL Server 2019, Power BI, Python, MySQL, FHIR, Data Validation, HIPAA Compliance
+  projects: SmartScheduler
+  background: Resourceful and results-driven Clinical Operations Specialist offering four years of professional experience managing complex medical coordination pipelines and driving core platform adoptions within mid-sized enterprise multispecialty hospital groups. For the past three years, I served as a core Ad
 
-  id: resume_2668 | level: middle | exp: 4.3 yrs
-  skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Workforce Reporting, Candidate Assessment, Process Improvement, Compliance Management, Employee Relations Support, Stakeholder Collaboration
-  background: Human resources specialist with 4.3 years of experience managing recruitment operations, onboarding programs, and HR administration initiatives. Led full-cycle recruiting activities, coordinated hirin
+  id: resume_24 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: eClinicalWorks, EMR, Clinical Operations, Medical Coordination, HL7, FHIR, Python, Apache Spark, PostgreSQL, Healthcare Informatics, HIPAA Compliance
+  projects: CareFlow Predictive Engine
+  background: Accomplished and forward-thinking Senior Director of Clinical Operations with eight years of progressive leadership experience orchestrating enterprise-level medical coordination, health informatics engineering, and EMR governance models within nationwide healthcare corporations. At present, I spear
 
-  id: resume_2669 | level: senior | exp: 6.2 yrs
-  skills: Talent Acquisition Leadership, Workforce Planning, HR Operations, Onboarding Governance, HRIS Strategy, Recruitment Metrics, Employer Branding, Compliance Leadership, Team Development, Stakeholder Leadership
-  background: Senior talent acquisition manager with 6.2 years of experience leading recruiting operations, workforce planning programs, and onboarding governance initiatives. Managed recruiting teams responsible f
+════════════════════════════════════
+JOB DESCRIPTIONS
+════════════════════════════════════
+  id: jd_22 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Epic Systems, EMR, Clinical Operations, HIPAA Compliance, Microsoft Excel
+  preferred_skills: SQL, Patient Scheduling
+  description: The outpatient administrative services group is searching for an energetic Junior Medical Coordinator to join our expanding four-person clinical operations team. This operational unit is tasked with executing daily patient administration tasks, mappi
 
-  id: resume_2670 | level: senior | exp: 9.4 yrs
-  skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, Talent Acquisition Strategy, HR Transformation, Workforce Strategy, HR Technology Governance, Strategic Roadmaps, Organizational Leadership, Capability Development
-  background: Principal human resources executive with 9.4 years of experience defining enterprise talent strategy and leading organizational transformation initiatives. Established governance frameworks for talent
+  id: jd_23 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 191 words
+  required_skills: Cerner Millennium, EMR, SQL Server, Power BI, Clinical Operations, HIPAA Compliance
+  preferred_skills: Python, Medical Coordination
+  description: Our digital care solutions department is seeking an analytical and structured Clinical Operations Specialist to guide and streamline our cross-functional medical coordination networks. The successful candidate will join an established seven-person op
 
-═══ JOB DESCRIPTIONS ═══
-  id: jd_2666 | title: HR and Talent Acquisition Intern | level: intern | min_exp: 0 yrs
-  required_skills: Recruiting, Candidate Screening, Interview Scheduling, HRIS, Onboarding
-  description: Seeking an HR intern to support recruiting, onboarding, and HR administration activities. Responsibilities include candidate screening, interview scheduling, ATS maintenance, onboa
+  id: jd_24 | title: Senior Director of Enterprise EMR Architecture | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: eClinicalWorks, EMR, HL7, FHIR, HIPAA Compliance, Clinical Operations
+  preferred_skills: Python, Apache Spark, Healthcare Informatics
+  description: We are on the lookout for a strategic Senior Director of Enterprise EMR Architecture to chart the long-term technical vision and operational data governance of our national healthcare infrastructure. This high-visibility position steers an elite ten-
 
-  id: jd_2667 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs
-  required_skills: Talent Acquisition, HRIS, Onboarding, Interview Coordination, Applicant Tracking Systems
-  description: Looking for a junior HR professional to coordinate recruiting and onboarding activities. Responsibilities include ATS administration, candidate communication, interview coordinatio
-
-  id: jd_2668 | title: HR Specialist | level: middle | min_exp: 3 yrs
-  required_skills: Full Cycle Recruiting, HRIS Administration, Onboarding Programs, Recruitment Analytics, Process Improvement
-  description: Seeking an experienced HR specialist to manage recruitment programs, onboarding initiatives, and HR operations. Responsibilities include full-cycle recruiting, workforce reporting,
-
-  id: jd_2669 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 5 yrs
-  required_skills: Talent Acquisition Leadership, Workforce Planning, Onboarding Governance, Recruitment Metrics, Stakeholder Leadership
-  description: Hiring a senior talent acquisition manager to lead recruiting operations and workforce planning initiatives. Responsibilities include onboarding governance, recruitment metrics ove
-
-  id: jd_2670 | title: Principal HR Strategy Lead | level: senior | min_exp: 7 yrs
-  required_skills: Enterprise Talent Strategy, HR Governance, Executive Leadership, HR Transformation, Workforce Strategy
-  description: An experienced HR executive is required to define enterprise talent strategy and oversee transformation initiatives. Responsibilities include governance development, workforce stra
-
-═══ SCORING RUBRIC v0.2 ═══
-Score each criterion 0–100, then compute:
-  overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
-                        PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
-                        KEYWORD_DOMAIN_ALIGNMENT×0.10)
+════════════════════════════════════
+SCORING RUBRIC v0.2
+════════════════════════════════════
+Score each criterion 0-100, then compute weighted overall:
+  overall_score = round(
+      SKILLS_MATCH            × 0.35 +
+      EXPERIENCE_RELEVANCE    × 0.30 +
+      PROJECT_RELEVANCE       × 0.15 +
+      EDUCATION_CERTIFICATION × 0.10 +
+      KEYWORD_DOMAIN_ALIGNMENT× 0.10
+  )
 
 Label mapping:
-  90–100 → excellent_match
-  75–89  → strong_match       ← PRIMARY TARGET — maximise this label
-  60–74  → moderate_match
-  40–59  → weak_match
-  0–39   → poor_match         ← FORBIDDEN — do not generate
+  90-100 → excellent_match
+  75-89  → strong_match
+  60-74  → moderate_match
+  40-59  → weak_match
+  0-39   → poor_match
 
-Scores below 40 are forbidden. Floor is 40.
-Prioritise strong_match (75–89): aim for at least half the pairs in this range.
+════════════════════════════════════
+VALID SCORE WINDOWS (boundary zones removed)
+════════════════════════════════════
+Use ONLY scores within these windows — no exceptions:
+  poor_match:      20-34   (use 25, 28, 30)
+  weak_match:      46-54   (use 48, 50, 52)
+  moderate_match:  66-69   (use 67, 68)
+  strong_match:    81-84   (use 82, 83)
+  excellent_match: 96-100  (use 97, 98)
 
-Avoid boundary zones — do NOT use scores in these ranges:
-  35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
+NEVER use scores in boundary zones: 35-45, 55-65, 70-80, 85-95.
+These zones are forbidden because they produce ambiguous labels.
 
-═══ TARGET LABEL DISTRIBUTION ═══
-The dataset is currently imbalanced. Bias your scoring to hit these counts.
-strong_match is the PRIMARY target — give it the highest allocation.
-  strong_match: ~1 pairs
-  excellent_match: ~10 pairs
-  moderate_match: ~4 pairs
-  weak_match: ~10 pairs
-Adjust criterion scores within valid ranges to reach these targets while
-keeping every score honest and consistent with the documents.
+════════════════════════════════════
+poor_match SCORING GUIDANCE
+════════════════════════════════════
+A valid poor_match pair (score 20-34) requires ALL of:
+  1. Massive experience gap: intern/fresh grad (0-1 yr) vs senior JD (6+ yrs required)
+     → EXPERIENCE_RELEVANCE: 10-25
+  2. Core skill mismatch: candidate missing most required technical skills
+     → SKILLS_MATCH: 15-35
+  3. Project misalignment: no relevant projects that map to JD responsibilities
+     → PROJECT_RELEVANCE: 10-30
+Natural source: intern/junior CV × senior JD pairing.
+Do NOT fabricate poor_match from unrelated domains — the CV and JD must still be in the same broad domain.
 
-═══ PAIRING ORDER (25 pairs) ═══
-  pair_13326  resume_2666 × jd_2666
-  pair_13327  resume_2666 × jd_2667
-  pair_13328  resume_2666 × jd_2668
-  pair_13329  resume_2666 × jd_2669
-  pair_13330  resume_2666 × jd_2670
-  pair_13331  resume_2667 × jd_2666
-  pair_13332  resume_2667 × jd_2667
-  pair_13333  resume_2667 × jd_2668
-  pair_13334  resume_2667 × jd_2669
-  pair_13335  resume_2667 × jd_2670
-  pair_13336  resume_2668 × jd_2666
-  pair_13337  resume_2668 × jd_2667
-  pair_13338  resume_2668 × jd_2668
-  pair_13339  resume_2668 × jd_2669
-  pair_13340  resume_2668 × jd_2670
-  pair_13341  resume_2669 × jd_2666
-  pair_13342  resume_2669 × jd_2667
-  pair_13343  resume_2669 × jd_2668
-  pair_13344  resume_2669 × jd_2669
-  pair_13345  resume_2669 × jd_2670
-  pair_13346  resume_2670 × jd_2666
-  pair_13347  resume_2670 × jd_2667
-  pair_13348  resume_2670 × jd_2668
-  pair_13349  resume_2670 × jd_2669
-  pair_13350  resume_2670 × jd_2670
+════════════════════════════════════
+weak_match SCORING GUIDANCE
+════════════════════════════════════
+A valid weak_match pair (score 46-54) requires at least one of:
+  1. Experience gap: junior CV (1-2 yrs) vs senior JD (5+ yrs required)
+     → EXPERIENCE_RELEVANCE: 25-40 (large gap penalised heavily)
+     → SKILLS_MATCH: 45-60 (partial skill overlap acceptable)
+  2. Skill domain mismatch: same broad field but different specialization
+     → SKILLS_MATCH: 35-55 (missing core required stack)
+     → PROJECT_RELEVANCE: 30-50 (projects don't align with JD responsibilities)
 
-═══ OUTPUT FORMAT ═══
-Output exactly 25 lines.
+For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
+  • If EXPERIENCE_RELEVANCE is 20, explain in label_notes (e.g. "requires 6+ yrs, candidate has 0.5 yrs")
+  • SKILLS_MATCH cannot be 85 if overall is 28 — the math must work
+  • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
+
+════════════════════════════════════
+LABEL BALANCE — PRIORITY GUIDANCE
+════════════════════════════════════
+Overall dataset so far: 63 pairs total.
+Labels with fewer existing pairs MUST be prioritised in this batch.
+
+  poor_match            existing:    0  →  this batch: 3 pairs  (still need ~25 total)
+  weak_match            existing:   25  →  this batch: 1 pairs  (still need ~0 total)
+  moderate_match        existing:   14  →  this batch: 2 pairs  (still need ~11 total)
+  strong_match          existing:   12  →  this batch: 2 pairs  (still need ~13 total)
+  excellent_match       existing:   12  →  this batch: 2 pairs  (still need ~13 total)
+
+Rules:
+• Score pairs so this batch hits the "this batch" counts above.
+• Labels with high deficit get priority — bend seniority interpretation to reach them.
+• All scores must remain honest and consistent with the documents.
+• Adjust criterion scores within valid windows only.
+
+════════════════════════════════════
+PAIRING ORDER (9 pairs)
+════════════════════════════════════
+  pair_64     resume_22 × jd_22
+  pair_65     resume_22 × jd_23
+  pair_66     resume_22 × jd_24
+  pair_67     resume_23 × jd_22
+  pair_68     resume_23 × jd_23
+  pair_69     resume_23 × jd_24
+  pair_70     resume_24 × jd_22
+  pair_71     resume_24 × jd_23
+  pair_72     resume_24 × jd_24
+
+════════════════════════════════════
+OUTPUT FORMAT
+════════════════════════════════════
+Output exactly 9 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation, no extra text — only 25 JSON lines.
+No markdown, no explanation — only 9 JSON lines.
 
 JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 40–100>,"criterion_scores":{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
