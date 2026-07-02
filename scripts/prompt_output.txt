@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_16 | level: junior | exp: 0.67 yrs | raw_text: 375 words
-  skills: Swift, SwiftUI, UIKit, Xcode, Git, GitHub, XCTest, Core Data, Combine, URLSession, Codable, Auto Layout, REST APIs
-  projects: LocalFitness, Open-Source Date Formatting Library
-  background: Recently graduated mobile developer with eight months of hands-on experience as an iOS Development Intern at a mid-sized fintech startup working on a consumer payment application used by approximately 50,000 monthly active users. During the internship on a four-person iOS team, responsibilities incl
+  id: resume_19 | level: junior | exp: 0.58 yrs | raw_text: 275 words
+  skills: Epic Systems, EMR, HIPAA Compliance, Clinical Operations, Patient Scheduling, Data Entry, Microsoft Excel, SQL, React, Node.js, PostgreSQL, HL7
+  projects: EMR Patient Onboarding Portal
+  background: An enthusiastic and highly organized healthcare administration graduate with seven months of hands-on experience as a Clinical Operations Intern at a regional community health clinic network serving over twelve thousand patients monthly across three busy metropolitan centers. Working within a tight-
 
-  id: resume_17 | level: middle | exp: 4 yrs | raw_text: 420 words
-  skills: Swift, SwiftUI, UIKit, Kotlin, Jetpack Compose, React Native, Core Data, CloudKit, Firebase, Room, SQLite, MVVM, Redux, Git, GitHub Actions, Fastlane
-  projects: ReleaseNotes
-  background: Mobile engineer with four years of experience shipping consumer and enterprise mobile applications across iOS and Android platforms. Spent the last two and a half years as a Senior Mobile Engineer at a growth-stage mobile-first e-commerce company, owning the iOS app serving roughly 300,000 monthly a
+  id: resume_20 | level: middle | exp: 4.0 yrs | raw_text: 282 words
+  skills: Cerner Millennium, EMR, Clinical Operations, Medical Coordination, HIPAA Compliance, SQL Server 2019, Power BI, Python, MySQL, FHIR, Data Validation
+  projects: MedConnect Scheduler
+  background: Dedicated and detail-oriented Clinical Operations Specialist with four years of progressive experience managing medical coordination and optimizing electronic medical records within mid-sized multispecialty healthcare groups. Previously spent three years at an urban outpatient startup clinic network
 
-  id: resume_18 | level: senior | exp: 7.5 yrs | raw_text: 411 words
-  skills: Swift, SwiftUI, Objective-C, Kotlin, Jetpack Compose, MVVM, Redux, Firebase, Crashlytics, Core Data, Room, SPM, CocoaPods, gRPC, Git, Jenkins, TestFlight, Google Play
-  projects: PlatformSDK
-  background: Senior Mobile Engineering Lead with seven and a half years of experience designing and shipping mobile platforms at scale, specializing in iOS architecture and cross-platform systems. Currently serves as Principal Mobile Engineer at a major enterprise mobile-first company with over 50 million monthl
+  id: resume_21 | level: senior | exp: 8.0 yrs | raw_text: 275 words
+  skills: eClinicalWorks, EMR, Clinical Operations, Medical Coordination, HIPAA Compliance, HL7, FHIR, Python, Apache Spark, PostgreSQL, Healthcare Informatics
+  projects: CareFlow Analytics
+  background: Accomplished and vision-driven Senior Director of Clinical Operations with eight years of extensive leadership experience driving enterprise-level medical coordination, medical informatics, and EMR governance strategies across large-scale hospital networks. Currently managing a twelve-person elite c
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_16 | title: Junior iOS Developer | level: junior | min_exp: 1 yrs | raw_text: 255 words
-  required_skills: Swift, SwiftUI, UIKit, Git, Xcode
-  preferred_skills: Firebase, MVVM, XCTest
-  description: This team builds and maintains a consumer-facing iOS application serving roughly 150,000 monthly active users, focused on lifestyle and productivity features. The junior iOS developer will work on a four-person iOS team supporting the lead engineer a
+  id: jd_19 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: Epic Systems, EMR, HIPAA Compliance, Clinical Operations, Microsoft Excel
+  preferred_skills: SQL, Patient Scheduling
+  description: The outpatient administrative services department is actively seeking a Junior Medical Coordinator to join our expanding four-person clinical operations team. This team is responsible for managing daily patient administration, coordinating provider s
 
-  id: jd_17 | title: Mobile Engineer (iOS/Android) | level: middle | min_exp: 3 yrs | raw_text: 279 words
-  required_skills: Swift, Kotlin, Xcode, Android Studio, Redux, Firebase
-  preferred_skills: SwiftUI, Jetpack Compose, XCTest, Espresso
-  description: This team owns the mobile platform for a mid-market B2B SaaS company, supporting both iOS and Android applications with roughly one million monthly active users across enterprise customers. The mobile engineer will be a mid-level individual contribut
+  id: jd_20 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 182 words
+  required_skills: Cerner Millennium, EMR, SQL Server, Power BI, Clinical Operations, HIPAA Compliance
+  preferred_skills: Python, Medical Coordination
+  description: Our digital health solutions division is looking for an experienced Clinical Operations Specialist to manage and optimize our cross-functional medical coordination frameworks. The successful candidate will join an established seven-person operations 
 
-  id: jd_18 | title: Senior Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 311 words
-  required_skills: Swift, Kotlin, SPM, Gradle, Jenkins, XCTest, Espresso
-  preferred_skills: SwiftUI, Jetpack Compose, Kotlin Coroutines, Performance Profiling
-  description: This position leads mobile architecture and engineering strategy at a scaled technology company with mobile apps serving over 100 million users across iOS and Android platforms. The senior mobile architect will own the long-term vision and roadmap fo
+  id: jd_21 | title: Senior Director of Enterprise EMR Architecture | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: eClinicalWorks, EMR, HL7, FHIR, HIPAA Compliance, Clinical Operations
+  preferred_skills: Python, Apache Spark, Healthcare Informatics
+  description: We are seeking a visionary Senior Director of Enterprise EMR Architecture to lead the long-term technical strategy and operational governance of our nationwide clinical infrastructure. This high-impact position directs a specialized ten-person clinic
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -101,14 +101,14 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — PRIORITY GUIDANCE
 ════════════════════════════════════
-Overall dataset so far: 45 pairs total.
+Overall dataset so far: 54 pairs total.
 Labels with fewer existing pairs MUST be prioritised in this batch.
 
-  poor_match            existing:    0  →  this batch: 4 pairs  (still need ~17 total)
-  weak_match            existing:   17  →  this batch: 1 pairs  (still need ~0 total)
-  moderate_match        existing:   10  →  this batch: 2 pairs  (still need ~7 total)
-  strong_match          existing:    8  →  this batch: 2 pairs  (still need ~9 total)
-  excellent_match       existing:   10  →  this batch: 2 pairs  (still need ~7 total)
+  poor_match            existing:    0  →  this batch: 3 pairs  (still need ~22 total)
+  weak_match            existing:   22  →  this batch: 1 pairs  (still need ~0 total)
+  moderate_match        existing:   12  →  this batch: 2 pairs  (still need ~10 total)
+  strong_match          existing:   10  →  this batch: 2 pairs  (still need ~12 total)
+  excellent_match       existing:   10  →  this batch: 2 pairs  (still need ~12 total)
 
 Rules:
 • Score pairs so this batch hits the "this batch" counts above.
@@ -119,15 +119,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_46     resume_16 × jd_16
-  pair_47     resume_16 × jd_17
-  pair_48     resume_16 × jd_18
-  pair_49     resume_17 × jd_16
-  pair_50     resume_17 × jd_17
-  pair_51     resume_17 × jd_18
-  pair_52     resume_18 × jd_16
-  pair_53     resume_18 × jd_17
-  pair_54     resume_18 × jd_18
+  pair_55     resume_19 × jd_19
+  pair_56     resume_19 × jd_20
+  pair_57     resume_19 × jd_21
+  pair_58     resume_20 × jd_19
+  pair_59     resume_20 × jd_20
+  pair_60     resume_20 × jd_21
+  pair_61     resume_21 × jd_19
+  pair_62     resume_21 × jd_20
+  pair_63     resume_21 × jd_21
 
 ════════════════════════════════════
 OUTPUT FORMAT
