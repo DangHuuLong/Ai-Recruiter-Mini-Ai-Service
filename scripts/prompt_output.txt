@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_4 | level: junior | exp: 0.5 yrs | raw_text: 252 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Vite, Axios, React Query
-  projects: CoinScanner, ChatSphere
-  background: I am a passionate frontend developer who recently completed a Bachelor of Science in Information Technology, graduating in 2025. During my studies, I completed a six-month internship at a fast-growing software startup, working inside a dynamic product team of four developers. My core responsibilitie
+  id: resume_7 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: Figma, Maze, Wireframing, Prototyping, User Research, Usability Testing, Interaction Design
+  projects: EcoTrack
+  background: I am an enthusiastic Associate Product Designer who recently graduated with a Bachelor of Science in Interaction Design in 2025. During my final year of university studies, I completed a rigorous six-month internship at an early-stage healthcare software startup, operating as the sole designer withi
 
-  id: resume_5 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, Figma, Storybook, Jest
-  projects: UI-Craft
-  background: As a Mid-Level Frontend Engineer with four years of professional experience, I specialize in crafting clean, accessible, and high-performing user interfaces for complex modern web applications. At my previous employment within a mid-sized e-commerce enterprise, I spent two and a half years working a
+  id: resume_8 | level: middle | exp: 4.0 yrs | raw_text: 279 words
+  skills: Figma, FigJam, UserTesting.com, Adobe Creative Cloud, Interaction Design, User Research, Information Architecture, Accessibility
+  projects: FlexKit
+  background: As a diligent Mid-Level UI/UX Designer with four years of continuous professional experience, I specialize in crafting accessible, visually compelling, and strategic user experiences for complex modern digital products. In my previous employment at a mid-sized e-commerce product company, I spent two
 
-  id: resume_6 | level: senior | exp: 8.0 yrs | raw_text: 257 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Webpack, Turbopack, D3.js, GraphQL
-  projects: WebTrace
-  background: I am a Senior Frontend Engineer and Technical Lead with eight years of comprehensive experience architecting high-performance enterprise web platforms and leading collaborative development teams. In my current position at a global financial enterprise, I guide a cross-functional engineering squad of
+  id: resume_9 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Figma, Miro, Principle, Design Systems, User Research, Information Architecture, Interaction Design, Accessibility
+  projects: SpecTrace
+  background: I am a Senior Product Designer and Design Team Lead with eight years of comprehensive professional experience architecting large-scale enterprise application experiences and managing high-performing creative units. In my current position at a global enterprise fintech corporation, I guide a talented
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_4 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: React, TypeScript, Tailwind CSS, Git
-  preferred_skills: Next.js, React Query
-  description: Our client-facing platform team is expanding, and we are looking for an enthusiastic Junior Frontend Engineer to help us build out our core software features. Our engineering department consists of five developers who work closely together to maintai
+  id: jd_7 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 230 words
+  required_skills: Figma, FigJam, Maze
+  preferred_skills: Adobe Creative Cloud, HTML, CSS
+  description: Our core client-facing software product platform team is expanding rapidly, and we are looking for an enthusiastic Junior UI/UX Designer to help us execute out our core product experiences. Our digital design department consists of five talented indi
 
-  id: jd_5 | title: Frontend Developer | level: middle | min_exp: 3 yrs | raw_text: 184 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS, Redux Toolkit, Node.js
-  preferred_skills: Jest, Figma
-  description: We are looking for a skilled Mid-Level Frontend Developer to join our core product platform team. The group is composed of six engineers focused on delivering collaborative workspace tools for our enterprise cloud suite. Your day-to-day responsibilit
+  id: jd_8 | title: Product Designer | level: middle | min_exp: 3 yrs | raw_text: 209 words
+  required_skills: Figma, FigJam, UserTesting.com, Miro
+  preferred_skills: Storybook, Adobe Illustrator
+  description: We are actively looking for a skilled Mid-Level Product Designer to join our core collaborative product suite team. The design group is composed of six dedicated engineers and creators focused on delivering collaborative workspace tools for our enter
 
-  id: jd_6 | title: Senior Frontend Engineer / Technical Lead | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS, Webpack, Node.js
-  preferred_skills: GraphQL, CI/CD
-  description: We are seeking an outstanding Senior Frontend Engineer and Technical Lead to guide the architecture of our next-generation web platforms. Our high-velocity division consists of twelve specialized developers constructing low-latency commercial portals
+  id: jd_9 | title: Senior Product Designer / Design Team Lead | level: senior | min_exp: 6 yrs | raw_text: 227 words
+  required_skills: Figma, Miro, Principle, UserTesting.com
+  preferred_skills: Design Tokens, Data Analytics
+  description: We are seeking an outstanding Senior Product Designer and Design Team Lead to guide the strategic user experience architecture of our next-generation enterprise software platforms. Our high-velocity division consists of twelve specialized developers 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -102,7 +102,7 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 TARGET LABEL DISTRIBUTION
 ════════════════════════════════════
 Bias your scoring to hit these counts for this batch:
-  poor_match: ~3 pairs
+  poor_match: ~4 pairs
   weak_match: ~1 pairs
   moderate_match: ~2 pairs
   strong_match: ~2 pairs
@@ -113,15 +113,15 @@ while keeping every score honest and consistent with the documents.
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_10     resume_4 × jd_4
-  pair_11     resume_4 × jd_5
-  pair_12     resume_4 × jd_6
-  pair_13     resume_5 × jd_4
-  pair_14     resume_5 × jd_5
-  pair_15     resume_5 × jd_6
-  pair_16     resume_6 × jd_4
-  pair_17     resume_6 × jd_5
-  pair_18     resume_6 × jd_6
+  pair_19     resume_7 × jd_7
+  pair_20     resume_7 × jd_8
+  pair_21     resume_7 × jd_9
+  pair_22     resume_8 × jd_7
+  pair_23     resume_8 × jd_8
+  pair_24     resume_8 × jd_9
+  pair_25     resume_9 × jd_7
+  pair_26     resume_9 × jd_8
+  pair_27     resume_9 × jd_9
 
 ════════════════════════════════════
 OUTPUT FORMAT
