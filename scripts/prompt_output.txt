@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1 | level: junior | exp: 0.5 yrs | raw_text: 267 words
-  skills: Python, Pandas, NumPy, Scikit-Learn, PyTorch, Flask, Docker
-  projects: GreenRouting, StockSentiment
-  background: I am an enthusiastic Data Science graduate looking to secure an entry-level position where I can apply my academic knowledge of machine learning. My experience includes a comprehensive six-month internship at an e-commerce startup within a tight-knit data team of three people. During this internship
+  id: resume_4 | level: junior | exp: 0.5 yrs | raw_text: 252 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Vite, Axios, React Query
+  projects: CoinScanner, ChatSphere
+  background: I am a passionate frontend developer who recently completed a Bachelor of Science in Information Technology, graduating in 2025. During my studies, I completed a six-month internship at a fast-growing software startup, working inside a dynamic product team of four developers. My core responsibilitie
 
-  id: resume_2 | level: middle | exp: 4.0 yrs | raw_text: 255 words
-  skills: Python, Scikit-Learn, XGBoost, Pandas, Apache Airflow, PyTorch, SQL
-  projects: LogVision
-  background: As a Mid-Level Machine Learning Engineer with four years of professional experience, I specialize in designing, training, and deploying robust predictive models that drive tangible business value. At my previous role within a mid-sized fintech startup, I spent two and a half years working in an agil
+  id: resume_5 | level: middle | exp: 4.0 yrs | raw_text: 262 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, Figma, Storybook, Jest
+  projects: UI-Craft
+  background: As a Mid-Level Frontend Engineer with four years of professional experience, I specialize in crafting clean, accessible, and high-performing user interfaces for complex modern web applications. At my previous employment within a mid-sized e-commerce enterprise, I spent two and a half years working a
 
-  id: resume_3 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: Python, PyTorch, Scikit-Learn, FastAPI, PostgreSQL, AWS ECS, Pandas, MLOps
-  projects: GraphRec
-  background: I am a Senior Data Scientist and Technical Lead with eight years of comprehensive experience architecting enterprise-grade machine learning solutions. In my current role at a large financial enterprise, I lead a cross-functional team of nine engineers and data scientists focused on fraud detection. 
+  id: resume_6 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Webpack, Turbopack, D3.js, GraphQL
+  projects: WebTrace
+  background: I am a Senior Frontend Engineer and Technical Lead with eight years of comprehensive experience architecting high-performance enterprise web platforms and leading collaborative development teams. In my current position at a global financial enterprise, I guide a cross-functional engineering squad of
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Python, Pandas, NumPy, Scikit-Learn, SQL
-  preferred_skills: PyTorch, Flask, Git
-  description: Our internal analytics team is expanding, and we are looking for a Junior Data Scientist to help us interpret complex behavioral data and build foundational predictive systems. Our data department consists of five practitioners, including senior scie
+  id: jd_4 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
+  required_skills: React, TypeScript, Tailwind CSS, Git
+  preferred_skills: Next.js, React Query
+  description: Our client-facing platform team is expanding, and we are looking for an enthusiastic Junior Frontend Engineer to help us build out our core software features. Our engineering department consists of five developers who work closely together to maintai
 
-  id: jd_2 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs | raw_text: 188 words
-  required_skills: Python, Pandas, Scikit-Learn, PyTorch, Apache Airflow, Docker
-  preferred_skills: XGBoost, AWS, FastAPI, PostgreSQL
-  description: We are seeking an experienced Mid-Level Machine Learning Engineer to join our growing core platform group. The team is comprised of six dedicated engineers focused on delivering intelligent automation tools for our enterprise SaaS product lines. Your
+  id: jd_5 | title: Frontend Developer | level: middle | min_exp: 3 yrs | raw_text: 184 words
+  required_skills: React, Next.js, TypeScript, Tailwind CSS, Redux Toolkit, Node.js
+  preferred_skills: Jest, Figma
+  description: We are looking for a skilled Mid-Level Frontend Developer to join our core product platform team. The group is composed of six engineers focused on delivering collaborative workspace tools for our enterprise cloud suite. Your day-to-day responsibilit
 
-  id: jd_3 | title: Senior Data Scientist / Technical Lead | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Python, PyTorch, Scikit-Learn, FastAPI, AWS ECS, PostgreSQL, Pandas
-  preferred_skills: MLflow, Kubernetes, NumPy
-  description: We are searching for a Senior Data Scientist and Technical Lead to pioneer the next generation of our high-throughput predictive risk engines. The specialized data science division comprises twelve senior engineers and researchers building high-frequ
+  id: jd_6 | title: Senior Frontend Engineer / Technical Lead | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: React, Next.js, TypeScript, Tailwind CSS, Webpack, Node.js
+  preferred_skills: GraphQL, CI/CD
+  description: We are seeking an outstanding Senior Frontend Engineer and Technical Lead to guide the architecture of our next-generation web platforms. Our high-velocity division consists of twelve specialized developers constructing low-latency commercial portals
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -102,7 +102,7 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 TARGET LABEL DISTRIBUTION
 ════════════════════════════════════
 Bias your scoring to hit these counts for this batch:
-  poor_match: ~2 pairs
+  poor_match: ~3 pairs
   weak_match: ~1 pairs
   moderate_match: ~2 pairs
   strong_match: ~2 pairs
@@ -113,15 +113,15 @@ while keeping every score honest and consistent with the documents.
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1      resume_1 × jd_1
-  pair_2      resume_1 × jd_2
-  pair_3      resume_1 × jd_3
-  pair_4      resume_2 × jd_1
-  pair_5      resume_2 × jd_2
-  pair_6      resume_2 × jd_3
-  pair_7      resume_3 × jd_1
-  pair_8      resume_3 × jd_2
-  pair_9      resume_3 × jd_3
+  pair_10     resume_4 × jd_4
+  pair_11     resume_4 × jd_5
+  pair_12     resume_4 × jd_6
+  pair_13     resume_5 × jd_4
+  pair_14     resume_5 × jd_5
+  pair_15     resume_5 × jd_6
+  pair_16     resume_6 × jd_4
+  pair_17     resume_6 × jd_5
+  pair_18     resume_6 × jd_6
 
 ════════════════════════════════════
 OUTPUT FORMAT
