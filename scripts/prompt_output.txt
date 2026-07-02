@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_13 | level: junior | exp: 0.7 yrs | raw_text: 282 words
-  skills: Jira, Figma, Scrum, Google Analytics 4, Mixpanel, SQL, Amplitude, Productboard, User Research
-  projects: CampusEats, StudyBuddy
-  background: Recently graduated associate product professional with under a year of hands-on experience gained through an internship at a mid-sized fintech startup. As a Product Analyst Intern for eight months on a five-person product squad, responsibilities included maintaining the product backlog in Jira, writ
+  id: resume_16 | level: junior | exp: 0.67 yrs | raw_text: 375 words
+  skills: Swift, SwiftUI, UIKit, Xcode, Git, GitHub, XCTest, Core Data, Combine, URLSession, Codable, Auto Layout, REST APIs
+  projects: LocalFitness, Open-Source Date Formatting Library
+  background: Recently graduated mobile developer with eight months of hands-on experience as an iOS Development Intern at a mid-sized fintech startup working on a consumer payment application used by approximately 50,000 monthly active users. During the internship on a four-person iOS team, responsibilities incl
 
-  id: resume_14 | level: middle | exp: 4.5 yrs | raw_text: 294 words
-  skills: Jira, Productboard, SQL, Looker, Salesforce, React, Node.js, PostgreSQL, Optimizely, A/B Testing, PRD Writing
-  projects: RoadmapSync
-  background: Product Manager with four years of experience delivering roadmap execution and stakeholder alignment across B2B SaaS products. Spent the last two and a half years as a Product Manager at a mid-sized enterprise software company, owning the reporting and analytics module for a workforce management pla
+  id: resume_17 | level: middle | exp: 4 yrs | raw_text: 420 words
+  skills: Swift, SwiftUI, UIKit, Kotlin, Jetpack Compose, React Native, Core Data, CloudKit, Firebase, Room, SQLite, MVVM, Redux, Git, GitHub Actions, Fastlane
+  projects: ReleaseNotes
+  background: Mobile engineer with four years of experience shipping consumer and enterprise mobile applications across iOS and Android platforms. Spent the last two and a half years as a Senior Mobile Engineer at a growth-stage mobile-first e-commerce company, owning the iOS app serving roughly 300,000 monthly a
 
-  id: resume_15 | level: senior | exp: 8 yrs | raw_text: 325 words
-  skills: Aha!, Confluence, Kong, Kubernetes, AWS EKS, Kafka, Stripe, PostgreSQL, Datadog, Grafana, RICE Prioritization, OKRs, SQL
-  projects: PlatformHealth
-  background: Senior Product Manager and technical product lead with eight years of experience driving platform strategy and multi-team roadmap execution in enterprise technology environments. For the past three years, served as Principal Product Manager at a large enterprise software company, owning the platform
+  id: resume_18 | level: senior | exp: 7.5 yrs | raw_text: 411 words
+  skills: Swift, SwiftUI, Objective-C, Kotlin, Jetpack Compose, MVVM, Redux, Firebase, Crashlytics, Core Data, Room, SPM, CocoaPods, gRPC, Git, Jenkins, TestFlight, Google Play
+  projects: PlatformSDK
+  background: Senior Mobile Engineering Lead with seven and a half years of experience designing and shipping mobile platforms at scale, specializing in iOS architecture and cross-platform systems. Currently serves as Principal Mobile Engineer at a major enterprise mobile-first company with over 50 million monthl
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_13 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 268 words
-  required_skills: Jira, Figma, SQL, Mixpanel, Amplitude
-  preferred_skills: Optimizely, Productboard
-  description: This role sits within a nine-person product organization supporting a consumer-facing mobile application used by several hundred thousand monthly active users. The associate product manager will join a squad of one senior PM, three engineers, and one
+  id: jd_16 | title: Junior iOS Developer | level: junior | min_exp: 1 yrs | raw_text: 255 words
+  required_skills: Swift, SwiftUI, UIKit, Git, Xcode
+  preferred_skills: Firebase, MVVM, XCTest
+  description: This team builds and maintains a consumer-facing iOS application serving roughly 150,000 monthly active users, focused on lifestyle and productivity features. The junior iOS developer will work on a four-person iOS team supporting the lead engineer a
 
-  id: jd_14 | title: Product Manager, Analytics Platform | level: middle | min_exp: 3 yrs | raw_text: 255 words
-  required_skills: Jira, Productboard, SQL, Looker, Optimizely
-  preferred_skills: Salesforce, React, Node.js
-  description: This position is embedded in a twelve-person product team responsible for a B2B SaaS analytics platform serving mid-market and enterprise customers. The product manager will own a squad of four engineers and one designer building reporting and dashbo
+  id: jd_17 | title: Mobile Engineer (iOS/Android) | level: middle | min_exp: 3 yrs | raw_text: 279 words
+  required_skills: Swift, Kotlin, Xcode, Android Studio, Redux, Firebase
+  preferred_skills: SwiftUI, Jetpack Compose, XCTest, Espresso
+  description: This team owns the mobile platform for a mid-market B2B SaaS company, supporting both iOS and Android applications with roughly one million monthly active users across enterprise customers. The mobile engineer will be a mid-level individual contribut
 
-  id: jd_15 | title: Senior Product Manager, Platform & API | level: senior | min_exp: 6 yrs | raw_text: 254 words
-  required_skills: Kubernetes, AWS EKS, SQL, Kafka, Datadog
-  preferred_skills: Stripe, Aha!, Confluence, Grafana
-  description: This role leads platform strategy within a product organization of over forty people supporting an API platform that underpins every customer-facing product at the company, processing well over 100 million requests daily. The senior product manager w
+  id: jd_18 | title: Senior Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 311 words
+  required_skills: Swift, Kotlin, SPM, Gradle, Jenkins, XCTest, Espresso
+  preferred_skills: SwiftUI, Jetpack Compose, Kotlin Coroutines, Performance Profiling
+  description: This position leads mobile architecture and engineering strategy at a scaled technology company with mobile apps serving over 100 million users across iOS and Android platforms. The senior mobile architect will own the long-term vision and roadmap fo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -99,29 +99,35 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
   • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
 
 ════════════════════════════════════
-TARGET LABEL DISTRIBUTION
+LABEL BALANCE — PRIORITY GUIDANCE
 ════════════════════════════════════
-Bias your scoring to hit these counts for this batch:
-  poor_match: ~3 pairs
-  weak_match: ~1 pairs
-  moderate_match: ~2 pairs
-  strong_match: ~2 pairs
-  excellent_match: ~2 pairs
-Adjust criterion scores within valid windows to reach these targets
-while keeping every score honest and consistent with the documents.
+Overall dataset so far: 45 pairs total.
+Labels with fewer existing pairs MUST be prioritised in this batch.
+
+  poor_match            existing:    0  →  this batch: 4 pairs  (still need ~17 total)
+  weak_match            existing:   17  →  this batch: 1 pairs  (still need ~0 total)
+  moderate_match        existing:   10  →  this batch: 2 pairs  (still need ~7 total)
+  strong_match          existing:    8  →  this batch: 2 pairs  (still need ~9 total)
+  excellent_match       existing:   10  →  this batch: 2 pairs  (still need ~7 total)
+
+Rules:
+• Score pairs so this batch hits the "this batch" counts above.
+• Labels with high deficit get priority — bend seniority interpretation to reach them.
+• All scores must remain honest and consistent with the documents.
+• Adjust criterion scores within valid windows only.
 
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_37     resume_13 × jd_13
-  pair_38     resume_13 × jd_14
-  pair_39     resume_13 × jd_15
-  pair_40     resume_14 × jd_13
-  pair_41     resume_14 × jd_14
-  pair_42     resume_14 × jd_15
-  pair_43     resume_15 × jd_13
-  pair_44     resume_15 × jd_14
-  pair_45     resume_15 × jd_15
+  pair_46     resume_16 × jd_16
+  pair_47     resume_16 × jd_17
+  pair_48     resume_16 × jd_18
+  pair_49     resume_17 × jd_16
+  pair_50     resume_17 × jd_17
+  pair_51     resume_17 × jd_18
+  pair_52     resume_18 × jd_16
+  pair_53     resume_18 × jd_17
+  pair_54     resume_18 × jd_18
 
 ════════════════════════════════════
 OUTPUT FORMAT
@@ -131,4 +137,4 @@ Each line is a single JSON object (no array brackets, no commas between lines).
 No markdown, no explanation — only 9 JSON lines.
 
 JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
