@@ -217,6 +217,77 @@ def compute_label_targets(n_pairs: int = N_PAIRS) -> dict[str, int]:
             remaining -= count
     return targets
 
+
+LEVELS = ["junior", "middle", "senior"]
+
+LEVEL_INFO = {
+    "junior": ("0-1 yr, fresh graduate or first job",            "min 1 yr, entry/associate level role"),
+    "middle": ("3-5 yrs total experience",                        "min 3 yrs, mid-level individual contributor"),
+    "senior": ("6-9 yrs, tech lead or principal",                 "min 6 yrs, lead or senior engineer, deep specialization required"),
+}
+
+
+def natural_label_for_gap(gap: int) -> str:
+    """Label a resume/JD seniority-tier gap (JD tier − resume tier) naturally produces."""
+    if gap >= 2:
+        return "poor_match"
+    if gap == 1:
+        return "weak_match"
+    if gap == 0:
+        return "excellent_match"
+    if gap == -1:
+        return "strong_match"
+    return "moderate_match"  # gap <= -2, heavily overqualified
+
+
+def _level_partitions(n: int) -> list[tuple[int, int, int]]:
+    """All (n_junior, n_middle, n_senior) counts that sum to n."""
+    return [
+        (j, m, n - j - m)
+        for j in range(n + 1)
+        for m in range(n + 1 - j)
+    ]
+
+
+def choose_seniority_mix(
+    label_targets: dict[str, int],
+    n_resumes: int = N_RESUMES,
+    n_jds: int = N_JDS,
+) -> tuple[list[str], list[str]]:
+    """Pick how many junior/middle/senior resumes and JDs to generate this batch.
+
+    A fixed 1-junior/1-middle/1-senior split on both sides always yields the same
+    natural label mix (1 poor_match cell, 2 weak_match cells, 2 strong, 3 excellent,
+    1 moderate) no matter how skewed the dataset already is — deficits then get
+    "fixed" by telling the labeler to bend its scoring, which it can't do honestly.
+    Instead, search over seniority-tier counts for BOTH sides and pick whichever mix
+    makes the resulting grid's natural label counts closest to label_targets (which
+    is already weighted per-label relative to the largest existing class) — across
+    all 5 labels, not just poor_match.
+    """
+    best_mix = None
+    best_score = None
+    for r_counts in _level_partitions(n_resumes):
+        for j_counts in _level_partitions(n_jds):
+            dist: Counter = Counter()
+            for r_idx, r_count in enumerate(r_counts):
+                if not r_count:
+                    continue
+                for j_idx, j_count in enumerate(j_counts):
+                    if not j_count:
+                        continue
+                    label = natural_label_for_gap(j_idx - r_idx)
+                    dist[label] += r_count * j_count
+            score = sum(abs(dist.get(l, 0) - label_targets.get(l, 0)) for l in ALLOWED_LABELS)
+            if best_score is None or score < best_score:
+                best_score = score
+                best_mix = (r_counts, j_counts)
+
+    r_counts, j_counts = best_mix
+    resume_levels = [lvl for lvl, count in zip(LEVELS, r_counts) for _ in range(count)]
+    jd_levels     = [lvl for lvl, count in zip(LEVELS, j_counts) for _ in range(count)]
+    return resume_levels, jd_levels
+
 # ── next IDs ───────────────────────────────────────────────────────────────────
 
 def get_next_ids() -> tuple[int, int, int]:
@@ -239,9 +310,36 @@ def expected_label(score: int) -> str:
 
 # ── prompt builders ────────────────────────────────────────────────────────────
 
-def build_cvjd_prompt(domain: str, resume_start: int, jd_start: int) -> str:
+def build_cvjd_prompt(
+    domain: str,
+    resume_start: int,
+    jd_start: int,
+    resume_levels: list[str] | None = None,
+    jd_levels: list[str] | None = None,
+) -> str:
     r_ids  = [f"resume_{resume_start + i}" for i in range(N_RESUMES)]
     j_ids  = [f"jd_{jd_start + i}"        for i in range(N_JDS)]
+
+    resume_levels = resume_levels or ["junior", "middle", "senior"][:N_RESUMES]
+    jd_levels     = jd_levels or ["junior", "middle", "senior"][:N_JDS]
+
+    resume_lines = "\n".join(
+        f"Resume {rid}: {lvl:<8} ({LEVEL_INFO[lvl][0]})"
+        for rid, lvl in zip(r_ids, resume_levels)
+    )
+    jd_lines = "\n".join(
+        f"JD {jid}: {lvl:<8} ({LEVEL_INFO[lvl][1]})"
+        for jid, lvl in zip(j_ids, jd_levels)
+    )
+
+    expected_dist: Counter = Counter()
+    for r_lvl in resume_levels:
+        for j_lvl in jd_levels:
+            gap = LEVELS.index(j_lvl) - LEVELS.index(r_lvl)
+            expected_dist[natural_label_for_gap(gap)] += 1
+    expected_lines = "\n".join(
+        f"  {label:<16} × {count}" for label, count in expected_dist.items()
+    )
 
     return f"""You are a dataset generator for an AI recruitment system.
 Generate exactly {N_RESUMES} resumes and {N_JDS} job descriptions in the domain: {domain}
@@ -252,19 +350,19 @@ Target score range: 20-100 (all 5 labels including poor_match).
 ════════════════════════════════════
 SENIORITY ASSIGNMENT (follow exactly)
 ════════════════════════════════════
-Resume {r_ids[0]}: intern/junior   (0-1 yr, fresh graduate or first job)
-Resume {r_ids[1]}: middle          (3-5 yrs total experience)
-Resume {r_ids[2]}: senior          (6-9 yrs, tech lead or principal)
+{resume_lines}
 
-JD {j_ids[0]}: junior   (min 1 yr, entry/associate level role)
-JD {j_ids[1]}: middle   (min 3 yrs, mid-level individual contributor)
-JD {j_ids[2]}: senior   (min 6 yrs, lead or senior engineer, deep specialization required)
+{jd_lines}
 
-This spread enables all 5 labels naturally:
-  intern CV × senior JD  → poor_match   (score 20-34): massive experience + skill gap
-  junior CV × middle JD  → weak_match   (score 46-54): noticeable gap, partial overlap
-  middle CV × junior JD  → moderate or strong
-  senior CV × senior JD  → strong/excellent
+This mix was chosen (based on which labels the dataset currently lacks) so that
+cross-pairing every resume × every JD naturally produces this label spread —
+score the resulting pairs honestly instead of forcing a different distribution:
+{expected_lines}
+
+Gap rule (JD seniority tier − resume seniority tier), for reference:
+  +2 → poor_match (score 20-34)       +1 → weak_match (score 46-54)
+   0 → excellent_match (score 96-100) -1 → strong_match (score 81-84)
+  <=-2 → moderate_match (score 66-69, heavily overqualified)
 
 ════════════════════════════════════
 CV raw_text — STRICT REQUIREMENTS
@@ -360,31 +458,43 @@ def build_pair_prompt(
     )
 
     label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
-    if label_targets:
+
+    # Ground-truth expectation: this batch's resumes/JDs were already generated with a
+    # seniority mix chosen (via choose_seniority_mix) to naturally produce the counts the
+    # dataset needs. Compute what each pair SHOULD land on from the real seniority gap —
+    # this is a target to verify against, not a quota to force onto mismatched pairs.
+    expected_dist: Counter = Counter()
+    for r in resumes:
+        for j in jds:
+            r_lvl, j_lvl = r.get("candidate_level"), j.get("level")
+            if r_lvl in LEVELS and j_lvl in LEVELS:
+                expected_dist[natural_label_for_gap(LEVELS.index(j_lvl) - LEVELS.index(r_lvl))] += 1
+
+    if label_targets or expected_dist:
         total_existing = sum((current_dist or {}).values())
-        target_per_class = max((current_dist or {}).get(l, 0) for l in label_order) if current_dist else 0
 
         rows = []
         for label in label_order:
             existing = (current_dist or {}).get(label, 0)
-            target   = label_targets.get(label, 0)
-            deficit  = max(0, target_per_class - existing) if current_dist else "?"
-            rows.append(f"  {label:<20}  existing: {existing:>4}  →  this batch: {target} pairs  (still need ~{deficit} total)")
+            expected = expected_dist.get(label, 0)
+            rows.append(f"  {label:<20}  existing: {existing:>4}  →  expected this batch: {expected} pairs (from seniority gaps below)")
 
         dist_lines = "\n".join(rows)
         distribution_section = f"""
 ════════════════════════════════════
-LABEL BALANCE — PRIORITY GUIDANCE
+LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
 Overall dataset so far: {total_existing} pairs total.
-Labels with fewer existing pairs MUST be prioritised in this batch.
+This batch's resume/JD seniority levels were deliberately chosen so that scoring
+each pair honestly (per the rubric below) should already land close to this spread —
+no need to force it, just verify your scores roughly match:
 
 {dist_lines}
 
 Rules:
-• Score pairs so this batch hits the "this batch" counts above.
-• Labels with high deficit get priority — bend seniority interpretation to reach them.
-• All scores must remain honest and consistent with the documents.
+• Score every pair from its actual documents — seniority gap, skill overlap, project fit.
+• If a pair's honest score lands far from its "expected" label above, trust the
+  documents over the expectation and note why in label_notes.
 • Adjust criterion scores within valid windows only.
 """
     else:
@@ -434,6 +544,17 @@ Use ONLY scores within these windows — no exceptions:
 
 NEVER use scores in boundary zones: 35-45, 55-65, 70-80, 85-95.
 These zones are forbidden because they produce ambiguous labels.
+
+════════════════════════════════════
+SKILLS_MATCH — DERIVE FROM ACTUAL OVERLAP, DON'T REUSE A NUMBER
+════════════════════════════════════
+For every pair, first count: matched = required_skills present in the resume's
+skills list, total = len(required_skills). Then anchor SKILLS_MATCH to that ratio:
+  SKILLS_MATCH ≈ round(100 × matched / total), adjusted ±10 for preferred-skill
+  overlap and depth/version alignment.
+Two pairs with the same seniority gap can still need different SKILLS_MATCH if
+their real overlap ratio differs (e.g. 25% overlap vs 65% overlap must NOT get the
+same score just because both are "junior CV × senior JD"). Recompute per pair.
 
 ════════════════════════════════════
 poor_match SCORING GUIDANCE
@@ -678,21 +799,29 @@ def action_generate_prompt() -> None:
     domain = random.choice(DOMAINS)
     resume_start, jd_start, pair_start = get_next_ids()
 
-    prompt = build_cvjd_prompt(domain, resume_start, jd_start)
+    label_targets = compute_label_targets(N_PAIRS)
+    resume_levels, jd_levels = choose_seniority_mix(label_targets)
+
+    prompt = build_cvjd_prompt(domain, resume_start, jd_start, resume_levels, jd_levels)
 
     save_session({
-        "state":        "waiting_cvjd",
-        "domain":       domain,
-        "resume_start": resume_start,
-        "jd_start":     jd_start,
-        "pair_start":   pair_start,
+        "state":         "waiting_cvjd",
+        "domain":        domain,
+        "resume_start":  resume_start,
+        "jd_start":      jd_start,
+        "pair_start":    pair_start,
+        "resume_levels": resume_levels,
+        "jd_levels":     jd_levels,
     })
 
     TEMP_INPUT.write_text("", encoding="utf-8")
 
+    label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
     print(f"\n  Domain  : {domain}")
     print(f"  IDs     : resume_{resume_start}-{resume_start + N_RESUMES - 1}  |  jd_{jd_start}-{jd_start + N_JDS - 1}")
     print(f"  Pairs   : pair_{pair_start}-{pair_start + N_PAIRS - 1}  ({N_PAIRS} pairs)")
+    print(f"  Seniority mix : resumes={resume_levels}  jds={jd_levels}")
+    print(f"  Batch targets : " + "  ".join(f"{l}: {label_targets.get(l, 0)}" for l in label_order))
     PROMPT_OUTPUT.write_text(prompt, encoding="utf-8")
     print(f"\n  Prompt written to:  scripts/prompt_output.txt")
     print(f"  → Copy all content, paste into your LLM.")
