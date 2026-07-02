@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_7 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Figma, Maze, Wireframing, Prototyping, User Research, Usability Testing, Interaction Design
-  projects: EcoTrack
-  background: I am an enthusiastic Associate Product Designer who recently graduated with a Bachelor of Science in Interaction Design in 2025. During my final year of university studies, I completed a rigorous six-month internship at an early-stage healthcare software startup, operating as the sole designer withi
+  id: resume_10 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, Grafana
+  projects: KubeWatch
+  background: I am an enthusiastic Junior DevOps Engineer who recently completed a Bachelor of Science in Computer Science, graduating in 2025. During my university studies, I completed a six-month intensive technical internship at a fast-growing e-commerce startup, operating within a dedicated infrastructure tea
 
-  id: resume_8 | level: middle | exp: 4.0 yrs | raw_text: 279 words
-  skills: Figma, FigJam, UserTesting.com, Adobe Creative Cloud, Interaction Design, User Research, Information Architecture, Accessibility
-  projects: FlexKit
-  background: As a diligent Mid-Level UI/UX Designer with four years of continuous professional experience, I specialize in crafting accessible, visually compelling, and strategic user experiences for complex modern digital products. In my previous employment at a mid-sized e-commerce product company, I spent two
+  id: resume_11 | level: middle | exp: 4.0 yrs | raw_text: 268 words
+  skills: AWS, Docker, Kubernetes, Terraform, Jenkins, GitLab CI, Go, Prometheus
+  projects: Tf-Clean
+  background: As a focused Mid-Level DevOps Engineer with four years of professional experience, I specialize in architecting reliable, secure, and automated cloud systems for complex digital applications. At my previous employment within a mid-sized financial technology enterprise, I spent two and a half years w
 
-  id: resume_9 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: Figma, Miro, Principle, Design Systems, User Research, Information Architecture, Interaction Design, Accessibility
-  projects: SpecTrace
-  background: I am a Senior Product Designer and Design Team Lead with eight years of comprehensive professional experience architecting large-scale enterprise application experiences and managing high-performing creative units. In my current position at a global enterprise fintech corporation, I guide a talented
+  id: resume_12 | level: senior | exp: 8.0 yrs | raw_text: 268 words
+  skills: AWS, Docker, Kubernetes, Terraform, Ansible, Helm, Python, ELK Stack, Go
+  projects: SreTrace
+  background: I am a Senior DevOps Architect and Infrastructure Lead with eight years of comprehensive experience designing high-performance cloud ecosystems and leading collaborative site reliability engineering units. In my current position at a global enterprise software corporation, I guide a cross-functional
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_7 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 230 words
-  required_skills: Figma, FigJam, Maze
-  preferred_skills: Adobe Creative Cloud, HTML, CSS
-  description: Our core client-facing software product platform team is expanding rapidly, and we are looking for an enthusiastic Junior UI/UX Designer to help us execute out our core product experiences. Our digital design department consists of five talented indi
+  id: jd_10 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 225 words
+  required_skills: AWS, Docker, Terraform, Git
+  preferred_skills: Kubernetes, Python
+  description: Our core infrastructure platform engineering team is expanding, and we are looking for an enthusiastic Junior DevOps Engineer to help us build out our automated delivery features. Our operational engineering department consists of five systems develo
 
-  id: jd_8 | title: Product Designer | level: middle | min_exp: 3 yrs | raw_text: 209 words
-  required_skills: Figma, FigJam, UserTesting.com, Miro
-  preferred_skills: Storybook, Adobe Illustrator
-  description: We are actively looking for a skilled Mid-Level Product Designer to join our core collaborative product suite team. The design group is composed of six dedicated engineers and creators focused on delivering collaborative workspace tools for our enter
+  id: jd_11 | title: DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 209 words
+  required_skills: AWS, Docker, Kubernetes, Terraform, GitLab CI
+  preferred_skills: Ansible, Node.js
+  description: We are looking for a skilled Mid-Level DevOps Engineer to join our core infrastructure platform team. The group is composed of six software systems creators focused on delivering collaborative workspace tools for our enterprise cloud suite applicatio
 
-  id: jd_9 | title: Senior Product Designer / Design Team Lead | level: senior | min_exp: 6 yrs | raw_text: 227 words
-  required_skills: Figma, Miro, Principle, UserTesting.com
-  preferred_skills: Design Tokens, Data Analytics
-  description: We are seeking an outstanding Senior Product Designer and Design Team Lead to guide the strategic user experience architecture of our next-generation enterprise software platforms. Our high-velocity division consists of twelve specialized developers 
+  id: jd_12 | title: Senior DevOps Engineer / Infrastructure Lead | level: senior | min_exp: 6 yrs | raw_text: 220 words
+  required_skills: AWS, Docker, Kubernetes, Terraform, Ansible, Python
+  preferred_skills: ELK Stack, Helm
+  description: We are seeking an outstanding Senior DevOps Engineer and Infrastructure Lead to guide the architecture of our next-generation cloud automation platforms. Our high-velocity division consists of twelve specialized developers constructing low-latency co
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -113,15 +113,15 @@ while keeping every score honest and consistent with the documents.
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_19     resume_7 × jd_7
-  pair_20     resume_7 × jd_8
-  pair_21     resume_7 × jd_9
-  pair_22     resume_8 × jd_7
-  pair_23     resume_8 × jd_8
-  pair_24     resume_8 × jd_9
-  pair_25     resume_9 × jd_7
-  pair_26     resume_9 × jd_8
-  pair_27     resume_9 × jd_9
+  pair_28     resume_10 × jd_10
+  pair_29     resume_10 × jd_11
+  pair_30     resume_10 × jd_12
+  pair_31     resume_11 × jd_10
+  pair_32     resume_11 × jd_11
+  pair_33     resume_11 × jd_12
+  pair_34     resume_12 × jd_10
+  pair_35     resume_12 × jd_11
+  pair_36     resume_12 × jd_12
 
 ════════════════════════════════════
 OUTPUT FORMAT
