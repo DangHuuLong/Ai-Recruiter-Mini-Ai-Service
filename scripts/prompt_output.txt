@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_10 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, Grafana
-  projects: KubeWatch
-  background: I am an enthusiastic Junior DevOps Engineer who recently completed a Bachelor of Science in Computer Science, graduating in 2025. During my university studies, I completed a six-month intensive technical internship at a fast-growing e-commerce startup, operating within a dedicated infrastructure tea
+  id: resume_13 | level: junior | exp: 0.7 yrs | raw_text: 282 words
+  skills: Jira, Figma, Scrum, Google Analytics 4, Mixpanel, SQL, Amplitude, Productboard, User Research
+  projects: CampusEats, StudyBuddy
+  background: Recently graduated associate product professional with under a year of hands-on experience gained through an internship at a mid-sized fintech startup. As a Product Analyst Intern for eight months on a five-person product squad, responsibilities included maintaining the product backlog in Jira, writ
 
-  id: resume_11 | level: middle | exp: 4.0 yrs | raw_text: 268 words
-  skills: AWS, Docker, Kubernetes, Terraform, Jenkins, GitLab CI, Go, Prometheus
-  projects: Tf-Clean
-  background: As a focused Mid-Level DevOps Engineer with four years of professional experience, I specialize in architecting reliable, secure, and automated cloud systems for complex digital applications. At my previous employment within a mid-sized financial technology enterprise, I spent two and a half years w
+  id: resume_14 | level: middle | exp: 4.5 yrs | raw_text: 294 words
+  skills: Jira, Productboard, SQL, Looker, Salesforce, React, Node.js, PostgreSQL, Optimizely, A/B Testing, PRD Writing
+  projects: RoadmapSync
+  background: Product Manager with four years of experience delivering roadmap execution and stakeholder alignment across B2B SaaS products. Spent the last two and a half years as a Product Manager at a mid-sized enterprise software company, owning the reporting and analytics module for a workforce management pla
 
-  id: resume_12 | level: senior | exp: 8.0 yrs | raw_text: 268 words
-  skills: AWS, Docker, Kubernetes, Terraform, Ansible, Helm, Python, ELK Stack, Go
-  projects: SreTrace
-  background: I am a Senior DevOps Architect and Infrastructure Lead with eight years of comprehensive experience designing high-performance cloud ecosystems and leading collaborative site reliability engineering units. In my current position at a global enterprise software corporation, I guide a cross-functional
+  id: resume_15 | level: senior | exp: 8 yrs | raw_text: 325 words
+  skills: Aha!, Confluence, Kong, Kubernetes, AWS EKS, Kafka, Stripe, PostgreSQL, Datadog, Grafana, RICE Prioritization, OKRs, SQL
+  projects: PlatformHealth
+  background: Senior Product Manager and technical product lead with eight years of experience driving platform strategy and multi-team roadmap execution in enterprise technology environments. For the past three years, served as Principal Product Manager at a large enterprise software company, owning the platform
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_10 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 225 words
-  required_skills: AWS, Docker, Terraform, Git
-  preferred_skills: Kubernetes, Python
-  description: Our core infrastructure platform engineering team is expanding, and we are looking for an enthusiastic Junior DevOps Engineer to help us build out our automated delivery features. Our operational engineering department consists of five systems develo
+  id: jd_13 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 268 words
+  required_skills: Jira, Figma, SQL, Mixpanel, Amplitude
+  preferred_skills: Optimizely, Productboard
+  description: This role sits within a nine-person product organization supporting a consumer-facing mobile application used by several hundred thousand monthly active users. The associate product manager will join a squad of one senior PM, three engineers, and one
 
-  id: jd_11 | title: DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 209 words
-  required_skills: AWS, Docker, Kubernetes, Terraform, GitLab CI
-  preferred_skills: Ansible, Node.js
-  description: We are looking for a skilled Mid-Level DevOps Engineer to join our core infrastructure platform team. The group is composed of six software systems creators focused on delivering collaborative workspace tools for our enterprise cloud suite applicatio
+  id: jd_14 | title: Product Manager, Analytics Platform | level: middle | min_exp: 3 yrs | raw_text: 255 words
+  required_skills: Jira, Productboard, SQL, Looker, Optimizely
+  preferred_skills: Salesforce, React, Node.js
+  description: This position is embedded in a twelve-person product team responsible for a B2B SaaS analytics platform serving mid-market and enterprise customers. The product manager will own a squad of four engineers and one designer building reporting and dashbo
 
-  id: jd_12 | title: Senior DevOps Engineer / Infrastructure Lead | level: senior | min_exp: 6 yrs | raw_text: 220 words
-  required_skills: AWS, Docker, Kubernetes, Terraform, Ansible, Python
-  preferred_skills: ELK Stack, Helm
-  description: We are seeking an outstanding Senior DevOps Engineer and Infrastructure Lead to guide the architecture of our next-generation cloud automation platforms. Our high-velocity division consists of twelve specialized developers constructing low-latency co
+  id: jd_15 | title: Senior Product Manager, Platform & API | level: senior | min_exp: 6 yrs | raw_text: 254 words
+  required_skills: Kubernetes, AWS EKS, SQL, Kafka, Datadog
+  preferred_skills: Stripe, Aha!, Confluence, Grafana
+  description: This role leads platform strategy within a product organization of over forty people supporting an API platform that underpins every customer-facing product at the company, processing well over 100 million requests daily. The senior product manager w
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -102,7 +102,7 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 TARGET LABEL DISTRIBUTION
 ════════════════════════════════════
 Bias your scoring to hit these counts for this batch:
-  poor_match: ~4 pairs
+  poor_match: ~3 pairs
   weak_match: ~1 pairs
   moderate_match: ~2 pairs
   strong_match: ~2 pairs
@@ -113,15 +113,15 @@ while keeping every score honest and consistent with the documents.
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_28     resume_10 × jd_10
-  pair_29     resume_10 × jd_11
-  pair_30     resume_10 × jd_12
-  pair_31     resume_11 × jd_10
-  pair_32     resume_11 × jd_11
-  pair_33     resume_11 × jd_12
-  pair_34     resume_12 × jd_10
-  pair_35     resume_12 × jd_11
-  pair_36     resume_12 × jd_12
+  pair_37     resume_13 × jd_13
+  pair_38     resume_13 × jd_14
+  pair_39     resume_13 × jd_15
+  pair_40     resume_14 × jd_13
+  pair_41     resume_14 × jd_14
+  pair_42     resume_14 × jd_15
+  pair_43     resume_15 × jd_13
+  pair_44     resume_15 × jd_14
+  pair_45     resume_15 × jd_15
 
 ════════════════════════════════════
 OUTPUT FORMAT
