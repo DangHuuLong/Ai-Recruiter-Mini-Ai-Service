@@ -227,6 +227,15 @@ LEVEL_INFO = {
 }
 
 
+SKILL_OVERLAP_TARGET = {
+    "poor_match":      (10, 30),
+    "weak_match":      (35, 55),
+    "moderate_match":  (55, 70),
+    "strong_match":    (70, 85),
+    "excellent_match": (85, 100),
+}
+
+
 def natural_label_for_gap(gap: int) -> str:
     """Label a resume/JD seniority-tier gap (JD tier − resume tier) naturally produces."""
     if gap >= 2:
@@ -341,6 +350,15 @@ def build_cvjd_prompt(
         f"  {label:<16} × {count}" for label, count in expected_dist.items()
     )
 
+    overlap_rows = []
+    for rid, r_lvl in zip(r_ids, resume_levels):
+        for jid, j_lvl in zip(j_ids, jd_levels):
+            gap   = LEVELS.index(j_lvl) - LEVELS.index(r_lvl)
+            label = natural_label_for_gap(gap)
+            lo, hi = SKILL_OVERLAP_TARGET[label]
+            overlap_rows.append(f"  {rid} × {jid}  ({label:<16}) → resume should cover {lo}-{hi}% of that JD's required_skills")
+    overlap_lines = "\n".join(overlap_rows)
+
     return f"""You are a dataset generator for an AI recruitment system.
 Generate exactly {N_RESUMES} resumes and {N_JDS} job descriptions in the domain: {domain}
 
@@ -363,6 +381,19 @@ Gap rule (JD seniority tier − resume seniority tier), for reference:
   +2 → poor_match (score 20-34)       +1 → weak_match (score 46-54)
    0 → excellent_match (score 96-100) -1 → strong_match (score 81-84)
   <=-2 → moderate_match (score 66-69, heavily overqualified)
+
+════════════════════════════════════
+REQUIRED SKILLS OVERLAP — AUTHOR THIS DELIBERATELY, PER PAIR
+════════════════════════════════════
+A seniority gap alone will NOT produce poor_match or weak_match — if the junior
+resume's skills list still covers most of the senior JD's required_skills (common
+when both are "same domain"), the honest label stays weak_match/moderate_match no
+matter how big the experience gap is. You must also design each resume's skills
+list so its overlap with each JD's required_skills roughly matches the target below
+(pick which required_skills to give/omit per resume with this table in mind — e.g.
+for a poor_match target, have the junior resume know only the basic/common tools
+and be missing the JD's specialized or advanced-tier skills entirely):
+{overlap_lines}
 
 ════════════════════════════════════
 CV raw_text — STRICT REQUIREMENTS
