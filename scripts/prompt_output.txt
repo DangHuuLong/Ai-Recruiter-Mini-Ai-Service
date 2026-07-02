@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_28 | level: junior | exp: 0.8 yrs | raw_text: 343 words
-  skills: React Native, Flutter, JavaScript, Redux, Firebase, Swift, Kotlin, Axios
-  projects: FitTrack
-  background: After completing my Bachelor's degree in Computer Science in 2025 I began my journey in mobile development through a six-month internship at a consumer-focused startup where I contributed to building cross-platform applications using React Native and basic Flutter components. In this role within a s
+  id: resume_31 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry, Python, Microsoft Excel
+  projects: ScheduleFlow
+  background: After completing my Bachelor of Science in Healthcare Administration in 2025 I immediately launched my professional path in medical coordination through a intensive six-month internship at a fast-growing digital health startup where I supported an active clinical operations team of five professional
 
-  id: resume_29 | level: senior | exp: 7.5 yrs | raw_text: 334 words
-  skills: React Native, Flutter, Swift, Kotlin, Redux Saga, Fastlane, WebSockets, Kotlin Multiplatform
-  projects: Analytics SDK
-  background: With over seven years of experience in mobile development I have progressed from individual contributor roles to tech lead positions across both startups and enterprise environments. Most recently as Senior Mobile Engineer and Tech Lead at a mid-sized enterprise software company for the past three y
+  id: resume_32 | level: senior | exp: 7.5 yrs | raw_text: 283 words
+  skills: Epic, Cerner, HL7, HIPAA Compliance, HITECH Act, Clinical Operations, SQL Server
+  projects: MedSync
+  background: With over seven years of progressive experience in clinical operations and medical coordination I have advanced from individual contributor roles into a Senior Clinical Operations Lead position within enterprise healthcare networks. Most recently for the past three years I led a specialized healthca
 
-  id: resume_30 | level: senior | exp: 8.0 yrs | raw_text: 302 words
-  skills: React Native, Flutter, SwiftUI, Kotlin, Realm, Riverpod, OAuth, Fastlane
-  projects: SpendWise
-  background: As a Principal Mobile Engineer with eight years specializing in cross-platform and native mobile development I have held leadership roles in both agency and enterprise settings delivering mission-critical applications. In my current position at a large enterprise for the last four years I serve as t
+  id: resume_33 | level: senior | exp: 8.0 yrs | raw_text: 290 words
+  skills: Epic, eClinicalWorks, HIPAA Compliance, SQL, Clinical Operations, Healthcare Analytics, Data Warehousing
+  projects: CareWarehouse
+  background: As an expert Senior Medical Coordinator and Clinical Systems Architect with eight years of dedicated specialization in health information management systems I have led cross-functional technical and clinical teams to deliver mission-critical infrastructure upgrades. In my current role at a large ent
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_28 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs | raw_text: 236 words
-  required_skills: React Native, JavaScript, Git
-  preferred_skills: Flutter, Redux, Firebase
-  description: This junior mobile developer role supports a dynamic team of seven engineers building innovative consumer mobile applications that serve thousands of daily users across iOS and Android platforms. The team focuses on creating intuitive cross-platform 
+  id: jd_31 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry
+  preferred_skills: Python, Microsoft Excel
+  description: This Junior Medical Coordinator position supports an active, expanding clinical operations team of seven professionals focused on delivering innovative patient management software solutions and coordinating healthcare delivery across diverse networks
 
-  id: jd_29 | title: Mid-Level Mobile Engineer | level: middle | min_exp: 3 yrs | raw_text: 235 words
-  required_skills: React Native, Flutter, Redux, Kotlin
-  preferred_skills: Swift, Fastlane, WebSockets
-  description: The mid-level mobile engineer will join an established team of twelve professionals developing sophisticated cross-platform applications for a growing user base in the productivity space. The team handles everything from feature development to perfor
+  id: jd_32 | title: Clinical Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Cerner, Epic, SQL, Clinical Operations
+  preferred_skills: HL7, Patient Scheduling
+  description: The Clinical Operations Analyst will join an established team of twelve professionals developing and optimizing sophisticated medical workflows for a growing regional network of outpatient clinics. The operations team handles everything from platform
 
-  id: jd_30 | title: Senior Mobile Tech Lead | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: React Native, Flutter, Swift, Kotlin, Architecture
-  preferred_skills: Kotlin Multiplatform, SwiftUI, CI/CD, Performance Optimization
-  description: This senior mobile tech lead position heads technical direction for a specialized team of fifteen engineers focused on building high-scale enterprise and consumer mobile platforms using a mix of cross-platform and native technologies. The team tackle
+  id: jd_33 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Epic, eClinicalWorks, SQL, Clinical Operations, HIPAA Compliance, HITECH Act
+  preferred_skills: HL7, Data Warehousing, Healthcare Analytics
+  description: This Senior Clinical Systems Architect position heads the technical and operational direction for a specialized department of fifteen engineers and analysts focused on building high-scale enterprise medical coordination frameworks and robust electron
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -112,16 +112,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 81 pairs total.
+Overall dataset so far: 90 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:    0  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   31  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   17  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   16  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   17  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   33  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   19  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   18  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   20  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -132,15 +132,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_82     resume_28 × jd_28
-  pair_83     resume_28 × jd_29
-  pair_84     resume_28 × jd_30
-  pair_85     resume_29 × jd_28
-  pair_86     resume_29 × jd_29
-  pair_87     resume_29 × jd_30
-  pair_88     resume_30 × jd_28
-  pair_89     resume_30 × jd_29
-  pair_90     resume_30 × jd_30
+  pair_91     resume_31 × jd_31
+  pair_92     resume_31 × jd_32
+  pair_93     resume_31 × jd_33
+  pair_94     resume_32 × jd_31
+  pair_95     resume_32 × jd_32
+  pair_96     resume_32 × jd_33
+  pair_97     resume_33 × jd_31
+  pair_98     resume_33 × jd_32
+  pair_99     resume_33 × jd_33
 
 ════════════════════════════════════
 OUTPUT FORMAT
