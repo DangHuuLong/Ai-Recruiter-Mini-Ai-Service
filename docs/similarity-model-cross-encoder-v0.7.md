@@ -157,7 +157,7 @@ The CV must have enough specific detail (skills, tools, project descriptions) th
 ### Data Pipeline
 - [x] v0.6 error analysis completed — weak_match identified as bottleneck
 - [x] Model upgrade path explored (ELECTRA, BGE) — both failed, MiniLM confirmed as only viable base
-- [ ] Update `generate_synthetic_data.py`: 3×3=9 batch, ≥280-word CV enforcement, weak_match guidance
+- [x] Update `generate_synthetic_data.py`: 3×3=9 batch, ≥280-word CV enforcement, weak_match guidance, criterion score consistency check
 - [ ] Create `datasets/raw_v2/` and start generation
 - [ ] Target: ~1,000 batches × 9 pairs = ~9,000 pairs, balanced across 4 classes
 - [ ] Build `datasets/versions/v0.6/cross_encoder/` split (70/15/15)

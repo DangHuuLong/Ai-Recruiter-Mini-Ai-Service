@@ -1,7 +1,7 @@
 """
 Synthetic data generator for CV-JD pairs.
 
-Workflow per batch (25 pairs from 5 resumes × 5 JDs):
+Workflow per batch (9 pairs from 3 resumes × 3 JDs):
   [1] Generate CV+JD prompt  → copy to LLM → paste output to scripts/temp_input.txt
   [2] Save result            → if waiting for CV+JD: saves resumes+JDs, auto-shows pair prompt
                              → if waiting for pairs:  validates + saves pairs, shows updated stats
@@ -25,18 +25,24 @@ from pathlib import Path
 SCRIPTS_DIR  = Path(__file__).parent
 PROJECT_ROOT = SCRIPTS_DIR.parent
 
-RESUMES_PATH = PROJECT_ROOT / "datasets" / "raw" / "resumes.jsonl"
-JDS_PATH     = PROJECT_ROOT / "datasets" / "raw" / "job_descriptions.jsonl"
-PAIRS_PATH   = PROJECT_ROOT / "datasets" / "processed" / "cv_jd_pairs.jsonl"
+RESUMES_PATH = PROJECT_ROOT / "datasets" / "raw_v2" / "resumes.jsonl"
+JDS_PATH     = PROJECT_ROOT / "datasets" / "raw_v2" / "job_descriptions.jsonl"
+PAIRS_PATH   = PROJECT_ROOT / "datasets" / "raw_v2" / "cv_jd_pairs.jsonl"
 TEMP_INPUT     = SCRIPTS_DIR / "temp_input.txt"
 PROMPT_OUTPUT  = SCRIPTS_DIR / "prompt_output.txt"
 SESSION_FILE   = SCRIPTS_DIR / ".synthetic_session.json"
 
+# ── batch size constants ───────────────────────────────────────────────────────
+
+N_RESUMES = 3
+N_JDS     = 3
+N_PAIRS   = N_RESUMES * N_JDS  # 9
+
 # ── constants ─────────────────────────────────────────────────────────────────
 
 BOUNDARY_ZONES   = [(35, 45), (55, 65), (70, 80), (85, 95)]
-FORBIDDEN_LABELS = {"poor_match"}
-ALLOWED_LABELS   = {"weak_match", "moderate_match", "strong_match", "excellent_match"}
+FORBIDDEN_LABELS: set[str] = set()
+ALLOWED_LABELS   = {"poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"}
 
 SCORE_RANGES = {
     "poor_match":      (0,  39),
@@ -44,6 +50,15 @@ SCORE_RANGES = {
     "moderate_match":  (60, 74),
     "strong_match":    (75, 89),
     "excellent_match": (90, 100),
+}
+
+# Valid score windows after removing boundary zones
+VALID_SCORE_WINDOWS = {
+    "poor_match":      (20, 34),   # 35-45 is forbidden boundary zone
+    "weak_match":      (46, 54),
+    "moderate_match":  (66, 69),
+    "strong_match":    (81, 84),
+    "excellent_match": (96, 100),
 }
 
 CRITERIA_KEYS = [
@@ -56,6 +71,9 @@ CRITERIA_KEYS = [
 
 ALLOWED_LEVELS    = {"intern", "junior", "middle", "senior", "unknown"}
 ALLOWED_LANGUAGES = {"en", "vi", "mixed"}
+
+CV_MIN_WORDS = 250
+JD_MIN_WORDS = 180
 
 # ── domain list ────────────────────────────────────────────────────────────────
 
@@ -99,6 +117,7 @@ def load_jsonl(path: Path) -> list[dict]:
 
 
 def append_jsonl(path: Path, records: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as f:
         for r in records:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
@@ -139,8 +158,9 @@ def show_stats() -> None:
     total   = len(pairs)
 
     labels_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
-    print("\n" + "=" * 56)
+    print("\n" + "=" * 60)
     print(f"  Resumes: {len(resumes)}   JDs: {len(jds)}   Pairs: {total}")
+    print(f"  Batch size: {N_RESUMES} resumes × {N_JDS} JDs = {N_PAIRS} pairs")
     print("  Label distribution:")
     for label in labels_order:
         count = dist.get(label, 0)
@@ -148,20 +168,21 @@ def show_stats() -> None:
         bar   = "█" * int(pct / 2.5)
         print(f"    {label:<20} {count:>5}  ({pct:4.1f}%)  {bar}")
 
+    labels_order_all = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
     target = max((dist.get(label, 0) for label in ALLOWED_LABELS), default=0)
-    mod_need = max(0, target - dist.get("moderate_match", 0))
-    str_need = max(0, target - dist.get("strong_match", 0))
-    exc_need = max(0, target - dist.get("excellent_match", 0))
-    total_need = mod_need + str_need + exc_need
+    total_need = 0
     print(f"\n  Still needed to balance (target = {target} each):")
-    print(f"    moderate_match  +{mod_need:>4}  (~{mod_need  // 25 + (1 if mod_need  % 25 else 0):>2} groups)")
-    print(f"    strong_match    +{str_need:>4}  (~{str_need  // 25 + (1 if str_need  % 25 else 0):>2} groups)")
-    print(f"    excellent_match +{exc_need:>4}  (~{exc_need  // 25 + (1 if exc_need  % 25 else 0):>2} groups)")
-    print(f"    Total new pairs needed: ~{total_need}")
-    print("=" * 56)
+    for label in labels_order_all:
+        need = max(0, target - dist.get(label, 0))
+        total_need += need
+        batches = need // N_PAIRS + (1 if need % N_PAIRS else 0)
+        print(f"    {label:<20} +{need:>4}  (~{batches:>3} batches)")
+    batches_need = total_need // N_PAIRS + (1 if total_need % N_PAIRS else 0)
+    print(f"    Total new pairs needed: ~{total_need}  (~{batches_need} batches)")
+    print("=" * 60)
 
 
-def compute_label_targets(n_pairs: int = 25) -> dict[str, int]:
+def compute_label_targets(n_pairs: int = N_PAIRS) -> dict[str, int]:
     """Return how many of each allowed label to target in a batch.
 
     Labels with fewer existing pairs receive more weight (inverse-count weighting).
@@ -182,7 +203,6 @@ def compute_label_targets(n_pairs: int = 25) -> dict[str, int]:
 
     # Inverse weight: label with fewer pairs gets higher weight
     max_count = max(dist.get(label, 0) for label in labels)
-    # +1 so labels at max_count still get a small weight
     weights   = {label: max_count - dist.get(label, 0) + 1 for label in labels}
     total_w   = sum(weights.values())
 
@@ -220,42 +240,78 @@ def expected_label(score: int) -> str:
 # ── prompt builders ────────────────────────────────────────────────────────────
 
 def build_cvjd_prompt(domain: str, resume_start: int, jd_start: int) -> str:
-    r_ids = [f"resume_{resume_start + i}" for i in range(5)]
-    j_ids = [f"jd_{jd_start + i}"        for i in range(5)]
-    levels = ["intern", "junior", "middle", "senior", "senior"]
+    r_ids  = [f"resume_{resume_start + i}" for i in range(N_RESUMES)]
+    j_ids  = [f"jd_{jd_start + i}"        for i in range(N_JDS)]
 
     return f"""You are a dataset generator for an AI recruitment system.
-Generate exactly 5 resumes and 5 job descriptions in the domain: {domain}
+Generate exactly {N_RESUMES} resumes and {N_JDS} job descriptions in the domain: {domain}
 
-═══ CRITICAL CONSTRAINT ═══
-These 10 documents will be cross-paired into 25 CV-JD pairs.
-Target score range: 40–100 (weak / moderate / strong / excellent match).
-ZERO pairs may score below 40 (no poor_match allowed).
+These {N_RESUMES + N_JDS} documents will be cross-paired into {N_PAIRS} CV-JD pairs.
+Target score range: 20-100 (all 5 labels including poor_match).
 
-Place ALL resumes and JDs in the SAME domain ({domain}).
-Vary seniority level so cross-pairings naturally spread across the score range:
-extreme mismatches (intern ↔ senior lead) may score 40–59 (weak_match),
-while same-level pairings should score 75–100 (strong / excellent).
+════════════════════════════════════
+SENIORITY ASSIGNMENT (follow exactly)
+════════════════════════════════════
+Resume {r_ids[0]}: intern/junior   (0-1 yr, fresh graduate or first job)
+Resume {r_ids[1]}: middle          (3-5 yrs total experience)
+Resume {r_ids[2]}: senior          (6-9 yrs, tech lead or principal)
 
-Seniority ladder to use (one level per document):
-  Level 1 → intern   (0.0 – 0.5 yrs)
-  Level 2 → junior   (1.0 – 2.0 yrs)
-  Level 3 → middle   (3.0 – 5.0 yrs)
-  Level 4 → senior   (5.0 – 7.0 yrs)
-  Level 5 → senior   (7.0 + yrs, lead/principal role)
+JD {j_ids[0]}: junior   (min 1 yr, entry/associate level role)
+JD {j_ids[1]}: middle   (min 3 yrs, mid-level individual contributor)
+JD {j_ids[2]}: senior   (min 6 yrs, lead or senior engineer, deep specialization required)
 
-═══ OUTPUT FORMAT ═══
-Output exactly 10 lines.
+This spread enables all 5 labels naturally:
+  intern CV × senior JD  → poor_match   (score 20-34): massive experience + skill gap
+  junior CV × middle JD  → weak_match   (score 46-54): noticeable gap, partial overlap
+  middle CV × junior JD  → moderate or strong
+  senior CV × senior JD  → strong/excellent
+
+════════════════════════════════════
+CV raw_text — STRICT REQUIREMENTS
+════════════════════════════════════
+Minimum 280 words per resume. Write as connected prose paragraphs (not bullet points).
+Include ALL of the following to reach 280+ words:
+  • Job history: for each role — job title, company type (startup/enterprise/agency),
+    duration, team size, 2-3 specific responsibilities with concrete tools used
+  • Technologies: list specific versions or ecosystems where natural (e.g. "FastAPI 0.100,
+    PostgreSQL 14, deployed on AWS ECS")
+  • Quantified achievements where possible: latency reduced by X%, served Y requests/day,
+    reduced deployment time from X to Y minutes
+  • Projects: 1-2 side or internal projects with name, goal, tech stack, outcome
+  • Current focus and next career direction (1-2 sentences)
+  • Education: degree, field, graduation year
+
+Do NOT include: candidate name, email, phone number, LinkedIn URL, GitHub URL.
+Do NOT use bullet points — write connected prose only.
+
+════════════════════════════════════
+JD raw_text — STRICT REQUIREMENTS
+════════════════════════════════════
+Minimum 200 words per job description. Write as connected prose paragraphs.
+Include ALL of the following to reach 200+ words:
+  • Role overview: what the team does, team size, product context
+  • Day-to-day responsibilities (3-4 specific duties with tools/systems named)
+  • Technical stack: list every required and preferred technology with context
+  • What success looks like in the first 6 months
+  • Collaboration: who this person works with (e.g. product, QA, data team)
+  • Growth opportunities or scope of impact
+
+Do NOT include: company name. Do NOT use bullet points — write connected prose only.
+
+════════════════════════════════════
+OUTPUT FORMAT
+════════════════════════════════════
+Output exactly {N_RESUMES + N_JDS} lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-Lines 1–5: resumes (IDs: {r_ids[0]} → {r_ids[4]}, levels: {levels})
-Lines 6–10: job descriptions (IDs: {j_ids[0]} → {j_ids[4]}, levels: {levels})
-No markdown, no explanation, no extra text — only 10 JSON lines.
+Lines 1-{N_RESUMES}: resumes (IDs: {", ".join(r_ids)})
+Lines {N_RESUMES + 1}-{N_RESUMES + N_JDS}: job descriptions (IDs: {", ".join(j_ids)})
+No markdown, no explanation — only {N_RESUMES + N_JDS} JSON lines.
 
-═══ RESUME SCHEMA (lines 1–5) ═══
-{{"id":"<resume_id>","source":"synthetic","candidate_level":"<intern|junior|middle|senior>","raw_text":"<150–250 word prose — no names, emails, phone numbers, LinkedIn or GitHub URLs>","summary":"<one sentence>","skills":["<TitleCased>",...],"normalized_skills":["<snake_case>",...],"experience_years":<float>,"education":{{"degree":"<Bachelor|Master|PhD>","field_of_study":"<field>","status":"<student|final_year|graduate>"}},"projects":[{{"name":"<name>","description":"<1–2 sentences>","technologies":["<Tech>",...]}}],"certifications":[],"languages":[{{"name":"English","proficiency":"intermediate"}}],"anonymized":true,"language":"en"}}
+RESUME SCHEMA (lines 1-{N_RESUMES}):
+{{"id":"<resume_id>","source":"synthetic","candidate_level":"<junior|middle|senior>","raw_text":"<280+ word prose — no names/emails/phones/URLs>","summary":"<one sentence capturing level, domain, and key strength>","skills":["<TitleCased>",...],"normalized_skills":["<snake_case>",...],"experience_years":<float>,"education":{{"degree":"<Bachelor|Master|PhD>","field_of_study":"<field>","status":"<student|final_year|graduate>"}},"projects":[{{"name":"<project name>","description":"<2-3 sentences: goal, tech, outcome>","technologies":["<Tech>",...]}}],"certifications":[],"languages":[{{"name":"English","proficiency":"intermediate"}}],"anonymized":true,"language":"en"}}
 
-═══ JD SCHEMA (lines 6–10) ═══
-{{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<intern|junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<100–180 word prose — no company name>","responsibilities":["<item>",...],"requirements":["<item>",...],"nice_to_have":["<item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}}"""
+JD SCHEMA (lines {N_RESUMES + 1}-{N_RESUMES + N_JDS}):
+{{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<200+ word prose — no company name>","responsibilities":["<specific item>",...],"requirements":["<specific item>",...],"nice_to_have":["<specific item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}}"""
 
 
 def build_pair_prompt(
@@ -265,19 +321,23 @@ def build_pair_prompt(
     label_targets: dict[str, int] | None = None,
 ) -> str:
     def resume_summary(r: dict) -> str:
+        raw_words = len(r.get("raw_text", "").split())
         return (
             f"  id: {r['id']} | level: {r.get('candidate_level')} | "
-            f"exp: {r.get('experience_years')} yrs\n"
+            f"exp: {r.get('experience_years')} yrs | raw_text: {raw_words} words\n"
             f"  skills: {', '.join(r.get('skills', []))}\n"
-            f"  background: {r.get('raw_text', '')[:200]}"
+            f"  projects: {', '.join(p.get('name','') for p in r.get('projects',[]))}\n"
+            f"  background: {r.get('raw_text', '')[:300]}"
         )
 
     def jd_summary(j: dict) -> str:
+        raw_words = len(j.get("raw_text", "").split())
         return (
             f"  id: {j['id']} | title: {j.get('title')} | level: {j.get('level')} | "
-            f"min_exp: {j.get('min_experience_years')} yrs\n"
+            f"min_exp: {j.get('min_experience_years')} yrs | raw_text: {raw_words} words\n"
             f"  required_skills: {', '.join(j.get('required_skills', []))}\n"
-            f"  description: {j.get('raw_text', '')[:180]}"
+            f"  preferred_skills: {', '.join(j.get('preferred_skills', []))}\n"
+            f"  description: {j.get('raw_text', '')[:250]}"
         )
 
     resume_block = "\n\n".join(resume_summary(r) for r in resumes)
@@ -294,67 +354,117 @@ def build_pair_prompt(
             idx += 1
 
     pair_order = "\n".join(
-        f"  pair_{pair_start + i:<4}  {rid} × {jid}"
+        f"  pair_{pair_start + i:<5}  {rid} × {jid}"
         for i, (_, rid, jid) in enumerate(pair_ids)
     )
 
     if label_targets:
-        label_order = ["strong_match", "excellent_match", "moderate_match", "weak_match"]
+        label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
         dist_lines = "\n".join(
             f"  {label}: ~{label_targets.get(label, 0)} pairs"
             for label in label_order
             if label in label_targets
         )
         distribution_section = f"""
-═══ TARGET LABEL DISTRIBUTION ═══
-The dataset is currently imbalanced. Bias your scoring to hit these counts.
-strong_match is the PRIMARY target — give it the highest allocation.
+════════════════════════════════════
+TARGET LABEL DISTRIBUTION
+════════════════════════════════════
+Bias your scoring to hit these counts for this batch:
 {dist_lines}
-Adjust criterion scores within valid ranges to reach these targets while
-keeping every score honest and consistent with the documents.
+Adjust criterion scores within valid windows to reach these targets
+while keeping every score honest and consistent with the documents.
 """
     else:
         distribution_section = ""
 
     return f"""You are a dataset labeler for an AI recruitment system.
-Score 25 CV-JD pairs using rubric v0.2.
+Score {N_PAIRS} CV-JD pairs using rubric v0.2.
 
-═══ RESUMES ═══
+════════════════════════════════════
+RESUMES
+════════════════════════════════════
 {resume_block}
 
-═══ JOB DESCRIPTIONS ═══
+════════════════════════════════════
+JOB DESCRIPTIONS
+════════════════════════════════════
 {jd_block}
 
-═══ SCORING RUBRIC v0.2 ═══
-Score each criterion 0–100, then compute:
-  overall_score = round(SKILLS_MATCH×0.35 + EXPERIENCE_RELEVANCE×0.30 +
-                        PROJECT_RELEVANCE×0.15 + EDUCATION_CERTIFICATION×0.10 +
-                        KEYWORD_DOMAIN_ALIGNMENT×0.10)
+════════════════════════════════════
+SCORING RUBRIC v0.2
+════════════════════════════════════
+Score each criterion 0-100, then compute weighted overall:
+  overall_score = round(
+      SKILLS_MATCH            × 0.35 +
+      EXPERIENCE_RELEVANCE    × 0.30 +
+      PROJECT_RELEVANCE       × 0.15 +
+      EDUCATION_CERTIFICATION × 0.10 +
+      KEYWORD_DOMAIN_ALIGNMENT× 0.10
+  )
 
 Label mapping:
-  90–100 → excellent_match
-  75–89  → strong_match       ← PRIMARY TARGET — maximise this label
-  60–74  → moderate_match
-  40–59  → weak_match
-  0–39   → poor_match         ← FORBIDDEN — do not generate
+  90-100 → excellent_match
+  75-89  → strong_match
+  60-74  → moderate_match
+  40-59  → weak_match
+  0-39   → poor_match
 
-Scores below 40 are forbidden. Floor is 40.
-Prioritise strong_match (75–89): aim for at least half the pairs in this range.
+════════════════════════════════════
+VALID SCORE WINDOWS (boundary zones removed)
+════════════════════════════════════
+Use ONLY scores within these windows — no exceptions:
+  poor_match:      20-34   (use 25, 28, 30)
+  weak_match:      46-54   (use 48, 50, 52)
+  moderate_match:  66-69   (use 67, 68)
+  strong_match:    81-84   (use 82, 83)
+  excellent_match: 96-100  (use 97, 98)
 
-Avoid boundary zones — do NOT use scores in these ranges:
-  35–45, 55–65, 70–80, 85–95
-Use clear mid-range scores instead: e.g. 48, 65, 77, 83, 92.
+NEVER use scores in boundary zones: 35-45, 55-65, 70-80, 85-95.
+These zones are forbidden because they produce ambiguous labels.
+
+════════════════════════════════════
+poor_match SCORING GUIDANCE
+════════════════════════════════════
+A valid poor_match pair (score 20-34) requires ALL of:
+  1. Massive experience gap: intern/fresh grad (0-1 yr) vs senior JD (6+ yrs required)
+     → EXPERIENCE_RELEVANCE: 10-25
+  2. Core skill mismatch: candidate missing most required technical skills
+     → SKILLS_MATCH: 15-35
+  3. Project misalignment: no relevant projects that map to JD responsibilities
+     → PROJECT_RELEVANCE: 10-30
+Natural source: intern/junior CV × senior JD pairing.
+Do NOT fabricate poor_match from unrelated domains — the CV and JD must still be in the same broad domain.
+
+════════════════════════════════════
+weak_match SCORING GUIDANCE
+════════════════════════════════════
+A valid weak_match pair (score 46-54) requires at least one of:
+  1. Experience gap: junior CV (1-2 yrs) vs senior JD (5+ yrs required)
+     → EXPERIENCE_RELEVANCE: 25-40 (large gap penalised heavily)
+     → SKILLS_MATCH: 45-60 (partial skill overlap acceptable)
+  2. Skill domain mismatch: same broad field but different specialization
+     → SKILLS_MATCH: 35-55 (missing core required stack)
+     → PROJECT_RELEVANCE: 30-50 (projects don't align with JD responsibilities)
+
+For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
+  • If EXPERIENCE_RELEVANCE is 20, explain in label_notes (e.g. "requires 6+ yrs, candidate has 0.5 yrs")
+  • SKILLS_MATCH cannot be 85 if overall is 28 — the math must work
+  • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
 {distribution_section}
-═══ PAIRING ORDER (25 pairs) ═══
+════════════════════════════════════
+PAIRING ORDER ({N_PAIRS} pairs)
+════════════════════════════════════
 {pair_order}
 
-═══ OUTPUT FORMAT ═══
-Output exactly 25 lines.
+════════════════════════════════════
+OUTPUT FORMAT
+════════════════════════════════════
+Output exactly {N_PAIRS} lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation, no extra text — only 25 JSON lines.
+No markdown, no explanation — only {N_PAIRS} JSON lines.
 
 JSON schema per pair:
-{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 40–100>,"criterion_scores":{{"SKILLS_MATCH":<int>,"EXPERIENCE_RELEVANCE":<int>,"PROJECT_RELEVANCE":<int>,"EDUCATION_CERTIFICATION":<int>,"KEYWORD_DOMAIN_ALIGNMENT":<int>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<1–2 sentences: strongest match point and key gap>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
+{{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
 
 # ── validation ─────────────────────────────────────────────────────────────────
 
@@ -381,6 +491,15 @@ def validate_resume(r: dict, idx: int) -> list[str]:
         errs.append(f"resume {r.get('id')}: raw_text contains email pattern")
     if URL_RE.search(raw):
         errs.append(f"resume {r.get('id')}: raw_text contains LinkedIn/GitHub URL")
+    word_count = len(raw.split())
+    if word_count < CV_MIN_WORDS:
+        errs.append(
+            f"resume {r.get('id')}: raw_text too short ({word_count} words, minimum {CV_MIN_WORDS}). "
+            f"Add more job history details, specific technologies, and quantified achievements."
+        )
+    projects = r.get("projects", [])
+    if not projects:
+        errs.append(f"resume {r.get('id')}: projects list is empty — must have at least 1 project")
     return errs
 
 
@@ -395,6 +514,16 @@ def validate_jd(j: dict, idx: int) -> list[str]:
         errs.append(f"JD {j.get('id')}: invalid level '{j.get('level')}'")
     if j.get("language") not in ALLOWED_LANGUAGES:
         errs.append(f"JD {j.get('id')}: invalid language '{j.get('language')}'")
+    jd_raw = j.get("raw_text", "")
+    word_count = len(jd_raw.split())
+    if word_count < JD_MIN_WORDS:
+        errs.append(
+            f"JD {j.get('id')}: raw_text too short ({word_count} words, minimum {JD_MIN_WORDS}). "
+            f"Add team context, responsibilities, tech stack detail, and success criteria."
+        )
+    required_skills = j.get("required_skills", [])
+    if len(required_skills) < 3:
+        errs.append(f"JD {j.get('id')}: required_skills has {len(required_skills)} items — minimum 3")
     return errs
 
 
@@ -413,10 +542,8 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
         if field not in p:
             errs.append(f"pair {pid}: missing field '{field}'")
 
-    if label in FORBIDDEN_LABELS:
-        errs.append(f"pair {pid}: label '{label}' is forbidden (poor_match not allowed in synthetic data)")
-    elif label not in ALLOWED_LABELS:
-        errs.append(f"pair {pid}: unknown label '{label}'")
+    if label not in ALLOWED_LABELS:
+        errs.append(f"pair {pid}: unknown label '{label}' (allowed: {sorted(ALLOWED_LABELS)})")
 
     if score is None:
         errs.append(f"pair {pid}: missing overall_score")
@@ -425,18 +552,45 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
         if score < 40:
             errs.append(f"pair {pid}: overall_score {score} is below 40 — forbidden")
         if in_boundary_zone(score):
-            warns.append(f"pair {pid}: score {score} is in a boundary zone {BOUNDARY_ZONES}")
+            warns.append(f"pair {pid}: score {score} is in a boundary zone — use valid window instead")
         if label in SCORE_RANGES:
             lo, hi = SCORE_RANGES[label]
             if not (lo <= score <= hi):
-                errs.append(f"pair {pid}: score {score} does not match label '{label}' (expected {lo}–{hi})")
+                errs.append(f"pair {pid}: score {score} does not match label '{label}' (expected {lo}-{hi})")
+        # Check if score is in the valid window for the label (warn only)
+        if label in VALID_SCORE_WINDOWS:
+            vlo, vhi = VALID_SCORE_WINDOWS[label]
+            if not (vlo <= score <= vhi):
+                warns.append(
+                    f"pair {pid}: score {score} for '{label}' is outside the safe window "
+                    f"{vlo}-{vhi} — may be near a boundary zone"
+                )
 
+    # Verify weighted score matches criterion scores
     cs = p.get("criterion_scores", {})
     for key in CRITERIA_KEYS:
         if key not in cs:
             errs.append(f"pair {pid}: criterion_scores missing '{key}'")
         elif not isinstance(cs[key], int) or not (0 <= cs[key] <= 100):
-            errs.append(f"pair {pid}: criterion_scores.{key} must be int 0–100")
+            errs.append(f"pair {pid}: criterion_scores.{key} must be int 0-100")
+
+    if cs and score is not None and all(k in cs for k in CRITERIA_KEYS):
+        computed = round(
+            cs["SKILLS_MATCH"]             * 0.35 +
+            cs["EXPERIENCE_RELEVANCE"]     * 0.30 +
+            cs["PROJECT_RELEVANCE"]        * 0.15 +
+            cs["EDUCATION_CERTIFICATION"]  * 0.10 +
+            cs["KEYWORD_DOMAIN_ALIGNMENT"] * 0.10
+        )
+        if abs(computed - int(score)) > 2:
+            errs.append(
+                f"pair {pid}: criterion_scores compute to {computed} but overall_score is {score} "
+                f"(difference {abs(computed - int(score))} > 2 — scores are inconsistent)"
+            )
+
+    notes = p.get("label_notes", "")
+    if len(notes.split()) < 10:
+        warns.append(f"pair {pid}: label_notes too short ({len(notes.split())} words) — should explain match quality and key gap")
 
     if p.get("resume_id") not in resume_ids:
         errs.append(f"pair {pid}: resume_id '{p.get('resume_id')}' not found in batch")
@@ -454,8 +608,8 @@ def validate_cvjd_ids(
     resume_start: int, jd_start: int,
 ) -> list[str]:
     errs: list[str] = []
-    expected_resume_ids = {f"resume_{resume_start + i}" for i in range(5)}
-    expected_jd_ids     = {f"jd_{jd_start + i}"        for i in range(5)}
+    expected_resume_ids = {f"resume_{resume_start + i}" for i in range(N_RESUMES)}
+    expected_jd_ids     = {f"jd_{jd_start + i}"        for i in range(N_JDS)}
 
     actual_resume_ids = {r.get("id", f"<missing id on resume #{i}>") for i, r in enumerate(resumes)}
     actual_jd_ids     = {j.get("id", f"<missing id on jd #{i}>")     for i, j in enumerate(jds)}
@@ -465,21 +619,21 @@ def validate_cvjd_ids(
     for rid in sorted(actual_resume_ids - expected_resume_ids):
         errs.append(
             f"[ID] resume '{rid}' is unexpected "
-            f"(expected resume_{resume_start}–resume_{resume_start + 4})"
+            f"(expected resume_{resume_start}-resume_{resume_start + N_RESUMES - 1})"
         )
     for jid in sorted(expected_jd_ids - actual_jd_ids):
         errs.append(f"[ID] JD '{jid}' expected but missing from LLM output")
     for jid in sorted(actual_jd_ids - expected_jd_ids):
         errs.append(
             f"[ID] JD '{jid}' is unexpected "
-            f"(expected jd_{jd_start}–jd_{jd_start + 4})"
+            f"(expected jd_{jd_start}-jd_{jd_start + N_JDS - 1})"
         )
     return errs
 
 
 def validate_pair_ids(pairs: list[dict], pair_start: int) -> list[str]:
     errs: list[str] = []
-    expected_pair_ids = {f"pair_{pair_start + i}" for i in range(25)}
+    expected_pair_ids = {f"pair_{pair_start + i}" for i in range(N_PAIRS)}
 
     actual_ids: list[str] = [p.get("id", f"<missing id on line {i + 1}>") for i, p in enumerate(pairs)]
 
@@ -494,7 +648,7 @@ def validate_pair_ids(pairs: list[dict], pair_start: int) -> list[str]:
     for pid in sorted(set(actual_ids) - expected_pair_ids):
         errs.append(
             f"[ID] pair '{pid}' is unexpected "
-            f"(expected pair_{pair_start}–pair_{pair_start + 24})"
+            f"(expected pair_{pair_start}-pair_{pair_start + N_PAIRS - 1})"
         )
     return errs
 
@@ -521,14 +675,14 @@ def action_generate_prompt() -> None:
         "pair_start":   pair_start,
     })
 
-    # Ensure temp_input.txt exists and is empty
     TEMP_INPUT.write_text("", encoding="utf-8")
 
     print(f"\n  Domain  : {domain}")
-    print(f"  IDs     : resume_{resume_start}–{resume_start+4}  |  jd_{jd_start}–{jd_start+4}")
+    print(f"  IDs     : resume_{resume_start}-{resume_start + N_RESUMES - 1}  |  jd_{jd_start}-{jd_start + N_JDS - 1}")
+    print(f"  Pairs   : pair_{pair_start}-{pair_start + N_PAIRS - 1}  ({N_PAIRS} pairs)")
     PROMPT_OUTPUT.write_text(prompt, encoding="utf-8")
-    print(f"\n  ✓ Prompt written to:  scripts/prompt_output.txt")
-    print(f"  → Open the file, copy all content, paste into your LLM.")
+    print(f"\n  Prompt written to:  scripts/prompt_output.txt")
+    print(f"  → Copy all content, paste into your LLM.")
     print(f"  → Paste LLM output into:  scripts/temp_input.txt")
     print(f"  → Then press [2] to save.")
 
@@ -550,8 +704,9 @@ def action_save() -> None:
 
     # ── save CV+JD ────────────────────────────────────────────────────────────
     if state == "waiting_cvjd":
-        if len(lines) != 10:
-            print(f"\n  [!] Expected 10 lines (5 resumes + 5 JDs), got {len(lines)}.")
+        expected_lines = N_RESUMES + N_JDS
+        if len(lines) != expected_lines:
+            print(f"\n  [!] Expected {expected_lines} lines ({N_RESUMES} resumes + {N_JDS} JDs), got {len(lines)}.")
             print("      Fix the LLM output in temp_input.txt and press [2] again.")
             return
 
@@ -579,11 +734,10 @@ def action_save() -> None:
                 print(f"      ✗ {e}")
             return
 
-        if len(resumes_new) != 5 or len(jds_new) != 5:
-            print(f"\n  [!] Expected 5 resumes + 5 JDs, got {len(resumes_new)} + {len(jds_new)}.")
+        if len(resumes_new) != N_RESUMES or len(jds_new) != N_JDS:
+            print(f"\n  [!] Expected {N_RESUMES} resumes + {N_JDS} JDs, got {len(resumes_new)} + {len(jds_new)}.")
             return
 
-        # Validate IDs first
         id_errors = validate_cvjd_ids(
             resumes_new, jds_new,
             session["resume_start"], session["jd_start"],
@@ -591,12 +745,10 @@ def action_save() -> None:
         if id_errors:
             print(f"\n  [!] {len(id_errors)} ID error(s) — NOT saved:")
             for e in id_errors:
-                print(f"      ✗ {e}", file=sys.stderr)
                 print(f"      ✗ {e}")
             print("\n      Fix the IDs in temp_input.txt and press [2] again.")
             return
 
-        # Validate fields
         all_errors: list[str] = []
         for i, r in enumerate(resumes_new, 1):
             all_errors.extend(validate_resume(r, i))
@@ -610,13 +762,20 @@ def action_save() -> None:
             print("\n      Fix the output in temp_input.txt and press [2] again.")
             return
 
-        # Save
+        # Print word count summary before saving
+        print("\n  Word count check:")
+        for r in resumes_new:
+            wc = len(r.get("raw_text", "").split())
+            print(f"    {r['id']}: {wc} words  {'✓' if wc >= CV_MIN_WORDS else f'✗ (min {CV_MIN_WORDS})'}")
+        for j in jds_new:
+            wc = len(j.get("raw_text", "").split())
+            print(f"    {j['id']}: {wc} words  {'✓' if wc >= JD_MIN_WORDS else f'✗ (min {JD_MIN_WORDS})'}")
+
         append_jsonl(RESUMES_PATH, resumes_new)
         append_jsonl(JDS_PATH,     jds_new)
         print(f"\n  ✓ Saved {len(resumes_new)} resumes → {RESUMES_PATH.name}")
         print(f"  ✓ Saved {len(jds_new)} JDs      → {JDS_PATH.name}")
 
-        # Update session and auto-generate pair prompt
         session["state"]   = "waiting_pairs"
         session["resumes"] = resumes_new
         session["jds"]     = jds_new
@@ -624,19 +783,19 @@ def action_save() -> None:
 
         TEMP_INPUT.write_text("", encoding="utf-8")
 
-        label_targets = compute_label_targets(25)
+        label_targets = compute_label_targets(N_PAIRS)
         pair_prompt = build_pair_prompt(resumes_new, jds_new, session["pair_start"], label_targets)
         print(f"  Label targets this batch: " + "  ".join(f"{k}: {v}" for k, v in sorted(label_targets.items())))
         PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
         print(f"\n  ✓ Pair prompt written to:  scripts/prompt_output.txt")
-        print(f"  → Open the file, copy all content, paste into your LLM.")
+        print(f"  → Copy all content, paste into your LLM.")
         print(f"  → Paste LLM output into:  scripts/temp_input.txt")
         print(f"  → Then press [2] to save pairs.")
 
     # ── save pairs ────────────────────────────────────────────────────────────
     elif state == "waiting_pairs":
-        if len(lines) != 25:
-            print(f"\n  [!] Expected 25 lines (25 pairs), got {len(lines)}.")
+        if len(lines) != N_PAIRS:
+            print(f"\n  [!] Expected {N_PAIRS} lines ({N_PAIRS} pairs), got {len(lines)}.")
             print("      Fix the output in temp_input.txt and press [2] again.")
             return
 
@@ -667,12 +826,10 @@ def action_save() -> None:
                 print(f"      ✗ {e}")
             return
 
-        # Validate pair IDs
         pair_id_errors = validate_pair_ids(pairs_new, session["pair_start"])
         if pair_id_errors:
             print(f"\n  [!] {len(pair_id_errors)} pair ID error(s) — NOT saved:")
             for e in pair_id_errors:
-                print(f"      ✗ {e}", file=sys.stderr)
                 print(f"      ✗ {e}")
             print("\n      Fix the pair IDs in temp_input.txt and press [2] again.")
             return
@@ -693,16 +850,13 @@ def action_save() -> None:
                 print("      Aborted. Fix boundary scores and press [2] again.")
                 return
 
-        # Save pairs
         append_jsonl(PAIRS_PATH, pairs_new)
         print(f"\n  ✓ Saved {len(pairs_new)} pairs → {PAIRS_PATH.name}")
 
-        # Summarise this batch
         dist = Counter(p.get("label") for p in pairs_new)
         print(f"  Batch label breakdown: ", end="")
         print("  |  ".join(f"{k}: {v}" for k, v in dist.items()))
 
-        # Reset
         TEMP_INPUT.write_text("", encoding="utf-8")
         save_session({"state": "idle"})
 
@@ -712,7 +866,8 @@ def action_save() -> None:
 
 def main() -> None:
     print("\n╔══════════════════════════════════════════════════╗")
-    print("║      Synthetic CV-JD Data Generator              ║")
+    print("║      Synthetic CV-JD Data Generator  (v2)        ║")
+    print(f"║      Batch: {N_RESUMES} resumes × {N_JDS} JDs = {N_PAIRS} pairs           ║")
     print("╚══════════════════════════════════════════════════╝")
     show_stats()
 
