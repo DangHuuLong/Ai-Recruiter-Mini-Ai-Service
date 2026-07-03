@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_22 | level: junior | exp: 0.75 yrs | raw_text: 259 words
-  skills: Epic Systems, EMR, Clinical Operations, HIPAA Compliance, Patient Scheduling, Microsoft Excel, SQL, React, Node.js, PostgreSQL, HL7
-  projects: Clinitrack Portal
-  background: An ambitious and highly analytical healthcare management graduate seeking an introductory position in healthcare operations. Recently wrapped up an intensive nine-month stint working as a Clinical Operations Intern at a fast-growing tech-enabled clinic startup. Collaborated closely with a five-perso
+  id: resume_31 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry, Python, Microsoft Excel
+  projects: ScheduleFlow
+  background: After completing my Bachelor of Science in Healthcare Administration in 2025 I immediately launched my professional path in medical coordination through a intensive six-month internship at a fast-growing digital health startup where I supported an active clinical operations team of five professional
 
-  id: resume_23 | level: middle | exp: 4.0 yrs | raw_text: 254 words
-  skills: Cerner Millennium, EMR, Clinical Operations, Medical Coordination, SQL Server 2019, Power BI, Python, MySQL, FHIR, Data Validation, HIPAA Compliance
-  projects: SmartScheduler
-  background: Resourceful and results-driven Clinical Operations Specialist offering four years of professional experience managing complex medical coordination pipelines and driving core platform adoptions within mid-sized enterprise multispecialty hospital groups. For the past three years, I served as a core Ad
+  id: resume_32 | level: senior | exp: 7.5 yrs | raw_text: 283 words
+  skills: Epic, Cerner, HL7, HIPAA Compliance, HITECH Act, Clinical Operations, SQL Server
+  projects: MedSync
+  background: With over seven years of progressive experience in clinical operations and medical coordination I have advanced from individual contributor roles into a Senior Clinical Operations Lead position within enterprise healthcare networks. Most recently for the past three years I led a specialized healthca
 
-  id: resume_24 | level: senior | exp: 8.0 yrs | raw_text: 252 words
-  skills: eClinicalWorks, EMR, Clinical Operations, Medical Coordination, HL7, FHIR, Python, Apache Spark, PostgreSQL, Healthcare Informatics, HIPAA Compliance
-  projects: CareFlow Predictive Engine
-  background: Accomplished and forward-thinking Senior Director of Clinical Operations with eight years of progressive leadership experience orchestrating enterprise-level medical coordination, health informatics engineering, and EMR governance models within nationwide healthcare corporations. At present, I spear
+  id: resume_33 | level: senior | exp: 8.0 yrs | raw_text: 290 words
+  skills: Epic, eClinicalWorks, HIPAA Compliance, SQL, Clinical Operations, Healthcare Analytics, Data Warehousing
+  projects: CareWarehouse
+  background: As an expert Senior Medical Coordinator and Clinical Systems Architect with eight years of dedicated specialization in health information management systems I have led cross-functional technical and clinical teams to deliver mission-critical infrastructure upgrades. In my current role at a large ent
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_22 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Epic Systems, EMR, Clinical Operations, HIPAA Compliance, Microsoft Excel
-  preferred_skills: SQL, Patient Scheduling
-  description: The outpatient administrative services group is searching for an energetic Junior Medical Coordinator to join our expanding four-person clinical operations team. This operational unit is tasked with executing daily patient administration tasks, mappi
+  id: jd_31 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry
+  preferred_skills: Python, Microsoft Excel
+  description: This Junior Medical Coordinator position supports an active, expanding clinical operations team of seven professionals focused on delivering innovative patient management software solutions and coordinating healthcare delivery across diverse networks
 
-  id: jd_23 | title: Clinical Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 191 words
-  required_skills: Cerner Millennium, EMR, SQL Server, Power BI, Clinical Operations, HIPAA Compliance
-  preferred_skills: Python, Medical Coordination
-  description: Our digital care solutions department is seeking an analytical and structured Clinical Operations Specialist to guide and streamline our cross-functional medical coordination networks. The successful candidate will join an established seven-person op
+  id: jd_32 | title: Clinical Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Cerner, Epic, SQL, Clinical Operations
+  preferred_skills: HL7, Patient Scheduling
+  description: The Clinical Operations Analyst will join an established team of twelve professionals developing and optimizing sophisticated medical workflows for a growing regional network of outpatient clinics. The operations team handles everything from platform
 
-  id: jd_24 | title: Senior Director of Enterprise EMR Architecture | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: eClinicalWorks, EMR, HL7, FHIR, HIPAA Compliance, Clinical Operations
-  preferred_skills: Python, Apache Spark, Healthcare Informatics
-  description: We are on the lookout for a strategic Senior Director of Enterprise EMR Architecture to chart the long-term technical vision and operational data governance of our national healthcare infrastructure. This high-visibility position steers an elite ten-
+  id: jd_33 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Epic, eClinicalWorks, SQL, Clinical Operations, HIPAA Compliance, HITECH Act
+  preferred_skills: HL7, Data Warehousing, Healthcare Analytics
+  description: This Senior Clinical Systems Architect position heads the technical and operational direction for a specialized department of fifteen engineers and analysts focused on building high-scale enterprise medical coordination frameworks and robust electron
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -70,6 +70,17 @@ NEVER use scores in boundary zones: 35-45, 55-65, 70-80, 85-95.
 These zones are forbidden because they produce ambiguous labels.
 
 ════════════════════════════════════
+SKILLS_MATCH — DERIVE FROM ACTUAL OVERLAP, DON'T REUSE A NUMBER
+════════════════════════════════════
+For every pair, first count: matched = required_skills present in the resume's
+skills list, total = len(required_skills). Then anchor SKILLS_MATCH to that ratio:
+  SKILLS_MATCH ≈ round(100 × matched / total), adjusted ±10 for preferred-skill
+  overlap and depth/version alignment.
+Two pairs with the same seniority gap can still need different SKILLS_MATCH if
+their real overlap ratio differs (e.g. 25% overlap vs 65% overlap must NOT get the
+same score just because both are "junior CV × senior JD"). Recompute per pair.
+
+════════════════════════════════════
 poor_match SCORING GUIDANCE
 ════════════════════════════════════
 A valid poor_match pair (score 20-34) requires ALL of:
@@ -99,35 +110,37 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
   • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
 
 ════════════════════════════════════
-LABEL BALANCE — PRIORITY GUIDANCE
+LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 63 pairs total.
-Labels with fewer existing pairs MUST be prioritised in this batch.
+Overall dataset so far: 90 pairs total.
+This batch's resume/JD seniority levels were deliberately chosen so that scoring
+each pair honestly (per the rubric below) should already land close to this spread —
+no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:    0  →  this batch: 3 pairs  (still need ~25 total)
-  weak_match            existing:   25  →  this batch: 1 pairs  (still need ~0 total)
-  moderate_match        existing:   14  →  this batch: 2 pairs  (still need ~11 total)
-  strong_match          existing:   12  →  this batch: 2 pairs  (still need ~13 total)
-  excellent_match       existing:   12  →  this batch: 2 pairs  (still need ~13 total)
+  poor_match            existing:    0  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:   33  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   19  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   18  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   20  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
-• Score pairs so this batch hits the "this batch" counts above.
-• Labels with high deficit get priority — bend seniority interpretation to reach them.
-• All scores must remain honest and consistent with the documents.
+• Score every pair from its actual documents — seniority gap, skill overlap, project fit.
+• If a pair's honest score lands far from its "expected" label above, trust the
+  documents over the expectation and note why in label_notes.
 • Adjust criterion scores within valid windows only.
 
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_64     resume_22 × jd_22
-  pair_65     resume_22 × jd_23
-  pair_66     resume_22 × jd_24
-  pair_67     resume_23 × jd_22
-  pair_68     resume_23 × jd_23
-  pair_69     resume_23 × jd_24
-  pair_70     resume_24 × jd_22
-  pair_71     resume_24 × jd_23
-  pair_72     resume_24 × jd_24
+  pair_91     resume_31 × jd_31
+  pair_92     resume_31 × jd_32
+  pair_93     resume_31 × jd_33
+  pair_94     resume_32 × jd_31
+  pair_95     resume_32 × jd_32
+  pair_96     resume_32 × jd_33
+  pair_97     resume_33 × jd_31
+  pair_98     resume_33 × jd_32
+  pair_99     resume_33 × jd_33
 
 ════════════════════════════════════
 OUTPUT FORMAT
