@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_76 | level: junior | exp: 0.5 yrs | raw_text: 283 words
-  skills: Python, NLTK, Flask, Git, Streamlit, Regex
-  projects: TextClean
-  background: I am a passionate Junior NLP Practitioner and recent graduate with foundational skills in basic text analysis, tokenization, and web engineering. I recently wrapped up an intensive six-month internship at a specialized software agency, working within an AI application development team of four engine
+  id: resume_79 | level: junior | exp: 0.5 yrs | raw_text: 277 words
+  skills: Flutter, Dart, Provider, Firebase, REST APIs, Git, Hive
+  projects: HabitFlow
+  background: Recent Computer Science graduate looking to kickstart a professional career as a dedicated mobile application developer. During my academic studies, I successfully completed a comprehensive internship at an early stage fintech startup with an agile team size of five people where I spent six months d
 
-  id: resume_77 | level: junior | exp: 0.7 yrs | raw_text: 254 words
-  skills: Python, FastAPI, SQL Server, Docker, Git, Scikit-Learn
-  projects: TagGen
-  background: I am an enthusiastic Associate AI Developer and highly motivated fresh graduate with deep foundational interests in backend engineering, linguistic processing, and script deployment. I recently completed a productive eight-month internship at a fast-growing tech startup, working within an integrated
+  id: resume_80 | level: senior | exp: 7.0 yrs | raw_text: 258 words
+  skills: React Native, TypeScript, Swift, Kotlin, Fastlane, GitHub Actions, RxSwift, Realm DB
+  projects: AudioSphere
+  background: Accomplished Senior Mobile Engineer and Technical Lead with over seven years of professional experience specializing in hybrid and native engineering architectures. In my previous role at a fast growing logistics enterprise, where I led a dedicated mobile team of eight software developers for three 
 
-  id: resume_78 | level: junior | exp: 0.6 yrs | raw_text: 261 words
-  skills: Python, Pandas, PostgreSQL, Git, ETL, Regex
-  projects: FeedParse
-  background: I am a driven Junior Data Engineer and recent graduate possessing solid academic and practical foundations in structured database manipulation, basic automated scripting, and textual extraction methods. Recently, I spent seven months as an intern at an enterprise software firm, operating inside a da
+  id: resume_81 | level: senior | exp: 8.0 yrs | raw_text: 250 words
+  skills: Swift, SwiftUI, Kotlin, Jetpack Compose, SQLite, Coroutines, Mobile Security
+  projects: SchemaGen
+  background: Senior Mobile Applications Architect with eight years of deep technical experience across native iOS and Android ecosystems. At a large scale financial enterprise, I served as the Tech Lead for a team of ten engineers over a four year tenure, where we rebuilt the core banking application from the gr
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_76 | title: Senior Staff NLP Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: Transformers, LangChain, Pinecone, PyTorch
-  preferred_skills: CUDA, Triton, Quantization
-  description: We are looking for an experienced Senior Staff NLP Infrastructure Engineer to lead the architectural design and scaling of our enterprise generative intelligence platform. Operating within an elite core artificial intelligence group of ten principal 
+  id: jd_79 | title: Junior Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 188 words
+  required_skills: Flutter, Dart, Provider, REST APIs, Git
+  preferred_skills: Firebase, Hive
+  description: We are seeking a Junior Flutter Developer to join our expanding mobile engineering team. Our product squad consists of four developers, one product manager, and two quality assurance engineers working together to build an innovative digital media app
 
-  id: jd_77 | title: Lead Generative AI Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 223 words
-  required_skills: RAG, LlamaIndex, Milvus, Hugging Face
-  preferred_skills: Kubernetes, AWS, Agentic Frameworks
-  description: Our modern cloud product organization is seeking a Lead Generative AI Solutions Architect to manage, construct, and scale our high-throughput conversational search and retrieval networks. Working within a specialized engineering squad composed of eig
+  id: jd_80 | title: Associate Mobile Engineer (Flutter) | level: junior | min_exp: 1 yrs | raw_text: 185 words
+  required_skills: Flutter, Dart, Provider, REST APIs, Git
+  preferred_skills: Firebase
+  description: Our mobile product team is looking for an Associate Mobile Engineer to help us build out our next generation consumer application. We are an agile team of six software engineers focused on delivering high performance mobile solutions for our growing 
 
-  id: jd_78 | title: Principal LLM Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: OpenAI API, LangChain, ChromaDB, Semantic Chunking
-  preferred_skills: Python, Ray, SQL
-  description: We are seeking a highly talented Principal LLM Systems Engineer to pioneer the engineering, deployment, and optimization of our global cloud-based conversational reasoning and agentic text automation backends. Collaborating across a multi-million use
+  id: jd_81 | title: Senior Native Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Swift, Kotlin, Fastlane, GitHub Actions, Coroutines, SwiftUI, Jetpack Compose
+  preferred_skills: RxSwift, SQLite
+  description: We are looking for a Senior Native Mobile Architect to lead the technical direction of our core enterprise communication applications. You will join an engineering organization composed of twenty experienced developers, acting as the primary guide fo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 225 pairs total.
+Overall dataset so far: 234 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   34  →  expected this batch: 9 pairs (from seniority gaps below)
+  poor_match            existing:   43  →  expected this batch: 1 pairs (from seniority gaps below)
   weak_match            existing:   49  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   43  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   43  →  expected this batch: 4 pairs (from seniority gaps below)
   strong_match          existing:   45  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:   54  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   54  →  expected this batch: 4 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_226    resume_76 × jd_76
-  pair_227    resume_76 × jd_77
-  pair_228    resume_76 × jd_78
-  pair_229    resume_77 × jd_76
-  pair_230    resume_77 × jd_77
-  pair_231    resume_77 × jd_78
-  pair_232    resume_78 × jd_76
-  pair_233    resume_78 × jd_77
-  pair_234    resume_78 × jd_78
+  pair_235    resume_79 × jd_79
+  pair_236    resume_79 × jd_80
+  pair_237    resume_79 × jd_81
+  pair_238    resume_80 × jd_79
+  pair_239    resume_80 × jd_80
+  pair_240    resume_80 × jd_81
+  pair_241    resume_81 × jd_79
+  pair_242    resume_81 × jd_80
+  pair_243    resume_81 × jd_81
 
 ════════════════════════════════════
 OUTPUT FORMAT
