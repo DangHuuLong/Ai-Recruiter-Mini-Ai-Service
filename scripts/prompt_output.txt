@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_55 | level: junior | exp: 0.5 yrs | raw_text: 272 words
-  skills: Figma, FigJam, Prototyping, Wireframing, Zeplin, HTML5, CSS3
-  projects: EcoShop
-  background: I am a passionate UI/UX designer with a strong foundation in human-centered design principles looking to establish my professional career. I recently completed my university education and have built a collection of projects focused on creating accessible and intuitive web interfaces. My practical ex
+  id: resume_58 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Git
+  projects: WeatherPulse
+  background: I am an enthusiastic entry-level Frontend Developer dedicated to building highly interactive and accessible web experiences using modern web standards. Recently, I completed an intensive six-month internship at an e-commerce startup, operating in an agile product team of four engineers. During this 
 
-  id: resume_56 | level: senior | exp: 8.0 yrs | raw_text: 268 words
-  skills: Figma, Maze, UserTesting, Principle, Adobe Creative Cloud, Design Tokens, Hotjar, Google Analytics 4, Prototyping, User Research
-  projects: Nexus
-  background: As a seasoned Product Design Lead with over eight years of professional experience across digital agencies and enterprise software companies, I specialize in crafting complex web and mobile ecosystems. At my previous enterprise software role, I spearheaded a dedicated product design team of nine pro
+  id: resume_59 | level: senior | exp: 7.0 yrs | raw_text: 275 words
+  skills: Next.js, TypeScript, React, Tailwind CSS, Redux Toolkit, GraphQL, Jest, Webpack
+  projects: Project Nexus
+  background: As a Senior Frontend Engineer with over seven years of professional experience across innovative digital agencies and high-traffic SaaS enterprises, I specialize in engineering highly performant user interfaces and optimizing intricate web architectures. In my recent role at a global enterprise soft
 
-  id: resume_57 | level: senior | exp: 7.0 yrs | raw_text: 275 words
-  skills: Figma, Miro, ProtoPie, Optimal Workshop, Maze, Stark, Accessibility, User Research, Prototyping, Tailwind CSS
+  id: resume_60 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Zundstand, Cypress, GraphQL, Node.js
   projects: Project Clarity
-  background: I am a Senior Product Designer and UX Researcher with seven years of deep expertise leading complex user experience projects within enterprise-scale digital transformations and fast-moving tech startups. In my recent role at an enterprise SaaS provider, where I operated within a cross-functional pro
+  background: I am a Lead Frontend Engineer with eight years of deep technical expertise building highly reliable, secure, and accessible enterprise-scale web applications for cloud SaaS platforms and digital products. In my latest role at a fast-growing cloud enterprise startup, I managed an agile frontend engin
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_55 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Figma, FigJam, Prototyping, Wireframing, Zeplin
-  preferred_skills: HTML5, CSS3
-  description: We are looking for a Junior UI/UX Designer to join our collaborative product experience team. In this role, you will work closely with a design lead and two front-end developers to support the expansion of our consumer-facing web app. Your day-to-day
+  id: jd_58 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 190 words
+  required_skills: React, Tailwind CSS, JavaScript, Git
+  preferred_skills: Next.js
+  description: We are seeking an enthusiastic Junior Frontend Developer to join our growing client experiences team. In this entry-level role, you will work collaboratively alongside a senior frontend architect and two user interface designers to build out our cons
 
-  id: jd_56 | title: Product Designer | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Figma, Maze, Principle, Miro, User Research, Prototyping
-  preferred_skills: Hotjar, Google Analytics 4, Tailwind CSS
-  description: Our core product experience team is seeking a Product Designer to take ownership of mid-scale features within our expanding web and mobile applications. Working inside an agile product team comprising five software developers, a product owner, and a 
+  id: jd_59 | title: Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 189 words
+  required_skills: Next.js, TypeScript, React, Tailwind CSS, Redux Toolkit
+  preferred_skills: GraphQL
+  description: Our product engineering group is looking for a skilled Frontend Engineer to take structural ownership of core feature sets within our flagship cloud dashboard web application. Working within an agile engineering squad composed of five developers, a p
 
-  id: jd_57 | title: Senior Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: Figma, UserTesting, Maze, ProtoPie, Optimal Workshop, Stark, Accessibility, User Research, Prototyping
-  preferred_skills: React, Tailwind CSS, Google Analytics 4
-  description: We are looking for a Senior Lead Product Designer to guide the architecture and execution of our enterprise data analytics software platform. Managing the design direction across an expansive engineering and product organization, you will work closel
+  id: jd_60 | title: Senior Staff Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Next.js, TypeScript, React, Tailwind CSS, Zustand, Cypress
+  preferred_skills: Node.js
+  description: We are seeking a Senior Staff Frontend Engineer to architect and govern the next generation of our global enterprise SaaS infrastructure. Collaborating across a massive product development organization, you will align with a high-performing leadershi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 162 pairs total.
+Overall dataset so far: 171 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   27  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   42  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   29  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   29  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   35  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   28  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:   43  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   31  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   31  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   38  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_163    resume_55 × jd_55
-  pair_164    resume_55 × jd_56
-  pair_165    resume_55 × jd_57
-  pair_166    resume_56 × jd_55
-  pair_167    resume_56 × jd_56
-  pair_168    resume_56 × jd_57
-  pair_169    resume_57 × jd_55
-  pair_170    resume_57 × jd_56
-  pair_171    resume_57 × jd_57
+  pair_172    resume_58 × jd_58
+  pair_173    resume_58 × jd_59
+  pair_174    resume_58 × jd_60
+  pair_175    resume_59 × jd_58
+  pair_176    resume_59 × jd_59
+  pair_177    resume_59 × jd_60
+  pair_178    resume_60 × jd_58
+  pair_179    resume_60 × jd_59
+  pair_180    resume_60 × jd_60
 
 ════════════════════════════════════
 OUTPUT FORMAT
