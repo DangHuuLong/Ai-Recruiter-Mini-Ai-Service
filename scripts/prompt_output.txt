@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_82 | level: junior | exp: 0.5 yrs | raw_text: 252 words
-  skills: Jira, Confluence, Draw.io, Requirements Gathering, User Stories, Agile Methodologies, Trello, Microsoft Excel
-  projects: ProcureCheck
-  background: Motivated Business Analyst graduate looking to kickstart a professional career centered on requirements engineering and business process workflows. During my academic studies, I successfully completed a comprehensive six-month internship at a mid-sized technology startup with an agile team size of s
+  id: resume_85 | level: middle | exp: 4.0 yrs | raw_text: 280 words
+  skills: Splunk, Nessus, Wireshark, Suricata, Python, Incident Response, Threat Detection, Vulnerability Assessment
+  projects: NetShield Monitor
+  background: Dedicated Cyber Security Analyst with four years of dedicated professional experience protecting enterprise infrastructure environments and configuring modern monitoring systems. I began my security career at a fast-growing financial technology startup where I spent two years operating within a fast
 
-  id: resume_83 | level: junior | exp: 0.7 yrs | raw_text: 260 words
-  skills: Jira, Confluence, Lucidchart, Requirements Engineering, Sprint Coordination, Agile Methodologies, HTML, JavaScript
-  projects: TaskSphere
-  background: Ambitious Junior Project Manager and Business Analyst with comprehensive internships centered on requirements engineering and agile project frameworks. I served as an agile project coordinator intern for eight full months at a growing software startup, supporting an engineering team of seven develop
+  id: resume_86 | level: senior | exp: 7.0 yrs | raw_text: 271 words
+  skills: Elastic Security, Kali Linux, Burp Suite, Penetration Testing, Golang, Vulnerability Management, Threat Hunting, Network Security
+  projects: VulnTracker
+  background: Seasoned Senior Security Engineer and Technical Lead with seven years of deep expertise in penetration testing, threat detection infrastructure, and secure network architecture engineering. I spent three years working at a dynamic software security startup where I directed a technical defensive engi
 
-  id: resume_84 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: BPMN, Camunda, SQL Server, Jira, Confluence, Miro, Gap Analysis, Stakeholder Management, Python, Agile Coaching
-  projects: FlowOptimizer
-  background: Accomplished Senior Business Analyst and Lead Agile Project Manager with more than eight years of extensive professional experience directing enterprise wide financial software initiatives and complex process re engineering. In my most recent role at a global enterprise fintech group, where I led a 
+  id: resume_87 | level: senior | exp: 8.0 yrs | raw_text: 254 words
+  skills: QRadar, Wireshark, Cisco ASA, Incident Response, Python, Network Security, Firewall Administration, Digital Forensics
+  projects: TrafficSentry
+  background: Accomplished Senior Information Security Specialist with eight years of comprehensive professional experience driving defensive incident response strategies, security architecture design, and advanced network security engineering. My career history includes a four-year tenure at a prominent security
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_82 | title: Associate Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: Jira, Confluence, Requirements Gathering, User Stories, Agile Methodologies
-  preferred_skills: Draw.io, Lucidchart, Microsoft Excel
-  description: We are seeking an enthusiastic Associate Business Analyst to join our expanding internal application engineering team. Our product squad consists of four software engineers, one agile product manager, and two quality assurance analysts working togeth
+  id: jd_85 | title: Junior Cyber Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Splunk, Nessus, Threat Detection, Vulnerability Assessment
+  preferred_skills: Python, Incident Response
+  description: We are looking for a highly motivated Junior Cyber Security Analyst to join our central Security Operations Center team. Our corporate security division consists of five software developers, one agile security manager, and three junior monitoring ana
 
-  id: jd_83 | title: Senior Enterprise Business Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: BPMN, Camunda, SQL Server, Gap Analysis, Stakeholder Management
-  preferred_skills: Python
-  description: Our corporate systems transformation office is looking for a Senior Enterprise Business Architect to steer the structural redesign of our global transaction networks. We operate as a high visibility team of fifteen senior professionals managing compl
+  id: jd_86 | title: Cybersecurity Analyst (Threat Detection) | level: middle | min_exp: 3 yrs | raw_text: 188 words
+  required_skills: Splunk, Wireshark, Suricata, Nessus, Python, Incident Response, Threat Detection, Vulnerability Assessment
+  preferred_skills: Kali Linux
+  description: Our threat mitigation branch is looking for a skilled Cybersecurity Analyst specializing in threat detection to manage the defensive infrastructure of our financial platforms. We operate as a dedicated team of eight individual contributors supervisin
 
-  id: jd_84 | title: Lead Agile Project Manager & Consultant | level: senior | min_exp: 6 yrs | raw_text: 185 words
-  required_skills: BPMN, Camunda, SQL Server, Gap Analysis, Stakeholder Management
-  preferred_skills: Python, Agile Coaching
-  description: We are searching for a Lead Agile Project Manager and Consultant to direct the modernization of our core automated operations suite. You will join an engineering and management organization of over twenty individuals, taking complete ownership of str
+  id: jd_87 | title: Network Security Specialist | level: middle | min_exp: 3 yrs | raw_text: 185 words
+  required_skills: QRadar, Wireshark, Cisco ASA, Incident Response, Python, Network Security
+  preferred_skills: Elastic Security
+  description: We are searching for an analytical Network Security Specialist to guide the protection and resilience of our corporate infrastructure networks. You will join a dedicated cybersecurity engineering team of twelve security professionals, taking core own
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 243 pairs total.
+Overall dataset so far: 252 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   44  →  expected this batch: 4 pairs (from seniority gaps below)
+  poor_match            existing:   48  →  expected this batch: 0 pairs (from seniority gaps below)
   weak_match            existing:   49  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   47  →  expected this batch: 1 pairs (from seniority gaps below)
-  strong_match          existing:   45  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:   58  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:   48  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   45  →  expected this batch: 5 pairs (from seniority gaps below)
+  excellent_match       existing:   62  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_244    resume_82 × jd_82
-  pair_245    resume_82 × jd_83
-  pair_246    resume_82 × jd_84
-  pair_247    resume_83 × jd_82
-  pair_248    resume_83 × jd_83
-  pair_249    resume_83 × jd_84
-  pair_250    resume_84 × jd_82
-  pair_251    resume_84 × jd_83
-  pair_252    resume_84 × jd_84
+  pair_253    resume_85 × jd_85
+  pair_254    resume_85 × jd_86
+  pair_255    resume_85 × jd_87
+  pair_256    resume_86 × jd_85
+  pair_257    resume_86 × jd_86
+  pair_258    resume_86 × jd_87
+  pair_259    resume_87 × jd_85
+  pair_260    resume_87 × jd_86
+  pair_261    resume_87 × jd_87
 
 ════════════════════════════════════
 OUTPUT FORMAT
