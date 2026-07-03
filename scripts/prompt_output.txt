@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_37 | level: junior | exp: 0.5 yrs | raw_text: 272 words
-  skills: Shopify, Microsoft Excel, Zendesk, Inventory Management, Customer Support, Data Analysis, Order Fulfillment
-  projects: Marketplace Launchpad
-  background: I am an enthusiastic Junior Marketplace Operations Specialist who recently graduated with a Bachelor of Business Administration in Supply Chain Management in 2025. During my final year of university, I completed an intensive six-month internship at a fast-growing retail startup within a dynamic digi
+  id: resume_40 | level: junior | exp: 0.5 yrs | raw_text: 304 words
+  skills: Python, JavaScript, React, HTML, CSS, Git, SQL, REST APIs, Docker
+  projects: TaskFlow, StudyBuddy
+  background: Recently graduated with a Bachelor's degree in Computer Science, this candidate completed a six-month internship at a mid-sized startup building consumer-facing web applications, working within a team of five engineers. During the internship, responsibilities included implementing new React 18 compo
 
-  id: resume_38 | level: senior | exp: 7.0 yrs | raw_text: 279 words
-  skills: SAP Commerce Cloud, Salesforce Commerce Cloud, Google Analytics, Tableau, ERP Integrations, Inventory Management, Merchandising, Supply Chain Logistics, Marketplace Management, Data Analysis
-  projects: Enterprise Core Catalog Migration
-  background: I am a senior E-commerce Marketplace Manager and Operations Director with over seven years of professional experience scaling high-volume digital merchant marketplaces and global B2C platforms. In my previous role as a Senior Marketplace Operations Lead at a large enterprise digital commerce corpora
+  id: resume_41 | level: senior | exp: 8 yrs | raw_text: 313 words
+  skills: Python, FastAPI, React, TypeScript, PostgreSQL, Redis, Docker, Kubernetes, AWS, System Design, Microservices, GraphQL, Kafka, Team Leadership, Git, REST API Design, SQL
+  projects: OpsPulse
+  background: This candidate brings eight years of full-stack engineering experience, most recently serving as a Tech Lead at a Series C startup overseeing a team of six engineers responsible for a high-traffic marketplace platform. In this role, the candidate led the migration of a monolithic Django application 
 
-  id: resume_39 | level: senior | exp: 8.0 yrs | raw_text: 283 words
-  skills: Mirakl, Oracle Commerce, Shopify Plus, SQL Server, Power BI, Google Analytics, Looker, ERP, Omnichannel Routing, Marketplace Management, Digital Merchandising, Data Analysis
-  projects: Global Marketplace Transformation
-  background: I am a strategic Senior E-commerce Operations Lead and Digital Merchandising Architect with eight years of continuous expertise engineering high-performance retail marketplace environments. For the past four years, I have served as the Principal Operations Lead at an enterprise multi-category retail
+  id: resume_42 | level: senior | exp: 7 yrs | raw_text: 303 words
+  skills: Python, Django, FastAPI, React, TypeScript, PostgreSQL, Docker, Kubernetes, AWS, System Design, Microservices, GraphQL, Kafka, Team Leadership, REST API Design, Git, SQL
+  projects: SchemaGuard
+  background: With seven years of experience across startups and enterprise environments, this candidate currently works as a Principal Engineer at a fast-growing fintech company, leading a cross-functional pod of eight engineers responsible for payments infrastructure. Key responsibilities include architecting a
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_37 | title: Junior E-commerce Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 231 words
-  required_skills: Shopify, Microsoft Excel, Zendesk, Inventory Management, Customer Support, Data Analysis, Order Fulfillment
-  preferred_skills: Google Analytics
-  description: We are actively looking for an enthusiastic Junior E-commerce Operations Associate to join our growing digital storefront management team. In this entry-level position, you will work within an agile operations squad composed of five specialists, a me
+  id: jd_40 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 271 words
+  required_skills: Python, JavaScript, React, HTML, CSS, Git, SQL, REST APIs
+  preferred_skills: Docker, TypeScript, AWS
+  description: This role sits within a product engineering team of eight people building and maintaining a web application used by thousands of small business customers daily. The team follows an agile process with two-week sprints, working closely with a product m
 
-  id: jd_38 | title: Marketplace Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 236 words
-  required_skills: Salesforce Commerce Cloud, Google Analytics, Tableau, Inventory Management, Merchandising, Supply Chain Logistics, Marketplace Management, Data Analysis, Jest
-  preferred_skills: ERP Integrations
-  description: Our core business group is seeking a talented Marketplace Operations Manager to build and scale our online merchant applications. Working inside a mid-sized team of six marketplace operators, you will take complete ownership of regional business cate
+  id: jd_41 | title: Full-Stack Software Engineer | level: middle | min_exp: 3 yrs | raw_text: 250 words
+  required_skills: Python, Django, React, PostgreSQL, Docker, REST API Design, Redis, CI/CD, TypeScript, AWS
+  preferred_skills: Kubernetes, GraphQL, Celery
+  description: This position is part of a platform engineering team of twelve engineers responsible for the core web application that powers a subscription-based service used by tens of thousands of customers. The team is organized into small squads that own specif
 
-  id: jd_39 | title: Senior Marketplace Operations Director | level: senior | min_exp: 6 yrs | raw_text: 238 words
-  required_skills: Mirakl, Oracle Commerce, GraphQL, Apollo Client, Webpack, Vite, Cypress, CI/CD, Monorepos, Performance Optimization, Marketplace Management, Digital Merchandising
-  preferred_skills: Turborepo
-  description: We are seeking a visionary Senior Marketplace Operations Director to champion the strategic direction of our next-generation digital retail infrastructure. In this role, you will lead a specialized platform squad of eight elite operations leads and e
+  id: jd_42 | title: Senior Full-Stack / Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 255 words
+  required_skills: Python, FastAPI, Microservices, Kubernetes, System Design, GraphQL, Kafka, PostgreSQL, React, TypeScript, AWS, Team Leadership
+  preferred_skills: Terraform, Go, Elasticsearch
+  description: This senior role is embedded in a platform team of fifteen engineers responsible for the distributed systems that power a high-traffic real-time product used across multiple business units. The team operates as several sub-groups aligned to specific 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 108 pairs total.
+Overall dataset so far: 117 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:    0  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   37  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   23  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   22  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   26  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   38  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   25  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   25  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   29  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_109    resume_37 × jd_37
-  pair_110    resume_37 × jd_38
-  pair_111    resume_37 × jd_39
-  pair_112    resume_38 × jd_37
-  pair_113    resume_38 × jd_38
-  pair_114    resume_38 × jd_39
-  pair_115    resume_39 × jd_37
-  pair_116    resume_39 × jd_38
-  pair_117    resume_39 × jd_39
+  pair_118    resume_40 × jd_40
+  pair_119    resume_40 × jd_41
+  pair_120    resume_40 × jd_42
+  pair_121    resume_41 × jd_40
+  pair_122    resume_41 × jd_41
+  pair_123    resume_41 × jd_42
+  pair_124    resume_42 × jd_40
+  pair_125    resume_42 × jd_41
+  pair_126    resume_42 × jd_42
 
 ════════════════════════════════════
 OUTPUT FORMAT
