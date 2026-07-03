@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_34 | level: junior | exp: 0.5 yrs | raw_text: 276 words
-  skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Git, REST APIs, Next.js
-  projects: ShopSphere
-  background: I am a passionate junior software engineer specializing in frontend web technologies. I recently graduated with a Bachelor of Science in Computer Science in 2025 and am eager to kickstart my professional journey. During my final year, I completed an internship at an agile agency where I worked withi
+  id: resume_37 | level: junior | exp: 0.5 yrs | raw_text: 272 words
+  skills: Shopify, Microsoft Excel, Zendesk, Inventory Management, Customer Support, Data Analysis, Order Fulfillment
+  projects: Marketplace Launchpad
+  background: I am an enthusiastic Junior Marketplace Operations Specialist who recently graduated with a Bachelor of Business Administration in Supply Chain Management in 2025. During my final year of university, I completed an intensive six-month internship at a fast-growing retail startup within a dynamic digi
 
-  id: resume_35 | level: senior | exp: 7.0 yrs | raw_text: 300 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, Git, REST APIs, GraphQL, Apollo Client, Vite, Cypress, CI/CD, Monorepos, Performance Optimization
-  projects: Enterprise Core Migration
-  background: I am a seasoned Senior Frontend Engineer and Technical Lead with over seven years of professional software engineering experience focusing on high-scale web platforms. In my previous role as a Lead Engineer at an enterprise SaaS company, where I worked for over three years, I led a cross-functional 
+  id: resume_38 | level: senior | exp: 7.0 yrs | raw_text: 279 words
+  skills: SAP Commerce Cloud, Salesforce Commerce Cloud, Google Analytics, Tableau, ERP Integrations, Inventory Management, Merchandising, Supply Chain Logistics, Marketplace Management, Data Analysis
+  projects: Enterprise Core Catalog Migration
+  background: I am a senior E-commerce Marketplace Manager and Operations Director with over seven years of professional experience scaling high-volume digital merchant marketplaces and global B2C platforms. In my previous role as a Senior Marketplace Operations Lead at a large enterprise digital commerce corpora
 
-  id: resume_36 | level: senior | exp: 8.0 yrs | raw_text: 285 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, React Query, Git, REST APIs, GraphQL, Apollo Client, Webpack, Cypress, CI/CD, Monorepos, Performance Optimization
-  projects: Global Checkout Engine
-  background: I am an accomplished Senior Frontend Architect and Tech Lead with eight years of continuous professional expertise crafting enterprise-grade web experiences. For the past four years, I have served as the Frontend Engineering Lead at a large-scale e-commerce enterprise company, driving technical stra
+  id: resume_39 | level: senior | exp: 8.0 yrs | raw_text: 283 words
+  skills: Mirakl, Oracle Commerce, Shopify Plus, SQL Server, Power BI, Google Analytics, Looker, ERP, Omnichannel Routing, Marketplace Management, Digital Merchandising, Data Analysis
+  projects: Global Marketplace Transformation
+  background: I am a strategic Senior E-commerce Operations Lead and Digital Merchandising Architect with eight years of continuous expertise engineering high-performance retail marketplace environments. For the past four years, I have served as the Principal Operations Lead at an enterprise multi-category retail
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_34 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 214 words
-  required_skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Git, REST APIs
-  preferred_skills: Next.js
-  description: We are actively looking for an enthusiastic Junior Frontend Developer to join our growing engineering team. In this position, you will work within an agile product team composed of five developers, a product manager, and a dedicated quality assurance
+  id: jd_37 | title: Junior E-commerce Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 231 words
+  required_skills: Shopify, Microsoft Excel, Zendesk, Inventory Management, Customer Support, Data Analysis, Order Fulfillment
+  preferred_skills: Google Analytics
+  description: We are actively looking for an enthusiastic Junior E-commerce Operations Associate to join our growing digital storefront management team. In this entry-level position, you will work within an agile operations squad composed of five specialists, a me
 
-  id: jd_35 | title: Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 196 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, React Query, Jest, Git, REST APIs
-  preferred_skills: CI/CD
-  description: Our core product team is seeking a talented Frontend Engineer to build and scale our web applications. Working inside a mid-sized team of six product developers, you will take ownership of business features from conception through to production. Your
+  id: jd_38 | title: Marketplace Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 236 words
+  required_skills: Salesforce Commerce Cloud, Google Analytics, Tableau, Inventory Management, Merchandising, Supply Chain Logistics, Marketplace Management, Data Analysis, Jest
+  preferred_skills: ERP Integrations
+  description: Our core business group is seeking a talented Marketplace Operations Manager to build and scale our online merchant applications. Working inside a mid-sized team of six marketplace operators, you will take complete ownership of regional business cate
 
-  id: jd_36 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, Apollo Client, Webpack, Vite, Cypress, CI/CD, Monorepos, Performance Optimization
+  id: jd_39 | title: Senior Marketplace Operations Director | level: senior | min_exp: 6 yrs | raw_text: 238 words
+  required_skills: Mirakl, Oracle Commerce, GraphQL, Apollo Client, Webpack, Vite, Cypress, CI/CD, Monorepos, Performance Optimization, Marketplace Management, Digital Merchandising
   preferred_skills: Turborepo
-  description: We are seeking a visionary Senior Frontend Architect to champion the technical direction of our next-generation web infrastructure. In this role, you will lead a specialized platform squad of eight elite engineers dedicated to maximizing developer ve
+  description: We are seeking a visionary Senior Marketplace Operations Director to champion the strategic direction of our next-generation digital retail infrastructure. In this role, you will lead a specialized platform squad of eight elite operations leads and e
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 99 pairs total.
+Overall dataset so far: 108 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:    0  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   35  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   21  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   20  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   23  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   37  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   23  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   22  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   26  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_100    resume_34 × jd_34
-  pair_101    resume_34 × jd_35
-  pair_102    resume_34 × jd_36
-  pair_103    resume_35 × jd_34
-  pair_104    resume_35 × jd_35
-  pair_105    resume_35 × jd_36
-  pair_106    resume_36 × jd_34
-  pair_107    resume_36 × jd_35
-  pair_108    resume_36 × jd_36
+  pair_109    resume_37 × jd_37
+  pair_110    resume_37 × jd_38
+  pair_111    resume_37 × jd_39
+  pair_112    resume_38 × jd_37
+  pair_113    resume_38 × jd_38
+  pair_114    resume_38 × jd_39
+  pair_115    resume_39 × jd_37
+  pair_116    resume_39 × jd_38
+  pair_117    resume_39 × jd_39
 
 ════════════════════════════════════
 OUTPUT FORMAT
