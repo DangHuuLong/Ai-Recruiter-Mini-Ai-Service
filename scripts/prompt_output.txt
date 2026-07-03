@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_64 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Python, scikit-learn, pandas, numpy, SQL, Git, Jupyter Notebooks, matplotlib, seaborn
-  projects: PriceWatch
-  background: I am a Junior Data Scientist and recent graduate with deep foundational knowledge in predictive analytics, mathematical modeling, and basic machine learning implementations. Recently, I completed a six-month internship at an e-commerce startup, operating in an agile product engineering team of five 
+  id: resume_67 | level: junior | exp: 0.5 yrs | raw_text: 281 words
+  skills: Shopify, Microsoft Excel, Google Analytics, Zapier, Google Sheets, Merchandising, Inventory Management
+  projects: EcoCart
+  background: I am an enthusiastic Junior Marketplace Operations Specialist and recent graduate with foundational knowledge in digital merchandising, inventory synchronization, and e-commerce store catalog maintenance. Recently, I completed a intensive six-month internship at a fast-growing fashion e-commerce sta
 
-  id: resume_65 | level: senior | exp: 7.0 yrs | raw_text: 269 words
-  skills: Python, PyTorch, scikit-learn, pandas, AWS SageMaker, Docker, FastAPI, Kafka, XGBoost
-  projects: SignalMind
-  background: I am a Senior Machine Learning Engineer with over seven years of professional experience building enterprise-grade predictive models, optimizing large-scale recommendation systems, and managing deep learning pipelines in high-throughput production environments. In my previous role at a mid-sized hea
+  id: resume_68 | level: senior | exp: 7.0 yrs | raw_text: 281 words
+  skills: Amazon Seller Central, Mirakl, SAP Hybris, Salesforce Commerce Cloud, Oracle Netsuite, Celigo, Looker, Feedvisor, eBay Enterprise
+  projects: StockSync
+  background: I am a Senior E-commerce Marketplace Manager with over seven years of professional experience directing large-scale online retail strategies, optimizing multi-million dollar vendor portfolios, and driving digital merchandising transformations across global marketplace platforms. In my latest role at
 
-  id: resume_66 | level: senior | exp: 8.0 yrs | raw_text: 272 words
-  skills: Python, PyTorch, scikit-learn, pandas, Apache Spark, Kubernetes, GitLab CI, MLflow, Docker
-  projects: TensorFlowHub
-  background: I am a Lead Data Scientist and Machine Learning Architect with eight years of deep technical expertise building distributed predictive intelligence, optimizing massive data engineering lifecycles, and managing high-stakes machine learning applications for global technology products. In my latest rol
+  id: resume_69 | level: senior | exp: 8.0 yrs | raw_text: 271 words
+  skills: Magento Commerce, Mirakl, SAP Hybris, Salesforce Commerce Cloud, ChannelAdvisor, Adobe Analytics, Python, SQL, Tableau
+  projects: MerchantHub
+  background: I am a Lead E-commerce Operations Architect and Digital Merchandising Specialist with eight years of deep technical expertise building distributed commercial marketplaces, optimizing complex retail logistics lifecycles, and managing multi-channel storefront operations for high-volume consumer produc
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_64 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 222 words
-  required_skills: Python, pandas, numpy, scikit-learn, Git, Jupyter Notebooks
-  preferred_skills: SQL, matplotlib, seaborn
-  description: We are seeking an enthusiastic Junior Data Scientist to join our growing client experiences team. In this entry-level role, you will work collaboratively alongside a senior data science architect and two data engineers to build out our consumer analy
+  id: jd_67 | title: Junior Marketplace Specialist | level: junior | min_exp: 1 yrs | raw_text: 250 words
+  required_skills: Shopify, Microsoft Excel, Zapier, Google Sheets, Google Analytics
+  preferred_skills: SQL, Merchandising, Inventory Management
+  description: We are seeking an enthusiastic Junior Marketplace Specialist to join our growing customer experiences and retail operations team. In this entry-level role, you will work collaboratively alongside a senior marketplace architect and two digital merchan
 
-  id: jd_65 | title: Data Scientist - Machine Learning | level: middle | min_exp: 3 yrs | raw_text: 210 words
-  required_skills: Python, pandas, scikit_learn, SQL, Docker, XGBoost
-  preferred_skills: AWS SageMaker, FastAPI, numpy
-  description: Our product engineering group is looking for a skilled mid-level Data Scientist to take structural ownership of core feature delivery pipelines within our flagship cloud dashboard application. Working within an agile engineering squad composed of fiv
+  id: jd_68 | title: Marketplace Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 237 words
+  required_skills: Amazon Seller Central, Feedvisor, Microsoft Excel, SQL, Celigo
+  preferred_skills: Oracle Netsuite, Looker, eBay Enterprise
+  description: Our digital commercial product group is looking for a skilled mid-level Marketplace Operations Manager to take structural ownership of core merchant delivery pipelines within our flagship multi-channel cloud dashboard web application. Working within 
 
-  id: jd_66 | title: Senior Staff Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Python, PyTorch, pandas, scikit-learn, Apache Spark, MLflow, Kubernetes, Docker
-  preferred_skills: Kafka, numpy, FastAPI
-  description: We are seeking a Senior Staff Machine Learning Architect to design, govern, and optimize the next generation of our global enterprise SaaS machine learning infrastructure. Collaborating across a massive product development organization, you will alig
+  id: jd_69 | title: Senior Staff Enterprise E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 231 words
+  required_skills: Magento Commerce, Mirakl, SAP Hybris, Salesforce Commerce Cloud, ChannelAdvisor
+  preferred_skills: Adobe Analytics, Python, SQL
+  description: We are seeking a Senior Staff Enterprise E-commerce Architect to design, govern, and optimize the next generation of our global enterprise SaaS multi-vendor marketplace infrastructure. Collaborating across a massive product development organization, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 189 pairs total.
+Overall dataset so far: 198 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   30  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   45  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   35  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   36  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   43  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   31  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:   46  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   37  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   39  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   45  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_190    resume_64 × jd_64
-  pair_191    resume_64 × jd_65
-  pair_192    resume_64 × jd_66
-  pair_193    resume_65 × jd_64
-  pair_194    resume_65 × jd_65
-  pair_195    resume_65 × jd_66
-  pair_196    resume_66 × jd_64
-  pair_197    resume_66 × jd_65
-  pair_198    resume_66 × jd_66
+  pair_199    resume_67 × jd_67
+  pair_200    resume_67 × jd_68
+  pair_201    resume_67 × jd_69
+  pair_202    resume_68 × jd_67
+  pair_203    resume_68 × jd_68
+  pair_204    resume_68 × jd_69
+  pair_205    resume_69 × jd_67
+  pair_206    resume_69 × jd_68
+  pair_207    resume_69 × jd_69
 
 ════════════════════════════════════
 OUTPUT FORMAT
