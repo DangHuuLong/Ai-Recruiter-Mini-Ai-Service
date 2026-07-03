@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_73 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Python, Pandas, Scikit-Learn, Git, Jupyter Notebooks, Streamlit
-  projects: CardioPredict
-  background: I am an enthusiastic Junior Data Scientist and recent graduate with foundational knowledge in exploratory data analysis, predictive modeling, and machine learning pipeline construction. Recently, I completed an intensive six-month internship at an e-commerce startup, operating in an agile analytics 
+  id: resume_76 | level: junior | exp: 0.5 yrs | raw_text: 283 words
+  skills: Python, NLTK, Flask, Git, Streamlit, Regex
+  projects: TextClean
+  background: I am a passionate Junior NLP Practitioner and recent graduate with foundational skills in basic text analysis, tokenization, and web engineering. I recently wrapped up an intensive six-month internship at a specialized software agency, working within an AI application development team of four engine
 
-  id: resume_74 | level: senior | exp: 7.0 yrs | raw_text: 252 words
-  skills: Python, PyTorch, MLflow, Docker, Kubernetes, Apache Spark, FastAPI, Ray, AWS
-  projects: TensorStream
-  background: I am a Senior Machine Learning Engineer with over seven years of professional experience directing large-scale distributed artificial intelligence initiatives, optimizing multi-million parameter neural network architectures, and driving cloud MLOps transformations across enterprise platforms. In my 
+  id: resume_77 | level: junior | exp: 0.7 yrs | raw_text: 254 words
+  skills: Python, FastAPI, SQL Server, Docker, Git, Scikit-Learn
+  projects: TagGen
+  background: I am an enthusiastic Associate AI Developer and highly motivated fresh graduate with deep foundational interests in backend engineering, linguistic processing, and script deployment. I recently completed a productive eight-month internship at a fast-growing tech startup, working within an integrated
 
-  id: resume_75 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Python, PyTorch, MLflow, Docker, Kubernetes, Apache Spark, Hugging Face, SQL, Linux
-  projects: VisionHub
-  background: I am a Lead Machine Learning Infrastructure Architect and Senior Data Scientist with eight years of deep technical expertise building distributed computing clusters, optimizing complex deep learning model lifecycles, and managing multi-channel prediction workflows for high-volume enterprise systems.
+  id: resume_78 | level: junior | exp: 0.6 yrs | raw_text: 261 words
+  skills: Python, Pandas, PostgreSQL, Git, ETL, Regex
+  projects: FeedParse
+  background: I am a driven Junior Data Engineer and recent graduate possessing solid academic and practical foundations in structured database manipulation, basic automated scripting, and textual extraction methods. Recently, I spent seven months as an intern at an enterprise software firm, operating inside a da
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_73 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 245 words
-  required_skills: Python, Pandas, Scikit-Learn, Git, Jupyter Notebooks
-  preferred_skills: SQL, Streamlit, Statistical Modeling
-  description: We are seeking an enthusiastic Junior Data Scientist to join our growing predictive modeling and core analytics team. In this entry-level role, you will work collaboratively alongside a senior machine learning architect and two predictive analytics c
+  id: jd_76 | title: Senior Staff NLP Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
+  required_skills: Transformers, LangChain, Pinecone, PyTorch
+  preferred_skills: CUDA, Triton, Quantization
+  description: We are looking for an experienced Senior Staff NLP Infrastructure Engineer to lead the architectural design and scaling of our enterprise generative intelligence platform. Operating within an elite core artificial intelligence group of ten principal 
 
-  id: jd_74 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs | raw_text: 231 words
-  required_skills: Python, MLflow, Docker, SQL, FastAPI
-  preferred_skills: Apache Spark, PyTorch, Linux
-  description: Our digital modeling product group is looking for a skilled mid-level Machine Learning Engineer to take structural ownership of core prediction delivery pipelines within our flagship multi-channel cloud dashboard web application. Working within an ag
+  id: jd_77 | title: Lead Generative AI Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 223 words
+  required_skills: RAG, LlamaIndex, Milvus, Hugging Face
+  preferred_skills: Kubernetes, AWS, Agentic Frameworks
+  description: Our modern cloud product organization is seeking a Lead Generative AI Solutions Architect to manage, construct, and scale our high-throughput conversational search and retrieval networks. Working within a specialized engineering squad composed of eig
 
-  id: jd_75 | title: Senior Staff Enterprise ML Architect | level: senior | min_exp: 6 yrs | raw_text: 229 words
-  required_skills: PyTorch, MLflow, Kubernetes, Docker, Apache Spark
-  preferred_skills: Hugging Face, Python, SQL
-  description: We are seeking a Senior Staff Enterprise ML Architect to design, govern, and optimize the next generation of our global enterprise cloud-based deep learning infrastructure. Collaborating across a massive product development organization, you will ali
+  id: jd_78 | title: Principal LLM Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
+  required_skills: OpenAI API, LangChain, ChromaDB, Semantic Chunking
+  preferred_skills: Python, Ray, SQL
+  description: We are seeking a highly talented Principal LLM Systems Engineer to pioneer the engineering, deployment, and optimization of our global cloud-based conversational reasoning and agentic text automation backends. Collaborating across a multi-million use
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 216 pairs total.
+Overall dataset so far: 225 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   33  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   48  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   41  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   43  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   51  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   34  →  expected this batch: 9 pairs (from seniority gaps below)
+  weak_match            existing:   49  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   43  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   45  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   54  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_217    resume_73 × jd_73
-  pair_218    resume_73 × jd_74
-  pair_219    resume_73 × jd_75
-  pair_220    resume_74 × jd_73
-  pair_221    resume_74 × jd_74
-  pair_222    resume_74 × jd_75
-  pair_223    resume_75 × jd_73
-  pair_224    resume_75 × jd_74
-  pair_225    resume_75 × jd_75
+  pair_226    resume_76 × jd_76
+  pair_227    resume_76 × jd_77
+  pair_228    resume_76 × jd_78
+  pair_229    resume_77 × jd_76
+  pair_230    resume_77 × jd_77
+  pair_231    resume_77 × jd_78
+  pair_232    resume_78 × jd_76
+  pair_233    resume_78 × jd_77
+  pair_234    resume_78 × jd_78
 
 ════════════════════════════════════
 OUTPUT FORMAT
