@@ -185,47 +185,43 @@ def show_stats() -> None:
 def compute_label_targets(n_pairs: int = N_PAIRS) -> dict[str, int]:
     """Return how many of each allowed label to target in a batch.
 
-    Labels with fewer existing pairs receive more weight (inverse-count weighting).
+    Pure integer water-filling — no percentages, no rounding drift. Repeatedly top
+    up whichever label(s) currently sit at the minimum count, raising them only as
+    far as the next-distinct count above (or splitting the remaining budget evenly,
+    one pair at a time, once there isn't enough left for a full step), until the
+    batch's n_pairs budget is spent. A label far behind the rest gets the whole
+    batch; labels already tied get an even split; nothing is left idle.
     """
     pairs = load_jsonl(PAIRS_PATH)
     dist  = Counter(p.get("label") for p in pairs if p.get("label") in ALLOWED_LABELS)
 
-    labels = sorted(ALLOWED_LABELS)  # stable order
+    labels = sorted(ALLOWED_LABELS)  # stable order, used to break ties deterministically
 
-    if not dist:
-        per       = n_pairs // len(labels)
-        remainder = n_pairs - per * len(labels)
-        targets   = {label: per for label in labels}
-        for i, label in enumerate(labels):
-            if i < remainder:
-                targets[label] += 1
-        return targets
-
-    # If the single most-deficient label is behind the NEXT-most-deficient one by
-    # a full batch's worth or more, splitting this batch 1-1-2-2-3 across all 5
-    # labels (as inverse-weighting below would do) can't meaningfully close that
-    # gap and just keeps stalling the worst-off label. Dedicate the whole batch
-    # to it instead — e.g. poor_match=0 while every other label is already 27+
-    # means all 9 pairs this batch should be poor_match, not 1-of-9.
-    by_count = sorted(labels, key=lambda l: dist.get(l, 0))
-    neediest, second = by_count[0], by_count[1]
-    if dist.get(second, 0) - dist.get(neediest, 0) >= n_pairs:
-        return {label: (n_pairs if label == neediest else 0) for label in labels}
-
-    # Inverse weight: label with fewer pairs gets higher weight
-    max_count = max(dist.get(label, 0) for label in labels)
-    weights   = {label: max_count - dist.get(label, 0) + 1 for label in labels}
-    total_w   = sum(weights.values())
-
-    targets: dict[str, int] = {}
+    counts:  dict[str, int] = {label: dist.get(label, 0) for label in labels}
+    targets: dict[str, int] = {label: 0 for label in labels}
     remaining = n_pairs
-    for i, label in enumerate(sorted(labels, key=lambda l: weights[l], reverse=True)):
-        if i == len(labels) - 1:
-            targets[label] = max(1, remaining)
-        else:
-            count = max(1, round(n_pairs * weights[label] / total_w))
-            targets[label] = count
-            remaining -= count
+
+    while remaining > 0:
+        min_count = min(counts.values())
+        lowest    = [l for l in labels if counts[l] == min_count]
+
+        if remaining <= len(lowest):
+            # not enough left to raise every tied-lowest label by a full pair —
+            # hand out one pair at a time, in stable label order
+            for label in lowest[:remaining]:
+                counts[label]  += 1
+                targets[label] += 1
+            break
+
+        higher = [c for c in counts.values() if c > min_count]
+        step   = (min(higher) - min_count) if higher else remaining // len(lowest)
+        step   = max(1, min(step, remaining // len(lowest)))
+
+        for label in lowest:
+            counts[label]  += step
+            targets[label] += step
+        remaining -= step * len(lowest)
+
     return targets
 
 

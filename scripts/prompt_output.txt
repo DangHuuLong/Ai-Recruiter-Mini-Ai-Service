@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_70 | level: junior | exp: 0.6 yrs | raw_text: 292 words
-  skills: Greenhouse, BambooHR, Microsoft Excel, Airtable, Zapier, Sourcing, Onboarding
-  projects: TalentFlow
-  background: I am an ambitious Associate Recruiting Specialist and recent graduate with foundational knowledge in volume sourcing, applicant pipeline coordination, and human resources information system configurations. Recently, I completed a productive seven-month internship at a fast-growing digital services s
+  id: resume_73 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Python, Pandas, Scikit-Learn, Git, Jupyter Notebooks, Streamlit
+  projects: CardioPredict
+  background: I am an enthusiastic Junior Data Scientist and recent graduate with foundational knowledge in exploratory data analysis, predictive modeling, and machine learning pipeline construction. Recently, I completed an intensive six-month internship at an e-commerce startup, operating in an agile analytics 
 
-  id: resume_71 | level: senior | exp: 7.0 yrs | raw_text: 295 words
-  skills: Workday, SuccessFactors, ServiceNow, Workday Studio, Talend, PowerBI, Python, SQL, HRIS
-  projects: OrgLink
-  background: I am a Lead HRIS Solutions Engineer and Enterprise Talent Acquisition Architect with over seven years of professional experience directing large-scale human capital management integrations, scaling complex corporate recruiting platforms, and executing technical business process configurations across
+  id: resume_74 | level: senior | exp: 7.0 yrs | raw_text: 252 words
+  skills: Python, PyTorch, MLflow, Docker, Kubernetes, Apache Spark, FastAPI, Ray, AWS
+  projects: TensorStream
+  background: I am a Senior Machine Learning Engineer with over seven years of professional experience directing large-scale distributed artificial intelligence initiatives, optimizing multi-million parameter neural network architectures, and driving cloud MLOps transformations across enterprise platforms. In my 
 
-  id: resume_72 | level: senior | exp: 8.0 yrs | raw_text: 286 words
-  skills: Workday, SuccessFactors, ServiceNow, Oracle Cloud HCM, Workday Studio, PowerBI, Python, SQL, Tableau
-  projects: TalentPulse
-  background: I am a Senior HRIS Platform Specialist and Corporate Talent Acquisition Lead with eight years of deep technical expertise building distributed human resource systems, optimizing global employee onboarding lifecycles, and managing multi-channel applicant track applications for enterprise businesses. 
+  id: resume_75 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Python, PyTorch, MLflow, Docker, Kubernetes, Apache Spark, Hugging Face, SQL, Linux
+  projects: VisionHub
+  background: I am a Lead Machine Learning Infrastructure Architect and Senior Data Scientist with eight years of deep technical expertise building distributed computing clusters, optimizing complex deep learning model lifecycles, and managing multi-channel prediction workflows for high-volume enterprise systems.
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_70 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs | raw_text: 256 words
-  required_skills: Greenhouse, Microsoft Excel, Zapier, Google Sheets, BambooHR
-  preferred_skills: SQL, Sourcing, Onboarding
-  description: We are seeking an enthusiastic Junior Talent Acquisition Specialist to join our growing employee experiences and corporate recruiting team. In this entry-level role, you will work collaboratively alongside a senior human resources architect and two c
+  id: jd_73 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 245 words
+  required_skills: Python, Pandas, Scikit-Learn, Git, Jupyter Notebooks
+  preferred_skills: SQL, Streamlit, Statistical Modeling
+  description: We are seeking an enthusiastic Junior Data Scientist to join our growing predictive modeling and core analytics team. In this entry-level role, you will work collaboratively alongside a senior machine learning architect and two predictive analytics c
 
-  id: jd_71 | title: HRIS Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 238 words
-  required_skills: Workday, Talend, Microsoft Excel, SQL, ServiceNow
-  preferred_skills: SuccessFactors, PowerBI, HRIS
-  description: Our digital human resources product group is looking for a skilled mid-level HRIS Operations Analyst to take structural ownership of core employee data pipelines within our flagship global human capital management cloud ecosystem. Working within an a
+  id: jd_74 | title: Machine Learning Engineer | level: middle | min_exp: 3 yrs | raw_text: 231 words
+  required_skills: Python, MLflow, Docker, SQL, FastAPI
+  preferred_skills: Apache Spark, PyTorch, Linux
+  description: Our digital modeling product group is looking for a skilled mid-level Machine Learning Engineer to take structural ownership of core prediction delivery pipelines within our flagship multi-channel cloud dashboard web application. Working within an ag
 
-  id: jd_72 | title: Senior Staff Enterprise HRIS Architect | level: senior | min_exp: 6 yrs | raw_text: 240 words
-  required_skills: Workday, SuccessFactors, ServiceNow, Workday Studio, Oracle Cloud HCM
-  preferred_skills: PowerBI, Python, SQL
-  description: We are seeking a Senior Staff Enterprise HRIS Architect to design, govern, and optimize the next generation of our global enterprise cloud-based human capital management infrastructure. Collaborating across a massive human resources development organ
+  id: jd_75 | title: Senior Staff Enterprise ML Architect | level: senior | min_exp: 6 yrs | raw_text: 229 words
+  required_skills: PyTorch, MLflow, Kubernetes, Docker, Apache Spark
+  preferred_skills: Hugging Face, Python, SQL
+  description: We are seeking a Senior Staff Enterprise ML Architect to design, govern, and optimize the next generation of our global enterprise cloud-based deep learning infrastructure. Collaborating across a massive product development organization, you will ali
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 207 pairs total.
+Overall dataset so far: 216 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   32  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   47  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   39  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   41  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   48  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   33  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:   48  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   41  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   43  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   51  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_208    resume_70 × jd_70
-  pair_209    resume_70 × jd_71
-  pair_210    resume_70 × jd_72
-  pair_211    resume_71 × jd_70
-  pair_212    resume_71 × jd_71
-  pair_213    resume_71 × jd_72
-  pair_214    resume_72 × jd_70
-  pair_215    resume_72 × jd_71
-  pair_216    resume_72 × jd_72
+  pair_217    resume_73 × jd_73
+  pair_218    resume_73 × jd_74
+  pair_219    resume_73 × jd_75
+  pair_220    resume_74 × jd_73
+  pair_221    resume_74 × jd_74
+  pair_222    resume_74 × jd_75
+  pair_223    resume_75 × jd_73
+  pair_224    resume_75 × jd_74
+  pair_225    resume_75 × jd_75
 
 ════════════════════════════════════
 OUTPUT FORMAT
