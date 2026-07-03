@@ -281,10 +281,20 @@ def choose_seniority_mix(
     1 moderate) no matter how skewed the dataset already is — deficits then get
     "fixed" by telling the labeler to bend its scoring, which it can't do honestly.
     Instead, search over seniority-tier counts for BOTH sides and pick whichever mix
-    makes the resulting grid's natural label counts closest to label_targets (which
-    is already weighted per-label relative to the largest existing class) — across
-    all 5 labels, not just poor_match.
+    makes the resulting grid's natural label counts closest to label_targets.
+
+    Plain unweighted L1 distance treats "1 pair short on excellent_match (already
+    well-stocked)" the same as "1 pair short on poor_match (the neediest label)" —
+    ties between a balanced-but-wrong mix and a mix that actually fills the neediest
+    label get broken arbitrarily, so poor_match can silently lose the tie. Instead,
+    weight each label's error by how deficient it currently is (same inverse-count
+    weighting as compute_label_targets) — a "water-filling" priority where closing
+    the gap on the lowest label always outweighs precision on already-full ones.
     """
+    dist_now  = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
+    max_count = max((dist_now.get(l, 0) for l in ALLOWED_LABELS), default=0)
+    weight    = {l: max_count - dist_now.get(l, 0) + 1 for l in ALLOWED_LABELS}
+
     best_mix = None
     best_score = None
     for r_counts in _level_partitions(n_resumes):
@@ -298,7 +308,10 @@ def choose_seniority_mix(
                         continue
                     label = natural_label_for_gap(j_idx - r_idx)
                     dist[label] += r_count * j_count
-            score = sum(abs(dist.get(l, 0) - label_targets.get(l, 0)) for l in ALLOWED_LABELS)
+            score = sum(
+                weight[l] * abs(dist.get(l, 0) - label_targets.get(l, 0))
+                for l in ALLOWED_LABELS
+            )
             if best_score is None or score < best_score:
                 best_score = score
                 best_mix = (r_counts, j_counts)

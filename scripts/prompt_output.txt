@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_67 | level: junior | exp: 0.5 yrs | raw_text: 281 words
-  skills: Shopify, Microsoft Excel, Google Analytics, Zapier, Google Sheets, Merchandising, Inventory Management
-  projects: EcoCart
-  background: I am an enthusiastic Junior Marketplace Operations Specialist and recent graduate with foundational knowledge in digital merchandising, inventory synchronization, and e-commerce store catalog maintenance. Recently, I completed a intensive six-month internship at a fast-growing fashion e-commerce sta
+  id: resume_70 | level: junior | exp: 0.6 yrs | raw_text: 292 words
+  skills: Greenhouse, BambooHR, Microsoft Excel, Airtable, Zapier, Sourcing, Onboarding
+  projects: TalentFlow
+  background: I am an ambitious Associate Recruiting Specialist and recent graduate with foundational knowledge in volume sourcing, applicant pipeline coordination, and human resources information system configurations. Recently, I completed a productive seven-month internship at a fast-growing digital services s
 
-  id: resume_68 | level: senior | exp: 7.0 yrs | raw_text: 281 words
-  skills: Amazon Seller Central, Mirakl, SAP Hybris, Salesforce Commerce Cloud, Oracle Netsuite, Celigo, Looker, Feedvisor, eBay Enterprise
-  projects: StockSync
-  background: I am a Senior E-commerce Marketplace Manager with over seven years of professional experience directing large-scale online retail strategies, optimizing multi-million dollar vendor portfolios, and driving digital merchandising transformations across global marketplace platforms. In my latest role at
+  id: resume_71 | level: senior | exp: 7.0 yrs | raw_text: 295 words
+  skills: Workday, SuccessFactors, ServiceNow, Workday Studio, Talend, PowerBI, Python, SQL, HRIS
+  projects: OrgLink
+  background: I am a Lead HRIS Solutions Engineer and Enterprise Talent Acquisition Architect with over seven years of professional experience directing large-scale human capital management integrations, scaling complex corporate recruiting platforms, and executing technical business process configurations across
 
-  id: resume_69 | level: senior | exp: 8.0 yrs | raw_text: 271 words
-  skills: Magento Commerce, Mirakl, SAP Hybris, Salesforce Commerce Cloud, ChannelAdvisor, Adobe Analytics, Python, SQL, Tableau
-  projects: MerchantHub
-  background: I am a Lead E-commerce Operations Architect and Digital Merchandising Specialist with eight years of deep technical expertise building distributed commercial marketplaces, optimizing complex retail logistics lifecycles, and managing multi-channel storefront operations for high-volume consumer produc
+  id: resume_72 | level: senior | exp: 8.0 yrs | raw_text: 286 words
+  skills: Workday, SuccessFactors, ServiceNow, Oracle Cloud HCM, Workday Studio, PowerBI, Python, SQL, Tableau
+  projects: TalentPulse
+  background: I am a Senior HRIS Platform Specialist and Corporate Talent Acquisition Lead with eight years of deep technical expertise building distributed human resource systems, optimizing global employee onboarding lifecycles, and managing multi-channel applicant track applications for enterprise businesses. 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_67 | title: Junior Marketplace Specialist | level: junior | min_exp: 1 yrs | raw_text: 250 words
-  required_skills: Shopify, Microsoft Excel, Zapier, Google Sheets, Google Analytics
-  preferred_skills: SQL, Merchandising, Inventory Management
-  description: We are seeking an enthusiastic Junior Marketplace Specialist to join our growing customer experiences and retail operations team. In this entry-level role, you will work collaboratively alongside a senior marketplace architect and two digital merchan
+  id: jd_70 | title: Junior Talent Acquisition Specialist | level: junior | min_exp: 1 yrs | raw_text: 256 words
+  required_skills: Greenhouse, Microsoft Excel, Zapier, Google Sheets, BambooHR
+  preferred_skills: SQL, Sourcing, Onboarding
+  description: We are seeking an enthusiastic Junior Talent Acquisition Specialist to join our growing employee experiences and corporate recruiting team. In this entry-level role, you will work collaboratively alongside a senior human resources architect and two c
 
-  id: jd_68 | title: Marketplace Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 237 words
-  required_skills: Amazon Seller Central, Feedvisor, Microsoft Excel, SQL, Celigo
-  preferred_skills: Oracle Netsuite, Looker, eBay Enterprise
-  description: Our digital commercial product group is looking for a skilled mid-level Marketplace Operations Manager to take structural ownership of core merchant delivery pipelines within our flagship multi-channel cloud dashboard web application. Working within 
+  id: jd_71 | title: HRIS Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 238 words
+  required_skills: Workday, Talend, Microsoft Excel, SQL, ServiceNow
+  preferred_skills: SuccessFactors, PowerBI, HRIS
+  description: Our digital human resources product group is looking for a skilled mid-level HRIS Operations Analyst to take structural ownership of core employee data pipelines within our flagship global human capital management cloud ecosystem. Working within an a
 
-  id: jd_69 | title: Senior Staff Enterprise E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 231 words
-  required_skills: Magento Commerce, Mirakl, SAP Hybris, Salesforce Commerce Cloud, ChannelAdvisor
-  preferred_skills: Adobe Analytics, Python, SQL
-  description: We are seeking a Senior Staff Enterprise E-commerce Architect to design, govern, and optimize the next generation of our global enterprise SaaS multi-vendor marketplace infrastructure. Collaborating across a massive product development organization, 
+  id: jd_72 | title: Senior Staff Enterprise HRIS Architect | level: senior | min_exp: 6 yrs | raw_text: 240 words
+  required_skills: Workday, SuccessFactors, ServiceNow, Workday Studio, Oracle Cloud HCM
+  preferred_skills: PowerBI, Python, SQL
+  description: We are seeking a Senior Staff Enterprise HRIS Architect to design, govern, and optimize the next generation of our global enterprise cloud-based human capital management infrastructure. Collaborating across a massive human resources development organ
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 198 pairs total.
+Overall dataset so far: 207 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   31  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   46  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   37  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   39  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   45  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   32  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:   47  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   39  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   41  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   48  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_199    resume_67 × jd_67
-  pair_200    resume_67 × jd_68
-  pair_201    resume_67 × jd_69
-  pair_202    resume_68 × jd_67
-  pair_203    resume_68 × jd_68
-  pair_204    resume_68 × jd_69
-  pair_205    resume_69 × jd_67
-  pair_206    resume_69 × jd_68
-  pair_207    resume_69 × jd_69
+  pair_208    resume_70 × jd_70
+  pair_209    resume_70 × jd_71
+  pair_210    resume_70 × jd_72
+  pair_211    resume_71 × jd_70
+  pair_212    resume_71 × jd_71
+  pair_213    resume_71 × jd_72
+  pair_214    resume_72 × jd_70
+  pair_215    resume_72 × jd_71
+  pair_216    resume_72 × jd_72
 
 ════════════════════════════════════
 OUTPUT FORMAT
