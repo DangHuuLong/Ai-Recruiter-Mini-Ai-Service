@@ -201,6 +201,17 @@ def compute_label_targets(n_pairs: int = N_PAIRS) -> dict[str, int]:
                 targets[label] += 1
         return targets
 
+    # If the single most-deficient label is behind the NEXT-most-deficient one by
+    # a full batch's worth or more, splitting this batch 1-1-2-2-3 across all 5
+    # labels (as inverse-weighting below would do) can't meaningfully close that
+    # gap and just keeps stalling the worst-off label. Dedicate the whole batch
+    # to it instead — e.g. poor_match=0 while every other label is already 27+
+    # means all 9 pairs this batch should be poor_match, not 1-of-9.
+    by_count = sorted(labels, key=lambda l: dist.get(l, 0))
+    neediest, second = by_count[0], by_count[1]
+    if dist.get(second, 0) - dist.get(neediest, 0) >= n_pairs:
+        return {label: (n_pairs if label == neediest else 0) for label in labels}
+
     # Inverse weight: label with fewer pairs gets higher weight
     max_count = max(dist.get(label, 0) for label in labels)
     weights   = {label: max_count - dist.get(label, 0) + 1 for label in labels}
