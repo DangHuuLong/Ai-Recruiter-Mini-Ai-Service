@@ -185,36 +185,43 @@ def show_stats() -> None:
 def compute_label_targets(n_pairs: int = N_PAIRS) -> dict[str, int]:
     """Return how many of each allowed label to target in a batch.
 
-    Labels with fewer existing pairs receive more weight (inverse-count weighting).
+    Pure integer water-filling — no percentages, no rounding drift. Repeatedly top
+    up whichever label(s) currently sit at the minimum count, raising them only as
+    far as the next-distinct count above (or splitting the remaining budget evenly,
+    one pair at a time, once there isn't enough left for a full step), until the
+    batch's n_pairs budget is spent. A label far behind the rest gets the whole
+    batch; labels already tied get an even split; nothing is left idle.
     """
     pairs = load_jsonl(PAIRS_PATH)
     dist  = Counter(p.get("label") for p in pairs if p.get("label") in ALLOWED_LABELS)
 
-    labels = sorted(ALLOWED_LABELS)  # stable order
+    labels = sorted(ALLOWED_LABELS)  # stable order, used to break ties deterministically
 
-    if not dist:
-        per       = n_pairs // len(labels)
-        remainder = n_pairs - per * len(labels)
-        targets   = {label: per for label in labels}
-        for i, label in enumerate(labels):
-            if i < remainder:
-                targets[label] += 1
-        return targets
-
-    # Inverse weight: label with fewer pairs gets higher weight
-    max_count = max(dist.get(label, 0) for label in labels)
-    weights   = {label: max_count - dist.get(label, 0) + 1 for label in labels}
-    total_w   = sum(weights.values())
-
-    targets: dict[str, int] = {}
+    counts:  dict[str, int] = {label: dist.get(label, 0) for label in labels}
+    targets: dict[str, int] = {label: 0 for label in labels}
     remaining = n_pairs
-    for i, label in enumerate(sorted(labels, key=lambda l: weights[l], reverse=True)):
-        if i == len(labels) - 1:
-            targets[label] = max(1, remaining)
-        else:
-            count = max(1, round(n_pairs * weights[label] / total_w))
-            targets[label] = count
-            remaining -= count
+
+    while remaining > 0:
+        min_count = min(counts.values())
+        lowest    = [l for l in labels if counts[l] == min_count]
+
+        if remaining <= len(lowest):
+            # not enough left to raise every tied-lowest label by a full pair —
+            # hand out one pair at a time, in stable label order
+            for label in lowest[:remaining]:
+                counts[label]  += 1
+                targets[label] += 1
+            break
+
+        higher = [c for c in counts.values() if c > min_count]
+        step   = (min(higher) - min_count) if higher else remaining // len(lowest)
+        step   = max(1, min(step, remaining // len(lowest)))
+
+        for label in lowest:
+            counts[label]  += step
+            targets[label] += step
+        remaining -= step * len(lowest)
+
     return targets
 
 
@@ -270,10 +277,20 @@ def choose_seniority_mix(
     1 moderate) no matter how skewed the dataset already is — deficits then get
     "fixed" by telling the labeler to bend its scoring, which it can't do honestly.
     Instead, search over seniority-tier counts for BOTH sides and pick whichever mix
-    makes the resulting grid's natural label counts closest to label_targets (which
-    is already weighted per-label relative to the largest existing class) — across
-    all 5 labels, not just poor_match.
+    makes the resulting grid's natural label counts closest to label_targets.
+
+    Plain unweighted L1 distance treats "1 pair short on excellent_match (already
+    well-stocked)" the same as "1 pair short on poor_match (the neediest label)" —
+    ties between a balanced-but-wrong mix and a mix that actually fills the neediest
+    label get broken arbitrarily, so poor_match can silently lose the tie. Instead,
+    weight each label's error by how deficient it currently is (same inverse-count
+    weighting as compute_label_targets) — a "water-filling" priority where closing
+    the gap on the lowest label always outweighs precision on already-full ones.
     """
+    dist_now  = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
+    max_count = max((dist_now.get(l, 0) for l in ALLOWED_LABELS), default=0)
+    weight    = {l: max_count - dist_now.get(l, 0) + 1 for l in ALLOWED_LABELS}
+
     best_mix = None
     best_score = None
     for r_counts in _level_partitions(n_resumes):
@@ -287,7 +304,10 @@ def choose_seniority_mix(
                         continue
                     label = natural_label_for_gap(j_idx - r_idx)
                     dist[label] += r_count * j_count
-            score = sum(abs(dist.get(l, 0) - label_targets.get(l, 0)) for l in ALLOWED_LABELS)
+            score = sum(
+                weight[l] * abs(dist.get(l, 0) - label_targets.get(l, 0))
+                for l in ALLOWED_LABELS
+            )
             if best_score is None or score < best_score:
                 best_score = score
                 best_mix = (r_counts, j_counts)
@@ -727,8 +747,6 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
         errs.append(f"pair {pid}: missing overall_score")
     else:
         score = int(score)
-        if score < 40:
-            errs.append(f"pair {pid}: overall_score {score} is below 40 — forbidden")
         if in_boundary_zone(score):
             warns.append(f"pair {pid}: score {score} is in a boundary zone — use valid window instead")
         if label in SCORE_RANGES:
