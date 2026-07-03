@@ -593,20 +593,33 @@ poor_match SCORING GUIDANCE
 A valid poor_match pair (score 20-34) requires ALL of:
   1. Massive experience gap: intern/fresh grad (0-1 yr) vs senior JD (6+ yrs required)
      → EXPERIENCE_RELEVANCE: 10-25
-  2. Core skill mismatch: candidate missing most required technical skills
-     → SKILLS_MATCH: 15-35
+  2. Core skill mismatch: matched/required skill ratio < 40%
+     → SKILLS_MATCH: 15-35 (must equal the computed ratio, not a template number)
   3. Project misalignment: no relevant projects that map to JD responsibilities
      → PROJECT_RELEVANCE: 10-30
-Natural source: intern/junior CV × senior JD pairing.
+Natural source: intern/junior (0-1 yr) CV × senior JD pairing.
 Do NOT fabricate poor_match from unrelated domains — the CV and JD must still be in the same broad domain.
+
+DECISION PRIORITY — resolve intern×senior pairs with this BEFORE picking a label:
+if resume experience_years <= 1 AND JD min_experience_years >= 6, compute the
+skill overlap ratio (matched required_skills / total required_skills) FIRST:
+  • ratio < 40%  → this pair MUST be poor_match. The weak_match "experience gap"
+    rule below does NOT apply to interns (<=1 yr) — it only applies once the
+    candidate has 1-2+ yrs and is past entry level.
+  • ratio >= 40% → this pair is weak_match instead (real partial overlap saves it).
+This ratio check overrides any temptation to soften the label because the CV and
+JD share some domain vocabulary — shared domain alone is not overlap.
 
 ════════════════════════════════════
 weak_match SCORING GUIDANCE
 ════════════════════════════════════
 A valid weak_match pair (score 46-54) requires at least one of:
-  1. Experience gap: junior CV (1-2 yrs) vs senior JD (5+ yrs required)
+  1. Experience gap: resume has >1 yr (already past intern/fresh-grad stage — e.g.
+     1-2 yrs) vs senior JD (5+ yrs required). Do NOT use this rule for resumes with
+     experience_years <= 1 — see the poor_match DECISION PRIORITY above, which
+     routes those to poor_match unless overlap ratio is already >= 40%.
      → EXPERIENCE_RELEVANCE: 25-40 (large gap penalised heavily)
-     → SKILLS_MATCH: 45-60 (partial skill overlap acceptable)
+     → SKILLS_MATCH: 45-60 (must equal the actual computed overlap ratio, not a default)
   2. Skill domain mismatch: same broad field but different specialization
      → SKILLS_MATCH: 35-55 (missing core required stack)
      → PROJECT_RELEVANCE: 30-50 (projects don't align with JD responsibilities)
