@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_46 | level: junior | exp: 0.4 yrs | raw_text: 295 words
-  skills: Agile, Jira, Confluence, Trello, Figma, Google Analytics, User Stories, Backlog Grooming
-  projects: TaskFlow-Lite
-  background: An ambitious Product Management graduate holding a Bachelor of Business Administration in Management Information Systems completed in 2025. I am seeking my first full-time role within a high-growth technology ecosystem. My professional background includes a highly intensive five-month internship as 
+  id: resume_49 | level: junior | exp: 0.4 yrs | raw_text: 294 words
+  skills: Social Media, Meta Business Suite, Canva, Excel, Community Management, Content Creation, Google Drive, Instagram
+  projects: EcoBites
+  background: An enthusiastic and creative marketing graduate who recently earned a Bachelor of Arts in Communication and Media Studies in 2025. I am actively looking for my first full-time role within a progressive digital media agency. My professional foundation includes a five-month academic internship as a So
 
-  id: resume_47 | level: junior | exp: 0.5 yrs | raw_text: 270 words
-  skills: Agile, Scrum, Jira, Confluence, Balsamiq, Excel, Market Research, Acceptance Criteria
-  projects: UniMarket
-  background: A highly motivated and analytical computer science graduate from 2025 who is aiming to establish a long-term professional career in technology product management. I recently completed a six-month intensive graduate internship at a mid-sized software service agency, operating as an Assistant Product 
+  id: resume_50 | level: junior | exp: 0.5 yrs | raw_text: 286 words
+  skills: SEO, WordPress, Yoast SEO, Google Analytics, Google Sheets, Keyword Research, Content Management, Google Search Console
+  projects: CityWand
+  background: A highly analytical and motivated professional who graduated with a Bachelor of Science in Business Marketing in 2025, focused on digital client acquisition channels. I recently completed a six-month intensive graduate internship at a mid-sized digital advertising agency, working as a Junior Content
 
-  id: resume_48 | level: junior | exp: 0.5 yrs | raw_text: 265 words
-  skills: Agile, ClickUp, Miro, SQL, Looker Studio, Excel, User Journey Mapping, Data Analysis
-  projects: MetricDash
-  background: A passionate and data-oriented professional who graduated with a Bachelor of Science in Industrial Engineering in 2025, specializing in operational efficiency and systems design. I am actively pursuing an entry-level opportunity within the technology product management field. Over the past six month
+  id: resume_51 | level: junior | exp: 0.5 yrs | raw_text: 268 words
+  skills: Copywriting, Mailchimp, Notion, Email Marketing, Google Slides, A/B Testing, Corporate Communications, Content Strategy
+  projects: LetterHub
+  background: A proactive and analytical graduate holding a Bachelor of Science in English and Corporate Writing completed in 2025, specializing in clear brand storytelling and technical message delivery. I am currently seeking an entry-level position within the corporate marketing and communications sector. Over
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_46 | title: Senior Principal Product Manager - Platform Infrastructure | level: senior | min_exp: 6 yrs | raw_text: 233 words
-  required_skills: Productboard, Jira Align, Optimizely, Kubernetes, Apache Kafka, AWS, Technical Roadmap, Stakeholder Management
-  preferred_skills: Pragmatic Certified, CSPO, Microservices Architecture
-  description: We are searching for a Senior Principal Product Manager to lead the strategic vision, technical roadmap execution, and long-term evolutionary architecture of our global platform infrastructure business unit. In this highly critical role, you will dir
+  id: jd_49 | title: Senior Director of Global SEO Strategy and Growth | level: senior | min_exp: 6 yrs | raw_text: 225 words
+  required_skills: BrightEdge, Semrush Enterprise, Screaming Frog, Botify, Technical SEO, Site Migration, Core Web Vitals, Enterprise Strategy
+  preferred_skills: GAIQ, Python Programming, International SEO
+  description: We are searching for a Senior Director of Global SEO Strategy and Growth to command the strategic vision, technical search engine execution, and long-term organic traffic acquisition across our multi-brand enterprise media conglomerate. In this criti
 
-  id: jd_47 | title: Senior Technical Product Manager - Enterprise AI Analytics | level: senior | min_exp: 6 yrs | raw_text: 245 words
-  required_skills: Aha!, Jira Portfolio, Amplitude, Snowflake, Databricks, Azure, Agile Discovery, Product Strategy
-  preferred_skills: PSPO II, PMI-ACP, SQL
-  description: Our data intelligence group is actively expanding, and we are looking for an exceptional Senior Technical Product Manager to spearhead our next-generation Enterprise AI Analytics platform. Operating within a highly sophisticated, fast-paced environme
+  id: jd_50 | title: Senior Enterprise Social Listening and Content Architect | level: senior | min_exp: 6 yrs | raw_text: 250 words
+  required_skills: Sprinklr Enterprise, Brandwatch, Talkwalker, Salesforce Marketing Cloud, Social Listening, Sentiment Modeling, Audience Analytics, Crisis Management
+  preferred_skills: Sprinklr Certified, Regex Queries, Brand Strategy
+  description: Our corporate communications and brand intelligence department is expanding, and we are looking for a Senior Enterprise Social Listening and Content Architect to helm our predictive consumer tracking division. Operating inside an advanced, rapid-resp
 
-  id: jd_48 | title: Senior Product Lead - FinTech Core Ledger Systems | level: senior | min_exp: 6 yrs | raw_text: 235 words
-  required_skills: Monday.com, Confluence Premium, Mixpanel, Oracle SQL, PostgreSQL, Stripe Connect, FinTech Roadmap, Compliance Management
-  preferred_skills: PMP, CPM, Double-Entry Accounting
-  description: We are seeking a visionary Senior Product Lead to direct the structural evolution and functional compliance of our global FinTech Core Ledger Systems platform. This foundational role will lead a highly specialized team of ten senior backend software 
+  id: jd_51 | title: Senior Principal Content Strategy and Marketing Analytics Lead | level: senior | min_exp: 6 yrs | raw_text: 250 words
+  required_skills: HubSpot Enterprise, Adobe Analytics, Tableau Server, Salesforce Data Cloud, Content Strategy, Multi-Touch Attribution, Marketing Analytics, Funnel Optimization
+  preferred_skills: Adobe Certified Master, HubSpot Certified, Data Transformation
+  description: We are seeking an analytical and strategic Senior Principal Content Strategy and Marketing Analytics Lead to direct the editorial architecture, business intelligence attribution, and digital conversion funnels of our global financial services platfor
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,12 +125,12 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 135 pairs total.
+Overall dataset so far: 144 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:    0  →  expected this batch: 9 pairs (from seniority gaps below)
+  poor_match            existing:    9  →  expected this batch: 9 pairs (from seniority gaps below)
   weak_match            existing:   42  →  expected this batch: 0 pairs (from seniority gaps below)
   moderate_match        existing:   29  →  expected this batch: 0 pairs (from seniority gaps below)
   strong_match          existing:   29  →  expected this batch: 0 pairs (from seniority gaps below)
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_136    resume_46 × jd_46
-  pair_137    resume_46 × jd_47
-  pair_138    resume_46 × jd_48
-  pair_139    resume_47 × jd_46
-  pair_140    resume_47 × jd_47
-  pair_141    resume_47 × jd_48
-  pair_142    resume_48 × jd_46
-  pair_143    resume_48 × jd_47
-  pair_144    resume_48 × jd_48
+  pair_145    resume_49 × jd_49
+  pair_146    resume_49 × jd_50
+  pair_147    resume_49 × jd_51
+  pair_148    resume_50 × jd_49
+  pair_149    resume_50 × jd_50
+  pair_150    resume_50 × jd_51
+  pair_151    resume_51 × jd_49
+  pair_152    resume_51 × jd_50
+  pair_153    resume_51 × jd_51
 
 ════════════════════════════════════
 OUTPUT FORMAT
