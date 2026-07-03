@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_49 | level: junior | exp: 0.4 yrs | raw_text: 294 words
-  skills: Social Media, Meta Business Suite, Canva, Excel, Community Management, Content Creation, Google Drive, Instagram
-  projects: EcoBites
-  background: An enthusiastic and creative marketing graduate who recently earned a Bachelor of Arts in Communication and Media Studies in 2025. I am actively looking for my first full-time role within a progressive digital media agency. My professional foundation includes a five-month academic internship as a So
+  id: resume_52 | level: junior | exp: 0.4 yrs | raw_text: 288 words
+  skills: Wireshark, Nmap, Python, Network Security, Vulnerability Scanning, Packet Analysis, Linux, Firewalls
+  projects: PacketSniff
+  background: An ambitious and technically grounded computer science graduate who successfully earned a Bachelor of Science in Cybersecurity and Network Systems in 2025. I am currently seeking my first full-time role within a progressive technology sector where I can apply my operational knowledge. My professiona
 
-  id: resume_50 | level: junior | exp: 0.5 yrs | raw_text: 286 words
-  skills: SEO, WordPress, Yoast SEO, Google Analytics, Google Sheets, Keyword Research, Content Management, Google Search Console
-  projects: CityWand
-  background: A highly analytical and motivated professional who graduated with a Bachelor of Science in Business Marketing in 2025, focused on digital client acquisition channels. I recently completed a six-month intensive graduate internship at a mid-sized digital advertising agency, working as a Junior Content
+  id: resume_53 | level: junior | exp: 0.5 yrs | raw_text: 286 words
+  skills: Snort, Bash, Intrusion Detection, Endpoint Security, Vulnerability Remediation, Linux, OpenCTI, Network Analysis
+  projects: WallGuard
+  background: A proactive and analytical technology graduate who completed a Bachelor of Science in Information Technology in 2025, specializing in secure systems design and infrastructure protection. I am seeking an entry-level professional track within an enterprise security operations center. I recently conclu
 
-  id: resume_51 | level: junior | exp: 0.5 yrs | raw_text: 268 words
-  skills: Copywriting, Mailchimp, Notion, Email Marketing, Google Slides, A/B Testing, Corporate Communications, Content Strategy
-  projects: LetterHub
-  background: A proactive and analytical graduate holding a Bachelor of Science in English and Corporate Writing completed in 2025, specializing in clear brand storytelling and technical message delivery. I am currently seeking an entry-level position within the corporate marketing and communications sector. Over
+  id: resume_54 | level: junior | exp: 0.5 yrs | raw_text: 260 words
+  skills: Burp Suite, OWASP Top 10, Python, Application Security, Static Analysis, SQL, Vulnerability Tracking, Code Auditing
+  projects: VulnTrack
+  background: A highly motivated and detail-oriented computer engineering graduate who completed a Bachelor of Engineering in Computer Science and Engineering in 2025. I am actively pursuing an entry-level position within a dedicated security assessment or application security division. Over the past six months, 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_49 | title: Senior Director of Global SEO Strategy and Growth | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: BrightEdge, Semrush Enterprise, Screaming Frog, Botify, Technical SEO, Site Migration, Core Web Vitals, Enterprise Strategy
-  preferred_skills: GAIQ, Python Programming, International SEO
-  description: We are searching for a Senior Director of Global SEO Strategy and Growth to command the strategic vision, technical search engine execution, and long-term organic traffic acquisition across our multi-brand enterprise media conglomerate. In this criti
+  id: jd_52 | title: Senior Principal Penetration Testing and Red Team Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 230 words
+  required_skills: Cobalt Strike, Burp Suite Professional, Metasploit, Exploit Development, Red Teaming, Active Directory Security, Advanced Penetration Testing, Evasion Techniques
+  preferred_skills: OSCE, Go Programming, Cloud Pentesting
+  description: We are searching for a Senior Principal Penetration Testing and Red Team Infrastructure Engineer to lead the strategic vision, adversarial simulation execution, and long-term security evaluation architecture across our global technology ecosystem. In
 
-  id: jd_50 | title: Senior Enterprise Social Listening and Content Architect | level: senior | min_exp: 6 yrs | raw_text: 250 words
-  required_skills: Sprinklr Enterprise, Brandwatch, Talkwalker, Salesforce Marketing Cloud, Social Listening, Sentiment Modeling, Audience Analytics, Crisis Management
-  preferred_skills: Sprinklr Certified, Regex Queries, Brand Strategy
-  description: Our corporate communications and brand intelligence department is expanding, and we are looking for a Senior Enterprise Social Listening and Content Architect to helm our predictive consumer tracking division. Operating inside an advanced, rapid-resp
+  id: jd_53 | title: Senior Enterprise SIEM Architect and Security Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 260 words
+  required_skills: Splunk Enterprise Security, QRadar, Elastic Security, Cribl, SIEM Architecture, Threat Detection Engineering, Incident Response, Log Analysis
+  preferred_skills: CISSP, Splunk Certified, SOAR Automation
+  description: Our cyber defense and security operations department is expanding, and we are looking for an exceptional Senior Enterprise SIEM Architect and Security Operations Lead to helm our next-generation security analytics and global detection infrastructure 
 
-  id: jd_51 | title: Senior Principal Content Strategy and Marketing Analytics Lead | level: senior | min_exp: 6 yrs | raw_text: 250 words
-  required_skills: HubSpot Enterprise, Adobe Analytics, Tableau Server, Salesforce Data Cloud, Content Strategy, Multi-Touch Attribution, Marketing Analytics, Funnel Optimization
-  preferred_skills: Adobe Certified Master, HubSpot Certified, Data Transformation
-  description: We are seeking an analytical and strategic Senior Principal Content Strategy and Marketing Analytics Lead to direct the editorial architecture, business intelligence attribution, and digital conversion funnels of our global financial services platfor
+  id: jd_54 | title: Senior Principal Network Security Architect and Infrastructure Protection Lead | level: senior | min_exp: 6 yrs | raw_text: 272 words
+  required_skills: Palo Alto Networks Panorama, Cisco Firepower, Fortinet FortiGate, Network Architecture, Zero Trust, Firewall Engineering, Network Segmentation, Perimeter Security
+  preferred_skills: PCNSE, CCIE Security, Terraform Automation
+  description: We are seeking a highly analytical and visionary Senior Principal Network Security Architect and Infrastructure Protection Lead to direct the structural network evolution, border perimeter security boundaries, and high-capacity firewall engineering a
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,12 +125,12 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 144 pairs total.
+Overall dataset so far: 153 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:    9  →  expected this batch: 9 pairs (from seniority gaps below)
+  poor_match            existing:   18  →  expected this batch: 9 pairs (from seniority gaps below)
   weak_match            existing:   42  →  expected this batch: 0 pairs (from seniority gaps below)
   moderate_match        existing:   29  →  expected this batch: 0 pairs (from seniority gaps below)
   strong_match          existing:   29  →  expected this batch: 0 pairs (from seniority gaps below)
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_145    resume_49 × jd_49
-  pair_146    resume_49 × jd_50
-  pair_147    resume_49 × jd_51
-  pair_148    resume_50 × jd_49
-  pair_149    resume_50 × jd_50
-  pair_150    resume_50 × jd_51
-  pair_151    resume_51 × jd_49
-  pair_152    resume_51 × jd_50
-  pair_153    resume_51 × jd_51
+  pair_154    resume_52 × jd_52
+  pair_155    resume_52 × jd_53
+  pair_156    resume_52 × jd_54
+  pair_157    resume_53 × jd_52
+  pair_158    resume_53 × jd_53
+  pair_159    resume_53 × jd_54
+  pair_160    resume_54 × jd_52
+  pair_161    resume_54 × jd_53
+  pair_162    resume_54 × jd_54
 
 ════════════════════════════════════
 OUTPUT FORMAT
