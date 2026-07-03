@@ -738,8 +738,6 @@ def validate_pair(p: dict, resume_ids: set[str], jd_ids: set[str]) -> tuple[list
         errs.append(f"pair {pid}: missing overall_score")
     else:
         score = int(score)
-        if score < 40:
-            errs.append(f"pair {pid}: overall_score {score} is below 40 — forbidden")
         if in_boundary_zone(score):
             warns.append(f"pair {pid}: score {score} is in a boundary zone — use valid window instead")
         if label in SCORE_RANGES:
