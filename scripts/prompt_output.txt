@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_31 | level: junior | exp: 0.5 yrs | raw_text: 258 words
-  skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry, Python, Microsoft Excel
-  projects: ScheduleFlow
-  background: After completing my Bachelor of Science in Healthcare Administration in 2025 I immediately launched my professional path in medical coordination through a intensive six-month internship at a fast-growing digital health startup where I supported an active clinical operations team of five professional
+  id: resume_34 | level: junior | exp: 0.5 yrs | raw_text: 276 words
+  skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Git, REST APIs, Next.js
+  projects: ShopSphere
+  background: I am a passionate junior software engineer specializing in frontend web technologies. I recently graduated with a Bachelor of Science in Computer Science in 2025 and am eager to kickstart my professional journey. During my final year, I completed an internship at an agile agency where I worked withi
 
-  id: resume_32 | level: senior | exp: 7.5 yrs | raw_text: 283 words
-  skills: Epic, Cerner, HL7, HIPAA Compliance, HITECH Act, Clinical Operations, SQL Server
-  projects: MedSync
-  background: With over seven years of progressive experience in clinical operations and medical coordination I have advanced from individual contributor roles into a Senior Clinical Operations Lead position within enterprise healthcare networks. Most recently for the past three years I led a specialized healthca
+  id: resume_35 | level: senior | exp: 7.0 yrs | raw_text: 300 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, Git, REST APIs, GraphQL, Apollo Client, Vite, Cypress, CI/CD, Monorepos, Performance Optimization
+  projects: Enterprise Core Migration
+  background: I am a seasoned Senior Frontend Engineer and Technical Lead with over seven years of professional software engineering experience focusing on high-scale web platforms. In my previous role as a Lead Engineer at an enterprise SaaS company, where I worked for over three years, I led a cross-functional 
 
-  id: resume_33 | level: senior | exp: 8.0 yrs | raw_text: 290 words
-  skills: Epic, eClinicalWorks, HIPAA Compliance, SQL, Clinical Operations, Healthcare Analytics, Data Warehousing
-  projects: CareWarehouse
-  background: As an expert Senior Medical Coordinator and Clinical Systems Architect with eight years of dedicated specialization in health information management systems I have led cross-functional technical and clinical teams to deliver mission-critical infrastructure upgrades. In my current role at a large ent
+  id: resume_36 | level: senior | exp: 8.0 yrs | raw_text: 285 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, React Query, Git, REST APIs, GraphQL, Apollo Client, Webpack, Cypress, CI/CD, Monorepos, Performance Optimization
+  projects: Global Checkout Engine
+  background: I am an accomplished Senior Frontend Architect and Tech Lead with eight years of continuous professional expertise crafting enterprise-grade web experiences. For the past four years, I have served as the Frontend Engineering Lead at a large-scale e-commerce enterprise company, driving technical stra
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_31 | title: Junior Medical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 212 words
-  required_skills: Epic, HIPAA Compliance, Patient Scheduling, Medical Data Entry
-  preferred_skills: Python, Microsoft Excel
-  description: This Junior Medical Coordinator position supports an active, expanding clinical operations team of seven professionals focused on delivering innovative patient management software solutions and coordinating healthcare delivery across diverse networks
+  id: jd_34 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 214 words
+  required_skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Git, REST APIs
+  preferred_skills: Next.js
+  description: We are actively looking for an enthusiastic Junior Frontend Developer to join our growing engineering team. In this position, you will work within an agile product team composed of five developers, a product manager, and a dedicated quality assurance
 
-  id: jd_32 | title: Clinical Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: Cerner, Epic, SQL, Clinical Operations
-  preferred_skills: HL7, Patient Scheduling
-  description: The Clinical Operations Analyst will join an established team of twelve professionals developing and optimizing sophisticated medical workflows for a growing regional network of outpatient clinics. The operations team handles everything from platform
+  id: jd_35 | title: Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 196 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, React Query, Jest, Git, REST APIs
+  preferred_skills: CI/CD
+  description: Our core product team is seeking a talented Frontend Engineer to build and scale our web applications. Working inside a mid-sized team of six product developers, you will take ownership of business features from conception through to production. Your
 
-  id: jd_33 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Epic, eClinicalWorks, SQL, Clinical Operations, HIPAA Compliance, HITECH Act
-  preferred_skills: HL7, Data Warehousing, Healthcare Analytics
-  description: This Senior Clinical Systems Architect position heads the technical and operational direction for a specialized department of fifteen engineers and analysts focused on building high-scale enterprise medical coordination frameworks and robust electron
+  id: jd_36 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, Apollo Client, Webpack, Vite, Cypress, CI/CD, Monorepos, Performance Optimization
+  preferred_skills: Turborepo
+  description: We are seeking a visionary Senior Frontend Architect to champion the technical direction of our next-generation web infrastructure. In this role, you will lead a specialized platform squad of eight elite engineers dedicated to maximizing developer ve
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -86,20 +86,33 @@ poor_match SCORING GUIDANCE
 A valid poor_match pair (score 20-34) requires ALL of:
   1. Massive experience gap: intern/fresh grad (0-1 yr) vs senior JD (6+ yrs required)
      → EXPERIENCE_RELEVANCE: 10-25
-  2. Core skill mismatch: candidate missing most required technical skills
-     → SKILLS_MATCH: 15-35
+  2. Core skill mismatch: matched/required skill ratio < 40%
+     → SKILLS_MATCH: 15-35 (must equal the computed ratio, not a template number)
   3. Project misalignment: no relevant projects that map to JD responsibilities
      → PROJECT_RELEVANCE: 10-30
-Natural source: intern/junior CV × senior JD pairing.
+Natural source: intern/junior (0-1 yr) CV × senior JD pairing.
 Do NOT fabricate poor_match from unrelated domains — the CV and JD must still be in the same broad domain.
+
+DECISION PRIORITY — resolve intern×senior pairs with this BEFORE picking a label:
+if resume experience_years <= 1 AND JD min_experience_years >= 6, compute the
+skill overlap ratio (matched required_skills / total required_skills) FIRST:
+  • ratio < 40%  → this pair MUST be poor_match. The weak_match "experience gap"
+    rule below does NOT apply to interns (<=1 yr) — it only applies once the
+    candidate has 1-2+ yrs and is past entry level.
+  • ratio >= 40% → this pair is weak_match instead (real partial overlap saves it).
+This ratio check overrides any temptation to soften the label because the CV and
+JD share some domain vocabulary — shared domain alone is not overlap.
 
 ════════════════════════════════════
 weak_match SCORING GUIDANCE
 ════════════════════════════════════
 A valid weak_match pair (score 46-54) requires at least one of:
-  1. Experience gap: junior CV (1-2 yrs) vs senior JD (5+ yrs required)
+  1. Experience gap: resume has >1 yr (already past intern/fresh-grad stage — e.g.
+     1-2 yrs) vs senior JD (5+ yrs required). Do NOT use this rule for resumes with
+     experience_years <= 1 — see the poor_match DECISION PRIORITY above, which
+     routes those to poor_match unless overlap ratio is already >= 40%.
      → EXPERIENCE_RELEVANCE: 25-40 (large gap penalised heavily)
-     → SKILLS_MATCH: 45-60 (partial skill overlap acceptable)
+     → SKILLS_MATCH: 45-60 (must equal the actual computed overlap ratio, not a default)
   2. Skill domain mismatch: same broad field but different specialization
      → SKILLS_MATCH: 35-55 (missing core required stack)
      → PROJECT_RELEVANCE: 30-50 (projects don't align with JD responsibilities)
@@ -112,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 90 pairs total.
+Overall dataset so far: 99 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:    0  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:   33  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   19  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:   18  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   20  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   35  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   21  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:   20  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   23  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -132,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_91     resume_31 × jd_31
-  pair_92     resume_31 × jd_32
-  pair_93     resume_31 × jd_33
-  pair_94     resume_32 × jd_31
-  pair_95     resume_32 × jd_32
-  pair_96     resume_32 × jd_33
-  pair_97     resume_33 × jd_31
-  pair_98     resume_33 × jd_32
-  pair_99     resume_33 × jd_33
+  pair_100    resume_34 × jd_34
+  pair_101    resume_34 × jd_35
+  pair_102    resume_34 × jd_36
+  pair_103    resume_35 × jd_34
+  pair_104    resume_35 × jd_35
+  pair_105    resume_35 × jd_36
+  pair_106    resume_36 × jd_34
+  pair_107    resume_36 × jd_35
+  pair_108    resume_36 × jd_36
 
 ════════════════════════════════════
 OUTPUT FORMAT
