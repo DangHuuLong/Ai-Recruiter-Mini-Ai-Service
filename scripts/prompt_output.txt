@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_127 | level: senior | exp: 8.5 yrs | raw_text: 276 words
-  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Confluence, Tableau, Java Spring Boot, PostgreSQL, AWS ECS, React Native, Python, FastAPI, Demand Forecasting
-  projects: VelocityGrid
-  background: As a seasoned Senior Product Manager with over eight years of experience in the enterprise software sector, I have cultivated deep expertise in scaling complex B2B platforms. In my most recent role as a Lead Product Manager at a large-scale enterprise firm, I led a cross-functional team of 15 engine
+  id: resume_130 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: Microsoft Excel, VBA, QuickBooks, Tableau, Data Analysis, Finance
+  projects: LedgerCleanup, MarketTrend
+  background: I am a motivated finance graduate with a keen interest in the rapidly evolving fintech sector. During my academic career, I focused extensively on financial data analysis and quantitative modeling. As a recent graduate from a prestigious university with a Bachelor of Science in Finance, class of 202
 
-  id: resume_128 | level: senior | exp: 7.5 yrs | raw_text: 267 words
-  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Figma, Node.js, Redis, Kubernetes, React, Express, Technical Debt Management
-  projects: CodeMetrics
-  background: With over seven years of dedicated experience in technology product management, I have developed a robust skill set for delivering high-impact features within complex digital ecosystems. My career trajectory spans two major roles, beginning at a high-growth agency where I managed product lifecycles 
+  id: resume_131 | level: junior | exp: 0.7 yrs | raw_text: 263 words
+  skills: Sage 50, Accounting, Financial Reporting, Google Sheets, Data Entry, Expense Reconciliation
+  projects: ExpenseAudit
+  background: I am a recent accounting and finance graduate with an enthusiastic approach to financial reporting and data accuracy. Graduating in 2026 with a Bachelor of Business Administration, I am looking to begin my career in the fintech industry where I can utilize my skills in numerical analysis and reporti
 
-  id: resume_129 | level: senior | exp: 9.0 yrs | raw_text: 288 words
-  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Looker, Docker, Go, GCP, Ruby on Rails, PostgreSQL, Python, AI Integration
-  projects: SmartFlow
-  background: I am a senior product professional with nine years of deep technical experience, predominantly within the high-stakes environment of enterprise software development. Over the past five years, I have functioned as a Product Lead within a mid-sized technology firm, where I steered the development of m
+  id: resume_132 | level: middle | exp: 4.0 yrs | raw_text: 259 words
+  skills: NetSuite, SQL, Financial Forecasting, IFRS Compliance, Power BI, Python, Excel, Revenue Modeling
+  projects: AutoReport, RevenueModel
+  background: I am a finance professional with four years of comprehensive experience in accounting and financial analysis, specifically within the fast-paced world of fintech startups. In my current role as a Financial Analyst at a mid-sized fintech firm, I work with a team of 15 to manage monthly financial clos
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_127 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, SQL
-  preferred_skills: Figma, TypeScript
-  description: We are seeking an enthusiastic Associate Product Manager to join our growing team of 10 professionals. Our team focuses on building intuitive user-facing features for our primary customer dashboard. This role is perfect for someone early in their car
+  id: jd_130 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: NetSuite, SQL, Python, IFRS, GAAP, Financial Modeling, Financial Reporting, Compliance
+  preferred_skills: SAP, Cloud Infrastructure
+  description: We are looking for a Senior Financial Systems Architect to join our growing finance operations team of 40 members. This role is critical to our mission of providing transparent, scalable, and compliant payment solutions globally. You will be responsi
 
-  id: jd_128 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 205 words
-  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, Tableau, Java Spring Boot
-  preferred_skills: Cloud Architecture, Python
-  description: We are looking for an experienced Product Manager to drive the development of our core cloud-native SaaS platform. Our team currently consists of 25 people, split across three squads, and we operate in a highly iterative agile framework. In this role
+  id: jd_131 | title: Senior Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Financial Reporting, Financial Modeling, SQL, Power BI, Audit Management, Compliance, Multi-currency Accounting
+  preferred_skills: CPA, Oracle NetSuite
+  description: Our team is seeking a detail-oriented Senior Financial Controller to own the financial integrity and regulatory reporting for our cross-border payment platform. With a team of 30, we manage large-scale financial operations across multiple jurisdictio
 
-  id: jd_129 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, Looker, Docker
-  preferred_skills: GCP, Data Analysis
-  description: Our team is looking for a proactive Product Manager to own the lifecycle of our high-throughput data processing engine. The team is currently 20 members strong, consisting of backend engineers, data scientists, and UX designers. We are looking for so
+  id: jd_132 | title: Senior Quantitative Finance Lead | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Python, SQL, Quantitative Modeling, Risk Management, Financial Forecasting, Regulatory Compliance, Financial Mathematics
+  preferred_skills: R, Algorithmic Trading
+  description: We are looking for a Senior Quantitative Finance Lead to drive our strategy for risk management and automated financial forecasting. Our finance team of 25 works at the cutting edge of algorithmic financial monitoring, and this role will lead our eff
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 378 pairs total.
+Overall dataset so far: 387 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   69  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   74  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   69  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   68  →  expected this batch: 6 pairs (from seniority gaps below)
+  poor_match            existing:   69  →  expected this batch: 6 pairs (from seniority gaps below)
+  weak_match            existing:   74  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   72  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   74  →  expected this batch: 0 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_379    resume_127 × jd_127
-  pair_380    resume_127 × jd_128
-  pair_381    resume_127 × jd_129
-  pair_382    resume_128 × jd_127
-  pair_383    resume_128 × jd_128
-  pair_384    resume_128 × jd_129
-  pair_385    resume_129 × jd_127
-  pair_386    resume_129 × jd_128
-  pair_387    resume_129 × jd_129
+  pair_388    resume_130 × jd_130
+  pair_389    resume_130 × jd_131
+  pair_390    resume_130 × jd_132
+  pair_391    resume_131 × jd_130
+  pair_392    resume_131 × jd_131
+  pair_393    resume_131 × jd_132
+  pair_394    resume_132 × jd_130
+  pair_395    resume_132 × jd_131
+  pair_396    resume_132 × jd_132
 
 ════════════════════════════════════
 OUTPUT FORMAT
