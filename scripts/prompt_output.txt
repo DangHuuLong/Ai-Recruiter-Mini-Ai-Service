@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_307 | level: junior | exp: 0.5 yrs | raw_text: 252 words
-  skills: Excel, Python, Pandas
-  projects: Personal Portfolio Tracker
-  background: Motivated and analytical Finance and Accounting graduate looking to transition academic excellence into a practical career within the corporate ecosystem. Recently completed a six-month internship at an enterprise commercial banking institution, working as an Assistant Financial Analyst within a lar
+  id: resume_310 | level: middle | exp: 4.0 yrs | raw_text: 278 words
+  skills: Splunk, Wireshark, Python, Scapy, AWS GuardDuty, SIEM
+  projects: Packet Flow Auditor
+  background: Resourceful and detail-oriented Security Operations Center Analyst with four years of dedicated experience specializing in corporate threat detection, rapid incident response, and continuous vulnerability assessment. Spent the last three full years operating at an enterprise financial services corpo
 
-  id: resume_308 | level: junior | exp: 0.33 yrs | raw_text: 257 words
-  skills: Excel, SQL, Python, SQLite
-  projects: Cryptographic Ledger Parser
-  background: Ambitious and data-driven junior professional seeking to apply financial modeling and automated accounting principles within a fast-moving corporate setting. Completed a four-month internship at a growing logistics startup within a close-knit financial planning division composed of four specialists.
+  id: resume_311 | level: senior | exp: 7.0 yrs | raw_text: 263 words
+  skills: Zeek, Cortex XSOAR, Splunk, Metasploit, Python, Ansible
+  projects: Stealth Network Tracer
+  background: Accomplished Senior Cybersecurity Engineer and Technical Team Lead with over seven years of professional tenure directing network defenses, enterprise vulnerability remediation, and automated threat hunting operations. Spent four years at a prominent enterprise defense contracting agency leading a c
 
-  id: resume_309 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: Excel, Oracle ERP, NetSuite, SQL Server, Python
-  projects: Corporate Valuation Engine
-  background: Competent Corporate Accountant and Financial Analyst with four years of dedicated professional tenure managing asset ledger tracking, constructing corporate forecasts, and evaluating regulatory reporting structures. Spent three full years serving at an enterprise international manufacturing corporat
+  id: resume_312 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Burp Suite, Nmap, Nessus, Wireshark, Python, SQLite
+  projects: Proxy Flow Inspector
+  background: Analytical Senior Information Security Consultant and Penetration Tester with eight years of comprehensive experience executing infrastructure attack emulation, complex web application vulnerability assessments, and regulatory technical control mapping. Spent five years at an enterprise digital secu
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_307 | title: Senior Fintech Financial Modeling Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Anaplan, Python, PostgreSQL, Tableau
-  preferred_skills: R, Sarbanes-Oxley
-  description: Our quantitative platform management division is seeking a highly skilled Senior Fintech Financial Modeling Lead to architect the next generation of our automated capitalization forecasting infrastructure. The advanced corporate finance department co
+  id: jd_310 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Splunk, Wireshark, Python
+  preferred_skills: Bash, ISO 27001
+  description: Our core Global Security Operations division is seeking an enthusiastic Junior Information Security Analyst to join our expanding triage team. The active security monitoring department comprises six dedicated analysts building automated detection mec
 
-  id: jd_308 | title: Senior Fintech Regulatory Reporting and Compliance Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Workiva, Alteryx, Snowflake, OneSource, Python
-  preferred_skills: Airflow, SOC2
-  description: Our corporate control and compliance division is looking for an expert Senior Fintech Regulatory Reporting and Compliance Architect to direct the engineering of our institutional compliance tracking environment. The financial infrastructure squad com
+  id: jd_311 | title: Junior Defensive Security Specialist | level: junior | min_exp: 1 yrs | raw_text: 191 words
+  required_skills: Splunk, Nmap, Python
+  preferred_skills: Ansible, SOC2
+  description: Our dedicated Infrastructure Security Group is searching for an analytical Junior Defensive Security Specialist to support our corporate data protection framework. The defensive infrastructure unit comprises five technical engineers managing security
 
-  id: jd_309 | title: Senior Strategic Finance and Accounting Platform Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: SAP S4HANA, SAS, Amazon Redshift, Hyperion, Python
-  preferred_skills: PowerBI, IFRS
-  description: Our advanced Strategic Finance and Accounting department is seeking an expert Senior Strategic Finance and Accounting Platform Lead to steer the development of our enterprise ledger consolidation environment. The corporate accounting squad comprises 
+  id: jd_312 | title: Cybersecurity Detection and Response Engineer | level: middle | min_exp: 3 yrs | raw_text: 190 words
+  required_skills: Splunk, Wireshark, Python
+  preferred_skills: Scapy, AWS GuardDuty
+  description: Our Enterprise Cyber Defense department is looking for an analytical Cybersecurity Detection and Response Engineer to steer the optimization of our global event monitoring environment. The core security engineering squad comprises eight seasoned spec
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 918 pairs total.
+Overall dataset so far: 927 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  181  →  expected this batch: 6 pairs (from seniority gaps below)
-  weak_match            existing:  184  →  expected this batch: 3 pairs (from seniority gaps below)
-  moderate_match        existing:  183  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  184  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  186  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:  187  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  187  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  183  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  184  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  186  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_919    resume_307 × jd_307
-  pair_920    resume_307 × jd_308
-  pair_921    resume_307 × jd_309
-  pair_922    resume_308 × jd_307
-  pair_923    resume_308 × jd_308
-  pair_924    resume_308 × jd_309
-  pair_925    resume_309 × jd_307
-  pair_926    resume_309 × jd_308
-  pair_927    resume_309 × jd_309
+  pair_928    resume_310 × jd_310
+  pair_929    resume_310 × jd_311
+  pair_930    resume_310 × jd_312
+  pair_931    resume_311 × jd_310
+  pair_932    resume_311 × jd_311
+  pair_933    resume_311 × jd_312
+  pair_934    resume_312 × jd_310
+  pair_935    resume_312 × jd_311
+  pair_936    resume_312 × jd_312
 
 ════════════════════════════════════
 OUTPUT FORMAT
