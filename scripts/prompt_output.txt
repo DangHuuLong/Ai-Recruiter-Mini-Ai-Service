@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_121 | level: senior | exp: 7.0 yrs | raw_text: 274 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Express, Git, Docker
-  projects: SchemaPulse
-  background: I am a senior backend software engineer with seven years of industry tenure building resilient APIs and distributed system architectures. I spent four years at an enterprise financial logistics platform within an infrastructure squad of eight developers. In this role, I engineered core high-throughp
+  id: resume_124 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: React Native, JavaScript, Flutter, Dart, Git
+  projects: FitTrack
+  background: I am an enthusiastic Junior Mobile Developer and recent graduate with a passion for building smooth cross-platform user interfaces. During my university studies, I completed an intensive five-month internship at a fast-growing digital agency within a small product squad of four developers. In this r
 
-  id: resume_122 | level: senior | exp: 8.5 yrs | raw_text: 252 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, NestJS, TypeScript, Redis, Docker, Kubernetes
-  projects: NetFlowProxy
-  background: I am a senior technical lead and backend infrastructure architect with eight and a half years of professional experience scaling high-volume application programming interfaces. My journey began at a software development agency where I operated for three and a half years within a core product squad o
+  id: resume_125 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: React Native, TypeScript, Flutter, Kotlin, Android SDK, Git, Fastlane
+  projects: NativeGuard
+  background: I am a dedicated Mid-Level Mobile Application Engineer with four years of professional experience specializing in robust cross-platform architectures and responsive interface design. I spent two and a half years at a mid-sized e-commerce startup working inside a dedicated mobile squad of six enginee
 
-  id: resume_123 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, TypeScript, RabbitMQ, Docker, Jenkins, GraphQL
-  projects: QueryShield
-  background: I am an accomplished Senior Backend Systems Engineer with eight years of extensive professional expertise crafting enterprise application interfaces, cloud storage systems, and real-time streaming tools. I started my career at an analytics startup where I worked for three years within a nimble team 
+  id: resume_126 | level: middle | exp: 4.5 yrs | raw_text: 263 words
+  skills: Swift, SwiftUI, UIKit, CoreData, Combine, XCTest, Git
+  projects: RouteOptima
+  background: I am an analytical Mid-Level iOS Developer with four and a half years of professional tenure crafting high-performance native applications and modular software architectures. I spent three years at a large enterprise logistics corporation working within a core native mobility division of nine develo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_121 | title: Junior Backend Developer (Python & SQL) | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Python, Flask, SQL, Git
-  preferred_skills: Docker
-  description: We are looking for an energetic and highly motivated Junior Backend Developer to join our growing software engineering division. In this position, you will work closely with an established product engineering squad composed of four experienced develo
+  id: jd_124 | title: Senior Lead Native iOS Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Swift, SwiftUI, Combine, CoreData, Fastlane
+  preferred_skills: Objective-C, GraphQL
+  description: We are seeking an expert Senior Lead Native iOS Engineer to spearhead the structural development and performance tuning of our high-volume digital banking mobile application. In this role, you will lead an elite mobile engineering squad composed of e
 
-  id: jd_122 | title: Backend API Engineer (FastAPI & Node.js) | level: middle | min_exp: 3 yrs | raw_text: 180 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Docker
-  preferred_skills: TypeScript
-  description: Our dynamic technology firm is seeking an analytical Mid-Level Backend API Engineer to assume responsibility for core feature iterations across our digital workspace application suite. Joining a highly active product group of seven developers, you wi
+  id: jd_125 | title: Principal Android Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Kotlin, Jetpack Compose, Android SDK, Coroutines, Espresso
+  preferred_skills: Kotlin Multiplatform
+  description: Our core enterprise logistics platform is looking for an analytical Principal Android Infrastructure Architect to manage the scalability, offline resilience, and peripheral integrations of our distribution mobile ecosystem. Leading an agile engineeri
 
-  id: jd_123 | title: Senior Lead Backend Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, RabbitMQ, Kubernetes
-  preferred_skills: AWS
-  description: Our premium cloud logistics group is searching for a visionary Senior Lead Backend Infrastructure Architect to orchestrate the engineering direction, database optimization, and high-concurrency scaling of our core transit network. Leading a highly ca
+  id: jd_126 | title: Senior Lead Cross-Platform Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: React Native, TypeScript, Redux, Native Modules, App Center
+  preferred_skills: SwiftUI
+  description: We are searching for a visionary Senior Lead Cross-Platform Mobile Engineer to orchestrate the engineering direction, rendering optimization, and multi-platform deployment of our primary digital workplace application suite. Joining an active product 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 360 pairs total.
+Overall dataset so far: 369 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   67  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   67  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   66  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   65  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:   95  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   67  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   67  →  expected this batch: 6 pairs (from seniority gaps below)
+  moderate_match        existing:   69  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   68  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_361    resume_121 × jd_121
-  pair_362    resume_121 × jd_122
-  pair_363    resume_121 × jd_123
-  pair_364    resume_122 × jd_121
-  pair_365    resume_122 × jd_122
-  pair_366    resume_122 × jd_123
-  pair_367    resume_123 × jd_121
-  pair_368    resume_123 × jd_122
-  pair_369    resume_123 × jd_123
+  pair_370    resume_124 × jd_124
+  pair_371    resume_124 × jd_125
+  pair_372    resume_124 × jd_126
+  pair_373    resume_125 × jd_124
+  pair_374    resume_125 × jd_125
+  pair_375    resume_125 × jd_126
+  pair_376    resume_126 × jd_124
+  pair_377    resume_126 × jd_125
+  pair_378    resume_126 × jd_126
 
 ════════════════════════════════════
 OUTPUT FORMAT
