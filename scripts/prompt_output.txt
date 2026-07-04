@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_304 | level: middle | exp: 4.0 yrs | raw_text: 251 words
-  skills: Python, Pandas, Scikit-Learn, SQL, Jupyter Notebooks
-  projects: Sales Forecasting Toolbox
-  background: Experienced Data Scientist with four years of dedicated professional engagement building corporate intelligence systems, developing reliable predictive models, and refining data pipelines. Worked for three full years at an enterprise financial services corporation as an Associate Data Scientist with
+  id: resume_307 | level: junior | exp: 0.5 yrs | raw_text: 252 words
+  skills: Excel, Python, Pandas
+  projects: Personal Portfolio Tracker
+  background: Motivated and analytical Finance and Accounting graduate looking to transition academic excellence into a practical career within the corporate ecosystem. Recently completed a six-month internship at an enterprise commercial banking institution, working as an Assistant Financial Analyst within a lar
 
-  id: resume_305 | level: senior | exp: 7.0 yrs | raw_text: 253 words
-  skills: Python, PyTorch, Docker, Kubernetes, AWS, MLflow, FastAPI, OpenCV, TensorRT, Scikit-Learn
-  projects: Distributed Neural Streamer
-  background: Distinguished Senior Machine Learning Engineer with over seven years of professional tenure developing highly optimized artificial intelligence architectures, scalable software layers, and comprehensive pipeline infrastructures within major technical industries. Previously spent four years serving a
+  id: resume_308 | level: junior | exp: 0.33 yrs | raw_text: 257 words
+  skills: Excel, SQL, Python, SQLite
+  projects: Cryptographic Ledger Parser
+  background: Ambitious and data-driven junior professional seeking to apply financial modeling and automated accounting principles within a fast-moving corporate setting. Completed a four-month internship at a growing logistics startup within a close-knit financial planning division composed of four specialists.
 
-  id: resume_306 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: Python, PyTorch, Docker, GitLab CI/CD, AWS, MLflow, FastAPI, OpenCV, TensorRT, Scikit-Learn
-  projects: Visual Audit Suite
-  background: Accomplished Technical Lead and Principal Machine Learning Engineer with eight years of professional industry experience implementing large-scale analytical architectures, high-throughput microservices, and reliable cloud execution systems for enterprise applications. Worked for five years at a majo
+  id: resume_309 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: Excel, Oracle ERP, NetSuite, SQL Server, Python
+  projects: Corporate Valuation Engine
+  background: Competent Corporate Accountant and Financial Analyst with four years of dedicated professional tenure managing asset ledger tracking, constructing corporate forecasts, and evaluating regulatory reporting structures. Spent three full years serving at an enterprise international manufacturing corporat
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_304 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 188 words
-  required_skills: Python, Pandas, Scikit-Learn, SQL, Jupyter Notebooks
-  preferred_skills: Matplotlib, Git
-  description: We are looking for a Junior Data Scientist to join our collaborative analytics branch. Our data division comprises five enthusiastic analysts working to optimize digital transactions and understand customer journey behaviors. In this role, you will h
+  id: jd_307 | title: Senior Fintech Financial Modeling Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Anaplan, Python, PostgreSQL, Tableau
+  preferred_skills: R, Sarbanes-Oxley
+  description: Our quantitative platform management division is seeking a highly skilled Senior Fintech Financial Modeling Lead to architect the next generation of our automated capitalization forecasting infrastructure. The advanced corporate finance department co
 
-  id: jd_305 | title: Associate Machine Learning Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Python, Pandas, Scikit-Learn, SQL, Docker
-  preferred_skills: Git, Jupyter Notebooks
-  description: Our core operational intelligence group is seeking an Associate Machine Learning Engineer to contribute to our predictive services platform. The engineering team currently includes six technical engineers building specialized recommendation systems t
+  id: jd_308 | title: Senior Fintech Regulatory Reporting and Compliance Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: Workiva, Alteryx, Snowflake, OneSource, Python
+  preferred_skills: Airflow, SOC2
+  description: Our corporate control and compliance division is looking for an expert Senior Fintech Regulatory Reporting and Compliance Architect to direct the engineering of our institutional compliance tracking environment. The financial infrastructure squad com
 
-  id: jd_306 | title: Senior MLOps and Deep Learning Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Python, PyTorch, Docker, Kubernetes, GitLab CI/CD, AWS, MLflow, FastAPI, TensorRT
-  preferred_skills: Terraform, Kafka
-  description: Our advanced Infrastructure Foundations department is looking for an expert Senior MLOps and Deep Learning Infrastructure Architect to lead the expansion of our enterprise deep learning execution environment. The infrastructure squad comprises nine s
+  id: jd_309 | title: Senior Strategic Finance and Accounting Platform Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: SAP S4HANA, SAS, Amazon Redshift, Hyperion, Python
+  preferred_skills: PowerBI, IFRS
+  description: Our advanced Strategic Finance and Accounting department is seeking an expert Senior Strategic Finance and Accounting Platform Lead to steer the development of our enterprise ledger consolidation environment. The corporate accounting squad comprises 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 909 pairs total.
+Overall dataset so far: 918 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  181  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  183  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  180  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  182  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  183  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  181  →  expected this batch: 6 pairs (from seniority gaps below)
+  weak_match            existing:  184  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:  183  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  184  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  186  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_910    resume_304 × jd_304
-  pair_911    resume_304 × jd_305
-  pair_912    resume_304 × jd_306
-  pair_913    resume_305 × jd_304
-  pair_914    resume_305 × jd_305
-  pair_915    resume_305 × jd_306
-  pair_916    resume_306 × jd_304
-  pair_917    resume_306 × jd_305
-  pair_918    resume_306 × jd_306
+  pair_919    resume_307 × jd_307
+  pair_920    resume_307 × jd_308
+  pair_921    resume_307 × jd_309
+  pair_922    resume_308 × jd_307
+  pair_923    resume_308 × jd_308
+  pair_924    resume_308 × jd_309
+  pair_925    resume_309 × jd_307
+  pair_926    resume_309 × jd_308
+  pair_927    resume_309 × jd_309
 
 ════════════════════════════════════
 OUTPUT FORMAT
