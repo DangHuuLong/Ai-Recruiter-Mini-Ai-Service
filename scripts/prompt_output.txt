@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_190 | level: middle | exp: 4.0 yrs | raw_text: 285 words
-  skills: Workday, Greenhouse, BambooHR, HRIS, Recruitment, Onboarding, HR Analytics
-  projects: CandidateExperience+, DocSecure
-  background: I am a dedicated HR Specialist with four years of experience in talent acquisition and HR operations within the competitive tech sector. At a rapidly scaling software startup, I supported a high-energy team of six in managing the entire recruitment lifecycle, from initial job posting to complex cand
+  id: resume_193 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: Python, FastAPI, PostgreSQL, Git, Docker
+  projects: TaskMaster, DataParser
+  background: I am a motivated Junior Backend Developer who recently graduated with a strong focus on building efficient, scalable server-side applications. During my six-month internship at a fast-paced software agency, I worked within a team of four to maintain and enhance various client APIs. My primary respon
 
-  id: resume_191 | level: senior | exp: 8.0 yrs | raw_text: 254 words
-  skills: SAP SuccessFactors, Lever, Tableau, Talent Acquisition, Onboarding, HR Analytics, Strategy Leadership
-  projects: GlobalTalentMap, AutomateHire
-  background: I am an experienced Senior Talent Acquisition Manager with eight years of expertise in building high-performing recruitment strategies for global technology enterprises. At a major cloud services firm, I led a talent acquisition team of fifteen, overseeing end-to-end recruitment pipelines for techni
+  id: resume_194 | level: junior | exp: 1.0 yrs | raw_text: 260 words
+  skills: Node.js, Express, PostgreSQL, API Development
+  projects: FlowAPI, DocHelper
+  background: I am an enthusiastic Junior Software Engineer with a focus on modern backend architecture and API development. In my recent role at a growing fintech startup, I was part of a dynamic team of six responsible for supporting the core transactional infrastructure. My daily responsibilities included deve
 
-  id: resume_192 | level: senior | exp: 9.0 yrs | raw_text: 263 words
-  skills: Workday, Greenhouse, SQL, Power BI, Workforce Planning, HRIS Architecture, Global Payroll
-  projects: UnifiedPeopleEngine, AutoEngagementFlow
-  background: I am a Principal HR Architect with nine years of experience building scalable human capital infrastructures for fast-moving fintech and tech startups. Throughout my career, I have led global HR departments of forty, focusing on complex integrations of HRIS systems, automated compliance workflows, an
+  id: resume_195 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, AWS, Distributed Systems, Redis
+  projects: ScaleEngine, AutoScaleDB
+  background: I am a Senior Backend Architect with eight years of experience in designing, building, and scaling high-performance backend systems for global platforms. At a top-tier e-commerce enterprise, I led an engineering department of twenty, overseeing the architectural transition of our monolithic platform
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_190 | title: Junior Talent Coordinator | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Greenhouse, Recruitment, Candidate Experience, Onboarding
-  preferred_skills: Google Workspace, HRIS
-  description: Our talent acquisition team of five is seeking a motivated Junior Talent Coordinator to support our core recruiting and candidate experience efforts. The team is dedicated to building efficient hiring processes that ensure a high-quality experience f
+  id: jd_193 | title: Backend Engineer | level: middle | min_exp: 3 yrs | raw_text: 196 words
+  required_skills: Python, FastAPI, PostgreSQL, API Development
+  preferred_skills: Docker, Kubernetes
+  description: Our backend team of twelve is looking for a skilled Backend Engineer to help us build and maintain high-performance APIs for our rapidly growing product. We are currently scaling our services to handle thousands of requests per second and need a deve
 
-  id: jd_191 | title: Junior HR Associate | level: junior | min_exp: 1 yrs | raw_text: 200 words
-  required_skills: BambooHR, HRIS, HR Operations, Employee Relations
-  preferred_skills: Excel, Reporting
-  description: Our HR operations team of eight is seeking a highly energetic Junior HR Associate to help facilitate our rapid internal growth and employee engagement needs. The team is dedicated to creating innovative HR solutions for internal process automation. Y
+  id: jd_194 | title: Senior Backend Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Python, Node.js, PostgreSQL, Distributed Systems, AWS
+  preferred_skills: Redis, Architecture
+  description: Our backend engineering department of thirty is seeking a visionary Senior Backend Systems Architect to guide the evolution of our high-traffic platform. We handle massive volumes of transactional data and are looking for someone with deep expertise 
 
-  id: jd_192 | title: Senior HR Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 216 words
-  required_skills: Workday, SQL, HRIS Architecture, Workforce Planning, Data Visualization, Leadership
-  preferred_skills: Power BI, Compliance
-  description: Our global HR operations department of forty is seeking a seasoned Senior HR Infrastructure Architect to lead our digital HR transformation and employee data strategy. The team focuses on optimizing enterprise workflows through robust HRIS architectu
+  id: jd_195 | title: Principal Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: Python, FastAPI, PostgreSQL, Distributed Systems, Leadership
+  preferred_skills: System Design, Performance Tuning
+  description: Our core platform team of twenty-five is seeking a Principal Backend Engineer to define the architectural foundation of our financial services. We are dedicated to providing a secure and seamless experience for our global user base and are looking fo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 567 pairs total.
+Overall dataset so far: 576 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  113  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  114  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  112  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  114  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  114  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  113  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  115  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  116  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  116  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  116  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_568    resume_190 × jd_190
-  pair_569    resume_190 × jd_191
-  pair_570    resume_190 × jd_192
-  pair_571    resume_191 × jd_190
-  pair_572    resume_191 × jd_191
-  pair_573    resume_191 × jd_192
-  pair_574    resume_192 × jd_190
-  pair_575    resume_192 × jd_191
-  pair_576    resume_192 × jd_192
+  pair_577    resume_193 × jd_193
+  pair_578    resume_193 × jd_194
+  pair_579    resume_193 × jd_195
+  pair_580    resume_194 × jd_193
+  pair_581    resume_194 × jd_194
+  pair_582    resume_194 × jd_195
+  pair_583    resume_195 × jd_193
+  pair_584    resume_195 × jd_194
+  pair_585    resume_195 × jd_195
 
 ════════════════════════════════════
 OUTPUT FORMAT
