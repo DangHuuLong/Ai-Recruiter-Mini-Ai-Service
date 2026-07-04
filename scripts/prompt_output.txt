@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_244 | level: junior | exp: 1.0 yrs | raw_text: 251 words
-  skills: LangChain, Transformers, Qdrant, FastAPI, Python
-  projects: DocuMind
-  background: I am an enthusiastic Artificial Intelligence Engineer with one year of professional experience focused on natural language processing, semantic search architectures, and large language model integration. In my previous role as an Assistant AI Specialist at a high-growth tech startup, I operated for 
+  id: resume_247 | level: junior | exp: 1.0 yrs | raw_text: 254 words
+  skills: MySQL, Redis, Python, Docker
+  projects: CacheStore
+  background: I am an enthusiastic Junior Database Engineer with just under one year of professional experience focused on foundational database development, data modeling, and performance monitoring. In my previous role as an Associate Data Developer at an agile fintech startup, I operated for exactly eleven mon
 
-  id: resume_245 | level: senior | exp: 8.0 yrs | raw_text: 250 words
-  skills: LangChain, Transformers, Qdrant, PyTorch, LlamaIndex, FastAPI, Python
-  projects: TitanRAG
-  background: I am a senior AI Lead and principal NLP Systems Architect with eight years of comprehensive corporate experience specializing in distributed model training, advanced retrieval architectures, and deep neural engineering. In my current position as a Principal Generative AI Engineer at an enterprise te
+  id: resume_248 | level: junior | exp: 1.0 yrs | raw_text: 262 words
+  skills: MongoDB, Node.js, JavaScript, JSON
+  projects: DataMap
+  background: I am an analytical Junior Data Operations Specialist with one year of professional corporate experience focused on document-oriented storage solutions, basic key-value storage tuning, and NoSQL schema design. In my previous role as a Junior Database Administrator at a high-growth e-commerce startup,
 
-  id: resume_246 | level: senior | exp: 7.0 yrs | raw_text: 262 words
-  skills: Transformers, LangChain, Qdrant, PyTorch, Ray, DeepSpeed, Python
-  projects: AgentForge
-  background: I am an analytical NLP Tech Lead and principal Machine Learning Architect with seven years of proven professional experience scaling text intelligence pipelines, implementing automated fine-tuning loops, and directing high-throughput retrieval infrastructures. In my current role as a Senior AI Staff
+  id: resume_249 | level: senior | exp: 8.0 yrs | raw_text: 258 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL
+  projects: LogiStore
+  background: I am a senior Lead Database Architect and Principal Data Infrastructure Engineer with eight years of comprehensive corporate experience specializing in high-throughput relational scaling, complex distributed NoSQL deployments, and modern multi-tier caching architectures. In my current position as a 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_244 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: LangChain, Transformers, Python
-  preferred_skills: Qdrant, FastAPI
-  description: Our corporate generative engineering department is actively searching for a structured Junior AI Engineer to assist in the daily implementation, prompt adjustment, and lifecycle management of our semantic application workflows. Working as an individu
+  id: jd_247 | title: Middle Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 210 words
+  required_skills: PostgreSQL, Data Modeling, SQL
+  preferred_skills: Redis, Docker
+  description: Our core storage systems department is actively searching for a structured Middle Database Engineer to assist in the daily implementation, maintenance, and performance monitoring of our production relational database workflows. Working as an individu
 
-  id: jd_245 | title: Associate NLP Application Developer | level: junior | min_exp: 1 yrs | raw_text: 184 words
-  required_skills: LangChain, Qdrant, Python
-  preferred_skills: Transformers, FastAPI
-  description: Our conversational engineering division is seeking an Associate NLP Application Developer to contribute to the construction, maintenance, and deployment of our high-volume cognitive search solutions. Operating as a core technical member within a grow
+  id: jd_248 | title: Senior High-Availability Database Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: PostgreSQL, Redis, Data Modeling
+  preferred_skills: MongoDB, SQL
+  description: Our core transactional engineering division is seeking an expert Senior High-Availability Database Architect to contribute to the long-term design, maintenance, and cluster optimization of our high-volume financial transaction solutions. Operating as
 
-  id: jd_246 | title: Senior Generative AI Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: PyTorch, Qdrant, Transformers
-  preferred_skills: Ray, DeepSpeed
-  description: We are searching for a Senior Generative AI Infrastructure Architect to lead the long-term cluster optimization, deep model tuning, and scaling of our global text intelligence systems and production large language model environments. Directing an adv
+  id: jd_249 | title: Senior Distributed NoSQL Specialist | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: MongoDB, Redis, Data Modeling
+  preferred_skills: PostgreSQL, SQL
+  description: We are searching for a Senior Distributed NoSQL Specialist to lead the long-term cluster optimization, horizontal sharding implementation, and scaling of our global content catalog systems and production unstructured database environments. Directing 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 729 pairs total.
+Overall dataset so far: 738 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  145  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  148  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  144  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  147  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  145  →  expected this batch: 4 pairs (from seniority gaps below)
+  poor_match            existing:  146  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  148  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  148  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  147  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  149  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_730    resume_244 × jd_244
-  pair_731    resume_244 × jd_245
-  pair_732    resume_244 × jd_246
-  pair_733    resume_245 × jd_244
-  pair_734    resume_245 × jd_245
-  pair_735    resume_245 × jd_246
-  pair_736    resume_246 × jd_244
-  pair_737    resume_246 × jd_245
-  pair_738    resume_246 × jd_246
+  pair_739    resume_247 × jd_247
+  pair_740    resume_247 × jd_248
+  pair_741    resume_247 × jd_249
+  pair_742    resume_248 × jd_247
+  pair_743    resume_248 × jd_248
+  pair_744    resume_248 × jd_249
+  pair_745    resume_249 × jd_247
+  pair_746    resume_249 × jd_248
+  pair_747    resume_249 × jd_249
 
 ════════════════════════════════════
 OUTPUT FORMAT
