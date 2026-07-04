@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_175 | level: junior | exp: 0.8 yrs | raw_text: 275 words
-  skills: AWS, Docker, GitHub Actions, Terraform, Bash, Git
-  projects: WebAuto, LogCheck
-  background: I am a recent Computer Science graduate with one year of experience gained through an intensive internship at a cloud-focused startup. As a Junior DevOps Intern, I supported a team of four in maintaining our development environments and automating basic CI/CD pipelines using GitHub Actions. My core 
+  id: resume_178 | level: middle | exp: 4.5 yrs | raw_text: 251 words
+  skills: Python, PyTorch, LangChain, Pinecone, FastAPI, NLP, Transformers
+  projects: SemanticSearch, ChatFlow
+  background: I am a dedicated Machine Learning Engineer with four years of experience specializing in Natural Language Processing and LLM application development. During my tenure at a fast-paced AI startup, I supported a data science team of eight by designing and deploying production-grade NLP pipelines. My co
 
-  id: resume_176 | level: junior | exp: 0.9 yrs | raw_text: 261 words
-  skills: Docker, Python, Grafana, Locust, Confluence, Git
-  projects: ScaleTest, DocsRevamp
-  background: I am a proactive Junior DevOps Engineer with one year of experience gained at a software development agency. Throughout my tenure, I worked within a team of five to support the software development lifecycle by maintaining development environments and assisting with cloud infrastructure provisioning
+  id: resume_179 | level: senior | exp: 7.5 yrs | raw_text: 258 words
+  skills: Python, PyTorch, LangChain, Milvus, Kubernetes, LLM Fine-Tuning, Generative AI
+  projects: EnterpriseGenAI, RetrievalMaster
+  background: I am a Senior NLP Architect with seven years of experience leading cross-functional teams in the development of cutting-edge generative AI and LLM frameworks. At a top-tier technology firm, I directed an AI research department of twenty, overseeing the architecture of large-scale document analysis p
 
-  id: resume_177 | level: senior | exp: 8.5 yrs | raw_text: 262 words
-  skills: AWS, Terraform, Kubernetes, Docker, Python, System Reliability, Cloud Architecture
-  projects: GlobalSync, AuditBridge
-  background: I am a Senior Cloud Infrastructure Architect with eight years of experience leading complex enterprise DevOps initiatives. In my previous role at a large enterprise firm, I directed a cross-functional department of fifteen to design and implement high-availability cloud systems. My core responsibili
+  id: resume_180 | level: senior | exp: 9.0 yrs | raw_text: 285 words
+  skills: Python, PyTorch, Transformers, LangChain, Cassandra, Terraform, MLOps
+  projects: GlobalSemanticBridge, AutoAgentic
+  background: I am a Principal AI Engineer with nine years of experience directing advanced machine learning initiatives for high-growth enterprises. Throughout my career at global tech companies, I have led departments of thirty to implement advanced NLP strategies, including LLM-based automation and deep semant
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_175 | title: Mid-Level DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: AWS, Kubernetes, Terraform, Docker, Bash, DevOps
-  preferred_skills: Go, Service Mesh
-  description: Our platform engineering team of twenty is seeking an experienced Mid-Level DevOps Engineer to bridge the gap between our business stakeholders and our technical engineering teams. The team handles end-to-end cloud infrastructure provisioning and CI/
+  id: jd_178 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Python, PyTorch, Transformers, LangChain, NLP
+  preferred_skills: Vector Databases, AWS
+  description: Our NLP research team of twelve is seeking a motivated Junior NLP Engineer to support our core language modeling and RAG development. The team is dedicated to building scalable AI interfaces that solve real-world problems in information retrieval and
 
-  id: jd_176 | title: Senior Site Reliability Engineer | level: senior | min_exp: 6 yrs | raw_text: 189 words
-  required_skills: AWS, Kubernetes, Terraform, Docker, Python, Prometheus, System Reliability
-  preferred_skills: CKA, Distributed Systems
-  description: Our infrastructure reliability team is seeking a Senior Site Reliability Engineer to lead our core digital transformation and reliability projects. The team manages large-scale system integrations and high-availability architecture for our global clo
+  id: jd_179 | title: Junior AI Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Python, LangChain, LLM Frameworks, AI Development, Prompt Engineering
+  preferred_skills: Model Fine-tuning, Data Analysis
+  description: Our generative AI team of ten is seeking a highly energetic Junior AI Developer to help facilitate our rapid prototyping and implementation efforts. The team is dedicated to creating innovative AI solutions for internal process automation. Your day-t
 
-  id: jd_177 | title: Senior Cloud Infrastructure Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: AWS, Kubernetes, Terraform, Docker, Python, Jenkins, Infrastructure Management
-  preferred_skills: Multi-cloud Strategy, Data Analysis
-  description: Our operations and innovation department of thirty is looking for a Senior Cloud Infrastructure Lead to oversee the definition and implementation of our global cloud framework. The team focuses on creating scalable, secure infrastructure patterns tha
+  id: jd_180 | title: Senior AI Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: PyTorch, Transformers, LangChain, Vector Databases, MLOps, AI Architecture, Leadership
+  preferred_skills: Multi-modal Research, AI Safety
+  description: Our global AI operations department of forty is seeking a seasoned Senior AI Architect to lead our digital AI transformation and model infrastructure. The team focuses on optimizing enterprise workflows through robust generative model architecture, a
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 522 pairs total.
+Overall dataset so far: 531 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  103  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  104  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  104  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  106  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  105  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  107  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  106  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  104  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_523    resume_175 × jd_175
-  pair_524    resume_175 × jd_176
-  pair_525    resume_175 × jd_177
-  pair_526    resume_176 × jd_175
-  pair_527    resume_176 × jd_176
-  pair_528    resume_176 × jd_177
-  pair_529    resume_177 × jd_175
-  pair_530    resume_177 × jd_176
-  pair_531    resume_177 × jd_177
+  pair_532    resume_178 × jd_178
+  pair_533    resume_178 × jd_179
+  pair_534    resume_178 × jd_180
+  pair_535    resume_179 × jd_178
+  pair_536    resume_179 × jd_179
+  pair_537    resume_179 × jd_180
+  pair_538    resume_180 × jd_178
+  pair_539    resume_180 × jd_179
+  pair_540    resume_180 × jd_180
 
 ════════════════════════════════════
 OUTPUT FORMAT
