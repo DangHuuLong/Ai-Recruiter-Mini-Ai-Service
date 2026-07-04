@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_184 | level: middle | exp: 4.0 yrs | raw_text: 255 words
-  skills: Excel, SQL, Tableau, Python, Pandas, Financial Modeling, Regulatory Reporting, NetSuite
-  projects: BudgetOptimiser, AuditReady
-  background: I am a detail-oriented Finance Associate with four years of experience in the fintech sector, specializing in financial planning, analysis, and regulatory reporting. During my tenure at a high-growth fintech startup, I supported a finance team of ten by managing month-end closing processes and prepa
+  id: resume_187 | level: junior | exp: 0.5 yrs | raw_text: 260 words
+  skills: Excel, QuickBooks Online, Python, Pandas, Financial Modeling, Accounting Principles
+  projects: FinanceTracker, QuickReport
+  background: I am a recent Finance graduate with a strong interest in the intersection of accounting, financial modeling, and emerging fintech solutions. During my intensive six-month internship at a local accounting agency, I supported a team of five in performing general ledger reconciliations and preparing ba
 
-  id: resume_185 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: Financial Modeling, Oracle NetSuite, SQL, Power BI, Strategic Planning, Regulatory Compliance, Capital Management
-  projects: GlobalTreasurySync, ComplianceFramework2.0
-  background: I am a seasoned Senior Finance Manager with eight years of experience leading financial operations and strategic planning in global fintech enterprises. At a top-tier payment processing company, I directed a finance department of twenty, overseeing the entire financial lifecycle from reporting to lo
+  id: resume_188 | level: junior | exp: 1.0 yrs | raw_text: 261 words
+  skills: Excel, SQL, Financial Operations, Audit Support, Data Reconciliation
+  projects: FlowMonitor, DocOrganizer
+  background: I am an enthusiastic Junior Accountant with a year of professional experience gained from a fintech startup environment. Working within a fast-paced finance team of eight, I was primarily responsible for supporting the month-end closing process, tracking recurring revenue metrics, and reconciling tr
 
-  id: resume_186 | level: senior | exp: 9.0 yrs | raw_text: 269 words
-  skills: Financial Modeling, Oracle NetSuite, SQL, Snowflake, Tableau, Risk Management, Audit Automation
-  projects: UnifiedFiscalEngine, AutoRiskMitigation
-  background: I am a Principal Finance Architect with nine years of experience building scalable financial infrastructures for rapidly scaling fintech platforms. Throughout my career at global payment and banking startups, I have led departments of thirty to implement advanced fiscal strategies, including automat
+  id: resume_189 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Financial Modeling, SQL, PostgreSQL, Python, Oracle NetSuite, Tableau, AWS, Regulatory Compliance
+  projects: UnifiedFiscalModel, AutoComplianceEngine
+  background: I am a Senior Finance Architect with eight years of extensive experience in designing and leading high-scale financial infrastructures for global fintech platforms. At a top-tier payment enterprise, I directed a finance department of twenty-five, responsible for architectural oversight of financial 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_184 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Excel, SQL, NetSuite, Financial Reporting, Accounting Principles
-  preferred_skills: Tableau, Regulatory Compliance
-  description: Our finance operations team of eight is seeking a motivated Junior Finance Analyst to support our core fiscal management and regulatory reporting efforts. The team is dedicated to building scalable financial processes that ensure accuracy and complia
+  id: jd_187 | title: Finance Data Analyst | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: SQL, Python, Tableau, Financial Analysis, Financial Reporting
+  preferred_skills: NetSuite, Data Modeling
+  description: Our finance operations and analytics team, consisting of twelve professionals, is searching for a detail-oriented Finance Data Analyst to oversee the health of our financial data. The team is dedicated to building scalable processes that support accu
 
-  id: jd_185 | title: Junior Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 205 words
-  required_skills: Excel, Financial Modeling, Data Analysis, Fintech Operations
-  preferred_skills: SQL, Reporting
-  description: Our fiscal planning and analysis team of ten is seeking a highly energetic Junior Finance Associate to help facilitate our rapid financial growth and reporting needs. The team is dedicated to creating innovative financial solutions for internal proce
+  id: jd_188 | title: Senior Finance Infrastructure Lead | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: PostgreSQL, SQL, Python, Financial Modeling, AWS, Cloud Architecture
+  preferred_skills: Regulatory Compliance, Leadership
+  description: Our global finance engineering team of thirty is looking for a seasoned Senior Finance Infrastructure Lead to spearhead the evolution of our high-availability financial systems. We handle billions in transaction volume and are dedicated to providing 
 
-  id: jd_186 | title: Senior Finance Architect | level: senior | min_exp: 6 yrs | raw_text: 215 words
-  required_skills: NetSuite, SQL, Financial Modeling, Financial Reporting, Data Visualization, Leadership
-  preferred_skills: Snowflake, Risk Management
-  description: Our global finance operations department of forty is seeking a seasoned Senior Finance Architect to lead our digital finance transformation and financial infrastructure. The team focuses on optimizing enterprise workflows through robust financial rep
+  id: jd_189 | title: Principal Financial Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: PostgreSQL, SQL, Python, Financial Modeling, Oracle NetSuite, Distributed Systems
+  preferred_skills: AWS, Audit Automation
+  description: Our platform engineering team of twenty is seeking a Principal Financial Architect to define the future of our financial services. We are dedicated to delivering a seamless experience for our global user base and are looking for someone with deep exp
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 549 pairs total.
+Overall dataset so far: 558 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  109  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  111  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  108  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  111  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  110  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  109  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  112  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  112  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  113  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  112  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_550    resume_184 × jd_184
-  pair_551    resume_184 × jd_185
-  pair_552    resume_184 × jd_186
-  pair_553    resume_185 × jd_184
-  pair_554    resume_185 × jd_185
-  pair_555    resume_185 × jd_186
-  pair_556    resume_186 × jd_184
-  pair_557    resume_186 × jd_185
-  pair_558    resume_186 × jd_186
+  pair_559    resume_187 × jd_187
+  pair_560    resume_187 × jd_188
+  pair_561    resume_187 × jd_189
+  pair_562    resume_188 × jd_187
+  pair_563    resume_188 × jd_188
+  pair_564    resume_188 × jd_189
+  pair_565    resume_189 × jd_187
+  pair_566    resume_189 × jd_188
+  pair_567    resume_189 × jd_189
 
 ════════════════════════════════════
 OUTPUT FORMAT
