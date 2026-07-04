@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_142 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: Healthcare Administration, EMR Management, Patient Intake, HIPAA Compliance, Data Entry, Scheduling
-  projects: Streamlined Patient Check-in
-  background: I am a motivated recent graduate with a passion for healthcare administration and improving patient care workflows. During my final year, I completed a six-month internship at a busy metropolitan medical clinic where I worked on a team of four to manage patient intake and verify insurance eligibilit
+  id: resume_145 | level: senior | exp: 8.5 yrs | raw_text: 253 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, Storybook, Prisma
+  projects: SpeedDash
+  background: I am a seasoned Frontend Architect with over eight years of experience building scalable, high-performance web applications. During my four-year tenure as a Tech Lead at a fast-growing enterprise e-commerce firm, I managed a team of ten engineers and championed the migration of our legacy codebase t
 
-  id: resume_143 | level: middle | exp: 4.0 yrs | raw_text: 265 words
-  skills: Clinical Operations, EMR Integration, HIPAA Compliance, Billing Coordination, Project Management, Salesforce
-  projects: Referral Streamline Project
-  background: I am an experienced healthcare operations coordinator with four years of professional experience in clinical office management and administrative support. Most recently, I served as a Clinical Operations Assistant at a mid-sized healthcare agency, where I led a team of six in optimizing patient serv
+  id: resume_146 | level: senior | exp: 7.0 yrs | raw_text: 258 words
+  skills: React, TypeScript, Tailwind CSS, Zustand, React Query, D3.js, AWS ECS
+  projects: ReactGraph
+  background: I am a dedicated Principal Frontend Engineer with seven years of experience in the fintech and SaaS sectors. Most recently, at a mid-sized enterprise, I served as the Lead Frontend Developer for a team of eight, where I directed the development of a cloud-based dashboard using React, TypeScript, and
 
-  id: resume_144 | level: middle | exp: 5.0 yrs | raw_text: 258 words
-  skills: Clinical Logistics, EMR Implementation, Epic, Medical Coordination, Data Governance, Operations Strategy
-  projects: CareSync
-  background: I am a dedicated healthcare administration professional with five years of experience in medical coordination and operational strategy. Currently, I work as a Senior Clinical Coordinator at a specialized multi-facility enterprise, where I supervise a team of twelve staff members focusing on daily cl
+  id: resume_147 | level: senior | exp: 9.5 yrs | raw_text: 254 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Cypress, Figma, Software Engineering
+  projects: StyleSync
+  background: I am an experienced Frontend Lead with over nine years of experience crafting interactive and user-centric interfaces. During my six-year tenure at a large-scale agency, I led a cross-functional team of twelve developers, designers, and QA testers. My work primarily revolved around building high-tra
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_142 | title: Senior Healthcare Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Healthcare Administration, EMR Integration, Epic, Cerner, SQL, Operations Strategy
-  preferred_skills: Tableau, Medical Billing
-  description: Our organization is seeking a Senior Healthcare Operations Lead to oversee the operational efficiency of our national network of 20 clinics. The team consists of 50 administrative and clinical support members, all focused on providing seamless health
+  id: jd_145 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 217 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Next.js, Figma
+  description: Our team is looking for a passionate Junior Frontend Developer to join our close-knit group of five engineers. We are currently building a user-facing dashboard for a new SaaS product that emphasizes clarity, ease of use, and speed. In this role, you
 
-  id: jd_143 | title: Director of Clinical Informatics | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Clinical Informatics, EMR Systems, Data Governance, HIPAA, HITRUST, API Management
-  preferred_skills: Python, Cloud Infrastructure
-  description: We are seeking an experienced Director of Clinical Informatics to join our team of 30 professionals dedicated to improving patient care through advanced medical data management. In this role, you will be the primary architect for our clinical informa
+  id: jd_146 | title: Associate Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Jest, Git
+  description: Join our growing engineering department of twelve professionals, where you will help build scalable web solutions that serve thousands of users daily. Our team focuses on delivering high-performance, accessible, and intuitive interfaces for our consu
 
-  id: jd_144 | title: Senior Strategic Medical Consultant | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Healthcare Management, EMR Optimization, Medical Coordination, Process Redesign, Regulatory Compliance, Reimbursement Models
-  preferred_skills: Lean Six Sigma, International Compliance
-  description: Our healthcare consulting team is looking for a Senior Strategic Medical Consultant to provide expert guidance to major medical systems regarding their operational and clinical processes. The team consists of 40 consultants and domain experts who adv
+  id: jd_147 | title: Mid-level Frontend Developer | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS
+  preferred_skills: CI/CD, Performance Monitoring
+  description: Our web engineering team of fifteen is seeking a talented Mid-level Frontend Developer to help lead feature development and improve our core application performance. You will be instrumental in maintaining our high-traffic Next.js application, ensuri
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 423 pairs total.
+Overall dataset so far: 432 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   81  →  expected this batch: 3 pairs (from seniority gaps below)
-  weak_match            existing:   80  →  expected this batch: 6 pairs (from seniority gaps below)
-  moderate_match        existing:   81  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   83  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:   84  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   86  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   81  →  expected this batch: 6 pairs (from seniority gaps below)
+  strong_match          existing:   83  →  expected this batch: 3 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_424    resume_142 × jd_142
-  pair_425    resume_142 × jd_143
-  pair_426    resume_142 × jd_144
-  pair_427    resume_143 × jd_142
-  pair_428    resume_143 × jd_143
-  pair_429    resume_143 × jd_144
-  pair_430    resume_144 × jd_142
-  pair_431    resume_144 × jd_143
-  pair_432    resume_144 × jd_144
+  pair_433    resume_145 × jd_145
+  pair_434    resume_145 × jd_146
+  pair_435    resume_145 × jd_147
+  pair_436    resume_146 × jd_145
+  pair_437    resume_146 × jd_146
+  pair_438    resume_146 × jd_147
+  pair_439    resume_147 × jd_145
+  pair_440    resume_147 × jd_146
+  pair_441    resume_147 × jd_147
 
 ════════════════════════════════════
 OUTPUT FORMAT
