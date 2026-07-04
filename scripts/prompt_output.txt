@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_124 | level: junior | exp: 0.5 yrs | raw_text: 258 words
-  skills: React Native, JavaScript, Flutter, Dart, Git
-  projects: FitTrack
-  background: I am an enthusiastic Junior Mobile Developer and recent graduate with a passion for building smooth cross-platform user interfaces. During my university studies, I completed an intensive five-month internship at a fast-growing digital agency within a small product squad of four developers. In this r
+  id: resume_127 | level: senior | exp: 8.5 yrs | raw_text: 276 words
+  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Confluence, Tableau, Java Spring Boot, PostgreSQL, AWS ECS, React Native, Python, FastAPI, Demand Forecasting
+  projects: VelocityGrid
+  background: As a seasoned Senior Product Manager with over eight years of experience in the enterprise software sector, I have cultivated deep expertise in scaling complex B2B platforms. In my most recent role as a Lead Product Manager at a large-scale enterprise firm, I led a cross-functional team of 15 engine
 
-  id: resume_125 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: React Native, TypeScript, Flutter, Kotlin, Android SDK, Git, Fastlane
-  projects: NativeGuard
-  background: I am a dedicated Mid-Level Mobile Application Engineer with four years of professional experience specializing in robust cross-platform architectures and responsive interface design. I spent two and a half years at a mid-sized e-commerce startup working inside a dedicated mobile squad of six enginee
+  id: resume_128 | level: senior | exp: 7.5 yrs | raw_text: 267 words
+  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Figma, Node.js, Redis, Kubernetes, React, Express, Technical Debt Management
+  projects: CodeMetrics
+  background: With over seven years of dedicated experience in technology product management, I have developed a robust skill set for delivering high-impact features within complex digital ecosystems. My career trajectory spans two major roles, beginning at a high-growth agency where I managed product lifecycles 
 
-  id: resume_126 | level: middle | exp: 4.5 yrs | raw_text: 263 words
-  skills: Swift, SwiftUI, UIKit, CoreData, Combine, XCTest, Git
-  projects: RouteOptima
-  background: I am an analytical Mid-Level iOS Developer with four and a half years of professional tenure crafting high-performance native applications and modular software architectures. I spent three years at a large enterprise logistics corporation working within a core native mobility division of nine develo
+  id: resume_129 | level: senior | exp: 9.0 yrs | raw_text: 288 words
+  skills: Agile Methodology, Product Roadmap, Stakeholder Management, Jira, Looker, Docker, Go, GCP, Ruby on Rails, PostgreSQL, Python, AI Integration
+  projects: SmartFlow
+  background: I am a senior product professional with nine years of deep technical experience, predominantly within the high-stakes environment of enterprise software development. Over the past five years, I have functioned as a Product Lead within a mid-sized technology firm, where I steered the development of m
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_124 | title: Senior Lead Native iOS Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Swift, SwiftUI, Combine, CoreData, Fastlane
-  preferred_skills: Objective-C, GraphQL
-  description: We are seeking an expert Senior Lead Native iOS Engineer to spearhead the structural development and performance tuning of our high-volume digital banking mobile application. In this role, you will lead an elite mobile engineering squad composed of e
+  id: jd_127 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, SQL
+  preferred_skills: Figma, TypeScript
+  description: We are seeking an enthusiastic Associate Product Manager to join our growing team of 10 professionals. Our team focuses on building intuitive user-facing features for our primary customer dashboard. This role is perfect for someone early in their car
 
-  id: jd_125 | title: Principal Android Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Kotlin, Jetpack Compose, Android SDK, Coroutines, Espresso
-  preferred_skills: Kotlin Multiplatform
-  description: Our core enterprise logistics platform is looking for an analytical Principal Android Infrastructure Architect to manage the scalability, offline resilience, and peripheral integrations of our distribution mobile ecosystem. Leading an agile engineeri
+  id: jd_128 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 205 words
+  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, Tableau, Java Spring Boot
+  preferred_skills: Cloud Architecture, Python
+  description: We are looking for an experienced Product Manager to drive the development of our core cloud-native SaaS platform. Our team currently consists of 25 people, split across three squads, and we operate in a highly iterative agile framework. In this role
 
-  id: jd_126 | title: Senior Lead Cross-Platform Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: React Native, TypeScript, Redux, Native Modules, App Center
-  preferred_skills: SwiftUI
-  description: We are searching for a visionary Senior Lead Cross-Platform Mobile Engineer to orchestrate the engineering direction, rendering optimization, and multi-platform deployment of our primary digital workplace application suite. Joining an active product 
+  id: jd_129 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Agile Methodology, Product Roadmap, Jira, Stakeholder Management, Looker, Docker
+  preferred_skills: GCP, Data Analysis
+  description: Our team is looking for a proactive Product Manager to own the lifecycle of our high-throughput data processing engine. The team is currently 20 members strong, consisting of backend engineers, data scientists, and UX designers. We are looking for so
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 369 pairs total.
+Overall dataset so far: 378 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   67  →  expected this batch: 3 pairs (from seniority gaps below)
-  weak_match            existing:   67  →  expected this batch: 6 pairs (from seniority gaps below)
-  moderate_match        existing:   69  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   68  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:   69  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   74  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   69  →  expected this batch: 3 pairs (from seniority gaps below)
+  strong_match          existing:   68  →  expected this batch: 6 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_370    resume_124 × jd_124
-  pair_371    resume_124 × jd_125
-  pair_372    resume_124 × jd_126
-  pair_373    resume_125 × jd_124
-  pair_374    resume_125 × jd_125
-  pair_375    resume_125 × jd_126
-  pair_376    resume_126 × jd_124
-  pair_377    resume_126 × jd_125
-  pair_378    resume_126 × jd_126
+  pair_379    resume_127 × jd_127
+  pair_380    resume_127 × jd_128
+  pair_381    resume_127 × jd_129
+  pair_382    resume_128 × jd_127
+  pair_383    resume_128 × jd_128
+  pair_384    resume_128 × jd_129
+  pair_385    resume_129 × jd_127
+  pair_386    resume_129 × jd_128
+  pair_387    resume_129 × jd_129
 
 ════════════════════════════════════
 OUTPUT FORMAT
