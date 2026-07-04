@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_262 | level: middle | exp: 4.0 yrs | raw_text: 268 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, NoSQL, Liquibase
-  projects: CacheOptimizer
-  background: Over the past four years, I have developed a strong foundation in database engineering and backend systems. In my current role as a Database Engineer at a fast-paced technology startup, I work within a team of six developers to maintain high availability for our primary user-facing applications. My 
+  id: resume_265 | level: junior | exp: 0.5 yrs | raw_text: 271 words
+  skills: Recruitment, HRIS, Onboarding, BambooHR, Greenhouse, Scheduling
+  projects: Candidate Feedback Project
+  background: As a recent Human Resources graduate, I have spent the last year completing an intensive HR internship at a fast-growing tech startup. Within a small team of three, I assisted in the recruitment lifecycle, including posting job openings on LinkedIn and screening initial applications using Greenhouse
 
-  id: resume_263 | level: senior | exp: 7.0 yrs | raw_text: 266 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture, Database Sharding, Cloud Infrastructure, Leadership
-  projects: GlobalSync
-  background: With seven years of dedicated experience in data engineering and database administration, I have led multiple initiatives focused on high-performance data architecture. In my current capacity as a Principal Database Engineer at a global enterprise firm, I manage a diverse team of eight engineers, ov
+  id: resume_266 | level: junior | exp: 0.7 yrs | raw_text: 270 words
+  skills: HRIS, Data Entry, Workday, Administrative Support, Candidate Screening
+  projects: Interview Prep Initiative
+  background: Following my graduation last year, I have been working as a Human Resources Assistant at a local recruitment agency for the past eight months. In a team of four, I managed administrative tasks associated with high-volume hiring and talent sourcing for various clients. My core responsibilities includ
 
-  id: resume_264 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Administration, AWS RDS, System Capacity Planning, Mentorship
-  projects: DataGuardian
-  background: Over the past eight years, I have built a career centered on optimizing database performance and architecting resilient data layers for high-traffic applications. As a Senior Database Lead at an enterprise-scale software firm, I oversee the performance of our core data platforms, managing a team of 
+  id: resume_267 | level: senior | exp: 8.0 yrs | raw_text: 269 words
+  skills: Talent Acquisition, HRIS, Strategic Leadership, Workday, SAP SuccessFactors, Greenhouse, Data Analytics, DEI
+  projects: Global Talent Diversity
+  background: With eight years of comprehensive experience in Human Resources and Talent Acquisition, I have successfully scaled recruitment operations within large enterprise environments. Currently serving as a Senior Talent Acquisition Lead in a global technology company, I oversee a team of twelve recruiters 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_262 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 224 words
-  required_skills: PostgreSQL, SQL, Liquibase
-  preferred_skills: MongoDB, Redis
-  description: Our data team of five is looking for a Junior Database Engineer to help maintain our growing database ecosystem. The team focuses on providing stable and performant data storage solutions for our core web application. You will be responsible for day-
+  id: jd_265 | title: HR Specialist | level: middle | min_exp: 3 yrs | raw_text: 217 words
+  required_skills: Recruitment, HRIS, Onboarding, BambooHR, Data Analysis
+  preferred_skills: LinkedIn Recruiter, Project Management
+  description: Our People Operations team of twelve is currently looking for an experienced HR Specialist to bridge the gap between our recruitment and onboarding efforts. This team supports a fast-moving organization of 500 employees, ensuring that our talent pipe
 
-  id: jd_263 | title: Junior Database Support Engineer | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: PostgreSQL, Database Administration, Redis
-  preferred_skills: MongoDB, SQL
-  description: We are expanding our internal data team of four and are seeking a Junior Database Support Engineer to help us streamline our data management processes. The team supports the entire product development lifecycle by ensuring our database systems are re
+  id: jd_266 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Talent Acquisition, HRIS, Strategic Leadership, Workday, Greenhouse, DEI
+  preferred_skills: Lever, Data Analytics
+  description: Our Talent team of twenty is seeking a Senior Talent Acquisition Manager to lead our strategic hiring efforts across all engineering and product departments. In this high-impact role, you will be responsible for scaling our recruitment machine, manag
 
-  id: jd_264 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 227 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture
-  preferred_skills: Database Sharding, Cloud Infrastructure
-  description: Our infrastructure team of twelve is looking for a Senior Database Architect to lead our data scaling initiatives. We are currently facing the challenge of scaling our core transactional databases to support millions of concurrent users. You will be 
+  id: jd_267 | title: Principal HR Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  required_skills: HRIS, Recruitment, Data Analytics, SAP SuccessFactors, Workday, Greenhouse
+  preferred_skills: Process Automation, Compliance Auditing
+  description: The HR Operations department is currently looking for a Principal HR Operations Lead to overhaul our enterprise-wide talent infrastructure. Our team of fifteen professionals is dedicated to building scalable, automated, and compliant HR processes tha
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 783 pairs total.
+Overall dataset so far: 792 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  157  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  157  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  154  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  157  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  158  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  157  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  158  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  158  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  159  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  160  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_784    resume_262 × jd_262
-  pair_785    resume_262 × jd_263
-  pair_786    resume_262 × jd_264
-  pair_787    resume_263 × jd_262
-  pair_788    resume_263 × jd_263
-  pair_789    resume_263 × jd_264
-  pair_790    resume_264 × jd_262
-  pair_791    resume_264 × jd_263
-  pair_792    resume_264 × jd_264
+  pair_793    resume_265 × jd_265
+  pair_794    resume_265 × jd_266
+  pair_795    resume_265 × jd_267
+  pair_796    resume_266 × jd_265
+  pair_797    resume_266 × jd_266
+  pair_798    resume_266 × jd_267
+  pair_799    resume_267 × jd_265
+  pair_800    resume_267 × jd_266
+  pair_801    resume_267 × jd_267
 
 ════════════════════════════════════
 OUTPUT FORMAT
