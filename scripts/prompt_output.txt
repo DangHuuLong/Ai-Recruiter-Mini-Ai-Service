@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_214 | level: middle | exp: 4.0 yrs | raw_text: 281 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Zustand, JavaScript
-  projects: TaskFlow, WeatherWidget
-  background: I am a dedicated Frontend Developer with four years of hands-on experience in building dynamic web applications. During my two-year tenure as a Frontend Developer at a rapidly scaling fintech startup with a product team of ten, I was primarily responsible for architecting and maintaining customer-fa
+  id: resume_217 | level: junior | exp: 0.3 yrs | raw_text: 276 words
+  skills: Figma, Wireframing, Usability Testing, Google Workspace, Graphic Design
+  projects: FoodieFind
+  background: I am an aspiring entry-level product designer who recently graduated and is looking to secure a first full-time role. My career history consists of a brief four-month summer internship at a small boutique creative agency, where I operated within a compact team of three people including myself, a sen
 
-  id: resume_215 | level: senior | exp: 8.0 yrs | raw_text: 280 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends, Performance Engineering
-  projects: FrameSync, DeployPulse
-  background: I am a senior frontend engineer with eight years of extensive experience in leading complex frontend architectures and scaling web platforms. During my time as a Lead Frontend Engineer at a global ecommerce enterprise, I managed a technical squad of twelve developers, where we were responsible for t
+  id: resume_218 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: Figma, Maze, Miro, User Research, Interaction Design
+  projects: HydrateMe
+  background: As a junior UI/UX enthusiast looking for a first permanent professional engagement, I possess foundational exposure to digital product layouts. My professional background includes a six-month contract as an assistant user researcher at a local e-commerce startup, working closely within a cross-funct
 
-  id: resume_216 | level: senior | exp: 9.0 yrs | raw_text: 273 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Apollo Client, Performance Engineering
-  projects: GraphFlow, AuthBridge
-  background: I am a principal frontend architect with nine years of experience specializing in high-performance web interfaces and complex client-side data orchestration. At a prominent global technology firm, I directed a specialized frontend engineering division of fifteen, focusing on securing high-throughput
+  id: resume_219 | level: senior | exp: 8.0 yrs | raw_text: 314 words
+  skills: Figma, ProtoPie, Framer, Storybook, UserTesting, Lookback, Hotjar, Tokens Studio, Design Systems, User Research, Prototyping, WCAG 2.1 AA
+  projects: NexusSystem
+  background: I am an expert Senior Product Designer and design lead with eight years of comprehensive industry experience transforming complex digital products. In my previous role as Principal Designer at a massive global enterprise tech company, I led a multidisciplinary user experience team of twelve professi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_214 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 208 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  preferred_skills: Jest, Cypress
-  description: Our frontend engineering team of eight is seeking a motivated Junior Frontend Developer to help us build and maintain high-quality user interfaces for our rapidly growing web platform. We are dedicated to providing a seamless experience for our users
+  id: jd_217 | title: Senior Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Figma, UserTesting, Lookback, ProtoPie, Tokens Studio, Design Systems, User Research, Prototyping, WCAG 2.1 AA
+  preferred_skills: Framer, Storybook
+  description: Our core design organization is seeking a Senior Lead Product Designer to guide a high-performing product experience squad of ten professionals, including UI designers, researchers, and front-end specialists. The team is dedicated to modernizing our 
 
-  id: jd_215 | title: Associate Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Web Accessibility
-  description: Our web engineering group of six is seeking a driven Associate Frontend Engineer to bolster our frontend capabilities and support core defensive activities in maintaining our codebase. The group focuses on maintaining a transparent, highly reliable, 
+  id: jd_218 | title: Senior UX Systems Designer | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: Figma, Tokens Studio, Hotjar, UserTesting, Framer, Design Systems, User Research, Prototyping
+  preferred_skills: React, CSS
+  description: We are looking for an experienced Senior UX Systems Designer to join our core infrastructure experience team. Our department consists of eight specialist designers who support twenty separate cross-functional engineering pods by building reusable com
 
-  id: jd_216 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, Performance Engineering
-  preferred_skills: Micro-Frontends, WebAssembly
-  description: Our central frontend engineering division of thirty-five is seeking a visionary Senior Frontend Engineer to guide the evolution of our high-traffic frontend architectures. This division is tasked with building resilient, highly performant web systems
+  id: jd_219 | title: Senior Interaction & Product Designer | level: senior | min_exp: 6 yrs | raw_text: 187 words
+  required_skills: Figma, ProtoPie, Lookback, UserTesting, Design Systems, User Research, Prototyping, Interaction Design
+  preferred_skills: Storybook
+  description: Our digital experience group is searching for an exceptional Senior Interaction and Product Designer to lead the UX strategy for our core financial applications. Operating within a dedicated cross-functional team of twelve, which includes senior prod
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 639 pairs total.
+Overall dataset so far: 648 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  125  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  130  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  126  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  129  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  129  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  125  →  expected this batch: 6 pairs (from seniority gaps below)
+  weak_match            existing:  133  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  128  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  131  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  131  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_640    resume_214 × jd_214
-  pair_641    resume_214 × jd_215
-  pair_642    resume_214 × jd_216
-  pair_643    resume_215 × jd_214
-  pair_644    resume_215 × jd_215
-  pair_645    resume_215 × jd_216
-  pair_646    resume_216 × jd_214
-  pair_647    resume_216 × jd_215
-  pair_648    resume_216 × jd_216
+  pair_649    resume_217 × jd_217
+  pair_650    resume_217 × jd_218
+  pair_651    resume_217 × jd_219
+  pair_652    resume_218 × jd_217
+  pair_653    resume_218 × jd_218
+  pair_654    resume_218 × jd_219
+  pair_655    resume_219 × jd_217
+  pair_656    resume_219 × jd_218
+  pair_657    resume_219 × jd_219
 
 ════════════════════════════════════
 OUTPUT FORMAT
