@@ -282,17 +282,24 @@ def choose_seniority_mix(
     Plain unweighted L1 distance treats "1 pair short on excellent_match (already
     well-stocked)" the same as "1 pair short on poor_match (the neediest label)" —
     ties between a balanced-but-wrong mix and a mix that actually fills the neediest
-    label get broken arbitrarily, so poor_match can silently lose the tie. Instead,
-    weight each label's error by how deficient it currently is (same inverse-count
-    weighting as compute_label_targets) — a "water-filling" priority where closing
-    the gap on the lowest label always outweighs precision on already-full ones.
+    label get broken arbitrarily, so poor_match can silently lose the tie. A single
+    weighted sum doesn't fix this properly either: any fixed weight can, for the
+    right numbers, let a bunch of small savings on well-stocked labels outvote an
+    exact match on the neediest one. Instead, rank labels by current count
+    (ascending — same order compute_label_targets fills them in) and compare
+    candidates LEXICOGRAPHICALLY on that ranking: a mix is only preferred if it
+    matches the single neediest label at least as closely as every alternative,
+    and only THEN does the next-neediest label get to break ties. This is the same
+    priority order as water-filling, so it never trades precision on a lower-count
+    label for a higher-count one — if every mix that hits the neediest label's
+    target exactly also happens to spill into an already-full label, that spill is
+    a genuine structural side effect of this batch's 3×3 grid, not a scoring bug.
     """
-    dist_now  = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
-    max_count = max((dist_now.get(l, 0) for l in ALLOWED_LABELS), default=0)
-    weight    = {l: max_count - dist_now.get(l, 0) + 1 for l in ALLOWED_LABELS}
+    dist_now = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
+    priority = sorted(ALLOWED_LABELS, key=lambda l: dist_now.get(l, 0))
 
     best_mix = None
-    best_score = None
+    best_key = None
     for r_counts in _level_partitions(n_resumes):
         for j_counts in _level_partitions(n_jds):
             dist: Counter = Counter()
@@ -304,12 +311,9 @@ def choose_seniority_mix(
                         continue
                     label = natural_label_for_gap(j_idx - r_idx)
                     dist[label] += r_count * j_count
-            score = sum(
-                weight[l] * abs(dist.get(l, 0) - label_targets.get(l, 0))
-                for l in ALLOWED_LABELS
-            )
-            if best_score is None or score < best_score:
-                best_score = score
+            key = tuple(abs(dist.get(l, 0) - label_targets.get(l, 0)) for l in priority)
+            if best_key is None or key < best_key:
+                best_key = key
                 best_mix = (r_counts, j_counts)
 
     r_counts, j_counts = best_mix
