@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_76 | level: junior | exp: 0.5 yrs | raw_text: 283 words
-  skills: Python, NLTK, Flask, Git, Streamlit, Regex
-  projects: TextClean
-  background: I am a passionate Junior NLP Practitioner and recent graduate with foundational skills in basic text analysis, tokenization, and web engineering. I recently wrapped up an intensive six-month internship at a specialized software agency, working within an AI application development team of four engine
+  id: resume_298 | level: middle | exp: 4.0 yrs | raw_text: 269 words
+  skills: Workday, Greenhouse Ats, Bamboohr, Lever, Excel, Talent Acquisition, Onboarding
+  projects: Project Seamless
+  background: I am a dedicated HR professional with four years of experience specializing in talent acquisition and full-cycle recruitment processes. In my most recent role as an HR Generalist at a mid-sized tech startup, I managed all recruitment activities for our growing engineering team, which expanded from t
 
-  id: resume_77 | level: junior | exp: 0.7 yrs | raw_text: 254 words
-  skills: Python, FastAPI, SQL Server, Docker, Git, Scikit-Learn
-  projects: TagGen
-  background: I am an enthusiastic Associate AI Developer and highly motivated fresh graduate with deep foundational interests in backend engineering, linguistic processing, and script deployment. I recently completed a productive eight-month internship at a fast-growing tech startup, working within an integrated
+  id: resume_300 | level: senior | exp: 7.0 yrs | raw_text: 289 words
+  skills: Workday, Sap Successfactors, Greenhouse Ats, Sql, Talent Management, Predictive Analytics, Onboarding
+  projects: Candidate Insights
+  background: With over seven years of professional experience in talent management, I am a senior HR leader passionate about building data-driven recruitment ecosystems and high-performing onboarding workflows. Currently, as the Lead People Operations Manager at a major technology corporation, I guide a team of 
 
-  id: resume_78 | level: junior | exp: 0.6 yrs | raw_text: 261 words
-  skills: Python, Pandas, PostgreSQL, Git, ETL, Regex
-  projects: FeedParse
-  background: I am a driven Junior Data Engineer and recent graduate possessing solid academic and practical foundations in structured database manipulation, basic automated scripting, and textual extraction methods. Recently, I spent seven months as an intern at an enterprise software firm, operating inside a da
+  id: resume_299 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Sap Successfactors, Workday, Greenhouse Ats, Tableau, Talent Acquisition, Leadership, Workforce Planning
+  projects: Project Scalability
+  background: As a senior human resources strategist with eight years of experience, I have led large-scale talent acquisition and organizational transformation initiatives within multinational enterprise environments. In my current role as a Talent Acquisition Manager at a global logistics firm, I lead a team of
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_76 | title: Senior Staff NLP Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: Transformers, LangChain, Pinecone, PyTorch
-  preferred_skills: CUDA, Triton, Quantization
-  description: We are looking for an experienced Senior Staff NLP Infrastructure Engineer to lead the architectural design and scaling of our enterprise generative intelligence platform. Operating within an elite core artificial intelligence group of ten principal 
+  id: jd_298 | title: Junior Recruiting Coordinator | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Greenhouse Ats, Excel, Recruitment Coordination
+  preferred_skills: Linkedin Recruiter, Data Reporting
+  description: We are looking for an energetic Junior Recruiting Coordinator to join our fast-growing talent acquisition team of five professionals. Our department focuses on sourcing, screening, and onboarding top talent to support our rapid expansion across vario
 
-  id: jd_77 | title: Lead Generative AI Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 223 words
-  required_skills: RAG, LlamaIndex, Milvus, Hugging Face
-  preferred_skills: Kubernetes, AWS, Agentic Frameworks
-  description: Our modern cloud product organization is seeking a Lead Generative AI Solutions Architect to manage, construct, and scale our high-throughput conversational search and retrieval networks. Working within a specialized engineering squad composed of eig
+  id: jd_299 | title: Associate HR Associate | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Bamboohr, Excel, Hr Administration
+  preferred_skills: Hr Compliance, Record Management
+  description: Our Human Resources team is looking for a detail-oriented Associate HR Associate to assist in the daily management of our workforce and onboarding operations. Our team of eight HR professionals handles everything from employee record maintenance to b
 
-  id: jd_78 | title: Principal LLM Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: OpenAI API, LangChain, ChromaDB, Semantic Chunking
-  preferred_skills: Python, Ray, SQL
-  description: We are seeking a highly talented Principal LLM Systems Engineer to pioneer the engineering, deployment, and optimization of our global cloud-based conversational reasoning and agentic text automation backends. Collaborating across a multi-million use
+  id: jd_300 | title: Senior Talent Systems Manager | level: senior | min_exp: 6 yrs | raw_text: 220 words
+  required_skills: Workday, Sap Successfactors, Talent Management, Hr Analytics
+  preferred_skills: Predictive Analytics, System Integration
+  description: We are seeking a highly experienced Senior Talent Systems Manager to lead our internal HR technology and recruitment operations team. You will lead a department of fifteen, responsible for designing, implementing, and optimizing our global HRIS and t
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 225 pairs total.
+Overall dataset so far: 891 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   34  →  expected this batch: 9 pairs (from seniority gaps below)
-  weak_match            existing:   49  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   43  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   45  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:   54  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:  179  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  178  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  176  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  178  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  180  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_226    resume_76 × jd_76
-  pair_227    resume_76 × jd_77
-  pair_228    resume_76 × jd_78
-  pair_229    resume_77 × jd_76
-  pair_230    resume_77 × jd_77
-  pair_231    resume_77 × jd_78
-  pair_232    resume_78 × jd_76
-  pair_233    resume_78 × jd_77
-  pair_234    resume_78 × jd_78
+  pair_892    resume_298 × jd_298
+  pair_893    resume_298 × jd_299
+  pair_894    resume_298 × jd_300
+  pair_895    resume_300 × jd_298
+  pair_896    resume_300 × jd_299
+  pair_897    resume_300 × jd_300
+  pair_898    resume_299 × jd_298
+  pair_899    resume_299 × jd_299
+  pair_900    resume_299 × jd_300
 
 ════════════════════════════════════
 OUTPUT FORMAT

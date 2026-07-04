@@ -266,7 +266,6 @@ def _level_partitions(n: int) -> list[tuple[int, int, int]]:
 
 
 def choose_seniority_mix(
-    label_targets: dict[str, int],
     n_resumes: int = N_RESUMES,
     n_jds: int = N_JDS,
 ) -> tuple[list[str], list[str]]:
@@ -274,25 +273,32 @@ def choose_seniority_mix(
 
     A fixed 1-junior/1-middle/1-senior split on both sides always yields the same
     natural label mix (1 poor_match cell, 2 weak_match cells, 2 strong, 3 excellent,
-    1 moderate) no matter how skewed the dataset already is — deficits then get
-    "fixed" by telling the labeler to bend its scoring, which it can't do honestly.
-    Instead, search over seniority-tier counts for BOTH sides and pick whichever mix
-    makes the resulting grid's natural label counts closest to label_targets.
+    1 moderate) no matter how skewed the dataset already is.
 
-    Plain unweighted L1 distance treats "1 pair short on excellent_match (already
-    well-stocked)" the same as "1 pair short on poor_match (the neediest label)" —
-    ties between a balanced-but-wrong mix and a mix that actually fills the neediest
-    label get broken arbitrarily, so poor_match can silently lose the tie. Instead,
-    weight each label's error by how deficient it currently is (same inverse-count
-    weighting as compute_label_targets) — a "water-filling" priority where closing
-    the gap on the lowest label always outweighs precision on already-full ones.
+    Earlier versions of this picked a batch composition by first computing an
+    idealized water-filling target (e.g. "this batch should be moderate:3,
+    strong:3") and then searching for the grid composition that came closest to
+    THAT. The problem: the target doesn't know whether the 3×3 grid can actually
+    realize it. When it can't — e.g. hitting moderate:3 and strong:3 exactly turns
+    out to force a 3rd JD tier that happens to collide with the resumes' tier,
+    always adding 3 excellent_match as a side effect — the search has no way to
+    know a different, still-reasonable composition would've avoided that, because
+    it was only ever comparing against the (possibly unrealizable) target.
+
+    So skip the abstract target entirely. For every candidate composition, compute
+    what the WHOLE dataset's label counts would look like after adding this batch,
+    and pick whichever composition leaves that resulting distribution most level —
+    i.e. the smallest resulting maximum, then the smallest 2nd-largest, and so on
+    (comparing the resulting counts sorted descending, lexicographically). This is
+    plain greedy load-balancing computed directly on real outcomes, so it can never
+    be tricked into padding an already-oversupplied label just because an
+    unreachable target said not to touch the labels that needed it.
     """
-    dist_now  = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
-    max_count = max((dist_now.get(l, 0) for l in ALLOWED_LABELS), default=0)
-    weight    = {l: max_count - dist_now.get(l, 0) + 1 for l in ALLOWED_LABELS}
+    dist_now   = Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS)
+    counts_now = {l: dist_now.get(l, 0) for l in ALLOWED_LABELS}
 
     best_mix = None
-    best_score = None
+    best_key = None
     for r_counts in _level_partitions(n_resumes):
         for j_counts in _level_partitions(n_jds):
             dist: Counter = Counter()
@@ -304,12 +310,10 @@ def choose_seniority_mix(
                         continue
                     label = natural_label_for_gap(j_idx - r_idx)
                     dist[label] += r_count * j_count
-            score = sum(
-                weight[l] * abs(dist.get(l, 0) - label_targets.get(l, 0))
-                for l in ALLOWED_LABELS
-            )
-            if best_score is None or score < best_score:
-                best_score = score
+            resulting = {l: counts_now[l] + dist.get(l, 0) for l in ALLOWED_LABELS}
+            key = tuple(sorted(resulting.values(), reverse=True))
+            if best_key is None or key < best_key:
+                best_key = key
                 best_mix = (r_counts, j_counts)
 
     r_counts, j_counts = best_mix
@@ -861,8 +865,8 @@ def action_generate_prompt() -> None:
     domain = random.choice(DOMAINS)
     resume_start, jd_start, pair_start = get_next_ids()
 
-    label_targets = compute_label_targets(N_PAIRS)
-    resume_levels, jd_levels = choose_seniority_mix(label_targets)
+    label_targets = compute_label_targets(N_PAIRS)  # informational only, for the printout below
+    resume_levels, jd_levels = choose_seniority_mix()
 
     prompt = build_cvjd_prompt(domain, resume_start, jd_start, resume_levels, jd_levels)
 
