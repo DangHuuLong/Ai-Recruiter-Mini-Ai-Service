@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_301 | level: junior | exp: 0.5 yrs | raw_text: 275 words
-  skills: Python, Pandas, Scikit-Learn, Jupyter Notebooks, SQL, Beautiful Soup
-  projects: Credit Risk Estimator, Automated Product Scraper
-  background: Recent university graduate with a passionate interest in data analytics and machine learning applications. Completed a Data Science Intern role at a mid-sized healthcare tech startup for a duration of six months, working closely within an agile team of four data professionals. Primary responsibiliti
+  id: resume_304 | level: middle | exp: 4.0 yrs | raw_text: 251 words
+  skills: Python, Pandas, Scikit-Learn, SQL, Jupyter Notebooks
+  projects: Sales Forecasting Toolbox
+  background: Experienced Data Scientist with four years of dedicated professional engagement building corporate intelligence systems, developing reliable predictive models, and refining data pipelines. Worked for three full years at an enterprise financial services corporation as an Associate Data Scientist with
 
-  id: resume_302 | level: middle | exp: 4.0 yrs | raw_text: 263 words
-  skills: Python, Pandas, Scikit-Learn, PyTorch, FastAPI, Docker, AWS ECS, MLflow
-  projects: Neural Text Summarizer, Tabular Anomaly Detector
-  background: Data Scientist with over four years of dedicated professional experience designing and deploying predictive models. Previously spent three years working at an enterprise e-commerce corporation within a specialized personalization team of eight engineers. Maintained core responsibilities centered aro
+  id: resume_305 | level: senior | exp: 7.0 yrs | raw_text: 253 words
+  skills: Python, PyTorch, Docker, Kubernetes, AWS, MLflow, FastAPI, OpenCV, TensorRT, Scikit-Learn
+  projects: Distributed Neural Streamer
+  background: Distinguished Senior Machine Learning Engineer with over seven years of professional tenure developing highly optimized artificial intelligence architectures, scalable software layers, and comprehensive pipeline infrastructures within major technical industries. Previously spent four years serving a
 
-  id: resume_303 | level: middle | exp: 4.5 yrs | raw_text: 254 words
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Docker, GitLab CI/CD, AWS EC2, OpenCV
-  projects: Vision Defect Finder, Market Volatility Tracker
-  background: Machine Learning Engineer with four and a half years of professional industry experience engineering scalable predictive solutions and refining data platforms. Worked for three and a half years at a prominent fintech enterprise within a risk analytics unit comprising six data professionals. Accounta
+  id: resume_306 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: Python, PyTorch, Docker, GitLab CI/CD, AWS, MLflow, FastAPI, OpenCV, TensorRT, Scikit-Learn
+  projects: Visual Audit Suite
+  background: Accomplished Technical Lead and Principal Machine Learning Engineer with eight years of professional industry experience implementing large-scale analytical architectures, high-throughput microservices, and reliable cloud execution systems for enterprise applications. Worked for five years at a majo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_301 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  id: jd_304 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 188 words
   required_skills: Python, Pandas, Scikit-Learn, SQL, Jupyter Notebooks
   preferred_skills: Matplotlib, Git
-  description: We are seeking a junior Data Scientist to join our growing analytics team. Our data team consists of five data professionals focused on optimizing e-commerce transaction data and customer journey paths. In this role, you will work closely with senior
+  description: We are looking for a Junior Data Scientist to join our collaborative analytics branch. Our data division comprises five enthusiastic analysts working to optimize digital transactions and understand customer journey behaviors. In this role, you will h
 
-  id: jd_302 | title: Senior Machine Learning Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Python, PyTorch, FastAPI, Docker, Kubernetes, AWS, MLflow
-  preferred_skills: Transformers, Terraform
-  description: Our advanced Core AI Platform team is looking for a Senior Machine Learning Platform Engineer to lead the design and implementation of our next-generation machine learning training and inference infrastructure. The platform team consists of ten dedic
+  id: jd_305 | title: Associate Machine Learning Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
+  required_skills: Python, Pandas, Scikit-Learn, SQL, Docker
+  preferred_skills: Git, Jupyter Notebooks
+  description: Our core operational intelligence group is seeking an Associate Machine Learning Engineer to contribute to our predictive services platform. The engineering team currently includes six technical engineers building specialized recommendation systems t
 
-  id: jd_303 | title: Senior Deep Learning Solutions Engineer | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Python, PyTorch, OpenCV, TensorRT, Docker, GitLab CI/CD, AWS
-  preferred_skills: Triton Inference Server, C++
-  description: We are searching for a Senior Deep Learning Solutions Engineer to join our specialized computer vision division. Our team of eight computer vision experts develops proprietary edge-device recognition technologies and high-throughput real-time video a
+  id: jd_306 | title: Senior MLOps and Deep Learning Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Python, PyTorch, Docker, Kubernetes, GitLab CI/CD, AWS, MLflow, FastAPI, TensorRT
+  preferred_skills: Terraform, Kafka
+  description: Our advanced Infrastructure Foundations department is looking for an expert Senior MLOps and Deep Learning Infrastructure Architect to lead the expansion of our enterprise deep learning execution environment. The infrastructure squad comprises nine s
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 900 pairs total.
+Overall dataset so far: 909 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  179  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  179  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  180  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  180  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  182  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  181  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  183  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  180  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  182  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  183  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_901    resume_301 × jd_301
-  pair_902    resume_301 × jd_302
-  pair_903    resume_301 × jd_303
-  pair_904    resume_302 × jd_301
-  pair_905    resume_302 × jd_302
-  pair_906    resume_302 × jd_303
-  pair_907    resume_303 × jd_301
-  pair_908    resume_303 × jd_302
-  pair_909    resume_303 × jd_303
+  pair_910    resume_304 × jd_304
+  pair_911    resume_304 × jd_305
+  pair_912    resume_304 × jd_306
+  pair_913    resume_305 × jd_304
+  pair_914    resume_305 × jd_305
+  pair_915    resume_305 × jd_306
+  pair_916    resume_306 × jd_304
+  pair_917    resume_306 × jd_305
+  pair_918    resume_306 × jd_306
 
 ════════════════════════════════════
 OUTPUT FORMAT
