@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_229 | level: junior | exp: 0.5 yrs | raw_text: 250 words
-  skills: Requirements Gathering, Jira, Miro, BPMN, Process Mapping, Business Analysis
-  projects: DocuMap
-  background: I am an enthusiastic aspiring junior business analyst and recent graduate with less than a year of professional experience, focusing primarily on foundational requirements gathering, structural process mapping, and collaborative stakeholder communication. In my previous role as an Associate Business
+  id: resume_232 | level: middle | exp: 3.0 yrs | raw_text: 271 words
+  skills: LangChain, Transformers, Embeddings, Qdrant, FastAPI, NLP, Python
+  projects: QuerySense
+  background: I am a dedicated middle-level AI engineer with over three years of specialized professional experience focusing on modern natural language processing, vector-based information retrieval, and fine-tuning lightweight large language models. In my previous role as an NLP Engineer at a high-growth series
 
-  id: resume_230 | level: junior | exp: 0.67 yrs | raw_text: 258 words
-  skills: Project Management, Confluence, Trello, Requirements Documentation, Stakeholder Engagement, SharePoint
-  projects: TaskSync
-  background: I am a highly motivated junior project coordinator and business analyst with eight months of specialized professional experience focusing on corporate project artifact management, functional requirements logging, and collaborative multi-departmental stakeholder engagement. During my complete tenure 
+  id: resume_233 | level: middle | exp: 4.0 yrs | raw_text: 259 words
+  skills: LangChain, Embeddings, LlamaIndex, Pinecone, Docker, AWS, NLP
+  projects: DocuVector
+  background: I am an experienced machine learning and NLP software developer with four years of continuous professional tenure focused on deploying large language model pipelines, orchestrating vector retrieval strategies, and building semantic search microservices. During my complete four-year tenure as an AI E
 
-  id: resume_231 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: BPMN, Signavio, Jira, Confluence, Business Analysis, Requirements Analysis, Stakeholder Management, Bizagi, SQL Server, Lucidchart
-  projects: MatrixFlow
-  background: I am a senior business analyst and lead enterprise project manager with over eight years of extensive technical experience orchestrating complex systems analysis, formal BPMN process redesigns, and cross-functional stakeholder management. In my current role as Lead Enterprise Systems Analyst at a la
+  id: resume_234 | level: senior | exp: 8.0 yrs | raw_text: 250 words
+  skills: Transformers, LangChain, Milvus, PyTorch, RAG, NLP, LlamaIndex, pgvector, SpaCy
+  projects: GuardRAG
+  background: I am a senior AI systems architect and lead NLP engineer with over eight years of comprehensive experience designing enterprise-grade intelligence platforms, distributed vector data pipelines, and production retrieval architectures. In my current role as Principal Machine Learning Engineer at a prom
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_229 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Business Analysis, Requirements Gathering, BPMN, Jira, Confluence, Lucidchart
-  preferred_skills: Signavio, SQL Server
-  description: Our operational strategy group is actively seeking a mid-level Business Analyst to drive the modernization of our core supply chain tracking systems and internal software architectures. Operating within an established project delivery team of eight b
+  id: jd_232 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Python, LangChain, Qdrant, Embeddings
+  preferred_skills: Transformers, FastAPI, Docker
+  description: Our core product innovation group is actively seeking a junior AI Engineer to support the construction and maintenance of our modern semantic search applications and internal text processing infrastructures. Operating within an established project de
 
-  id: jd_230 | title: Senior Business Process Architect | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Signavio, Bizagi, BPMN, Requirements Analysis, Stakeholder Management, Jira, Confluence
-  preferred_skills: Enterprise Architect, Tableau
-  description: Our digital transformation group is searching for a Senior Business Process Architect to spearhead the structural overhaul of our enterprise logistics systems and workflow automation platforms. You will sit at the center of an enterprise delivery gro
+  id: jd_233 | title: Associate NLP Developer | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Python, LangChain, Pinecone, Embeddings
+  preferred_skills: LlamaIndex, AWS
+  description: Our digital conversational experience team is looking for an Associate NLP Developer to assist in the building and refining of our automated knowledge extraction tools and semantic search microservices. You will sit at the center of an agile delivery
 
-  id: jd_231 | title: Lead Systems and Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Signavio, Enterprise Architect, SQL Server, Requirements Analysis, BPMN, Stakeholder Management, Jira, Confluence
-  preferred_skills: Bizagi
-  description: We are seeking a Lead Systems and Business Analyst to direct the integration of our next-generation core banking infrastructure and enterprise software architectures. In this position, you will lead an advanced technical discovery group of ten busine
+  id: jd_234 | title: Senior Lead AI Architect | level: senior | min_exp: 6 yrs | raw_text: 183 words
+  required_skills: Transformers, LangChain, Milvus, PyTorch, RAG
+  preferred_skills: LlamaIndex, pgvector
+  description: We are seeking a Senior Lead AI Architect to direct the optimization of our next-generation retrieval infrastructures and enterprise Retrieval-Augmented Generation architectures. In this high-impact position, you will lead an advanced machine learnin
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 684 pairs total.
+Overall dataset so far: 693 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  135  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  136  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  138  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  137  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  138  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  139  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  138  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  138  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  138  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  140  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_685    resume_229 × jd_229
-  pair_686    resume_229 × jd_230
-  pair_687    resume_229 × jd_231
-  pair_688    resume_230 × jd_229
-  pair_689    resume_230 × jd_230
-  pair_690    resume_230 × jd_231
-  pair_691    resume_231 × jd_229
-  pair_692    resume_231 × jd_230
-  pair_693    resume_231 × jd_231
+  pair_694    resume_232 × jd_232
+  pair_695    resume_232 × jd_233
+  pair_696    resume_232 × jd_234
+  pair_697    resume_233 × jd_232
+  pair_698    resume_233 × jd_233
+  pair_699    resume_233 × jd_234
+  pair_700    resume_234 × jd_232
+  pair_701    resume_234 × jd_233
+  pair_702    resume_234 × jd_234
 
 ════════════════════════════════════
 OUTPUT FORMAT
