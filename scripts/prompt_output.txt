@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_202 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: SAP S/4HANA, Inventory Management, Demand Forecasting, Oracle NetSuite, Procurement, Data Analysis
-  projects: FlowOptimize, VendorSync
-  background: I am a Supply Chain Coordinator with four years of professional experience in end-to-end logistics and inventory optimization. During my time at a global retail enterprise, I worked in a planning team of ten where I was responsible for maintaining inventory accuracy across four major distribution ce
+  id: resume_205 | level: junior | exp: 0.5 yrs | raw_text: 262 words
+  skills: Python, Flask, React, PostgreSQL, Git, Docker
+  projects: TaskMaster, DataParser
+  background: I am a junior full-stack developer who recently finished my degree and is highly passionate about building web applications. During a six-month internship at a small software agency, I worked within a team of four to maintain various client-facing websites. My primary responsibilities involved writi
 
-  id: resume_203 | level: middle | exp: 5.0 yrs | raw_text: 278 words
-  skills: Odoo, Procurement, Inventory Control, Tableau, SQL, Freight Management
-  projects: StockGuardian, ProcureView
-  background: I am a Procurement and Inventory Specialist with five years of experience within manufacturing environments. Working at a fast-growing hardware startup, I joined a team of seven, where I was accountable for all direct procurement and managing raw material stock levels. I utilized Odoo ERP to process
+  id: resume_206 | level: junior | exp: 1.0 yrs | raw_text: 263 words
+  skills: Python, Django, React, PostgreSQL, API Development
+  projects: FlowAPI, DocHelper
+  background: I am a junior software developer focused on modern full-stack development and web architecture. In my recent role at a growing startup, I was part of a dynamic team of six responsible for supporting core transactional services. My daily responsibilities included developing new backend features using
 
-  id: resume_204 | level: senior | exp: 8.0 yrs | raw_text: 259 words
-  skills: SAP S/4HANA, Supply Chain Strategy, Logistics Architecture, Python, Power BI, Procurement
-  projects: TwinStream, GlobalTradeFlow
-  background: I am a Senior Supply Chain Architect with eight years of deep technical expertise in designing enterprise-scale logistics solutions and digital transformation. At a global manufacturing enterprise, I led an operations department of fifteen, overseeing the implementation of comprehensive ERP solution
+  id: resume_207 | level: senior | exp: 8.0 yrs | raw_text: 264 words
+  skills: Python, FastAPI, React, PostgreSQL, AWS, Distributed Systems, Redis
+  projects: ScaleEngine, AutoScaleDB
+  background: I am a senior full-stack architect with eight years of experience in designing, building, and scaling high-performance web applications. At a top-tier e-commerce enterprise, I led an engineering department of twenty, overseeing the architectural transition of our monolithic platform into microservic
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_202 | title: Junior Supply Chain Coordinator | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Odoo, Inventory Management, Procurement, Excel
-  preferred_skills: Logistics, Data Reporting
-  description: Our operations and logistics team of six is looking for a passionate Junior Supply Chain Coordinator to help manage our daily inventory and procurement activities. The team is dedicated to providing efficient, transparent, and highly reliable supply 
+  id: jd_205 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs | raw_text: 197 words
+  required_skills: Python, React, PostgreSQL, API Development
+  preferred_skills: Docker, Kubernetes
+  description: Our development team of twelve is looking for a skilled full-stack engineer to help us build and maintain high-performance web applications for our growing product. We are currently scaling our services to handle thousands of requests per second and 
 
-  id: jd_203 | title: Associate Logistics Planner | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: SAP, Inventory Management, Procurement, Logistics
-  preferred_skills: ERP, Communication
-  description: Our supply chain planning team of eight is currently seeking an enthusiastic Associate Logistics Planner to support our core inventory systems and distribution automation frameworks. The group focuses on creating highly reliable logistics solutions a
+  id: jd_206 | title: Senior Full-Stack Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Python, React, PostgreSQL, Distributed Systems, AWS
+  preferred_skills: Redis, Architecture
+  description: Our engineering department of thirty is seeking a visionary senior full-stack systems architect to guide the evolution of our high-traffic platform. We handle massive volumes of transactional data and are looking for someone with deep expertise in de
 
-  id: jd_204 | title: Senior Supply Chain Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: SAP S/4HANA, Inventory Management, Procurement, Supply Chain Strategy
-  preferred_skills: Power BI, Python
-  description: Our central operations engineering division of thirty is actively looking for a visionary Senior Supply Chain Systems Architect to direct the structural evolution of our global logistics platform. The division focuses on building highly resilient dis
+  id: jd_207 | title: Principal Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: Python, React, PostgreSQL, Distributed Systems, Leadership
+  preferred_skills: System Design, Performance Tuning
+  description: Our core platform team of twenty-five is seeking a principal full-stack engineer to define the architectural foundation of our services. We are dedicated to providing a secure and seamless experience for our global user base and are looking for someo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 603 pairs total.
+Overall dataset so far: 612 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  121  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  120  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  120  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  120  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  122  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  121  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  122  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  122  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  124  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  123  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_604    resume_202 × jd_202
-  pair_605    resume_202 × jd_203
-  pair_606    resume_202 × jd_204
-  pair_607    resume_203 × jd_202
-  pair_608    resume_203 × jd_203
-  pair_609    resume_203 × jd_204
-  pair_610    resume_204 × jd_202
-  pair_611    resume_204 × jd_203
-  pair_612    resume_204 × jd_204
+  pair_613    resume_205 × jd_205
+  pair_614    resume_205 × jd_206
+  pair_615    resume_205 × jd_207
+  pair_616    resume_206 × jd_205
+  pair_617    resume_206 × jd_206
+  pair_618    resume_206 × jd_207
+  pair_619    resume_207 × jd_205
+  pair_620    resume_207 × jd_206
+  pair_621    resume_207 × jd_207
 
 ════════════════════════════════════
 OUTPUT FORMAT
