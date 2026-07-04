@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_226 | level: middle | exp: 3.0 yrs | raw_text: 280 words
-  skills: Financial Modeling, Python, Microsoft Excel, SQL Server, Pandas, Financial Reporting, Fintech, Forecasting
-  projects: FinStream
-  background: I am a dedicated mid-level financial analyst with over three years of professional experience specializing in the modern fintech sector, focusing heavily on strategic financial modeling, multi-tier regulatory reporting, and subscription metrics. In my primary role as a Corporate Financial Analyst at
+  id: resume_229 | level: junior | exp: 0.5 yrs | raw_text: 250 words
+  skills: Requirements Gathering, Jira, Miro, BPMN, Process Mapping, Business Analysis
+  projects: DocuMap
+  background: I am an enthusiastic aspiring junior business analyst and recent graduate with less than a year of professional experience, focusing primarily on foundational requirements gathering, structural process mapping, and collaborative stakeholder communication. In my previous role as an Associate Business
 
-  id: resume_227 | level: senior | exp: 7.0 yrs | raw_text: 253 words
-  skills: Financial Modeling, Anaplan, Python, PostgreSQL, Tableau, Financial Reporting, Compliance, Fintech, Docker
-  projects: VaultCheck
-  background: I am a senior financial engineer and fintech compliance lead with seven years of deep technical experience leading large-scale treasury monitoring, financial modeling, and regulatory accounting transformations. In my current capacity as Principal Financial Systems Analyst at an enterprise cross-bord
+  id: resume_230 | level: junior | exp: 0.67 yrs | raw_text: 258 words
+  skills: Project Management, Confluence, Trello, Requirements Documentation, Stakeholder Engagement, SharePoint
+  projects: TaskSync
+  background: I am a highly motivated junior project coordinator and business analyst with eight months of specialized professional experience focusing on corporate project artifact management, functional requirements logging, and collaborative multi-departmental stakeholder engagement. During my complete tenure 
 
-  id: resume_228 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: Financial Modeling, Anaplan, Python, SQL Server, Tableau, PostgreSQL, Financial Reporting, Compliance, Fintech, Oracle
-  projects: LedgerCore
-  background: I am an analytical senior fintech operations manager and financial modeling expert with eight years of professional experience directing enterprise accounting platforms, statutory financial reporting, and complex regulatory compliance protocols. In my current role as Lead Fintech Controller at a glo
+  id: resume_231 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: BPMN, Signavio, Jira, Confluence, Business Analysis, Requirements Analysis, Stakeholder Management, Bizagi, SQL Server, Lucidchart
+  projects: MatrixFlow
+  background: I am a senior business analyst and lead enterprise project manager with over eight years of extensive technical experience orchestrating complex systems analysis, formal BPMN process redesigns, and cross-functional stakeholder management. In my current role as Lead Enterprise Systems Analyst at a la
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_226 | title: Junior Fintech Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Financial Modeling, Microsoft Excel, Python, SQL Server, Tableau
-  preferred_skills: Anaplan, Compliance
-  description: Our corporate development group is seeking a Junior Fintech Financial Analyst to support our expanding multi-channel digital consumer lending operations. Operating within an agile core team of seven finance professionals, you will manage day-to-day c
+  id: jd_229 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 211 words
+  required_skills: Business Analysis, Requirements Gathering, BPMN, Jira, Confluence, Lucidchart
+  preferred_skills: Signavio, SQL Server
+  description: Our operational strategy group is actively seeking a mid-level Business Analyst to drive the modernization of our core supply chain tracking systems and internal software architectures. Operating within an established project delivery team of eight b
 
-  id: jd_227 | title: Associate Compliance and Reporting Specialist | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Microsoft Excel, PostgreSQL, Python, Financial Reporting, Financial Modeling
-  preferred_skills: Anaplan, Tableau
-  description: Our digital asset risk management division is looking for an Associate Compliance and Reporting Specialist to streamline our statutory accounting validation pipelines and corporate reporting systems. You will join an established core compliance divis
+  id: jd_230 | title: Senior Business Process Architect | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Signavio, Bizagi, BPMN, Requirements Analysis, Stakeholder Management, Jira, Confluence
+  preferred_skills: Enterprise Architect, Tableau
+  description: Our digital transformation group is searching for a Senior Business Process Architect to spearhead the structural overhaul of our enterprise logistics systems and workflow automation platforms. You will sit at the center of an enterprise delivery gro
 
-  id: jd_228 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Anaplan, Python, SQL Server, Financial Modeling, Docker
-  preferred_skills: PostgreSQL, Tableau
-  description: We are searching for a Senior Financial Systems Architect to lead the modernization of our enterprise financial modeling systems and cross-border treasury infrastructure. You will sit at the center of an enterprise product group of twelve staff membe
+  id: jd_231 | title: Lead Systems and Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Signavio, Enterprise Architect, SQL Server, Requirements Analysis, BPMN, Stakeholder Management, Jira, Confluence
+  preferred_skills: Bizagi
+  description: We are seeking a Lead Systems and Business Analyst to direct the integration of our next-generation core banking infrastructure and enterprise software architectures. In this position, you will lead an advanced technical discovery group of ten busine
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 675 pairs total.
+Overall dataset so far: 684 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  135  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  135  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  134  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  135  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  136  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  135  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  136  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  138  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  137  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  138  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_676    resume_226 × jd_226
-  pair_677    resume_226 × jd_227
-  pair_678    resume_226 × jd_228
-  pair_679    resume_227 × jd_226
-  pair_680    resume_227 × jd_227
-  pair_681    resume_227 × jd_228
-  pair_682    resume_228 × jd_226
-  pair_683    resume_228 × jd_227
-  pair_684    resume_228 × jd_228
+  pair_685    resume_229 × jd_229
+  pair_686    resume_229 × jd_230
+  pair_687    resume_229 × jd_231
+  pair_688    resume_230 × jd_229
+  pair_689    resume_230 × jd_230
+  pair_690    resume_230 × jd_231
+  pair_691    resume_231 × jd_229
+  pair_692    resume_231 × jd_230
+  pair_693    resume_231 × jd_231
 
 ════════════════════════════════════
 OUTPUT FORMAT
