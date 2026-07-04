@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_238 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: GoogleAds, MetaAdsManager, GoogleAnalytics4, GoogleLookerStudio, Semrush, WordPress, Optimizely, SEO
-  projects: SaaSGrowthEngine
-  background: I am a data-driven Digital Marketing Specialist with four years of comprehensive experience managing multi-channel acquisition campaigns, executing content strategies, and optimizing conversion funnels across digital touchpoints. In my previous role as an Growth Marketing Specialist at a mid-sized B
+  id: resume_241 | level: junior | exp: 0.75 yrs | raw_text: 254 words
+  skills: BambooHR, Greenhouse, Excel, Onboarding, Recruiting
+  projects: OnboardSync
+  background: I am an enthusiastic Human Resources professional who recently entered the field after completing extensive academic preparations. In my previous tenure as a Human Resources Intern at a high-growth tech startup, I worked for exactly nine months within an agile talent operations squad consisting of t
 
-  id: resume_239 | level: senior | exp: 7.0 yrs | raw_text: 271 words
-  skills: GoogleAnalytics4, Ahrefs, GoogleSearchConsole, GoogleAds, MetaAdsManager, HubSpot, SEO, ContentStrategy
-  projects: FintechPillarSystem
-  background: I am a Strategic Digital Marketing Lead and Senior Content Strategist with over seven years of professional tenure directing large-scale corporate content frameworks, technical search engine optimization ecosystems, and advanced multi-channel analytical programs. Currently, I operate as the Senior D
+  id: resume_242 | level: middle | exp: 4.0 yrs | raw_text: 254 words
+  skills: Workday, Greenhouse, LinkedInRecruiter, ADPWorkforceNow, PowerBI, HRIS, Recruiting, SQLServer
+  projects: TalentMetricEngine
+  background: I am a data-driven Human Resources Generalist with four years of comprehensive corporate experience specializing in full-cycle recruitment, workforce analytics, and human resource information system maintenance. In my previous position as a Talent Operations Specialist at an enterprise financial ser
 
-  id: resume_240 | level: senior | exp: 8.0 yrs | raw_text: 251 words
-  skills: Ahrefs, ScreamingFrog, GoogleSearchConsole, GoogleAnalytics4, GoogleAds, MetaAdsManager, GoogleLookerStudio, SEO
-  projects: CrawlOptimize
-  background: I am an analytical Senior Digital Marketing Manager and technical SEO Director with eight years of proven success leading distributed digital acquisition divisions, multi-platform performance marketing campaigns, and sophisticated web tracking setups. In my current role as Lead Content Strategist an
+  id: resume_243 | level: middle | exp: 5.0 yrs | raw_text: 252 words
+  skills: Lever, SAPSuccessFactors, Greenhouse, BambooHR, Onboarding, Recruiting, HRIS
+  projects: PipelineAutomator
+  background: I am an analytical Talent Acquisition Partner and HR Information Systems Specialist with five years of proven professional experience scaling technical teams, implementing automated tracking pipelines, and directing digital onboarding initiatives. In my current role as a Senior Recruiter and Systems
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_238 | title: Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: GoogleAds, MetaAdsManager, Semrush
-  preferred_skills: GoogleAnalytics4, SEO
-  description: Our dynamic customer acquisition group is actively seeking an enthusiastic Junior Digital Marketing Associate to assist in the execution, monitoring, and optimization of our multi-channel marketing campaigns. Working as an individual contributor insi
+  id: jd_241 | title: Human Resources Coordinator | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: BambooHR, Greenhouse, Excel
+  preferred_skills: Onboarding, Recruiting
+  description: Our corporate people operations department is actively searching for a structured Junior Human Resources Coordinator to assist in the daily administration, database preservation, and lifecycle management of our employee systems. Working as an individ
 
-  id: jd_239 | title: Junior Content Marketing Specialist | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Semrush, GoogleSearchConsole, WordPress
-  preferred_skills: GoogleAnalytics4, GoogleAds, SEO
-  description: Our rapidly growing digital media group is searching for an analytical Junior Content Marketing Specialist to drive the production, tracking, and search optimization of our web properties. Operating as an associate inside an established creative squa
+  id: jd_242 | title: Senior HRIS and Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: Workday, OracleCloudHCM, SQLServer
+  preferred_skills: HRIS, DataModeling
+  description: We are searching for a Senior HRIS and Solutions Architect to lead the long-term system design, database integration, and compliance scaling of our global human resource information systems and enterprise employee environments. Directing an advanced 
 
-  id: jd_240 | title: Senior Digital Growth and SEO Director | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: Ahrefs, ScreamingFrog, GoogleSearchConsole, GoogleAnalytics4
-  preferred_skills: HubSpot, SEO, ContentStrategy
-  description: We are searching for a Senior Digital Growth and SEO Director to pioneer the long-term technical architecture and performance scaling of our corporate search engine optimization systems and international content pipelines. Directing an advanced analy
+  id: jd_243 | title: Lead Enterprise Talent Systems Administrator | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Lever, SAPSuccessFactors, BambooHR
+  preferred_skills: HRIS, Recruiting
+  description: Our global people operations group is seeking a Lead Enterprise Talent Systems Administrator to pioneer the optimization, implementation, and management of our technical recruitment software platforms and data architectures. Leading an administrative
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 711 pairs total.
+Overall dataset so far: 720 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  143  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  142  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  140  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  143  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  143  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  143  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  143  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  144  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  145  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  145  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_712    resume_238 × jd_238
-  pair_713    resume_238 × jd_239
-  pair_714    resume_238 × jd_240
-  pair_715    resume_239 × jd_238
-  pair_716    resume_239 × jd_239
-  pair_717    resume_239 × jd_240
-  pair_718    resume_240 × jd_238
-  pair_719    resume_240 × jd_239
-  pair_720    resume_240 × jd_240
+  pair_721    resume_241 × jd_241
+  pair_722    resume_241 × jd_242
+  pair_723    resume_241 × jd_243
+  pair_724    resume_242 × jd_241
+  pair_725    resume_242 × jd_242
+  pair_726    resume_242 × jd_243
+  pair_727    resume_243 × jd_241
+  pair_728    resume_243 × jd_242
+  pair_729    resume_243 × jd_243
 
 ════════════════════════════════════
 OUTPUT FORMAT
