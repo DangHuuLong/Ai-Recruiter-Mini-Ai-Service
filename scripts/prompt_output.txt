@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_256 | level: junior | exp: 0.5 yrs | raw_text: 260 words
-  skills: Docker, Kubernetes, Terraform, AWS, Linux, Bash
-  projects: CloudDeploy
-  background: I am a passionate junior DevOps engineer with a strong foundation in cloud infrastructure and automated delivery systems. During my final year at university, I completed a six-month internship at a fast-paced software agency, where I assisted a team of four developers in migrating legacy application
+  id: resume_259 | level: junior | exp: 0.5 yrs | raw_text: 262 words
+  skills: Figma, Prototyping, Usability Testing, User Research
+  projects: HealthyHabits
+  background: I am a motivated junior UI/UX designer with a passion for creating accessible and delightful digital experiences. During my final year at university, I completed a six-month design internship at a burgeoning fintech startup, where I collaborated with a team of three designers and two product manager
 
-  id: resume_257 | level: senior | exp: 8.5 yrs | raw_text: 276 words
-  skills: AWS, Kubernetes, Terraform, Istio, PostgreSQL, ArgoCD
-  projects: AutoScalePro
-  background: I am a senior DevOps architect with over eight years of experience designing and managing complex, high-scale cloud-native ecosystems. In my most recent role as a Lead DevOps Engineer at a global enterprise, I managed a team of twelve engineers responsible for the stability and performance of our fl
+  id: resume_260 | level: junior | exp: 0.8 yrs | raw_text: 255 words
+  skills: Figma, Miro, Wireframing, Graphic Design
+  projects: EventConnect
+  background: I am an enthusiastic junior product designer dedicated to crafting seamless web experiences that prioritize user needs and business goals. As a recent graduate, I completed a one-year residency at a creative agency, where I worked on various client projects alongside a team of six professionals. My 
 
-  id: resume_258 | level: senior | exp: 9.0 yrs | raw_text: 269 words
-  skills: AWS, Kubernetes, Terraform, FinOps, Go, Distributed Systems
-  projects: GlobalSync
-  background: I am a principal cloud engineer with nine years of experience specializing in high-performance computing, distributed systems, and multi-cloud infrastructure strategy. In my previous role as a Principal DevOps Engineer at a major fintech firm, I led a cross-functional squad of fifteen engineers to m
+  id: resume_261 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: Figma, Design Systems, User Research, Interaction Design, Accessibility
+  projects: GlobalConnect
+  background: I am a senior product design lead with eight years of experience defining product strategy, user experience, and design systems for enterprise-scale platforms. In my most recent role as a Lead Product Designer at a major global software firm, I managed a distributed team of ten designers responsible
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_256 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: AWS, Docker, Terraform, Linux, Git
-  preferred_skills: Kubernetes, Python, Bash
-  description: Our infrastructure team is looking for a motivated Junior DevOps Engineer to assist in maintaining and scaling our development environments. The team consists of five engineers dedicated to improving our internal developer experience through automati
+  id: jd_259 | title: Mid-Level Product Designer | level: middle | min_exp: 3 yrs | raw_text: 212 words
+  required_skills: Figma, User Research, Prototyping, UX Design
+  preferred_skills: CSS, HTML, Design Systems
+  description: Our product design team is looking for a talented Mid-Level Product Designer to help define the future of our web-based productivity platform. The team consists of eight designers who work closely with product managers and engineers to deliver intuit
 
-  id: jd_257 | title: Mid-Level DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 191 words
-  required_skills: AWS, Kubernetes, Docker, Terraform, CI/CD
-  preferred_skills: Istio, Grafana
-  description: Our platform engineering team is seeking a skilled DevOps Engineer to help build and maintain our core cloud-native platforms. Our team of eight works closely with product and data teams to deliver scalable and resilient microservices architectures. 
+  id: jd_260 | title: Senior Design Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: Figma, User Research, Design Systems, Accessibility, Interaction Design
+  preferred_skills: Data Analytics, Frontend Integration
+  description: We are looking for an experienced Senior Design Lead to guide our design vision and manage a team of fifteen professionals. Our team is responsible for the end-to-end product design lifecycle of our flagship enterprise software, including user resear
 
-  id: jd_258 | title: Senior DevOps Lead | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: AWS, Kubernetes, Terraform, Go, Distributed Systems
-  preferred_skills: FinOps, Multi-cloud
-  description: We are searching for a Senior DevOps Lead to guide our infrastructure strategy and architect the next generation of our global distributed systems. Our team of twelve professionals focuses on designing zero-trust network architectures, multi-region c
+  id: jd_261 | title: Principal Product Designer | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Figma, User Research, Interaction Design, Data Analytics, UX Design
+  preferred_skills: Machine Learning, Design Frameworks
+  description: We are searching for a Principal Product Designer to lead our design operations and drive innovation across our primary consumer-facing mobile and web platforms. Our team of twelve focuses on creating highly personalized shopping experiences through 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 765 pairs total.
+Overall dataset so far: 774 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  152  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  154  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  152  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  154  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  153  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  153  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  155  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  154  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  156  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  156  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_766    resume_256 × jd_256
-  pair_767    resume_256 × jd_257
-  pair_768    resume_256 × jd_258
-  pair_769    resume_257 × jd_256
-  pair_770    resume_257 × jd_257
-  pair_771    resume_257 × jd_258
-  pair_772    resume_258 × jd_256
-  pair_773    resume_258 × jd_257
-  pair_774    resume_258 × jd_258
+  pair_775    resume_259 × jd_259
+  pair_776    resume_259 × jd_260
+  pair_777    resume_259 × jd_261
+  pair_778    resume_260 × jd_259
+  pair_779    resume_260 × jd_260
+  pair_780    resume_260 × jd_261
+  pair_781    resume_261 × jd_259
+  pair_782    resume_261 × jd_260
+  pair_783    resume_261 × jd_261
 
 ════════════════════════════════════
 OUTPUT FORMAT
