@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_196 | level: middle | exp: 4.0 yrs | raw_text: 275 words
-  skills: Docker, AWS, Terraform, GitHub Actions, Prometheus, Grafana, Linux
-  projects: PipelineSpeed, KubeLearn
-  background: I am an infrastructure engineer with four years of professional experience specializing in containerized environments and cloud infrastructure. At my previous role within a rapidly growing software startup, I worked in a dedicated team of five where I was responsible for migrating legacy application
+  id: resume_199 | level: junior | exp: 0.5 yrs | raw_text: 261 words
+  skills: Python, Flask, React, PostgreSQL, Git, Docker
+  projects: TaskMaster, DataParser
+  background: I am a motivated Junior Full-Stack Developer who recently graduated with a passion for building intuitive web applications. During my six-month internship at a fast-paced web agency, I worked within a team of four to maintain and enhance various client websites. My primary responsibilities involved 
 
-  id: resume_197 | level: senior | exp: 8.0 yrs | raw_text: 259 words
-  skills: AWS, Kubernetes, Terraform, Docker, ArgoCD, HashiCorp Vault, Prometheus, Datadog, Python
-  projects: VaultGuard, CostSlasher
-  background: I am a Senior DevOps Engineer with eight years of deep technical expertise in managing high-availability multi-cloud systems and leading automated infrastructure initiatives. While working at a large financial enterprise, I led an operations squad of eight where we successfully redesigned our produc
+  id: resume_200 | level: junior | exp: 1.0 yrs | raw_text: 262 words
+  skills: Python, Django, React, PostgreSQL, API Development
+  projects: FlowAPI, DocHelper
+  background: I am an enthusiastic Junior Software Engineer with a focus on modern full-stack development. In my recent role at a growing fintech startup, I was part of a dynamic team of six responsible for supporting the core transactional infrastructure. My daily responsibilities included developing new backend
 
-  id: resume_198 | level: senior | exp: 9.0 yrs | raw_text: 256 words
-  skills: Kubernetes, Terraform, AWS, GitLab CI, Istio, ELK Stack, Docker, Jenkins, Bash
-  projects: MeshFlow, ChaosBot
-  background: I am a Principal Site Reliability Engineer with nine years of experience specializing in highly scalable cloud architectures, automated infrastructure engineering, and continuous deployment systems. While operating within a massive technology enterprise, I served as the technical lead for an infrast
+  id: resume_201 | level: senior | exp: 8.0 yrs | raw_text: 302 words
+  skills: Python, FastAPI, React, PostgreSQL, AWS, Distributed Systems, Redis
+  projects: ScaleEngine, AutoScaleDB
+  background: I am a Senior Full-Stack Architect with eight years of experience in designing, building, and scaling high-performance web applications. At a top-tier e-commerce enterprise, I led an engineering department of twenty, overseeing the architectural transition of our monolithic platform into microservic
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_196 | title: Junior DevOps Assistant | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Docker, GitHub Actions, AWS, Linux
-  preferred_skills: Prometheus, Grafana, Terraform
-  description: Our operations engineering team of six is looking for a passionate Junior DevOps Assistant to help build and maintain our continuous integration pipelines and foundational cloud infrastructure. The team is dedicated to providing automated, stable, an
+  id: jd_199 | title: Full-Stack Engineer | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Python, React, PostgreSQL, API Development
+  preferred_skills: Docker, Kubernetes
+  description: Our development team of twelve is looking for a skilled Full-Stack Engineer to help us build and maintain high-performance web applications for our rapidly growing product. We are currently scaling our services to handle thousands of requests per sec
 
-  id: jd_197 | title: Associate Cloud Infrastructure Engineer | level: junior | min_exp: 1 yrs | raw_text: 218 words
-  required_skills: Terraform, Docker, AWS, GitHub Actions
-  preferred_skills: Linux, Cloud Security
-  description: Our modern cloud platform team of eight is currently seeking an enthusiastic Associate Cloud Infrastructure Engineer to support our core systems and deployment automation frameworks. The group focuses on creating highly resilient, scalable infrastruc
+  id: jd_200 | title: Senior Full-Stack Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Python, React, PostgreSQL, Distributed Systems, AWS
+  preferred_skills: Redis, Architecture
+  description: Our engineering department of thirty is seeking a visionary Senior Full-Stack Systems Architect to guide the evolution of our high-traffic platform. We handle massive volumes of transactional data and are looking for someone with deep expertise in de
 
-  id: jd_198 | title: Senior DevOps Architect | level: senior | min_exp: 6 yrs | raw_text: 184 words
-  required_skills: AWS, Kubernetes, Terraform, ArgoCD, HashiCorp Vault
-  preferred_skills: Istio, Security
-  description: Our central platform engineering division of thirty is actively looking for a visionary Senior DevOps Architect to direct the structural evolution of our high-throughput global delivery platform. The division focuses on building highly reliable distr
+  id: jd_201 | title: Principal Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, React, PostgreSQL, Distributed Systems, Leadership
+  preferred_skills: System Design, Performance Tuning
+  description: Our core platform team of twenty-five is seeking a Principal Full-Stack Engineer to define the architectural foundation of our financial services. We are dedicated to providing a secure and seamless experience for our global user base and are looking
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 585 pairs total.
+Overall dataset so far: 594 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  117  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  117  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  116  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  117  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  118  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  117  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  118  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  120  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  119  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  120  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_586    resume_196 × jd_196
-  pair_587    resume_196 × jd_197
-  pair_588    resume_196 × jd_198
-  pair_589    resume_197 × jd_196
-  pair_590    resume_197 × jd_197
-  pair_591    resume_197 × jd_198
-  pair_592    resume_198 × jd_196
-  pair_593    resume_198 × jd_197
-  pair_594    resume_198 × jd_198
+  pair_595    resume_199 × jd_199
+  pair_596    resume_199 × jd_200
+  pair_597    resume_199 × jd_201
+  pair_598    resume_200 × jd_199
+  pair_599    resume_200 × jd_200
+  pair_600    resume_200 × jd_201
+  pair_601    resume_201 × jd_199
+  pair_602    resume_201 × jd_200
+  pair_603    resume_201 × jd_201
 
 ════════════════════════════════════
 OUTPUT FORMAT
