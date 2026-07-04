@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_181 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Python, React, Django, PostgreSQL, Redux, FastAPI, JavaScript, HTML, CSS
-  projects: TaskMaster, WeatherTracker
-  background: I am a highly motivated Junior Full-Stack Developer recently graduated with a strong foundation in modern web technologies. During my six-month internship at a local software agency, I worked within a team of four to build responsive user interfaces using React 18 and integrated them with Python-bas
+  id: resume_184 | level: middle | exp: 4.0 yrs | raw_text: 255 words
+  skills: Excel, SQL, Tableau, Python, Pandas, Financial Modeling, Regulatory Reporting, NetSuite
+  projects: BudgetOptimiser, AuditReady
+  background: I am a detail-oriented Finance Associate with four years of experience in the fintech sector, specializing in financial planning, analysis, and regulatory reporting. During my tenure at a high-growth fintech startup, I supported a finance team of ten by managing month-end closing processes and prepa
 
-  id: resume_182 | level: middle | exp: 4.0 yrs | raw_text: 264 words
-  skills: Python, React, FastAPI, PostgreSQL, TypeScript, Docker, Redis, SQLAlchemy, OAuth2
-  projects: MarketPulse, SecureAuth
-  background: I am a dedicated Full-Stack Developer with four years of experience building scalable web applications for a fast-growing tech startup. During my time there, I worked in an agile team of twelve, responsible for architecting and deploying high-traffic services. My core responsibilities included devel
+  id: resume_185 | level: senior | exp: 8.0 yrs | raw_text: 258 words
+  skills: Financial Modeling, Oracle NetSuite, SQL, Power BI, Strategic Planning, Regulatory Compliance, Capital Management
+  projects: GlobalTreasurySync, ComplianceFramework2.0
+  background: I am a seasoned Senior Finance Manager with eight years of experience leading financial operations and strategic planning in global fintech enterprises. At a top-tier payment processing company, I directed a finance department of twenty, overseeing the entire financial lifecycle from reporting to lo
 
-  id: resume_183 | level: middle | exp: 5.0 yrs | raw_text: 254 words
-  skills: Python, React, Django, FastAPI, PostgreSQL, Celery, Redis, CI/CD, GitHub Actions
-  projects: InventoryFlow, DataSync Pro
-  background: I am an experienced Full-Stack Engineer with five years of professional experience in developing robust enterprise applications. At a large-scale e-commerce enterprise, I led a cross-functional team of fifteen in the redesign of our core customer platform. My daily responsibilities involved writing 
+  id: resume_186 | level: senior | exp: 9.0 yrs | raw_text: 269 words
+  skills: Financial Modeling, Oracle NetSuite, SQL, Snowflake, Tableau, Risk Management, Audit Automation
+  projects: UnifiedFiscalEngine, AutoRiskMitigation
+  background: I am a Principal Finance Architect with nine years of experience building scalable financial infrastructures for rapidly scaling fintech platforms. Throughout my career at global payment and banking startups, I have led departments of thirty to implement advanced fiscal strategies, including automat
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_181 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Python, JavaScript, React, PostgreSQL
-  preferred_skills: Django, Git
-  description: We are looking for a enthusiastic Junior Web Developer to join our growing product team of eight. Our team is responsible for developing and maintaining our customer-facing web application, which helps small businesses manage their daily operations. 
+  id: jd_184 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: Excel, SQL, NetSuite, Financial Reporting, Accounting Principles
+  preferred_skills: Tableau, Regulatory Compliance
+  description: Our finance operations team of eight is seeking a motivated Junior Finance Analyst to support our core fiscal management and regulatory reporting efforts. The team is dedicated to building scalable financial processes that ensure accuracy and complia
 
-  id: jd_182 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, Redis, Celery
-  preferred_skills: Kubernetes, Docker
-  description: Our core engineering team of twenty is looking for a seasoned Senior Full-Stack Engineer to lead the architectural development of our flagship enterprise platform. We process massive datasets and serve millions of requests annually, requiring a deep 
+  id: jd_185 | title: Junior Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 205 words
+  required_skills: Excel, Financial Modeling, Data Analysis, Fintech Operations
+  preferred_skills: SQL, Reporting
+  description: Our fiscal planning and analysis team of ten is seeking a highly energetic Junior Finance Associate to help facilitate our rapid financial growth and reporting needs. The team is dedicated to creating innovative financial solutions for internal proce
 
-  id: jd_183 | title: Senior Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, CI/CD, Distributed Systems
-  preferred_skills: AWS, Event-driven Architecture
-  description: Our platform engineering team of fifteen is seeking a Senior Software Engineer to drive the evolution of our high-availability web services. We are dedicated to delivering a seamless experience for our global user base and are looking for someone wit
+  id: jd_186 | title: Senior Finance Architect | level: senior | min_exp: 6 yrs | raw_text: 215 words
+  required_skills: NetSuite, SQL, Financial Modeling, Financial Reporting, Data Visualization, Leadership
+  preferred_skills: Snowflake, Risk Management
+  description: Our global finance operations department of forty is seeking a seasoned Senior Finance Architect to lead our digital finance transformation and financial infrastructure. The team focuses on optimizing enterprise workflows through robust financial rep
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 540 pairs total.
+Overall dataset so far: 549 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  107  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  108  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  109  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  109  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  109  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  111  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  108  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  111  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  110  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_541    resume_181 × jd_181
-  pair_542    resume_181 × jd_182
-  pair_543    resume_181 × jd_183
-  pair_544    resume_182 × jd_181
-  pair_545    resume_182 × jd_182
-  pair_546    resume_182 × jd_183
-  pair_547    resume_183 × jd_181
-  pair_548    resume_183 × jd_182
-  pair_549    resume_183 × jd_183
+  pair_550    resume_184 × jd_184
+  pair_551    resume_184 × jd_185
+  pair_552    resume_184 × jd_186
+  pair_553    resume_185 × jd_184
+  pair_554    resume_185 × jd_185
+  pair_555    resume_185 × jd_186
+  pair_556    resume_186 × jd_184
+  pair_557    resume_186 × jd_185
+  pair_558    resume_186 × jd_186
 
 ════════════════════════════════════
 OUTPUT FORMAT
