@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_292 | level: middle | exp: 4.0 yrs | raw_text: 279 words
-  skills: React Native, Flutter, Expo, Sqlite, Graphql, Typescript
-  projects: SmartInventory
-  background: I am a Mobile Developer with four years of professional experience, primarily focused on building high-performance cross-platform applications. In my most recent role as a Mobile Software Engineer at a fast-growing tech startup, I worked in a team of six developers to maintain a React Native applica
+  id: resume_295 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Aws S3, Docker, Bash, Linux, Python, Terraform
+  projects: CloudMonitor
+  background: I am a motivated Cloud Associate recently entering the technology workforce after completing my degree. During my final year, I interned at a small web development startup for six months where I assisted a team of four developers in managing basic cloud resources. My primary responsibilities include
 
-  id: resume_293 | level: senior | exp: 7.0 yrs | raw_text: 268 words
-  skills: Swift, Kotlin, Swiftui, Jetpack Compose, Mobile Architecture, Mobile Security
-  projects: SecurePay
-  background: With over seven years of professional experience in mobile application development, I have successfully led teams of up to ten engineers in delivering large-scale enterprise solutions. My primary focus has been on native mobile ecosystems, specifically leveraging Swift 5.9 and Kotlin 1.9 to build hi
+  id: resume_296 | level: junior | exp: 0.3 yrs | raw_text: 264 words
+  skills: Docker, Aws Ec2, Linux, Bash, Python
+  projects: AutoBuild
+  background: As a recent graduate, I am passionate about cloud infrastructure and the principles of modern software delivery. During my time as an intern at a mid-sized digital agency, I collaborated with a group of three engineers to maintain our staging environment hosted on AWS. I was responsible for manually
 
-  id: resume_294 | level: senior | exp: 8.0 yrs | raw_text: 270 words
-  skills: React Native, Flutter, Swift, Kotlin, Typescript, Fastlane
-  projects: CodeFlow
-  background: As a seasoned mobile architect with eight years of experience, I have developed extensive expertise in crafting cross-platform solutions using React Native 0.72 and Flutter 3.10, alongside deep native knowledge in iOS and Android development. At a large-scale agency where I led a team of fifteen, I 
+  id: resume_297 | level: senior | exp: 8.5 yrs | raw_text: 256 words
+  skills: Aws, Kubernetes, Terraform, Docker, Python, Go, Jenkins, Gitlab
+  projects: KubeGuard
+  background: I am a senior cloud architect with over eight years of experience designing and scaling resilient infrastructure for large-scale enterprise environments. In my most recent position as a Lead DevOps Engineer at a global tech corporation, I led a cross-functional team of twelve engineers in a multi-re
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_292 | title: Associate Mobile Developer | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: React Native, Typescript, Mobile Development
-  preferred_skills: Redux, Git
-  description: We are looking for an enthusiastic Associate Mobile Developer to join our growing product team of twelve professionals. In this role, you will contribute to the development of our customer-facing React Native application, which provides vital financi
+  id: jd_295 | title: Cloud Infrastructure Engineer | level: middle | min_exp: 3 yrs | raw_text: 220 words
+  required_skills: Aws, Docker, Terraform, Linux
+  preferred_skills: Prometheus, Kubernetes
+  description: Our platform engineering team is seeking a dedicated Cloud Infrastructure Engineer to help maintain and scale our growing cloud ecosystem. The team currently consists of five engineers responsible for supporting our core services, which handle high v
 
-  id: jd_293 | title: Junior Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Flutter, Dart, Mobile Development
-  preferred_skills: Firebase, Testing
-  description: Our mobile team is looking for a Junior Flutter Developer to help build the next generation of our interactive learning app. You will join a collaborative squad of eight engineers, designers, and product managers who are dedicated to creating high-qu
+  id: jd_296 | title: Senior Kubernetes Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Kubernetes, Terraform, Aws, Go, Docker
+  preferred_skills: Istio, Security
+  description: We are seeking an experienced Senior Kubernetes Architect to lead our platform team of eight specialized engineers. Our product supports critical global services, and we require someone with deep expertise in container orchestration, high-availabilit
 
-  id: jd_294 | title: Senior Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Swift, Kotlin, React Native, Mobile Architecture, CI/CD
-  preferred_skills: Graphql, Cloud Computing
-  description: We are seeking a seasoned Senior Mobile Architect to define the technical direction of our mobile product suite, which supports over 500,000 daily users across multiple global markets. You will lead our core engineering efforts, coordinating with a t
+  id: jd_297 | title: Principal DevOps Engineer | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Kubernetes, Terraform, Aws, Go, Docker
+  preferred_skills: Gitops, Security
+  description: Our organization is seeking a Principal DevOps Engineer to drive the technical vision for our entire cloud infrastructure. You will work within a high-performing squad of ten experts focused on building a next-generation platform that serves millions
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 873 pairs total.
+Overall dataset so far: 882 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  175  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  175  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  172  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  175  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  176  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  175  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  176  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  176  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  177  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  178  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_874    resume_292 × jd_292
-  pair_875    resume_292 × jd_293
-  pair_876    resume_292 × jd_294
-  pair_877    resume_293 × jd_292
-  pair_878    resume_293 × jd_293
-  pair_879    resume_293 × jd_294
-  pair_880    resume_294 × jd_292
-  pair_881    resume_294 × jd_293
-  pair_882    resume_294 × jd_294
+  pair_883    resume_295 × jd_295
+  pair_884    resume_295 × jd_296
+  pair_885    resume_295 × jd_297
+  pair_886    resume_296 × jd_295
+  pair_887    resume_296 × jd_296
+  pair_888    resume_296 × jd_297
+  pair_889    resume_297 × jd_295
+  pair_890    resume_297 × jd_296
+  pair_891    resume_297 × jd_297
 
 ════════════════════════════════════
 OUTPUT FORMAT
