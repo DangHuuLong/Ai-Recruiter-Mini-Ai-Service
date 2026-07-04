@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_208 | level: middle | exp: 4.0 yrs | raw_text: 255 words
-  skills: Splunk, Nessus, Burp Suite, Python, Network Security, Vulnerability Assessment
-  projects: SafeNet, AutoScan
-  background: I am a mid-level Information Security Analyst with four years of hands-on experience in threat detection and incident response. During my two-year tenure at a regional finance enterprise, I worked within a SOC team of eight, where I was primarily responsible for monitoring SIEM dashboards, specifica
+  id: resume_211 | level: middle | exp: 4.0 yrs | raw_text: 252 words
+  skills: Splunk, Nessus, Python, Cisco Firepower, Network Security, Vulnerability Assessment
+  projects: SecureNet, AutoPatch
+  background: I am a mid-level Security Analyst with four years of hands-on experience in threat monitoring and vulnerability management. At a fast-paced fintech startup, I worked in a security team of six, where I was responsible for daily log monitoring using Splunk Enterprise 9.2, conducting vulnerability scan
 
-  id: resume_209 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: Splunk, Elastic Stack, Kali Linux, Metasploit, AWS Security, Terraform, Python
-  projects: ShieldWall, CloudLock
-  background: I am a senior cybersecurity lead with eight years of extensive experience in penetration testing, incident response, and cloud security governance. Throughout my career at a large-scale software agency, I led a security operations team of fifteen, where I oversaw the implementation and maintenance o
+  id: resume_212 | level: senior | exp: 8.0 yrs | raw_text: 275 words
+  skills: Splunk, Elastic Stack, Kali Linux, Metasploit, AWS Security, Terraform, Python, Snort, Suricata
+  projects: ThreatRadar, CloudShield
+  background: I am a senior cybersecurity architect with eight years of deep experience in penetration testing, incident response, and cloud security governance. During my tenure at a global enterprise, I led a security operations task force of twenty-five, where I was responsible for the strategic deployment of 
 
-  id: resume_210 | level: senior | exp: 9.0 yrs | raw_text: 262 words
-  skills: Splunk, Snort, Suricata, Python, Digital Forensics, Network Security, Penetration Testing
-  projects: ForensiCore, NetDef
-  background: I am a principal information security architect with nine years of experience specializing in network security, digital forensics, and advanced penetration testing. During my time at a global technology enterprise, I led a specialized task force of twelve responsible for securing our high-throughput
+  id: resume_213 | level: senior | exp: 9.0 yrs | raw_text: 296 words
+  skills: Snort, Suricata, Python, Digital Forensics, Penetration Testing, Network Security, Splunk
+  projects: ForensiFlow, DDoS-Shield
+  background: I am a principal information security engineer with nine years of experience specializing in advanced penetration testing, digital forensics, and network defense. During my time at a global technology agency, I directed a specialized security team of twelve, focusing on securing high-throughput tran
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_208 | title: Associate Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  id: jd_211 | title: Associate Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 196 words
   required_skills: Splunk, Nessus, Network Security, Security Fundamentals
   preferred_skills: Python, Linux
-  description: Our information security operations team of ten is currently seeking an enthusiastic Associate Security Analyst to help monitor our network perimeters and support our incident response activities. The team focuses on identifying, assessing, and mitig
+  description: Our security operations team of fifteen is seeking a motivated Associate Security Analyst to help safeguard our digital assets and support incident response efforts. This team is focused on providing 24/7 security monitoring and proactive threat dete
 
-  id: jd_209 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  id: jd_212 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 186 words
   required_skills: Splunk, Nessus, Vulnerability Assessment, Network Security
   preferred_skills: Python, Scripting
-  description: Our internal security operations group of eight is looking for a driven Junior Information Security Analyst to support our core security systems and threat detection efforts. The group is dedicated to providing efficient, transparent, and highly reli
+  description: Our central security operations group of eight is seeking a driven Junior Information Security Analyst to bolster our monitoring capabilities and support core defensive activities. The group focuses on maintaining a transparent and highly reliable se
 
-  id: jd_210 | title: Senior Information Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  id: jd_213 | title: Senior Information Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 190 words
   required_skills: Splunk, Penetration Testing, Network Security, IDS/IPS, Python
   preferred_skills: Digital Forensics, Cloud Security
-  description: Our central security engineering division of thirty is actively looking for a visionary Senior Information Security Engineer to direct the technical evolution of our security operations and defensive architectures. This division focuses on building h
+  description: Our central security engineering division of thirty-five is seeking a visionary Senior Information Security Engineer to guide the evolution of our high-traffic defensive architectures. This division is tasked with building resilient security systems 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 621 pairs total.
+Overall dataset so far: 630 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  125  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  124  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  122  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  125  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  125  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  127  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  124  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  127  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  127  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_622    resume_208 × jd_208
-  pair_623    resume_208 × jd_209
-  pair_624    resume_208 × jd_210
-  pair_625    resume_209 × jd_208
-  pair_626    resume_209 × jd_209
-  pair_627    resume_209 × jd_210
-  pair_628    resume_210 × jd_208
-  pair_629    resume_210 × jd_209
-  pair_630    resume_210 × jd_210
+  pair_631    resume_211 × jd_211
+  pair_632    resume_211 × jd_212
+  pair_633    resume_211 × jd_213
+  pair_634    resume_212 × jd_211
+  pair_635    resume_212 × jd_212
+  pair_636    resume_212 × jd_213
+  pair_637    resume_213 × jd_211
+  pair_638    resume_213 × jd_212
+  pair_639    resume_213 × jd_213
 
 ════════════════════════════════════
 OUTPUT FORMAT
