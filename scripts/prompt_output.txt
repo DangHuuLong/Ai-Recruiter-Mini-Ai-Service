@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_217 | level: junior | exp: 0.3 yrs | raw_text: 276 words
-  skills: Figma, Wireframing, Usability Testing, Google Workspace, Graphic Design
-  projects: FoodieFind
-  background: I am an aspiring entry-level product designer who recently graduated and is looking to secure a first full-time role. My career history consists of a brief four-month summer internship at a small boutique creative agency, where I operated within a compact team of three people including myself, a sen
+  id: resume_220 | level: senior | exp: 7.0 yrs | raw_text: 278 words
+  skills: React Native, JavaScript, TypeScript, Redux Toolkit, Flutter, Dart, Firebase, Git, Swift, iOS, SwiftUI, Combine, Unit Testing, GraphQL, Node.js
+  projects: StreamSync
+  background: I am a senior mobile application developer with over seven years of professional experience building high-performance cross-platform and native mobile software solutions. In my previous role as Technical Lead at a large enterprise financial technology company, where I worked for four years within a 
 
-  id: resume_218 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Figma, Maze, Miro, User Research, Interaction Design
-  projects: HydrateMe
-  background: As a junior UI/UX enthusiast looking for a first permanent professional engagement, I possess foundational exposure to digital product layouts. My professional background includes a six-month contract as an assistant user researcher at a local e-commerce startup, working closely within a cross-funct
+  id: resume_221 | level: senior | exp: 8.0 yrs | raw_text: 272 words
+  skills: React Native, TypeScript, React Navigation, Android Studio, Flutter, Dart, BLoC, REST APIs, Swift, iOS, SwiftUI, CoreData, Git, CI/CD, Fastlane, Kotlin
+  projects: DataGuard
+  background: As an expert Senior Mobile Engineer and technical lead with eight years of comprehensive background in mobile software engineering, I specialize in designing highly scalable architectural frameworks. In my most recent role as Tech Lead at an international enterprise logistics provider, where I led a
 
-  id: resume_219 | level: senior | exp: 8.0 yrs | raw_text: 314 words
-  skills: Figma, ProtoPie, Framer, Storybook, UserTesting, Lookback, Hotjar, Tokens Studio, Design Systems, User Research, Prototyping, WCAG 2.1 AA
-  projects: NexusSystem
-  background: I am an expert Senior Product Designer and design lead with eight years of comprehensive industry experience transforming complex digital products. In my previous role as Principal Designer at a massive global enterprise tech company, I led a multidisciplinary user experience team of twelve professi
+  id: resume_222 | level: senior | exp: 6.0 yrs | raw_text: 262 words
+  skills: React Native, JavaScript, React Navigation, iOS Deployment, Flutter, Provider, Firebase, Git, Swift, iOS, Combine, CoreData, Unit Testing, Objective-C, CocoaPods
+  projects: CacheMaster
+  background: I am a senior mobile application architect with over six years of rigorous experience designing robust applications across native and cross-platform mobile environments. During my three-year tenure as a Senior Product Engineer at a global enterprise communications provider, I operated within a techn
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_217 | title: Senior Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Figma, UserTesting, Lookback, ProtoPie, Tokens Studio, Design Systems, User Research, Prototyping, WCAG 2.1 AA
-  preferred_skills: Framer, Storybook
-  description: Our core design organization is seeking a Senior Lead Product Designer to guide a high-performing product experience squad of ten professionals, including UI designers, researchers, and front-end specialists. The team is dedicated to modernizing our 
+  id: jd_220 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: React Native, JavaScript, TypeScript, Redux Toolkit, React Navigation, iOS Deployment, Android Studio
+  preferred_skills: GraphQL, Node.js
+  description: Our expanding mobile engineering team is seeking a Junior React Native Developer to help build and expand our customer-facing digital commercial platform. Working within an established product delivery group of six software professionals, you will su
 
-  id: jd_218 | title: Senior UX Systems Designer | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Figma, Tokens Studio, Hotjar, UserTesting, Framer, Design Systems, User Research, Prototyping
-  preferred_skills: React, CSS
-  description: We are looking for an experienced Senior UX Systems Designer to join our core infrastructure experience team. Our department consists of eight specialist designers who support twenty separate cross-functional engineering pods by building reusable com
+  id: jd_221 | title: Junior Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Flutter, Dart, Provider, BLoC, Firebase, Git, REST APIs
+  preferred_skills: Fastlane, Kotlin
+  description: We are looking for an energetic Junior Flutter Developer to join our core application experience squad. Our technical department consists of eight specialist engineers who are dedicated to scaling our hybrid transport tracking ecosystem across global
 
-  id: jd_219 | title: Senior Interaction & Product Designer | level: senior | min_exp: 6 yrs | raw_text: 187 words
-  required_skills: Figma, ProtoPie, Lookback, UserTesting, Design Systems, User Research, Prototyping, Interaction Design
-  preferred_skills: Storybook
-  description: Our digital experience group is searching for an exceptional Senior Interaction and Product Designer to lead the UX strategy for our core financial applications. Operating within a dedicated cross-functional team of twelve, which includes senior prod
+  id: jd_222 | title: Mid-Level iOS Developer | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: Swift, iOS, SwiftUI, Combine, CoreData, Git, Unit Testing, CI/CD
+  preferred_skills: Objective-C, CocoaPods
+  description: Our digital media platform is searching for an experienced Mid-Level iOS Developer to take charge of our native application streams. You will operate within a cross-functional department of twelve engineering team members, including product strategis
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 648 pairs total.
+Overall dataset so far: 657 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  125  →  expected this batch: 6 pairs (from seniority gaps below)
+  poor_match            existing:  131  →  expected this batch: 0 pairs (from seniority gaps below)
   weak_match            existing:  133  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  128  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  131  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  131  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:  128  →  expected this batch: 6 pairs (from seniority gaps below)
+  strong_match          existing:  131  →  expected this batch: 3 pairs (from seniority gaps below)
+  excellent_match       existing:  134  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_649    resume_217 × jd_217
-  pair_650    resume_217 × jd_218
-  pair_651    resume_217 × jd_219
-  pair_652    resume_218 × jd_217
-  pair_653    resume_218 × jd_218
-  pair_654    resume_218 × jd_219
-  pair_655    resume_219 × jd_217
-  pair_656    resume_219 × jd_218
-  pair_657    resume_219 × jd_219
+  pair_658    resume_220 × jd_220
+  pair_659    resume_220 × jd_221
+  pair_660    resume_220 × jd_222
+  pair_661    resume_221 × jd_220
+  pair_662    resume_221 × jd_221
+  pair_663    resume_221 × jd_222
+  pair_664    resume_222 × jd_220
+  pair_665    resume_222 × jd_221
+  pair_666    resume_222 × jd_222
 
 ════════════════════════════════════
 OUTPUT FORMAT
