@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_223 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Shopify, Microsoft Excel, Google Analytics, Data Entry, Inventory Management, Operations, Python, Pandas
-  projects: MarketGrid
-  background: I am an enthusiastic junior professional looking to kickstart my career in the retail management space after completing my undergraduate studies. During my final academic year, I worked as a Junior Operations Intern at a growing e-commerce marketplace startup for a total duration of six months, oper
+  id: resume_226 | level: middle | exp: 3.0 yrs | raw_text: 280 words
+  skills: Financial Modeling, Python, Microsoft Excel, SQL Server, Pandas, Financial Reporting, Fintech, Forecasting
+  projects: FinStream
+  background: I am a dedicated mid-level financial analyst with over three years of professional experience specializing in the modern fintech sector, focusing heavily on strategic financial modeling, multi-tier regulatory reporting, and subscription metrics. In my primary role as a Corporate Financial Analyst at
 
-  id: resume_224 | level: junior | exp: 0.7 yrs | raw_text: 262 words
-  skills: WooCommerce, Figma, Google Sheets, Merchandising, Catalog Operations, Trello, JavaScript, HTML5
-  projects: MerchFlow
-  background: I am a highly motivated junior e-commerce specialist seeking an introductory professional role within modern digital retail ecosystems, merchandising setups, and catalog operations. I recently completed an extensive, hands-on eight-month internship as an E-commerce Assistant at a regional fashion re
+  id: resume_227 | level: senior | exp: 7.0 yrs | raw_text: 253 words
+  skills: Financial Modeling, Anaplan, Python, PostgreSQL, Tableau, Financial Reporting, Compliance, Fintech, Docker
+  projects: VaultCheck
+  background: I am a senior financial engineer and fintech compliance lead with seven years of deep technical experience leading large-scale treasury monitoring, financial modeling, and regulatory accounting transformations. In my current capacity as Principal Financial Systems Analyst at an enterprise cross-bord
 
-  id: resume_225 | level: senior | exp: 8.0 yrs | raw_text: 266 words
-  skills: SAP Commerce Cloud, Salesforce Commerce Cloud, Adobe Analytics, SQL Server, Python, Node.js, Docker, PostgreSQL, E-commerce Architecture, Supply Chain Optimization, ERP Integration, Marketplace Operations, Agile Leadership, Microservices
-  projects: VendorCore
-  background: I am a senior e-commerce systems architect and operations lead with over eight years of experience steering enterprise marketplace transformations and omnichannel supply chain projects. In my current capacity as Principal Solutions Engineer at a multinational e-commerce enterprise, where I have spen
+  id: resume_228 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: Financial Modeling, Anaplan, Python, SQL Server, Tableau, PostgreSQL, Financial Reporting, Compliance, Fintech, Oracle
+  projects: LedgerCore
+  background: I am an analytical senior fintech operations manager and financial modeling expert with eight years of professional experience directing enterprise accounting platforms, statutory financial reporting, and complex regulatory compliance protocols. In my current role as Lead Fintech Controller at a glo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_223 | title: Mid-Level E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 189 words
-  required_skills: Shopify, WooCommerce, Microsoft Excel, Google Sheets, Figma
-  preferred_skills: Python, SQL, Google Analytics
-  description: Our digital retail team is seeking a Mid-Level E-commerce Operations Specialist to take charge of our multi-channel commercial operations. Working inside an agile core group of seven professionals, you will manage operational workflows for our growin
+  id: jd_226 | title: Junior Fintech Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 210 words
+  required_skills: Financial Modeling, Microsoft Excel, Python, SQL Server, Tableau
+  preferred_skills: Anaplan, Compliance
+  description: Our corporate development group is seeking a Junior Fintech Financial Analyst to support our expanding multi-channel digital consumer lending operations. Operating within an agile core team of seven finance professionals, you will manage day-to-day c
 
-  id: jd_224 | title: Senior Marketplace Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: SAP Commerce Cloud, Salesforce Commerce Cloud, Python, SQL Server, Docker
-  preferred_skills: Node.js, Adobe Analytics
-  description: We are searching for a Senior Marketplace Solutions Architect to lead the modernization of our enterprise multi-vendor commerce platform. You will sit at the center of an enterprise product group of twelve staff members, driving technical excellence 
+  id: jd_227 | title: Associate Compliance and Reporting Specialist | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: Microsoft Excel, PostgreSQL, Python, Financial Reporting, Financial Modeling
+  preferred_skills: Anaplan, Tableau
+  description: Our digital asset risk management division is looking for an Associate Compliance and Reporting Specialist to streamline our statutory accounting validation pipelines and corporate reporting systems. You will join an established core compliance divis
 
-  id: jd_225 | title: Senior E-commerce Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Node.js, PostgreSQL, Docker, Python, Adobe Analytics
-  preferred_skills: SAP Commerce Cloud, SQL Server
-  description: Our expanding retail engineering division is looking for an analytical Senior E-commerce Systems Engineer to heavily optimize our core backend transaction pipelines and strategic seller platforms. You will join an established core engineering divisio
+  id: jd_228 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Anaplan, Python, SQL Server, Financial Modeling, Docker
+  preferred_skills: PostgreSQL, Tableau
+  description: We are searching for a Senior Financial Systems Architect to lead the modernization of our enterprise financial modeling systems and cross-border treasury infrastructure. You will sit at the center of an enterprise product group of twelve staff membe
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 666 pairs total.
+Overall dataset so far: 675 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  131  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  133  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  134  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  134  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  134  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  135  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  135  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  134  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  135  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  136  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_667    resume_223 × jd_223
-  pair_668    resume_223 × jd_224
-  pair_669    resume_223 × jd_225
-  pair_670    resume_224 × jd_223
-  pair_671    resume_224 × jd_224
-  pair_672    resume_224 × jd_225
-  pair_673    resume_225 × jd_223
-  pair_674    resume_225 × jd_224
-  pair_675    resume_225 × jd_225
+  pair_676    resume_226 × jd_226
+  pair_677    resume_226 × jd_227
+  pair_678    resume_226 × jd_228
+  pair_679    resume_227 × jd_226
+  pair_680    resume_227 × jd_227
+  pair_681    resume_227 × jd_228
+  pair_682    resume_228 × jd_226
+  pair_683    resume_228 × jd_227
+  pair_684    resume_228 × jd_228
 
 ════════════════════════════════════
 OUTPUT FORMAT
