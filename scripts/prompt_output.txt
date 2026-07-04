@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_136 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: Python, Flask, MySQL, SQLite, PyTest
-  projects: TaskMaster
-  background: I am a recent computer science graduate with a strong passion for backend development and API design. During my final year, I completed a six-month internship as a Junior Developer at a local software agency, where I was part of a five-person team focused on building internal productivity tools. My 
+  id: resume_139 | level: senior | exp: 8.0 yrs | raw_text: 276 words
+  skills: PostgreSQL, MongoDB, Redis, SQL Tuning, Database Architecture, Distributed Systems, Data Modeling
+  projects: DataGuard
+  background: I am a seasoned Database Architect with eight years of experience specializing in high-scale data infrastructure and performance tuning. In my previous role as a Principal Database Engineer at a global financial enterprise, I led a team of ten engineers responsible for managing a multi-petabyte Post
 
-  id: resume_137 | level: junior | exp: 0.7 yrs | raw_text: 253 words
-  skills: JavaScript, Node.js, Express, MongoDB, Jest, Git
-  projects: SimpleLink
-  background: I am an enthusiastic technology graduate with a focus on web development and API integration. During my academic career, I interned for eight months at a small startup, working within a cross-functional team of six developers to support the backend of a customer-facing portal. My primary responsibil
+  id: resume_140 | level: senior | exp: 7.0 yrs | raw_text: 262 words
+  skills: PostgreSQL, Redis, MongoDB, Data Modeling, Database Optimization, Performance Tuning, CI/CD
+  projects: SchemaFlow
+  background: I am a senior database engineer with over seven years of professional experience in designing and scaling complex database ecosystems for enterprise-grade applications. As a Lead Database Engineer at an international logistics agency, I managed a team of eight focused on performance optimization and
 
-  id: resume_138 | level: middle | exp: 4.0 yrs | raw_text: 258 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, AWS ECS, CI/CD
-  projects: DataStream
-  background: I am an experienced backend engineer with four years of professional development experience, primarily in Python and Node.js environments. In my current role as a Backend Developer at a mid-sized e-commerce company, I am part of a team of 15 engineers tasked with maintaining a high-traffic API platf
+  id: resume_141 | level: senior | exp: 9.0 yrs | raw_text: 250 words
+  skills: PostgreSQL, Redis, MongoDB, Database Observability, Data Engineering, SQL Tuning, Performance Engineering
+  projects: QueryPulse
+  background: I am a principal database engineer with nine years of deep technical experience in high-traffic data engineering, focusing on PostgreSQL, Redis, and MongoDB architectures. In my previous role as a Principal Data Engineer at a large e-commerce enterprise, I led a cross-functional team of twelve engin
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_136 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: Python, FastAPI, PostgreSQL, AWS, Distributed Systems, Microservices
-  preferred_skills: Kubernetes, Go
-  description: We are seeking a highly experienced Senior Backend Architect to join our central engineering group of 50 developers. Our team builds and maintains the core infrastructure that powers our global payment processing services. We face unique challenges i
+  id: jd_139 | title: Junior Database Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: PostgreSQL, SQL, Redis, Database Modeling
+  preferred_skills: MongoDB, Python
+  description: We are seeking a proactive Junior Database Analyst to join our expanding data team of 15 professionals. Our department focuses on supporting internal product teams by maintaining data integrity and generating reports from our core PostgreSQL-based an
 
-  id: jd_137 | title: Senior API Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: Python, Node.js, PostgreSQL, Redis, API Design, Technical Leadership
-  preferred_skills: GraphQL, Prometheus
-  description: Our team is looking for a Senior API Lead to oversee the development and optimization of our real-time analytics platform, which processes over 1 million requests per day. The team consists of 30 engineers working on diverse backend and data-driven i
+  id: jd_140 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 192 words
+  required_skills: PostgreSQL, SQL, Redis, MongoDB, Data Modeling, Performance Tuning
+  preferred_skills: Kubernetes, CI/CD
+  description: Our team is looking for a skilled Database Engineer to join our growing infrastructure squad of 20 professionals. We manage the core database services for our multi-tenant SaaS product, which demands high availability, consistency, and efficient perf
 
-  id: jd_138 | title: Senior Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: Python, FastAPI, PostgreSQL, AWS, Asynchronous Processing, System Architecture
-  preferred_skills: Kafka, MLOps
-  description: We are seeking a Senior Systems Engineer to build and maintain the backend infrastructure for our new AI-driven product suite. Our core team of 20 engineers focuses on creating high-performance services that integrate complex data models with our cus
+  id: jd_141 | title: Backend Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 200 words
+  required_skills: PostgreSQL, MongoDB, Redis, SQL, Database Replication, Query Optimization
+  preferred_skills: Kafka, Database Security
+  description: We are looking for a Backend Database Engineer to own the data lifecycle of our internal threat detection engine. The team is currently 25 members strong, consisting of data engineers, backend developers, and security analysts. We are focused on buil
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 405 pairs total.
+Overall dataset so far: 414 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   75  →  expected this batch: 6 pairs (from seniority gaps below)
-  weak_match            existing:   77  →  expected this batch: 3 pairs (from seniority gaps below)
-  moderate_match        existing:   78  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   77  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:   81  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   80  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   78  →  expected this batch: 3 pairs (from seniority gaps below)
+  strong_match          existing:   77  →  expected this batch: 6 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_406    resume_136 × jd_136
-  pair_407    resume_136 × jd_137
-  pair_408    resume_136 × jd_138
-  pair_409    resume_137 × jd_136
-  pair_410    resume_137 × jd_137
-  pair_411    resume_137 × jd_138
-  pair_412    resume_138 × jd_136
-  pair_413    resume_138 × jd_137
-  pair_414    resume_138 × jd_138
+  pair_415    resume_139 × jd_139
+  pair_416    resume_139 × jd_140
+  pair_417    resume_139 × jd_141
+  pair_418    resume_140 × jd_139
+  pair_419    resume_140 × jd_140
+  pair_420    resume_140 × jd_141
+  pair_421    resume_141 × jd_139
+  pair_422    resume_141 × jd_140
+  pair_423    resume_141 × jd_141
 
 ════════════════════════════════════
 OUTPUT FORMAT
