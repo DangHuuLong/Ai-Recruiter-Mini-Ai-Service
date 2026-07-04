@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_157 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Product Lifecycle Management, Jira, Stripe API, Apache Kafka, Redis, Stakeholder Management, Strategic Planning
-  projects: PulseCheck, FeatureLaunch
-  background: I am a seasoned Senior Product Manager with eight years of experience delivering high-impact SaaS solutions within fast-paced enterprise environments. During my four-year tenure as a Product Lead at a global fintech enterprise, I managed a cross-functional team of twelve, overseeing the end-to-end p
+  id: resume_160 | level: junior | exp: 0.5 yrs | raw_text: 299 words
+  skills: Buffer, Canva, Google Analytics 4, WordPress 6.0, Social Media Management, Content Creation
+  projects: CampusVoices
+  background: I am a recent Communications graduate with a burgeoning passion for digital marketing and content creation. During my final year, I completed a six-month internship at a small local creative agency where I supported a team of four in managing social media content calendars and basic community engage
 
-  id: resume_158 | level: senior | exp: 7.5 yrs | raw_text: 261 words
-  skills: Cloud Architecture, Kubernetes, Product Roadmap, Behavioral Analytics, Pendo, Mixpanel, Developer Experience
-  projects: DockEase, MetricMaster
-  background: I am an accomplished Senior Product Manager with over seven years of specialized experience in cloud-native platform products and developer tooling. In my most recent role as a Principal Product Manager at a fast-growth tech startup, I led a multidisciplinary team of fifteen to redefine our infrastr
+  id: resume_161 | level: junior | exp: 0.3 yrs | raw_text: 257 words
+  skills: Meta Business Suite, Canva, Google Search Console, Content Strategy, Notion, Trello
+  projects: EcoTrend
+  background: I am a motivated Marketing graduate seeking an entry-level position to apply my academic background in digital storytelling and consumer behavior. During my recent internship at a boutique marketing startup, I worked with a team of three on developing organic social media content and performing basi
 
-  id: resume_159 | level: senior | exp: 9.0 yrs | raw_text: 261 words
-  skills: Mobile Product Management, OKRs, A/B Testing, CI/CD Pipeline, Swift, Kotlin, Stakeholder Management
-  projects: AppVelocity, PaySafe
-  background: I am a strategic Principal Product Manager with nine years of experience driving product innovation in the e-commerce and mobile application sectors. Throughout my career at a major global e-commerce enterprise, I led a product department of twenty, responsible for the end-to-end strategy of our mob
+  id: resume_162 | level: middle | exp: 4.0 yrs | raw_text: 260 words
+  skills: Ahrefs, SEMrush, Google Analytics 4, Google Search Console, Webflow, Shopify, HubSpot, Looker Studio
+  projects: ContentScaler, SocialPulse
+  background: I am a dedicated Digital Marketing Specialist with four years of professional experience driving organic growth and managing multi-channel content strategies. In my most recent role at a mid-sized digital marketing agency, I led a cross-functional team of six, overseeing the execution of end-to-end 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_157 | title: Junior Product Associate | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Jira, Confluence, Amplitude, Agile Methodologies, Product Documentation
-  preferred_skills: User Research, Data Analytics
-  description: We are looking for a highly motivated Junior Product Associate to join our growing product team of six professionals. In this role, you will support our daily product operations, assist in gathering user feedback, and help track key performance indic
+  id: jd_160 | title: Senior Technical SEO Lead | level: senior | min_exp: 6 yrs | raw_text: 217 words
+  required_skills: Technical SEO, BrightEdge, Conductor, Python, BigQuery, Schema Markup, Enterprise Marketing
+  preferred_skills: AI Content Generation, Data Engineering
+  description: Our performance marketing department of twenty is seeking a seasoned Senior Technical SEO Lead to drive search strategy for our global enterprise platform. The team is dedicated to large-scale organic growth, ensuring our complex site architecture is
 
-  id: jd_158 | title: Mid-level Product Manager | level: middle | min_exp: 3 yrs | raw_text: 207 words
-  required_skills: Product Roadmap, Jira, SQL, Mixpanel, Feature Prioritization, Product Lifecycle Management
-  preferred_skills: Fintech Knowledge, A/B Testing
-  description: Our product department of fifteen is seeking a detail-oriented Mid-level Product Manager to help lead our reporting and product initiatives. We provide essential financial and analytic insights that fuel our growth as a leader in the data-centric fin
+  id: jd_161 | title: Senior Performance Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Performance Marketing, Paid Media Strategy, Google Ads, Meta Ads, BigQuery, Tableau, Marketing Mix Modeling
+  preferred_skills: SQL Analysis, Budget Management
+  description: Our performance marketing team is searching for a visionary Senior Performance Marketing Manager to lead user acquisition and retention efforts for our fast-growing e-commerce platform. Our department of eighteen professionals focuses on managing hig
 
-  id: jd_159 | title: Mid-level Product Manager | level: middle | min_exp: 3 yrs | raw_text: 198 words
-  required_skills: Technical Product Management, API Strategy, PostgreSQL, Data Analysis, Stakeholder Management, Agile
-  preferred_skills: Compliance Frameworks, Cloud Platforms
-  description: Our growing product team of ten is seeking a Mid-level Product Manager to own our core platform product and compliance frameworks. We are a team committed to transparency, accuracy, and efficiency in our financial data processing. As a lead individua
+  id: jd_162 | title: Senior Content Strategy Lead | level: senior | min_exp: 6 yrs | raw_text: 215 words
+  required_skills: Content Strategy, AI Content Generation, Conductor, BrightEdge, Editorial Leadership, Stakeholder Management
+  preferred_skills: Data Engineering, Technical SEO
+  description: We are looking for a visionary Senior Content Strategy Lead to drive the strategy for our growing content department of twenty-five professionals. Our team is focused on building long-term brand authority, driving user acquisition through long-form e
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 468 pairs total.
+Overall dataset so far: 477 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   93  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   95  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   91  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   91  →  expected this batch: 6 pairs (from seniority gaps below)
+  poor_match            existing:   93  →  expected this batch: 6 pairs (from seniority gaps below)
+  weak_match            existing:   95  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   94  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   97  →  expected this batch: 0 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_469    resume_157 × jd_157
-  pair_470    resume_157 × jd_158
-  pair_471    resume_157 × jd_159
-  pair_472    resume_158 × jd_157
-  pair_473    resume_158 × jd_158
-  pair_474    resume_158 × jd_159
-  pair_475    resume_159 × jd_157
-  pair_476    resume_159 × jd_158
-  pair_477    resume_159 × jd_159
+  pair_478    resume_160 × jd_160
+  pair_479    resume_160 × jd_161
+  pair_480    resume_160 × jd_162
+  pair_481    resume_161 × jd_160
+  pair_482    resume_161 × jd_161
+  pair_483    resume_161 × jd_162
+  pair_484    resume_162 × jd_160
+  pair_485    resume_162 × jd_161
+  pair_486    resume_162 × jd_162
 
 ════════════════════════════════════
 OUTPUT FORMAT
