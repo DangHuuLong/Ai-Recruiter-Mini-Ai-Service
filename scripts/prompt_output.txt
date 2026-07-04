@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_241 | level: junior | exp: 0.75 yrs | raw_text: 254 words
-  skills: BambooHR, Greenhouse, Excel, Onboarding, Recruiting
-  projects: OnboardSync
-  background: I am an enthusiastic Human Resources professional who recently entered the field after completing extensive academic preparations. In my previous tenure as a Human Resources Intern at a high-growth tech startup, I worked for exactly nine months within an agile talent operations squad consisting of t
+  id: resume_244 | level: junior | exp: 1.0 yrs | raw_text: 251 words
+  skills: LangChain, Transformers, Qdrant, FastAPI, Python
+  projects: DocuMind
+  background: I am an enthusiastic Artificial Intelligence Engineer with one year of professional experience focused on natural language processing, semantic search architectures, and large language model integration. In my previous role as an Assistant AI Specialist at a high-growth tech startup, I operated for 
 
-  id: resume_242 | level: middle | exp: 4.0 yrs | raw_text: 254 words
-  skills: Workday, Greenhouse, LinkedInRecruiter, ADPWorkforceNow, PowerBI, HRIS, Recruiting, SQLServer
-  projects: TalentMetricEngine
-  background: I am a data-driven Human Resources Generalist with four years of comprehensive corporate experience specializing in full-cycle recruitment, workforce analytics, and human resource information system maintenance. In my previous position as a Talent Operations Specialist at an enterprise financial ser
+  id: resume_245 | level: senior | exp: 8.0 yrs | raw_text: 250 words
+  skills: LangChain, Transformers, Qdrant, PyTorch, LlamaIndex, FastAPI, Python
+  projects: TitanRAG
+  background: I am a senior AI Lead and principal NLP Systems Architect with eight years of comprehensive corporate experience specializing in distributed model training, advanced retrieval architectures, and deep neural engineering. In my current position as a Principal Generative AI Engineer at an enterprise te
 
-  id: resume_243 | level: middle | exp: 5.0 yrs | raw_text: 252 words
-  skills: Lever, SAPSuccessFactors, Greenhouse, BambooHR, Onboarding, Recruiting, HRIS
-  projects: PipelineAutomator
-  background: I am an analytical Talent Acquisition Partner and HR Information Systems Specialist with five years of proven professional experience scaling technical teams, implementing automated tracking pipelines, and directing digital onboarding initiatives. In my current role as a Senior Recruiter and Systems
+  id: resume_246 | level: senior | exp: 7.0 yrs | raw_text: 262 words
+  skills: Transformers, LangChain, Qdrant, PyTorch, Ray, DeepSpeed, Python
+  projects: AgentForge
+  background: I am an analytical NLP Tech Lead and principal Machine Learning Architect with seven years of proven professional experience scaling text intelligence pipelines, implementing automated fine-tuning loops, and directing high-throughput retrieval infrastructures. In my current role as a Senior AI Staff
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_241 | title: Human Resources Coordinator | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: BambooHR, Greenhouse, Excel
-  preferred_skills: Onboarding, Recruiting
-  description: Our corporate people operations department is actively searching for a structured Junior Human Resources Coordinator to assist in the daily administration, database preservation, and lifecycle management of our employee systems. Working as an individ
+  id: jd_244 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: LangChain, Transformers, Python
+  preferred_skills: Qdrant, FastAPI
+  description: Our corporate generative engineering department is actively searching for a structured Junior AI Engineer to assist in the daily implementation, prompt adjustment, and lifecycle management of our semantic application workflows. Working as an individu
 
-  id: jd_242 | title: Senior HRIS and Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Workday, OracleCloudHCM, SQLServer
-  preferred_skills: HRIS, DataModeling
-  description: We are searching for a Senior HRIS and Solutions Architect to lead the long-term system design, database integration, and compliance scaling of our global human resource information systems and enterprise employee environments. Directing an advanced 
+  id: jd_245 | title: Associate NLP Application Developer | level: junior | min_exp: 1 yrs | raw_text: 184 words
+  required_skills: LangChain, Qdrant, Python
+  preferred_skills: Transformers, FastAPI
+  description: Our conversational engineering division is seeking an Associate NLP Application Developer to contribute to the construction, maintenance, and deployment of our high-volume cognitive search solutions. Operating as a core technical member within a grow
 
-  id: jd_243 | title: Lead Enterprise Talent Systems Administrator | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Lever, SAPSuccessFactors, BambooHR
-  preferred_skills: HRIS, Recruiting
-  description: Our global people operations group is seeking a Lead Enterprise Talent Systems Administrator to pioneer the optimization, implementation, and management of our technical recruitment software platforms and data architectures. Leading an administrative
+  id: jd_246 | title: Senior Generative AI Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: PyTorch, Qdrant, Transformers
+  preferred_skills: Ray, DeepSpeed
+  description: We are searching for a Senior Generative AI Infrastructure Architect to lead the long-term cluster optimization, deep model tuning, and scaling of our global text intelligence systems and production large language model environments. Directing an adv
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 720 pairs total.
+Overall dataset so far: 729 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  143  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  143  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  144  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  145  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  145  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  145  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:  148  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  144  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  147  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  145  →  expected this batch: 4 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_721    resume_241 × jd_241
-  pair_722    resume_241 × jd_242
-  pair_723    resume_241 × jd_243
-  pair_724    resume_242 × jd_241
-  pair_725    resume_242 × jd_242
-  pair_726    resume_242 × jd_243
-  pair_727    resume_243 × jd_241
-  pair_728    resume_243 × jd_242
-  pair_729    resume_243 × jd_243
+  pair_730    resume_244 × jd_244
+  pair_731    resume_244 × jd_245
+  pair_732    resume_244 × jd_246
+  pair_733    resume_245 × jd_244
+  pair_734    resume_245 × jd_245
+  pair_735    resume_245 × jd_246
+  pair_736    resume_246 × jd_244
+  pair_737    resume_246 × jd_245
+  pair_738    resume_246 × jd_246
 
 ════════════════════════════════════
 OUTPUT FORMAT
