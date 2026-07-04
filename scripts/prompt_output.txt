@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_103 | level: senior | exp: 7.0 yrs | raw_text: 257 words
-  skills: Python, scikit-learn, PyTorch, pandas, NumPy, AWS SageMaker
-  projects: TelemetryFit
-  background: An accomplished Senior Data Scientist with 7.0 years of experience designing robust predictive models, leading advanced analytics initiatives, and optimizing statistical workflows. I worked for four years at a large financial enterprise within an advanced analytics group of ten engineers where I spe
+  id: resume_106 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Python, Flask, React, HTML5, CSS3, MySQL
+  projects: TaskShelf
+  background: An enthusiastic Junior Full-Stack Developer and recent graduate with 0.5 years of professional internship experience building responsive web interfaces and supporting server-side infrastructure. I spent six months working as an engineering intern at a boutique software development agency within a sm
 
-  id: resume_104 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: Python, PyTorch, scikit-learn, pandas, OpenCV, Computer Vision
-  projects: VisionFlow
-  background: A technical Lead Machine Learning Engineer with 8.0 years of deep industry expertise developing computer vision architectures, deploying complex deep learning assets, and managing enterprise analytics pipelines. I dedicated four and a half years to a major healthcare enterprise leading a computer vi
+  id: resume_107 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: Python, Django, FastAPI, React, Redux, PostgreSQL, Redis, Docker, Tailwind CSS
+  projects: DevTrace
+  background: An analytical Mid-Level Software Engineer with 4.0 years of experience implementing scalable full-stack applications, designing robust relational databases, and maintaining containerized deployment lifecycles. I spent two and a half years at a fast-growing software startup within an agile product gr
 
-  id: resume_105 | level: senior | exp: 6.5 yrs | raw_text: 272 words
-  skills: Python, scikit-learn, PyTorch, pandas, Docker, Machine Learning, Forecasting
-  projects: StreamText
-  background: An analytical Senior Machine Learning Scientist with 6.5 years of professional experience building scalable forecasting systems, training deep learning algorithms, and leading automated pipeline implementations. I committed three and a half years to an enterprise marketing analytics company operatin
+  id: resume_108 | level: senior | exp: 7.5 yrs | raw_text: 272 words
+  skills: Python, FastAPI, Django, React, TypeScript, Next.js, Apache Kafka, PostgreSQL, Docker, Terraform, AWS, WebSocket
+  projects: CoreState
+  background: A visionary Senior Full-Stack Developer with 7.5 years of industry experience architecting distributed web platforms, designing resilient cloud infrastructures, and leading cross-functional engineering cells. I dedicated four years to a major healthcare enterprise directing a core platform engineeri
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_103 | title: Junior Machine Learning Engineer | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Python, pandas, scikit-learn
-  preferred_skills: Docker
-  description: Our data product division is seeking a motivated Junior Machine Learning Engineer to contribute to the construction, refinement, and validation of our next-generation predictive modeling interfaces. Operating within a supportive engineering group of 
+  id: jd_106 | title: Senior Full-Stack Architect (FastAPI & Event-Driven Systems) | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Python, FastAPI, Apache Kafka, React, TypeScript, Terraform
+  preferred_skills: Kubernetes
+  description: Our core product division is seeking an exceptional Senior Full-Stack Architect to orchestrate the technical development, structural modernization, and infrastructure expansion of our high-volume business automation system. Leading a dedicated engine
 
-  id: jd_104 | title: Machine Learning Engineer (Predictive Modeling) | level: middle | min_exp: 3 yrs | raw_text: 204 words
-  required_skills: Python, pandas, PyTorch, scikit-learn
+  id: jd_107 | title: Lead Full-Stack Engineer (Next.js & Cloud Infrastructure) | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Python, Django, React, Next.js, PostgreSQL, AWS
   preferred_skills: Docker
-  description: Our core intelligence systems team is looking for an analytical Machine Learning Engineer to take charge of the expansion, deployment, and testing of our business automation models. Working inside an agile engineering squad of eight professionals, yo
+  description: Our global platform experience team is looking for a technical Lead Full-Stack Engineer to drive the architectural design, security standardizations, and deployment operations of our international cloud services. Working inside an elite development g
 
-  id: jd_105 | title: Senior ML Infrastructure Architect (PyTorch & Computer Vision) | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Python, PyTorch, scikit-learn, pandas, Computer Vision, Docker
-  preferred_skills: AWS
-  description: Our enterprise automation division is seeking a technical Senior ML Infrastructure Architect to orchestrate the lifecycle, infrastructure strategy, and production deployment of our high-volume machine learning systems. Leading an elite architecture g
+  id: jd_108 | title: Senior Software Engineer (Real-Time Applications & WebSockets) | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Python, FastAPI, WebSocket, Redis, React, Redux
+  preferred_skills: Docker
+  description: Our operations platform division is seeking an analytical Senior Software Engineer to lead the architectural creation, feature optimization, and continuous delivery of our real-time collaboration applications. Managing a production squad of seven ski
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 306 pairs total.
+Overall dataset so far: 315 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   58  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   58  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   57  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   56  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:   77  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   58  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   58  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   60  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   59  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   80  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_307    resume_103 × jd_103
-  pair_308    resume_103 × jd_104
-  pair_309    resume_103 × jd_105
-  pair_310    resume_104 × jd_103
-  pair_311    resume_104 × jd_104
-  pair_312    resume_104 × jd_105
-  pair_313    resume_105 × jd_103
-  pair_314    resume_105 × jd_104
-  pair_315    resume_105 × jd_105
+  pair_316    resume_106 × jd_106
+  pair_317    resume_106 × jd_107
+  pair_318    resume_106 × jd_108
+  pair_319    resume_107 × jd_106
+  pair_320    resume_107 × jd_107
+  pair_321    resume_107 × jd_108
+  pair_322    resume_108 × jd_106
+  pair_323    resume_108 × jd_107
+  pair_324    resume_108 × jd_108
 
 ════════════════════════════════════
 OUTPUT FORMAT
