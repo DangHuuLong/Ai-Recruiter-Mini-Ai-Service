@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_97 | level: senior | exp: 7.5 yrs | raw_text: 270 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Terraform, High Availability
-  projects: ChronoCache
-  background: An accomplished Senior Database Engineer with 7.5 years of industry experience engineering high-throughput transactional backends, optimizing complex analytical schemas, and organizing distributed memory layers. I began my engineering tenure at a growing software startup, working for three years wit
+  id: resume_100 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: Python, Node.js, SQL, Docker, REST APIs
+  projects: QuickTask
+  background: An enthusiastic Junior Backend Engineer and recent graduate eager to apply academic knowledge to real-world software applications. I recently completed an intensive six-month internship at a fast-growing technology startup where I served inside a small engineering team of four developers to maintain
 
-  id: resume_98 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Administration, Sharding
-  projects: DocuStream
-  background: An analytical Principal Database Architect with 8.0 years of specialized experience in data modeling, high-volume query tuning, and distributed NoSQL clustering. I spent my first three years at a modern design and engineering agency, working within a multi-disciplinary squad of eight builders to sup
+  id: resume_101 | level: middle | exp: 4.0 yrs | raw_text: 272 words
+  skills: Python, Node.js, Express, SQL, AWS, REST APIs, CI/CD
+  projects: DataSync
+  background: An analytical Software Engineer with 4.0 years of professional background developing dependable web services, tuning application logic, and maintaining cloud environments. I dedicated over two years to an e-commerce startup within an agile software team of six engineers where I drove the refactoring
 
-  id: resume_99 | level: senior | exp: 6.5 yrs | raw_text: 269 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Query Optimization, Performance Tuning
-  projects: QueryLens
-  background: A technical Lead Database Engineer and Systems Specialist with 6.5 years of industry tenure focusing on scalable logical data modeling, high-availability cluster setup, and operational pipeline auditing. My professional path started at an e-commerce startup where I served for two and a half years in
+  id: resume_102 | level: senior | exp: 7.5 yrs | raw_text: 269 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kafka, Docker, Terraform, Microservices, High Availability
+  projects: microguard
+  background: A technical Senior Backend Architect with 7.5 years of industry experience architecting distributed architectures, optimizing high-concurrency microservices, and leading infrastructure transformations. I spent three years guiding technical decisions at a high-growth fintech startup, steering a core 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_97 | title: Junior Database Administrator (PostgreSQL) | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: PostgreSQL, Data Modeling, Database Administration
-  preferred_skills: Redis, MongoDB
-  description: We are looking for a motivated Junior Database Administrator to join our dedicated data infrastructure group and support the continuous maintenance, security, and schema modification of our primary business applications. You will operate within an es
+  id: jd_100 | title: Senior Backend Engineer (FastAPI & Microservices) | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: FastAPI, PostgreSQL, Kafka, Terraform
+  preferred_skills: Redis, Python
+  description: Our core financial systems group is looking for an expert Senior Backend Engineer to direct the technical evolution, optimization, and scaling of our transactional processing architecture. Operating within a highly collaborative engineering division 
 
-  id: jd_98 | title: Database Engineer (PostgreSQL & Redis) | level: middle | min_exp: 3 yrs | raw_text: 201 words
-  required_skills: PostgreSQL, Redis, Data Modeling
-  preferred_skills: MongoDB, Terraform
-  description: Our core data platform crew is seeking an analytical mid-level Database Engineer to manage the performance, reliability, and caching layers of our high-volume web systems. Working inside a collaborative infrastructure engineering division of ten prof
+  id: jd_101 | title: Lead Backend Architect (Node.js & Redis) | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Node.js, Redis, PostgreSQL, Docker
+  preferred_skills: Microservices, TypeScript
+  description: An enterprise analytics platform is searching for a technical Lead Backend Architect to spearhead the performance scaling, session clustering, and structural design of our global data ingestion layout. You will lead an elite backend engineering squad
 
-  id: jd_99 | title: Senior Lead Distributed Database Architect | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Terraform
-  preferred_skills: High Availability, Database Administration
-  description: We are on the hunt for a highly skilled Senior Lead Distributed Database Architect to spearhead the performance scaling, clustering, and structural evolution of our global multi-engine storage layout. You will lead an elite data engineering and platf
+  id: jd_102 | title: Principal Systems Engineer (Python & High Availability) | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Python, High Availability, PostgreSQL, Microservices
+  preferred_skills: CI/CD, Docker
+  description: Our core infrastructure team is seeking an analytical Principal Systems Engineer to manage the resilience, scalability, and microservice topologies of our high-volume digital platform. Working inside a collaborative infrastructure division of fourtee
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 288 pairs total.
+Overall dataset so far: 297 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   55  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   55  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   54  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   53  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:   71  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   55  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   55  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   57  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   56  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   74  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_289    resume_97 × jd_97
-  pair_290    resume_97 × jd_98
-  pair_291    resume_97 × jd_99
-  pair_292    resume_98 × jd_97
-  pair_293    resume_98 × jd_98
-  pair_294    resume_98 × jd_99
-  pair_295    resume_99 × jd_97
-  pair_296    resume_99 × jd_98
-  pair_297    resume_99 × jd_99
+  pair_298    resume_100 × jd_100
+  pair_299    resume_100 × jd_101
+  pair_300    resume_100 × jd_102
+  pair_301    resume_101 × jd_100
+  pair_302    resume_101 × jd_101
+  pair_303    resume_101 × jd_102
+  pair_304    resume_102 × jd_100
+  pair_305    resume_102 × jd_101
+  pair_306    resume_102 × jd_102
 
 ════════════════════════════════════
 OUTPUT FORMAT
