@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_286 | level: middle | exp: 4.0 yrs | raw_text: 266 words
-  skills: Google Analytics 4, Ahrefs, Semrush, Meta Business Suite, Wordpress, Shopify, Canva, Buffer, Google Looker Studio, Mailchimp, Zapier
-  projects: Analytics Dashboard Integration, Automated Email Workflows
-  background: As a Digital Marketing Specialist with four years of experience in the agency sector, I have honed my skills in managing cross-platform growth strategies. In my current role at a mid-sized marketing agency, I lead a team of three junior associates to execute comprehensive SEO and social media campai
+  id: resume_289 | level: junior | exp: 1.0 yrs | raw_text: 261 words
+  skills: Python, Pandas, NumPy, Sql, Scikit-learn, Matplotlib
+  projects: CreditScorer
+  background: As a recent graduate in Computer Science, I have spent the last year working as a Junior Data Analyst at a fast-paced fintech startup, where my team consisted of four developers and one senior data scientist. In this role, I focused on cleaning and preprocessing raw transaction data using pandas 2.0
 
-  id: resume_287 | level: middle | exp: 5.0 yrs | raw_text: 273 words
-  skills: Google Search Console, Moz, Sprout Social, Hootsuite, Drupal, Webflow, Technical Seo, Content Strategy, Community Management
-  projects: Brand Voice Audit, CMS Blog Migration
-  background: With over five years of experience in the digital content landscape, I have worked across both agency and boutique firm environments to build sustainable brand visibility. In my most recent role as a Content Strategist at a digital agency, I managed a team of four content writers and social media co
+  id: resume_290 | level: junior | exp: 1.0 yrs | raw_text: 277 words
+  skills: Python, Apache Airflow, Scikit-learn, Nltk, Spacy, Sql
+  projects: SentimentMapper
+  background: During my first year as a Junior Machine Learning Engineer at a digital marketing agency, I collaborated with a team of six marketers and two data engineers to optimize ad spend attribution models. My primary responsibility involved developing ETL pipelines using Python 3.11 and Apache Airflow 2.6 t
 
-  id: resume_288 | level: senior | exp: 8.0 yrs | raw_text: 267 words
-  skills: Adobe Experience Cloud, Salesforce Marketing Cloud, Python, Sql, Predictive Analytics, Technical Seo, Schema Strategy, Data Mining, Bayesian Statistics
-  projects: Predictive Content Model, Global A/B Testing Framework
-  background: I am a senior marketing leader with eight years of experience navigating the complexities of digital growth, advanced analytics, and strategic content architecture. Throughout my career, I have thrived in large enterprise environments, overseeing teams as large as twelve professionals, including dat
+  id: resume_291 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: Python, Pytorch, Spark, Scikit-learn, Aws, Fastapi, Docker, Sql
+  projects: Scalable Recommendation Engine, Auto-ML Platform
+  background: I am a Lead Data Scientist with eight years of professional experience across both enterprise technology firms and high-growth technology startups, leading teams as large as twelve specialized engineers and data scientists. Throughout my career, I have specialized in architecting end-to-end machine 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_286 | title: Junior SEO Associate | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Wordpress, Ahrefs, Semrush, Google Analytics 4, Seo
-  preferred_skills: Canva, Html, Css
-  description: Our growth marketing team is seeking a dedicated Junior SEO Associate to help us expand our organic footprint. The team currently consists of eight members, including content strategists, data analysts, and outreach coordinators. In this role, you wi
+  id: jd_289 | title: Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Python, Pandas, Scikit-learn, Sql
+  preferred_skills: Pytorch, Aws
+  description: Our data science team is expanding, and we are looking for a mid-level Data Scientist to join our group of ten professionals focusing on predictive analytics and user behavior modeling. You will work closely with product managers and software enginee
 
-  id: jd_287 | title: Social Media Assistant | level: junior | min_exp: 1 yrs | raw_text: 219 words
-  required_skills: Meta Business Suite, Buffer, Canva, Social Media
-  preferred_skills: Video Editing, Community Management
-  description: Our social media department is looking for an enthusiastic Social Media Assistant to support our brand awareness efforts. The team is comprised of five specialists who focus on brand storytelling and community engagement across multiple platforms. Yo
+  id: jd_290 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Pytorch, Python, Spark, Docker, Aws
+  preferred_skills: Kubernetes, Reinforcement Learning
+  description: We are seeking a Senior Machine Learning Engineer to help us tackle complex challenges in real-time recommendation systems. You will lead a small squad of four engineers responsible for the development and maintenance of our core AI infrastructure, w
 
-  id: jd_288 | title: Lead Digital Marketing Architect | level: senior | min_exp: 6 yrs | raw_text: 213 words
-  required_skills: Adobe Experience Cloud, Salesforce Marketing Cloud, Sql, Python, Technical Seo
-  preferred_skills: Bayesian Statistics, Machine Learning
-  description: We are looking for an experienced Lead Digital Marketing Architect to drive our enterprise marketing technology transformation. The team is large, consisting of over fifteen professionals, including engineers, analysts, and content strategists. You w
+  id: jd_291 | title: Principal ML Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Pytorch, Python, Fastapi, Spark, Aws
+  preferred_skills: Kubernetes, Distributed Systems
+  description: Our engineering organization is currently searching for a Principal ML Architect to spearhead our efforts in building scalable, autonomous AI services. The team currently consists of twenty-five high-performing researchers and engineers who work acro
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 855 pairs total.
+Overall dataset so far: 864 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  171  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  171  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  170  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  170  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  173  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  171  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  173  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  172  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  174  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  174  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_856    resume_286 × jd_286
-  pair_857    resume_286 × jd_287
-  pair_858    resume_286 × jd_288
-  pair_859    resume_287 × jd_286
-  pair_860    resume_287 × jd_287
-  pair_861    resume_287 × jd_288
-  pair_862    resume_288 × jd_286
-  pair_863    resume_288 × jd_287
-  pair_864    resume_288 × jd_288
+  pair_865    resume_289 × jd_289
+  pair_866    resume_289 × jd_290
+  pair_867    resume_289 × jd_291
+  pair_868    resume_290 × jd_289
+  pair_869    resume_290 × jd_290
+  pair_870    resume_290 × jd_291
+  pair_871    resume_291 × jd_289
+  pair_872    resume_291 × jd_290
+  pair_873    resume_291 × jd_291
 
 ════════════════════════════════════
 OUTPUT FORMAT
