@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_178 | level: middle | exp: 4.5 yrs | raw_text: 251 words
-  skills: Python, PyTorch, LangChain, Pinecone, FastAPI, NLP, Transformers
-  projects: SemanticSearch, ChatFlow
-  background: I am a dedicated Machine Learning Engineer with four years of experience specializing in Natural Language Processing and LLM application development. During my tenure at a fast-paced AI startup, I supported a data science team of eight by designing and deploying production-grade NLP pipelines. My co
+  id: resume_181 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Python, React, Django, PostgreSQL, Redux, FastAPI, JavaScript, HTML, CSS
+  projects: TaskMaster, WeatherTracker
+  background: I am a highly motivated Junior Full-Stack Developer recently graduated with a strong foundation in modern web technologies. During my six-month internship at a local software agency, I worked within a team of four to build responsive user interfaces using React 18 and integrated them with Python-bas
 
-  id: resume_179 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: Python, PyTorch, LangChain, Milvus, Kubernetes, LLM Fine-Tuning, Generative AI
-  projects: EnterpriseGenAI, RetrievalMaster
-  background: I am a Senior NLP Architect with seven years of experience leading cross-functional teams in the development of cutting-edge generative AI and LLM frameworks. At a top-tier technology firm, I directed an AI research department of twenty, overseeing the architecture of large-scale document analysis p
+  id: resume_182 | level: middle | exp: 4.0 yrs | raw_text: 264 words
+  skills: Python, React, FastAPI, PostgreSQL, TypeScript, Docker, Redis, SQLAlchemy, OAuth2
+  projects: MarketPulse, SecureAuth
+  background: I am a dedicated Full-Stack Developer with four years of experience building scalable web applications for a fast-growing tech startup. During my time there, I worked in an agile team of twelve, responsible for architecting and deploying high-traffic services. My core responsibilities included devel
 
-  id: resume_180 | level: senior | exp: 9.0 yrs | raw_text: 285 words
-  skills: Python, PyTorch, Transformers, LangChain, Cassandra, Terraform, MLOps
-  projects: GlobalSemanticBridge, AutoAgentic
-  background: I am a Principal AI Engineer with nine years of experience directing advanced machine learning initiatives for high-growth enterprises. Throughout my career at global tech companies, I have led departments of thirty to implement advanced NLP strategies, including LLM-based automation and deep semant
+  id: resume_183 | level: middle | exp: 5.0 yrs | raw_text: 254 words
+  skills: Python, React, Django, FastAPI, PostgreSQL, Celery, Redis, CI/CD, GitHub Actions
+  projects: InventoryFlow, DataSync Pro
+  background: I am an experienced Full-Stack Engineer with five years of professional experience in developing robust enterprise applications. At a large-scale e-commerce enterprise, I led a cross-functional team of fifteen in the redesign of our core customer platform. My daily responsibilities involved writing 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_178 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Python, PyTorch, Transformers, LangChain, NLP
-  preferred_skills: Vector Databases, AWS
-  description: Our NLP research team of twelve is seeking a motivated Junior NLP Engineer to support our core language modeling and RAG development. The team is dedicated to building scalable AI interfaces that solve real-world problems in information retrieval and
+  id: jd_181 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Python, JavaScript, React, PostgreSQL
+  preferred_skills: Django, Git
+  description: We are looking for a enthusiastic Junior Web Developer to join our growing product team of eight. Our team is responsible for developing and maintaining our customer-facing web application, which helps small businesses manage their daily operations. 
 
-  id: jd_179 | title: Junior AI Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Python, LangChain, LLM Frameworks, AI Development, Prompt Engineering
-  preferred_skills: Model Fine-tuning, Data Analysis
-  description: Our generative AI team of ten is seeking a highly energetic Junior AI Developer to help facilitate our rapid prototyping and implementation efforts. The team is dedicated to creating innovative AI solutions for internal process automation. Your day-t
+  id: jd_182 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, Redis, Celery
+  preferred_skills: Kubernetes, Docker
+  description: Our core engineering team of twenty is looking for a seasoned Senior Full-Stack Engineer to lead the architectural development of our flagship enterprise platform. We process massive datasets and serve millions of requests annually, requiring a deep 
 
-  id: jd_180 | title: Senior AI Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: PyTorch, Transformers, LangChain, Vector Databases, MLOps, AI Architecture, Leadership
-  preferred_skills: Multi-modal Research, AI Safety
-  description: Our global AI operations department of forty is seeking a seasoned Senior AI Architect to lead our digital AI transformation and model infrastructure. The team focuses on optimizing enterprise workflows through robust generative model architecture, a
+  id: jd_183 | title: Senior Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, CI/CD, Distributed Systems
+  preferred_skills: AWS, Event-driven Architecture
+  description: Our platform engineering team of fifteen is seeking a Senior Software Engineer to drive the evolution of our high-availability web services. We are dedicated to delivering a seamless experience for our global user base and are looking for someone wit
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 531 pairs total.
+Overall dataset so far: 540 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  107  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  106  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  104  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  107  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  107  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  108  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  109  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  109  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_532    resume_178 × jd_178
-  pair_533    resume_178 × jd_179
-  pair_534    resume_178 × jd_180
-  pair_535    resume_179 × jd_178
-  pair_536    resume_179 × jd_179
-  pair_537    resume_179 × jd_180
-  pair_538    resume_180 × jd_178
-  pair_539    resume_180 × jd_179
-  pair_540    resume_180 × jd_180
+  pair_541    resume_181 × jd_181
+  pair_542    resume_181 × jd_182
+  pair_543    resume_181 × jd_183
+  pair_544    resume_182 × jd_181
+  pair_545    resume_182 × jd_182
+  pair_546    resume_182 × jd_183
+  pair_547    resume_183 × jd_181
+  pair_548    resume_183 × jd_182
+  pair_549    resume_183 × jd_183
 
 ════════════════════════════════════
 OUTPUT FORMAT
