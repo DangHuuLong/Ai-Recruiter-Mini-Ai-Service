@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_160 | level: junior | exp: 0.5 yrs | raw_text: 299 words
-  skills: Buffer, Canva, Google Analytics 4, WordPress 6.0, Social Media Management, Content Creation
-  projects: CampusVoices
-  background: I am a recent Communications graduate with a burgeoning passion for digital marketing and content creation. During my final year, I completed a six-month internship at a small local creative agency where I supported a team of four in managing social media content calendars and basic community engage
+  id: resume_163 | level: middle | exp: 4.0 yrs | raw_text: 259 words
+  skills: Financial Modeling, Regulatory Reporting, SQL, QuickBooks Online, Excel, Data Analysis
+  projects: FiscalFlow, AuditBridge
+  background: I am a dedicated Financial Analyst with four years of experience in the fintech sector, specializing in regulatory reporting and financial modeling. During my tenure as a Financial Analyst at a mid-sized fintech startup, I was part of a team of eight responsible for maintaining compliance with regio
 
-  id: resume_161 | level: junior | exp: 0.3 yrs | raw_text: 257 words
-  skills: Meta Business Suite, Canva, Google Search Console, Content Strategy, Notion, Trello
-  projects: EcoTrend
-  background: I am a motivated Marketing graduate seeking an entry-level position to apply my academic background in digital storytelling and consumer behavior. During my recent internship at a boutique marketing startup, I worked with a team of three on developing organic social media content and performing basi
+  id: resume_164 | level: senior | exp: 8.0 yrs | raw_text: 266 words
+  skills: Financial Strategy, Regulatory Compliance, NetSuite, Power BI, SQL, Budgeting
+  projects: FinGuard, CapitalSync
+  background: I am a Senior Financial Controller with eight years of experience navigating the complexities of fintech finance, compliance, and strategic reporting. In my previous role as the Finance Lead at a fast-growth fintech enterprise, I managed a team of fifteen, overseeing the full spectrum of financial o
 
-  id: resume_162 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: Ahrefs, SEMrush, Google Analytics 4, Google Search Console, Webflow, Shopify, HubSpot, Looker Studio
-  projects: ContentScaler, SocialPulse
-  background: I am a dedicated Digital Marketing Specialist with four years of professional experience driving organic growth and managing multi-channel content strategies. In my most recent role at a mid-sized digital marketing agency, I led a cross-functional team of six, overseeing the execution of end-to-end 
+  id: resume_165 | level: senior | exp: 9.0 yrs | raw_text: 268 words
+  skills: Strategic Finance, Systems Architecture, Oracle Financials, SQL, Python, Compliance
+  projects: GlobalLedger, ComplianceCore
+  background: I am a Principal Finance Manager with nine years of experience directing finance, accounting, and compliance in global fintech environments. Throughout my career at a major international payment processing firm, I led a global finance department of thirty, overseeing the architecture of our financia
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_160 | title: Senior Technical SEO Lead | level: senior | min_exp: 6 yrs | raw_text: 217 words
-  required_skills: Technical SEO, BrightEdge, Conductor, Python, BigQuery, Schema Markup, Enterprise Marketing
-  preferred_skills: AI Content Generation, Data Engineering
-  description: Our performance marketing department of twenty is seeking a seasoned Senior Technical SEO Lead to drive search strategy for our global enterprise platform. The team is dedicated to large-scale organic growth, ensuring our complex site architecture is
+  id: jd_163 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Excel, QuickBooks, Accounting Principles, SQL, Financial Reporting
+  preferred_skills: Fintech Knowledge, Data Analytics
+  description: Our finance department of twelve is seeking a detail-oriented Junior Financial Analyst to support our core accounting and reporting activities. The team handles end-to-end financial processing for our retail banking platform, ensuring that our transa
 
-  id: jd_161 | title: Senior Performance Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Performance Marketing, Paid Media Strategy, Google Ads, Meta Ads, BigQuery, Tableau, Marketing Mix Modeling
-  preferred_skills: SQL Analysis, Budget Management
-  description: Our performance marketing team is searching for a visionary Senior Performance Marketing Manager to lead user acquisition and retention efforts for our fast-growing e-commerce platform. Our department of eighteen professionals focuses on managing hig
+  id: jd_164 | title: Junior Accounting Associate | level: junior | min_exp: 1 yrs | raw_text: 189 words
+  required_skills: Excel, SQL, Accounting Principles, Financial Reporting, Data Entry
+  preferred_skills: Xero, Payment Processing
+  description: Our finance team of fifteen is looking for an entry-level Junior Accounting Associate to join our growing operations. Our group is responsible for the financial health of our digital payment products, monitoring transaction integrity, and assisting w
 
-  id: jd_162 | title: Senior Content Strategy Lead | level: senior | min_exp: 6 yrs | raw_text: 215 words
-  required_skills: Content Strategy, AI Content Generation, Conductor, BrightEdge, Editorial Leadership, Stakeholder Management
-  preferred_skills: Data Engineering, Technical SEO
-  description: We are looking for a visionary Senior Content Strategy Lead to drive the strategy for our growing content department of twenty-five professionals. Our team is focused on building long-term brand authority, driving user acquisition through long-form e
+  id: jd_165 | title: Senior Finance Manager | level: senior | min_exp: 6 yrs | raw_text: 192 words
+  required_skills: Financial Modeling, Regulatory Compliance, Oracle Financials, SQL, Python, Snowflake, Strategic Planning
+  preferred_skills: CPA, Data Modeling
+  description: Our finance department of twenty is seeking a seasoned Senior Finance Manager to lead our strategic planning, financial modeling, and regulatory compliance functions. The team is dedicated to supporting the company's hyper-growth by building scalable
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 477 pairs total.
+Overall dataset so far: 486 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   93  →  expected this batch: 6 pairs (from seniority gaps below)
-  weak_match            existing:   95  →  expected this batch: 3 pairs (from seniority gaps below)
-  moderate_match        existing:   94  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   97  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:   99  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   98  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   94  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:   97  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   98  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_478    resume_160 × jd_160
-  pair_479    resume_160 × jd_161
-  pair_480    resume_160 × jd_162
-  pair_481    resume_161 × jd_160
-  pair_482    resume_161 × jd_161
-  pair_483    resume_161 × jd_162
-  pair_484    resume_162 × jd_160
-  pair_485    resume_162 × jd_161
-  pair_486    resume_162 × jd_162
+  pair_487    resume_163 × jd_163
+  pair_488    resume_163 × jd_164
+  pair_489    resume_163 × jd_165
+  pair_490    resume_164 × jd_163
+  pair_491    resume_164 × jd_164
+  pair_492    resume_164 × jd_165
+  pair_493    resume_165 × jd_163
+  pair_494    resume_165 × jd_164
+  pair_495    resume_165 × jd_165
 
 ════════════════════════════════════
 OUTPUT FORMAT
