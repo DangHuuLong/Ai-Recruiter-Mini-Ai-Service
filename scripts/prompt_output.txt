@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_268 | level: middle | exp: 4.0 yrs | raw_text: 258 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, JavaScript
-  projects: ComponentLibraryPro
-  background: Over the past four years, I have established myself as a dedicated Frontend Developer, focusing on building accessible and performant user interfaces. In my current role as a Frontend Engineer at a mid-sized e-commerce startup, I collaborate with a team of eight developers to iterate on our core pro
+  id: resume_271 | level: junior | exp: 0.5 yrs | raw_text: 261 words
+  skills: Recruitment, Onboarding, Greenhouse, BambooHR, Microsoft Excel
+  projects: New Hire Orientation Tracker
+  background: As a recent graduate, I am eager to begin my career in Human Resources, specifically focusing on talent acquisition and employee engagement. During my final year, I completed a six-month intensive internship at a fast-paced technology startup where I supported a team of four in the recruitment lifec
 
-  id: resume_269 | level: senior | exp: 7.0 yrs | raw_text: 265 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, CI/CD, System Architecture
-  projects: UnifiedUI
-  background: With seven years of dedicated experience in frontend architecture and team leadership, I have consistently delivered high-performance web applications in complex enterprise environments. Currently, as a Lead Frontend Engineer at a global technology firm, I guide a team of fifteen developers in build
+  id: resume_272 | level: middle | exp: 4.5 yrs | raw_text: 261 words
+  skills: Talent Acquisition, HRIS, Workday, SAP SuccessFactors, Lever, Tableau, Data Analytics
+  projects: Talent Metrics Dashboard
+  background: With over four years of experience as an HR Generalist and Talent Acquisition Specialist, I have successfully scaled recruitment efforts across various departments in a high-growth enterprise setting. In my current role at a mid-sized digital agency, I lead a team of three recruiters responsible for
 
-  id: resume_270 | level: senior | exp: 8.0 yrs | raw_text: 254 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Jest, Cypress, AWS
-  projects: SpeedScale
-  background: Over the past eight years, I have built a career centered on engineering excellence and high-traffic frontend development. As a Principal Frontend Engineer at an enterprise-scale software company, I oversee the stability and performance of our core consumer-facing platforms. My expertise lies in arc
+  id: resume_273 | level: middle | exp: 5.0 yrs | raw_text: 258 words
+  skills: HRIS, Recruitment, Greenhouse, Workday, Data Analytics, Process Automation, DEI
+  projects: Automated Onboarding Flow
+  background: During the past five years, I have built a robust career in Human Resources, with a strong focus on strategic talent acquisition and operational excellence. As an HR Operations Lead in an enterprise technology company, I manage a team of five professionals, overseeing the integration of our recruitm
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_268 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 223 words
-  required_skills: React, TypeScript, CSS
-  preferred_skills: Next.js, Tailwind CSS
-  description: Our web team of four is looking for a Junior Frontend Developer to join us in building our customer-facing web application. The team is dedicated to creating responsive and accessible interfaces that provide a seamless user experience. You will be re
+  id: jd_271 | title: Junior HR Associate | level: junior | min_exp: 1 yrs | raw_text: 217 words
+  required_skills: Recruitment, Onboarding, Greenhouse
+  preferred_skills: BambooHR, HRIS
+  description: Our People Operations team of five is looking for a Junior HR Associate to help manage our daily administrative tasks and initial recruitment efforts. This team supports a fast-moving organization, ensuring that our talent pipeline remains steady and
 
-  id: jd_269 | title: Associate Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, JavaScript
-  description: We are expanding our product development team and are seeking an Associate Frontend Engineer to help us deliver new features for our platform. Our team of six works on a variety of internal tools and client-facing interfaces. You will be responsible 
+  id: jd_272 | title: Senior Talent Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: Talent Acquisition, HRIS, Strategic Leadership, Workday, Greenhouse, DEI
+  preferred_skills: SAP SuccessFactors, Data Analytics
+  description: Our Talent team of twenty is seeking a Senior Talent Acquisition Lead to drive our strategic hiring efforts across all engineering and product departments. In this high-impact role, you will be responsible for scaling our global recruitment infrastru
 
-  id: jd_270 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, System Architecture
-  preferred_skills: Performance Engineering, JavaScript
-  description: Our infrastructure team of twelve is looking for a Senior Frontend Architect to lead our web scaling and architectural strategy. We are currently facing the challenge of scaling our core frontend applications to support millions of concurrent users. 
+  id: jd_273 | title: Principal HR Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: HRIS, Recruitment, Data Analytics, SAP SuccessFactors, Workday, Greenhouse
+  preferred_skills: Process Automation, Compliance Auditing
+  description: The HR Operations department is currently looking for a Principal HR Operations Lead to overhaul our enterprise-wide talent infrastructure. Our team of fifteen professionals is dedicated to building scalable, automated, and compliant HR processes tha
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 801 pairs total.
+Overall dataset so far: 810 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  161  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  160  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  158  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  160  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  162  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  161  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  161  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  162  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  162  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  164  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_802    resume_268 × jd_268
-  pair_803    resume_268 × jd_269
-  pair_804    resume_268 × jd_270
-  pair_805    resume_269 × jd_268
-  pair_806    resume_269 × jd_269
-  pair_807    resume_269 × jd_270
-  pair_808    resume_270 × jd_268
-  pair_809    resume_270 × jd_269
-  pair_810    resume_270 × jd_270
+  pair_811    resume_271 × jd_271
+  pair_812    resume_271 × jd_272
+  pair_813    resume_271 × jd_273
+  pair_814    resume_272 × jd_271
+  pair_815    resume_272 × jd_272
+  pair_816    resume_272 × jd_273
+  pair_817    resume_273 × jd_271
+  pair_818    resume_273 × jd_272
+  pair_819    resume_273 × jd_273
 
 ════════════════════════════════════
 OUTPUT FORMAT
