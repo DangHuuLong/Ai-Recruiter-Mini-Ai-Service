@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_91 | level: middle | exp: 4.0 yrs | raw_text: 286 words
-  skills: React, JavaScript, Python, Django, PostgreSQL, Celery, Redis, FastAPI, Tailwind CSS
-  projects: DevSpace
-  background: An adaptable Full-Stack Software Engineer with 4.0 years of professional experience specializing in modern web application engineering. I began my journey in 2022 working within a dynamic e-commerce enterprise as an associate developer in a team of eight engineers where I took ownership of implement
+  id: resume_94 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: Figma, Wireframing, Prototyping, User Research
+  projects: EcoTrack
+  background: An enthusiastic Associate Product Designer who recently graduated with a Bachelor of Science in Interaction Design in 2025. During my formal university studies, I completed a detailed six-month technical internship at a local software development startup working within an agile team of four creators
 
-  id: resume_92 | level: senior | exp: 7.5 yrs | raw_text: 275 words
-  skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Docker, AWS ECS, GitHub Actions, Kafka, Celery
-  projects: LogiCore
-  background: A seasoned Senior Full-Stack Web Developer and Technical Lead with 7.5 years of comprehensive experience orchestrating scalable web ecosystems and guiding high-performing cross-functional engineering teams. My professional career includes an impactful three-year tenure at a high-growth financial tec
+  id: resume_95 | level: middle | exp: 4.0 yrs | raw_text: 252 words
+  skills: Figma, Adobe Creative Cloud, Prototyping, User Interface Design, Wireframing, User Research, Interaction Design
+  projects: TaskFlow
+  background: An analytical UI/UX Designer with 4.0 years of professional experience specializing in product layout engineering, visual asset generation, and rapid user testing. I began my corporate design journey in 2022 at a medium-sized e-commerce agency where I worked alongside a product team of six developer
 
-  id: resume_93 | level: senior | exp: 8.0 yrs | raw_text: 263 words
-  skills: Python, Flask, React, TypeScript, Redux Toolkit, Tailwind CSS, PostgreSQL, Docker, Kubernetes, Redis, GraphQL
-  projects: DataPulse
-  background: An expert Senior Full-Stack Engineer and Software Architect with 8.0 years of extensive industrial experience crafting scalable web architectures and optimizing cloud-native data systems. Over my career, I dedicated four years to a prominent logistics and enterprise SaaS provider, acting as the prim
+  id: resume_96 | level: senior | exp: 8.0 yrs | raw_text: 263 words
+  skills: Figma, FigJam, Lookback, Miro, Design Systems, User Research, Usability Testing, Interaction Design, Information Architecture, Accessibility Compliance, Zeroheight, Style Dictionary
+  projects: DesignPulse
+  background: An expert Senior Product Designer and Principal UX Architect with 8.0 years of extensive industrial experience directing end-to-end design strategies, establishing global enterprise design systems, and scaling multi-platform software suites. Over my career, I dedicated four years to a prominent fina
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_91 | title: Junior Full-Stack Developer (Python & React) | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Python, Django, React, JavaScript, PostgreSQL, Tailwind CSS
-  preferred_skills: Celery, Docker
-  description: We are searching for an enthusiastic Junior Full-Stack Developer to join our growing application engineering division. Our team consists of five frontend developers, four backend engineers, and two product owners dedicated to expanding our core finan
+  id: jd_94 | title: Senior Lead Product Designer (Design Systems) | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Figma, Design Systems, Style Dictionary, Zeroheight, Lookback, Information Architecture
+  preferred_skills: Accessibility Compliance, FigJam
+  description: We are searching for a visionary Senior Lead Product Designer to spearhead the structural evolution, scaling, and governance of our high-volume multi-brand enterprise design system. You will join a core product organization of over twenty-five indivi
 
-  id: jd_92 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Python, Django, React, JavaScript, PostgreSQL
-  preferred_skills: Redis, Celery
-  description: Our core product squad is seeking an analytical Associate Full-Stack Engineer to assist in the expansion and continuous improvement of our cloud-based educational management application. Operating within a collaborative engineering group of eight dev
+  id: jd_95 | title: Senior Principal UX Research Architect | level: senior | min_exp: 6 yrs | raw_text: 211 words
+  required_skills: Lookback, Miro, FigJam, Figma, Information Architecture, User Research
+  preferred_skills: Accessibility Compliance, Design Systems
+  description: Our digital experience group is seeking an analytical Senior Principal UX Research Architect to spearhead the qualitative design strategy, global research execution, and interaction model scaling of our high-volume web platform. Operating within an a
 
-  id: jd_93 | title: Senior Lead Full-Stack Architect | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Celery, Docker, AWS ECS
-  preferred_skills: Kafka, Kubernetes
-  description: We are searching for a visionary Senior Lead Full-Stack Architect to spearhead the fundamental scaling and modernization of our high-volume real-time enterprise SaaS ecosystem. You will join an engineering organization of over thirty individuals, lea
+  id: jd_96 | title: Senior Product Design Lead (Accessibility & Interaction) | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Figma, Lookback, Miro, FigJam, Accessibility Compliance, Interaction Design
+  preferred_skills: Design Systems, Style Dictionary
+  description: We are searching for a specialized Senior Product Design Lead to direct the complex interaction modeling, usability optimization, and strict accessibility compliance of our cloud-based application infrastructure. In this role, you will lead an advanc
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 270 pairs total.
+Overall dataset so far: 279 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   52  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   51  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   50  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:   51  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   66  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:   52  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   52  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   54  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   53  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   68  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_271    resume_91 × jd_91
-  pair_272    resume_91 × jd_92
-  pair_273    resume_91 × jd_93
-  pair_274    resume_92 × jd_91
-  pair_275    resume_92 × jd_92
-  pair_276    resume_92 × jd_93
-  pair_277    resume_93 × jd_91
-  pair_278    resume_93 × jd_92
-  pair_279    resume_93 × jd_93
+  pair_280    resume_94 × jd_94
+  pair_281    resume_94 × jd_95
+  pair_282    resume_94 × jd_96
+  pair_283    resume_95 × jd_94
+  pair_284    resume_95 × jd_95
+  pair_285    resume_95 × jd_96
+  pair_286    resume_96 × jd_94
+  pair_287    resume_96 × jd_95
+  pair_288    resume_96 × jd_96
 
 ════════════════════════════════════
 OUTPUT FORMAT
