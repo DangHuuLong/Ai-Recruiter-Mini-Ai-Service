@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_310 | level: middle | exp: 4.0 yrs | raw_text: 278 words
-  skills: Splunk, Wireshark, Python, Scapy, AWS GuardDuty, SIEM
-  projects: Packet Flow Auditor
-  background: Resourceful and detail-oriented Security Operations Center Analyst with four years of dedicated experience specializing in corporate threat detection, rapid incident response, and continuous vulnerability assessment. Spent the last three full years operating at an enterprise financial services corpo
+  id: resume_313 | level: junior | exp: 0.5 yrs | raw_text: 261 words
+  skills: Jira, Confluence, Amplitude, Figma, Agile, Scrum
+  projects: Agile Team Velocity Tracker
+  background: Ambitious and analytical Associate Product Manager candidate who recently graduated with an active background in orchestrating student-led technology lifecycles, gathering structural product requirements, and managing agile software sprints. Recently completed an exhaustive six-month internship at a
 
-  id: resume_311 | level: senior | exp: 7.0 yrs | raw_text: 263 words
-  skills: Zeek, Cortex XSOAR, Splunk, Metasploit, Python, Ansible
-  projects: Stealth Network Tracer
-  background: Accomplished Senior Cybersecurity Engineer and Technical Team Lead with over seven years of professional tenure directing network defenses, enterprise vulnerability remediation, and automated threat hunting operations. Spent four years at a prominent enterprise defense contracting agency leading a c
+  id: resume_314 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: Jira, Productboard, Mixpanel, Google Analytics, Agile, Roadmapping
+  projects: Feature Impact Predictor
+  background: Competent and metrics-driven Product Manager with four years of dedicated professional tenure managing SaaS product development lifecycles, creating technical product roadmaps, and alignment of diverse stakeholders. Spent three full years serving at an enterprise international software corporation, 
 
-  id: resume_312 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: Burp Suite, Nmap, Nessus, Wireshark, Python, SQLite
-  projects: Proxy Flow Inspector
-  background: Analytical Senior Information Security Consultant and Penetration Tester with eight years of comprehensive experience executing infrastructure attack emulation, complex web application vulnerability assessments, and regulatory technical control mapping. Spent five years at an enterprise digital secu
+  id: resume_315 | level: senior | exp: 8.0 yrs | raw_text: 270 words
+  skills: Jira, Aha!, Pendo, Optimizely, Snowflake, Agile, Roadmapping, SQL
+  projects: Cohort Behavior Engine
+  background: Accomplished and strategic Senior Product Manager with over eight years of professional experience directing complex enterprise platform initiatives, multi-million dollar product portfolios, and global stakeholder alignment architectures. Spent five years at a prominent enterprise digital platform c
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_310 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Splunk, Wireshark, Python
-  preferred_skills: Bash, ISO 27001
-  description: Our core Global Security Operations division is seeking an enthusiastic Junior Information Security Analyst to join our expanding triage team. The active security monitoring department comprises six dedicated analysts building automated detection mec
+  id: jd_313 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 189 words
+  required_skills: Jira, Confluence, Amplitude, Agile
+  preferred_skills: Figma, Google Analytics
+  description: Our growth product group is seeking an enthusiastic Associate Product Manager to join our expanding core feature team. This fast-moving division comprises six product professionals building localized user experience updates that support millions of a
 
-  id: jd_311 | title: Junior Defensive Security Specialist | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: Splunk, Nmap, Python
-  preferred_skills: Ansible, SOC2
-  description: Our dedicated Infrastructure Security Group is searching for an analytical Junior Defensive Security Specialist to support our corporate data protection framework. The defensive infrastructure unit comprises five technical engineers managing security
+  id: jd_314 | title: Senior Enterprise Platform Product Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Aha!, Pendo, Jira, Snowflake
+  preferred_skills: Python, Optimizely
+  description: Our core enterprise system management division is seeking a highly skilled Senior Enterprise Platform Product Lead to architect the next generation of our automated API monetization infrastructure. The advanced platform department comprises eight sen
 
-  id: jd_312 | title: Cybersecurity Detection and Response Engineer | level: middle | min_exp: 3 yrs | raw_text: 190 words
-  required_skills: Splunk, Wireshark, Python
-  preferred_skills: Scapy, AWS GuardDuty
-  description: Our Enterprise Cyber Defense department is looking for an analytical Cybersecurity Detection and Response Engineer to steer the optimization of our global event monitoring environment. The core security engineering squad comprises eight seasoned spec
+  id: jd_315 | title: Senior Technical Product Manager - SaaS Infrastructure | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Productboard, SAS, Amazon Redshift, Hyperion, Python
+  preferred_skills: PowerBI, Agile
+  description: Our advanced SaaS Infrastructure department is seeking an expert Senior Technical Product Manager to steer the development of our enterprise cloud integration environment. The corporate infrastructure squad comprises ten seasoned analysts dedicated t
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 927 pairs total.
+Overall dataset so far: 936 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  187  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  187  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  183  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  184  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  186  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  187  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  187  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  187  →  expected this batch: 1 pairs (from seniority gaps below)
+  strong_match          existing:  188  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  187  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_928    resume_310 × jd_310
-  pair_929    resume_310 × jd_311
-  pair_930    resume_310 × jd_312
-  pair_931    resume_311 × jd_310
-  pair_932    resume_311 × jd_311
-  pair_933    resume_311 × jd_312
-  pair_934    resume_312 × jd_310
-  pair_935    resume_312 × jd_311
-  pair_936    resume_312 × jd_312
+  pair_937    resume_313 × jd_313
+  pair_938    resume_313 × jd_314
+  pair_939    resume_313 × jd_315
+  pair_940    resume_314 × jd_313
+  pair_941    resume_314 × jd_314
+  pair_942    resume_314 × jd_315
+  pair_943    resume_315 × jd_313
+  pair_944    resume_315 × jd_314
+  pair_945    resume_315 × jd_315
 
 ════════════════════════════════════
 OUTPUT FORMAT
