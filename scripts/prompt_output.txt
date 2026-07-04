@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_88 | level: junior | exp: 0.5 yrs | raw_text: 263 words
-  skills: React Native, JavaScript, React, Expo, HTML5, CSS3, REST API
-  projects: RecipeFinder
-  background: An enthusiastic and highly motivated Junior Frontend and Mobile Developer who recently graduated with a Bachelor of Science in Software Engineering in 2025. During my university studies, I completed a formal six-month technical internship at a local software development startup working within an agi
+  id: resume_91 | level: middle | exp: 4.0 yrs | raw_text: 286 words
+  skills: React, JavaScript, Python, Django, PostgreSQL, Celery, Redis, FastAPI, Tailwind CSS
+  projects: DevSpace
+  background: An adaptable Full-Stack Software Engineer with 4.0 years of professional experience specializing in modern web application engineering. I began my journey in 2022 working within a dynamic e-commerce enterprise as an associate developer in a team of eight engineers where I took ownership of implement
 
-  id: resume_89 | level: junior | exp: 0.7 yrs | raw_text: 255 words
-  skills: Flutter, Dart, Figma, Git, Hive, Widget Testing
-  projects: ExpenseTrack
-  background: Ambitious and detail-oriented Junior Flutter Developer looking to initiate a professional career centered on cross-platform mobile application engineering and user experience optimization. I completed an intensive eight-month internship at a specialized digital solutions agency where I contributed d
+  id: resume_92 | level: senior | exp: 7.5 yrs | raw_text: 275 words
+  skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Docker, AWS ECS, GitHub Actions, Kafka, Celery
+  projects: LogiCore
+  background: A seasoned Senior Full-Stack Web Developer and Technical Lead with 7.5 years of comprehensive experience orchestrating scalable web ecosystems and guiding high-performing cross-functional engineering teams. My professional career includes an impactful three-year tenure at a high-growth financial tec
 
-  id: resume_90 | level: senior | exp: 8.0 yrs | raw_text: 274 words
-  skills: React Native, TypeScript, Swift, Kotlin, Fastlane, Objective-C, Java, Mobile Architecture, CI/CD, Redux
-  projects: MobileFlow
-  background: Accomplished Senior Mobile Software Engineer and Technical Lead with over eight years of extensive professional experience directing enterprise-wide mobile applications and orchestrating native infrastructure initiatives. In my most recent role at a global multi-national technology enterprise, I ser
+  id: resume_93 | level: senior | exp: 8.0 yrs | raw_text: 263 words
+  skills: Python, Flask, React, TypeScript, Redux Toolkit, Tailwind CSS, PostgreSQL, Docker, Kubernetes, Redis, GraphQL
+  projects: DataPulse
+  background: An expert Senior Full-Stack Engineer and Software Architect with 8.0 years of extensive industrial experience crafting scalable web architectures and optimizing cloud-native data systems. Over my career, I dedicated four years to a prominent logistics and enterprise SaaS provider, acting as the prim
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_88 | title: Mobile Software Engineer (React Native) | level: middle | min_exp: 3 yrs | raw_text: 180 words
-  required_skills: React Native, TypeScript, Redux, JavaScript, Jest
-  preferred_skills: Swift, Kotlin, Fastlane
-  description: We are looking for a skilled Mid-Level Mobile Software Engineer to join our core product engineering team. Our engineering organization consists of six frontend developers, two quality assurance specialists, and one product manager focused on deliver
+  id: jd_91 | title: Junior Full-Stack Developer (Python & React) | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Python, Django, React, JavaScript, PostgreSQL, Tailwind CSS
+  preferred_skills: Celery, Docker
+  description: We are searching for an enthusiastic Junior Full-Stack Developer to join our growing application engineering division. Our team consists of five frontend developers, four backend engineers, and two product owners dedicated to expanding our core finan
 
-  id: jd_89 | title: Senior iOS Engineer (Swift) | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Swift, Objective-C, Fastlane, Mobile Architecture, CI/CD
-  preferred_skills: React Native, Flutter
-  description: Our application platform group is seeking an analytical Senior iOS Engineer to spearhead the native architectural design, structural optimization, and performance scaling of our high-volume financial streaming platform. We operate as a high-visibilit
+  id: jd_92 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 196 words
+  required_skills: Python, Django, React, JavaScript, PostgreSQL
+  preferred_skills: Redis, Celery
+  description: Our core product squad is seeking an analytical Associate Full-Stack Engineer to assist in the expansion and continuous improvement of our cloud-based educational management application. Operating within a collaborative engineering group of eight dev
 
-  id: jd_90 | title: Lead Android Architect | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: Kotlin, Java, Fastlane, Mobile Architecture, CI/CD
-  preferred_skills: Swift
-  description: We are searching for a visionary Lead Android Architect to direct the fundamental modernization and scaling of our core mobile transaction delivery ecosystem. You will join an engineering organization of over twenty individuals, comprising three cros
+  id: jd_93 | title: Senior Lead Full-Stack Architect | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Celery, Docker, AWS ECS
+  preferred_skills: Kafka, Kubernetes
+  description: We are searching for a visionary Senior Lead Full-Stack Architect to spearhead the fundamental scaling and modernization of our high-volume real-time enterprise SaaS ecosystem. You will join an engineering organization of over thirty individuals, lea
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 261 pairs total.
+Overall dataset so far: 270 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   48  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:   49  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:   50  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   50  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:   64  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:   52  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   51  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   50  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:   51  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:   66  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_262    resume_88 × jd_88
-  pair_263    resume_88 × jd_89
-  pair_264    resume_88 × jd_90
-  pair_265    resume_89 × jd_88
-  pair_266    resume_89 × jd_89
-  pair_267    resume_89 × jd_90
-  pair_268    resume_90 × jd_88
-  pair_269    resume_90 × jd_89
-  pair_270    resume_90 × jd_90
+  pair_271    resume_91 × jd_91
+  pair_272    resume_91 × jd_92
+  pair_273    resume_91 × jd_93
+  pair_274    resume_92 × jd_91
+  pair_275    resume_92 × jd_92
+  pair_276    resume_92 × jd_93
+  pair_277    resume_93 × jd_91
+  pair_278    resume_93 × jd_92
+  pair_279    resume_93 × jd_93
 
 ════════════════════════════════════
 OUTPUT FORMAT
