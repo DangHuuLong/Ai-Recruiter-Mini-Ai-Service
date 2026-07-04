@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_259 | level: junior | exp: 0.5 yrs | raw_text: 262 words
-  skills: Figma, Prototyping, Usability Testing, User Research
-  projects: HealthyHabits
-  background: I am a motivated junior UI/UX designer with a passion for creating accessible and delightful digital experiences. During my final year at university, I completed a six-month design internship at a burgeoning fintech startup, where I collaborated with a team of three designers and two product manager
+  id: resume_262 | level: middle | exp: 4.0 yrs | raw_text: 268 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, SQL, NoSQL, Liquibase
+  projects: CacheOptimizer
+  background: Over the past four years, I have developed a strong foundation in database engineering and backend systems. In my current role as a Database Engineer at a fast-paced technology startup, I work within a team of six developers to maintain high availability for our primary user-facing applications. My 
 
-  id: resume_260 | level: junior | exp: 0.8 yrs | raw_text: 255 words
-  skills: Figma, Miro, Wireframing, Graphic Design
-  projects: EventConnect
-  background: I am an enthusiastic junior product designer dedicated to crafting seamless web experiences that prioritize user needs and business goals. As a recent graduate, I completed a one-year residency at a creative agency, where I worked on various client projects alongside a team of six professionals. My 
+  id: resume_263 | level: senior | exp: 7.0 yrs | raw_text: 266 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture, Database Sharding, Cloud Infrastructure, Leadership
+  projects: GlobalSync
+  background: With seven years of dedicated experience in data engineering and database administration, I have led multiple initiatives focused on high-performance data architecture. In my current capacity as a Principal Database Engineer at a global enterprise firm, I manage a diverse team of eight engineers, ov
 
-  id: resume_261 | level: senior | exp: 8.0 yrs | raw_text: 257 words
-  skills: Figma, Design Systems, User Research, Interaction Design, Accessibility
-  projects: GlobalConnect
-  background: I am a senior product design lead with eight years of experience defining product strategy, user experience, and design systems for enterprise-scale platforms. In my most recent role as a Lead Product Designer at a major global software firm, I managed a distributed team of ten designers responsible
+  id: resume_264 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Database Administration, AWS RDS, System Capacity Planning, Mentorship
+  projects: DataGuardian
+  background: Over the past eight years, I have built a career centered on optimizing database performance and architecting resilient data layers for high-traffic applications. As a Senior Database Lead at an enterprise-scale software firm, I oversee the performance of our core data platforms, managing a team of 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_259 | title: Mid-Level Product Designer | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: Figma, User Research, Prototyping, UX Design
-  preferred_skills: CSS, HTML, Design Systems
-  description: Our product design team is looking for a talented Mid-Level Product Designer to help define the future of our web-based productivity platform. The team consists of eight designers who work closely with product managers and engineers to deliver intuit
+  id: jd_262 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 224 words
+  required_skills: PostgreSQL, SQL, Liquibase
+  preferred_skills: MongoDB, Redis
+  description: Our data team of five is looking for a Junior Database Engineer to help maintain our growing database ecosystem. The team focuses on providing stable and performant data storage solutions for our core web application. You will be responsible for day-
 
-  id: jd_260 | title: Senior Design Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: Figma, User Research, Design Systems, Accessibility, Interaction Design
-  preferred_skills: Data Analytics, Frontend Integration
-  description: We are looking for an experienced Senior Design Lead to guide our design vision and manage a team of fifteen professionals. Our team is responsible for the end-to-end product design lifecycle of our flagship enterprise software, including user resear
+  id: jd_263 | title: Junior Database Support Engineer | level: junior | min_exp: 1 yrs | raw_text: 216 words
+  required_skills: PostgreSQL, Database Administration, Redis
+  preferred_skills: MongoDB, SQL
+  description: We are expanding our internal data team of four and are seeking a Junior Database Support Engineer to help us streamline our data management processes. The team supports the entire product development lifecycle by ensuring our database systems are re
 
-  id: jd_261 | title: Principal Product Designer | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Figma, User Research, Interaction Design, Data Analytics, UX Design
-  preferred_skills: Machine Learning, Design Frameworks
-  description: We are searching for a Principal Product Designer to lead our design operations and drive innovation across our primary consumer-facing mobile and web platforms. Our team of twelve focuses on creating highly personalized shopping experiences through 
+  id: jd_264 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 227 words
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture
+  preferred_skills: Database Sharding, Cloud Infrastructure
+  description: Our infrastructure team of twelve is looking for a Senior Database Architect to lead our data scaling initiatives. We are currently facing the challenge of scaling our core transactional databases to support millions of concurrent users. You will be 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 774 pairs total.
+Overall dataset so far: 783 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  153  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  155  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  154  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  156  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  156  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  157  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  157  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  154  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  157  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  158  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_775    resume_259 × jd_259
-  pair_776    resume_259 × jd_260
-  pair_777    resume_259 × jd_261
-  pair_778    resume_260 × jd_259
-  pair_779    resume_260 × jd_260
-  pair_780    resume_260 × jd_261
-  pair_781    resume_261 × jd_259
-  pair_782    resume_261 × jd_260
-  pair_783    resume_261 × jd_261
+  pair_784    resume_262 × jd_262
+  pair_785    resume_262 × jd_263
+  pair_786    resume_262 × jd_264
+  pair_787    resume_263 × jd_262
+  pair_788    resume_263 × jd_263
+  pair_789    resume_263 × jd_264
+  pair_790    resume_264 × jd_262
+  pair_791    resume_264 × jd_263
+  pair_792    resume_264 × jd_264
 
 ════════════════════════════════════
 OUTPUT FORMAT
