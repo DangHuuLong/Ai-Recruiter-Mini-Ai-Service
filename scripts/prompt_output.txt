@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_253 | level: junior | exp: 0.5 yrs | raw_text: 268 words
-  skills: Shopify, Google Analytics 4, Excel, Python, Pandas
-  projects: Inventory Forecasting Model
-  background: I am a motivated recent graduate with a strong interest in E-commerce operations and digital merchandising. During my final year at university, I completed a six-month internship as an E-commerce Operations Associate at a rapidly growing e-commerce startup. In this role, I worked within a team of th
+  id: resume_256 | level: junior | exp: 0.5 yrs | raw_text: 260 words
+  skills: Docker, Kubernetes, Terraform, AWS, Linux, Bash
+  projects: CloudDeploy
+  background: I am a passionate junior DevOps engineer with a strong foundation in cloud infrastructure and automated delivery systems. During my final year at university, I completed a six-month internship at a fast-paced software agency, where I assisted a team of four developers in migrating legacy application
 
-  id: resume_254 | level: middle | exp: 4.0 yrs | raw_text: 264 words
-  skills: Amazon Seller Central, SAP ERP, Salesforce Commerce Cloud, Excel, SQL
-  projects: Marketplace Optimization Project
-  background: I am an experienced E-commerce Operations Manager with four years of hands-on experience in marketplace management and digital retail growth. In my previous role as an Operations Specialist at a mid-sized retail agency, I managed a team of six associates overseeing operations across Amazon Seller Ce
+  id: resume_257 | level: senior | exp: 8.5 yrs | raw_text: 276 words
+  skills: AWS, Kubernetes, Terraform, Istio, PostgreSQL, ArgoCD
+  projects: AutoScalePro
+  background: I am a senior DevOps architect with over eight years of experience designing and managing complex, high-scale cloud-native ecosystems. In my most recent role as a Lead DevOps Engineer at a global enterprise, I managed a team of twelve engineers responsible for the stability and performance of our fl
 
-  id: resume_255 | level: middle | exp: 5.0 yrs | raw_text: 273 words
-  skills: Adobe Commerce, Oracle NetSuite, Tableau, SQL, Excel
-  projects: The Personalization Engine
-  background: I am a dedicated E-commerce Merchandising Lead with five years of experience in retail management and digital product strategy. During my time as an E-commerce Lead at a boutique retail enterprise, I headed a team of eight professionals focused on enhancing user experience and driving product conver
+  id: resume_258 | level: senior | exp: 9.0 yrs | raw_text: 269 words
+  skills: AWS, Kubernetes, Terraform, FinOps, Go, Distributed Systems
+  projects: GlobalSync
+  background: I am a principal cloud engineer with nine years of experience specializing in high-performance computing, distributed systems, and multi-cloud infrastructure strategy. In my previous role as a Principal DevOps Engineer at a major fintech firm, I led a cross-functional squad of fifteen engineers to m
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_253 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 194 words
-  required_skills: Shopify, Excel, Data Entry
-  preferred_skills: Google Analytics, Customer Support
-  description: Our E-commerce Operations team is seeking a motivated Junior E-commerce Associate to help manage our daily marketplace activities. The team consists of four members who focus on inventory accuracy, product listing quality, and customer order fulfillm
+  id: jd_256 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 189 words
+  required_skills: AWS, Docker, Terraform, Linux, Git
+  preferred_skills: Kubernetes, Python, Bash
+  description: Our infrastructure team is looking for a motivated Junior DevOps Engineer to assist in maintaining and scaling our development environments. The team consists of five engineers dedicated to improving our internal developer experience through automati
 
-  id: jd_254 | title: Senior Marketplace Strategist | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Oracle NetSuite, SQL, API Integration
-  preferred_skills: International Logistics, Marketplace Strategy
-  description: Our Global Marketplace division is looking for a Senior Marketplace Strategist to lead our high-stakes operations across Amazon, Walmart, and international platforms. You will oversee a team of ten, managing a product catalog that exceeds fifty thous
+  id: jd_257 | title: Mid-Level DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 191 words
+  required_skills: AWS, Kubernetes, Docker, Terraform, CI/CD
+  preferred_skills: Istio, Grafana
+  description: Our platform engineering team is seeking a skilled DevOps Engineer to help build and maintain our core cloud-native platforms. Our team of eight works closely with product and data teams to deliver scalable and resilient microservices architectures. 
 
-  id: jd_255 | title: Senior E-commerce Merchandising Lead | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: Adobe Commerce, Tableau, Data Analytics
-  preferred_skills: SQL, Machine Learning
-  description: We are looking for an experienced Senior E-commerce Merchandising Lead to define the visual and strategic direction of our digital storefront. Our team of twelve professionals is responsible for crafting personalized shopping experiences, managing ve
+  id: jd_258 | title: Senior DevOps Lead | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: AWS, Kubernetes, Terraform, Go, Distributed Systems
+  preferred_skills: FinOps, Multi-cloud
+  description: We are searching for a Senior DevOps Lead to guide our infrastructure strategy and architect the next generation of our global distributed systems. Our team of twelve professionals focuses on designing zero-trust network architectures, multi-region c
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 756 pairs total.
+Overall dataset so far: 765 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  150  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  150  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  152  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  152  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  152  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  152  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:  154  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  152  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  154  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  153  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_757    resume_253 × jd_253
-  pair_758    resume_253 × jd_254
-  pair_759    resume_253 × jd_255
-  pair_760    resume_254 × jd_253
-  pair_761    resume_254 × jd_254
-  pair_762    resume_254 × jd_255
-  pair_763    resume_255 × jd_253
-  pair_764    resume_255 × jd_254
-  pair_765    resume_255 × jd_255
+  pair_766    resume_256 × jd_256
+  pair_767    resume_256 × jd_257
+  pair_768    resume_256 × jd_258
+  pair_769    resume_257 × jd_256
+  pair_770    resume_257 × jd_257
+  pair_771    resume_257 × jd_258
+  pair_772    resume_258 × jd_256
+  pair_773    resume_258 × jd_257
+  pair_774    resume_258 × jd_258
 
 ════════════════════════════════════
 OUTPUT FORMAT
