@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_154 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: Buffer, Canva, Google Analytics, WordPress 6.0, Social Media Management, Content Creation
-  projects: CampusVoices
-  background: I am a recent Communications graduate with a burgeoning passion for digital marketing and content creation. During my final year, I completed a six-month internship at a small local creative agency where I supported a team of four in managing social media content calendars and basic community engage
+  id: resume_157 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Product Lifecycle Management, Jira, Stripe API, Apache Kafka, Redis, Stakeholder Management, Strategic Planning
+  projects: PulseCheck, FeatureLaunch
+  background: I am a seasoned Senior Product Manager with eight years of experience delivering high-impact SaaS solutions within fast-paced enterprise environments. During my four-year tenure as a Product Lead at a global fintech enterprise, I managed a cross-functional team of twelve, overseeing the end-to-end p
 
-  id: resume_155 | level: middle | exp: 4.0 yrs | raw_text: 259 words
-  skills: SEMrush, Google Analytics 4, Hubspot, Webflow, WordPress 6.4, Content Strategy, CRO
-  projects: ContentScaler, SocialPulse
-  background: I am an experienced Digital Marketing Specialist with four years of success in driving organic traffic and community engagement for high-growth startups. In my most recent role at a boutique digital marketing firm, I managed a team of five and executed end-to-end content strategies for various clien
+  id: resume_158 | level: senior | exp: 7.5 yrs | raw_text: 261 words
+  skills: Cloud Architecture, Kubernetes, Product Roadmap, Behavioral Analytics, Pendo, Mixpanel, Developer Experience
+  projects: DockEase, MetricMaster
+  background: I am an accomplished Senior Product Manager with over seven years of specialized experience in cloud-native platform products and developer tooling. In my most recent role as a Principal Product Manager at a fast-growth tech startup, I led a multidisciplinary team of fifteen to redefine our infrastr
 
-  id: resume_156 | level: middle | exp: 4.5 yrs | raw_text: 257 words
-  skills: Ahrefs, Google Analytics 4, Google Search Console, Shopify, WordPress, Meta Business Suite, Looker Studio
-  projects: SEOOptimizer, AutoReach
-  background: I am a Data-Driven Content Strategist with over four years of professional experience managing digital platforms and executing performance-based marketing. In my current role at a mid-sized e-commerce enterprise, I lead a cross-functional team of six, responsible for the end-to-end management of our
+  id: resume_159 | level: senior | exp: 9.0 yrs | raw_text: 261 words
+  skills: Mobile Product Management, OKRs, A/B Testing, CI/CD Pipeline, Swift, Kotlin, Stakeholder Management
+  projects: AppVelocity, PaySafe
+  background: I am a strategic Principal Product Manager with nine years of experience driving product innovation in the e-commerce and mobile application sectors. Throughout my career at a major global e-commerce enterprise, I led a product department of twenty, responsible for the end-to-end strategy of our mob
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_154 | title: Senior Content Marketing Lead | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: Content Strategy, Technical SEO, BrightEdge, Conductor, Enterprise Marketing, Team Leadership
-  preferred_skills: AI Content Generation, Data Engineering
-  description: We are looking for a visionary Senior Content Marketing Lead to drive the strategy for our growing content department of twenty professionals. Our team focuses on building brand authority and driving user acquisition through long-form educational con
+  id: jd_157 | title: Junior Product Associate | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Jira, Confluence, Amplitude, Agile Methodologies, Product Documentation
+  preferred_skills: User Research, Data Analytics
+  description: We are looking for a highly motivated Junior Product Associate to join our growing product team of six professionals. In this role, you will support our daily product operations, assist in gathering user feedback, and help track key performance indic
 
-  id: jd_155 | title: Senior SEO Strategist | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: Technical SEO, Botify, Screaming Frog, SEMrush, Search Strategy, Schema Markup
-  preferred_skills: Python Automation, Web Performance
-  description: We are seeking a seasoned Senior SEO Strategist to lead our search efforts within an e-commerce organization of twenty-five people. Our team is dedicated to optimizing complex product catalogs and large-scale blog architectures to ensure our platform
+  id: jd_158 | title: Mid-level Product Manager | level: middle | min_exp: 3 yrs | raw_text: 207 words
+  required_skills: Product Roadmap, Jira, SQL, Mixpanel, Feature Prioritization, Product Lifecycle Management
+  preferred_skills: Fintech Knowledge, A/B Testing
+  description: Our product department of fifteen is seeking a detail-oriented Mid-level Product Manager to help lead our reporting and product initiatives. We provide essential financial and analytic insights that fuel our growth as a leader in the data-centric fin
 
-  id: jd_156 | title: Senior Performance Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Performance Marketing, Paid Media Strategy, Google Ads, Meta Ads, BigQuery, Tableau
-  preferred_skills: Marketing Mix Modeling, SQL Analysis
-  description: Our performance marketing team of eighteen is searching for a Senior Performance Marketing Manager to lead our user acquisition and retention efforts. We leverage complex datasets to manage high-spend paid media campaigns across multiple platforms. A
+  id: jd_159 | title: Mid-level Product Manager | level: middle | min_exp: 3 yrs | raw_text: 198 words
+  required_skills: Technical Product Management, API Strategy, PostgreSQL, Data Analysis, Stakeholder Management, Agile
+  preferred_skills: Compliance Frameworks, Cloud Platforms
+  description: Our growing product team of ten is seeking a Mid-level Product Manager to own our core platform product and compliance frameworks. We are a team committed to transparency, accuracy, and efficiency in our financial data processing. As a lead individua
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,15 +125,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 459 pairs total.
+Overall dataset so far: 468 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   90  →  expected this batch: 3 pairs (from seniority gaps below)
-  weak_match            existing:   89  →  expected this batch: 6 pairs (from seniority gaps below)
-  moderate_match        existing:   91  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:   91  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:   93  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:   95  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:   91  →  expected this batch: 3 pairs (from seniority gaps below)
+  strong_match          existing:   91  →  expected this batch: 6 pairs (from seniority gaps below)
   excellent_match       existing:   98  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_460    resume_154 × jd_154
-  pair_461    resume_154 × jd_155
-  pair_462    resume_154 × jd_156
-  pair_463    resume_155 × jd_154
-  pair_464    resume_155 × jd_155
-  pair_465    resume_155 × jd_156
-  pair_466    resume_156 × jd_154
-  pair_467    resume_156 × jd_155
-  pair_468    resume_156 × jd_156
+  pair_469    resume_157 × jd_157
+  pair_470    resume_157 × jd_158
+  pair_471    resume_157 × jd_159
+  pair_472    resume_158 × jd_157
+  pair_473    resume_158 × jd_158
+  pair_474    resume_158 × jd_159
+  pair_475    resume_159 × jd_157
+  pair_476    resume_159 × jd_158
+  pair_477    resume_159 × jd_159
 
 ════════════════════════════════════
 OUTPUT FORMAT
