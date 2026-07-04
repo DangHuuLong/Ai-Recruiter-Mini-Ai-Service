@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_283 | level: junior | exp: 0.5 yrs | raw_text: 265 words
-  skills: PostgreSQL, MongoDB, SQL, JavaScript, Node.js
-  projects: Inventory Tracker Application
-  background: As a recent computer science graduate, I am eager to launch my professional career as a database engineer. During my final academic year, I completed a six-month software engineering internship at a local web development startup where I worked as part of a four-person backend team. My primary respon
+  id: resume_286 | level: middle | exp: 4.0 yrs | raw_text: 266 words
+  skills: Google Analytics 4, Ahrefs, Semrush, Meta Business Suite, Wordpress, Shopify, Canva, Buffer, Google Looker Studio, Mailchimp, Zapier
+  projects: Analytics Dashboard Integration, Automated Email Workflows
+  background: As a Digital Marketing Specialist with four years of experience in the agency sector, I have honed my skills in managing cross-platform growth strategies. In my current role at a mid-sized marketing agency, I lead a team of three junior associates to execute comprehensive SEO and social media campai
 
-  id: resume_284 | level: junior | exp: 0.8 yrs | raw_text: 254 words
-  skills: PostgreSQL, MongoDB, Python, SQL, Django
-  projects: Library Management System
-  background: As a junior developer entering the workforce, I am dedicated to specializing in database engineering. During my year-long internship at a mid-sized e-commerce agency, I collaborated with a team of six developers to maintain and update our web applications. My daily tasks included performing basic CR
+  id: resume_287 | level: middle | exp: 5.0 yrs | raw_text: 273 words
+  skills: Google Search Console, Moz, Sprout Social, Hootsuite, Drupal, Webflow, Technical Seo, Content Strategy, Community Management
+  projects: Brand Voice Audit, CMS Blog Migration
+  background: With over five years of experience in the digital content landscape, I have worked across both agency and boutique firm environments to build sustainable brand visibility. In my most recent role as a Content Strategist at a digital agency, I managed a team of four content writers and social media co
 
-  id: resume_285 | level: senior | exp: 8.5 yrs | raw_text: 270 words
-  skills: PostgreSQL, MongoDB, Redis, Python, Database Modeling, System Architecture
-  projects: Data Integrity Engine
-  background: With over eight years of professional experience, I have established myself as a senior database engineer and architect, focusing on high-performance data systems. In my current role as a Lead Database Engineer at a large enterprise organization, I oversee a team of twelve engineers responsible for 
+  id: resume_288 | level: senior | exp: 8.0 yrs | raw_text: 267 words
+  skills: Adobe Experience Cloud, Salesforce Marketing Cloud, Python, Sql, Predictive Analytics, Technical Seo, Schema Strategy, Data Mining, Bayesian Statistics
+  projects: Predictive Content Model, Global A/B Testing Framework
+  background: I am a senior marketing leader with eight years of experience navigating the complexities of digital growth, advanced analytics, and strategic content architecture. Throughout my career, I have thrived in large enterprise environments, overseeing teams as large as twelve professionals, including dat
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_283 | title: Mid-Level Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 209 words
-  required_skills: PostgreSQL, MongoDB, Data Modeling, SQL
-  preferred_skills: Redis, Python
-  description: Our data engineering team of ten developers is seeking a Mid-Level Database Engineer to help build and maintain our high-concurrency database platforms. The team works on complex data modeling and schema optimization to support our customer-facing an
+  id: jd_286 | title: Junior SEO Associate | level: junior | min_exp: 1 yrs | raw_text: 220 words
+  required_skills: Wordpress, Ahrefs, Semrush, Google Analytics 4, Seo
+  preferred_skills: Canva, Html, Css
+  description: Our growth marketing team is seeking a dedicated Junior SEO Associate to help us expand our organic footprint. The team currently consists of eight members, including content strategists, data analysts, and outreach coordinators. In this role, you wi
 
-  id: jd_284 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture
-  preferred_skills: AWS, Performance Tuning
-  description: The engineering organization is looking for a Senior Database Architect to join our high-impact team of twenty. We build and maintain high-scale global data platforms that require extreme reliability and performance. You will be responsible for archi
+  id: jd_287 | title: Social Media Assistant | level: junior | min_exp: 1 yrs | raw_text: 219 words
+  required_skills: Meta Business Suite, Buffer, Canva, Social Media
+  preferred_skills: Video Editing, Community Management
+  description: Our social media department is looking for an enthusiastic Social Media Assistant to support our brand awareness efforts. The team is comprised of five specialists who focus on brand storytelling and community engagement across multiple platforms. Yo
 
-  id: jd_285 | title: Principal Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture
-  preferred_skills: Kubernetes, Distributed Systems
-  description: Our core infrastructure team is seeking a Principal Database Engineer to lead the design and implementation of our next-generation data platforms. The team consists of thirty engineers dedicated to building highly available, secure, and performant sy
+  id: jd_288 | title: Lead Digital Marketing Architect | level: senior | min_exp: 6 yrs | raw_text: 213 words
+  required_skills: Adobe Experience Cloud, Salesforce Marketing Cloud, Sql, Python, Technical Seo
+  preferred_skills: Bayesian Statistics, Machine Learning
+  description: We are looking for an experienced Lead Digital Marketing Architect to drive our enterprise marketing technology transformation. The team is large, consisting of over fifteen professionals, including engineers, analysts, and content strategists. You w
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 846 pairs total.
+Overall dataset so far: 855 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  167  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  169  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  170  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  169  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  171  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  171  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  171  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  170  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  170  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  173  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_847    resume_283 × jd_283
-  pair_848    resume_283 × jd_284
-  pair_849    resume_283 × jd_285
-  pair_850    resume_284 × jd_283
-  pair_851    resume_284 × jd_284
-  pair_852    resume_284 × jd_285
-  pair_853    resume_285 × jd_283
-  pair_854    resume_285 × jd_284
-  pair_855    resume_285 × jd_285
+  pair_856    resume_286 × jd_286
+  pair_857    resume_286 × jd_287
+  pair_858    resume_286 × jd_288
+  pair_859    resume_287 × jd_286
+  pair_860    resume_287 × jd_287
+  pair_861    resume_287 × jd_288
+  pair_862    resume_288 × jd_286
+  pair_863    resume_288 × jd_287
+  pair_864    resume_288 × jd_288
 
 ════════════════════════════════════
 OUTPUT FORMAT
