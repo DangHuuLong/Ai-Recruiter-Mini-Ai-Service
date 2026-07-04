@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_109 | level: senior | exp: 8.0 yrs | raw_text: 263 words
-  skills: Epic Systems, eClinicalWorks, HIPAA Compliance, Clinical Operations, Patient Scheduling, Power BI, Healthcare Administration
-  projects: CareSync
-  background: An accomplished and strategic Senior Clinical Operations Manager with 8.0 years of experience orchestrating large-scale healthcare administration frameworks, optimizing electronic medical record workflows, and supervising patient coordination divisions. I dedicated four and a half years to an enterp
+  id: resume_112 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Procurement, Inventory Tracking, Microsoft Excel, Logistics
+  projects: PackTrack
+  background: An enthusiastic, ambitious, and highly organized Junior Supply Chain Graduate with 0.5 years of dedicated internship experience specializing in physical inventory verification, basic procurement administrative assistance, and high-volume logistics data entry workflows. I recently spent six months wo
 
-  id: resume_110 | level: senior | exp: 7.0 yrs | raw_text: 263 words
-  skills: Cerner Millennium, Athenahealth, HIPAA Compliance, ICD-10 Coding, Tableau, Health Informatics, Clinical Operations
-  projects: ChartFlow
-  background: A rigorous and detail-oriented Senior Health Informatics Consultant with 7.0 years of experience optimizing electronic medical record frameworks, directing clinical operations, and engineering compliance tracking setups for large healthcare networks. I dedicated four years to a major healthcare ente
+  id: resume_113 | level: middle | exp: 4.0 yrs | raw_text: 263 words
+  skills: Procurement, Inventory Management, NetSuite, SAP ERP, Logistics, Power BI
+  projects: RouteOptima
+  background: An analytical, data-driven Supply Chain Specialist with 4.0 years of experience focusing on mid-market procurement operations, distribution coordination, and inventory management tracking. I dedicated three full years to a fast-growing retail distribution startup within a fulfillment optimization te
 
-  id: resume_111 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: Meditech Expanse, Allscripts, HIPAA Compliance, ICD-10 Coding, Salesforce Health Cloud, Clinical Operations, Medical Coordination
-  projects: CareRoute
-  background: An analytical Senior Medical Coordination Lead with 7.5 years of industry experience managing clinical operations, implementing electronic medical record systems, and designing healthcare administrative pipelines. I committed four years to a sprawling enterprise medical network where I led an admini
+  id: resume_114 | level: senior | exp: 8.5 yrs | raw_text: 274 words
+  skills: SAP S4HANA, Oracle WMS, JDA Software, Procurement, Inventory Optimization, Logistics Automation, Tableau, SQL Server
+  projects: GlobalLogix
+  background: A visionary, strategic Senior Supply Chain Architect and Enterprise Resource Planning Principal with 8.5 years of deep industry experience managing large-scale global procurement portfolios, warehouse automation setups, and multi-tier logistics infrastructure. I dedicated five years to a multination
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_109 | title: Junior Clinical Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 217 words
-  required_skills: Epic Systems, HIPAA Compliance, Clinical Operations, Excel
-  preferred_skills: Cerner Millennium
-  description: Our outpatient medical division is seeking an enthusiastic and highly organized Junior Clinical Operations Assistant to support the daily administrative routines, data entry pipelines, and patient reception workflows of our clinical center. Working i
+  id: jd_112 | title: Senior Global Supply Chain Architect (SAP S4HANA & Logistics) | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: SAP S4HANA, Procurement, Inventory Optimization, Logistics
+  preferred_skills: Tableau
+  description: Our global manufacturing and infrastructure division is seeking an exceptional Senior Global Supply Chain Architect to lead the strategic configuration, operational scaling, and technological optimization of our multinational enterprise resource plan
 
-  id: jd_110 | title: Clinical Operations Coordinator (EMR & Schedules) | level: middle | min_exp: 3 yrs | raw_text: 205 words
-  required_skills: Athenahealth, ICD-10 Coding, HIPAA Compliance, Tableau, Clinical Operations
-  preferred_skills: eClinicalWorks
-  description: Our specialized medicine team is looking for a meticulous Clinical Operations Coordinator to manage the technical workflows, data validation standards, and patient appointment tracking of our regional clinical programs. Working inside a collaborative
+  id: jd_113 | title: Senior Manager of Warehouse Systems & Logistics Automation | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Oracle WMS, Inventory Tracking, Logistics, SQL Server
+  preferred_skills: JDA Software
+  description: Our industrial distribution enterprise is seeking an analytical Senior Manager of Warehouse Systems & Logistics Automation to spearhead the engineering design, technical overhaul, and software modernization of our regional fulfillment centers. Direct
 
-  id: jd_111 | title: Senior Manager of Clinical Informatics & System Operations | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Epic Systems, Cerner Millennium, HIPAA Compliance, ICD-10 Coding, Tableau, Power BI
-  preferred_skills: Salesforce Health Cloud
-  description: Our operations enterprise architecture division is seeking a visionary Senior Manager of Clinical Informatics & System Operations to pioneer the technical development, structural transformation, and software integration of our global electronic medic
+  id: jd_114 | title: Senior Demand Planning & Inventory Optimization Engineer | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: JDA Software, Procurement, Inventory Optimization, Tableau
+  preferred_skills: Oracle WMS
+  description: Our retail operations planning division is looking for a meticulous Senior Demand Planning & Inventory Optimization Engineer to pioneer the analytical design, quantitative forecasting, and replenishment optimization of our nationwide consumer network
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 324 pairs total.
+Overall dataset so far: 333 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   61  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   61  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   60  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   59  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:   83  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   61  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   61  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   63  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   62  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   86  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_325    resume_109 × jd_109
-  pair_326    resume_109 × jd_110
-  pair_327    resume_109 × jd_111
-  pair_328    resume_110 × jd_109
-  pair_329    resume_110 × jd_110
-  pair_330    resume_110 × jd_111
-  pair_331    resume_111 × jd_109
-  pair_332    resume_111 × jd_110
-  pair_333    resume_111 × jd_111
+  pair_334    resume_112 × jd_112
+  pair_335    resume_112 × jd_113
+  pair_336    resume_112 × jd_114
+  pair_337    resume_113 × jd_112
+  pair_338    resume_113 × jd_113
+  pair_339    resume_113 × jd_114
+  pair_340    resume_114 × jd_112
+  pair_341    resume_114 × jd_113
+  pair_342    resume_114 × jd_114
 
 ════════════════════════════════════
 OUTPUT FORMAT
