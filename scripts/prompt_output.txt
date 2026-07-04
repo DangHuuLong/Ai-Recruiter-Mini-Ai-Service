@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_115 | level: senior | exp: 7.0 yrs | raw_text: 297 words
-  skills: Figma, User Research, Prototyping, Design Systems, Maze, Zeplin, Adobe Illustrator
-  projects: DesignCore
-  background: I am a senior product designer with over seven years of professional experience crafting elegant digital interfaces and establishing user research protocols across diverse cross-functional environments. My career began at a fast-paced ecommerce startup where I worked for three years within a nimble 
+  id: resume_118 | level: junior | exp: 0.5 yrs | raw_text: 278 words
+  skills: Python, Flask, Django, SQLite, HTML5, CSS3
+  projects: TrackIt
+  background: I am an enthusiastic Junior Full-Stack Web Developer looking to jumpstart my professional engineering journey with a strong foundation in modern coding practices. I recently completed a rigorous six-month internship at an e-commerce startup, working in an agile team of four engineers where we conduc
 
-  id: resume_116 | level: senior | exp: 7.5 yrs | raw_text: 287 words
-  skills: Figma, User Research, Prototyping, User Personas, Principle, UserTesting, Miro
-  projects: UXInsight
-  background: A seasoned user experience specialist and interactive designer with 7.5 years of industry tenure leading collaborative interface design cycles and high-impact design operations. I spent three and a half years at a growing software-as-a-service tech agency working in a dedicated UX group of six indiv
+  id: resume_119 | level: middle | exp: 4.0 yrs | raw_text: 250 words
+  skills: Python, FastAPI, React, Redux Toolkit, PostgreSQL, Git
+  projects: LogStream
+  background: I am a capable Mid-Level Full-Stack Developer with four years of industry experience engineering performant web services and cloud-hosted data structures. I spent two and a half years working at a growth-stage software agency within a fast-moving product team of six engineers. In this capacity, I st
 
-  id: resume_117 | level: senior | exp: 8.0 yrs | raw_text: 272 words
-  skills: Figma, User Research, Prototyping, Design Systems, Accessibility Auditing, Adobe After Effects
-  projects: SystemSync
-  background: An accomplished, analytical Senior UX/UI Designer and Design Ops Coordinator with eight years of professional experience crafting robust enterprise software platforms and mobile architectures. I began my journey by working for three years at a digital product startup where I collaborated in an agile
+  id: resume_120 | level: senior | exp: 8.0 yrs | raw_text: 263 words
+  skills: Python, FastAPI, React, Next.js, PostgreSQL, Redis, Docker, Kubernetes, AWS, WebSockets
+  projects: QueryGlow
+  background: I am a senior full-stack software engineer and technical lead with eight years of extensive professional expertise architecting high-throughput cloud architectures, resilient distributed web applications, and scalable design languages. My journey began at an enterprise cloud solutions firm where I s
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_115 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 200 words
-  required_skills: Figma, Prototyping, User Research
-  preferred_skills: Design Systems
-  description: We are looking for an energetic and enthusiastic Junior UI/UX Designer to join our expanding product experience division. In this role, you will work closely with a vibrant creative group of four designers to help build, refine, and maintain the user
+  id: jd_118 | title: Senior Full-Stack Engineer (FastAPI & Next.js) | level: senior | min_exp: 6 yrs | raw_text: 187 words
+  required_skills: Python, FastAPI, React, Next.js, PostgreSQL, Docker
+  preferred_skills: Kubernetes
+  description: We are seeking a senior and highly technical Lead Full-Stack Engineer to drive the architectural evolution of our high-volume cloud tracking system. Joining an expert product engineering group of ten professionals, you will hold ultimate technical ow
 
-  id: jd_116 | title: Product Designer (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 200 words
-  required_skills: Figma, User Research, Prototyping, User Personas
-  preferred_skills: Design Systems
-  description: Our dynamic product software company is searching for an analytical and highly creative Mid-Level Product Designer to take charge of feature iterations across our business management suite. Joining an active development team of seven professionals, y
+  id: jd_119 | title: Senior Cloud Web Developer (FastAPI & AWS) | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Python, FastAPI, React, Redis, AWS
+  preferred_skills: Docker
+  description: Our modern software team is looking for a seasoned Senior Cloud Web Developer to spearhead the engineering design and performance optimization of our distributed backend systems. Working as part of a collaborative product team of eight developers, yo
 
-  id: jd_117 | title: Senior Lead Product & Design Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 217 words
-  required_skills: Figma, User Research, Prototyping, Design Systems, Accessibility Auditing
-  preferred_skills: Adobe Illustrator
-  description: Our premium digital solutions group is searching for a visionary Senior Lead Product & Design Systems Architect to orchestrate the engineering direction, systemic standardization, and global scaling of our multi-product digital ecosystem. Leading an 
+  id: jd_120 | title: Senior Lead Full-Stack Architect (React & WebSockets) | level: senior | min_exp: 6 yrs | raw_text: 187 words
+  required_skills: Python, FastAPI, React, WebSockets, Kubernetes
+  preferred_skills: AWS
+  description: Our premium enterprise platform team is searching for a visionary Senior Lead Full-Stack Architect to steer the scaling, reliability, and real-time connectivity of our business collaboration network. Leading a highly skilled team of twelve engineers,
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 342 pairs total.
+Overall dataset so far: 351 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   64  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   64  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:   63  →  expected this batch: 3 pairs (from seniority gaps below)
-  strong_match          existing:   62  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:   89  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:   64  →  expected this batch: 3 pairs (from seniority gaps below)
+  weak_match            existing:   64  →  expected this batch: 3 pairs (from seniority gaps below)
+  moderate_match        existing:   66  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:   65  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:   92  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_343    resume_115 × jd_115
-  pair_344    resume_115 × jd_116
-  pair_345    resume_115 × jd_117
-  pair_346    resume_116 × jd_115
-  pair_347    resume_116 × jd_116
-  pair_348    resume_116 × jd_117
-  pair_349    resume_117 × jd_115
-  pair_350    resume_117 × jd_116
-  pair_351    resume_117 × jd_117
+  pair_352    resume_118 × jd_118
+  pair_353    resume_118 × jd_119
+  pair_354    resume_118 × jd_120
+  pair_355    resume_119 × jd_118
+  pair_356    resume_119 × jd_119
+  pair_357    resume_119 × jd_120
+  pair_358    resume_120 × jd_118
+  pair_359    resume_120 × jd_119
+  pair_360    resume_120 × jd_120
 
 ════════════════════════════════════
 OUTPUT FORMAT
