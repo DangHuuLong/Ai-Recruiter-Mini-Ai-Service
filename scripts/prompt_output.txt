@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_163 | level: middle | exp: 4.0 yrs | raw_text: 259 words
-  skills: Financial Modeling, Regulatory Reporting, SQL, QuickBooks Online, Excel, Data Analysis
-  projects: FiscalFlow, AuditBridge
-  background: I am a dedicated Financial Analyst with four years of experience in the fintech sector, specializing in regulatory reporting and financial modeling. During my tenure as a Financial Analyst at a mid-sized fintech startup, I was part of a team of eight responsible for maintaining compliance with regio
+  id: resume_166 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: Shopify Plus, PostgreSQL, Google Analytics 4, Tableau, JIRA, Inventory Management
+  projects: InventorySync, VendorDashboard
+  background: I am a detail-oriented E-commerce Operations Specialist with four years of experience optimizing marketplace performance and retail inventory systems. During my time as an Operations Associate at a fast-paced e-commerce startup, I supported a team of six in managing order fulfillment and vendor rela
 
-  id: resume_164 | level: senior | exp: 8.0 yrs | raw_text: 266 words
-  skills: Financial Strategy, Regulatory Compliance, NetSuite, Power BI, SQL, Budgeting
-  projects: FinGuard, CapitalSync
-  background: I am a Senior Financial Controller with eight years of experience navigating the complexities of fintech finance, compliance, and strategic reporting. In my previous role as the Finance Lead at a fast-growth fintech enterprise, I managed a team of fifteen, overseeing the full spectrum of financial o
+  id: resume_167 | level: senior | exp: 8.0 yrs | raw_text: 258 words
+  skills: Magento 2, AWS, BigQuery, SQL, Python, Product Strategy
+  projects: CartOptimizer, MarketplaceConnect
+  background: I am a Senior E-commerce Product Manager with eight years of experience building and scaling large-scale marketplace platforms and retail technology ecosystems. In my most recent role as a Lead Product Manager at a major international retail enterprise, I oversaw a cross-functional department of twe
 
-  id: resume_165 | level: senior | exp: 9.0 yrs | raw_text: 268 words
-  skills: Strategic Finance, Systems Architecture, Oracle Financials, SQL, Python, Compliance
-  projects: GlobalLedger, ComplianceCore
-  background: I am a Principal Finance Manager with nine years of experience directing finance, accounting, and compliance in global fintech environments. Throughout my career at a major international payment processing firm, I led a global finance department of thirty, overseeing the architecture of our financia
+  id: resume_168 | level: senior | exp: 9.0 yrs | raw_text: 254 words
+  skills: Kubernetes, Snowflake, SQL, Python, Salesforce Commerce Cloud, Distributed Systems
+  projects: ScaleFlow, OmniMerch
+  background: I am a Principal Marketplace Architect with nine years of experience in high-growth retail environments, specializing in building scalable operational backends and merchandising systems. Throughout my career at a tier-one global marketplace firm, I directed a global engineering and operations organi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_163 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Excel, QuickBooks, Accounting Principles, SQL, Financial Reporting
-  preferred_skills: Fintech Knowledge, Data Analytics
-  description: Our finance department of twelve is seeking a detail-oriented Junior Financial Analyst to support our core accounting and reporting activities. The team handles end-to-end financial processing for our retail banking platform, ensuring that our transa
+  id: jd_166 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 181 words
+  required_skills: Shopify, SQL, Google Analytics 4, Inventory Management, Retail Operations
+  preferred_skills: Data Visualization, Merchandising
+  description: Our operations department of ten is seeking a motivated Junior E-commerce Associate to help manage our daily marketplace activities and retail inventory. Our team focuses on providing seamless online shopping experiences, ensuring products are accura
 
-  id: jd_164 | title: Junior Accounting Associate | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Excel, SQL, Accounting Principles, Financial Reporting, Data Entry
-  preferred_skills: Xero, Payment Processing
-  description: Our finance team of fifteen is looking for an entry-level Junior Accounting Associate to join our growing operations. Our group is responsible for the financial health of our digital payment products, monitoring transaction integrity, and assisting w
+  id: jd_167 | title: Junior Marketplace Analyst | level: junior | min_exp: 1 yrs | raw_text: 187 words
+  required_skills: SQL, Tableau, Retail Merchandising, Data Reporting, Excel
+  preferred_skills: Marketplace Management, Retail Math
+  description: Our retail analytics group is searching for an entry-level Junior Marketplace Analyst to support our growing digital business. Our team of fifteen professionals works on analyzing marketplace trends, monitoring vendor performance, and assisting in th
 
-  id: jd_165 | title: Senior Finance Manager | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: Financial Modeling, Regulatory Compliance, Oracle Financials, SQL, Python, Snowflake, Strategic Planning
-  preferred_skills: CPA, Data Modeling
-  description: Our finance department of twenty is seeking a seasoned Senior Finance Manager to lead our strategic planning, financial modeling, and regulatory compliance functions. The team is dedicated to supporting the company's hyper-growth by building scalable
+  id: jd_168 | title: Senior Marketplace Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Marketplace Operations, Supply Chain Optimization, Salesforce Commerce Cloud, SQL, Python, Snowflake, Strategic Planning
+  preferred_skills: Kubernetes, Data Modeling
+  description: Our retail operations department of twenty-five is looking for a seasoned Senior Marketplace Operations Lead to drive strategy for our global marketplace platform. The team is dedicated to building scalable logistics infrastructure, optimizing mercha
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 486 pairs total.
+Overall dataset so far: 495 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   99  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:   98  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:   94  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:   97  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:   98  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:   99  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:   98  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:   99  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  100  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_487    resume_163 × jd_163
-  pair_488    resume_163 × jd_164
-  pair_489    resume_163 × jd_165
-  pair_490    resume_164 × jd_163
-  pair_491    resume_164 × jd_164
-  pair_492    resume_164 × jd_165
-  pair_493    resume_165 × jd_163
-  pair_494    resume_165 × jd_164
-  pair_495    resume_165 × jd_165
+  pair_496    resume_166 × jd_166
+  pair_497    resume_166 × jd_167
+  pair_498    resume_166 × jd_168
+  pair_499    resume_167 × jd_166
+  pair_500    resume_167 × jd_167
+  pair_501    resume_167 × jd_168
+  pair_502    resume_168 × jd_166
+  pair_503    resume_168 × jd_167
+  pair_504    resume_168 × jd_168
 
 ════════════════════════════════════
 OUTPUT FORMAT
