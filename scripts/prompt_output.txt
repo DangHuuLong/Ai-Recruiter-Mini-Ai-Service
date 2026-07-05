@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_568 | level: middle | exp: 4.0 yrs | raw_text: 257 words
-  skills: FastAPI, React, PostgreSQL, Docker, Redux
-  projects: QuickTrack
-  background: I am a dedicated Full-Stack Developer with four years of experience building scalable web applications. At a mid-sized e-commerce startup, I worked in a team of six to overhaul the core user portal, utilizing FastAPI 0.105 for high-concurrency backend services and React 18 for a reactive frontend ex
+  id: resume_571 | level: junior | exp: 0.5 yrs | raw_text: 288 words
+  skills: Epic EMR, Microsoft Excel, HIPAA Compliance, Patient Scheduling, Tableau
+  projects: CareFlow
+  background: I am a recent Health Services Administration graduate with a strong interest in clinical operations and patient data management. During my final year, I completed an internship at a regional community clinic, where I worked within a team of four to assist in administrative duties. My responsibilitie
 
-  id: resume_569 | level: senior | exp: 7.5 yrs | raw_text: 280 words
-  skills: Python, FastAPI, React, TypeScript, PostgreSQL, Redis
-  projects: SecureFlow
-  background: I am a senior-level Full-Stack Engineer with seven years of experience delivering robust, enterprise-grade web solutions. Throughout my career at a major global financial services enterprise, I have led a team of 15 developers in designing and maintaining a secure, multi-tier platform serving over 5
+  id: resume_572 | level: junior | exp: 0.7 yrs | raw_text: 259 words
+  skills: Cerner Millennium, Microsoft Excel, Medical Billing, Health Information Management, Data Organization
+  projects: RecordsSync
+  background: As a motivated recent graduate in Health Information Management, I am eager to launch my career in healthcare coordination and administrative support. Throughout my undergraduate studies, I worked as a Student Assistant for a university-affiliated medical office, where I supported a team of six in m
 
-  id: resume_570 | level: senior | exp: 9.0 yrs | raw_text: 255 words
-  skills: Python, FastAPI, React, Kubernetes, PostgreSQL, Data Visualization
-  projects: DataSphere
-  background: I am an accomplished Principal Software Engineer with nine years of experience specializing in full-stack web development and scalable infrastructure. In my most recent role at a prominent cloud-infrastructure company, I managed a team of 20 engineers, where we built and scaled a real-time data proc
+  id: resume_573 | level: senior | exp: 8.5 yrs | raw_text: 266 words
+  skills: Epic EMR, Oracle Health, SQL, SAS, Clinical Workflow, Budget Management
+  projects: ComplianceCore
+  background: I am a highly experienced Clinical Operations Director and Medical Systems Lead with over eight years of experience managing complex healthcare operations within large-scale hospital enterprises. I have extensive expertise in implementing electronic health record systems, leading clinical workflows,
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_568 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Python, FastAPI, React, Git
-  preferred_skills: JavaScript, Agile
-  description: Our web development team is looking for a Junior Full-Stack Developer to assist us in building and maintaining our consumer-facing web applications. The team consists of eight developers working on a high-traffic platform that serves a global user ba
+  id: jd_571 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 216 words
+  required_skills: Epic EMR, Excel, Clinical Reporting, HIPAA, Workflow Management
+  preferred_skills: SQL, Operational Efficiency
+  description: Our clinical operations team is seeking a Clinical Operations Coordinator to join our growing unit of 20 professionals. We are currently scaling our regional operations and need someone to handle core administrative functions, EMR data maintenance, a
 
-  id: jd_569 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Python, React, PostgreSQL, Git
-  preferred_skills: Unit Testing, Web Design
-  description: Our engineering department is seeking an energetic Associate Full-Stack Engineer to join our team of 12 specialists. Our mission is to accelerate our platform's development by delivering high-quality, scalable web features on a regular basis. You wil
+  id: jd_572 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: Epic EMR, Clinical Modeling, Healthcare Compliance, Systems Architecture, SQL
+  preferred_skills: Cloud Architecture, Risk Mitigation
+  description: We are looking for a Senior Healthcare Systems Architect to lead the design and implementation of our next-generation medical reporting and compliance infrastructure. Our team of 25 medical and data experts manages a complex, global health ecosystem 
 
-  id: jd_570 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Python, FastAPI, React, PostgreSQL, Kubernetes
-  preferred_skills: Cloud Infrastructure, System Architecture
-  description: We are seeking a highly experienced Senior Full-Stack Engineer to lead the technical efforts for our core infrastructure platform. Our team of 20 specialists is responsible for maintaining the security, scalability, and performance of our services. Y
+  id: jd_573 | title: Head of Clinical Integrity & Compliance | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Epic EMR, Clinical Reporting, Compliance Strategy, Risk Management, SQL
+  preferred_skills: Leadership, Predictive Analytics
+  description: Our medical network is seeking a Head of Clinical Integrity & Compliance to oversee our central operations department of 30 professionals. Our team is tasked with ensuring total clinical transparency, implementing robust risk controls, and managing r
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1701 pairs total.
+Overall dataset so far: 1710 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  340  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  341  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  339  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  340  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  341  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  340  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  342  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  343  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  342  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  343  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1702   resume_568 × jd_568
-  pair_1703   resume_568 × jd_569
-  pair_1704   resume_568 × jd_570
-  pair_1705   resume_569 × jd_568
-  pair_1706   resume_569 × jd_569
-  pair_1707   resume_569 × jd_570
-  pair_1708   resume_570 × jd_568
-  pair_1709   resume_570 × jd_569
-  pair_1710   resume_570 × jd_570
+  pair_1711   resume_571 × jd_571
+  pair_1712   resume_571 × jd_572
+  pair_1713   resume_571 × jd_573
+  pair_1714   resume_572 × jd_571
+  pair_1715   resume_572 × jd_572
+  pair_1716   resume_572 × jd_573
+  pair_1717   resume_573 × jd_571
+  pair_1718   resume_573 × jd_572
+  pair_1719   resume_573 × jd_573
 
 ════════════════════════════════════
 OUTPUT FORMAT
