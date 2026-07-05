@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_544 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: Splunk, SIEM, Nessus, Python, Network Security, Firewalls, Incident Response
-  projects: GuardMonitor
-  background: As a Cybersecurity Analyst with four years of professional experience, I have dedicated my career to strengthening enterprise defense systems and conducting proactive threat hunting. During my three years at a mid-sized financial services firm, I worked within a security operations team of twelve, w
+  id: resume_547 | level: junior | exp: 1.0 yrs | raw_text: 252 words
+  skills: Jira, Trello, Lucidchart, SQL, Tableau, Confluence
+  projects: RequirementMap
+  background: I am a motivated entry-level Business Analyst with one year of experience, dedicated to bridging the gap between technical teams and business stakeholders. During my recent internship at a rapidly growing e-commerce startup, I worked alongside a team of five professionals, focusing primarily on gath
 
-  id: resume_545 | level: middle | exp: 5.0 yrs | raw_text: 257 words
-  skills: Network Security, Firewalls, Wireshark, Burp Suite, Linux, VPN, SIEM
-  projects: SecureLink
-  background: I am a Network Security Engineer with five years of experience, passionate about securing complex network infrastructures and mitigating cyber threats. During my four years at a large telecommunications provider, I worked as part of a high-performance network security team of fifteen, where I focuse
+  id: resume_548 | level: junior | exp: 0.8 yrs | raw_text: 258 words
+  skills: Jira, Microsoft Visio, Confluence, Microsoft Excel, Power BI
+  projects: InsightFlow
+  background: As an aspiring Business Analyst, I have spent the last ten months developing a strong foundation in process documentation and stakeholder engagement during my time at a dynamic software development agency. Working within a project team of four, my responsibilities included facilitating daily stand-u
 
-  id: resume_546 | level: senior | exp: 8.5 yrs | raw_text: 253 words
-  skills: Pentesting, SIEM, Splunk, ELK, Metasploit, Burp Suite, Python, Cloud Security
-  projects: CyberShield
-  background: As a Senior Information Security Lead with eight years of experience, I specialize in spearheading offensive security programs and building resilient enterprise defense architectures. In my most recent role at a global technology firm, I led a security architecture team of twenty, where I was respon
+  id: resume_549 | level: senior | exp: 8.5 yrs | raw_text: 270 words
+  skills: BPMN 2.0, Sparx Enterprise Architect, SQL Server, Python, Jira, Project Governance, Stakeholder Management
+  projects: GlobalSync
+  background: I am a Senior Business Analyst and Project Manager with eight years of extensive experience leading large-scale enterprise software implementations and digital transformation projects. In my current role at a multinational retail corporation, I lead a cross-functional team of twenty, where I oversee
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_544 | title: Junior Cybersecurity Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: SIEM, Splunk, Nessus, Network Security
-  preferred_skills: Python, Incident Response
-  description: Our security operations team is seeking a Junior Cybersecurity Analyst to help monitor our network and respond to security events. The team consists of six analysts who manage a wide array of tools to ensure the integrity of our data and infrastructu
+  id: jd_547 | title: Mid-Level Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 198 words
+  required_skills: Jira, Confluence, BPMN, SQL
+  preferred_skills: Python, Agile
+  description: Our dynamic product organization is looking for a Mid-Level Business Analyst to join our team of twelve. This individual will play a crucial role in shaping our core financial software suite, ensuring that user needs are translated into precise funct
 
-  id: jd_545 | title: Associate Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 194 words
-  required_skills: Firewalls, Network Security, Linux, Log Analysis
-  preferred_skills: Python, Bash
-  description: We are looking for an Associate Security Engineer to join our growing security team. Our team is responsible for securing both our internal network and customer-facing cloud infrastructure, and we currently have five members working in a fast-paced a
+  id: jd_548 | title: Senior Technical Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: BPMN, Jira, Confluence, SQL Server, Enterprise Architect
+  preferred_skills: API Design, Cloud Infrastructure
+  description: We are seeking a Senior Technical Business Analyst to act as the primary liaison between our executive leadership and engineering teams. The organization is a leader in data analytics solutions, and you will be part of a high-impact team of twenty. Y
 
-  id: jd_546 | title: Senior Security Lead | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: SIEM, Pentesting, Splunk, Metasploit, Burp Suite, Python, Cloud Security
-  preferred_skills: ELK, Automation
-  description: We are seeking an experienced Senior Security Lead to oversee our enterprise defense and security strategy. Our team consists of ten high-level security professionals dedicated to proactive threat hunting, incident management, and hardening our globa
+  id: jd_549 | title: Principal Project Manager | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Jira, Confluence, BPMN, Project Management, Stakeholder Management
+  preferred_skills: Python, Power BI
+  description: Our innovation lab is looking for a Principal Project Manager to drive our most complex, high-growth strategic programs. The team consists of fifteen professionals working at the cutting edge of software development. Your core responsibility is to es
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1629 pairs total.
+Overall dataset so far: 1638 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  326  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  326  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  325  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  325  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  327  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  326  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  328  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  327  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  329  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  328  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1630   resume_544 × jd_544
-  pair_1631   resume_544 × jd_545
-  pair_1632   resume_544 × jd_546
-  pair_1633   resume_545 × jd_544
-  pair_1634   resume_545 × jd_545
-  pair_1635   resume_545 × jd_546
-  pair_1636   resume_546 × jd_544
-  pair_1637   resume_546 × jd_545
-  pair_1638   resume_546 × jd_546
+  pair_1639   resume_547 × jd_547
+  pair_1640   resume_547 × jd_548
+  pair_1641   resume_547 × jd_549
+  pair_1642   resume_548 × jd_547
+  pair_1643   resume_548 × jd_548
+  pair_1644   resume_548 × jd_549
+  pair_1645   resume_549 × jd_547
+  pair_1646   resume_549 × jd_548
+  pair_1647   resume_549 × jd_549
 
 ════════════════════════════════════
 OUTPUT FORMAT
