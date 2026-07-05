@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_358 | level: middle | exp: 4.0 yrs | raw_text: 266 words
-  skills: Figma, Prototyping, User Research, Design Systems, UI Design
-  projects: ComponentLibraryBase, AccessibilityCheck
-  background: I am a product designer with four years of experience crafting user-centric digital experiences for high-growth startups and creative agencies. Throughout my career, I have thrived in cross-functional teams, collaborating closely with product managers and developers to iterate on features from conce
+  id: resume_361 | level: junior | exp: 0.8 yrs | raw_text: 254 words
+  skills: Python, Pandas, Scikit-Learn, Data Analysis
+  projects: SentimentAnalyzer, HousePricePredictor
+  background: I am a passionate aspiring data scientist with a strong foundation in machine learning and statistical analysis. During my internship as a Junior Data Analyst at a tech-focused startup with a team of five, I was responsible for data cleaning and exploratory data analysis using Python 3.10, pandas, a
 
-  id: resume_359 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: Figma, Design Strategy, User Research, Prototyping, UX Architecture
-  projects: EnterpriseDesignOps, UX Analytics Engine
-  background: I am a senior product designer and design strategist with eight years of experience building and scaling product design functions within fast-paced enterprise environments. I have a proven track record of leading design teams and establishing design-led product cultures. In my role as Lead Product D
+  id: resume_362 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: Python, PyTorch, Scikit-Learn, FastAPI, MLOps
+  projects: MarketTrendForecaster, DataQualityGuardian
+  background: I am a data scientist with four years of professional experience, specializing in building machine learning models and data-driven products within the financial services sector. In my role as a Data Scientist at a mid-sized fintech company, I worked on a team of twelve to develop credit scoring mode
 
-  id: resume_360 | level: senior | exp: 9.0 yrs | raw_text: 256 words
-  skills: Figma, Design Systems, User Research, Prototyping, UX Architecture, Generative AI
-  projects: GlobalDesignScale, UserResearchCloud
-  background: I am a principal product designer and design systems architect with nine years of extensive experience, specializing in deep-dive user research and high-availability design system infrastructures. My career has focused on architecting platforms that balance complex technical requirements with intuit
+  id: resume_363 | level: middle | exp: 3.5 yrs | raw_text: 255 words
+  skills: Python, PyTorch, Scikit-Learn, PostgreSQL, Data Modeling
+  projects: AdClickOptimizer, SchemaValidator
+  background: I am a data scientist and machine learning engineer with three and a half years of experience designing and deploying scalable models for digital advertising platforms. In my role at a fast-growing ad-tech startup, I led the development of a real-time recommendation engine using PyTorch, pandas, and
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_358 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Figma, UI Design, Prototyping, User Research
-  preferred_skills: HTML, CSS
-  description: Our product design team of eight is currently seeking a motivated Junior Product Designer to help us build user-focused solutions for our core platform. We are a fast-moving team that values rapid prototyping, clear communication, and empathetic desi
+  id: jd_361 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Python, Pandas, Scikit-Learn, Data Analysis
+  preferred_skills: SQL, Tableau
+  description: Our data science team of eight is looking for a motivated Junior Data Scientist to join our efforts in developing predictive models for our core consumer analytics product. We are a fast-paced environment focused on turning raw data into meaningful i
 
-  id: jd_359 | title: Associate UX Designer | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Figma, UX Design, Prototyping, User Research
-  preferred_skills: Data Analytics, Research Methodology
-  description: Our design team of twelve is looking for an Associate UX Designer to assist in the research and prototyping phase of our product development cycle. The team focuses on creating seamless user experiences for a B2C application with a rapidly growing us
+  id: jd_362 | title: Senior Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Python, PyTorch, MLOps, Architecture, Distributed Systems
+  preferred_skills: Kubernetes, Quantization
+  description: Our central AI division, comprised of twenty-five researchers and engineers, is seeking a Senior Machine Learning Architect to lead the design and implementation of our next-generation enterprise model serving platform. We specialize in high-throughp
 
-  id: jd_360 | title: Principal Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Figma, Design Systems, UX Architecture, Prototyping, User Research
-  preferred_skills: Generative AI, UX Strategy
-  description: We are seeking a Principal Product Design Lead to guide our core design strategy and architectural vision for our high-complexity platforms. You will manage a team of twenty and be responsible for the long-term health of our design system, strategic 
+  id: jd_363 | title: Senior Data Scientist (LLM Focus) | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Python, PyTorch, Machine Learning, Fine-tuning, Transformers
+  preferred_skills: LLM, Vector Databases
+  description: Our AI research and development team of thirty is looking for a Senior Data Scientist with a specialized focus on Large Language Models (LLMs) to lead our initiatives in building intelligent, agentic product interfaces. You will be responsible for de
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1071 pairs total.
+Overall dataset so far: 1080 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  215  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  214  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  212  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  215  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  216  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  217  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  217  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1072   resume_358 × jd_358
-  pair_1073   resume_358 × jd_359
-  pair_1074   resume_358 × jd_360
-  pair_1075   resume_359 × jd_358
-  pair_1076   resume_359 × jd_359
-  pair_1077   resume_359 × jd_360
-  pair_1078   resume_360 × jd_358
-  pair_1079   resume_360 × jd_359
-  pair_1080   resume_360 × jd_360
+  pair_1081   resume_361 × jd_361
+  pair_1082   resume_361 × jd_362
+  pair_1083   resume_361 × jd_363
+  pair_1084   resume_362 × jd_361
+  pair_1085   resume_362 × jd_362
+  pair_1086   resume_362 × jd_363
+  pair_1087   resume_363 × jd_361
+  pair_1088   resume_363 × jd_362
+  pair_1089   resume_363 × jd_363
 
 ════════════════════════════════════
 OUTPUT FORMAT
