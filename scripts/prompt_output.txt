@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_433 | level: junior | exp: 0.5 yrs | raw_text: 250 words
-  skills: React, Tailwind CSS, JavaScript, Firebase
-  projects: QuickPoll
-  background: I am a motivated Frontend Developer who recently graduated with a degree in Computer Science. During my academic career, I completed a six-month internship at a small web development agency where I worked alongside three senior developers. My primary responsibilities involved building reusable UI co
+  id: resume_436 | level: middle | exp: 4.0 yrs | raw_text: 269 words
+  skills: Jira, Amplitude, Figma, SQL, Agile, Stakeholder Management
+  projects: FeedbackCentral
+  background: I am a dedicated Product Manager with four years of experience in the SaaS industry, focusing on building user-centric features for B2B platforms. In my current role at a mid-sized enterprise company, I lead a cross-functional team of six developers and two designers. I am responsible for managing t
 
-  id: resume_434 | level: junior | exp: 0.3 yrs | raw_text: 256 words
-  skills: React, Tailwind CSS, Git, JavaScript
-  projects: TaskTrack
-  background: I am a junior software engineer with a strong passion for frontend technologies, particularly those within the React ecosystem. After graduating with a Bachelor of Engineering in Software Engineering in 2026, I completed a three-month intensive bootcamp followed by a freelancing stint where I develo
+  id: resume_437 | level: middle | exp: 3.5 yrs | raw_text: 269 words
+  skills: Jira, Tableau, Confluence, Agile, Product Lifecycle
+  projects: DocuSync
+  background: I am a product management professional with three and a half years of experience in technology-focused roles. My experience spans both startup and agency environments, where I have successfully managed product lifecycles from ideation to launch. My primary responsibilities include facilitating daily
 
-  id: resume_435 | level: senior | exp: 8.0 yrs | raw_text: 281 words
-  skills: React, Next.js, TypeScript, Tailwind CSS, Jest, Playwright
-  projects: DataFlow
-  background: I am a Senior Frontend Engineer with eight years of extensive experience building and scaling high-performance web applications. In my previous role at a large-scale fintech enterprise, I led a team of twelve developers responsible for our core customer-facing dashboard. We focused on delivering a s
+  id: resume_438 | level: senior | exp: 8.0 yrs | raw_text: 267 words
+  skills: Productboard, Looker, Jira, Strategy, Roadmapping, Leadership
+  projects: Cloud Migration
+  background: I am a Senior Product Manager with eight years of extensive experience directing product strategy for large-scale enterprise platforms. My career has been defined by leading complex product initiatives that serve hundreds of thousands of users globally. In my current role at an enterprise software f
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_433 | title: Mid-level Frontend Developer | level: middle | min_exp: 3 yrs | raw_text: 198 words
-  required_skills: React, TypeScript, Tailwind CSS, Jest
-  preferred_skills: Next.js, Redux
-  description: Our web engineering team is looking for a Mid-level Frontend Developer to help us enhance our core product suite. We are a team of fifteen engineers focused on building intuitive, high-performance features for our platform, which serves thousands of 
+  id: jd_436 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Jira, Agile, Stakeholder Management, Roadmapping
+  preferred_skills: SQL, Figma
+  description: Our platform engineering team is seeking a motivated Associate Product Manager to support our growth initiatives and daily operations. You will join a dynamic team of twelve, focusing on enhancing our core product features for our growing user base. 
 
-  id: jd_434 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS, Playwright
-  preferred_skills: Jest, Micro-frontends
-  description: The Platform Engineering team is searching for a Senior Frontend Architect to design, build, and lead our next-generation API infrastructure. We are a team of twenty engineers managing high-traffic systems that handle millions of requests every day. 
+  id: jd_437 | title: Junior Product Manager | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Jira, Agile, Stakeholder Management, Roadmapping
+  preferred_skills: Confluence, Data Analytics
+  description: We are looking for a Junior Product Manager to join our product team and help us scale our consumer-facing applications. The team is comprised of fifteen people dedicated to improving user experience through rapid iteration. Your daily tasks will inc
 
-  id: jd_435 | title: Principal Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS, Jest, Playwright
-  preferred_skills: Performance Optimization, Testing Protocols
-  description: Our core product team is hiring a Principal Frontend Engineer to serve as a technical leader for our mission-critical systems. The team consists of twenty-five high-performing engineers who build and manage the platform powering our primary customer-
+  id: jd_438 | title: Senior Product Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Productboard, Looker, Jira, Strategy, Roadmapping, Stakeholder Management
+  preferred_skills: Leadership, Data Governance
+  description: Our enterprise solutions team is hiring a Senior Product Lead to drive the strategic vision of our core platform. You will lead a high-performing product organization of twenty-five members, focusing on large-scale architectural improvements and new 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1296 pairs total.
+Overall dataset so far: 1305 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  258  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  259  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  260  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  259  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  260  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  262  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  261  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  260  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  260  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  262  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1297   resume_433 × jd_433
-  pair_1298   resume_433 × jd_434
-  pair_1299   resume_433 × jd_435
-  pair_1300   resume_434 × jd_433
-  pair_1301   resume_434 × jd_434
-  pair_1302   resume_434 × jd_435
-  pair_1303   resume_435 × jd_433
-  pair_1304   resume_435 × jd_434
-  pair_1305   resume_435 × jd_435
+  pair_1306   resume_436 × jd_436
+  pair_1307   resume_436 × jd_437
+  pair_1308   resume_436 × jd_438
+  pair_1309   resume_437 × jd_436
+  pair_1310   resume_437 × jd_437
+  pair_1311   resume_437 × jd_438
+  pair_1312   resume_438 × jd_436
+  pair_1313   resume_438 × jd_437
+  pair_1314   resume_438 × jd_438
 
 ════════════════════════════════════
 OUTPUT FORMAT
