@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_466 | level: junior | exp: 0.8 yrs | raw_text: 267 words
-  skills: SAP S/4HANA, Microsoft Excel, Power BI, Supply Chain Management, Data Analysis
-  projects: StockOptimizerPro
-  background: During my recent internship as a Supply Chain Associate at a rapidly growing logistics startup, I supported a team of four in streamlining our inventory tracking processes. Over the course of ten months, I was primarily responsible for data entry and reconciliation within our warehouse management sy
+  id: resume_469 | level: middle | exp: 4.0 yrs | raw_text: 281 words
+  skills: Shopify Plus, Google Analytics 4, Klaviyo, Python, Zapier, React 18
+  projects: SalesPulse
+  background: Over the past four years, I have worked as an E-commerce Operations Specialist at a mid-sized retail startup, where I managed product lifecycles and marketplace integrations. Leading a team of three, I was responsible for optimizing our storefront visibility and streamlining order fulfillment workfl
 
-  id: resume_467 | level: middle | exp: 4.2 yrs | raw_text: 256 words
-  skills: Oracle NetSuite, Procurement, Supply Chain Management, Python, JavaScript, Logistics Planning
-  projects: NetStream Logistics
-  background: Over the past four years, I have served as a Logistics Coordinator at a large retail enterprise, leading a team of six in managing end-to-end supply chain operations. My journey started as an entry-level analyst where I specialized in procurement strategies, and I have since transitioned into managi
+  id: resume_470 | level: senior | exp: 7.5 yrs | raw_text: 273 words
+  skills: Node.js, PostgreSQL, Redis, Next.js, K6, Cloud Architecture
+  projects: MerchantFlow
+  background: With over seven years of experience in e-commerce architecture, I have spearheaded complex digital transformation projects at a leading retail enterprise. As a Lead E-commerce Architect, I managed a cross-functional team of twelve, guiding our transition to a microservices-based commerce platform. M
 
-  id: resume_468 | level: middle | exp: 5.0 yrs | raw_text: 272 words
-  skills: SAP, SQL, Tableau, Procurement, AWS Cloud, Operations Research
-  projects: VendorScan
-  background: In my five-year tenure as a Supply Chain Operations Manager at a prominent manufacturing agency, I have been deeply involved in architecting and maintaining massive data pipelines and storage layers for enterprise-level logistics. Leading a team of eight, I have been instrumental in the adoption of 
+  id: resume_471 | level: senior | exp: 8.2 yrs | raw_text: 269 words
+  skills: Go, Kubernetes, AWS EKS, AWS SageMaker, Distributed Systems, Machine Learning
+  projects: GlobalSync
+  background: In my eight years as a Principal E-commerce Engineer, I have focused on building robust, scalable infrastructure for global retail marketplaces. Working at an enterprise-level e-commerce firm, I led a global team of fifteen, overseeing the technical direction for our multi-region storefronts. I have
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_466 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 213 words
-  required_skills: Microsoft Excel, SQL, SAP, Supply Chain Management
-  preferred_skills: Tableau, Warehouse Management
-  description: Our operations department, composed of ten staff, is seeking a motivated Junior Supply Chain Associate to help maintain and monitor our core inventory storage and procurement systems. Our team supports a fast-paced retail environment that relies heav
+  id: jd_469 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Shopify, Google Analytics 4, Microsoft Excel, E-commerce Operations
+  preferred_skills: Klaviyo, Content Management
+  description: Our e-commerce operations team is currently looking for a detail-oriented Junior E-commerce Associate to support our growing digital marketplace. Our team of eight manages the daily listing, merchandising, and customer-facing operations for a diverse
 
-  id: jd_467 | title: Senior Logistics Network Architect | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Oracle NetSuite, Procurement, Supply Chain Management, Cloud Infrastructure, Logistics Planning
-  preferred_skills: AWS Cloud, Operations Research
-  description: Our logistics architecture group is searching for an elite Senior Logistics Network Architect to drive the design of our global supply chain infrastructure. You will work within a team of fifteen, focusing on building scalable, resilient, and perform
+  id: jd_470 | title: E-commerce Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 221 words
+  required_skills: Shopify, Google Analytics 4, Retail Operations, Merchandising
+  preferred_skills: Zapier, E-commerce
+  description: We are expanding our retail operations team and are seeking a motivated E-commerce Operations Assistant to join our team of twelve. This role is focused on the day-to-day execution of our online store's merchandising strategy. You will be responsible
 
-  id: jd_468 | title: Senior Global Procurement Manager | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: SAP, Procurement, Supply Chain Management, Global Trade Compliance, Vendor Management
-  preferred_skills: Tableau, Strategic Sourcing
-  description: Our procurement division is searching for an elite Senior Global Procurement Manager to lead our worldwide strategic sourcing initiatives. You will work within a central team of twenty, focusing on building scalable, resilient, and performant sourcin
+  id: jd_471 | title: Lead E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 221 words
+  required_skills: Node.js, PostgreSQL, Redis, Kubernetes, Distributed Systems
+  preferred_skills: Go, Machine Learning
+  description: Our engineering department is seeking a visionary Lead E-commerce Architect to oversee the design and implementation of our high-traffic digital retail platform. You will lead a cross-functional engineering team of twenty, tasked with scaling our mic
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1395 pairs total.
+Overall dataset so far: 1404 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  279  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  278  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  279  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  279  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  280  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  281  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  282  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  279  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  281  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  281  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1396   resume_466 × jd_466
-  pair_1397   resume_466 × jd_467
-  pair_1398   resume_466 × jd_468
-  pair_1399   resume_467 × jd_466
-  pair_1400   resume_467 × jd_467
-  pair_1401   resume_467 × jd_468
-  pair_1402   resume_468 × jd_466
-  pair_1403   resume_468 × jd_467
-  pair_1404   resume_468 × jd_468
+  pair_1405   resume_469 × jd_469
+  pair_1406   resume_469 × jd_470
+  pair_1407   resume_469 × jd_471
+  pair_1408   resume_470 × jd_469
+  pair_1409   resume_470 × jd_470
+  pair_1410   resume_470 × jd_471
+  pair_1411   resume_471 × jd_469
+  pair_1412   resume_471 × jd_470
+  pair_1413   resume_471 × jd_471
 
 ════════════════════════════════════
 OUTPUT FORMAT
