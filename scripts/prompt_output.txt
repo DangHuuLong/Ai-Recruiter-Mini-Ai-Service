@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_586 | level: junior | exp: 0.5 yrs | raw_text: 261 words
-  skills: EMR Management, Patient Scheduling, HIPAA Compliance, Epic Systems
-  projects: CareTrack
-  background: Having recently completed my Bachelor in Healthcare Administration in 2026, I am eager to apply my academic foundation to a professional medical coordination role. During my final year, I completed a six-month internship at a large regional hospital network where I worked on a clinical operations te
+  id: resume_589 | level: middle | exp: 4.0 yrs | raw_text: 271 words
+  skills: Python, Scikit-learn, PyTorch, Pandas, AWS, XGBoost
+  projects: AutoFlow
+  background: Over the past four years, I have established a strong background in data science and machine learning, focusing on deploying scalable models in production environments. My career began at a fast-paced technology startup where I served as a Data Scientist for two years on a team of five. My responsib
 
-  id: resume_587 | level: junior | exp: 0.8 yrs | raw_text: 263 words
-  skills: EHR Management, Medical Billing, Data Entry, HIPAA
-  projects: DataSync
-  background: I am a recent graduate with a Bachelor of Science in Health Information Management, having completed my degree in 2026. During my undergraduate studies, I interned at a primary care clinic for nine months, where I worked on a diverse team of eight healthcare professionals. My primary responsibilitie
+  id: resume_590 | level: senior | exp: 7.5 yrs | raw_text: 274 words
+  skills: Python, PyTorch, TensorFlow, Kubernetes, Deep Learning, MLOps
+  projects: InsightGuard
+  background: With over seven years of professional experience, I have led multiple teams through the end-to-end development and deployment of complex machine learning systems. During my four-year tenure at a global financial enterprise as a Senior Data Scientist, I managed a team of twelve, overseeing the develo
 
-  id: resume_588 | level: senior | exp: 8.5 yrs | raw_text: 268 words
-  skills: Clinical Operations, EMR Integration, Epic, Cerner EHR, Data Reporting, Budget Management
-  projects: SystemBridge
-  background: With over eight years of professional experience in healthcare administration and clinical operations, I have led major initiatives to transform medical record management and patient coordination workflows in large healthcare systems. I served for four years as an Operations Manager at an enterprise
+  id: resume_591 | level: senior | exp: 8.2 yrs | raw_text: 267 words
+  skills: Python, PyTorch, NLP, Distributed Training, Spark, Hugging Face
+  projects: NeuralBridge
+  background: Over the past eight years, I have cultivated deep expertise in machine learning research, large-scale data processing, and enterprise-wide AI strategy. Serving as a Technical Lead for a major technology firm, I directed a team of fifteen engineers in building natural language processing applications
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_586 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 218 words
-  required_skills: Clinical Operations, EMR Management, Epic EHR, Data Reporting
-  preferred_skills: Process Improvement, Audit Management
-  description: Our clinical operations team of twenty professionals is responsible for maintaining high standards of administrative efficiency and patient care coordination across our various medical facilities. We are seeking a Clinical Operations Coordinator to a
+  id: jd_589 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 217 words
+  required_skills: Python, Pandas, Scikit-learn, SQL
+  preferred_skills: Git, Machine Learning
+  description: Our data science team of eight is seeking a Junior Data Scientist to join our efforts in developing predictive models for customer behavior. You will work in a collaborative environment alongside senior data scientists, product managers, and software
 
-  id: jd_587 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Systems Architecture, EMR Integration, Epic, Cerner EHR, SQL
-  preferred_skills: Cloud Infrastructure, Healthcare Security
-  description: Our healthcare technology group, a team of forty specialists, is tasked with designing and implementing the next generation of our medical data systems to support our growing network of hospitals. We are looking for a Senior Healthcare Systems Archit
+  id: jd_590 | title: Associate Machine Learning Engineer | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Python, PyTorch, Machine Learning, Inference
+  preferred_skills: Docker, CI/CD
+  description: We are seeking an Associate Machine Learning Engineer to join our growing ML team of ten. This team specializes in building and maintaining highly scalable ML pipelines for our real-time recommendation engine. As an Associate ML Engineer, you will be
 
-  id: jd_588 | title: Director of Clinical Operations | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Clinical Operations Leadership, EMR Management, Epic, Cerner EHR, Performance Monitoring
-  preferred_skills: Financial Management, Clinical Analytics
-  description: Our central clinical leadership team, a group of fifteen senior managers, is looking for a Director of Clinical Operations to spearhead our strategic initiatives in medical management and patient service quality. This role requires a visionary leader
+  id: jd_591 | title: Senior Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Python, PyTorch, Distributed Systems, MLOps, System Architecture
+  preferred_skills: Model Quantization, Platform Strategy
+  description: Our enterprise AI group, composed of over forty researchers, engineers, and product specialists, is seeking a Senior Machine Learning Architect to define our future AI infrastructure. In this senior role, you will be responsible for defining the tech
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1755 pairs total.
+Overall dataset so far: 1764 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  350  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  351  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  351  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  351  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  352  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  354  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  353  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  351  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  352  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  354  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1756   resume_586 × jd_586
-  pair_1757   resume_586 × jd_587
-  pair_1758   resume_586 × jd_588
-  pair_1759   resume_587 × jd_586
-  pair_1760   resume_587 × jd_587
-  pair_1761   resume_587 × jd_588
-  pair_1762   resume_588 × jd_586
-  pair_1763   resume_588 × jd_587
-  pair_1764   resume_588 × jd_588
+  pair_1765   resume_589 × jd_589
+  pair_1766   resume_589 × jd_590
+  pair_1767   resume_589 × jd_591
+  pair_1768   resume_590 × jd_589
+  pair_1769   resume_590 × jd_590
+  pair_1770   resume_590 × jd_591
+  pair_1771   resume_591 × jd_589
+  pair_1772   resume_591 × jd_590
+  pair_1773   resume_591 × jd_591
 
 ════════════════════════════════════
 OUTPUT FORMAT
