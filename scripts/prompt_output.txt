@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_520 | level: middle | exp: 4.0 yrs | raw_text: 271 words
-  skills: Microsoft Excel, SQL, SAP ERP, Power BI, Financial Modeling
-  projects: RevenueGuard
-  background: With over four years of experience as a Financial Analyst, I have spent the last three years in a high-growth fintech startup, supporting a finance team of eight. My responsibilities focus on maintaining our monthly reporting cycles and performing detailed variance analysis for our core credit produ
+  id: resume_523 | level: junior | exp: 0.5 yrs | raw_text: 261 words
+  skills: Python, FastAPI, PostgreSQL, Git, Docker
+  projects: ShopStream
+  background: I am a dedicated backend developer who recently graduated with a Bachelor of Science in Computer Science in 2025. During my final year, I completed an internship at a fast-paced software agency where I worked on a team of three to build a customer-facing API. My primary responsibilities included wri
 
-  id: resume_521 | level: senior | exp: 8.0 yrs | raw_text: 254 words
-  skills: Oracle Financials, SQL, Python, Power BI, Financial Modeling, GAAP, IFRS
-  projects: ComplianceBridge
-  background: As a Senior Financial Lead with eight years of experience in the fintech sector, I have spearheaded major financial transformations within large-scale enterprises. During my tenure at a global fintech firm with a finance department of fifty staff, I have been responsible for defining our corporate a
+  id: resume_524 | level: junior | exp: 0.7 yrs | raw_text: 263 words
+  skills: JavaScript, Node.js, Express, PostgreSQL, CI/CD
+  projects: UserPulse
+  background: I graduated in 2025 with a Bachelor of Science in Software Engineering and have spent the last eight months working as a Junior Developer at a small tech startup. Our engineering team of four focused on building internal tools for data analysis. In this role, I was responsible for developing CRUD en
 
-  id: resume_522 | level: senior | exp: 7.0 yrs | raw_text: 262 words
-  skills: SAP S/4HANA, SQL, Financial Modeling, GAAP, IFRS, Enterprise Architecture
-  projects: SystemCore
-  background: With over seven years of extensive experience in financial systems architecture and corporate finance, I currently serve as a Principal Financial Architect at a leading fintech institution. I lead a team of fifteen professionals tasked with optimizing our core financial systems, managing complex tax
+  id: resume_525 | level: senior | exp: 7.5 yrs | raw_text: 261 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kubernetes, AWS, Terraform, GraphQL
+  projects: GlobalScale
+  background: With over seven years of professional experience, I am a seasoned Senior Backend Engineer with a deep specialization in building high-scale, distributed systems. Throughout my career at two major enterprise organizations, I have led engineering teams of up to fifteen developers, focusing on complex 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_520 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Microsoft Excel, Financial Modeling, GAAP, Financial Reporting
-  preferred_skills: SQL, ERP Systems
-  description: Our finance team of twelve is dedicated to supporting our rapid product growth through meticulous data analysis and reporting. We are looking for a junior analyst who is eager to build a career in fintech finance and contribute to our daily operation
+  id: jd_523 | title: Mid-Level Backend Developer | level: middle | min_exp: 3 yrs | raw_text: 191 words
+  required_skills: Python, FastAPI, PostgreSQL, RESTful API Design
+  preferred_skills: Docker, AWS
+  description: Our backend team of twelve is responsible for the core services that drive our customer platform, handling thousands of concurrent requests daily. We are looking for a mid-level developer to help us evolve our API architecture and improve service rel
 
-  id: jd_521 | title: Associate Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 195 words
-  required_skills: Microsoft Excel, Financial Modeling, GAAP, Financial Reporting
-  preferred_skills: Power BI, SQL
-  description: The finance department is a growing team of fifteen professionals committed to delivering reliable financial insights to our leadership group. We are looking for a finance associate who can help streamline our reporting processes and support our regu
+  id: jd_524 | title: Senior Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, Node.js, PostgreSQL, Distributed Systems, API Architecture
+  preferred_skills: Kubernetes, Redis
+  description: The core platform engineering team is a group of twenty professionals dedicated to building highly available, distributed infrastructure. We are looking for a senior backend engineer to lead our efforts in scaling our API layer, which currently manag
 
-  id: jd_522 | title: Senior Finance and Compliance Lead | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: GAAP, IFRS, ERP Systems, Financial Modeling, Enterprise Architecture
-  preferred_skills: SQL, Cloud Platforms
-  description: Our platform engineering team consists of twenty-five specialists tasked with building and scaling our multi-region cloud infrastructure for financial services. We are seeking a senior finance and compliance lead to drive our global financial strateg
+  id: jd_525 | title: Principal API Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Python, FastAPI, PostgreSQL, Redis, Distributed Systems
+  preferred_skills: Service Mesh, Cloud Platforms
+  description: As part of our thirty-person engineering department, the API architecture team is tasked with re-engineering our entire global service mesh to support new enterprise features. We are looking for a principal engineer to drive our backend technical roa
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1557 pairs total.
+Overall dataset so far: 1566 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  312  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  312  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  310  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  311  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  312  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  312  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  313  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  314  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  313  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  314  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1558   resume_520 × jd_520
-  pair_1559   resume_520 × jd_521
-  pair_1560   resume_520 × jd_522
-  pair_1561   resume_521 × jd_520
-  pair_1562   resume_521 × jd_521
-  pair_1563   resume_521 × jd_522
-  pair_1564   resume_522 × jd_520
-  pair_1565   resume_522 × jd_521
-  pair_1566   resume_522 × jd_522
+  pair_1567   resume_523 × jd_523
+  pair_1568   resume_523 × jd_524
+  pair_1569   resume_523 × jd_525
+  pair_1570   resume_524 × jd_523
+  pair_1571   resume_524 × jd_524
+  pair_1572   resume_524 × jd_525
+  pair_1573   resume_525 × jd_523
+  pair_1574   resume_525 × jd_524
+  pair_1575   resume_525 × jd_525
 
 ════════════════════════════════════
 OUTPUT FORMAT
