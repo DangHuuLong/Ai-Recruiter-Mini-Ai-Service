@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_571 | level: junior | exp: 0.5 yrs | raw_text: 288 words
-  skills: Epic EMR, Microsoft Excel, HIPAA Compliance, Patient Scheduling, Tableau
-  projects: CareFlow
-  background: I am a recent Health Services Administration graduate with a strong interest in clinical operations and patient data management. During my final year, I completed an internship at a regional community clinic, where I worked within a team of four to assist in administrative duties. My responsibilitie
+  id: resume_574 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: PostgreSQL, MongoDB, Redis, Sql, Python
+  projects: QueryOptimizer
+  background: As a passionate recent graduate with a Bachelor in Computer Science, I am eager to begin my journey as a Database Engineer. During my final year, I completed an internship at a fast-paced technology startup where I worked on a team of five developers. My primary focus was assisting in the maintenanc
 
-  id: resume_572 | level: junior | exp: 0.7 yrs | raw_text: 259 words
-  skills: Cerner Millennium, Microsoft Excel, Medical Billing, Health Information Management, Data Organization
-  projects: RecordsSync
-  background: As a motivated recent graduate in Health Information Management, I am eager to launch my career in healthcare coordination and administrative support. Throughout my undergraduate studies, I worked as a Student Assistant for a university-affiliated medical office, where I supported a team of six in m
+  id: resume_575 | level: middle | exp: 4.2 yrs | raw_text: 266 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Go, Bash, Cloud Architecture
+  projects: DataGuard
+  background: With over four years of professional experience in database engineering and systems architecture, I have successfully scaled complex backend environments for a mid-sized e-commerce enterprise. My tenure has involved working within a cross-functional team of twelve, where I led the migration of our l
 
-  id: resume_573 | level: senior | exp: 8.5 yrs | raw_text: 266 words
-  skills: Epic EMR, Oracle Health, SQL, SAS, Clinical Workflow, Budget Management
-  projects: ComplianceCore
-  background: I am a highly experienced Clinical Operations Director and Medical Systems Lead with over eight years of experience managing complex healthcare operations within large-scale hospital enterprises. I have extensive expertise in implementing electronic health record systems, leading clinical workflows,
+  id: resume_576 | level: middle | exp: 3.8 yrs | raw_text: 250 words
+  skills: PostgreSQL, MongoDB, Redis, Sql, Database Monitoring
+  projects: SchemaSync
+  background: Over the past four years, I have established myself as a dedicated database engineer working primarily within high-growth digital agencies and collaborative enterprise environments. Working as part of a distributed team of ten, I have gained deep expertise in managing relational databases, specifica
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_571 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 216 words
-  required_skills: Epic EMR, Excel, Clinical Reporting, HIPAA, Workflow Management
-  preferred_skills: SQL, Operational Efficiency
-  description: Our clinical operations team is seeking a Clinical Operations Coordinator to join our growing unit of 20 professionals. We are currently scaling our regional operations and need someone to handle core administrative functions, EMR data maintenance, a
+  id: jd_574 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 217 words
+  required_skills: PostgreSQL, Sql, Redis, MongoDB
+  preferred_skills: Python, Bash
+  description: Our backend operations team of eight professionals is searching for a Junior Database Engineer to help maintain our growing database infrastructure. We support a high-traffic web platform that relies heavily on relational and non-relational storage t
 
-  id: jd_572 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: Epic EMR, Clinical Modeling, Healthcare Compliance, Systems Architecture, SQL
-  preferred_skills: Cloud Architecture, Risk Mitigation
-  description: We are looking for a Senior Healthcare Systems Architect to lead the design and implementation of our next-generation medical reporting and compliance infrastructure. Our team of 25 medical and data experts manages a complex, global health ecosystem 
+  id: jd_575 | title: Senior Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Distributed Systems
+  preferred_skills: Sharding, Partitioning, Security
+  description: Our data engineering group, consisting of twenty-five expert engineers and researchers, is looking for a Senior Database Engineer to lead our efforts in designing and optimizing our mission-critical data infrastructure. Our team manages a massive, di
 
-  id: jd_573 | title: Head of Clinical Integrity & Compliance | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Epic EMR, Clinical Reporting, Compliance Strategy, Risk Management, SQL
-  preferred_skills: Leadership, Predictive Analytics
-  description: Our medical network is seeking a Head of Clinical Integrity & Compliance to oversee our central operations department of 30 professionals. Our team is tasked with ensuring total clinical transparency, implementing robust risk controls, and managing r
+  id: jd_576 | title: Lead Database Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 219 words
+  required_skills: PostgreSQL, Data Modeling, Redis, MongoDB, Database Scaling
+  preferred_skills: Cloud Infrastructure, Reliability Engineering
+  description: The central infrastructure team, a group of thirty engineers focused on reliability and scale, is seeking a Lead Database Systems Architect to oversee our complex, multi-tenant database infrastructure. As our platform continues to scale globally, we 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1710 pairs total.
+Overall dataset so far: 1719 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  340  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  342  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  344  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  343  →  expected this batch: 4 pairs (from seniority gaps below)
   moderate_match        existing:  343  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  342  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  343  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  344  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  345  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1711   resume_571 × jd_571
-  pair_1712   resume_571 × jd_572
-  pair_1713   resume_571 × jd_573
-  pair_1714   resume_572 × jd_571
-  pair_1715   resume_572 × jd_572
-  pair_1716   resume_572 × jd_573
-  pair_1717   resume_573 × jd_571
-  pair_1718   resume_573 × jd_572
-  pair_1719   resume_573 × jd_573
+  pair_1720   resume_574 × jd_574
+  pair_1721   resume_574 × jd_575
+  pair_1722   resume_574 × jd_576
+  pair_1723   resume_575 × jd_574
+  pair_1724   resume_575 × jd_575
+  pair_1725   resume_575 × jd_576
+  pair_1726   resume_576 × jd_574
+  pair_1727   resume_576 × jd_575
+  pair_1728   resume_576 × jd_576
 
 ════════════════════════════════════
 OUTPUT FORMAT
