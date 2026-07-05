@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_559 | level: junior | exp: 0.5 yrs | raw_text: 280 words
-  skills: Shopify, Google Sheets, Meta Business Suite, WooCommerce, Stripe, Inventory Management
-  projects: QuickShop
-  background: I am a motivated recent graduate with a strong passion for e-commerce operations and digital retail strategy. During my final year at university, I completed an internship at a local retail startup where I assisted the operations team in managing inventory for a catalog of over 5,000 items. My prima
+  id: resume_562 | level: middle | exp: 4.0 yrs | raw_text: 285 words
+  skills: Jira, Confluence, Figma, Amplitude, SQL, Agile, A/B Testing
+  projects: Streamline
+  background: I am a product-focused professional with four years of experience driving development roadmaps for high-growth tech platforms. In my most recent position as a Product Manager at a fast-paced fintech startup, I led a cross-functional team of eight, including developers and UX designers, to launch a m
 
-  id: resume_560 | level: middle | exp: 4.8 yrs | raw_text: 267 words
-  skills: NetSuite, Amazon Seller Central, SQL, Python, BigCommerce, Marketplace Management, Supply Chain Optimization
-  projects: AutoSync Inventory
-  background: I am a results-oriented E-commerce Operations Manager with five years of experience optimizing online retail channels for mid-sized enterprises. In my most recent role at a retail agency, I managed a team of six associates focused on scaling marketplace visibility and streamlining supply chain opera
+  id: resume_563 | level: senior | exp: 7.5 yrs | raw_text: 250 words
+  skills: Productboard, Scrum, Python, PostgreSQL, Looker, Strategy, Stakeholder Management
+  projects: GlobalScale
+  background: I am a strategic Product Lead with seven years of experience delivering complex technology solutions within large enterprise environments. Throughout my career, I have specialized in bridging technical requirements with executive stakeholder expectations to build scalable product roadmaps. At a prom
 
-  id: resume_561 | level: middle | exp: 4.2 yrs | raw_text: 263 words
-  skills: Salesforce Commerce Cloud, SAP S/4HANA, Power BI, AWS, Excel, Merchandising, Retail Systems Analysis
-  projects: SmartMerch Analytics
-  background: I am a dedicated Retail Systems Analyst with four years of professional experience in digital merchandising and e-commerce infrastructure. At an enterprise retail firm, I played a key role in the migration of our legacy systems to a unified cloud-based architecture, which served over 50,000 requests
+  id: resume_564 | level: senior | exp: 8.2 yrs | raw_text: 276 words
+  skills: Jira, Swagger, Java, Docker, Kubernetes, Tableau, Product Strategy
+  projects: VisionEngine
+  background: I am a seasoned Principal Product Manager with eight years of experience defining product roadmaps and leading engineering-heavy product initiatives. During my time at a global tech firm, I managed a team of 25 engineers and designers, focusing on the delivery of AI-driven analytics tools. My day-to
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_559 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 200 words
-  required_skills: Shopify, Google Sheets, Inventory Management, Product Listing
-  preferred_skills: E-commerce Support, Digital Marketing
-  description: Our e-commerce team is looking for a Junior E-commerce Associate to help manage our daily marketplace operations. The team is currently comprised of 10 people dedicated to maintaining our store presence across major platforms. In this role, you will 
+  id: jd_562 | title: Junior Product Associate | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: Jira, Agile, Confluence, Figma
+  preferred_skills: User Story Mapping, Communication
+  description: Our product team is looking for a Junior Product Associate to support our ongoing growth and help streamline our agile delivery processes. The team consists of 12 people working on a high-traffic consumer application that serves millions of users. In
 
-  id: jd_560 | title: Senior E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: E-commerce Architecture, Salesforce Commerce Cloud, NetSuite, SQL, System Integration
-  preferred_skills: Data Science Collaboration, Cloud Infrastructure
-  description: We are seeking a highly experienced Senior E-commerce Architect to lead our central platform operations team of 15 specialists. Our mission is to build and maintain a scalable retail infrastructure that supports our global operations. You will be res
+  id: jd_563 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Jira, Confluence, Agile, Amplitude
+  preferred_skills: User Research, Data Analysis
+  description: Our product department is seeking an energetic Associate Product Manager to join our growing team of 10 people. Our mission is to enhance our platform's usability by delivering frequent, high-impact feature updates. You will be responsible for defini
 
-  id: jd_561 | title: Principal Retail Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Retail Operations, SAP S/4HANA, Supply Chain Management, Data Analytics, Power BI
-  preferred_skills: Strategic Planning, Merchandising
-  description: We are looking for a Principal Retail Operations Lead to manage our global merchandising and supply chain strategy team of 20 professionals. Our team focuses on optimizing the end-to-end retail journey from procurement to delivery. You will be respon
+  id: jd_564 | title: Senior Technical Product Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Product Strategy, Jira, Swagger, Microservices, API Strategy
+  preferred_skills: Cloud Infrastructure, Engineering Collaboration
+  description: We are seeking a highly experienced Senior Technical Product Lead to direct our engineering and product efforts for our core infrastructure platform. Our team of 20 specialists is responsible for maintaining the reliability, performance, and scalabil
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1674 pairs total.
+Overall dataset so far: 1683 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  334  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  334  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  335  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  335  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  336  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  336  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  338  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  335  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  337  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  337  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1675   resume_559 × jd_559
-  pair_1676   resume_559 × jd_560
-  pair_1677   resume_559 × jd_561
-  pair_1678   resume_560 × jd_559
-  pair_1679   resume_560 × jd_560
-  pair_1680   resume_560 × jd_561
-  pair_1681   resume_561 × jd_559
-  pair_1682   resume_561 × jd_560
-  pair_1683   resume_561 × jd_561
+  pair_1684   resume_562 × jd_562
+  pair_1685   resume_562 × jd_563
+  pair_1686   resume_562 × jd_564
+  pair_1687   resume_563 × jd_562
+  pair_1688   resume_563 × jd_563
+  pair_1689   resume_563 × jd_564
+  pair_1690   resume_564 × jd_562
+  pair_1691   resume_564 × jd_563
+  pair_1692   resume_564 × jd_564
 
 ════════════════════════════════════
 OUTPUT FORMAT
