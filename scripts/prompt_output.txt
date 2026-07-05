@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_346 | level: middle | exp: 4.0 yrs | raw_text: 253 words
-  skills: PyTorch, Hugging Face, LangChain, RAG, Pinecone, Python, PostgreSQL
-  projects: SummarizerPro
-  background: I am a dedicated AI engineer with four years of experience specializing in natural language processing and transformer-based model development. In my previous role at a fast-growing AI startup, I served as a core NLP engineer on a team of eight. My primary responsibilities involved fine-tuning LLMs 
+  id: resume_349 | level: junior | exp: 0.8 yrs | raw_text: 263 words
+  skills: Docker, AWS EC2, Linux, Jenkins, Git
+  projects: WeatherDash
+  background: I am a recent computer science graduate with a strong foundational interest in cloud infrastructure and DevOps practices. During my one-year internship at a mid-sized software agency, I worked on a team of five engineers to support the development and maintenance of our internal web platforms. My pr
 
-  id: resume_347 | level: senior | exp: 7.0 yrs | raw_text: 262 words
-  skills: PyTorch, JAX, Transformers, RAG, Kubernetes, AWS ECS, LoRA, Kafka
-  projects: SemanticSearchCore
-  background: I am a senior AI architect with seven years of experience in machine learning, focusing on advanced NLP applications and distributed systems. Throughout my tenure at a global technology enterprise, I led a specialized team of fifteen engineers responsible for building end-to-end generative AI platfo
+  id: resume_350 | level: junior | exp: 0.5 yrs | raw_text: 262 words
+  skills: AWS Lambda, Docker, S3, Bash Scripting, CloudWatch
+  projects: TaskFlow
+  background: I am an aspiring DevOps engineer and recent computer science graduate who is passionate about automating software delivery cycles and managing cloud-native infrastructure. During my six-month internship at a fast-paced technology startup, I worked with a team of six developers to optimize our contin
 
-  id: resume_348 | level: senior | exp: 9.0 yrs | raw_text: 264 words
-  skills: FastAPI, LLMs, NLP, RAG, Embeddings, Python, Distributed Systems, TensorFlow
-  projects: NeuroEmbed
-  background: I am a principal machine learning engineer with nine years of deep technical experience in NLP, neural network architecture, and generative AI research. During my time at a prominent AI research firm, I directed a team of twenty specialists in developing novel transformer-based models for complex se
+  id: resume_351 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: Kubernetes, Terraform, AWS, EKS, Prometheus, Grafana, GitLab CI
+  projects: ScaleGuard
+  background: I am a senior DevOps engineer with eight years of experience in architecting and scaling high-performance cloud infrastructure for global enterprise platforms. In my most recent role at a large-scale fintech enterprise, I led a team of fifteen engineers in migrating a massive monolithic application 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_346 | title: Junior NLP Associate | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Python, PyTorch, NLP, Transformers, LangChain, RAG
-  preferred_skills: Hugging Face, Vector Databases
-  description: Our NLP research team is seeking a motivated Junior NLP Associate to assist in the development and deployment of our generative language models. We are a team of fifteen, focused on creating scalable RAG applications that serve our internal business 
+  id: jd_349 | title: Cloud Infrastructure Engineer | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: Terraform, Kubernetes, AWS, Docker, CI/CD
+  preferred_skills: Prometheus, Grafana
+  description: Our platform engineering team of twelve is looking for a skilled Cloud Infrastructure Engineer to help us build and maintain our core services on AWS. We focus on ensuring that our production environments are highly available, secure, and performant 
 
-  id: jd_347 | title: Associate AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: Python, Transformers, RAG, NLP, LangChain, Data Processing
-  preferred_skills: FastAPI, Cloud Platforms
-  description: We are looking for an Associate AI Engineer to join our growing team of ten, tasked with building reliable retrieval-augmented generation applications. You will be instrumental in processing massive amounts of text data and ensuring the quality of ou
+  id: jd_350 | title: Senior DevOps Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: AWS, Kubernetes, Terraform, Architecture, CI/CD, Distributed Systems
+  preferred_skills: Service Mesh, Go
+  description: We are seeking a Senior DevOps Architect to join our infrastructure team of twenty-five. You will be responsible for defining the technical roadmap for our entire cloud ecosystem, ensuring that our systems are highly scalable, secure, and resilient u
 
-  id: jd_348 | title: Senior NLP Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, PyTorch, Transformers, RAG, Embeddings, Distributed Systems, Architecture
-  preferred_skills: MLOps, Multi-modal Architectures
-  description: We are seeking an experienced Senior NLP Architect to lead our AI research division of twenty engineers. We are currently architecting large-scale generative AI platforms intended to transform how enterprise customers interact with their data. Your d
+  id: jd_351 | title: Principal Cloud Architect | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: AWS, Kubernetes, Terraform, Technical Leadership, Architecture, CI/CD
+  preferred_skills: Serverless, Multi-cloud
+  description: Our central infrastructure group is seeking a Principal Cloud Architect to lead the technical strategy for our next-generation cloud platforms. You will work with a group of thirty engineers to build reliable, high-throughput systems that power our g
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1035 pairs total.
+Overall dataset so far: 1044 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  207  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  207  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  206  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  207  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  208  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  207  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  208  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  210  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  209  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  210  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1036   resume_346 × jd_346
-  pair_1037   resume_346 × jd_347
-  pair_1038   resume_346 × jd_348
-  pair_1039   resume_347 × jd_346
-  pair_1040   resume_347 × jd_347
-  pair_1041   resume_347 × jd_348
-  pair_1042   resume_348 × jd_346
-  pair_1043   resume_348 × jd_347
-  pair_1044   resume_348 × jd_348
+  pair_1045   resume_349 × jd_349
+  pair_1046   resume_349 × jd_350
+  pair_1047   resume_349 × jd_351
+  pair_1048   resume_350 × jd_349
+  pair_1049   resume_350 × jd_350
+  pair_1050   resume_350 × jd_351
+  pair_1051   resume_351 × jd_349
+  pair_1052   resume_351 × jd_350
+  pair_1053   resume_351 × jd_351
 
 ════════════════════════════════════
 OUTPUT FORMAT
