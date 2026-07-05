@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_364 | level: middle | exp: 4.0 yrs | raw_text: 274 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling
-  projects: QueryOptimizerX, CacheClearer
-  background: I am a dedicated database engineer with four years of professional experience focusing on backend infrastructure and data architecture. In my role as a Database Engineer at a fast-growing e-commerce startup with a team of eight, I maintained high-availability PostgreSQL 15 clusters and optimized com
+  id: resume_367 | level: junior | exp: 0.5 yrs | raw_text: 272 words
+  skills: Shopify, Google Analytics, Inventory Management, SEO
+  projects: QuickSortInventory, Conversion Research Project
+  background: I am a recent graduate with a strong passion for e-commerce operations and digital merchandising. During my academic career, I completed a six-month internship as an E-commerce Operations Assistant at a retail startup with a team of four. In this role, I focused on daily product listing management a
 
-  id: resume_365 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: PostgreSQL, MongoDB, Redis, Database Architecture, Data Modeling
-  projects: ScaleMaster, SchemaGuardian
-  background: I am a senior database architect with eight years of experience leading complex data infrastructure projects for enterprise-level platforms. During my time as a Lead Database Engineer at a multinational financial services firm, I managed a team of fifteen, overseeing the architecture of multi-region
+  id: resume_368 | level: junior | exp: 0.8 yrs | raw_text: 267 words
+  skills: Amazon Seller Central, Walmart Marketplace, Tableau, SQL
+  projects: ReviewMonitor, PriceTracker
+  background: I am a fresh business graduate eager to launch a career in e-commerce retail and marketplace operations. As a student, I served as a Retail Intern at a mid-sized consumer goods agency for one year, working within a cross-functional team of six. My primary duties involved maintaining product catalogs
 
-  id: resume_366 | level: senior | exp: 9.0 yrs | raw_text: 280 words
-  skills: PostgreSQL, Redis, Database Architecture, Performance Tuning, Data Modeling
-  projects: StreamDataRouter, VacuumValidator
-  background: I am a principal database engineer and technical lead with nine years of experience specializing in high-performance storage solutions for media-intensive applications. In my previous role as a Principal Data Engineer at a large media streaming company, I oversaw the infrastructure for over 50 milli
+  id: resume_369 | level: senior | exp: 8.0 yrs | raw_text: 254 words
+  skills: Marketplace Management, P&L Management, SAP S/4HANA, React, Node.js, TensorFlow
+  projects: MarketSync, ConversionAI
+  background: I am a senior e-commerce manager and digital operations leader with eight years of experience building and scaling global marketplace strategies for major retail brands. In my previous role as a Senior Marketplace Lead at a large enterprise retailer, I managed a team of twenty-five and directed our 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_364 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 181 words
-  required_skills: SQL, PostgreSQL, MongoDB, Data Modeling
-  preferred_skills: Python, Redis
-  description: Our core infrastructure team of ten is seeking a highly motivated Junior Database Engineer to help maintain and optimize our production databases. You will join a group responsible for ensuring the reliability, performance, and scalability of our dat
+  id: jd_367 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: Shopify Plus, Google Analytics, Merchandising, Operations Management
+  preferred_skills: Excel, Logistics
+  description: Our central e-commerce operations team of fifteen is seeking an experienced E-commerce Operations Specialist to help manage our growing multi-channel retail footprint. The team focuses on optimizing daily business activities, ranging from catalog man
 
-  id: jd_365 | title: Associate Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: PostgreSQL, SQL, Data Modeling
-  preferred_skills: MongoDB, Redis
-  description: Our data operations team of twelve is looking for an Associate Data Engineer to support our evolving storage landscape. The team focuses on providing seamless data access for a high-traffic analytics platform. Your day-to-day responsibilities will in
+  id: jd_368 | title: Senior Marketplace Engineering Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Node.js, React, PostgreSQL, Microservices, Marketplace API Integration
+  preferred_skills: Terraform, TensorFlow
+  description: Our infrastructure and marketplace technology team, consisting of thirty-five engineers and product managers, is looking for a Senior Marketplace Engineering Lead to oversee our high-traffic e-commerce systems. We specialize in building scalable arch
 
-  id: jd_366 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
-  required_skills: PostgreSQL, MongoDB, Redis, Database Architecture, Data Modeling
-  preferred_skills: Performance Tuning, Infrastructure-as-Code
-  description: Our central infrastructure group, consisting of twenty-five expert engineers, is looking for a Senior Database Architect to lead our vision for high-availability, globally distributed storage systems. You will guide the architectural strategy for our
+  id: jd_369 | title: Senior E-commerce Architecture Lead | level: senior | min_exp: 6 yrs | raw_text: 187 words
+  required_skills: AWS, TensorFlow, SAP S/4HANA, E-commerce Architecture, Machine Learning
+  preferred_skills: CI/CD, Dynamic Pricing
+  description: Our AI-driven retail technology group, comprising forty professionals, is seeking a Senior E-commerce Architecture Lead to architect our next-generation retail ecosystem. We focus on building intelligent, scalable platforms that bridge the gap betwee
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1089 pairs total.
+Overall dataset so far: 1098 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  217  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  219  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  216  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  219  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  218  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  217  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  220  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  220  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  221  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  220  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1090   resume_364 × jd_364
-  pair_1091   resume_364 × jd_365
-  pair_1092   resume_364 × jd_366
-  pair_1093   resume_365 × jd_364
-  pair_1094   resume_365 × jd_365
-  pair_1095   resume_365 × jd_366
-  pair_1096   resume_366 × jd_364
-  pair_1097   resume_366 × jd_365
-  pair_1098   resume_366 × jd_366
+  pair_1099   resume_367 × jd_367
+  pair_1100   resume_367 × jd_368
+  pair_1101   resume_367 × jd_369
+  pair_1102   resume_368 × jd_367
+  pair_1103   resume_368 × jd_368
+  pair_1104   resume_368 × jd_369
+  pair_1105   resume_369 × jd_367
+  pair_1106   resume_369 × jd_368
+  pair_1107   resume_369 × jd_369
 
 ════════════════════════════════════
 OUTPUT FORMAT
