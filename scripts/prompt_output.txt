@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_427 | level: junior | exp: 1.0 yrs | raw_text: 257 words
-  skills: Python, JavaScript, SQLite, Git
-  projects: LibraryConnect
-  background: I am a junior software engineer with one year of experience as a backend developer at a small early-stage startup. In this role, I was part of a tight-knit team of four, where I primarily focused on maintaining basic API endpoints and writing unit tests. My daily responsibilities included developing
+  id: resume_430 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: BPMN 2.0, Jira, Confluence, Requirement Gathering, Data Modeling
+  projects: DocuFlow
+  background: I am a detail-oriented Business Analyst with four years of experience working in fast-paced software development agencies. Throughout my career, I have thrived in environments where clear communication between technical teams and non-technical stakeholders is essential. In my current role at a digit
 
-  id: resume_428 | level: junior | exp: 0.5 yrs | raw_text: 282 words
-  skills: Python, FastAPI, PostgreSQL, Git
-  projects: TaskTracker
-  background: As a recent computer science graduate with less than one year of experience, I am passionate about backend development and clean code. My professional background includes a three-month intensive internship at a small web development agency, where I worked with a team of six developers on various hig
+  id: resume_431 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Project Management, BPMN, Jira, Tableau, Agile, Stakeholder Management, SQL
+  projects: StrategyAlign
+  background: I am a senior Business Analyst and Project Manager with eight years of experience delivering high-impact solutions for large enterprise organizations. My career has been defined by my ability to lead large-scale digital initiatives, manage complex stakeholder ecosystems, and implement rigorous proje
 
-  id: resume_429 | level: senior | exp: 8.0 yrs | raw_text: 251 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Distributed Systems
-  projects: DataSyncHub
-  background: I am a senior backend engineer with eight years of extensive experience in designing and scaling high-performance APIs for enterprise-scale platforms. In my current role at a large financial tech enterprise, I lead a team of twelve engineers responsible for our core transaction processing engine, wh
+  id: resume_432 | level: senior | exp: 9.0 yrs | raw_text: 269 words
+  skills: Business Analysis, BPMN 2.0, Project Management, SQL, Jira, Gap Analysis
+  projects: DataIntegrate
+  background: With over nine years of dedicated experience as a senior Business Analyst and Project Lead, I specialize in navigating the complexities of large-scale system integrations within the financial services sector. My technical expertise combined with a strong background in project management allows me to
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_427 | title: Mid-level Backend Engineer | level: middle | min_exp: 3 yrs | raw_text: 215 words
-  required_skills: Python, FastAPI, PostgreSQL
-  preferred_skills: Redis, Docker
-  description: Our backend team is looking for a Mid-level Backend Engineer to help us maintain and scale our core API services. Our team of fifteen engineers focuses on building robust features for our platform, which serves thousands of daily active users. Your d
+  id: jd_430 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: BPMN, Jira, Requirement Gathering
+  preferred_skills: Agile, Confluence
+  description: The business operations team is looking for an enthusiastic Junior Business Analyst to join our team of twelve. This role is perfect for someone eager to learn the ropes of requirement gathering and process mapping in a supportive, collaborative envi
 
-  id: jd_428 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Python, Node.js, PostgreSQL, Distributed Systems
-  preferred_skills: Redis, FastAPI
-  description: The Platform Engineering team is searching for a Senior Backend Architect to design, build, and lead our next-generation API infrastructure. We are a team of twenty engineers managing high-traffic systems that handle millions of requests every day, r
+  id: jd_431 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Jira, Project Documentation, Communication
+  preferred_skills: BPMN, Project Management
+  description: Our project management office is hiring an Associate Project Coordinator to assist in tracking our portfolio of software projects. You will be joining a team of eight professionals focused on delivering high-quality internal tools to our staff. This 
 
-  id: jd_429 | title: Principal Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: Python, Node.js, PostgreSQL, FastAPI
-  preferred_skills: Redis, Distributed Systems
-  description: Our core product team is hiring a Principal Backend Engineer to serve as a technical leader for our mission-critical systems. The team consists of twenty-five high-performing engineers who build and manage the platform powering our primary customer-f
+  id: jd_432 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: BPMN 2.0, Requirement Gathering, Gap Analysis, Stakeholder Management
+  preferred_skills: SQL, Systems Integration
+  description: We are seeking a Senior Business Analyst to lead the requirements phase for our mission-critical enterprise systems. The team consists of twenty-five professionals, and we are working to integrate large-scale data platforms to support our business in
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1278 pairs total.
+Overall dataset so far: 1287 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  254  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  256  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  256  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  256  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  256  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  258  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  258  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  256  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  257  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  258  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1279   resume_427 × jd_427
-  pair_1280   resume_427 × jd_428
-  pair_1281   resume_427 × jd_429
-  pair_1282   resume_428 × jd_427
-  pair_1283   resume_428 × jd_428
-  pair_1284   resume_428 × jd_429
-  pair_1285   resume_429 × jd_427
-  pair_1286   resume_429 × jd_428
-  pair_1287   resume_429 × jd_429
+  pair_1288   resume_430 × jd_430
+  pair_1289   resume_430 × jd_431
+  pair_1290   resume_430 × jd_432
+  pair_1291   resume_431 × jd_430
+  pair_1292   resume_431 × jd_431
+  pair_1293   resume_431 × jd_432
+  pair_1294   resume_432 × jd_430
+  pair_1295   resume_432 × jd_431
+  pair_1296   resume_432 × jd_432
 
 ════════════════════════════════════
 OUTPUT FORMAT
