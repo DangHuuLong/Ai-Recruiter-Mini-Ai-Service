@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_454 | level: junior | exp: 0.8 yrs | raw_text: 257 words
-  skills: Nessus, Splunk, Burp Suite, Python, Linux, Cybersecurity, Vulnerability Assessment
-  projects: ScanAutomator
-  background: During my first year as a Junior Security Analyst at a boutique cybersecurity agency, I have been immersed in vulnerability assessment and network monitoring for a diverse set of mid-sized enterprise clients. Our team of six analysts works closely together to maintain security postures across variou
+  id: resume_457 | level: senior | exp: 8.5 yrs | raw_text: 260 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Terraform, Go, Rust, Distributed Systems
+  projects: DataSyncEngine
+  background: Over the past eight years, I have served as a Principal Database Engineer at a high-growth fintech enterprise, leading a team of twelve engineers responsible for maintaining petabyte-scale data infrastructure. My tenure began as a Senior Database Administrator where I managed 50+ PostgreSQL 12 insta
 
-  id: resume_455 | level: junior | exp: 0.5 yrs | raw_text: 253 words
-  skills: Wireshark, Metasploit, Graylog, Active Directory, AWS, Firewall Configuration
-  projects: InternalAuthAudit
-  background: In my recent role as an Information Security Assistant at a fast-growing technology startup, I have been responsible for helping to secure our internal development infrastructure and monitoring user access logs. Our team, consisting of three security professionals, manages the security of our distri
+  id: resume_458 | level: senior | exp: 7.2 yrs | raw_text: 254 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Java, Prometheus, Grafana, Database Architecture
+  projects: QueryOptimizerX
+  background: During my seven-year career as a Lead Database Architect within a large-scale e-commerce agency, I have managed diverse database ecosystems that support critical business operations. My primary focus has been on high-throughput OLTP systems and advanced data modeling. While working with a team of ei
 
-  id: resume_456 | level: senior | exp: 8.5 yrs | raw_text: 254 words
-  skills: Splunk Enterprise Security, Threat Hunting, Go, Python, Cisco Firepower, Zero Trust, SIEM, Incident Response
-  projects: ResilientNet
-  background: With over eight years of experience as a Lead Security Engineer in the fintech industry, I have spearheaded the design and implementation of robust security architectures for large-scale financial platforms. Leading a dedicated security team of twelve, I oversee comprehensive incident response, adva
+  id: resume_459 | level: senior | exp: 6.5 yrs | raw_text: 252 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Python, SaaS, Schema Validation
+  projects: TenantSharder
+  background: In my six-year tenure as a Senior Database Engineer at a SaaS enterprise, I have been deeply involved in architecting and maintaining massive data pipelines and storage layers. Leading a team of ten, I have been instrumental in the adoption of PostgreSQL 16 and MongoDB Atlas for our primary applicat
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_454 | title: Security Operations Engineer | level: middle | min_exp: 3 yrs | raw_text: 187 words
-  required_skills: SIEM, Splunk, Threat Hunting, Network Security, TCP/IP, Incident Response
-  preferred_skills: Python, Cloud Security
-  description: Our Security Operations Center team, comprising fifteen professionals, is looking for a Mid-level Security Operations Engineer to help maintain our enterprise defense infrastructure. We are responsible for protecting a high-volume data platform and e
+  id: jd_457 | title: Junior Database Associate | level: junior | min_exp: 1 yrs | raw_text: 195 words
+  required_skills: PostgreSQL, MongoDB, Sql, Data Modeling
+  preferred_skills: Redis, Cloud Computing
+  description: Our data infrastructure team, currently composed of five database engineers, is seeking a motivated Junior Database Associate to help maintain and monitor our core storage systems. We support a fast-paced product environment that relies heavily on re
 
-  id: jd_455 | title: Lead Penetration Tester | level: senior | min_exp: 6 yrs | raw_text: 183 words
-  required_skills: Penetration Testing, Exploit Development, Burp Suite, Metasploit, Web Application Security, Network Security
-  preferred_skills: CI/CD, Cloud Security
-  description: We are seeking a Lead Penetration Tester to join our elite security assessment team of eight professionals. Our team is tasked with identifying vulnerabilities in complex financial software and critical infrastructure. The person in this role will le
+  id: jd_458 | title: Associate Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
+  required_skills: PostgreSQL, MongoDB, Sql, Data Modeling
+  preferred_skills: Redis, Python
+  description: The core engineering organization is looking for an Associate Database Engineer to join our growing data platform team. Our group of six engineers manages the storage layers for multiple internal products. This role is perfect for an engineer looking
 
-  id: jd_456 | title: Principal Security Architect | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: Zero Trust, SIEM, Cisco Firepower, Network Security, Cybersecurity Strategy, Python, Go
-  preferred_skills: Kubernetes, Cloud Security
-  description: Our architecture team is searching for a Principal Security Architect to drive the design of our next-generation secure infrastructure. This role sits within a fifteen-person security engineering organization. You will lead the development of enterpr
+  id: jd_459 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 191 words
+  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Sql
+  preferred_skills: Terraform, Cloud Computing
+  description: Our platform team, which consists of ten engineers, is searching for a mid-level Database Engineer to help us design and maintain high-performance data storage solutions for our global SaaS product. You will be at the heart of our data operations, en
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1359 pairs total.
+Overall dataset so far: 1368 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  270  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  273  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  271  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  272  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  273  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  274  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  275  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  271  →  expected this batch: 6 pairs (from seniority gaps below)
+  strong_match          existing:  273  →  expected this batch: 3 pairs (from seniority gaps below)
+  excellent_match       existing:  275  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1360   resume_454 × jd_454
-  pair_1361   resume_454 × jd_455
-  pair_1362   resume_454 × jd_456
-  pair_1363   resume_455 × jd_454
-  pair_1364   resume_455 × jd_455
-  pair_1365   resume_455 × jd_456
-  pair_1366   resume_456 × jd_454
-  pair_1367   resume_456 × jd_455
-  pair_1368   resume_456 × jd_456
+  pair_1369   resume_457 × jd_457
+  pair_1370   resume_457 × jd_458
+  pair_1371   resume_457 × jd_459
+  pair_1372   resume_458 × jd_457
+  pair_1373   resume_458 × jd_458
+  pair_1374   resume_458 × jd_459
+  pair_1375   resume_459 × jd_457
+  pair_1376   resume_459 × jd_458
+  pair_1377   resume_459 × jd_459
 
 ════════════════════════════════════
 OUTPUT FORMAT
