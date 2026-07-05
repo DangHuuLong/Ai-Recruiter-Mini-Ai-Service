@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_361 | level: junior | exp: 0.8 yrs | raw_text: 254 words
-  skills: Python, Pandas, Scikit-Learn, Data Analysis
-  projects: SentimentAnalyzer, HousePricePredictor
-  background: I am a passionate aspiring data scientist with a strong foundation in machine learning and statistical analysis. During my internship as a Junior Data Analyst at a tech-focused startup with a team of five, I was responsible for data cleaning and exploratory data analysis using Python 3.10, pandas, a
+  id: resume_364 | level: middle | exp: 4.0 yrs | raw_text: 274 words
+  skills: PostgreSQL, MongoDB, Redis, Data Modeling
+  projects: QueryOptimizerX, CacheClearer
+  background: I am a dedicated database engineer with four years of professional experience focusing on backend infrastructure and data architecture. In my role as a Database Engineer at a fast-growing e-commerce startup with a team of eight, I maintained high-availability PostgreSQL 15 clusters and optimized com
 
-  id: resume_362 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: Python, PyTorch, Scikit-Learn, FastAPI, MLOps
-  projects: MarketTrendForecaster, DataQualityGuardian
-  background: I am a data scientist with four years of professional experience, specializing in building machine learning models and data-driven products within the financial services sector. In my role as a Data Scientist at a mid-sized fintech company, I worked on a team of twelve to develop credit scoring mode
+  id: resume_365 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: PostgreSQL, MongoDB, Redis, Database Architecture, Data Modeling
+  projects: ScaleMaster, SchemaGuardian
+  background: I am a senior database architect with eight years of experience leading complex data infrastructure projects for enterprise-level platforms. During my time as a Lead Database Engineer at a multinational financial services firm, I managed a team of fifteen, overseeing the architecture of multi-region
 
-  id: resume_363 | level: middle | exp: 3.5 yrs | raw_text: 255 words
-  skills: Python, PyTorch, Scikit-Learn, PostgreSQL, Data Modeling
-  projects: AdClickOptimizer, SchemaValidator
-  background: I am a data scientist and machine learning engineer with three and a half years of experience designing and deploying scalable models for digital advertising platforms. In my role at a fast-growing ad-tech startup, I led the development of a real-time recommendation engine using PyTorch, pandas, and
+  id: resume_366 | level: senior | exp: 9.0 yrs | raw_text: 280 words
+  skills: PostgreSQL, Redis, Database Architecture, Performance Tuning, Data Modeling
+  projects: StreamDataRouter, VacuumValidator
+  background: I am a principal database engineer and technical lead with nine years of experience specializing in high-performance storage solutions for media-intensive applications. In my previous role as a Principal Data Engineer at a large media streaming company, I oversaw the infrastructure for over 50 milli
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_361 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Python, Pandas, Scikit-Learn, Data Analysis
-  preferred_skills: SQL, Tableau
-  description: Our data science team of eight is looking for a motivated Junior Data Scientist to join our efforts in developing predictive models for our core consumer analytics product. We are a fast-paced environment focused on turning raw data into meaningful i
+  id: jd_364 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 181 words
+  required_skills: SQL, PostgreSQL, MongoDB, Data Modeling
+  preferred_skills: Python, Redis
+  description: Our core infrastructure team of ten is seeking a highly motivated Junior Database Engineer to help maintain and optimize our production databases. You will join a group responsible for ensuring the reliability, performance, and scalability of our dat
 
-  id: jd_362 | title: Senior Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: Python, PyTorch, MLOps, Architecture, Distributed Systems
-  preferred_skills: Kubernetes, Quantization
-  description: Our central AI division, comprised of twenty-five researchers and engineers, is seeking a Senior Machine Learning Architect to lead the design and implementation of our next-generation enterprise model serving platform. We specialize in high-throughp
+  id: jd_365 | title: Associate Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 191 words
+  required_skills: PostgreSQL, SQL, Data Modeling
+  preferred_skills: MongoDB, Redis
+  description: Our data operations team of twelve is looking for an Associate Data Engineer to support our evolving storage landscape. The team focuses on providing seamless data access for a high-traffic analytics platform. Your day-to-day responsibilities will in
 
-  id: jd_363 | title: Senior Data Scientist (LLM Focus) | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Python, PyTorch, Machine Learning, Fine-tuning, Transformers
-  preferred_skills: LLM, Vector Databases
-  description: Our AI research and development team of thirty is looking for a Senior Data Scientist with a specialized focus on Large Language Models (LLMs) to lead our initiatives in building intelligent, agentic product interfaces. You will be responsible for de
+  id: jd_366 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
+  required_skills: PostgreSQL, MongoDB, Redis, Database Architecture, Data Modeling
+  preferred_skills: Performance Tuning, Infrastructure-as-Code
+  description: Our central infrastructure group, consisting of twenty-five expert engineers, is looking for a Senior Database Architect to lead our vision for high-availability, globally distributed storage systems. You will guide the architectural strategy for our
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1080 pairs total.
+Overall dataset so far: 1089 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  215  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  216  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  217  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  217  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  217  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  219  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  216  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  219  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  218  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1081   resume_361 × jd_361
-  pair_1082   resume_361 × jd_362
-  pair_1083   resume_361 × jd_363
-  pair_1084   resume_362 × jd_361
-  pair_1085   resume_362 × jd_362
-  pair_1086   resume_362 × jd_363
-  pair_1087   resume_363 × jd_361
-  pair_1088   resume_363 × jd_362
-  pair_1089   resume_363 × jd_363
+  pair_1090   resume_364 × jd_364
+  pair_1091   resume_364 × jd_365
+  pair_1092   resume_364 × jd_366
+  pair_1093   resume_365 × jd_364
+  pair_1094   resume_365 × jd_365
+  pair_1095   resume_365 × jd_366
+  pair_1096   resume_366 × jd_364
+  pair_1097   resume_366 × jd_365
+  pair_1098   resume_366 × jd_366
 
 ════════════════════════════════════
 OUTPUT FORMAT
