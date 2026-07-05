@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_535 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Shopify, Google Analytics 4, Excel, Trello, Tableau, Market Research
-  projects: Market Insights
-  background: As a recent Business Administration graduate with a strong interest in digital retail, I am eager to apply my foundational knowledge of market analysis and consumer behavior to an operations-focused role. During my final year, I completed an internship at a boutique e-commerce startup for six months
+  id: resume_538 | level: middle | exp: 4.0 yrs | raw_text: 251 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, AWS, Redis, Docker
+  projects: DataStream
+  background: With over four years of experience as a Backend Developer, I have developed a deep expertise in building high-concurrency APIs and robust database architectures. During my three years at a high-growth fintech startup, I worked in a team of eight engineers, where I was primarily responsible for devel
 
-  id: resume_536 | level: junior | exp: 0.3 yrs | raw_text: 252 words
-  skills: Amazon Seller Central, Walmart Marketplace, Excel, Ahrefs, Google Sheets
-  projects: Inventory Flow
-  background: Having recently graduated with a degree in Marketing, I am seeking a role in e-commerce operations to build upon my passion for online marketplace dynamics. During my time as an intern at a mid-sized digital retail agency for four months, I was part of a five-person team focusing on vendor relations
+  id: resume_539 | level: senior | exp: 7.0 yrs | raw_text: 259 words
+  skills: Python, FastAPI, PostgreSQL, Kubernetes, RabbitMQ, Node.js, AWS
+  projects: SecureVault
+  background: As a Senior Backend Engineer with seven years of experience, I specialize in architecting highly scalable API ecosystems and leading distributed engineering teams. In my most recent role as a Lead Backend Developer at an enterprise SaaS organization for five years, I managed a team of fifteen engine
 
-  id: resume_537 | level: middle | exp: 4.0 yrs | raw_text: 252 words
-  skills: NetSuite ERP, SQL, Python, SAP, Power BI, Excel, Demand Forecasting
-  projects: Auto-Merch
-  background: I am an experienced Retail Operations Specialist with four years of hands-on experience in managing marketplace performance and merchandising strategies. In my most recent role as an E-commerce Operations Manager at an enterprise retail firm for two years, I led a cross-functional team of eight memb
+  id: resume_540 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Docker, GraphQL
+  projects: ScalableStats
+  background: I am a Technical Lead with eight years of professional experience, focusing on building high-performance backend systems using the Python and Node.js ecosystems. Throughout my career at a large-scale e-commerce enterprise for four years, I managed a team of twelve developers, concentrating on perfor
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_535 | title: E-commerce Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: NetSuite ERP, Excel, Power BI, Retail Operations
-  preferred_skills: SQL, Demand Forecasting
-  description: Our operations team is seeking a dedicated E-commerce Operations Manager to join our growing business. The team consists of ten professionals who focus on maintaining seamless daily operations for our online marketplace and coordinating with vendors 
+  id: jd_538 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Python, FastAPI, PostgreSQL, Git
+  preferred_skills: Node.js, Unit Testing
+  description: Our backend team is looking for a driven Junior Backend Engineer to help us build and maintain the APIs that power our primary platform. The team currently comprises four developers who work in a collaborative environment where code quality and mento
 
-  id: jd_536 | title: Senior Retail Operations Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Retail Operations, SAP, SQL, Python, Automation
-  preferred_skills: AI Demand Forecasting, Business Intelligence
-  description: We are looking for a highly skilled Senior Retail Operations Architect to define the future of our digital merchandising and fulfillment infrastructure. Our team of fifteen handles the end-to-end retail experience for a high-volume global marketplace
+  id: jd_539 | title: Junior API Developer | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Python, FastAPI, PostgreSQL
+  preferred_skills: Git, CI/CD, SQL
+  description: We are seeking an enthusiastic Junior API Developer to join our backend engineering team. Our team focuses on building internal business tools that support our data-driven operations. You will work alongside five other developers, including a Lead De
 
-  id: jd_537 | title: Senior Marketplace Strategy Lead | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Retail Operations, SAP, Python, SQL, AI Demand Forecasting
-  preferred_skills: Merchandising Strategy, Marketplace Expansion
-  description: Our organization is seeking a Senior Marketplace Strategy Lead to define and execute our approach to large-scale multi-channel retail. The team comprises twelve specialists dedicated to maximizing our presence on major third-party platforms and optim
+  id: jd_540 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Python, FastAPI, PostgreSQL, Redis, Docker, Kubernetes
+  preferred_skills: Node.js, GraphQL, System Design
+  description: We are seeking a highly experienced Senior Backend Architect to lead our platform strategy and engineering team. Our engineering department consists of ten high-performing developers dedicated to building a robust, performant API ecosystem that serve
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1602 pairs total.
+Overall dataset so far: 1611 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  318  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  319  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  321  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  322  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  322  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  322  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  323  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  321  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  322  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  323  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1603   resume_535 × jd_535
-  pair_1604   resume_535 × jd_536
-  pair_1605   resume_535 × jd_537
-  pair_1606   resume_536 × jd_535
-  pair_1607   resume_536 × jd_536
-  pair_1608   resume_536 × jd_537
-  pair_1609   resume_537 × jd_535
-  pair_1610   resume_537 × jd_536
-  pair_1611   resume_537 × jd_537
+  pair_1612   resume_538 × jd_538
+  pair_1613   resume_538 × jd_539
+  pair_1614   resume_538 × jd_540
+  pair_1615   resume_539 × jd_538
+  pair_1616   resume_539 × jd_539
+  pair_1617   resume_539 × jd_540
+  pair_1618   resume_540 × jd_538
+  pair_1619   resume_540 × jd_539
+  pair_1620   resume_540 × jd_540
 
 ════════════════════════════════════
 OUTPUT FORMAT
