@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_439 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Excel, QuickBooks, SQL, Financial Reporting, Reconciliation
-  projects: FinTrack Basic
-  background: I am a recent finance graduate with a passion for fintech and accounting excellence, eager to kickstart my career in a fast-paced environment. During my internship at a retail finance agency, I supported a team of four in reconciling daily transaction logs and preparing basic ledger entries. I gaine
+  id: resume_442 | level: middle | exp: 4.0 yrs | raw_text: 250 words
+  skills: Greenhouse, Workday HCM, Talent Acquisition, Candidate Sourcing, Onboarding, HRIS
+  projects: QuickOnboard
+  background: I am a dedicated Talent Acquisition Specialist with four years of experience driving recruitment strategies and candidate engagement in high-growth startup environments. In my previous role at a fast-paced technology startup, I managed a team of two recruiters and supported a workforce of 150 employ
 
-  id: resume_440 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: SQL, PostgreSQL, Tableau, Financial Modeling, NetSuite, Compliance
-  projects: AutoAudit
-  background: I am an experienced Financial Analyst with four years of professional experience in the fintech sector, focusing on financial modeling, revenue recognition, and compliance reporting. In my previous role at a mid-sized fintech startup, I managed a team of three junior analysts and oversaw the quarter
+  id: resume_443 | level: senior | exp: 7.0 yrs | raw_text: 255 words
+  skills: Lever, Greenhouse, Workday Recruiting, Talent Strategy, HRIS, Data Analytics, Looker
+  projects: SkillMatch
+  background: I am an experienced Senior Talent Acquisition Manager with seven years of deep expertise in technical recruitment, scaling global teams, and strategic HR systems implementation. During my tenure at a large enterprise software firm, I led a global team of ten recruiters and oversaw the end-to-end tal
 
-  id: resume_441 | level: senior | exp: 8.0 yrs | raw_text: 260 words
-  skills: Oracle Netsuite, Python, Looker, Financial Strategy, Regulatory Compliance, Financial Architecture
-  projects: ScaleOps
-  background: I am a Senior Financial Controller with eight years of extensive experience in fintech accounting, corporate strategy, and regulatory compliance. My expertise lies in designing scalable financial architectures for enterprise-level fintech platforms. In my current role at a large-scale fintech enterp
+  id: resume_444 | level: senior | exp: 9.0 yrs | raw_text: 260 words
+  skills: Greenhouse, Workday HCM, Oracle Recruiting, Data Analytics, SQL, Python, Leadership
+  projects: GlobalTalentHub
+  background: I am a Principal Talent Acquisition Strategist with nine years of extensive experience in human resources, focused on building scalable talent acquisition infrastructures and executive-level recruitment. In my current role at a multinational technology enterprise, I oversee a department of twenty st
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_439 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: Excel, Accounting Principles, Financial Reporting, Reconciliation
-  preferred_skills: SQL, QuickBooks
-  description: Our finance team is looking for a dedicated Junior Financial Analyst to support our core accounting operations and transaction reconciliation processes. The team consists of eight professionals working in a high-growth fintech environment. Your daily
+  id: jd_442 | title: Junior Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs | raw_text: 218 words
+  required_skills: Greenhouse, Scheduling, Candidate Coordination, ATS Management
+  preferred_skills: LinkedIn Recruiter, Slack
+  description: We are seeking a proactive Junior Talent Acquisition Coordinator to join our growing recruitment team. Our department consists of five team members focused on building efficient hiring processes for a scaling tech company. In this role, you will play
 
-  id: jd_440 | title: Senior Financial Model Lead | level: senior | min_exp: 6 yrs | raw_text: 211 words
-  required_skills: Financial Modeling, Python, SQL, NetSuite, Compliance, Regulatory Reporting
-  preferred_skills: Tableau, Strategic Planning
-  description: We are seeking a Senior Financial Model Lead to join our fast-growing finance organization. The team comprises twenty-five financial experts and data engineers who drive strategy for a major fintech platform. You will lead the development of high-fid
+  id: jd_443 | title: Associate HR & Recruitment Associate | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Workday HCM, Greenhouse, Candidate Screening, HR Administration
+  preferred_skills: Google Workspace, HR Compliance
+  description: Our HR department is hiring an Associate HR & Recruitment Associate to assist with daily HR functions and talent acquisition support. Our team consists of six professionals dedicated to building an exceptional workplace for 200 employees. Your respon
 
-  id: jd_441 | title: Principal Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Oracle Netsuite, Python, Financial Strategy, Regulatory Compliance, Financial Architecture, Looker
-  preferred_skills: Leadership, Tax Compliance
-  description: Our organization is seeking a Principal Financial Controller to oversee our global accounting and compliance framework. You will lead a department of thirty finance and audit professionals to ensure the highest standards of financial accuracy and reg
+  id: jd_444 | title: Senior Talent Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Oracle Recruiting, Workday HCM, Greenhouse, SQL, Python, Data Analytics, Leadership
+  preferred_skills: Diversity and Inclusion, Executive Search
+  description: We are looking for a visionary Senior Talent Acquisition Lead to take ownership of our global hiring strategy and lead a high-performing recruitment department. Our team currently consists of twenty professionals who support recruitment for a major e
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1314 pairs total.
+Overall dataset so far: 1323 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  262  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  263  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  262  →  expected this batch: 1 pairs (from seniority gaps below)
-  strong_match          existing:  264  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  263  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  264  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  265  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  263  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  265  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  266  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1315   resume_439 × jd_439
-  pair_1316   resume_439 × jd_440
-  pair_1317   resume_439 × jd_441
-  pair_1318   resume_440 × jd_439
-  pair_1319   resume_440 × jd_440
-  pair_1320   resume_440 × jd_441
-  pair_1321   resume_441 × jd_439
-  pair_1322   resume_441 × jd_440
-  pair_1323   resume_441 × jd_441
+  pair_1324   resume_442 × jd_442
+  pair_1325   resume_442 × jd_443
+  pair_1326   resume_442 × jd_444
+  pair_1327   resume_443 × jd_442
+  pair_1328   resume_443 × jd_443
+  pair_1329   resume_443 × jd_444
+  pair_1330   resume_444 × jd_442
+  pair_1331   resume_444 × jd_443
+  pair_1332   resume_444 × jd_444
 
 ════════════════════════════════════
 OUTPUT FORMAT
