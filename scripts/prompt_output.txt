@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_577 | level: middle | exp: 4.0 yrs | raw_text: 251 words
-  skills: Figma, Prototyping, User Research, Interaction Design, Design Systems, Wireframing
-  projects: AutoFlow
-  background: Over the past four years, I have established myself as a dedicated Product Designer working primarily within high-growth digital startups and collaborative agency environments. During my first role as a UI Designer at a boutique agency, I supported a team of five in delivering mobile-first interface
+  id: resume_580 | level: junior | exp: 0.5 yrs | raw_text: 262 words
+  skills: React Native, JavaScript, TypeScript, Jest, Expo
+  projects: WeatherSnap
+  background: As a passionate recent graduate with a Bachelor of Science in Computer Science, I am eager to begin my career as a Mobile Developer. During my final year, I completed an internship at a rapidly growing mobile-focused startup where I worked on a team of four developers. My primary focus was assisting
 
-  id: resume_578 | level: senior | exp: 7.5 yrs | raw_text: 256 words
-  skills: Figma, Design Systems, User Research, Leadership, Prototyping, Accessibility, Strategy
-  projects: DesignScale
-  background: With over seven years of professional experience as a Senior Product Designer and Design Lead, I have been instrumental in shaping digital product strategies for large-scale enterprise organizations. My career began at a major software agency where I led a team of eight designers, overseeing the com
+  id: resume_581 | level: junior | exp: 0.8 yrs | raw_text: 286 words
+  skills: Flutter, Dart, Firebase, State Management
+  projects: TaskBuddy
+  background: Having recently graduated with a Bachelor of Science in Software Engineering, I am highly motivated to pursue a career in mobile application development. Throughout my undergraduate studies, I participated in a comprehensive cooperative education program at a mid-sized digital agency, where I collab
 
-  id: resume_579 | level: senior | exp: 8.2 yrs | raw_text: 251 words
-  skills: Figma, User Research, Product Strategy, Prototyping, Information Architecture, Data-Driven Design
-  projects: OmniPlatform
-  background: Over the past eight years, I have cultivated deep expertise in UX design, product strategy, and user research, serving as a Principal Product Designer for high-impact consumer platforms. Working with large teams of up to fifteen designers and product managers, I have successfully steered product vis
+  id: resume_582 | level: senior | exp: 8.5 yrs | raw_text: 263 words
+  skills: Swift, Kotlin, iOS, Android, CI/CD, Architecture
+  projects: AppCore
+  background: With over eight years of professional experience in mobile development, I have successfully led the architecture and delivery of complex applications for diverse industries. My career includes a four-year tenure as a Senior iOS Engineer at a global technology firm, where I led a team of fifteen deve
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_577 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Figma, Wireframing, UX Principles
-  preferred_skills: Prototyping, HTML, CSS
-  description: Our design team of five is looking for a passionate Junior Product Designer to assist in the creation of user-friendly interfaces for our mobile and web applications. You will work closely with our lead product designer and product managers to transl
+  id: jd_580 | title: Mid-Level Mobile Engineer | level: middle | min_exp: 3 yrs | raw_text: 205 words
+  required_skills: React Native, JavaScript, TypeScript, State Management
+  preferred_skills: Native Modules, Performance Profiling
+  description: Our mobile engineering team of twelve professionals is looking for a Mid-Level Mobile Engineer to help build and maintain our high-traffic consumer application. We support a platform that serves hundreds of thousands of users and requires a deep unde
 
-  id: jd_578 | title: Associate UX Designer | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Figma, User Research, Prototyping
-  preferred_skills: Motion Design, Communication
-  description: We are seeking an Associate UX Designer to join our creative team of ten in a dynamic, office-based environment. The team focuses on crafting seamless digital experiences for our core product offerings. As an Associate UX Designer, you will be respon
+  id: jd_581 | title: Senior iOS Engineer | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Swift, iOS, Architecture, CI/CD
+  preferred_skills: Combine, Swift UI, Memory Management
+  description: Our mobile infrastructure group, composed of twenty expert engineers, is seeking a Senior iOS Engineer to lead the design and development of our next-generation enterprise application. We are tasked with building a robust, high-performance platform t
 
-  id: jd_579 | title: Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Figma, Design Systems, User Research, Leadership, Product Strategy, Information Architecture
-  preferred_skills: Design Governance, KPI Definition
-  description: Our global design department, composed of over forty researchers, UI, and UX professionals, is seeking a Lead Product Designer to guide our design strategy for a mission-critical enterprise platform. In this senior role, you will be responsible for d
+  id: jd_582 | title: Lead Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Swift, Kotlin, Architecture, Mobile Performance
+  preferred_skills: Cloud Infrastructure, Reliability Engineering
+  description: The central mobile platform team, a group of thirty engineers focused on reliability and cross-platform scale, is seeking a Lead Mobile Architect to oversee our complex, multi-platform infrastructure. As our platform continues to expand, we need a te
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1728 pairs total.
+Overall dataset so far: 1737 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  346  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  347  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  343  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  346  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  346  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  346  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  348  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  347  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  348  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  348  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1729   resume_577 × jd_577
-  pair_1730   resume_577 × jd_578
-  pair_1731   resume_577 × jd_579
-  pair_1732   resume_578 × jd_577
-  pair_1733   resume_578 × jd_578
-  pair_1734   resume_578 × jd_579
-  pair_1735   resume_579 × jd_577
-  pair_1736   resume_579 × jd_578
-  pair_1737   resume_579 × jd_579
+  pair_1738   resume_580 × jd_580
+  pair_1739   resume_580 × jd_581
+  pair_1740   resume_580 × jd_582
+  pair_1741   resume_581 × jd_580
+  pair_1742   resume_581 × jd_581
+  pair_1743   resume_581 × jd_582
+  pair_1744   resume_582 × jd_580
+  pair_1745   resume_582 × jd_581
+  pair_1746   resume_582 × jd_582
 
 ════════════════════════════════════
 OUTPUT FORMAT
