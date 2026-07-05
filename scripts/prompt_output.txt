@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_541 | level: junior | exp: 0.5 yrs | raw_text: 261 words
-  skills: Figma, User Research, Prototyping, Adobe Creative Suite, Accessibility
-  projects: FlowPath
-  background: As a passionate Junior Product Designer with a recent degree, I am eager to begin my professional journey. During my final year, I completed an internship at a fast-paced design agency where I worked alongside a team of four experienced designers. My primary responsibilities involved creating basic 
+  id: resume_544 | level: middle | exp: 4.0 yrs | raw_text: 262 words
+  skills: Splunk, SIEM, Nessus, Python, Network Security, Firewalls, Incident Response
+  projects: GuardMonitor
+  background: As a Cybersecurity Analyst with four years of professional experience, I have dedicated my career to strengthening enterprise defense systems and conducting proactive threat hunting. During my three years at a mid-sized financial services firm, I worked within a security operations team of twelve, w
 
-  id: resume_542 | level: junior | exp: 0.5 yrs | raw_text: 267 words
-  skills: Figma, Sketch, Miro, User Research, Design Thinking
-  projects: InsightPortal
-  background: I am a motivated entry-level UX Designer committed to crafting seamless user journeys through diligent research and iterative prototyping. My initial professional experience stems from a six-month contract at a growing tech startup, where I collaborated with a product team of three. I was mainly tas
+  id: resume_545 | level: middle | exp: 5.0 yrs | raw_text: 257 words
+  skills: Network Security, Firewalls, Wireshark, Burp Suite, Linux, VPN, SIEM
+  projects: SecureLink
+  background: I am a Network Security Engineer with five years of experience, passionate about securing complex network infrastructures and mitigating cyber threats. During my four years at a large telecommunications provider, I worked as part of a high-performance network security team of fifteen, where I focuse
 
-  id: resume_543 | level: senior | exp: 8.5 yrs | raw_text: 270 words
-  skills: Figma, Design Systems, User Research, Prototyping, Animation, Product Strategy, Framer
-  projects: OmniScale
-  background: As a Senior Product Designer with over eight years of experience, I have led design strategy for complex enterprise platforms, specializing in high-stakes B2B SaaS environments. In my most recent role at a large enterprise company, I led a cross-functional design team of twelve, overseeing the end-t
+  id: resume_546 | level: senior | exp: 8.5 yrs | raw_text: 253 words
+  skills: Pentesting, SIEM, Splunk, ELK, Metasploit, Burp Suite, Python, Cloud Security
+  projects: CyberShield
+  background: As a Senior Information Security Lead with eight years of experience, I specialize in spearheading offensive security programs and building resilient enterprise defense architectures. In my most recent role at a global technology firm, I led a security architecture team of twenty, where I was respon
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_541 | title: Mid-Level Product Designer | level: middle | min_exp: 3 yrs | raw_text: 201 words
-  required_skills: Figma, Prototyping, Design Systems, User Research
-  preferred_skills: Jira, Analytics
-  description: Our product team is looking for a Mid-Level Product Designer to join our core team of six. We work in a fast-paced environment building consumer-facing financial tools. You will be instrumental in evolving our design language and ensuring consistent 
+  id: jd_544 | title: Junior Cybersecurity Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: SIEM, Splunk, Nessus, Network Security
+  preferred_skills: Python, Incident Response
+  description: Our security operations team is seeking a Junior Cybersecurity Analyst to help monitor our network and respond to security events. The team consists of six analysts who manage a wide array of tools to ensure the integrity of our data and infrastructu
 
-  id: jd_542 | title: Senior Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: Figma, Design Systems, User Research, Prototyping, Animation, Product Strategy
-  preferred_skills: Framer, Principle
-  description: We are seeking a Senior Product Design Lead to guide our design strategy for our flagship enterprise suite. Our design department is a central pillar of our product organization, currently consisting of fifteen talented professionals. You will lead t
+  id: jd_545 | title: Associate Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Firewalls, Network Security, Linux, Log Analysis
+  preferred_skills: Python, Bash
+  description: We are looking for an Associate Security Engineer to join our growing security team. Our team is responsible for securing both our internal network and customer-facing cloud infrastructure, and we currently have five members working in a fast-paced a
 
-  id: jd_543 | title: Principal Product Designer | level: senior | min_exp: 6 yrs | raw_text: 187 words
-  required_skills: Figma, Design Systems, User Research, Prototyping, Animation, Product Strategy
-  preferred_skills: Framer, AI Tools
-  description: Our innovation lab is looking for a Principal Product Designer to drive the future of our product offerings. You will be the design authority for our most complex, high-growth initiatives, leading a distributed team of ten. The team thrives on experi
+  id: jd_546 | title: Senior Security Lead | level: senior | min_exp: 6 yrs | raw_text: 192 words
+  required_skills: SIEM, Pentesting, Splunk, Metasploit, Burp Suite, Python, Cloud Security
+  preferred_skills: ELK, Automation
+  description: We are seeking an experienced Senior Security Lead to oversee our enterprise defense and security strategy. Our team consists of ten high-level security professionals dedicated to proactive threat hunting, incident management, and hardening our globa
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1620 pairs total.
+Overall dataset so far: 1629 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  322  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  324  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  325  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  324  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  325  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  326  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  326  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  325  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  325  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  327  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1621   resume_541 × jd_541
-  pair_1622   resume_541 × jd_542
-  pair_1623   resume_541 × jd_543
-  pair_1624   resume_542 × jd_541
-  pair_1625   resume_542 × jd_542
-  pair_1626   resume_542 × jd_543
-  pair_1627   resume_543 × jd_541
-  pair_1628   resume_543 × jd_542
-  pair_1629   resume_543 × jd_543
+  pair_1630   resume_544 × jd_544
+  pair_1631   resume_544 × jd_545
+  pair_1632   resume_544 × jd_546
+  pair_1633   resume_545 × jd_544
+  pair_1634   resume_545 × jd_545
+  pair_1635   resume_545 × jd_546
+  pair_1636   resume_546 × jd_544
+  pair_1637   resume_546 × jd_545
+  pair_1638   resume_546 × jd_546
 
 ════════════════════════════════════
 OUTPUT FORMAT
