@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_517 | level: junior | exp: 0.7 yrs | raw_text: 269 words
-  skills: Microsoft Excel, SQL, QuickBooks Online, Financial Modeling, VBA
-  projects: SpendTrack
-  background: After graduating in 2025 with a Bachelor of Science in Finance, I began my career as a Junior Financial Analyst at a fast-paced fintech startup. In my current role, which I have held for eight months, I work within a team of five to support our monthly reporting cycles and reconcile daily transactio
+  id: resume_520 | level: middle | exp: 4.0 yrs | raw_text: 271 words
+  skills: Microsoft Excel, SQL, SAP ERP, Power BI, Financial Modeling
+  projects: RevenueGuard
+  background: With over four years of experience as a Financial Analyst, I have spent the last three years in a high-growth fintech startup, supporting a finance team of eight. My responsibilities focus on maintaining our monthly reporting cycles and performing detailed variance analysis for our core credit produ
 
-  id: resume_518 | level: junior | exp: 0.8 yrs | raw_text: 266 words
-  skills: Microsoft Excel, Python, Netsuite ERP, Financial Reporting, Data Reconciliation
-  projects: LedgerFix
-  background: I graduated in 2025 with a Bachelor of Science in Accounting and have spent the last ten months working as a Junior Accountant at a growing fintech firm. Within our team of six, I play a vital role in executing the daily accounts payable and receivable workflows, utilizing the firm's integrated acco
+  id: resume_521 | level: senior | exp: 8.0 yrs | raw_text: 254 words
+  skills: Oracle Financials, SQL, Python, Power BI, Financial Modeling, GAAP, IFRS
+  projects: ComplianceBridge
+  background: As a Senior Financial Lead with eight years of experience in the fintech sector, I have spearheaded major financial transformations within large-scale enterprises. During my tenure at a global fintech firm with a finance department of fifty staff, I have been responsible for defining our corporate a
 
-  id: resume_519 | level: senior | exp: 7.5 yrs | raw_text: 265 words
-  skills: SAP ERP, Oracle Financials, SQL, Power BI, Financial Modeling, GAAP
-  projects: ModelVision
-  background: With over seven years of professional experience in fintech finance and accounting, I have established a track record of driving operational efficiency and ensuring regulatory excellence. Currently, as a Senior Financial Lead at an established fintech enterprise, I manage a team of twelve responsibl
+  id: resume_522 | level: senior | exp: 7.0 yrs | raw_text: 262 words
+  skills: SAP S/4HANA, SQL, Financial Modeling, GAAP, IFRS, Enterprise Architecture
+  projects: SystemCore
+  background: With over seven years of extensive experience in financial systems architecture and corporate finance, I currently serve as a Principal Financial Architect at a leading fintech institution. I lead a team of fifteen professionals tasked with optimizing our core financial systems, managing complex tax
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_517 | title: Financial Planning and Analysis Manager | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Microsoft Excel, Financial Modeling, ERP Systems, GAAP, Financial Reporting
-  preferred_skills: SQL, Power BI
-  description: Our finance team of fifteen is focused on providing actionable insights through rigorous financial modeling and reporting to support our global product lines. We are seeking a mid-level manager to take ownership of our budgeting and forecasting proce
+  id: jd_520 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Microsoft Excel, Financial Modeling, GAAP, Financial Reporting
+  preferred_skills: SQL, ERP Systems
+  description: Our finance team of twelve is dedicated to supporting our rapid product growth through meticulous data analysis and reporting. We are looking for a junior analyst who is eager to build a career in fintech finance and contribute to our daily operation
 
-  id: jd_518 | title: Senior Regulatory Finance Lead | level: senior | min_exp: 6 yrs | raw_text: 217 words
-  required_skills: GAAP, IFRS, Financial Modeling, Regulatory Reporting, SQL
-  preferred_skills: ERP Systems, Python
-  description: Our regulatory finance team is a critical group of twenty professionals dedicated to ensuring that our financial operations remain in full compliance with global fintech regulations. We are looking for a senior lead who can drive our regulatory repor
+  id: jd_521 | title: Associate Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 195 words
+  required_skills: Microsoft Excel, Financial Modeling, GAAP, Financial Reporting
+  preferred_skills: Power BI, SQL
+  description: The finance department is a growing team of fifteen professionals committed to delivering reliable financial insights to our leadership group. We are looking for a finance associate who can help streamline our reporting processes and support our regu
 
-  id: jd_519 | title: Director of Financial Systems and Compliance | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  id: jd_522 | title: Senior Finance and Compliance Lead | level: senior | min_exp: 6 yrs | raw_text: 214 words
   required_skills: GAAP, IFRS, ERP Systems, Financial Modeling, Enterprise Architecture
   preferred_skills: SQL, Cloud Platforms
-  description: Our financial operations are scaling rapidly, and we are looking for a director to lead our strategy regarding financial systems and global compliance. The team, currently numbering thirty staff, is responsible for building a robust, automated, and c
+  description: Our platform engineering team consists of twenty-five specialists tasked with building and scaling our multi-region cloud infrastructure for financial services. We are seeking a senior finance and compliance lead to drive our global financial strateg
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1548 pairs total.
+Overall dataset so far: 1557 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  308  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  310  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  310  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  310  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  310  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  312  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  312  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  310  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  311  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  312  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1549   resume_517 × jd_517
-  pair_1550   resume_517 × jd_518
-  pair_1551   resume_517 × jd_519
-  pair_1552   resume_518 × jd_517
-  pair_1553   resume_518 × jd_518
-  pair_1554   resume_518 × jd_519
-  pair_1555   resume_519 × jd_517
-  pair_1556   resume_519 × jd_518
-  pair_1557   resume_519 × jd_519
+  pair_1558   resume_520 × jd_520
+  pair_1559   resume_520 × jd_521
+  pair_1560   resume_520 × jd_522
+  pair_1561   resume_521 × jd_520
+  pair_1562   resume_521 × jd_521
+  pair_1563   resume_521 × jd_522
+  pair_1564   resume_522 × jd_520
+  pair_1565   resume_522 × jd_521
+  pair_1566   resume_522 × jd_522
 
 ════════════════════════════════════
 OUTPUT FORMAT
