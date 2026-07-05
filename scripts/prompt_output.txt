@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_355 | level: junior | exp: 0.5 yrs | raw_text: 261 words
-  skills: Recruitment, BambooHR, Greenhouse, Onboarding, Excel
-  projects: OnboardEase
-  background: I am a motivated recent graduate with a passion for human resources and talent acquisition, having completed a six-month HR internship at a fast-paced retail startup. During this time, I worked alongside a team of four to manage our candidate pipeline and coordinate interview schedules. My primary r
+  id: resume_358 | level: middle | exp: 4.0 yrs | raw_text: 266 words
+  skills: Figma, Prototyping, User Research, Design Systems, UI Design
+  projects: ComponentLibraryBase, AccessibilityCheck
+  background: I am a product designer with four years of experience crafting user-centric digital experiences for high-growth startups and creative agencies. Throughout my career, I have thrived in cross-functional teams, collaborating closely with product managers and developers to iterate on features from conce
 
-  id: resume_356 | level: junior | exp: 0.8 yrs | raw_text: 264 words
-  skills: Talent Acquisition, Workday, Lever, Recruitment, Google Workspace
-  projects: RecruitTrack
-  background: I am a dedicated human resources enthusiast with a recent degree and a clear interest in talent acquisition and HR systems. During my time as an HR coordinator intern at a small digital agency with a team of six, I gained hands-on experience in the end-to-end recruitment lifecycle. I assisted with p
+  id: resume_359 | level: senior | exp: 8.0 yrs | raw_text: 264 words
+  skills: Figma, Design Strategy, User Research, Prototyping, UX Architecture
+  projects: EnterpriseDesignOps, UX Analytics Engine
+  background: I am a senior product designer and design strategist with eight years of experience building and scaling product design functions within fast-paced enterprise environments. I have a proven track record of leading design teams and establishing design-led product cultures. In my role as Lead Product D
 
-  id: resume_357 | level: senior | exp: 8.5 yrs | raw_text: 269 words
-  skills: Talent Acquisition, HRIS Strategy, Workday, Greenhouse, Data Analytics, Workato
-  projects: StrategicHirePulse
-  background: I am a senior talent acquisition and HR strategy expert with over eight years of experience building scalable recruiting frameworks for high-growth tech enterprises. My career has spanned roles from lead recruiter to HRIS architect, focusing on integrating complex systems and driving data-informed h
+  id: resume_360 | level: senior | exp: 9.0 yrs | raw_text: 256 words
+  skills: Figma, Design Systems, User Research, Prototyping, UX Architecture, Generative AI
+  projects: GlobalDesignScale, UserResearchCloud
+  background: I am a principal product designer and design systems architect with nine years of extensive experience, specializing in deep-dive user research and high-availability design system infrastructures. My career has focused on architecting platforms that balance complex technical requirements with intuit
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_355 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs | raw_text: 198 words
-  required_skills: Talent Acquisition, Greenhouse, LinkedIn Recruiter, Sourcing
-  preferred_skills: Workday, Employer Branding
-  description: Our busy HR team, consisting of twelve professionals, is looking for a middle-level Talent Acquisition Specialist to manage the full-cycle recruitment of diverse technical and operational roles. We focus on building high-performance teams and are cur
+  id: jd_358 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Figma, UI Design, Prototyping, User Research
+  preferred_skills: HTML, CSS
+  description: Our product design team of eight is currently seeking a motivated Junior Product Designer to help us build user-focused solutions for our core platform. We are a fast-moving team that values rapid prototyping, clear communication, and empathetic desi
 
-  id: jd_356 | title: Senior Recruitment Strategist | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Talent Acquisition, Workday, Greenhouse, Data Analytics, Workato
-  preferred_skills: Predictive Modeling, AI Recruitment
-  description: We are looking for a Senior Recruitment Strategist to join our central HR division of twenty-five people. This team drives global talent strategy for our engineering-heavy product lines. You will be responsible for defining our global sourcing strate
+  id: jd_359 | title: Associate UX Designer | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Figma, UX Design, Prototyping, User Research
+  preferred_skills: Data Analytics, Research Methodology
+  description: Our design team of twelve is looking for an Associate UX Designer to assist in the research and prototyping phase of our product development cycle. The team focuses on creating seamless user experiences for a B2C application with a rapidly growing us
 
-  id: jd_357 | title: Principal Talent Operations Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: Talent Acquisition, Workday, Greenhouse, Workato, Data Analytics
-  preferred_skills: SQL, Systems Architecture
-  description: Our enterprise HR team of thirty is seeking a Principal Talent Operations Architect. Your role is central to our operational excellence, focusing on the systems and data pipelines that underpin our global talent strategy. You will be responsible for 
+  id: jd_360 | title: Principal Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Figma, Design Systems, UX Architecture, Prototyping, User Research
+  preferred_skills: Generative AI, UX Strategy
+  description: We are seeking a Principal Product Design Lead to guide our core design strategy and architectural vision for our high-complexity platforms. You will manage a team of twenty and be responsible for the long-term health of our design system, strategic 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1062 pairs total.
+Overall dataset so far: 1071 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  211  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  212  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  212  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  214  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  213  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  215  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  214  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  212  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  215  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1063   resume_355 × jd_355
-  pair_1064   resume_355 × jd_356
-  pair_1065   resume_355 × jd_357
-  pair_1066   resume_356 × jd_355
-  pair_1067   resume_356 × jd_356
-  pair_1068   resume_356 × jd_357
-  pair_1069   resume_357 × jd_355
-  pair_1070   resume_357 × jd_356
-  pair_1071   resume_357 × jd_357
+  pair_1072   resume_358 × jd_358
+  pair_1073   resume_358 × jd_359
+  pair_1074   resume_358 × jd_360
+  pair_1075   resume_359 × jd_358
+  pair_1076   resume_359 × jd_359
+  pair_1077   resume_359 × jd_360
+  pair_1078   resume_360 × jd_358
+  pair_1079   resume_360 × jd_359
+  pair_1080   resume_360 × jd_360
 
 ════════════════════════════════════
 OUTPUT FORMAT
