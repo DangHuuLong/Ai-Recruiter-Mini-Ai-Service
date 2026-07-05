@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_475 | level: middle | exp: 4.0 yrs | raw_text: 270 words
-  skills: SAP ERP, Python, SQL, Inventory Management, Procurement, Demand Forecasting
-  projects: InventorySync
-  background: Over the past four years, I have worked as a Supply Chain Analyst at a mid-sized manufacturing enterprise, where I managed inventory levels and procurement workflows for a team of eight. My core responsibilities included optimizing reorder points, coordinating with global logistics partners to reduc
+  id: resume_478 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Shopify, Google Analytics 4, Excel, Marketing, Data Entry
+  projects: ShopStream
+  background: I am a recent Marketing graduate currently seeking my first full-time role within the e-commerce sector. During my university tenure, I completed an intensive internship as an E-commerce Operations Assistant at a boutique retail agency, where I worked on a team of five. My responsibilities included 
 
-  id: resume_476 | level: senior | exp: 8.5 yrs | raw_text: 260 words
-  skills: SAP S/4HANA, PostgreSQL, Kafka, AWS SageMaker, Python, Logistics Engineering
-  projects: GlobalFlow
-  background: In my eight years as a Principal Logistics Engineer at a large retail enterprise, I have spearheaded large-scale digital transformations for our global supply chain infrastructure. Leading a cross-functional team of twelve, I managed the integration of our complex procurement and logistics systems, 
+  id: resume_479 | level: junior | exp: 0.5 yrs | raw_text: 269 words
+  skills: Excel, SQL, Inventory Management, Google Data Studio, Merchandising
+  projects: StockWatch
+  background: After graduating with a degree in Business Administration, I have focused my energy on kickstarting my career in e-commerce merchandising. My professional experience began with a six-month contract as a Junior Merchandising Coordinator at a regional retail startup, where I operated within a small, a
 
-  id: resume_477 | level: senior | exp: 7.5 yrs | raw_text: 250 words
-  skills: SAP S/4HANA, Python, PostgreSQL, Docker, Spark, Supply Chain Architecture
-  projects: ProcurementNexus
-  background: With over seven years of professional experience as a Senior Supply Chain Architect, I have been instrumental in designing and implementing next-generation logistics systems for global retail platforms. At my previous enterprise-level firm, I managed a team of fifteen engineers and analysts, oversee
+  id: resume_480 | level: senior | exp: 8.5 yrs | raw_text: 258 words
+  skills: Python, PostgreSQL, Kubernetes, AWS EKS, Kafka, Spark, AWS SageMaker, System Architecture
+  projects: ScaleRetail
+  background: Over the past eight years, I have served as a Senior E-commerce Systems Architect at a global retail enterprise, where I led technical strategy for our flagship marketplace operations. Managing a high-performance team of twenty, I directed the development of a proprietary order management system bui
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_475 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Supply Chain Operations, Inventory Management, SAP ERP, Excel
-  preferred_skills: Procurement, Data Entry
-  description: Our operations team is seeking a motivated Junior Supply Chain Associate to support our inventory management and procurement efforts. Our team consists of ten professionals dedicated to ensuring that our supply chain runs smoothly across all regional
+  id: jd_478 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 206 words
+  required_skills: E-commerce Operations, SQL, Excel, Salesforce Commerce Cloud, Inventory Management
+  preferred_skills: Python, Logistics
+  description: Our e-commerce operations team is currently looking for an experienced E-commerce Operations Specialist to join our mid-sized team of fifteen. We support the daily operations of our fast-growing online marketplace, focusing on inventory availability,
 
-  id: jd_476 | title: Junior Logistics Analyst | level: junior | min_exp: 1 yrs | raw_text: 187 words
-  required_skills: Logistics Analytics, Supply Chain Operations, Excel, SAP
-  preferred_skills: Transportation Management, Data Visualization
-  description: We are looking for a detail-oriented Junior Logistics Analyst to join our team of twelve. This team is responsible for optimizing our last-mile delivery network and ensuring that customer orders are fulfilled on time. Your primary day-to-day responsi
+  id: jd_479 | title: Senior E-commerce Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: System Architecture, Python, Kafka, Kubernetes, AWS, Distributed Systems
+  preferred_skills: Spark, Machine Learning
+  description: Our engineering department is looking for a Senior E-commerce Systems Architect to lead our technical strategy for marketplace scaling. Our team consists of thirty engineers working on a complex, distributed e-commerce platform that serves millions o
 
-  id: jd_477 | title: Principal Supply Chain Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Supply Chain Architecture, SAP S/4HANA, Python, Kafka, Distributed Systems
-  preferred_skills: Docker, Kubernetes
-  description: Our supply chain engineering department is seeking a Principal Supply Chain Architect to lead the design of our next-generation logistics technology stack. Our team of twenty is responsible for managing complex procurement, inventory, and distributed
+  id: jd_480 | title: Lead E-commerce Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Backend Engineering, Python, PostgreSQL, Distributed Systems, Kafka, Spark
+  preferred_skills: Kubernetes, Cloud Infrastructure
+  description: The engineering team is seeking a Lead E-commerce Engineer to join our technical leadership group. Our team of twenty-five is responsible for the core infrastructure and high-traffic APIs of our marketplace. You will be responsible for overseeing the
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1422 pairs total.
+Overall dataset so far: 1431 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  285  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  285  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  283  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  284  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  285  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  285  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  286  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  287  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  286  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  287  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1423   resume_475 × jd_475
-  pair_1424   resume_475 × jd_476
-  pair_1425   resume_475 × jd_477
-  pair_1426   resume_476 × jd_475
-  pair_1427   resume_476 × jd_476
-  pair_1428   resume_476 × jd_477
-  pair_1429   resume_477 × jd_475
-  pair_1430   resume_477 × jd_476
-  pair_1431   resume_477 × jd_477
+  pair_1432   resume_478 × jd_478
+  pair_1433   resume_478 × jd_479
+  pair_1434   resume_478 × jd_480
+  pair_1435   resume_479 × jd_478
+  pair_1436   resume_479 × jd_479
+  pair_1437   resume_479 × jd_480
+  pair_1438   resume_480 × jd_478
+  pair_1439   resume_480 × jd_479
+  pair_1440   resume_480 × jd_480
 
 ════════════════════════════════════
 OUTPUT FORMAT
