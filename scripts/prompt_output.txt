@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_580 | level: junior | exp: 0.5 yrs | raw_text: 262 words
-  skills: React Native, JavaScript, TypeScript, Jest, Expo
-  projects: WeatherSnap
-  background: As a passionate recent graduate with a Bachelor of Science in Computer Science, I am eager to begin my career as a Mobile Developer. During my final year, I completed an internship at a rapidly growing mobile-focused startup where I worked on a team of four developers. My primary focus was assisting
+  id: resume_583 | level: middle | exp: 4.0 yrs | raw_text: 264 words
+  skills: Penetration Testing, SIEM, Splunk, Nmap, Burp Suite, Network Security
+  projects: NetGuard
+  background: Over the past four years, I have developed a strong foundation in cybersecurity, focusing primarily on penetration testing and vulnerability assessment within agency and enterprise environments. My career began at a cybersecurity consulting firm where I spent two years on a team of six, conducting w
 
-  id: resume_581 | level: junior | exp: 0.8 yrs | raw_text: 286 words
-  skills: Flutter, Dart, Firebase, State Management
-  projects: TaskBuddy
-  background: Having recently graduated with a Bachelor of Science in Software Engineering, I am highly motivated to pursue a career in mobile application development. Throughout my undergraduate studies, I participated in a comprehensive cooperative education program at a mid-sized digital agency, where I collab
+  id: resume_584 | level: senior | exp: 7.5 yrs | raw_text: 261 words
+  skills: SIEM, Security Architecture, Threat Hunting, Python, CI/CD Security, Incident Response
+  projects: SecureFlow
+  background: With over seven years of professional experience in information security, I have led multiple teams through complex security architecture redesigns and incident response operations for large-scale enterprise organizations. My experience spans across diverse technical landscapes, from cloud-native en
 
-  id: resume_582 | level: senior | exp: 8.5 yrs | raw_text: 263 words
-  skills: Swift, Kotlin, iOS, Android, CI/CD, Architecture
-  projects: AppCore
-  background: With over eight years of professional experience in mobile development, I have successfully led the architecture and delivery of complex applications for diverse industries. My career includes a four-year tenure as a Senior iOS Engineer at a global technology firm, where I led a team of fifteen deve
+  id: resume_585 | level: senior | exp: 8.2 yrs | raw_text: 275 words
+  skills: Penetration Testing, SIEM, Red Teaming, Malware Analysis, Data-Driven Security, Network Forensics
+  projects: PerimeterShield
+  background: Over the past eight years, I have cultivated deep expertise in cybersecurity research, penetration testing, and enterprise-wide security operations. Working as a Lead Security Engineer, I have overseen the security infrastructure for large-scale consumer applications, ensuring compliance with global
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_580 | title: Mid-Level Mobile Engineer | level: middle | min_exp: 3 yrs | raw_text: 205 words
-  required_skills: React Native, JavaScript, TypeScript, State Management
-  preferred_skills: Native Modules, Performance Profiling
-  description: Our mobile engineering team of twelve professionals is looking for a Mid-Level Mobile Engineer to help build and maintain our high-traffic consumer application. We support a platform that serves hundreds of thousands of users and requires a deep unde
+  id: jd_583 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: SIEM, Network Security, Incident Response
+  preferred_skills: Penetration Testing, Vulnerability Scanning
+  description: Our information security team of eight is seeking a Junior Security Analyst to join us in protecting our digital infrastructure from emerging threats. You will work within our security operations center, monitoring network traffic and investigating p
 
-  id: jd_581 | title: Senior iOS Engineer | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Swift, iOS, Architecture, CI/CD
-  preferred_skills: Combine, Swift UI, Memory Management
-  description: Our mobile infrastructure group, composed of twenty expert engineers, is seeking a Senior iOS Engineer to lead the design and development of our next-generation enterprise application. We are tasked with building a robust, high-performance platform t
+  id: jd_584 | title: Associate Pentester | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Penetration Testing, Burp Suite, Vulnerability Assessment
+  preferred_skills: Python, Linux Security
+  description: We are seeking an Associate Pentester to join our red-team focused security group of ten. This team specializes in proactive security testing and vulnerability identification for our internal and client-facing web applications. As an Associate Pentes
 
-  id: jd_582 | title: Lead Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Swift, Kotlin, Architecture, Mobile Performance
-  preferred_skills: Cloud Infrastructure, Reliability Engineering
-  description: The central mobile platform team, a group of thirty engineers focused on reliability and cross-platform scale, is seeking a Lead Mobile Architect to oversee our complex, multi-platform infrastructure. As our platform continues to expand, we need a te
+  id: jd_585 | title: Senior Security Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: SIEM, Security Architecture, Threat Hunting, Network Forensics, Penetration Testing
+  preferred_skills: Security Orchestration, KPI Definition
+  description: Our global security organization, composed of over forty analysts, architects, and researchers, is seeking a Senior Security Architect to drive our enterprise-wide defense strategy. In this senior role, you will be responsible for defining the securi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1737 pairs total.
+Overall dataset so far: 1746 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  346  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  348  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  347  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  348  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  348  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  350  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  350  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  347  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  349  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  350  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1738   resume_580 × jd_580
-  pair_1739   resume_580 × jd_581
-  pair_1740   resume_580 × jd_582
-  pair_1741   resume_581 × jd_580
-  pair_1742   resume_581 × jd_581
-  pair_1743   resume_581 × jd_582
-  pair_1744   resume_582 × jd_580
-  pair_1745   resume_582 × jd_581
-  pair_1746   resume_582 × jd_582
+  pair_1747   resume_583 × jd_583
+  pair_1748   resume_583 × jd_584
+  pair_1749   resume_583 × jd_585
+  pair_1750   resume_584 × jd_583
+  pair_1751   resume_584 × jd_584
+  pair_1752   resume_584 × jd_585
+  pair_1753   resume_585 × jd_583
+  pair_1754   resume_585 × jd_584
+  pair_1755   resume_585 × jd_585
 
 ════════════════════════════════════
 OUTPUT FORMAT
