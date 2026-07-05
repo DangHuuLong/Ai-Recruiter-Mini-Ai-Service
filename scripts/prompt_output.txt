@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_403 | level: senior | exp: 8.5 yrs | raw_text: 253 words
-  skills: Java, Spring Boot, PostgreSQL, Node.js, Redis, Kafka, Terraform, Kubernetes, AWS, Shopify
-  projects: Project DataStream, AutoScale
-  background: I am a Principal E-commerce Engineer with over eight years of experience building scalable retail platforms. In my most recent role as a Lead Software Architect at a global enterprise retailer, I managed a team of fifteen developers. We maintained a high-traffic marketplace serving over fifty thousa
+  id: resume_406 | level: junior | exp: 0.5 yrs | raw_text: 261 words
+  skills: Python, React, PostgreSQL, FastAPI, Docker, Git, D3.js
+  projects: DataViz, Task Manager
+  background: I am a recent Computer Science graduate with a passionate focus on full-stack web development, specifically utilizing Python and React. During my intensive six-month internship at a local tech startup, I worked alongside a small team of four engineers to build a customer-facing dashboard. My primary
 
-  id: resume_404 | level: senior | exp: 7.0 yrs | raw_text: 256 words
-  skills: SAP Commerce Cloud, Oracle NetSuite, Python, FastAPI, Magento, SQL, BigQuery, R, Stripe API
-  projects: StockMaster, PaymentShield
-  background: As a Senior Retail Systems Lead with seven years of experience, I specialize in the integration of enterprise-grade commerce platforms. During my five-year tenure at a leading enterprise retailer, I oversaw a team of ten engineers, maintaining a complex SAP Commerce Cloud environment and Oracle NetS
+  id: resume_407 | level: middle | exp: 4.0 yrs | raw_text: 251 words
+  skills: Python, Django, FastAPI, React, PostgreSQL, Redis, Celery, AWS
+  projects: ShopGrid, AutoSync
+  background: I am a dedicated Full-Stack Web Developer with four years of experience in the software industry, previously working within both startup and enterprise-level environments. My journey began at a fast-paced agency where I managed a team of six developers, focusing on architecting robust backend system
 
-  id: resume_405 | level: senior | exp: 9.0 yrs | raw_text: 251 words
-  skills: React, Node.js, MongoDB, Salesforce Commerce Cloud, Contentful, Tableau, GraphQL
-  projects: QuickCheck, GlobalCatalog
-  background: I am an experienced Lead E-commerce Developer with nine years of expertise in full-stack retail application development. Currently, I am a Technical Lead at a rapidly scaling retail startup where I manage a cross-functional team of twelve developers and QA engineers. My main responsibilities are ove
+  id: resume_408 | level: middle | exp: 5.0 yrs | raw_text: 255 words
+  skills: Python, FastAPI, React, SQL, PostgreSQL, AWS, Elasticsearch, Terraform
+  projects: SmartSearch, CheckoutFlow
+  background: I am a results-driven Full-Stack Engineer with five years of professional experience. My career started in a mid-sized software startup, where I developed customer-facing features for a high-traffic e-commerce application. Since then, I have moved into a senior developer role, supporting a team of t
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_403 | title: Junior E-commerce Operations Support | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Microsoft Excel, Organizational Skills, Communication Skills, Data Entry
-  preferred_skills: Shopify, Retail Operations
-  description: Our operations team is seeking a Junior E-commerce Operations Support associate to join our product group of ten. We support a rapidly growing digital marketplace that provides essential goods to a diverse range of customers. In this role, you will p
+  id: jd_406 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 213 words
+  required_skills: Python, React, PostgreSQL, Git
+  preferred_skills: Docker, Agile
+  description: We are seeking a motivated Junior Web Developer to join our growing engineering team of eight specialists. Our team manages a robust digital product, focusing on providing seamless experiences for our users. In this role, your primary responsibility 
 
-  id: jd_404 | title: Junior Marketplace Associate | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: SQL, Communication Skills, Attention To Detail, Data Management
-  preferred_skills: Content Management, Customer Support
-  description: The marketplace team is searching for a Junior Marketplace Associate to help us streamline our daily retail operations. Our team consists of twelve members who manage a massive product catalog for global customers. As an associate, your primary duty 
+  id: jd_407 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: FastAPI, React, PostgreSQL, Microservices, Distributed Systems, Leadership
+  preferred_skills: AWS ECS, CI/CD
+  description: Our core product platform is looking for a Senior Full-Stack Engineer to oversee the end-to-end architecture of our high-performance web applications. With a technical team of twenty, we focus on delivering mission-critical infrastructure that suppor
 
-  id: jd_405 | title: Senior E-commerce Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Java, Spring Boot, AWS, Distributed Systems, Kafka, PostgreSQL, Leadership
-  preferred_skills: Kubernetes, Performance Tuning
-  description: Our engineering department is seeking a Senior E-commerce Systems Lead to direct the technical strategy for our flagship digital retail platform. This is a senior role within a technical team of twenty, where you will focus on scaling our high-traffi
+  id: jd_408 | title: Senior Web Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: Python, FastAPI, React, Cloud Infrastructure, Systems Architecture, Performance Tuning
+  preferred_skills: Kubernetes, Terraform
+  description: Our systems architecture team is searching for a Senior Web Systems Architect to lead the modernization of our legacy business processes and global web platforms. As part of a global team of twenty-five specialists, you will be responsible for defini
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1206 pairs total.
+Overall dataset so far: 1215 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  241  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  242  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  238  →  expected this batch: 6 pairs (from seniority gaps below)
-  strong_match          existing:  243  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  242  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  241  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  242  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  244  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  243  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  245  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1207   resume_403 × jd_403
-  pair_1208   resume_403 × jd_404
-  pair_1209   resume_403 × jd_405
-  pair_1210   resume_404 × jd_403
-  pair_1211   resume_404 × jd_404
-  pair_1212   resume_404 × jd_405
-  pair_1213   resume_405 × jd_403
-  pair_1214   resume_405 × jd_404
-  pair_1215   resume_405 × jd_405
+  pair_1216   resume_406 × jd_406
+  pair_1217   resume_406 × jd_407
+  pair_1218   resume_406 × jd_408
+  pair_1219   resume_407 × jd_406
+  pair_1220   resume_407 × jd_407
+  pair_1221   resume_407 × jd_408
+  pair_1222   resume_408 × jd_406
+  pair_1223   resume_408 × jd_407
+  pair_1224   resume_408 × jd_408
 
 ════════════════════════════════════
 OUTPUT FORMAT
