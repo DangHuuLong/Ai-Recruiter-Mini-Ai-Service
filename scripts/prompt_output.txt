@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_502 | level: senior | exp: 8.0 yrs | raw_text: 256 words
-  skills: PostgreSQL, MongoDB, Redis, SQL, Python, Data Modeling
-  projects: DataSanity
-  background: Over the past eight years, I have established myself as a seasoned Database Engineer, focusing on high-availability architectures and complex data modeling for large-scale enterprise systems. In my current role at a major financial services enterprise, I lead a team of six engineers responsible for 
+  id: resume_505 | level: junior | exp: 0.8 yrs | raw_text: 252 words
+  skills: React Native, JavaScript, Redux, CSS
+  projects: WeatherSnap
+  background: As a recent computer science graduate, I have spent the last ten months working as a Junior Mobile Developer at a fast-paced software agency. My primary role involved supporting a team of five in maintaining client-facing applications built with React Native 0.72. I was responsible for fixing UI bug
 
-  id: resume_503 | level: senior | exp: 7.5 yrs | raw_text: 254 words
-  skills: PostgreSQL, MongoDB, Redis, Go, SQL, Data Modeling
-  projects: LogOptimizer
-  background: I have dedicated the last seven years of my career to specializing in database engineering, specifically focusing on distributed systems and high-throughput data pipelines. During my three years at an e-commerce enterprise, I led a team of five in redesigning our inventory tracking database from a m
+  id: resume_506 | level: junior | exp: 1.0 yrs | raw_text: 260 words
+  skills: Flutter, Dart, Firebase, SQLite
+  projects: SmartTask
+  background: During my first year as a Mobile Development Intern at a local startup, I collaborated with a team of six to build and refine features for our consumer-facing mobile application. My responsibilities included developing screen components using Flutter 3.10, integrating Firebase for real-time authenti
 
-  id: resume_504 | level: senior | exp: 9.0 yrs | raw_text: 262 words
-  skills: PostgreSQL, MongoDB, Redis, SQL, Python, Data Modeling
-  projects: AutoSchema
-  background: As a senior database engineer with over nine years of professional experience, I have developed a deep expertise in designing robust data persistence layers for mission-critical applications. In my most recent role as a Lead Database Architect at a cloud services firm, I headed a team of eight focus
+  id: resume_507 | level: senior | exp: 8.5 yrs | raw_text: 265 words
+  skills: Swift, Kotlin, KMP, CI/CD, Modular Architecture, Memory Management
+  projects: GlobalPayment
+  background: Over the past eight years, I have grown from an entry-level mobile engineer to a Principal Mobile Architect in a large enterprise environment, overseeing the lifecycle of global applications used by millions of users. My experience spans the development of complex native applications using Swift 5.9
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_502 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 226 words
-  required_skills: PostgreSQL, MongoDB, SQL, Data Modeling
-  preferred_skills: Redis, Python
-  description: Our Database Engineering team, consisting of ten engineers, is currently expanding to support our rapidly growing user base. We are looking for a motivated junior engineer to assist in the day-to-day maintenance and monitoring of our production datab
+  id: jd_505 | title: Middle-Level Mobile Engineer | level: middle | min_exp: 3 yrs | raw_text: 216 words
+  required_skills: React Native, TypeScript, GraphQL, Unit Testing
+  preferred_skills: Kotlin, CI/CD
+  description: Our Mobile Engineering team consists of twelve developers working on a core consumer product that reaches over five hundred thousand monthly active users. We are currently looking for a middle-level engineer who can take full ownership of feature mod
 
-  id: jd_503 | title: Associate Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: PostgreSQL, MongoDB, SQL, Redis
-  preferred_skills: Data Modeling, Linux
-  description: The Database Operations team is currently seeking an enthusiastic associate-level engineer to join our group of twelve dedicated database specialists. Our primary mission is to ensure the reliability and high performance of the persistent storage lay
+  id: jd_506 | title: Senior Mobile Developer (Native Focus) | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Swift, Kotlin, Modular Architecture, Performance Tuning
+  preferred_skills: KMP, Rendering Engines
+  description: The Mobile Platform team is a high-impact group of eight engineers dedicated to building our proprietary native mobile framework used across our flagship suite of products. We are seeking a senior engineer who has deep expertise in native development
 
-  id: jd_504 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: PostgreSQL, MongoDB, SQL, Data Modeling, Redis
-  preferred_skills: Performance Tuning, Distributed Systems
-  description: Our Database Engineering team is a tight-knit group of fifteen engineers dedicated to building and maintaining high-performance, scalable data platforms that power our core products. We are looking for a middle-level engineer who can take ownership o
+  id: jd_507 | title: Principal Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Swift, Kotlin, Modular Architecture, CI/CD, KMP
+  preferred_skills: Performance Profiling, Machine Learning
+  description: Our Mobile Infrastructure team acts as the cornerstone of our global digital presence, managing the architecture for our massive multi-platform ecosystem. We are seeking a Principal Architect who can oversee our complex high-scale mobile infrastructu
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1503 pairs total.
+Overall dataset so far: 1512 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  301  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  302  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  298  →  expected this batch: 6 pairs (from seniority gaps below)
-  strong_match          existing:  300  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:  302  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:  301  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  302  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  304  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  303  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  302  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1504   resume_502 × jd_502
-  pair_1505   resume_502 × jd_503
-  pair_1506   resume_502 × jd_504
-  pair_1507   resume_503 × jd_502
-  pair_1508   resume_503 × jd_503
-  pair_1509   resume_503 × jd_504
-  pair_1510   resume_504 × jd_502
-  pair_1511   resume_504 × jd_503
-  pair_1512   resume_504 × jd_504
+  pair_1513   resume_505 × jd_505
+  pair_1514   resume_505 × jd_506
+  pair_1515   resume_505 × jd_507
+  pair_1516   resume_506 × jd_505
+  pair_1517   resume_506 × jd_506
+  pair_1518   resume_506 × jd_507
+  pair_1519   resume_507 × jd_505
+  pair_1520   resume_507 × jd_506
+  pair_1521   resume_507 × jd_507
 
 ════════════════════════════════════
 OUTPUT FORMAT
