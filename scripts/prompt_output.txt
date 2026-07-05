@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_340 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: SEO, Google Analytics, Google Ads, Meta Business Suite, Ahrefs, WordPress, HubSpot
-  projects: EcoSearch
-  background: I am a dedicated Digital Marketing Specialist with four years of experience driving growth across diverse digital channels. In my current role at a mid-sized e-commerce startup, I manage a team of three to oversee SEO and paid media campaigns. Over the past two years, I have successfully utilized Go
+  id: resume_343 | level: junior | exp: 0.5 yrs | raw_text: 275 words
+  skills: React, Python, PostgreSQL, HTML5, CSS3, Git, Flask
+  projects: FoodTrack
+  background: I am a motivated software engineering graduate passionate about full-stack development and eager to build scalable web applications. During my final year at university, I completed an internship at a fast-paced technology startup where I worked on a team of four to maintain a customer-facing web pla
 
-  id: resume_341 | level: senior | exp: 7.0 yrs | raw_text: 264 words
-  skills: SEO Architecture, Salesforce, Marketo, Tableau, Python, Data Analysis, Strategic Planning
-  projects: DataStream
-  background: As a Senior Digital Strategist with seven years of experience in the technology sector, I have led large-scale marketing transformations within enterprise environments. In my current role at a leading enterprise software firm, I oversee a department of twelve, responsible for the end-to-end strategy
+  id: resume_344 | level: junior | exp: 0.5 yrs | raw_text: 268 words
+  skills: React, Python, Docker, SQLite, Swagger, PyTest, JavaScript
+  projects: TaskMaster
+  background: I am a recent Computer Science graduate with a strong interest in building high-performance web applications using modern JavaScript and Python ecosystems. During my six-month internship at a digital agency, I collaborated with a team of six to build and deploy interactive front-end features for sev
 
-  id: resume_342 | level: senior | exp: 8.0 yrs | raw_text: 256 words
-  skills: Content Strategy, Technical SEO, SEMrush, Google Analytics, Jira, HubSpot, Notion API
-  projects: ContentOps
-  background: I am a Senior Content and SEO Lead with eight years of experience crafting high-impact digital experiences for technology and SaaS organizations. Throughout my career, I have thrived in cross-functional team settings, most recently managing a team of fifteen at a fast-growing SaaS startup. My primar
+  id: resume_345 | level: senior | exp: 8.0 yrs | raw_text: 251 words
+  skills: React, Python, FastAPI, PostgreSQL, AWS ECS, Redis, GitHub Actions, CI/CD
+  projects: DataFlow
+  background: I am a Senior Full-Stack Engineer with eight years of experience architecting and scaling complex enterprise web platforms. In my most recent role at a large-scale fintech enterprise, I led a team of fifteen developers in migrating our core application from a legacy system to a modern stack centered
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_340 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 223 words
-  required_skills: SEO, Google Analytics, Google Ads, Meta Business Suite, Ahrefs, WordPress
-  preferred_skills: Canva, Social Media Marketing
-  description: Our growth team of four is looking for a motivated Junior Digital Marketing Associate to assist with daily operations and campaign execution. In this role, you will work closely with the marketing manager to support our ongoing SEO and social media e
+  id: jd_343 | title: Mid-Level Full-Stack Developer | level: middle | min_exp: 3 yrs | raw_text: 200 words
+  required_skills: React, Python, PostgreSQL, REST API, AWS
+  preferred_skills: Redis, Docker
+  description: Our product engineering team of ten is looking for a Mid-Level Full-Stack Developer to help build and maintain our core platform services. You will work on a daily basis with a cross-functional team including designers and QA engineers to deliver hig
 
-  id: jd_341 | title: Junior SEO & Content Coordinator | level: junior | min_exp: 1 yrs | raw_text: 208 words
-  required_skills: SEO, Google Analytics, Ahrefs, WordPress, Meta Business Suite
-  preferred_skills: Google Search Console, Copywriting
-  description: We are seeking a detail-oriented Junior SEO & Content Coordinator to support our central marketing team of five. You will be responsible for the day-to-day maintenance of our digital presence, ensuring all content is optimized for search engines and 
+  id: jd_344 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: React, Python, PostgreSQL, Distributed Systems, System Design, Redux, CI/CD
+  preferred_skills: Kubernetes, Performance Monitoring
+  description: We are seeking a Senior Full-Stack Engineer to join our high-scale engineering team of twenty-five. You will be responsible for defining the architecture of our core financial products and ensuring that our systems can handle extreme traffic with hig
 
-  id: jd_342 | title: Senior Digital Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: SEO Architecture, Content Strategy, Salesforce, Marketo, Google Analytics, Tableau, Python
-  preferred_skills: Predictive Modeling, Leadership
-  description: We are looking for an experienced Senior Digital Marketing Manager to lead our global digital strategy and content operations. Our marketing department of twenty focuses on high-growth SaaS solutions, and we need a leader who can bridge the gap betwe
+  id: jd_345 | title: Principal Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: React, Python, FastAPI, PostgreSQL, Redis, Technical Leadership, Architecture
+  preferred_skills: GraphQL, Serverless
+  description: Our core infrastructure team is seeking a Principal Software Engineer to lead the technical direction of our next-generation web platforms. You will work with a group of thirty engineers to build reliable, high-throughput systems that power our globa
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1017 pairs total.
+Overall dataset so far: 1026 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  203  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  204  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  202  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  204  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  204  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  203  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  205  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  206  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  206  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  206  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1018   resume_340 × jd_340
-  pair_1019   resume_340 × jd_341
-  pair_1020   resume_340 × jd_342
-  pair_1021   resume_341 × jd_340
-  pair_1022   resume_341 × jd_341
-  pair_1023   resume_341 × jd_342
-  pair_1024   resume_342 × jd_340
-  pair_1025   resume_342 × jd_341
-  pair_1026   resume_342 × jd_342
+  pair_1027   resume_343 × jd_343
+  pair_1028   resume_343 × jd_344
+  pair_1029   resume_343 × jd_345
+  pair_1030   resume_344 × jd_343
+  pair_1031   resume_344 × jd_344
+  pair_1032   resume_344 × jd_345
+  pair_1033   resume_345 × jd_343
+  pair_1034   resume_345 × jd_344
+  pair_1035   resume_345 × jd_345
 
 ════════════════════════════════════
 OUTPUT FORMAT
