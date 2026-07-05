@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_373 | level: junior | exp: 0.5 yrs | raw_text: 263 words
-  skills: React Native, TypeScript, JavaScript, Jest
-  projects: QuickNotes, WeatherSnap
-  background: I am a motivated Mobile Development graduate with a strong passion for building cross-platform applications. During my final year at university, I completed a six-month intensive internship as a Mobile Developer at a small mobile agency with a team of five. In this role, I assisted in the developmen
+  id: resume_376 | level: middle | exp: 4.0 yrs | raw_text: 321 words
+  skills: Shopify Plus, Google Analytics, Merchandising, Operations Management, Inventory Management
+  projects: TrendPulse, AutoStock
+  background: I am a dedicated E-commerce Operations Manager with four years of hands-on experience in scaling online retail platforms and optimizing merchandising workflows. Before my current role, I served as an E-commerce Coordinator at a boutique retail agency, working within a close-knit team of five. There,
 
-  id: resume_374 | level: junior | exp: 0.8 yrs | raw_text: 269 words
-  skills: Flutter, Dart, Firebase, SQL
-  projects: BudgetTracker, ConnectHub
-  background: I am a recent software engineering graduate eager to launch my career in mobile application development. Throughout my academic career, I served as a Mobile Development Intern at a local tech startup for one year, working within a cross-functional team of six. My primary duties involved maintaining 
+  id: resume_377 | level: senior | exp: 8.0 yrs | raw_text: 301 words
+  skills: Salesforce Commerce Cloud, SAP S/4HANA, P&L Management, Marketplace Strategy, Data Analytics
+  projects: MarketBridge, OptimizedSearch
+  background: I am a Senior E-commerce Strategy Lead with eight years of experience building and optimizing large-scale digital retail ecosystems for major enterprise brands. Prior to my current role, I served as a Marketplace Operations Lead at a mid-sized consumer electronics firm, where I scaled our Amazon Ven
 
-  id: resume_375 | level: senior | exp: 8.5 yrs | raw_text: 268 words
-  skills: Swift, Kotlin, System Architecture, Performance Tuning
-  projects: CoreModule, AppOptimizer
-  background: I am a Senior Mobile Engineer and Technical Lead with eight years of experience architecting large-scale, high-performance mobile applications for global enterprises. In my most recent role as a Lead Mobile Engineer at a major retail corporation, I directed a team of twenty-five engineers, focusing 
+  id: resume_378 | level: senior | exp: 9.0 yrs | raw_text: 309 words
+  skills: Oracle NetSuite, Global Marketplace Management, SQL, Power BI, Strategic Merchandising
+  projects: SyncMaster, GlobalMerch
+  background: I am a Principal E-commerce Architect with nine years of experience specializing in high-performance digital retail platforms and complex global marketplace expansion. Before my principal role, I worked as a Senior Retail Systems Engineer, where I spearheaded the migration of legacy monolithic datab
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_373 | title: Mobile Applications Engineer | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: React Native, Flutter, JavaScript, TypeScript
-  preferred_skills: Swift, Kotlin
-  description: Our mobile engineering team of twelve is seeking an experienced Mobile Applications Engineer to help manage and grow our multi-platform retail footprint. We focus on optimizing daily business activities, ranging from catalog management to customer se
+  id: jd_376 | title: Junior E-commerce Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 217 words
+  required_skills: Shopify Plus, Merchandising, Operations Management, Inventory Management
+  preferred_skills: Excel, Google Analytics
+  description: Our e-commerce operations team of fifteen is seeking a highly motivated Junior E-commerce Operations Associate to help support our daily retail activities and maintain the integrity of our digital storefronts. This role is fundamental to our growth a
 
-  id: jd_374 | title: Senior Mobile Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Swift, Kotlin, System Architecture, Performance Tuning
-  preferred_skills: Micro-frontends, Cloud Integration
-  description: Our core mobile infrastructure team, consisting of thirty engineers, is looking for a Senior Mobile Systems Architect to oversee our high-traffic, mission-critical mobile systems. We specialize in building scalable, secure, and robust mobile architec
+  id: jd_377 | title: Junior E-commerce Support Specialist | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Shopify Plus, Merchandising, Operations Management
+  preferred_skills: Google Analytics, Inventory Management
+  description: Our digital retail team of twelve is looking for a Junior E-commerce Support Specialist to help us deliver seamless online shopping experiences. The team is responsible for providing operational support, maintaining our product listings, and ensuring
 
-  id: jd_375 | title: Lead Mobile Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 185 words
-  required_skills: Swift, Kotlin, System Architecture, Performance Tuning
-  preferred_skills: Automated Testing, Cloud Infrastructure
-  description: Our mobile technology group, comprising forty professionals, is seeking a Lead Mobile Infrastructure Engineer to architect our next-generation mobile ecosystem. We focus on building intelligent, scalable platforms that bridge the gap between our inte
+  id: jd_378 | title: Senior E-commerce Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: SAP S/4HANA, Operations Management, Global Marketplace Management, P&L Management, Strategic Merchandising
+  preferred_skills: Supply Chain Optimization, Data Analytics
+  description: Our central infrastructure group, consisting of twenty-five expert professionals, is seeking a Senior E-commerce Operations Lead to direct our vision for globally scalable, highly efficient retail operations. You will define the operational strategy 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1116 pairs total.
+Overall dataset so far: 1125 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  221  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  223  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  224  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  224  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  224  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  225  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  225  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  224  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  225  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  226  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1117   resume_373 × jd_373
-  pair_1118   resume_373 × jd_374
-  pair_1119   resume_373 × jd_375
-  pair_1120   resume_374 × jd_373
-  pair_1121   resume_374 × jd_374
-  pair_1122   resume_374 × jd_375
-  pair_1123   resume_375 × jd_373
-  pair_1124   resume_375 × jd_374
-  pair_1125   resume_375 × jd_375
+  pair_1126   resume_376 × jd_376
+  pair_1127   resume_376 × jd_377
+  pair_1128   resume_376 × jd_378
+  pair_1129   resume_377 × jd_376
+  pair_1130   resume_377 × jd_377
+  pair_1131   resume_377 × jd_378
+  pair_1132   resume_378 × jd_376
+  pair_1133   resume_378 × jd_377
+  pair_1134   resume_378 × jd_378
 
 ════════════════════════════════════
 OUTPUT FORMAT
