@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_325 | level: junior | exp: 1.0 yrs | raw_text: 257 words
-  skills: React, Html5, Css3, Javascript, Tailwind Css, Git
-  projects: QuickTask
-  background: I am a motivated frontend developer who recently completed a Bachelor of Science in Computer Science in 2025. During my final year, I completed a six-month internship at a small web development agency, working within a team of four developers. My primary responsibilities involved assisting in the cr
+  id: resume_328 | level: middle | exp: 4.0 yrs | raw_text: 251 words
+  skills: React Native, TypeScript, Flutter, Dart, Firebase, Swift
+  projects: FitTrack
+  background: I am a dedicated mobile developer with four years of hands-on experience building scalable cross-platform applications. My career began at a fast-paced technology startup where I worked for two years within a mobile team of six developers. I was primarily responsible for developing and maintaining f
 
-  id: resume_326 | level: junior | exp: 1.0 yrs | raw_text: 267 words
-  skills: React, Css, Javascript, Git, Responsive Design
-  projects: StyleFlow
-  background: Since graduating with a Bachelor of Science in Software Engineering in 2025, I have been focused on building dynamic frontend interfaces. During my six-month stint as a junior developer at a local startup with a team of three, I contributed to building user-facing forms and navigation menus using Re
+  id: resume_329 | level: senior | exp: 7.0 yrs | raw_text: 252 words
+  skills: Swift, Kotlin, Flutter, Dart, CI/CD, Architecture
+  projects: SafeStream
+  background: As a senior mobile architect with seven years of experience, I specialize in building robust, high-availability mobile solutions for enterprise clients. My journey started at a large enterprise where I spent three years focusing on native iOS development using Swift 5.0 and UIKit. I managed a team o
 
-  id: resume_327 | level: senior | exp: 8.0 yrs | raw_text: 260 words
-  skills: React, Typescript, Next.js, Tailwind Css, Jest, Tanstack Query, Aws Ecs, Webpack, Micro-frontends
-  projects: ArchCore
-  background: Over the past eight years, I have established myself as a senior frontend architect specializing in high-performance web applications using the React and Next.js ecosystem. In my most recent role at a large enterprise, I led a frontend team of twelve for three years, where we managed a complex dashb
+  id: resume_330 | level: senior | exp: 8.0 yrs | raw_text: 266 words
+  skills: React Native, TypeScript, Kotlin, Swift, Appium, Architecture
+  projects: DataSync Pro
+  background: With eight years of deep experience in the mobile development landscape, I have evolved from a junior contributor to a lead engineer overseeing multi-platform product suites. My career includes a three-year tenure at a mobile-first agency, where I developed advanced features for high-traffic social 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_325 | title: Frontend Developer | level: middle | min_exp: 3 yrs | raw_text: 199 words
-  required_skills: React, Typescript, Next.js, Tailwind Css
-  preferred_skills: Jest, Testing Library
-  description: Our web platform team of ten engineers is looking for a skilled Frontend Developer to assist in building and maintaining our customer-facing web application. We operate in a highly collaborative environment where the focus is on performance, accessib
+  id: jd_328 | title: Junior Mobile Developer | level: junior | min_exp: 1 yrs | raw_text: 200 words
+  required_skills: React Native, TypeScript, Redux, Firebase
+  preferred_skills: Git, Jira
+  description: Our mobile platform team of five developers is seeking a passionate Junior Mobile Developer to help us grow our customer-facing applications. The team focuses on creating accessible, performant, and engaging mobile experiences for users across the gl
 
-  id: jd_326 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: React, Typescript, Next.js, Tailwind Css, Tanstack Query, Webpack
-  preferred_skills: Aws, Jest
-  description: We are seeking a visionary Senior Frontend Engineer to lead our core product team of fifteen developers. Our platform handles significant traffic, requiring a high degree of architectural rigor, performance optimization, and scalable code design. In 
+  id: jd_329 | title: Associate Mobile Engineer | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: Flutter, Dart, JSON, Rest Api
+  preferred_skills: Swift, Kotlin
+  description: We are looking for an enthusiastic Associate Mobile Engineer to join our growing mobile development team of six. Our team builds essential productivity tools that help thousands of professionals manage their daily tasks more efficiently. In this role
 
-  id: jd_327 | title: Principal Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: React, Typescript, Next.js, Tailwind Css, Tanstack Query, Webpack, Micro-frontends
-  preferred_skills: Ci/Cd, Jest
-  description: Our engineering organization is looking for a Principal Frontend Architect to guide the future of our web technology stack. You will join a core leadership team of twenty, focusing on setting the technical strategy for our entire frontend ecosystem. 
+  id: jd_330 | title: Lead Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 208 words
+  required_skills: React Native, Swift, Kotlin, Ci/Cd, Architecture
+  preferred_skills: Kotlin Multiplatform, Appium
+  description: Our organization is seeking an expert Lead Mobile Engineer to take full ownership of our core product infrastructure. We manage a complex suite of mobile applications used by millions of users, requiring a team of fifteen developers to maintain high 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 972 pairs total.
+Overall dataset so far: 981 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  193  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  194  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  194  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  196  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  195  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  197  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  196  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  194  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  197  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  197  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_973    resume_325 × jd_325
-  pair_974    resume_325 × jd_326
-  pair_975    resume_325 × jd_327
-  pair_976    resume_326 × jd_325
-  pair_977    resume_326 × jd_326
-  pair_978    resume_326 × jd_327
-  pair_979    resume_327 × jd_325
-  pair_980    resume_327 × jd_326
-  pair_981    resume_327 × jd_327
+  pair_982    resume_328 × jd_328
+  pair_983    resume_328 × jd_329
+  pair_984    resume_328 × jd_330
+  pair_985    resume_329 × jd_328
+  pair_986    resume_329 × jd_329
+  pair_987    resume_329 × jd_330
+  pair_988    resume_330 × jd_328
+  pair_989    resume_330 × jd_329
+  pair_990    resume_330 × jd_330
 
 ════════════════════════════════════
 OUTPUT FORMAT
