@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_589 | level: middle | exp: 4.0 yrs | raw_text: 271 words
-  skills: Python, Scikit-learn, PyTorch, Pandas, AWS, XGBoost
-  projects: AutoFlow
-  background: Over the past four years, I have established a strong background in data science and machine learning, focusing on deploying scalable models in production environments. My career began at a fast-paced technology startup where I served as a Data Scientist for two years on a team of five. My responsib
+  id: resume_592 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Nmap, Burp Suite, Python, Bash, Linux, Iptables
+  projects: SecTrack
+  background: During my undergraduate studies and subsequent internship, I have cultivated a strong foundational interest in cybersecurity, specifically focusing on web application security and basic network monitoring. I recently completed a six-month internship at a fast-paced security startup where I was a mem
 
-  id: resume_590 | level: senior | exp: 7.5 yrs | raw_text: 274 words
-  skills: Python, PyTorch, TensorFlow, Kubernetes, Deep Learning, MLOps
-  projects: InsightGuard
-  background: With over seven years of professional experience, I have led multiple teams through the end-to-end development and deployment of complex machine learning systems. During my four-year tenure at a global financial enterprise as a Senior Data Scientist, I managed a team of twelve, overseeing the develo
+  id: resume_593 | level: middle | exp: 4.2 yrs | raw_text: 269 words
+  skills: Splunk, Kali Linux, Metasploit, Python, Go, Palo Alto
+  projects: LogGuard
+  background: Over the past four years, I have established a comprehensive background in information security, primarily focusing on enterprise-grade SIEM deployments and incident response within a large-scale financial technology agency. In my previous role as a Security Engineer, I worked within a team of fifte
 
-  id: resume_591 | level: senior | exp: 8.2 yrs | raw_text: 267 words
-  skills: Python, PyTorch, NLP, Distributed Training, Spark, Hugging Face
-  projects: NeuralBridge
-  background: Over the past eight years, I have cultivated deep expertise in machine learning research, large-scale data processing, and enterprise-wide AI strategy. Serving as a Technical Lead for a major technology firm, I directed a team of fifteen engineers in building natural language processing applications
+  id: resume_594 | level: middle | exp: 4.0 yrs | raw_text: 261 words
+  skills: Cisco ASA, Snort, Wireshark, Zeek, Python, C++
+  projects: NetShield
+  background: Throughout my four years of experience as a Network Security Specialist within a global telecommunications enterprise, I have developed deep expertise in network hardening, traffic analysis, and advanced intrusion detection systems. Working on a dedicated twenty-member security operations team, I wa
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_589 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 217 words
-  required_skills: Python, Pandas, Scikit-learn, SQL
-  preferred_skills: Git, Machine Learning
-  description: Our data science team of eight is seeking a Junior Data Scientist to join our efforts in developing predictive models for customer behavior. You will work in a collaborative environment alongside senior data scientists, product managers, and software
+  id: jd_592 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Linux, Nmap, Python, Bash
+  preferred_skills: Burp Suite, Iptables
+  description: Our growing cybersecurity team of eight professionals is seeking a motivated Junior Security Analyst to assist in the monitoring and defense of our organizational network. In this role, you will be part of a team dedicated to safeguarding our informa
 
-  id: jd_590 | title: Associate Machine Learning Engineer | level: junior | min_exp: 1 yrs | raw_text: 215 words
-  required_skills: Python, PyTorch, Machine Learning, Inference
-  preferred_skills: Docker, CI/CD
-  description: We are seeking an Associate Machine Learning Engineer to join our growing ML team of ten. This team specializes in building and maintaining highly scalable ML pipelines for our real-time recommendation engine. As an Associate ML Engineer, you will be
+  id: jd_593 | title: Senior Security Architect | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Splunk, Palo Alto, Python, Go, Metasploit, Kali Linux
+  preferred_skills: Kubernetes Security, Cloud Security
+  description: The Enterprise Security group is searching for an experienced Senior Security Architect to help define and implement our future AI-driven security infrastructure. As a key member of our team of forty specialists, you will lead high-impact projects fo
 
-  id: jd_591 | title: Senior Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Python, PyTorch, Distributed Systems, MLOps, System Architecture
-  preferred_skills: Model Quantization, Platform Strategy
-  description: Our enterprise AI group, composed of over forty researchers, engineers, and product specialists, is seeking a Senior Machine Learning Architect to define our future AI infrastructure. In this senior role, you will be responsible for defining the tech
+  id: jd_594 | title: Senior Network Security Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Cisco ASA, Snort, Zeek, Wireshark, Python, C++
+  preferred_skills: TLS 1.3, DNSSEC
+  description: Our enterprise network division is seeking a highly skilled Senior Network Security Lead to oversee our global network defense strategy. Composed of fifteen network and security engineers, our team manages high-performance traffic analysis, edge secu
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1764 pairs total.
+Overall dataset so far: 1773 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  354  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  353  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  351  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  352  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  354  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  354  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  354  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  355  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  354  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  356  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1765   resume_589 × jd_589
-  pair_1766   resume_589 × jd_590
-  pair_1767   resume_589 × jd_591
-  pair_1768   resume_590 × jd_589
-  pair_1769   resume_590 × jd_590
-  pair_1770   resume_590 × jd_591
-  pair_1771   resume_591 × jd_589
-  pair_1772   resume_591 × jd_590
-  pair_1773   resume_591 × jd_591
+  pair_1774   resume_592 × jd_592
+  pair_1775   resume_592 × jd_593
+  pair_1776   resume_592 × jd_594
+  pair_1777   resume_593 × jd_592
+  pair_1778   resume_593 × jd_593
+  pair_1779   resume_593 × jd_594
+  pair_1780   resume_594 × jd_592
+  pair_1781   resume_594 × jd_593
+  pair_1782   resume_594 × jd_594
 
 ════════════════════════════════════
 OUTPUT FORMAT
