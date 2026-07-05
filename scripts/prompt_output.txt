@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_457 | level: senior | exp: 8.5 yrs | raw_text: 260 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Terraform, Go, Rust, Distributed Systems
-  projects: DataSyncEngine
-  background: Over the past eight years, I have served as a Principal Database Engineer at a high-growth fintech enterprise, leading a team of twelve engineers responsible for maintaining petabyte-scale data infrastructure. My tenure began as a Senior Database Administrator where I managed 50+ PostgreSQL 12 insta
+  id: resume_460 | level: junior | exp: 0.5 yrs | raw_text: 255 words
+  skills: PyTorch, LangChain, ChromaDB, Python, NLP, Transformers
+  projects: TextSummarizerPro
+  background: During my recent internship as an AI Associate at a fast-paced technology startup, I supported a team of four engineers in developing natural language processing solutions. Over the course of six months, I was primarily responsible for cleaning and preprocessing massive text datasets, ensuring high-
 
-  id: resume_458 | level: senior | exp: 7.2 yrs | raw_text: 254 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Java, Prometheus, Grafana, Database Architecture
-  projects: QueryOptimizerX
-  background: During my seven-year career as a Lead Database Architect within a large-scale e-commerce agency, I have managed diverse database ecosystems that support critical business operations. My primary focus has been on high-throughput OLTP systems and advanced data modeling. While working with a team of ei
+  id: resume_461 | level: junior | exp: 0.75 yrs | raw_text: 274 words
+  skills: GPT-4, LangChain, FAISS, Python, AWS SageMaker, Kubernetes
+  projects: SemanticChat
+  background: In my capacity as a Junior NLP Engineer at an innovative software agency, I spent nine months working in a collaborative team of five to enhance our search-related machine learning models. I was tasked with integrating OpenAI's GPT-4 API into our internal portal, which involved designing effective p
 
-  id: resume_459 | level: senior | exp: 6.5 yrs | raw_text: 252 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Python, SaaS, Schema Validation
-  projects: TenantSharder
-  background: In my six-year tenure as a Senior Database Engineer at a SaaS enterprise, I have been deeply involved in architecting and maintaining massive data pipelines and storage layers. Leading a team of ten, I have been instrumental in the adoption of PostgreSQL 16 and MongoDB Atlas for our primary applicat
+  id: resume_462 | level: senior | exp: 8.5 yrs | raw_text: 250 words
+  skills: Llama 3, DeepSpeed, Kubernetes, Python, C++, RAG, Embeddings
+  projects: VectorScale
+  background: Over the past eight years, I have served as a Principal AI Engineer at a global enterprise, leading a cross-functional team of fifteen experts in developing production-grade generative AI applications. My journey started as an NLP Researcher where I specialized in transformer-based architectures, an
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_457 | title: Junior Database Associate | level: junior | min_exp: 1 yrs | raw_text: 195 words
-  required_skills: PostgreSQL, MongoDB, Sql, Data Modeling
-  preferred_skills: Redis, Cloud Computing
-  description: Our data infrastructure team, currently composed of five database engineers, is seeking a motivated Junior Database Associate to help maintain and monitor our core storage systems. We support a fast-paced product environment that relies heavily on re
+  id: jd_460 | title: NLP Engineer | level: middle | min_exp: 3 yrs | raw_text: 190 words
+  required_skills: PyTorch, LangChain, NLP, RAG, Embeddings, Python
+  preferred_skills: Kubernetes, Model Quantization
+  description: Our AI engineering team of twelve is seeking a mid-level NLP Engineer to help develop and maintain our generative AI applications. Our group is responsible for powering a suite of intelligent search and document analysis tools used by thousands of in
 
-  id: jd_458 | title: Associate Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: PostgreSQL, MongoDB, Sql, Data Modeling
-  preferred_skills: Redis, Python
-  description: The core engineering organization is looking for an Associate Database Engineer to join our growing data platform team. Our group of six engineers manages the storage layers for multiple internal products. This role is perfect for an engineer looking
+  id: jd_461 | title: Lead Generative AI Engineer | level: senior | min_exp: 6 yrs | raw_text: 180 words
+  required_skills: LLMs, RAG, DeepSpeed, Transformers, Kubernetes, Python, Embeddings
+  preferred_skills: Multi-modal AI, Performance Optimization
+  description: Our central AI division is looking for an elite Lead Generative AI Engineer to architect and lead the development of our next-generation LLM platforms. Our team of twenty engineers focuses on high-stakes, large-scale applications where accuracy, late
 
-  id: jd_459 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 191 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, Sql
-  preferred_skills: Terraform, Cloud Computing
-  description: Our platform team, which consists of ten engineers, is searching for a mid-level Database Engineer to help us design and maintain high-performance data storage solutions for our global SaaS product. You will be at the heart of our data operations, en
+  id: jd_462 | title: Principal AI Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
+  required_skills: Generative AI, RAG, Embeddings, Kubernetes, C++, Python, LLM Orchestration
+  preferred_skills: GPU Acceleration, Distributed Systems
+  description: Our architecture group is searching for a Principal AI Architect to drive the design of our global AI infrastructure. You will work within a team of fifteen, focusing on building scalable, resilient, and performant AI systems that support our core pr
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1368 pairs total.
+Overall dataset so far: 1377 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  274  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  275  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  271  →  expected this batch: 6 pairs (from seniority gaps below)
-  strong_match          existing:  273  →  expected this batch: 3 pairs (from seniority gaps below)
-  excellent_match       existing:  275  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:  274  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  275  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  277  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  276  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  275  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1369   resume_457 × jd_457
-  pair_1370   resume_457 × jd_458
-  pair_1371   resume_457 × jd_459
-  pair_1372   resume_458 × jd_457
-  pair_1373   resume_458 × jd_458
-  pair_1374   resume_458 × jd_459
-  pair_1375   resume_459 × jd_457
-  pair_1376   resume_459 × jd_458
-  pair_1377   resume_459 × jd_459
+  pair_1378   resume_460 × jd_460
+  pair_1379   resume_460 × jd_461
+  pair_1380   resume_460 × jd_462
+  pair_1381   resume_461 × jd_460
+  pair_1382   resume_461 × jd_461
+  pair_1383   resume_461 × jd_462
+  pair_1384   resume_462 × jd_460
+  pair_1385   resume_462 × jd_461
+  pair_1386   resume_462 × jd_462
 
 ════════════════════════════════════
 OUTPUT FORMAT
