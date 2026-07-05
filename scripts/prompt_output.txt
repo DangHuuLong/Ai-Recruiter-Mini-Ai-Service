@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_478 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: Shopify, Google Analytics 4, Excel, Marketing, Data Entry
-  projects: ShopStream
-  background: I am a recent Marketing graduate currently seeking my first full-time role within the e-commerce sector. During my university tenure, I completed an intensive internship as an E-commerce Operations Assistant at a boutique retail agency, where I worked on a team of five. My responsibilities included 
+  id: resume_481 | level: middle | exp: 4.0 yrs | raw_text: 275 words
+  skills: Splunk, Wireshark, Nessus, CrowdStrike Falcon, Firewall Management
+  projects: SecureFlow
+  background: Over the past four years, I have served as a Cybersecurity Analyst at a mid-sized enterprise, where I focused on threat detection and incident response for a team of twelve. My responsibilities included monitoring security events via Splunk Enterprise 9.0, analyzing network traffic with Wireshark, a
 
-  id: resume_479 | level: junior | exp: 0.5 yrs | raw_text: 269 words
-  skills: Excel, SQL, Inventory Management, Google Data Studio, Merchandising
-  projects: StockWatch
-  background: After graduating with a degree in Business Administration, I have focused my energy on kickstarting my career in e-commerce merchandising. My professional experience began with a six-month contract as a Junior Merchandising Coordinator at a regional retail startup, where I operated within a small, a
+  id: resume_482 | level: middle | exp: 3.5 yrs | raw_text: 252 words
+  skills: AWS, ELK Stack, Burp Suite, Metasploit, WAF
+  projects: CloudLock
+  background: I have spent the last three and a half years working as a Security Engineer within a high-growth tech startup environment, where I managed network security and cloud infrastructure hardening for a team of eight. My daily tasks involved maintaining our security infrastructure, specifically hardening 
 
-  id: resume_480 | level: senior | exp: 8.5 yrs | raw_text: 258 words
-  skills: Python, PostgreSQL, Kubernetes, AWS EKS, Kafka, Spark, AWS SageMaker, System Architecture
-  projects: ScaleRetail
-  background: Over the past eight years, I have served as a Senior E-commerce Systems Architect at a global retail enterprise, where I led technical strategy for our flagship marketplace operations. Managing a high-performance team of twenty, I directed the development of a proprietary order management system bui
+  id: resume_483 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: Cisco Firepower, Fortinet, QRadar, Python, PowerShell, Cobalt Strike, SOAR
+  projects: ShieldPoint
+  background: During my eight years in the cybersecurity industry, I have evolved from a network administrator into a Senior Information Security Architect at a global financial services enterprise. My career has focused on designing and defending complex network topologies, securing high-frequency trading platfo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_478 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 206 words
-  required_skills: E-commerce Operations, SQL, Excel, Salesforce Commerce Cloud, Inventory Management
-  preferred_skills: Python, Logistics
-  description: Our e-commerce operations team is currently looking for an experienced E-commerce Operations Specialist to join our mid-sized team of fifteen. We support the daily operations of our fast-growing online marketplace, focusing on inventory availability,
+  id: jd_481 | title: Associate Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 205 words
+  required_skills: Security Monitoring, SIEM, Splunk, Network Security, Wireshark
+  preferred_skills: Vulnerability Assessment, Nessus
+  description: Our security operations team is searching for an Associate Security Analyst to assist in the daily monitoring and triage of security alerts for our growing client base. Our team consists of ten analysts who are responsible for maintaining the integri
 
-  id: jd_479 | title: Senior E-commerce Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: System Architecture, Python, Kafka, Kubernetes, AWS, Distributed Systems
-  preferred_skills: Spark, Machine Learning
-  description: Our engineering department is looking for a Senior E-commerce Systems Architect to lead our technical strategy for marketplace scaling. Our team consists of thirty engineers working on a complex, distributed e-commerce platform that serves millions o
+  id: jd_482 | title: Junior Information Security Associate | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Security Governance, Compliance, SIEM, Endpoint Protection, Vulnerability Assessment
+  preferred_skills: Forensics, Splunk
+  description: We are seeking a motivated Junior Information Security Associate to support our information security governance and operations team. Our department of eight is responsible for safeguarding our corporate assets and ensuring that all systems comply wit
 
-  id: jd_480 | title: Lead E-commerce Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Backend Engineering, Python, PostgreSQL, Distributed Systems, Kafka, Spark
-  preferred_skills: Kubernetes, Cloud Infrastructure
-  description: The engineering team is seeking a Lead E-commerce Engineer to join our technical leadership group. Our team of twenty-five is responsible for the core infrastructure and high-traffic APIs of our marketplace. You will be responsible for overseeing the
+  id: jd_483 | title: Senior Security Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Security Architecture, SIEM, QRadar, Network Security, Firewall Management, SOAR
+  preferred_skills: Cloud Security, Leadership
+  description: Our information security department is looking for a Senior Security Architect to lead the design and implementation of our next-generation defensive infrastructure. Our team of twenty-five is responsible for securing global network operations, cloud
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1431 pairs total.
+Overall dataset so far: 1440 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  285  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  286  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  287  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  286  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  287  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  289  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  288  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  287  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  287  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  289  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1432   resume_478 × jd_478
-  pair_1433   resume_478 × jd_479
-  pair_1434   resume_478 × jd_480
-  pair_1435   resume_479 × jd_478
-  pair_1436   resume_479 × jd_479
-  pair_1437   resume_479 × jd_480
-  pair_1438   resume_480 × jd_478
-  pair_1439   resume_480 × jd_479
-  pair_1440   resume_480 × jd_480
+  pair_1441   resume_481 × jd_481
+  pair_1442   resume_481 × jd_482
+  pair_1443   resume_481 × jd_483
+  pair_1444   resume_482 × jd_481
+  pair_1445   resume_482 × jd_482
+  pair_1446   resume_482 × jd_483
+  pair_1447   resume_483 × jd_481
+  pair_1448   resume_483 × jd_482
+  pair_1449   resume_483 × jd_483
 
 ════════════════════════════════════
 OUTPUT FORMAT
