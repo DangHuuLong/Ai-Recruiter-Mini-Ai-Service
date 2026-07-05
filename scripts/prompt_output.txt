@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_415 | level: junior | exp: 0.5 yrs | raw_text: 264 words
-  skills: Recruiting, ATS, Onboarding, HRIS, Excel
-  projects: SourcingHub, OnboardFlow
-  background: I am a motivated recent Human Resources graduate with a passion for talent acquisition and organizational development. My professional journey began during a six-month internship at a mid-sized staffing agency where I supported a team of four recruiters in managing high-volume candidate sourcing. Du
+  id: resume_418 | level: junior | exp: 0.5 yrs | raw_text: 279 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker
+  projects: DataStream, AuthHelper
+  background: I am a passionate software developer specializing in backend API development with a strong foundation in Python and Node.js. After graduating, I completed an internship at a technology startup where I worked with a team of five engineers to develop RESTful APIs. During this six-month period, I utili
 
-  id: resume_416 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Talent Acquisition, ATS, HRIS, Onboarding
-  projects: InterviewSync, EmployeePulse
-  background: I am an enthusiastic Human Resources assistant with a strong focus on talent acquisition and administrative support. My recent experience includes a six-month contract role at a fast-paced technology startup, where I worked with a small, agile HR team of three to assist in streamlining our recruitin
+  id: resume_419 | level: senior | exp: 8.5 yrs | raw_text: 256 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kubernetes, Terraform
+  projects: ScaleQuery, SafeDeploy
+  background: As a senior backend engineer with over eight years of experience, I have led the architecture and development of high-traffic API backends across multiple industries. In my most recent role at a large-scale enterprise, I managed a team of fifteen developers and oversaw the transition from monolithic
 
-  id: resume_417 | level: senior | exp: 8.5 yrs | raw_text: 269 words
-  skills: Talent Acquisition, HRIS, Workday, Greenhouse, Strategic Planning, Data Analytics
-  projects: TalentVision, ComplianceArmor
-  background: I am a senior Talent Acquisition leader with over eight years of experience specializing in scaling global teams, implementing advanced HRIS ecosystems, and driving strategic recruiting initiatives. Throughout my career at major enterprise companies, I have led cross-functional HR teams of up to fif
+  id: resume_420 | level: senior | exp: 9.0 yrs | raw_text: 260 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kubernetes, Terraform, OAuth2
+  projects: FastAuth, AutoScaleDB
+  background: With nine years of experience in backend systems development, I have established a track record of building performant, scalable API infrastructures for high-growth tech platforms. In my current position as a Principal Engineer at a global technology firm, I lead a team of twenty developers responsi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_415 | title: HRIS and Talent Specialist | level: middle | min_exp: 3 yrs | raw_text: 220 words
-  required_skills: Workday, Greenhouse, HRIS, Talent Acquisition
-  preferred_skills: Tableau, Compliance Reporting
-  description: Our People Operations team is looking for a versatile HRIS and Talent Specialist to bridge the gap between our recruitment processes and data management. The team consists of twelve professionals dedicated to delivering a seamless employee experience
+  id: jd_418 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL
+  preferred_skills: Docker, Git
+  description: Our backend team is expanding, and we are looking for a Junior Backend Engineer to help us maintain and improve our core API services. The team of six developers works in a highly collaborative environment focused on delivering clean, well-tested cod
 
-  id: jd_416 | title: Senior Talent Acquisition Manager | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: Greenhouse, Talent Acquisition, Data Analytics, Strategic Planning
-  preferred_skills: Python, SQL, Workday
-  description: We are seeking a high-level Senior Talent Acquisition Manager to lead our recruitment strategy for the engineering and data departments. Our team of ten is currently focused on scaling our technical organization to support our rapidly growing product
+  id: jd_419 | title: Mid-Level Backend Developer | level: middle | min_exp: 3 yrs | raw_text: 200 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Redis
+  preferred_skills: Kubernetes, Terraform
+  description: The API engineering team is looking for a Mid-Level Backend Developer to help us design and scale our backend services. Our team of twelve manages a large ecosystem of microservices that handle high-volume traffic for our platform. Your responsibilit
 
-  id: jd_417 | title: Principal HRIS Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Workday, HRIS, Strategic Planning, Data Architecture
-  preferred_skills: SQL, Tableau, Privacy Compliance
-  description: Our HR Technology department is looking for a Principal HRIS Architect to lead the design and implementation of our global talent and HR infrastructure. The team comprises fifteen engineers and HR specialists focused on maintaining a robust, scalable
+  id: jd_420 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kubernetes, Terraform
+  preferred_skills: Distributed Systems, Security
+  description: Our platform engineering team is looking for a Senior Backend Architect to lead the design and implementation of our global API infrastructure. The team of fifteen engineers is responsible for building a robust, high-performance system that supports 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1242 pairs total.
+Overall dataset so far: 1251 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  247  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  248  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  250  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  249  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  248  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  251  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:  250  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  250  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  250  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  250  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1243   resume_415 × jd_415
-  pair_1244   resume_415 × jd_416
-  pair_1245   resume_415 × jd_417
-  pair_1246   resume_416 × jd_415
-  pair_1247   resume_416 × jd_416
-  pair_1248   resume_416 × jd_417
-  pair_1249   resume_417 × jd_415
-  pair_1250   resume_417 × jd_416
-  pair_1251   resume_417 × jd_417
+  pair_1252   resume_418 × jd_418
+  pair_1253   resume_418 × jd_419
+  pair_1254   resume_418 × jd_420
+  pair_1255   resume_419 × jd_418
+  pair_1256   resume_419 × jd_419
+  pair_1257   resume_419 × jd_420
+  pair_1258   resume_420 × jd_418
+  pair_1259   resume_420 × jd_419
+  pair_1260   resume_420 × jd_420
 
 ════════════════════════════════════
 OUTPUT FORMAT
