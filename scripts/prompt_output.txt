@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_481 | level: middle | exp: 4.0 yrs | raw_text: 275 words
-  skills: Splunk, Wireshark, Nessus, CrowdStrike Falcon, Firewall Management
-  projects: SecureFlow
-  background: Over the past four years, I have served as a Cybersecurity Analyst at a mid-sized enterprise, where I focused on threat detection and incident response for a team of twelve. My responsibilities included monitoring security events via Splunk Enterprise 9.0, analyzing network traffic with Wireshark, a
+  id: resume_484 | level: junior | exp: 0.5 yrs | raw_text: 282 words
+  skills: React Native, JavaScript, Swift, UIKit, REST APIs
+  projects: WeatherSwift, TaskBuddy
+  background: I am a recent Computer Science graduate passionate about crafting intuitive mobile experiences. During my final year, I completed a six-month internship as a Junior Mobile Developer at a small local startup, working within a team of three. My core responsibilities included building UI components usi
 
-  id: resume_482 | level: middle | exp: 3.5 yrs | raw_text: 252 words
-  skills: AWS, ELK Stack, Burp Suite, Metasploit, WAF
-  projects: CloudLock
-  background: I have spent the last three and a half years working as a Security Engineer within a high-growth tech startup environment, where I managed network security and cloud infrastructure hardening for a team of eight. My daily tasks involved maintaining our security infrastructure, specifically hardening 
+  id: resume_485 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: Kotlin, Swift, Jetpack Compose, SwiftUI, Fastlane, OAuth2
+  projects: SecureFlow, SpeedDeploy
+  background: Over the past four years, I have worked as a Mobile Software Engineer at a fast-paced retail agency, where I managed core features for a high-traffic e-commerce application serving over 50,000 daily active users. My responsibilities included architecting scalable features using Kotlin for Android an
 
-  id: resume_483 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: Cisco Firepower, Fortinet, QRadar, Python, PowerShell, Cobalt Strike, SOAR
-  projects: ShieldPoint
-  background: During my eight years in the cybersecurity industry, I have evolved from a network administrator into a Senior Information Security Architect at a global financial services enterprise. My career has focused on designing and defending complex network topologies, securing high-frequency trading platfo
+  id: resume_486 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Kotlin Multiplatform, Flutter, Swift, Kotlin, SQLDelight, Room, BLoC, Riverpod
+  projects: ScaleCore, OfflineSync
+  background: With over eight years of experience, I have served as a Senior Mobile Tech Lead at a global fintech enterprise, overseeing the entire mobile development lifecycle for an application with over two million monthly users. My team of twenty engineers focused on building a modular, high-performance archi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_481 | title: Associate Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 205 words
-  required_skills: Security Monitoring, SIEM, Splunk, Network Security, Wireshark
-  preferred_skills: Vulnerability Assessment, Nessus
-  description: Our security operations team is searching for an Associate Security Analyst to assist in the daily monitoring and triage of security alerts for our growing client base. Our team consists of ten analysts who are responsible for maintaining the integri
+  id: jd_484 | title: Associate Mobile Developer | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: React Native, JavaScript, TypeScript, Mobile UI/UX
+  preferred_skills: Swift, Kotlin
+  description: Our mobile development team is seeking a talented Associate Mobile Developer to help us build and maintain our growing suite of consumer applications. Our team of ten developers is committed to delivering seamless cross-platform experiences using Rea
 
-  id: jd_482 | title: Junior Information Security Associate | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: Security Governance, Compliance, SIEM, Endpoint Protection, Vulnerability Assessment
-  preferred_skills: Forensics, Splunk
-  description: We are seeking a motivated Junior Information Security Associate to support our information security governance and operations team. Our department of eight is responsible for safeguarding our corporate assets and ensuring that all systems comply wit
+  id: jd_485 | title: Senior Mobile Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Flutter, Kotlin Multiplatform, Swift, Kotlin, Mobile Architecture
+  preferred_skills: SQLDelight, Performance Monitoring
+  description: We are looking for a visionary Senior Mobile Systems Architect to lead our technical strategy for a massive, high-scale mobile ecosystem. Our mobile department comprises thirty engineers building performance-critical applications used by millions, an
 
-  id: jd_483 | title: Senior Security Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Security Architecture, SIEM, QRadar, Network Security, Firewall Management, SOAR
-  preferred_skills: Cloud Security, Leadership
-  description: Our information security department is looking for a Senior Security Architect to lead the design and implementation of our next-generation defensive infrastructure. Our team of twenty-five is responsible for securing global network operations, cloud
+  id: jd_486 | title: Lead Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  required_skills: Swift, Kotlin, Mobile Performance, CI/CD, Networking
+  preferred_skills: Flutter, SQLDelight
+  description: Our engineering department is seeking an experienced Lead Mobile Engineer to take ownership of our core platform development and high-traffic mobile APIs. Our team of twenty-five is responsible for the performance, reliability, and security of our mo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1440 pairs total.
+Overall dataset so far: 1449 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  289  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  288  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  287  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  287  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  289  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  289  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  290  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  289  →  expected this batch: 1 pairs (from seniority gaps below)
+  strong_match          existing:  291  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  290  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1441   resume_481 × jd_481
-  pair_1442   resume_481 × jd_482
-  pair_1443   resume_481 × jd_483
-  pair_1444   resume_482 × jd_481
-  pair_1445   resume_482 × jd_482
-  pair_1446   resume_482 × jd_483
-  pair_1447   resume_483 × jd_481
-  pair_1448   resume_483 × jd_482
-  pair_1449   resume_483 × jd_483
+  pair_1450   resume_484 × jd_484
+  pair_1451   resume_484 × jd_485
+  pair_1452   resume_484 × jd_486
+  pair_1453   resume_485 × jd_484
+  pair_1454   resume_485 × jd_485
+  pair_1455   resume_485 × jd_486
+  pair_1456   resume_486 × jd_484
+  pair_1457   resume_486 × jd_485
+  pair_1458   resume_486 × jd_486
 
 ════════════════════════════════════
 OUTPUT FORMAT
