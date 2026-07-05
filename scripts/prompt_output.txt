@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_385 | level: junior | exp: 0.5 yrs | raw_text: 265 words
-  skills: Python, Pandas, NumPy, Matplotlib, Scikit-Learn
-  projects: PricePredict, SentimentScan
-  background: I am a passionate Data Science graduate with a strong foundation in statistical modeling and machine learning workflows. During my final year at university, I completed a six-month intensive internship as a Junior Data Analyst at a fast-paced retail startup with a data team of three. In this role, I
+  id: resume_388 | level: middle | exp: 4.0 yrs | raw_text: 259 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Zustand, Playwright
+  projects: RapidUI, DataGridPro
+  background: I am a dedicated Frontend Developer with four years of professional experience building responsive web applications and scalable user interfaces. During my last two years as a Frontend Engineer at a fast-growing tech startup with a product team of ten, I specialized in architecting complex interface
 
-  id: resume_386 | level: junior | exp: 0.3 yrs | raw_text: 255 words
-  skills: Python, Pandas, Plotly, Scikit-Learn, TensorFlow
-  projects: AlphaForecast, ClassifyDoc
-  background: I am a recent Data Science graduate with a focus on machine learning algorithms and statistical programming. During my final year, I completed a three-month research internship at an analytics consultancy working within a team of four. My primary responsibilities involved pre-processing large-scale 
+  id: resume_389 | level: senior | exp: 7.0 yrs | raw_text: 272 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, Webpack, React Query
+  projects: ScaleFront, AuthGuard
+  background: I am a Principal Frontend Engineer with seven years of experience in enterprise-level web application development, specializing in React ecosystems, complex state management, and high-performance micro-frontends. In my recent role as a Lead Frontend Engineer at a multinational financial services fir
 
-  id: resume_387 | level: senior | exp: 8.0 yrs | raw_text: 261 words
-  skills: PyTorch, Python, PySpark, Kubernetes, FastAPI
-  projects: DeepPath, PredictGuard
-  background: I am a Principal Machine Learning Engineer with eight years of experience building scalable production AI systems, deep learning architectures, and large-scale data pipelines. Previously, I served as a Lead Data Scientist at a major multinational tech enterprise, where I directed a team of twelve in
+  id: resume_390 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, WebSockets, GraphQL, Performance Optimization
+  projects: AlertMaster, HardenedUI
+  background: I am a Senior Frontend Tech Lead with eight years of experience building high-traffic, accessible, and performant web applications. Currently, I am a Lead Software Engineer at a large retail platform, leading a team of twelve engineers to redefine our shopping experience. My duties involve architect
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_385 | title: Data Scientist (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 197 words
-  required_skills: Python, Scikit-Learn, Pandas
-  preferred_skills: PyTorch, SQL
-  description: Our data science team of fifteen is seeking a collaborative and experienced Data Scientist to help build our core predictive analytics platform. We serve high-traffic services, and our team focuses on delivering scalable machine learning models that 
+  id: jd_388 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 205 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Git, Testing
+  description: Our web engineering team of eight is looking for a Junior Frontend Developer to help monitor, identify, and report on UI improvements within our growing consumer application. This role is perfect for a motivated individual eager to build a career in 
 
-  id: jd_386 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: Python, PyTorch, PySpark, Kubernetes
-  preferred_skills: Distributed Systems, GPU Optimization
-  description: Our AI infrastructure team of twenty is seeking a Senior Machine Learning Engineer to lead the architecture of our next-generation deep learning platform. You will be responsible for defining the strategy for high-performance model training and infer
+  id: jd_389 | title: Associate Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: React, Tailwind CSS, Next.js
+  preferred_skills: CI/CD, Git
+  description: Our digital interface team of six is searching for an Associate Frontend Engineer to help manage our daily development cycle and ensure the integrity of our web interfaces. In this entry-level role, you will be part of a collaborative team responsibl
 
-  id: jd_387 | title: Lead Data Scientist | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Python, PyTorch, PySpark
-  preferred_skills: Reinforcement Learning, Cloud Native ML
-  description: Our research and innovation team, comprising thirty professionals, is searching for a Lead Data Scientist to head our advanced AI initiatives. We focus on developing cutting-edge models that solve complex business challenges, requiring deep knowledge
+  id: jd_390 | title: Senior Frontend Architecture Lead | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: React, Next.js, TypeScript, Tailwind CSS
+  preferred_skills: Performance Optimization, Architecture
+  description: Our global engineering group is seeking a Senior Frontend Architecture Lead to guide our strategy for a highly scalable, secure, and resilient web infrastructure. You will manage our frontend technology roadmap, design advanced rendering workflows, a
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1152 pairs total.
+Overall dataset so far: 1161 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  229  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  230  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  230  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  232  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  231  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  233  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  232  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  230  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  233  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  233  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1153   resume_385 × jd_385
-  pair_1154   resume_385 × jd_386
-  pair_1155   resume_385 × jd_387
-  pair_1156   resume_386 × jd_385
-  pair_1157   resume_386 × jd_386
-  pair_1158   resume_386 × jd_387
-  pair_1159   resume_387 × jd_385
-  pair_1160   resume_387 × jd_386
-  pair_1161   resume_387 × jd_387
+  pair_1162   resume_388 × jd_388
+  pair_1163   resume_388 × jd_389
+  pair_1164   resume_388 × jd_390
+  pair_1165   resume_389 × jd_388
+  pair_1166   resume_389 × jd_389
+  pair_1167   resume_389 × jd_390
+  pair_1168   resume_390 × jd_388
+  pair_1169   resume_390 × jd_389
+  pair_1170   resume_390 × jd_390
 
 ════════════════════════════════════
 OUTPUT FORMAT
