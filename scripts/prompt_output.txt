@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_526 | level: middle | exp: 4.0 yrs | raw_text: 254 words
-  skills: Greenhouse, Workday, BambooHR, Talent Acquisition, Onboarding, HRIS
-  projects: OnboardSuccess
-  background: With over four years of experience as a Human Resources Coordinator and later a Talent Acquisition Specialist, I have developed a robust skill set in full-cycle recruiting and HRIS management. I spent three years at a high-growth tech startup, where I managed a team of two recruiters and supported a
+  id: resume_529 | level: junior | exp: 0.5 yrs | raw_text: 269 words
+  skills: Google Analytics 4, Meta Ads Manager, SEO, Canva, WordPress
+  projects: ContentBoost
+  background: I am a motivated Marketing Graduate with a strong foundation in digital content creation, social media management, and basic SEO principles. During my recent internship at a boutique marketing agency, I worked on a team of four to manage social media accounts for three small business clients. My pri
 
-  id: resume_527 | level: middle | exp: 4.0 yrs | raw_text: 255 words
-  skills: Lever, LinkedIn Recruiter, SAP SuccessFactors, HRIS, Recruitment Strategy
-  projects: DiversityDrive
-  background: Over the past four years, I have worked as a Talent Acquisition Partner and HR Generalist in a fast-paced agency setting, successfully filling over one hundred roles across various technical departments. My experience encompasses end-to-end recruitment, from job requisition creation to final offer n
+  id: resume_530 | level: middle | exp: 4.5 yrs | raw_text: 258 words
+  skills: Google Ads, Google Analytics 4, Semrush, HubSpot, SEO, PPC
+  projects: ScaleUpDigital
+  background: As a Digital Marketing Specialist with four years of experience, I have successfully executed multi-channel growth campaigns for enterprise-level clients. During my three years at a leading digital marketing agency, I managed a team of five and oversaw a yearly media spend of over two hundred thousa
 
-  id: resume_528 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: Workday, Oracle HCM, Greenhouse, SQL, People Analytics, Talent Strategy
-  projects: GlobalTalentCloud
-  background: As a Senior Talent Acquisition Manager with seven years of experience, I have led large-scale recruitment strategies and HR system implementations within global enterprises. During my career, I have managed teams of ten, including recruiters, coordinators, and HR analysts, supporting a global headco
+  id: resume_531 | level: senior | exp: 8.5 yrs | raw_text: 263 words
+  skills: Google Marketing Platform, Adobe Analytics, Ahrefs, Tableau, Python, SEO, Performance Marketing
+  projects: GlobalGrowthOmni
+  background: With over eight years of experience in digital strategy and performance marketing, I have successfully scaled global digital ecosystems for enterprise organizations. In my last role as a Senior Digital Strategist at a global firm, I led a cross-functional department of fifteen, overseeing integrated
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_526 | title: Junior Talent Coordinator | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Talent Acquisition, Greenhouse, Onboarding, HRIS
-  preferred_skills: BambooHR, Microsoft Office Suite
-  description: Our recruitment team of eight is focused on providing an excellent candidate experience while managing our rapid growth. We are looking for a junior talent coordinator to support our daily operations and ensure our recruitment processes remain effici
+  id: jd_529 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: SEO, Social Media Management, Google Analytics 4, Content Strategy
+  preferred_skills: WordPress, Canva
+  description: Our marketing team of ten professionals is focused on building brand awareness and driving user acquisition across multiple channels. We are looking for a junior digital marketing associate to support our daily operational tasks, manage social media 
 
-  id: jd_527 | title: Junior Human Resources Associate | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: HRIS, Onboarding, Talent Acquisition, Data Management
-  preferred_skills: Microsoft Excel, Workday
-  description: The human resources team is a group of ten dedicated professionals committed to supporting our employees throughout their career lifecycle. We are looking for a junior HR associate who can help us manage our growing operations and ensure that our HR 
+  id: jd_530 | title: Senior Performance Marketing Lead | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Performance Marketing, SEO, PPC, Advanced Analytics, Strategic Planning
+  preferred_skills: Adobe Analytics, SQL
+  description: The performance marketing department is a core team of twenty professionals dedicated to driving revenue growth through data-informed strategies. We are looking for a senior performance marketing lead to oversee our global paid acquisition strategy, 
 
-  id: jd_528 | title: Senior HRIS and Talent Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Workday, HRIS, Talent Acquisition, People Analytics, Strategy
-  preferred_skills: SQL, Project Management
-  description: Our global HR team of forty professionals is looking for a senior HRIS and talent lead to drive our technical strategy and oversee our complex recruitment infrastructure. Your work involves architecting our integrated HR ecosystem, managing high-stak
+  id: jd_531 | title: Principal Marketing Strategist | level: senior | min_exp: 6 yrs | raw_text: 185 words
+  required_skills: Digital Marketing Strategy, SEO, Content Strategy, Google Marketing Platform, Predictive Analytics
+  preferred_skills: Data Automation, Global Marketing
+  description: Within our thirty-person marketing organization, the strategy team is responsible for driving the technical and creative roadmap for all digital operations. We are looking for a principal marketing strategist to guide our long-term digital growth, ov
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1575 pairs total.
+Overall dataset so far: 1584 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  316  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  315  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  314  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  314  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  316  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  316  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  317  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  316  →  expected this batch: 1 pairs (from seniority gaps below)
+  strong_match          existing:  318  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  317  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1576   resume_526 × jd_526
-  pair_1577   resume_526 × jd_527
-  pair_1578   resume_526 × jd_528
-  pair_1579   resume_527 × jd_526
-  pair_1580   resume_527 × jd_527
-  pair_1581   resume_527 × jd_528
-  pair_1582   resume_528 × jd_526
-  pair_1583   resume_528 × jd_527
-  pair_1584   resume_528 × jd_528
+  pair_1585   resume_529 × jd_529
+  pair_1586   resume_529 × jd_530
+  pair_1587   resume_529 × jd_531
+  pair_1588   resume_530 × jd_529
+  pair_1589   resume_530 × jd_530
+  pair_1590   resume_530 × jd_531
+  pair_1591   resume_531 × jd_529
+  pair_1592   resume_531 × jd_530
+  pair_1593   resume_531 × jd_531
 
 ════════════════════════════════════
 OUTPUT FORMAT
