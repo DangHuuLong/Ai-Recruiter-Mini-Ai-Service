@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_448 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: AWS, Kubernetes, Docker, Terraform, Ansible, Jenkins, Linux, CI/CD
-  projects: CloudScale-Auto
-  background: I am a dedicated DevOps Engineer with four years of experience optimizing cloud infrastructure for high-growth tech environments. In my current role at a mid-sized software startup, I manage a team of two supporting our core application platform. I am responsible for maintaining our CI/CD pipelines 
+  id: resume_451 | level: junior | exp: 0.8 yrs | raw_text: 269 words
+  skills: AWS, Docker, GitHub Actions, Python, PostgreSQL, Prometheus, Grafana, Bash
+  projects: CloudMonitor
+  background: During my first year as a Junior DevOps Engineer at a fast-paced technology startup consisting of a ten-person engineering team, I focused on foundational cloud operations and developer support. My primary responsibilities included managing routine maintenance tasks on our AWS infrastructure, which 
 
-  id: resume_449 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: AWS, Kubernetes, Docker, Terraform, Istio, Python, Go, CI/CD
-  projects: Global-Deploy
-  background: I am a Senior Cloud Infrastructure Engineer with eight years of extensive experience building and leading large-scale cloud operations. In my most recent position at a global enterprise, I led a cross-functional DevOps team of twelve professionals. I spearheaded the migration of our monolithic legac
+  id: resume_452 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: AWS, Kubernetes, Terraform, Helm, ELK Stack, Datadog, Python, Go, HashiCorp Vault, Istio
+  projects: SecureDeploy
+  background: Over the past four years as a DevOps Engineer within a mid-sized software agency, I have managed complex cloud infrastructure for various clients. Leading a team of four junior engineers, I have been responsible for architecting scalable AWS environments, ensuring high availability, and managing sec
 
-  id: resume_450 | level: senior | exp: 7.0 yrs | raw_text: 263 words
-  skills: AWS, Kubernetes, Docker, Terraform, Jenkins, Linux, eBPF, Security
-  projects: SecOps-Guard
-  background: I am a Principal DevOps Architect with seven years of deep specialization in cloud-native infrastructure design and distributed systems. At my current enterprise firm, I manage a team of fifteen engineers focused on the security and scalability of our public-facing platforms. I focus on developing m
+  id: resume_453 | level: middle | exp: 4.0 yrs | raw_text: 250 words
+  skills: AWS, Terraform, Kubernetes, CloudFormation, PostgreSQL, Python, Docker, AWS Config
+  projects: CostOptimizer
+  background: During my four years as a DevOps Engineer at an enterprise-level financial services firm, I have specialized in building highly resilient cloud-native infrastructure. Working within a cross-functional platform team of fifteen developers and ops engineers, I focus on the automation of deployment pipe
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_448 | title: Junior DevOps Associate | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: AWS, Docker, Kubernetes, Linux, CI/CD
-  preferred_skills: Terraform, Jenkins
-  description: We are looking for a motivated Junior DevOps Associate to join our growing infrastructure team of five. Our team manages the underlying cloud architecture for a suite of internal business applications. In this role, you will assist in day-to-day oper
+  id: jd_451 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 210 words
+  required_skills: AWS, Docker, Git, CI/CD
+  preferred_skills: Terraform, Python
+  description: We are seeking a motivated Junior DevOps Engineer to join our growing infrastructure team of five. Our team manages the underlying cloud platform that supports our web applications, ensuring high availability and developer productivity. In this role,
 
-  id: jd_449 | title: Associate Cloud Engineer | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: AWS, Docker, Kubernetes, Terraform, CI/CD
-  preferred_skills: Linux, Jenkins
-  description: We are searching for an Associate Cloud Engineer to support our platform engineering group of eight. Our team is tasked with modernizing the infrastructure that powers our consumer-facing platform. You will be expected to support senior engineers in 
+  id: jd_452 | title: Senior DevOps Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: AWS, Terraform, Kubernetes, Istio, HashiCorp Vault, ELK Stack, Datadog
+  preferred_skills: Go, PostgreSQL
+  description: We are looking for a Senior DevOps Lead to guide our platform architecture and oversee the stability of our high-traffic global infrastructure. Our team consists of twelve engineers responsible for a complex multi-region setup. The person in this rol
 
-  id: jd_450 | title: Senior Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: AWS, Kubernetes, Docker, Terraform, CI/CD, Linux, Strategic Planning
-  preferred_skills: eBPF, FinOps
-  description: We are seeking a highly experienced Senior Platform Architect to lead our infrastructure group of twenty. Our team manages the complex cloud landscape for a global enterprise platform experiencing rapid traffic growth. You will be responsible for def
+  id: jd_453 | title: Senior Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: AWS, Terraform, Kubernetes, CloudFormation, AWS Config
+  preferred_skills: Python, Linux
+  description: Our team is seeking a Senior Infrastructure Engineer to lead the design and implementation of our next-generation cloud infrastructure. The team is currently twenty people strong, encompassing DevOps, SRE, and platform engineering roles. We are focus
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1341 pairs total.
+Overall dataset so far: 1350 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  268  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  268  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  267  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  268  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  270  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  268  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  269  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  271  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  270  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  272  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1342   resume_448 × jd_448
-  pair_1343   resume_448 × jd_449
-  pair_1344   resume_448 × jd_450
-  pair_1345   resume_449 × jd_448
-  pair_1346   resume_449 × jd_449
-  pair_1347   resume_449 × jd_450
-  pair_1348   resume_450 × jd_448
-  pair_1349   resume_450 × jd_449
-  pair_1350   resume_450 × jd_450
+  pair_1351   resume_451 × jd_451
+  pair_1352   resume_451 × jd_452
+  pair_1353   resume_451 × jd_453
+  pair_1354   resume_452 × jd_451
+  pair_1355   resume_452 × jd_452
+  pair_1356   resume_452 × jd_453
+  pair_1357   resume_453 × jd_451
+  pair_1358   resume_453 × jd_452
+  pair_1359   resume_453 × jd_453
 
 ════════════════════════════════════
 OUTPUT FORMAT
