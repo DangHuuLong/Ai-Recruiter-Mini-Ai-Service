@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_409 | level: junior | exp: 0.5 yrs | raw_text: 271 words
-  skills: PostgreSQL, MongoDB, Python, Git, Data Modeling
-  projects: SchemaGuard, DataAutomator
-  background: I am a recent Computer Science graduate with a primary focus on database administration and backend development. During my six-month internship at a small software development startup, I worked with a team of three engineers to maintain our internal analytics platform and ensure data integrity acros
+  id: resume_412 | level: senior | exp: 7.5 yrs | raw_text: 266 words
+  skills: Financial Modeling, Regulatory Reporting, Risk Assessment, Python, SQL, SAP, Excel, VBA
+  projects: ModelOptimized, RiskCheck
+  background: I am a senior Finance professional with over seven years of experience in the fintech sector, specializing in financial modeling, regulatory reporting, and risk assessment. During my four-year tenure at a high-growth fintech startup, I led a team of five analysts to overhaul our liquidity management
 
-  id: resume_410 | level: junior | exp: 0.75 yrs | raw_text: 287 words
-  skills: PostgreSQL, Redis, SQL, Database Monitoring
-  projects: CacheFlow, LogAnalyzer
-  background: I am a motivated engineering graduate with a strong interest in data engineering and database performance optimization. In my first role at a small tech agency, which lasted nine months, I worked with a team of four to manage a variety of customer databases and maintain service-level agreements. My 
+  id: resume_413 | level: senior | exp: 8.0 yrs | raw_text: 260 words
+  skills: Financial Reporting, Tax Compliance, Data Visualization, NetSuite, Power BI, SQL, Python
+  projects: AutoTax, ReportStream
+  background: As a seasoned Finance and Accounting expert in the fintech industry, I have accumulated eight years of professional experience building financial systems and ensuring strict regulatory compliance. My career began at a global fintech agency where I served for three years, managing accounts receivable
 
-  id: resume_411 | level: senior | exp: 8.0 yrs | raw_text: 274 words
-  skills: PostgreSQL, MongoDB, Redis, Python, Terraform, Kubernetes, Data Modeling, Query Optimization
-  projects: DataHorizon, ScaleStore
-  background: I am an experienced Database Engineer with eight years of industry expertise in managing large-scale, high-availability database environments. During my four-year tenure at a global e-commerce enterprise, I led a database team of eight, responsible for the architecture and performance of a multi-ter
+  id: resume_414 | level: senior | exp: 9.0 yrs | raw_text: 264 words
+  skills: Financial Strategy, Regulatory Compliance, Machine Learning, SAP, Python, SQL, Tableau
+  projects: CompliancePulse, CashflowMapper
+  background: I am an accomplished Fintech Finance professional with nine years of experience in financial strategy, reporting, and regulatory compliance. My background spans roles in fast-paced startup and large-scale enterprise environments. In my current role at a digital payments startup, I lead a finance tea
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_409 | title: Database Engineer (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 198 words
-  required_skills: PostgreSQL, Redis, MongoDB, SQL, Data Modeling
-  preferred_skills: Python, AWS
-  description: Our data team is looking for a talented Database Engineer to manage our growing database infrastructure. The team consists of fifteen members, and we focus on providing reliable, high-performance data storage solutions for our core platform. As a mid
+  id: jd_412 | title: Junior Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Excel, SQL, Accounting Principles, Regulatory Reporting
+  preferred_skills: QuickBooks, Data Entry
+  description: Our finance operations team is currently looking for a motivated Junior Finance Associate to assist in the daily reconciliation and regulatory reporting tasks. The team currently consists of eight specialists who manage financial data for our global 
 
-  id: jd_410 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
-  required_skills: PostgreSQL, MongoDB, Redis, Distributed Systems, Data Modeling, Query Optimization
-  preferred_skills: Kubernetes, Terraform
-  description: Our infrastructure group is seeking a Senior Database Architect to lead our data strategy and manage our enterprise-scale database ecosystem. Our team of twenty professionals handles massive data volumes for a global customer base. In this senior rol
+  id: jd_413 | title: Associate Finance Analyst | level: junior | min_exp: 1 yrs | raw_text: 213 words
+  required_skills: Excel, SQL, Financial Modeling, Regulatory Reporting
+  preferred_skills: Python, Tableau
+  description: We are searching for a sharp Associate Finance Analyst to join our busy finance department and help us analyze the performance of our digital asset platform. The team of ten works at the intersection of finance and technology, ensuring that our repor
 
-  id: jd_411 | title: Lead Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: PostgreSQL, Redis, MongoDB, Data Modeling, Query Optimization, Distributed Systems
-  preferred_skills: Terraform, SRE Principles
-  description: We are searching for a Lead Database Engineer to steer the technical strategy of our core database platforms. As a senior member of a thirty-person engineering department, you will define how our systems scale to handle thousands of requests per seco
+  id: jd_414 | title: Mid-Level Financial Analyst | level: middle | min_exp: 3 yrs | raw_text: 200 words
+  required_skills: Python, SQL, Excel, Financial Modeling, Regulatory Reporting
+  preferred_skills: SAP, Machine Learning
+  description: Our finance strategy team is looking for a Mid-Level Financial Analyst to help us optimize our capital management and financial forecasting processes. The team of twelve supports our expanding core platform, working closely with engineering, product,
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1224 pairs total.
+Overall dataset so far: 1233 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  243  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  246  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  244  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  245  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  246  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  247  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  248  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  244  →  expected this batch: 6 pairs (from seniority gaps below)
+  strong_match          existing:  246  →  expected this batch: 3 pairs (from seniority gaps below)
+  excellent_match       existing:  248  →  expected this batch: 0 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1225   resume_409 × jd_409
-  pair_1226   resume_409 × jd_410
-  pair_1227   resume_409 × jd_411
-  pair_1228   resume_410 × jd_409
-  pair_1229   resume_410 × jd_410
-  pair_1230   resume_410 × jd_411
-  pair_1231   resume_411 × jd_409
-  pair_1232   resume_411 × jd_410
-  pair_1233   resume_411 × jd_411
+  pair_1234   resume_412 × jd_412
+  pair_1235   resume_412 × jd_413
+  pair_1236   resume_412 × jd_414
+  pair_1237   resume_413 × jd_412
+  pair_1238   resume_413 × jd_413
+  pair_1239   resume_413 × jd_414
+  pair_1240   resume_414 × jd_412
+  pair_1241   resume_414 × jd_413
+  pair_1242   resume_414 × jd_414
 
 ════════════════════════════════════
 OUTPUT FORMAT
