@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import random
 import re
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -147,6 +148,33 @@ def load_session() -> dict:
 
 def save_session(data: dict) -> None:
     SESSION_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def auto_commit_batch() -> None:
+    """Stage and commit this batch's dataset files after a successful pair save.
+
+    Scoped to the specific files this script writes (not `git add .`) so it never
+    sweeps up unrelated in-progress edits elsewhere in the repo — e.g. this script
+    being edited, or other uncommitted work in the working tree.
+    """
+    files = [RESUMES_PATH, JDS_PATH, PAIRS_PATH, TEMP_INPUT, PROMPT_OUTPUT, SESSION_FILE]
+    try:
+        subprocess.run(
+            ["git", "add", "--", *[str(f) for f in files]],
+            cwd=PROJECT_ROOT, check=True, capture_output=True, text=True,
+        )
+        result = subprocess.run(
+            ["git", "commit", "-m", "feat: add new job descriptions, resumes and CV-JD pairs"],
+            cwd=PROJECT_ROOT, capture_output=True, text=True,
+        )
+        if result.returncode == 0:
+            print(f"\n  ✓ Committed to git")
+        else:
+            print(f"\n  [!] git commit skipped: {(result.stdout or result.stderr).strip()}")
+    except subprocess.CalledProcessError as e:
+        print(f"\n  [!] git add failed: {(e.stderr or str(e)).strip()}")
+    except FileNotFoundError:
+        print(f"\n  [!] git not found on PATH — skipped auto-commit")
 
 # ── stats ──────────────────────────────────────────────────────────────────────
 
@@ -1071,6 +1099,7 @@ def action_save() -> None:
         TEMP_INPUT.write_text("", encoding="utf-8")
         save_session({"state": "idle"})
 
+        auto_commit_batch()
         show_stats()
 
 # ── main loop ─────────────────────────────────────────────────────────────────
