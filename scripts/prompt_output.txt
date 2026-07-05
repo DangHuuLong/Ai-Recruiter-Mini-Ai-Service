@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_550 | level: middle | exp: 4.0 yrs | raw_text: 290 words
-  skills: SAP ERP, SQL, Tableau, Python, Inventory Management, Procurement
-  projects: FlowOptimize
-  background: I am a Supply Chain Analyst with four years of experience optimizing procurement processes and managing complex inventory systems. During my three years at an enterprise manufacturing firm, I worked within a logistics team of ten, where I was primarily responsible for analyzing demand forecasting mo
+  id: resume_553 | level: junior | exp: 0.5 yrs | raw_text: 264 words
+  skills: Microsoft Excel, QuickBooks Online, Python, SQLite, Financial Reporting, Data Entry
+  projects: AccountPath
+  background: As a recent finance graduate starting my career, I have focused on building a solid foundation in accounting principles and financial reporting within a fast-paced environment. During my internship at a local fintech startup, I worked on a team of five accountants to streamline monthly reconciliatio
 
-  id: resume_551 | level: senior | exp: 8.5 yrs | raw_text: 263 words
-  skills: Oracle NetSuite, SAP HANA, SQL Server, Power BI, Python, Logistics Strategy, Procurement
-  projects: SupplyChainSync
-  background: As a Senior Logistics Manager with eight years of extensive experience, I specialize in spearheading global supply chain strategies and building resilient procurement infrastructures. In my most recent role at a global retail corporation, I led a cross-functional logistics team of twenty-five, where
+  id: resume_554 | level: junior | exp: 0.3 yrs | raw_text: 274 words
+  skills: Google Sheets, SQL, Python, Financial Accounting, Regulatory Compliance, Invoicing
+  projects: LedgerScan
+  background: After completing my academic studies in 2026, I have dedicated myself to pursuing a career in fintech accounting, specifically focusing on regulatory compliance and basic financial analysis. In my initial role at a small fintech agency, I operated as part of a three-person finance team where I gaine
 
-  id: resume_552 | level: senior | exp: 9.0 yrs | raw_text: 257 words
-  skills: Microsoft Dynamics 365, SQL, R, Inventory Management, Procurement, Vendor Management
-  projects: VendorTrust
-  background: I am a Senior Procurement and Inventory Lead with nine years of experience, passionate about driving cost-efficiency and securing high-reliability supply chains for complex industrial products. During my five years at an enterprise technology firm, I worked as part of a high-performance procurement 
+  id: resume_555 | level: senior | exp: 8.5 yrs | raw_text: 267 words
+  skills: Python, SQL Server, Tableau, SAP S/4HANA, Bloomberg Terminal, Power BI, Financial Modeling, Risk Compliance
+  projects: FinanceCore 2.0
+  background: I am a senior finance lead with over seven years of professional experience driving financial strategy, risk compliance, and complex modeling within the fintech sector. My most recent role was at a global fintech enterprise where I led a team of 12 analysts responsible for the entire fiscal oversigh
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_550 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: SAP ERP, Inventory Management, Procurement, Microsoft Excel
-  preferred_skills: SQL, Logistics
-  description: Our operations team is seeking a Junior Supply Chain Analyst to help monitor our logistics flow and support inventory procurement. The team consists of eight analysts who manage a wide array of systems to ensure the integrity of our global inventory 
+  id: jd_553 | title: Financial Analyst | level: middle | min_exp: 3 yrs | raw_text: 221 words
+  required_skills: Financial Analysis, SQL, Microsoft Excel, Reconciliation, Reporting
+  preferred_skills: Python, Payment Processing
+  description: We are looking for a mid-level Financial Analyst to join our expanding accounting department of 15 professionals. Our team is responsible for the financial health of a high-volume payment processing platform. You will be tasked with performing regula
 
-  id: jd_551 | title: Associate Inventory Coordinator | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Inventory Management, Procurement, Microsoft Excel, SQL
-  preferred_skills: Python, Oracle NetSuite
-  description: We are looking for an Associate Inventory Coordinator to join our growing logistics team. Our team is responsible for managing both our internal warehouse stock and customer-facing delivery queues, and we currently have five members working in a fast
+  id: jd_554 | title: Senior Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 211 words
+  required_skills: Financial Strategy, SAP S/4HANA, Python, Financial Modeling, Reporting
+  preferred_skills: Power BI, Risk Management
+  description: Our finance organization is seeking a Senior Financial Controller to provide strategic leadership for our global treasury and reporting functions. In this role, you will lead a highly specialized team of eight financial experts focused on maintaining
 
-  id: jd_552 | title: Senior Supply Chain Lead | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: SAP HANA, Oracle NetSuite, Inventory Management, Procurement, Python, Power BI
-  preferred_skills: SQL, Automation
-  description: We are seeking an experienced Senior Supply Chain Lead to oversee our enterprise procurement strategy and global logistics. Our team consists of twelve high-level supply chain professionals dedicated to proactive network planning, cost-optimization, 
+  id: jd_555 | title: Principal Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 220 words
+  required_skills: Financial Architecture, Python, SQL, ERP Systems, Reporting
+  preferred_skills: Digital Assets, Compliance
+  description: We are looking for a Principal Financial Systems Architect to join our central finance engineering team of 20 people. Our mission is to build the next generation of automated financial reporting systems that support our rapidly growing digital assets
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1647 pairs total.
+Overall dataset so far: 1656 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  330  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  330  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  327  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  330  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  330  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  330  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  331  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  331  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  332  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  332  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1648   resume_550 × jd_550
-  pair_1649   resume_550 × jd_551
-  pair_1650   resume_550 × jd_552
-  pair_1651   resume_551 × jd_550
-  pair_1652   resume_551 × jd_551
-  pair_1653   resume_551 × jd_552
-  pair_1654   resume_552 × jd_550
-  pair_1655   resume_552 × jd_551
-  pair_1656   resume_552 × jd_552
+  pair_1657   resume_553 × jd_553
+  pair_1658   resume_553 × jd_554
+  pair_1659   resume_553 × jd_555
+  pair_1660   resume_554 × jd_553
+  pair_1661   resume_554 × jd_554
+  pair_1662   resume_554 × jd_555
+  pair_1663   resume_555 × jd_553
+  pair_1664   resume_555 × jd_554
+  pair_1665   resume_555 × jd_555
 
 ════════════════════════════════════
 OUTPUT FORMAT
