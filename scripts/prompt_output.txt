@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_595 | level: middle | exp: 4.0 yrs | raw_text: 266 words
-  skills: Python, Django, FastAPI, JavaScript, TypeScript, React, PostgreSQL, AWS
-  projects: DataStream
-  background: Over the past four years, I have worked as a Full-Stack Developer, primarily focusing on Python-based backends and React-driven frontends. My first role was at a fast-growing e-commerce startup, where I spent two years on a team of six engineers building customer-facing dashboards. During this perio
+  id: resume_598 | level: junior | exp: 0.8 yrs | raw_text: 277 words
+  skills: Shopify, Microsoft Excel, Zendesk, Canva, Inventory Management
+  projects: InventoryFlow
+  background: As a recent graduate with a passion for e-commerce operations, I have spent the last year refining my understanding of digital marketplaces through an intensive internship at a boutique retail startup. During this ten-month tenure, I worked alongside a small team of four professionals, where I assis
 
-  id: resume_596 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: Python, FastAPI, GraphQL, React, Next.js, Kubernetes, Redis, PostgreSQL
-  projects: SecureNode
-  background: As a Senior Full-Stack Engineer with eight years of industry experience, I have led major product initiatives within both enterprise and startup environments. During my four-year tenure at a large-scale fintech enterprise as a Lead Developer, I managed a team of ten engineers, overseeing the migrati
+  id: resume_599 | level: junior | exp: 0.5 yrs | raw_text: 253 words
+  skills: Shopify, Adobe Photoshop, Google Trends, Data Analysis, Merchandising
+  projects: TrendScout
+  background: Having recently completed my degree, I am entering the workforce with a focused interest in digital merchandising and marketplace growth. During my recent six-month internship at a mid-sized fashion agency, I collaborated with a team of six to support daily marketplace operations. My main responsibi
 
-  id: resume_597 | level: senior | exp: 7.0 yrs | raw_text: 261 words
-  skills: Python, FastAPI, React, Terraform, AWS, PostgreSQL, Redis, TypeScript
-  projects: CloudScale
-  background: With over seven years of professional experience, I have cultivated deep expertise as a Full-Stack Tech Lead specializing in Python and React ecosystems. At my most recent role within an international technology agency, I led a multidisciplinary team of fifteen, responsible for designing and deliver
+  id: resume_600 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: SAP Retail, Oracle NetSuite, SQL, Tableau, Python, Supply Chain Management, Demand Forecasting
+  projects: GlobalSync
+  background: With over eight years of experience in large-scale e-commerce operations, I have developed deep expertise in optimizing supply chain logistics and marketplace strategy. In my most recent role as a Lead Retail Operations Manager at a major enterprise, I directed a team of twenty staff to oversee the 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_595 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Python, Django, React, JavaScript
-  preferred_skills: PostgreSQL, AWS
-  description: We are looking for a enthusiastic Junior Web Developer to join our product team of five. The team is dedicated to building and maintaining user-friendly web applications that help small businesses manage their inventory more efficiently. This is an e
+  id: jd_598 | title: Retail Operations Associate | level: middle | min_exp: 3 yrs | raw_text: 212 words
+  required_skills: SAP Retail, Tableau, Inventory Management, Data Analysis
+  preferred_skills: SQL, Logistics
+  description: Our operations team of fifteen is looking for a Retail Operations Associate to help manage our rapidly growing marketplace footprint. You will play a crucial role in the daily efficiency of our e-commerce platforms, ensuring that our inventory data i
 
-  id: jd_596 | title: Junior Full-Stack Associate | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Python, FastAPI, React, TypeScript
-  preferred_skills: Redis, Docker
-  description: Our web engineering team of eight is seeking an eager Junior Full-Stack Associate to assist in building our next-generation customer engagement platform. As a team that values innovation and clean code, we focus on delivering high-quality user experi
+  id: jd_599 | title: Senior Marketplace Strategist | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: SQL, Python, Oracle NetSuite, Demand Forecasting, Marketplace Strategy
+  preferred_skills: SAP Retail, Supply Chain Management
+  description: The central merchandising department is seeking a Senior Marketplace Strategist to lead our global marketplace expansion effort. Our team of forty oversees a portfolio of complex international channels, and we need an expert to architect our replenis
 
-  id: jd_597 | title: Senior Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, FastAPI, React, Next.js, PostgreSQL, Redis, TypeScript
-  preferred_skills: Kubernetes, AWS
-  description: The engineering department is looking for a Senior Software Engineer to join our core product team of thirty specialists. Our mission is to build scalable, high-performance financial services platforms that handle millions of transactions daily. In t
+  id: jd_600 | title: Lead Retail Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: SQL, Python, SAP Retail, Oracle NetSuite, Retail Architecture
+  preferred_skills: Tableau, Demand Forecasting
+  description: Our supply chain and operations organization is looking for a Lead Retail Architect to design and implement our next-generation enterprise retail systems. We manage a complex landscape of omnichannel data and need someone who can unify our disparate 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1782 pairs total.
+Overall dataset so far: 1791 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  356  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  358  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  355  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  356  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  357  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  356  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  359  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  358  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1783   resume_595 × jd_595
-  pair_1784   resume_595 × jd_596
-  pair_1785   resume_595 × jd_597
-  pair_1786   resume_596 × jd_595
-  pair_1787   resume_596 × jd_596
-  pair_1788   resume_596 × jd_597
-  pair_1789   resume_597 × jd_595
-  pair_1790   resume_597 × jd_596
-  pair_1791   resume_597 × jd_597
+  pair_1792   resume_598 × jd_598
+  pair_1793   resume_598 × jd_599
+  pair_1794   resume_598 × jd_600
+  pair_1795   resume_599 × jd_598
+  pair_1796   resume_599 × jd_599
+  pair_1797   resume_599 × jd_600
+  pair_1798   resume_600 × jd_598
+  pair_1799   resume_600 × jd_599
+  pair_1800   resume_600 × jd_600
 
 ════════════════════════════════════
 OUTPUT FORMAT
