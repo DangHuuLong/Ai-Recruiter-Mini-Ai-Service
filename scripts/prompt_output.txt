@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_562 | level: middle | exp: 4.0 yrs | raw_text: 285 words
-  skills: Jira, Confluence, Figma, Amplitude, SQL, Agile, A/B Testing
-  projects: Streamline
-  background: I am a product-focused professional with four years of experience driving development roadmaps for high-growth tech platforms. In my most recent position as a Product Manager at a fast-paced fintech startup, I led a cross-functional team of eight, including developers and UX designers, to launch a m
+  id: resume_565 | level: junior | exp: 0.5 yrs | raw_text: 251 words
+  skills: QuickBooks, Excel, Python, GAAP, IFRS
+  projects: FinPath
+  background: I am a detail-oriented finance graduate with a passion for fintech operations and regulatory reporting. During my final year at university, I completed an internship at a boutique financial services startup as a Junior Analyst, where I assisted a team of four in maintaining financial records and sup
 
-  id: resume_563 | level: senior | exp: 7.5 yrs | raw_text: 250 words
-  skills: Productboard, Scrum, Python, PostgreSQL, Looker, Strategy, Stakeholder Management
-  projects: GlobalScale
-  background: I am a strategic Product Lead with seven years of experience delivering complex technology solutions within large enterprise environments. Throughout my career, I have specialized in bridging technical requirements with executive stakeholder expectations to build scalable product roadmaps. At a prom
+  id: resume_566 | level: junior | exp: 0.7 yrs | raw_text: 269 words
+  skills: Xero, Excel, SQL, Payroll Management, Budget Analysis
+  projects: LedgerFlow
+  background: As a recent accounting graduate, I am highly motivated to pursue a career in fintech, specifically focusing on financial reporting, budget analysis, and regulatory compliance. Throughout my undergraduate studies, I worked as a Student Assistant for a mid-sized accounting agency, where I supported a 
 
-  id: resume_564 | level: senior | exp: 8.2 yrs | raw_text: 276 words
-  skills: Jira, Swagger, Java, Docker, Kubernetes, Tableau, Product Strategy
-  projects: VisionEngine
-  background: I am a seasoned Principal Product Manager with eight years of experience defining product roadmaps and leading engineering-heavy product initiatives. During my time at a global tech firm, I managed a team of 25 engineers and designers, focusing on the delivery of AI-driven analytics tools. My day-to
+  id: resume_567 | level: senior | exp: 8.5 yrs | raw_text: 256 words
+  skills: SAP S/4HANA, NetSuite, Python, SQL, AML/KYC Compliance, Financial Modeling
+  projects: ComplianceCore
+  background: I am a highly experienced Financial Controller and Lead Analyst with over eight years of experience managing complex accounting operations within high-growth fintech enterprises. I have extensive expertise in building robust financial modeling systems, leading statutory reporting, and ensuring rigor
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_562 | title: Junior Product Associate | level: junior | min_exp: 1 yrs | raw_text: 208 words
-  required_skills: Jira, Agile, Confluence, Figma
-  preferred_skills: User Story Mapping, Communication
-  description: Our product team is looking for a Junior Product Associate to support our ongoing growth and help streamline our agile delivery processes. The team consists of 12 people working on a high-traffic consumer application that serves millions of users. In
+  id: jd_565 | title: Financial Operations Associate | level: middle | min_exp: 3 yrs | raw_text: 213 words
+  required_skills: NetSuite, Excel, Financial Reporting, GAAP, Ledger Reconciliation
+  preferred_skills: SQL, Automation
+  description: Our finance team is seeking a Financial Operations Associate to join our growing unit of 20 professionals. We are currently scaling our operations and need someone to handle core accounting functions, ledger reconciliation, and statutory financial re
 
-  id: jd_563 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Jira, Confluence, Agile, Amplitude
-  preferred_skills: User Research, Data Analysis
-  description: Our product department is seeking an energetic Associate Product Manager to join our growing team of 10 people. Our mission is to enhance our platform's usability by delivering frequent, high-impact feature updates. You will be responsible for defini
+  id: jd_566 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: SAP S/4HANA, Financial Modeling, AML/KYC Compliance, Systems Architecture, Python
+  preferred_skills: Cloud Architecture, Risk Mitigation
+  description: We are looking for a Senior Financial Systems Architect to lead the design and implementation of our next-generation financial reporting and compliance infrastructure. Our team of 25 finance and data experts manages a complex, global payment ecosyste
 
-  id: jd_564 | title: Senior Technical Product Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Product Strategy, Jira, Swagger, Microservices, API Strategy
-  preferred_skills: Cloud Infrastructure, Engineering Collaboration
-  description: We are seeking a highly experienced Senior Technical Product Lead to direct our engineering and product efforts for our core infrastructure platform. Our team of 20 specialists is responsible for maintaining the reliability, performance, and scalabil
+  id: jd_567 | title: Head of Financial Integrity & Compliance | level: senior | min_exp: 6 yrs | raw_text: 213 words
+  required_skills: SAP S/4HANA, Financial Reporting, Compliance Strategy, Risk Management, Python
+  preferred_skills: Leadership, Predictive Analytics
+  description: Our firm is seeking a Head of Financial Integrity & Compliance to oversee our central finance department of 30 professionals. Our team is tasked with ensuring total financial transparency, implementing robust risk controls, and managing statutory com
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1683 pairs total.
+Overall dataset so far: 1692 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  336  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  338  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  335  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  337  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  337  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  336  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  339  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  339  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  339  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  339  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1684   resume_562 × jd_562
-  pair_1685   resume_562 × jd_563
-  pair_1686   resume_562 × jd_564
-  pair_1687   resume_563 × jd_562
-  pair_1688   resume_563 × jd_563
-  pair_1689   resume_563 × jd_564
-  pair_1690   resume_564 × jd_562
-  pair_1691   resume_564 × jd_563
-  pair_1692   resume_564 × jd_564
+  pair_1693   resume_565 × jd_565
+  pair_1694   resume_565 × jd_566
+  pair_1695   resume_565 × jd_567
+  pair_1696   resume_566 × jd_565
+  pair_1697   resume_566 × jd_566
+  pair_1698   resume_566 × jd_567
+  pair_1699   resume_567 × jd_565
+  pair_1700   resume_567 × jd_566
+  pair_1701   resume_567 × jd_567
 
 ════════════════════════════════════
 OUTPUT FORMAT
