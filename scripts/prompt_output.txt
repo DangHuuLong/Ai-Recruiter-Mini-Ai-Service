@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_472 | level: junior | exp: 0.5 yrs | raw_text: 280 words
-  skills: Meta Business Suite, Google Analytics 4, Canva, WordPress, Excel, SEO
-  projects: ContentOptimizer
-  background: During my recent internship at a boutique marketing agency, I supported a team of four in executing social media campaigns and basic SEO tasks for local retail clients. I spent six months managing Facebook and Instagram content calendars, utilizing Meta Business Suite to schedule posts and track eng
+  id: resume_475 | level: middle | exp: 4.0 yrs | raw_text: 270 words
+  skills: SAP ERP, Python, SQL, Inventory Management, Procurement, Demand Forecasting
+  projects: InventorySync
+  background: Over the past four years, I have worked as a Supply Chain Analyst at a mid-sized manufacturing enterprise, where I managed inventory levels and procurement workflows for a team of eight. My core responsibilities included optimizing reorder points, coordinating with global logistics partners to reduc
 
-  id: resume_473 | level: junior | exp: 0.8 yrs | raw_text: 254 words
-  skills: HubSpot CRM, Mailchimp, Google Analytics 4, WordPress, Copywriting
-  projects: EmailTrack
-  background: As a marketing assistant intern at a fast-growing tech startup, I spent the last year working closely with a digital marketing team of six to execute content initiatives and email campaigns. My primary responsibilities included writing blog posts based on SEO research, managing email newsletters in 
+  id: resume_476 | level: senior | exp: 8.5 yrs | raw_text: 260 words
+  skills: SAP S/4HANA, PostgreSQL, Kafka, AWS SageMaker, Python, Logistics Engineering
+  projects: GlobalFlow
+  background: In my eight years as a Principal Logistics Engineer at a large retail enterprise, I have spearheaded large-scale digital transformations for our global supply chain infrastructure. Leading a cross-functional team of twelve, I managed the integration of our complex procurement and logistics systems, 
 
-  id: resume_474 | level: senior | exp: 8.0 yrs | raw_text: 283 words
-  skills: Salesforce Marketing Cloud, Adobe Analytics, Python, AWS SageMaker, SEO, SQL
-  projects: GlobalReach
-  background: Over the past eight years, I have served as a Senior Digital Marketing Strategist at a leading global retail enterprise, where I led a high-performing digital marketing team of twenty. My expertise lies in architecting complex SEO and content strategies that scale across multiple regions. I successf
+  id: resume_477 | level: senior | exp: 7.5 yrs | raw_text: 250 words
+  skills: SAP S/4HANA, Python, PostgreSQL, Docker, Spark, Supply Chain Architecture
+  projects: ProcurementNexus
+  background: With over seven years of professional experience as a Senior Supply Chain Architect, I have been instrumental in designing and implementing next-generation logistics systems for global retail platforms. At my previous enterprise-level firm, I managed a team of fifteen engineers and analysts, oversee
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_472 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: SEO, SEMrush, Google Search Console, Google Analytics 4, Social Media Marketing
-  preferred_skills: Python, Content Strategy
-  description: Our digital marketing department is growing, and we are seeking a dedicated Digital Marketing Specialist to join our team of fifteen. This role focuses on executing multi-channel digital strategies, managing SEO efforts, and tracking content performa
+  id: jd_475 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Supply Chain Operations, Inventory Management, SAP ERP, Excel
+  preferred_skills: Procurement, Data Entry
+  description: Our operations team is seeking a motivated Junior Supply Chain Associate to support our inventory management and procurement efforts. Our team consists of ten professionals dedicated to ensuring that our supply chain runs smoothly across all regional
 
-  id: jd_473 | title: Senior SEO Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: Technical SEO, Python, SQL, BigQuery, Data Analysis
-  preferred_skills: Machine Learning, Cloud Infrastructure
-  description: We are looking for a highly technical Senior SEO Engineer to lead our search engine optimization strategy and infrastructure. Our team of twelve is responsible for managing the technical SEO, crawl optimization, and structured data implementation for
+  id: jd_476 | title: Junior Logistics Analyst | level: junior | min_exp: 1 yrs | raw_text: 187 words
+  required_skills: Logistics Analytics, Supply Chain Operations, Excel, SAP
+  preferred_skills: Transportation Management, Data Visualization
+  description: We are looking for a detail-oriented Junior Logistics Analyst to join our team of twelve. This team is responsible for optimizing our last-mile delivery network and ensuring that customer orders are fulfilled on time. Your primary day-to-day responsi
 
-  id: jd_474 | title: Principal Digital Marketing Architect | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Marketing Technology Architecture, Salesforce Marketing Cloud, Adobe Analytics, Data Pipeline Design, Python
-  preferred_skills: AWS SageMaker, Real-time Analytics
-  description: Our digital transformation team is seeking a visionary Principal Digital Marketing Architect to own our global marketing technology stack. Our team of twenty focuses on integrating cutting-edge data science and marketing automation tools to drive cus
+  id: jd_477 | title: Principal Supply Chain Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Supply Chain Architecture, SAP S/4HANA, Python, Kafka, Distributed Systems
+  preferred_skills: Docker, Kubernetes
+  description: Our supply chain engineering department is seeking a Principal Supply Chain Architect to lead the design of our next-generation logistics technology stack. Our team of twenty is responsible for managing complex procurement, inventory, and distributed
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1413 pairs total.
+Overall dataset so far: 1422 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  281  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  283  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  283  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  283  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  283  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  285  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  285  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  283  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  284  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  285  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1414   resume_472 × jd_472
-  pair_1415   resume_472 × jd_473
-  pair_1416   resume_472 × jd_474
-  pair_1417   resume_473 × jd_472
-  pair_1418   resume_473 × jd_473
-  pair_1419   resume_473 × jd_474
-  pair_1420   resume_474 × jd_472
-  pair_1421   resume_474 × jd_473
-  pair_1422   resume_474 × jd_474
+  pair_1423   resume_475 × jd_475
+  pair_1424   resume_475 × jd_476
+  pair_1425   resume_475 × jd_477
+  pair_1426   resume_476 × jd_475
+  pair_1427   resume_476 × jd_476
+  pair_1428   resume_476 × jd_477
+  pair_1429   resume_477 × jd_475
+  pair_1430   resume_477 × jd_476
+  pair_1431   resume_477 × jd_477
 
 ════════════════════════════════════
 OUTPUT FORMAT
