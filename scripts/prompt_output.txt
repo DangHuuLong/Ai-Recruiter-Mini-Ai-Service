@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_493 | level: middle | exp: 4.0 yrs | raw_text: 253 words
-  skills: SAP ERP, SQL, Python, Excel, Warehouse Management
-  projects: StockFlow, Demand Forecast Model
-  background: Over the past four years, I have served as a Logistics Analyst at a mid-sized retail enterprise, where I managed inventory distribution for a team of ten. My primary responsibilities involved tracking SKU-level data using SAP ERP 6.0, optimizing warehouse stock levels, and coordinating with third-pa
+  id: resume_496 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: Excel, Zoho Inventory, Python, Logistics Data, Supply Chain Management
+  projects: OrderChecker, RouteMap
+  background: I am a motivated recent graduate who completed a six-month internship as a Supply Chain Assistant at a logistics startup, where I supported a team of eight. My responsibilities included reconciling purchase orders in Microsoft Excel, updating inventory levels in Zoho Inventory, and tracking daily sh
 
-  id: resume_494 | level: senior | exp: 7.5 yrs | raw_text: 264 words
-  skills: Oracle NetSuite, Kubernetes, PyTorch, Snowflake, Warehouse Automation
-  projects: OptiChain, Warehouse AI Vision
-  background: With over seven years of experience in the supply chain field, I currently serve as a Principal Supply Chain Architect at a global retail corporation, where I lead a team of twenty engineers and analysts. My career has been dedicated to designing and deploying large-scale inventory management system
+  id: resume_497 | level: middle | exp: 4.0 yrs | raw_text: 252 words
+  skills: SAP ERP, SQL, Tableau, Python, Inventory Management
+  projects: StockOptimize, ProcurementPlanner
+  background: Over the past four years, I have served as a Logistics Analyst at a large retail enterprise, where I managed end-to-end inventory distribution for a department of fifteen. My core responsibilities included monitoring inventory accuracy using SAP ERP 6.0, facilitating daily procurement planning, and 
 
-  id: resume_495 | level: senior | exp: 8.0 yrs | raw_text: 276 words
-  skills: NVIDIA TensorRT, Apache Airflow, SAP Ariba, Supply Chain Analytics, Routing Optimization
-  projects: SmartProcure, HybridRoute
-  background: Over the past eight years, I have evolved from a Junior Logistics Coordinator into a Lead Supply Chain Researcher at a global tech firm, leading a cross-functional team of fifteen. My core focus has been the application of state-of-the-art optimization algorithms to complex logistics tasks, includin
+  id: resume_498 | level: middle | exp: 3.5 yrs | raw_text: 257 words
+  skills: Oracle NetSuite, Power BI, Excel, Python, Procurement
+  projects: VendorScore, ReplenishmentFlow
+  background: With over three and a half years of experience as a Supply Chain Planner at a fast-growing manufacturing startup, I have been responsible for managing complex procurement flows and inventory optimization across four distribution centers. My daily tasks involve managing vendor relationships, optimizi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_493 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs | raw_text: 223 words
-  required_skills: Excel, SAP, SQL, Data Reporting
-  preferred_skills: Python, Logistics Databases
-  description: Our logistics engineering department is looking for an enthusiastic Junior Supply Chain Analyst to support our data processing and inventory experimentation team. Our team of twelve is dedicated to developing scalable inventory solutions and refining
+  id: jd_496 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs | raw_text: 218 words
+  required_skills: Excel, SAP, Logistics Management, Inventory Tracking
+  preferred_skills: SQL, Python
+  description: Our supply chain operations team is looking for a Junior Supply Chain Analyst to assist in the management of our inventory and procurement processes. The team consists of ten members focused on optimizing retail distribution. Your daily responsibilit
 
-  id: jd_494 | title: Associate Logistics Coordinator | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Python, Excel, Logistics Data, Warehouse Management
-  preferred_skills: SQL, Replenishment Models
-  description: Our information systems department is seeking a dedicated Associate Logistics Coordinator to assist our team of eight in maintaining and optimizing our suite of shipping-processing tools. The team is currently focused on enhancing our internal wareho
+  id: jd_497 | title: Senior Supply Chain Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Oracle NetSuite, Kubernetes, Python, SQL, Supply Chain Architecture
+  preferred_skills: AI Forecasting, Project Leadership
+  description: We are seeking a Senior Supply Chain Systems Architect to lead the design and implementation of our enterprise-level logistics and ERP infrastructure. Our team of twenty-five is tasked with building highly scalable, global supply chain solutions. You
 
-  id: jd_495 | title: Lead Supply Chain Architect | level: senior | min_exp: 6 yrs | raw_text: 218 words
-  required_skills: SAP ERP, Apache Airflow, NVIDIA TensorRT, Kubernetes, Snowflake, SAP Ariba
-  preferred_skills: TensorRT, Agentic Logistics
-  description: Our supply chain research and engineering division is seeking a Lead Supply Chain Architect to oversee the design and implementation of our next-generation logistics infrastructure. Our department of thirty-five is building high-performance, enterpri
+  id: jd_498 | title: Senior Logistics Analytics Lead | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: SAP Ariba, SQL, Python, Tableau, Predictive Analytics
+  preferred_skills: Machine Learning, Project Leadership
+  description: Our global logistics department is seeking a Senior Logistics Analytics Lead to spearhead our data-driven decision-making initiatives. Our team of thirty manages logistics optimization, freight analytics, and predictive inventory modeling for a world
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1476 pairs total.
+Overall dataset so far: 1485 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  295  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  295  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  294  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  295  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  297  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  295  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  296  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  298  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  297  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  299  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1477   resume_493 × jd_493
-  pair_1478   resume_493 × jd_494
-  pair_1479   resume_493 × jd_495
-  pair_1480   resume_494 × jd_493
-  pair_1481   resume_494 × jd_494
-  pair_1482   resume_494 × jd_495
-  pair_1483   resume_495 × jd_493
-  pair_1484   resume_495 × jd_494
-  pair_1485   resume_495 × jd_495
+  pair_1486   resume_496 × jd_496
+  pair_1487   resume_496 × jd_497
+  pair_1488   resume_496 × jd_498
+  pair_1489   resume_497 × jd_496
+  pair_1490   resume_497 × jd_497
+  pair_1491   resume_497 × jd_498
+  pair_1492   resume_498 × jd_496
+  pair_1493   resume_498 × jd_497
+  pair_1494   resume_498 × jd_498
 
 ════════════════════════════════════
 OUTPUT FORMAT
