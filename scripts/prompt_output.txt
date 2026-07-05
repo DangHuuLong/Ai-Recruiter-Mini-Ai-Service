@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_400 | level: junior | exp: 0.7 yrs | raw_text: 272 words
-  skills: Shopify, Microsoft Excel, Google Analytics 4, SQL, Google Looker Studio, Airtable
-  projects: ShopFlow
-  background: I am a recent Business Administration graduate with a strong focus on e-commerce operations. During my intensive internship at a fast-growing local retail startup, which lasted for eight months, I supported a small team of three in managing inventory databases and daily marketplace listings. My core
+  id: resume_403 | level: senior | exp: 8.5 yrs | raw_text: 253 words
+  skills: Java, Spring Boot, PostgreSQL, Node.js, Redis, Kafka, Terraform, Kubernetes, AWS, Shopify
+  projects: Project DataStream, AutoScale
+  background: I am a Principal E-commerce Engineer with over eight years of experience building scalable retail platforms. In my most recent role as a Lead Software Architect at a global enterprise retailer, I managed a team of fifteen developers. We maintained a high-traffic marketplace serving over fifty thousa
 
-  id: resume_401 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: Magento 2, Salesforce Commerce Cloud, Tableau, Python, SQL, JIRA, Contentful, Shopify Plus
-  projects: MarketAlign
-  background: I am a seasoned E-commerce Operations Associate with four years of experience in the retail sector, previously working within an enterprise-level digital retail environment. My journey began at a fast-paced agency where I managed a team of six, focusing on product merchandising and category manageme
+  id: resume_404 | level: senior | exp: 7.0 yrs | raw_text: 256 words
+  skills: SAP Commerce Cloud, Oracle NetSuite, Python, FastAPI, Magento, SQL, BigQuery, R, Stripe API
+  projects: StockMaster, PaymentShield
+  background: As a Senior Retail Systems Lead with seven years of experience, I specialize in the integration of enterprise-grade commerce platforms. During my five-year tenure at a leading enterprise retailer, I oversaw a team of ten engineers, maintaining a complex SAP Commerce Cloud environment and Oracle NetS
 
-  id: resume_402 | level: middle | exp: 5.0 yrs | raw_text: 262 words
-  skills: SAP Commerce Cloud, Oracle NetSuite, SQL, R, BigQuery, Adobe Analytics, Stripe API
-  projects: SmartStock
-  background: I am a dedicated E-commerce Merchandising Specialist with five years of comprehensive experience in digital retail. My early career started in a mid-sized retail startup, where I managed content for a catalog of two thousand products. Since then, I have moved into an enterprise operations role, supp
+  id: resume_405 | level: senior | exp: 9.0 yrs | raw_text: 251 words
+  skills: React, Node.js, MongoDB, Salesforce Commerce Cloud, Contentful, Tableau, GraphQL
+  projects: QuickCheck, GlobalCatalog
+  background: I am an experienced Lead E-commerce Developer with nine years of expertise in full-stack retail application development. Currently, I am a Technical Lead at a rapidly scaling retail startup where I manage a cross-functional team of twelve developers and QA engineers. My main responsibilities are ove
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_400 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Microsoft Excel, Communication Skills, Organizational Skills, Marketplace Management
-  preferred_skills: Shopify, Google Analytics
-  description: We are seeking a motivated Junior E-commerce Associate to join our growing product team of eight specialists. Our team manages a robust digital marketplace, focusing on providing seamless shopping experiences for customers across various regions. In 
+  id: jd_403 | title: Junior E-commerce Operations Support | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Microsoft Excel, Organizational Skills, Communication Skills, Data Entry
+  preferred_skills: Shopify, Retail Operations
+  description: Our operations team is seeking a Junior E-commerce Operations Support associate to join our product group of ten. We support a rapidly growing digital marketplace that provides essential goods to a diverse range of customers. In this role, you will p
 
-  id: jd_401 | title: Senior Marketplace Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Salesforce Commerce Cloud, Magento, SQL, Python, Data Architecture, Leadership
-  preferred_skills: BigQuery, Headless Architecture
-  description: Our core product platform is looking for a Senior Marketplace Operations Lead to oversee the end-to-end efficiency of our global data processing and retail infrastructure. With a highly technical team of twenty, we focus on delivering mission-critica
+  id: jd_404 | title: Junior Marketplace Associate | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: SQL, Communication Skills, Attention To Detail, Data Management
+  preferred_skills: Content Management, Customer Support
+  description: The marketplace team is searching for a Junior Marketplace Associate to help us streamline our daily retail operations. Our team consists of twelve members who manage a massive product catalog for global customers. As an associate, your primary duty 
 
-  id: jd_402 | title: Senior Retail Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: SAP Commerce Cloud, Oracle NetSuite, R, Java, Systems Architecture, Predictive Analytics
-  preferred_skills: Machine Learning, Cloud Infrastructure
-  description: Our enterprise architecture team is searching for a Senior Retail Systems Architect to lead the modernization of our legacy business processes and global retail systems. As part of a global team of twenty-five specialists, you will be responsible for
+  id: jd_405 | title: Senior E-commerce Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Java, Spring Boot, AWS, Distributed Systems, Kafka, PostgreSQL, Leadership
+  preferred_skills: Kubernetes, Performance Tuning
+  description: Our engineering department is seeking a Senior E-commerce Systems Lead to direct the technical strategy for our flagship digital retail platform. This is a senior role within a technical team of twenty, where you will focus on scaling our high-traffi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1197 pairs total.
+Overall dataset so far: 1206 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  239  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  238  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  238  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  241  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  241  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  241  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  242  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  238  →  expected this batch: 6 pairs (from seniority gaps below)
+  strong_match          existing:  243  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  242  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1198   resume_400 × jd_400
-  pair_1199   resume_400 × jd_401
-  pair_1200   resume_400 × jd_402
-  pair_1201   resume_401 × jd_400
-  pair_1202   resume_401 × jd_401
-  pair_1203   resume_401 × jd_402
-  pair_1204   resume_402 × jd_400
-  pair_1205   resume_402 × jd_401
-  pair_1206   resume_402 × jd_402
+  pair_1207   resume_403 × jd_403
+  pair_1208   resume_403 × jd_404
+  pair_1209   resume_403 × jd_405
+  pair_1210   resume_404 × jd_403
+  pair_1211   resume_404 × jd_404
+  pair_1212   resume_404 × jd_405
+  pair_1213   resume_405 × jd_403
+  pair_1214   resume_405 × jd_404
+  pair_1215   resume_405 × jd_405
 
 ════════════════════════════════════
 OUTPUT FORMAT
