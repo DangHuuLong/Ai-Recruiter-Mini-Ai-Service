@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_337 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: Jira, Agile Methodologies, QA Testing, Google Analytics, React, Node.js
-  projects: TaskFlow
-  background: I am a recent graduate in Information Systems with a passionate focus on starting my career in product management. During my final year, I completed an internship at a fast-paced technology startup where I supported a team of five in the development of a mobile consumer application. My primary respo
+  id: resume_340 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: SEO, Google Analytics, Google Ads, Meta Business Suite, Ahrefs, WordPress, HubSpot
+  projects: EcoSearch
+  background: I am a dedicated Digital Marketing Specialist with four years of experience driving growth across diverse digital channels. In my current role at a mid-sized e-commerce startup, I manage a team of three to oversee SEO and paid media campaigns. Over the past two years, I have successfully utilized Go
 
-  id: resume_338 | level: junior | exp: 0.75 yrs | raw_text: 257 words
-  skills: Figma, Notion, SQL, Python, SaaS Support, User Interviews
-  projects: RecipeMate
-  background: I am a product-minded graduate who recently began my professional journey in the technology sector. As an associate intern at a mid-sized digital agency, I spent nine months working on a team of twelve to support the development of web-based client platforms. My core duties included organizing feedb
+  id: resume_341 | level: senior | exp: 7.0 yrs | raw_text: 264 words
+  skills: SEO Architecture, Salesforce, Marketo, Tableau, Python, Data Analysis, Strategic Planning
+  projects: DataStream
+  background: As a Senior Digital Strategist with seven years of experience in the technology sector, I have led large-scale marketing transformations within enterprise environments. In my current role at a leading enterprise software firm, I oversee a department of twelve, responsible for the end-to-end strategy
 
-  id: resume_339 | level: senior | exp: 8.5 yrs | raw_text: 257 words
-  skills: Roadmap Management, Stakeholder Management, SQL, Looker, Amplitude, Swagger, GraphQL, Agile Methodologies
-  projects: InsightEngine, CloudPlatform Scale-up
-  background: I am a senior product manager with eight years of extensive experience leading high-impact software initiatives in the technology industry. Throughout my career at three different large-scale enterprises, I have managed cross-functional teams of up to thirty members, encompassing engineering, design
+  id: resume_342 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Content Strategy, Technical SEO, SEMrush, Google Analytics, Jira, HubSpot, Notion API
+  projects: ContentOps
+  background: I am a Senior Content and SEO Lead with eight years of experience crafting high-impact digital experiences for technology and SaaS organizations. Throughout my career, I have thrived in cross-functional team settings, most recently managing a team of fifteen at a fast-growing SaaS startup. My primar
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_337 | title: Mid-Level Product Manager | level: middle | min_exp: 3 yrs | raw_text: 206 words
-  required_skills: Roadmap Management, Stakeholder Management, SQL, Jira, Agile Methodologies
-  preferred_skills: Looker, SaaS
-  description: Our product team of fifteen is seeking a Mid-Level Product Manager to take ownership of our core platform features. You will be responsible for managing the product roadmap, coordinating between engineering and marketing teams, and ensuring that our 
+  id: jd_340 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 223 words
+  required_skills: SEO, Google Analytics, Google Ads, Meta Business Suite, Ahrefs, WordPress
+  preferred_skills: Canva, Social Media Marketing
+  description: Our growth team of four is looking for a motivated Junior Digital Marketing Associate to assist with daily operations and campaign execution. In this role, you will work closely with the marketing manager to support our ongoing SEO and social media e
 
-  id: jd_338 | title: Senior Product Manager | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Roadmap Management, Stakeholder Management, SQL, Looker, Amplitude, Swagger, Agile Methodologies
-  preferred_skills: GraphQL, Technical Leadership
-  description: We are looking for an experienced Senior Product Manager to join our leadership team of twenty, focused on building enterprise-grade data solutions. Your primary responsibility is to lead the strategic direction for our API-first product line, ensuri
+  id: jd_341 | title: Junior SEO & Content Coordinator | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: SEO, Google Analytics, Ahrefs, WordPress, Meta Business Suite
+  preferred_skills: Google Search Console, Copywriting
+  description: We are seeking a detail-oriented Junior SEO & Content Coordinator to support our central marketing team of five. You will be responsible for the day-to-day maintenance of our digital presence, ensuring all content is optimized for search engines and 
 
-  id: jd_339 | title: Senior Technical Product Manager | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Roadmap Management, Stakeholder Management, SQL, Swagger, Amplitude, Agile Methodologies, Looker
-  preferred_skills: GraphQL, Technical Architecture
-  description: Our data-centric engineering department is seeking a Senior Technical Product Manager to oversee our core data infrastructure products. As part of a highly technical team of twenty-five, you will bridge the gap between complex engineering needs and c
+  id: jd_342 | title: Senior Digital Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: SEO Architecture, Content Strategy, Salesforce, Marketo, Google Analytics, Tableau, Python
+  preferred_skills: Predictive Modeling, Leadership
+  description: We are looking for an experienced Senior Digital Marketing Manager to lead our global digital strategy and content operations. Our marketing department of twenty focuses on high-growth SaaS solutions, and we need a leader who can bridge the gap betwe
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1008 pairs total.
+Overall dataset so far: 1017 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  199  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  202  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  202  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  203  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  202  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  203  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  204  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  202  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  204  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  204  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1009   resume_337 × jd_337
-  pair_1010   resume_337 × jd_338
-  pair_1011   resume_337 × jd_339
-  pair_1012   resume_338 × jd_337
-  pair_1013   resume_338 × jd_338
-  pair_1014   resume_338 × jd_339
-  pair_1015   resume_339 × jd_337
-  pair_1016   resume_339 × jd_338
-  pair_1017   resume_339 × jd_339
+  pair_1018   resume_340 × jd_340
+  pair_1019   resume_340 × jd_341
+  pair_1020   resume_340 × jd_342
+  pair_1021   resume_341 × jd_340
+  pair_1022   resume_341 × jd_341
+  pair_1023   resume_341 × jd_342
+  pair_1024   resume_342 × jd_340
+  pair_1025   resume_342 × jd_341
+  pair_1026   resume_342 × jd_342
 
 ════════════════════════════════════
 OUTPUT FORMAT
