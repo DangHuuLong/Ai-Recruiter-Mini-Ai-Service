@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_379 | level: junior | exp: 0.5 yrs | raw_text: 289 words
-  skills: Wireshark, Cisco ASA, Nessus, Python, AWS
-  projects: NetWatcher, CloudLock
-  background: I am a recent cybersecurity graduate with a passion for network defense and vulnerability management. During my final year, I completed a six-month intensive internship as a Junior Security Analyst at a mid-sized tech consultancy with a team of four. In this role, I assisted in the daily monitoring 
+  id: resume_382 | level: middle | exp: 4.0 yrs | raw_text: 260 words
+  skills: Splunk, Palo Alto Networks, Nessus, Python, Burp Suite
+  projects: ScanGuard, NetSecure
+  background: I am a dedicated Cybersecurity Analyst with four years of experience in network defense, vulnerability management, and incident response. In my most recent role as a Security Operations Center (SOC) Analyst at a mid-sized enterprise retail company, I worked within a team of eight to monitor and neut
 
-  id: resume_380 | level: junior | exp: 0.75 yrs | raw_text: 264 words
-  skills: CrowdStrike Falcon, PowerShell, Burp Suite, ELK Stack, Linux
-  projects: EndpointSafe, LogSync
-  background: I am an aspiring Information Security Associate with a deep interest in endpoint protection and cloud security. Throughout my academic career, I served as a Cybersecurity Intern at a rapidly growing software startup for nine months, working within a cross-functional team of six. My duties involved d
+  id: resume_383 | level: middle | exp: 3.5 yrs | raw_text: 265 words
+  skills: CrowdStrike Falcon, SIEM, Cisco ASA, OWASP ZAP, Bash
+  projects: AlertMaster, HardenedServer
+  background: I am a focused Cybersecurity Operations Engineer with three and a half years of professional experience in threat detection, endpoint security, and network monitoring. Currently, I work as an Information Security Specialist at a fast-growing tech startup with a security team of six. My duties involv
 
-  id: resume_381 | level: senior | exp: 8.5 yrs | raw_text: 261 words
-  skills: Splunk, Palo Alto Networks, Zero Trust, Kubernetes Security, Python
-  projects: ThreatHunter, SecureCloud
-  background: I am a Principal Cybersecurity Architect with eight years of experience specializing in enterprise-grade threat detection, high-traffic network security, and complex incident response operations. Previously, I served as a Lead Security Engineer at an international financial services firm, where I di
+  id: resume_384 | level: senior | exp: 7.0 yrs | raw_text: 264 words
+  skills: Splunk, Palo Alto Networks, Zero Trust, Python, Terraform
+  projects: ThreatHunter, CloudScale
+  background: I am a Principal Security Architect with seven years of experience in enterprise-level cybersecurity, specializing in Zero Trust frameworks, SIEM architecture, and high-performance network defense. In my recent role as a Lead Security Engineer at a multinational financial services firm, I directed a
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_379 | title: Security Engineer (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 191 words
-  required_skills: Splunk, Palo Alto Networks, Nessus, Network Security
-  preferred_skills: Python, Cloud Security
-  description: Our information security team of twelve is looking for a Security Engineer to support our mission-critical network defense and threat monitoring infrastructure. You will work within our security operations center to manage daily system security, resp
+  id: jd_382 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Splunk, Nessus, Network Security
+  preferred_skills: Python, Incident Response
+  description: Our security operations team, consisting of ten analysts, is looking for a Junior Security Analyst to help monitor, identify, and report on security threats within our growing network. This role is perfect for a motivated individual eager to build a 
 
-  id: jd_380 | title: Senior Security Operations Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: Splunk, Palo Alto Networks, Zero Trust, Threat Hunting, Python
-  preferred_skills: Kubernetes Security, AI Incident Response
-  description: Our global security infrastructure team, consisting of thirty professionals, is seeking a Senior Security Operations Architect to oversee our enterprise SIEM, advanced threat hunting capabilities, and high-traffic network defenses. Your work will dir
+  id: jd_383 | title: Junior Security Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Splunk, Palo Alto Networks, Network Security
+  preferred_skills: Incident Response, Scripting
+  description: Our digital security team of eight is searching for a Junior Security Operations Associate to help manage our daily threat landscape and ensure the integrity of our digital infrastructure. In this entry-level role, you will be part of a collaborative
 
-  id: jd_381 | title: Principal Cybersecurity Specialist | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: Splunk, Palo Alto Networks, Zero Trust, Python, Threat Detection
-  preferred_skills: Go, Cloud Native Security
-  description: Our core threat engineering team, comprising forty professionals, is seeking a Principal Cybersecurity Specialist to architect our next-generation threat detection and response ecosystem. This role is for a seasoned professional who can bridge the ga
+  id: jd_384 | title: Senior Security Architecture Lead | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: Splunk, Palo Alto Networks, Zero Trust, Python
+  preferred_skills: Cloud Security, Automation
+  description: Our global security architecture group is seeking a Senior Security Architecture Lead to guide our strategy for a highly scalable, secure, and resilient infrastructure. You will manage our security roadmap, design advanced detection workflows, and ov
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1134 pairs total.
+Overall dataset so far: 1143 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  225  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  226  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  228  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  227  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  228  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  229  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  228  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  228  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  228  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  230  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1135   resume_379 × jd_379
-  pair_1136   resume_379 × jd_380
-  pair_1137   resume_379 × jd_381
-  pair_1138   resume_380 × jd_379
-  pair_1139   resume_380 × jd_380
-  pair_1140   resume_380 × jd_381
-  pair_1141   resume_381 × jd_379
-  pair_1142   resume_381 × jd_380
-  pair_1143   resume_381 × jd_381
+  pair_1144   resume_382 × jd_382
+  pair_1145   resume_382 × jd_383
+  pair_1146   resume_382 × jd_384
+  pair_1147   resume_383 × jd_382
+  pair_1148   resume_383 × jd_383
+  pair_1149   resume_383 × jd_384
+  pair_1150   resume_384 × jd_382
+  pair_1151   resume_384 × jd_383
+  pair_1152   resume_384 × jd_384
 
 ════════════════════════════════════
 OUTPUT FORMAT
