@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_484 | level: junior | exp: 0.5 yrs | raw_text: 282 words
-  skills: React Native, JavaScript, Swift, UIKit, REST APIs
-  projects: WeatherSwift, TaskBuddy
-  background: I am a recent Computer Science graduate passionate about crafting intuitive mobile experiences. During my final year, I completed a six-month internship as a Junior Mobile Developer at a small local startup, working within a team of three. My core responsibilities included building UI components usi
+  id: resume_487 | level: middle | exp: 4.0 yrs | raw_text: 270 words
+  skills: LangChain, PyTorch, FastAPI, PostgreSQL, ChromaDB, Sentence-Transformers
+  projects: VectorFlow, ChatAcc
+  background: Over the past four years, I have worked as an AI Engineer at a high-growth AI startup, where I focused on natural language processing and model optimization for a team of eight. My primary responsibilities involved developing retrieval-augmented generation pipelines using LangChain 0.1 and OpenAI AP
 
-  id: resume_485 | level: middle | exp: 4.0 yrs | raw_text: 257 words
-  skills: Kotlin, Swift, Jetpack Compose, SwiftUI, Fastlane, OAuth2
-  projects: SecureFlow, SpeedDeploy
-  background: Over the past four years, I have worked as a Mobile Software Engineer at a fast-paced retail agency, where I managed core features for a high-traffic e-commerce application serving over 50,000 daily active users. My responsibilities included architecting scalable features using Kotlin for Android an
+  id: resume_488 | level: senior | exp: 7.5 yrs | raw_text: 270 words
+  skills: Hugging Face, Kubernetes, DeepSpeed, Pinecone, Llama 3, Mistral
+  projects: NeuroScale, EnterpriseChat
+  background: With over seven years of experience in the machine learning field, I currently serve as a Principal AI Architect at a large-scale enterprise where I lead a team of twenty engineers. My career has been dedicated to designing and deploying large language models, retrieval-augmented generation architec
 
-  id: resume_486 | level: senior | exp: 8.0 yrs | raw_text: 256 words
-  skills: Kotlin Multiplatform, Flutter, Swift, Kotlin, SQLDelight, Room, BLoC, Riverpod
-  projects: ScaleCore, OfflineSync
-  background: With over eight years of experience, I have served as a Senior Mobile Tech Lead at a global fintech enterprise, overseeing the entire mobile development lifecycle for an application with over two million monthly users. My team of twenty engineers focused on building a modular, high-performance archi
+  id: resume_489 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: NVIDIA TensorRT, Apache Airflow, LangChain, Semantic Search, Mixed-precision Training, Knowledge Graphs
+  projects: KnowledgeGraph, HybridSearch
+  background: Over the past eight years, I have evolved from a Junior ML Developer into a Lead NLP Researcher at a global technology firm, leading a cross-functional team of fifteen. My core focus has been the application of state-of-the-art transformer models to complex data processing tasks, including sophistic
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_484 | title: Associate Mobile Developer | level: junior | min_exp: 1 yrs | raw_text: 212 words
-  required_skills: React Native, JavaScript, TypeScript, Mobile UI/UX
-  preferred_skills: Swift, Kotlin
-  description: Our mobile development team is seeking a talented Associate Mobile Developer to help us build and maintain our growing suite of consumer applications. Our team of ten developers is committed to delivering seamless cross-platform experiences using Rea
+  id: jd_487 | title: Junior AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Python, LangChain, PyTorch, SQL
+  preferred_skills: Docker, Vector Databases
+  description: Our AI engineering department is looking for an enthusiastic Junior AI Engineer to support our data processing and model experimentation team. Our team of twelve is dedicated to developing scalable RAG solutions and refining internal language models 
 
-  id: jd_485 | title: Senior Mobile Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Flutter, Kotlin Multiplatform, Swift, Kotlin, Mobile Architecture
-  preferred_skills: SQLDelight, Performance Monitoring
-  description: We are looking for a visionary Senior Mobile Systems Architect to lead our technical strategy for a massive, high-scale mobile ecosystem. Our mobile department comprises thirty engineers building performance-critical applications used by millions, an
+  id: jd_488 | title: Associate NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 222 words
+  required_skills: Python, LangChain, NLP, Hugging Face Transformers
+  preferred_skills: SQL, Embedding Models
+  description: Our information systems department is seeking a dedicated Associate NLP Engineer to assist our team of eight in maintaining and optimizing our suite of language-processing tools. The team is currently focused on enhancing our internal RAG systems and
 
-  id: jd_486 | title: Lead Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 216 words
-  required_skills: Swift, Kotlin, Mobile Performance, CI/CD, Networking
-  preferred_skills: Flutter, SQLDelight
-  description: Our engineering department is seeking an experienced Lead Mobile Engineer to take ownership of our core platform development and high-traffic mobile APIs. Our team of twenty-five is responsible for the performance, reliability, and security of our mo
+  id: jd_489 | title: Lead AI Architect | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: PyTorch, Hugging Face Transformers, DeepSpeed, Kubernetes, Pinecone, LangChain
+  preferred_skills: TensorRT, Agentic AI
+  description: Our AI research and engineering division is seeking a Lead AI Architect to oversee the design and implementation of our next-generation generative AI infrastructure. Our department of thirty-five is building high-performance, enterprise-ready LLM sol
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1449 pairs total.
+Overall dataset so far: 1458 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  289  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  290  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  289  →  expected this batch: 1 pairs (from seniority gaps below)
-  strong_match          existing:  291  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  290  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  291  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  292  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  290  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  292  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  293  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1450   resume_484 × jd_484
-  pair_1451   resume_484 × jd_485
-  pair_1452   resume_484 × jd_486
-  pair_1453   resume_485 × jd_484
-  pair_1454   resume_485 × jd_485
-  pair_1455   resume_485 × jd_486
-  pair_1456   resume_486 × jd_484
-  pair_1457   resume_486 × jd_485
-  pair_1458   resume_486 × jd_486
+  pair_1459   resume_487 × jd_487
+  pair_1460   resume_487 × jd_488
+  pair_1461   resume_487 × jd_489
+  pair_1462   resume_488 × jd_487
+  pair_1463   resume_488 × jd_488
+  pair_1464   resume_488 × jd_489
+  pair_1465   resume_489 × jd_487
+  pair_1466   resume_489 × jd_488
+  pair_1467   resume_489 × jd_489
 
 ════════════════════════════════════
 OUTPUT FORMAT
