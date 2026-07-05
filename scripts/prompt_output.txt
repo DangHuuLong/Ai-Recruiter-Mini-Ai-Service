@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_565 | level: junior | exp: 0.5 yrs | raw_text: 251 words
-  skills: QuickBooks, Excel, Python, GAAP, IFRS
-  projects: FinPath
-  background: I am a detail-oriented finance graduate with a passion for fintech operations and regulatory reporting. During my final year at university, I completed an internship at a boutique financial services startup as a Junior Analyst, where I assisted a team of four in maintaining financial records and sup
+  id: resume_568 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: FastAPI, React, PostgreSQL, Docker, Redux
+  projects: QuickTrack
+  background: I am a dedicated Full-Stack Developer with four years of experience building scalable web applications. At a mid-sized e-commerce startup, I worked in a team of six to overhaul the core user portal, utilizing FastAPI 0.105 for high-concurrency backend services and React 18 for a reactive frontend ex
 
-  id: resume_566 | level: junior | exp: 0.7 yrs | raw_text: 269 words
-  skills: Xero, Excel, SQL, Payroll Management, Budget Analysis
-  projects: LedgerFlow
-  background: As a recent accounting graduate, I am highly motivated to pursue a career in fintech, specifically focusing on financial reporting, budget analysis, and regulatory compliance. Throughout my undergraduate studies, I worked as a Student Assistant for a mid-sized accounting agency, where I supported a 
+  id: resume_569 | level: senior | exp: 7.5 yrs | raw_text: 280 words
+  skills: Python, FastAPI, React, TypeScript, PostgreSQL, Redis
+  projects: SecureFlow
+  background: I am a senior-level Full-Stack Engineer with seven years of experience delivering robust, enterprise-grade web solutions. Throughout my career at a major global financial services enterprise, I have led a team of 15 developers in designing and maintaining a secure, multi-tier platform serving over 5
 
-  id: resume_567 | level: senior | exp: 8.5 yrs | raw_text: 256 words
-  skills: SAP S/4HANA, NetSuite, Python, SQL, AML/KYC Compliance, Financial Modeling
-  projects: ComplianceCore
-  background: I am a highly experienced Financial Controller and Lead Analyst with over eight years of experience managing complex accounting operations within high-growth fintech enterprises. I have extensive expertise in building robust financial modeling systems, leading statutory reporting, and ensuring rigor
+  id: resume_570 | level: senior | exp: 9.0 yrs | raw_text: 255 words
+  skills: Python, FastAPI, React, Kubernetes, PostgreSQL, Data Visualization
+  projects: DataSphere
+  background: I am an accomplished Principal Software Engineer with nine years of experience specializing in full-stack web development and scalable infrastructure. In my most recent role at a prominent cloud-infrastructure company, I managed a team of 20 engineers, where we built and scaled a real-time data proc
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_565 | title: Financial Operations Associate | level: middle | min_exp: 3 yrs | raw_text: 213 words
-  required_skills: NetSuite, Excel, Financial Reporting, GAAP, Ledger Reconciliation
-  preferred_skills: SQL, Automation
-  description: Our finance team is seeking a Financial Operations Associate to join our growing unit of 20 professionals. We are currently scaling our operations and need someone to handle core accounting functions, ledger reconciliation, and statutory financial re
+  id: jd_568 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Python, FastAPI, React, Git
+  preferred_skills: JavaScript, Agile
+  description: Our web development team is looking for a Junior Full-Stack Developer to assist us in building and maintaining our consumer-facing web applications. The team consists of eight developers working on a high-traffic platform that serves a global user ba
 
-  id: jd_566 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: SAP S/4HANA, Financial Modeling, AML/KYC Compliance, Systems Architecture, Python
-  preferred_skills: Cloud Architecture, Risk Mitigation
-  description: We are looking for a Senior Financial Systems Architect to lead the design and implementation of our next-generation financial reporting and compliance infrastructure. Our team of 25 finance and data experts manages a complex, global payment ecosyste
+  id: jd_569 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: Python, React, PostgreSQL, Git
+  preferred_skills: Unit Testing, Web Design
+  description: Our engineering department is seeking an energetic Associate Full-Stack Engineer to join our team of 12 specialists. Our mission is to accelerate our platform's development by delivering high-quality, scalable web features on a regular basis. You wil
 
-  id: jd_567 | title: Head of Financial Integrity & Compliance | level: senior | min_exp: 6 yrs | raw_text: 213 words
-  required_skills: SAP S/4HANA, Financial Reporting, Compliance Strategy, Risk Management, Python
-  preferred_skills: Leadership, Predictive Analytics
-  description: Our firm is seeking a Head of Financial Integrity & Compliance to oversee our central finance department of 30 professionals. Our team is tasked with ensuring total financial transparency, implementing robust risk controls, and managing statutory com
+  id: jd_570 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, FastAPI, React, PostgreSQL, Kubernetes
+  preferred_skills: Cloud Infrastructure, System Architecture
+  description: We are seeking a highly experienced Senior Full-Stack Engineer to lead the technical efforts for our core infrastructure platform. Our team of 20 specialists is responsible for maintaining the security, scalability, and performance of our services. Y
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1692 pairs total.
+Overall dataset so far: 1701 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  336  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  339  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  339  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  339  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  339  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  340  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  341  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  339  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  340  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  341  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1693   resume_565 × jd_565
-  pair_1694   resume_565 × jd_566
-  pair_1695   resume_565 × jd_567
-  pair_1696   resume_566 × jd_565
-  pair_1697   resume_566 × jd_566
-  pair_1698   resume_566 × jd_567
-  pair_1699   resume_567 × jd_565
-  pair_1700   resume_567 × jd_566
-  pair_1701   resume_567 × jd_567
+  pair_1702   resume_568 × jd_568
+  pair_1703   resume_568 × jd_569
+  pair_1704   resume_568 × jd_570
+  pair_1705   resume_569 × jd_568
+  pair_1706   resume_569 × jd_569
+  pair_1707   resume_569 × jd_570
+  pair_1708   resume_570 × jd_568
+  pair_1709   resume_570 × jd_569
+  pair_1710   resume_570 × jd_570
 
 ════════════════════════════════════
 OUTPUT FORMAT
