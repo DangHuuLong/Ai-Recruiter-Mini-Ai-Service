@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_601 | level: middle | exp: 4.0 yrs | raw_text: 270 words
-  skills: Financial Modeling, Regulatory Reporting, Python, SQL, Excel, Power BI, Tableau, SAP ERP
-  projects: Project LedgerGuard
-  background: As an accountant with four years of dedicated experience in the fintech sector, I have honed my expertise in financial modeling, regulatory reporting, and system automation. During my tenure as a Staff Accountant at a mid-sized fintech startup, I managed a team of three to oversee month-end closing 
+  id: resume_604 | level: junior | exp: 0.5 yrs | raw_text: 272 words
+  skills: Epic EMR, Patient Scheduling, Medical Billing, Health Records, Data Entry
+  projects: PatientSync
+  background: As a recent graduate with a profound passion for clinical operations, I am eager to begin my career in medical coordination. During my internship as a Medical Admin Assistant at a local community healthcare startup, I supported a team of five in streamlining patient appointment scheduling using the 
 
-  id: resume_602 | level: senior | exp: 8.0 yrs | raw_text: 277 words
-  skills: Financial Modeling, Regulatory Compliance, Oracle NetSuite, Bloomberg Terminal, Python, SOX Compliance, Financial Reporting, Data Analytics
-  projects: TreasuryFlow
-  background: With eight years of robust experience in the financial technology industry, I have developed a deep expertise in high-level financial modeling, complex regulatory compliance, and strategic reporting. Serving as a Senior Finance Lead at an enterprise fintech firm, I oversaw a team of ten, directing t
+  id: resume_605 | level: junior | exp: 0.3 yrs | raw_text: 266 words
+  skills: Cerner Millennium, Chart Reconciliation, HIPAA Compliance, ICD-10 Coding, Clinical Workflow
+  projects: ChartAudit
+  background: Having recently completed my degree, I am seeking a position as a Medical Coordination Associate. During my recent practicum at a regional medical center agency, I worked within a team of eight to manage clinical throughput and patient flow metrics. My core responsibilities included monitoring EMR d
 
-  id: resume_603 | level: senior | exp: 7.0 yrs | raw_text: 261 words
-  skills: Technical Accounting, Financial Modeling, Oracle NetSuite, SAP S/4HANA, Python, Power BI, SQL, Regulatory Strategy
-  projects: AuditStream
-  background: As a Principal Financial Accountant with seven years of experience in the fintech space, I specialize in technical accounting, complex financial modeling, and long-term regulatory strategy. In my current role at a large-scale fintech enterprise, I lead a cross-functional team of twelve, overseeing t
+  id: resume_606 | level: senior | exp: 8.0 yrs | raw_text: 278 words
+  skills: Epic EMR, Clinical Operations, SQL, Python, Tableau, Workflow Optimization, Compliance Reporting
+  projects: OpsOverhaul
+  background: As a Senior Clinical Operations Manager with eight years of experience, I specialize in optimizing EMR systems, clinical workflow redesign, and hospital compliance. In my current role at a large-scale healthcare enterprise, I lead a team of twenty to manage the end-to-end implementation of Epic 2024
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_601 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 215 words
-  required_skills: Excel, SQL, Financial Reporting, Budgeting
-  preferred_skills: Power BI, Data Reconciliation
-  description: The finance team is growing, and we are looking for a Junior Financial Analyst to join our team of four. You will support the day-to-day operations of our financial reporting cycle, ensuring data integrity within our systems. Your primary duties will
+  id: jd_604 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 214 words
+  required_skills: Epic EMR, Clinical Operations, SQL, Excel
+  preferred_skills: Hospital Informatics, Data Integrity
+  description: The clinical operations team is expanding, and we are searching for a motivated Clinical Operations Coordinator to join our group of twelve. This team is dedicated to streamlining internal clinical processes and ensuring that our EMR data flows seaml
 
-  id: jd_602 | title: Associate Accountant | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Accounting, Excel, Financial Reporting, Tax Documentation
-  preferred_skills: QuickBooks, Cash Flow Management
-  description: We are seeking an Associate Accountant to support our financial department. Our team of six operates at the intersection of traditional accounting and rapid fintech growth, focusing on precise reporting and timely compliance. In this role, you will b
+  id: jd_605 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: Epic EMR, SQL, Python, Clinical Informatics, HIPAA Compliance
+  preferred_skills: Tableau, System Architecture
+  description: We are seeking a Senior Clinical Systems Architect to lead our technical team of fifteen as we modernize our healthcare infrastructure. Our team focuses on integrating multiple hospital EMR systems into a unified platform to support real-time clinica
 
-  id: jd_603 | title: Senior Fintech Lead Accountant | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Financial Modeling, Regulatory Compliance, SAP S/4HANA, Python, SQL, IFRS
-  preferred_skills: SOX Compliance, Financial Strategy
-  description: Our finance department is seeking a Lead Accountant to manage our technical accounting and financial modeling initiatives. This role is central to a team of fifteen, focused on high-stakes regulatory reporting, complex financial forecasting, and long
+  id: jd_606 | title: Lead Clinical Informatics Specialist | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: Epic EMR, Clinical Informatics, SQL, Python, Data Compliance
+  preferred_skills: Tableau, Workflow Redesign
+  description: Our organization is looking for a Lead Clinical Informatics Specialist to join our senior management group of eighteen. This team sits at the intersection of clinical care and technical optimization, ensuring our medical systems are both robust and e
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1800 pairs total.
+Overall dataset so far: 1809 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  360  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  361  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  359  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  361  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  360  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  362  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  363  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  361  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  363  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1801   resume_601 × jd_601
-  pair_1802   resume_601 × jd_602
-  pair_1803   resume_601 × jd_603
-  pair_1804   resume_602 × jd_601
-  pair_1805   resume_602 × jd_602
-  pair_1806   resume_602 × jd_603
-  pair_1807   resume_603 × jd_601
-  pair_1808   resume_603 × jd_602
-  pair_1809   resume_603 × jd_603
+  pair_1810   resume_604 × jd_604
+  pair_1811   resume_604 × jd_605
+  pair_1812   resume_604 × jd_606
+  pair_1813   resume_605 × jd_604
+  pair_1814   resume_605 × jd_605
+  pair_1815   resume_605 × jd_606
+  pair_1816   resume_606 × jd_604
+  pair_1817   resume_606 × jd_605
+  pair_1818   resume_606 × jd_606
 
 ════════════════════════════════════
 OUTPUT FORMAT
