@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_745 | level: middle | exp: 4.0 yrs | raw_text: 270 words
-  skills: Python, Flask, Django, FastAPI, React, JavaScript, HTML5, CSS3, PostgreSQL, MySQL, Git, AWS S3, Tailwind CSS, Redis, CI/CD
-  projects: FinanceFlow
-  background: During my professional career journey, I served as a Full-Stack Software Engineer at an innovative e-commerce startup for a duration of twenty-four months, operating within an agile team environment consisting of five technical professionals. My core responsibilities included designing and maintaini
+  id: resume_748 | level: junior | exp: 0.5 yrs | raw_text: 265 words
+  skills: Social Media Marketing, Content Creation, Canva, Mailchimp, WordPress, Copywriting, Instagram Analytics, Facebook Insights
+  projects: CampusVibe
+  background: As an aspiring marketing professional, I recently completed a six-month intensive internship as a Junior Marketing Assistant at a fast-growing retail e-commerce startup, where I worked closely within an active, creative brand management team of three people. My daily responsibilities centered heavil
 
-  id: resume_746 | level: middle | exp: 3.5 yrs | raw_text: 270 words
-  skills: Python, Django, Flask, React, JavaScript, TypeScript, Redux, PostgreSQL, MongoDB, Git, Docker, AWS EC2, REST APIs, GraphQL, HTML5, CSS3
-  projects: WeatherPulse
-  background: I began my professional engineering career as a Full-Stack Web Developer at a prominent healthcare technology startup, working continuously for eighteen months within a tight-knit development team of four individuals. In this position, my primary day-to-day responsibilities involved engineering core
+  id: resume_749 | level: junior | exp: 0.75 yrs | raw_text: 254 words
+  skills: SEO Basics, Semrush, Google Analytics 4, Google Search Console, Webflow, Content Writing, Social Media Scheduling, Keyword Research
+  projects: GreenLivingBlog
+  background: I initiated my path in the marketing landscape by working for nine months as a Junior Content Coordinator at a boutique digital marketing agency, operating within an operational team structure of four professional content creators. In this position, my primary day-to-day responsibilities were focuse
 
-  id: resume_747 | level: senior | exp: 8.0 yrs | raw_text: 285 words
-  skills: Python, FastAPI, React, TypeScript, Redux Toolkit, Redux, PostgreSQL, AWS ECS, Terraform, Redis, Celery, Kubernetes, GraphQL, CI/CD, Architecture, JavaScript, HTML5, CSS3, Git, REST APIs
-  projects: Automated CI/CD Framework
-  background: I have spent the last four years operating as a Senior Full-Stack Engineer and Tech Lead at an enterprise financial technology corporation, where I directed a high-performing engineering squad of twelve developers to architect resilient, scalable financial infrastructure. My day-to-day duties involv
+  id: resume_750 | level: senior | exp: 7.0 yrs | raw_text: 268 words
+  skills: SEO, Ahrefs, Screaming Frog, Google Analytics 4, Looker Studio, Google Ads, LinkedIn Ads, HubSpot, Salesforce, Content Strategy, Data Analytics, Tableau, Google BigQuery, Conversion Optimization, Social Media Strategy
+  projects: LeadScale
+  background: I have spent the past four years serving as a Senior Digital Marketing Manager and Strategy Lead at a large enterprise software corporation, where I led an omni-channel marketing team of nine specialists to design and execute global growth initiatives. My primary duties involved scaling our technica
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_745 | title: Junior Full-Stack Web Developer | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Python, Flask, React, JavaScript, HTML5, CSS3, PostgreSQL, Git, Bootstrap, SQLite
-  preferred_skills: Git, Bootstrap
-  description: Our dynamic engineering department is actively seeking an enthusiastic Junior Full-Stack Web Developer to join our growing product development team of six engineers focused on building the next generation of our customer engagement platform. In this 
+  id: jd_748 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 194 words
+  required_skills: Semrush, Google Analytics 4, Mailchimp, Canva, LinkedIn Analytics, WordPress, Content Strategy, Social Media Marketing
+  preferred_skills: Canva, WordPress
+  description: We are actively seeking a data-driven Digital Marketing Specialist to join our in-house marketing department, which currently consists of five agile team members managing our growing B2B SaaS platform. In this mid-level individual contributor role, y
 
-  id: jd_746 | title: Associate Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 182 words
-  required_skills: Python, Django, React, TypeScript, Redux, MySQL, Git, AWS S3, REST APIs, Tailwind CSS
-  preferred_skills: REST APIs, Tailwind CSS
-  description: We are looking for an ambitious Associate Full-Stack Developer to join our core product engineering team, which currently consists of seven collaborative professionals building a modern SaaS platform. Day-to-day responsibilities include developing cl
+  id: jd_749 | title: Senior SEO & Growth Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: Ahrefs, Screaming Frog, Google Analytics 4, Looker Studio, Google Ads, Technical SEO, Conversion Optimization, Data Analytics
+  preferred_skills: SQL, Conversion Optimization
+  description: Our enterprise growth division is searching for a Senior SEO and Growth Marketing Manager to take full technical ownership of our international organic acquisition channels. Operating within an established ten-person cross-functional growth team, you
 
-  id: jd_747 | title: Senior Full-Stack Technical Lead | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: Python, FastAPI, React, TypeScript, Redux Toolkit, PostgreSQL, AWS ECS, Terraform, Redis, Celery, Kubernetes, GraphQL, CI/CD, System Architecture
-  preferred_skills: GraphQL, CI/CD
-  description: Our enterprise platform division is searching for a Senior Full-Stack Technical Lead to guide a dedicated engineering team of twelve developers in redefining our core cloud services. The day-to-day responsibilities demand architecting highly scalable
+  id: jd_750 | title: Senior Content Strategy & Inbound Director | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: HubSpot, Salesforce, Google Analytics 4, LinkedIn Ads, Tableau, Google BigQuery, Content Strategy, Social Media Strategy
+  preferred_skills: Google BigQuery, Tableau
+  description: We are seeking a visionary Senior Content Strategy and Inbound Director to lead our complex brand transformation and dominate organic mindshare within our commercial market segment. Leading a high-performing creative squad of eight skilled content de
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2232 pairs total.
+Overall dataset so far: 2241 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  446  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  447  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  446  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  445  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  448  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  446  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  449  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  448  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  449  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  449  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2233   resume_745 × jd_745
-  pair_2234   resume_745 × jd_746
-  pair_2235   resume_745 × jd_747
-  pair_2236   resume_746 × jd_745
-  pair_2237   resume_746 × jd_746
-  pair_2238   resume_746 × jd_747
-  pair_2239   resume_747 × jd_745
-  pair_2240   resume_747 × jd_746
-  pair_2241   resume_747 × jd_747
+  pair_2242   resume_748 × jd_748
+  pair_2243   resume_748 × jd_749
+  pair_2244   resume_748 × jd_750
+  pair_2245   resume_749 × jd_748
+  pair_2246   resume_749 × jd_749
+  pair_2247   resume_749 × jd_750
+  pair_2248   resume_750 × jd_748
+  pair_2249   resume_750 × jd_749
+  pair_2250   resume_750 × jd_750
 
 ════════════════════════════════════
 OUTPUT FORMAT
