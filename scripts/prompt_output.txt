@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_697 | level: middle | exp: 4.5 yrs | raw_text: 259 words
-  skills: Shopify Plus, Magento 2, Python, Sql, Google Analytics 4, Tableau, Powerbi
-  projects: MarketGrowthInsight
-  background: As an experienced E-commerce Operations Specialist with over four years of tenure in the retail sector, I have honed my skills in marketplace management and digital merchandising. My most recent role at a rapidly scaling e-commerce startup involved managing a merchandising team of six to optimize pr
+  id: resume_700 | level: junior | exp: 0.3 yrs | raw_text: 270 words
+  skills: Jira, Confluence, Lucidchart, Bpmn 2.0, Excel, Visio, Sql
+  projects: CampusServicesMap
+  background: As a recent graduate, I have developed a strong foundation in business analysis and process mapping through both academic rigor and professional experience. During my four-month internship at a mid-sized digital marketing agency, I supported a team of four in documenting client requirements and crea
 
-  id: resume_698 | level: senior | exp: 7.5 yrs | raw_text: 267 words
-  skills: Elasticsearch, Postgresql, Adobe Commerce, Salesforce Commerce Cloud, Jira, Node.js, Aws Lambda, Docker
-  projects: GlobalStockSync
-  background: With over seven years of professional experience in global retail and digital marketplace management, I have led complex digital transformation projects for large-scale enterprise retailers. In my current capacity as a Senior E-commerce Product Lead managing a team of fifteen, I oversee the end-to-e
+  id: resume_701 | level: middle | exp: 4.2 yrs | raw_text: 260 words
+  skills: Jira, Confluence, Sql, Tableau, Visio, Bpmn 2.0, Powerbi
+  projects: AutomatedReportingDashboard
+  background: With over four years of experience as a Business Analyst in the high-stakes fintech sector, I have successfully bridged the gap between complex business requirements and technical implementation. Working within an enterprise-level financial organization, I led a cross-functional squad of ten to mode
 
-  id: resume_699 | level: senior | exp: 8.0 yrs | raw_text: 256 words
-  skills: Sap Commerce Cloud, Sql, Python, Kubernetes, Docker, Datadog, Grafana, R, Jenkins
-  projects: SmartFlowMerchandising
-  background: I am a senior e-commerce architect with eight years of experience specializing in high-traffic marketplace optimization and digital retail operations. Currently serving as a Principal E-commerce Lead, I manage a cross-functional organization of twenty individuals focused on modernizing our legacy in
+  id: resume_702 | level: middle | exp: 5.0 yrs | raw_text: 258 words
+  skills: Jira, Asana, Confluence, Bpmn 2.0, Sql, Excel, Python
+  projects: HealthcareWorkflowOptimization
+  background: I am a dedicated Project Analyst with five years of experience in the fast-paced healthcare technology industry, specializing in optimizing operational workflows and managing stakeholder relationships. During my time at a high-growth software startup, I managed a diverse portfolio of small to mid-si
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_697 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Shopify, Google Analytics, Excel
-  preferred_skills: Digital Marketing
-  description: Our E-commerce Operations team is seeking an enthusiastic Junior Associate to help manage our daily marketplace activities. This role sits within a group of ten, working closely with the sales, marketing, and product teams to ensure our site catalog 
+  id: jd_700 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Jira, Confluence, Visio, Excel
+  preferred_skills: Agile, Sql
+  description: Our dynamic project management team is seeking an entry-level Business Analyst to support the planning and execution of our retail software initiatives. The team currently consists of eight members, including project managers, developers, and designe
 
-  id: jd_698 | title: E-commerce Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: Tableau, Magento, Sql
-  preferred_skills: Python, Inventory Management
-  description: We are looking for a motivated E-commerce Operations Analyst to join our team of fifteen, focused on scaling our marketplace presence and operational efficiency. In this role, you will analyze massive datasets to identify trends, optimize merchandisi
+  id: jd_701 | title: Senior Technical Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: Bpmn 2.0, Sql, Tableau, Jira
+  preferred_skills: Project Management, Powerbi
+  description: We are looking for an experienced Senior Technical Business Analyst to lead the requirements engineering process for our core enterprise platform. Our project management office consists of twenty professionals who support mission-critical infrastruct
 
-  id: jd_699 | title: Principal E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Postgresql, Kubernetes, Elasticsearch, Docker
-  preferred_skills: Sap Commerce Cloud, Datadog
-  description: Our organization is seeking a visionary Principal E-commerce Architect to lead our platform modernization efforts. The team of twenty is tasked with re-engineering our global retail infrastructure to support hyper-growth and real-time data integratio
+  id: jd_702 | title: Lead Project Analyst | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Sql, Powerbi, Confluence, Jira
+  preferred_skills: Process Optimization, Healthcare Analytics
+  description: Our organization is seeking a Lead Project Analyst to oversee the performance and process integrity of our global healthcare projects. Our project management division is a large, highly collaborative group focused on delivering innovative solutions t
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2088 pairs total.
+Overall dataset so far: 2097 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  418  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  418  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  416  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  417  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  419  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  418  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  419  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  420  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  419  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  421  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2089   resume_697 × jd_697
-  pair_2090   resume_697 × jd_698
-  pair_2091   resume_697 × jd_699
-  pair_2092   resume_698 × jd_697
-  pair_2093   resume_698 × jd_698
-  pair_2094   resume_698 × jd_699
-  pair_2095   resume_699 × jd_697
-  pair_2096   resume_699 × jd_698
-  pair_2097   resume_699 × jd_699
+  pair_2098   resume_700 × jd_700
+  pair_2099   resume_700 × jd_701
+  pair_2100   resume_700 × jd_702
+  pair_2101   resume_701 × jd_700
+  pair_2102   resume_701 × jd_701
+  pair_2103   resume_701 × jd_702
+  pair_2104   resume_702 × jd_700
+  pair_2105   resume_702 × jd_701
+  pair_2106   resume_702 × jd_702
 
 ════════════════════════════════════
 OUTPUT FORMAT
