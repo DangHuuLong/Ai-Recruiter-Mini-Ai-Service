@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_676 | level: junior | exp: 0.8 yrs | raw_text: 256 words
-  skills: Docker, Aws, Python, Linux, Bash, Cloudwatch
-  projects: HomeLab Orchestrator
-  background: As a passionate Cloud Engineering graduate, I have focused my early career on understanding the fundamentals of distributed systems and containerization. During my tenure as a Junior DevOps Intern at a fast-paced technology startup for 10 months, I worked within a team of five developers. My primary
+  id: resume_679 | level: middle | exp: 4.0 yrs | raw_text: 279 words
+  skills: Workday Hris, Greenhouse Ats, Talent Acquisition, Onboarding, Tableau, Excel
+  projects: Talent Insight 360
+  background: Over the past four years, I have established a career in Human Resources with a focus on talent acquisition and HRIS management. In my recent role as an HR Generalist at a mid-sized technology agency with a team of thirty, I managed the full-cycle recruitment process, successfully hiring 45 technica
 
-  id: resume_677 | level: middle | exp: 4.5 yrs | raw_text: 252 words
-  skills: Kubernetes, Terraform, Aws, Jenkins, Gitlab Ci, Prometheus, Grafana, Go
-  projects: CloudCost Sentinel
-  background: Over the past four years, I have established myself as a mid-level DevOps engineer within a growing software-as-a-service enterprise environment. Working in a cross-functional team of twelve, I have been instrumental in managing large-scale infrastructure deployments. My primary responsibilities inc
+  id: resume_680 | level: senior | exp: 8.0 yrs | raw_text: 251 words
+  skills: Workday Hris, Greenhouse Ats, Sap Successfactors, Sql, Recruitment Strategy, Onboarding
+  projects: Automated Onboarding Architect
+  background: I am a senior Human Resources leader with eight years of experience building scalable talent acquisition and operations frameworks in enterprise and rapid-growth environments. Currently, as a Talent Operations Manager in a global enterprise with over 500 employees, I oversee a team of ten specialist
 
-  id: resume_678 | level: middle | exp: 4.0 yrs | raw_text: 274 words
-  skills: Aws Ecs, Docker, Terraform, Python, Postgresql, Kubernetes
-  projects: AutoScale Guard
-  background: I am a DevOps professional with four years of hands-on experience in high-traffic cloud environments. My career has been defined by my work within a mid-sized digital agency, where I supported a team of fifteen engineers. My day-to-day work centers on maintaining the reliability of our client-facing
+  id: resume_681 | level: senior | exp: 7.5 yrs | raw_text: 251 words
+  skills: Workday Hris, Greenhouse Ats, Talent Mapping, Power Bi, Adp Workforce Now, Onboarding
+  projects: Strategic Talent Mapping
+  background: With over seven years of professional experience in talent management, I have served as a Senior Talent Acquisition Lead within high-growth technology and enterprise organizations. My career is defined by transforming recruitment functions into strategic, metrics-driven units. In my current role at 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_676 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Docker, Linux, Aws, Git
-  preferred_skills: Python, Bash
-  description: We are seeking a motivated Junior DevOps Engineer to join our infrastructure operations team. Our team is composed of six engineers responsible for maintaining the stability and scalability of our growing cloud ecosystem. In this role, you will be pa
+  id: jd_679 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Talent Acquisition, Onboarding, Ats, Organizational Skills
+  preferred_skills: Greenhouse, BambooHr
+  description: We are seeking a dedicated Junior HR Coordinator to join our growing People Operations team. Our department of eight professionals focuses on streamlining the employee lifecycle, from initial candidate application to successful onboarding. This is an
 
-  id: jd_677 | title: Senior DevOps Lead | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: Kubernetes, Terraform, Aws, Istio, Prometheus, Grafana, Security
-  preferred_skills: Go, Cloudformation
-  description: Our infrastructure team is looking for a seasoned Senior DevOps Lead to guide our transition toward a highly distributed, multi-region architecture. Our team manages a complex fleet of microservices and is currently comprised of twelve engineers who 
+  id: jd_680 | title: Junior Recruiting Associate | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Talent Acquisition, Ats, Sourcing, Candidate Management
+  preferred_skills: LinkedIn, Communication
+  description: Our recruitment team is looking for a proactive Junior Recruiting Associate to help us scale our rapidly growing team. Our team consists of five recruiters who partner with various departments to identify and attract top-tier talent. In this role, yo
 
-  id: jd_678 | title: Senior Cloud Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Aws, Kubernetes, Terraform, Gitops, Distributed Systems, Networking
-  preferred_skills: Helm, Go, Rust
-  description: We are seeking a highly experienced Senior Cloud Infrastructure Engineer to join our platform team. Our organization manages a massive, distributed system serving millions of requests, and our team of fifteen engineers is dedicated to building a bull
+  id: jd_681 | title: Senior Talent Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Workday Hris, Greenhouse Ats, Talent Acquisition, Data Analysis, Leadership
+  preferred_skills: Power Bi, Tableau
+  description: Our organization is looking for a high-impact Senior Talent Operations Lead to optimize our global recruitment and HR systems. Our team supports a complex ecosystem of thousands of employees, and we are looking for someone to lead our platform strate
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2025 pairs total.
+Overall dataset so far: 2034 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  404  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  404  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  405  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  406  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  406  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  406  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  408  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  405  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  408  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  407  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2026   resume_676 × jd_676
-  pair_2027   resume_676 × jd_677
-  pair_2028   resume_676 × jd_678
-  pair_2029   resume_677 × jd_676
-  pair_2030   resume_677 × jd_677
-  pair_2031   resume_677 × jd_678
-  pair_2032   resume_678 × jd_676
-  pair_2033   resume_678 × jd_677
-  pair_2034   resume_678 × jd_678
+  pair_2035   resume_679 × jd_679
+  pair_2036   resume_679 × jd_680
+  pair_2037   resume_679 × jd_681
+  pair_2038   resume_680 × jd_679
+  pair_2039   resume_680 × jd_680
+  pair_2040   resume_680 × jd_681
+  pair_2041   resume_681 × jd_679
+  pair_2042   resume_681 × jd_680
+  pair_2043   resume_681 × jd_681
 
 ════════════════════════════════════
 OUTPUT FORMAT
