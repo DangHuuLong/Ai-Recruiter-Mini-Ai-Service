@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_706 | level: junior | exp: 0.8 yrs | raw_text: 286 words
-  skills: Excel, Procurement, Inventory Management, Data Analysis, Python
-  projects: Inventory Flow Optimization
-  background: As a recent graduate in Logistics and Supply Chain Management, I have spent the last ten months working as a junior procurement assistant at a medium-sized manufacturing startup. During this time, I was part of a five-person operations team focused on local supplier coordination, vendor relationship
+  id: resume_709 | level: middle | exp: 4.0 yrs | raw_text: 264 words
+  skills: PostgreSQL, MongoDB, Redis, Terraform, ClickHouse, Kafka
+  projects: LogStreamer
+  background: As a database engineer with four years of professional experience, I have focused on building scalable data layers for high-traffic web applications. My career began at a fast-paced technology startup where I served as a junior developer on a team of six. During my two-year tenure, I maintained Post
 
-  id: resume_707 | level: junior | exp: 1.0 yrs | raw_text: 262 words
-  skills: Logistics, Shipment Tracking, Microsoft Office, Sql, Inventory Management
-  projects: Logistics Hub Design
-  background: I am a motivated logistics professional who recently completed a one-year internship at a regional logistics agency where I supported a team of four in daily warehouse operations. My role centered on coordinating with third-party carriers to schedule freight pickups and managing outbound shipment do
+  id: resume_710 | level: senior | exp: 7.5 yrs | raw_text: 254 words
+  skills: PostgreSQL, MongoDB, Redis, Kubernetes, Golang, Data Modeling
+  projects: ShardMaster
+  background: With over seven years of professional experience in database engineering, I have dedicated my career to designing and managing high-scale, resilient storage systems. In my most recent role as a lead database engineer at an enterprise software firm, I oversaw a team of twelve responsible for the arch
 
-  id: resume_708 | level: senior | exp: 8.5 yrs | raw_text: 253 words
-  skills: Sap S/4Hana, Oracle Netsuite, Sql, R, Python, Procurement, Demand Planning, Tableau
-  projects: GlobalChainVision
-  background: With over eight years of extensive experience in global supply chain management and enterprise-level logistics, I have built a robust reputation for optimizing complex procurement frameworks and large-scale inventory architectures. In my most recent role as a lead supply chain analyst at an enterpri
+  id: resume_711 | level: senior | exp: 8.2 yrs | raw_text: 261 words
+  skills: PostgreSQL, MongoDB, Redis, Ansible, Python, GCP
+  projects: ReliabilityEngine
+  background: Over the past eight years, I have established myself as an expert in database reliability and performance engineering. In my current capacity as a lead database architect at a global fintech startup, I manage a team of fifteen engineers focused on ensuring 99.999% uptime for our core transaction sys
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_706 | title: Supply Chain Analyst | level: middle | min_exp: 3 yrs | raw_text: 202 words
-  required_skills: Sql, Excel, Sap, Procurement
-  preferred_skills: Tableau, Inventory Management
-  description: We are seeking a detail-oriented Supply Chain Analyst to join our growing operations team of thirty people. Our department manages material procurement and inventory health for a high-volume consumer goods business. In this role, you will be responsi
+  id: jd_709 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: PostgreSQL, MongoDB, Redis
+  preferred_skills: Docker, Shell Scripting
+  description: We are looking for a Junior Database Engineer to join our core infrastructure team of fifteen people. Our team is responsible for maintaining the stability and performance of our diverse database environment, which supports our central user-facing ap
 
-  id: jd_707 | title: Senior Logistics Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Sap S/4hana, Oracle Netsuite, Sql, Python, Demand Planning
-  preferred_skills: Machine Learning, Tableau
-  description: Our logistics engineering department is looking for a Senior Logistics Systems Architect to lead the modernization of our enterprise inventory management infrastructure. Our team of twelve engineers focuses on building highly scalable, resilient syst
+  id: jd_710 | title: Associate Database Developer | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: PostgreSQL, MongoDB, Redis
+  preferred_skills: Linux, Git
+  description: Our operations team of twelve is seeking an Associate Database Developer to help us maintain and optimize the data storage layers of our core application. This role focuses on supporting our developers with query performance issues and ensuring our d
 
-  id: jd_708 | title: Lead Supply Chain Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Sap S/4hana, Oracle Netsuite, Sql, Python, Procurement
-  preferred_skills: Demand Planning, Data Governance
-  description: Our operations technology team is looking for a Lead Supply Chain Architect to oversee the architectural design and health of our global supply chain management platform. This team of twenty supports mission-critical logistics software that handles p
+  id: jd_711 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: PostgreSQL, MongoDB, Redis, Kubernetes, Terraform
+  preferred_skills: Distributed Systems, Data Modeling
+  description: Our platform engineering team of twenty is seeking a Senior Database Architect to lead our data strategy and manage our highly scalable data infrastructure. You will be responsible for the overall architectural design, performance, and security of ou
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2115 pairs total.
+Overall dataset so far: 2124 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  420  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  424  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  424  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  423  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  424  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  424  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  426  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  424  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  424  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  426  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2116   resume_706 × jd_706
-  pair_2117   resume_706 × jd_707
-  pair_2118   resume_706 × jd_708
-  pair_2119   resume_707 × jd_706
-  pair_2120   resume_707 × jd_707
-  pair_2121   resume_707 × jd_708
-  pair_2122   resume_708 × jd_706
-  pair_2123   resume_708 × jd_707
-  pair_2124   resume_708 × jd_708
+  pair_2125   resume_709 × jd_709
+  pair_2126   resume_709 × jd_710
+  pair_2127   resume_709 × jd_711
+  pair_2128   resume_710 × jd_709
+  pair_2129   resume_710 × jd_710
+  pair_2130   resume_710 × jd_711
+  pair_2131   resume_711 × jd_709
+  pair_2132   resume_711 × jd_710
+  pair_2133   resume_711 × jd_711
 
 ════════════════════════════════════
 OUTPUT FORMAT
