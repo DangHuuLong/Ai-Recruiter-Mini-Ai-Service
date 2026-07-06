@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_736 | level: junior | exp: 0.6 yrs | raw_text: 258 words
-  skills: Figma, Notion, Maze, Wireframing, Prototyping, User Research
-  projects: EcoTrack
-  background: I am an enthusiastic Junior Product Designer who recently graduated and completed a comprehensive internship in the digital interface space. Over the past seven months, I worked as a Product Design Intern at an e-commerce startup company, collaborating within a small, fast-paced team of three design
+  id: resume_739 | level: middle | exp: 4.0 yrs | raw_text: 278 words
+  skills: Splunk, Wireshark, Nmap, Nessus, Network Security, Incident Response
+  projects: NetWatch
+  background: I am an analytical Security Analyst with four years of commercial experience in incident response and vulnerability validation. In my previous role as an Information Security Specialist at a healthcare tech startup, I operated within a compact team of four engineers for two years, managing end-to-en
 
-  id: resume_737 | level: junior | exp: 0.7 yrs | raw_text: 287 words
-  skills: Figma, Adobe Illustrator, Miro, UI Design, Prototyping, Information Architecture
-  projects: HealthSync
-  background: I am a detail-oriented Junior UI/UX Designer looking to apply my foundational skills in asset creation, interactive mockups, and usability evaluation to a growing product squad. I recently wrapped up an eight-month stint as a Junior Graphic and UI Designer at a boutique creative agency, operating in
+  id: resume_740 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Splunk, QRadar, Burp Suite, Metasploit, Snort, Network Security, Penetration Testing
+  projects: ThreatStreamer
+  background: I am a Senior Cybersecurity Architect and Infrastructure Lead with over eight years of professional experience building enterprise defense systems, deploying scalable telemetry, and running advanced offensive engagements. Currently, I operate as a Lead Security Infrastructure Engineer at a global fi
 
-  id: resume_738 | level: senior | exp: 8.0 yrs | raw_text: 272 words
-  skills: Figma, Miro, ProtoPie, User Research, Design Systems, Prototyping, Interaction Design, Data Visualization
-  projects: DesignTokenSync
-  background: I am a Lead Product Designer with over eight years of experience directing design strategies, scaling design systems, and conducting complex mixed-methods user research inside enterprise organizations. Currently, I serve as a Senior Lead Product Designer at a large-scale fintech enterprise, where I 
+  id: resume_741 | level: senior | exp: 7.0 yrs | raw_text: 265 words
+  skills: Metasploit, QRadar, Snort, Nmap, Penetration Testing, Network Security, Information Security
+  projects: NetAuditor
+  background: I am a Principal Security Engineer and Offensive Specialist with over seven years of professional experience orchestrating penetration testing operations, building secure network topologies, and implementing advanced log analytics frameworks. In my current capacity as a Senior Security Engineer at a
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_736 | title: UI/UX Designer | level: middle | min_exp: 3 yrs | raw_text: 196 words
-  required_skills: Figma, Miro, UI Design, Prototyping
-  preferred_skills: Maze
-  description: We are seeking an analytical and collaborative UI/UX Designer to join our expanding internal product team. Our product design squad consists of three mid-level individual contributors, a dedicated data analyst, and a lead product manager, all focused
+  id: jd_739 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Splunk, Wireshark, Nmap, Network Security
+  preferred_skills: Incident Response
+  description: We are seeking an inquisitive Junior Information Security Analyst to join our centralized Security Operations Center. Our immediate defense group consists of four security analysts, a threat hunter, and an operations manager, all focused on identifyi
 
-  id: jd_737 | title: Senior Lead Product Designer - Design Systems | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Figma, ProtoPie, Design Systems, User Research
-  preferred_skills: Interaction Design
-  description: Our Core Platform Design division is searching for a visionary Senior Lead Product Designer to champion our comprehensive design system architecture and spearhead pattern governance across all enterprise products. The centralized design group is comp
+  id: jd_740 | title: Associate Cybersecurity Engineer | level: junior | min_exp: 1 yrs | raw_text: 196 words
+  required_skills: Splunk, Nessus, Network Security, Incident Response
+  preferred_skills: Wireshark
+  description: Our Core Infrastructure Security group is searching for an analytical Associate Cybersecurity Engineer to assist in the continuous defense and compliance optimization of our enterprise networks. The internal safety department is composed of five secu
 
-  id: jd_738 | title: Senior UX Specialist & Research Lead | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: User Research, Figma, Data Visualization, Interaction Design
-  preferred_skills: Miro
-  description: We are looking for an experienced Senior UX Specialist & Research Lead to steer our data-driven user research methodologies and direct high-impact interaction design strategies for our enterprise analytics ecosystem. The team is made up of four senio
+  id: jd_741 | title: Senior Security Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: QRadar, Snort, Metasploit, Network Security
+  preferred_skills: Penetration Testing
+  description: Our Corporate Defense Engineering division is looking for an experienced Senior Security Infrastructure Architect to steer our advanced threat modeling programs and direct long-term defensive strategy across our high-throughput transactional environm
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2205 pairs total.
+Overall dataset so far: 2214 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  438  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  442  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  442  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  441  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  442  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  442  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  444  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  442  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  442  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  444  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2206   resume_736 × jd_736
-  pair_2207   resume_736 × jd_737
-  pair_2208   resume_736 × jd_738
-  pair_2209   resume_737 × jd_736
-  pair_2210   resume_737 × jd_737
-  pair_2211   resume_737 × jd_738
-  pair_2212   resume_738 × jd_736
-  pair_2213   resume_738 × jd_737
-  pair_2214   resume_738 × jd_738
+  pair_2215   resume_739 × jd_739
+  pair_2216   resume_739 × jd_740
+  pair_2217   resume_739 × jd_741
+  pair_2218   resume_740 × jd_739
+  pair_2219   resume_740 × jd_740
+  pair_2220   resume_740 × jd_741
+  pair_2221   resume_741 × jd_739
+  pair_2222   resume_741 × jd_740
+  pair_2223   resume_741 × jd_741
 
 ════════════════════════════════════
 OUTPUT FORMAT
