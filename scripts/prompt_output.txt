@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_661 | level: middle | exp: 4.0 yrs | raw_text: 278 words
-  skills: BPMN 2.0, Jira, Confluence, Lucidchart, SQL Server, Power Automate, Stakeholder Management, Requirements Gathering
-  projects: Project Streamline
-  background: Over the past four years, I have served as a Business Analyst in an agile agency setting where I managed requirements gathering and stakeholder communication for mid-sized software projects. Working within cross-functional teams of ten, I focused heavily on documenting business processes using BPMN 
+  id: resume_664 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: Excel, SQL, Xero, Financial Reporting, Data Analysis
+  projects: Financial Insight Tracker
+  background: I am a motivated finance graduate with a focus on data analysis and financial reporting within the fintech industry. During my recent internship at a fast-paced fintech startup, where I worked on a team of five, I assisted in the preparation of daily cash flow reports and analyzed transaction data f
 
-  id: resume_662 | level: senior | exp: 8.0 yrs | raw_text: 274 words
-  skills: BPMN 2.0, Jira, Miro, Tableau, Python, AWS ECS, PostgreSQL, Stakeholder Management, PRINCE2, Project Governance
-  projects: DataLens
-  background: With eight years of dedicated experience as a Senior Business Analyst and Project Lead in diverse enterprise-level environments, I have become an expert in bridging the gap between high-level business objectives and technical execution. My professional background includes leading teams of up to fift
+  id: resume_665 | level: middle | exp: 4.0 yrs | raw_text: 261 words
+  skills: SAP ERP, Tableau, SQL, Advanced Excel, Financial Modeling, Variance Analysis, Forensic Accounting
+  projects: Operation Transparency
+  background: Over the past four years, I have worked as a Financial Analyst at a mid-sized enterprise specializing in payment processing, where I managed financial planning, analysis, and quarterly reporting. Leading a team of four, I was responsible for developing complex financial models to forecast revenue gr
 
-  id: resume_663 | level: senior | exp: 7.0 yrs | raw_text: 268 words
-  skills: BPMN 2.0, Jira, Confluence, Visio, SQL, Kubernetes, Python, Power BI, Stakeholder Management, Risk Management
-  projects: Operation Insight
-  background: Over the past seven years, I have functioned as a Principal Business Analyst and Lead Project Manager within large enterprise technology organizations. My role has primarily involved managing multi-million dollar portfolios, coordinating between cross-functional teams, and executing complex BPMN-bas
+  id: resume_666 | level: middle | exp: 5.0 yrs | raw_text: 256 words
+  skills: QuickBooks, Power BI, PostgreSQL, Python, AML Monitoring, Financial Reporting, Excel
+  projects: Compliance-Shield
+  background: I am a Financial Reporting Specialist with five years of experience in the fintech sector, having served in both startup and agency environments. During my time at a global fintech agency, I oversaw end-to-end financial reporting for twenty international clients, ensuring compliance with local and i
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_661 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 236 words
-  required_skills: Jira, Confluence, Requirements Gathering, Basic BPMN
-  preferred_skills: SQL, Agile
-  description: Our team is looking for a dedicated Junior Business Analyst to support our core product development group, which consists of about fifteen professionals including developers, designers, and quality assurance engineers. In this role, you will assist i
+  id: jd_664 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Excel, SQL, Financial Reporting, Reconciliation
+  preferred_skills: Cloud Accounting, Data Analysis
+  description: Our finance department is seeking a Junior Financial Analyst to support our growing fintech platform. The team, consisting of eight professionals, focuses on delivering accurate financial data to support strategic growth and product development. In t
 
-  id: jd_662 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 221 words
-  required_skills: Jira, Excel, Stakeholder Communication, Documentation
-  preferred_skills: BPMN, Project Management
-  description: We are seeking an enthusiastic Associate Project Coordinator to join our project management office, supporting a team of twenty focused on digital product delivery. Your primary mission is to help keep projects on track by monitoring task progress, u
+  id: jd_665 | title: Senior Regulatory Compliance Specialist | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: AML Monitoring, Forensic Accounting, Compliance Strategy, Python, SQL, SAP ERP
+  preferred_skills: Cloud Infrastructure, Regulatory Audits
+  description: Our global compliance team is looking for a Senior Regulatory Compliance Specialist to lead our efforts in maintaining a robust and compliant financial ecosystem. The team size is twenty-five, working closely with engineering, legal, and data departm
 
-  id: jd_663 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 230 words
-  required_skills: BPMN 2.0, Jira, Confluence, SQL, Stakeholder Management, System Architecture
-  preferred_skills: Cloud Infrastructure, PMP, CBAP
-  description: Our firm is looking for a highly experienced Senior Business Systems Analyst to serve as a cornerstone of our enterprise product team, currently consisting of thirty members across global regions. You will be responsible for defining complex business
+  id: jd_666 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: Financial Architecture, Python, PostgreSQL, Power BI, Financial Modeling
+  preferred_skills: AI Analytics, Database Management
+  description: We are seeking a Senior Financial Systems Architect to join our infrastructure and finance team, consisting of twelve engineers and analysts. This team is dedicated to designing and maintaining the systems that drive our automated financial reporting
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1980 pairs total.
+Overall dataset so far: 1989 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  396  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  397  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  395  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  395  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  397  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  397  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  397  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  399  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  397  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  399  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1981   resume_661 × jd_661
-  pair_1982   resume_661 × jd_662
-  pair_1983   resume_661 × jd_663
-  pair_1984   resume_662 × jd_661
-  pair_1985   resume_662 × jd_662
-  pair_1986   resume_662 × jd_663
-  pair_1987   resume_663 × jd_661
-  pair_1988   resume_663 × jd_662
-  pair_1989   resume_663 × jd_663
+  pair_1990   resume_664 × jd_664
+  pair_1991   resume_664 × jd_665
+  pair_1992   resume_664 × jd_666
+  pair_1993   resume_665 × jd_664
+  pair_1994   resume_665 × jd_665
+  pair_1995   resume_665 × jd_666
+  pair_1996   resume_666 × jd_664
+  pair_1997   resume_666 × jd_665
+  pair_1998   resume_666 × jd_666
 
 ════════════════════════════════════
 OUTPUT FORMAT
