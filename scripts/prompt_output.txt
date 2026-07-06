@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_664 | level: junior | exp: 0.5 yrs | raw_text: 267 words
-  skills: Excel, SQL, Xero, Financial Reporting, Data Analysis
-  projects: Financial Insight Tracker
-  background: I am a motivated finance graduate with a focus on data analysis and financial reporting within the fintech industry. During my recent internship at a fast-paced fintech startup, where I worked on a team of five, I assisted in the preparation of daily cash flow reports and analyzed transaction data f
+  id: resume_667 | level: junior | exp: 0.5 yrs | raw_text: 263 words
+  skills: Python, Flask, React, Tailwind CSS, PostgreSQL, SQLAlchemy, SQLite, Git
+  projects: DevTracker, BookNook
+  background: I am an enthusiastic Junior Full-Stack Developer holding a Bachelor of Science in Computer Science, graduated in 2025. During my final year, I completed a six-month internship at an early-stage healthcare startup within a tight-knit team of four engineers. In this role, I took ownership of implement
 
-  id: resume_665 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: SAP ERP, Tableau, SQL, Advanced Excel, Financial Modeling, Variance Analysis, Forensic Accounting
-  projects: Operation Transparency
-  background: Over the past four years, I have worked as a Financial Analyst at a mid-sized enterprise specializing in payment processing, where I managed financial planning, analysis, and quarterly reporting. Leading a team of four, I was responsible for developing complex financial models to forecast revenue gr
+  id: resume_668 | level: senior | exp: 7.5 yrs | raw_text: 269 words
+  skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Redis, Celery, Docker, AWS ECS, Kafka
+  projects: LogiPulse
+  background: Seasoned Lead Full-Stack Engineer with over seven years of professional experience driving technical excellence across startup and enterprise architectures. At my previous enterprise employer, a global logistics corporation, I operated as Tech Lead for a team of nine engineers where I spearheaded th
 
-  id: resume_666 | level: middle | exp: 5.0 yrs | raw_text: 256 words
-  skills: QuickBooks, Power BI, PostgreSQL, Python, AML Monitoring, Financial Reporting, Excel
-  projects: Compliance-Shield
-  background: I am a Financial Reporting Specialist with five years of experience in the fintech sector, having served in both startup and agency environments. During my time at a global fintech agency, I oversaw end-to-end financial reporting for twenty international clients, ensuring compliance with local and i
+  id: resume_669 | level: senior | exp: 8.0 yrs | raw_text: 264 words
+  skills: Python, Django, Flask, React, TypeScript, Tailwind CSS, PostgreSQL, Redis, Kubernetes, Docker, AWS EKS, Terraform
+  projects: FinSight
+  background: Dynamic and results-driven Senior Software Engineer with eight years of comprehensive experience in full-stack web development, infrastructure automation, and technical team leadership. In my most recent role within an enterprise financial services firm, I acted as a Principal Engineer leading an ag
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_664 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: Excel, SQL, Financial Reporting, Reconciliation
-  preferred_skills: Cloud Accounting, Data Analysis
-  description: Our finance department is seeking a Junior Financial Analyst to support our growing fintech platform. The team, consisting of eight professionals, focuses on delivering accurate financial data to support strategic growth and product development. In t
+  id: jd_667 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Python, Flask, React, Tailwind CSS, PostgreSQL, SQLAlchemy, Git
+  preferred_skills: Docker, HTML5
+  description: We are looking for an enthusiastic Junior Full-Stack Developer to join our growing engineering team of six developers. Our product team focuses on building intuitive, user-friendly SaaS web applications for small businesses. In this entry-level role,
 
-  id: jd_665 | title: Senior Regulatory Compliance Specialist | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: AML Monitoring, Forensic Accounting, Compliance Strategy, Python, SQL, SAP ERP
-  preferred_skills: Cloud Infrastructure, Regulatory Audits
-  description: Our global compliance team is looking for a Senior Regulatory Compliance Specialist to lead our efforts in maintaining a robust and compliant financial ecosystem. The team size is twenty-five, working closely with engineering, legal, and data departm
+  id: jd_668 | title: Full-Stack Software Engineer | level: middle | min_exp: 3 yrs | raw_text: 189 words
+  required_skills: Python, FastAPI, React, TypeScript, Redux Toolkit, PostgreSQL, Docker
+  preferred_skills: Redis, AWS, Celery
+  description: Our web engineering department is seeking a Full-Stack Software Engineer to join a dynamic team of eight developers focused on scaling our digital marketplace. Your day-to-day responsibilities will involve designing and implementing robust backend ar
 
-  id: jd_666 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: Financial Architecture, Python, PostgreSQL, Power BI, Financial Modeling
-  preferred_skills: AI Analytics, Database Management
-  description: We are seeking a Senior Financial Systems Architect to join our infrastructure and finance team, consisting of twelve engineers and analysts. This team is dedicated to designing and maintaining the systems that drive our automated financial reporting
+  id: jd_669 | title: Senior Tech Lead - Full-Stack | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Python, FastAPI, React, TypeScript, Redux Toolkit, Celery, Redis, Kafka, Docker, Kubernetes, AWS ECS, Terraform
+  preferred_skills: PostgreSQL, GraphQL
+  description: We are looking for an exceptional Senior Tech Lead to head our core platform engineering team of ten engineers. Our team is responsible for architecting and operating our enterprise-grade data analytics platform, which processes millions of operation
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1989 pairs total.
+Overall dataset so far: 1998 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  397  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  397  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  399  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  397  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  399  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  399  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:  401  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  399  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  399  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  400  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1990   resume_664 × jd_664
-  pair_1991   resume_664 × jd_665
-  pair_1992   resume_664 × jd_666
-  pair_1993   resume_665 × jd_664
-  pair_1994   resume_665 × jd_665
-  pair_1995   resume_665 × jd_666
-  pair_1996   resume_666 × jd_664
-  pair_1997   resume_666 × jd_665
-  pair_1998   resume_666 × jd_666
+  pair_1999   resume_667 × jd_667
+  pair_2000   resume_667 × jd_668
+  pair_2001   resume_667 × jd_669
+  pair_2002   resume_668 × jd_667
+  pair_2003   resume_668 × jd_668
+  pair_2004   resume_668 × jd_669
+  pair_2005   resume_669 × jd_667
+  pair_2006   resume_669 × jd_668
+  pair_2007   resume_669 × jd_669
 
 ════════════════════════════════════
 OUTPUT FORMAT
