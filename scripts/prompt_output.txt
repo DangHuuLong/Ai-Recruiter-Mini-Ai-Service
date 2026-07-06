@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_646 | level: junior | exp: 0.5 yrs | raw_text: 252 words
-  skills: Canva, Buffer, WordPress, Social Media Scheduling, Google Analytics 4, Content Creation
-  projects: TrendyBites
-  background: I am an enthusiastic aspiring digital marketer eager to apply my academic insights to real-world content landscapes. I recently finalized a six-month professional internship at a fast-growing digital agency, where I worked with a close-knit group of three creative marketing specialists. In this intr
+  id: resume_649 | level: middle | exp: 4.0 yrs | raw_text: 290 words
+  skills: SQL Server, Oracle NetSuite, Power BI, Python, PostgreSQL, Financial Reporting, Budget Forecasting
+  projects: FinTrack
+  background: I am a dedicated Financial Analyst with four years of comprehensive experience in fintech and accounting operations. My career began at a fast-paced fintech startup, where I spent three years within an agile ten-person finance department. My primary responsibilities involved automating recurring mon
 
-  id: resume_647 | level: junior | exp: 1.0 yrs | raw_text: 266 words
-  skills: Hootsuite, Mailchimp, SEMrush, Meta Business Suite, Copywriting, Data Tracking
-  projects: SocialPulse
-  background: I am a motivated digital media specialist entering the market with a baseline focus on marketing data tracking and social media growth strategies. Recently, I finalized a one-year associate internship position at a boutique marketing consultancy, where I operated within an agile five-person client s
+  id: resume_650 | level: senior | exp: 8.0 yrs | raw_text: 272 words
+  skills: SAP S/4HANA, SQL Server, Tableau, Python, AML Compliance, KYC Reporting, Financial Modeling
+  projects: Project Sovereignty
+  background: As a Senior Financial Controller with eight years of extensive experience, I specialize in navigating complex regulatory environments and architecting scalable financial infrastructures for high-growth fintech platforms. In my previous role at a large-scale international fintech enterprise, I led a 
 
-  id: resume_648 | level: senior | exp: 8.0 yrs | raw_text: 267 words
-  skills: Ahrefs, Google Analytics 4, Screaming Frog, Looker Studio, Google Search Console, Technical SEO, Content Strategy, Conversion Rate Optimization
-  projects: Project Catalyst
-  background: As a Senior Content Strategy Director with eight years of comprehensive experience, I specialize in engineering highly profitable, data-led search optimization frameworks and multi-channel growth systems. In my previous enterprise tenure at an international digital commerce corporation, I directed a
+  id: resume_651 | level: senior | exp: 9.0 yrs | raw_text: 271 words
+  skills: SAP S/4HANA, SQL Server, Financial Modeling, Data Mapping, Financial Reporting, Compliance Automation
+  projects: LedgerPulse
+  background: I am a seasoned Senior Financial Architect with nine years of professional experience in large-scale fintech accounting and financial system integration. My expertise lies in orchestrating complex administrative workflows within enterprise-level banking environments. During my tenure at a national d
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_646 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 216 words
-  required_skills: Google Search Console, Looker Studio, Ahrefs, SEO
-  preferred_skills: Screaming Frog, SQL
-  description: Our growth marketing division is actively scaling up to reinforce our expanding array of digital consumer services. As an established core team of eight individual contributors, we build and maintain complex acquisition systems that drive high-volume
+  id: jd_649 | title: Junior Financial Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 210 words
+  required_skills: SQL Server, Excel, Financial Reconciliation
+  preferred_skills: Fintech, Accounting Principles
+  description: Our financial operations team is looking for a detail-oriented Junior Financial Operations Associate to support our growing fintech platform. We operate as a team of eight, managing the daily reconciliation and reporting requirements for thousands of
 
-  id: jd_647 | title: Senior SEO Architecture Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Screaming Frog, Ahrefs, Google Analytics 4, Technical SEO
-  preferred_skills: Log File Analysis, Schema Architecture
-  description: Our enterprise growth department coordinates an extensive, multi-national web architecture that converts millions of global consumers monthly. Backed by a high-performing department of fifteen experts, our primary objective centers on re-architecting
+  id: jd_650 | title: Associate Accountant - Fintech | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: SQL, Excel, Financial Documentation
+  preferred_skills: SAP, Fintech Environment
+  description: The accounting department is expanding to accommodate our recent growth in digital payment services. As an Associate Accountant, you will serve as primary support for our transaction accounting team, working alongside a team of six analysts and one s
 
-  id: jd_648 | title: Senior Growth and Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Looker Studio, Content Strategy, Conversion Rate Optimization
-  preferred_skills: Google Search Console, User Journey Mapping
-  description: Our inbound brand optimization team is completely responsible for the baseline performance, market positioning, and structural growth of our central product assets which convert millions of active buyers. Functioning as a high-velocity unit of twelve
+  id: jd_651 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: SAP S/4HANA, SQL Server, Financial Modeling, Regulatory Compliance
+  preferred_skills: Python, Global Financial Reporting
+  description: Our enterprise financial systems team is looking for a visionary Senior Financial Systems Architect to drive the technical evolution of our global financial infrastructure. Working as a lead on a high-impact team of twenty, you will be responsible fo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1935 pairs total.
+Overall dataset so far: 1944 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  386  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  387  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  387  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  387  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  388  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  390  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  389  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  387  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  388  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  390  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1936   resume_646 × jd_646
-  pair_1937   resume_646 × jd_647
-  pair_1938   resume_646 × jd_648
-  pair_1939   resume_647 × jd_646
-  pair_1940   resume_647 × jd_647
-  pair_1941   resume_647 × jd_648
-  pair_1942   resume_648 × jd_646
-  pair_1943   resume_648 × jd_647
-  pair_1944   resume_648 × jd_648
+  pair_1945   resume_649 × jd_649
+  pair_1946   resume_649 × jd_650
+  pair_1947   resume_649 × jd_651
+  pair_1948   resume_650 × jd_649
+  pair_1949   resume_650 × jd_650
+  pair_1950   resume_650 × jd_651
+  pair_1951   resume_651 × jd_649
+  pair_1952   resume_651 × jd_650
+  pair_1953   resume_651 × jd_651
 
 ════════════════════════════════════
 OUTPUT FORMAT
