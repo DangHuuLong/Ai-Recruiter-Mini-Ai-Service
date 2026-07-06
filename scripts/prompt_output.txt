@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_709 | level: middle | exp: 4.0 yrs | raw_text: 264 words
-  skills: PostgreSQL, MongoDB, Redis, Terraform, ClickHouse, Kafka
-  projects: LogStreamer
-  background: As a database engineer with four years of professional experience, I have focused on building scalable data layers for high-traffic web applications. My career began at a fast-paced technology startup where I served as a junior developer on a team of six. During my two-year tenure, I maintained Post
+  id: resume_712 | level: junior | exp: 0.5 yrs | raw_text: 263 words
+  skills: SEO, Social Media Management, Google Analytics 4, Ahrefs, WordPress, Canva
+  projects: LocalBiz Growth
+  background: As a recent graduate starting my career in digital marketing, I am highly motivated to build expertise in content strategy and SEO. During my comprehensive internship at a local digital marketing agency where I worked on a collaborative team of four, I assisted with day-to-day social media schedulin
 
-  id: resume_710 | level: senior | exp: 7.5 yrs | raw_text: 254 words
-  skills: PostgreSQL, MongoDB, Redis, Kubernetes, Golang, Data Modeling
-  projects: ShardMaster
-  background: With over seven years of professional experience in database engineering, I have dedicated my career to designing and managing high-scale, resilient storage systems. In my most recent role as a lead database engineer at an enterprise software firm, I oversaw a team of twelve responsible for the arch
+  id: resume_713 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: Social Media, Google Ads, Google Search Console, Google Analytics 4, Buffer, Canva
+  projects: CampusConnect
+  background: I am an aspiring digital marketing professional with a passion for creative storytelling and audience analytics. My professional experience includes a six-month stint as a marketing coordinator at a fast-paced startup, where I worked under the guidance of a senior manager to streamline our social me
 
-  id: resume_711 | level: senior | exp: 8.2 yrs | raw_text: 261 words
-  skills: PostgreSQL, MongoDB, Redis, Ansible, Python, GCP
-  projects: ReliabilityEngine
-  background: Over the past eight years, I have established myself as an expert in database reliability and performance engineering. In my current capacity as a lead database architect at a global fintech startup, I manage a team of fifteen engineers focused on ensuring 99.999% uptime for our core transaction sys
+  id: resume_714 | level: senior | exp: 7.5 yrs | raw_text: 267 words
+  skills: SEO, Advanced Analytics, HubSpot, Google Analytics 4, SEMrush, Looker Studio
+  projects: DataPulse
+  background: With over seven years of professional experience in digital marketing and content strategy, I have led large-scale initiatives for enterprise-level clients and high-growth brands. In my most recent role as a lead content strategist at a global advertising agency, I managed a team of fifteen, oversee
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_709 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: PostgreSQL, MongoDB, Redis
-  preferred_skills: Docker, Shell Scripting
-  description: We are looking for a Junior Database Engineer to join our core infrastructure team of fifteen people. Our team is responsible for maintaining the stability and performance of our diverse database environment, which supports our central user-facing ap
+  id: jd_712 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: SEO, Social Media Strategy, Google Analytics 4, HubSpot, Looker Studio, SEMrush
+  preferred_skills: HTML, CSS, Salesforce
+  description: Our marketing team of eight is looking for a Digital Marketing Specialist to take ownership of our content strategy and channel performance. We operate in a competitive tech industry where clear, data-backed communication is essential to our brand gr
 
-  id: jd_710 | title: Associate Database Developer | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: PostgreSQL, MongoDB, Redis
-  preferred_skills: Linux, Git
-  description: Our operations team of twelve is seeking an Associate Database Developer to help us maintain and optimize the data storage layers of our core application. This role focuses on supporting our developers with query performance issues and ensuring our d
+  id: jd_713 | title: Senior SEO & Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: SEO, Technical SEO, Google Analytics 4, HubSpot, SEMrush, Screaming Frog, Looker Studio
+  preferred_skills: Python, SQL
+  description: We are seeking a Senior SEO & Content Strategist to join our central marketing organization of twenty people. This team drives the organic acquisition strategy for our flagship enterprise product, and you will play a pivotal role in architectural dec
 
-  id: jd_711 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: PostgreSQL, MongoDB, Redis, Kubernetes, Terraform
-  preferred_skills: Distributed Systems, Data Modeling
-  description: Our platform engineering team of twenty is seeking a Senior Database Architect to lead our data strategy and manage our highly scalable data infrastructure. You will be responsible for the overall architectural design, performance, and security of ou
+  id: jd_714 | title: Senior Digital Marketing Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: SEO, Technical SEO, Google Analytics 4, HubSpot, SEMrush, Screaming Frog, Looker Studio
+  preferred_skills: AI Marketing, Predictive Analytics
+  description: Our growth marketing department of twenty-five is looking for a Senior Digital Marketing Lead to oversee our entire digital acquisition and content strategy. You will be responsible for the performance of our multi-million dollar marketing budget and
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2124 pairs total.
+Overall dataset so far: 2133 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  424  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  426  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  424  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  424  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  426  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  424  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  427  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  428  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  426  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  428  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2125   resume_709 × jd_709
-  pair_2126   resume_709 × jd_710
-  pair_2127   resume_709 × jd_711
-  pair_2128   resume_710 × jd_709
-  pair_2129   resume_710 × jd_710
-  pair_2130   resume_710 × jd_711
-  pair_2131   resume_711 × jd_709
-  pair_2132   resume_711 × jd_710
-  pair_2133   resume_711 × jd_711
+  pair_2134   resume_712 × jd_712
+  pair_2135   resume_712 × jd_713
+  pair_2136   resume_712 × jd_714
+  pair_2137   resume_713 × jd_712
+  pair_2138   resume_713 × jd_713
+  pair_2139   resume_713 × jd_714
+  pair_2140   resume_714 × jd_712
+  pair_2141   resume_714 × jd_713
+  pair_2142   resume_714 × jd_714
 
 ════════════════════════════════════
 OUTPUT FORMAT
