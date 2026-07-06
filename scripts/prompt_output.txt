@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_724 | level: junior | exp: 0.5 yrs | raw_text: 264 words
-  skills: Microsoft Visio, Trello, Requirements Elicitation, Process Mapping, Microsoft Excel
-  projects: LogisticsFlow
-  background: I am an aspiring junior business analyst with a solid foundational knowledge of requirements elicitation and workflow design. Recently, I completed a six-month internship as a Junior Process Analyst at a technology startup specializing in supply chain logistics solutions. In this role, I operated wi
+  id: resume_727 | level: middle | exp: 4.0 yrs | raw_text: 272 words
+  skills: Splunk, Nessus, Wireshark, Nmap, Network Security, Vulnerability Assessment
+  projects: NetWatch Alpha
+  background: I am an experienced Information Security Analyst with four years of dedicated technical history running threat detection and vulnerability management operations. In my previous role as a Cyber Security Specialist at a high-growth fintech startup, I worked within a collaborative security operations t
 
-  id: resume_725 | level: junior | exp: 0.7 yrs | raw_text: 250 words
-  skills: Monday.com, Google Sheets, Project Documentation, Kanban, Agile Methodology
-  projects: EventPlan Pro
-  background: I am a motivated junior project coordinator eager to expand my technical domain experience in corporate project tracking and lifecycle management. I recently wrapped up an eight-month tenure as an Assistant Project Coordinator at a mid-sized digital consulting agency, working closely within a cross-
+  id: resume_728 | level: senior | exp: 8.0 yrs | raw_text: 258 words
+  skills: Splunk, Burp Suite, Metasploit, Nmap, Python, Penetration Testing, Incident Response, SIEM
+  projects: HydraGuard
+  background: I bring eight years of comprehensive senior expertise in enterprise information security infrastructure, offensive security frameworks, and defensive monitoring operations. In my current capacity as Senior Information Security Engineer at a multinational e-commerce enterprise, I direct a cross-funct
 
-  id: resume_726 | level: senior | exp: 7.0 yrs | raw_text: 277 words
-  skills: Camunda BPMN, Jira, Confluence, Enterprise Architect, Python, BPMN, Requirements Traceability, Stakeholder Management
-  projects: MatrixOptima
-  background: I offer over seven years of senior experience leading complex enterprise business analysis, technical systems architecture design, and strategic stakeholder management programs. In my current position as Principal Business Systems Analyst at a global banking enterprise, I direct a high-performing pr
+  id: resume_729 | level: senior | exp: 7.0 yrs | raw_text: 264 words
+  skills: Splunk, Wireshark, Metasploit, Nmap, Python, Network Security, Incident Response, Threat Intelligence
+  projects: packetCapture
+  background: I am a security specialist with seven years of strategic engineering history leading technical optimization, threat monitoring, and sophisticated network defense architectures. In my previous role as Principal Security Solutions Lead at a large global B2B software enterprise, I steered a cross-funct
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_724 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 189 words
-  required_skills: Jira, Microsoft Visio, Requirements Elicitation, Process Mapping
-  preferred_skills: SQL, Agile Methodology
-  description: We are actively looking for a dedicated mid-level Business Analyst to join our collaborative core operations crew. The internal delivery team is composed of four software engineers, two product managers, and an operations lead, all unified around sca
+  id: jd_727 | title: Junior Security Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Splunk, Nessus, Nmap, Network Security
+  preferred_skills: Bash, Vulnerability Assessment
+  description: We are searching for an enthusiastic Junior Security Operations Analyst to join our growing security operations squad. Our immediate team consists of three security specialists, a systems engineer, and a network administrator, all focused on maximizi
 
-  id: jd_725 | title: Senior Business Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Camunda BPMN, Enterprise Architect, Confluence, BPMN, Requirements Traceability
-  preferred_skills: Python, Stakeholder Management
-  description: Our Enterprise Transformation group is looking for an experienced Senior Business Systems Architect to spearhead the structural orchestration of our financial backend data pipelines. The immediate core team consists of five data engineers, two enterp
+  id: jd_728 | title: Associate Network Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
+  required_skills: Wireshark, Nmap, Splunk, Network Security
+  preferred_skills: Cisco, Cloud Networking
+  description: Our core infrastructure team is seeking a motivated Associate Network Security Engineer to execute corporate defensive protection across major operational connection channels. Operating within an agile infrastructure framework, you will work alongsid
 
-  id: jd_726 | title: Lead Process Automation Engineer | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: Camunda BPMN, Jira, Python, BPMN, Stakeholder Management
-  preferred_skills: AWS, Confluence
-  description: We are looking for a Lead Process Automation Engineer to champion our operational efficiency systems, which design the automated workflow engines and integration frameworks powering all internal enterprise systems. The core department is comprised of
+  id: jd_729 | title: Senior Application & Penetration Security Architect | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Burp Suite, Metasploit, Python, Splunk, Penetration Testing
+  preferred_skills: AWS, Docker
+  description: We are looking for a Senior Application and Penetration Security Architect to lead our Performance Defense group, which builds the fundamental vulnerability exploitation architectures and multi-layered protection models powering all software release 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2169 pairs total.
+Overall dataset so far: 2178 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  432  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  434  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  434  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  434  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  435  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  436  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  436  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  434  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  435  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  437  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2170   resume_724 × jd_724
-  pair_2171   resume_724 × jd_725
-  pair_2172   resume_724 × jd_726
-  pair_2173   resume_725 × jd_724
-  pair_2174   resume_725 × jd_725
-  pair_2175   resume_725 × jd_726
-  pair_2176   resume_726 × jd_724
-  pair_2177   resume_726 × jd_725
-  pair_2178   resume_726 × jd_726
+  pair_2179   resume_727 × jd_727
+  pair_2180   resume_727 × jd_728
+  pair_2181   resume_727 × jd_729
+  pair_2182   resume_728 × jd_727
+  pair_2183   resume_728 × jd_728
+  pair_2184   resume_728 × jd_729
+  pair_2185   resume_729 × jd_727
+  pair_2186   resume_729 × jd_728
+  pair_2187   resume_729 × jd_729
 
 ════════════════════════════════════
 OUTPUT FORMAT
