@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_631 | level: middle | exp: 4.0 yrs | raw_text: 267 words
-  skills: SEO, Google Analytics 4, Meta Business Suite, Semrush, Ahrefs, Looker Studio, Content Strategy
-  projects: ReachMax
-  background: I am a dedicated Digital Marketing Specialist with four years of hands-on experience driving growth for e-commerce brands and agile startups. In my current role at a mid-sized marketing agency, I manage a team of three and lead social media campaigns across platforms including Meta Business Suite, L
+  id: resume_634 | level: junior | exp: 0.5 yrs | raw_text: 253 words
+  skills: Docker, AWS, Python, Prometheus, Grafana
+  projects: CloudWatcher
+  background: I am a recent Computer Science graduate passionate about cloud-native technologies and automated infrastructure. During my final year, I completed an internship at a fast-growing local tech startup where I worked as a Junior DevOps Intern for six months. In this role, I was part of a five-person eng
 
-  id: resume_632 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: Technical SEO, SQL, Python, BigQuery, Tableau, Google Ads, Salesforce Marketing Cloud
-  projects: DataBridge
-  background: As a Senior Digital Marketing Strategist with seven years of experience in enterprise-level environments, I specialize in architecting holistic digital ecosystems that align brand narrative with technical performance. Most recently, I served as a Lead Strategist at a global marketing firm, directing
+  id: resume_635 | level: junior | exp: 1.0 yrs | raw_text: 271 words
+  skills: Linux, Bash, Git, Terraform, AWS S3
+  projects: AutoWeb
+  background: Having recently completed my degree, I am eager to kickstart my career in the field of cloud infrastructure and site reliability engineering. During my undergraduate studies, I served as a Student Cloud Assistant for a university research lab, an environment that functioned similarly to an agile dev
 
-  id: resume_633 | level: senior | exp: 8.5 yrs | raw_text: 287 words
-  skills: Content Strategy, Technical SEO, HubSpot, Semrush, Ahrefs, OpenAI API, Asana
-  projects: ContentBot
-  background: With over eight years of experience as a Principal Content Strategist, I bring a wealth of expertise in developing large-scale content engines that fuel organic growth and brand authority. Throughout my career at major media agencies and high-growth technology enterprises, I have led teams of up to 
+  id: resume_636 | level: senior | exp: 8.0 yrs | raw_text: 277 words
+  skills: Kubernetes, AWS EKS, Terraform, Helm, Go, Jenkins, Datadog, ELK
+  projects: ClusterShield, ScalerBot
+  background: I am a senior DevOps engineer with eight years of experience building and scaling highly available cloud environments for enterprise-level organizations. Throughout my career, I have served as a Tech Lead in three distinct organizations, managing teams of up to fifteen engineers while overseeing com
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_631 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Digital Marketing, SEO, Google Analytics 4, Meta Business Suite, Content Strategy
-  preferred_skills: HTML, Video Editing
-  description: Our growth marketing department, consisting of a close-knit team of five, is seeking a motivated Junior Digital Marketing Associate to support our daily operations. We focus on scaling our brand presence across social media and search channels while 
+  id: jd_634 | title: Cloud Infrastructure Engineer | level: middle | min_exp: 3 yrs | raw_text: 208 words
+  required_skills: AWS, Terraform, Docker, CI/CD
+  preferred_skills: Kubernetes, Python, Bash
+  description: Our infrastructure team consists of eight dedicated engineers who are responsible for maintaining our core product architecture and improving the reliability of our cloud environment. We are seeking a Cloud Infrastructure Engineer to join this fast-p
 
-  id: jd_632 | title: Associate Content Specialist | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Content Strategy, SEO, Ahrefs, WordPress, HubSpot
-  preferred_skills: Email Marketing, Graphic Design
-  description: The content team is looking for an Associate Content Specialist to join our fast-paced marketing group of six. We develop educational and promotional content that helps our customers make informed decisions about our digital services. This role is pe
+  id: jd_635 | title: Senior Kubernetes Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Kubernetes, AWS EKS, Terraform, Helm, Go, Observability
+  preferred_skills: Service Mesh, Security Compliance
+  description: The Platform Engineering group is responsible for managing the mission-critical systems that support our entire digital ecosystem. With a team of fifteen, we are currently looking for a Senior Kubernetes Architect to lead our efforts in optimizing ou
 
-  id: jd_633 | title: Senior Digital Growth Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Digital Marketing, Technical SEO, SQL, BigQuery, Salesforce Marketing Cloud, Cross-functional Leadership
-  preferred_skills: Python, Machine Learning
-  description: We are looking for a Senior Digital Growth Lead to helm our strategic marketing division, which currently supports a team of fifteen professionals. Our primary focus is on driving scalable customer acquisition through a blend of technical SEO, data s
+  id: jd_636 | title: Lead DevOps Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Kubernetes, AWS, Terraform, Jenkins, Helm, Go
+  preferred_skills: Database Optimization, CI/CD
+  description: Our growth engineering division supports a team of twenty software developers by providing the tooling and infrastructure necessary to deliver high-quality code at speed. We are looking for a Lead DevOps Infrastructure Engineer to take ownership of o
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1890 pairs total.
+Overall dataset so far: 1899 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  378  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  379  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  377  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  377  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  379  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  378  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  380  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  381  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  379  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  381  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1891   resume_631 × jd_631
-  pair_1892   resume_631 × jd_632
-  pair_1893   resume_631 × jd_633
-  pair_1894   resume_632 × jd_631
-  pair_1895   resume_632 × jd_632
-  pair_1896   resume_632 × jd_633
-  pair_1897   resume_633 × jd_631
-  pair_1898   resume_633 × jd_632
-  pair_1899   resume_633 × jd_633
+  pair_1900   resume_634 × jd_634
+  pair_1901   resume_634 × jd_635
+  pair_1902   resume_634 × jd_636
+  pair_1903   resume_635 × jd_634
+  pair_1904   resume_635 × jd_635
+  pair_1905   resume_635 × jd_636
+  pair_1906   resume_636 × jd_634
+  pair_1907   resume_636 × jd_635
+  pair_1908   resume_636 × jd_636
 
 ════════════════════════════════════
 OUTPUT FORMAT
