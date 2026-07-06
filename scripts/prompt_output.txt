@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_712 | level: junior | exp: 0.5 yrs | raw_text: 263 words
-  skills: SEO, Social Media Management, Google Analytics 4, Ahrefs, WordPress, Canva
-  projects: LocalBiz Growth
-  background: As a recent graduate starting my career in digital marketing, I am highly motivated to build expertise in content strategy and SEO. During my comprehensive internship at a local digital marketing agency where I worked on a collaborative team of four, I assisted with day-to-day social media schedulin
+  id: resume_715 | level: middle | exp: 4.0 yrs | raw_text: 331 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, React Query, Storybook, Vitest
+  projects: CryptoTracker Pro
+  background: Over the past four years, I have established a strong foundation in modern frontend development within fast-paced, agile environments. My most recent position as a Frontend Developer at a high-growth technology startup lasted two years, where I worked on a diverse team of six engineers to architect,
 
-  id: resume_713 | level: junior | exp: 0.5 yrs | raw_text: 274 words
-  skills: Social Media, Google Ads, Google Search Console, Google Analytics 4, Buffer, Canva
-  projects: CampusConnect
-  background: I am an aspiring digital marketing professional with a passion for creative storytelling and audience analytics. My professional experience includes a six-month stint as a marketing coordinator at a fast-paced startup, where I worked under the guidance of a senior manager to streamline our social me
+  id: resume_716 | level: middle | exp: 3.5 yrs | raw_text: 253 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Jest, React Testing Library
+  projects: TaskNexus
+  background: With over three years of intensive experience in professional web development, I have navigated various project lifecycles within enterprise and agency settings. In my current role at a mid-sized software enterprise, I am part of a distributed team of ten developers maintaining a complex React appli
 
-  id: resume_714 | level: senior | exp: 7.5 yrs | raw_text: 267 words
-  skills: SEO, Advanced Analytics, HubSpot, Google Analytics 4, SEMrush, Looker Studio
-  projects: DataPulse
-  background: With over seven years of professional experience in digital marketing and content strategy, I have led large-scale initiatives for enterprise-level clients and high-growth brands. In my most recent role as a lead content strategist at a global advertising agency, I managed a team of fifteen, oversee
+  id: resume_717 | level: senior | exp: 8.5 yrs | raw_text: 260 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Turborepo, Playwright, Jest, Micro-Frontends
+  projects: GlobalState-Utility
+  background: I bring over eight years of comprehensive experience in full-scale frontend architecture and team leadership. Throughout my career, I have successfully steered engineering teams through complex product cycles in both high-growth startup ecosystems and established enterprise environments. As a Senior
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_712 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 202 words
-  required_skills: SEO, Social Media Strategy, Google Analytics 4, HubSpot, Looker Studio, SEMrush
-  preferred_skills: HTML, CSS, Salesforce
-  description: Our marketing team of eight is looking for a Digital Marketing Specialist to take ownership of our content strategy and channel performance. We operate in a competitive tech industry where clear, data-backed communication is essential to our brand gr
+  id: jd_715 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Next.js
+  description: We are looking for an eager Junior Frontend Engineer to join our growing product team of five. Our team is focused on building intuitive, user-facing features for our core educational platform, which serves thousands of students daily. You will be ex
 
-  id: jd_713 | title: Senior SEO & Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 189 words
-  required_skills: SEO, Technical SEO, Google Analytics 4, HubSpot, SEMrush, Screaming Frog, Looker Studio
-  preferred_skills: Python, SQL
-  description: We are seeking a Senior SEO & Content Strategist to join our central marketing organization of twenty people. This team drives the organic acquisition strategy for our flagship enterprise product, and you will play a pivotal role in architectural dec
+  id: jd_716 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 218 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Next.js
+  description: Our team is seeking a motivated Junior Web Developer to help us maintain and extend our web applications. Working alongside a small, collaborative team of four developers, you will focus on delivering quality frontend code that helps our business str
 
-  id: jd_714 | title: Senior Digital Marketing Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: SEO, Technical SEO, Google Analytics 4, HubSpot, SEMrush, Screaming Frog, Looker Studio
-  preferred_skills: AI Marketing, Predictive Analytics
-  description: Our growth marketing department of twenty-five is looking for a Senior Digital Marketing Lead to oversee our entire digital acquisition and content strategy. You will be responsible for the performance of our multi-million dollar marketing budget and
+  id: jd_717 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Turborepo, Playwright
+  preferred_skills: Micro-Frontends
+  description: We are looking for a Senior Frontend Architect to lead our technical strategy and architectural standards within a large-scale engineering organization. You will be responsible for defining the future of our frontend ecosystem, managing performance, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2133 pairs total.
+Overall dataset so far: 2142 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  424  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  427  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  428  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  426  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  428  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  428  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  429  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  428  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  427  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  430  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2134   resume_712 × jd_712
-  pair_2135   resume_712 × jd_713
-  pair_2136   resume_712 × jd_714
-  pair_2137   resume_713 × jd_712
-  pair_2138   resume_713 × jd_713
-  pair_2139   resume_713 × jd_714
-  pair_2140   resume_714 × jd_712
-  pair_2141   resume_714 × jd_713
-  pair_2142   resume_714 × jd_714
+  pair_2143   resume_715 × jd_715
+  pair_2144   resume_715 × jd_716
+  pair_2145   resume_715 × jd_717
+  pair_2146   resume_716 × jd_715
+  pair_2147   resume_716 × jd_716
+  pair_2148   resume_716 × jd_717
+  pair_2149   resume_717 × jd_715
+  pair_2150   resume_717 × jd_716
+  pair_2151   resume_717 × jd_717
 
 ════════════════════════════════════
 OUTPUT FORMAT
