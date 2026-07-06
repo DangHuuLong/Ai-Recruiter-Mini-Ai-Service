@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_616 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Python, Flask, PostgreSQL, Docker, PyTest, SQLite
-  projects: TaskManager API
-  background: I am a motivated computer science graduate with a deep passion for backend API development, having recently completed my degree in 2026. During my final year, I interned at a small web development startup for six months as a Junior Backend Developer, where I worked on a team of four to build basic R
+  id: resume_619 | level: middle | exp: 4.0 yrs | raw_text: 263 words
+  skills: Epic EMR, Qualtrics, SQL Server 2019, Tableau, Python, HL7, FHIR, HIPAA
+  projects: PatientFlow Tracker
+  background: I am a dedicated healthcare operations professional with four years of hands-on experience in clinical coordination and Electronic Medical Record systems management. During my most recent tenure as a Clinical Operations Coordinator at a mid-sized healthcare enterprise, I worked within a cross-functi
 
-  id: resume_617 | level: junior | exp: 0.3 yrs | raw_text: 253 words
-  skills: Node.js, Express, JavaScript, PostgreSQL, MongoDB, Jest
-  projects: RecipeArchive
-  background: I am a recent software engineering graduate who has dedicated my academic career to mastering the fundamentals of backend systems. In 2026, I completed my degree and immediately began a three-month junior apprenticeship at a local digital agency with a team of six developers. My responsibilities inc
+  id: resume_620 | level: senior | exp: 8.5 yrs | raw_text: 261 words
+  skills: Epic EMR, Cerner EMR, HL7, FHIR, AWS Redshift, PyTest, Selenium, HIPAA, System Design
+  projects: CareSync Integration Framework
+  background: I am a senior clinical systems architect with over eight years of experience specializing in enterprise-level healthcare interoperability and medical coordination platforms. For the past five years, I have served as a Senior Clinical Lead at a large-scale healthcare technology enterprise, where I ov
 
-  id: resume_618 | level: senior | exp: 8.5 yrs | raw_text: 265 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Kubernetes, RabbitMQ, Microservices, CI/CD
-  projects: CoreNode Framework
-  background: With over eight years of experience as a backend developer, I have spent the last four years as a Senior Backend Architect in a large enterprise environment, leading a team of fifteen engineers. My expertise lies in designing high-availability systems using Python 3.12, FastAPI 0.110, and PostgreSQL
+  id: resume_621 | level: senior | exp: 9.2 yrs | raw_text: 263 words
+  skills: Cerner EMR, SQL, Tableau, Power BI, R, HIPAA, CMS Compliance, Clinical Operations
+  projects: Clinical Insight Dashboard
+  background: With over nine years of dedicated experience in healthcare administration and clinical operations management, I have developed a deep expertise in high-level medical coordination strategy. Currently, I serve as a Principal Medical Operations Lead at a large healthcare network, where I direct a team 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_616 | title: Backend API Developer | level: middle | min_exp: 3 yrs | raw_text: 215 words
-  required_skills: Python, FastAPI, PostgreSQL, RESTful APIs
-  preferred_skills: Docker, Kubernetes, Async Programming
-  description: Our backend team is growing and we are looking for a mid-level Backend API Developer to join our team of twelve engineers. We focus on building high-performance APIs for our core platform, which serves thousands of concurrent users. In this role, you
+  id: jd_619 | title: Junior Clinical Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 219 words
+  required_skills: Epic EMR, HIPAA, Excel
+  preferred_skills: Tableau, HL7, FHIR
+  description: Our clinical operations team is looking for a motivated Junior Clinical Operations Associate to join our growing unit of ten professionals. We manage a complex digital platform that connects local clinics to regional medical networks, ensuring that p
 
-  id: jd_617 | title: Senior Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Python, FastAPI, PostgreSQL, Microservices, Kubernetes, Distributed Systems
-  preferred_skills: Redis, Kafka, Cloud Native
-  description: We are seeking a Senior Backend Engineer to join our core platform team of twenty. Our platform handles extremely high volumes of traffic, requiring advanced knowledge of system design, microservices, and high-performance database management. You wil
+  id: jd_620 | title: Junior Clinical Data Coordinator | level: junior | min_exp: 1 yrs | raw_text: 220 words
+  required_skills: Cerner EMR, SQL, HIPAA
+  preferred_skills: Python, Data Automation
+  description: We are seeking a detail-oriented Junior Clinical Data Coordinator to join our clinical data team of fifteen. Our group is responsible for maintaining the integrity and availability of patient medical information across our network of outpatient clini
 
-  id: jd_618 | title: Principal API Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, System Design, Leadership
-  preferred_skills: GraphQL, gRPC, Distributed Systems
-  description: Our organization is seeking a Principal API Architect to lead our backend engineering strategy for a team of thirty developers. This role requires deep expertise in building large-scale, enterprise-grade backend infrastructure. You will oversee the e
+  id: jd_621 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 220 words
+  required_skills: Epic EMR, Cerner EMR, HL7, FHIR, PostgreSQL, System Design
+  preferred_skills: AWS, Kubernetes, Distributed Systems
+  description: Our organization is looking for an experienced Senior Healthcare Systems Architect to join our core platform engineering team of thirty. We build and maintain large-scale, high-availability medical coordination systems that are used by hundreds of th
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1845 pairs total.
+Overall dataset so far: 1854 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  368  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  369  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  369  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  369  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  370  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  372  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  371  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  369  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  370  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  372  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1846   resume_616 × jd_616
-  pair_1847   resume_616 × jd_617
-  pair_1848   resume_616 × jd_618
-  pair_1849   resume_617 × jd_616
-  pair_1850   resume_617 × jd_617
-  pair_1851   resume_617 × jd_618
-  pair_1852   resume_618 × jd_616
-  pair_1853   resume_618 × jd_617
-  pair_1854   resume_618 × jd_618
+  pair_1855   resume_619 × jd_619
+  pair_1856   resume_619 × jd_620
+  pair_1857   resume_619 × jd_621
+  pair_1858   resume_620 × jd_619
+  pair_1859   resume_620 × jd_620
+  pair_1860   resume_620 × jd_621
+  pair_1861   resume_621 × jd_619
+  pair_1862   resume_621 × jd_620
+  pair_1863   resume_621 × jd_621
 
 ════════════════════════════════════
 OUTPUT FORMAT
