@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_670 | level: junior | exp: 0.5 yrs | raw_text: 290 words
-  skills: SAP ERP, Inventory Optimization, Microsoft Excel, Warehouse Management Systems (WMS), Power BI
-  projects: SmartStock Optimization
-  background: As a recent graduate in Supply Chain Management, I have built a strong foundational understanding of logistics and inventory operations. Recently, I completed a six-month internship at an enterprise logistics firm as a Junior Supply Chain Coordinator, working within a tight-knit team of five special
+  id: resume_673 | level: middle | exp: 3.5 yrs | raw_text: 268 words
+  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, SQL, NetSuite ERP
+  projects: LedgerSync
+  background: I am a dedicated financial analyst with over three years of corporate experience specializing in financial modeling, regulatory reporting, and compliance within the digital banking ecosystem. In my previous role as a Financial Operations Specialist at a mid-sized digital banking startup, where I spe
 
-  id: resume_671 | level: junior | exp: 0.67 yrs | raw_text: 296 words
-  skills: Oracle NetSuite, Supplier Evaluation, Demand Forecasting, Excel Advanced, Contract Negotiation, Logistics Coordination
-  projects: VendorVetter
-  background: Having completed my studies in operations management, I am eager to apply my skills in procurement and demand forecasting within a collaborative corporate environment. I recently served as a Graduate Procurement Associate for eight months at a growing technology startup, operating within a multi-fun
+  id: resume_674 | level: senior | exp: 7.0 yrs | raw_text: 270 words
+  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Oracle Fusion Cloud, Tableau, Python, SQL, Power BI, Corporate Accounting
+  projects: Project FinSecure
+  background: I am an experienced senior finance manager with over seven years of professional expertise steering corporate accounting practices, complex financial modeling, and risk frameworks within international electronic payment enterprises. In my current role as Senior Finance and Planning Lead at a tier-on
 
-  id: resume_672 | level: senior | exp: 7.0 yrs | raw_text: 290 words
-  skills: SAP S/4HANA, Oracle NetSuite, Global Logistics, Contract Negotiation, Supply Chain Risk Management, Inventory Auditing, Power BI, Change Management, SAP ERP, Excel Advanced, Inventory Optimization, Supplier Evaluation, Demand Forecasting, SQL Data Analysis, Warehouse Management Systems (WMS), Lean Six Sigma, Procurement Analytics
-  projects: NexusChain
-  background: I am an experienced supply chain leader with over seven years of dedicated expertise in driving enterprise procurement transformations, global logistics optimization, and advanced inventory auditing. In my most recent role as Senior Supply Chain Lead at a large multinational manufacturing enterprise
+  id: resume_675 | level: senior | exp: 8.0 yrs | raw_text: 269 words
+  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, SAP S/4HANA, Looker Studio, SQL, Excel Advanced, Workday Financials, Corporate Accounting
+  projects: LedgerGazer
+  background: I am a senior financial operations manager with eight years of deep expertise in corporate accounting, quantitative financial modeling, and financial reporting within fast-paced fintech environments. In my current capacity as Senior Finance Director at a prominent micro-lending enterprise, where I m
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_670 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs | raw_text: 201 words
-  required_skills: SAP ERP, Excel Advanced, Inventory Optimization, Supplier Evaluation, Material Requirements Planning (MRP)
-  preferred_skills: Power BI, Logistics Coordination
-  description: We are seeking a mid-level Supply Chain Specialist to join our expanding operational team. Our team focuses on balancing material availability with cost efficiency, currently comprising four dedicated specialists managing inventory for our primary co
+  id: jd_673 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, NetSuite ERP
+  preferred_skills: SQL, Tableau
+  description: We are looking for a enthusiastic Junior Finance Analyst to join our central financial operations division. Our team focuses on maintaining daily transaction monitoring and assisting in financial reporting activities for our core digital wallet produ
 
-  id: jd_671 | title: Senior Procurement and Analytics Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Oracle NetSuite, Demand Forecasting, Strategic Sourcing, SQL Data Analysis, Warehouse Management Systems (WMS), Lean Six Sigma, Procurement Analytics
-  preferred_skills: Change Management, Python
-  description: We are looking for a Senior Procurement and Analytics Lead to drive efficiency across our global supply chains. Our team specializes in strategic sourcing and demand forecasting, currently consisting of seven highly specialized professionals managing
+  id: jd_674 | title: Fintech Compliance and Accounting Associate | level: junior | min_exp: 1 yrs | raw_text: 188 words
+  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, SQL
+  preferred_skills: Power BI, Corporate Accounting
+  description: We are seeking a structured Fintech Compliance and Accounting Associate to join our growing corporate finance division. Our team is responsible for governing financial reporting correctness and managing localized regulatory compliance checklists acro
 
-  id: jd_672 | title: Senior Global Logistics and Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
-  required_skills: SAP S/4HANA, Global Logistics, Contract Negotiation, Supply Chain Risk Management, Inventory Auditing, Power BI, Change Management
-  preferred_skills: SQL Data Analysis, Lean Six Sigma
-  description: We are seeking a Senior Global Logistics and Systems Architect to manage our high-complexity distribution networks. Our logistics team comprises eight senior professionals tasked with maintaining high service levels across multiple continents for our
+  id: jd_675 | title: Fintech Financial Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 190 words
+  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, SQL, Microsoft Excel, NetSuite ERP
+  preferred_skills: Python, Corporate Accounting
+  description: We are looking for a competent mid-level Fintech Financial Operations Manager to own our corporate accounting and treasury structures. Our core team is tasked with automating institutional financial reporting and safeguarding regulatory compliance fo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2007 pairs total.
+Overall dataset so far: 2016 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  400  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  402  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  401  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  401  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  403  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  404  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  404  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  401  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  402  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  405  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2008   resume_670 × jd_670
-  pair_2009   resume_670 × jd_671
-  pair_2010   resume_670 × jd_672
-  pair_2011   resume_671 × jd_670
-  pair_2012   resume_671 × jd_671
-  pair_2013   resume_671 × jd_672
-  pair_2014   resume_672 × jd_670
-  pair_2015   resume_672 × jd_671
-  pair_2016   resume_672 × jd_672
+  pair_2017   resume_673 × jd_673
+  pair_2018   resume_673 × jd_674
+  pair_2019   resume_673 × jd_675
+  pair_2020   resume_674 × jd_673
+  pair_2021   resume_674 × jd_674
+  pair_2022   resume_674 × jd_675
+  pair_2023   resume_675 × jd_673
+  pair_2024   resume_675 × jd_674
+  pair_2025   resume_675 × jd_675
 
 ════════════════════════════════════
 OUTPUT FORMAT
