@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_673 | level: middle | exp: 3.5 yrs | raw_text: 268 words
-  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, SQL, NetSuite ERP
-  projects: LedgerSync
-  background: I am a dedicated financial analyst with over three years of corporate experience specializing in financial modeling, regulatory reporting, and compliance within the digital banking ecosystem. In my previous role as a Financial Operations Specialist at a mid-sized digital banking startup, where I spe
+  id: resume_676 | level: junior | exp: 0.8 yrs | raw_text: 256 words
+  skills: Docker, Aws, Python, Linux, Bash, Cloudwatch
+  projects: HomeLab Orchestrator
+  background: As a passionate Cloud Engineering graduate, I have focused my early career on understanding the fundamentals of distributed systems and containerization. During my tenure as a Junior DevOps Intern at a fast-paced technology startup for 10 months, I worked within a team of five developers. My primary
 
-  id: resume_674 | level: senior | exp: 7.0 yrs | raw_text: 270 words
-  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Oracle Fusion Cloud, Tableau, Python, SQL, Power BI, Corporate Accounting
-  projects: Project FinSecure
-  background: I am an experienced senior finance manager with over seven years of professional expertise steering corporate accounting practices, complex financial modeling, and risk frameworks within international electronic payment enterprises. In my current role as Senior Finance and Planning Lead at a tier-on
+  id: resume_677 | level: middle | exp: 4.5 yrs | raw_text: 252 words
+  skills: Kubernetes, Terraform, Aws, Jenkins, Gitlab Ci, Prometheus, Grafana, Go
+  projects: CloudCost Sentinel
+  background: Over the past four years, I have established myself as a mid-level DevOps engineer within a growing software-as-a-service enterprise environment. Working in a cross-functional team of twelve, I have been instrumental in managing large-scale infrastructure deployments. My primary responsibilities inc
 
-  id: resume_675 | level: senior | exp: 8.0 yrs | raw_text: 269 words
-  skills: Financial Modeling, Financial Reporting, Regulatory Compliance, SAP S/4HANA, Looker Studio, SQL, Excel Advanced, Workday Financials, Corporate Accounting
-  projects: LedgerGazer
-  background: I am a senior financial operations manager with eight years of deep expertise in corporate accounting, quantitative financial modeling, and financial reporting within fast-paced fintech environments. In my current capacity as Senior Finance Director at a prominent micro-lending enterprise, where I m
+  id: resume_678 | level: middle | exp: 4.0 yrs | raw_text: 274 words
+  skills: Aws Ecs, Docker, Terraform, Python, Postgresql, Kubernetes
+  projects: AutoScale Guard
+  background: I am a DevOps professional with four years of hands-on experience in high-traffic cloud environments. My career has been defined by my work within a mid-sized digital agency, where I supported a team of fifteen engineers. My day-to-day work centers on maintaining the reliability of our client-facing
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_673 | title: Junior Finance Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, NetSuite ERP
-  preferred_skills: SQL, Tableau
-  description: We are looking for a enthusiastic Junior Finance Analyst to join our central financial operations division. Our team focuses on maintaining daily transaction monitoring and assisting in financial reporting activities for our core digital wallet produ
+  id: jd_676 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 220 words
+  required_skills: Docker, Linux, Aws, Git
+  preferred_skills: Python, Bash
+  description: We are seeking a motivated Junior DevOps Engineer to join our infrastructure operations team. Our team is composed of six engineers responsible for maintaining the stability and scalability of our growing cloud ecosystem. In this role, you will be pa
 
-  id: jd_674 | title: Fintech Compliance and Accounting Associate | level: junior | min_exp: 1 yrs | raw_text: 188 words
-  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, Microsoft Excel, SQL
-  preferred_skills: Power BI, Corporate Accounting
-  description: We are seeking a structured Fintech Compliance and Accounting Associate to join our growing corporate finance division. Our team is responsible for governing financial reporting correctness and managing localized regulatory compliance checklists acro
+  id: jd_677 | title: Senior DevOps Lead | level: senior | min_exp: 6 yrs | raw_text: 212 words
+  required_skills: Kubernetes, Terraform, Aws, Istio, Prometheus, Grafana, Security
+  preferred_skills: Go, Cloudformation
+  description: Our infrastructure team is looking for a seasoned Senior DevOps Lead to guide our transition toward a highly distributed, multi-region architecture. Our team manages a complex fleet of microservices and is currently comprised of twelve engineers who 
 
-  id: jd_675 | title: Fintech Financial Operations Manager | level: middle | min_exp: 3 yrs | raw_text: 190 words
-  required_skills: Financial Modeling, Financial Reporting, Regulatory Compliance, SQL, Microsoft Excel, NetSuite ERP
-  preferred_skills: Python, Corporate Accounting
-  description: We are looking for a competent mid-level Fintech Financial Operations Manager to own our corporate accounting and treasury structures. Our core team is tasked with automating institutional financial reporting and safeguarding regulatory compliance fo
+  id: jd_678 | title: Senior Cloud Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 208 words
+  required_skills: Aws, Kubernetes, Terraform, Gitops, Distributed Systems, Networking
+  preferred_skills: Helm, Go, Rust
+  description: We are seeking a highly experienced Senior Cloud Infrastructure Engineer to join our platform team. Our organization manages a massive, distributed system serving millions of requests, and our team of fifteen engineers is dedicated to building a bull
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2016 pairs total.
+Overall dataset so far: 2025 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  404  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  404  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  401  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  402  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  405  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  404  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  404  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  405  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  406  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  406  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2017   resume_673 × jd_673
-  pair_2018   resume_673 × jd_674
-  pair_2019   resume_673 × jd_675
-  pair_2020   resume_674 × jd_673
-  pair_2021   resume_674 × jd_674
-  pair_2022   resume_674 × jd_675
-  pair_2023   resume_675 × jd_673
-  pair_2024   resume_675 × jd_674
-  pair_2025   resume_675 × jd_675
+  pair_2026   resume_676 × jd_676
+  pair_2027   resume_676 × jd_677
+  pair_2028   resume_676 × jd_678
+  pair_2029   resume_677 × jd_676
+  pair_2030   resume_677 × jd_677
+  pair_2031   resume_677 × jd_678
+  pair_2032   resume_678 × jd_676
+  pair_2033   resume_678 × jd_677
+  pair_2034   resume_678 × jd_678
 
 ════════════════════════════════════
 OUTPUT FORMAT
