@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_718 | level: junior | exp: 0.3 yrs | raw_text: 309 words
-  skills: Jira, Trello, Google Analytics, Miro, Slack, Agile Methodology
-  projects: TaskFlow Alpha
-  background: As a passionate aspiring product manager, my professional path includes an impactful four-month summer internship at a high-growth consumer technology startup with an agile product development team of eight. In this role, I served as an associate contributor utilizing Jira and Trello to manage low-p
+  id: resume_721 | level: middle | exp: 4.0 yrs | raw_text: 278 words
+  skills: SEMrush, Google Analytics, Hootsuite, Canva, Google Search Console, SEO, Social Media
+  projects: RankBoost Analytics
+  background: I am an experienced digital marketing professional with four years of dedicated history running organic acquisition campaigns. In my previous role as a Digital Marketing Specialist at a high-growth SaaS startup, I worked within a collaborative growth marketing team of five people for a duration of t
 
-  id: resume_719 | level: junior | exp: 0.5 yrs | raw_text: 308 words
-  skills: Asana, Hotjar, Notion, Typeform, Agile Delivery, User Stories
-  projects: FeedbackHub
-  background: I am a motivated fresh graduate aiming to establish a definitive career within technical product management. During my final university year, I completed a six-month product internship at a mid-sized digital media agency, operating alongside a dedicated cross-functional team of five developers and o
+  id: resume_722 | level: senior | exp: 7.0 yrs | raw_text: 288 words
+  skills: Ahrefs, Salesforce Marketing Cloud, Adobe Analytics, Sprout Social, Tableau, Looker, SQL, SEO, Content Strategy
+  projects: ContentQuant
+  background: I bring seven years of comprehensive senior expertise in enterprise digital marketing architecture, multi-channel performance tracking, and strategic brand management. In my current capacity as Senior Content Marketing Manager at a multinational e-commerce enterprise, I direct a cross-functional dep
 
-  id: resume_720 | level: senior | exp: 7.0 yrs | raw_text: 315 words
-  skills: Amplitude, Mixpanel, Jira Align, Confluence, Scrum, OKRs, Miro, Product Roadmap, SQL, Python, AWS, Agile Architecture
-  projects: MetricPulse
-  background: I bring over seven years of advanced product management experience driving large-scale tech platforms across enterprise SaaS and high-volume mobile ecosystems. In my previous role as Senior Product Manager at a major global cloud enterprise, I directed a cross-functional department of fifteen softwa
+  id: resume_723 | level: senior | exp: 8.0 yrs | raw_text: 278 words
+  skills: Google Analytics, Google Tag Manager, Screaming Frog, BuzzSumo, Power BI, Python, SQL, SEO, Data Attribution
+  projects: SearchGraph Alpha
+  background: I am a senior technical marketer with eight years of strategic experience leading sophisticated data-driven demand generation and technical optimization programs. In my previous role as Principal Marketing Strategist at a large global B2B software enterprise, I steered a cross-functional performance
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_718 | title: Product Manager - Core Engagement | level: middle | min_exp: 3 yrs | raw_text: 190 words
-  required_skills: Jira, Confluence, Mixpanel, Agile Methodology
-  preferred_skills: SQL, Asana
-  description: We are searching for an analytical Product Manager to take ownership of our Core Engagement squad. Our team consists of four full-stack engineers, a dedicated product designer, and a data analyst, all focused on maximizing user interaction metrics ac
+  id: jd_721 | title: Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 185 words
+  required_skills: SEMrush, Google Analytics, SEO, Social Media
+  preferred_skills: Canva, HTML
+  description: We are searching for an enthusiastic Digital Marketing Associate to join our growing growth marketing squad. Our team consists of three full-stack marketing specialists, a graphics designer, and a web administrator, all focused on maximizing organic 
 
-  id: jd_719 | title: Senior Product Manager - Enterprise Infrastructure | level: senior | min_exp: 6 yrs | raw_text: 182 words
-  required_skills: Amplitude, Jira Align, OKRs, Product Roadmap, AWS
-  preferred_skills: Python, SQL
-  description: Our Enterprise Core group is seeking a Senior Product Manager to lead technical strategy for our high-scale cloud infrastructure platform. Operating within an advanced engineering environment, you will lead a dedicated technical squad of eight senior
+  id: jd_722 | title: Social Media & Content Coordinator | level: junior | min_exp: 1 yrs | raw_text: 182 words
+  required_skills: Hootsuite, Canva, Google Analytics, Social Media
+  preferred_skills: SEO, Asana
+  description: Our creative core team is seeking a motivated Social Media & Content Coordinator to execute organic brand engagement across major interactive channels. Operating within an agile design framework, you will work alongside a close squad of two copywrite
 
-  id: jd_720 | title: Senior Technical Product Manager - Data Platforms | level: senior | min_exp: 6 yrs | raw_text: 211 words
-  required_skills: Mixpanel, Scrum, Miro, Product Roadmap, OKRs
+  id: jd_723 | title: Senior Marketing Analytics & Search Architect | level: senior | min_exp: 6 yrs | raw_text: 212 words
+  required_skills: Ahrefs, Google Tag Manager, Salesforce Marketing Cloud, Adobe Analytics, SEO
   preferred_skills: SQL, Python
-  description: We are looking for a Senior Technical Product Manager to lead our Core Data Platforms team, which builds the fundamental data architectures powering all customer analytics features. The team is comprised of six data engineers, two machine learning sp
+  description: We are looking for a Senior Technical Marketing Architect to lead our Performance Systems group, which builds the fundamental data ingestion architectures and multi-touch models powering all marketing decisions. The team is comprised of four data eng
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2151 pairs total.
+Overall dataset so far: 2160 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  428  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  431  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  430  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  431  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  431  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  432  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  433  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  430  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  432  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  433  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2152   resume_718 × jd_718
-  pair_2153   resume_718 × jd_719
-  pair_2154   resume_718 × jd_720
-  pair_2155   resume_719 × jd_718
-  pair_2156   resume_719 × jd_719
-  pair_2157   resume_719 × jd_720
-  pair_2158   resume_720 × jd_718
-  pair_2159   resume_720 × jd_719
-  pair_2160   resume_720 × jd_720
+  pair_2161   resume_721 × jd_721
+  pair_2162   resume_721 × jd_722
+  pair_2163   resume_721 × jd_723
+  pair_2164   resume_722 × jd_721
+  pair_2165   resume_722 × jd_722
+  pair_2166   resume_722 × jd_723
+  pair_2167   resume_723 × jd_721
+  pair_2168   resume_723 × jd_722
+  pair_2169   resume_723 × jd_723
 
 ════════════════════════════════════
 OUTPUT FORMAT
