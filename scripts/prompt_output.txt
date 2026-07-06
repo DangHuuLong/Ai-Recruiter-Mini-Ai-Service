@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_598 | level: junior | exp: 0.8 yrs | raw_text: 277 words
-  skills: Shopify, Microsoft Excel, Zendesk, Canva, Inventory Management
-  projects: InventoryFlow
-  background: As a recent graduate with a passion for e-commerce operations, I have spent the last year refining my understanding of digital marketplaces through an intensive internship at a boutique retail startup. During this ten-month tenure, I worked alongside a small team of four professionals, where I assis
+  id: resume_748 | level: junior | exp: 0.5 yrs | raw_text: 265 words
+  skills: Social Media Marketing, Content Creation, Canva, Mailchimp, WordPress, Copywriting, Instagram Analytics, Facebook Insights
+  projects: CampusVibe
+  background: As an aspiring marketing professional, I recently completed a six-month intensive internship as a Junior Marketing Assistant at a fast-growing retail e-commerce startup, where I worked closely within an active, creative brand management team of three people. My daily responsibilities centered heavil
 
-  id: resume_599 | level: junior | exp: 0.5 yrs | raw_text: 253 words
-  skills: Shopify, Adobe Photoshop, Google Trends, Data Analysis, Merchandising
-  projects: TrendScout
-  background: Having recently completed my degree, I am entering the workforce with a focused interest in digital merchandising and marketplace growth. During my recent six-month internship at a mid-sized fashion agency, I collaborated with a team of six to support daily marketplace operations. My main responsibi
+  id: resume_749 | level: junior | exp: 0.75 yrs | raw_text: 254 words
+  skills: SEO Basics, Semrush, Google Analytics 4, Google Search Console, Webflow, Content Writing, Social Media Scheduling, Keyword Research
+  projects: GreenLivingBlog
+  background: I initiated my path in the marketing landscape by working for nine months as a Junior Content Coordinator at a boutique digital marketing agency, operating within an operational team structure of four professional content creators. In this position, my primary day-to-day responsibilities were focuse
 
-  id: resume_600 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: SAP Retail, Oracle NetSuite, SQL, Tableau, Python, Supply Chain Management, Demand Forecasting
-  projects: GlobalSync
-  background: With over eight years of experience in large-scale e-commerce operations, I have developed deep expertise in optimizing supply chain logistics and marketplace strategy. In my most recent role as a Lead Retail Operations Manager at a major enterprise, I directed a team of twenty staff to oversee the 
+  id: resume_750 | level: senior | exp: 7.0 yrs | raw_text: 268 words
+  skills: SEO, Ahrefs, Screaming Frog, Google Analytics 4, Looker Studio, Google Ads, LinkedIn Ads, HubSpot, Salesforce, Content Strategy, Data Analytics, Tableau, Google BigQuery, Conversion Optimization, Social Media Strategy
+  projects: LeadScale
+  background: I have spent the past four years serving as a Senior Digital Marketing Manager and Strategy Lead at a large enterprise software corporation, where I led an omni-channel marketing team of nine specialists to design and execute global growth initiatives. My primary duties involved scaling our technica
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_598 | title: Retail Operations Associate | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: SAP Retail, Tableau, Inventory Management, Data Analysis
-  preferred_skills: SQL, Logistics
-  description: Our operations team of fifteen is looking for a Retail Operations Associate to help manage our rapidly growing marketplace footprint. You will play a crucial role in the daily efficiency of our e-commerce platforms, ensuring that our inventory data i
+  id: jd_748 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 194 words
+  required_skills: Semrush, Google Analytics 4, Mailchimp, Canva, LinkedIn Analytics, WordPress, Content Strategy, Social Media Marketing
+  preferred_skills: Canva, WordPress
+  description: We are actively seeking a data-driven Digital Marketing Specialist to join our in-house marketing department, which currently consists of five agile team members managing our growing B2B SaaS platform. In this mid-level individual contributor role, y
 
-  id: jd_599 | title: Senior Marketplace Strategist | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: SQL, Python, Oracle NetSuite, Demand Forecasting, Marketplace Strategy
-  preferred_skills: SAP Retail, Supply Chain Management
-  description: The central merchandising department is seeking a Senior Marketplace Strategist to lead our global marketplace expansion effort. Our team of forty oversees a portfolio of complex international channels, and we need an expert to architect our replenis
+  id: jd_749 | title: Senior SEO & Growth Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: Ahrefs, Screaming Frog, Google Analytics 4, Looker Studio, Google Ads, Technical SEO, Conversion Optimization, Data Analytics
+  preferred_skills: SQL, Conversion Optimization
+  description: Our enterprise growth division is searching for a Senior SEO and Growth Marketing Manager to take full technical ownership of our international organic acquisition channels. Operating within an established ten-person cross-functional growth team, you
 
-  id: jd_600 | title: Lead Retail Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: SQL, Python, SAP Retail, Oracle NetSuite, Retail Architecture
-  preferred_skills: Tableau, Demand Forecasting
-  description: Our supply chain and operations organization is looking for a Lead Retail Architect to design and implement our next-generation enterprise retail systems. We manage a complex landscape of omnichannel data and need someone who can unify our disparate 
+  id: jd_750 | title: Senior Content Strategy & Inbound Director | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: HubSpot, Salesforce, Google Analytics 4, LinkedIn Ads, Tableau, Google BigQuery, Content Strategy, Social Media Strategy
+  preferred_skills: Google BigQuery, Tableau
+  description: We are seeking a visionary Senior Content Strategy and Inbound Director to lead our complex brand transformation and dominate organic mindshare within our commercial market segment. Leading a high-performing creative squad of eight skilled content de
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1791 pairs total.
+Overall dataset so far: 2241 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  356  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  359  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  358  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  446  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  449  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  448  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  449  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  449  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1792   resume_598 × jd_598
-  pair_1793   resume_598 × jd_599
-  pair_1794   resume_598 × jd_600
-  pair_1795   resume_599 × jd_598
-  pair_1796   resume_599 × jd_599
-  pair_1797   resume_599 × jd_600
-  pair_1798   resume_600 × jd_598
-  pair_1799   resume_600 × jd_599
-  pair_1800   resume_600 × jd_600
+  pair_2242   resume_748 × jd_748
+  pair_2243   resume_748 × jd_749
+  pair_2244   resume_748 × jd_750
+  pair_2245   resume_749 × jd_748
+  pair_2246   resume_749 × jd_749
+  pair_2247   resume_749 × jd_750
+  pair_2248   resume_750 × jd_748
+  pair_2249   resume_750 × jd_749
+  pair_2250   resume_750 × jd_750
 
 ════════════════════════════════════
 OUTPUT FORMAT
