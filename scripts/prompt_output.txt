@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_730 | level: junior | exp: 0.5 yrs | raw_text: 262 words
-  skills: Python, pandas, scikit-learn, NumPy, Data Cleaning, Exploratory Data Analysis
-  projects: PredictiveSales
-  background: I am an aspiring Junior Data Scientist eager to leverage my foundational academic background and practical data project experience in a productive enterprise environment. Recently, I completed an intensive six-month internship as a Junior Data Analyst at a fast-growing digital logistics startup. Wor
+  id: resume_733 | level: middle | exp: 4.0 yrs | raw_text: 286 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Express, SQL, Redis, Pytest
+  projects: RouteOptimizer
+  background: I am an analytical and driven Mid-Level Backend Engineer with over four years of commercial experience specializing in architecting resilient RESTful APIs, optimizing transactional data layers, and automating deployment pipelines. In my current role as a Software Engineer at an e-commerce platform e
 
-  id: resume_731 | level: middle | exp: 4.0 yrs | raw_text: 268 words
-  skills: Python, pandas, scikit-learn, Docker, SQL, Machine Learning
-  projects: TextShield
-  background: I am a motivated Mid-Level Machine Learning Engineer offering over four years of commercial industry experience optimizing prediction architectures, managing feature engineering pipelines, and deploying containerized algorithms. In my current position as a Data Scientist at an enterprise financial s
+  id: resume_734 | level: senior | exp: 7.5 yrs | raw_text: 283 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, TypeScript, Docker, AWS ECS, Redis, SQL
+  projects: QueryShield
+  background: I am a senior Software Engineer and Technical Lead with over seven years of professional experience designing, scaling, and maintaining enterprise backend ecosystems and real-time event-driven microservices. In my current capacity as a Senior Backend Engineer at a global financial technology corpora
 
-  id: resume_732 | level: middle | exp: 3.5 yrs | raw_text: 272 words
-  skills: Python, pandas, scikit-learn, SQL, Statistical Modeling, Data Pipelines
-  projects: ClusterNode
-  background: I am a skilled Machine Learning Specialist with three and a half years of professional history developing automated predictive frameworks, designing robust text matching algorithms, and structuring big data processing channels. In my previous role as an ML Engineer at a collaborative cloud intellige
+  id: resume_735 | level: senior | exp: 8.0 yrs | raw_text: 281 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, AWS, Redis, Express, SQL
+  projects: CacheMesh
+  background: I am a Senior Backend Engineer and Principal Developer with over eight years of experience building secure, scalable cloud architectures, designing resilient database systems, and leading high-performing technical squads. Currently, I operate as a Lead Software Engineer at an enterprise logistics te
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_730 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 200 words
-  required_skills: Python, pandas, scikit-learn
-  preferred_skills: Docker, SQL
-  description: We are actively looking for an analytical Junior Data Scientist to join our growing core analytics department. Our immediate delivery squad is composed of three experienced data scientists, a backend infrastructure engineer, and an agile product lead
+  id: jd_733 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Python, FastAPI, PostgreSQL, SQL
+  preferred_skills: Pytest
+  description: We are seeking an enthusiastic Junior Backend Developer to join our core product engineering team. Our immediate development squad consists of three mid-level software engineers, a dedicated QA analyst, and a technical product manager, all focused on
 
-  id: jd_731 | title: Senior Computer Vision & Deep Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: PyTorch, CUDA, TensorRT, Computer Vision
-  preferred_skills: C++, Image Processing
-  description: Our Core Perception group is seeking an experienced Senior Computer Vision and Deep Learning Engineer to spearhead the structural development of our next-generation automated tracking algorithms. The technical team consists of five deep learning spec
+  id: jd_734 | title: Junior Software Engineer (Node.js & Python) | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Node.js, Python, PostgreSQL, Express
+  preferred_skills: FastAPI, Docker
+  description: Our Core Platform group is looking for an analytical Junior Software Engineer to assist in the expansion and optimization of our high-volume digital marketplace tools. The internal engineering squad is composed of four developer specialists, a platfo
 
-  id: jd_732 | title: Lead Natural Language Processing Specialist | level: senior | min_exp: 6 yrs | raw_text: 183 words
-  required_skills: PyTorch, HuggingFace, Natural Language Processing, Transformer Models
-  preferred_skills: Vector Databases, Distributed Training
-  description: We are looking for a Lead Natural Language Processing Specialist to champion our intelligent automation initiatives, which design the large-scale transformer systems and semantic extraction layers powering our entire business analytics platform. The 
+  id: jd_735 | title: Senior Lead Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 187 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL
+  preferred_skills: Docker, Redis
+  description: We are looking for an experienced Senior Lead Backend Architect to champion our cloud automation and scalability initiatives, steering the long-term technical direction of our high-throughput payment routing platform. The internal engineering departm
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2187 pairs total.
+Overall dataset so far: 2196 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  436  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  437  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  438  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  437  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  439  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  438  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  441  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  438  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  439  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  440  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2188   resume_730 × jd_730
-  pair_2189   resume_730 × jd_731
-  pair_2190   resume_730 × jd_732
-  pair_2191   resume_731 × jd_730
-  pair_2192   resume_731 × jd_731
-  pair_2193   resume_731 × jd_732
-  pair_2194   resume_732 × jd_730
-  pair_2195   resume_732 × jd_731
-  pair_2196   resume_732 × jd_732
+  pair_2197   resume_733 × jd_733
+  pair_2198   resume_733 × jd_734
+  pair_2199   resume_733 × jd_735
+  pair_2200   resume_734 × jd_733
+  pair_2201   resume_734 × jd_734
+  pair_2202   resume_734 × jd_735
+  pair_2203   resume_735 × jd_733
+  pair_2204   resume_735 × jd_734
+  pair_2205   resume_735 × jd_735
 
 ════════════════════════════════════
 OUTPUT FORMAT
