@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_694 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Python, Fastapi, Postgresql, Node.js, Express, Sql, Git
-  projects: TaskTrackerAPI
-  background: I am a motivated backend developer with a strong foundation in building scalable API services. During my recent six-month internship at a software development agency with a team of five, I assisted in maintaining legacy Python codebases and developing new RESTful endpoints using FastAPI 0.108 and Po
+  id: resume_697 | level: middle | exp: 4.5 yrs | raw_text: 259 words
+  skills: Shopify Plus, Magento 2, Python, Sql, Google Analytics 4, Tableau, Powerbi
+  projects: MarketGrowthInsight
+  background: As an experienced E-commerce Operations Specialist with over four years of tenure in the retail sector, I have honed my skills in marketplace management and digital merchandising. My most recent role at a rapidly scaling e-commerce startup involved managing a merchandising team of six to optimize pr
 
-  id: resume_695 | level: junior | exp: 0.4 yrs | raw_text: 261 words
-  skills: Node.js, Postgresql, Python, Sql, Git, Knex.js
-  projects: DataAggregator
-  background: As a recent computer engineering graduate, I have focused my efforts on building responsive and efficient backend services. During my four-month internship at a fast-paced fintech startup with a product team of ten, I gained hands-on experience in developing microservices using Node.js 20 and Postgr
+  id: resume_698 | level: senior | exp: 7.5 yrs | raw_text: 267 words
+  skills: Elasticsearch, Postgresql, Adobe Commerce, Salesforce Commerce Cloud, Jira, Node.js, Aws Lambda, Docker
+  projects: GlobalStockSync
+  background: With over seven years of professional experience in global retail and digital marketplace management, I have led complex digital transformation projects for large-scale enterprise retailers. In my current capacity as a Senior E-commerce Product Lead managing a team of fifteen, I oversee the end-to-e
 
-  id: resume_696 | level: senior | exp: 8.5 yrs | raw_text: 261 words
-  skills: Python, Fastapi, Postgresql, Redis, Celery, Kubernetes, Aws, Gcp, Docker
-  projects: ServiceSentinel
-  background: With over eight years of experience in high-performance backend engineering, I have led multiple cross-functional teams in delivering resilient digital infrastructure solutions for enterprise-level applications. Currently, I serve as a Principal Backend Engineer at a global e-commerce enterprise man
+  id: resume_699 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Sap Commerce Cloud, Sql, Python, Kubernetes, Docker, Datadog, Grafana, R, Jenkins
+  projects: SmartFlowMerchandising
+  background: I am a senior e-commerce architect with eight years of experience specializing in high-traffic marketplace optimization and digital retail operations. Currently serving as a Principal E-commerce Lead, I manage a cross-functional organization of twenty individuals focused on modernizing our legacy in
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_694 | title: Backend Engineer | level: middle | min_exp: 3 yrs | raw_text: 199 words
-  required_skills: Python, Fastapi, Postgresql, Docker
-  preferred_skills: Redis, Ci/Cd
-  description: Our team is looking for a dedicated Backend Engineer to join our collaborative group of eight. We work on a complex ecosystem of internal management tools and customer-facing web applications that rely heavily on robust data storage and API performan
+  id: jd_697 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Shopify, Google Analytics, Excel
+  preferred_skills: Digital Marketing
+  description: Our E-commerce Operations team is seeking an enthusiastic Junior Associate to help manage our daily marketplace activities. This role sits within a group of ten, working closely with the sales, marketing, and product teams to ensure our site catalog 
 
-  id: jd_695 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, Fastapi, Postgresql, Kubernetes, Aws
-  preferred_skills: Redis, Distributed Systems
-  description: Our organization is seeking a high-impact Senior Backend Architect to take ownership of our global database infrastructure and API strategy. Our platform engineering team of fifteen supports a massive, complex digital ecosystem serving hundreds of th
+  id: jd_698 | title: E-commerce Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: Tableau, Magento, Sql
+  preferred_skills: Python, Inventory Management
+  description: We are looking for a motivated E-commerce Operations Analyst to join our team of fifteen, focused on scaling our marketplace presence and operational efficiency. In this role, you will analyze massive datasets to identify trends, optimize merchandisi
 
-  id: jd_696 | title: Principal Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: Python, Fastapi, Postgresql, Kubernetes, Aws, Docker
-  preferred_skills: Redis, Celery
-  description: We are looking for an experienced Principal Backend Engineer to join our growing engineering team and help shape the next generation of our flagship software. Our team of twenty is currently rethinking how we deliver complex technical solutions to ou
+  id: jd_699 | title: Principal E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Postgresql, Kubernetes, Elasticsearch, Docker
+  preferred_skills: Sap Commerce Cloud, Datadog
+  description: Our organization is seeking a visionary Principal E-commerce Architect to lead our platform modernization efforts. The team of twenty is tasked with re-engineering our global retail infrastructure to support hyper-growth and real-time data integratio
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2079 pairs total.
+Overall dataset so far: 2088 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  414  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  416  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  416  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  416  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  417  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  418  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  418  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  416  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  417  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  419  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2080   resume_694 × jd_694
-  pair_2081   resume_694 × jd_695
-  pair_2082   resume_694 × jd_696
-  pair_2083   resume_695 × jd_694
-  pair_2084   resume_695 × jd_695
-  pair_2085   resume_695 × jd_696
-  pair_2086   resume_696 × jd_694
-  pair_2087   resume_696 × jd_695
-  pair_2088   resume_696 × jd_696
+  pair_2089   resume_697 × jd_697
+  pair_2090   resume_697 × jd_698
+  pair_2091   resume_697 × jd_699
+  pair_2092   resume_698 × jd_697
+  pair_2093   resume_698 × jd_698
+  pair_2094   resume_698 × jd_699
+  pair_2095   resume_699 × jd_697
+  pair_2096   resume_699 × jd_698
+  pair_2097   resume_699 × jd_699
 
 ════════════════════════════════════
 OUTPUT FORMAT
