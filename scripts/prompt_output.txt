@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_682 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Figma, User Research, Prototyping, Interaction Design
-  projects: EcoPath
-  background: As a passionate product design graduate, I have focused my energy on creating intuitive digital interfaces and user-centered experiences. During my six-month internship at a fast-paced creative design agency with a team of five designers, I assisted in the development of mobile application wireframe
+  id: resume_685 | level: middle | exp: 4.0 yrs | raw_text: 260 words
+  skills: Sap S/4hana, Shopify, Tableau, Sql, Salesforce Commerce Cloud, Inventory Management
+  projects: InventoryOptimizer
+  background: With over four years of experience in e-commerce operations, I have developed a robust skill set focused on marketplace optimization and inventory management. In my most recent role as an E-commerce Operations Specialist at a mid-sized retail startup with a team of twelve, I managed day-to-day opera
 
-  id: resume_683 | level: junior | exp: 0.8 yrs | raw_text: 273 words
-  skills: Figma, Wireframing, Usability Auditing, Miro
-  projects: TaskFlow
-  background: Beginning my professional journey in the technology sector, I have dedicated myself to mastering the nuances of UI/UX design. In my most recent role as a junior UX designer at a burgeoning tech startup with a core product team of four, I was responsible for conducting stakeholder interviews, creatin
+  id: resume_686 | level: senior | exp: 8.5 yrs | raw_text: 254 words
+  skills: Oracle Netsuite, Shopify Plus, Aws Redshift, Python, Data Analytics, Marketplace Integration
+  projects: MarketplaceSync
+  background: As a senior E-commerce Strategy Lead with over eight years of experience, I have successfully transformed digital operations for high-growth enterprise retailers. In my current capacity at a global retail leader managing a cross-functional team of thirty, I oversee the integration of complex marketp
 
-  id: resume_684 | level: senior | exp: 8.5 yrs | raw_text: 253 words
-  skills: Figma, Design Systems, User Research, Conversion Optimization, Accessibility
-  projects: Visionary Insights
-  background: With over seven years of experience in product design, I have led multiple cross-functional teams in delivering high-impact digital solutions across diverse industries. Currently, I serve as a Principal Product Designer at a large-scale e-commerce enterprise managing a design department of twenty-fi
+  id: resume_687 | level: senior | exp: 9.0 yrs | raw_text: 273 words
+  skills: Sap Commerce Cloud, Apache Kafka, Google Analytics 4, Sql, Power Bi, Tensorflow, Aws
+  projects: TrendPredict
+  background: With nearly nine years of experience in the retail and e-commerce sector, I specialize in architecting scalable marketplace infrastructures and data-centric merchandising systems. As a Senior Director of E-commerce at a prominent enterprise retailer, I manage a department of forty, overseeing the en
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_682 | title: Mid-Level Product Designer | level: middle | min_exp: 3 yrs | raw_text: 205 words
-  required_skills: Figma, User Research, Wireframing
-  preferred_skills: Design Systems, Notion, Jira
-  description: We are looking for a dedicated Mid-Level Product Designer to join our collaborative product team of twelve. Our group works on a complex ecosystem of internal management tools and customer-facing web applications. In this role, you will be expected t
+  id: jd_685 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 192 words
+  required_skills: Shopify, Excel, Zendesk, Inventory Management
+  preferred_skills: Asana, Google Sheets
+  description: We are seeking a highly motivated Junior E-commerce Associate to support our rapidly expanding digital retail team of ten. Our organization focuses on maintaining seamless marketplace presence across several platforms, ensuring that our customer expe
 
-  id: jd_683 | title: Senior UI/UX Design Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Figma, Design Systems, User Research, Accessibility, Conversion Optimization
-  preferred_skills: Prototyping, Data Analysis
-  description: Our organization is seeking a high-impact Senior UI/UX Design Lead to take ownership of our global design systems and user-experience strategy. Our design team of fifteen supports a massive, complex digital platform serving hundreds of thousands of u
+  id: jd_686 | title: Junior Marketplace Coordinator | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Shopify, Sql, Inventory Management, Marketplace Integration
+  preferred_skills: Trello, Logistics
+  description: Our team is looking for a detail-oriented Junior Marketplace Coordinator to support our retail operations. Our department of eight professionals manages the product lifecycle from initial vendor outreach to final digital presentation. You will be tas
 
-  id: jd_684 | title: Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Figma, Design Systems, User Research, Prototyping, Accessibility
-  preferred_skills: Front-end Development, Workshop Facilitation
-  description: We are looking for an experienced Lead Product Designer to join our growing design team and help shape the next generation of our flagship software. Our team of twenty is currently rethinking how we deliver complex technical solutions to our enterpri
+  id: jd_687 | title: Senior E-commerce Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Sap Commerce Cloud, Sql, Aws Redshift, Inventory Management, Data Analytics
+  preferred_skills: Oracle Netsuite, Apache Kafka
+  description: Our rapidly scaling retail organization is looking for a visionary Senior E-commerce Operations Lead to architect our global digital infrastructure. Our department of thirty is tasked with managing complex, high-traffic e-commerce ecosystems and ensu
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2043 pairs total.
+Overall dataset so far: 2052 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  406  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  409  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  409  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  410  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  409  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  410  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  411  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  409  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  411  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  411  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2044   resume_682 × jd_682
-  pair_2045   resume_682 × jd_683
-  pair_2046   resume_682 × jd_684
-  pair_2047   resume_683 × jd_682
-  pair_2048   resume_683 × jd_683
-  pair_2049   resume_683 × jd_684
-  pair_2050   resume_684 × jd_682
-  pair_2051   resume_684 × jd_683
-  pair_2052   resume_684 × jd_684
+  pair_2053   resume_685 × jd_685
+  pair_2054   resume_685 × jd_686
+  pair_2055   resume_685 × jd_687
+  pair_2056   resume_686 × jd_685
+  pair_2057   resume_686 × jd_686
+  pair_2058   resume_686 × jd_687
+  pair_2059   resume_687 × jd_685
+  pair_2060   resume_687 × jd_686
+  pair_2061   resume_687 × jd_687
 
 ════════════════════════════════════
 OUTPUT FORMAT
