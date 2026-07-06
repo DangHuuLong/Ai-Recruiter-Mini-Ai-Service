@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_652 | level: junior | exp: 0.5 yrs | raw_text: 250 words
-  skills: Python, FastAPI, PostgreSQL, Git, Docker, REST API
-  projects: TaskFlow
-  background: I am a recent Computer Science graduate passionate about building robust backend systems. During my final year, I completed a six-month internship at a fast-paced software agency where I served as a Junior Developer on a ten-person engineering team. My primary responsibilities included writing RESTf
+  id: resume_655 | level: middle | exp: 4.0 yrs | raw_text: 262 words
+  skills: React Native, Flutter, TypeScript, JavaScript, Firebase, Git
+  projects: SyncGuard
+  background: I am a mid-level mobile developer with four years of hands-on experience in building cross-platform applications. My career began at a boutique software agency where I spent two years as a junior mobile developer working in a team of five. We primarily used React Native 0.68 and TypeScript to build 
 
-  id: resume_653 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, AWS ECS, System Design
-  projects: DataStreamer
-  background: As a mid-level backend engineer with four years of experience, I have developed a deep expertise in building high-concurrency applications for fintech startups and established enterprises. In my most recent role at a mid-sized fintech startup, I worked on a fifteen-person engineering team where I le
+  id: resume_656 | level: senior | exp: 7.5 yrs | raw_text: 250 words
+  skills: React Native, Swift, Kotlin, TypeScript, SwiftUI, Jetpack Compose, Architecture
+  projects: CoreMobileKit
+  background: As a senior mobile architect with seven years of professional experience, I specialize in architecting highly scalable and maintainable cross-platform solutions for enterprise-level clients. During my three years as a Lead Developer at a multinational enterprise, I managed a mobile engineering depar
 
-  id: resume_654 | level: middle | exp: 5.0 yrs | raw_text: 260 words
-  skills: Python, FastAPI, PostgreSQL, Node.js, TypeScript, Docker, Kubernetes, CI/CD
-  projects: SecureVault
-  background: With over five years of professional experience in backend development, I have successfully navigated the entire software development lifecycle in both startup and corporate environments. During my three-year tenure at a large-scale enterprise, I was a key member of a twenty-person engineering depar
+  id: resume_657 | level: senior | exp: 9.0 yrs | raw_text: 265 words
+  skills: Flutter, Kotlin, Dart, Swift, CI/CD, Performance Profiling, System Architecture
+  projects: FluxStreamer
+  background: With nine years of experience in the mobile development industry, I have successfully led engineering efforts for complex, data-intensive applications. My previous role as a Principal Mobile Engineer at an established software firm involved guiding a mobile-first product team of thirty-five. I archi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_652 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Python, FastAPI, PostgreSQL, SQL
-  preferred_skills: Docker, Git
-  description: Our development team is currently expanding and looking for a dedicated Junior Backend Engineer to help maintain our core financial reporting platform. Our team currently consists of eight engineers who focus on building scalable web services and dat
+  id: jd_655 | title: Junior Mobile Associate | level: junior | min_exp: 1 yrs | raw_text: 188 words
+  required_skills: React Native, JavaScript, TypeScript
+  preferred_skills: Redux, Firebase
+  description: Our mobile engineering team is looking for a motivated Junior Mobile Associate to support our ongoing development of consumer-facing mobile applications. This team consists of six mobile engineers working on a high-traffic lifestyle product used by h
 
-  id: jd_653 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, System Design, Microservices
-  preferred_skills: Kubernetes, Advanced SQL
-  description: Our enterprise financial infrastructure team is seeking a visionary Senior Backend Architect to lead the design and implementation of our next-generation payment processing platform. This is a high-impact, senior-level role within a team of twenty en
+  id: jd_656 | title: Associate Mobile Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
+  required_skills: Flutter, Dart, Firebase
+  preferred_skills: SQLite, CI/CD
+  description: We are seeking an enthusiastic Associate Mobile Engineer to join our expanding mobile development department. Our team currently counts ten engineers who focus on delivering scalable, high-performance mobile solutions for the fintech sector. As an as
 
-  id: jd_654 | title: Lead Backend Systems Engineer | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: FastAPI, Node.js, PostgreSQL, Kubernetes, System Design, CI/CD
-  preferred_skills: Redis, Event-Driven Architecture
-  description: The systems engineering department is seeking an expert Lead Backend Systems Engineer to oversee our global financial processing infrastructure. The team operates at the intersection of software development and site reliability, managing a complex la
+  id: jd_657 | title: Lead Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 192 words
+  required_skills: React Native, Flutter, Swift, Kotlin, Architecture
+  preferred_skills: CI/CD, Reactive Programming
+  description: Our enterprise mobility division is looking for a visionary Lead Mobile Architect to guide the future of our cross-platform and native strategy. We operate a high-impact team of twenty engineers managing multiple mission-critical mobile applications 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1953 pairs total.
+Overall dataset so far: 1962 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  390  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  390  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  391  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  390  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  392  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  392  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  394  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  391  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  392  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  393  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1954   resume_652 × jd_652
-  pair_1955   resume_652 × jd_653
-  pair_1956   resume_652 × jd_654
-  pair_1957   resume_653 × jd_652
-  pair_1958   resume_653 × jd_653
-  pair_1959   resume_653 × jd_654
-  pair_1960   resume_654 × jd_652
-  pair_1961   resume_654 × jd_653
-  pair_1962   resume_654 × jd_654
+  pair_1963   resume_655 × jd_655
+  pair_1964   resume_655 × jd_656
+  pair_1965   resume_655 × jd_657
+  pair_1966   resume_656 × jd_655
+  pair_1967   resume_656 × jd_656
+  pair_1968   resume_656 × jd_657
+  pair_1969   resume_657 × jd_655
+  pair_1970   resume_657 × jd_656
+  pair_1971   resume_657 × jd_657
 
 ════════════════════════════════════
 OUTPUT FORMAT
