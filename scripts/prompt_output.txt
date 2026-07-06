@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_643 | level: middle | exp: 4.0 yrs | raw_text: 253 words
-  skills: Epic EMR, Oracle Health Cerner, Sql Server, Python, Hipaa Compliance, Clinical Operations
-  projects: AutoSchedule
-  background: I am a dedicated Medical Coordination specialist with four years of hands-on experience in clinical operations and healthcare administration. My career began at a mid-sized healthcare agency where I worked for two years on a team of six, focusing on patient record management and data integrity. Duri
+  id: resume_646 | level: junior | exp: 0.5 yrs | raw_text: 252 words
+  skills: Canva, Buffer, WordPress, Social Media Scheduling, Google Analytics 4, Content Creation
+  projects: TrendyBites
+  background: I am an enthusiastic aspiring digital marketer eager to apply my academic insights to real-world content landscapes. I recently finalized a six-month professional internship at a fast-growing digital agency, where I worked with a close-knit group of three creative marketing specialists. In this intr
 
-  id: resume_644 | level: senior | exp: 7.0 yrs | raw_text: 260 words
-  skills: Epic EMR, Sql Server, Hl7, Fhir, Tableau, Data Analytics, Clinical Operations
-  projects: Project Integrity
-  background: As a Senior Clinical Operations Architect with seven years of extensive experience, I specialize in building scalable clinical administration systems and optimizing EMR integration. In my previous role at a large-scale hospital enterprise, I led a technical team of twelve engineers and administrator
+  id: resume_647 | level: junior | exp: 1.0 yrs | raw_text: 266 words
+  skills: Hootsuite, Mailchimp, SEMrush, Meta Business Suite, Copywriting, Data Tracking
+  projects: SocialPulse
+  background: I am a motivated digital media specialist entering the market with a baseline focus on marketing data tracking and social media growth strategies. Recently, I finalized a one-year associate internship position at a boutique marketing consultancy, where I operated within an agile five-person client s
 
-  id: resume_645 | level: senior | exp: 8.0 yrs | raw_text: 263 words
-  skills: Cerner Millennium, Epic EMR, Sql Server, Hl7, Fhir, Operations Strategy, Data Mapping
-  projects: HealthOps Suite
-  background: I am a seasoned Healthcare Systems Lead with eight years of professional experience in medical coordination and clinical operations strategy. My expertise lies in orchestrating complex administrative workflows within enterprise healthcare environments. During my tenure at a national medical center, 
+  id: resume_648 | level: senior | exp: 8.0 yrs | raw_text: 267 words
+  skills: Ahrefs, Google Analytics 4, Screaming Frog, Looker Studio, Google Search Console, Technical SEO, Content Strategy, Conversion Rate Optimization
+  projects: Project Catalyst
+  background: As a Senior Content Strategy Director with eight years of comprehensive experience, I specialize in engineering highly profitable, data-led search optimization frameworks and multi-channel growth systems. In my previous enterprise tenure at an international digital commerce corporation, I directed a
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_643 | title: Junior Clinical Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Epic EMR, Hipaa Compliance, Data Entry
-  preferred_skills: Reporting Tools, Administrative Support
-  description: Our clinical administration team is looking for a detail-oriented Junior Clinical Operations Assistant to support our fast-growing patient care division. We operate as a team of five, managing the digital records and scheduling requirements for a bus
+  id: jd_646 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 216 words
+  required_skills: Google Search Console, Looker Studio, Ahrefs, SEO
+  preferred_skills: Screaming Frog, SQL
+  description: Our growth marketing division is actively scaling up to reinforce our expanding array of digital consumer services. As an established core team of eight individual contributors, we build and maintain complex acquisition systems that drive high-volume
 
-  id: jd_644 | title: Associate Medical Records Coordinator | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Sql Server, Data Entry, Healthcare Documentation
-  preferred_skills: Epic EMR, Auditing
-  description: The Medical Records Department is expanding to accommodate our recent transition to a new electronic patient record platform. As an Associate Medical Records Coordinator, you will serve as the primary support for our data migration project, working a
+  id: jd_647 | title: Senior SEO Architecture Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Screaming Frog, Ahrefs, Google Analytics 4, Technical SEO
+  preferred_skills: Log File Analysis, Schema Architecture
+  description: Our enterprise growth department coordinates an extensive, multi-national web architecture that converts millions of global consumers monthly. Backed by a high-performing department of fifteen experts, our primary objective centers on re-architecting
 
-  id: jd_645 | title: Senior Healthcare Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Epic EMR, Hl7, Fhir, Sql Server
-  preferred_skills: Tableau, Cerner Millennium
-  description: Our enterprise clinical systems team is looking for a visionary Senior Healthcare Systems Lead to drive the technical evolution of our regional patient record infrastructure. Working as a lead on a high-impact team of twenty, you will be responsible 
+  id: jd_648 | title: Senior Growth and Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Looker Studio, Content Strategy, Conversion Rate Optimization
+  preferred_skills: Google Search Console, User Journey Mapping
+  description: Our inbound brand optimization team is completely responsible for the baseline performance, market positioning, and structural growth of our central product assets which convert millions of active buyers. Functioning as a high-velocity unit of twelve
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1926 pairs total.
+Overall dataset so far: 1935 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  386  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  386  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  383  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  385  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  386  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  386  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  387  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  387  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  387  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  388  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1927   resume_643 × jd_643
-  pair_1928   resume_643 × jd_644
-  pair_1929   resume_643 × jd_645
-  pair_1930   resume_644 × jd_643
-  pair_1931   resume_644 × jd_644
-  pair_1932   resume_644 × jd_645
-  pair_1933   resume_645 × jd_643
-  pair_1934   resume_645 × jd_644
-  pair_1935   resume_645 × jd_645
+  pair_1936   resume_646 × jd_646
+  pair_1937   resume_646 × jd_647
+  pair_1938   resume_646 × jd_648
+  pair_1939   resume_647 × jd_646
+  pair_1940   resume_647 × jd_647
+  pair_1941   resume_647 × jd_648
+  pair_1942   resume_648 × jd_646
+  pair_1943   resume_648 × jd_647
+  pair_1944   resume_648 × jd_648
 
 ════════════════════════════════════
 OUTPUT FORMAT
