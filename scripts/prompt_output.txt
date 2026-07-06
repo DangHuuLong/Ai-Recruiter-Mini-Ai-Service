@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_619 | level: middle | exp: 4.0 yrs | raw_text: 263 words
-  skills: Epic EMR, Qualtrics, SQL Server 2019, Tableau, Python, HL7, FHIR, HIPAA
-  projects: PatientFlow Tracker
-  background: I am a dedicated healthcare operations professional with four years of hands-on experience in clinical coordination and Electronic Medical Record systems management. During my most recent tenure as a Clinical Operations Coordinator at a mid-sized healthcare enterprise, I worked within a cross-functi
+  id: resume_622 | level: junior | exp: 0.5 yrs | raw_text: 277 words
+  skills: AWS, Docker, Linux, Git, Terraform, Bash
+  projects: AutoDeploy
+  background: I am a highly motivated and detail-oriented junior DevOps engineer with a deep passion for cloud infrastructure and automation, having completed my degree in 2026. During my final year of university, I completed a six-month intensive internship at a fast-growing tech startup as a Junior DevOps Engin
 
-  id: resume_620 | level: senior | exp: 8.5 yrs | raw_text: 261 words
-  skills: Epic EMR, Cerner EMR, HL7, FHIR, AWS Redshift, PyTest, Selenium, HIPAA, System Design
-  projects: CareSync Integration Framework
-  background: I am a senior clinical systems architect with over eight years of experience specializing in enterprise-level healthcare interoperability and medical coordination platforms. For the past five years, I have served as a Senior Clinical Lead at a large-scale healthcare technology enterprise, where I ov
+  id: resume_623 | level: middle | exp: 4.0 yrs | raw_text: 276 words
+  skills: AWS, Docker, Git, Kubernetes, Terraform, Prometheus, Jenkins, Python
+  projects: KubeWatch
+  background: I am a results-driven DevOps and cloud infrastructure specialist with four years of professional experience designing, building, and optimizing modern deployment pipelines. For the past two years, I worked at an enterprise e-commerce company as a DevOps Engineer within an infrastructure team of six 
 
-  id: resume_621 | level: senior | exp: 9.2 yrs | raw_text: 263 words
-  skills: Cerner EMR, SQL, Tableau, Power BI, R, HIPAA, CMS Compliance, Clinical Operations
-  projects: Clinical Insight Dashboard
-  background: With over nine years of dedicated experience in healthcare administration and clinical operations management, I have developed a deep expertise in high-level medical coordination strategy. Currently, I serve as a Principal Medical Operations Lead at a large healthcare network, where I direct a team 
+  id: resume_624 | level: middle | exp: 3.5 yrs | raw_text: 262 words
+  skills: AWS, Docker, Linux, Kubernetes, Helm, Go, AWS Lambda, Ansible, Python
+  projects: LambdaCost
+  background: I am an analytical Cloud Infrastructure Engineer with three and a half years of professional experience specializing in serverless application delivery and automated configuration management. For the past two years, I have been employed at a fast-growing SaaS startup on a cloud infrastructure team o
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_619 | title: Junior Clinical Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 219 words
-  required_skills: Epic EMR, HIPAA, Excel
-  preferred_skills: Tableau, HL7, FHIR
-  description: Our clinical operations team is looking for a motivated Junior Clinical Operations Associate to join our growing unit of ten professionals. We manage a complex digital platform that connects local clinics to regional medical networks, ensuring that p
+  id: jd_622 | title: Junior DevOps Associate | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: AWS, Docker, Linux, Git
+  preferred_skills: Terraform, Python
+  description: Our central operations automation department is looking for an enthusiastic Junior DevOps Associate to join our growing team of ten software and system engineers. We build and maintain a foundational integration platform that powers our core cloud op
 
-  id: jd_620 | title: Junior Clinical Data Coordinator | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Cerner EMR, SQL, HIPAA
-  preferred_skills: Python, Data Automation
-  description: We are seeking a detail-oriented Junior Clinical Data Coordinator to join our clinical data team of fifteen. Our group is responsible for maintaining the integrity and availability of patient medical information across our network of outpatient clini
+  id: jd_623 | title: Senior Site Reliability Engineer | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: Kubernetes, Terraform, AWS Elastic Kubernetes Service, Helm, Prometheus, Go
+  preferred_skills: ArgoCD, Service Mesh
+  description: We are seeking an experienced Senior Site Reliability Engineer to lead our enterprise container orchestration and core cloud platform delivery strategies. In this role, you will join our core platform infrastructure division composed of twelve engine
 
-  id: jd_621 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 220 words
-  required_skills: Epic EMR, Cerner EMR, HL7, FHIR, PostgreSQL, System Design
-  preferred_skills: AWS, Kubernetes, Distributed Systems
-  description: Our organization is looking for an experienced Senior Healthcare Systems Architect to join our core platform engineering team of thirty. We build and maintain large-scale, high-availability medical coordination systems that are used by hundreds of th
+  id: jd_624 | title: Senior DevOps Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
+  required_skills: CloudFormation, AWS Lambda, Terraform, Jenkins, Ansible, Python
+  preferred_skills: Terragrunt, Packer
+  description: Our advanced cloud infrastructure division is actively seeking a Senior DevOps Infrastructure Architect to spearhead our enterprise serverless automation frameworks and comprehensive infrastructure-as-code initiatives. As part of a highly skilled cor
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1854 pairs total.
+Overall dataset so far: 1863 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  372  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  371  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  369  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  370  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  372  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  372  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  372  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  373  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  372  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  374  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1855   resume_619 × jd_619
-  pair_1856   resume_619 × jd_620
-  pair_1857   resume_619 × jd_621
-  pair_1858   resume_620 × jd_619
-  pair_1859   resume_620 × jd_620
-  pair_1860   resume_620 × jd_621
-  pair_1861   resume_621 × jd_619
-  pair_1862   resume_621 × jd_620
-  pair_1863   resume_621 × jd_621
+  pair_1864   resume_622 × jd_622
+  pair_1865   resume_622 × jd_623
+  pair_1866   resume_622 × jd_624
+  pair_1867   resume_623 × jd_622
+  pair_1868   resume_623 × jd_623
+  pair_1869   resume_623 × jd_624
+  pair_1870   resume_624 × jd_622
+  pair_1871   resume_624 × jd_623
+  pair_1872   resume_624 × jd_624
 
 ════════════════════════════════════
 OUTPUT FORMAT
