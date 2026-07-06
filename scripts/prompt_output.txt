@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_700 | level: junior | exp: 0.3 yrs | raw_text: 270 words
-  skills: Jira, Confluence, Lucidchart, Bpmn 2.0, Excel, Visio, Sql
-  projects: CampusServicesMap
-  background: As a recent graduate, I have developed a strong foundation in business analysis and process mapping through both academic rigor and professional experience. During my four-month internship at a mid-sized digital marketing agency, I supported a team of four in documenting client requirements and crea
+  id: resume_703 | level: middle | exp: 4.0 yrs | raw_text: 275 words
+  skills: Excel, Vba, Sql, Sap, Tableau, Python, Financial Modeling
+  projects: AutomatedReconScript
+  background: With over four years of experience as a Financial Analyst in the fast-paced fintech sector, I have cultivated a robust expertise in financial modeling, regulatory reporting, and risk assessment. During my tenure at an enterprise-level digital banking firm, I supported a cross-functional finance team
 
-  id: resume_701 | level: middle | exp: 4.2 yrs | raw_text: 260 words
-  skills: Jira, Confluence, Sql, Tableau, Visio, Bpmn 2.0, Powerbi
-  projects: AutomatedReportingDashboard
-  background: With over four years of experience as a Business Analyst in the high-stakes fintech sector, I have successfully bridged the gap between complex business requirements and technical implementation. Working within an enterprise-level financial organization, I led a cross-functional squad of ten to mode
+  id: resume_704 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Oracle Netsuite, Powerbi, Advanced Excel, Sql, Python, Financial Modeling, Risk Management
+  projects: GlobalReportingEngine
+  background: As a seasoned Financial Controller and Lead Analyst with eight years of progressive experience in fintech and investment management, I specialize in building scalable financial frameworks, ensuring rigorous compliance, and optimizing reporting architectures. In my current role at an enterprise finan
 
-  id: resume_702 | level: middle | exp: 5.0 yrs | raw_text: 258 words
-  skills: Jira, Asana, Confluence, Bpmn 2.0, Sql, Excel, Python
-  projects: HealthcareWorkflowOptimization
-  background: I am a dedicated Project Analyst with five years of experience in the fast-paced healthcare technology industry, specializing in optimizing operational workflows and managing stakeholder relationships. During my time at a high-growth software startup, I managed a diverse portfolio of small to mid-si
+  id: resume_705 | level: senior | exp: 9.0 yrs | raw_text: 250 words
+  skills: Sap S/4Hana, Sql, R, Python, Financial Modeling, Bloomberg Terminal, Compliance Auditing
+  projects: PredictiveFiscalModel
+  background: With nine years of specialized experience in fintech accounting and financial systems engineering, I have established a track record of delivering high-impact financial modeling and compliance solutions. Currently, I serve as a Principal Financial Analyst at an enterprise fintech institution, leadin
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_700 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Jira, Confluence, Visio, Excel
-  preferred_skills: Agile, Sql
-  description: Our dynamic project management team is seeking an entry-level Business Analyst to support the planning and execution of our retail software initiatives. The team currently consists of eight members, including project managers, developers, and designe
+  id: jd_703 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Excel, Financial Modeling, Sql, Tableau
+  preferred_skills: Agile, Reporting
+  description: Our finance department is seeking a dedicated Junior Financial Analyst to join our team of twelve as we scale our internal reporting and compliance operations. This role is ideal for a professional looking to build a career in fintech, as you will di
 
-  id: jd_701 | title: Senior Technical Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Bpmn 2.0, Sql, Tableau, Jira
-  preferred_skills: Project Management, Powerbi
-  description: We are looking for an experienced Senior Technical Business Analyst to lead the requirements engineering process for our core enterprise platform. Our project management office consists of twenty professionals who support mission-critical infrastruct
+  id: jd_704 | title: Associate Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Excel, Financial Modeling, Sql, Tableau
+  preferred_skills: Accounting Compliance, Database Management
+  description: Our fast-growing fintech operations team is looking for an Associate Financial Analyst to support our core financial planning and analysis (FP&A) activities. You will join a collaborative team of eight professionals focused on delivering high-quality
 
-  id: jd_702 | title: Lead Project Analyst | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Sql, Powerbi, Confluence, Jira
-  preferred_skills: Process Optimization, Healthcare Analytics
-  description: Our organization is seeking a Lead Project Analyst to oversee the performance and process integrity of our global healthcare projects. Our project management division is a large, highly collaborative group focused on delivering innovative solutions t
+  id: jd_705 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 185 words
+  required_skills: Sql, Python, Financial Modeling, Sap S/4hana, Oracle Netsuite
+  preferred_skills: Predictive Modeling, Compliance Auditing
+  description: We are seeking a Senior Financial Systems Architect to lead the modernization of our financial reporting and compliance frameworks. Our team consists of twenty professionals who support mission-critical infrastructure for large-scale financial platfo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2097 pairs total.
+Overall dataset so far: 2106 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  418  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  419  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  420  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  419  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  421  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  420  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  423  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  420  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  421  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  422  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2098   resume_700 × jd_700
-  pair_2099   resume_700 × jd_701
-  pair_2100   resume_700 × jd_702
-  pair_2101   resume_701 × jd_700
-  pair_2102   resume_701 × jd_701
-  pair_2103   resume_701 × jd_702
-  pair_2104   resume_702 × jd_700
-  pair_2105   resume_702 × jd_701
-  pair_2106   resume_702 × jd_702
+  pair_2107   resume_703 × jd_703
+  pair_2108   resume_703 × jd_704
+  pair_2109   resume_703 × jd_705
+  pair_2110   resume_704 × jd_703
+  pair_2111   resume_704 × jd_704
+  pair_2112   resume_704 × jd_705
+  pair_2113   resume_705 × jd_703
+  pair_2114   resume_705 × jd_704
+  pair_2115   resume_705 × jd_705
 
 ════════════════════════════════════
 OUTPUT FORMAT
