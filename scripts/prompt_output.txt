@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_598 | level: junior | exp: 0.8 yrs | raw_text: 277 words
-  skills: Shopify, Microsoft Excel, Zendesk, Canva, Inventory Management
-  projects: InventoryFlow
-  background: As a recent graduate with a passion for e-commerce operations, I have spent the last year refining my understanding of digital marketplaces through an intensive internship at a boutique retail startup. During this ten-month tenure, I worked alongside a small team of four professionals, where I assis
+  id: resume_601 | level: middle | exp: 4.0 yrs | raw_text: 270 words
+  skills: Financial Modeling, Regulatory Reporting, Python, SQL, Excel, Power BI, Tableau, SAP ERP
+  projects: Project LedgerGuard
+  background: As an accountant with four years of dedicated experience in the fintech sector, I have honed my expertise in financial modeling, regulatory reporting, and system automation. During my tenure as a Staff Accountant at a mid-sized fintech startup, I managed a team of three to oversee month-end closing 
 
-  id: resume_599 | level: junior | exp: 0.5 yrs | raw_text: 253 words
-  skills: Shopify, Adobe Photoshop, Google Trends, Data Analysis, Merchandising
-  projects: TrendScout
-  background: Having recently completed my degree, I am entering the workforce with a focused interest in digital merchandising and marketplace growth. During my recent six-month internship at a mid-sized fashion agency, I collaborated with a team of six to support daily marketplace operations. My main responsibi
+  id: resume_602 | level: senior | exp: 8.0 yrs | raw_text: 277 words
+  skills: Financial Modeling, Regulatory Compliance, Oracle NetSuite, Bloomberg Terminal, Python, SOX Compliance, Financial Reporting, Data Analytics
+  projects: TreasuryFlow
+  background: With eight years of robust experience in the financial technology industry, I have developed a deep expertise in high-level financial modeling, complex regulatory compliance, and strategic reporting. Serving as a Senior Finance Lead at an enterprise fintech firm, I oversaw a team of ten, directing t
 
-  id: resume_600 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: SAP Retail, Oracle NetSuite, SQL, Tableau, Python, Supply Chain Management, Demand Forecasting
-  projects: GlobalSync
-  background: With over eight years of experience in large-scale e-commerce operations, I have developed deep expertise in optimizing supply chain logistics and marketplace strategy. In my most recent role as a Lead Retail Operations Manager at a major enterprise, I directed a team of twenty staff to oversee the 
+  id: resume_603 | level: senior | exp: 7.0 yrs | raw_text: 261 words
+  skills: Technical Accounting, Financial Modeling, Oracle NetSuite, SAP S/4HANA, Python, Power BI, SQL, Regulatory Strategy
+  projects: AuditStream
+  background: As a Principal Financial Accountant with seven years of experience in the fintech space, I specialize in technical accounting, complex financial modeling, and long-term regulatory strategy. In my current role at a large-scale fintech enterprise, I lead a cross-functional team of twelve, overseeing t
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_598 | title: Retail Operations Associate | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: SAP Retail, Tableau, Inventory Management, Data Analysis
-  preferred_skills: SQL, Logistics
-  description: Our operations team of fifteen is looking for a Retail Operations Associate to help manage our rapidly growing marketplace footprint. You will play a crucial role in the daily efficiency of our e-commerce platforms, ensuring that our inventory data i
+  id: jd_601 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Excel, SQL, Financial Reporting, Budgeting
+  preferred_skills: Power BI, Data Reconciliation
+  description: The finance team is growing, and we are looking for a Junior Financial Analyst to join our team of four. You will support the day-to-day operations of our financial reporting cycle, ensuring data integrity within our systems. Your primary duties will
 
-  id: jd_599 | title: Senior Marketplace Strategist | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: SQL, Python, Oracle NetSuite, Demand Forecasting, Marketplace Strategy
-  preferred_skills: SAP Retail, Supply Chain Management
-  description: The central merchandising department is seeking a Senior Marketplace Strategist to lead our global marketplace expansion effort. Our team of forty oversees a portfolio of complex international channels, and we need an expert to architect our replenis
+  id: jd_602 | title: Associate Accountant | level: junior | min_exp: 1 yrs | raw_text: 210 words
+  required_skills: Accounting, Excel, Financial Reporting, Tax Documentation
+  preferred_skills: QuickBooks, Cash Flow Management
+  description: We are seeking an Associate Accountant to support our financial department. Our team of six operates at the intersection of traditional accounting and rapid fintech growth, focusing on precise reporting and timely compliance. In this role, you will b
 
-  id: jd_600 | title: Lead Retail Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: SQL, Python, SAP Retail, Oracle NetSuite, Retail Architecture
-  preferred_skills: Tableau, Demand Forecasting
-  description: Our supply chain and operations organization is looking for a Lead Retail Architect to design and implement our next-generation enterprise retail systems. We manage a complex landscape of omnichannel data and need someone who can unify our disparate 
+  id: jd_603 | title: Senior Fintech Lead Accountant | level: senior | min_exp: 6 yrs | raw_text: 225 words
+  required_skills: Financial Modeling, Regulatory Compliance, SAP S/4HANA, Python, SQL, IFRS
+  preferred_skills: SOX Compliance, Financial Strategy
+  description: Our finance department is seeking a Lead Accountant to manage our technical accounting and financial modeling initiatives. This role is central to a team of fifteen, focused on high-stakes regulatory reporting, complex financial forecasting, and long
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1791 pairs total.
+Overall dataset so far: 1800 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  356  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  359  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  358  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  360  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  361  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  359  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  359  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  361  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1792   resume_598 × jd_598
-  pair_1793   resume_598 × jd_599
-  pair_1794   resume_598 × jd_600
-  pair_1795   resume_599 × jd_598
-  pair_1796   resume_599 × jd_599
-  pair_1797   resume_599 × jd_600
-  pair_1798   resume_600 × jd_598
-  pair_1799   resume_600 × jd_599
-  pair_1800   resume_600 × jd_600
+  pair_1801   resume_601 × jd_601
+  pair_1802   resume_601 × jd_602
+  pair_1803   resume_601 × jd_603
+  pair_1804   resume_602 × jd_601
+  pair_1805   resume_602 × jd_602
+  pair_1806   resume_602 × jd_603
+  pair_1807   resume_603 × jd_601
+  pair_1808   resume_603 × jd_602
+  pair_1809   resume_603 × jd_603
 
 ════════════════════════════════════
 OUTPUT FORMAT
