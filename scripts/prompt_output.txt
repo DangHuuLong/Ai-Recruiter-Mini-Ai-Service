@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_667 | level: junior | exp: 0.5 yrs | raw_text: 263 words
-  skills: Python, Flask, React, Tailwind CSS, PostgreSQL, SQLAlchemy, SQLite, Git
-  projects: DevTracker, BookNook
-  background: I am an enthusiastic Junior Full-Stack Developer holding a Bachelor of Science in Computer Science, graduated in 2025. During my final year, I completed a six-month internship at an early-stage healthcare startup within a tight-knit team of four engineers. In this role, I took ownership of implement
+  id: resume_670 | level: junior | exp: 0.5 yrs | raw_text: 290 words
+  skills: SAP ERP, Inventory Optimization, Microsoft Excel, Warehouse Management Systems (WMS), Power BI
+  projects: SmartStock Optimization
+  background: As a recent graduate in Supply Chain Management, I have built a strong foundational understanding of logistics and inventory operations. Recently, I completed a six-month internship at an enterprise logistics firm as a Junior Supply Chain Coordinator, working within a tight-knit team of five special
 
-  id: resume_668 | level: senior | exp: 7.5 yrs | raw_text: 269 words
-  skills: Python, FastAPI, Django, React, TypeScript, Redux Toolkit, PostgreSQL, Redis, Celery, Docker, AWS ECS, Kafka
-  projects: LogiPulse
-  background: Seasoned Lead Full-Stack Engineer with over seven years of professional experience driving technical excellence across startup and enterprise architectures. At my previous enterprise employer, a global logistics corporation, I operated as Tech Lead for a team of nine engineers where I spearheaded th
+  id: resume_671 | level: junior | exp: 0.67 yrs | raw_text: 296 words
+  skills: Oracle NetSuite, Supplier Evaluation, Demand Forecasting, Excel Advanced, Contract Negotiation, Logistics Coordination
+  projects: VendorVetter
+  background: Having completed my studies in operations management, I am eager to apply my skills in procurement and demand forecasting within a collaborative corporate environment. I recently served as a Graduate Procurement Associate for eight months at a growing technology startup, operating within a multi-fun
 
-  id: resume_669 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: Python, Django, Flask, React, TypeScript, Tailwind CSS, PostgreSQL, Redis, Kubernetes, Docker, AWS EKS, Terraform
-  projects: FinSight
-  background: Dynamic and results-driven Senior Software Engineer with eight years of comprehensive experience in full-stack web development, infrastructure automation, and technical team leadership. In my most recent role within an enterprise financial services firm, I acted as a Principal Engineer leading an ag
+  id: resume_672 | level: senior | exp: 7.0 yrs | raw_text: 290 words
+  skills: SAP S/4HANA, Oracle NetSuite, Global Logistics, Contract Negotiation, Supply Chain Risk Management, Inventory Auditing, Power BI, Change Management, SAP ERP, Excel Advanced, Inventory Optimization, Supplier Evaluation, Demand Forecasting, SQL Data Analysis, Warehouse Management Systems (WMS), Lean Six Sigma, Procurement Analytics
+  projects: NexusChain
+  background: I am an experienced supply chain leader with over seven years of dedicated expertise in driving enterprise procurement transformations, global logistics optimization, and advanced inventory auditing. In my most recent role as Senior Supply Chain Lead at a large multinational manufacturing enterprise
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_667 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Python, Flask, React, Tailwind CSS, PostgreSQL, SQLAlchemy, Git
-  preferred_skills: Docker, HTML5
-  description: We are looking for an enthusiastic Junior Full-Stack Developer to join our growing engineering team of six developers. Our product team focuses on building intuitive, user-friendly SaaS web applications for small businesses. In this entry-level role,
+  id: jd_670 | title: Supply Chain Specialist | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: SAP ERP, Excel Advanced, Inventory Optimization, Supplier Evaluation, Material Requirements Planning (MRP)
+  preferred_skills: Power BI, Logistics Coordination
+  description: We are seeking a mid-level Supply Chain Specialist to join our expanding operational team. Our team focuses on balancing material availability with cost efficiency, currently comprising four dedicated specialists managing inventory for our primary co
 
-  id: jd_668 | title: Full-Stack Software Engineer | level: middle | min_exp: 3 yrs | raw_text: 189 words
-  required_skills: Python, FastAPI, React, TypeScript, Redux Toolkit, PostgreSQL, Docker
-  preferred_skills: Redis, AWS, Celery
-  description: Our web engineering department is seeking a Full-Stack Software Engineer to join a dynamic team of eight developers focused on scaling our digital marketplace. Your day-to-day responsibilities will involve designing and implementing robust backend ar
+  id: jd_671 | title: Senior Procurement and Analytics Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Oracle NetSuite, Demand Forecasting, Strategic Sourcing, SQL Data Analysis, Warehouse Management Systems (WMS), Lean Six Sigma, Procurement Analytics
+  preferred_skills: Change Management, Python
+  description: We are looking for a Senior Procurement and Analytics Lead to drive efficiency across our global supply chains. Our team specializes in strategic sourcing and demand forecasting, currently consisting of seven highly specialized professionals managing
 
-  id: jd_669 | title: Senior Tech Lead - Full-Stack | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: Python, FastAPI, React, TypeScript, Redux Toolkit, Celery, Redis, Kafka, Docker, Kubernetes, AWS ECS, Terraform
-  preferred_skills: PostgreSQL, GraphQL
-  description: We are looking for an exceptional Senior Tech Lead to head our core platform engineering team of ten engineers. Our team is responsible for architecting and operating our enterprise-grade data analytics platform, which processes millions of operation
+  id: jd_672 | title: Senior Global Logistics and Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
+  required_skills: SAP S/4HANA, Global Logistics, Contract Negotiation, Supply Chain Risk Management, Inventory Auditing, Power BI, Change Management
+  preferred_skills: SQL Data Analysis, Lean Six Sigma
+  description: We are seeking a Senior Global Logistics and Systems Architect to manage our high-complexity distribution networks. Our logistics team comprises eight senior professionals tasked with maintaining high service levels across multiple continents for our
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 1998 pairs total.
+Overall dataset so far: 2007 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  399  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  401  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  399  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  399  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  400  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  400  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  402  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  401  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  401  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  403  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_1999   resume_667 × jd_667
-  pair_2000   resume_667 × jd_668
-  pair_2001   resume_667 × jd_669
-  pair_2002   resume_668 × jd_667
-  pair_2003   resume_668 × jd_668
-  pair_2004   resume_668 × jd_669
-  pair_2005   resume_669 × jd_667
-  pair_2006   resume_669 × jd_668
-  pair_2007   resume_669 × jd_669
+  pair_2008   resume_670 × jd_670
+  pair_2009   resume_670 × jd_671
+  pair_2010   resume_670 × jd_672
+  pair_2011   resume_671 × jd_670
+  pair_2012   resume_671 × jd_671
+  pair_2013   resume_671 × jd_672
+  pair_2014   resume_672 × jd_670
+  pair_2015   resume_672 × jd_671
+  pair_2016   resume_672 × jd_672
 
 ════════════════════════════════════
 OUTPUT FORMAT
