@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_679 | level: middle | exp: 4.0 yrs | raw_text: 279 words
-  skills: Workday Hris, Greenhouse Ats, Talent Acquisition, Onboarding, Tableau, Excel
-  projects: Talent Insight 360
-  background: Over the past four years, I have established a career in Human Resources with a focus on talent acquisition and HRIS management. In my recent role as an HR Generalist at a mid-sized technology agency with a team of thirty, I managed the full-cycle recruitment process, successfully hiring 45 technica
+  id: resume_682 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Figma, User Research, Prototyping, Interaction Design
+  projects: EcoPath
+  background: As a passionate product design graduate, I have focused my energy on creating intuitive digital interfaces and user-centered experiences. During my six-month internship at a fast-paced creative design agency with a team of five designers, I assisted in the development of mobile application wireframe
 
-  id: resume_680 | level: senior | exp: 8.0 yrs | raw_text: 251 words
-  skills: Workday Hris, Greenhouse Ats, Sap Successfactors, Sql, Recruitment Strategy, Onboarding
-  projects: Automated Onboarding Architect
-  background: I am a senior Human Resources leader with eight years of experience building scalable talent acquisition and operations frameworks in enterprise and rapid-growth environments. Currently, as a Talent Operations Manager in a global enterprise with over 500 employees, I oversee a team of ten specialist
+  id: resume_683 | level: junior | exp: 0.8 yrs | raw_text: 273 words
+  skills: Figma, Wireframing, Usability Auditing, Miro
+  projects: TaskFlow
+  background: Beginning my professional journey in the technology sector, I have dedicated myself to mastering the nuances of UI/UX design. In my most recent role as a junior UX designer at a burgeoning tech startup with a core product team of four, I was responsible for conducting stakeholder interviews, creatin
 
-  id: resume_681 | level: senior | exp: 7.5 yrs | raw_text: 251 words
-  skills: Workday Hris, Greenhouse Ats, Talent Mapping, Power Bi, Adp Workforce Now, Onboarding
-  projects: Strategic Talent Mapping
-  background: With over seven years of professional experience in talent management, I have served as a Senior Talent Acquisition Lead within high-growth technology and enterprise organizations. My career is defined by transforming recruitment functions into strategic, metrics-driven units. In my current role at 
+  id: resume_684 | level: senior | exp: 8.5 yrs | raw_text: 253 words
+  skills: Figma, Design Systems, User Research, Conversion Optimization, Accessibility
+  projects: Visionary Insights
+  background: With over seven years of experience in product design, I have led multiple cross-functional teams in delivering high-impact digital solutions across diverse industries. Currently, I serve as a Principal Product Designer at a large-scale e-commerce enterprise managing a design department of twenty-fi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_679 | title: Junior HR Coordinator | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Talent Acquisition, Onboarding, Ats, Organizational Skills
-  preferred_skills: Greenhouse, BambooHr
-  description: We are seeking a dedicated Junior HR Coordinator to join our growing People Operations team. Our department of eight professionals focuses on streamlining the employee lifecycle, from initial candidate application to successful onboarding. This is an
+  id: jd_682 | title: Mid-Level Product Designer | level: middle | min_exp: 3 yrs | raw_text: 205 words
+  required_skills: Figma, User Research, Wireframing
+  preferred_skills: Design Systems, Notion, Jira
+  description: We are looking for a dedicated Mid-Level Product Designer to join our collaborative product team of twelve. Our group works on a complex ecosystem of internal management tools and customer-facing web applications. In this role, you will be expected t
 
-  id: jd_680 | title: Junior Recruiting Associate | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Talent Acquisition, Ats, Sourcing, Candidate Management
-  preferred_skills: LinkedIn, Communication
-  description: Our recruitment team is looking for a proactive Junior Recruiting Associate to help us scale our rapidly growing team. Our team consists of five recruiters who partner with various departments to identify and attract top-tier talent. In this role, yo
+  id: jd_683 | title: Senior UI/UX Design Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Figma, Design Systems, User Research, Accessibility, Conversion Optimization
+  preferred_skills: Prototyping, Data Analysis
+  description: Our organization is seeking a high-impact Senior UI/UX Design Lead to take ownership of our global design systems and user-experience strategy. Our design team of fifteen supports a massive, complex digital platform serving hundreds of thousands of u
 
-  id: jd_681 | title: Senior Talent Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Workday Hris, Greenhouse Ats, Talent Acquisition, Data Analysis, Leadership
-  preferred_skills: Power Bi, Tableau
-  description: Our organization is looking for a high-impact Senior Talent Operations Lead to optimize our global recruitment and HR systems. Our team supports a complex ecosystem of thousands of employees, and we are looking for someone to lead our platform strate
+  id: jd_684 | title: Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Figma, Design Systems, User Research, Prototyping, Accessibility
+  preferred_skills: Front-end Development, Workshop Facilitation
+  description: We are looking for an experienced Lead Product Designer to join our growing design team and help shape the next generation of our flagship software. Our team of twenty is currently rethinking how we deliver complex technical solutions to our enterpri
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2034 pairs total.
+Overall dataset so far: 2043 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  406  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  408  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  405  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  408  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  407  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  406  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  409  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  409  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  410  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  409  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2035   resume_679 × jd_679
-  pair_2036   resume_679 × jd_680
-  pair_2037   resume_679 × jd_681
-  pair_2038   resume_680 × jd_679
-  pair_2039   resume_680 × jd_680
-  pair_2040   resume_680 × jd_681
-  pair_2041   resume_681 × jd_679
-  pair_2042   resume_681 × jd_680
-  pair_2043   resume_681 × jd_681
+  pair_2044   resume_682 × jd_682
+  pair_2045   resume_682 × jd_683
+  pair_2046   resume_682 × jd_684
+  pair_2047   resume_683 × jd_682
+  pair_2048   resume_683 × jd_683
+  pair_2049   resume_683 × jd_684
+  pair_2050   resume_684 × jd_682
+  pair_2051   resume_684 × jd_683
+  pair_2052   resume_684 × jd_684
 
 ════════════════════════════════════
 OUTPUT FORMAT
