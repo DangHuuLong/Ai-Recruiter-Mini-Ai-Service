@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_889 | level: middle | exp: 4.0 yrs | raw_text: 251 words
-  skills: SAP S/4HANA, Procurement, Inventory Management, Excel, SQL, Tableau
-  projects: StockFlow
-  background: I am a Supply Chain Coordinator with four years of experience in inventory management and procurement optimization. In my current role at a mid-sized manufacturing enterprise, I support a logistics team of ten by monitoring real-time inventory levels using SAP S/4HANA and executing procurement order
+  id: resume_892 | level: junior | exp: 0.7 yrs | raw_text: 262 words
+  skills: Jira, Figma, SQL, Agile, Firebase
+  projects: LaunchPad
+  background: I am a motivated Associate Product Manager with a strong academic foundation in software systems. Following my graduation, I completed an intensive eight-month product management internship at a fast-paced fintech startup, where I supported a cross-functional team of six in developing user-facing mo
 
-  id: resume_890 | level: senior | exp: 8.0 yrs | raw_text: 286 words
-  skills: Oracle NetSuite, SAP S/4HANA, Python, Power BI, Demand Forecasting, Logistics Strategy
-  projects: OptiChain
-  background: I am a Senior Supply Chain Manager with eight years of comprehensive experience in end-to-end supply chain transformation and global logistics strategy. Throughout my career in large-scale enterprise environments, I have led cross-functional teams of fifteen to optimize complex procurement and distr
+  id: resume_893 | level: junior | exp: 0.8 yrs | raw_text: 282 words
+  skills: Confluence, Amplitude, Trello, Miro, Python
+  projects: InsightStream
+  background: I am a Junior Product Associate with a passion for software-as-a-service products and user-centric design. During my recent nine-month product development residency at an early-stage B2B agency, I assisted a product team of four in translating stakeholder requirements into actionable technical speci
 
-  id: resume_891 | level: senior | exp: 9.0 yrs | raw_text: 256 words
-  skills: SAP S/4HANA, Microsoft Dynamics 365, Procurement, Logistics Modeling, API Integration, Business Analytics
-  projects: SyncNetwork
-  background: I am a Principal Supply Chain Architect with nine years of experience in designing and implementing complex, global procurement and inventory systems. In my career, I have focused on solving significant supply chain inefficiencies, such as real-time warehouse data synchronization, complex multi-node
+  id: resume_894 | level: senior | exp: 9.0 yrs | raw_text: 260 words
+  skills: Jira, Tableau, Agile, Product Strategy, Cloud Infrastructure
+  projects: ScaleArchitect
+  background: I am a Senior Product Lead with nine years of experience in driving end-to-end strategy for large-scale enterprise platforms. My career has been defined by leading cross-functional teams of thirty, managing multi-million dollar product roadmaps, and scaling high-traffic systems across the cloud infr
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_889 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Excel, Inventory Management, Procurement
-  preferred_skills: SAP, SQL
-  description: Our operations team of six is seeking a Junior Supply Chain Associate to support our daily inventory management and procurement activities. We manage a diverse portfolio of industrial components across our primary warehouse network. You will be respo
+  id: jd_892 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: Product Roadmap, Agile, Jira, Stakeholder Management
+  preferred_skills: Mixpanel, SaaS
+  description: Our product group of fifteen is seeking a collaborative Product Manager to own our core web application experience. We are focused on building features that streamline user workflows and improve our overall retention metrics. You will be responsible 
 
-  id: jd_890 | title: Associate Procurement Specialist | level: junior | min_exp: 1 yrs | raw_text: 200 words
-  required_skills: Procurement, Excel, Inventory Management
-  preferred_skills: SAP, ERP
-  description: Our procurement squad is expanding, and we are seeking an Associate Procurement Specialist to support our regional sourcing initiatives. We are a team of eight focused on optimizing our supplier network and ensuring material availability for our manu
+  id: jd_893 | title: Senior Product Manager | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Product Roadmap, Agile, Stakeholder Management, Product Strategy
+  preferred_skills: Cloud Infrastructure, System Architecture
+  description: We are looking for an experienced Senior Product Manager to lead our strategic initiatives and scale our platform infrastructure. Our product team consists of twenty-five members focused on high-traffic systems, enterprise reliability, and long-term 
 
-  id: jd_891 | title: Senior Supply Chain Strategist | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: SAP S/4HANA, Procurement, Inventory Management, Logistics Modeling
-  preferred_skills: Architecture, Business Analytics
-  description: We are looking for a Senior Supply Chain Strategist to lead our technical supply chain strategy and scale our logistics infrastructure. Our engineering group includes specialists in procurement, data science, and warehouse operations, all dedicated t
+  id: jd_894 | title: Lead Product Manager | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Product Roadmap, Agile, Stakeholder Management, Product Strategy
+  preferred_skills: Jira, Dependency Management
+  description: We are seeking a Lead Product Manager to direct our product development initiatives and drive our platform’s digital transformation. Our product team consists of thirty members focused on reliability, scale, and cross-platform innovation. Your primar
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2664 pairs total.
+Overall dataset so far: 2673 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  532  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  534  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  532  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  532  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  534  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  532  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  535  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  536  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  534  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  536  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2665   resume_889 × jd_889
-  pair_2666   resume_889 × jd_890
-  pair_2667   resume_889 × jd_891
-  pair_2668   resume_890 × jd_889
-  pair_2669   resume_890 × jd_890
-  pair_2670   resume_890 × jd_891
-  pair_2671   resume_891 × jd_889
-  pair_2672   resume_891 × jd_890
-  pair_2673   resume_891 × jd_891
+  pair_2674   resume_892 × jd_892
+  pair_2675   resume_892 × jd_893
+  pair_2676   resume_892 × jd_894
+  pair_2677   resume_893 × jd_892
+  pair_2678   resume_893 × jd_893
+  pair_2679   resume_893 × jd_894
+  pair_2680   resume_894 × jd_892
+  pair_2681   resume_894 × jd_893
+  pair_2682   resume_894 × jd_894
 
 ════════════════════════════════════
 OUTPUT FORMAT
