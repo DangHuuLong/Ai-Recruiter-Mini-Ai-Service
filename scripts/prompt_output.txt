@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_784 | level: middle | exp: 4.0 yrs | raw_text: 277 words
-  skills: React, TypeScript, Tailwind CSS, JavaScript, Redux, HTML5, CSS3
-  projects: UIForge Kit
-  background: Highly analytical Middle Frontend Developer with over four years of robust professional experience architecting responsive web applications and standardizing modular presentation layers. I began my career path spending two years at a boutique digital software agency working inside an agile developme
+  id: resume_787 | level: junior | exp: 0.5 yrs | raw_text: 270 words
+  skills: eClinicalWorks, HIPAA, Scheduling, Patient Intake, Microsoft Excel, SharePoint
+  projects: CareSched Portal
+  background: Eager and detail-oriented Healthcare Administration graduate seeking an entry-level position to deploy foundational knowledge of medical office coordination, record indexing, and basic clinic workflows. During my academic studies, I completed a formal six-month administrative internship at a local f
 
-  id: resume_785 | level: senior | exp: 7.0 yrs | raw_text: 270 words
-  skills: React, Next.js, TypeScript, Tailwind CSS, GraphQL, Webpack, Jest, Cypress
-  projects: TurboRender Engine
-  background: Accomplished and innovative Senior Frontend Architect and Technical Lead with over seven years of professional expertise engineering scalable, performance-tuned web ecosystems, complex micro-frontend layers, and highly reusable design systems within enterprise setups. For the last four years, I have
+  id: resume_788 | level: middle | exp: 4.0 yrs | raw_text: 270 words
+  skills: Epic Systems, HIPAA, Clinical Ops, Patient Tracking, Microsoft Excel, PowerBI
+  projects: MedFlow Central
+  background: Highly organized and systematic Healthcare Operations Specialist with over four years of professional experience managing clinical workflows, optimizing patient registration systems, and maintaining technical compliance parameters. I started my career working for two years at a growing regional medi
 
-  id: resume_786 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: React, Next.js, TypeScript, Tailwind CSS, Accessibility, RESTful API, CI/CD
-  projects: NexusLayout
-  background: Visionary and highly systematic Senior Frontend Developer with eight years of extensive hands-on experience designing robust multi-region user interfaces, enterprise-grade cloud dashboards, and accessible client-facing architectures. For the past five years, I have led technical execution paths at a
+  id: resume_789 | level: middle | exp: 5.0 yrs | raw_text: 262 words
+  skills: Cerner, HIPAA, Clinical Ops, Scheduling, SharePoint, Tableau
+  projects: EMR_Bridge Utility
+  background: Analytical and results-driven Clinical Operations Coordinator with five years of professional experience structuring high-volume electronic medical record systems and leading medical office alignments within busy urgent care settings. For the past three years, I have driven operational execution at 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_784 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: React, TypeScript, Tailwind CSS, JavaScript
-  preferred_skills: Next.js, Redux
-  description: We are actively seeking an enthusiastic and analytical Junior Frontend Developer to join our core user experience group consisting of five mid-level engineering professionals. In this individual contributor role, you will assume direct technical invo
+  id: jd_787 | title: Medical Office Coordinator | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: eClinicalWorks, HIPAA, Scheduling, Patient Intake
+  preferred_skills: Epic Systems, SharePoint
+  description: We are actively looking for an enthusiastic and detailed Medical Office Coordinator to join our primary care operations group consisting of five administrative individual contributors. In this critical frontend position, you will assume direct profes
 
-  id: jd_785 | title: Associate Web Engineer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: React, TypeScript, Tailwind CSS, Webpack
-  preferred_skills: Next.js, Vercel
-  description: Our client solutions delivery team is searching for an analytical and detail-oriented Associate Web Engineer to join our interactive presentation platform operations group of eight experienced development professionals. In this entry-level technical 
+  id: jd_788 | title: Senior Director of Clinical Systems and Quality | level: senior | min_exp: 6 yrs | raw_text: 208 words
+  required_skills: Epic Systems, HIPAA, Clinical Ops, PowerBI
+  preferred_skills: Tableau, Cerner
+  description: Our enterprise clinical informatics division is seeking a methodical and business-focused Senior Director of Clinical Systems and Quality to join our hospital infrastructure scale solutions team of eight medical system specialists. In this high-impac
 
-  id: jd_786 | title: Senior Frontend Platform Specialist | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS
-  preferred_skills: Turbo, Vercel
-  description: We are seeking a visionary Senior Frontend Platform Specialist to direct our newly established web reliability division consisting of six principal client-side engineers. In this high-impact technical leadership role, you will oversee the complete ar
+  id: jd_789 | title: Lead Health Informatics Administrator | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Cerner, HIPAA, Clinical Ops, Tableau
+  preferred_skills: Epic Systems, SharePoint
+  description: We are seeking an analytical and highly collaborative Lead Health Informatics Administrator to guide our newly established health network alignment division consisting of six principal medical records coordinators. In this tactical individual contrib
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2349 pairs total.
+Overall dataset so far: 2358 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  471  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  470  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  468  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  469  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  471  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  471  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  471  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  472  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  471  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  473  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2350   resume_784 × jd_784
-  pair_2351   resume_784 × jd_785
-  pair_2352   resume_784 × jd_786
-  pair_2353   resume_785 × jd_784
-  pair_2354   resume_785 × jd_785
-  pair_2355   resume_785 × jd_786
-  pair_2356   resume_786 × jd_784
-  pair_2357   resume_786 × jd_785
-  pair_2358   resume_786 × jd_786
+  pair_2359   resume_787 × jd_787
+  pair_2360   resume_787 × jd_788
+  pair_2361   resume_787 × jd_789
+  pair_2362   resume_788 × jd_787
+  pair_2363   resume_788 × jd_788
+  pair_2364   resume_788 × jd_789
+  pair_2365   resume_789 × jd_787
+  pair_2366   resume_789 × jd_788
+  pair_2367   resume_789 × jd_789
 
 ════════════════════════════════════
 OUTPUT FORMAT
