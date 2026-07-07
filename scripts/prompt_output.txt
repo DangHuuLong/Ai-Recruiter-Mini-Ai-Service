@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_799 | level: junior | exp: 1.0 yrs | raw_text: 267 words
-  skills: Shopify, Excel, Google Sheets, Inventory Management, Customer Support
-  projects: Inventory-Audit
-  background: Eager Retail Operations Associate with one year of internship experience in a fast-paced fashion e-commerce startup. During my ten-month tenure at the startup, I supported a team of four in managing daily inventory updates and processing customer orders using Shopify and basic Excel functions. My co
+  id: resume_802 | level: middle | exp: 4.0 yrs | raw_text: 273 words
+  skills: Python, PyTorch, LangChain, Hugging Face, Pinecone, FastAPI
+  projects: Semantic-Search-Refine
+  background: Dedicated NLP Engineer with four years of professional experience developing conversational AI and retrieval-augmented generation systems. During my two-year tenure at a rapidly growing AI startup, I collaborated with a team of five engineers to build domain-specific chatbots using Python 3.9, PyTor
 
-  id: resume_800 | level: junior | exp: 1.0 yrs | raw_text: 268 words
-  skills: Tableau, Excel, Product Listing, Marketplace Operations, A/B Testing
-  projects: Listing-Optimizer
-  background: Motivated E-commerce Assistant with one year of experience in an online marketplace environment. I completed a twelve-month internship at a growing retail agency where I worked alongside a team of six to optimize product listings and track daily sales performance. My core duties involved updating pr
+  id: resume_803 | level: middle | exp: 3.5 yrs | raw_text: 289 words
+  skills: Python, LangChain, Milvus, SpaCy, TensorFlow, OpenAI API
+  projects: Doc-Chat-Engine
+  background: Versatile AI Engineer with three and a half years of experience implementing generative AI and NLP solutions. In my most recent role as an AI Developer at a fintech enterprise for two years, I led the integration of LLM-based assistants for customer support, leveraging OpenAI APIs, LangChain, and ve
 
-  id: resume_801 | level: senior | exp: 9.0 yrs | raw_text: 278 words
-  skills: SAP S/4HANA, AWS, Inventory Forecasting, Omnichannel Retail, Marketplace Strategy
-  projects: Scale-Global
-  background: Senior E-commerce Operations Lead with nine years of extensive experience driving strategy and operational excellence for global retail platforms. In my four years as an Operations Manager at an enterprise retail firm, I led a cross-functional team of fifteen to optimize global supply chain workflow
+  id: resume_804 | level: senior | exp: 8.0 yrs | raw_text: 285 words
+  skills: PyTorch, LangChain, FAISS, Transformers, Kubernetes, Python
+  projects: Global-Model-Sync
+  background: Principal AI Architect with eight years of professional experience building large-scale NLP systems and advanced generative AI frameworks. During my four years as a Lead NLP Engineer at an enterprise SaaS company, I was responsible for the strategic design and deployment of multilingual LLM models s
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_799 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 200 words
-  required_skills: SAP, Oracle NetSuite, Excel, Inventory Forecasting
-  preferred_skills: Data Analytics, Marketplace Operations
-  description: Our operations team is looking for a detail-oriented E-commerce Operations Specialist to join our mid-level cohort of twenty professionals. We manage a growing multi-channel retail platform, and your work will be critical to maintaining seamless mark
+  id: jd_802 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Python, NLP, LangChain, Transformers
+  preferred_skills: PyTorch, Pinecone
+  description: Our core AI infrastructure team is seeking a passionate Junior NLP Engineer to help us refine and expand our conversational AI products. We are a team of fifteen that builds advanced LLM applications, including RAG-powered assistants, for our global 
 
-  id: jd_800 | title: Senior Retail Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: SAP S/4HANA, SQL, Tableau, Predictive Demand Forecasting
-  preferred_skills: Inventory Optimization, Supply Chain Management
-  description: We are seeking an experienced Senior Retail Operations Manager to lead our marketplace optimization team. The team currently consists of twelve managers and analysts responsible for managing a large-scale e-commerce platform. Your focus will be on dr
+  id: jd_803 | title: Associate AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 187 words
+  required_skills: Python, Transformers, NLP, LangChain
+  preferred_skills: PyTorch, GitHub Actions
+  description: We are looking for a motivated Associate AI Engineer to join our product team of eight. Our team develops interactive AI features that simplify complex workflows for our users. You will have the opportunity to participate in the full lifecycle of AI 
 
-  id: jd_801 | title: Principal Marketplace Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: SAP, Oracle NetSuite, AWS, BigQuery, E-commerce Architecture
-  preferred_skills: AI Automation, Supply Chain Strategy
-  description: Our organization is seeking a Principal Marketplace Architect to spearhead the infrastructure and operations design for our global e-commerce marketplace. You will lead our technical operations team of twenty professionals who support our platform's 
+  id: jd_804 | title: Senior NLP Architect | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, PyTorch, Transformers, LangChain, FAISS, Distributed Systems
+  preferred_skills: Kubernetes, MLOps
+  description: Our organization is seeking a Senior NLP Architect to lead the design and implementation of our enterprise-grade generative AI platform. The team consists of twenty-five engineers focused on core NLP infrastructure, model training, and performance sc
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2394 pairs total.
+Overall dataset so far: 2403 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  477  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  479  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  480  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  478  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  480  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  481  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  481  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  480  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  479  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  482  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2395   resume_799 × jd_799
-  pair_2396   resume_799 × jd_800
-  pair_2397   resume_799 × jd_801
-  pair_2398   resume_800 × jd_799
-  pair_2399   resume_800 × jd_800
-  pair_2400   resume_800 × jd_801
-  pair_2401   resume_801 × jd_799
-  pair_2402   resume_801 × jd_800
-  pair_2403   resume_801 × jd_801
+  pair_2404   resume_802 × jd_802
+  pair_2405   resume_802 × jd_803
+  pair_2406   resume_802 × jd_804
+  pair_2407   resume_803 × jd_802
+  pair_2408   resume_803 × jd_803
+  pair_2409   resume_803 × jd_804
+  pair_2410   resume_804 × jd_802
+  pair_2411   resume_804 × jd_803
+  pair_2412   resume_804 × jd_804
 
 ════════════════════════════════════
 OUTPUT FORMAT
