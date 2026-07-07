@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_766 | level: junior | exp: 0.5 yrs | raw_text: 261 words
-  skills: Shopify, Microsoft Excel, Python, SQLite
-  projects: ShopScope
-  background: I am an enthusiastic E-commerce Operations Associate and a recent graduate with less than one year of formal professional industry experience. During my senior year at university, I completed an intensive six-month internship at a fast-growing digital retail startup within an agile operations cell o
+  id: resume_769 | level: middle | exp: 4.0 yrs | raw_text: 270 words
+  skills: Epic Systems, Kronos, Python, SQLite, Microsoft Excel
+  projects: CareFlow Analytics
+  background: Dedicated Healthcare Administration Specialist with four years of comprehensive clinical operations experience managing medical informatics databases within enterprise healthcare settings. For the past four years, I have worked at a regional medical enterprise within a clinical coordination group of
 
-  id: resume_767 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Shopify, Google Sheets, Python
-  projects: CartPulse
-  background: As an aspiring Marketplace Management Specialist and a motivated entry-level professional, I bring approximately seven months of operational experience gained through a structured corporate internship at a prominent retail agency. Working within a specialized digital fulfillment squad of four person
+  id: resume_770 | level: senior | exp: 8.0 yrs | raw_text: 257 words
+  skills: Cerner, Athenahealth, HL7, Python, PostgreSQL
+  projects: MedPulse Core
+  background: Distinguished Senior Clinical Operations Director and Medical Coordination Expert with over eight years of experience leading complex enterprise healthcare infrastructure projects and optimizing medical informatics environments. For the last five years, I have directed platform operations at a multi
 
-  id: resume_768 | level: senior | exp: 8.0 yrs | raw_text: 267 words
-  skills: Adobe Commerce, Mirakl, VTEX, Algolia, Snowflake, Python, PostgreSQL
-  projects: CoreMerch
-  background: Distinguished Senior E-commerce Systems and Marketplace Operations Architect with over eight years of extensive experience directing global omnichannel platforms and scaling complex transactional systems within enterprise environments. For the past five years, I have engineered platform operations a
+  id: resume_771 | level: senior | exp: 7.0 yrs | raw_text: 253 words
+  skills: Cerner, Athenahealth, HL7, Salesforce Health Cloud, Python, MySQL, Microsoft Excel
+  projects: SyncHealth
+  background: Accomplished Senior Medical Coordination Architect and Clinical Systems Director with over seven years of professional experience scaling complex healthcare infrastructure and optimizing regulatory data workflows in enterprise environments. For the past four years, I have guided electronic health re
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_766 | title: E-commerce Operations Specialist | level: middle | min_exp: 3 yrs | raw_text: 185 words
-  required_skills: Shopify, Adobe Commerce, Microsoft Excel
+  id: jd_769 | title: Clinical Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 185 words
+  required_skills: Epic Systems, Kronos, Microsoft Excel
   preferred_skills: Python, Jira
-  description: We are looking for an analytical E-commerce Operations Specialist to join our core digital storefront division consisting of five mid-level operations professionals. In this mid-level individual contributor position, you will own the day-to-day admin
+  description: We are looking for a detailed Clinical Operations Assistant to join our core outpatient administration team consisting of four associate-level operations professionals. In this entry-level associate position, you will own the day-to-day administrativ
 
-  id: jd_767 | title: Senior Marketplace Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Mirakl, VTEX, Snowflake, Python
-  preferred_skills: Algolia, PostgreSQL
-  description: Our digital distribution technology department is seeking a Lead Marketplace Platform Architect to head our enterprise infrastructure engineering squad of eight senior platform specialists. This high-impact technical leadership role is responsible fo
+  id: jd_770 | title: Healthcare Data Coordinator | level: junior | min_exp: 1 yrs | raw_text: 186 words
+  required_skills: Epic Systems, Kronos, Microsoft Excel
+  preferred_skills: Python, Salesforce
+  description: Our digital medical services division is seeking an analytical Healthcare Data Coordinator to join our operational healthcare administration squad of six associate-level data specialists. This entry-level technical coordination position is responsibl
 
-  id: jd_768 | title: Lead Digital Merchandising Infrastructure Engineer | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Algolia, Adobe Commerce, Snowflake, Python
-  preferred_skills: Mirakl, PostgreSQL
-  description: We are searching for a Lead Digital Merchandising Infrastructure Engineer to guide our global discovery systems squad consisting of seven senior backend application engineers. In this strategic technical position, you will direct the development of d
+  id: jd_771 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: Cerner, HL7, Athenahealth, Python
+  preferred_skills: PostgreSQL, Kubernetes
+  description: We are searching for an expert Senior Clinical Systems Architect to guide our enterprise health informatics engineering department consisting of seven senior data infrastructure engineers. In this strategic technical leadership position, you will dir
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2295 pairs total.
+Overall dataset so far: 2304 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  456  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  460  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  460  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  459  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  460  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  460  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  462  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  460  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  460  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  462  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2296   resume_766 × jd_766
-  pair_2297   resume_766 × jd_767
-  pair_2298   resume_766 × jd_768
-  pair_2299   resume_767 × jd_766
-  pair_2300   resume_767 × jd_767
-  pair_2301   resume_767 × jd_768
-  pair_2302   resume_768 × jd_766
-  pair_2303   resume_768 × jd_767
-  pair_2304   resume_768 × jd_768
+  pair_2305   resume_769 × jd_769
+  pair_2306   resume_769 × jd_770
+  pair_2307   resume_769 × jd_771
+  pair_2308   resume_770 × jd_769
+  pair_2309   resume_770 × jd_770
+  pair_2310   resume_770 × jd_771
+  pair_2311   resume_771 × jd_769
+  pair_2312   resume_771 × jd_770
+  pair_2313   resume_771 × jd_771
 
 ════════════════════════════════════
 OUTPUT FORMAT
