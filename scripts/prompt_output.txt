@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_814 | level: middle | exp: 4.0 yrs | raw_text: 256 words
-  skills: SEO, Content Strategy, Google Analytics 4, Meta Ads Manager, Google Ads, Ahrefs, SEMrush
-  projects: ContentRevive
-  background: Over the past four years, I have established a strong foundation in digital marketing and content strategy. My career began at a boutique marketing agency, where I served as a Content Specialist for two years in a team of five. My responsibilities included managing social media calendars for three m
+  id: resume_817 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: Node.js, Express, PostgreSQL, TypeScript, Docker, JavaScript
+  projects: TaskEase
+  background: I am a recent Computer Science graduate with a strong passion for backend development and API architecture. During my final year, I completed an internship at a small software startup where I worked on a team of three developers. My responsibilities included maintaining basic CRUD endpoints in a leg
 
-  id: resume_815 | level: senior | exp: 8.0 yrs | raw_text: 269 words
-  skills: SEO, Content Strategy, HubSpot, Salesforce, Looker Studio, BrightEdge, Screaming Frog
-  projects: OperationDataSync
-  background: I am a senior marketing leader with eight years of experience building scalable content ecosystems and data-driven growth strategies. During my five-year tenure at a large enterprise software firm, I managed a global marketing team of fifteen, focusing on inbound demand generation and brand position
+  id: resume_818 | level: middle | exp: 4.0 yrs | raw_text: 250 words
+  skills: Python, FastAPI, PostgreSQL, SQLAlchemy, Redis, Docker, Node.js
+  projects: MetricsDashboard
+  background: I am a backend software engineer with four years of professional experience building high-traffic API services. In my most recent role at a mid-sized tech enterprise, I was part of a ten-person backend team responsible for maintaining several core microservices. My primary duties included developing
 
-  id: resume_816 | level: senior | exp: 7.0 yrs | raw_text: 296 words
-  skills: SEO, Technical SEO, Content Strategy, SQL, Optimizely, SEMrush, Moz
-  projects: SearchAuthority
-  background: With over seven years of professional experience in digital marketing, I have developed deep expertise in driving high-growth content strategies and technical SEO for international brands. My most recent role was as a Principal Growth Strategist at a high-growth tech startup, where I led a cross-fun
+  id: resume_819 | level: middle | exp: 3.0 yrs | raw_text: 291 words
+  skills: Python, FastAPI, PostgreSQL, AWS ECS, Node.js, Docker, Kubernetes
+  projects: DataLink
+  background: With three years of professional experience, I have developed a deep proficiency in designing and maintaining scalable backend services. I currently work at a fast-growing startup as a Backend Developer on a team of five. My daily work involves designing complex API endpoints with Python and FastAPI
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_814 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: SEO, Content Strategy, Google Analytics 4, Social Media Management
-  preferred_skills: Canva, Mailchimp
-  description: Our marketing department is expanding, and we are looking for a highly motivated Junior Digital Marketing Associate to join our team of four. The team is dedicated to increasing brand awareness for our upcoming product launches and managing our day-t
+  id: jd_817 | title: Junior Backend API Developer | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: Node.js, Express, PostgreSQL, JavaScript
+  preferred_skills: Docker, TypeScript
+  description: Our backend team is growing, and we are searching for a Junior Backend API Developer to join our group of five engineers. We build and maintain RESTful services that power our core product, serving thousands of users daily. This role is perfect for a
 
-  id: jd_815 | title: Junior SEO Associate | level: junior | min_exp: 1 yrs | raw_text: 219 words
-  required_skills: SEO, Content Strategy, SEMrush, Ahrefs
-  preferred_skills: HTML, WordPress, Google Search Console
-  description: The search and analytics team is hiring a Junior SEO Associate to help us optimize our content presence for our growing customer base. We are a team of six responsible for ensuring our product pages rank competitively across major search engines. The
+  id: jd_818 | title: Senior Backend Lead - Python/FastAPI | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Python, FastAPI, PostgreSQL, Redis, Distributed Systems
+  preferred_skills: Kafka, Kubernetes
+  description: We are seeking an experienced Senior Backend Lead to anchor our platform engineering team. Our team consists of fifteen engineers focused on building highly scalable, low-latency API services for our global product. The environment is fast-paced, and
 
-  id: jd_816 | title: Senior Digital Growth Lead | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: SEO, Content Strategy, HubSpot, Salesforce, Optimizely, Attribution Modeling
-  preferred_skills: SQL, Looker Studio, Technical SEO
-  description: We are seeking a strategic Senior Digital Growth Lead to anchor our marketing operations. Our growth team, currently numbering twelve, focuses on driving scalable acquisition through a blend of technical SEO, paid performance media, and comprehensive
+  id: jd_819 | title: Senior API Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Python, FastAPI, PostgreSQL, RabbitMQ, System Design
+  preferred_skills: AWS, Monitoring
+  description: Our infrastructure team is looking for a Senior API Architect to oversee the design and implementation of our next-generation backend services. As we scale, we require a technical leader who understands the nuances of high-concurrency environments an
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2439 pairs total.
+Overall dataset so far: 2448 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  489  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  488  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  486  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  487  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  489  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  489  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  489  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  490  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  489  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  491  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2440   resume_814 × jd_814
-  pair_2441   resume_814 × jd_815
-  pair_2442   resume_814 × jd_816
-  pair_2443   resume_815 × jd_814
-  pair_2444   resume_815 × jd_815
-  pair_2445   resume_815 × jd_816
-  pair_2446   resume_816 × jd_814
-  pair_2447   resume_816 × jd_815
-  pair_2448   resume_816 × jd_816
+  pair_2449   resume_817 × jd_817
+  pair_2450   resume_817 × jd_818
+  pair_2451   resume_817 × jd_819
+  pair_2452   resume_818 × jd_817
+  pair_2453   resume_818 × jd_818
+  pair_2454   resume_818 × jd_819
+  pair_2455   resume_819 × jd_817
+  pair_2456   resume_819 × jd_818
+  pair_2457   resume_819 × jd_819
 
 ════════════════════════════════════
 OUTPUT FORMAT
