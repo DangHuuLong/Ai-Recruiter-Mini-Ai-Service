@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_751 | level: middle | exp: 4.0 yrs | raw_text: 259 words
-  skills: Python, FastAPI, Flask, JavaScript, React, Redux Toolkit, Tailwind CSS, PostgreSQL, Docker, AWS ECS, Celery, Redis
-  projects: FinTrack
-  background: Dedicated Full-Stack Software Engineer with four years of hands-on experience building scalable web applications. Currently working at a fast-growing tech startup in a team of six developers where I am responsible for designing and maintaining the core backend services and user interfaces. Over the 
+  id: resume_754 | level: junior | exp: 0.7 yrs | raw_text: 264 words
+  skills: Microsoft Excel, Google Analytics 4, Shopify Admin, Tableau, Google Sheets, Slack
+  projects: ShopTrack
+  background: Enthusiastic and highly motivated entry-level Operations Associate with a total of eight months of professional experience in marketplace coordination. Recently completed a comprehensive six-month internship at a fast-growing retail tech startup working within an operations squad of four people wher
 
-  id: resume_752 | level: senior | exp: 7.5 yrs | raw_text: 276 words
-  skills: Python, TypeScript, JavaScript, React, Django, FastAPI, Flask, GraphQL, Apollo Client, PostgreSQL, Redis, Docker, Kubernetes, AWS EKS, Apache Kafka, CI/CD
-  projects: LogStream
-  background: Accomplished Senior Full-Stack Engineer and Technical Lead with over seven years of professional experience driving software excellence across enterprise platforms and high-scale applications. In my current role at a major financial services enterprise, I lead an agile team of nine engineers focused
+  id: resume_755 | level: junior | exp: 0.8 yrs | raw_text: 257 words
+  skills: Microsoft Excel, Google Analytics, Magento, Python, Google Sheets, Jira
+  projects: MetaRetail
+  background: Driven and analytical Junior Merchandising Assistant with a strong academic foundation and ten months of total practical experience across multi-channel retail operations. I spent seven months as a junior marketplace intern within a prominent regional fashion enterprise, working inside an execution 
 
-  id: resume_753 | level: senior | exp: 8.0 yrs | raw_text: 278 words
-  skills: Python, JavaScript, TypeScript, Django, FastAPI, Flask, React, Redux Toolkit, Tailwind CSS, PostgreSQL, Redis, Celery, Docker, AWS ECS, WebSockets, Git
-  projects: DataForge
-  background: Highly analytical Senior Full-Stack Web Developer and Tech Lead with eight years of expertise engineering complex data-driven platforms and modern web applications. Currently, I guide a cross-functional squad of eight developers within a global enterprise software provider, steering the technical ro
+  id: resume_756 | level: senior | exp: 8.5 yrs | raw_text: 281 words
+  skills: Salesforce Commerce Cloud, SAP S4HANA, Magento, SQL Server, Python, Looker, Tableau, Google Analytics 4, Microsoft Excel, Agile, Jira
+  projects: OmniCore
+  background: Accomplished Senior Marketplace Operations Director and Principal Systems Architect with over eight years of professional leadership driving multi-million dollar e-commerce and retail management ecosystems. In my current executive position at a multi-national retail enterprise, I lead a cross-functi
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_751 | title: Junior Full-Stack Developer (Python & React) | level: junior | min_exp: 1 yrs | raw_text: 225 words
-  required_skills: Python, FastAPI, Flask, JavaScript, React, PostgreSQL, Docker, Git
-  preferred_skills: Tailwind CSS, Pytest, Jest, AWS
-  description: We are looking for an enthusiastic Junior Full-Stack Developer to join our growing engineering team of five people. In this role, you will help build, maintain, and expand our customer engagement web platform, contributing directly to both our user-f
+  id: jd_754 | title: E-commerce Operations & Merchandising Specialist | level: middle | min_exp: 3 yrs | raw_text: 204 words
+  required_skills: Magento, Shopify, Google Analytics 4, Microsoft Excel, SQL Server
+  preferred_skills: Tableau, Jira, HTML
+  description: We are searching for a qualified E-commerce Operations & Merchandising Specialist to join our core retail management division of six dedicated professionals. In this individual contributor position, you will own the end-to-end execution of our digita
 
-  id: jd_752 | title: Associate Full-Stack Web Engineer | level: junior | min_exp: 1 yrs | raw_text: 215 words
-  required_skills: Python, Django, FastAPI, JavaScript, React, Redux Toolkit, PostgreSQL, Docker
-  preferred_skills: AWS, Git, Scrum
-  description: Our web engineering department is seeking an Associate Full-Stack Web Engineer to join our collaborative eight-person product development team. Our team is responsible for crafting internal management portals and external client facing dashboards tha
+  id: jd_755 | title: Senior Strategic Marketplace Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: SAP S4HANA, Salesforce Commerce Cloud, Looker, Python, SQL Server, Google Analytics 4
+  preferred_skills: Snowflake, Six Sigma, Supply Chain Certification
+  description: Our multi-channel retail organization is seeking a Senior Strategic Marketplace Operations Manager to direct our growing marketplace infrastructure division of ten domain specialists. This critical position is responsible for the overall technical ar
 
-  id: jd_753 | title: Senior / Lead Full-Stack Engineer (Cloud & Data Platforms) | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Python, FastAPI, Django, TypeScript, GraphQL, React, PostgreSQL, Redis, Celery, Apache Kafka, Docker, Kubernetes, AWS EKS
-  preferred_skills: Apollo Client, Open Source, Microservices
-  description: We are hunting for a Senior Lead Full-Stack Engineer with deep specialization to spearhead our data platform team of nine elite engineers. The team is charged with architecting, scaling, and optimizing our enterprise-grade cloud analytics dashboard w
+  id: jd_756 | title: Lead Marketplace Systems & Merchandising Director | level: senior | min_exp: 6 yrs | raw_text: 181 words
+  required_skills: Magento, Tableau, SQL Server, Agile, Jira
+  preferred_skills: Python, Looker, Internationalization
+  description: We are hunting for a Lead Marketplace Systems & Merchandising Director to oversee our high-performance retail analytics and product operations branch of twelve specialists. The chosen leader will spearhead the digital transformation of our supplier e
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2250 pairs total.
+Overall dataset so far: 2259 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  450  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  451  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  448  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  450  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  451  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  450  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  452  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  452  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  452  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  453  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2251   resume_751 × jd_751
-  pair_2252   resume_751 × jd_752
-  pair_2253   resume_751 × jd_753
-  pair_2254   resume_752 × jd_751
-  pair_2255   resume_752 × jd_752
-  pair_2256   resume_752 × jd_753
-  pair_2257   resume_753 × jd_751
-  pair_2258   resume_753 × jd_752
-  pair_2259   resume_753 × jd_753
+  pair_2260   resume_754 × jd_754
+  pair_2261   resume_754 × jd_755
+  pair_2262   resume_754 × jd_756
+  pair_2263   resume_755 × jd_754
+  pair_2264   resume_755 × jd_755
+  pair_2265   resume_755 × jd_756
+  pair_2266   resume_756 × jd_754
+  pair_2267   resume_756 × jd_755
+  pair_2268   resume_756 × jd_756
 
 ════════════════════════════════════
 OUTPUT FORMAT
