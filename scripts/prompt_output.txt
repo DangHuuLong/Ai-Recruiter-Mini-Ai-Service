@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_886 | level: junior | exp: 0.5 yrs | raw_text: 265 words
-  skills: React Native, JavaScript, Expo, CSS
-  projects: WeatherSnap
-  background: I am a recent Mobile Development graduate with a strong passion for building cross-platform applications. During my final year, I completed an internship at a small mobile development agency, where I supported a team of three in developing basic features for client applications over a six-month peri
+  id: resume_889 | level: middle | exp: 4.0 yrs | raw_text: 251 words
+  skills: SAP S/4HANA, Procurement, Inventory Management, Excel, SQL, Tableau
+  projects: StockFlow
+  background: I am a Supply Chain Coordinator with four years of experience in inventory management and procurement optimization. In my current role at a mid-sized manufacturing enterprise, I support a logistics team of ten by monitoring real-time inventory levels using SAP S/4HANA and executing procurement order
 
-  id: resume_887 | level: junior | exp: 0.7 yrs | raw_text: 268 words
-  skills: Kotlin, Android Jetpack, Retrofit, Room
-  projects: TaskMaster
-  background: I am a motivated Junior Mobile Developer with a focus on native Android development using Kotlin. Following my graduation, I served as a Junior Android Developer at a startup for eight months, working alongside a team of four to maintain and update the company’s internal business application. My pri
+  id: resume_890 | level: senior | exp: 8.0 yrs | raw_text: 286 words
+  skills: Oracle NetSuite, SAP S/4HANA, Python, Power BI, Demand Forecasting, Logistics Strategy
+  projects: OptiChain
+  background: I am a Senior Supply Chain Manager with eight years of comprehensive experience in end-to-end supply chain transformation and global logistics strategy. Throughout my career in large-scale enterprise environments, I have led cross-functional teams of fifteen to optimize complex procurement and distr
 
-  id: resume_888 | level: senior | exp: 9.0 yrs | raw_text: 267 words
-  skills: Flutter, Swift, Kotlin, CI/CD, XCTest, Espresso
-  projects: CoreSync
-  background: I am a Senior Mobile Architect with nine years of experience leading cross-platform and native development teams. Throughout my career, I have specialized in architecting highly scalable mobile solutions for large enterprise platforms. In my most recent role as a Lead Mobile Engineer at a technology
+  id: resume_891 | level: senior | exp: 9.0 yrs | raw_text: 256 words
+  skills: SAP S/4HANA, Microsoft Dynamics 365, Procurement, Logistics Modeling, API Integration, Business Analytics
+  projects: SyncNetwork
+  background: I am a Principal Supply Chain Architect with nine years of experience in designing and implementing complex, global procurement and inventory systems. In my career, I have focused on solving significant supply chain inefficiencies, such as real-time warehouse data synchronization, complex multi-node
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_886 | title: Mid-Level Mobile Engineer | level: middle | min_exp: 3 yrs | raw_text: 208 words
-  required_skills: Flutter, Swift, CI/CD
-  preferred_skills: Kotlin, Automated Testing
-  description: Our mobile engineering group of twelve is seeking a Mid-Level Mobile Engineer to contribute to our core product portfolio. We focus on delivering high-quality mobile experiences across both iOS and Android. In this role, you will be responsible for d
+  id: jd_889 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: Excel, Inventory Management, Procurement
+  preferred_skills: SAP, SQL
+  description: Our operations team of six is seeking a Junior Supply Chain Associate to support our daily inventory management and procurement activities. We manage a diverse portfolio of industrial components across our primary warehouse network. You will be respo
 
-  id: jd_887 | title: Senior Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Swift, Kotlin, Flutter, CI/CD
-  preferred_skills: Performance Tuning, System Architecture
-  description: Our platform engineering team is looking for a Senior Mobile Architect to lead our technical strategy and scale our mobile infrastructure. We are a team of twenty engineers managing complex, high-traffic mobile applications for our global clients. Yo
+  id: jd_890 | title: Associate Procurement Specialist | level: junior | min_exp: 1 yrs | raw_text: 200 words
+  required_skills: Procurement, Excel, Inventory Management
+  preferred_skills: SAP, ERP
+  description: Our procurement squad is expanding, and we are seeking an Associate Procurement Specialist to support our regional sourcing initiatives. We are a team of eight focused on optimizing our supplier network and ensuring material availability for our manu
 
-  id: jd_888 | title: Lead Mobile Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: Swift, Kotlin, Flutter, CI/CD
-  preferred_skills: XCTest, Espresso
-  description: We are seeking a Lead Mobile Engineer to direct our mobile development initiatives and drive our platform’s digital transformation. Our mobile team consists of twenty-five members focused on reliability, performance, and cross-platform innovation. Yo
+  id: jd_891 | title: Senior Supply Chain Strategist | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: SAP S/4HANA, Procurement, Inventory Management, Logistics Modeling
+  preferred_skills: Architecture, Business Analytics
+  description: We are looking for a Senior Supply Chain Strategist to lead our technical supply chain strategy and scale our logistics infrastructure. Our engineering group includes specialists in procurement, data science, and warehouse operations, all dedicated t
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2655 pairs total.
+Overall dataset so far: 2664 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  528  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  532  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  532  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  531  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  532  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  532  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  534  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  532  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  532  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  534  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2656   resume_886 × jd_886
-  pair_2657   resume_886 × jd_887
-  pair_2658   resume_886 × jd_888
-  pair_2659   resume_887 × jd_886
-  pair_2660   resume_887 × jd_887
-  pair_2661   resume_887 × jd_888
-  pair_2662   resume_888 × jd_886
-  pair_2663   resume_888 × jd_887
-  pair_2664   resume_888 × jd_888
+  pair_2665   resume_889 × jd_889
+  pair_2666   resume_889 × jd_890
+  pair_2667   resume_889 × jd_891
+  pair_2668   resume_890 × jd_889
+  pair_2669   resume_890 × jd_890
+  pair_2670   resume_890 × jd_891
+  pair_2671   resume_891 × jd_889
+  pair_2672   resume_891 × jd_890
+  pair_2673   resume_891 × jd_891
 
 ════════════════════════════════════
 OUTPUT FORMAT
