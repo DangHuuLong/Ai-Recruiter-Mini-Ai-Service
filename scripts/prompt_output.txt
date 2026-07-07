@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_757 | level: middle | exp: 4.0 yrs | raw_text: 280 words
-  skills: BPMN, Miro, Microsoft Visio, Jira, Trello, UML, Python, Power BI, Confluence
-  projects: WorkflowSim
-  background: Resourceful Business Analyst with four years of documented experience optimizing operational workflows and mapping software requirements across enterprise environments. I spent three years working at a large financial enterprise within a project management cell of six professionals where I spearhead
+  id: resume_760 | level: junior | exp: 0.5 yrs | raw_text: 275 words
+  skills: Shopify, Microsoft Excel, Google Analytics, Python, Pandas
+  projects: CartTrack
+  background: As an aspiring E-commerce Operations Associate, I completed an intensive eight-month internship at a fast-growing digital marketplace startup within an execution cell of four personnel, where I actively managed catalog data ingestion workflows and systematically tracked listing compliance metrics. I
 
-  id: resume_758 | level: senior | exp: 7.0 yrs | raw_text: 261 words
-  skills: Signavio, Enterprise Architect, Microsoft Project, Jira, Confluence, Miro, Agile, Scrum, SQL Server, Tableau
-  projects: PMO-Sync
-  background: Seasoned Senior Project Manager and Lead Business Systems Architect with over seven years of professional experience directing enterprise software initiatives and driving advanced digital transformation frameworks. In my current role at a major logistics enterprise, I supervise an elite cross-functi
+  id: resume_761 | level: middle | exp: 4.0 yrs | raw_text: 267 words
+  skills: Magento, SQL Server, Salesforce Commerce Cloud, Jira, Tableau, Python, PostgreSQL, Power BI
+  projects: VendorPulse
+  background: Resourceful Marketplace Operations Specialist with four years of professional experience driving listing health and optimizing multi-vendor supply chain matrices across digital retail ecosystems. I spent three years at a prominent multi-category retail enterprise within a merchant enablement team of
 
-  id: resume_759 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: Signavio, ARIS Architect, Microsoft Visio, BPMN, Jira, Confluence, Trello, SQL Server, Python, Agile
-  projects: GovernanceCore
-  background: Distinguished Lead Product Manager and Senior Business Analyst with eight years of comprehensive mastery leading software development projects and optimizing complex architectural governance. In my current tenure at a prominent financial technology enterprise, I govern a prominent team of twelve bus
+  id: resume_762 | level: middle | exp: 3.0 yrs | raw_text: 260 words
+  skills: SAP Commerce Cloud, Microsoft Excel, Google Analytics, Python, MongoDB
+  projects: OptiShelf
+  background: Dynamic E-commerce Merchandising Analyst with over three years of documented experience optimizing digital product visibility and managing commercial catalog operations within high-volume retail sectors. In my previous role at a large electronic retail enterprise, I operated for three years within a
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_757 | title: Associate Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: Miro, Microsoft Visio, Jira, Confluence
-  preferred_skills: BPMN, UML, Power BI
-  description: We are actively looking for an enthusiastic Associate Business Analyst to join our dynamic corporate systems division of six specialized process experts. In this entry-level individual contributor position, you will support the day-to-day discovery o
+  id: jd_760 | title: E-commerce Operations Specialist | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Shopify, Microsoft Excel, Google Analytics
+  preferred_skills: Python, Jira
+  description: We are actively looking for an enthusiastic E-commerce Operations Specialist to join our dynamic marketplace storefront division of five specialized catalog experts. In this entry-level individual contributor position, you will support the day-to-day
 
-  id: jd_758 | title: Junior Project Management Coordinator | level: junior | min_exp: 1 yrs | raw_text: 187 words
-  required_skills: Microsoft Project, Trello, Jira, Microsoft Visio
-  preferred_skills: Scrum, SQL Server, Miro
-  description: Our central business transition division is searching for a Junior Project Management Coordinator to support our expanding digital integration framework group of eight domain professionals. This entry-level role focuses on tracking project schedules,
+  id: jd_761 | title: Senior Marketplace Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: Mirakl, VTEX, Apache Kafka, AWS Cloud, Java Spring Boot
+  preferred_skills: SQL Server, Elasticsearch, AWS Certified Solutions Architect
+  description: We are searching for a Lead Marketplace Platform Engineer to head our high-performance core architecture and transaction routing division of twelve senior systems specialists. This critical senior leadership role is responsible for establishing enter
 
-  id: jd_759 | title: Senior Enterprise Process Architecture Director | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Signavio, ARIS Architect, BPMN, Enterprise Architect, Jira
-  preferred_skills: CBPP, Python, SQL Server
-  description: We are searching for a Lead Enterprise Process Architecture Director to head our high-performance strategic transformation and operational governance division of fifteen senior specialists. This critical senior leadership role is responsible for esta
+  id: jd_762 | title: Senior Merchandising Architecture Director | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: HCL Commerce, Oracle Commerce, Algolia, Python, Snowflake
+  preferred_skills: Kubernetes, MongoDB, Google Analytics 4
+  description: Our central retail innovation division is searching for a Senior Merchandising Architecture Director to govern our expanding digital catalog optimization group of fourteen domain professionals. This high-visibility leadership role focuses on engineer
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2268 pairs total.
+Overall dataset so far: 2277 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  454  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  454  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  452  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  453  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  455  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  454  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  455  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  456  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  455  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  457  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2269   resume_757 × jd_757
-  pair_2270   resume_757 × jd_758
-  pair_2271   resume_757 × jd_759
-  pair_2272   resume_758 × jd_757
-  pair_2273   resume_758 × jd_758
-  pair_2274   resume_758 × jd_759
-  pair_2275   resume_759 × jd_757
-  pair_2276   resume_759 × jd_758
-  pair_2277   resume_759 × jd_759
+  pair_2278   resume_760 × jd_760
+  pair_2279   resume_760 × jd_761
+  pair_2280   resume_760 × jd_762
+  pair_2281   resume_761 × jd_760
+  pair_2282   resume_761 × jd_761
+  pair_2283   resume_761 × jd_762
+  pair_2284   resume_762 × jd_760
+  pair_2285   resume_762 × jd_761
+  pair_2286   resume_762 × jd_762
 
 ════════════════════════════════════
 OUTPUT FORMAT
