@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_808 | level: middle | exp: 4.0 yrs | raw_text: 274 words
-  skills: BPMN 2.0, JIRA, Confluence, SQL, Tableau, Agile Methodology
-  projects: Requirement-Tracker-Auto
-  background: I am a dedicated Business Analyst with four years of experience driving process improvements within enterprise-scale organizations. In my current role at a large retail enterprise, I lead a team of four to bridge the gap between technical teams and non-technical stakeholders. My daily responsibiliti
+  id: resume_811 | level: junior | exp: 0.5 yrs | raw_text: 286 words
+  skills: PostgreSQL, MongoDB, Python, SQL, Data Modeling
+  projects: DataFlow, LibraryTracker
+  background: As a recent computer science graduate from the State University in 2026, I am passionate about database architecture and backend development. During my internship at a mid-sized e-commerce startup, I spent six months working within a four-person engineering team. My primary responsibilities involved
 
-  id: resume_809 | level: senior | exp: 8.0 yrs | raw_text: 275 words
-  skills: Project Management, BPMN 2.0, Stakeholder Management, Strategic Planning, Agile, SQL
-  projects: Workflow-Optimization-Matrix
-  background: As a Senior Project Manager and Lead Business Analyst, I have spent the last eight years navigating complex digital transformations within global enterprise environments. My career has been defined by leading cross-functional teams of up to fifteen members to deliver large-scale software solutions o
+  id: resume_812 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: PostgreSQL, Redis, SQL, Database Administration, Shell Scripting
+  projects: NexusChat, InventorySystem
+  background: Having recently completed my degree in software engineering in early 2026, I have developed a deep interest in backend infrastructure and scalable data management. During my six-month tenure as a junior backend intern at a fast-paced technology agency, I contributed to a team of six developers, focu
 
-  id: resume_810 | level: senior | exp: 9.0 yrs | raw_text: 266 words
-  skills: Enterprise Architecture, BPMN 2.0, Project Governance, SQL, JIRA, Power BI
-  projects: Global-System-Integration
-  background: With over nine years of dedicated experience as a Principal Business Analyst and Project Lead, I specialize in architecting complex systems and managing high-stakes stakeholder relationships. Currently, I work within a large-scale agency environment, overseeing a team of twelve analysts and project 
+  id: resume_813 | level: senior | exp: 8.5 yrs | raw_text: 265 words
+  skills: PostgreSQL, MongoDB, Redis, Go, Kubernetes, System Design, Data Modeling
+  projects: Global Billing Engine, Distributed Data Store
+  background: With over eight years of experience as a database engineer and technical lead, I specialize in building highly available, distributed data architectures. During my five-year tenure at a large-scale financial technology enterprise, I led a cross-functional team of twelve engineers responsible for mai
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_808 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 208 words
-  required_skills: JIRA, Confluence, BPMN, Stakeholder Discovery
-  preferred_skills: Excel, Agile
-  description: Our dynamic project team is seeking a motivated Junior Business Analyst to join our group of ten professionals. We work on a high-growth platform that connects users with essential services, and your role will be foundational in helping us translate 
+  id: jd_811 | title: Database Engineer (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 243 words
+  required_skills: PostgreSQL, MongoDB, SQL, Data Modeling
+  preferred_skills: Redis, Python, Go
+  description: Our backend team is currently expanding and we are seeking a dedicated Database Engineer to join our group of eight engineers. We focus on building robust financial reporting tools that support our core retail products. The team operates in a fast-pa
 
-  id: jd_809 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Project Tracking, Stakeholder Coordination, JIRA, Confluence
-  preferred_skills: BPMN, Excel
-  description: Our PMO is looking for an Associate Project Coordinator to support our delivery team of fifteen people. This role provides the perfect environment for an entry-level professional to gain hands-on experience in project governance and requirement manag
+  id: jd_812 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 229 words
+  required_skills: PostgreSQL, MongoDB, Redis, System Design, Data Modeling, Kubernetes
+  preferred_skills: Go, Java, Terraform
+  description: Our core infrastructure team, consisting of ten highly skilled engineers, is looking for a Senior Database Architect to lead our data strategy. We manage a global, distributed data environment that powers real-time user analytics for millions of acti
 
-  id: jd_810 | title: Senior Systems Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: BPMN 2.0, SQL, Stakeholder Management, Enterprise Architecture
-  preferred_skills: JIRA, APIs, Data Visualization
-  description: We are looking for a Senior Systems Business Analyst to act as the primary bridge between our global stakeholders and our technical engineering department of twenty staff. You will operate within our central product group, focusing on large-scale arc
+  id: jd_813 | title: Senior Database Lead | level: senior | min_exp: 6 yrs | raw_text: 238 words
+  required_skills: PostgreSQL, MongoDB, Redis, System Design, Data Modeling, Leadership
+  preferred_skills: Go, C++, Event-Driven Architecture
+  description: The backend platform team is looking for a Senior Database Lead to oversee the integrity and performance of our core transactional systems. Our team of fifteen engineers manages high-traffic services that process thousands of transactions per second.
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2421 pairs total.
+Overall dataset so far: 2430 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  485  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  485  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  482  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  484  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  485  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  485  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  486  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  486  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  486  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  487  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2422   resume_808 × jd_808
-  pair_2423   resume_808 × jd_809
-  pair_2424   resume_808 × jd_810
-  pair_2425   resume_809 × jd_808
-  pair_2426   resume_809 × jd_809
-  pair_2427   resume_809 × jd_810
-  pair_2428   resume_810 × jd_808
-  pair_2429   resume_810 × jd_809
-  pair_2430   resume_810 × jd_810
+  pair_2431   resume_811 × jd_811
+  pair_2432   resume_811 × jd_812
+  pair_2433   resume_811 × jd_813
+  pair_2434   resume_812 × jd_811
+  pair_2435   resume_812 × jd_812
+  pair_2436   resume_812 × jd_813
+  pair_2437   resume_813 × jd_811
+  pair_2438   resume_813 × jd_812
+  pair_2439   resume_813 × jd_813
 
 ════════════════════════════════════
 OUTPUT FORMAT
