@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_775 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: Transformers, LangChain, RAG, Embeddings, Python, Pinecone, ChromaDB
-  projects: DocuPulse AI
-  background: Experienced Machine Learning Engineer with four years of dedicated history developing artificial intelligence applications and natural language workflows. For the past four years, I have functioned at a high-growth artificial intelligence startup within an agile engineering squad of six language spe
+  id: resume_778 | level: junior | exp: 0.5 yrs | raw_text: 251 words
+  skills: Docker, Python, Linux, Bash
+  projects: DeployCraft Engine
+  background: Highly enthusiastic and detail-oriented Junior DevOps Associate and recent computer science graduate aiming to establish a professional footprint in automated system deployment and cloud platform management. During my academic studies, I completed an intensive six-month software engineering internsh
 
-  id: resume_776 | level: senior | exp: 7.0 yrs | raw_text: 280 words
-  skills: Transformers, Embeddings, PyTorch, Python, AWS, Docker
-  projects: LlamaForge
-  background: Distinguished Senior Artificial Intelligence Architect and Technical Infrastructure Specialist with over seven years of professional experience scaling state-of-the-art natural language models and orchestrating robust enterprise data systems. For the last five years, I have guided platform operation
+  id: resume_779 | level: junior | exp: 0.6 yrs | raw_text: 275 words
+  skills: AWS, Linux, Bash, Python
+  projects: CloudLaunch Suite
+  background: Ambitious and highly systematic Associate Cloud Solutions Engineer with a comprehensive academic foundation in systems engineering and automated software provisioning methodologies. I recently completed a rigorous seven-month technical internship at an innovative cloud technology startup, collaborat
 
-  id: resume_777 | level: senior | exp: 8.0 yrs | raw_text: 280 words
-  skills: Transformers, Embeddings, PyTorch, Python, Milvus, SQL
-  projects: FinSemantic Core
-  background: Accomplished Senior NLP Systems Architect and Artificial Intelligence Specialist with over eight years of experience engineering high-performance deep learning architectures and configuring large-scale data solutions within prominent financial enterprise settings. For the past five years, I have ste
+  id: resume_780 | level: senior | exp: 8.0 yrs | raw_text: 284 words
+  skills: AWS, Docker, Kubernetes, Terraform, Ansible, Linux
+  projects: InfraForge
+  background: Accomplished and visionary Senior Cloud Infrastructure Architect and DevOps Lead with more than eight years of professional expertise engineering scalable cloud-native environments, large-scale multi-region topologies, and secure continuous delivery networks within complex enterprise setups. For the
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_775 | title: Junior AI Developer | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Python, LangChain, RAG, Transformers
-  preferred_skills: PyTorch, Vector Databases
-  description: We are actively looking for an analytical Junior AI Developer to join our core intelligence products squad consisting of four associate-level engineering professionals. In this entry-level associate position, you will own the day-to-day administrativ
+  id: jd_778 | title: Middle DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 186 words
+  required_skills: AWS, Docker, Terraform, Linux
+  preferred_skills: Kubernetes, Python
+  description: We are actively seeking a analytical Middle DevOps Engineer to join our core infrastructure services group consisting of five mid-level technical professionals. In this individual contributor position, you will assume direct technical ownership over 
 
-  id: jd_776 | title: Associate NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Python, Embeddings, RAG, LangChain
-  preferred_skills: PyTorch, Quantization
-  description: Our digital conversational products division is seeking a methodical Associate NLP Engineer to join our operational language solutions team of six associate-level data specialists. This entry-level technical coordination position is responsible for s
+  id: jd_779 | title: Senior Infrastructure Specialist | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: AWS, Kubernetes, Terraform, Docker
+  preferred_skills: Ansible, Linux
+  description: Our core systems infrastructure collective is searching for an expert Senior Infrastructure Specialist to join our global platform operations team of eight experienced engineering professionals. In this high-impact technical leadership position, you 
 
-  id: jd_777 | title: Middle AI and NLP Engineer | level: middle | min_exp: 3 yrs | raw_text: 184 words
-  required_skills: Transformers, LangChain, RAG, Embeddings
-  preferred_skills: Docker, AWS
-  description: We are searching for an analytical Middle AI and NLP Engineer to guide our conversational product development department consisting of seven mid-level data infrastructure engineers. In this tactical individual contributor position, you will direct th
+  id: jd_780 | title: Lead Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
+  required_skills: Kubernetes, Terraform, Linux, Docker
+  preferred_skills: Ansible, AWS
+  description: We are seeking a visionary Lead Systems Architect to direct our newly established cloud reliability division consisting of six principal systems engineers. In this high-impact technical leadership role, you will oversee the complete architectural lif
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2322 pairs total.
+Overall dataset so far: 2331 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  463  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  466  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  464  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  463  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  466  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  463  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  466  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  468  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  467  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  467  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2323   resume_775 × jd_775
-  pair_2324   resume_775 × jd_776
-  pair_2325   resume_775 × jd_777
-  pair_2326   resume_776 × jd_775
-  pair_2327   resume_776 × jd_776
-  pair_2328   resume_776 × jd_777
-  pair_2329   resume_777 × jd_775
-  pair_2330   resume_777 × jd_776
-  pair_2331   resume_777 × jd_777
+  pair_2332   resume_778 × jd_778
+  pair_2333   resume_778 × jd_779
+  pair_2334   resume_778 × jd_780
+  pair_2335   resume_779 × jd_778
+  pair_2336   resume_779 × jd_779
+  pair_2337   resume_779 × jd_780
+  pair_2338   resume_780 × jd_778
+  pair_2339   resume_780 × jd_779
+  pair_2340   resume_780 × jd_780
 
 ════════════════════════════════════
 OUTPUT FORMAT
