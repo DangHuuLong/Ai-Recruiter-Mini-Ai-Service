@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_787 | level: junior | exp: 0.5 yrs | raw_text: 270 words
-  skills: eClinicalWorks, HIPAA, Scheduling, Patient Intake, Microsoft Excel, SharePoint
-  projects: CareSched Portal
-  background: Eager and detail-oriented Healthcare Administration graduate seeking an entry-level position to deploy foundational knowledge of medical office coordination, record indexing, and basic clinic workflows. During my academic studies, I completed a formal six-month administrative internship at a local f
+  id: resume_790 | level: middle | exp: 4.0 yrs | raw_text: 264 words
+  skills: Figma, User Research, Prototyping, Interaction Design, Storybook, React
+  projects: FlowOptic
+  background: Systematic and creative Product Designer with four years of professional experience building user-centric interfaces and complex design systems. I started my career as a Junior UI Designer at a boutique digital agency for two years, working within a cross-functional team of five professionals to cra
 
-  id: resume_788 | level: middle | exp: 4.0 yrs | raw_text: 270 words
-  skills: Epic Systems, HIPAA, Clinical Ops, Patient Tracking, Microsoft Excel, PowerBI
-  projects: MedFlow Central
-  background: Highly organized and systematic Healthcare Operations Specialist with over four years of professional experience managing clinical workflows, optimizing patient registration systems, and maintaining technical compliance parameters. I started my career working for two years at a growing regional medi
+  id: resume_791 | level: senior | exp: 8.0 yrs | raw_text: 259 words
+  skills: Figma, User Research, Interaction Design, Accessibility, Framer, Mixpanel, AWS Lambda
+  projects: DesignEngine
+  background: Visionary Senior Product Designer and Design Lead with eight years of extensive experience directing product design strategy and building inclusive design ecosystems. I spent my first three years as a UX Designer at a high-growth startup, managing an design team of three where I established our init
 
-  id: resume_789 | level: middle | exp: 5.0 yrs | raw_text: 262 words
-  skills: Cerner, HIPAA, Clinical Ops, Scheduling, SharePoint, Tableau
-  projects: EMR_Bridge Utility
-  background: Analytical and results-driven Clinical Operations Coordinator with five years of professional experience structuring high-volume electronic medical record systems and leading medical office alignments within busy urgent care settings. For the past three years, I have driven operational execution at 
+  id: resume_792 | level: senior | exp: 9.0 yrs | raw_text: 255 words
+  skills: Figma, User Research, Interaction Design, D3.js, Principle, Looker, Information Architecture
+  projects: InsightMap
+  background: Accomplished Senior UI/UX Architect with nine years of experience building scalable design platforms and data-driven product experiences. I began my career as a Web Designer at a digital agency, spending three years designing interfaces for diverse clients while honing my skills in Photoshop and ear
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_787 | title: Medical Office Coordinator | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: eClinicalWorks, HIPAA, Scheduling, Patient Intake
-  preferred_skills: Epic Systems, SharePoint
-  description: We are actively looking for an enthusiastic and detailed Medical Office Coordinator to join our primary care operations group consisting of five administrative individual contributors. In this critical frontend position, you will assume direct profes
+  id: jd_790 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: Figma, User Research, Interaction Design, Accessibility
+  preferred_skills: ProtoPie, HTML/CSS
+  description: Our product design team is growing, and we are searching for a talented Junior Product Designer to assist in building our core consumer-facing experiences. The team consists of three senior designers, one researcher, and a product lead. You will be i
 
-  id: jd_788 | title: Senior Director of Clinical Systems and Quality | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Epic Systems, HIPAA, Clinical Ops, PowerBI
-  preferred_skills: Tableau, Cerner
-  description: Our enterprise clinical informatics division is seeking a methodical and business-focused Senior Director of Clinical Systems and Quality to join our hospital infrastructure scale solutions team of eight medical system specialists. In this high-impac
+  id: jd_791 | title: Associate UX Researcher & Designer | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: Figma, User Research, Interaction Design, Information Architecture
+  preferred_skills: Mixpanel, Hotjar
+  description: We are looking for an Associate UX Researcher & Designer to support our data-informed product design process. Our design department of four is focused on delivering best-in-class experiences for a suite of professional tools. In this role, you will s
 
-  id: jd_789 | title: Lead Health Informatics Administrator | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Cerner, HIPAA, Clinical Ops, Tableau
-  preferred_skills: Epic Systems, SharePoint
-  description: We are seeking an analytical and highly collaborative Lead Health Informatics Administrator to guide our newly established health network alignment division consisting of six principal medical records coordinators. In this tactical individual contrib
+  id: jd_792 | title: Lead Product Design Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Figma, User Research, Interaction Design, Information Architecture
+  preferred_skills: Looker, Principle
+  description: Our team is seeking a Lead Product Design Architect to oversee the structural design of our complex enterprise platform. Our design division is fifteen people strong, and you will lead a squad responsible for our design system, platform performance, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2358 pairs total.
+Overall dataset so far: 2367 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  471  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  471  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  472  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  471  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  473  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  473  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  475  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  472  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  473  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  474  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2359   resume_787 × jd_787
-  pair_2360   resume_787 × jd_788
-  pair_2361   resume_787 × jd_789
-  pair_2362   resume_788 × jd_787
-  pair_2363   resume_788 × jd_788
-  pair_2364   resume_788 × jd_789
-  pair_2365   resume_789 × jd_787
-  pair_2366   resume_789 × jd_788
-  pair_2367   resume_789 × jd_789
+  pair_2368   resume_790 × jd_790
+  pair_2369   resume_790 × jd_791
+  pair_2370   resume_790 × jd_792
+  pair_2371   resume_791 × jd_790
+  pair_2372   resume_791 × jd_791
+  pair_2373   resume_791 × jd_792
+  pair_2374   resume_792 × jd_790
+  pair_2375   resume_792 × jd_791
+  pair_2376   resume_792 × jd_792
 
 ════════════════════════════════════
 OUTPUT FORMAT
