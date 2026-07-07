@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_823 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: Docker, AWS EC2, Jenkins, Bash Scripting, Python, Linux
-  projects: AutoDeploy
-  background: I am a recent Computer Science graduate with a strong passion for DevOps and cloud automation. During my final year, I completed an internship at a small software startup where I worked on a team of three engineers. My responsibilities included maintaining basic CI/CD pipelines using Jenkins and wri
+  id: resume_826 | level: middle | exp: 4.0 yrs | raw_text: 260 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Node.js
+  projects: FastCart, UI-Kit-Generator
+  background: I am a dedicated Frontend Developer with four years of experience crafting interactive web applications. In my current role at a mid-sized e-commerce startup, I collaborate with a team of six developers to maintain and scale our customer-facing platform. I have successfully migrated legacy component
 
-  id: resume_824 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: AWS S3, Docker, Terraform, Python, Linux, CI/CD Basics
-  projects: CloudMonitor
-  background: I am a motivated engineering graduate with a focus on cloud operations and container orchestration. During my undergraduate studies, I interned at a mid-sized digital agency for six months, working closely with a DevOps team of five. My primary responsibilities involved troubleshooting container iss
+  id: resume_827 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, State Management, Performance Optimization
+  projects: StateFlow, InsightsCore
+  background: I am a Senior Frontend Architect with eight years of experience specializing in large-scale web applications. Throughout my career, I have held technical leadership roles at two major enterprise organizations, leading teams of up to fifteen developers. My core expertise lies in designing scalable Re
 
-  id: resume_825 | level: senior | exp: 8.0 yrs | raw_text: 252 words
-  skills: Kubernetes, Terraform, AWS, Prometheus, Grafana, Docker, Go
-  projects: ClusterGuard
-  background: I am a senior DevOps engineer with eight years of professional experience building and scaling high-traffic cloud infrastructure. In my most recent role at a large tech enterprise, I led a backend platform team of twenty engineers. My primary duties included architecting production-grade Kubernetes 
+  id: resume_828 | level: senior | exp: 7.0 yrs | raw_text: 288 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, Canvas API, Cypress
+  projects: TradeViz, ComponentPulse
+  background: I am a Principal Frontend Engineer with seven years of experience in building high-concurrency web applications for major fintech enterprises. I have extensive experience in leading cross-functional teams of ten to twenty engineers and driving architectural transformations. My recent role at a globa
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_823 | title: Mid-Level DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: AWS, Kubernetes, Terraform, Docker
-  preferred_skills: Jenkins, Prometheus
-  description: Our infrastructure team is seeking a Mid-Level DevOps Engineer to support our growing ecosystem of microservices. We currently have a team of twelve engineers responsible for maintaining our cloud-based platforms, serving hundreds of thousands of use
+  id: jd_826 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 214 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Next.js, Git
+  description: Our web engineering group is looking for a motivated Junior Frontend Developer to join our team of twelve developers. We work on a suite of consumer products, and this role is critical for building new UI features and maintaining our existing interfa
 
-  id: jd_824 | title: Senior Cloud Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Kubernetes, Terraform, AWS, Go
-  preferred_skills: Prometheus, Grafana
-  description: We are seeking a Senior Cloud Infrastructure Architect to lead our platform engineering team. Our team consists of fifteen senior engineers focused on building highly scalable, low-latency infrastructure for our global product. The environment is fas
+  id: jd_827 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: React, TypeScript, Tailwind CSS
+  preferred_skills: Next.js, Web Design
+  description: We are seeking an enthusiastic Associate Frontend Developer to join our team of fifteen engineers. Our focus is on creating a responsive and intuitive platform for our global user base. As an associate engineer, you will be involved in every stage of
 
-  id: jd_825 | title: Senior Site Reliability Engineer | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Kubernetes, AWS, Terraform, Prometheus
-  preferred_skills: Python, Go
-  description: Our infrastructure team is looking for a Senior Site Reliability Engineer to oversee the design and implementation of our next-generation backend reliability frameworks. As we scale, we require a technical leader who understands the nuances of high-c
+  id: jd_828 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS
+  preferred_skills: Architecture, Design Systems
+  description: Our frontend platform team is searching for a highly experienced Senior Frontend Engineer to lead our most complex projects. With a team of twenty engineers, we maintain a robust, high-traffic platform that demands top-tier performance, maintainabili
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2466 pairs total.
+Overall dataset so far: 2475 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  491  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  494  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  494  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  493  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  494  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  495  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  496  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  494  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  494  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  496  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2467   resume_823 × jd_823
-  pair_2468   resume_823 × jd_824
-  pair_2469   resume_823 × jd_825
-  pair_2470   resume_824 × jd_823
-  pair_2471   resume_824 × jd_824
-  pair_2472   resume_824 × jd_825
-  pair_2473   resume_825 × jd_823
-  pair_2474   resume_825 × jd_824
-  pair_2475   resume_825 × jd_825
+  pair_2476   resume_826 × jd_826
+  pair_2477   resume_826 × jd_827
+  pair_2478   resume_826 × jd_828
+  pair_2479   resume_827 × jd_826
+  pair_2480   resume_827 × jd_827
+  pair_2481   resume_827 × jd_828
+  pair_2482   resume_828 × jd_826
+  pair_2483   resume_828 × jd_827
+  pair_2484   resume_828 × jd_828
 
 ════════════════════════════════════
 OUTPUT FORMAT
