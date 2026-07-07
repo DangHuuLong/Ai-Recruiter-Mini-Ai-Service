@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_832 | level: middle | exp: 4.0 yrs | raw_text: 250 words
-  skills: Business Analysis, BPMN, Jira, Confluence, SQL, Power BI, Stakeholder Management
-  projects: Project Clarity, Data Visualization Initiative
-  background: I am a detail-oriented Business Analyst with four years of experience driving process improvements within enterprise-level finance environments. My journey began at a software agency where I supported a team of ten in translating complex client needs into actionable user stories using Jira and Confl
+  id: resume_835 | level: junior | exp: 0.5 yrs | raw_text: 262 words
+  skills: Business Analysis, Requirements Gathering, Microsoft Office, Trello, Excel
+  projects: TaskFlow, CampusSurvey
+  background: I am a detail-oriented entry-level professional who recently graduated with a degree in Business Administration. During my final year, I completed a six-month internship at a mid-sized marketing agency, where I was part of a five-person research team. My primary responsibilities involved assisting s
 
-  id: resume_833 | level: middle | exp: 3.5 yrs | raw_text: 250 words
-  skills: Business Analysis, BPMN, Jira, SQL, Microsoft Power Automate, Requirements Gathering, Agile
-  projects: Workflow Wizard, Client Voice
-  background: I am an experienced Business Analyst with three and a half years of professional background in the logistics and retail sectors. During my tenure at a fast-paced logistics startup, I collaborated with a cross-functional team of twelve to document and streamline supply chain processes, consistently u
+  id: resume_836 | level: junior | exp: 1.0 yrs | raw_text: 264 words
+  skills: Business Analysis, Project Support, Asana, Excel, Data Entry
+  projects: LibraryTracker, MeetingMaster
+  background: I am a motivated aspiring Business Analyst eager to launch my career in process optimization and project management. I recently completed a one-year internship at a retail startup where I worked alongside a small team of three to support internal operations. My daily responsibilities included assist
 
-  id: resume_834 | level: senior | exp: 8.0 yrs | raw_text: 284 words
-  skills: Business Analysis, Project Management, BPMN, Jira, SQL, Stakeholder Management, Strategic Planning
-  projects: Process Shield, Synergy Hub
-  background: I am a Senior Business Analyst and Project Manager with eight years of experience delivering high-impact solutions across the healthcare and fintech industries. Having led teams of twenty-plus members in complex digital transformation projects, I have developed deep expertise in requirements enginee
+  id: resume_837 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Business Analysis, BPMN, Jira, Confluence, SQL, Power BI, Stakeholder Management, Project Management
+  projects: ProcessOptimizer, ReportCentral
+  background: I am a Senior Business Analyst with eight years of experience delivering high-impact solutions for complex digital transformation projects within global enterprise environments. Throughout my career, I have led cross-functional teams of up to twenty members in designing scalable business architectur
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_832 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 205 words
-  required_skills: Business Analysis, BPMN, Jira, Microsoft Office
-  preferred_skills: Confluence, Agile
-  description: Our operations team is looking for a motivated Junior Business Analyst to join our team of fifteen, focused on optimizing our internal workflow efficiency. This role is essential for helping us document processes and translate operational needs into 
+  id: jd_835 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 220 words
+  required_skills: Business Analysis, Requirements Engineering, BPMN, Jira, Confluence
+  preferred_skills: Agile, Data Analysis
+  description: We are seeking a mid-level Business Analyst to join our project team of ten analysts focused on delivering high-quality business solutions. This role requires someone who can take ownership of individual project modules, collaborate effectively with 
 
-  id: jd_833 | title: Associate Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Business Analysis, BPMN, Jira, Confluence
-  preferred_skills: Agile, Requirements Gathering
-  description: We are seeking an enthusiastic Associate Business Analyst to join our team of eighteen engineers and analysts. Our team focuses on digital transformation initiatives, and we need someone who can support our requirements engineering processes and proj
-
-  id: jd_834 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Business Analysis, BPMN, Jira, SQL, Stakeholder Management
+  id: jd_836 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Business Analysis, BPMN, Jira, Confluence, SQL, Requirements Engineering
   preferred_skills: Strategic Planning, Process Architecture
-  description: Our digital transformation group is searching for a highly experienced Senior Business Analyst to lead our most complex process modeling projects. With a team of twenty-five members, we maintain a robust portfolio of large-scale initiatives that dema
+  description: Our operations strategy team is searching for a highly experienced Senior Business Analyst to lead our most mission-critical digital transformation projects. With a team of twenty-five, we maintain a robust, high-impact system portfolio that requires
+
+  id: jd_837 | title: Lead Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: Business Analysis, BPMN, Jira, Confluence, Requirements Engineering, SQL
+  preferred_skills: Project Management, Strategic Planning
+  description: We are looking for a visionary Lead Business Analyst to join our team of fifteen, focused on delivering complex, data-heavy project solutions. We build enterprise-grade applications that demand top-tier analytical expertise and a commitment to scalab
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2493 pairs total.
+Overall dataset so far: 2502 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  499  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  499  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  498  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  497  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  500  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  499  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  501  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  500  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  501  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  501  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2494   resume_832 × jd_832
-  pair_2495   resume_832 × jd_833
-  pair_2496   resume_832 × jd_834
-  pair_2497   resume_833 × jd_832
-  pair_2498   resume_833 × jd_833
-  pair_2499   resume_833 × jd_834
-  pair_2500   resume_834 × jd_832
-  pair_2501   resume_834 × jd_833
-  pair_2502   resume_834 × jd_834
+  pair_2503   resume_835 × jd_835
+  pair_2504   resume_835 × jd_836
+  pair_2505   resume_835 × jd_837
+  pair_2506   resume_836 × jd_835
+  pair_2507   resume_836 × jd_836
+  pair_2508   resume_836 × jd_837
+  pair_2509   resume_837 × jd_835
+  pair_2510   resume_837 × jd_836
+  pair_2511   resume_837 × jd_837
 
 ════════════════════════════════════
 OUTPUT FORMAT
