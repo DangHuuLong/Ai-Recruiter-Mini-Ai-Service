@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_874 | level: junior | exp: 0.5 yrs | raw_text: 271 words
-  skills: Social Media Management, Canva, Google Analytics, Content Strategy
-  projects: BrandVoice
-  background: I am a recent Marketing graduate, having earned my degree in 2026 with a specialization in Digital Media. During my final year, I completed an internship at a fast-paced creative agency, working on a team of three to assist with daily social media management and basic content scheduling. My primary 
+  id: resume_877 | level: middle | exp: 4.0 yrs | raw_text: 256 words
+  skills: Financial Modeling, SQL, Excel, NetSuite, Python, QuickBooks
+  projects: DataBridge
+  background: I am a Finance professional with four years of experience in fintech accounting and financial analysis. In my most recent role as a Financial Analyst at a mid-sized fintech startup, I worked within a team of six to manage monthly close processes and maintain internal financial controls. My primary r
 
-  id: resume_875 | level: junior | exp: 0.4 yrs | raw_text: 258 words
-  skills: SEO, Keyword Research, Content Management, Google Search Console
-  projects: WebOptimize
-  background: As a motivated recent graduate in Digital Marketing, I am passionate about data-driven content strategies and search optimization. During my five-month internship at a growing software startup, I supported the marketing team of four by updating website copy, researching high-traffic keywords for blo
+  id: resume_878 | level: senior | exp: 8.5 yrs | raw_text: 265 words
+  skills: FP&A, NetSuite, Snowflake, SQL, Tableau, Python, SOX Compliance
+  projects: FinSec
+  background: I am a Senior Financial Controller with eight years of extensive experience leading finance operations for high-growth fintech enterprises. My career began at a large retail banking firm, where I spent three years specializing in regulatory compliance and statutory reporting using SAP S/4HANA, befor
 
-  id: resume_876 | level: senior | exp: 8.5 yrs | raw_text: 259 words
-  skills: SEO, Content Strategy, Tableau, Google Analytics, Data Analytics, Marketing Automation
-  projects: GrowthVelocity
-  background: I am a Senior Digital Strategy Manager with eight years of experience specializing in enterprise SEO, global content orchestration, and data-driven growth marketing. Throughout my career at three major international retail enterprises, I have led marketing teams of up to fifteen professionals, ensur
+  id: resume_879 | level: senior | exp: 9.0 yrs | raw_text: 264 words
+  skills: Finance Architecture, Python, NetSuite, Tableau, SQL, Cloud ERP, Data Pipeline
+  projects: LedgerFlow
+  background: I am a Principal Finance Architect with nine years of experience specializing in financial system design and high-performance accounting operations. Throughout my career, I have worked across various industries, including large-scale payment processors and enterprise SaaS platforms. In my most recen
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_874 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 214 words
-  required_skills: SEO, Content Strategy, Google Analytics, Social Media Management
-  preferred_skills: Salesforce, Mailchimp
-  description: Our busy marketing department is looking for an experienced Digital Marketing Specialist to join our team of twelve. This role focuses on the day-to-day execution, optimization, and measurement of content initiatives within our cloud-based marketing 
+  id: jd_877 | title: Junior Finance Associate | level: junior | min_exp: 1 yrs | raw_text: 213 words
+  required_skills: Excel, SQL, Accounting
+  preferred_skills: NetSuite, Data Analysis
+  description: Our dynamic finance operations team of five is currently looking for a motivated Junior Finance Associate to support the ongoing management of our internal financial tools and reporting. We are a fast-moving group in the fintech space, and you will w
 
-  id: jd_875 | title: Senior SEO & Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 211 words
-  required_skills: SEO, Content Strategy, Data Analytics, Google Analytics, Tableau
-  preferred_skills: Technical SEO, Marketing Automation
-  description: Our platform team of twenty is seeking a Senior SEO & Content Strategist to lead the design and implementation of our global content architecture. We manage highly competitive search environments, and we require a candidate who can build, manage, and
+  id: jd_878 | title: Associate Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 220 words
+  required_skills: Excel, SQL, Financial Analysis
+  preferred_skills: Python, Tableau
+  description: The finance department is expanding, and we are looking for an Associate Financial Analyst to help build the next generation of our financial planning portal. Our team is small, consisting of six analysts, and we pride ourselves on a culture of colla
 
-  id: jd_876 | title: Lead Digital Strategy Manager | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: SEO, Content Strategy, Google Analytics, Tableau, Data Analytics
-  preferred_skills: Marketing Automation, Performance Marketing
-  description: Our organization is seeking a Lead Digital Strategy Manager to join our global marketing team of fifteen. This is a mission-critical role focused on the strategic design, implementation, and optimization of our enterprise-wide digital growth capabili
+  id: jd_879 | title: Senior Finance Architect | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: NetSuite, Python, SQL, Tableau
+  preferred_skills: System Design, Cloud ERP
+  description: We are looking for a Senior Finance Architect to lead the development of our high-traffic financial infrastructure. Our core team consists of twenty-five finance and engineering staff dedicated to scaling our ledger systems and building sophisticated
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2619 pairs total.
+Overall dataset so far: 2628 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  522  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  524  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  524  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  524  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  525  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  526  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  526  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  524  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  525  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  527  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2620   resume_874 × jd_874
-  pair_2621   resume_874 × jd_875
-  pair_2622   resume_874 × jd_876
-  pair_2623   resume_875 × jd_874
-  pair_2624   resume_875 × jd_875
-  pair_2625   resume_875 × jd_876
-  pair_2626   resume_876 × jd_874
-  pair_2627   resume_876 × jd_875
-  pair_2628   resume_876 × jd_876
+  pair_2629   resume_877 × jd_877
+  pair_2630   resume_877 × jd_878
+  pair_2631   resume_877 × jd_879
+  pair_2632   resume_878 × jd_877
+  pair_2633   resume_878 × jd_878
+  pair_2634   resume_878 × jd_879
+  pair_2635   resume_879 × jd_877
+  pair_2636   resume_879 × jd_878
+  pair_2637   resume_879 × jd_879
 
 ════════════════════════════════════
 OUTPUT FORMAT
