@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_802 | level: middle | exp: 4.0 yrs | raw_text: 273 words
-  skills: Python, PyTorch, LangChain, Hugging Face, Pinecone, FastAPI
-  projects: Semantic-Search-Refine
-  background: Dedicated NLP Engineer with four years of professional experience developing conversational AI and retrieval-augmented generation systems. During my two-year tenure at a rapidly growing AI startup, I collaborated with a team of five engineers to build domain-specific chatbots using Python 3.9, PyTor
+  id: resume_805 | level: junior | exp: 0.5 yrs | raw_text: 263 words
+  skills: Microsoft Excel, Patient Scheduling, HIPAA Compliance, EMR Basic, Data Entry
+  projects: Digital-Patient-Flow
+  background: Recent graduate in Healthcare Administration with a strong passion for improving clinical operations and patient data management. During my final-year internship at a community medical clinic, I supported a team of three administrators in maintaining patient records using basic EMR software and Micr
 
-  id: resume_803 | level: middle | exp: 3.5 yrs | raw_text: 289 words
-  skills: Python, LangChain, Milvus, SpaCy, TensorFlow, OpenAI API
-  projects: Doc-Chat-Engine
-  background: Versatile AI Engineer with three and a half years of experience implementing generative AI and NLP solutions. In my most recent role as an AI Developer at a fintech enterprise for two years, I led the integration of LLM-based assistants for customer support, leveraging OpenAI APIs, LangChain, and ve
+  id: resume_806 | level: junior | exp: 0.5 yrs | raw_text: 256 words
+  skills: EMR Entry, Appointment Coordination, Public Health Data, Medical Ethics, Documentation
+  projects: Chart-Sync-Optimize
+  background: Motivated Healthcare Coordinator with recent clinical internship experience at a regional health services agency. Working alongside a team of six medical professionals, I facilitated patient intake and coordinated appointments while maintaining strict confidentiality protocols. My primary duties inv
 
-  id: resume_804 | level: senior | exp: 8.0 yrs | raw_text: 285 words
-  skills: PyTorch, LangChain, FAISS, Transformers, Kubernetes, Python
-  projects: Global-Model-Sync
-  background: Principal AI Architect with eight years of professional experience building large-scale NLP systems and advanced generative AI frameworks. During my four years as a Lead NLP Engineer at an enterprise SaaS company, I was responsible for the strategic design and deployment of multilingual LLM models s
+  id: resume_807 | level: senior | exp: 9.0 yrs | raw_text: 267 words
+  skills: Epic EMR, SQL, Clinical Operations, Budget Management, Digital Health Strategy
+  projects: Scale-Care-Cloud
+  background: Senior Healthcare Operations Lead with nine years of experience driving clinical efficiency and digital transformation in multi-site hospital environments. During my four years as a Clinical Operations Manager at a large healthcare enterprise, I led a cross-functional team of twenty to optimize glob
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_802 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Python, NLP, LangChain, Transformers
-  preferred_skills: PyTorch, Pinecone
-  description: Our core AI infrastructure team is seeking a passionate Junior NLP Engineer to help us refine and expand our conversational AI products. We are a team of fifteen that builds advanced LLM applications, including RAG-powered assistants, for our global 
+  id: jd_805 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 196 words
+  required_skills: Epic EMR, SQL, Clinical Operations, Healthcare Regulations
+  preferred_skills: Tableau, Process Improvement
+  description: Our operations team is seeking a detail-oriented Clinical Operations Coordinator to join our cohort of twenty professionals. We manage a growing multi-channel medical platform, and your work will be critical to maintaining seamless clinical workflows
 
-  id: jd_803 | title: Associate AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 187 words
-  required_skills: Python, Transformers, NLP, LangChain
-  preferred_skills: PyTorch, GitHub Actions
-  description: We are looking for a motivated Associate AI Engineer to join our product team of eight. Our team develops interactive AI features that simplify complex workflows for our users. You will have the opportunity to participate in the full lifecycle of AI 
+  id: jd_806 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Epic EMR, SQL, Healthcare Informatics, Systems Architecture
+  preferred_skills: AWS, AI
+  description: We are seeking an experienced Senior Healthcare Systems Architect to lead our clinical digital transformation team. The team currently consists of twelve managers and analysts responsible for maintaining our large-scale hospital network and patient d
 
-  id: jd_804 | title: Senior NLP Architect | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Python, PyTorch, Transformers, LangChain, FAISS, Distributed Systems
-  preferred_skills: Kubernetes, MLOps
-  description: Our organization is seeking a Senior NLP Architect to lead the design and implementation of our enterprise-grade generative AI platform. The team consists of twenty-five engineers focused on core NLP infrastructure, model training, and performance sc
+  id: jd_807 | title: Director of Clinical Informatics | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Epic EMR, SQL, Clinical Informatics, Hospital Administration
+  preferred_skills: FHIR, Business Intelligence
+  description: Our organization is seeking a Director of Clinical Informatics to spearhead the strategy and operations design for our global clinical network. You will lead our technical operations team of twenty professionals who support our platform's data integr
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2403 pairs total.
+Overall dataset so far: 2412 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  481  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  481  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  480  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  479  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  482  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  481  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  483  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  482  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  483  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  483  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2404   resume_802 × jd_802
-  pair_2405   resume_802 × jd_803
-  pair_2406   resume_802 × jd_804
-  pair_2407   resume_803 × jd_802
-  pair_2408   resume_803 × jd_803
-  pair_2409   resume_803 × jd_804
-  pair_2410   resume_804 × jd_802
-  pair_2411   resume_804 × jd_803
-  pair_2412   resume_804 × jd_804
+  pair_2413   resume_805 × jd_805
+  pair_2414   resume_805 × jd_806
+  pair_2415   resume_805 × jd_807
+  pair_2416   resume_806 × jd_805
+  pair_2417   resume_806 × jd_806
+  pair_2418   resume_806 × jd_807
+  pair_2419   resume_807 × jd_805
+  pair_2420   resume_807 × jd_806
+  pair_2421   resume_807 × jd_807
 
 ════════════════════════════════════
 OUTPUT FORMAT
