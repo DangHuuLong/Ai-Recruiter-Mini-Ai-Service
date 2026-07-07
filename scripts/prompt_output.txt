@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_859 | level: junior | exp: 1.0 yrs | raw_text: 267 words
-  skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Figma
-  projects: TaskFlow
-  background: I am a junior frontend developer with one year of experience gained during my internship at a fast-paced web agency. During my twelve-month tenure, I worked in a small team of three developers focusing on building landing pages and simple marketing sites. My core responsibilities included converting
+  id: resume_862 | level: middle | exp: 4.0 yrs | raw_text: 262 words
+  skills: Shopify Plus, SQL, Tableau, Google Analytics, Inventory Management
+  projects: Project Velocity
+  background: I am an experienced E-commerce Operations Specialist with four years of hands-on experience in the retail sector. Throughout my career at a medium-sized e-commerce startup, I have been instrumental in managing day-to-day operations for our online marketplace platform, which serves over 50,000 monthl
 
-  id: resume_860 | level: junior | exp: 1.0 yrs | raw_text: 251 words
-  skills: React, Redux, JavaScript, Jest, Styled-components, Git
-  projects: StyleSync
-  background: I am an aspiring frontend developer with one year of professional experience working at a boutique startup. As part of a lean two-person engineering team, I handled the frontend implementation for our core product offerings. My primary responsibilities involved developing interactive user interface 
+  id: resume_863 | level: middle | exp: 5.0 yrs | raw_text: 253 words
+  skills: Magento, Power BI, SAP ERP, Google Ads, Digital Marketing
+  projects: CatalogRefresh
+  background: I am a dedicated E-commerce Merchandising Manager with five years of experience optimizing product assortments and driving online revenue growth. In my previous role at a fast-growing retail startup, I led a team of three merchandisers in managing a catalog of over 10,000 SKUs. My daily responsibili
 
-  id: resume_861 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, CI/CD
-  projects: EnterpriseConnect, DataView
-  background: I am a senior frontend engineer with eight years of experience building scalable enterprise applications. Throughout my career at three major technology enterprises, I have led teams of up to fifteen developers in architecting complex frontend ecosystems. My expertise lies in designing robust soluti
+  id: resume_864 | level: senior | exp: 8.0 yrs | raw_text: 250 words
+  skills: AWS, Oracle NetSuite, SQL, Python, Looker, BigCommerce
+  projects: SmartStock, Headless Migration
+  background: I am a Senior E-commerce Architect and Operations Lead with eight years of experience building and optimizing large-scale retail platforms. Throughout my career at three major international retail enterprises, I have led complex projects involving the integration of multi-channel sales platforms and
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_859 | title: Middle Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 193 words
-  required_skills: React, TypeScript, Tailwind CSS, Next.js
-  preferred_skills: GraphQL, Vite
-  description: Our core product team of twelve developers is seeking a skilled Middle Frontend Engineer to help evolve our customer-facing web dashboard. The team focuses on delivering high-quality, responsive interfaces that handle complex data interactions for ou
+  id: jd_862 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 200 words
+  required_skills: Shopify, Microsoft Excel, Retail Operations
+  preferred_skills: Google Analytics, SQL
+  description: Our operations team is seeking a motivated Junior E-commerce Associate to support our growing digital marketplace. Our team of eight manages product listings, customer inquiries, and basic order fulfillment processes. As a Junior Associate, your prim
 
-  id: jd_860 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL
-  preferred_skills: Edge Computing, Micro-frontend Architecture
-  description: Our platform engineering team of twenty is dedicated to pushing the boundaries of web performance and interactivity. We are seeking a Senior Frontend Engineer to lead the architecture of our next-generation web application. You will handle complex te
+  id: jd_863 | title: Junior Retail Coordinator | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Magento, Data Entry, Retail Operations
+  preferred_skills: Power BI, Vendor Management
+  description: We are expanding our retail team and looking for a Junior Retail Coordinator to join our fast-paced environment. Our team of twelve manages a large product catalog across several online channels. In this role, your daily responsibilities will include
 
-  id: jd_861 | title: Lead Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL
-  preferred_skills: CI/CD Pipelines, Frontend Performance Engineering
-  description: Our core infrastructure team is looking for a Lead Frontend Architect to define the future of our web ecosystem. As a team of twenty-five, we handle complex multi-module applications and design systems that serve millions of users. You will be respon
+  id: jd_864 | title: Senior E-commerce Operations Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Oracle NetSuite, BigCommerce, SQL, Python
+  preferred_skills: AWS, Headless Architecture
+  description: Our platform engineering team of twenty is seeking a Senior E-commerce Operations Architect to lead the design and implementation of our global retail infrastructure. The team focuses on building scalable marketplace solutions, optimizing supply chai
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2574 pairs total.
+Overall dataset so far: 2583 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  513  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  515  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  516  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  514  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  516  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  517  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  517  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  516  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  515  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  518  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2575   resume_859 × jd_859
-  pair_2576   resume_859 × jd_860
-  pair_2577   resume_859 × jd_861
-  pair_2578   resume_860 × jd_859
-  pair_2579   resume_860 × jd_860
-  pair_2580   resume_860 × jd_861
-  pair_2581   resume_861 × jd_859
-  pair_2582   resume_861 × jd_860
-  pair_2583   resume_861 × jd_861
+  pair_2584   resume_862 × jd_862
+  pair_2585   resume_862 × jd_863
+  pair_2586   resume_862 × jd_864
+  pair_2587   resume_863 × jd_862
+  pair_2588   resume_863 × jd_863
+  pair_2589   resume_863 × jd_864
+  pair_2590   resume_864 × jd_862
+  pair_2591   resume_864 × jd_863
+  pair_2592   resume_864 × jd_864
 
 ════════════════════════════════════
 OUTPUT FORMAT
