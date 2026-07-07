@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_865 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: PostgreSQL, Sqlite, Python, Sql, Data Modeling
-  projects: BudgetBuddy
-  background: As a passionate Junior Database Engineer, I recently completed my Bachelor of Science in Computer Science in 2025. During my final year, I completed an internship at a fast-paced technology startup where I worked on a team of five developers. My primary responsibilities included writing basic SQL qu
+  id: resume_868 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: Wireshark, Nessus, Python, Linux, Networking
+  projects: NetMonitor
+  background: I am a recent Computer Science graduate with a strong focus on cybersecurity, having completed my degree in 2026. During my final year, I interned at a regional technology agency on a security operations team of four, where I gained hands-on experience monitoring basic network traffic using Wireshar
 
-  id: resume_866 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture, Kubernetes
-  projects: ClusterGuard
-  background: I am a Senior Database Engineer with eight years of extensive experience building and maintaining high-availability database architectures within large-scale enterprise environments. Throughout my career at three major international retail corporations, I have led engineering teams ranging from ten 
+  id: resume_869 | level: junior | exp: 0.3 yrs | raw_text: 270 words
+  skills: CrowdStrike, Bash, Linux, Security Fundamentals, Network Security
+  projects: SecurePath
+  background: As a motivated recent graduate in Information Security, I am passionate about incident response and endpoint protection. During my four-month internship at a fast-growing software startup, I supported a security team of three by configuring endpoint antivirus agents, managing user access logs, and p
 
-  id: resume_867 | level: senior | exp: 7.5 yrs | raw_text: 257 words
-  skills: PostgreSQL, MongoDB, Redis, Data Modeling, Observability, Cloud Architecture
-  projects: DataShield
-  background: With over seven years of professional experience as a Principal Database Engineer, I have dedicated my career to optimizing complex data architectures for high-growth tech platforms. My background spans roles at high-scale SaaS startups and enterprise-level financial services firms, where I led team
+  id: resume_870 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Splunk, Palo Alto, Elastic Stack, Python, Network Security, Cloud Security
+  projects: DefenseGrid
+  background: I am a Senior Cybersecurity Architect with eight years of experience specializing in enterprise-grade security operations, SIEM integration, and advanced network threat hunting. Throughout my career at three major international financial services enterprises, I have led security teams of up to fifte
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_865 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 203 words
-  required_skills: PostgreSQL, Redis, Sql, Data Modeling
-  preferred_skills: MongoDB
-  description: We are looking for a skilled Database Engineer to join our core backend team of six. Our team manages the persistence layer for our primary consumer application, which sees steady traffic across several regions. The core of our system relies on Postg
+  id: jd_868 | title: Security Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 209 words
+  required_skills: SIEM, Linux, Networking, Palo Alto
+  preferred_skills: Python, AWS
+  description: Our busy Security Operations Center is looking for an experienced Security Operations Analyst to join our team of twelve. This role focuses on the day-to-day monitoring, detection, and mitigation of threats within our cloud-native environment. As an 
 
-  id: jd_866 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 202 words
-  required_skills: PostgreSQL, MongoDB, Sql, Data Modeling
-  preferred_skills: Redis
-  description: Our data operations team is expanding, and we are seeking a motivated Database Engineer to join our team of eight professionals. Our team is responsible for the health, performance, and scalability of the persistence layer supporting our suite of ana
+  id: jd_869 | title: Senior Network Security Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Splunk, Palo Alto, Elastic Stack, Network Security, Linux
+  preferred_skills: Terraform, Ansible
+  description: Our platform team of twenty is seeking a Senior Network Security Architect to lead the design and implementation of our global network infrastructure security. We manage highly sensitive data, and we require a candidate who can build, manage, and opt
 
-  id: jd_867 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: PostgreSQL, MongoDB, Redis, Data Modeling, System Architecture
-  preferred_skills: Kubernetes, Observability
-  description: We are seeking a seasoned Senior Database Architect to lead our platform engineering team of twenty. Our organization deals with massive datasets, and we require someone with deep expertise to ensure our systems remain resilient, performant, and scal
+  id: jd_870 | title: Lead Cybersecurity Engineer | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: SIEM, Splunk, Palo Alto, Elastic Stack, Linux
+  preferred_skills: Cloud Security, Forensics
+  description: Our organization is seeking a Lead Cybersecurity Engineer to join our security team of fifteen. This is a mission-critical role focused on the strategic design, implementation, and optimization of our enterprise-wide threat detection and response cap
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2592 pairs total.
+Overall dataset so far: 2601 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  517  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  519  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  518  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  521  →  expected this batch: 2 pairs (from seniority gaps below)
   moderate_match        existing:  520  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  517  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  519  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  521  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  521  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2593   resume_865 × jd_865
-  pair_2594   resume_865 × jd_866
-  pair_2595   resume_865 × jd_867
-  pair_2596   resume_866 × jd_865
-  pair_2597   resume_866 × jd_866
-  pair_2598   resume_866 × jd_867
-  pair_2599   resume_867 × jd_865
-  pair_2600   resume_867 × jd_866
-  pair_2601   resume_867 × jd_867
+  pair_2602   resume_868 × jd_868
+  pair_2603   resume_868 × jd_869
+  pair_2604   resume_868 × jd_870
+  pair_2605   resume_869 × jd_868
+  pair_2606   resume_869 × jd_869
+  pair_2607   resume_869 × jd_870
+  pair_2608   resume_870 × jd_868
+  pair_2609   resume_870 × jd_869
+  pair_2610   resume_870 × jd_870
 
 ════════════════════════════════════
 OUTPUT FORMAT
