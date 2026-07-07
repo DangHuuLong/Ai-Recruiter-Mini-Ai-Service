@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_817 | level: junior | exp: 0.5 yrs | raw_text: 274 words
-  skills: Node.js, Express, PostgreSQL, TypeScript, Docker, JavaScript
-  projects: TaskEase
-  background: I am a recent Computer Science graduate with a strong passion for backend development and API architecture. During my final year, I completed an internship at a small software startup where I worked on a team of three developers. My responsibilities included maintaining basic CRUD endpoints in a leg
+  id: resume_820 | level: middle | exp: 4.0 yrs | raw_text: 265 words
+  skills: Epic EMR, Cerner Millennium, Tableau, Salesforce Health Cloud, MySQL, Python, HIPAA Compliance
+  projects: HealthSync
+  background: I am a dedicated Healthcare Operations Coordinator with four years of experience optimizing clinical workflows in enterprise-level hospital environments. In my current role at a large metropolitan medical center, I support a team of twelve clinical administrators and nursing staff by maintaining pat
 
-  id: resume_818 | level: middle | exp: 4.0 yrs | raw_text: 250 words
-  skills: Python, FastAPI, PostgreSQL, SQLAlchemy, Redis, Docker, Node.js
-  projects: MetricsDashboard
-  background: I am a backend software engineer with four years of professional experience building high-traffic API services. In my most recent role at a mid-sized tech enterprise, I was part of a ten-person backend team responsible for maintaining several core microservices. My primary duties included developing
+  id: resume_821 | level: senior | exp: 7.0 yrs | raw_text: 256 words
+  skills: Epic EMR, Meditech Expanse, SQL Server, Python, Power BI, Clinical Informatics, CMS Compliance
+  projects: OptiFlow
+  background: As a seasoned Healthcare Operations Lead with seven years of experience in clinical systems integration and medical informatics, I have dedicated my career to enhancing the intersection of patient care and digital infrastructure. I currently lead a team of fifteen operations specialists at a multi-f
 
-  id: resume_819 | level: middle | exp: 3.0 yrs | raw_text: 291 words
-  skills: Python, FastAPI, PostgreSQL, AWS ECS, Node.js, Docker, Kubernetes
-  projects: DataLink
-  background: With three years of professional experience, I have developed a deep proficiency in designing and maintaining scalable backend services. I currently work at a fast-growing startup as a Backend Developer on a team of five. My daily work involves designing complex API endpoints with Python and FastAPI
+  id: resume_822 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Epic EMR, Cerner, Allscripts, SQL, AWS, Python, Clinical Informatics
+  projects: CoreClinic
+  background: I am a Principal Medical Operations Architect with eight years of extensive experience designing and leading clinical systems for enterprise-scale hospital networks. My expertise lies in architecting scalable EMR solutions and developing robust data pipelines that support complex clinical workflows.
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_817 | title: Junior Backend API Developer | level: junior | min_exp: 1 yrs | raw_text: 212 words
-  required_skills: Node.js, Express, PostgreSQL, JavaScript
-  preferred_skills: Docker, TypeScript
-  description: Our backend team is growing, and we are searching for a Junior Backend API Developer to join our group of five engineers. We build and maintain RESTful services that power our core product, serving thousands of users daily. This role is perfect for a
+  id: jd_820 | title: Junior Healthcare Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 216 words
+  required_skills: Epic EMR, HIPAA Compliance, Microsoft Excel
+  preferred_skills: SQL, Tableau
+  description: Our operations team is expanding, and we are looking for a highly motivated Junior Healthcare Operations Associate to join our group of ten clinical coordinators. This role is essential for maintaining the integrity of our patient data and ensuring t
 
-  id: jd_818 | title: Senior Backend Lead - Python/FastAPI | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Python, FastAPI, PostgreSQL, Redis, Distributed Systems
-  preferred_skills: Kafka, Kubernetes
-  description: We are seeking an experienced Senior Backend Lead to anchor our platform engineering team. Our team consists of fifteen engineers focused on building highly scalable, low-latency API services for our global product. The environment is fast-paced, and
+  id: jd_821 | title: Clinical Coordination Assistant | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Cerner Millennium, HIPAA Compliance, Microsoft Excel
+  preferred_skills: Salesforce Health Cloud, Data Analysis
+  description: We are seeking a Clinical Coordination Assistant to support our clinical ops department, which currently manages fifteen active clinics. The team is dedicated to providing seamless medical scheduling and record management services. In this junior rol
 
-  id: jd_819 | title: Senior API Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Python, FastAPI, PostgreSQL, RabbitMQ, System Design
-  preferred_skills: AWS, Monitoring
-  description: Our infrastructure team is looking for a Senior API Architect to oversee the design and implementation of our next-generation backend services. As we scale, we require a technical leader who understands the nuances of high-concurrency environments an
+  id: jd_822 | title: Senior Medical Operations Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Epic EMR, SQL, AWS, Clinical Informatics
+  preferred_skills: Python, System Architecture
+  description: Our clinical infrastructure team is searching for an experienced Senior Medical Operations Architect to lead the design and implementation of our next-generation hospital information systems. As we scale our network to include over fifty facilities, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2448 pairs total.
+Overall dataset so far: 2457 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  489  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  489  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  490  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  489  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  491  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  491  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  493  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  490  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  491  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  492  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2449   resume_817 × jd_817
-  pair_2450   resume_817 × jd_818
-  pair_2451   resume_817 × jd_819
-  pair_2452   resume_818 × jd_817
-  pair_2453   resume_818 × jd_818
-  pair_2454   resume_818 × jd_819
-  pair_2455   resume_819 × jd_817
-  pair_2456   resume_819 × jd_818
-  pair_2457   resume_819 × jd_819
+  pair_2458   resume_820 × jd_820
+  pair_2459   resume_820 × jd_821
+  pair_2460   resume_820 × jd_822
+  pair_2461   resume_821 × jd_820
+  pair_2462   resume_821 × jd_821
+  pair_2463   resume_821 × jd_822
+  pair_2464   resume_822 × jd_820
+  pair_2465   resume_822 × jd_821
+  pair_2466   resume_822 × jd_822
 
 ════════════════════════════════════
 OUTPUT FORMAT
