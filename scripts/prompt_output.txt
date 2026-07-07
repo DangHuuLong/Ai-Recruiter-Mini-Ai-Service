@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_826 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Node.js
-  projects: FastCart, UI-Kit-Generator
-  background: I am a dedicated Frontend Developer with four years of experience crafting interactive web applications. In my current role at a mid-sized e-commerce startup, I collaborate with a team of six developers to maintain and scale our customer-facing platform. I have successfully migrated legacy component
+  id: resume_829 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: React, JavaScript, CSS, Git
+  projects: WeatherApp, TaskTracker
+  background: I am a motivated Frontend Developer recently graduated with a degree in Computer Science. During my final year, I completed a six-month internship at a small web development agency where I was part of a four-person engineering team. My primary responsibilities involved assisting with the maintenance
 
-  id: resume_827 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, State Management, Performance Optimization
-  projects: StateFlow, InsightsCore
-  background: I am a Senior Frontend Architect with eight years of experience specializing in large-scale web applications. Throughout my career, I have held technical leadership roles at two major enterprise organizations, leading teams of up to fifteen developers. My core expertise lies in designing scalable Re
+  id: resume_830 | level: junior | exp: 1.0 yrs | raw_text: 259 words
+  skills: React, JavaScript, HTML5, CSS
+  projects: RecipeFinder, LinkCollector
+  background: I am a passionate aspiring Frontend Developer eager to launch my career in web engineering. I recently completed a one-year internship at an early-stage startup where I worked alongside a small team of three developers to build a product prototype. My daily responsibilities included translating stat
 
-  id: resume_828 | level: senior | exp: 7.0 yrs | raw_text: 288 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, Canvas API, Cypress
-  projects: TradeViz, ComponentPulse
-  background: I am a Principal Frontend Engineer with seven years of experience in building high-concurrency web applications for major fintech enterprises. I have extensive experience in leading cross-functional teams of ten to twenty engineers and driving architectural transformations. My recent role at a globa
+  id: resume_831 | level: senior | exp: 8.0 yrs | raw_text: 254 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Redux, CI/CD
+  projects: FastUI-Components, DataPath
+  background: I am a Senior Frontend Engineer with eight years of experience building high-performance web applications for large-scale enterprise environments. Throughout my career, I have led cross-functional teams of up to twenty engineers in designing scalable architecture and implementing complex UI features
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_826 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 214 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Git
-  description: Our web engineering group is looking for a motivated Junior Frontend Developer to join our team of twelve developers. We work on a suite of consumer products, and this role is critical for building new UI features and maintaining our existing interfa
-
-  id: jd_827 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Web Design
-  description: We are seeking an enthusiastic Associate Frontend Developer to join our team of fifteen engineers. Our focus is on creating a responsive and intuitive platform for our global user base. As an associate engineer, you will be involved in every stage of
-
-  id: jd_828 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  id: jd_829 | title: Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 215 words
   required_skills: React, TypeScript, Next.js, Tailwind CSS
-  preferred_skills: Architecture, Design Systems
-  description: Our frontend platform team is searching for a highly experienced Senior Frontend Engineer to lead our most complex projects. With a team of twenty engineers, we maintain a robust, high-traffic platform that demands top-tier performance, maintainabili
+  preferred_skills: TanStack Query, Git
+  description: We are seeking a mid-level Frontend Engineer to join our product team of ten engineers focused on building intuitive customer-facing platforms. This role requires someone who can take ownership of individual features, collaborate effectively with bac
+
+  id: jd_830 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 213 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Performance Optimization
+  preferred_skills: Architecture, Cypress
+  description: Our platform engineering team is searching for a highly experienced Senior Frontend Engineer to lead our most mission-critical projects. With a team of twenty engineers, we maintain a robust, high-traffic system that requires exceptional performance,
+
+  id: jd_831 | title: Lead Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, State Management
+  preferred_skills: CI/CD, Performance Optimization
+  description: We are looking for a visionary Lead Frontend Engineer to join our team of fifteen engineers. We build data-heavy, real-time applications that demand top-tier frontend expertise and a commitment to scalability. As a lead, you will be responsible for d
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2475 pairs total.
+Overall dataset so far: 2484 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  495  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  496  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  494  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  494  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  496  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  495  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  497  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  498  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  496  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  498  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2476   resume_826 × jd_826
-  pair_2477   resume_826 × jd_827
-  pair_2478   resume_826 × jd_828
-  pair_2479   resume_827 × jd_826
-  pair_2480   resume_827 × jd_827
-  pair_2481   resume_827 × jd_828
-  pair_2482   resume_828 × jd_826
-  pair_2483   resume_828 × jd_827
-  pair_2484   resume_828 × jd_828
+  pair_2485   resume_829 × jd_829
+  pair_2486   resume_829 × jd_830
+  pair_2487   resume_829 × jd_831
+  pair_2488   resume_830 × jd_829
+  pair_2489   resume_830 × jd_830
+  pair_2490   resume_830 × jd_831
+  pair_2491   resume_831 × jd_829
+  pair_2492   resume_831 × jd_830
+  pair_2493   resume_831 × jd_831
 
 ════════════════════════════════════
 OUTPUT FORMAT
