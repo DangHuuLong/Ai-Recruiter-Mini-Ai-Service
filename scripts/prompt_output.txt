@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_769 | level: middle | exp: 4.0 yrs | raw_text: 270 words
-  skills: Epic Systems, Kronos, Python, SQLite, Microsoft Excel
-  projects: CareFlow Analytics
-  background: Dedicated Healthcare Administration Specialist with four years of comprehensive clinical operations experience managing medical informatics databases within enterprise healthcare settings. For the past four years, I have worked at a regional medical enterprise within a clinical coordination group of
+  id: resume_772 | level: junior | exp: 0.5 yrs | raw_text: 254 words
+  skills: Python, Django, FastAPI, PostgreSQL, SQLite
+  projects: DevCart API
+  background: Enthusiastic and highly motivated junior backend developer and recent computer science graduate looking to build high-performance data systems. During my university studies, I completed an intensive six-month technical internship at a fast-growing software agency within an agile engineering cell of 
 
-  id: resume_770 | level: senior | exp: 8.0 yrs | raw_text: 257 words
-  skills: Cerner, Athenahealth, HL7, Python, PostgreSQL
-  projects: MedPulse Core
-  background: Distinguished Senior Clinical Operations Director and Medical Coordination Expert with over eight years of experience leading complex enterprise healthcare infrastructure projects and optimizing medical informatics environments. For the last five years, I have directed platform operations at a multi
+  id: resume_773 | level: junior | exp: 0.6 yrs | raw_text: 279 words
+  skills: Node.js, Express, MongoDB, Redis, JavaScript
+  projects: TaskSync Engine
+  background: Aspiring, meticulous, and highly analytical backend systems engineer with foundational experience designing modular microservices architectures and handling modern asynchronous data runtimes. I recently concluded a rigorous seven-month software engineering internship at an innovative cloud technolog
 
-  id: resume_771 | level: senior | exp: 7.0 yrs | raw_text: 253 words
-  skills: Cerner, Athenahealth, HL7, Salesforce Health Cloud, Python, MySQL, Microsoft Excel
-  projects: SyncHealth
-  background: Accomplished Senior Medical Coordination Architect and Clinical Systems Director with over seven years of professional experience scaling complex healthcare infrastructure and optimizing regulatory data workflows in enterprise environments. For the past four years, I have guided electronic health re
+  id: resume_774 | level: senior | exp: 8.0 yrs | raw_text: 274 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Docker
+  projects: DataVanguard
+  background: Accomplished Senior Backend Infrastructure Architect with over eight years of professional expertise engineering scalable cloud-native architectures, high-performance API platforms, and robust data management strategies within large-scale enterprise environments. For the last five years, I have dire
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_769 | title: Clinical Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 185 words
-  required_skills: Epic Systems, Kronos, Microsoft Excel
-  preferred_skills: Python, Jira
-  description: We are looking for a detailed Clinical Operations Assistant to join our core outpatient administration team consisting of four associate-level operations professionals. In this entry-level associate position, you will own the day-to-day administrativ
+  id: jd_772 | title: Middle Backend Software Engineer | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: Python, PostgreSQL, Node.js, FastAPI
+  preferred_skills: Docker, Redis
+  description: We are actively seeking an analytical Middle Backend Software Engineer to join our core digital services development team consisting of five middle-level engineering professionals. In this individual contributor role, you will assume direct ownership
 
-  id: jd_770 | title: Healthcare Data Coordinator | level: junior | min_exp: 1 yrs | raw_text: 186 words
-  required_skills: Epic Systems, Kronos, Microsoft Excel
-  preferred_skills: Python, Salesforce
-  description: Our digital medical services division is seeking an analytical Healthcare Data Coordinator to join our operational healthcare administration squad of six associate-level data specialists. This entry-level technical coordination position is responsibl
+  id: jd_773 | title: Senior API Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Python, PostgreSQL, Redis, Docker
+  preferred_skills: Node.js, FastAPI
+  description: Our core financial platform group is searching for an expert Senior API Systems Lead to join our technical infrastructure team of eight experienced software professionals. In this strategic technical leadership position, you will guide the end-to-end
 
-  id: jd_771 | title: Senior Clinical Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Cerner, HL7, Athenahealth, Python
-  preferred_skills: PostgreSQL, Kubernetes
-  description: We are searching for an expert Senior Clinical Systems Architect to guide our enterprise health informatics engineering department consisting of seven senior data infrastructure engineers. In this strategic technical leadership position, you will dir
+  id: jd_774 | title: Senior Backend Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 182 words
+  required_skills: Node.js, PostgreSQL, Redis, Kubernetes
+  preferred_skills: Python, FastAPI
+  description: We are seeking a visionary Senior Backend Infrastructure Architect to lead our newly established global platform operations division consisting of six principal engineering specialists. In this high-impact technical leadership role, you will oversee 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2304 pairs total.
+Overall dataset so far: 2313 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  460  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  462  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  460  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  460  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  462  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  460  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  463  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  464  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  462  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  464  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2305   resume_769 × jd_769
-  pair_2306   resume_769 × jd_770
-  pair_2307   resume_769 × jd_771
-  pair_2308   resume_770 × jd_769
-  pair_2309   resume_770 × jd_770
-  pair_2310   resume_770 × jd_771
-  pair_2311   resume_771 × jd_769
-  pair_2312   resume_771 × jd_770
-  pair_2313   resume_771 × jd_771
+  pair_2314   resume_772 × jd_772
+  pair_2315   resume_772 × jd_773
+  pair_2316   resume_772 × jd_774
+  pair_2317   resume_773 × jd_772
+  pair_2318   resume_773 × jd_773
+  pair_2319   resume_773 × jd_774
+  pair_2320   resume_774 × jd_772
+  pair_2321   resume_774 × jd_773
+  pair_2322   resume_774 × jd_774
 
 ════════════════════════════════════
 OUTPUT FORMAT
