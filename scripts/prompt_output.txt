@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_778 | level: junior | exp: 0.5 yrs | raw_text: 251 words
-  skills: Docker, Python, Linux, Bash
-  projects: DeployCraft Engine
-  background: Highly enthusiastic and detail-oriented Junior DevOps Associate and recent computer science graduate aiming to establish a professional footprint in automated system deployment and cloud platform management. During my academic studies, I completed an intensive six-month software engineering internsh
+  id: resume_781 | level: junior | exp: 0.6 yrs | raw_text: 258 words
+  skills: Agile, Jira, Confluence, Figma
+  projects: BetaTrack App
+  background: Highly motivated and highly structured Junior Product Associate and recent Business Administration graduate with a passionate focus on digital platform coordination and agile workflows. During my academic studies, I completed a detailed seven-month product management internship at a high-growth tech
 
-  id: resume_779 | level: junior | exp: 0.6 yrs | raw_text: 275 words
-  skills: AWS, Linux, Bash, Python
-  projects: CloudLaunch Suite
-  background: Ambitious and highly systematic Associate Cloud Solutions Engineer with a comprehensive academic foundation in systems engineering and automated software provisioning methodologies. I recently completed a rigorous seven-month technical internship at an innovative cloud technology startup, collaborat
+  id: resume_782 | level: junior | exp: 0.7 yrs | raw_text: 285 words
+  skills: Agile, Miro, Notion, Slack
+  projects: MetricHub Engine
+  background: Analytical and collaborative Associate Product Analyst eager to deploy structured business intelligence, quantitative feature scoping, and agile coordination practices within an innovative digital ecosystem. I recently completed a meticulous eight-month product development internship at a prominent 
 
-  id: resume_780 | level: senior | exp: 8.0 yrs | raw_text: 284 words
-  skills: AWS, Docker, Kubernetes, Terraform, Ansible, Linux
-  projects: InfraForge
-  background: Accomplished and visionary Senior Cloud Infrastructure Architect and DevOps Lead with more than eight years of professional expertise engineering scalable cloud-native environments, large-scale multi-region topologies, and secure continuous delivery networks within complex enterprise setups. For the
+  id: resume_783 | level: senior | exp: 8.0 yrs | raw_text: 279 words
+  skills: Roadmap, Agile, Stakeholders, Jira, Productboard, Tableau
+  projects: CoreRoadmap AI
+  background: Accomplished and strategic Senior Product Manager and Platform Delivery Lead with more than eight years of professional expertise crafting high-impact product roadmaps, scaling multi-sided enterprise technology solutions, and coordinating complex stakeholder ecosystems within fast-paced corporate en
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_778 | title: Middle DevOps Engineer | level: middle | min_exp: 3 yrs | raw_text: 186 words
-  required_skills: AWS, Docker, Terraform, Linux
-  preferred_skills: Kubernetes, Python
-  description: We are actively seeking a analytical Middle DevOps Engineer to join our core infrastructure services group consisting of five mid-level technical professionals. In this individual contributor position, you will assume direct technical ownership over 
+  id: jd_781 | title: Middle Product Manager | level: middle | min_exp: 3 yrs | raw_text: 204 words
+  required_skills: Roadmap, Agile, Jira, Confluence
+  preferred_skills: Productboard, Miro
+  description: We are actively looking for an analytical and collaborative Middle Product Manager to join our core intelligence products group consisting of five mid-level individual contributors. In this critical individual contributor position, you will assume di
 
-  id: jd_779 | title: Senior Infrastructure Specialist | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: AWS, Kubernetes, Terraform, Docker
-  preferred_skills: Ansible, Linux
-  description: Our core systems infrastructure collective is searching for an expert Senior Infrastructure Specialist to join our global platform operations team of eight experienced engineering professionals. In this high-impact technical leadership position, you 
+  id: jd_782 | title: Senior Technical Product Lead | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: Roadmap, Agile, Stakeholders, Productboard
+  preferred_skills: Tableau, Miro
+  description: Our core systems platform division is seeking a methodical and business-focused Senior Technical Product Lead to join our enterprise scale solutions team of eight product specialists. In this high-impact strategic technical leadership position, you w
 
-  id: jd_780 | title: Lead Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: Kubernetes, Terraform, Linux, Docker
-  preferred_skills: Ansible, AWS
-  description: We are seeking a visionary Lead Systems Architect to direct our newly established cloud reliability division consisting of six principal systems engineers. In this high-impact technical leadership role, you will oversee the complete architectural lif
+  id: jd_783 | title: Lead Digital Portfolio Strategist | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: Roadmap, Agile, Stakeholders, Tableau
+  preferred_skills: Productboard, Jira
+  description: We are seeking an analytical Lead Digital Portfolio Strategist to guide our newly established enterprise solution alignment division consisting of six principal product coordinators. In this tactical individual contributor and leadership position, yo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2331 pairs total.
+Overall dataset so far: 2340 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  463  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  466  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  467  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  468  →  expected this batch: 2 pairs (from seniority gaps below)
   moderate_match        existing:  468  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  467  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  467  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  468  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  469  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2332   resume_778 × jd_778
-  pair_2333   resume_778 × jd_779
-  pair_2334   resume_778 × jd_780
-  pair_2335   resume_779 × jd_778
-  pair_2336   resume_779 × jd_779
-  pair_2337   resume_779 × jd_780
-  pair_2338   resume_780 × jd_778
-  pair_2339   resume_780 × jd_779
-  pair_2340   resume_780 × jd_780
+  pair_2341   resume_781 × jd_781
+  pair_2342   resume_781 × jd_782
+  pair_2343   resume_781 × jd_783
+  pair_2344   resume_782 × jd_781
+  pair_2345   resume_782 × jd_782
+  pair_2346   resume_782 × jd_783
+  pair_2347   resume_783 × jd_781
+  pair_2348   resume_783 × jd_782
+  pair_2349   resume_783 × jd_783
 
 ════════════════════════════════════
 OUTPUT FORMAT
