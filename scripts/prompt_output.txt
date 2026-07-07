@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_754 | level: junior | exp: 0.7 yrs | raw_text: 264 words
-  skills: Microsoft Excel, Google Analytics 4, Shopify Admin, Tableau, Google Sheets, Slack
-  projects: ShopTrack
-  background: Enthusiastic and highly motivated entry-level Operations Associate with a total of eight months of professional experience in marketplace coordination. Recently completed a comprehensive six-month internship at a fast-growing retail tech startup working within an operations squad of four people wher
+  id: resume_757 | level: middle | exp: 4.0 yrs | raw_text: 280 words
+  skills: BPMN, Miro, Microsoft Visio, Jira, Trello, UML, Python, Power BI, Confluence
+  projects: WorkflowSim
+  background: Resourceful Business Analyst with four years of documented experience optimizing operational workflows and mapping software requirements across enterprise environments. I spent three years working at a large financial enterprise within a project management cell of six professionals where I spearhead
 
-  id: resume_755 | level: junior | exp: 0.8 yrs | raw_text: 257 words
-  skills: Microsoft Excel, Google Analytics, Magento, Python, Google Sheets, Jira
-  projects: MetaRetail
-  background: Driven and analytical Junior Merchandising Assistant with a strong academic foundation and ten months of total practical experience across multi-channel retail operations. I spent seven months as a junior marketplace intern within a prominent regional fashion enterprise, working inside an execution 
+  id: resume_758 | level: senior | exp: 7.0 yrs | raw_text: 261 words
+  skills: Signavio, Enterprise Architect, Microsoft Project, Jira, Confluence, Miro, Agile, Scrum, SQL Server, Tableau
+  projects: PMO-Sync
+  background: Seasoned Senior Project Manager and Lead Business Systems Architect with over seven years of professional experience directing enterprise software initiatives and driving advanced digital transformation frameworks. In my current role at a major logistics enterprise, I supervise an elite cross-functi
 
-  id: resume_756 | level: senior | exp: 8.5 yrs | raw_text: 281 words
-  skills: Salesforce Commerce Cloud, SAP S4HANA, Magento, SQL Server, Python, Looker, Tableau, Google Analytics 4, Microsoft Excel, Agile, Jira
-  projects: OmniCore
-  background: Accomplished Senior Marketplace Operations Director and Principal Systems Architect with over eight years of professional leadership driving multi-million dollar e-commerce and retail management ecosystems. In my current executive position at a multi-national retail enterprise, I lead a cross-functi
+  id: resume_759 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: Signavio, ARIS Architect, Microsoft Visio, BPMN, Jira, Confluence, Trello, SQL Server, Python, Agile
+  projects: GovernanceCore
+  background: Distinguished Lead Product Manager and Senior Business Analyst with eight years of comprehensive mastery leading software development projects and optimizing complex architectural governance. In my current tenure at a prominent financial technology enterprise, I govern a prominent team of twelve bus
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_754 | title: E-commerce Operations & Merchandising Specialist | level: middle | min_exp: 3 yrs | raw_text: 204 words
-  required_skills: Magento, Shopify, Google Analytics 4, Microsoft Excel, SQL Server
-  preferred_skills: Tableau, Jira, HTML
-  description: We are searching for a qualified E-commerce Operations & Merchandising Specialist to join our core retail management division of six dedicated professionals. In this individual contributor position, you will own the end-to-end execution of our digita
+  id: jd_757 | title: Associate Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Miro, Microsoft Visio, Jira, Confluence
+  preferred_skills: BPMN, UML, Power BI
+  description: We are actively looking for an enthusiastic Associate Business Analyst to join our dynamic corporate systems division of six specialized process experts. In this entry-level individual contributor position, you will support the day-to-day discovery o
 
-  id: jd_755 | title: Senior Strategic Marketplace Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: SAP S4HANA, Salesforce Commerce Cloud, Looker, Python, SQL Server, Google Analytics 4
-  preferred_skills: Snowflake, Six Sigma, Supply Chain Certification
-  description: Our multi-channel retail organization is seeking a Senior Strategic Marketplace Operations Manager to direct our growing marketplace infrastructure division of ten domain specialists. This critical position is responsible for the overall technical ar
+  id: jd_758 | title: Junior Project Management Coordinator | level: junior | min_exp: 1 yrs | raw_text: 187 words
+  required_skills: Microsoft Project, Trello, Jira, Microsoft Visio
+  preferred_skills: Scrum, SQL Server, Miro
+  description: Our central business transition division is searching for a Junior Project Management Coordinator to support our expanding digital integration framework group of eight domain professionals. This entry-level role focuses on tracking project schedules,
 
-  id: jd_756 | title: Lead Marketplace Systems & Merchandising Director | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: Magento, Tableau, SQL Server, Agile, Jira
-  preferred_skills: Python, Looker, Internationalization
-  description: We are hunting for a Lead Marketplace Systems & Merchandising Director to oversee our high-performance retail analytics and product operations branch of twelve specialists. The chosen leader will spearhead the digital transformation of our supplier e
+  id: jd_759 | title: Senior Enterprise Process Architecture Director | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Signavio, ARIS Architect, BPMN, Enterprise Architect, Jira
+  preferred_skills: CBPP, Python, SQL Server
+  description: We are searching for a Lead Enterprise Process Architecture Director to head our high-performance strategic transformation and operational governance division of fifteen senior specialists. This critical senior leadership role is responsible for esta
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2259 pairs total.
+Overall dataset so far: 2268 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  450  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  452  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  452  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  452  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  453  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  454  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  454  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  452  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  453  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  455  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2260   resume_754 × jd_754
-  pair_2261   resume_754 × jd_755
-  pair_2262   resume_754 × jd_756
-  pair_2263   resume_755 × jd_754
-  pair_2264   resume_755 × jd_755
-  pair_2265   resume_755 × jd_756
-  pair_2266   resume_756 × jd_754
-  pair_2267   resume_756 × jd_755
-  pair_2268   resume_756 × jd_756
+  pair_2269   resume_757 × jd_757
+  pair_2270   resume_757 × jd_758
+  pair_2271   resume_757 × jd_759
+  pair_2272   resume_758 × jd_757
+  pair_2273   resume_758 × jd_758
+  pair_2274   resume_758 × jd_759
+  pair_2275   resume_759 × jd_757
+  pair_2276   resume_759 × jd_758
+  pair_2277   resume_759 × jd_759
 
 ════════════════════════════════════
 OUTPUT FORMAT
