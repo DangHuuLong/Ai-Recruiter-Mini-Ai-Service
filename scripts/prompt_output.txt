@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_850 | level: middle | exp: 4.0 yrs | raw_text: 273 words
-  skills: PyTorch, Hugging Face Transformers, LangChain, FastAPI, AWS ECS, Pinecone, FAISS
-  projects: DocChat, SemanSearch
-  background: I am an AI Engineer with four years of hands-on experience in building scalable NLP solutions. During my three years at a fast-growing AI startup, I was a key member of an eight-person research and development team focused on conversational agents. My primary responsibilities included fine-tuning La
+  id: resume_853 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: Google Analytics 4, Mailchimp, WordPress, SEO, Social Media Management
+  projects: Mock Social Audit, SEO Landing Page
+  background: I am a motivated Marketing Graduate with a strong interest in digital strategy and content creation. During my six-month internship at a digital marketing agency, I was part of a five-person team responsible for supporting client social media campaigns. My primary tasks included scheduling posts on 
 
-  id: resume_851 | level: senior | exp: 9.0 yrs | raw_text: 262 words
-  skills: PyTorch, TensorFlow, LangChain, Kubernetes, Llama 3, Model Fine-Tuning, RAG Systems
-  projects: NeuralArch, DataViz-AI
-  background: I am a Principal AI Engineer with nine years of experience in deep learning and natural language processing at the enterprise level. In my previous role as a Technical Lead at a large technology firm, I managed a team of fifteen engineers and researchers. We were responsible for the design and deplo
+  id: resume_854 | level: junior | exp: 0.7 yrs | raw_text: 254 words
+  skills: Shopify, Google Analytics, Canva, Constant Contact, Communication
+  projects: Fashion Marketing Plan, Email Outreach Revamp
+  background: I am an aspiring Digital Marketing Associate passionate about content strategy and consumer behavior. During my eight-month internship at a mid-sized e-commerce startup, I collaborated with a three-person team to streamline product listings and improve our search visibility. My daily duties involved
 
-  id: resume_852 | level: senior | exp: 7.0 yrs | raw_text: 283 words
-  skills: Transformers, LangChain, Milvus, Qdrant, GPU Optimization, NLP, Machine Learning Engineering
-  projects: TextScale, AgentFlow
-  background: I am a Lead NLP Engineer with seven years of deep expertise in transformer-based architectures and retrieval-augmented generation. During my four-year tenure as a Lead AI Engineer at a global services enterprise, I managed a team of ten engineers, focusing on deploying high-availability NLP models. 
+  id: resume_855 | level: senior | exp: 8.5 yrs | raw_text: 261 words
+  skills: SEO, Content Strategy, Ahrefs, SEMrush, Tableau, Google Search Console, Python
+  projects: StrategyCore, B2B Content Hub
+  background: I am a Senior Digital Strategy Manager with eight years of experience directing high-growth content and SEO campaigns at the enterprise level. In my previous role at a large agency, I led a cross-functional team of twenty professionals, overseeing a portfolio of ten major clients with an annual budg
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_850 | title: Junior AI Developer | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Python, PyTorch, Hugging Face Transformers, NLP
-  preferred_skills: LangChain, AWS
-  description: Our AI engineering team, consisting of six dedicated developers, is looking for a passionate Junior AI Developer to help us build and maintain our flagship conversational AI products. We pride ourselves on creating smooth, user-friendly experiences t
+  id: jd_853 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 197 words
+  required_skills: SEO, SEM, Google Ads, Looker Studio, Ahrefs
+  preferred_skills: Content Strategy, Data Analysis
+  description: Our growth team of twelve is looking for a Digital Marketing Specialist to manage day-to-day performance across our primary acquisition channels. We serve a fast-paced technology client base and need someone who can translate business goals into acti
 
-  id: jd_851 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 190 words
-  required_skills: Python, NLP, PyTorch, Transformers
-  preferred_skills: LangChain, Data Manipulation
-  description: Join our growing team of five engineers dedicated to building innovative AI-driven social networking applications. We are currently seeking a Junior NLP Engineer with a focus on transformers and retrieval-based architectures to help us expand our fea
+  id: jd_854 | title: Senior SEO Director | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: SEO, Content Strategy, Ahrefs, SEMrush, Python, Data Visualization
+  preferred_skills: International SEO, Strategy Leadership
+  description: Our global marketing department of thirty individuals is searching for a Senior SEO Director to spearhead our long-term organic growth strategy. In this high-impact role, you will be responsible for the architectural health of our enterprise-level di
 
-  id: jd_852 | title: Senior AI Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: PyTorch, Transformers, LangChain, Vector Databases, Architecture
-  preferred_skills: Performance Engineering, MLOps
-  description: Our platform team of twenty engineers is seeking a Senior AI Architect to guide the future of our core AI infrastructure. This team handles high-traffic, multi-module applications that support complex interactions between large language models and re
+  id: jd_855 | title: Director of Digital Content Strategy | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Content Strategy, SEO, Ahrefs, SEMrush, Python, Analytics
+  preferred_skills: Predictive Modeling, Management
+  description: Our digital media division, currently composed of twenty-five staff, is searching for a Director of Digital Content Strategy to take ownership of our brand's global content footprint. This role is focused on driving high-authority organic traffic and
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2547 pairs total.
+Overall dataset so far: 2556 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  509  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  511  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  508  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  509  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  510  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  509  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  512  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  512  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  511  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  512  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2548   resume_850 × jd_850
-  pair_2549   resume_850 × jd_851
-  pair_2550   resume_850 × jd_852
-  pair_2551   resume_851 × jd_850
-  pair_2552   resume_851 × jd_851
-  pair_2553   resume_851 × jd_852
-  pair_2554   resume_852 × jd_850
-  pair_2555   resume_852 × jd_851
-  pair_2556   resume_852 × jd_852
+  pair_2557   resume_853 × jd_853
+  pair_2558   resume_853 × jd_854
+  pair_2559   resume_853 × jd_855
+  pair_2560   resume_854 × jd_853
+  pair_2561   resume_854 × jd_854
+  pair_2562   resume_854 × jd_855
+  pair_2563   resume_855 × jd_853
+  pair_2564   resume_855 × jd_854
+  pair_2565   resume_855 × jd_855
 
 ════════════════════════════════════
 OUTPUT FORMAT
