@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_805 | level: junior | exp: 0.5 yrs | raw_text: 263 words
-  skills: Microsoft Excel, Patient Scheduling, HIPAA Compliance, EMR Basic, Data Entry
-  projects: Digital-Patient-Flow
-  background: Recent graduate in Healthcare Administration with a strong passion for improving clinical operations and patient data management. During my final-year internship at a community medical clinic, I supported a team of three administrators in maintaining patient records using basic EMR software and Micr
+  id: resume_808 | level: middle | exp: 4.0 yrs | raw_text: 274 words
+  skills: BPMN 2.0, JIRA, Confluence, SQL, Tableau, Agile Methodology
+  projects: Requirement-Tracker-Auto
+  background: I am a dedicated Business Analyst with four years of experience driving process improvements within enterprise-scale organizations. In my current role at a large retail enterprise, I lead a team of four to bridge the gap between technical teams and non-technical stakeholders. My daily responsibiliti
 
-  id: resume_806 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: EMR Entry, Appointment Coordination, Public Health Data, Medical Ethics, Documentation
-  projects: Chart-Sync-Optimize
-  background: Motivated Healthcare Coordinator with recent clinical internship experience at a regional health services agency. Working alongside a team of six medical professionals, I facilitated patient intake and coordinated appointments while maintaining strict confidentiality protocols. My primary duties inv
+  id: resume_809 | level: senior | exp: 8.0 yrs | raw_text: 275 words
+  skills: Project Management, BPMN 2.0, Stakeholder Management, Strategic Planning, Agile, SQL
+  projects: Workflow-Optimization-Matrix
+  background: As a Senior Project Manager and Lead Business Analyst, I have spent the last eight years navigating complex digital transformations within global enterprise environments. My career has been defined by leading cross-functional teams of up to fifteen members to deliver large-scale software solutions o
 
-  id: resume_807 | level: senior | exp: 9.0 yrs | raw_text: 267 words
-  skills: Epic EMR, SQL, Clinical Operations, Budget Management, Digital Health Strategy
-  projects: Scale-Care-Cloud
-  background: Senior Healthcare Operations Lead with nine years of experience driving clinical efficiency and digital transformation in multi-site hospital environments. During my four years as a Clinical Operations Manager at a large healthcare enterprise, I led a cross-functional team of twenty to optimize glob
+  id: resume_810 | level: senior | exp: 9.0 yrs | raw_text: 266 words
+  skills: Enterprise Architecture, BPMN 2.0, Project Governance, SQL, JIRA, Power BI
+  projects: Global-System-Integration
+  background: With over nine years of dedicated experience as a Principal Business Analyst and Project Lead, I specialize in architecting complex systems and managing high-stakes stakeholder relationships. Currently, I work within a large-scale agency environment, overseeing a team of twelve analysts and project 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_805 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 196 words
-  required_skills: Epic EMR, SQL, Clinical Operations, Healthcare Regulations
-  preferred_skills: Tableau, Process Improvement
-  description: Our operations team is seeking a detail-oriented Clinical Operations Coordinator to join our cohort of twenty professionals. We manage a growing multi-channel medical platform, and your work will be critical to maintaining seamless clinical workflows
+  id: jd_808 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 208 words
+  required_skills: JIRA, Confluence, BPMN, Stakeholder Discovery
+  preferred_skills: Excel, Agile
+  description: Our dynamic project team is seeking a motivated Junior Business Analyst to join our group of ten professionals. We work on a high-growth platform that connects users with essential services, and your role will be foundational in helping us translate 
 
-  id: jd_806 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Epic EMR, SQL, Healthcare Informatics, Systems Architecture
-  preferred_skills: AWS, AI
-  description: We are seeking an experienced Senior Healthcare Systems Architect to lead our clinical digital transformation team. The team currently consists of twelve managers and analysts responsible for maintaining our large-scale hospital network and patient d
+  id: jd_809 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Project Tracking, Stakeholder Coordination, JIRA, Confluence
+  preferred_skills: BPMN, Excel
+  description: Our PMO is looking for an Associate Project Coordinator to support our delivery team of fifteen people. This role provides the perfect environment for an entry-level professional to gain hands-on experience in project governance and requirement manag
 
-  id: jd_807 | title: Director of Clinical Informatics | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Epic EMR, SQL, Clinical Informatics, Hospital Administration
-  preferred_skills: FHIR, Business Intelligence
-  description: Our organization is seeking a Director of Clinical Informatics to spearhead the strategy and operations design for our global clinical network. You will lead our technical operations team of twenty professionals who support our platform's data integr
+  id: jd_810 | title: Senior Systems Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: BPMN 2.0, SQL, Stakeholder Management, Enterprise Architecture
+  preferred_skills: JIRA, APIs, Data Visualization
+  description: We are looking for a Senior Systems Business Analyst to act as the primary bridge between our global stakeholders and our technical engineering department of twenty staff. You will operate within our central product group, focusing on large-scale arc
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2412 pairs total.
+Overall dataset so far: 2421 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  481  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  483  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  482  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  483  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  483  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  485  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  485  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  482  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  484  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  485  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2413   resume_805 × jd_805
-  pair_2414   resume_805 × jd_806
-  pair_2415   resume_805 × jd_807
-  pair_2416   resume_806 × jd_805
-  pair_2417   resume_806 × jd_806
-  pair_2418   resume_806 × jd_807
-  pair_2419   resume_807 × jd_805
-  pair_2420   resume_807 × jd_806
-  pair_2421   resume_807 × jd_807
+  pair_2422   resume_808 × jd_808
+  pair_2423   resume_808 × jd_809
+  pair_2424   resume_808 × jd_810
+  pair_2425   resume_809 × jd_808
+  pair_2426   resume_809 × jd_809
+  pair_2427   resume_809 × jd_810
+  pair_2428   resume_810 × jd_808
+  pair_2429   resume_810 × jd_809
+  pair_2430   resume_810 × jd_810
 
 ════════════════════════════════════
 OUTPUT FORMAT
