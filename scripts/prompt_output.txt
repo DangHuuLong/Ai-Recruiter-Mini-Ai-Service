@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_841 | level: junior | exp: 0.5 yrs | raw_text: 286 words
-  skills: Financial Modeling, Excel, Reporting, Data Reconciliation, Accounting
-  projects: FinStream, MarketDash
-  background: I am a motivated finance graduate with a keen interest in fintech operations and financial modeling. During my final year, I completed an internship at a small financial services agency where I supported a team of three in maintaining client ledger accounts and drafting basic monthly cash flow repor
+  id: resume_844 | level: middle | exp: 4.0 yrs | raw_text: 277 words
+  skills: React Native, TypeScript, Kotlin, Redux, Firebase, CI/CD
+  projects: FitTrack, PayDash
+  background: I am a dedicated Mobile Developer with four years of experience specializing in cross-platform development using React Native and TypeScript. In my most recent role as a Mobile Engineer at a fast-paced agency, I led a team of four to build scalable consumer applications. Over two years, I maintained
 
-  id: resume_842 | level: junior | exp: 0.5 yrs | raw_text: 269 words
-  skills: Financial Analysis, Regulatory Compliance, SAP ERP, Python, Excel
-  projects: ComplianceCheck, LedgerGuard
-  background: I am an ambitious recent graduate dedicated to launching a career in financial operations and regulatory compliance within the fintech industry. Throughout my academic career, I focused heavily on developing a deep understanding of corporate finance, quantitative methods, and risk management. During
+  id: resume_845 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Swift, Kotlin, SwiftUI, GraphQL, SQL, Architecture
+  projects: SecureVault, AppOptimizer
+  background: I am a Senior Mobile Architect with eight years of deep experience in native and cross-platform ecosystems. During my three-year tenure as a Technical Lead at an enterprise-level financial organization, I managed a team of ten engineers. We developed high-security banking applications using Swift 5.
 
-  id: resume_843 | level: senior | exp: 8.0 yrs | raw_text: 267 words
-  skills: Financial Modeling, Regulatory Reporting, SAP S/4HANA, SQL, Python, Data Governance
-  projects: AuditFlow, FiscalOptimizer
-  background: I am a Senior Financial Architect with over eight years of experience specializing in financial modeling, regulatory reporting, and complex ledger architecture within global fintech enterprises. Throughout my career, I have led cross-functional teams of up to twenty members in designing scalable acc
+  id: resume_846 | level: senior | exp: 9.0 yrs | raw_text: 262 words
+  skills: Flutter, Kotlin, Java, GraphQL, gRPC, System Design
+  projects: BuildFlow, UI-Kit-Core
+  background: I am a Principal Mobile Engineer with over nine years of hands-on experience in the mobile development industry, specializing in large-scale system design and performance engineering. In my most recent role as a Lead Engineer at a global tech enterprise, I managed a mobile platform team of fifteen d
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_841 | title: Financial Planning Analyst | level: middle | min_exp: 3 yrs | raw_text: 208 words
-  required_skills: Financial Modeling, Reporting, SQL, SAP, Compliance
-  preferred_skills: Power BI, Financial Systems
-  description: Our finance team of fifteen professionals is currently seeking a mid-level Financial Planning Analyst to join us in shaping the future of our financial operations. As we continue to scale, the need for robust financial modeling, precise reporting, an
+  id: jd_844 | title: Junior React Native Developer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: React Native, TypeScript, Redux, JavaScript
+  preferred_skills: Fastlane, Unit Testing
+  description: Our mobile engineering team, consisting of six dedicated developers, is looking for a passionate Junior React Native Developer to help us build and maintain our flagship retail application. We pride ourselves on creating smooth, user-friendly experie
 
-  id: jd_842 | title: Lead Financial Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Financial Modeling, Regulatory Reporting, SAP S/4HANA, SQL, Python, Data Governance
-  preferred_skills: Architecture Design, Strategy
-  description: We are looking for a visionary Lead Financial Architect to join our central financial operations team of twenty-five. Our team is tasked with building and maintaining the enterprise-grade financial architecture that supports our mission-critical paym
+  id: jd_845 | title: Junior Mobile Developer (Flutter) | level: junior | min_exp: 1 yrs | raw_text: 207 words
+  required_skills: Flutter, Dart, REST API, Mobile Development
+  preferred_skills: Riverpod, Documentation
+  description: Join our growing team of five mobile engineers dedicated to building innovative social networking applications. We are currently seeking a Junior Mobile Developer with a focus on Flutter to help us expand our features and enhance performance. Our tea
 
-  id: jd_843 | title: Principal Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: Financial Modeling, Regulatory Reporting, SAP S/4HANA, SQL, Python, Data Governance
-  preferred_skills: Machine Learning, Process Optimization
-  description: Our operations team is searching for a Principal Financial Systems Architect to lead our most mission-critical digital transformation projects. With a team of thirty, we maintain a robust, high-impact system portfolio that requires exceptional analyt
+  id: jd_846 | title: Senior Mobile Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: Swift, Kotlin, Flutter, GraphQL, gRPC, System Design
+  preferred_skills: CI/CD, Performance Engineering
+  description: Our platform team of twenty engineers is seeking a Senior Mobile Systems Architect to guide the future of our core mobile infrastructure. This team handles high-traffic, multi-module applications that support complex interactions between backend serv
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2520 pairs total.
+Overall dataset so far: 2529 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  503  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  504  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  504  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  504  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  505  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  507  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  506  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  504  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  505  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  507  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2521   resume_841 × jd_841
-  pair_2522   resume_841 × jd_842
-  pair_2523   resume_841 × jd_843
-  pair_2524   resume_842 × jd_841
-  pair_2525   resume_842 × jd_842
-  pair_2526   resume_842 × jd_843
-  pair_2527   resume_843 × jd_841
-  pair_2528   resume_843 × jd_842
-  pair_2529   resume_843 × jd_843
+  pair_2530   resume_844 × jd_844
+  pair_2531   resume_844 × jd_845
+  pair_2532   resume_844 × jd_846
+  pair_2533   resume_845 × jd_844
+  pair_2534   resume_845 × jd_845
+  pair_2535   resume_845 × jd_846
+  pair_2536   resume_846 × jd_844
+  pair_2537   resume_846 × jd_845
+  pair_2538   resume_846 × jd_846
 
 ════════════════════════════════════
 OUTPUT FORMAT
