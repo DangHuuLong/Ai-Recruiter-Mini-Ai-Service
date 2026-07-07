@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_895 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, D3.js
-  projects: StyleSync
-  background: I am a dedicated Frontend Developer with four years of experience building scalable web applications in fast-paced startup and agency environments. In my current role at a digital product agency, I lead a small frontend squad of four, focusing on creating responsive user interfaces with React 18.2, 
+  id: resume_898 | level: junior | exp: 0.7 yrs | raw_text: 268 words
+  skills: PostgreSQL, SQL, Redis
+  projects: DataPath
+  background: I am a passionate Junior Database Engineer with a strong interest in scalable data architectures. During my eight-month internship at a data-driven retail startup, I supported a team of five engineers in managing our primary PostgreSQL 14 instance. My core responsibilities included writing complex S
 
-  id: resume_896 | level: middle | exp: 3.5 yrs | raw_text: 258 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Zustand
-  projects: RapidQuery
-  background: I am a Frontend Engineer with three and a half years of professional experience, primarily focused on building user-centric interfaces for enterprise-grade SaaS platforms. Currently, I work within a distributed engineering team of eight at a growing tech firm, where I utilize React 17, TypeScript 4.
+  id: resume_899 | level: junior | exp: 0.8 yrs | raw_text: 264 words
+  skills: MongoDB, PostgreSQL, Python
+  projects: ArchivalEngine
+  background: I am an aspiring Database Engineer with a keen focus on high-availability systems and data consistency. Throughout my recent nine-month residency at a fast-growing B2B technology firm, I worked alongside a team of four to maintain our primary MongoDB clusters and ensure seamless data flow for our ap
 
-  id: resume_897 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Micro-Frontends
-  projects: CoreFlow
-  background: I am a Principal Frontend Architect with eight years of extensive experience designing and deploying complex, global-scale web platforms. In my current role at a high-growth technology firm, I lead a team of twenty engineers, establishing technical roadmaps and architectural standards for our React-
+  id: resume_900 | level: senior | exp: 8.0 yrs | raw_text: 261 words
+  skills: PostgreSQL, MongoDB, Redis, Database Architecture
+  projects: ScaleCore
+  background: I am a Senior Database Architect with eight years of experience designing and optimizing high-performance, distributed database environments. My career has been defined by scaling infrastructure to support millions of concurrent users and ensuring mission-critical data availability. In my current ro
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_895 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Git
-  description: Our web engineering team of five is looking for a motivated Junior Frontend Developer to join our efforts in building our core user-facing web platform. You will be responsible for translating design wireframes into functional, accessible React compo
+  id: jd_898 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 196 words
+  required_skills: PostgreSQL, MongoDB, Database Modeling, SQL
+  preferred_skills: Redis, Performance Tuning
+  description: Our data engineering group of fifteen is looking for a collaborative Database Engineer to maintain and optimize our production database environment. We are focused on scaling our database infrastructure to support our rapidly growing user base and en
 
-  id: jd_896 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Zustand
-  description: We are seeking an Associate Frontend Developer to support our growing digital product team of eight. We are focused on building reliable, performant features for our core web applications that serve thousands of users daily. Your role will involve im
+  id: jd_899 | title: Senior Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: PostgreSQL, MongoDB, Redis, Database Modeling, Database Architecture
+  preferred_skills: Performance Tuning, Distributed Systems
+  description: We are looking for an experienced Senior Database Engineer to lead our technical database strategy and scale our core data infrastructure. Our engineering team of twenty-five is focused on high-traffic, mission-critical systems, enterprise reliabilit
 
-  id: jd_897 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: React, TypeScript, Next.js, Tailwind CSS
-  preferred_skills: Micro-Frontends, Performance Optimization
-  description: We are looking for a Senior Frontend Engineer to lead our technical frontend strategy and scale our core web infrastructure. Our engineering team of twenty is dedicated to building performant, scalable, and highly available web platforms for a global
+  id: jd_900 | title: Lead Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: PostgreSQL, MongoDB, Redis, Database Modeling, Database Architecture
+  preferred_skills: Distributed Systems, Scaling
+  description: We are seeking a Lead Database Engineer to direct our database development initiatives and drive our platform’s digital transformation. Our engineering team of thirty members is focused on reliability, performance, and cross-functional innovation. Yo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2682 pairs total.
+Overall dataset so far: 2691 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  536  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  537  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  536  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  535  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  538  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  536  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  539  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  538  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  539  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  539  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2683   resume_895 × jd_895
-  pair_2684   resume_895 × jd_896
-  pair_2685   resume_895 × jd_897
-  pair_2686   resume_896 × jd_895
-  pair_2687   resume_896 × jd_896
-  pair_2688   resume_896 × jd_897
-  pair_2689   resume_897 × jd_895
-  pair_2690   resume_897 × jd_896
-  pair_2691   resume_897 × jd_897
+  pair_2692   resume_898 × jd_898
+  pair_2693   resume_898 × jd_899
+  pair_2694   resume_898 × jd_900
+  pair_2695   resume_899 × jd_898
+  pair_2696   resume_899 × jd_899
+  pair_2697   resume_899 × jd_900
+  pair_2698   resume_900 × jd_898
+  pair_2699   resume_900 × jd_899
+  pair_2700   resume_900 × jd_900
 
 ════════════════════════════════════
 OUTPUT FORMAT
