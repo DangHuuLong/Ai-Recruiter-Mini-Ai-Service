@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_856 | level: middle | exp: 4.0 yrs | raw_text: 282 words
-  skills: SAP ERP, SQL, Excel 365, Tableau, Inventory Management, Procurement
-  projects: InventorySmart, Procurement Dashboard
-  background: I am a Supply Chain Coordinator with four years of hands-on experience in procurement and logistics operations. During my three-year tenure at a mid-sized logistics firm, I managed a team of four coordinators and was responsible for end-to-end order fulfillment. My primary duties included utilizing 
+  id: resume_859 | level: junior | exp: 1.0 yrs | raw_text: 267 words
+  skills: React, Tailwind CSS, JavaScript, HTML5, CSS3, Figma
+  projects: TaskFlow
+  background: I am a junior frontend developer with one year of experience gained during my internship at a fast-paced web agency. During my twelve-month tenure, I worked in a small team of three developers focusing on building landing pages and simple marketing sites. My core responsibilities included converting
 
-  id: resume_857 | level: senior | exp: 7.5 yrs | raw_text: 266 words
-  skills: Oracle NetSuite, Python, SQL Server, Inventory Optimization, Logistics Strategy, Predictive Modeling
-  projects: FlowScale, RouteOpt
-  background: I am a Senior Logistics Operations Manager with seven years of deep expertise in enterprise-level supply chain architecture and warehouse optimization. During my five-year tenure as a lead operations manager at a global distribution enterprise, I led a team of thirty logistics engineers, focusing on
+  id: resume_860 | level: junior | exp: 1.0 yrs | raw_text: 251 words
+  skills: React, Redux, JavaScript, Jest, Styled-components, Git
+  projects: StyleSync
+  background: I am an aspiring frontend developer with one year of professional experience working at a boutique startup. As part of a lean two-person engineering team, I handled the frontend implementation for our core product offerings. My primary responsibilities involved developing interactive user interface 
 
-  id: resume_858 | level: senior | exp: 9.2 yrs | raw_text: 278 words
-  skills: Microsoft Dynamics 365, Power BI, AWS, Demand Planning, Blockchain, Supply Chain Architecture
-  projects: AutoSourcing, RiskRadar
-  background: I am a Principal Procurement and Supply Chain Architect with nine years of experience in deep learning, demand planning, and natural language processing within procurement at the enterprise level. In my previous role as a Technical Lead at a large manufacturing firm, I managed a team of fifteen engi
+  id: resume_861 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, CI/CD
+  projects: EnterpriseConnect, DataView
+  background: I am a senior frontend engineer with eight years of experience building scalable enterprise applications. Throughout my career at three major technology enterprises, I have led teams of up to fifteen developers in architecting complex frontend ecosystems. My expertise lies in designing robust soluti
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_856 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: SAP ERP, Microsoft Excel, Inventory Management, Procurement
-  preferred_skills: Tableau, SQL
-  description: Our operations team of eight is looking for a passionate Junior Supply Chain Associate to help us build and maintain our flagship inventory and procurement products. We pride ourselves on creating smooth, user-friendly experiences for our warehouse s
+  id: jd_859 | title: Middle Frontend Engineer | level: middle | min_exp: 3 yrs | raw_text: 193 words
+  required_skills: React, TypeScript, Tailwind CSS, Next.js
+  preferred_skills: GraphQL, Vite
+  description: Our core product team of twelve developers is seeking a skilled Middle Frontend Engineer to help evolve our customer-facing web dashboard. The team focuses on delivering high-quality, responsive interfaces that handle complex data interactions for ou
 
-  id: jd_857 | title: Junior Logistics Coordinator | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: Oracle NetSuite, Power BI, Logistics Management, Inventory Management
-  preferred_skills: Python, Shipping Regulations
-  description: Join our growing team of five engineers and coordinators dedicated to building innovative, data-driven logistics solutions. We are currently seeking a Junior Logistics Coordinator with a focus on inventory optimization and vendor communication to hel
+  id: jd_860 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 188 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL
+  preferred_skills: Edge Computing, Micro-frontend Architecture
+  description: Our platform engineering team of twenty is dedicated to pushing the boundaries of web performance and interactivity. We are seeking a Senior Frontend Engineer to lead the architecture of our next-generation web application. You will handle complex te
 
-  id: jd_858 | title: Senior Supply Chain Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Microsoft Dynamics 365, AWS, Supply Chain Architecture, ERP Systems, Data Pipeline Architecture
-  preferred_skills: Machine Learning, Warehouse Robotics
-  description: Our platform team of twenty engineers and architects is seeking a Senior Supply Chain Architect to guide the future of our core logistics infrastructure. This team handles high-traffic, multi-module applications that support complex interactions betw
+  id: jd_861 | title: Lead Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL
+  preferred_skills: CI/CD Pipelines, Frontend Performance Engineering
+  description: Our core infrastructure team is looking for a Lead Frontend Architect to define the future of our web ecosystem. As a team of twenty-five, we handle complex multi-module applications and design systems that serve millions of users. You will be respon
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2565 pairs total.
+Overall dataset so far: 2574 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  513  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  514  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  512  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  512  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  514  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  513  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  515  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  516  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  514  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  516  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2566   resume_856 × jd_856
-  pair_2567   resume_856 × jd_857
-  pair_2568   resume_856 × jd_858
-  pair_2569   resume_857 × jd_856
-  pair_2570   resume_857 × jd_857
-  pair_2571   resume_857 × jd_858
-  pair_2572   resume_858 × jd_856
-  pair_2573   resume_858 × jd_857
-  pair_2574   resume_858 × jd_858
+  pair_2575   resume_859 × jd_859
+  pair_2576   resume_859 × jd_860
+  pair_2577   resume_859 × jd_861
+  pair_2578   resume_860 × jd_859
+  pair_2579   resume_860 × jd_860
+  pair_2580   resume_860 × jd_861
+  pair_2581   resume_861 × jd_859
+  pair_2582   resume_861 × jd_860
+  pair_2583   resume_861 × jd_861
 
 ════════════════════════════════════
 OUTPUT FORMAT
