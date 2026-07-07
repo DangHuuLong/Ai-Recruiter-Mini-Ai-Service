@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_760 | level: junior | exp: 0.5 yrs | raw_text: 275 words
-  skills: Shopify, Microsoft Excel, Google Analytics, Python, Pandas
-  projects: CartTrack
-  background: As an aspiring E-commerce Operations Associate, I completed an intensive eight-month internship at a fast-growing digital marketplace startup within an execution cell of four personnel, where I actively managed catalog data ingestion workflows and systematically tracked listing compliance metrics. I
+  id: resume_763 | level: middle | exp: 4.0 yrs | raw_text: 265 words
+  skills: Greenhouse, LinkedIn Recruiter, BambooHR, Microsoft Excel, Python, SQLite
+  projects: TalentSync
+  background: I am an experienced Talent Acquisition Specialist with a demonstrated history of working four years within fast-paced corporate environments. In my previous role at a mid-sized technology agency, where I spent three years within a recruitment team of five personnel, I was responsible for executing f
 
-  id: resume_761 | level: middle | exp: 4.0 yrs | raw_text: 267 words
-  skills: Magento, SQL Server, Salesforce Commerce Cloud, Jira, Tableau, Python, PostgreSQL, Power BI
-  projects: VendorPulse
-  background: Resourceful Marketplace Operations Specialist with four years of professional experience driving listing health and optimizing multi-vendor supply chain matrices across digital retail ecosystems. I spent three years at a prominent multi-category retail enterprise within a merchant enablement team of
+  id: resume_764 | level: senior | exp: 7.0 yrs | raw_text: 255 words
+  skills: Workday, Workday Studio, Workday Prism Analytics, Tableau, Python, PostgreSQL, Power BI
+  projects: GlobalBoard
+  background: As a Senior HRIS and People Analytics Systems Architect with over seven years of professional experience, I specialize in engineering corporate infrastructure integrations and deploying automated workforce metrics within large global enterprises. For the past four years, I have worked at a multinati
 
-  id: resume_762 | level: middle | exp: 3.0 yrs | raw_text: 260 words
-  skills: SAP Commerce Cloud, Microsoft Excel, Google Analytics, Python, MongoDB
-  projects: OptiShelf
-  background: Dynamic E-commerce Merchandising Analyst with over three years of documented experience optimizing digital product visibility and managing commercial catalog operations within high-volume retail sectors. In my previous role at a large electronic retail enterprise, I operated for three years within a
+  id: resume_765 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Workday, Workday Studio, SQL Server, Jira, Tableau, Python, PostgreSQL
+  projects: CorePulse
+  background: Distinguished Senior People Operations and HR Systems Engineer with eight years of comprehensive experience designing scalable corporate infrastructure frameworks and optimizing workforce management nodes across high-volume digital environments. I spent five years at an international software enterp
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_760 | title: E-commerce Operations Specialist | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: Shopify, Microsoft Excel, Google Analytics
-  preferred_skills: Python, Jira
-  description: We are actively looking for an enthusiastic E-commerce Operations Specialist to join our dynamic marketplace storefront division of five specialized catalog experts. In this entry-level individual contributor position, you will support the day-to-day
+  id: jd_763 | title: Human Resources Associate | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Greenhouse, Workday, Microsoft Excel
+  preferred_skills: Jira, Tableau
+  description: We are actively looking for an energetic Human Resources Associate to join our growing global people operations group composed of five dedicated employee onboarding coordinators. In this entry-level individual contributor position, you will support t
 
-  id: jd_761 | title: Senior Marketplace Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Mirakl, VTEX, Apache Kafka, AWS Cloud, Java Spring Boot
-  preferred_skills: SQL Server, Elasticsearch, AWS Certified Solutions Architect
-  description: We are searching for a Lead Marketplace Platform Engineer to head our high-performance core architecture and transaction routing division of twelve senior systems specialists. This critical senior leadership role is responsible for establishing enter
+  id: jd_764 | title: Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs | raw_text: 193 words
+  required_skills: Greenhouse, LinkedIn Recruiter, Workday, Microsoft Excel
+  preferred_skills: Python, SQL Server
+  description: We are searching for an organized Talent Acquisition Coordinator to join our fast-paced recruiting division consisting of six specialized technical talent advisors. In this associate-level role, you will perform a critical function in managing day-to
 
-  id: jd_762 | title: Senior Merchandising Architecture Director | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: HCL Commerce, Oracle Commerce, Algolia, Python, Snowflake
-  preferred_skills: Kubernetes, MongoDB, Google Analytics 4
-  description: Our central retail innovation division is searching for a Senior Merchandising Architecture Director to govern our expanding digital catalog optimization group of fourteen domain professionals. This high-visibility leadership role focuses on engineer
+  id: jd_765 | title: Senior HRIS Platform Integration Architect | level: senior | min_exp: 6 yrs | raw_text: 215 words
+  required_skills: Workday, Workday Studio, Workday Prism Analytics, SQL Server, Python
+  preferred_skills: Jira, Tableau
+  description: Our corporate infrastructure technology department is searching for a Lead HRIS Platform Integration Architect to head our enterprise people analytics and integration engineering squad of ten senior systems specialists. This business-critical leaders
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2277 pairs total.
+Overall dataset so far: 2286 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  454  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  455  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  456  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  455  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  457  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  456  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  459  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  456  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  457  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  458  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2278   resume_760 × jd_760
-  pair_2279   resume_760 × jd_761
-  pair_2280   resume_760 × jd_762
-  pair_2281   resume_761 × jd_760
-  pair_2282   resume_761 × jd_761
-  pair_2283   resume_761 × jd_762
-  pair_2284   resume_762 × jd_760
-  pair_2285   resume_762 × jd_761
-  pair_2286   resume_762 × jd_762
+  pair_2287   resume_763 × jd_763
+  pair_2288   resume_763 × jd_764
+  pair_2289   resume_763 × jd_765
+  pair_2290   resume_764 × jd_763
+  pair_2291   resume_764 × jd_764
+  pair_2292   resume_764 × jd_765
+  pair_2293   resume_765 × jd_763
+  pair_2294   resume_765 × jd_764
+  pair_2295   resume_765 × jd_765
 
 ════════════════════════════════════
 OUTPUT FORMAT
