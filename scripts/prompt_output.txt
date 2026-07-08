@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_898 | level: junior | exp: 0.7 yrs | raw_text: 268 words
-  skills: PostgreSQL, SQL, Redis
-  projects: DataPath
-  background: I am a passionate Junior Database Engineer with a strong interest in scalable data architectures. During my eight-month internship at a data-driven retail startup, I supported a team of five engineers in managing our primary PostgreSQL 14 instance. My core responsibilities included writing complex S
+  id: resume_901 | level: middle | exp: 4.0 yrs | raw_text: 322 words
+  skills: Python, FastAPI, Flask, Django REST Framework, React, Redux Toolkit, JavaScript, TypeScript, Tailwind CSS, PostgreSQL, Docker, GitHub Actions, REST APIs
+  projects: DevTrack
+  background: Experienced Full-Stack Web Developer with a strong foundation in building scalable web applications using the Python and React ecosystems. Over the past four years, my professional journey has been focused on translating complex business requirements into clean, maintainable code. In my previous rol
 
-  id: resume_899 | level: junior | exp: 0.8 yrs | raw_text: 264 words
-  skills: MongoDB, PostgreSQL, Python
-  projects: ArchivalEngine
-  background: I am an aspiring Database Engineer with a keen focus on high-availability systems and data consistency. Throughout my recent nine-month residency at a fast-growing B2B technology firm, I worked alongside a team of four to maintain our primary MongoDB clusters and ensure seamless data flow for our ap
+  id: resume_902 | level: senior | exp: 7.2 yrs | raw_text: 311 words
+  skills: Python, FastAPI, Django, Flask, React, TypeScript, Webpack, Redux, Celery, Redis, PostgreSQL, Apache Kafka, AWS, ECS Fargate, Terraform, Docker, Kubernetes, Microservices
+  projects: Enterprise Core UI Component Library
+  background: Distinguished Senior Full-Stack Engineer and Technical Lead with over seven years of extensive industry experience architecting, scaling, and maintaining high-throughput web architectures within both enterprise environments and high-growth startups. In my current role as a Tech Lead at a prominent e
 
-  id: resume_900 | level: senior | exp: 8.0 yrs | raw_text: 261 words
-  skills: PostgreSQL, MongoDB, Redis, Database Architecture
-  projects: ScaleCore
-  background: I am a Senior Database Architect with eight years of experience designing and optimizing high-performance, distributed database environments. My career has been defined by scaling infrastructure to support millions of concurrent users and ensuring mission-critical data availability. In my current ro
+  id: resume_903 | level: senior | exp: 8.0 yrs | raw_text: 301 words
+  skills: Python, FastAPI, Django, Flask, React, Next.js, TypeScript, JavaScript, PostgreSQL, Redis, Celery, AWS, Docker, Kubernetes, EKS, Terraform, GraphQL
+  projects: Clinical Data Ingestion Pipeline
+  background: Accomplished Senior Full-Stack Web Developer and Technical Lead with eight years of professional expertise designing, developing, and deploying complex web applications. Throughout my career, I have specialized in building robust Python backends paired with intuitive React frontends to solve intrica
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_898 | title: Database Engineer | level: middle | min_exp: 3 yrs | raw_text: 196 words
-  required_skills: PostgreSQL, MongoDB, Database Modeling, SQL
-  preferred_skills: Redis, Performance Tuning
-  description: Our data engineering group of fifteen is looking for a collaborative Database Engineer to maintain and optimize our production database environment. We are focused on scaling our database infrastructure to support our rapidly growing user base and en
+  id: jd_901 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 252 words
+  required_skills: Python, FastAPI, Flask, React, JavaScript, PostgreSQL, Git
+  preferred_skills: TypeScript, Tailwind CSS, Docker, Redux Toolkit, AWS, PyTest, Jest
+  description: We are seeking an enthusiastic Junior Full-Stack Developer to join our core product engineering team. In this role, you will work within an agile team of six developers dedicated to expanding and optimizing our cloud-based business management platfor
 
-  id: jd_899 | title: Senior Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: PostgreSQL, MongoDB, Redis, Database Modeling, Database Architecture
-  preferred_skills: Performance Tuning, Distributed Systems
-  description: We are looking for an experienced Senior Database Engineer to lead our technical database strategy and scale our core data infrastructure. Our engineering team of twenty-five is focused on high-traffic, mission-critical systems, enterprise reliabilit
+  id: jd_902 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 227 words
+  required_skills: Python, Django REST Framework, React, Redux, PostgreSQL, Git
+  preferred_skills: Docker, GitHub Actions, Tailwind CSS, TypeScript, SQL
+  description: We are looking for an Associate Full-Stack Engineer to join our growing product development group. Our team is comprised of five engineer professionals focused on delivering exceptional productivity tools for enterprise clients. Day-to-day responsibi
 
-  id: jd_900 | title: Lead Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: PostgreSQL, MongoDB, Redis, Database Modeling, Database Architecture
-  preferred_skills: Distributed Systems, Scaling
-  description: We are seeking a Lead Database Engineer to direct our database development initiatives and drive our platform’s digital transformation. Our engineering team of thirty members is focused on reliability, performance, and cross-functional innovation. Yo
+  id: jd_903 | title: Senior Full-Stack Tech Lead | level: senior | min_exp: 6 yrs | raw_text: 251 words
+  required_skills: Python, FastAPI, Django, React, Next.js, TypeScript, PostgreSQL, Redis, Celery
+  preferred_skills: Apache Kafka, AWS, Docker, Kubernetes, Terraform, Webpack, GraphQL
+  description: We are seeking a Senior Full-Stack Tech Lead to drive the technical evolution of our core cloud data analytics platform. Our team consists of ten highly skilled engineers, and we are looking for a technical visionary to establish architecture standar
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2691 pairs total.
+Overall dataset so far: 2700 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  536  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  539  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  538  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  539  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  539  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  540  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  541  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  538  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  540  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  541  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2692   resume_898 × jd_898
-  pair_2693   resume_898 × jd_899
-  pair_2694   resume_898 × jd_900
-  pair_2695   resume_899 × jd_898
-  pair_2696   resume_899 × jd_899
-  pair_2697   resume_899 × jd_900
-  pair_2698   resume_900 × jd_898
-  pair_2699   resume_900 × jd_899
-  pair_2700   resume_900 × jd_900
+  pair_2701   resume_901 × jd_901
+  pair_2702   resume_901 × jd_902
+  pair_2703   resume_901 × jd_903
+  pair_2704   resume_902 × jd_901
+  pair_2705   resume_902 × jd_902
+  pair_2706   resume_902 × jd_903
+  pair_2707   resume_903 × jd_901
+  pair_2708   resume_903 × jd_902
+  pair_2709   resume_903 × jd_903
 
 ════════════════════════════════════
 OUTPUT FORMAT
