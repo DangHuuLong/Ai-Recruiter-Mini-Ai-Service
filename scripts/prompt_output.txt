@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_913 | level: middle | exp: 4.0 yrs | raw_text: 277 words
-  skills: Figma, Adobe XD, Prototyping, User Research, HTML, CSS, Design Systems, Accessibility
-  projects: FlowGuide, UserPulse
-  background: I started my career at a small tech startup as a product designer, where I focused on end-to-end UX research and interface design using Figma 98.0. During my two years there, I collaborated with a tight-knit team of five, iterating on our core e-commerce mobile app. I was responsible for conducting 
+  id: resume_916 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Epic EMR, Microsoft Excel, Data Reporting, HIPAA Compliance, Patient Scheduling
+  projects: PatientFlowTracker, DataClean
+  background: I am a recent graduate in Health Informatics, highly motivated to pursue a career in medical coordination. During my final year, I completed a six-month internship at a large regional hospital, where I worked with a team of six clinical coordinators. My core responsibilities included managing patien
 
-  id: resume_914 | level: senior | exp: 7.0 yrs | raw_text: 269 words
-  skills: Figma, Framer, React, Design Systems, Leadership, Data Visualization, Accessibility, UX Research
-  projects: SystemCore, DataVizLab
-  background: With seven years of professional experience as a senior product designer and design lead, I have mastered the art of creating intuitive, high-performance digital products. My professional journey started at a high-growth fintech startup, where I spent three years on a team of eight. I was responsibl
+  id: resume_917 | level: junior | exp: 0.8 yrs | raw_text: 280 words
+  skills: Cerner Millennium, Insurance Authorization, Office Productivity, Data Integrity
+  projects: CoordinationSync, MedBillGuide
+  background: Following my recent graduation from a Healthcare Administration program, I have been actively applying my skills in clinical operations and administrative coordination. I gained practical experience through a year-long cooperative program at a specialized medical consultancy startup, where I operate
 
-  id: resume_915 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Figma, Protopie, React, UX Research, Micro-interactions, Data Analytics, Leadership, User-Centered Design
-  projects: InsightLab, ComponentNexus
-  background: Having accumulated eight years of dedicated experience in UX and UI design, I consider myself a specialist in product-led design and complex system interaction. During my tenure at a creative design agency for three years, I led a specialized UI group of fifteen designers. We utilized Figma and Prot
+  id: resume_918 | level: senior | exp: 8.5 yrs | raw_text: 266 words
+  skills: Epic EMR, Cerner Millennium, PostgreSQL, AWS, API Integration, HIPAA Compliance, Strategy
+  projects: OpsArchitect, HealthBridge
+  background: With over eight years of experience in healthcare operations and medical coordination, I have built a career on transforming clinical administrative workflows into highly efficient processes. I started as an analyst at a mid-sized healthcare enterprise, spending three years managing clinical data in
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_913 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 227 words
-  required_skills: Figma, UI Design, Wireframing
-  preferred_skills: HTML, CSS
-  description: The product engineering department is looking for a passionate Junior UI/UX Designer to join our growing design team of eight. Our product serves as a core task management platform for small businesses, and we are constantly expanding our feature set
+  id: jd_916 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 211 words
+  required_skills: Epic EMR, Clinical Operations, HIPAA Compliance, Performance Reporting
+  preferred_skills: Data Visualization, Healthcare Administration
+  description: Our operations team is seeking a dedicated Clinical Operations Coordinator to join our staff of twenty-five. We specialize in streamlining the administrative lifecycle of patient care for high-volume outpatient clinics. The primary focus of this role
 
-  id: jd_914 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 225 words
-  required_skills: Figma, User Flows, Product Design
-  preferred_skills: Protopie, Data Visualization
-  description: Our design team is seeking a motivated Junior Product Designer to support our core platform engineering efforts. As part of a team of ten, you will be deeply involved in developing the interaction layer between our data-heavy backend and our user-fac
+  id: jd_917 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: PostgreSQL, AWS, EMR Integration, API Management, System Architecture
+  preferred_skills: Python, Cloud Architecture
+  description: The healthcare systems team is seeking a Senior Healthcare Systems Architect to oversee our enterprise-wide clinical integration project. Our team of twelve manages a complex ecosystem of EMRs, billing databases, and patient-facing portals. In this r
 
-  id: jd_915 | title: Senior Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 215 words
-  required_skills: Figma, Design Systems, User Research, Interaction Design, Leadership
-  preferred_skills: Protopie, Framer
-  description: We are looking for a highly experienced Senior Product Design Lead to architect the next generation of our design ecosystem. Our team of fifteen engineers and designers manages critical interfaces serving high-volume, global traffic. In this role, yo
+  id: jd_918 | title: Lead Medical Coordination Strategist | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Cerner Millennium, SQL, Medical Coordination, HIPAA Compliance, Process Automation
+  preferred_skills: Excel Modeling, API Management
+  description: Our clinical strategy team is looking for a Lead Medical Coordination Strategist to drive excellence in our nationwide medical operations. The team of eighteen oversees clinical workflow design and enterprise-level coordination for our network of cli
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2736 pairs total.
+Overall dataset so far: 2745 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  546  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  549  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  546  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  547  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  548  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  546  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  550  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  550  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  549  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  550  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2737   resume_913 × jd_913
-  pair_2738   resume_913 × jd_914
-  pair_2739   resume_913 × jd_915
-  pair_2740   resume_914 × jd_913
-  pair_2741   resume_914 × jd_914
-  pair_2742   resume_914 × jd_915
-  pair_2743   resume_915 × jd_913
-  pair_2744   resume_915 × jd_914
-  pair_2745   resume_915 × jd_915
+  pair_2746   resume_916 × jd_916
+  pair_2747   resume_916 × jd_917
+  pair_2748   resume_916 × jd_918
+  pair_2749   resume_917 × jd_916
+  pair_2750   resume_917 × jd_917
+  pair_2751   resume_917 × jd_918
+  pair_2752   resume_918 × jd_916
+  pair_2753   resume_918 × jd_917
+  pair_2754   resume_918 × jd_918
 
 ════════════════════════════════════
 OUTPUT FORMAT
