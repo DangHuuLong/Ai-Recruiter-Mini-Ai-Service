@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_916 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: Epic EMR, Microsoft Excel, Data Reporting, HIPAA Compliance, Patient Scheduling
-  projects: PatientFlowTracker, DataClean
-  background: I am a recent graduate in Health Informatics, highly motivated to pursue a career in medical coordination. During my final year, I completed a six-month internship at a large regional hospital, where I worked with a team of six clinical coordinators. My core responsibilities included managing patien
+  id: resume_919 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, JavaScript
+  projects: QuickTask, GraphView
+  background: I have built a strong foundation in modern frontend development over the past four years, primarily focusing on creating scalable web applications. In my most recent role as a Frontend Developer at a fast-paced technology startup, I worked within a team of ten engineers to build responsive user inte
 
-  id: resume_917 | level: junior | exp: 0.8 yrs | raw_text: 280 words
-  skills: Cerner Millennium, Insurance Authorization, Office Productivity, Data Integrity
-  projects: CoordinationSync, MedBillGuide
-  background: Following my recent graduation from a Healthcare Administration program, I have been actively applying my skills in clinical operations and administrative coordination. I gained practical experience through a year-long cooperative program at a specialized medical consultancy startup, where I operate
+  id: resume_920 | level: senior | exp: 7.5 yrs | raw_text: 266 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Zustand, CI/CD
+  projects: ArchitectFlow, CodeGuard
+  background: With over seven years of professional experience in full-stack frontend development, I have led multiple engineering initiatives at large-scale enterprises. During my tenure as a Senior Frontend Engineer at a global software enterprise for the last three years, I led a cross-functional team of fifte
 
-  id: resume_918 | level: senior | exp: 8.5 yrs | raw_text: 266 words
-  skills: Epic EMR, Cerner Millennium, PostgreSQL, AWS, API Integration, HIPAA Compliance, Strategy
-  projects: OpsArchitect, HealthBridge
-  background: With over eight years of experience in healthcare operations and medical coordination, I have built a career on transforming clinical administrative workflows into highly efficient processes. I started as an analyst at a mid-sized healthcare enterprise, spending three years managing clinical data in
+  id: resume_921 | level: senior | exp: 8.0 yrs | raw_text: 260 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Framer Motion, Browser APIs
+  projects: RenderOptimizer, ThemeEngine
+  background: Over the past eight years, I have specialized in building high-traffic frontend applications that prioritize both developer experience and end-user performance. As a Principal Frontend Engineer at a major e-commerce enterprise for the last four years, I oversaw the development of a high-concurrency 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_916 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Epic EMR, Clinical Operations, HIPAA Compliance, Performance Reporting
-  preferred_skills: Data Visualization, Healthcare Administration
-  description: Our operations team is seeking a dedicated Clinical Operations Coordinator to join our staff of twenty-five. We specialize in streamlining the administrative lifecycle of patient care for high-volume outpatient clinics. The primary focus of this role
+  id: jd_919 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 190 words
+  required_skills: React, TypeScript, Tailwind CSS, Next.js
+  preferred_skills: Jest, Redux
+  description: Our web engineering team of five is looking for a motivated Junior Frontend Engineer to help us maintain and improve our core customer portal. The team works on a platform that delivers real-time analytics to our users, requiring clean and responsive
 
-  id: jd_917 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: PostgreSQL, AWS, EMR Integration, API Management, System Architecture
-  preferred_skills: Python, Cloud Architecture
-  description: The healthcare systems team is seeking a Senior Healthcare Systems Architect to oversee our enterprise-wide clinical integration project. Our team of twelve manages a complex ecosystem of EMRs, billing databases, and patient-facing portals. In this r
+  id: jd_920 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 195 words
+  required_skills: React, TypeScript, Next.js, JavaScript
+  preferred_skills: Testing Tools, REST APIs
+  description: We are expanding our frontend squad and seeking an Associate Frontend Developer to join our team of four. The team focuses on delivering a user-centric dashboard for internal operations. We are looking for someone who can contribute immediately while
 
-  id: jd_918 | title: Lead Medical Coordination Strategist | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Cerner Millennium, SQL, Medical Coordination, HIPAA Compliance, Process Automation
-  preferred_skills: Excel Modeling, API Management
-  description: Our clinical strategy team is looking for a Lead Medical Coordination Strategist to drive excellence in our nationwide medical operations. The team of eighteen oversees clinical workflow design and enterprise-level coordination for our network of cli
+  id: jd_921 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: React, TypeScript, Next.js, Performance Optimization, State Management, Architecture
+  preferred_skills: Micro-frontends, WebAssembly
+  description: Our infrastructure team of twelve is looking for a Senior Frontend Architect to drive our enterprise-scale web performance initiatives. We manage a complex ecosystem of high-traffic products that require deep technical expertise to maintain. As a Sen
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2745 pairs total.
+Overall dataset so far: 2754 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  546  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  550  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  550  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  549  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  550  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  550  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  552  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  550  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  550  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  552  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2746   resume_916 × jd_916
-  pair_2747   resume_916 × jd_917
-  pair_2748   resume_916 × jd_918
-  pair_2749   resume_917 × jd_916
-  pair_2750   resume_917 × jd_917
-  pair_2751   resume_917 × jd_918
-  pair_2752   resume_918 × jd_916
-  pair_2753   resume_918 × jd_917
-  pair_2754   resume_918 × jd_918
+  pair_2755   resume_919 × jd_919
+  pair_2756   resume_919 × jd_920
+  pair_2757   resume_919 × jd_921
+  pair_2758   resume_920 × jd_919
+  pair_2759   resume_920 × jd_920
+  pair_2760   resume_920 × jd_921
+  pair_2761   resume_921 × jd_919
+  pair_2762   resume_921 × jd_920
+  pair_2763   resume_921 × jd_921
 
 ════════════════════════════════════
 OUTPUT FORMAT
