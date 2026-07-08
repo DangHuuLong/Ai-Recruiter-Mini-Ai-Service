@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_901 | level: middle | exp: 4.0 yrs | raw_text: 322 words
-  skills: Python, FastAPI, Flask, Django REST Framework, React, Redux Toolkit, JavaScript, TypeScript, Tailwind CSS, PostgreSQL, Docker, GitHub Actions, REST APIs
-  projects: DevTrack
-  background: Experienced Full-Stack Web Developer with a strong foundation in building scalable web applications using the Python and React ecosystems. Over the past four years, my professional journey has been focused on translating complex business requirements into clean, maintainable code. In my previous rol
+  id: resume_904 | level: junior | exp: 0.5 yrs | raw_text: 250 words
+  skills: React Native, Expo, JavaScript, REST APIs, Android Studio, Formik, Git
+  projects: CoinScan
+  background: An enthusiastic and highly motivated Junior Mobile Developer and recent graduate looking to contribute foundational skills in hybrid application development. During my academic journey, I completed a six-month internship as a Junior App Developer at a mobile software agency where I worked within an 
 
-  id: resume_902 | level: senior | exp: 7.2 yrs | raw_text: 311 words
-  skills: Python, FastAPI, Django, Flask, React, TypeScript, Webpack, Redux, Celery, Redis, PostgreSQL, Apache Kafka, AWS, ECS Fargate, Terraform, Docker, Kubernetes, Microservices
-  projects: Enterprise Core UI Component Library
-  background: Distinguished Senior Full-Stack Engineer and Technical Lead with over seven years of extensive industry experience architecting, scaling, and maintaining high-throughput web architectures within both enterprise environments and high-growth startups. In my current role as a Tech Lead at a prominent e
+  id: resume_905 | level: junior | exp: 0.4 yrs | raw_text: 253 words
+  skills: Flutter, Dart, SQLite, Firebase, Git, REST APIs, Xcode
+  projects: UniChat
+  background: A passionate and proactive Junior Cross-Platform Developer seeking an entry-level software engineering role to leverage skills in modern mobile architectures. I recently completed a five-month technical internship as an Associate Software Engineer at an early-stage healthcare startup, working alongs
 
-  id: resume_903 | level: senior | exp: 8.0 yrs | raw_text: 301 words
-  skills: Python, FastAPI, Django, Flask, React, Next.js, TypeScript, JavaScript, PostgreSQL, Redis, Celery, AWS, Docker, Kubernetes, EKS, Terraform, GraphQL
-  projects: Clinical Data Ingestion Pipeline
-  background: Accomplished Senior Full-Stack Web Developer and Technical Lead with eight years of professional expertise designing, developing, and deploying complex web applications. Throughout my career, I have specialized in building robust Python backends paired with intuitive React frontends to solve intrica
+  id: resume_906 | level: senior | exp: 7.5 yrs | raw_text: 306 words
+  skills: React Native, TypeScript, Swift, Kotlin, Flutter, Dart, Objective-C, Fastlane, Bitrise, GraphQL, AWS, Terraform, Appium, Webpack, Git
+  projects: Enterprise Core Mobile Architecture Migration
+  background: An accomplished and analytical Senior Mobile Architect and Technical Lead with over seven years of professional industry experience engineering, scaling, and optimizing high-performance mobile software ecosystems. In my current capacity as a Mobile Tech Lead at a global enterprise fintech corporatio
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_901 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 252 words
-  required_skills: Python, FastAPI, Flask, React, JavaScript, PostgreSQL, Git
-  preferred_skills: TypeScript, Tailwind CSS, Docker, Redux Toolkit, AWS, PyTest, Jest
-  description: We are seeking an enthusiastic Junior Full-Stack Developer to join our core product engineering team. In this role, you will work within an agile team of six developers dedicated to expanding and optimizing our cloud-based business management platfor
+  id: jd_904 | title: Middle Mobile Software Engineer | level: middle | min_exp: 3 yrs | raw_text: 259 words
+  required_skills: React Native, TypeScript, Redux Toolkit, Android Studio, Xcode, JavaScript, Git
+  preferred_skills: Detox, Fastlane, Swift, Kotlin, GraphQL, Jest
+  description: We are seeking a talented Middle Mobile Software Engineer to join our growing core product engineering group. In this role, you will work within an agile team of six developers dedicated to expanding and maintaining our cross-platform lifestyle and p
 
-  id: jd_902 | title: Associate Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 227 words
-  required_skills: Python, Django REST Framework, React, Redux, PostgreSQL, Git
-  preferred_skills: Docker, GitHub Actions, Tailwind CSS, TypeScript, SQL
-  description: We are looking for an Associate Full-Stack Engineer to join our growing product development group. Our team is comprised of five engineer professionals focused on delivering exceptional productivity tools for enterprise clients. Day-to-day responsibi
+  id: jd_905 | title: Senior iOS & Native Lead Engineer | level: senior | min_exp: 6 yrs | raw_text: 241 words
+  required_skills: Swift, Objective-C, React Native, TypeScript, CoreData, Fastlane, Bitrise
+  preferred_skills: CocoaPods, WebRTC, Git, Xcode, Appium, AWS
+  description: We are looking for a Senior iOS & Native Lead Engineer to spearhead the performance, security, and architecture of our enterprise mobile streaming platform. Our dedicated mobile division is comprised of eight engineers focused on building ultra-low l
 
-  id: jd_903 | title: Senior Full-Stack Tech Lead | level: senior | min_exp: 6 yrs | raw_text: 251 words
-  required_skills: Python, FastAPI, Django, React, Next.js, TypeScript, PostgreSQL, Redis, Celery
-  preferred_skills: Apache Kafka, AWS, Docker, Kubernetes, Terraform, Webpack, GraphQL
-  description: We are seeking a Senior Full-Stack Tech Lead to drive the technical evolution of our core cloud data analytics platform. Our team consists of ten highly skilled engineers, and we are looking for a technical visionary to establish architecture standar
+  id: jd_906 | title: Senior Cross-Platform Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 238 words
+  required_skills: React Native, Flutter, Dart, TypeScript, Kotlin, Swift, SQLite, Bitrise, Appium
+  preferred_skills: Fastlane, Terraform, AWS, Git, Xcode, Android Studio
+  description: We are seeking an expert Senior Cross-Platform Mobile Architect to steer the foundational technical strategy of our next-generation enterprise application ecosystem. Our mobile engineering team consists of ten highly skilled specialists, and we requi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2700 pairs total.
+Overall dataset so far: 2709 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  540  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  541  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  538  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  540  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  541  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  540  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  542  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  542  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  542  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  543  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2701   resume_901 × jd_901
-  pair_2702   resume_901 × jd_902
-  pair_2703   resume_901 × jd_903
-  pair_2704   resume_902 × jd_901
-  pair_2705   resume_902 × jd_902
-  pair_2706   resume_902 × jd_903
-  pair_2707   resume_903 × jd_901
-  pair_2708   resume_903 × jd_902
-  pair_2709   resume_903 × jd_903
+  pair_2710   resume_904 × jd_904
+  pair_2711   resume_904 × jd_905
+  pair_2712   resume_904 × jd_906
+  pair_2713   resume_905 × jd_904
+  pair_2714   resume_905 × jd_905
+  pair_2715   resume_905 × jd_906
+  pair_2716   resume_906 × jd_904
+  pair_2717   resume_906 × jd_905
+  pair_2718   resume_906 × jd_906
 
 ════════════════════════════════════
 OUTPUT FORMAT
