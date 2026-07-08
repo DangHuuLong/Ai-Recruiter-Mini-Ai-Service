@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_910 | level: junior | exp: 0.5 yrs | raw_text: 253 words
-  skills: Microsoft Excel, QuickBooks, Python, Financial Modeling, Accounting, Data Analysis
-  projects: Budget Tracker, Comparative Financial Model
-  background: As a recent finance graduate, I am eager to apply my academic knowledge in a practical fintech environment. During my final year, I completed an internship at a regional financial services startup where I worked on a team of three to support the accounting department. My responsibilities included re
+  id: resume_913 | level: middle | exp: 4.0 yrs | raw_text: 277 words
+  skills: Figma, Adobe XD, Prototyping, User Research, HTML, CSS, Design Systems, Accessibility
+  projects: FlowGuide, UserPulse
+  background: I started my career at a small tech startup as a product designer, where I focused on end-to-end UX research and interface design using Figma 98.0. During my two years there, I collaborated with a tight-knit team of five, iterating on our core e-commerce mobile app. I was responsible for conducting 
 
-  id: resume_911 | level: middle | exp: 4.0 yrs | raw_text: 289 words
-  skills: SQL, Python, Microsoft Excel, SAP, Financial Reporting, Revenue Recognition, Compliance, PostgreSQL
-  projects: RepoModel, Compliance Monitor
-  background: With four years of experience as a financial analyst in a high-growth fintech environment, I have developed deep expertise in financial reporting, revenue recognition, and regulatory compliance. At my previous enterprise-level firm, I managed a team of five and was responsible for the end-to-end pre
+  id: resume_914 | level: senior | exp: 7.0 yrs | raw_text: 269 words
+  skills: Figma, Framer, React, Design Systems, Leadership, Data Visualization, Accessibility, UX Research
+  projects: SystemCore, DataVizLab
+  background: With seven years of professional experience as a senior product designer and design lead, I have mastered the art of creating intuitive, high-performance digital products. My professional journey started at a high-growth fintech startup, where I spent three years on a team of eight. I was responsibl
 
-  id: resume_912 | level: middle | exp: 5.0 yrs | raw_text: 256 words
-  skills: SQL, Oracle NetSuite, Python, Microsoft Excel, Financial Modeling, Cash Flow Forecasting, VAT Reporting, Audit Compliance
-  projects: FlowAnalyzer, VAT Auto-Report
-  background: During my five-year career in fintech accounting, I have focused on building robust financial models and maintaining high-standard internal controls. Working within an agency-style fintech consultancy, I collaborated with a team of eight to provide outsourced financial reporting for diverse clients,
+  id: resume_915 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Figma, Protopie, React, UX Research, Micro-interactions, Data Analytics, Leadership, User-Centered Design
+  projects: InsightLab, ComponentNexus
+  background: Having accumulated eight years of dedicated experience in UX and UI design, I consider myself a specialist in product-led design and complex system interaction. During my tenure at a creative design agency for three years, I led a specialized UI group of fifteen designers. We utilized Figma and Prot
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_910 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Microsoft Excel, Accounting, Data Analysis
-  preferred_skills: Python, SQL
-  description: Our finance department is expanding, and we are looking for a dedicated Junior Financial Analyst to join our team of twelve. We operate in the fast-paced payments space, where precision and speed are critical to our financial reporting. In this entry
+  id: jd_913 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 227 words
+  required_skills: Figma, UI Design, Wireframing
+  preferred_skills: HTML, CSS
+  description: The product engineering department is looking for a passionate Junior UI/UX Designer to join our growing design team of eight. Our product serves as a core task management platform for small businesses, and we are constantly expanding our feature set
 
-  id: jd_911 | title: Senior Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 217 words
-  required_skills: Financial Modeling, Regulatory Compliance, SQL, SAP, Financial Reporting
-  preferred_skills: Machine Learning, Cloud Infrastructure
-  description: The finance team is seeking a strategic and technical Senior Financial Controller to lead our reporting and compliance initiatives. Our team of twenty manages high-volume transactions, requiring deep expertise in financial modeling, regulatory report
+  id: jd_914 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 225 words
+  required_skills: Figma, User Flows, Product Design
+  preferred_skills: Protopie, Data Visualization
+  description: Our design team is seeking a motivated Junior Product Designer to support our core platform engineering efforts. As part of a team of ten, you will be deeply involved in developing the interaction layer between our data-heavy backend and our user-fac
 
-  id: jd_912 | title: Lead Financial Engineer | level: senior | min_exp: 6 yrs | raw_text: 218 words
-  required_skills: Financial Modeling, Python, SQL, Oracle NetSuite, Data Architecture
-  preferred_skills: Automation, Tax Compliance
-  description: We are looking for a Lead Financial Engineer to architect and manage our automated financial reporting and modeling ecosystem. Our team of fifteen handles complex multi-currency transactions, and we need a leader who can bridge the gap between financ
+  id: jd_915 | title: Senior Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 215 words
+  required_skills: Figma, Design Systems, User Research, Interaction Design, Leadership
+  preferred_skills: Protopie, Framer
+  description: We are looking for a highly experienced Senior Product Design Lead to architect the next generation of our design ecosystem. Our team of fifteen engineers and designers manages critical interfaces serving high-volume, global traffic. In this role, yo
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2727 pairs total.
+Overall dataset so far: 2736 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  544  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  545  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  546  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  545  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  547  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  546  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  549  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  546  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  547  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  548  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2728   resume_910 × jd_910
-  pair_2729   resume_910 × jd_911
-  pair_2730   resume_910 × jd_912
-  pair_2731   resume_911 × jd_910
-  pair_2732   resume_911 × jd_911
-  pair_2733   resume_911 × jd_912
-  pair_2734   resume_912 × jd_910
-  pair_2735   resume_912 × jd_911
-  pair_2736   resume_912 × jd_912
+  pair_2737   resume_913 × jd_913
+  pair_2738   resume_913 × jd_914
+  pair_2739   resume_913 × jd_915
+  pair_2740   resume_914 × jd_913
+  pair_2741   resume_914 × jd_914
+  pair_2742   resume_914 × jd_915
+  pair_2743   resume_915 × jd_913
+  pair_2744   resume_915 × jd_914
+  pair_2745   resume_915 × jd_915
 
 ════════════════════════════════════
 OUTPUT FORMAT
