@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_961 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: Splunk, Elk Stack, Cisco Asa, Palo Alto, Nessus, Nmap, Python, Aws Security
-  projects: NetSecure Scan
-  background: As a cybersecurity professional with four years of hands-on experience, I have developed a strong foundation in network security and vulnerability management. Currently serving as a Security Analyst at a mid-sized agency, I work within a tight-knit team of six to monitor and defend critical network 
+  id: resume_964 | level: junior | exp: 0.5 yrs | raw_text: 256 words
+  skills: Microsoft Excel, Financial Reporting, Data Reconciliation, Sql
+  projects: Financial Health Monitor
+  background: I am a motivated finance graduate with a foundational understanding of accounting principles and financial analysis, currently seeking to launch my career in the fintech sector. During my undergraduate studies, I completed an internship at a local accounting agency where I supported a team of four i
 
-  id: resume_962 | level: senior | exp: 7.5 yrs | raw_text: 268 words
-  skills: Burp Suite, Metasploit, Cobalt Strike, Kali Linux, Splunk Es, Sentinel, Terraform, Aws Security Hub, Python, Go
-  projects: SecureArchitect
-  background: With over seven years of professional experience in enterprise-level cybersecurity, I specialize in penetration testing and sophisticated threat hunting. Currently, I hold the position of Lead Penetration Tester at a global technology enterprise where I oversee a team of ten security researchers. My
+  id: resume_965 | level: junior | exp: 0.2 yrs | raw_text: 252 words
+  skills: Quickbooks Online, Excel, Cash Flow Reporting, Data Entry
+  projects: Payment Streamline
+  background: As a recent finance graduate with a keen interest in the intersection of finance and technology, I am actively seeking an entry-level position that leverages my analytical skills. During my brief tenure as a financial assistant at a startup, I supported a team of three in managing daily cash flow re
 
-  id: resume_963 | level: senior | exp: 8.0 yrs | raw_text: 272 words
-  skills: Elastic Security, Splunk, Aws Iam, Azure Ad, Gcp Vpc, Fortinet, Check Point, Threat Hunting, Machine Learning
-  projects: ThreatIntelligenceHub
-  background: I am a senior information security professional with eight years of deep experience in network forensics, incident response, and security architecture design. Currently, I serve as a Principal Security Engineer at a large enterprise, managing a security operation center team of fifteen analysts acro
+  id: resume_966 | level: senior | exp: 8.5 yrs | raw_text: 254 words
+  skills: Oracle Netsuite, Sql Server, Python, Tableau, Financial Modeling, Regulatory Compliance, Financial Auditing
+  projects: RiskMitigate
+  background: I am a senior financial analyst with over eight years of experience in the fintech sector, specializing in financial modeling, regulatory compliance, and complex reporting structures. In my previous role as a Lead Financial Analyst at a mid-sized enterprise, I managed a team of twelve responsible fo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_961 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 223 words
-  required_skills: Splunk, Nessus, Cisco Firewalls, Network Security
-  preferred_skills: Python, Cloud Security
-  description: Our information security team is expanding and we are looking for a highly motivated Junior Information Security Analyst to join our team of four. The team is responsible for monitoring network traffic, responding to security alerts, and maintaining 
+  id: jd_964 | title: Financial Analyst | level: middle | min_exp: 3 yrs | raw_text: 203 words
+  required_skills: Excel, Financial Modeling, Sql, Financial Reporting
+  preferred_skills: Tableau, Regulatory Compliance
+  description: We are looking for a dedicated Financial Analyst to join our growing finance team. The team consists of five professionals focused on maintaining the integrity of our financial data and supporting our product expansion strategy. As we scale, your rol
 
-  id: jd_962 | title: Junior Cybersecurity Operations Engineer | level: junior | min_exp: 1 yrs | raw_text: 223 words
-  required_skills: Elk Stack, Palo Alto, Vulnerability Scanning, Network Security
-  preferred_skills: Python, Cloud Security
-  description: We are seeking a Junior Cybersecurity Operations Engineer to join our security operations team of five. Our team manages the security posture of the infrastructure supporting our core product services. You will be instrumental in the day-to-day monit
+  id: jd_965 | title: Senior Financial Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
+  required_skills: Python, Oracle Netsuite, Financial Modeling, Financial Auditing, Regulatory Compliance, Sql Server
+  preferred_skills: Machine Learning, Risk Management
+  description: Our finance division is seeking a Senior Financial Systems Architect to oversee the integration and optimization of our core financial systems. You will lead a high-performing team of eight analysts and engineers focused on building scalable financia
 
-  id: jd_963 | title: Senior Security Architect and Lead | level: senior | min_exp: 6 yrs | raw_text: 222 words
-  required_skills: Aws Security, Azure Security, Splunk Es, Elastic Security, Terraform, Python, Go, Penetration Testing
-  preferred_skills: Machine Learning, Security Strategy
-  description: Our team is seeking a highly skilled Senior Security Architect and Lead to define and drive our long-term information security strategy. As a member of a high-impact team of eight, you will be responsible for the end-to-end security design of our clo
+  id: jd_966 | title: Principal Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Oracle Netsuite, Financial Reporting, Python, Sql Server, Regulatory Compliance, Financial Auditing
+  preferred_skills: Tableau, Risk Management
+  description: We are seeking a Principal Financial Controller to take ownership of our financial operations and compliance framework. This role sits at the head of a twenty-person finance and accounting department. You will be responsible for ensuring our global f
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2880 pairs total.
+Overall dataset so far: 2889 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  576  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  576  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  574  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  577  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  577  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  576  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  577  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  578  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  579  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  579  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2881   resume_961 × jd_961
-  pair_2882   resume_961 × jd_962
-  pair_2883   resume_961 × jd_963
-  pair_2884   resume_962 × jd_961
-  pair_2885   resume_962 × jd_962
-  pair_2886   resume_962 × jd_963
-  pair_2887   resume_963 × jd_961
-  pair_2888   resume_963 × jd_962
-  pair_2889   resume_963 × jd_963
+  pair_2890   resume_964 × jd_964
+  pair_2891   resume_964 × jd_965
+  pair_2892   resume_964 × jd_966
+  pair_2893   resume_965 × jd_964
+  pair_2894   resume_965 × jd_965
+  pair_2895   resume_965 × jd_966
+  pair_2896   resume_966 × jd_964
+  pair_2897   resume_966 × jd_965
+  pair_2898   resume_966 × jd_966
 
 ════════════════════════════════════
 OUTPUT FORMAT
