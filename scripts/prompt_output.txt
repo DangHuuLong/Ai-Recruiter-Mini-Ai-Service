@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_943 | level: middle | exp: 4.0 yrs | raw_text: 284 words
-  skills: BPMN 2.0, Jira, SQL, SharePoint, Microsoft Power Automate, Requirements Gathering, Stakeholder Management
-  projects: Workflow Sentinel
-  background: I am a Business Analyst with four years of professional experience, focusing on requirements gathering, process optimization, and stakeholder management. In my current role at a mid-sized digital agency, I support a team of twelve developers and designers in delivering customer-facing web applicatio
+  id: resume_946 | level: junior | exp: 0.8 yrs | raw_text: 268 words
+  skills: Python, PyTorch, Transformers, Hugging Face, FastAPI, ChromaDB, Deep Learning
+  projects: SemanticSearchCore
+  background: I am a motivated AI Engineering graduate with one year of experience working as an intern at a mid-sized data startup. During my internship, which lasted for ten months and involved a team of five data scientists, I focused on fine-tuning pre-trained language models for classification tasks and auto
 
-  id: resume_944 | level: senior | exp: 7.5 yrs | raw_text: 255 words
-  skills: Sparx Enterprise Architect, Jira, Confluence, SQL, Tableau, Python, Power BI, Agile Methodologies
-  projects: Strategy Compass
-  background: With over seven years of experience in enterprise business analysis and project management, I have led cross-functional teams of up to thirty members in delivering complex software solutions. My recent tenure as a Principal Business Analyst at a large technology enterprise involved orchestrating the
+  id: resume_947 | level: junior | exp: 1.0 yrs | raw_text: 255 words
+  skills: Python, TensorFlow, Scikit-learn, Docker, OpenAI API, Prompt Engineering
+  projects: ChatFlowAssistant
+  background: I am an AI Engineering enthusiast with one year of professional experience gained through an intensive software apprenticeship at an enterprise software firm. In this role, I worked on a team of eight engineers to support the integration of conversational AI features into customer-facing application
 
-  id: resume_945 | level: senior | exp: 8.5 yrs | raw_text: 277 words
-  skills: BPMN 2.0, Visio, Jira, SQL, Microsoft Project, Requirements Lifecycle Management, Stakeholder Mediation
-  projects: Efficiency Matrix
-  background: I am an experienced Senior Business Analyst with eight years of expertise in project management and systemic process improvement within international enterprise environments. Currently, I lead a team of twenty-five professionals responsible for defining functional requirements and project scoping fo
+  id: resume_948 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Python, PyTorch, LangChain, Milvus, Pinecone, LLM Fine-tuning, Model Quantization, Multi-agent Systems
+  projects: NeuralPipelineSuite
+  background: I am a Senior AI and NLP Engineer with eight years of experience building and deploying state-of-the-art machine learning systems. Throughout my career at three different tech enterprises, I have led teams of up to fifteen engineers in developing scalable RAG architectures, large-scale transformer m
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_943 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Requirements Documentation, Jira, BPMN, Excel
-  preferred_skills: Agile Methodologies, Lucidchart
-  description: Our Business Analysis team is growing and we are seeking a Junior Business Analyst to join our team of fifteen. The team focuses on identifying business needs and translating them into clear, actionable requirements for our engineering department. In
+  id: jd_946 | title: AI Engineer | level: middle | min_exp: 3 yrs | raw_text: 212 words
+  required_skills: Python, PyTorch, LangChain, FastAPI, Vector Databases
+  preferred_skills: Docker, Kubernetes
+  description: Our AI infrastructure team is looking for a talented AI Engineer to join our growing group of twelve engineers. We focus on building internal tools to support generative AI applications and optimizing model performance for our core software products.
 
-  id: jd_944 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Jira, Confluence, Requirements Documentation, Excel
-  preferred_skills: Microsoft PowerPoint, Project Management
-  description: We are looking for an Associate Project Coordinator to support our project management office. Our team of eight manages project timelines, stakeholder communication, and delivery across various internal initiatives. We support a portfolio of projects
+  id: jd_947 | title: Senior NLP Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, PyTorch, Transformer Architectures, RAG, Pinecone, Fine-tuning
+  preferred_skills: Multi-agent Systems, Kubernetes
+  description: We are seeking an experienced Senior NLP Engineer to lead our conversational AI development. Our team of eight researchers and engineers is tasked with building sophisticated, domain-specific large language models and multi-agent systems to enhance o
 
-  id: jd_945 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: BPMN, Requirements Documentation, SQL, Jira, Confluence, Sparx Enterprise Architect
-  preferred_skills: Systems Architecture, Agile Methodologies
-  description: The Strategy and Operations team is searching for a Senior Business Systems Analyst to lead requirements gathering for our large-scale enterprise system platform. Our team of twenty consists of product managers, data analysts, and developers who work
+  id: jd_948 | title: Principal AI Scientist | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Python, PyTorch, Deep Learning, LLM Training, LangChain, Vector Databases
+  preferred_skills: Reinforcement Learning, Distributed Systems
+  description: Our Advanced AI Research group is seeking a Principal AI Scientist to drive innovation in our language understanding and generation capabilities. Our team of ten researchers focuses on cutting-edge problems in AI, including long-context window handli
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2826 pairs total.
+Overall dataset so far: 2835 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  564  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  567  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  564  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  565  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  566  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  564  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  568  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  568  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  567  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  568  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2827   resume_943 × jd_943
-  pair_2828   resume_943 × jd_944
-  pair_2829   resume_943 × jd_945
-  pair_2830   resume_944 × jd_943
-  pair_2831   resume_944 × jd_944
-  pair_2832   resume_944 × jd_945
-  pair_2833   resume_945 × jd_943
-  pair_2834   resume_945 × jd_944
-  pair_2835   resume_945 × jd_945
+  pair_2836   resume_946 × jd_946
+  pair_2837   resume_946 × jd_947
+  pair_2838   resume_946 × jd_948
+  pair_2839   resume_947 × jd_946
+  pair_2840   resume_947 × jd_947
+  pair_2841   resume_947 × jd_948
+  pair_2842   resume_948 × jd_946
+  pair_2843   resume_948 × jd_947
+  pair_2844   resume_948 × jd_948
 
 ════════════════════════════════════
 OUTPUT FORMAT
