@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1042 | level: middle | exp: 4.0 yrs | raw_text: 275 words
-  skills: React Native, JavaScript, Redux, REST APIs, Flutter, Dart, Git, Swift, CI/CD, UI Design
-  projects: FitSync
-  background: I am a highly competent Middle Mobile Application Developer with 4.0 years of professional industry experience specializing in cross-platform systems and hybrid interface layers. In my previous role at a mid-sized e-commerce startup, where I spent two and a half years working within an agile team of
+  id: resume_1045 | level: junior | exp: 0.5 yrs | raw_text: 270 words
+  skills: Python, Transformers, Scikit-Learn, Flask, SQLite, Hugging Face, Jupyter Notebooks, Data Processing
+  projects: DocuSummarizer
+  background: I am an enthusiastic Junior AI Developer and recent honors graduate with 0.5 years of industry experience completed during a focused engineering internship. At a fast-growing technology startup, I worked within an agile development squad of four machine learning practitioners where I supported the c
 
-  id: resume_1043 | level: middle | exp: 3.5 yrs | raw_text: 258 words
-  skills: Flutter, Dart, SQLite, Git, React Native, JavaScript, REST APIs, Kotlin, CI/CD
-  projects: GeoRoute
-  background: I am a seasoned Middle Mobile Engineer with 3.5 years of experience architecting hybrid application solutions and robust local data layers. In my first role at a dynamic software development startup, I operated within a collaborative team of five engineers for two full years, focusing on local persi
+  id: resume_1046 | level: junior | exp: 0.8 yrs | raw_text: 263 words
+  skills: LangChain, ChromaDB, FastAPI, Python, Embeddings, Hugging Face, NLP
+  projects: MedQuery
+  background: I am a dedicated Junior NLP Specialist and proactive technology professional with 0.8 years of hands-on experience working in a specialized research and development lab environment. During my time within this deep tech startup, I operated alongside five senior data scientists to maintain text proces
 
-  id: resume_1044 | level: senior | exp: 8.0 yrs | raw_text: 275 words
-  skills: Swift, Kotlin, React Native, CI/CD, CoreData, Objective-C, Jetpack Compose, JavaScript, Git, SQLite, UI Design
-  projects: CoreSecure
-  background: I am a distinguished Senior Mobile Systems Lead and Principal Engineer with 8.0 years of expert professional mastery designing and deploying high-security, native mobile ecosystems. In my current role at a massive fintech enterprise, I steer a high-performing department of eleven mobile engineers co
+  id: resume_1047 | level: senior | exp: 8.5 yrs | raw_text: 273 words
+  skills: Transformers, LangChain, RAG, Embeddings, Pinecone, Qdrant, PyTorch, Python, FastAPI, vLLM, AWS, PostgreSQL
+  projects: AgenticFlow
+  background: I am a pioneering Senior AI and NLP Systems Architect with 8.5 years of comprehensive mastery leading production-grade generative models and distributed intelligence frameworks. In my current enterprise role at a premier financial technology organization, I command a high-caliber team of ten machine
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1042 | title: Junior Cross-Platform App Developer | level: junior | min_exp: 1 yrs | raw_text: 183 words
-  required_skills: React Native, JavaScript, Redux, REST APIs, Git
-  preferred_skills: Swift, Kotlin, CI/CD
-  description: Our modern consumer products division is actively seeking a driven Junior Cross-Platform App Developer to expand our flagship communication software suite. In this role, you will become a central contributor within an agile product group consisting o
+  id: jd_1045 | title: Middle AI Content Engineer | level: middle | min_exp: 3 yrs | raw_text: 210 words
+  required_skills: Python, LangChain, ChromaDB, Embeddings, FastAPI
+  preferred_skills: Transformers, AWS, SQLite
+  description: Our digital content solutions division is actively seeking an analytical Middle AI Content Engineer to accelerate our automated metadata tagging and document ingestion systems. In this mid-level individual contributor role, you will operate within a 
 
-  id: jd_1043 | title: Junior Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: Flutter, Dart, SQLite, Git, UI Design
-  preferred_skills: Provider, Kotlin, Swift
-  description: Our localized enterprise tools department is looking for an analytical Junior Flutter Developer to build out our next-generation logistics tracking utilities. Operating within a collaborative engineering environment of six technical specialists, your
+  id: jd_1046 | title: Senior AI Knowledge Graphs & RAG Engineer | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: Transformers, LangChain, RAG, Embeddings, Pinecone, PyTorch, vLLM
+  preferred_skills: FastAPI, PostgreSQL, AWS
+  description: Our advanced platform architecture department is looking for an innovative Senior AI Knowledge Graphs & RAG Engineer to spearhead the evolution of our high-throughput contextual knowledge networks. Working as a lead technical engineer inside an elite
 
-  id: jd_1044 | title: Senior Native & Cross-Platform Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Swift, Kotlin, React Native, CI/CD, CoreData, Objective-C, Jetpack Compose
-  preferred_skills: SQLite, UI Design, JavaScript
-  description: Our core mobile infrastructure department is looking for a visionary Senior Native & Cross-Platform Mobile Architect to lead the structural redesign of our global financial transactions platform. Operating as a lead technical authority within an elit
+  id: jd_1047 | title: Lead Conversational AI Platforms Architect | level: senior | min_exp: 6 yrs | raw_text: 180 words
+  required_skills: Transformers, LangChain, RAG, Embeddings, Qdrant, PyTorch, FastAPI
+  preferred_skills: Python, PostgreSQL, AWS
+  description: Our core interactive platform division is searching for a visionary Lead Conversational AI Platforms Architect to drive the development of our automated transaction intelligence hubs. Operating as the primary architecture lead within a ten-person pro
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3123 pairs total.
+Overall dataset so far: 3132 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  625  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  624  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  626  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  625  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  626  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  626  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  628  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  627  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3124   resume_1042 × jd_1042
-  pair_3125   resume_1042 × jd_1043
-  pair_3126   resume_1042 × jd_1044
-  pair_3127   resume_1043 × jd_1042
-  pair_3128   resume_1043 × jd_1043
-  pair_3129   resume_1043 × jd_1044
-  pair_3130   resume_1044 × jd_1042
-  pair_3131   resume_1044 × jd_1043
-  pair_3132   resume_1044 × jd_1044
+  pair_3133   resume_1045 × jd_1045
+  pair_3134   resume_1045 × jd_1046
+  pair_3135   resume_1045 × jd_1047
+  pair_3136   resume_1046 × jd_1045
+  pair_3137   resume_1046 × jd_1046
+  pair_3138   resume_1046 × jd_1047
+  pair_3139   resume_1047 × jd_1045
+  pair_3140   resume_1047 × jd_1046
+  pair_3141   resume_1047 × jd_1047
 
 ════════════════════════════════════
 OUTPUT FORMAT
