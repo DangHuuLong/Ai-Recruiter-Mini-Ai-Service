@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_970 | level: junior | exp: 0.5 yrs | raw_text: 275 words
-  skills: React, Python, Fastapi, Postgresql, Redis, Html, Css, Javascript
-  projects: TaskFlow
-  background: I am a passionate software developer eager to launch my career in full-stack web development. I recently completed an intensive six-month internship as a Junior Web Developer at a local software startup, where I worked on a team of four to build responsive user interfaces and backend API endpoints. 
+  id: resume_973 | level: middle | exp: 4.0 yrs | raw_text: 262 words
+  skills: Product Management, Agile, Jira, Confluence, Data Analytics, Sql, Mixpanel
+  projects: MetricMaster
+  background: I am a product manager with four years of experience driving product strategy and lifecycle management in fast-paced technology environments. During my three-year tenure as a Product Manager at a mid-sized B2B SaaS startup, I managed a cross-functional team of eight engineers and two designers, focu
 
-  id: resume_971 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: React, Typescript, Python, Django, Postgresql, Docker, Kubernetes, D3.js
-  projects: DataPulse
-  background: As a Full-Stack Developer with four years of professional experience, I specialize in designing scalable web architectures using React and Python ecosystems. Currently, I serve as a Software Engineer at an enterprise-scale software firm, where I am a key contributor within a twenty-person developmen
+  id: resume_974 | level: senior | exp: 7.0 yrs | raw_text: 259 words
+  skills: Product Strategy, Agile, Asana, Tableau, Product Lifecycle Management, Stakeholder Management, User Research
+  projects: OptimizePath
+  background: With seven years of experience in product management, I specialize in scaling high-growth technology platforms and orchestrating complex cross-functional product roadmaps. In my current role as a Senior Product Manager at a large-scale consumer enterprise, I lead a team of twelve engineers and four 
 
-  id: resume_972 | level: middle | exp: 5.0 yrs | raw_text: 260 words
-  skills: React, Python, Flask, Postgresql, Aws, Docker, Git, Javascript
-  projects: FinTrack
-  background: I am an experienced Full-Stack Engineer with five years of professional practice in building dynamic, high-traffic web applications. At my current company, a medium-sized technology enterprise, I work within a diverse squad of ten engineers to maintain and extend our core customer-facing platform. M
+  id: resume_975 | level: senior | exp: 9.0 yrs | raw_text: 259 words
+  skills: Product Roadmap, Stakeholder Management, Agile, Productboard, Amplitude, Data-driven Decision Making
+  projects: StreamlineSprint
+  background: I am a Principal Product Manager with nine years of experience building and scaling enterprise-grade technology products through collaborative roadmap development. At my current enterprise software company, I oversee a portfolio of products managed by five distinct agile pods consisting of forty tot
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_970 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 213 words
-  required_skills: React, Python, Postgresql
-  preferred_skills: Git, Html, Css
-  description: Our web development team is looking for a Junior Web Developer to assist in building and maintaining our primary web applications. Our team consists of five engineers dedicated to crafting seamless user experiences and robust backend services for our
+  id: jd_973 | title: Junior Product Coordinator | level: junior | min_exp: 1 yrs | raw_text: 223 words
+  required_skills: Jira, Confluence, Agile, Product Roadmap
+  preferred_skills: Excel, Looker
+  description: Our product department is seeking an energetic Junior Product Coordinator to join a team of six working on our primary customer dashboard. This role involves assisting senior product managers with daily tasks, organizing research data, and maintainin
 
-  id: jd_971 | title: Senior Full-Stack Architect | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Python, Fastapi, React, Typescript, Postgresql, Kubernetes
-  preferred_skills: Redis, Distributed Systems
-  description: We are seeking a Senior Full-Stack Architect to lead the design and implementation of our next-generation web platforms. The team of twelve engineers is responsible for building high-scale, distributed web applications that serve our global user base
+  id: jd_974 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 218 words
+  required_skills: Product Management, Agile, User Stories, Stakeholder Management
+  preferred_skills: Data Analytics, SaaS Metrics
+  description: We are looking for an Associate Product Manager to join our growing product team of eight people dedicated to enhancing our SaaS engagement platform. This junior role is designed for someone who is ready to take ownership of specific product componen
 
-  id: jd_972 | title: Lead Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Python, Django, React, Kubernetes, Docker, Postgresql
-  preferred_skills: Aws, High-availability systems
-  description: Our product team is seeking a Lead Full-Stack Engineer to take ownership of our core product infrastructure. This role sits at the head of a ten-person department focused on building and scaling our flagship web application. You will be responsible f
+  id: jd_975 | title: Senior Product Lead | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  required_skills: Product Roadmap, Stakeholder Management, Data-driven Decision Making, Amplitude, Productboard
+  preferred_skills: Digital Transformation, Executive Leadership
+  description: We are seeking an experienced Senior Product Lead to oversee our core enterprise product line, managing a cross-functional department of twenty staff including product managers, data analysts, and design leads. This role is critical to shaping our gl
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2907 pairs total.
+Overall dataset so far: 2916 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  580  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  580  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  582  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  582  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  583  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  582  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  584  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  582  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  584  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  584  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2908   resume_970 × jd_970
-  pair_2909   resume_970 × jd_971
-  pair_2910   resume_970 × jd_972
-  pair_2911   resume_971 × jd_970
-  pair_2912   resume_971 × jd_971
-  pair_2913   resume_971 × jd_972
-  pair_2914   resume_972 × jd_970
-  pair_2915   resume_972 × jd_971
-  pair_2916   resume_972 × jd_972
+  pair_2917   resume_973 × jd_973
+  pair_2918   resume_973 × jd_974
+  pair_2919   resume_973 × jd_975
+  pair_2920   resume_974 × jd_973
+  pair_2921   resume_974 × jd_974
+  pair_2922   resume_974 × jd_975
+  pair_2923   resume_975 × jd_973
+  pair_2924   resume_975 × jd_974
+  pair_2925   resume_975 × jd_975
 
 ════════════════════════════════════
 OUTPUT FORMAT
