@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1186 | level: junior | exp: 0.5 yrs | raw_text: 273 words
-  skills: Docker, Kubernetes, Terraform, AWS, Bash, Python, GitLab
-  projects: CloudNode Manager
-  background: I am a passionate junior DevOps engineer and recent computer science graduate eager to jump into cloud infrastructure and automation. During my final year, I completed a rigorous six-month internship at a fast-paced fintech startup where I was part of a dynamic infrastructure team of four. My respon
+  id: resume_1189 | level: middle | exp: 4.0 yrs | raw_text: 272 words
+  skills: Splunk, Nessus, Metasploit, Firewalls, Python, ELK Stack
+  projects: AutoHardener
+  background: I am a dedicated cybersecurity analyst with four years of experience specializing in network defense and incident response. During my first two years at a mid-sized financial agency, I operated as a security operations center analyst within a team of six, where I managed real-time monitoring of ente
 
-  id: resume_1187 | level: middle | exp: 4.2 yrs | raw_text: 287 words
-  skills: AWS, Kubernetes, Terraform, Helm, Go, Docker, ELK Stack
-  projects: AutoScaler Pro
-  background: I am an experienced DevOps engineer with over four years of expertise in building scalable cloud infrastructures and optimizing CI/CD workflows for mid-sized technology companies. My first professional role was at an e-commerce agency where I spent twenty-four months within an operations team of ten
+  id: resume_1190 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: SIEM, DevSecOps, Okta, Snyk, Open Policy Agent, Cryptography
+  projects: SecureCloud Nexus
+  background: I am a seasoned lead information security engineer with eight years of experience architecting resilient security frameworks for large-scale enterprise environments. My career began at a global telecommunications corporation, where I spent forty-eight months in a security engineering squad of fiftee
 
-  id: resume_1188 | level: middle | exp: 4.8 yrs | raw_text: 283 words
-  skills: AWS, Terraform, Kubernetes, Python, GCP, Open Policy Agent, Calico
-  projects: SecurePipe
-  background: I am a dedicated cloud infrastructure engineer with nearly five years of professional experience specializing in site reliability engineering and automated infrastructure governance. During my first three years at a digital marketing agency, I managed a team of six responsible for the stability of c
+  id: resume_1191 | level: senior | exp: 7.0 yrs | raw_text: 280 words
+  skills: Penetration Testing, Burp Suite, SIEM, CrowdStrike, VMware NSX, Threat Hunting
+  projects: Project Ironclad
+  background: I am a principal cybersecurity specialist with seven years of experience delivering high-impact security solutions for complex, global infrastructure. During my initial three years at an enterprise cybersecurity consultancy, I led a specialized team of ten penetration testers conducting deep-dive au
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1186 | title: Junior Cloud Operations Engineer | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: AWS, Docker, Kubernetes, Terraform
-  preferred_skills: GitLab, Bash
-  description: Our cloud operations team is currently looking for an energetic Junior Cloud Operations Engineer to assist with the daily maintenance and automation of our growing cloud footprint. You will be joining a collaborative team of five engineers responsibl
+  id: jd_1189 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 220 words
+  required_skills: SIEM, Splunk, Nessus, Network Security
+  preferred_skills: Python, Bash
+  description: Our information security team is seeking a motivated Junior Information Security Analyst to join our collaborative unit of ten professionals. We are responsible for maintaining the security posture of our global application platform, ensuring data pr
 
-  id: jd_1187 | title: Senior Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
-  required_skills: AWS, Kubernetes, Terraform, Go, Open Policy Agent
-  preferred_skills: Istio, OpenTelemetry
-  description: Our platform engineering team is seeking a highly technical Senior Platform Architect to drive the evolution of our global cloud infrastructure and security governance. Working within a specialized group of twelve engineers, you will be responsible f
+  id: jd_1190 | title: Associate Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Endpoint Security, CrowdStrike, Firewalls, Nessus
+  preferred_skills: AWS, Scripting
+  description: We are looking for an Associate Security Engineer to join our growing security engineering team of eight. Our focus is on building secure infrastructure and protecting our internal data systems from evolving threats. As an Associate Security Engineer
 
-  id: jd_1188 | title: Lead SRE Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: AWS, Kubernetes, Terraform, Python, Performance Tuning
-  preferred_skills: Chaos Engineering, Prometheus
-  description: Our SRE group is searching for a visionary Lead SRE Engineer to take ownership of the reliability, performance, and scalability of our enterprise-scale platform. Collaborating alongside a cross-functional unit of fifteen software engineers, cloud arc
+  id: jd_1191 | title: Lead Security Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: SIEM, EDR, Threat Modeling, Network Security, Open Policy Agent
+  preferred_skills: DevSecOps, Cloud Security
+  description: Our information security division is searching for a highly strategic Lead Security Architect to oversee our global security infrastructure and enterprise-level risk mitigation strategy. Working alongside a cross-functional unit of fifteen security a
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3555 pairs total.
+Overall dataset so far: 3564 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  711  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  710  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  711  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  711  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  712  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  713  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  714  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  711  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  713  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  713  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3556   resume_1186 × jd_1186
-  pair_3557   resume_1186 × jd_1187
-  pair_3558   resume_1186 × jd_1188
-  pair_3559   resume_1187 × jd_1186
-  pair_3560   resume_1187 × jd_1187
-  pair_3561   resume_1187 × jd_1188
-  pair_3562   resume_1188 × jd_1186
-  pair_3563   resume_1188 × jd_1187
-  pair_3564   resume_1188 × jd_1188
+  pair_3565   resume_1189 × jd_1189
+  pair_3566   resume_1189 × jd_1190
+  pair_3567   resume_1189 × jd_1191
+  pair_3568   resume_1190 × jd_1189
+  pair_3569   resume_1190 × jd_1190
+  pair_3570   resume_1190 × jd_1191
+  pair_3571   resume_1191 × jd_1189
+  pair_3572   resume_1191 × jd_1190
+  pair_3573   resume_1191 × jd_1191
 
 ════════════════════════════════════
 OUTPUT FORMAT
