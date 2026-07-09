@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1039 | level: junior | exp: 0.5 yrs | raw_text: 274 words
-  skills: React Native, JavaScript, Redux Toolkit, Expo, Git, REST APIs, HTML5, CSS3
-  projects: TaskSprint
-  background: I am an enthusiastic Junior Mobile Developer and recent graduate with 0.5 years of industry experience through an intensive internship focused on hybrid application development. In my previous internship at an early-stage digital product agency, I operated within a compact development team of four p
+  id: resume_1042 | level: middle | exp: 4.0 yrs | raw_text: 275 words
+  skills: React Native, JavaScript, Redux, REST APIs, Flutter, Dart, Git, Swift, CI/CD, UI Design
+  projects: FitSync
+  background: I am a highly competent Middle Mobile Application Developer with 4.0 years of professional industry experience specializing in cross-platform systems and hybrid interface layers. In my previous role at a mid-sized e-commerce startup, where I spent two and a half years working within an agile team of
 
-  id: resume_1040 | level: junior | exp: 0.8 yrs | raw_text: 267 words
-  skills: Flutter, Dart, Provider, REST APIs, Git, SQL, JSON, UI Design
-  projects: EcoMap
-  background: I am a passionate Entry-Level Mobile App Developer with 0.8 years of technical history centered around open-source framework architectures and multi-platform layout optimization. During my graduation period, I worked as a Junior Application Developer at a specialized software agency where I sat in a
+  id: resume_1043 | level: middle | exp: 3.5 yrs | raw_text: 258 words
+  skills: Flutter, Dart, SQLite, Git, React Native, JavaScript, REST APIs, Kotlin, CI/CD
+  projects: GeoRoute
+  background: I am a seasoned Middle Mobile Engineer with 3.5 years of experience architecting hybrid application solutions and robust local data layers. In my first role at a dynamic software development startup, I operated within a collaborative team of five engineers for two full years, focusing on local persi
 
-  id: resume_1041 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: React Native, TypeScript, Swift, Kotlin, Redux-Saga, Bitrise, iOS Development, Android Development, Mobile Architecture, Fastlane, CoreData, Jetpack Compose
-  projects: SecureWallet
-  background: I am a Senior Mobile Engineering Lead and Principal Architect with 7.5 years of professional mastery building, optimizing, and deploying mission-critical mobile ecosystems. In my present tenure at a global fintech enterprise, I direct an elite engineering group of twelve mobile specialists comprisin
+  id: resume_1044 | level: senior | exp: 8.0 yrs | raw_text: 275 words
+  skills: Swift, Kotlin, React Native, CI/CD, CoreData, Objective-C, Jetpack Compose, JavaScript, Git, SQLite, UI Design
+  projects: CoreSecure
+  background: I am a distinguished Senior Mobile Systems Lead and Principal Engineer with 8.0 years of expert professional mastery designing and deploying high-security, native mobile ecosystems. In my current role at a massive fintech enterprise, I steer a high-performing department of eleven mobile engineers co
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1039 | title: Mid-Level Mobile Systems Engineer | level: middle | min_exp: 3 yrs | raw_text: 195 words
-  required_skills: React Native, TypeScript, Redux Toolkit, REST APIs
-  preferred_skills: Swift, Kotlin, Fastlane
-  description: Our core product platform department is looking for a productive Mid-Level Mobile Systems Engineer to elevate our global consumer communications product suite. In this role, you will be deeply integrated into an agile product development group of eig
+  id: jd_1042 | title: Junior Cross-Platform App Developer | level: junior | min_exp: 1 yrs | raw_text: 183 words
+  required_skills: React Native, JavaScript, Redux, REST APIs, Git
+  preferred_skills: Swift, Kotlin, CI/CD
+  description: Our modern consumer products division is actively seeking a driven Junior Cross-Platform App Developer to expand our flagship communication software suite. In this role, you will become a central contributor within an agile product group consisting o
 
-  id: jd_1040 | title: Senior Native iOS & Cross-Platform Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: React Native, Swift, TypeScript, Bitrise, iOS Development, Mobile Architecture
-  preferred_skills: Kotlin, CoreData, Fastlane
-  description: Our premium financial services division is looking for an experienced Senior Native iOS & Cross-Platform Lead to direct the design of our next-generation asset investment systems. Operating inside a high-intensity product development unit of ten seni
+  id: jd_1043 | title: Junior Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 191 words
+  required_skills: Flutter, Dart, SQLite, Git, UI Design
+  preferred_skills: Provider, Kotlin, Swift
+  description: Our localized enterprise tools department is looking for an analytical Junior Flutter Developer to build out our next-generation logistics tracking utilities. Operating within a collaborative engineering environment of six technical specialists, your
 
-  id: jd_1041 | title: Senior Android & Cross-Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: React Native, Kotlin, TypeScript, Redux-Saga, Android Development, Mobile Architecture
-  preferred_skills: Swift, Jetpack Compose, Bitrise
-  description: Our distributed mobile infrastructure group is actively seeking a visionary Senior Android & Cross-Platform Architect to lead the modernization of our enterprise logistics applications. Working as a premier technical specialist within an engineering 
+  id: jd_1044 | title: Senior Native & Cross-Platform Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 186 words
+  required_skills: Swift, Kotlin, React Native, CI/CD, CoreData, Objective-C, Jetpack Compose
+  preferred_skills: SQLite, UI Design, JavaScript
+  description: Our core mobile infrastructure department is looking for a visionary Senior Native & Cross-Platform Mobile Architect to lead the structural redesign of our global financial transactions platform. Operating as a lead technical authority within an elit
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3114 pairs total.
+Overall dataset so far: 3123 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  621  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  622  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  624  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  623  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  625  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  624  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  626  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3115   resume_1039 × jd_1039
-  pair_3116   resume_1039 × jd_1040
-  pair_3117   resume_1039 × jd_1041
-  pair_3118   resume_1040 × jd_1039
-  pair_3119   resume_1040 × jd_1040
-  pair_3120   resume_1040 × jd_1041
-  pair_3121   resume_1041 × jd_1039
-  pair_3122   resume_1041 × jd_1040
-  pair_3123   resume_1041 × jd_1041
+  pair_3124   resume_1042 × jd_1042
+  pair_3125   resume_1042 × jd_1043
+  pair_3126   resume_1042 × jd_1044
+  pair_3127   resume_1043 × jd_1042
+  pair_3128   resume_1043 × jd_1043
+  pair_3129   resume_1043 × jd_1044
+  pair_3130   resume_1044 × jd_1042
+  pair_3131   resume_1044 × jd_1043
+  pair_3132   resume_1044 × jd_1044
 
 ════════════════════════════════════
 OUTPUT FORMAT
