@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1033 | level: junior | exp: 0.5 yrs | raw_text: 262 words
-  skills: Microsoft Visio, Jira, UML, Requirements Documentation, Draw.io, SQL
-  projects: ProcureTrack
-  background: As a motivated Junior Business Analyst and fresh graduate with 0.5 years of internship experience, I am passionate about optimizing software systems and workflow lifecycles. During my six-month academic internship at a mid-sized digital transformation agency, I operated within an agile scrum product
+  id: resume_1036 | level: middle | exp: 3.5 yrs | raw_text: 259 words
+  skills: Python, Hugging Face Transformers, LangChain, ChromaDB, OpenAI API, Embeddings, Vector Databases, BERT, AWS ECS, FastAPI
+  projects: DocuMind
+  background: I am a dedicated NLP and Machine Learning Engineer with 3.5 years of professional experience specializing in building production-ready language model pipelines and intelligent retrieval systems. In my previous role at an agile Artificial Intelligence software startup, I spent three years working ins
 
-  id: resume_1034 | level: junior | exp: 0.8 yrs | raw_text: 260 words
-  skills: Trello, Confluence, Project Documentation, User Acceptance Testing, Scope Management
-  projects: TaskSync
-  background: I am an enthusiastic Junior Project Coordinator and Business Assistant with 0.8 years of hands-on experience supporting technical workflows and coordinating stakeholder communication. Working at an early-stage e-commerce startup specializing in consumer goods, I collaborated directly within a compac
+  id: resume_1037 | level: senior | exp: 7.0 yrs | raw_text: 251 words
+  skills: Hugging Face Transformers, LangChain, LlamaIndex, Milvus, Qdrant, Embeddings, RAG, Kubernetes, Python, spaCy, Cross-Encoders
+  projects: FinQuery
+  background: I am a Senior AI Engineer and Technical Lead with 7.0 years of experience designing, architecting, and deploying complex Natural Language Processing systems and enterprise-scale generative AI infrastructures. At my current technology enterprise, where I lead a cross-functional group of ten data scie
 
-  id: resume_1035 | level: senior | exp: 7.5 yrs | raw_text: 280 words
-  skills: BPMN 2.0, Jira Align, Signavio, Enterprise Architect, Requirements Traceability, Stakeholder Management, Lean Six Sigma, SQL, Data Modeling
-  projects: FinCoreFlow
-  background: I am a senior Business Analysis Principal and Lead Enterprise Project Manager with over 7.5 years of professional experience driving digital transformation, process automation, and strategic alignment across large distributed ecosystems. In my most recent position at a Tier-1 financial technology en
+  id: resume_1038 | level: senior | exp: 8.5 yrs | raw_text: 255 words
+  skills: PyTorch, Hugging Face Transformers, LangChain, LlamaIndex, Pinecone, Embeddings, RAG, Vector Databases, Python, TensorRT-LLM, vLLM
+  projects: KnowledgeGraphRAG
+  background: I am an Enterprise AI Architect and Senior Engineering Specialist with 8.5 years of professional background dedicated to advanced machine learning, neural information retrieval, and large-scale natural language processing. In my most recent role within a global technology enterprise, I operate as th
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1033 | title: Business Analyst (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 191 words
-  required_skills: Microsoft Visio, Jira, Confluence, UML, Requirements Documentation
-  preferred_skills: SQL, User Acceptance Testing
-  description: Our operational optimization department is searching for a dedicated Mid-Level Business Analyst to join our expanding internal systems team. Working inside a collaborative corporate unit of eight professionals, you will partner directly with senior e
+  id: jd_1036 | title: Junior AI & NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 196 words
+  required_skills: Python, Hugging Face Transformers, LangChain, ChromaDB, Embeddings
+  preferred_skills: FastAPI, Vector Databases
+  description: Our core language technology group is actively looking for an enthusiastic Junior AI & NLP Engineer to join our growing engineering department. In this role, you will be embedded within a highly collaborative development team of eight professionals i
 
-  id: jd_1034 | title: Senior Enterprise Systems Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: BPMN 2.0, Signavio, Requirements Traceability, Stakeholder Management
-  preferred_skills: Enterprise Architect, Jira Align, Lean Six Sigma
-  description: Our enterprise architecture business unit is seeking an exceptional Senior Enterprise Systems Business Analyst to pioneer the modernization of our core operational platforms. In this senior individual contributor and advisory role, you will be embedd
+  id: jd_1037 | title: Associate Generative AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 180 words
+  required_skills: Python, LangChain, Embeddings, Hugging Face Transformers, ChromaDB
+  preferred_skills: Pinecone, Vector Databases
+  description: Our digital innovation laboratory is seeking an Associate Generative AI Engineer to accelerate the expansion of our smart automation software suites. Working closely inside an agile product delivery team of seven technical specialists, you will help 
 
-  id: jd_1035 | title: Lead Technical Project Manager | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: Jira Align, Lean Six Sigma, Data Modeling, Project Management
-  preferred_skills: SQL, Requirements Traceability
-  description: Our strategic software infrastructure group is looking for a Lead Technical Project Manager to orchestrate the lifecycle of our next-generation data streaming frameworks. Leading a cross-functional task force of nine senior software engineers, QA spe
+  id: jd_1038 | title: Senior AI Platforms & RAG Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Hugging Face Transformers, LangChain, LlamaIndex, Embeddings, RAG, Vector Databases
+  preferred_skills: Milvus, Qdrant, Pinecone, Kubernetes, vLLM, TensorRT-LLM
+  description: Our advanced software infrastructure business unit is searching for a Senior AI Platforms & RAG Architect to lead the modernization of our global information intelligence networks. In this high-impact individual contributor and technical advisory rol
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3096 pairs total.
+Overall dataset so far: 3105 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  617  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  619  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  620  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  620  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  620  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  621  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  621  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  620  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  621  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  622  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3097   resume_1033 × jd_1033
-  pair_3098   resume_1033 × jd_1034
-  pair_3099   resume_1033 × jd_1035
-  pair_3100   resume_1034 × jd_1033
-  pair_3101   resume_1034 × jd_1034
-  pair_3102   resume_1034 × jd_1035
-  pair_3103   resume_1035 × jd_1033
-  pair_3104   resume_1035 × jd_1034
-  pair_3105   resume_1035 × jd_1035
+  pair_3106   resume_1036 × jd_1036
+  pair_3107   resume_1036 × jd_1037
+  pair_3108   resume_1036 × jd_1038
+  pair_3109   resume_1037 × jd_1036
+  pair_3110   resume_1037 × jd_1037
+  pair_3111   resume_1037 × jd_1038
+  pair_3112   resume_1038 × jd_1036
+  pair_3113   resume_1038 × jd_1037
+  pair_3114   resume_1038 × jd_1038
 
 ════════════════════════════════════
 OUTPUT FORMAT
