@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1084 | level: middle | exp: 4.0 yrs | raw_text: 252 words
-  skills: PostgreSQL, Redis, MongoDB, SQL, Python
-  projects: Data-Shard-Automation, NoSQL-Migrator
-  background: I am a dedicated Database Engineer with four years of experience specializing in high-performance data architecture. In my previous role at a fast-paced logistics startup, I worked on a team of six to maintain our core database systems. My primary responsibilities involved managing PostgreSQL 14 clu
+  id: resume_1087 | level: junior | exp: 0.5 yrs | raw_text: 280 words
+  skills: Jira, Excel, Lucidchart, Requirements Gathering
+  projects: Student-Portal-Refactor
+  background: I am a motivated Business Analysis graduate seeking to launch my professional career in requirements engineering and stakeholder management. During my final year at university, I completed a six-month internship at a local digital agency, where I supported a team of three in gathering functional req
 
-  id: resume_1085 | level: senior | exp: 7.0 yrs | raw_text: 256 words
-  skills: PostgreSQL, MongoDB, Redis, Kafka, AWS, System Architecture
-  projects: Global-Data-Synchronizer, Query-Optimizer-Pro
-  background: As a Senior Database Architect with seven years of experience, I excel in designing resilient, large-scale data environments for enterprise organizations. In my current position as a Tech Lead at a prominent fintech firm, I manage a team of twelve engineers responsible for our entire data persistenc
+  id: resume_1088 | level: junior | exp: 0.3 yrs | raw_text: 257 words
+  skills: Trello, Microsoft Visio, Task Coordination
+  projects: Community-Garden-Scheduler
+  background: I am an aspiring project management professional with a strong interest in business process optimization and stakeholder alignment. Recently, I completed a brief tenure as a Junior Project Coordinator at a fast-growing startup, where I supported a team of four in tracking project milestones and mana
 
-  id: resume_1086 | level: senior | exp: 8.0 yrs | raw_text: 264 words
-  skills: PostgreSQL, MongoDB, Redis, Distributed Systems, Data Modeling
-  projects: Scalable-Store-Architect, Performance-Sentinel
-  background: I am a Principal Database Engineer with eight years of deep technical experience in high-concurrency database systems. Currently, I hold a principal role at a major global e-commerce enterprise, where I oversee the architectural strategy for our data layer, supporting a team of fifteen engineers. My
+  id: resume_1089 | level: senior | exp: 8.0 yrs | raw_text: 263 words
+  skills: BPMN 2.0, Jira, Confluence, MS Project, Power BI, Requirements Elicitation
+  projects: Global-Integration-Dashboard, Legacy-System-Migration
+  background: I am a Senior Business Analyst and Project Lead with eight years of extensive experience delivering large-scale enterprise solutions. In my current role at a multinational consultancy firm, I lead a team of fifteen, overseeing the full business analysis lifecycle for complex financial platforms. My 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1084 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 214 words
-  required_skills: SQL, PostgreSQL, MongoDB
-  preferred_skills: Redis, Cloud Database Services
-  description: Our data engineering team of four is looking for a Junior Database Engineer to help maintain our expanding data infrastructure. We focus on building scalable systems for internal analytics and customer-facing products. As a junior engineer, your resp
+  id: jd_1087 | title: Mid-Level Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 205 words
+  required_skills: BPMN 2.0, Jira, Confluence, Requirements Analysis
+  preferred_skills: SQL, Project Management
+  description: Our dynamic product team of twelve is looking for an experienced Mid-Level Business Analyst to join us in defining and implementing product enhancements for our core enterprise SaaS platform. You will serve as the primary interface between business s
 
-  id: jd_1085 | title: Associate Database Administrator | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: SQL, PostgreSQL, MongoDB
-  preferred_skills: Redis, Automation
-  description: We are expanding our data team of five and seeking an Associate Database Administrator to help manage our diverse database environment. The focus of this role is on routine operational maintenance and performance oversight of our primary database sys
+  id: jd_1088 | title: Senior Project Manager | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: MS Project, Confluence, Risk Management, Project Governance
+  preferred_skills: Predictive Analytics, Stakeholder Management
+  description: Our organization is seeking a Senior Project Manager to lead our strategic initiatives and manage complex project portfolios across our engineering division. The team consists of twenty-five high-performing professionals dedicated to delivering large
 
-  id: jd_1086 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
-  required_skills: PostgreSQL, MongoDB, Redis, Distributed Systems, Data Modeling
-  preferred_skills: Event-Driven Architecture, Cloud Architecture
-  description: Our engineering organization is looking for a Senior Database Architect to lead our data infrastructure strategy. With a team of twenty engineers, we handle mission-critical systems that require extremely high performance, global scalability, and fau
+  id: jd_1089 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 213 words
+  required_skills: BPMN 2.0, Jira, Confluence, System Integration
+  preferred_skills: Data Modeling, Cloud Architecture
+  description: We are looking for a Senior Business Systems Analyst to spearhead our complex system integration projects and enterprise-level process automation efforts. Working alongside a team of twenty experts, you will bridge the gap between complex business pr
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3249 pairs total.
+Overall dataset so far: 3258 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  649  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  651  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  648  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  651  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  650  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  649  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  652  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  652  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  653  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  652  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3250   resume_1084 × jd_1084
-  pair_3251   resume_1084 × jd_1085
-  pair_3252   resume_1084 × jd_1086
-  pair_3253   resume_1085 × jd_1084
-  pair_3254   resume_1085 × jd_1085
-  pair_3255   resume_1085 × jd_1086
-  pair_3256   resume_1086 × jd_1084
-  pair_3257   resume_1086 × jd_1085
-  pair_3258   resume_1086 × jd_1086
+  pair_3259   resume_1087 × jd_1087
+  pair_3260   resume_1087 × jd_1088
+  pair_3261   resume_1087 × jd_1089
+  pair_3262   resume_1088 × jd_1087
+  pair_3263   resume_1088 × jd_1088
+  pair_3264   resume_1088 × jd_1089
+  pair_3265   resume_1089 × jd_1087
+  pair_3266   resume_1089 × jd_1088
+  pair_3267   resume_1089 × jd_1089
 
 ════════════════════════════════════
 OUTPUT FORMAT
