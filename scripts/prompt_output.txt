@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1189 | level: middle | exp: 4.0 yrs | raw_text: 272 words
-  skills: Splunk, Nessus, Metasploit, Firewalls, Python, ELK Stack
-  projects: AutoHardener
-  background: I am a dedicated cybersecurity analyst with four years of experience specializing in network defense and incident response. During my first two years at a mid-sized financial agency, I operated as a security operations center analyst within a team of six, where I managed real-time monitoring of ente
+  id: resume_1192 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: JavaScript, React, Python, Flask, HTML5, CSS3, Git
+  projects: TaskMaster
+  background: I am a motivated junior full-stack developer with a foundational understanding of web technologies and a strong passion for building interactive user interfaces. During my six-month internship at a small web development agency, I worked within a team of four to build responsive customer portals. My 
 
-  id: resume_1190 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: SIEM, DevSecOps, Okta, Snyk, Open Policy Agent, Cryptography
-  projects: SecureCloud Nexus
-  background: I am a seasoned lead information security engineer with eight years of experience architecting resilient security frameworks for large-scale enterprise environments. My career began at a global telecommunications corporation, where I spent forty-eight months in a security engineering squad of fiftee
+  id: resume_1193 | level: junior | exp: 0.7 yrs | raw_text: 254 words
+  skills: JavaScript, React, Tailwind CSS, Python, Django, PostgreSQL
+  projects: BudgetBuddy
+  background: I am a passionate entry-level software engineer with a primary focus on frontend development and basic backend API integration. Throughout my eight-month tenure at a tech-focused startup, I worked alongside a team of six developers to design and implement client-side features for a social networking
 
-  id: resume_1191 | level: senior | exp: 7.0 yrs | raw_text: 280 words
-  skills: Penetration Testing, Burp Suite, SIEM, CrowdStrike, VMware NSX, Threat Hunting
-  projects: Project Ironclad
-  background: I am a principal cybersecurity specialist with seven years of experience delivering high-impact security solutions for complex, global infrastructure. During my initial three years at an enterprise cybersecurity consultancy, I led a specialized team of ten penetration testers conducting deep-dive au
+  id: resume_1194 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: Python, FastAPI, React, TypeScript, PostgreSQL, AWS, Docker, Kubernetes, Terraform
+  projects: ScalerStream
+  background: I am a senior full-stack engineer with eight years of experience designing and scaling complex web applications for high-growth enterprise organizations. At a major technology enterprise, I served as a Technical Lead for four years, managing a cross-functional team of twelve engineers responsible fo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1189 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: SIEM, Splunk, Nessus, Network Security
-  preferred_skills: Python, Bash
-  description: Our information security team is seeking a motivated Junior Information Security Analyst to join our collaborative unit of ten professionals. We are responsible for maintaining the security posture of our global application platform, ensuring data pr
+  id: jd_1192 | title: Mid-Level Full-Stack Developer | level: middle | min_exp: 3 yrs | raw_text: 210 words
+  required_skills: Python, Django, React, TypeScript, PostgreSQL
+  preferred_skills: AWS, Docker
+  description: Our web engineering department is seeking a Mid-Level Full-Stack Developer to join our product team of fifteen professionals. We are responsible for building and maintaining our flagship client portal, which handles critical financial data for our us
 
-  id: jd_1190 | title: Associate Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: Endpoint Security, CrowdStrike, Firewalls, Nessus
-  preferred_skills: AWS, Scripting
-  description: We are looking for an Associate Security Engineer to join our growing security engineering team of eight. Our focus is on building secure infrastructure and protecting our internal data systems from evolving threats. As an Associate Security Engineer
+  id: jd_1193 | title: Senior Software Architect | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, Kubernetes, AWS
+  preferred_skills: Terraform, Distributed Systems
+  description: Our platform engineering team is seeking a Senior Software Architect to lead the design and implementation of our next-generation enterprise-scale web architecture. Working in a specialized team of ten, you will guide our technical strategy, ensuring
 
-  id: jd_1191 | title: Lead Security Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: SIEM, EDR, Threat Modeling, Network Security, Open Policy Agent
-  preferred_skills: DevSecOps, Cloud Security
-  description: Our information security division is searching for a highly strategic Lead Security Architect to oversee our global security infrastructure and enterprise-level risk mitigation strategy. Working alongside a cross-functional unit of fifteen security a
+  id: jd_1194 | title: Lead Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: Python, FastAPI, React, TypeScript, PostgreSQL, Kubernetes, AWS
+  preferred_skills: Terraform, Performance Tuning
+  description: Our core product team is hiring a Lead Full-Stack Engineer to drive the delivery of our enterprise platform. You will lead a high-performing squad of fifteen engineers, steering the development of high-scale web features that serve millions of daily 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3564 pairs total.
+Overall dataset so far: 3573 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  713  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  714  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  711  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  713  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  713  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  713  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  715  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  715  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  715  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  715  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3565   resume_1189 × jd_1189
-  pair_3566   resume_1189 × jd_1190
-  pair_3567   resume_1189 × jd_1191
-  pair_3568   resume_1190 × jd_1189
-  pair_3569   resume_1190 × jd_1190
-  pair_3570   resume_1190 × jd_1191
-  pair_3571   resume_1191 × jd_1189
-  pair_3572   resume_1191 × jd_1190
-  pair_3573   resume_1191 × jd_1191
+  pair_3574   resume_1192 × jd_1192
+  pair_3575   resume_1192 × jd_1193
+  pair_3576   resume_1192 × jd_1194
+  pair_3577   resume_1193 × jd_1192
+  pair_3578   resume_1193 × jd_1193
+  pair_3579   resume_1193 × jd_1194
+  pair_3580   resume_1194 × jd_1192
+  pair_3581   resume_1194 × jd_1193
+  pair_3582   resume_1194 × jd_1194
 
 ════════════════════════════════════
 OUTPUT FORMAT
