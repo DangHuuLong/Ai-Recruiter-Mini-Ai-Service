@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1162 | level: middle | exp: 4.0 yrs | raw_text: 302 words
-  skills: Product Roadmap, Agile, Jira, Stakeholders, Confluence, Amplitude, SQL, Tableau
-  projects: Project MapOptimize, Project FeedbackLoop
-  background: I am an analytical and delivery-focused Product Manager with four years of continuous enterprise experience leading cross-functional squads to scale digital platforms. In my current role at a high-growth e-commerce enterprise, where I have worked for the past twenty-eight months, I guide a dedicated
+  id: resume_1165 | level: junior | exp: 0.5 yrs | raw_text: 281 words
+  skills: HTML5, CSS3, JavaScript, Python, Flask, Git, SQLite
+  projects: Project Portfolio Hub, Project MicroBlog
+  background: I am a passionate entry-level software engineer with a strong foundation in foundational web technologies and modern programming principles. Recently, I completed a six-month internship at a local technology startup within a dynamic four-person development team. During this tenure, my primary focus 
 
-  id: resume_1163 | level: senior | exp: 7.0 yrs | raw_text: 294 words
-  skills: Product Roadmap, Agile, Stakeholders, Jira, Miro, Mixpanel, SQL, Looker
-  projects: Project CloudScale
-  background: I am a strategic and highly technical Senior Product Manager with over seven years of professional experience spearheading complex digital initiatives across global financial enterprises and digital agencies. For the past three years, I have served as a Senior Product Lead within a prominent cloud i
+  id: resume_1166 | level: junior | exp: 0.7 yrs | raw_text: 259 words
+  skills: React, Tailwind CSS, JavaScript, Python, PostgreSQL
+  projects: Project TaskFlow, Project RecipeDB
+  background: I am a motivated junior developer eager to build highly interactive and maintainable client-side user interfaces backed by structured data processing layers. For the past eight months, I functioned as a Junior Web Engineering Intern at a boutique digital software agency, operating in a tightly integ
 
-  id: resume_1164 | level: senior | exp: 8.0 yrs | raw_text: 272 words
-  skills: Product Roadmap, Agile, Stakeholders, Jira, Confluence, Miro, Mixpanel, SQL, Looker
-  projects: Project TelemetryHub
-  background: I am a senior technical Product Manager and Principal Product Owner with eight years of extensive leadership experience architecting high-throughput data products and user-centric software applications within enterprise software ecosystems and digital agencies. Currently, I lead the core platform gr
+  id: resume_1167 | level: senior | exp: 8.0 yrs | raw_text: 276 words
+  skills: Python, FastAPI, Django, React, Redux Toolkit, PostgreSQL, Redis, Docker, AWS ECS, CI/CD
+  projects: Project DataVibe
+  background: I am an enterprise-grade Senior Full-Stack Engineer and Tech Lead with over eight years of experience architecture-level software designing and shipping high-concurrency cloud applications. In my current role at a multinational financial enterprise, where I have directed a multi-functional team of e
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1162 | title: Associate Product Manager | level: junior | min_exp: 1 yrs | raw_text: 217 words
-  required_skills: Product Roadmap, Agile, Jira, Confluence, Amplitude, SQL
-  preferred_skills: Mixpanel
-  description: Our core application delivery division is expanding its growth team, and we are looking for an enthusiastic, structured, and highly collaborative Associate Product Manager to join our fast-paced product department. In this entry-level role, you will 
+  id: jd_1165 | title: Senior Full-Stack Engineer (FastAPI & Redux) | level: senior | min_exp: 6 yrs | raw_text: 197 words
+  required_skills: Python, FastAPI, React, Redux Toolkit, PostgreSQL, Docker, AWS ECS
+  preferred_skills: Redis
+  description: Our core infrastructure development division is looking for an analytical and deeply specialized Senior Full-Stack Engineer to architect our next-generation distributed data processing dashboard. In this senior leadership role, you will join an engin
 
-  id: jd_1163 | title: Junior Product Owner | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Agile, Jira, Miro, Tableau, Stakeholders
-  preferred_skills: Looker
-  description: Our internal platform operations department is seeking an analytical, detail-oriented Junior Product Owner to help drive the execution of our internal automated data toolsets. The selected candidate will join an established agile team of eight specia
+  id: jd_1166 | title: Lead Full-Stack Web Developer (Django) | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  required_skills: Python, Django, React, Redux Toolkit, Docker, CI/CD
+  preferred_skills: Redis
+  description: Our transactional software group is looking for an exceptional, hands-on Lead Full-Stack Web Developer to direct the technical revitalization of our core enterprise application layer. Leading an agile squad of nine developers and UI/UX designers, you
 
-  id: jd_1164 | title: Product Manager - Platform Optimization | level: middle | min_exp: 3 yrs | raw_text: 189 words
-  required_skills: Product Roadmap, Agile, Stakeholders, Jira, Confluence, Mixpanel, Amplitude, SQL
-  preferred_skills: Looker, Tableau
-  description: Our core infrastructure and data analytics group is looking for an analytical, communicative mid-level Product Manager to optimize feature lifecycles within our core platform team. In this individual contributor role, you will directly lead a cross-f
+  id: jd_1167 | title: Principal Engineer - Python & React | level: senior | min_exp: 6 yrs | raw_text: 184 words
+  required_skills: Python, FastAPI, Django, React, Redux Toolkit, PostgreSQL, WebSockets, Docker, CI/CD
+  preferred_skills: Redis, AWS ECS
+  description: Our cloud optimization group is seeking a brilliant, highly strategic Principal Engineer to champion the scalability and performance architecture of our web-based cloud metrics platforms. Operating within a high-caliber cluster of twelve engineers, d
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3483 pairs total.
+Overall dataset so far: 3492 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  694  →  expected this batch: 0 pairs (from seniority gaps below)
+  poor_match            existing:  694  →  expected this batch: 6 pairs (from seniority gaps below)
   weak_match            existing:  700  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  695  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  696  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  698  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  699  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  700  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  699  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3484   resume_1162 × jd_1162
-  pair_3485   resume_1162 × jd_1163
-  pair_3486   resume_1162 × jd_1164
-  pair_3487   resume_1163 × jd_1162
-  pair_3488   resume_1163 × jd_1163
-  pair_3489   resume_1163 × jd_1164
-  pair_3490   resume_1164 × jd_1162
-  pair_3491   resume_1164 × jd_1163
-  pair_3492   resume_1164 × jd_1164
+  pair_3493   resume_1165 × jd_1165
+  pair_3494   resume_1165 × jd_1166
+  pair_3495   resume_1165 × jd_1167
+  pair_3496   resume_1166 × jd_1165
+  pair_3497   resume_1166 × jd_1166
+  pair_3498   resume_1166 × jd_1167
+  pair_3499   resume_1167 × jd_1165
+  pair_3500   resume_1167 × jd_1166
+  pair_3501   resume_1167 × jd_1167
 
 ════════════════════════════════════
 OUTPUT FORMAT
