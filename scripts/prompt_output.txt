@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1000 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: BPMN, Jira, Confluence, SQL, Requirement Elicitation
-  projects: RequirementTracker
-  background: I am a dedicated Business Analyst with four years of experience driving process improvements and requirement gathering in fast-paced environments. My career began at a mid-sized digital agency where I supported a team of ten in delivering web projects for retail clients. I was responsible for docume
+  id: resume_1003 | level: junior | exp: 0.5 yrs | raw_text: 263 words
+  skills: Trello, Google Sheets, Draw.io, BPMN
+  projects: CampusNavigation
+  background: I am a recent graduate eager to start my career as an Associate Business Analyst. During my final year at university, I completed a six-month internship at a small software startup where I assisted a team of five in documenting user requirements for a mobile application. My primary responsibilities 
 
-  id: resume_1001 | level: senior | exp: 8.5 yrs | raw_text: 269 words
-  skills: BPMN, Jira Advanced Roadmaps, SQL, Tableau, Agile, Stakeholder Management
-  projects: SystemIntegrator
-  background: I am a senior Project Manager and Business Analyst with eight years of extensive experience delivering large-scale digital transformation projects. Throughout my career in both enterprise and startup sectors, I have led cross-functional teams of up to thirty members, focusing on strategic alignment,
+  id: resume_1004 | level: middle | exp: 4.0 yrs | raw_text: 253 words
+  skills: Jira, Confluence, BPMN, SQL, Python, Agile
+  projects: DataSync
+  background: I am a motivated Business Analyst with four years of professional experience in enterprise-level environments. My journey began at a prominent digital agency, where I collaborated with a team of twelve to deliver custom web solutions for retail clients. I was responsible for facilitating stakeholder
 
-  id: resume_1002 | level: senior | exp: 9.0 yrs | raw_text: 250 words
-  skills: BPMN, Jira, Confluence, SQL, Python, Power BI, Project Management
-  projects: ProcessAutomator
-  background: I am a senior Business Analyst and Project Lead with nine years of experience specializing in complex process engineering and stakeholder engagement. During my tenure at a leading global consultancy, I headed a team of twenty-five consultants to streamline operational workflows for Fortune 500 clien
+  id: resume_1005 | level: middle | exp: 5.0 yrs | raw_text: 258 words
+  skills: Jira, Confluence, BPMN, SQL, Python, Scrum
+  projects: DocsAutomator
+  background: I am a dedicated Business Analyst with five years of experience in project management and system analysis, primarily within the fintech and software development sectors. In my previous role at a fast-growing startup, I worked alongside a team of fifteen developers and product managers to design scal
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1000 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 192 words
+  id: jd_1003 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
   required_skills: Jira, Confluence, BPMN
-  preferred_skills: SQL, Agile
-  description: Our finance technology team, consisting of twelve people, is looking for a Junior Business Analyst to support our product development lifecycle. You will work closely with senior analysts and project managers to gather requirements, document user sto
+  preferred_skills: Agile, Data Reporting
+  description: Our product team of ten is looking for a Junior Business Analyst to help us manage our growing feature requests and product backlog. You will work closely with senior product managers and developers to gather requirements, document user stories, and 
 
-  id: jd_1001 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: Jira, Confluence, BPMN
-  preferred_skills: Agile, Reporting
-  description: Our product team of ten is seeking an Associate Project Coordinator to help organize and drive our daily project operations. You will be responsible for ensuring our development team remains focused by maintaining project schedules, updating task sta
+  id: jd_1004 | title: Senior Business Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 195 words
+  required_skills: Jira Advanced Roadmaps, Confluence, BPMN, SQL, Python, Project Management
+  preferred_skills: SOX Compliance, Data Visualization
+  description: Our core operations organization is seeking a Senior Business Systems Architect to lead our process engineering efforts and oversee complex project deliveries. You will work within a group of twenty-five professionals, focused on architecting our int
 
-  id: jd_1002 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 186 words
-  required_skills: Jira, Confluence, BPMN, SQL, Project Management
-  preferred_skills: Python, Data Visualization
-  description: Our core operations organization is seeking a Senior Business Systems Analyst to lead our process engineering efforts and oversee complex project deliveries. You will work within a group of twenty professionals, focused on architecting our internal b
+  id: jd_1005 | title: Principal Project Manager | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Jira, Confluence, BPMN, SQL, Python, Project Management
+  preferred_skills: Jira Advanced Roadmaps, Global Portfolio Management
+  description: Our global operations team is seeking a Principal Project Manager to orchestrate our most critical digital transformation initiatives. You will lead a high-performing group of thirty, overseeing project portfolios that span multiple regions and techn
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2997 pairs total.
+Overall dataset so far: 3006 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  600  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  599  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  598  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  599  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  601  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  600  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  600  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  602  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  601  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  603  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2998   resume_1000 × jd_1000
-  pair_2999   resume_1000 × jd_1001
-  pair_3000   resume_1000 × jd_1002
-  pair_3001   resume_1001 × jd_1000
-  pair_3002   resume_1001 × jd_1001
-  pair_3003   resume_1001 × jd_1002
-  pair_3004   resume_1002 × jd_1000
-  pair_3005   resume_1002 × jd_1001
-  pair_3006   resume_1002 × jd_1002
+  pair_3007   resume_1003 × jd_1003
+  pair_3008   resume_1003 × jd_1004
+  pair_3009   resume_1003 × jd_1005
+  pair_3010   resume_1004 × jd_1003
+  pair_3011   resume_1004 × jd_1004
+  pair_3012   resume_1004 × jd_1005
+  pair_3013   resume_1005 × jd_1003
+  pair_3014   resume_1005 × jd_1004
+  pair_3015   resume_1005 × jd_1005
 
 ════════════════════════════════════
 OUTPUT FORMAT
