@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1183 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: Excel, Python, SQL, QuickBooks, Financial Reporting, IFRS
-  projects: Project FiscalWatch, Financial Reconciliation Tool
-  background: I am a dedicated junior financial analyst and recent accounting graduate eager to apply my analytical rigor within a fast-paced fintech environment. During my final academic year, I completed a rigorous six-month internship at a mid-sized financial technology startup where I worked within a finance 
+  id: resume_1186 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Docker, Kubernetes, Terraform, AWS, Bash, Python, GitLab
+  projects: CloudNode Manager
+  background: I am a passionate junior DevOps engineer and recent computer science graduate eager to jump into cloud infrastructure and automation. During my final year, I completed a rigorous six-month internship at a fast-paced fintech startup where I was part of a dynamic infrastructure team of four. My respon
 
-  id: resume_1184 | level: senior | exp: 8.5 yrs | raw_text: 274 words
-  skills: Financial Modeling, GAAP, Oracle NetSuite, SQL, Tableau, Python, Risk Mitigation
-  projects: Project EquityFlow, Compliance Automation Project
-  background: I am a senior financial analyst and accounting lead with over eight years of experience specializing in high-growth fintech environments and enterprise-scale financial modeling. My professional journey began at a reputable financial consulting agency where I spent thirty-six months as an analyst wit
+  id: resume_1187 | level: middle | exp: 4.2 yrs | raw_text: 287 words
+  skills: AWS, Kubernetes, Terraform, Helm, Go, Docker, ELK Stack
+  projects: AutoScaler Pro
+  background: I am an experienced DevOps engineer with over four years of expertise in building scalable cloud infrastructures and optimizing CI/CD workflows for mid-sized technology companies. My first professional role was at an e-commerce agency where I spent twenty-four months within an operations team of ten
 
-  id: resume_1185 | level: senior | exp: 7.5 yrs | raw_text: 273 words
-  skills: Financial Modeling, SAP S/4HANA, Python, SQL, Revenue Recognition, Docker, Compliance
-  projects: Project RevenueShift, Audit Data Initiative
-  background: I am a senior financial controller and accounting strategist with over seven years of dedicated experience leading fiscal operations, financial modeling, and regulatory compliance at high-velocity fintech companies. My initial professional tenure was spent at a healthcare-focused financial services 
+  id: resume_1188 | level: middle | exp: 4.8 yrs | raw_text: 283 words
+  skills: AWS, Terraform, Kubernetes, Python, GCP, Open Policy Agent, Calico
+  projects: SecurePipe
+  background: I am a dedicated cloud infrastructure engineer with nearly five years of professional experience specializing in site reliability engineering and automated infrastructure governance. During my first three years at a digital marketing agency, I managed a team of six responsible for the stability of c
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1183 | title: Junior Financial Analyst (Fintech) | level: junior | min_exp: 1 yrs | raw_text: 194 words
-  required_skills: Excel, SQL, QuickBooks, Financial Reporting
-  preferred_skills: Python
-  description: Our core financial operations department is seeking a passionate and driven Junior Financial Analyst to help support our fiscal reporting and operational reconciliation tasks. In this associate-level role, you will join an active finance team consist
+  id: jd_1186 | title: Junior Cloud Operations Engineer | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: AWS, Docker, Kubernetes, Terraform
+  preferred_skills: GitLab, Bash
+  description: Our cloud operations team is currently looking for an energetic Junior Cloud Operations Engineer to assist with the daily maintenance and automation of our growing cloud footprint. You will be joining a collaborative team of five engineers responsibl
 
-  id: jd_1184 | title: Middle Financial Accounting Manager | level: middle | min_exp: 3 yrs | raw_text: 195 words
-  required_skills: Python, SQL, SAP S/4HANA, Financial Modeling
-  preferred_skills: GAAP
-  description: Our corporate finance group is searching for an analytical Middle Financial Accounting Manager to oversee our consolidated reporting and revenue operations. Collaborating inside a cross-functional finance squad of six professionals—including two seni
+  id: jd_1187 | title: Senior Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: AWS, Kubernetes, Terraform, Go, Open Policy Agent
+  preferred_skills: Istio, OpenTelemetry
+  description: Our platform engineering team is seeking a highly technical Senior Platform Architect to drive the evolution of our global cloud infrastructure and security governance. Working within a specialized group of twelve engineers, you will be responsible f
 
-  id: jd_1185 | title: Senior Fintech Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 187 words
-  required_skills: Oracle NetSuite, Financial Modeling, Revenue Recognition, SQL
-  preferred_skills: Tableau, Python
-  description: Our international fintech group is searching for a strategic, highly technical Senior Financial Controller to supervise our global fiscal operations and enterprise reporting architecture. Working alongside a cross-functional unit of twelve enterprise
+  id: jd_1188 | title: Lead SRE Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: AWS, Kubernetes, Terraform, Python, Performance Tuning
+  preferred_skills: Chaos Engineering, Prometheus
+  description: Our SRE group is searching for a visionary Lead SRE Engineer to take ownership of the reliability, performance, and scalability of our enterprise-scale platform. Collaborating alongside a cross-functional unit of fifteen software engineers, cloud arc
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3546 pairs total.
+Overall dataset so far: 3555 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  710  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  709  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  709  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  709  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  709  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  711  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  710  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  711  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  711  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  712  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3547   resume_1183 × jd_1183
-  pair_3548   resume_1183 × jd_1184
-  pair_3549   resume_1183 × jd_1185
-  pair_3550   resume_1184 × jd_1183
-  pair_3551   resume_1184 × jd_1184
-  pair_3552   resume_1184 × jd_1185
-  pair_3553   resume_1185 × jd_1183
-  pair_3554   resume_1185 × jd_1184
-  pair_3555   resume_1185 × jd_1185
+  pair_3556   resume_1186 × jd_1186
+  pair_3557   resume_1186 × jd_1187
+  pair_3558   resume_1186 × jd_1188
+  pair_3559   resume_1187 × jd_1186
+  pair_3560   resume_1187 × jd_1187
+  pair_3561   resume_1187 × jd_1188
+  pair_3562   resume_1188 × jd_1186
+  pair_3563   resume_1188 × jd_1187
+  pair_3564   resume_1188 × jd_1188
 
 ════════════════════════════════════
 OUTPUT FORMAT
