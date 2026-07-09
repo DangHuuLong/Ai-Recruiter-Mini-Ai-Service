@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1024 | level: junior | exp: 0.7 yrs | raw_text: 273 words
-  skills: Python, FastAPI, PostgreSQL, Redis, PyTest, Node.js, Express, AWS, REST
-  projects: FoodDash
-  background: I am a passionate Junior Backend Engineer and a fresh graduate eager to contribute to robust web applications. During my final year at university, I spent eight months as an internal engineering intern within a small, collaborative product startup team of four engineers. In this role, I took complet
+  id: resume_1027 | level: junior | exp: 0.7 yrs | raw_text: 262 words
+  skills: AWS, Docker, Terraform, Linux, Shell, GitHub Actions
+  projects: InfraBase
+  background: I am a highly motivated Junior Infrastructure Engineer and recent graduate with a profound passion for modern cloud deployment pipelines and container technologies. During my senior year at university, I completed an intensive nine-month internship at a fast-growing software startup company, working
 
-  id: resume_1025 | level: senior | exp: 7.0 yrs | raw_text: 270 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, AWS, Kubernetes, Terraform, Docker, RabbitMQ, Redis, MongoDB
-  projects: CloudScale
-  background: I am an accomplished Senior Backend Architect and Technical Lead with seven years of extensive industry experience specializing in designing, scaling, and maintaining mission-critical distributed systems. In my current role at a high-growth financial enterprise, I guide a talented engineering team o
+  id: resume_1028 | level: middle | exp: 4.0 yrs | raw_text: 250 words
+  skills: AWS, Docker, Ansible, Jenkins, GitLab CI, Linux, Python, PostgreSQL
+  projects: DeploySync
+  background: I am a dedicated DevOps Systems Engineer with four years of professional experience managing cloud-native web infrastructures and automating complex delivery workflows. In my previous role at a mid-sized e-commerce technology enterprise, I spent three years operating within an infrastructure deliver
 
-  id: resume_1026 | level: senior | exp: 7.0 yrs | raw_text: 257 words
-  skills: Node.js, TypeScript, Python, FastAPI, PostgreSQL, NestJS, Docker, AWS, Redis, SQL
-  projects: LogPulse
-  background: I am a senior-level Software Engineer with seven years of dedicated experience developing enterprise-grade backend infrastructure and resilient data APIs. In my previous role at a fast-paced technology agency, I worked closely within an engineering team of six developers to design, build, and deploy
+  id: resume_1029 | level: middle | exp: 4.2 yrs | raw_text: 252 words
+  skills: AWS, Terraform, Prometheus, Grafana, Bash, Linux, Elasticsearch, Redis
+  projects: MetricFlow
+  background: I am a reliable Cloud Operations Engineer with over four years of experience maintaining public cloud architecture and designing resilient platform monitoring services. At my last position within a specialized financial technology services agency, I collaborated with a technical team of five operati
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1024 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Python, FastAPI, PostgreSQL, PyTest
-  preferred_skills: Docker, AWS
-  description: We are actively looking for an enthusiastic Junior Backend Engineer to join our growing application development group. In this role, you will become a vital part of an internal engineering team of five professionals focused on building and optimizing
+  id: jd_1027 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 180 words
+  required_skills: AWS, Docker, Terraform, Linux
+  preferred_skills: GitHub Actions, Python
+  description: We are seeking an enthusiastic Junior DevOps Engineer to join our growing cloud infrastructure operations unit. In this entry-level position, you will join an active team of five operations professionals working to improve our continuous deployment c
 
-  id: jd_1025 | title: Associate Backend Developer (Node.js & Python) | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Node.js, Python, PostgreSQL, Redis
-  preferred_skills: FastAPI, Docker
-  description: Our web engineering division is seeking an Associate Backend Developer to join our dedicated software product development team. Working within an agile group of six engineering professionals, you will focus on implementing backend business logic and 
+  id: jd_1028 | title: Senior Kubernetes Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: Kubernetes, ArgoCD, Ansible, Linux
+  preferred_skills: Kafka, Docker
+  description: Our core engineering infrastructure organization is looking for a Senior Kubernetes Platform Architect to guide the development of our next-generation container orchestration framework. Leading a specialized unit of seven infrastructure engineers, yo
 
-  id: jd_1026 | title: Senior Cloud API Architect | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: AWS, Kubernetes, Terraform, Python, FastAPI, Node.js, PostgreSQL
-  preferred_skills: RabbitMQ, Docker
-  description: Our advanced platform engineering organization is searching for an experienced Senior Cloud API Architect to drive the development of our next-generation high-availability cloud infrastructure. In this vital technical leadership role, you will guide 
+  id: jd_1029 | title: Lead Site Reliability Engineer (Observability) | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Prometheus, Grafana, Python, Linux
+  preferred_skills: Elasticsearch, Docker
+  description: We are searching for a visionary Lead Site Reliability Engineer specialized in Enterprise Observability to architect our next-generation application monitoring and telemetry pipeline infrastructure. Joining an elite reliability engineering department
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3069 pairs total.
+Overall dataset so far: 3078 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  614  →  expected this batch: 1 pairs (from seniority gaps below)
-  weak_match            existing:  614  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  612  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  616  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  613  →  expected this batch: 4 pairs (from seniority gaps below)
+  poor_match            existing:  615  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  614  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  616  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  616  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  617  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3070   resume_1024 × jd_1024
-  pair_3071   resume_1024 × jd_1025
-  pair_3072   resume_1024 × jd_1026
-  pair_3073   resume_1025 × jd_1024
-  pair_3074   resume_1025 × jd_1025
-  pair_3075   resume_1025 × jd_1026
-  pair_3076   resume_1026 × jd_1024
-  pair_3077   resume_1026 × jd_1025
-  pair_3078   resume_1026 × jd_1026
+  pair_3079   resume_1027 × jd_1027
+  pair_3080   resume_1027 × jd_1028
+  pair_3081   resume_1027 × jd_1029
+  pair_3082   resume_1028 × jd_1027
+  pair_3083   resume_1028 × jd_1028
+  pair_3084   resume_1028 × jd_1029
+  pair_3085   resume_1029 × jd_1027
+  pair_3086   resume_1029 × jd_1028
+  pair_3087   resume_1029 × jd_1029
 
 ════════════════════════════════════
 OUTPUT FORMAT
