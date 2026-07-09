@@ -4,38 +4,46 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1099 | level: junior | exp: 0.5 yrs | raw_text: 270 words
-  skills: Python, Pandas, Scikit-learn, SQL, NLTK
-  projects: Churn-Prediction-Tool, Sentiment-Analyzer
-  background: I am a passionate Data Science graduate eager to apply my skills in predictive modeling and machine learning. During my recent six-month internship at a fast-paced retail startup, I was part of a dynamic team of five engineers focused on customer retention strategies. My primary responsibilities inc
+  id: resume_1102 | level: middle | exp: 4.0 yrs | raw_text: 261 words
+  skills: BPMN 2.0, Jira, Power BI, SQL, Agile
+  projects: Project-Efficiency-Pulse, Stakeholder-Alignment-Hub
+  background: I am a dedicated Business Analyst with four years of experience driving process improvements within enterprise financial services. During my tenure at a global financial services firm, I worked in a cross-functional team of fifteen to modernize legacy reporting platforms. My core responsibilities in
 
-  id: resume_1100 | level: junior | exp: 0.3 yrs | raw_text: 277 words
-  skills: Python, PostgreSQL, ETL, Jupyter, Data Engineering
-  projects: Inventory-Categorizer, Neural-Net-Explorer
-  background: I am a motivated AI and Machine Learning enthusiast eager to launch my professional career in data-driven engineering. During my recent four-month internship at a mid-sized data analytics agency, I supported a team of six in developing automated reporting systems and testing various machine learning
+  id: {"id":"pair_3304","resume_id":"resume_1102","job_description_id":"jd_1102","split":null,"label":"strong_match","overall_score":82,"criterion_scores":{"SKILLS_MATCH":85,"EXPERIENCE_RELEVANCE":80,"PROJECT_RELEVANCE":80,"EDUCATION_CERTIFICATION":80,"KEYWORD_DOMAIN_ALIGNMENT":80},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Microsoft Excel"],"matched_preferred_skills":["Agile","Lucidchart"],"label_notes":"Strong alignment with core business analysis duties and seniority. The candidate's experience level is well-suited for a junior role, providing a high degree of confidence in performance.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3305","resume_id":"resume_1102","job_description_id":"jd_1103","split":null,"label":"strong_match","overall_score":82,"criterion_scores":{"SKILLS_MATCH":80,"EXPERIENCE_RELEVANCE":80,"PROJECT_RELEVANCE":80,"EDUCATION_CERTIFICATION":80,"KEYWORD_DOMAIN_ALIGNMENT":85},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Microsoft Project"],"matched_preferred_skills":[],"label_notes":"Candidate possesses the necessary project management and process analysis background. Minor skill gap in Microsoft Project is offset by relevant experience in agile environments.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3306","resume_id":"resume_1102","job_description_id":"jd_1104","split":null,"label":"weak_match","overall_score":52,"criterion_scores":{"SKILLS_MATCH":50,"EXPERIENCE_RELEVANCE":40,"PROJECT_RELEVANCE":50,"EDUCATION_CERTIFICATION":60,"KEYWORD_DOMAIN_ALIGNMENT":60},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Stakeholder Management","Strategic Planning"],"matched_preferred_skills":[],"label_notes":"Candidate lacks the senior-level experience and advanced strategic planning skills required for a lead role. The seniority gap and missing specialized stack limit the score to a weak match.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3307","resume_id":"resume_1103","job_description_id":"jd_1102","split":null,"label":"strong_match","overall_score":82,"criterion_scores":{"SKILLS_MATCH":80,"EXPERIENCE_RELEVANCE":80,"PROJECT_RELEVANCE":85,"EDUCATION_CERTIFICATION":80,"KEYWORD_DOMAIN_ALIGNMENT":80},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Microsoft Excel"],"matched_preferred_skills":["Lucidchart"],"label_notes":"Strong match due to direct experience with project coordination and process documentation. The candidate is a natural fit for this role's requirements despite coming from a coordination background.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3308","resume_id":"resume_1103","job_description_id":"jd_1103","split":null,"label":"strong_match","overall_score":83,"criterion_scores":{"SKILLS_MATCH":85,"EXPERIENCE_RELEVANCE":80,"PROJECT_RELEVANCE":80,"EDUCATION_CERTIFICATION":80,"KEYWORD_DOMAIN_ALIGNMENT":85},"matched_skills":["Jira","Microsoft Project","BPMN"],"missing_required_skills":[],"matched_preferred_skills":["Confluence"],"label_notes":"Excellent alignment on all core required skills, including Jira and Microsoft Project. The candidate's experience level and project portfolio align perfectly with the needs of the junior role.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3309","resume_id":"resume_1103","job_description_id":"jd_1104","split":null,"label":"weak_match","overall_score":52,"criterion_scores":{"SKILLS_MATCH":45,"EXPERIENCE_RELEVANCE":40,"PROJECT_RELEVANCE":50,"EDUCATION_CERTIFICATION":60,"KEYWORD_DOMAIN_ALIGNMENT":60},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Stakeholder Management","Strategic Planning"],"matched_preferred_skills":[],"label_notes":"The candidate lacks the depth of experience and strategic planning skills requested by the senior JD. Seniority mismatch significantly impacts the overall score.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3310","resume_id":"resume_1104","job_description_id":"jd_1102","split":null,"label":"moderate_match","overall_score":67,"criterion_scores":{"SKILLS_MATCH":65,"EXPERIENCE_RELEVANCE":70,"PROJECT_RELEVANCE":60,"EDUCATION_CERTIFICATION":70,"KEYWORD_DOMAIN_ALIGNMENT":60},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Microsoft Excel"],"matched_preferred_skills":["Agile"],"label_notes":"Candidate is heavily overqualified for this junior position, possessing significant lead experience. Match is moderate due to seniority misalignment.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3311","resume_id":"resume_1104","job_description_id":"jd_1103","split":null,"label":"moderate_match","overall_score":67,"criterion_scores":{"SKILLS_MATCH":60,"EXPERIENCE_RELEVANCE":70,"PROJECT_RELEVANCE":65,"EDUCATION_CERTIFICATION":70,"KEYWORD_DOMAIN_ALIGNMENT":60},"matched_skills":["Jira","BPMN"],"missing_required_skills":["Microsoft Project"],"matched_preferred_skills":[],"label_notes":"Senior project leader is significantly overqualified for an associate coordinator role. Skills are transferrable, but the seniority gap is too large to warrant a strong match.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+{"id":"pair_3312","resume_id":"resume_1104","job_description_id":"jd_1104","split":null,"label":"excellent_match","overall_score":97,"criterion_scores":{"SKILLS_MATCH":95,"EXPERIENCE_RELEVANCE":100,"PROJECT_RELEVANCE":100,"EDUCATION_CERTIFICATION":90,"KEYWORD_DOMAIN_ALIGNMENT":90},"matched_skills":["BPMN","Jira","Stakeholder Management","Strategic Planning"],"missing_required_skills":[],"matched_preferred_skills":["Tableau"],"label_notes":"Exceptional match; candidate brings senior-level experience, domain expertise, and core technical skills requested for the senior project lead position. Perfectly aligned seniority.","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}resume_1103 | level: middle | exp: 3.5 yrs | raw_text: 273 words
+  skills: Microsoft Project, Confluence, BPMN, Python, Lucidchart
+  projects: Workflow-Streamliner, Client-Requirement-Vault
+  background: I am a results-oriented Project Coordinator with three years of professional experience in technology-focused business operations. My career began at a fast-paced software startup, where I supported a team of ten developers in delivering mobile applications. My main responsibilities included managin
 
-  id: resume_1101 | level: senior | exp: 8.0 yrs | raw_text: 265 words
-  skills: PyTorch 2.1, AWS, Kubernetes, FastAPI, Triton, CUDA
-  projects: Enterprise-Inference-Scale, Automated-Training-Guard
-  background: I am a Principal Machine Learning Engineer with eight years of extensive experience in the design, deployment, and optimization of large-scale distributed machine learning systems. Currently, I lead a cross-functional department of twenty-five engineers at a major enterprise, focusing on production-
+  id: resume_1104 | level: senior | exp: 8.5 yrs | raw_text: 268 words
+  skills: BPMN 2.0, Jira 10, Tableau, Enterprise Architecture, Strategic Planning
+  projects: Global-Requirement-Engine, Enterprise-Process-Mapper
+  background: I am an experienced Principal Business Analyst with eight years of career history focused on large-scale digital transformation and complex stakeholder strategy. Throughout my career, I have led departments of over thirty individuals, successfully overseeing multi-million dollar software integration
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1099 | title: Mid-Level Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 198 words
-  required_skills: Python, Scikit-learn, Pandas, AWS
-  preferred_skills: PyTorch, SQL
-  description: Our data science team of ten is seeking an experienced Mid-Level Data Scientist to join us in developing and deploying predictive models for our core customer-facing product. We operate in a fast-paced environment where data-driven insights are criti
+  id: jd_1102 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Microsoft Excel, Jira, BPMN, Business Analysis
+  preferred_skills: Agile, Lucidchart
+  description: Our operations team is seeking a motivated Junior Business Analyst to support our project management office and assist in refining internal business requirements. We are a team of fifteen individuals working on standardizing operational workflows for
 
-  id: jd_1100 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: PyTorch, Kubernetes, MLOps, Distributed Systems
-  preferred_skills: CUDA, Model Monitoring
-  description: Our core engineering team of twenty-five is seeking a Senior Machine Learning Engineer to lead the architecture and optimization of our production-grade machine learning platform. Our systems support millions of daily users, requiring top-tier perfor
+  id: jd_1103 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Jira, Microsoft Project, BPMN, Project Coordination
+  preferred_skills: Confluence, Stakeholder Management
+  description: The project management team is looking for a detail-oriented Associate Project Coordinator to join our department of twelve, focused on ensuring smooth execution of internal software projects. You will play a crucial role in maintaining project momen
 
-  id: jd_1101 | title: Senior Research Scientist | level: senior | min_exp: 6 yrs | raw_text: 184 words
-  required_skills: PyTorch, Machine Learning Theory, Python, Research
-  preferred_skills: Distributed Training, Model Interpretability
-  description: Our research and development team of fifteen is seeking a Senior Research Scientist to innovate on our core machine learning capabilities. You will work on cutting-edge research, from developing novel model architectures to exploring advanced techniq
+  id: jd_1104 | title: Senior Project Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: BPMN, Jira, Stakeholder Management, Strategic Planning
+  preferred_skills: Project Portfolio Management, Tableau
+  description: Our informatics team is seeking a Senior Project Lead with extensive experience in architecting and managing complex, enterprise-grade project ecosystems. You will lead a department of fifteen, responsible for the integration of major business system
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +133,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3294 pairs total.
+Overall dataset so far: 3303 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  657  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  658  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  660  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  659  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  660  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  661  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  660  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  660  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  660  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  662  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +153,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3295   resume_1099 × jd_1099
-  pair_3296   resume_1099 × jd_1100
-  pair_3297   resume_1099 × jd_1101
-  pair_3298   resume_1100 × jd_1099
-  pair_3299   resume_1100 × jd_1100
-  pair_3300   resume_1100 × jd_1101
-  pair_3301   resume_1101 × jd_1099
-  pair_3302   resume_1101 × jd_1100
-  pair_3303   resume_1101 × jd_1101
+  pair_3304   resume_1102 × jd_1102
+  pair_3305   resume_1102 × jd_1103
+  pair_3306   resume_1102 × jd_1104
+  pair_3307   resume_1103 × jd_1102
+  pair_3308   resume_1103 × jd_1103
+  pair_3309   resume_1103 × jd_1104
+  pair_3310   resume_1104 × jd_1102
+  pair_3311   resume_1104 × jd_1103
+  pair_3312   resume_1104 × jd_1104
 
 ════════════════════════════════════
 OUTPUT FORMAT
