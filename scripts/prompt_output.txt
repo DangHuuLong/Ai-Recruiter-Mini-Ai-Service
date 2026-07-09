@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1120 | level: middle | exp: 4.0 yrs | raw_text: 276 words
-  skills: Python, PyTorch, Transformers, LangChain, Pinecone, AWS SageMaker
-  projects: Smart-Doc-Search, Semantic-Coder
-  background: I am a dedicated NLP Engineer with four years of professional experience specializing in building intelligent language models and search infrastructure. During my three-year tenure at a fast-paced AI startup, I worked in a collaborative team of eight engineers to develop a high-throughput RAG pipeli
+  id: resume_1123 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: Jira, Figma, Confluence, Google Analytics, Trello, Notion
+  projects: StudentConnect, Community Event Organizer
+  background: I am an aspiring Product Manager with a strong academic foundation in business and technology, having recently graduated with a degree in Information Systems. During my final year at university, I completed a six-month product internship at a fast-growing software startup, working within a lean team
 
-  id: resume_1121 | level: senior | exp: 7.0 yrs | raw_text: 274 words
-  skills: Python, PyTorch, Transformers, LangChain, Milvus, Kubernetes, Terraform
-  projects: Neural-Orchestrator, Embed-Shield
-  background: I am a Senior AI Architect with seven years of experience designing and deploying large-scale language systems in enterprise environments. In my most recent role as a Principal Engineer at a global technology company, I led a cross-functional team of twelve developers in the end-to-end development o
+  id: resume_1124 | level: junior | exp: 1.0 yrs | raw_text: 251 words
+  skills: Jira, Asana, Miro, Microsoft Excel, Slack
+  projects: TaskFlow, BudgetTrack
+  background: I am a motivated Junior Product Associate who recently entered the workforce after graduating from university. During my one-year tenure at an early-stage technology agency, I worked closely with a team of five to coordinate product requirements and release schedules. My responsibilities included dr
 
-  id: resume_1122 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Python, PyTorch, LangChain, PostgreSQL, Milvus, AWS, Kubernetes
-  projects: LLM-Query-Optimizer, Workflow-Automator
-  background: I am a Senior NLP Lead with eight years of experience delivering high-performance, resilient AI solutions. During my four-year role at a leading financial services firm, I led the technical strategy for an automated document analysis platform, managing a highly skilled team of ten engineers and over
+  id: resume_1125 | level: senior | exp: 8.0 yrs | raw_text: 255 words
+  skills: Jira, Confluence, Tableau, SQL, Figma
+  projects: DataInsight-Hub, Global-Launch
+  background: I am a Senior Product Manager with eight years of experience leading high-performance product teams in enterprise and startup environments. Most recently, I worked at a large technology enterprise where I led a team of fifteen developers and designers, overseeing the roadmap and execution of a core 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1120 | title: Junior NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Python, PyTorch, Transformers, RAG
-  preferred_skills: LangChain, Docker
-  description: Our agile AI team of eight is looking for a passionate Junior NLP Engineer to assist in building and maintaining our client-facing AI applications. You will work closely with senior developers, product managers, and data scientists to turn research r
+  id: jd_1123 | title: Product Manager | level: middle | min_exp: 3 yrs | raw_text: 197 words
+  required_skills: Product Roadmap, Jira, Confluence, Agile
+  preferred_skills: SQL, Tableau
+  description: We are seeking a mid-level Product Manager to join our core product team of twelve. Our group focuses on refining our flagship software platform to serve a growing global customer base. Your day-to-day responsibilities involve defining and prioritizi
 
-  id: jd_1121 | title: Associate AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Python, PyTorch, LangChain, RAG
-  preferred_skills: Milvus, Git
-  description: We are expanding our AI product team, which currently consists of twelve engineers, and we are seeking an Associate AI Engineer to help us enhance our core language platform. The role is designed for someone who is ready to learn and grow in a fast-p
+  id: jd_1124 | title: Senior Product Lead | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Product Roadmap, Jira, Confluence, SQL, Agile
+  preferred_skills: Tableau, Figma
+  description: Our product department is seeking a Senior Product Lead to oversee our high-traffic platform development. You will guide a team of twenty, including engineering, data science, and design specialists, to manage a global product roadmap. Day-to-day res
 
-  id: jd_1122 | title: Senior AI Lead | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Python, PyTorch, Transformers, RAG, Kubernetes
-  preferred_skills: Terraform, Milvus
-  description: Our digital platform team is looking for a Senior AI Lead to architect, build, and scale our enterprise-grade AI ecosystem. You will lead a high-performing team of fifteen engineers, responsible for maintaining mission-critical AI services that suppo
+  id: jd_1125 | title: Principal Product Manager | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Product Roadmap, Jira, Confluence, SQL, Agile
+  preferred_skills: Tableau, Figma
+  description: We are looking for a Principal Product Manager to define the strategic vision for our global product suite. Working with a department of fifteen, you will ensure stakeholder alignment and drive product-market fit across multiple regions. Responsibili
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3357 pairs total.
+Overall dataset so far: 3366 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  671  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  672  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  670  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  672  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  672  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  671  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  673  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  674  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  674  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  674  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3358   resume_1120 × jd_1120
-  pair_3359   resume_1120 × jd_1121
-  pair_3360   resume_1120 × jd_1122
-  pair_3361   resume_1121 × jd_1120
-  pair_3362   resume_1121 × jd_1121
-  pair_3363   resume_1121 × jd_1122
-  pair_3364   resume_1122 × jd_1120
-  pair_3365   resume_1122 × jd_1121
-  pair_3366   resume_1122 × jd_1122
+  pair_3367   resume_1123 × jd_1123
+  pair_3368   resume_1123 × jd_1124
+  pair_3369   resume_1123 × jd_1125
+  pair_3370   resume_1124 × jd_1123
+  pair_3371   resume_1124 × jd_1124
+  pair_3372   resume_1124 × jd_1125
+  pair_3373   resume_1125 × jd_1123
+  pair_3374   resume_1125 × jd_1124
+  pair_3375   resume_1125 × jd_1125
 
 ════════════════════════════════════
 OUTPUT FORMAT
