@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1156 | level: middle | exp: 4.1 yrs | raw_text: 342 words
-  skills: SEO, Social Media Marketing, Google Analytics 4, Semrush, Ahrefs, Content Strategy
-  projects: Project MetricStream
-  background: I am a dedicated, data-driven Mid-Level Digital Marketing Specialist with over four years of proven professional experience optimizing content acquisition funnels, scaling multi-channel social growth loops, and managing comprehensive web traffic assets within high-growth digital native ecosystems. M
+  id: resume_1159 | level: junior | exp: 0.5 yrs | raw_text: 251 words
+  skills: Python, Pandas, Scikit-Learn, Data Modeling
+  projects: Project CustomerInsights
+  background: I am an enthusiastic and highly analytical Junior Data Scientist seeking an entry-level opportunity to utilize my foundational knowledge in statistical computing, exploratory data analysis, and predictive modeling. I recently completed a six-month internship as a Machine Learning Intern at an e-comm
 
-  id: resume_1157 | level: senior | exp: 7.5 yrs | raw_text: 292 words
-  skills: SEO, Content Strategy, Ahrefs, Google Analytics 4, BrightEdge, Screaming Frog, Python
-  projects: Project KeywordSync
-  background: I am an analytical, deeply strategic Senior Enterprise SEO Specialist and Technical Content Director with over seven years of professional experience engineering enterprise-scale organic search architectures, deploying data-backed multi-channel content strategies, and building automated digital mark
+  id: resume_1160 | level: junior | exp: 0.7 yrs | raw_text: 297 words
+  skills: Python, PyTorch, Data Visualization, Deep Learning
+  projects: Project VisionStart
+  background: I am an analytical, proactive, and newly graduated Machine Learning Assistant with a passion for deep learning architectures, technical asset pipeline management, and statistical data visualization. I completed an eight-month comprehensive contract assignment as an Associate AI Engineer at a growing
 
-  id: resume_1158 | level: senior | exp: 8.2 yrs | raw_text: 279 words
-  skills: Social Media Marketing, Google Analytics 4, HubSpot, Meta Ads Manager, LinkedIn Campaign Manager, Content Strategy
-  projects: Project SocialPulse
-  background: I am a performance-driven Senior Growth Marketing Lead and Social Media Operations Director with over eight years of experience managing high-budget digital marketing campaigns, scaling multi-channel paid and organic social ecosystems, and deploying complex attribution analytics infrastructures. In 
+  id: resume_1161 | level: senior | exp: 8.0 yrs | raw_text: 263 words
+  skills: Python, Scikit-Learn, PyTorch, Pandas, Machine Learning, MLOps, Apache Spark, Data Architecture
+  projects: Project ModelSync
+  background: I am a strategic Senior Data Scientist and Principal Machine Learning Engineer with over eight years of enterprise experience architecting robust global AI infrastructure, managing full-lifecycle large language model pipelines, and deploying advanced automated data analytics platforms. In my current
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1156 | title: Junior SEO Specialist | level: junior | min_exp: 1 yrs | raw_text: 225 words
-  required_skills: SEO, Semrush, Google Analytics 4, Screaming Frog
-  preferred_skills: Content Strategy
-  description: Our digital growth and customer acquisition division is expanding rapidly, and we are looking for a highly analytical, detail-oriented, and communicative Junior SEO Specialist to join our core organic traffic team of five professionals. In this role,
+  id: jd_1159 | title: Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 205 words
+  required_skills: Python, Scikit-Learn, Pandas
+  preferred_skills: Machine Learning
+  description: Our operations and data analytics department is expanding rapidly, and we are looking for an analytical and highly communicative mid-level Data Scientist to join our core modeling team of seven professionals. In this role, you will be responsible for
 
-  id: jd_1157 | title: Junior Social Media and Content Coordinator | level: junior | min_exp: 1 yrs | raw_text: 220 words
-  required_skills: Social Media Marketing, Meta Ads Manager, HubSpot, Content Strategy
-  preferred_skills: Excel
-  description: Our brand communications and creative engagement department is actively expanding, and we are looking for an energetic, creative, and analytical Junior Social Media and Content Coordinator to join our collaborative content team of six professionals. 
+  id: jd_1160 | title: Senior Deep Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Python, PyTorch, MLOps, Deep Learning
+  preferred_skills: Scikit-Learn
+  description: Our global AI infrastructure division is seeking a visionary Senior Deep Learning Engineer to spearhead our enterprise neural network modernization team of twelve engineers. Our focus is on rebuilding a deeply integrated, massively scalable deep lear
 
-  id: jd_1158 | title: Senior Digital Growth Architect and Analytics Engineer | level: senior | min_exp: 6 yrs | raw_text: 215 words
-  required_skills: SEO, Google Analytics 4, Ahrefs, Content Strategy
-  preferred_skills: Python, Social Media Marketing
-  description: Our global enterprise marketing technology division is seeking a visionary, data-obsessed Senior Digital Growth Architect and Analytics Engineer to spearhead our cross-functional optimization team of ten specialists. Our focus is on engineering a dee
+  id: jd_1161 | title: Lead Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 183 words
+  required_skills: Machine Learning, Scikit-Learn, PyTorch, Python
+  preferred_skills: Pandas, Apache Spark
+  description: We are looking for an exceptional Lead Machine Learning Architect to direct our high-performing predictive operations division consisting of fifteen seasoned specialists. The team is dedicated to deploying next-generation machine learning solutions f
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3465 pairs total.
+Overall dataset so far: 3474 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  692  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  694  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  692  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  693  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  694  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  692  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  696  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  695  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  695  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  696  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3466   resume_1156 × jd_1156
-  pair_3467   resume_1156 × jd_1157
-  pair_3468   resume_1156 × jd_1158
-  pair_3469   resume_1157 × jd_1156
-  pair_3470   resume_1157 × jd_1157
-  pair_3471   resume_1157 × jd_1158
-  pair_3472   resume_1158 × jd_1156
-  pair_3473   resume_1158 × jd_1157
-  pair_3474   resume_1158 × jd_1158
+  pair_3475   resume_1159 × jd_1159
+  pair_3476   resume_1159 × jd_1160
+  pair_3477   resume_1159 × jd_1161
+  pair_3478   resume_1160 × jd_1159
+  pair_3479   resume_1160 × jd_1160
+  pair_3480   resume_1160 × jd_1161
+  pair_3481   resume_1161 × jd_1159
+  pair_3482   resume_1161 × jd_1160
+  pair_3483   resume_1161 × jd_1161
 
 ════════════════════════════════════
 OUTPUT FORMAT
