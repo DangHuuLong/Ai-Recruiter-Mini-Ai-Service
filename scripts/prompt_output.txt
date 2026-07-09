@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1021 | level: junior | exp: 0.8 yrs | raw_text: 284 words
-  skills: Splunk, Wireshark, Nmap, Python, Network Security, Incident Response
-  projects: NetSentinel
-  background: I am an enthusiastic Junior Security Analyst with nearly one year of professional experience gained during an intensive internship at a fast-paced cybersecurity startup. Working within a specialized security operations team of five, I was responsible for continuous network traffic monitoring, invest
+  id: resume_1024 | level: junior | exp: 0.7 yrs | raw_text: 273 words
+  skills: Python, FastAPI, PostgreSQL, Redis, PyTest, Node.js, Express, AWS, REST
+  projects: FoodDash
+  background: I am a passionate Junior Backend Engineer and a fresh graduate eager to contribute to robust web applications. During my final year at university, I spent eight months as an internal engineering intern within a small, collaborative product startup team of four engineers. In this role, I took complet
 
-  id: resume_1022 | level: junior | exp: 0.9 yrs | raw_text: 256 words
-  skills: Burp Suite Pro, Metasploit, Bash, Linux, Web Application Security, Vulnerability Scanning
-  projects: VulnScanBuddy
-  background: I am a passionate Junior Penetration Tester and Security Researcher who recently completed an internship at a boutique security consulting agency. Over the course of ten months, I collaborated with a specialized team of four experts to conduct vulnerability assessments and penetration tests for dive
+  id: resume_1025 | level: senior | exp: 7.0 yrs | raw_text: 270 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, AWS, Kubernetes, Terraform, Docker, RabbitMQ, Redis, MongoDB
+  projects: CloudScale
+  background: I am an accomplished Senior Backend Architect and Technical Lead with seven years of extensive industry experience specializing in designing, scaling, and maintaining mission-critical distributed systems. In my current role at a high-growth financial enterprise, I guide a talented engineering team o
 
-  id: resume_1023 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Splunk, Incident Response, Network Protocols, Cobalt Strike, Exploit Development, Reverse Engineering, AWS Security, Kubernetes Security, Zero Trust, Terraform
-  projects: CloudStrike
-  background: I am a highly accomplished Principal Security Architect and Lead Incident Responder with eight years of extensive experience spanning defensive security operations, advanced threat emulation, and enterprise-level risk management. In my current role at a major global financial enterprise, I manage a 
+  id: resume_1026 | level: senior | exp: 7.0 yrs | raw_text: 257 words
+  skills: Node.js, TypeScript, Python, FastAPI, PostgreSQL, NestJS, Docker, AWS, Redis, SQL
+  projects: LogPulse
+  background: I am a senior-level Software Engineer with seven years of dedicated experience developing enterprise-grade backend infrastructure and resilient data APIs. In my previous role at a fast-paced technology agency, I worked closely within an engineering team of six developers to design, build, and deploy
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1021 | title: Mid-level SOC Analyst | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Splunk, Incident Response, Network Protocols, Wireshark
-  preferred_skills: Python, Bash
-  description: We are actively seeking an experienced Mid-level Security Operations Center (SOC) Analyst to join our dedicated internal security team of eight professionals. In this critical role, you will be on the front lines of our enterprise defense, responsibl
+  id: jd_1024 | title: Junior Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Python, FastAPI, PostgreSQL, PyTest
+  preferred_skills: Docker, AWS
+  description: We are actively looking for an enthusiastic Junior Backend Engineer to join our growing application development group. In this role, you will become a vital part of an internal engineering team of five professionals focused on building and optimizing
 
-  id: jd_1022 | title: Lead Penetration Tester | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Cobalt Strike, Exploit Development, Reverse Engineering, Advanced Penetration Testing, Burp Suite Pro, Metasploit
-  preferred_skills: OSINT, Social Engineering
-  description: Our elite offensive security division is looking for a Lead Penetration Tester to guide our red team operations and deliver high-impact security assessments for our enterprise clients. You will lead a specialized unit of five offensive security engin
+  id: jd_1025 | title: Associate Backend Developer (Node.js & Python) | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Node.js, Python, PostgreSQL, Redis
+  preferred_skills: FastAPI, Docker
+  description: Our web engineering division is seeking an Associate Backend Developer to join our dedicated software product development team. Working within an agile group of six engineering professionals, you will focus on implementing backend business logic and 
 
-  id: jd_1023 | title: Principal Cloud Security Architect | level: senior | min_exp: 6 yrs | raw_text: 216 words
-  required_skills: AWS Security, Kubernetes Security, Zero Trust, Terraform, CI/CD Security, Identity and Access Management (IAM)
-  preferred_skills: Docker Security, Python
-  description: We are searching for a visionary Principal Cloud Security Architect to lead the design and implementation of our next-generation cloud infrastructure defense strategy. Joining our platform engineering organization, you will provide technical leadersh
+  id: jd_1026 | title: Senior Cloud API Architect | level: senior | min_exp: 6 yrs | raw_text: 212 words
+  required_skills: AWS, Kubernetes, Terraform, Python, FastAPI, Node.js, PostgreSQL
+  preferred_skills: RabbitMQ, Docker
+  description: Our advanced platform engineering organization is searching for an experienced Senior Cloud API Architect to drive the development of our next-generation high-availability cloud infrastructure. In this vital technical leadership role, you will guide 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3060 pairs total.
+Overall dataset so far: 3069 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  610  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  612  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  612  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  613  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  613  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  614  →  expected this batch: 1 pairs (from seniority gaps below)
+  weak_match            existing:  614  →  expected this batch: 0 pairs (from seniority gaps below)
+  moderate_match        existing:  612  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  616  →  expected this batch: 0 pairs (from seniority gaps below)
+  excellent_match       existing:  613  →  expected this batch: 4 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3061   resume_1021 × jd_1021
-  pair_3062   resume_1021 × jd_1022
-  pair_3063   resume_1021 × jd_1023
-  pair_3064   resume_1022 × jd_1021
-  pair_3065   resume_1022 × jd_1022
-  pair_3066   resume_1022 × jd_1023
-  pair_3067   resume_1023 × jd_1021
-  pair_3068   resume_1023 × jd_1022
-  pair_3069   resume_1023 × jd_1023
+  pair_3070   resume_1024 × jd_1024
+  pair_3071   resume_1024 × jd_1025
+  pair_3072   resume_1024 × jd_1026
+  pair_3073   resume_1025 × jd_1024
+  pair_3074   resume_1025 × jd_1025
+  pair_3075   resume_1025 × jd_1026
+  pair_3076   resume_1026 × jd_1024
+  pair_3077   resume_1026 × jd_1025
+  pair_3078   resume_1026 × jd_1026
 
 ════════════════════════════════════
 OUTPUT FORMAT
