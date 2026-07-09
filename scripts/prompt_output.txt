@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1036 | level: middle | exp: 3.5 yrs | raw_text: 259 words
-  skills: Python, Hugging Face Transformers, LangChain, ChromaDB, OpenAI API, Embeddings, Vector Databases, BERT, AWS ECS, FastAPI
-  projects: DocuMind
-  background: I am a dedicated NLP and Machine Learning Engineer with 3.5 years of professional experience specializing in building production-ready language model pipelines and intelligent retrieval systems. In my previous role at an agile Artificial Intelligence software startup, I spent three years working ins
+  id: resume_1039 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: React Native, JavaScript, Redux Toolkit, Expo, Git, REST APIs, HTML5, CSS3
+  projects: TaskSprint
+  background: I am an enthusiastic Junior Mobile Developer and recent graduate with 0.5 years of industry experience through an intensive internship focused on hybrid application development. In my previous internship at an early-stage digital product agency, I operated within a compact development team of four p
 
-  id: resume_1037 | level: senior | exp: 7.0 yrs | raw_text: 251 words
-  skills: Hugging Face Transformers, LangChain, LlamaIndex, Milvus, Qdrant, Embeddings, RAG, Kubernetes, Python, spaCy, Cross-Encoders
-  projects: FinQuery
-  background: I am a Senior AI Engineer and Technical Lead with 7.0 years of experience designing, architecting, and deploying complex Natural Language Processing systems and enterprise-scale generative AI infrastructures. At my current technology enterprise, where I lead a cross-functional group of ten data scie
+  id: resume_1040 | level: junior | exp: 0.8 yrs | raw_text: 267 words
+  skills: Flutter, Dart, Provider, REST APIs, Git, SQL, JSON, UI Design
+  projects: EcoMap
+  background: I am a passionate Entry-Level Mobile App Developer with 0.8 years of technical history centered around open-source framework architectures and multi-platform layout optimization. During my graduation period, I worked as a Junior Application Developer at a specialized software agency where I sat in a
 
-  id: resume_1038 | level: senior | exp: 8.5 yrs | raw_text: 255 words
-  skills: PyTorch, Hugging Face Transformers, LangChain, LlamaIndex, Pinecone, Embeddings, RAG, Vector Databases, Python, TensorRT-LLM, vLLM
-  projects: KnowledgeGraphRAG
-  background: I am an Enterprise AI Architect and Senior Engineering Specialist with 8.5 years of professional background dedicated to advanced machine learning, neural information retrieval, and large-scale natural language processing. In my most recent role within a global technology enterprise, I operate as th
+  id: resume_1041 | level: senior | exp: 7.5 yrs | raw_text: 258 words
+  skills: React Native, TypeScript, Swift, Kotlin, Redux-Saga, Bitrise, iOS Development, Android Development, Mobile Architecture, Fastlane, CoreData, Jetpack Compose
+  projects: SecureWallet
+  background: I am a Senior Mobile Engineering Lead and Principal Architect with 7.5 years of professional mastery building, optimizing, and deploying mission-critical mobile ecosystems. In my present tenure at a global fintech enterprise, I direct an elite engineering group of twelve mobile specialists comprisin
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1036 | title: Junior AI & NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Python, Hugging Face Transformers, LangChain, ChromaDB, Embeddings
-  preferred_skills: FastAPI, Vector Databases
-  description: Our core language technology group is actively looking for an enthusiastic Junior AI & NLP Engineer to join our growing engineering department. In this role, you will be embedded within a highly collaborative development team of eight professionals i
+  id: jd_1039 | title: Mid-Level Mobile Systems Engineer | level: middle | min_exp: 3 yrs | raw_text: 195 words
+  required_skills: React Native, TypeScript, Redux Toolkit, REST APIs
+  preferred_skills: Swift, Kotlin, Fastlane
+  description: Our core product platform department is looking for a productive Mid-Level Mobile Systems Engineer to elevate our global consumer communications product suite. In this role, you will be deeply integrated into an agile product development group of eig
 
-  id: jd_1037 | title: Associate Generative AI Engineer | level: junior | min_exp: 1 yrs | raw_text: 180 words
-  required_skills: Python, LangChain, Embeddings, Hugging Face Transformers, ChromaDB
-  preferred_skills: Pinecone, Vector Databases
-  description: Our digital innovation laboratory is seeking an Associate Generative AI Engineer to accelerate the expansion of our smart automation software suites. Working closely inside an agile product delivery team of seven technical specialists, you will help 
+  id: jd_1040 | title: Senior Native iOS & Cross-Platform Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: React Native, Swift, TypeScript, Bitrise, iOS Development, Mobile Architecture
+  preferred_skills: Kotlin, CoreData, Fastlane
+  description: Our premium financial services division is looking for an experienced Senior Native iOS & Cross-Platform Lead to direct the design of our next-generation asset investment systems. Operating inside a high-intensity product development unit of ten seni
 
-  id: jd_1038 | title: Senior AI Platforms & RAG Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Hugging Face Transformers, LangChain, LlamaIndex, Embeddings, RAG, Vector Databases
-  preferred_skills: Milvus, Qdrant, Pinecone, Kubernetes, vLLM, TensorRT-LLM
-  description: Our advanced software infrastructure business unit is searching for a Senior AI Platforms & RAG Architect to lead the modernization of our global information intelligence networks. In this high-impact individual contributor and technical advisory rol
+  id: jd_1041 | title: Senior Android & Cross-Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
+  required_skills: React Native, Kotlin, TypeScript, Redux-Saga, Android Development, Mobile Architecture
+  preferred_skills: Swift, Jetpack Compose, Bitrise
+  description: Our distributed mobile infrastructure group is actively seeking a visionary Senior Android & Cross-Platform Architect to lead the modernization of our enterprise logistics applications. Working as a premier technical specialist within an engineering 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3105 pairs total.
+Overall dataset so far: 3114 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  621  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  621  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  620  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  621  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  622  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  621  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  622  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  624  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  623  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  624  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3106   resume_1036 × jd_1036
-  pair_3107   resume_1036 × jd_1037
-  pair_3108   resume_1036 × jd_1038
-  pair_3109   resume_1037 × jd_1036
-  pair_3110   resume_1037 × jd_1037
-  pair_3111   resume_1037 × jd_1038
-  pair_3112   resume_1038 × jd_1036
-  pair_3113   resume_1038 × jd_1037
-  pair_3114   resume_1038 × jd_1038
+  pair_3115   resume_1039 × jd_1039
+  pair_3116   resume_1039 × jd_1040
+  pair_3117   resume_1039 × jd_1041
+  pair_3118   resume_1040 × jd_1039
+  pair_3119   resume_1040 × jd_1040
+  pair_3120   resume_1040 × jd_1041
+  pair_3121   resume_1041 × jd_1039
+  pair_3122   resume_1041 × jd_1040
+  pair_3123   resume_1041 × jd_1041
 
 ════════════════════════════════════
 OUTPUT FORMAT
