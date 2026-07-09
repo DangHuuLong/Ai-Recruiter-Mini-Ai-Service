@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1027 | level: junior | exp: 0.7 yrs | raw_text: 262 words
-  skills: AWS, Docker, Terraform, Linux, Shell, GitHub Actions
-  projects: InfraBase
-  background: I am a highly motivated Junior Infrastructure Engineer and recent graduate with a profound passion for modern cloud deployment pipelines and container technologies. During my senior year at university, I completed an intensive nine-month internship at a fast-growing software startup company, working
+  id: resume_1030 | level: middle | exp: 3.2 yrs | raw_text: 256 words
+  skills: Splunk, Snort, Nessus, Python, Docker, Linux, Wireshark
+  projects: WatchTower
+  background: I am a dedicated Information Security Analyst with over three years of continuous hands-on experience in corporate defense and network engineering. In my primary role at a fast-paced technology enterprise, I served within a security operations group of five analysts to configure, scale, and optimize
 
-  id: resume_1028 | level: middle | exp: 4.0 yrs | raw_text: 250 words
-  skills: AWS, Docker, Ansible, Jenkins, GitLab CI, Linux, Python, PostgreSQL
-  projects: DeploySync
-  background: I am a dedicated DevOps Systems Engineer with four years of professional experience managing cloud-native web infrastructures and automating complex delivery workflows. In my previous role at a mid-sized e-commerce technology enterprise, I spent three years operating within an infrastructure deliver
+  id: resume_1031 | level: senior | exp: 7.0 yrs | raw_text: 285 words
+  skills: Splunk, Elastic Security, Ansible, Zeek, Snort, Python, Docker, Linux, Wireshark
+  projects: SecAutoFlow
+  background: I am an experienced Senior Security Operations Engineer and Infrastructure Security Architect with seven years of professional experience orchestrating comprehensive threat hunting strategies and managing large-scale defensive monitoring ecosystems across distributed networks. In my most recent tenu
 
-  id: resume_1029 | level: middle | exp: 4.2 yrs | raw_text: 252 words
-  skills: AWS, Terraform, Prometheus, Grafana, Bash, Linux, Elasticsearch, Redis
-  projects: MetricFlow
-  background: I am a reliable Cloud Operations Engineer with over four years of experience maintaining public cloud architecture and designing resilient platform monitoring services. At my last position within a specialized financial technology services agency, I collaborated with a technical team of five operati
+  id: resume_1032 | level: senior | exp: 8.1 yrs | raw_text: 269 words
+  skills: Metasploit, Burp Suite, Cobalt Strike, Nmap, Python, Go, Linux, Wireshark
+  projects: VulnScanPro
+  background: I am a senior Penetration Tester and Infrastructure Security Assessment Consultant with over eight years of deep technical experience executing full-scope red teaming engagements and advanced vulnerability research. Throughout my forty-eight month tenure at an elite cybersecurity consulting agency, 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1027 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 180 words
-  required_skills: AWS, Docker, Terraform, Linux
-  preferred_skills: GitHub Actions, Python
-  description: We are seeking an enthusiastic Junior DevOps Engineer to join our growing cloud infrastructure operations unit. In this entry-level position, you will join an active team of five operations professionals working to improve our continuous deployment c
+  id: jd_1030 | title: Junior Information Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 197 words
+  required_skills: Splunk, Snort, Nessus, Linux
+  preferred_skills: Wireshark, Python
+  description: We are seeking an energetic Junior Information Security Analyst to join our expanding global security operations center. In this associate role, you will become part of an active defense group of six security specialists working diligently to safegua
 
-  id: jd_1028 | title: Senior Kubernetes Platform Architect | level: senior | min_exp: 6 yrs | raw_text: 189 words
-  required_skills: Kubernetes, ArgoCD, Ansible, Linux
-  preferred_skills: Kafka, Docker
-  description: Our core engineering infrastructure organization is looking for a Senior Kubernetes Platform Architect to guide the development of our next-generation container orchestration framework. Leading a specialized unit of seven infrastructure engineers, yo
+  id: jd_1031 | title: Associate Associate Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 188 words
+  required_skills: Splunk, Wireshark, Snort, Linux
+  preferred_skills: Ansible, Docker
+  description: Our infrastructure protection business unit is searching for a passionate Associate Security Engineer to support our internal network defense frameworks. Partnering with a dedicated unit of five operational security engineers, you will take daily res
 
-  id: jd_1029 | title: Lead Site Reliability Engineer (Observability) | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Prometheus, Grafana, Python, Linux
-  preferred_skills: Elasticsearch, Docker
-  description: We are searching for a visionary Lead Site Reliability Engineer specialized in Enterprise Observability to architect our next-generation application monitoring and telemetry pipeline infrastructure. Joining an elite reliability engineering department
+  id: jd_1032 | title: Lead Cyber Security Specialist (Red Teaming) | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Metasploit, Burp Suite, Cobalt Strike, Python
+  preferred_skills: Splunk, Go
+  description: We are searching for a highly skilled Lead Cyber Security Specialist specialized in Red Teaming and Offensive Security to engineer our next-generation adversary simulation framework. Leading a specialized task force of six threat experts, you will ta
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3078 pairs total.
+Overall dataset so far: 3087 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  615  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  614  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  616  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  616  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  617  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  617  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  618  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  616  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  618  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  618  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3079   resume_1027 × jd_1027
-  pair_3080   resume_1027 × jd_1028
-  pair_3081   resume_1027 × jd_1029
-  pair_3082   resume_1028 × jd_1027
-  pair_3083   resume_1028 × jd_1028
-  pair_3084   resume_1028 × jd_1029
-  pair_3085   resume_1029 × jd_1027
-  pair_3086   resume_1029 × jd_1028
-  pair_3087   resume_1029 × jd_1029
+  pair_3088   resume_1030 × jd_1030
+  pair_3089   resume_1030 × jd_1031
+  pair_3090   resume_1030 × jd_1032
+  pair_3091   resume_1031 × jd_1030
+  pair_3092   resume_1031 × jd_1031
+  pair_3093   resume_1031 × jd_1032
+  pair_3094   resume_1032 × jd_1030
+  pair_3095   resume_1032 × jd_1031
+  pair_3096   resume_1032 × jd_1032
 
 ════════════════════════════════════
 OUTPUT FORMAT
