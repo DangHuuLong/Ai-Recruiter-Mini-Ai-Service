@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1111 | level: junior | exp: 0.5 yrs | raw_text: 268 words
-  skills: Jira, Microsoft Visio, Lucidchart, Confluence, Trello
-  projects: Requirement-Pilot, Task-Tracker-Pro
-  background: I am a recent graduate with a degree in Business Administration, highly motivated to launch my career as a Junior Business Analyst. During my final year, I completed a six-month internship at a software agency, where I supported a cross-functional team of eight. My primary responsibilities included 
+  id: resume_1114 | level: middle | exp: 4.0 yrs | raw_text: 280 words
+  skills: Python, FastAPI, React, PostgreSQL, JavaScript, AWS ECS
+  projects: Data-Vis-Engine, Crypto-Portfolio-Tracker
+  background: I am a Full-Stack Developer with four years of professional experience building scalable web applications within fast-paced startup environments. During my three-year tenure at a fintech startup, I worked in a cohesive team of six developers to maintain and enhance a high-traffic transaction process
 
-  id: resume_1112 | level: middle | exp: 4.0 yrs | raw_text: 267 words
-  skills: BPMN 2.0, Jira, Power BI, SQL, Agile
-  projects: Process-Analyzer-Suite, Stakeholder-Pulse-Tool
-  background: I am a versatile Business Analyst with four years of experience optimizing operational workflows and managing stakeholder relationships in mid-sized enterprise environments. My career path has focused on driving digital transformation through detailed requirements engineering and collaborative proje
+  id: resume_1115 | level: senior | exp: 8.0 yrs | raw_text: 273 words
+  skills: Python, FastAPI, React, PostgreSQL, Kubernetes, Terraform, Redis
+  projects: Micro-Orchestrator, Auth-Shield-Pro
+  background: I am a Lead Full-Stack Engineer with eight years of professional experience architecting large-scale distributed systems. In my most recent role as a Principal Engineer at an enterprise SaaS company, I led a cross-functional team of twelve engineers in the end-to-end migration of a legacy monolithic
 
-  id: resume_1113 | level: middle | exp: 5.0 yrs | raw_text: 264 words
-  skills: Jira, Confluence, Microsoft Project, Python, Agile
-  projects: Requirement-Sync-Engine, Project-Governance-Portal
-  background: I am a results-oriented Project Manager with five years of experience in orchestrating cross-functional software development teams. During my tenure at an enterprise software firm, I was responsible for overseeing a team of fifteen professionals to ensure the on-time delivery of mission-critical int
+  id: resume_1116 | level: senior | exp: 7.0 yrs | raw_text: 268 words
+  skills: Python, FastAPI, React, TypeScript, PostgreSQL, AWS, Kubernetes
+  projects: Query-Optimizer-Tool, Workflow-Automator
+  background: I am a Senior Software Architect with seven years of experience delivering high-performance, resilient web solutions. During my four-year role at an enterprise software firm, I led the technical strategy for a cloud-based logistics platform, managing a highly skilled team of ten engineers and overse
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1111 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Microsoft Excel, Jira, BPMN, Business Analysis
-  preferred_skills: Agile, Lucidchart
-  description: Our operations team is seeking a motivated Junior Business Analyst to support our project management office and assist in refining internal business requirements. We are a team of fifteen individuals working on standardizing operational workflows for
+  id: jd_1114 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 191 words
+  required_skills: Python, React, PostgreSQL, REST APIs
+  preferred_skills: Docker, TypeScript
+  description: Our agile web development team of eight is looking for a passionate Junior Full-Stack Developer to assist in building and maintaining our client-facing web applications. You will work closely with senior developers, product managers, and designers to
 
-  id: jd_1112 | title: Senior Business Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: BPMN, Jira, Stakeholder Management, Strategic Planning
-  preferred_skills: Project Portfolio Management, Tableau
-  description: Our informatics team is seeking a Senior Business Systems Lead with extensive experience in architecting and managing complex, enterprise-grade business ecosystems. You will lead a department of fifteen, responsible for the integration of major busin
+  id: jd_1115 | title: Associate Web Engineer | level: junior | min_exp: 1 yrs | raw_text: 199 words
+  required_skills: Python, React, PostgreSQL, SQL
+  preferred_skills: AWS, Git
+  description: We are expanding our product team, which currently consists of twelve engineers, and we are seeking an Associate Web Engineer to help us enhance our core software platform. The role is designed for someone who is ready to learn and grow in a fast-pac
 
-  id: jd_1113 | title: Senior Project Lead | level: senior | min_exp: 6 yrs | raw_text: 211 words
-  required_skills: BPMN, Jira, Stakeholder Management, Strategic Planning
-  preferred_skills: Project Portfolio Management, Tableau
-  description: Our digital transformation team is seeking a Senior Project Lead with extensive experience in architecting and managing complex, enterprise-grade project ecosystems. You will lead a department of fifteen, responsible for the integration of major busi
+  id: jd_1116 | title: Senior Full-Stack Lead | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Python, React, AWS, Kubernetes, PostgreSQL
+  preferred_skills: Terraform, Redis
+  description: Our digital platform team is looking for a Senior Full-Stack Lead to architect, build, and scale our enterprise-grade web ecosystem. You will lead a high-performing team of fifteen engineers, responsible for maintaining mission-critical services that
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3330 pairs total.
+Overall dataset so far: 3339 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  665  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  665  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  666  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  667  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  667  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  667  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  669  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  666  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  669  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  668  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3331   resume_1111 × jd_1111
-  pair_3332   resume_1111 × jd_1112
-  pair_3333   resume_1111 × jd_1113
-  pair_3334   resume_1112 × jd_1111
-  pair_3335   resume_1112 × jd_1112
-  pair_3336   resume_1112 × jd_1113
-  pair_3337   resume_1113 × jd_1111
-  pair_3338   resume_1113 × jd_1112
-  pair_3339   resume_1113 × jd_1113
+  pair_3340   resume_1114 × jd_1114
+  pair_3341   resume_1114 × jd_1115
+  pair_3342   resume_1114 × jd_1116
+  pair_3343   resume_1115 × jd_1114
+  pair_3344   resume_1115 × jd_1115
+  pair_3345   resume_1115 × jd_1116
+  pair_3346   resume_1116 × jd_1114
+  pair_3347   resume_1116 × jd_1115
+  pair_3348   resume_1116 × jd_1116
 
 ════════════════════════════════════
 OUTPUT FORMAT
