@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1114 | level: middle | exp: 4.0 yrs | raw_text: 280 words
-  skills: Python, FastAPI, React, PostgreSQL, JavaScript, AWS ECS
-  projects: Data-Vis-Engine, Crypto-Portfolio-Tracker
-  background: I am a Full-Stack Developer with four years of professional experience building scalable web applications within fast-paced startup environments. During my three-year tenure at a fintech startup, I worked in a cohesive team of six developers to maintain and enhance a high-traffic transaction process
+  id: resume_1117 | level: junior | exp: 0.5 yrs | raw_text: 258 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, Pytest
+  projects: Task-Manager-App, Weather-Data-Scraper
+  background: I am a motivated Junior Backend Developer who recently graduated with a degree in Computer Science. During my final year, I completed a six-month internship at a growing software agency as part of a five-person development team. My primary responsibilities included building simple API endpoints usin
 
-  id: resume_1115 | level: senior | exp: 8.0 yrs | raw_text: 273 words
-  skills: Python, FastAPI, React, PostgreSQL, Kubernetes, Terraform, Redis
-  projects: Micro-Orchestrator, Auth-Shield-Pro
-  background: I am a Lead Full-Stack Engineer with eight years of professional experience architecting large-scale distributed systems. In my most recent role as a Principal Engineer at an enterprise SaaS company, I led a cross-functional team of twelve engineers in the end-to-end migration of a legacy monolithic
+  id: resume_1118 | level: junior | exp: 0.8 yrs | raw_text: 256 words
+  skills: Node.js, Express, Python, FastAPI, PostgreSQL, Git
+  projects: Event-Booking-Platform, Recipe-Finder-Bot
+  background: I am a passionate Junior Backend Engineer recently entering the workforce after completing my degree. I spent the last year working as a technical associate at a technology startup with a team of four developers. My core responsibilities included drafting backend API documentation using Swagger, ass
 
-  id: resume_1116 | level: senior | exp: 7.0 yrs | raw_text: 268 words
-  skills: Python, FastAPI, React, TypeScript, PostgreSQL, AWS, Kubernetes
-  projects: Query-Optimizer-Tool, Workflow-Automator
-  background: I am a Senior Software Architect with seven years of experience delivering high-performance, resilient web solutions. During my four-year role at an enterprise software firm, I led the technical strategy for a cloud-based logistics platform, managing a highly skilled team of ten engineers and overse
+  id: resume_1119 | level: senior | exp: 7.0 yrs | raw_text: 263 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Kubernetes, Terraform, TypeScript
+  projects: System-Governance-Portal, Distributed-Load-Balancer
+  background: I am a Senior Backend Lead with seven years of experience designing and scaling distributed web ecosystems. At my previous enterprise-grade company, I led a high-performance team of fifteen developers tasked with maintaining mission-critical services that processed over one million requests daily. M
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1114 | title: Junior Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: Python, React, PostgreSQL, REST APIs
-  preferred_skills: Docker, TypeScript
-  description: Our agile web development team of eight is looking for a passionate Junior Full-Stack Developer to assist in building and maintaining our client-facing web applications. You will work closely with senior developers, product managers, and designers to
+  id: jd_1117 | title: Mid-Level Backend Engineer | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: Python, FastAPI, PostgreSQL, REST APIs
+  preferred_skills: Node.js, Docker
+  description: Our core engineering team of twelve is seeking a dedicated Mid-Level Backend Engineer to help us refine and expand our API-driven platform. We focus on building scalable systems that power our global product offerings. Your day-to-day responsibilitie
 
-  id: jd_1115 | title: Associate Web Engineer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Python, React, PostgreSQL, SQL
-  preferred_skills: AWS, Git
-  description: We are expanding our product team, which currently consists of twelve engineers, and we are seeking an Associate Web Engineer to help us enhance our core software platform. The role is designed for someone who is ready to learn and grow in a fast-pac
+  id: jd_1118 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Redis
+  preferred_skills: Terraform, Kubernetes
+  description: We are seeking a Senior Backend Architect to lead our platform development team of fifteen. Our group is responsible for the design, implementation, and maintenance of high-throughput backend services that serve millions of daily requests. Your day-t
 
-  id: jd_1116 | title: Senior Full-Stack Lead | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, React, AWS, Kubernetes, PostgreSQL
-  preferred_skills: Terraform, Redis
-  description: Our digital platform team is looking for a Senior Full-Stack Lead to architect, build, and scale our enterprise-grade web ecosystem. You will lead a high-performing team of fifteen engineers, responsible for maintaining mission-critical services that
+  id: jd_1119 | title: Lead Software Engineer (Backend) | level: senior | min_exp: 6 yrs | raw_text: 198 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Distributed Systems
+  preferred_skills: Kubernetes, Terraform
+  description: Our digital transformation team is seeking a Lead Software Engineer (Backend) to oversee the architectural health of our core products. Leading a department of fifteen, you will ensure stakeholder alignment while driving strategic technical outcomes.
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3339 pairs total.
+Overall dataset so far: 3348 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  667  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  669  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  666  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  669  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  668  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  667  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  670  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  670  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  671  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  670  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3340   resume_1114 × jd_1114
-  pair_3341   resume_1114 × jd_1115
-  pair_3342   resume_1114 × jd_1116
-  pair_3343   resume_1115 × jd_1114
-  pair_3344   resume_1115 × jd_1115
-  pair_3345   resume_1115 × jd_1116
-  pair_3346   resume_1116 × jd_1114
-  pair_3347   resume_1116 × jd_1115
-  pair_3348   resume_1116 × jd_1116
+  pair_3349   resume_1117 × jd_1117
+  pair_3350   resume_1117 × jd_1118
+  pair_3351   resume_1117 × jd_1119
+  pair_3352   resume_1118 × jd_1117
+  pair_3353   resume_1118 × jd_1118
+  pair_3354   resume_1118 × jd_1119
+  pair_3355   resume_1119 × jd_1117
+  pair_3356   resume_1119 × jd_1118
+  pair_3357   resume_1119 × jd_1119
 
 ════════════════════════════════════
 OUTPUT FORMAT
