@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_979 | level: middle | exp: 4.0 yrs | raw_text: 257 words
-  skills: Greenhouse, Workday, Bamboohr, LinkedIn Recruiter, PowerBi, Excel, Talent Acquisition, Onboarding
-  projects: TalentMetric
-  background: I am a dedicated Human Resources professional with four years of experience navigating the complexities of talent acquisition and employee relations. During my two-year tenure as a Human Resources Coordinator at a mid-sized tech agency with a team of fifty, I was responsible for streamlining our end
+  id: resume_982 | level: junior | exp: 0.5 yrs | raw_text: 271 words
+  skills: Seo, Content Creation, Google Analytics 4, Ahrefs, Semrush, Wordpress, Social Media Marketing
+  projects: BlogFlow
+  background: I am a motivated recent graduate looking to launch my career in digital marketing with a focus on search engine optimization and content creation. During my six-month internship at a small creative digital agency with a team of five, I was responsible for drafting weekly blog posts and conducting ke
 
-  id: resume_980 | level: senior | exp: 8.0 yrs | raw_text: 254 words
-  skills: Sap Successfactors, Lever, Greenhouse, Slack Api, Ai-based Sourcing, Diversity Recruiting, Executive Search, Onboarding
-  projects: DiversityDrive
-  background: As a Senior Talent Acquisition Lead with eight years of strategic experience, I have developed comprehensive frameworks for global recruitment and onboarding within high-growth enterprise software companies. Throughout my five-year tenure as a Talent Lead at a global technology firm with over two th
+  id: resume_983 | level: junior | exp: 0.5 yrs | raw_text: 267 words
+  skills: Social Media Strategy, Canva, Google Analytics 4, Buffer, Similarweb, Looker Studio, Content Creation
+  projects: SocialPulse
+  background: I am a highly driven marketing graduate with a keen interest in social media strategy and digital brand management. During my recent internship at a retail technology startup with a team of four, I managed the daily social media schedule across TikTok and Facebook, utilizing Buffer to plan and publi
 
-  id: resume_981 | level: senior | exp: 9.0 yrs | raw_text: 253 words
-  skills: Workday Hcm, Oracle Hcm, Lever, Tableau, R, Sql, Workforce Planning, Executive Compensation
-  projects: WorkforceHorizon
-  background: With nine years of progressive experience in Human Resources and Talent Acquisition, I specialize in building high-performance recruitment operations and complex HRIS architectures. Currently serving as a Principal Talent Consultant for an international logistics enterprise, I oversee our global rec
+  id: resume_984 | level: senior | exp: 8.0 yrs | raw_text: 261 words
+  skills: Seo Strategy, Performance Marketing, Adobe Experience Manager, Salesforce Marketing Cloud, Brightedge, Bigquery, Python, R, Sql
+  projects: StrategyCore
+  background: As a Senior Digital Marketing Strategist with eight years of experience, I specialize in architecting high-impact content ecosystems and driving organic growth for enterprise-level clients. Currently, I lead a multidisciplinary team of twelve at a prominent digital marketing agency, where I oversee 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_979 | title: Junior Talent Coordinator | level: junior | min_exp: 1 yrs | raw_text: 218 words
-  required_skills: Greenhouse, Bamboohr, Onboarding, Talent Acquisition
-  preferred_skills: LinkedIn Recruiter
-  description: We are seeking a motivated Junior Talent Coordinator to join our expanding People Operations team, which currently consists of eight members dedicated to enhancing our recruitment and onboarding experiences. In this role, you will be the primary poin
+  id: jd_982 | title: Content Marketing Manager | level: middle | min_exp: 3 yrs | raw_text: 212 words
+  required_skills: Content Marketing, Seo, Ahrefs, Google Analytics 4, Wordpress
+  preferred_skills: Html, Css
+  description: Our content team is seeking a middle-level Content Marketing Manager to help scale our organic search presence and audience engagement. The team is comprised of six strategists and creators working to deliver high-quality content across web and socia
 
-  id: jd_980 | title: Associate HR Specialist | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Workday, Greenhouse, Onboarding, Excel
-  preferred_skills: PowerBi
-  description: Our People Team is looking for an Associate HR Specialist to help support our growing workforce of three hundred employees. This role is essential to our daily operations, providing administrative support for employee relations, recruitment, and HRIS
+  id: jd_983 | title: Senior SEO Strategist | level: senior | min_exp: 6 yrs | raw_text: 218 words
+  required_skills: Seo Strategy, Technical Seo, Brightedge, Bigquery, Python
+  preferred_skills: Machine Learning, Data Modeling
+  description: Our search organization is seeking a Senior SEO Strategist to take strategic ownership of our global search ecosystem. This role sits at the center of our digital team of twenty-five people, focused on driving organic search innovation and scalabilit
 
-  id: jd_981 | title: Principal Talent Operations Lead | level: senior | min_exp: 6 yrs | raw_text: 213 words
-  required_skills: Workday Hcm, Lever, Sql, Tableau, Workforce Planning
-  preferred_skills: Digital Transformation, Executive Compensation
-  description: Our organization is seeking a Principal Talent Operations Lead to take strategic ownership of our global recruitment ecosystem. This role sits at the center of our talent organization, focused on scaling our hiring operations, managing enterprise-lev
+  id: jd_984 | title: Head of Content Strategy | level: senior | min_exp: 6 yrs | raw_text: 217 words
+  required_skills: Content Strategy, Adobe Experience Manager, Salesforce Marketing Cloud, Sql, Leadership
+  preferred_skills: Content Governance, Digital Transformation
+  description: Our organization is seeking a Head of Content Strategy to manage and scale our global digital content footprint. This role sits at the top of our marketing organization of thirty people, focused on driving innovation and scalability across all digita
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2934 pairs total.
+Overall dataset so far: 2943 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  586  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  587  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  586  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  587  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  588  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  586  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  588  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  591  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  589  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  589  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2935   resume_979 × jd_979
-  pair_2936   resume_979 × jd_980
-  pair_2937   resume_979 × jd_981
-  pair_2938   resume_980 × jd_979
-  pair_2939   resume_980 × jd_980
-  pair_2940   resume_980 × jd_981
-  pair_2941   resume_981 × jd_979
-  pair_2942   resume_981 × jd_980
-  pair_2943   resume_981 × jd_981
+  pair_2944   resume_982 × jd_982
+  pair_2945   resume_982 × jd_983
+  pair_2946   resume_982 × jd_984
+  pair_2947   resume_983 × jd_982
+  pair_2948   resume_983 × jd_983
+  pair_2949   resume_983 × jd_984
+  pair_2950   resume_984 × jd_982
+  pair_2951   resume_984 × jd_983
+  pair_2952   resume_984 × jd_984
 
 ════════════════════════════════════
 OUTPUT FORMAT
