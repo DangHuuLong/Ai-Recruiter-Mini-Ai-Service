@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1006 | level: middle | exp: 4.0 yrs | raw_text: 266 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, Kubernetes
-  projects: AuthGuard
-  background: I am a dedicated Backend Developer with four years of hands-on experience building scalable, high-performance web services. During my two-year tenure at a fast-paced fintech startup, I worked in a dynamic team of eight engineers to develop transaction processing APIs using Python 3.10 and FastAPI 0.
+  id: resume_1009 | level: junior | exp: 0.5 yrs | raw_text: 257 words
+  skills: Financial Modeling, Accounting, Excel, QuickBooks, Python, Pandas
+  projects: FiscalHealth
+  background: I am a motivated Finance Graduate with a strong foundation in financial analysis and accounting principles, eager to launch my career in the fintech sector. During my final year, I completed a six-month internship at a mid-sized accounting firm where I assisted a team of ten in reconciling monthly f
 
-  id: resume_1007 | level: senior | exp: 8.0 yrs | raw_text: 268 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, AWS, Kafka
-  projects: StreamFlow
-  background: I am a Senior Backend Engineer with eight years of experience designing high-traffic, distributed backend systems for global enterprises. In my most recent role as a Principal Engineer at a global logistics firm, I managed a team of fifteen developers. We utilized Python 3.11, FastAPI 0.100, and Pos
+  id: resume_1010 | level: junior | exp: 0.3 yrs | raw_text: 263 words
+  skills: Financial Analysis, Accounting, SQL, Tableau, Excel, GAAP
+  projects: TrendTracker
+  background: I am a recent Finance graduate with a keen interest in data-driven decision making and financial reporting within the fintech industry. Throughout my academic career and a three-month internship at a local startup, I focused on developing my proficiency in financial analysis tools and accounting sof
 
-  id: resume_1008 | level: senior | exp: 9.0 yrs | raw_text: 270 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Terraform, Istio
-  projects: DataNexus
-  background: I am a Principal Backend Architect with nine years of extensive experience in designing scalable, fault-tolerant platforms. Throughout my career in the banking and healthcare sectors, I have led cross-functional teams of up to twenty engineers to deliver robust solutions. At a leading healthcare ent
+  id: resume_1011 | level: senior | exp: 8.0 yrs | raw_text: 261 words
+  skills: Financial Modeling, Accounting, Compliance, Oracle NetSuite, Python, SQL, AWS Redshift
+  projects: GlobalAlign
+  background: I am an experienced Financial Controller and Strategic Advisor with eight years of professional experience in the fintech and banking industries. Throughout my career, I have successfully managed accounting departments of up to twenty-five employees while ensuring full compliance with stringent inte
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1006 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Python, FastAPI, PostgreSQL
-  preferred_skills: Node.js, Docker
-  description: Our backend team consists of fifteen engineers focused on developing core API services that support our platform's growth. We are looking for a Junior Backend Developer to assist with daily maintenance, feature implementation, and bug fixes for our P
+  id: jd_1009 | title: Financial Planning & Analysis Manager | level: middle | min_exp: 3 yrs | raw_text: 199 words
+  required_skills: Financial Modeling, Accounting, Oracle NetSuite, Excel
+  preferred_skills: SQL, Fintech Experience
+  description: Our FP&A team is looking for a Financial Planning & Analysis Manager to support our rapid growth as we expand into new financial product offerings. You will work within a group of fifteen finance professionals, managing the delivery of accurate finan
 
-  id: jd_1007 | title: Associate Backend Engineer | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Python, FastAPI, PostgreSQL
-  preferred_skills: Node.js, Docker
-  description: Our team of twelve works on developing highly available internal APIs for our data platform. We are seeking an Associate Backend Engineer to help us maintain and scale our services. You will be responsible for creating new endpoints, managing data pe
+  id: jd_1010 | title: Principal Finance & Compliance Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: Financial Modeling, Accounting, Compliance, Python, AWS Redshift, SQL
+  preferred_skills: System Architecture, CPA or CFA
+  description: The financial operations organization is seeking a Principal Finance & Compliance Lead to oversee our most critical regulatory initiatives and reporting standards. You will manage a high-performing team of twenty, driving the development of automated
 
-  id: jd_1008 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 181 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Distributed Systems, System Architecture
-  preferred_skills: Istio, Terraform
-  description: Our operations organization is seeking a Senior Backend Architect to lead our backend team of twenty professionals. We focus on building high-performance, distributed platforms that manage millions of requests per hour. You will work on designing com
+  id: jd_1011 | title: Director of Financial Operations | level: senior | min_exp: 6 yrs | raw_text: 193 words
+  required_skills: Financial Modeling, Accounting, Compliance, Python, SQL, Oracle NetSuite
+  preferred_skills: Financial Infrastructure, Leadership
+  description: Our operations team is seeking a Director of Financial Operations to lead our global financial strategy and reporting initiatives. You will orchestrate the efforts of thirty professionals, focusing on optimizing financial operations and ensuring top-
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3015 pairs total.
+Overall dataset so far: 3024 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  602  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  604  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  602  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  603  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  604  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  602  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  605  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  606  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  605  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  606  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3016   resume_1006 × jd_1006
-  pair_3017   resume_1006 × jd_1007
-  pair_3018   resume_1006 × jd_1008
-  pair_3019   resume_1007 × jd_1006
-  pair_3020   resume_1007 × jd_1007
-  pair_3021   resume_1007 × jd_1008
-  pair_3022   resume_1008 × jd_1006
-  pair_3023   resume_1008 × jd_1007
-  pair_3024   resume_1008 × jd_1008
+  pair_3025   resume_1009 × jd_1009
+  pair_3026   resume_1009 × jd_1010
+  pair_3027   resume_1009 × jd_1011
+  pair_3028   resume_1010 × jd_1009
+  pair_3029   resume_1010 × jd_1010
+  pair_3030   resume_1010 × jd_1011
+  pair_3031   resume_1011 × jd_1009
+  pair_3032   resume_1011 × jd_1010
+  pair_3033   resume_1011 × jd_1011
 
 ════════════════════════════════════
 OUTPUT FORMAT
