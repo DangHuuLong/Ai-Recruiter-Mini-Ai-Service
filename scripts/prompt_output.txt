@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1012 | level: middle | exp: 4.0 yrs | raw_text: 276 words
-  skills: Shopify, Google Analytics, SQL, Python, Operations Management, Merchandising
-  projects: StockFlow
-  background: I am a dedicated E-commerce Operations Specialist with four years of experience driving growth and operational efficiency in the retail sector. In my most recent role at a mid-sized e-commerce startup, I managed a team of five and was responsible for streamlining marketplace operations on Shopify Pl
+  id: resume_1015 | level: junior | exp: 0.8 yrs | raw_text: 285 words
+  skills: Python, Splunk, Metasploit, AWS Security, Nmap, Linux
+  projects: HomeLab SIEM, BasicPentest
+  background: I am a passionate Junior Security Analyst with nearly one year of hands-on experience in threat monitoring and incident triage. In my current role at a mid-sized tech enterprise, I work alongside a team of four analysts to monitor network traffic and analyze security events. My primary responsibilit
 
-  id: resume_1013 | level: middle | exp: 5.0 yrs | raw_text: 264 words
-  skills: Magento, Amazon FBA, SQL, Tableau, Python, AWS
-  projects: MarketPulse
-  background: I am a Retail Management Professional with five years of experience in omni-channel e-commerce strategy and marketplace optimization. Throughout my tenure at an innovative retail agency, I led a cross-functional team of eight to optimize digital storefronts and implement comprehensive inventory mana
+  id: resume_1016 | level: junior | exp: 1.0 yrs | raw_text: 280 words
+  skills: Wireshark, Network Protocols, Burp Suite Pro, CI/CD Security, Bash, Vulnerability Scanning
+  projects: GitSecure, NetMapper
+  background: I am an enthusiastic Junior Penetration Tester with one year of professional experience focused on application security and network vulnerability assessments. Currently, I am employed at a boutique security consulting agency, where I collaborate with a specialized team of three testers to deliver co
 
-  id: resume_1014 | level: senior | exp: 8.0 yrs | raw_text: 276 words
-  skills: Go, Kubernetes, SAP Commerce Cloud, GraphQL, Cassandra, Python, AWS
-  projects: RetailFusion
-  background: I am a seasoned E-commerce Architect and Operations Lead with eight years of experience building and scaling high-performance retail platforms. At a leading global e-commerce enterprise, I managed a technical team of twenty, overseeing the migration of monolithic systems to a microservices architect
+  id: resume_1017 | level: senior | exp: 8.0 yrs | raw_text: 289 words
+  skills: Splunk, Python, Incident Response, Network Protocols, Cobalt Strike, Exploit Development, Reverse Engineering, Advanced Penetration Testing, Burp Suite Pro, Metasploit, AWS Security, Kubernetes Security, Zero Trust, Terraform, CI/CD Security, Identity and Access Management (IAM)
+  projects: CloudStrike, BinaryGaze
+  background: I am a highly accomplished Principal Security Architect and Lead Penetration Tester with eight years of extensive experience spanning defensive operations, advanced threat emulation, and cloud security engineering. In my current role at a major global financial enterprise, I manage a cross-functiona
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1012 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 212 words
-  required_skills: Shopify, Google Analytics, Operations Management, Merchandising
-  preferred_skills: HTML, CSS
-  description: Our E-commerce team is looking for a detail-oriented Junior E-commerce Associate to support the daily operations of our growing online marketplace. You will join a supportive team of ten, focusing on product listing management, inventory accuracy, an
+  id: jd_1015 | title: Mid-level SOC Analyst | level: middle | min_exp: 3 yrs | raw_text: 233 words
+  required_skills: Splunk, Python, Incident Response, Network Protocols, Wireshark
+  preferred_skills: Linux Security, PowerShell
+  description: We are actively seeking an experienced Mid-level Security Operations Center (SOC) Analyst to join our dedicated internal security team of eight professionals. In this critical role, you will be on the front lines of our enterprise defense, responsibl
 
-  id: jd_1013 | title: Junior Retail Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 213 words
-  required_skills: Retail Operations, Excel, Tableau, Data Analysis
-  preferred_skills: SQL, Logistics
-  description: We are seeking a motivated Junior Retail Operations Analyst to join our team of fifteen, dedicated to ensuring seamless operations across our digital and physical store network. Your role will involve supporting the day-to-day management of inventory
+  id: jd_1016 | title: Lead Penetration Tester | level: senior | min_exp: 6 yrs | raw_text: 233 words
+  required_skills: Cobalt Strike, Exploit Development, Reverse Engineering, Advanced Penetration Testing, Burp Suite Pro, Metasploit
+  preferred_skills: OSINT, Social Engineering
+  description: Our elite offensive security division is looking for a Lead Penetration Tester to guide our red team operations and deliver high-impact security assessments for our enterprise clients. You will lead a specialized unit of five offensive security engin
 
-  id: jd_1014 | title: Principal E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 213 words
-  required_skills: Microservices Architecture, Go, Python, AWS, Systems Architecture
-  preferred_skills: GraphQL, Cassandra
-  description: Our engineering organization is seeking a Principal E-commerce Architect to lead the design and implementation of our next-generation global retail platform. Managing a team of fifteen software engineers, you will be responsible for creating robust, 
+  id: jd_1017 | title: Principal Cloud Security Architect | level: senior | min_exp: 6 yrs | raw_text: 228 words
+  required_skills: AWS Security, Kubernetes Security, Zero Trust, Terraform, CI/CD Security, Identity and Access Management (IAM)
+  preferred_skills: Docker Security, Python
+  description: We are searching for a visionary Principal Cloud Security Architect to lead the design and implementation of our next-generation cloud infrastructure defense strategy. Joining our platform engineering organization, you will provide technical leadersh
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3033 pairs total.
+Overall dataset so far: 3042 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  606  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  607  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  606  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  606  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  608  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  606  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  609  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  608  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  610  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  609  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3034   resume_1012 × jd_1012
-  pair_3035   resume_1012 × jd_1013
-  pair_3036   resume_1012 × jd_1014
-  pair_3037   resume_1013 × jd_1012
-  pair_3038   resume_1013 × jd_1013
-  pair_3039   resume_1013 × jd_1014
-  pair_3040   resume_1014 × jd_1012
-  pair_3041   resume_1014 × jd_1013
-  pair_3042   resume_1014 × jd_1014
+  pair_3043   resume_1015 × jd_1015
+  pair_3044   resume_1015 × jd_1016
+  pair_3045   resume_1015 × jd_1017
+  pair_3046   resume_1016 × jd_1015
+  pair_3047   resume_1016 × jd_1016
+  pair_3048   resume_1016 × jd_1017
+  pair_3049   resume_1017 × jd_1015
+  pair_3050   resume_1017 × jd_1016
+  pair_3051   resume_1017 × jd_1017
 
 ════════════════════════════════════
 OUTPUT FORMAT
