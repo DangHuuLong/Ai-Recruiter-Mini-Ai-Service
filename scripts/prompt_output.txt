@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1090 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: Shopify Plus, Magento 2.4, Google Analytics 4, Tableau, Inventory Management
-  projects: Market-Optimizer-Tool, Inventory-Auto-Sync
-  background: I am a dedicated E-commerce Operations Manager with four years of hands-on experience in marketplace management and digital retail strategy. During my previous role at a fast-growing e-commerce startup, I managed a team of five and oversaw the daily performance of our product listings across multipl
+  id: resume_1093 | level: junior | exp: 0.5 yrs | raw_text: 277 words
+  skills: Python, Pandas, Scikit-learn, NLTK, Streamlit
+  projects: Sentiment-Analysis-Dashboard, Crypto-Price-Predictor
+  background: I am an enthusiastic Data Science graduate looking to start my career in machine learning and predictive analytics. During my recent six-month internship at a local tech startup, I worked within a team of four to assist in the development of basic predictive models for customer churn. My primary res
 
-  id: resume_1091 | level: senior | exp: 7.0 yrs | raw_text: 272 words
-  skills: Salesforce Commerce Cloud, BigCommerce Enterprise, SQL, R, Demand Forecasting, Supply Chain Strategy
-  projects: Global-Demand-Forecaster, Fulfillment-Efficiency-Initiative
-  background: As a Senior E-commerce Strategy Lead with seven years of deep experience, I specialize in architecting high-traffic retail platforms and scaling complex marketplace operations. Currently, I hold a lead role at a global enterprise retail group, where I oversee a team of fifteen professionals managing
+  id: resume_1094 | level: junior | exp: 0.3 yrs | raw_text: 272 words
+  skills: Python, SQL, TensorFlow, Jupyter, ETL
+  projects: Image-Classifier-App, Neural-Net-Optimizer
+  background: I am a motivated AI and Machine Learning enthusiast eager to launch my professional career in data-driven engineering. During my recent four-month internship at a mid-sized data agency, I supported a team of six in developing automated reporting systems and testing machine learning workflows. My mai
 
-  id: resume_1092 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: PostgreSQL 16, Kubernetes, AWS, Microservices, API Integration, Data Modeling
-  projects: Enterprise-Scale-Connector, Performance-Sentinel-Retail
-  background: I am a Principal Retail Operations Architect with eight years of extensive expertise in building scalable, enterprise-level digital retail infrastructures. Currently, I lead a cross-functional department of twenty engineers and merchandising experts at a top-tier global retail enterprise, focusing o
+  id: resume_1095 | level: senior | exp: 8.0 yrs | raw_text: 254 words
+  skills: PyTorch 2.0, AWS, GCP, Kubernetes, FastAPI, Triton
+  projects: Enterprise-Inference-Scale, Automated-Training-Sentinel
+  background: I am a Senior Machine Learning Engineer with eight years of experience specializing in the design, deployment, and optimization of large-scale distributed machine learning systems. Currently, I lead a cross-functional department of fifteen engineers at a large enterprise, focusing on production-grad
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1090 | title: Junior Marketplace Associate | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Excel, Shopify, Sales Analytics
-  preferred_skills: Data Visualization, SEO
-  description: Our e-commerce operations team of five is looking for a motivated Junior Marketplace Associate to help maintain our product catalog and marketplace health. We work in a fast-paced environment where managing accurate product listings across multiple c
+  id: jd_1093 | title: Mid-Level Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 198 words
+  required_skills: Python, Scikit-learn, Pandas, AWS
+  preferred_skills: PyTorch, SQL
+  description: Our data science team of eight is currently looking for an experienced Mid-Level Data Scientist to join us in developing and deploying predictive models for our core product. We work in a fast-paced environment where data-driven insights are crucial 
 
-  id: jd_1091 | title: Associate Retail Operations Coordinator | level: junior | min_exp: 1 yrs | raw_text: 202 words
-  required_skills: Excel, Magento, Sales Analytics
-  preferred_skills: Project Management, Merchandising
-  description: Our retail team of six is seeking an Associate Retail Operations Coordinator to support our daily operational tasks and data-driven merchandising. The primary focus of this role is to ensure that our products are correctly displayed, priced, and stoc
+  id: jd_1094 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 188 words
+  required_skills: PyTorch, Kubernetes, MLOps, Distributed Systems
+  preferred_skills: CUDA, Model Monitoring
+  description: Our core engineering team of twenty is seeking a Senior Machine Learning Engineer to lead the architecture and optimization of our production-grade machine learning platform. Our systems support millions of daily users, requiring top-tier performance
 
-  id: jd_1092 | title: Senior E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: AWS, Kubernetes, Microservices Architecture, E-commerce Platforms
-  preferred_skills: Event-Driven Architecture, API Infrastructure
-  description: Our engineering organization is looking for a Senior E-commerce Architect to lead our platform strategy and infrastructure development. With a team of twenty engineers, we handle mission-critical systems that require extremely high performance, globa
+  id: jd_1095 | title: Senior Research Scientist | level: senior | min_exp: 6 yrs | raw_text: 184 words
+  required_skills: PyTorch, Machine Learning Theory, Python, Research
+  preferred_skills: Distributed Training, Model Interpretability
+  description: Our research and development team of fifteen is seeking a Senior Research Scientist to innovate on our core machine learning capabilities. You will work on cutting-edge research, from developing novel model architectures to exploring advanced techniq
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3267 pairs total.
+Overall dataset so far: 3276 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  653  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  654  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  652  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  654  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  654  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  653  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  655  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  656  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  656  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  656  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3268   resume_1090 × jd_1090
-  pair_3269   resume_1090 × jd_1091
-  pair_3270   resume_1090 × jd_1092
-  pair_3271   resume_1091 × jd_1090
-  pair_3272   resume_1091 × jd_1091
-  pair_3273   resume_1091 × jd_1092
-  pair_3274   resume_1092 × jd_1090
-  pair_3275   resume_1092 × jd_1091
-  pair_3276   resume_1092 × jd_1092
+  pair_3277   resume_1093 × jd_1093
+  pair_3278   resume_1093 × jd_1094
+  pair_3279   resume_1093 × jd_1095
+  pair_3280   resume_1094 × jd_1093
+  pair_3281   resume_1094 × jd_1094
+  pair_3282   resume_1094 × jd_1095
+  pair_3283   resume_1095 × jd_1093
+  pair_3284   resume_1095 × jd_1094
+  pair_3285   resume_1095 × jd_1095
 
 ════════════════════════════════════
 OUTPUT FORMAT
