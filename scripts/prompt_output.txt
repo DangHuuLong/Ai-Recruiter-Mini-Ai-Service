@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1195 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: SEO, Content Strategy, Google Analytics 4, SEMrush, Hootsuite, Google Data Studio, Tableau
-  projects: ContentPulse
-  background: I am a dedicated digital marketing professional with four years of experience in content strategy and SEO. In my most recent role as a Content Specialist at a mid-sized marketing agency, I managed a team of three and oversaw the creation of blog content, whitepapers, and email campaigns for ten dive
+  id: resume_1198 | level: junior | exp: 0.5 yrs | raw_text: 256 words
+  skills: Linux, Network Security, Nessus, pfSense, ELK Stack, Snort
+  projects: SecureHome
+  background: I am an enthusiastic entry-level cybersecurity analyst with a foundational background in network security and threat detection. During my six-month internship at a local technology startup, I worked alongside a security team of three to monitor network traffic and investigate potential security inci
 
-  id: resume_1196 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: Technical SEO, Ahrefs, Screaming Frog, Python, Salesforce Marketing Cloud, Hubspot, Advanced Analytics
-  projects: RankMaster
-  background: I am a senior digital strategy lead with eight years of experience in performance marketing and technical SEO. Throughout my career, I have thrived in high-growth enterprise settings, leading cross-functional teams of up to fifteen members. My most recent position as a Senior SEO Lead at a global te
+  id: resume_1199 | level: junior | exp: 0.7 yrs | raw_text: 256 words
+  skills: Python, Burp Suite, Nmap, Metasploit, Flask, Web Security
+  projects: WebShield
+  background: I am a motivated junior information security associate with a fresh academic background in ethical hacking and system hardening. During my eight-month residency at a cybersecurity consultancy firm, I collaborated with a team of five security engineers to deliver penetration testing services for smal
 
-  id: resume_1197 | level: senior | exp: 9.0 yrs | raw_text: 257 words
-  skills: Digital Strategy, SEO, Adobe Experience Cloud, Google Marketing Platform, SQL, R, Tableau
-  projects: MarketVision
-  background: I am a senior digital marketing director with nine years of extensive experience in product-led growth and comprehensive content strategy. In my past six years at a major global e-commerce enterprise, I led the digital growth division, overseeing a team of twenty professionals. I was responsible for
+  id: resume_1200 | level: senior | exp: 8.0 yrs | raw_text: 252 words
+  skills: Python, Splunk, AWS Security, Kubernetes, Terraform, Network Security
+  projects: SentinelFlow
+  background: I am a senior cybersecurity architect with eight years of experience in designing resilient, large-scale security operations for enterprise organizations. In my recent role as a Lead Security Engineer at a global technology firm, I managed a cross-functional team of twelve security professionals res
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1195 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: SEO, Content Management, Google Analytics, Hootsuite, SEMrush
-  preferred_skills: Google Ads, HTML, CSS
-  description: Our busy digital marketing team of six is looking for a Junior Digital Marketing Associate to assist with our daily search and social campaigns. We focus on helping local businesses grow their presence online through structured content strategies and
+  id: jd_1198 | title: Mid-Level Security Operations Engineer | level: middle | min_exp: 3 yrs | raw_text: 213 words
+  required_skills: Splunk, AWS Security, Linux, Network Security, Python, Vulnerability Assessment
+  preferred_skills: Kubernetes, Terraform
+  description: Our security operations team is seeking a Mid-Level Security Operations Engineer to join our group of fifteen professionals. We are responsible for maintaining our global security posture and responding to incidents across our cloud and on-premises e
 
-  id: jd_1196 | title: Junior SEO Associate | level: junior | min_exp: 1 yrs | raw_text: 194 words
-  required_skills: SEO, Ahrefs, Screaming Frog, Google Search Console, Content Writing
-  preferred_skills: Technical Reporting, Google Looker Studio
-  description: The SEO team is expanding and we are seeking a Junior SEO Associate to join our group of eight marketing specialists. Our focus is on improving organic visibility for our clients through technical site audits, keyword-driven content creation, and met
+  id: jd_1199 | title: Senior Cybersecurity Architect | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Splunk, Kubernetes, Terraform, AWS, Cloud Security, Microservices
+  preferred_skills: Threat Intelligence, Cryptography
+  description: Our platform engineering team is seeking a Senior Cybersecurity Architect to lead the design and implementation of our next-generation enterprise-scale security architecture. Working in a specialized team of ten, you will guide our technical strategy
 
-  id: jd_1197 | title: Senior Digital Marketing Lead | level: senior | min_exp: 6 yrs | raw_text: 199 words
-  required_skills: Digital Strategy, SEO, Adobe Experience Cloud, SQL, R, Ahrefs, Screaming Frog
-  preferred_skills: Predictive Modeling, Web Migrations
-  description: Our enterprise growth team is seeking a Senior Digital Marketing Lead to oversee our comprehensive digital strategy for a global product line. Working in a specialized team of twelve, you will design and implement cross-channel marketing initiatives,
+  id: jd_1200 | title: Lead Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 204 words
+  required_skills: Splunk, Python, Kubernetes, AWS, Cloud Security, API Security
+  preferred_skills: Terraform, Threat Detection
+  description: Our core security team is hiring a Lead Security Engineer to drive the delivery of our enterprise platform protection. You will lead a high-performing squad of fifteen engineers, steering the development of advanced security features that protect mil
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3582 pairs total.
+Overall dataset so far: 3591 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  717  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  717  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  715  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  716  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  717  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  717  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  718  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  719  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  718  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  719  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3583   resume_1195 × jd_1195
-  pair_3584   resume_1195 × jd_1196
-  pair_3585   resume_1195 × jd_1197
-  pair_3586   resume_1196 × jd_1195
-  pair_3587   resume_1196 × jd_1196
-  pair_3588   resume_1196 × jd_1197
-  pair_3589   resume_1197 × jd_1195
-  pair_3590   resume_1197 × jd_1196
-  pair_3591   resume_1197 × jd_1197
+  pair_3592   resume_1198 × jd_1198
+  pair_3593   resume_1198 × jd_1199
+  pair_3594   resume_1198 × jd_1200
+  pair_3595   resume_1199 × jd_1198
+  pair_3596   resume_1199 × jd_1199
+  pair_3597   resume_1199 × jd_1200
+  pair_3598   resume_1200 × jd_1198
+  pair_3599   resume_1200 × jd_1199
+  pair_3600   resume_1200 × jd_1200
 
 ════════════════════════════════════
 OUTPUT FORMAT
