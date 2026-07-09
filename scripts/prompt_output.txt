@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1138 | level: middle | exp: 4.0 yrs | raw_text: 264 words
-  skills: SAP S/4HANA, SQL, Microsoft Power BI, Demand Forecasting, Inventory Management
-  projects: Smart-Inventory-Forecast
-  background: I am a dedicated Supply Chain Coordinator with four years of experience in enterprise logistics and inventory management. In my current role at a large-scale manufacturing enterprise, I oversee a team of five logistics associates responsible for regional distribution. I spend much of my time managin
+  id: resume_1141 | level: junior | exp: 0.5 yrs | raw_text: 263 words
+  skills: Python, FastAPI, PostgreSQL, Docker, Git
+  projects: Weather-Tracker-App
+  background: I am a motivated Backend Developer and recent computer science graduate, eager to build scalable web applications. During my final year, I completed a six-month internship at a fast-paced technology startup, where I worked with a team of four developers to maintain our primary customer-facing API. M
 
-  id: resume_1139 | level: senior | exp: 8.5 yrs | raw_text: 259 words
-  skills: Oracle Cloud ERP, PostgreSQL, AWS, RESTful APIs, Machine Learning
-  projects: Global-Logistics-Sync
-  background: I am a Senior Supply Chain Solutions Architect with over eight years of experience designing and implementing complex logistics infrastructures for enterprise-level retail organizations. Throughout my career, I have led cross-functional teams of up to forty professionals to streamline procurement, w
+  id: resume_1142 | level: middle | exp: 4.0 yrs | raw_text: 273 words
+  skills: Node.js, TypeScript, PostgreSQL, Redis, AWS
+  projects: Task-Manager-Core
+  background: I am a Backend Engineer with four years of experience specializing in building high-performance APIs and distributed services. Throughout my tenure at a mid-sized e-commerce enterprise, I worked within a cross-functional team of twelve to refactor our monolithic architecture into modular microservic
 
-  id: resume_1140 | level: senior | exp: 9.0 yrs | raw_text: 255 words
-  skills: SAP S/4HANA, Java, Oracle, SQL, Docker, Jenkins
-  projects: Procurement-Automation-Framework
-  background: I am a Principal Logistics Engineer with nine years of experience building and optimizing supply chain systems for major industrial conglomerates. My expertise lies in high-volume, global procurement strategies and the integration of automated warehouse management systems. Leading a global team of f
+  id: resume_1143 | level: middle | exp: 3.5 yrs | raw_text: 259 words
+  skills: Python, FastAPI, PostgreSQL, AWS Lambda, Prometheus
+  projects: API-Observability-Suite
+  background: I am a Backend Software Engineer with three and a half years of experience, primarily focused on building and scaling robust API services using Python and cloud-native technologies. In my role at an established agency, I worked with a team of eight to build customer relationship management software 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1138 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 206 words
-  required_skills: SAP S/4HANA, Microsoft Excel, Inventory Management, Procurement Basics
-  preferred_skills: Power BI
-  description: Our supply chain operations team is growing, and we are seeking a motivated Junior Supply Chain Associate to help manage our daily inventory and procurement tasks. This role is part of a 10-person team focused on maintaining high-quality standards fo
+  id: jd_1141 | title: Junior Backend Developer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: Python, FastAPI, PostgreSQL, RESTful APIs
+  preferred_skills: Docker
+  description: Our backend engineering team is expanding, and we are seeking a dedicated Junior Backend Developer to assist in building and maintaining our API services. You will join a supportive team of eight engineers who are passionate about writing clean, main
 
-  id: jd_1139 | title: Associate Logistics Coordinator | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: SAP S/4HANA, Logistics Coordination, Microsoft Excel, Inventory Reconciliation
-  preferred_skills: SQL
-  description: The logistics coordination team is looking for a detail-oriented Associate Logistics Coordinator to join our growing group of 15 logistics professionals. In this role, you will be supporting our primary distribution channels by monitoring stock movem
+  id: jd_1142 | title: Senior Backend Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Node.js, TypeScript, PostgreSQL, AWS, System Architecture
+  preferred_skills: Redis
+  description: We are looking for a highly experienced Senior Backend Architect to lead our backend services team of fifteen engineers. Our focus is on building a distributed, highly available microservices architecture that handles over a million daily requests. Y
 
-  id: jd_1140 | title: Senior Supply Chain Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Java, PostgreSQL, AWS, Oracle Cloud ERP, SAP S/4HANA, RESTful APIs
-  preferred_skills: Machine Learning, Docker
-  description: Our technology team is seeking a Senior Supply Chain Systems Architect to oversee the design and integration of our enterprise-wide logistics systems. You will lead a team of twenty engineers and logistics specialists responsible for building the dig
+  id: jd_1143 | title: Lead Backend Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
+  required_skills: Python, FastAPI, PostgreSQL, AWS, CI/CD
+  preferred_skills: Kubernetes
+  description: Our platform is scaling rapidly, and we need a Lead Backend Engineer to head our core backend services. You will lead a talented team of twenty backend engineers, product designers, and SREs to build and maintain our API services, which serve as the 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3411 pairs total.
+Overall dataset so far: 3420 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  683  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  682  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  680  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  683  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  683  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  683  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  683  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  684  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  685  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  685  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3412   resume_1138 × jd_1138
-  pair_3413   resume_1138 × jd_1139
-  pair_3414   resume_1138 × jd_1140
-  pair_3415   resume_1139 × jd_1138
-  pair_3416   resume_1139 × jd_1139
-  pair_3417   resume_1139 × jd_1140
-  pair_3418   resume_1140 × jd_1138
-  pair_3419   resume_1140 × jd_1139
-  pair_3420   resume_1140 × jd_1140
+  pair_3421   resume_1141 × jd_1141
+  pair_3422   resume_1141 × jd_1142
+  pair_3423   resume_1141 × jd_1143
+  pair_3424   resume_1142 × jd_1141
+  pair_3425   resume_1142 × jd_1142
+  pair_3426   resume_1142 × jd_1143
+  pair_3427   resume_1143 × jd_1141
+  pair_3428   resume_1143 × jd_1142
+  pair_3429   resume_1143 × jd_1143
 
 ════════════════════════════════════
 OUTPUT FORMAT
