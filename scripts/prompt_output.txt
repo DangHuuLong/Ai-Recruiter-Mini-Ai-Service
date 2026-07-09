@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1051 | level: junior | exp: 0.8 yrs | raw_text: 265 words
-  skills: Figma, User Research, Prototyping, Wireframing, Miro, Usability Testing
-  projects: HealthTrack Mobile
-  background: I am an enthusiastic Associate UI/UX Designer with 0.8 years of dedicated experience creating user-centered web and mobile experiences. In my first role as a Junior Product Designer at a digital agency startup, I operated within a compact cross-functional product squad of five individuals, including
+  id: resume_1054 | level: middle | exp: 4.0 yrs | raw_text: 269 words
+  skills: Requirements Gathering, Jira, Miro, Balsamiq, BPMN, Confluence, Microsoft Visio
+  projects: ProcurementSync
+  background: I am a structured Business Analyst with 4.0 years of experience managing business processes and coordinating stakeholders within the tech ecosystem. In my previous role as an Associate Business Analyst at a software development agency, I worked within a team of six professionals where I focused on g
 
-  id: resume_1052 | level: middle | exp: 4.5 yrs | raw_text: 258 words
-  skills: Figma, User Research, Prototyping, Adobe XD, Maze, Design Systems, Usability Testing, Jira
-  projects: EcoSphere Portal
-  background: I am a detail-driven mid-level Product Designer with 4.5 years of professional experience engineering intuitive digital products and scaling user interaction layouts. In my previous role as a UI/UX Designer at a fast-growing software startup, I worked closely inside an internal product team of eight
+  id: resume_1055 | level: senior | exp: 7.5 yrs | raw_text: 261 words
+  skills: Requirements Gathering, BPMN, Stakeholder Management, Jira, Confluence, Miro, Microsoft Project, Gap Analysis
+  projects: TreasuryFlow
+  background: I am an analytical Senior Business Analyst and Project Lead with 7.5 years of industry experience driving enterprise systems optimization and coordinating senior executive stakeholders. In my previous tenure at a global financial enterprise, I led an operational delivery unit of twelve professionals
 
-  id: resume_1053 | level: middle | exp: 4.0 yrs | raw_text: 257 words
-  skills: Figma, User Research, Prototyping, A/B Testing, Principle, Zeplin, Google Analytics, Data Visualization
-  projects: DataViz Studio
-  background: I am an analytical UI/UX Designer and Frontend Specialist with 4.0 years of industry experience crafting conversion-focused software architectures and web platforms. In my current role at a premium digital design agency, I work within a cross-functional production unit of nine professionals handling
+  id: resume_1056 | level: senior | exp: 8.0 yrs | raw_text: 253 words
+  skills: Agile, Stakeholder Management, BPMN, Jira, Smartsheet, Confluence, Lucidchart, Requirements Gathering
+  projects: CloudScale Migration
+  background: I am a results-oriented Senior Project Manager and Systems Analyst with 8.0 years of extensive experience delivering enterprise software solutions and orchestrating cross-functional technical teams. In my current role at an enterprise cloud services provider, I manage a delivery division of fifteen 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1051 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 197 words
-  required_skills: Figma, User Research, Prototyping, Wireframing, Miro
-  preferred_skills: HTML, CSS, Maze
-  description: Our digital lifestyle squad is searching for an enthusiastic, detail-oriented Junior UI/UX Designer to elevate our mobile consumer products. In this entry-level associate role, you will work closely inside a core product design team of six specialist
+  id: jd_1054 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 204 words
+  required_skills: Requirements Gathering, Jira, BPMN, Miro, Confluence
+  preferred_skills: SQL, Balsamiq
+  description: Our financial services squad is seeking an analytical and highly organized Junior Business Analyst to optimize our core banking operational platforms. In this entry-level role, you will become part of an internal delivery team of seven professionals,
 
-  id: jd_1052 | title: Senior Strategic UX Lead | level: senior | min_exp: 6 yrs | raw_text: 185 words
-  required_skills: User Research, Usability Testing, Hotjar, Looker Studio, UserZoom, Design Systems
-  preferred_skills: Figma, Agile, HTML
-  description: Our financial services team is actively seeking a visionary Senior Strategic UX Lead to redefine our global banking web platforms. Leading an advanced enterprise design laboratory of ten professionals, your everyday responsibilities will involve mapp
+  id: jd_1055 | title: Associate Project Manager | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Microsoft Project, Jira, Confluence, Lucidchart, Stakeholder Management
+  preferred_skills: CAPM, Agile
+  description: Our digital transformation group is looking for an energetic Associate Project Manager to streamline the delivery of our consumer web platforms. Joining a fast-moving project management office of eight specialists, you will work hand-in-hand with tec
 
-  id: jd_1053 | title: Senior Conversion & Growth Product Designer | level: senior | min_exp: 6 yrs | raw_text: 195 words
-  required_skills: A/B Testing, Amplitude, Framer, Optimizely, Conversion Rate Optimization, Prototyping
-  preferred_skills: Figma, React, CSS
-  description: Our hyper-growth marketing software business is looking for an analytical Senior Conversion & Growth Product Designer to spearhead the optimization of our global subscription acquisition pipelines. Working inside a fast-moving, multi-functional metri
+  id: jd_1056 | title: Senior Lead Enterprise Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: BPMN, Gap Analysis, Stakeholder Management, Jira, Smartsheet, Requirements Gathering
+  preferred_skills: CBAP, PMP
+  description: Our corporate platform logistics branch is seeking a highly analytical Senior Lead Enterprise Business Analyst to drive the comprehensive re-engineering of our global supply chain management systems. Operating inside an advanced enterprise architectu
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3150 pairs total.
+Overall dataset so far: 3159 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  629  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  629  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  630  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  631  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  631  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  631  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  633  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  630  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  633  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  632  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3151   resume_1051 × jd_1051
-  pair_3152   resume_1051 × jd_1052
-  pair_3153   resume_1051 × jd_1053
-  pair_3154   resume_1052 × jd_1051
-  pair_3155   resume_1052 × jd_1052
-  pair_3156   resume_1052 × jd_1053
-  pair_3157   resume_1053 × jd_1051
-  pair_3158   resume_1053 × jd_1052
-  pair_3159   resume_1053 × jd_1053
+  pair_3160   resume_1054 × jd_1054
+  pair_3161   resume_1054 × jd_1055
+  pair_3162   resume_1054 × jd_1056
+  pair_3163   resume_1055 × jd_1054
+  pair_3164   resume_1055 × jd_1055
+  pair_3165   resume_1055 × jd_1056
+  pair_3166   resume_1056 × jd_1054
+  pair_3167   resume_1056 × jd_1055
+  pair_3168   resume_1056 × jd_1056
 
 ════════════════════════════════════
 OUTPUT FORMAT
