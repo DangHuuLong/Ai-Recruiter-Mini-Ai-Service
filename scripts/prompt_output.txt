@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1081 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: React, Python, FastAPI, PostgreSQL, AWS, Docker
-  projects: E-Commerce-Dashboard, Task-Flow-Manager
-  background: I am a passionate recent Computer Science graduate with a strong focus on full-stack web development using modern technologies. During my final year, I completed a six-month internship at a fast-growing tech startup, where I worked on a team of four to build responsive user interfaces and backend AP
+  id: resume_1084 | level: middle | exp: 4.0 yrs | raw_text: 252 words
+  skills: PostgreSQL, Redis, MongoDB, SQL, Python
+  projects: Data-Shard-Automation, NoSQL-Migrator
+  background: I am a dedicated Database Engineer with four years of experience specializing in high-performance data architecture. In my previous role at a fast-paced logistics startup, I worked on a team of six to maintain our core database systems. My primary responsibilities involved managing PostgreSQL 14 clu
 
-  id: resume_1082 | level: middle | exp: 4.0 yrs | raw_text: 279 words
-  skills: Python, Django, React, PostgreSQL, AWS, Jenkins
-  projects: Enterprise-Inventory-Portal, Automated-Report-Generator
-  background: I am a full-stack developer with four years of professional experience building scalable web architectures for enterprise clients. In my current role at a mid-sized software agency, I manage a team of eight, focusing on developing robust backend services and interactive frontends. My responsibilitie
+  id: resume_1085 | level: senior | exp: 7.0 yrs | raw_text: 256 words
+  skills: PostgreSQL, MongoDB, Redis, Kafka, AWS, System Architecture
+  projects: Global-Data-Synchronizer, Query-Optimizer-Pro
+  background: As a Senior Database Architect with seven years of experience, I excel in designing resilient, large-scale data environments for enterprise organizations. In my current position as a Tech Lead at a prominent fintech firm, I manage a team of twelve engineers responsible for our entire data persistenc
 
-  id: resume_1083 | level: middle | exp: 5.0 yrs | raw_text: 265 words
-  skills: Python, FastAPI, React, PostgreSQL, Kubernetes, AWS
-  projects: Real-Time-Transaction-Processor, Security-Audit-Tool
-  background: With over five years of professional experience in full-stack web development, I have developed a deep expertise in building large-scale applications using the Python and React ecosystem. Currently, I work as a Lead Developer at a fintech startup, managing a team of ten engineers and overseeing the 
+  id: resume_1086 | level: senior | exp: 8.0 yrs | raw_text: 264 words
+  skills: PostgreSQL, MongoDB, Redis, Distributed Systems, Data Modeling
+  projects: Scalable-Store-Architect, Performance-Sentinel
+  background: I am a Principal Database Engineer with eight years of deep technical experience in high-concurrency database systems. Currently, I hold a principal role at a major global e-commerce enterprise, where I oversee the architectural strategy for our data layer, supporting a team of fifteen engineers. My
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1081 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: React, Python, PostgreSQL
-  preferred_skills: Docker, AWS
-  description: Our web engineering team of five is looking for a motivated Junior Web Developer to join us in building and maintaining our core web applications. We work in an agile environment where focus on clean code and rapid learning is highly encouraged. Your
+  id: jd_1084 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 214 words
+  required_skills: SQL, PostgreSQL, MongoDB
+  preferred_skills: Redis, Cloud Database Services
+  description: Our data engineering team of four is looking for a Junior Database Engineer to help maintain our expanding data infrastructure. We focus on building scalable systems for internal analytics and customer-facing products. As a junior engineer, your resp
 
-  id: jd_1082 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Python, React, PostgreSQL, AWS, Kubernetes
-  preferred_skills: Redis, CI/CD
-  description: We are seeking a Senior Full-Stack Engineer to join our core development team of twenty, focused on building our high-traffic enterprise platform. As a senior member, you will architect scalable web services, lead development initiatives, and mentor 
+  id: jd_1085 | title: Associate Database Administrator | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: SQL, PostgreSQL, MongoDB
+  preferred_skills: Redis, Automation
+  description: We are expanding our data team of five and seeking an Associate Database Administrator to help manage our diverse database environment. The focus of this role is on routine operational maintenance and performance oversight of our primary database sys
 
-  id: jd_1083 | title: Senior Full-Stack Architect | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, React, PostgreSQL, Kubernetes, AWS
-  preferred_skills: Event-Driven Architecture, CI/CD
-  description: Our organization is looking for a Senior Full-Stack Architect to spearhead the engineering efforts for our mission-critical enterprise applications. The development team consists of fifteen experts working on large-scale infrastructure and performanc
+  id: jd_1086 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 206 words
+  required_skills: PostgreSQL, MongoDB, Redis, Distributed Systems, Data Modeling
+  preferred_skills: Event-Driven Architecture, Cloud Architecture
+  description: Our engineering organization is looking for a Senior Database Architect to lead our data infrastructure strategy. With a team of twenty engineers, we handle mission-critical systems that require extremely high performance, global scalability, and fau
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3240 pairs total.
+Overall dataset so far: 3249 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  647  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  647  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  648  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  649  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  649  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  649  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  651  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  648  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  651  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  650  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3241   resume_1081 × jd_1081
-  pair_3242   resume_1081 × jd_1082
-  pair_3243   resume_1081 × jd_1083
-  pair_3244   resume_1082 × jd_1081
-  pair_3245   resume_1082 × jd_1082
-  pair_3246   resume_1082 × jd_1083
-  pair_3247   resume_1083 × jd_1081
-  pair_3248   resume_1083 × jd_1082
-  pair_3249   resume_1083 × jd_1083
+  pair_3250   resume_1084 × jd_1084
+  pair_3251   resume_1084 × jd_1085
+  pair_3252   resume_1084 × jd_1086
+  pair_3253   resume_1085 × jd_1084
+  pair_3254   resume_1085 × jd_1085
+  pair_3255   resume_1085 × jd_1086
+  pair_3256   resume_1086 × jd_1084
+  pair_3257   resume_1086 × jd_1085
+  pair_3258   resume_1086 × jd_1086
 
 ════════════════════════════════════
 OUTPUT FORMAT
