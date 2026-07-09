@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1129 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: Microsoft Excel, Visio, Trello, Notion
-  projects: Process-Audit-Tool, Community Non-Profit Process Documentation
-  background: I am a detail-oriented Junior Business Analyst with a passion for optimizing organizational workflows through data-driven insights. Recently graduated with a degree in Business Administration, I spent six months as an intern at a fast-paced technology agency where I supported a team of five analysts
+  id: resume_1132 | level: middle | exp: 4.0 yrs | raw_text: 268 words
+  skills: Figma, Adobe Illustrator, Notion, Protopie, React
+  projects: Design-System-Audit
+  background: I am a dedicated Product Designer with four years of experience crafting user-centric interfaces. During my three-year tenure at a fast-paced design agency, I led the visual direction for six different client accounts ranging from mobile fintech applications to e-commerce platforms. My daily respons
 
-  id: resume_1130 | level: junior | exp: 1.0 yrs | raw_text: 282 words
-  skills: Jira, Asana, Miro, Microsoft PowerPoint, Google Sheets
-  projects: Roadmap-Tracker, Market-Research-Pilot
-  background: I am a motivated Associate Business Analyst who recently completed my academic training and started my professional career. In my current role at a boutique consulting firm, I work with a lean team of three consultants to gather and translate business requirements into actionable specifications for 
+  id: resume_1133 | level: middle | exp: 3.5 yrs | raw_text: 259 words
+  skills: Figma, Miro, Framer, Amplitude, User Research
+  projects: User-Flow-Optimizer
+  background: I am a UX-focused Designer with three and a half years of professional experience, currently working at a mid-sized SaaS enterprise. In my current role, I focus on improving the B2B dashboard experience, serving over 50,000 daily active users. My responsibilities involve leading stakeholder intervie
 
-  id: resume_1131 | level: senior | exp: 8.0 yrs | raw_text: 299 words
-  skills: BPMN 2.0, Jira, Confluence, SQL, Microsoft Project
-  projects: Requirement-Efficiency-Hub, Enterprise-Sync
-  background: I am a Senior Business Analyst and Project Manager with eight years of experience delivering complex digital transformation solutions across various industries. During my four-year tenure at a large-scale software enterprise, I led a cross-functional team of fifteen, including developers, QA testers
+  id: resume_1134 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: Figma, Sketch, Principle, SQL, React
+  projects: Component-Engine
+  background: I am a Senior Product Designer with eight years of experience leading cross-functional teams and shipping high-impact digital products. My career spans roles at high-growth startups and large-scale enterprises, where I have architected complex design systems from the ground up. In my current role as
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1129 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 197 words
-  required_skills: Business Analysis, BPMN 2.0, Jira, Requirements Gathering
-  preferred_skills: SQL, Confluence
-  description: We are seeking a mid-level Business Analyst to join our professional services team of ten members. Our group focuses on refining enterprise operational platforms to serve an international customer base. Your day-to-day responsibilities involve defini
+  id: jd_1132 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 205 words
+  required_skills: Figma, Miro, User Research, Visual Design
+  preferred_skills: Framer, HTML/CSS
+  description: We are seeking a motivated Junior UI/UX Designer to join our product team of fifteen, focused on building intuitive interfaces for our consumer-facing mobile application. You will work closely with our lead designers and product managers to translate
 
-  id: jd_1130 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 205 words
-  required_skills: Business Analysis, BPMN 2.0, Jira, Requirements Gathering, SQL
-  preferred_skills: Confluence, Agile
-  description: Our transformation department is seeking a Senior Business Analyst to oversee our core digital platform enhancements. You will guide a team of twenty, including developers, QA testers, and design specialists, to manage large-scale business requiremen
+  id: jd_1133 | title: Associate UX Researcher & Designer | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: Figma, User Research, Amplitude, Interaction Design
+  preferred_skills: Hotjar, Accessibility
+  description: Our research-driven design team is looking for an Associate UX Researcher and Designer to support our ongoing efforts to understand user behaviors within our SaaS dashboard. As a member of a team of ten, you will assist in collecting and analyzing us
 
-  id: jd_1131 | title: Lead Project Manager | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: Business Analysis, BPMN 2.0, Jira, Requirements Gathering, SQL
-  preferred_skills: Confluence, Agile
-  description: We are looking for a Lead Project Manager to define the strategic vision for our global digital product suite. Working with a department of fifteen, you will ensure stakeholder alignment and drive business value across multiple regional teams. Respon
+  id: jd_1134 | title: Senior Product Designer | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Figma, SQL, Interaction Design, Design Systems, User Research
+  preferred_skills: Principle, Agile
+  description: Our core product team is seeking an expert Senior Product Designer to lead the vision for our enterprise cloud platform. You will guide a multidisciplinary team of twenty, including engineers, data scientists, and QA testers, to build scalable design
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3384 pairs total.
+Overall dataset so far: 3393 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  675  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  676  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  678  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  677  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  678  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  679  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  678  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  678  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  678  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  680  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3385   resume_1129 × jd_1129
-  pair_3386   resume_1129 × jd_1130
-  pair_3387   resume_1129 × jd_1131
-  pair_3388   resume_1130 × jd_1129
-  pair_3389   resume_1130 × jd_1130
-  pair_3390   resume_1130 × jd_1131
-  pair_3391   resume_1131 × jd_1129
-  pair_3392   resume_1131 × jd_1130
-  pair_3393   resume_1131 × jd_1131
+  pair_3394   resume_1132 × jd_1132
+  pair_3395   resume_1132 × jd_1133
+  pair_3396   resume_1132 × jd_1134
+  pair_3397   resume_1133 × jd_1132
+  pair_3398   resume_1133 × jd_1133
+  pair_3399   resume_1133 × jd_1134
+  pair_3400   resume_1134 × jd_1132
+  pair_3401   resume_1134 × jd_1133
+  pair_3402   resume_1134 × jd_1134
 
 ════════════════════════════════════
 OUTPUT FORMAT
