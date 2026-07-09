@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_940 | level: junior | exp: 0.5 yrs | raw_text: 254 words
-  skills: Figma, Adobe Illustrator, Wireframing, User Testing, Human-centered Design, Visual Communication
-  projects: EcoTracker
-  background: As a recent graduate in Digital Media Design, I am eager to begin my career as a UI/UX designer. During my undergraduate studies, I completed a six-month internship at a local digital agency as a Junior UX Assistant, where I worked on a team of four to refine mobile application interfaces. My primar
+  id: resume_943 | level: middle | exp: 4.0 yrs | raw_text: 284 words
+  skills: BPMN 2.0, Jira, SQL, SharePoint, Microsoft Power Automate, Requirements Gathering, Stakeholder Management
+  projects: Workflow Sentinel
+  background: I am a Business Analyst with four years of professional experience, focusing on requirements gathering, process optimization, and stakeholder management. In my current role at a mid-sized digital agency, I support a team of twelve developers and designers in delivering customer-facing web applicatio
 
-  id: resume_941 | level: middle | exp: 4.0 yrs | raw_text: 263 words
-  skills: Figma, Sketch, Hotjar, React, Design Systems, Prototyping, Product Strategy
-  projects: DesignSync
-  background: I am a product designer with four years of experience working across startup and enterprise environments. In my most recent role as a Product Designer at a fast-growing tech startup, I served on a product team of twelve, where I led the UX research phase for our flagship SaaS platform. My day-to-day
+  id: resume_944 | level: senior | exp: 7.5 yrs | raw_text: 255 words
+  skills: Sparx Enterprise Architect, Jira, Confluence, SQL, Tableau, Python, Power BI, Agile Methodologies
+  projects: Strategy Compass
+  background: With over seven years of experience in enterprise business analysis and project management, I have led cross-functional teams of up to thirty members in delivering complex software solutions. My recent tenure as a Principal Business Analyst at a large technology enterprise involved orchestrating the
 
-  id: resume_942 | level: middle | exp: 3.5 yrs | raw_text: 259 words
-  skills: Figma, Framer, Zeplin, Principle, Wcag 2.1, Css, Javascript
-  projects: AccessUI
-  background: Over the past three and a half years, I have developed a deep expertise in user interface design and product development. Currently serving as a Product Designer at an enterprise software firm, I collaborate within a massive cross-functional team of fifty, focusing on improving accessibility and use
+  id: resume_945 | level: senior | exp: 8.5 yrs | raw_text: 277 words
+  skills: BPMN 2.0, Visio, Jira, SQL, Microsoft Project, Requirements Lifecycle Management, Stakeholder Mediation
+  projects: Efficiency Matrix
+  background: I am an experienced Senior Business Analyst with eight years of expertise in project management and systemic process improvement within international enterprise environments. Currently, I lead a team of twenty-five professionals responsible for defining functional requirements and project scoping fo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_940 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 221 words
-  required_skills: Figma, Wireframing, User Research, Visual Design
-  preferred_skills: Prototyping, Design Systems
-  description: Our creative team is expanding and we are looking for a Junior UI/UX Designer to support our ongoing product development projects. We work in a highly collaborative environment of ten designers, product managers, and developers focused on enhancing o
+  id: jd_943 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: Requirements Documentation, Jira, BPMN, Excel
+  preferred_skills: Agile Methodologies, Lucidchart
+  description: Our Business Analysis team is growing and we are seeking a Junior Business Analyst to join our team of fifteen. The team focuses on identifying business needs and translating them into clear, actionable requirements for our engineering department. In
 
-  id: jd_941 | title: Lead Product Designer | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Figma, Design Systems, Prototyping, User Research, Data Analysis
-  preferred_skills: Framer, Interaction Design
-  description: We are seeking a seasoned Lead Product Designer to guide our design strategy for a complex enterprise software platform. Our design team of fifteen works in tight integration with data science and engineering to solve difficult navigation and product
+  id: jd_944 | title: Associate Project Coordinator | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Jira, Confluence, Requirements Documentation, Excel
+  preferred_skills: Microsoft PowerPoint, Project Management
+  description: We are looking for an Associate Project Coordinator to support our project management office. Our team of eight manages project timelines, stakeholder communication, and delivery across various internal initiatives. We support a portfolio of projects
 
-  id: jd_942 | title: Senior UI/UX Strategy Designer | level: senior | min_exp: 6 yrs | raw_text: 220 words
-  required_skills: Figma, Principle, Zeplin, User Research, Design Systems
-  preferred_skills: Data Analysis, Strategic Design
-  description: Our product team is seeking a Senior UI/UX Strategy Designer to spearhead the vision for our next-generation consumer platforms. We are a team of twenty, consisting of researchers, visual designers, and UX specialists dedicated to delivering high-per
+  id: jd_945 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: BPMN, Requirements Documentation, SQL, Jira, Confluence, Sparx Enterprise Architect
+  preferred_skills: Systems Architecture, Agile Methodologies
+  description: The Strategy and Operations team is searching for a Senior Business Systems Analyst to lead requirements gathering for our large-scale enterprise system platform. Our team of twenty consists of product managers, data analysts, and developers who work
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2817 pairs total.
+Overall dataset so far: 2826 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  562  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  563  →  expected this batch: 4 pairs (from seniority gaps below)
-  moderate_match        existing:  564  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  563  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  565  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  564  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  567  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  564  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  565  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  566  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2818   resume_940 × jd_940
-  pair_2819   resume_940 × jd_941
-  pair_2820   resume_940 × jd_942
-  pair_2821   resume_941 × jd_940
-  pair_2822   resume_941 × jd_941
-  pair_2823   resume_941 × jd_942
-  pair_2824   resume_942 × jd_940
-  pair_2825   resume_942 × jd_941
-  pair_2826   resume_942 × jd_942
+  pair_2827   resume_943 × jd_943
+  pair_2828   resume_943 × jd_944
+  pair_2829   resume_943 × jd_945
+  pair_2830   resume_944 × jd_943
+  pair_2831   resume_944 × jd_944
+  pair_2832   resume_944 × jd_945
+  pair_2833   resume_945 × jd_943
+  pair_2834   resume_945 × jd_944
+  pair_2835   resume_945 × jd_945
 
 ════════════════════════════════════
 OUTPUT FORMAT
