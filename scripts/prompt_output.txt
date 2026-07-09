@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1066 | level: middle | exp: 4.0 yrs | raw_text: 263 words
-  skills: Python, Pandas, Scikit-learn, SQL, PyTorch, Tableau, MLflow
-  projects: Predict-Inventory-Trends
-  background: I am a Data Scientist with four years of professional experience building machine learning models for consumer analytics. In my current role at a mid-sized data consultancy, I work in a team of six to develop predictive churn models using Python 3.10, pandas, and scikit-learn 1.2. Over the last two 
+  id: resume_1069 | level: junior | exp: 0.5 yrs | raw_text: 255 words
+  skills: Python, Pandas, SQL, Scikit-learn
+  projects: Weather-Pattern-Analysis
+  background: I am a recent Computer Science graduate with a strong passion for data science and machine learning. During my final year, I completed a six-month internship at a local technology startup, where I worked on a team of four to automate data cleaning processes using Python 3.9 and pandas. My responsibi
 
-  id: resume_1067 | level: senior | exp: 8.0 yrs | raw_text: 255 words
-  skills: Python, PyTorch, Pandas, Scikit-learn, Kubernetes, AWS SageMaker, NLP
-  projects: Neural-Recommendation-Engine
-  background: I am a Senior Machine Learning Engineer with eight years of experience architecting end-to-end data pipelines for large-scale enterprise applications. At a major technology enterprise, I currently lead a team of fifteen developers and data scientists focused on building real-time recommendation engi
+  id: resume_1070 | level: junior | exp: 0.8 yrs | raw_text: 262 words
+  skills: Python, Pandas, Scikit-learn, Matplotlib, Statistics
+  projects: Student-Performance-Predictor
+  background: As a recent graduate with a passion for analytical problem solving, I have spent the last year exploring the intersection of data and business intelligence. During an intensive internship at a boutique data agency, I functioned within a team of five, assisting with the development of basic predictiv
 
-  id: resume_1068 | level: senior | exp: 7.5 yrs | raw_text: 265 words
-  skills: Python, PyTorch, Pandas, Scikit-learn, Docker, GCP, Anomaly Detection
-  projects: Fraud-Shield-Platform
-  background: With over seven years of professional experience in data science, I am currently a Tech Lead at a multinational data firm specializing in predictive analytics. I lead a team of twelve in developing high-performance machine learning models for financial fraud detection. My primary tools are Python, P
+  id: resume_1071 | level: senior | exp: 8.5 yrs | raw_text: 250 words
+  skills: Python, PyTorch, Pandas, Scikit-learn, Kubernetes, AWS, MLOps
+  projects: Global-User-Behavior-Model
+  background: With over eight years of professional experience in machine learning and data engineering, I currently lead a high-performing team of twenty at a major technology enterprise. My work focuses on building robust, scalable recommendation engines that process over two million requests per day. My deep t
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1066 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 191 words
-  required_skills: Python, Pandas, Scikit-learn
-  preferred_skills: SQL, Tableau
-  description: Our data team is looking for a motivated Junior Data Scientist to join our group of four. The team focuses on generating actionable insights for our product development team by analyzing user behavior patterns. Your day-to-day work will involve clean
+  id: jd_1069 | title: Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 202 words
+  required_skills: Python, Pandas, Scikit-learn, SQL
+  preferred_skills: AWS, Tableau
+  description: Our data team of eight is looking for a Data Scientist to help scale our predictive analytics capabilities. You will work on optimizing our user retention models and creating insights for our product management team. Your responsibilities include dev
 
-  id: jd_1067 | title: Junior Machine Learning Associate | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Python, PyTorch, Scikit-learn
-  preferred_skills: MLflow, AWS
-  description: We are seeking a Junior Machine Learning Associate to support our growing machine learning initiatives. Our team of five works on optimizing our core recommendation systems to improve user engagement. In this role, you will assist in training models 
-
-  id: jd_1068 | title: Senior Machine Learning Lead | level: senior | min_exp: 6 yrs | raw_text: 201 words
+  id: jd_1070 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 199 words
   required_skills: Python, PyTorch, Pandas, Scikit-learn, AWS, Kubernetes
   preferred_skills: MLOps, Terraform
-  description: Our engineering organization is looking for a Senior Machine Learning Lead to guide our strategy for developing highly scalable and intelligent systems. The team consists of twelve engineers and data scientists working on complex AI infrastructure fo
+  description: We are seeking a Senior Machine Learning Engineer to join our core AI infrastructure team, consisting of fifteen engineers and scientists. Our primary goal is to build a highly scalable, real-time recommendation platform that services our global user
+
+  id: jd_1071 | title: Principal Machine Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Python, PyTorch, Pandas, Scikit-learn, AWS, Kubernetes
+  preferred_skills: MLOps, Distributed Training
+  description: Our organization is looking for a Principal Machine Learning Architect to spearhead the next generation of our intelligent systems. The team is comprised of twelve senior-level experts working on high-performance infrastructure for enterprise-level a
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3195 pairs total.
+Overall dataset so far: 3204 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  639  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  639  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  638  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  639  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  640  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  639  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  640  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  642  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  641  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  642  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3196   resume_1066 × jd_1066
-  pair_3197   resume_1066 × jd_1067
-  pair_3198   resume_1066 × jd_1068
-  pair_3199   resume_1067 × jd_1066
-  pair_3200   resume_1067 × jd_1067
-  pair_3201   resume_1067 × jd_1068
-  pair_3202   resume_1068 × jd_1066
-  pair_3203   resume_1068 × jd_1067
-  pair_3204   resume_1068 × jd_1068
+  pair_3205   resume_1069 × jd_1069
+  pair_3206   resume_1069 × jd_1070
+  pair_3207   resume_1069 × jd_1071
+  pair_3208   resume_1070 × jd_1069
+  pair_3209   resume_1070 × jd_1070
+  pair_3210   resume_1070 × jd_1071
+  pair_3211   resume_1071 × jd_1069
+  pair_3212   resume_1071 × jd_1070
+  pair_3213   resume_1071 × jd_1071
 
 ════════════════════════════════════
 OUTPUT FORMAT
