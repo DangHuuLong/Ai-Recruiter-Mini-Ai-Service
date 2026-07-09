@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1135 | level: junior | exp: 0.5 yrs | raw_text: 260 words
-  skills: Epic EMR, Microsoft Excel, Clinical Operations, Data Entry
-  projects: EMR-Flow-Optimization
-  background: I am a recent Health Administration graduate with a strong passion for improving clinical operations through digital transformation. During my six-month internship at a mid-sized urban hospital, I assisted the clinical operations team of fifteen in managing patient intake workflows and optimizing sc
+  id: resume_1138 | level: middle | exp: 4.0 yrs | raw_text: 264 words
+  skills: SAP S/4HANA, SQL, Microsoft Power BI, Demand Forecasting, Inventory Management
+  projects: Smart-Inventory-Forecast
+  background: I am a dedicated Supply Chain Coordinator with four years of experience in enterprise logistics and inventory management. In my current role at a large-scale manufacturing enterprise, I oversee a team of five logistics associates responsible for regional distribution. I spend much of my time managin
 
-  id: resume_1136 | level: junior | exp: 1.0 yrs | raw_text: 261 words
-  skills: Cerner Millennium, Tableau, Healthcare Coordination, HIPAA
-  projects: Care-Coordination-Dashboard
-  background: I am a highly motivated individual entering the healthcare coordination field, having recently completed a one-year residency program at a regional health enterprise. Throughout this experience, I supported a team of twenty medical administrators in coordinating complex care paths for patients with 
+  id: resume_1139 | level: senior | exp: 8.5 yrs | raw_text: 259 words
+  skills: Oracle Cloud ERP, PostgreSQL, AWS, RESTful APIs, Machine Learning
+  projects: Global-Logistics-Sync
+  background: I am a Senior Supply Chain Solutions Architect with over eight years of experience designing and implementing complex logistics infrastructures for enterprise-level retail organizations. Throughout my career, I have led cross-functional teams of up to forty professionals to streamline procurement, w
 
-  id: resume_1137 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: Epic EMR, SQL, AWS, HL7, Predictive Analytics
-  projects: Unified-Clinical-Architecture
-  background: I am a Senior Healthcare Operations Lead with over eight years of experience specializing in the implementation of complex health information systems. My career has been focused on enterprise-level hospital environments, where I have managed cross-functional teams of thirty to optimize clinical work
+  id: resume_1140 | level: senior | exp: 9.0 yrs | raw_text: 255 words
+  skills: SAP S/4HANA, Java, Oracle, SQL, Docker, Jenkins
+  projects: Procurement-Automation-Framework
+  background: I am a Principal Logistics Engineer with nine years of experience building and optimizing supply chain systems for major industrial conglomerates. My expertise lies in high-volume, global procurement strategies and the integration of automated warehouse management systems. Leading a global team of f
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1135 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 183 words
-  required_skills: Epic EMR, Clinical Operations, Data Auditing, Patient Management
-  preferred_skills: Tableau, Project Management
-  description: Our clinical operations team, consisting of forty professionals, is seeking a dedicated coordinator to manage patient flow and optimize electronic medical record workflows within our multi-specialty facility. You will be responsible for overseeing th
+  id: jd_1138 | title: Junior Supply Chain Associate | level: junior | min_exp: 1 yrs | raw_text: 206 words
+  required_skills: SAP S/4HANA, Microsoft Excel, Inventory Management, Procurement Basics
+  preferred_skills: Power BI
+  description: Our supply chain operations team is growing, and we are seeking a motivated Junior Supply Chain Associate to help manage our daily inventory and procurement tasks. This role is part of a 10-person team focused on maintaining high-quality standards fo
 
-  id: jd_1136 | title: Senior Healthcare Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: SQL, Epic EMR, Cerner Millennium, HL7, AWS, HIPAA Compliance
-  preferred_skills: Machine Learning, Predictive Analytics
-  description: Our healthcare technology department is expanding and seeks a Senior Healthcare Systems Architect to lead the design and implementation of next-generation patient record systems for our enterprise health network. Managing a team of fifteen, you will 
+  id: jd_1139 | title: Associate Logistics Coordinator | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: SAP S/4HANA, Logistics Coordination, Microsoft Excel, Inventory Reconciliation
+  preferred_skills: SQL
+  description: The logistics coordination team is looking for a detail-oriented Associate Logistics Coordinator to join our growing group of 15 logistics professionals. In this role, you will be supporting our primary distribution channels by monitoring stock movem
 
-  id: jd_1137 | title: Director of Clinical Informatics | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: SQL, PostgreSQL, HL7, HIPAA Compliance, Epic EMR, Clinical Strategy
-  preferred_skills: Predictive Analytics, System Integration
-  description: The Director of Clinical Informatics will spearhead our enterprise-wide strategy for clinical data optimization and EMR interoperability. Leading a diverse department of fifty professionals, you will be responsible for defining the long-term vision o
+  id: jd_1140 | title: Senior Supply Chain Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Java, PostgreSQL, AWS, Oracle Cloud ERP, SAP S/4HANA, RESTful APIs
+  preferred_skills: Machine Learning, Docker
+  description: Our technology team is seeking a Senior Supply Chain Systems Architect to oversee the design and integration of our enterprise-wide logistics systems. You will lead a team of twenty engineers and logistics specialists responsible for building the dig
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3402 pairs total.
+Overall dataset so far: 3411 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  679  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  680  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  680  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  682  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  681  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  683  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  682  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  680  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  683  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  683  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3403   resume_1135 × jd_1135
-  pair_3404   resume_1135 × jd_1136
-  pair_3405   resume_1135 × jd_1137
-  pair_3406   resume_1136 × jd_1135
-  pair_3407   resume_1136 × jd_1136
-  pair_3408   resume_1136 × jd_1137
-  pair_3409   resume_1137 × jd_1135
-  pair_3410   resume_1137 × jd_1136
-  pair_3411   resume_1137 × jd_1137
+  pair_3412   resume_1138 × jd_1138
+  pair_3413   resume_1138 × jd_1139
+  pair_3414   resume_1138 × jd_1140
+  pair_3415   resume_1139 × jd_1138
+  pair_3416   resume_1139 × jd_1139
+  pair_3417   resume_1139 × jd_1140
+  pair_3418   resume_1140 × jd_1138
+  pair_3419   resume_1140 × jd_1139
+  pair_3420   resume_1140 × jd_1140
 
 ════════════════════════════════════
 OUTPUT FORMAT
