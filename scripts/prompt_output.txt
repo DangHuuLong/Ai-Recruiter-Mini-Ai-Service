@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1087 | level: junior | exp: 0.5 yrs | raw_text: 280 words
-  skills: Jira, Excel, Lucidchart, Requirements Gathering
-  projects: Student-Portal-Refactor
-  background: I am a motivated Business Analysis graduate seeking to launch my professional career in requirements engineering and stakeholder management. During my final year at university, I completed a six-month internship at a local digital agency, where I supported a team of three in gathering functional req
+  id: resume_1090 | level: middle | exp: 4.0 yrs | raw_text: 261 words
+  skills: Shopify Plus, Magento 2.4, Google Analytics 4, Tableau, Inventory Management
+  projects: Market-Optimizer-Tool, Inventory-Auto-Sync
+  background: I am a dedicated E-commerce Operations Manager with four years of hands-on experience in marketplace management and digital retail strategy. During my previous role at a fast-growing e-commerce startup, I managed a team of five and oversaw the daily performance of our product listings across multipl
 
-  id: resume_1088 | level: junior | exp: 0.3 yrs | raw_text: 257 words
-  skills: Trello, Microsoft Visio, Task Coordination
-  projects: Community-Garden-Scheduler
-  background: I am an aspiring project management professional with a strong interest in business process optimization and stakeholder alignment. Recently, I completed a brief tenure as a Junior Project Coordinator at a fast-growing startup, where I supported a team of four in tracking project milestones and mana
+  id: resume_1091 | level: senior | exp: 7.0 yrs | raw_text: 272 words
+  skills: Salesforce Commerce Cloud, BigCommerce Enterprise, SQL, R, Demand Forecasting, Supply Chain Strategy
+  projects: Global-Demand-Forecaster, Fulfillment-Efficiency-Initiative
+  background: As a Senior E-commerce Strategy Lead with seven years of deep experience, I specialize in architecting high-traffic retail platforms and scaling complex marketplace operations. Currently, I hold a lead role at a global enterprise retail group, where I oversee a team of fifteen professionals managing
 
-  id: resume_1089 | level: senior | exp: 8.0 yrs | raw_text: 263 words
-  skills: BPMN 2.0, Jira, Confluence, MS Project, Power BI, Requirements Elicitation
-  projects: Global-Integration-Dashboard, Legacy-System-Migration
-  background: I am a Senior Business Analyst and Project Lead with eight years of extensive experience delivering large-scale enterprise solutions. In my current role at a multinational consultancy firm, I lead a team of fifteen, overseeing the full business analysis lifecycle for complex financial platforms. My 
+  id: resume_1092 | level: senior | exp: 8.0 yrs | raw_text: 258 words
+  skills: PostgreSQL 16, Kubernetes, AWS, Microservices, API Integration, Data Modeling
+  projects: Enterprise-Scale-Connector, Performance-Sentinel-Retail
+  background: I am a Principal Retail Operations Architect with eight years of extensive expertise in building scalable, enterprise-level digital retail infrastructures. Currently, I lead a cross-functional department of twenty engineers and merchandising experts at a top-tier global retail enterprise, focusing o
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1087 | title: Mid-Level Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 205 words
-  required_skills: BPMN 2.0, Jira, Confluence, Requirements Analysis
-  preferred_skills: SQL, Project Management
-  description: Our dynamic product team of twelve is looking for an experienced Mid-Level Business Analyst to join us in defining and implementing product enhancements for our core enterprise SaaS platform. You will serve as the primary interface between business s
+  id: jd_1090 | title: Junior Marketplace Associate | level: junior | min_exp: 1 yrs | raw_text: 196 words
+  required_skills: Excel, Shopify, Sales Analytics
+  preferred_skills: Data Visualization, SEO
+  description: Our e-commerce operations team of five is looking for a motivated Junior Marketplace Associate to help maintain our product catalog and marketplace health. We work in a fast-paced environment where managing accurate product listings across multiple c
 
-  id: jd_1088 | title: Senior Project Manager | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: MS Project, Confluence, Risk Management, Project Governance
-  preferred_skills: Predictive Analytics, Stakeholder Management
-  description: Our organization is seeking a Senior Project Manager to lead our strategic initiatives and manage complex project portfolios across our engineering division. The team consists of twenty-five high-performing professionals dedicated to delivering large
+  id: jd_1091 | title: Associate Retail Operations Coordinator | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: Excel, Magento, Sales Analytics
+  preferred_skills: Project Management, Merchandising
+  description: Our retail team of six is seeking an Associate Retail Operations Coordinator to support our daily operational tasks and data-driven merchandising. The primary focus of this role is to ensure that our products are correctly displayed, priced, and stoc
 
-  id: jd_1089 | title: Senior Business Systems Analyst | level: senior | min_exp: 6 yrs | raw_text: 213 words
-  required_skills: BPMN 2.0, Jira, Confluence, System Integration
-  preferred_skills: Data Modeling, Cloud Architecture
-  description: We are looking for a Senior Business Systems Analyst to spearhead our complex system integration projects and enterprise-level process automation efforts. Working alongside a team of twenty experts, you will bridge the gap between complex business pr
+  id: jd_1092 | title: Senior E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: AWS, Kubernetes, Microservices Architecture, E-commerce Platforms
+  preferred_skills: Event-Driven Architecture, API Infrastructure
+  description: Our engineering organization is looking for a Senior E-commerce Architect to lead our platform strategy and infrastructure development. With a team of twenty engineers, we handle mission-critical systems that require extremely high performance, globa
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3258 pairs total.
+Overall dataset so far: 3267 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  649  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  652  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  652  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  653  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  652  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  653  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  654  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  652  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  654  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  654  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3259   resume_1087 × jd_1087
-  pair_3260   resume_1087 × jd_1088
-  pair_3261   resume_1087 × jd_1089
-  pair_3262   resume_1088 × jd_1087
-  pair_3263   resume_1088 × jd_1088
-  pair_3264   resume_1088 × jd_1089
-  pair_3265   resume_1089 × jd_1087
-  pair_3266   resume_1089 × jd_1088
-  pair_3267   resume_1089 × jd_1089
+  pair_3268   resume_1090 × jd_1090
+  pair_3269   resume_1090 × jd_1091
+  pair_3270   resume_1090 × jd_1092
+  pair_3271   resume_1091 × jd_1090
+  pair_3272   resume_1091 × jd_1091
+  pair_3273   resume_1091 × jd_1092
+  pair_3274   resume_1092 × jd_1090
+  pair_3275   resume_1092 × jd_1091
+  pair_3276   resume_1092 × jd_1092
 
 ════════════════════════════════════
 OUTPUT FORMAT
