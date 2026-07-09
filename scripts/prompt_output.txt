@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_982 | level: junior | exp: 0.5 yrs | raw_text: 271 words
-  skills: Seo, Content Creation, Google Analytics 4, Ahrefs, Semrush, Wordpress, Social Media Marketing
-  projects: BlogFlow
-  background: I am a motivated recent graduate looking to launch my career in digital marketing with a focus on search engine optimization and content creation. During my six-month internship at a small creative digital agency with a team of five, I was responsible for drafting weekly blog posts and conducting ke
+  id: resume_985 | level: junior | exp: 0.5 yrs | raw_text: 260 words
+  skills: Social Media Marketing, Google Analytics 4, Meta Business Suite, Content Creation, Shopify, Mailchimp, Canva, Wordpress
+  projects: SocialBoost
+  background: I am a recent marketing graduate passionate about digital content and social media engagement. During my internship at a fast-growing e-commerce startup, I was part of a five-person marketing team for six months. I was responsible for scheduling daily social media posts on Instagram and TikTok using
 
-  id: resume_983 | level: junior | exp: 0.5 yrs | raw_text: 267 words
-  skills: Social Media Strategy, Canva, Google Analytics 4, Buffer, Similarweb, Looker Studio, Content Creation
-  projects: SocialPulse
-  background: I am a highly driven marketing graduate with a keen interest in social media strategy and digital brand management. During my recent internship at a retail technology startup with a team of four, I managed the daily social media schedule across TikTok and Facebook, utilizing Buffer to plan and publi
+  id: resume_986 | level: middle | exp: 4.0 yrs | raw_text: 266 words
+  skills: Seo, Semrush, Ahrefs, Google Ads, Google Analytics 4, Wordpress, Looker Studio, Content Strategy
+  projects: ContentMapper
+  background: As a Digital Content Specialist with four years of experience, I have successfully balanced editorial strategy and performance marketing in diverse agency settings. My most recent role was at a mid-sized digital marketing agency, where I worked on a team of twelve managing content campaigns for thre
 
-  id: resume_984 | level: senior | exp: 8.0 yrs | raw_text: 261 words
-  skills: Seo Strategy, Performance Marketing, Adobe Experience Manager, Salesforce Marketing Cloud, Brightedge, Bigquery, Python, R, Sql
-  projects: StrategyCore
-  background: As a Senior Digital Marketing Strategist with eight years of experience, I specialize in architecting high-impact content ecosystems and driving organic growth for enterprise-level clients. Currently, I lead a multidisciplinary team of twelve at a prominent digital marketing agency, where I oversee 
+  id: resume_987 | level: senior | exp: 8.0 yrs | raw_text: 267 words
+  skills: Enterprise Seo, Marketing Automation, Salesforce Marketing Cloud, Adobe Experience Manager, Screaming Frog, Brightedge, Python, Sql, Bigquery
+  projects: PredictSEO
+  background: I am a Senior Digital Strategy Lead with eight years of experience specializing in enterprise-level SEO, marketing technology integration, and large-scale digital transformation. Currently, I lead a cross-functional team of fifteen at a large enterprise, where I oversee global content infrastructure
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_982 | title: Content Marketing Manager | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: Content Marketing, Seo, Ahrefs, Google Analytics 4, Wordpress
-  preferred_skills: Html, Css
-  description: Our content team is seeking a middle-level Content Marketing Manager to help scale our organic search presence and audience engagement. The team is comprised of six strategists and creators working to deliver high-quality content across web and socia
+  id: jd_985 | title: Junior Digital Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Social Media Marketing, Google Analytics 4, Wordpress, Content Creation
+  preferred_skills: Email Marketing, Seo
+  description: Our marketing department is looking for an enthusiastic Junior Digital Marketing Associate to join our growing team of eight. This role is designed for a detail-oriented individual to support our daily content and social media operations. You will be
 
-  id: jd_983 | title: Senior SEO Strategist | level: senior | min_exp: 6 yrs | raw_text: 218 words
-  required_skills: Seo Strategy, Technical Seo, Brightedge, Bigquery, Python
+  id: jd_986 | title: Senior SEO Lead | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Enterprise Seo, Technical Seo, Brightedge, Bigquery, Python, Sql
   preferred_skills: Machine Learning, Data Modeling
-  description: Our search organization is seeking a Senior SEO Strategist to take strategic ownership of our global search ecosystem. This role sits at the center of our digital team of twenty-five people, focused on driving organic search innovation and scalabilit
+  description: Our digital growth team is seeking a Senior SEO Lead to take ownership of our enterprise search strategy. The team consists of twenty specialists dedicated to organic search innovation and scalable content infrastructure. Your primary responsibilitie
 
-  id: jd_984 | title: Head of Content Strategy | level: senior | min_exp: 6 yrs | raw_text: 217 words
+  id: jd_987 | title: Head of Digital Content & Strategy | level: senior | min_exp: 6 yrs | raw_text: 199 words
   required_skills: Content Strategy, Adobe Experience Manager, Salesforce Marketing Cloud, Sql, Leadership
   preferred_skills: Content Governance, Digital Transformation
-  description: Our organization is seeking a Head of Content Strategy to manage and scale our global digital content footprint. This role sits at the top of our marketing organization of thirty people, focused on driving innovation and scalability across all digita
+  description: Our marketing organization is looking for a Head of Digital Content & Strategy to manage our global content ecosystem. This role is a key leadership position within our team of forty, focused on driving digital transformation and long-term content st
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2943 pairs total.
+Overall dataset so far: 2952 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  586  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  588  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  591  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  589  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  589  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  590  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  590  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  591  →  expected this batch: 1 pairs (from seniority gaps below)
+  strong_match          existing:  590  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  591  →  expected this batch: 3 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2944   resume_982 × jd_982
-  pair_2945   resume_982 × jd_983
-  pair_2946   resume_982 × jd_984
-  pair_2947   resume_983 × jd_982
-  pair_2948   resume_983 × jd_983
-  pair_2949   resume_983 × jd_984
-  pair_2950   resume_984 × jd_982
-  pair_2951   resume_984 × jd_983
-  pair_2952   resume_984 × jd_984
+  pair_2953   resume_985 × jd_985
+  pair_2954   resume_985 × jd_986
+  pair_2955   resume_985 × jd_987
+  pair_2956   resume_986 × jd_985
+  pair_2957   resume_986 × jd_986
+  pair_2958   resume_986 × jd_987
+  pair_2959   resume_987 × jd_985
+  pair_2960   resume_987 × jd_986
+  pair_2961   resume_987 × jd_987
 
 ════════════════════════════════════
 OUTPUT FORMAT
