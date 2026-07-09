@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1165 | level: junior | exp: 0.5 yrs | raw_text: 281 words
-  skills: HTML5, CSS3, JavaScript, Python, Flask, Git, SQLite
-  projects: Project Portfolio Hub, Project MicroBlog
-  background: I am a passionate entry-level software engineer with a strong foundation in foundational web technologies and modern programming principles. Recently, I completed a six-month internship at a local technology startup within a dynamic four-person development team. During this tenure, my primary focus 
+  id: resume_1168 | level: middle | exp: 4.0 yrs | raw_text: 285 words
+  skills: React Native, Flutter, Kotlin, JavaScript, Redux, Firebase, Dart
+  projects: Project NativeTrack, Project QuickNotify
+  background: I am a focused Middle Mobile Application Developer with four years of hands-on experience crafting responsive user interfaces for cross-platform and native ecosystems. My career started at a progressive mobile startup where I spent twenty-four months working inside a nimble team of five engineering 
 
-  id: resume_1166 | level: junior | exp: 0.7 yrs | raw_text: 259 words
-  skills: React, Tailwind CSS, JavaScript, Python, PostgreSQL
-  projects: Project TaskFlow, Project RecipeDB
-  background: I am a motivated junior developer eager to build highly interactive and maintainable client-side user interfaces backed by structured data processing layers. For the past eight months, I functioned as a Junior Web Engineering Intern at a boutique digital software agency, operating in a tightly integ
+  id: resume_1169 | level: senior | exp: 7.0 yrs | raw_text: 266 words
+  skills: Swift, Kotlin, Flutter, React Native, TypeScript, Objective-C, Fastlane, SQLite
+  projects: Project CoreBridge
+  background: I am a senior engineering specialist and mobile architect with seven years of dedicated experience directing high-scale product codebases. In my present capacity at a major technology enterprise, where I supervise a core team of ten mobile developers and platform specialists, I govern the high-level
 
-  id: resume_1167 | level: senior | exp: 8.0 yrs | raw_text: 276 words
-  skills: Python, FastAPI, Django, React, Redux Toolkit, PostgreSQL, Redis, Docker, AWS ECS, CI/CD
-  projects: Project DataVibe
-  background: I am an enterprise-grade Senior Full-Stack Engineer and Tech Lead with over eight years of experience architecture-level software designing and shipping high-concurrency cloud applications. In my current role at a multinational financial enterprise, where I have directed a multi-functional team of e
+  id: resume_1170 | level: senior | exp: 8.0 yrs | raw_text: 276 words
+  skills: Swift, SwiftUI, React Native, Kotlin Multiplatform, Fastlane, Firebase, Kotlin
+  projects: Project SwiftFlow
+  background: I am an experienced Mobile Tech Lead and Principal Developer with eight years of continuous tenure building high-performance native iOS and cross-platform smartphone utilities. In my current role at an enterprise financial services corporation, I guide a cross-functional squad of twelve engineers in
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1165 | title: Senior Full-Stack Engineer (FastAPI & Redux) | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Python, FastAPI, React, Redux Toolkit, PostgreSQL, Docker, AWS ECS
-  preferred_skills: Redis
-  description: Our core infrastructure development division is looking for an analytical and deeply specialized Senior Full-Stack Engineer to architect our next-generation distributed data processing dashboard. In this senior leadership role, you will join an engin
+  id: jd_1168 | title: Junior Mobile App Developer (React Native) | level: junior | min_exp: 1 yrs | raw_text: 182 words
+  required_skills: React Native, JavaScript, Firebase, Git
+  preferred_skills: Kotlin
+  description: Our expanding product discovery group is looking for an enthusiastic Junior Mobile App Developer to contribute to the growth of our entry-level smartphone services. In this associate position, you will integrate into a supportive development team con
 
-  id: jd_1166 | title: Lead Full-Stack Web Developer (Django) | level: senior | min_exp: 6 yrs | raw_text: 201 words
-  required_skills: Python, Django, React, Redux Toolkit, Docker, CI/CD
-  preferred_skills: Redis
-  description: Our transactional software group is looking for an exceptional, hands-on Lead Full-Stack Web Developer to direct the technical revitalization of our core enterprise application layer. Leading an agile squad of nine developers and UI/UX designers, you
+  id: jd_1169 | title: Associate Flutter Developer | level: junior | min_exp: 1 yrs | raw_text: 187 words
+  required_skills: Flutter, Dart, Git
+  preferred_skills: Kotlin
+  description: Our client solutions development division is seeking a motivated Associate Flutter Developer to build the next iteration of our mobile operational tools. Working inside a collaborative team of five software developers, a visual designer, and an autom
 
-  id: jd_1167 | title: Principal Engineer - Python & React | level: senior | min_exp: 6 yrs | raw_text: 184 words
-  required_skills: Python, FastAPI, Django, React, Redux Toolkit, PostgreSQL, WebSockets, Docker, CI/CD
-  preferred_skills: Redis, AWS ECS
-  description: Our cloud optimization group is seeking a brilliant, highly strategic Principal Engineer to champion the scalability and performance architecture of our web-based cloud metrics platforms. Operating within a high-caliber cluster of twelve engineers, d
+  id: jd_1170 | title: Senior Mobile Engineering Lead | level: senior | min_exp: 6 yrs | raw_text: 185 words
+  required_skills: Swift, SwiftUI, Kotlin, React Native, SQLite, Fastlane
+  preferred_skills: Kotlin Multiplatform, Firebase
+  description: Our core enterprise mobility platform group is seeking a highly technical, strategic Senior Mobile Engineering Lead to architect and govern our modern mobile application framework. Working alongside an elite, cross-functional cluster of ten developer
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3492 pairs total.
+Overall dataset so far: 3501 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  694  →  expected this batch: 6 pairs (from seniority gaps below)
-  weak_match            existing:  700  →  expected this batch: 0 pairs (from seniority gaps below)
-  moderate_match        existing:  699  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  700  →  expected this batch: 0 pairs (from seniority gaps below)
-  excellent_match       existing:  699  →  expected this batch: 3 pairs (from seniority gaps below)
+  poor_match            existing:  700  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  700  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  699  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  700  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  702  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3493   resume_1165 × jd_1165
-  pair_3494   resume_1165 × jd_1166
-  pair_3495   resume_1165 × jd_1167
-  pair_3496   resume_1166 × jd_1165
-  pair_3497   resume_1166 × jd_1166
-  pair_3498   resume_1166 × jd_1167
-  pair_3499   resume_1167 × jd_1165
-  pair_3500   resume_1167 × jd_1166
-  pair_3501   resume_1167 × jd_1167
+  pair_3502   resume_1168 × jd_1168
+  pair_3503   resume_1168 × jd_1169
+  pair_3504   resume_1168 × jd_1170
+  pair_3505   resume_1169 × jd_1168
+  pair_3506   resume_1169 × jd_1169
+  pair_3507   resume_1169 × jd_1170
+  pair_3508   resume_1170 × jd_1168
+  pair_3509   resume_1170 × jd_1169
+  pair_3510   resume_1170 × jd_1170
 
 ════════════════════════════════════
 OUTPUT FORMAT
