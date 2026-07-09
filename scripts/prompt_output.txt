@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_946 | level: junior | exp: 0.8 yrs | raw_text: 268 words
-  skills: Python, PyTorch, Transformers, Hugging Face, FastAPI, ChromaDB, Deep Learning
-  projects: SemanticSearchCore
-  background: I am a motivated AI Engineering graduate with one year of experience working as an intern at a mid-sized data startup. During my internship, which lasted for ten months and involved a team of five data scientists, I focused on fine-tuning pre-trained language models for classification tasks and auto
+  id: resume_949 | level: middle | exp: 4.0 yrs | raw_text: 257 words
+  skills: Python, Pandas, Scikit-learn, PyTorch, SQL, AWS Redshift, Flask
+  projects: TrendClassifier, AutoInsight
+  background: I am a Data Scientist with four years of experience working across both high-growth startups and established enterprise environments. My career began at a logistics startup where I spent two years on a team of six, focusing on predictive maintenance models. I utilized Python 3.9, pandas 1.3, and sci
 
-  id: resume_947 | level: junior | exp: 1.0 yrs | raw_text: 255 words
-  skills: Python, TensorFlow, Scikit-learn, Docker, OpenAI API, Prompt Engineering
-  projects: ChatFlowAssistant
-  background: I am an AI Engineering enthusiast with one year of professional experience gained through an intensive software apprenticeship at an enterprise software firm. In this role, I worked on a team of eight engineers to support the integration of conversational AI features into customer-facing application
+  id: resume_950 | level: senior | exp: 8.0 yrs | raw_text: 256 words
+  skills: Python, PyTorch, Pandas, Scikit-learn, Kubernetes, OpenCV, Deep Learning
+  projects: ScaleModeler, DynamicPricingAI
+  background: I am a Senior Machine Learning Engineer with eight years of experience specializing in deep learning and scalable data architecture. In my previous role as a tech lead at a large data-focused agency, I managed a team of ten engineers tasked with building recommendation engines and real-time inferenc
 
-  id: resume_948 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Python, PyTorch, LangChain, Milvus, Pinecone, LLM Fine-tuning, Model Quantization, Multi-agent Systems
-  projects: NeuralPipelineSuite
-  background: I am a Senior AI and NLP Engineer with eight years of experience building and deploying state-of-the-art machine learning systems. Throughout my career at three different tech enterprises, I have led teams of up to fifteen engineers in developing scalable RAG architectures, large-scale transformer m
+  id: resume_951 | level: senior | exp: 7.0 yrs | raw_text: 265 words
+  skills: Python, Pandas, Scikit-learn, PyTorch, NLP, Reinforcement Learning, Data Governance
+  projects: InsightFlow, PredictiveSupplyChain
+  background: As a Lead Data Scientist with seven years of experience, I excel in transforming complex, unstructured data into actionable strategic assets. My journey began as an analyst at a global enterprise, where I mastered data manipulation with pandas and advanced visualization techniques. Transitioning int
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_946 | title: AI Engineer | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: Python, PyTorch, LangChain, FastAPI, Vector Databases
-  preferred_skills: Docker, Kubernetes
-  description: Our AI infrastructure team is looking for a talented AI Engineer to join our growing group of twelve engineers. We focus on building internal tools to support generative AI applications and optimizing model performance for our core software products.
+  id: jd_949 | title: Junior Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 238 words
+  required_skills: Python, Pandas, Scikit-learn, SQL
+  preferred_skills: Tableau, Git
+  description: Our data science team is expanding and we are looking for a highly motivated Junior Data Scientist to support our growing analytical initiatives. Our team currently consists of five data scientists and two analysts who work on a variety of problems r
 
-  id: jd_947 | title: Senior NLP Engineer | level: senior | min_exp: 6 yrs | raw_text: 196 words
-  required_skills: Python, PyTorch, Transformer Architectures, RAG, Pinecone, Fine-tuning
-  preferred_skills: Multi-agent Systems, Kubernetes
-  description: We are seeking an experienced Senior NLP Engineer to lead our conversational AI development. Our team of eight researchers and engineers is tasked with building sophisticated, domain-specific large language models and multi-agent systems to enhance o
+  id: jd_950 | title: Associate Data Scientist | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: Python, Pandas, Scikit-learn, Statistics
+  preferred_skills: PyTorch, Flask
+  description: We are looking for a dedicated Associate Data Scientist to join our research and development group. Our team of eight researchers focuses on building predictive models and developing new algorithms to optimize our service performance. The core work i
 
-  id: jd_948 | title: Principal AI Scientist | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Python, PyTorch, Deep Learning, LLM Training, LangChain, Vector Databases
-  preferred_skills: Reinforcement Learning, Distributed Systems
-  description: Our Advanced AI Research group is seeking a Principal AI Scientist to drive innovation in our language understanding and generation capabilities. Our team of ten researchers focuses on cutting-edge problems in AI, including long-context window handli
+  id: jd_951 | title: Senior Lead Data Scientist | level: senior | min_exp: 6 yrs | raw_text: 214 words
+  required_skills: Python, PyTorch, Pandas, Scikit-learn
+  preferred_skills: Kubernetes, Reinforcement Learning
+  description: Our Advanced Data Science department is seeking an experienced Senior Lead Data Scientist to head a team of fifteen individuals working on large-scale machine learning systems. Our group is tasked with designing robust neural architectures, optimizin
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2835 pairs total.
+Overall dataset so far: 2844 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  564  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  568  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  568  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  567  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  568  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  568  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  570  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  568  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  568  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  570  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2836   resume_946 × jd_946
-  pair_2837   resume_946 × jd_947
-  pair_2838   resume_946 × jd_948
-  pair_2839   resume_947 × jd_946
-  pair_2840   resume_947 × jd_947
-  pair_2841   resume_947 × jd_948
-  pair_2842   resume_948 × jd_946
-  pair_2843   resume_948 × jd_947
-  pair_2844   resume_948 × jd_948
+  pair_2845   resume_949 × jd_949
+  pair_2846   resume_949 × jd_950
+  pair_2847   resume_949 × jd_951
+  pair_2848   resume_950 × jd_949
+  pair_2849   resume_950 × jd_950
+  pair_2850   resume_950 × jd_951
+  pair_2851   resume_951 × jd_949
+  pair_2852   resume_951 × jd_950
+  pair_2853   resume_951 × jd_951
 
 ════════════════════════════════════
 OUTPUT FORMAT
