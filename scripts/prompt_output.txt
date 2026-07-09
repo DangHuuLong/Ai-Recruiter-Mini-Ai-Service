@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1018 | level: middle | exp: 4.0 yrs | raw_text: 263 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, Framer Motion
-  projects: StateFlow, ComponentKit
-  background: I am a dedicated Frontend Developer with four years of professional experience building responsive web applications. In my current role at a high-growth fintech startup, I work in a team of six developers to maintain a complex customer-facing dashboard. My primary responsibilities involve developing
+  id: resume_1021 | level: junior | exp: 0.8 yrs | raw_text: 284 words
+  skills: Splunk, Wireshark, Nmap, Python, Network Security, Incident Response
+  projects: NetSentinel
+  background: I am an enthusiastic Junior Security Analyst with nearly one year of professional experience gained during an intensive internship at a fast-paced cybersecurity startup. Working within a specialized security operations team of five, I was responsible for continuous network traffic monitoring, invest
 
-  id: resume_1019 | level: senior | exp: 8.0 yrs | raw_text: 260 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, Radix UI, Vitest, Playwright, NextAuth.js
-  projects: ModularUI, SSRUtility
-  background: I am a seasoned Senior Frontend Engineer and Lead Developer with eight years of extensive experience designing and maintaining enterprise-scale web architectures. In my most recent position at a global enterprise platform, I led a cross-functional team of twelve developers to architect and deploy a 
+  id: resume_1022 | level: junior | exp: 0.9 yrs | raw_text: 256 words
+  skills: Burp Suite Pro, Metasploit, Bash, Linux, Web Application Security, Vulnerability Scanning
+  projects: VulnScanBuddy
+  background: I am a passionate Junior Penetration Tester and Security Researcher who recently completed an internship at a boutique security consulting agency. Over the course of ten months, I collaborated with a specialized team of four experts to conduct vulnerability assessments and penetration tests for dive
 
-  id: resume_1020 | level: senior | exp: 7.0 yrs | raw_text: 269 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Jest, React Testing Library
-  projects: EdgeFetch, A11ySuite
-  background: I am an accomplished Principal Frontend Engineer with seven years of experience driving technical innovation and optimizing user experiences in the retail technology sector. At my current enterprise role, I serve as the lead technical authority for our frontend guild, managing a team of fifteen soft
+  id: resume_1023 | level: senior | exp: 8.0 yrs | raw_text: 262 words
+  skills: Splunk, Incident Response, Network Protocols, Cobalt Strike, Exploit Development, Reverse Engineering, AWS Security, Kubernetes Security, Zero Trust, Terraform
+  projects: CloudStrike
+  background: I am a highly accomplished Principal Security Architect and Lead Incident Responder with eight years of extensive experience spanning defensive security operations, advanced threat emulation, and enterprise-level risk management. In my current role at a major global financial enterprise, I manage a 
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1018 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 204 words
-  required_skills: React, TypeScript, Tailwind CSS, Next.js
-  preferred_skills: Jest, Git
-  description: We are looking for a motivated Junior Frontend Developer to join our product team of fifteen, dedicated to enhancing the usability and performance of our consumer-facing web marketplace. In this role, you will be part of a supportive environment, foc
+  id: jd_1021 | title: Mid-level SOC Analyst | level: middle | min_exp: 3 yrs | raw_text: 211 words
+  required_skills: Splunk, Incident Response, Network Protocols, Wireshark
+  preferred_skills: Python, Bash
+  description: We are actively seeking an experienced Mid-level Security Operations Center (SOC) Analyst to join our dedicated internal security team of eight professionals. In this critical role, you will be on the front lines of our enterprise defense, responsibl
 
-  id: jd_1019 | title: Associate Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 208 words
-  required_skills: React, TypeScript, Tailwind CSS
-  preferred_skills: Next.js, Accessibility
-  description: Our web engineering team is seeking an Associate Frontend Engineer to support the development of our flagship content platform. Working within a team of ten, you will focus on component development, state management, and performance tuning for our in
+  id: jd_1022 | title: Lead Penetration Tester | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Cobalt Strike, Exploit Development, Reverse Engineering, Advanced Penetration Testing, Burp Suite Pro, Metasploit
+  preferred_skills: OSINT, Social Engineering
+  description: Our elite offensive security division is looking for a Lead Penetration Tester to guide our red team operations and deliver high-impact security assessments for our enterprise clients. You will lead a specialized unit of five offensive security engin
 
-  id: jd_1020 | title: Senior Frontend Architect | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: React, Next.js, TypeScript, Tailwind CSS, Jest, Playwright
-  preferred_skills: Architecture Design, Team Leadership
-  description: We are seeking a visionary Senior Frontend Architect to lead our technical strategy for a high-traffic, complex web platform. Our frontend team of twenty operates in a highly collaborative environment, and you will be responsible for guiding technica
+  id: jd_1023 | title: Principal Cloud Security Architect | level: senior | min_exp: 6 yrs | raw_text: 216 words
+  required_skills: AWS Security, Kubernetes Security, Zero Trust, Terraform, CI/CD Security, Identity and Access Management (IAM)
+  preferred_skills: Docker Security, Python
+  description: We are searching for a visionary Principal Cloud Security Architect to lead the design and implementation of our next-generation cloud infrastructure defense strategy. Joining our platform engineering organization, you will provide technical leadersh
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3051 pairs total.
+Overall dataset so far: 3060 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  610  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  611  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  608  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  611  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  611  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  610  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  612  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  612  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  613  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  613  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3052   resume_1018 × jd_1018
-  pair_3053   resume_1018 × jd_1019
-  pair_3054   resume_1018 × jd_1020
-  pair_3055   resume_1019 × jd_1018
-  pair_3056   resume_1019 × jd_1019
-  pair_3057   resume_1019 × jd_1020
-  pair_3058   resume_1020 × jd_1018
-  pair_3059   resume_1020 × jd_1019
-  pair_3060   resume_1020 × jd_1020
+  pair_3061   resume_1021 × jd_1021
+  pair_3062   resume_1021 × jd_1022
+  pair_3063   resume_1021 × jd_1023
+  pair_3064   resume_1022 × jd_1021
+  pair_3065   resume_1022 × jd_1022
+  pair_3066   resume_1022 × jd_1023
+  pair_3067   resume_1023 × jd_1021
+  pair_3068   resume_1023 × jd_1022
+  pair_3069   resume_1023 × jd_1023
 
 ════════════════════════════════════
 OUTPUT FORMAT
