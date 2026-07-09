@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1108 | level: middle | exp: 4.5 yrs | raw_text: 264 words
-  skills: Workday HCM, Greenhouse ATS, LinkedIn Recruiter, Zapier, HR Compliance
-  projects: OnboardSync, DiversitySource
-  background: I am a dedicated HR professional with over four years of experience managing talent acquisition and employee lifecycle processes in high-growth startup environments. In my most recent role as a People Operations Coordinator at a fast-paced technology agency, I worked within a team of five to streaml
+  id: resume_1111 | level: junior | exp: 0.5 yrs | raw_text: 268 words
+  skills: Jira, Microsoft Visio, Lucidchart, Confluence, Trello
+  projects: Requirement-Pilot, Task-Tracker-Pro
+  background: I am a recent graduate with a degree in Business Administration, highly motivated to launch my career as a Junior Business Analyst. During my final year, I completed a six-month internship at a software agency, where I supported a cross-functional team of eight. My primary responsibilities included 
 
-  id: resume_1109 | level: senior | exp: 8.0 yrs | raw_text: 253 words
-  skills: SAP SuccessFactors, SmartRecruiters, Tableau, Performance Management, Organizational Design
-  projects: TalentAnalyticsHub, GlobalCompliancePath
-  background: I am a senior talent leader with eight years of experience building scalable recruiting infrastructures and HR operations for global enterprises. Throughout my career, I have managed departments of fifteen recruiters and HR specialists, overseeing the hiring of over 500 professionals annually. My co
+  id: resume_1112 | level: middle | exp: 4.0 yrs | raw_text: 267 words
+  skills: BPMN 2.0, Jira, Power BI, SQL, Agile
+  projects: Process-Analyzer-Suite, Stakeholder-Pulse-Tool
+  background: I am a versatile Business Analyst with four years of experience optimizing operational workflows and managing stakeholder relationships in mid-sized enterprise environments. My career path has focused on driving digital transformation through detailed requirements engineering and collaborative proje
 
-  id: resume_1110 | level: senior | exp: 9.0 yrs | raw_text: 260 words
-  skills: Workday HCM, Lever ATS, 15Five, SQL, HR Analytics
-  projects: InclusiveHireModel, TechTalentScale
-  background: I am a seasoned HR and People Operations Architect with over nine years of experience specializing in scaling human capital systems for rapid-growth technology companies. My career has been defined by a deep focus on HR technology integration, organizational architecture, and inclusive recruitment s
+  id: resume_1113 | level: middle | exp: 5.0 yrs | raw_text: 264 words
+  skills: Jira, Confluence, Microsoft Project, Python, Agile
+  projects: Requirement-Sync-Engine, Project-Governance-Portal
+  background: I am a results-oriented Project Manager with five years of experience in orchestrating cross-functional software development teams. During my tenure at an enterprise software firm, I was responsible for overseeing a team of fifteen professionals to ensure the on-time delivery of mission-critical int
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1108 | title: Junior HR Associate | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Greenhouse ATS, Google Workspace, Microsoft Excel
-  preferred_skills: Workday, Benefits Administration
-  description: Our People team is looking for a motivated Junior HR Associate to help support our growing organization. This team of eight works closely to ensure smooth administrative operations for over 300 employees globally. Your day-to-day responsibilities wil
+  id: jd_1111 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 202 words
+  required_skills: Microsoft Excel, Jira, BPMN, Business Analysis
+  preferred_skills: Agile, Lucidchart
+  description: Our operations team is seeking a motivated Junior Business Analyst to support our project management office and assist in refining internal business requirements. We are a team of fifteen individuals working on standardizing operational workflows for
 
-  id: jd_1109 | title: Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Greenhouse ATS, LinkedIn Recruiter, Microsoft Excel
-  preferred_skills: Recruitment Branding, Data Analytics
-  description: Our talent team is seeking a dedicated Talent Acquisition Coordinator to assist with our end-to-end recruitment process. The team currently consists of five recruiters and coordinators working to attract top talent in a highly competitive market. You
+  id: jd_1112 | title: Senior Business Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: BPMN, Jira, Stakeholder Management, Strategic Planning
+  preferred_skills: Project Portfolio Management, Tableau
+  description: Our informatics team is seeking a Senior Business Systems Lead with extensive experience in architecting and managing complex, enterprise-grade business ecosystems. You will lead a department of fifteen, responsible for the integration of major busin
 
-  id: jd_1110 | title: Senior HRIS Architect | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Workday HCM, SQL, HR Compliance, System Security
-  preferred_skills: 15Five, Lever ATS, Predictive Analytics
-  description: We are seeking an expert Senior HRIS Architect to lead our human resources technology strategy. Our global HR team of twenty manages operations for over 2,000 employees. Your day-to-day responsibilities will include architecting complex configuration
+  id: jd_1113 | title: Senior Project Lead | level: senior | min_exp: 6 yrs | raw_text: 211 words
+  required_skills: BPMN, Jira, Stakeholder Management, Strategic Planning
+  preferred_skills: Project Portfolio Management, Tableau
+  description: Our digital transformation team is seeking a Senior Project Lead with extensive experience in architecting and managing complex, enterprise-grade project ecosystems. You will lead a department of fifteen, responsible for the integration of major busi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3321 pairs total.
+Overall dataset so far: 3330 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  665  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  664  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  662  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  665  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  665  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  665  →  expected this batch: 2 pairs (from seniority gaps below)
+  weak_match            existing:  665  →  expected this batch: 4 pairs (from seniority gaps below)
+  moderate_match        existing:  666  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  667  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  667  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3322   resume_1108 × jd_1108
-  pair_3323   resume_1108 × jd_1109
-  pair_3324   resume_1108 × jd_1110
-  pair_3325   resume_1109 × jd_1108
-  pair_3326   resume_1109 × jd_1109
-  pair_3327   resume_1109 × jd_1110
-  pair_3328   resume_1110 × jd_1108
-  pair_3329   resume_1110 × jd_1109
-  pair_3330   resume_1110 × jd_1110
+  pair_3331   resume_1111 × jd_1111
+  pair_3332   resume_1111 × jd_1112
+  pair_3333   resume_1111 × jd_1113
+  pair_3334   resume_1112 × jd_1111
+  pair_3335   resume_1112 × jd_1112
+  pair_3336   resume_1112 × jd_1113
+  pair_3337   resume_1113 × jd_1111
+  pair_3338   resume_1113 × jd_1112
+  pair_3339   resume_1113 × jd_1113
 
 ════════════════════════════════════
 OUTPUT FORMAT
