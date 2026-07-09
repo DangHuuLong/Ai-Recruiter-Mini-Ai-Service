@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1171 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: QuickBooks, Microsoft Excel, Power Query, Python, Financial Reporting
-  projects: Project LedgerFlow, Project SmartSpend
-  background: I am an ambitious junior financial analyst and fresh graduate specializing in fintech operations and accounting workflows. During my final year of university, I completed a intensive six-month internship at a fast-growing digital banking startup, where I operated within a compact corporate treasury 
+  id: resume_1174 | level: junior | exp: 0.5 yrs | raw_text: 273 words
+  skills: Shopify, Microsoft Excel, Python, Catalog Management
+  projects: Project CatalogSync, Project ShopMetric
+  background: I am an enthusiastic Junior E-commerce Operations Associate and recent graduate with a passion for optimizing digital marketplace store fronts and product data feeds. During my final academic year, I engaged in a structured seven-month internship at a growing retail tech startup where I operated wit
 
-  id: resume_1172 | level: middle | exp: 4.0 yrs | raw_text: 255 words
-  skills: NetSuite, Sage Intacct, Microsoft Excel, SQL, Financial Modeling, AML Compliance
-  projects: Project ModelRefine
-  background: I am a precise and details-driven Middle Financial Analyst with four years of dedicated professional tenure maintaining compliance frameworks and conducting core financial modeling within technology sectors. My career began at a mid-sized digital brokerage agency, where I spent twenty-four months wo
+  id: resume_1175 | level: junior | exp: 0.5 yrs | raw_text: 287 words
+  skills: WooCommerce, SQL, Google Sheets, Python, Inventory Management
+  projects: Project MerchFlow, Project StockWatch
+  background: I am a meticulous Junior Retail Merchandising Specialist and recent honors graduate with strong foundational competencies in inventory analytics, product categorization models, and marketplace operations. My early professional exposure includes a competitive six-month internship at a boutique e-comm
 
-  id: resume_1173 | level: middle | exp: 4.0 yrs | raw_text: 254 words
-  skills: NetSuite, Microsoft Excel, PostgreSQL, Financial Reporting, Financial Modeling, Tableau
-  projects: Project FastLedger
-  background: I am a highly analytical Middle Fintech Accountant with over four years of robust experience managing multi-tier financial modeling structures and general ledger integrations. My professional history includes a solid twenty-eight month tenure at an enterprise payment processing startup, where I work
+  id: resume_1176 | level: senior | exp: 7.0 yrs | raw_text: 266 words
+  skills: Magento, Salesforce Commerce Cloud, Adobe Commerce, Python, PostgreSQL, SQL, Catalog Architecture, Marketplace Operations
+  projects: Project ScaleCart, Project MultiVendor
+  background: I am a highly strategic Senior E-commerce Architecture and Marketplace Operations Lead with seven years of deep specialization in scaling high-volume merchant ecosystems, inventory engines, and programmatic retail platforms. My corporate career started at an enterprise digital marketplace agency whe
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1171 | title: Junior Fintech Accountant | level: junior | min_exp: 1 yrs | raw_text: 182 words
-  required_skills: QuickBooks, Microsoft Excel, Financial Reporting
-  preferred_skills: Power Query
-  description: Our core operational finance department is looking for an enthusiastic and highly analytical Junior Fintech Accountant to join our expanding transaction services team. In this entry-level associate position, you will integrate into a highly collabora
+  id: jd_1174 | title: Middle E-commerce Platform Administrator | level: middle | min_exp: 3 yrs | raw_text: 195 words
+  required_skills: Magento, SQL, Catalog Management
+  preferred_skills: Python
+  description: Our digital shelf solutions group is looking for an analytical and process-driven Middle E-commerce Platform Administrator to oversee our corporate multi-channel storefront applications. Working inside a collaborative marketplace management team of s
 
-  id: jd_1172 | title: Senior Financial Modeling & Regulatory Lead | level: senior | min_exp: 6 yrs | raw_text: 187 words
-  required_skills: Anaplan, SQL, Financial Modeling, Compliance
-  preferred_skills: NetSuite
-  description: Our strategic capital management department is seeking a highly sophisticated Senior Financial Modeling and Regulatory Lead to architect our global transaction projection frameworks. Working inside a specialized cross-functional team of ten elite fin
+  id: jd_1175 | title: Senior Marketplace Systems Architect | level: senior | min_exp: 6 yrs | raw_text: 184 words
+  required_skills: Salesforce Commerce Cloud, Python, PostgreSQL, Marketplace Operations
+  preferred_skills: Magento
+  description: Our core digital retail infrastructure department is seeking a highly sophisticated Senior Marketplace Systems Architect to direct our high-throughput merchant framework modernization strategy. Operating within a highly specialized cross-functional h
 
-  id: jd_1173 | title: Senior FinTech Corporate Controller | level: senior | min_exp: 6 yrs | raw_text: 187 words
-  required_skills: Workday Financial Management, Tax Accounting Compliance, Financial Reporting, Python
-  preferred_skills: PostgreSQL, Tableau
-  description: Our global platform operations group is looking for a strategic, technical Senior FinTech Corporate Controller to oversee our institutional financial accounting architecture. Working alongside a cross-functional unit of twelve corporate accountants, 
+  id: jd_1176 | title: Senior Director of Enterprise Merchandising Systems | level: senior | min_exp: 6 yrs | raw_text: 180 words
+  required_skills: Adobe Commerce, Catalog Architecture, Python, Marketplace Operations
+  preferred_skills: PostgreSQL
+  description: Our international commercial operations group is looking for a strategic, highly technical Senior Director of Enterprise Merchandising Systems to supervise our global digital assortment architecture. Collaborating alongside a cross-functional unit of
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3510 pairs total.
+Overall dataset so far: 3519 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  700  →  expected this batch: 2 pairs (from seniority gaps below)
-  weak_match            existing:  701  →  expected this batch: 4 pairs (from seniority gaps below)
+  poor_match            existing:  702  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  705  →  expected this batch: 2 pairs (from seniority gaps below)
   moderate_match        existing:  703  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  702  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  704  →  expected this batch: 1 pairs (from seniority gaps below)
+  strong_match          existing:  704  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  705  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3511   resume_1171 × jd_1171
-  pair_3512   resume_1171 × jd_1172
-  pair_3513   resume_1171 × jd_1173
-  pair_3514   resume_1172 × jd_1171
-  pair_3515   resume_1172 × jd_1172
-  pair_3516   resume_1172 × jd_1173
-  pair_3517   resume_1173 × jd_1171
-  pair_3518   resume_1173 × jd_1172
-  pair_3519   resume_1173 × jd_1173
+  pair_3520   resume_1174 × jd_1174
+  pair_3521   resume_1174 × jd_1175
+  pair_3522   resume_1174 × jd_1176
+  pair_3523   resume_1175 × jd_1174
+  pair_3524   resume_1175 × jd_1175
+  pair_3525   resume_1175 × jd_1176
+  pair_3526   resume_1176 × jd_1174
+  pair_3527   resume_1176 × jd_1175
+  pair_3528   resume_1176 × jd_1176
 
 ════════════════════════════════════
 OUTPUT FORMAT
