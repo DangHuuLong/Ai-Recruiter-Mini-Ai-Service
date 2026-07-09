@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1147 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: Jira, Visio, BPMN 2.0, Requirements Gathering
-  projects: Automated Inventory Mapping
-  background: I am an enthusiastic Junior Business Analyst and a recent graduate looking to contribute to a collaborative environment. During my final year at university, I completed an internship at a dynamic fintech startup as an Associate Analyst for five months. Working in a tight-knit team of four, my primar
+  id: resume_1150 | level: middle | exp: 4.0 yrs | raw_text: 260 words
+  skills: Financial Modeling, Financial Reporting, SQL, Excel, QuickBooks, Tableau
+  projects: Project LedgerFlow
+  background: I am a precise and detail-oriented Corporate Financial Analyst with four years of continuous professional experience specializing in financial modeling and statutory reporting inside the fintech ecosystem. In my previous role at a rapidly growing Series B payment startup, I operated within a finance
 
-  id: resume_1148 | level: junior | exp: 0.5 yrs | raw_text: 276 words
-  skills: Trello, Confluence, Lucidchart, Stakeholder Communication
-  projects: Lifecycle Optimization Blueprint
-  background: As an ambitious and highly analytical Junior Project Coordinator, I offer a solid foundational background in project support, structured business documentation, and comprehensive requirements tracking. I recently completed an extensive six-month contract role at a fast-paced digital marketing agency
+  id: resume_1151 | level: senior | exp: 7.5 yrs | raw_text: 252 words
+  skills: Financial Modeling, Financial Reporting, Compliance, SQL, Oracle ERP, SAS, Alteryx, Python
+  projects: Project ShieldCore
+  background: I am a Lead Fintech Compliance and Financial Systems Architect with seven and a half years of extensive enterprise experience designing internal reporting frameworks and ensuring regulatory compliance. In my current capacity at a global multi-asset digital brokerage enterprise, I guide a dedicated f
 
-  id: resume_1149 | level: senior | exp: 8.0 yrs | raw_text: 259 words
-  skills: BPMN 2.0, Camunda, Jira Align, Confluence, SQL, Requirements Elicitation, Stakeholder Management, Enterprise Architect, Miro
-  projects: Enterprise Framework Sync
-  background: I am a Senior Business Analyst and Lead Agile Project Manager with over eight years of extensive experience delivering enterprise-grade software solutions and orchestrating complex corporate transformations. In my current position at a global financial services enterprise, where I have worked for th
+  id: resume_1152 | level: senior | exp: 8.0 yrs | raw_text: 288 words
+  skills: Financial Modeling, Financial Reporting, Compliance, Python, R Studio, Redshift, Snowflake, Workday Financials
+  projects: Framework Apex
+  background: I am an accomplished Senior Quantitative Finance Manager and Fintech Reporting Director with over eight years of professional experience steering advanced financial engineering teams, deploying complex analytical tools, and managing high-fidelity institutional compliance structures. Currently, I lea
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1147 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 211 words
-  required_skills: Requirements Gathering, Visio, Lucidchart, Jira, BPMN 2.0
-  preferred_skills: SQL, Confluence
-  description: Our operational transformation department is expanding, and we are actively seeking a skilled mid-level Business Analyst to join our team of seven core professionals. In this role, you will be responsible for bridging the gap between business needs a
+  id: jd_1150 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 210 words
+  required_skills: Financial Modeling, Excel, SQL, Financial Reporting
+  preferred_skills: Tableau, QuickBooks
+  description: Our corporate finance and strategic treasury operations division is scaling rapidly, and we are looking for a motivated Junior Financial Analyst to join our team of five core professionals. In this role, you will be responsible for helping our core f
 
-  id: jd_1148 | title: Senior Business Process Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
-  required_skills: BPMN 2.0, Camunda, Enterprise Architect, Jira Align, SQL, Stakeholder Management, Requirements Elicitation
-  preferred_skills: Signavio, Miro
-  description: We are looking for a visionary Senior Business Process Architect to spearhead our enterprise platform modernization team consisting of fifteen seasoned engineers. Our focus is on rebuilding a massively scalable, deeply integrated workflow engine that
+  id: jd_1151 | title: Fintech Associate Accountant | level: junior | min_exp: 1 yrs | raw_text: 198 words
+  required_skills: Financial Reporting, QuickBooks, Excel, SQL
+  preferred_skills: Compliance
+  description: We are seeking a dedicated Fintech Associate Accountant to join our corporate accounting and ledger integrity team of six professionals. Your primary mission is to help optimize our day-to-day transaction matching architectures and maintain high accu
 
-  id: jd_1149 | title: Lead Agile Project Manager | level: senior | min_exp: 6 yrs | raw_text: 202 words
-  required_skills: Jira Align, Confluence, Miro, Requirements Elicitation, Stakeholder Management
-  preferred_skills: BPMN 2.0
-  description: Our enterprise agile delivery division is seeking an exceptional Lead Agile Project Manager to direct a high-performing cross-functional software team of twelve engineers. The team is dedicated to deploying next-generation data solutions for internat
+  id: jd_1152 | title: Senior Regulatory Compliance and Financial Modeling Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
+  required_skills: Financial Modeling, Python, Financial Reporting, Compliance, Snowflake, Redshift
+  preferred_skills: Workday Financials, Oracle ERP
+  description: Our global financial risk division is seeking an exceptional Senior Regulatory Compliance and Financial Modeling Architect to lead our platform validation team of fifteen specialists. Our focus is on maintaining a massively scalable, deeply compliant
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3438 pairs total.
+Overall dataset so far: 3447 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  685  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  688  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  688  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  689  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  688  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  689  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  690  →  expected this batch: 1 pairs (from seniority gaps below)
+  moderate_match        existing:  688  →  expected this batch: 4 pairs (from seniority gaps below)
+  strong_match          existing:  690  →  expected this batch: 2 pairs (from seniority gaps below)
+  excellent_match       existing:  690  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3439   resume_1147 × jd_1147
-  pair_3440   resume_1147 × jd_1148
-  pair_3441   resume_1147 × jd_1149
-  pair_3442   resume_1148 × jd_1147
-  pair_3443   resume_1148 × jd_1148
-  pair_3444   resume_1148 × jd_1149
-  pair_3445   resume_1149 × jd_1147
-  pair_3446   resume_1149 × jd_1148
-  pair_3447   resume_1149 × jd_1149
+  pair_3448   resume_1150 × jd_1150
+  pair_3449   resume_1150 × jd_1151
+  pair_3450   resume_1150 × jd_1152
+  pair_3451   resume_1151 × jd_1150
+  pair_3452   resume_1151 × jd_1151
+  pair_3453   resume_1151 × jd_1152
+  pair_3454   resume_1152 × jd_1150
+  pair_3455   resume_1152 × jd_1151
+  pair_3456   resume_1152 × jd_1152
 
 ════════════════════════════════════
 OUTPUT FORMAT
