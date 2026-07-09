@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1150 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: Financial Modeling, Financial Reporting, SQL, Excel, QuickBooks, Tableau
-  projects: Project LedgerFlow
-  background: I am a precise and detail-oriented Corporate Financial Analyst with four years of continuous professional experience specializing in financial modeling and statutory reporting inside the fintech ecosystem. In my previous role at a rapidly growing Series B payment startup, I operated within a finance
+  id: resume_1153 | level: junior | exp: 0.5 yrs | raw_text: 256 words
+  skills: Onboarding, Candidate Coordination, Greenhouse, Excel
+  projects: Project CulturePulse
+  background: I am an enthusiastic, analytical, and highly motivated Human Resources graduate seeking an entry-level opportunity to utilize my foundational knowledge in candidate coordination, modern personnel management, and onboarding operations. I recently completed an intensive six-month internship as an HR O
 
-  id: resume_1151 | level: senior | exp: 7.5 yrs | raw_text: 252 words
-  skills: Financial Modeling, Financial Reporting, Compliance, SQL, Oracle ERP, SAS, Alteryx, Python
-  projects: Project ShieldCore
-  background: I am a Lead Fintech Compliance and Financial Systems Architect with seven and a half years of extensive enterprise experience designing internal reporting frameworks and ensuring regulatory compliance. In my current capacity at a global multi-asset digital brokerage enterprise, I guide a dedicated f
+  id: resume_1154 | level: junior | exp: 0.6 yrs | raw_text: 252 words
+  skills: Recruiting, Sourcing, Lever ATS, Google Sheets
+  projects: Project SourceSprint
+  background: I am an analytical, energetic, and highly proactive Talent Acquisition Assistant with a passion for modern technical sourcing methodologies, data-backed talent identification, and candidate engagement metrics. I completed an eight-month comprehensive contract assignment as a Recruiting Assistant at 
 
-  id: resume_1152 | level: senior | exp: 8.0 yrs | raw_text: 288 words
-  skills: Financial Modeling, Financial Reporting, Compliance, Python, R Studio, Redshift, Snowflake, Workday Financials
-  projects: Framework Apex
-  background: I am an accomplished Senior Quantitative Finance Manager and Fintech Reporting Director with over eight years of professional experience steering advanced financial engineering teams, deploying complex analytical tools, and managing high-fidelity institutional compliance structures. Currently, I lea
+  id: resume_1155 | level: senior | exp: 8.0 yrs | raw_text: 259 words
+  skills: Recruiting, HRIS, Onboarding, Workday HCM, Greenhouse, Sourcing, Compliance, Python
+  projects: Project TalentSync
+  background: I am a strategic Senior HRIS Director and Technical Talent Acquisition Specialist with over eight years of enterprise experience architecting robust global human resource infrastructure, managing full-lifecycle executive recruiting pipelines, and deploying advanced automated data analytics platforms
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1150 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: Financial Modeling, Excel, SQL, Financial Reporting
-  preferred_skills: Tableau, QuickBooks
-  description: Our corporate finance and strategic treasury operations division is scaling rapidly, and we are looking for a motivated Junior Financial Analyst to join our team of five core professionals. In this role, you will be responsible for helping our core f
-
-  id: jd_1151 | title: Fintech Associate Accountant | level: junior | min_exp: 1 yrs | raw_text: 198 words
-  required_skills: Financial Reporting, QuickBooks, Excel, SQL
+  id: jd_1153 | title: Human Resources Generalist | level: middle | min_exp: 3 yrs | raw_text: 201 words
+  required_skills: Onboarding, Greenhouse, Recruiting, Excel
   preferred_skills: Compliance
-  description: We are seeking a dedicated Fintech Associate Accountant to join our corporate accounting and ledger integrity team of six professionals. Your primary mission is to help optimize our day-to-day transaction matching architectures and maintain high accu
+  description: Our operations and employee experience department is expanding rapidly, and we are looking for an analytical and highly communicative mid-level Human Resources Generalist to join our core team of seven professionals. In this role, you will be respons
 
-  id: jd_1152 | title: Senior Regulatory Compliance and Financial Modeling Architect | level: senior | min_exp: 6 yrs | raw_text: 203 words
-  required_skills: Financial Modeling, Python, Financial Reporting, Compliance, Snowflake, Redshift
-  preferred_skills: Workday Financials, Oracle ERP
-  description: Our global financial risk division is seeking an exceptional Senior Regulatory Compliance and Financial Modeling Architect to lead our platform validation team of fifteen specialists. Our focus is on maintaining a massively scalable, deeply compliant
+  id: jd_1154 | title: Senior HRIS Solutions Architect | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: HRIS, Workday HCM, Python, Compliance
+  preferred_skills: Greenhouse
+  description: Our global people technology infrastructure division is seeking a visionary Senior HRIS Solutions Architect to spearhead our enterprise application modernization team of twelve engineers. Our focus is on rebuilding a deeply integrated, massively scal
+
+  id: jd_1155 | title: Lead Talent Acquisition and Workforce Analytics Engineer | level: senior | min_exp: 6 yrs | raw_text: 189 words
+  required_skills: Recruiting, Greenhouse, Onboarding, Sourcing
+  preferred_skills: Python, HRIS
+  description: We are looking for an exceptional Lead Talent Acquisition and Workforce Analytics Engineer to direct our high-performing talent operations division consisting of fifteen seasoned specialists. The team is dedicated to deploying next-generation data so
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3447 pairs total.
+Overall dataset so far: 3456 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  689  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  690  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  688  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  690  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  690  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  689  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  691  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  692  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  692  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  692  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3448   resume_1150 × jd_1150
-  pair_3449   resume_1150 × jd_1151
-  pair_3450   resume_1150 × jd_1152
-  pair_3451   resume_1151 × jd_1150
-  pair_3452   resume_1151 × jd_1151
-  pair_3453   resume_1151 × jd_1152
-  pair_3454   resume_1152 × jd_1150
-  pair_3455   resume_1152 × jd_1151
-  pair_3456   resume_1152 × jd_1152
+  pair_3457   resume_1153 × jd_1153
+  pair_3458   resume_1153 × jd_1154
+  pair_3459   resume_1153 × jd_1155
+  pair_3460   resume_1154 × jd_1153
+  pair_3461   resume_1154 × jd_1154
+  pair_3462   resume_1154 × jd_1155
+  pair_3463   resume_1155 × jd_1153
+  pair_3464   resume_1155 × jd_1154
+  pair_3465   resume_1155 × jd_1155
 
 ════════════════════════════════════
 OUTPUT FORMAT
