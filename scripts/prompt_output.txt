@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1096 | level: middle | exp: 4.0 yrs | raw_text: 260 words
-  skills: Epic, Cerner, Tableau, HIPAA, HL7, FHIR
-  projects: Patient-Flow-Optimization, Med-Record-Digitization
-  background: I am a dedicated Healthcare Operations Coordinator with four years of hands-on experience in clinical settings. During my most recent tenure at a large enterprise hospital, I served as a Clinical Data Associate within a team of twelve, where I managed patient scheduling and EMR documentation workflo
+  id: resume_1099 | level: junior | exp: 0.5 yrs | raw_text: 270 words
+  skills: Python, Pandas, Scikit-learn, SQL, NLTK
+  projects: Churn-Prediction-Tool, Sentiment-Analyzer
+  background: I am a passionate Data Science graduate eager to apply my skills in predictive modeling and machine learning. During my recent six-month internship at a fast-paced retail startup, I was part of a dynamic team of five engineers focused on customer retention strategies. My primary responsibilities inc
 
-  id: resume_1097 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: Epic, Oracle, HL7, FHIR, React, Node.js
-  projects: Interoperability-Bridge, Data-Security-Shield
-  background: I am a Senior Healthcare Systems Architect with eight years of experience leading clinical operations and digital transformation initiatives in large-scale healthcare organizations. My career has focused on integrating complex EMR ecosystems to improve clinician productivity and patient care quality
+  id: resume_1100 | level: junior | exp: 0.3 yrs | raw_text: 277 words
+  skills: Python, PostgreSQL, ETL, Jupyter, Data Engineering
+  projects: Inventory-Categorizer, Neural-Net-Explorer
+  background: I am a motivated AI and Machine Learning enthusiast eager to launch my professional career in data-driven engineering. During my recent four-month internship at a mid-sized data analytics agency, I supported a team of six in developing automated reporting systems and testing various machine learning
 
-  id: resume_1098 | level: senior | exp: 9.0 yrs | raw_text: 261 words
-  skills: Epic, SQL, Power BI, HIPAA, HITECH, Clinical Workflows
-  projects: Care-Coordination-Portal, EHR-Analytics-Suite
-  background: I am a Principal Clinical Operations Consultant with nine years of extensive experience optimizing healthcare service delivery and EMR implementation strategies. Throughout my career, I have partnered with large hospital networks to refine clinical workflows and improve patient satisfaction metrics.
+  id: resume_1101 | level: senior | exp: 8.0 yrs | raw_text: 265 words
+  skills: PyTorch 2.1, AWS, Kubernetes, FastAPI, Triton, CUDA
+  projects: Enterprise-Inference-Scale, Automated-Training-Guard
+  background: I am a Principal Machine Learning Engineer with eight years of extensive experience in the design, deployment, and optimization of large-scale distributed machine learning systems. Currently, I lead a cross-functional department of twenty-five engineers at a major enterprise, focusing on production-
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1096 | title: Junior Clinical Coordinator | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: Epic, EMR Management, HIPAA, Clinical Coordination
-  preferred_skills: Microsoft Excel, Medical Billing
-  description: Our clinical operations team of five is searching for a detail-oriented Junior Clinical Coordinator to support our daily patient management and administrative processes. You will play a crucial role in maintaining the accuracy of our records within o
+  id: jd_1099 | title: Mid-Level Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 198 words
+  required_skills: Python, Scikit-learn, Pandas, AWS
+  preferred_skills: PyTorch, SQL
+  description: Our data science team of ten is seeking an experienced Mid-Level Data Scientist to join us in developing and deploying predictive models for our core customer-facing product. We operate in a fast-paced environment where data-driven insights are criti
 
-  id: jd_1097 | title: Associate Clinical Operations Assistant | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: Cerner, EMR Management, HIPAA, Patient Support
-  preferred_skills: Tableau, Clinical Coding
-  description: Our medical operations department is looking for an Associate Clinical Operations Assistant to join our team of ten, focusing on enhancing our administrative workflow and data management capabilities. This role is fundamental to the successful operat
+  id: jd_1100 | title: Senior Machine Learning Engineer | level: senior | min_exp: 6 yrs | raw_text: 191 words
+  required_skills: PyTorch, Kubernetes, MLOps, Distributed Systems
+  preferred_skills: CUDA, Model Monitoring
+  description: Our core engineering team of twenty-five is seeking a Senior Machine Learning Engineer to lead the architecture and optimization of our production-grade machine learning platform. Our systems support millions of daily users, requiring top-tier perfor
 
-  id: jd_1098 | title: Senior Healthcare Systems Lead | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: Epic, FHIR, HIPAA, HL7, SQL
-  preferred_skills: Data Analysis, Clinical Decision Support
-  description: Our informatics team is seeking a Senior Healthcare Systems Lead with extensive experience in architecting and managing enterprise-grade EMR ecosystems. You will lead a department of fifteen, responsible for the integration of Epic 2024, ensuring hig
+  id: jd_1101 | title: Senior Research Scientist | level: senior | min_exp: 6 yrs | raw_text: 184 words
+  required_skills: PyTorch, Machine Learning Theory, Python, Research
+  preferred_skills: Distributed Training, Model Interpretability
+  description: Our research and development team of fifteen is seeking a Senior Research Scientist to innovate on our core machine learning capabilities. You will work on cutting-edge research, from developing novel model architectures to exploring advanced techniq
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3285 pairs total.
+Overall dataset so far: 3294 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  657  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  657  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  656  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  657  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  658  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  657  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  658  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  660  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  659  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  660  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3286   resume_1096 × jd_1096
-  pair_3287   resume_1096 × jd_1097
-  pair_3288   resume_1096 × jd_1098
-  pair_3289   resume_1097 × jd_1096
-  pair_3290   resume_1097 × jd_1097
-  pair_3291   resume_1097 × jd_1098
-  pair_3292   resume_1098 × jd_1096
-  pair_3293   resume_1098 × jd_1097
-  pair_3294   resume_1098 × jd_1098
+  pair_3295   resume_1099 × jd_1099
+  pair_3296   resume_1099 × jd_1100
+  pair_3297   resume_1099 × jd_1101
+  pair_3298   resume_1100 × jd_1099
+  pair_3299   resume_1100 × jd_1100
+  pair_3300   resume_1100 × jd_1101
+  pair_3301   resume_1101 × jd_1099
+  pair_3302   resume_1101 × jd_1100
+  pair_3303   resume_1101 × jd_1101
 
 ════════════════════════════════════
 OUTPUT FORMAT
