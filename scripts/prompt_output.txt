@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_994 | level: middle | exp: 4.0 yrs | raw_text: 262 words
-  skills: Figma, User Research, Prototyping, Design Systems, Framer, Adobe Creative Cloud
-  projects: DataFlow Vision
-  background: I am a passionate Product Designer with four years of hands-on experience in the fast-paced world of digital product creation. My journey began as a junior designer at a mid-sized digital agency where I collaborated with a team of eight designers and developers. During those two years, I focused on 
+  id: resume_997 | level: junior | exp: 0.5 yrs | raw_text: 260 words
+  skills: Excel, QuickBooks, SQL, Financial Statement Analysis, GAAP
+  projects: PortfolioTracker
+  background: I am a dedicated Finance graduate with a strong interest in the intersection of financial accounting and technology. During my final year of study, I completed a six-month internship at a fast-growing fintech startup as an Accounting Assistant. Working alongside a team of three financial analysts, I
 
-  id: resume_995 | level: senior | exp: 7.5 yrs | raw_text: 258 words
-  skills: Figma, User Research, Prototyping, Design Systems, Usability Testing, Storybook
-  projects: EcoTrack App
-  background: As a Senior Product Designer with over seven years of professional experience, I specialize in crafting complex enterprise platforms that balance user goals with business objectives. Throughout my tenure at a leading software enterprise, I led a product design team of twelve, where I oversaw the end
+  id: resume_998 | level: junior | exp: 0.6 yrs | raw_text: 269 words
+  skills: SAP ERP, Excel, Financial Modeling, Expense Auditing, Internal Controls
+  projects: MarketVolatilityModeller
+  background: I am a highly motivated entry-level professional with a Bachelor degree in Accounting, graduating in 2025. During my recent six-month internship at an established fintech enterprise, I supported the Accounts Payable team of five in processing vendor invoices, verifying transaction accuracy, and moni
 
-  id: resume_996 | level: senior | exp: 9.2 yrs | raw_text: 259 words
-  skills: Figma, User Research, Prototyping, Design Systems, WCAG Compliance, Mixpanel
-  projects: AccessibleWeb
-  background: I am a Lead Product Designer with nine years of experience in driving design excellence across diverse industries, including fintech and digital health. I have a proven track record of growing design teams and implementing design-led strategies that significantly increase product adoption. At a larg
+  id: resume_999 | level: senior | exp: 8.2 yrs | raw_text: 253 words
+  skills: NetSuite, SQL, Python, Financial Modeling, SOX Compliance, IFRS
+  projects: ComplianceGuard
+  background: I am a seasoned Senior Financial Accountant with eight years of extensive experience in the fintech industry, specializing in regulatory compliance, financial reporting, and complex financial modeling. Most recently, I led a team of twelve at a prominent fintech firm, where I oversaw the entire fina
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_994 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: Figma, User Research, Design Systems
-  preferred_skills: HTML, CSS
-  description: Our design team of five is looking for a dedicated Junior Product Designer to assist in creating beautiful, user-centric experiences for our primary consumer application. In this role, you will work closely with our lead designers, product managers, 
+  id: jd_997 | title: Mid-Level Financial Accountant | level: middle | min_exp: 3 yrs | raw_text: 217 words
+  required_skills: NetSuite, SQL, Excel, IFRS, Financial Modeling
+  preferred_skills: Python, SOX Compliance
+  description: Our finance operations group of fifteen professionals is seeking a Mid-Level Financial Accountant to handle core accounting functions for our expanding fintech product suite. In this role, you will be responsible for maintaining our general ledger, p
 
-  id: jd_995 | title: Associate UX Designer | level: junior | min_exp: 1 yrs | raw_text: 219 words
-  required_skills: Figma, User Research, Prototyping
-  preferred_skills: Design Systems, Mixpanel
-  description: We are seeking an enthusiastic Associate UX Designer to join our growing product team. Our team is focused on building intuitive tools for digital creators, and we are currently a group of six. As an Associate UX Designer, you will be deeply involved
+  id: jd_998 | title: Senior Financial Controller | level: senior | min_exp: 6 yrs | raw_text: 218 words
+  required_skills: NetSuite, SQL, Python, Financial Modeling, SOX Compliance, IFRS
+  preferred_skills: FP&A, Strategic Planning
+  description: We are seeking an experienced Senior Financial Controller to join our leadership team of twenty within the finance organization. This role focuses on architecting our financial internal controls, managing regulatory compliance, and overseeing complex
 
-  id: jd_996 | title: Senior Product Design Lead | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: Figma, User Research, Prototyping, Design Systems, Accessibility Compliance
-  preferred_skills: Product Strategy, Mentorship
-  description: Our enterprise platform group, consisting of thirty engineers and designers, is seeking a Senior Product Design Lead to guide our long-term design strategy. We operate at the intersection of data and user experience, and this role requires deep speci
+  id: jd_999 | title: Principal Finance Lead | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: NetSuite, SQL, Python, Financial Modeling, SOX Compliance, IFRS
+  preferred_skills: Data Visualization, System Design
+  description: Our core finance organization is looking for a Principal Finance Lead to join our group of thirty finance professionals. This role focuses on solving deep technical challenges, improving our global system architecture, and driving the delivery of com
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2979 pairs total.
+Overall dataset so far: 2988 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  596  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  596  →  expected this batch: 1 pairs (from seniority gaps below)
-  moderate_match        existing:  594  →  expected this batch: 4 pairs (from seniority gaps below)
-  strong_match          existing:  596  →  expected this batch: 2 pairs (from seniority gaps below)
-  excellent_match       existing:  597  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  596  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  597  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  598  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  598  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  599  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2980   resume_994 × jd_994
-  pair_2981   resume_994 × jd_995
-  pair_2982   resume_994 × jd_996
-  pair_2983   resume_995 × jd_994
-  pair_2984   resume_995 × jd_995
-  pair_2985   resume_995 × jd_996
-  pair_2986   resume_996 × jd_994
-  pair_2987   resume_996 × jd_995
-  pair_2988   resume_996 × jd_996
+  pair_2989   resume_997 × jd_997
+  pair_2990   resume_997 × jd_998
+  pair_2991   resume_997 × jd_999
+  pair_2992   resume_998 × jd_997
+  pair_2993   resume_998 × jd_998
+  pair_2994   resume_998 × jd_999
+  pair_2995   resume_999 × jd_997
+  pair_2996   resume_999 × jd_998
+  pair_2997   resume_999 × jd_999
 
 ════════════════════════════════════
 OUTPUT FORMAT
