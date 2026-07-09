@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_955 | level: middle | exp: 4.0 yrs | raw_text: 278 words
-  skills: Python, Django, React, PostgreSQL, Redis, Docker
-  projects: TaskSync
-  background: I am a Full-Stack Developer with four years of hands-on experience in building scalable web applications. My career began at a boutique agency where I worked for two years on a team of five engineers, focusing on crafting responsive user interfaces and robust backend APIs. I specialized in Python 3.
+  id: resume_958 | level: junior | exp: 0.5 yrs | raw_text: 274 words
+  skills: SEO, Social Media Management, Content Creation, Google Analytics, Canva
+  projects: EcoStyle Blog
+  background: I am a recent marketing graduate with a strong passion for digital content and social media growth. During my final year, I completed a six-month internship at a fast-paced creative agency as a Junior Content Associate on a team of five. My primary responsibilities involved drafting social media cap
 
-  id: resume_956 | level: middle | exp: 5.0 yrs | raw_text: 261 words
-  skills: Python, Flask, React, Redux, AWS, GraphQL
-  projects: DataVizPortal
-  background: As a Full-Stack Developer with five years of experience, I excel at bridging the gap between design and scalable server-side implementation. My professional background includes three years at a high-growth tech startup, where I led frontend development for our flagship mobile-first web app using Rea
+  id: resume_959 | level: junior | exp: 0.5 yrs | raw_text: 265 words
+  skills: Email Marketing, Social Media Scheduling, Google Looker Studio, Copywriting
+  projects: TechByte News
+  background: As a freshly graduated marketing professional with an academic background in communications, I am driven to build the next generation of data-backed social campaigns. My professional journey began during a university-sponsored program at a growth-focused startup, where I spent six months as a junior
 
-  id: resume_957 | level: senior | exp: 8.0 yrs | raw_text: 279 words
-  skills: Python, FastAPI, React, Kubernetes, PostgreSQL, Cloud Architecture
-  projects: ScaleWeb
-  background: I am a Senior Full-Stack Engineer with eight years of experience specializing in architecting high-traffic distributed systems. Throughout my career at global enterprise environments, I have led cross-functional teams of up to twenty engineers in delivering mission-critical web platforms. In my most
+  id: resume_960 | level: senior | exp: 7.0 yrs | raw_text: 277 words
+  skills: SEO, Content Strategy, Marketing Automation, HubSpot, Semrush, Salesforce Marketing Cloud, Google Analytics
+  projects: TrendPulse, AutoCampaign
+  background: I am a Senior Digital Marketing Strategist with seven years of experience in architecting omnichannel content platforms and high-throughput marketing automation services. In my most recent role as a lead strategist at a large enterprise, I managed a team of fifteen specialists focused on global bran
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_955 | title: Junior Web Developer | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Python, React, Git, SQL
-  preferred_skills: Django
-  description: Our web engineering group is growing and we are seeking an entry-level Web Developer to support our team of six engineers. Our main focus is developing and maintaining our customer-facing web platform. You will be responsible for building new UI comp
+  id: jd_958 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 217 words
+  required_skills: SEO, HubSpot, Google Analytics, Content Strategy
+  preferred_skills: Salesforce, Paid Search
+  description: Our growth department is seeking a talented Digital Marketing Specialist to join our group of ten marketers and content creators. We focus on building robust SEO-driven content hubs that enable our audience to discover our products with high intent. 
 
-  id: jd_956 | title: Associate Full-Stack Developer | level: junior | min_exp: 1 yrs | raw_text: 189 words
-  required_skills: Python, React, SQL
-  preferred_skills: Flask, Docker
-  description: We are looking for a dedicated Associate Full-Stack Developer to join our product team of eight developers. Our mission is to iterate on our core product by adding new features and improving existing performance. Your daily work involves preparing fr
+  id: jd_959 | title: Lead Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 199 words
+  required_skills: SEO, HubSpot, Salesforce Marketing Cloud, Content Strategy, Performance Analytics
+  preferred_skills: Attribution Modeling, Predictive Analytics
+  description: Our Advanced Growth department is looking for a Lead Content Strategist to head a specialized team of twelve strategists and creators. Our mission is to build and deploy highly accurate, custom marketing ecosystems for our global enterprise clients. 
 
-  id: jd_957 | title: Senior Lead Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 194 words
-  required_skills: Python, React, Kubernetes, SQL
-  preferred_skills: Distributed Systems, Cloud Optimization
-  description: Our Advanced Engineering department is searching for a Senior Lead Full-Stack Engineer to guide our team of fifteen engineers. Our group is responsible for the design and implementation of highly scalable web platforms that serve millions of users. Y
+  id: jd_960 | title: Principal Marketing Strategist | level: senior | min_exp: 6 yrs | raw_text: 202 words
+  required_skills: SEO, HubSpot, Content Strategy, Marketing Automation, Google Analytics
+  preferred_skills: Search Evolution, Market Scaling
+  description: We are searching for a Principal Marketing Strategist to drive the architectural strategy for our expanding digital portfolio. Working within a high-impact team of fifteen, you will be the key authority for our marketing technology stack. Your primar
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 2862 pairs total.
+Overall dataset so far: 2871 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  572  →  expected this batch: 0 pairs (from seniority gaps below)
-  weak_match            existing:  573  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  572  →  expected this batch: 2 pairs (from seniority gaps below)
-  strong_match          existing:  571  →  expected this batch: 4 pairs (from seniority gaps below)
-  excellent_match       existing:  574  →  expected this batch: 1 pairs (from seniority gaps below)
+  poor_match            existing:  572  →  expected this batch: 4 pairs (from seniority gaps below)
+  weak_match            existing:  575  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  574  →  expected this batch: 0 pairs (from seniority gaps below)
+  strong_match          existing:  575  →  expected this batch: 1 pairs (from seniority gaps below)
+  excellent_match       existing:  575  →  expected this batch: 2 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_2863   resume_955 × jd_955
-  pair_2864   resume_955 × jd_956
-  pair_2865   resume_955 × jd_957
-  pair_2866   resume_956 × jd_955
-  pair_2867   resume_956 × jd_956
-  pair_2868   resume_956 × jd_957
-  pair_2869   resume_957 × jd_955
-  pair_2870   resume_957 × jd_956
-  pair_2871   resume_957 × jd_957
+  pair_2872   resume_958 × jd_958
+  pair_2873   resume_958 × jd_959
+  pair_2874   resume_958 × jd_960
+  pair_2875   resume_959 × jd_958
+  pair_2876   resume_959 × jd_959
+  pair_2877   resume_959 × jd_960
+  pair_2878   resume_960 × jd_958
+  pair_2879   resume_960 × jd_959
+  pair_2880   resume_960 × jd_960
 
 ════════════════════════════════════
 OUTPUT FORMAT
