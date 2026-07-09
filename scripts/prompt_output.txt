@@ -4,38 +4,38 @@ Score 9 CV-JD pairs using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1009 | level: junior | exp: 0.5 yrs | raw_text: 257 words
-  skills: Financial Modeling, Accounting, Excel, QuickBooks, Python, Pandas
-  projects: FiscalHealth
-  background: I am a motivated Finance Graduate with a strong foundation in financial analysis and accounting principles, eager to launch my career in the fintech sector. During my final year, I completed a six-month internship at a mid-sized accounting firm where I assisted a team of ten in reconciling monthly f
+  id: resume_1012 | level: middle | exp: 4.0 yrs | raw_text: 276 words
+  skills: Shopify, Google Analytics, SQL, Python, Operations Management, Merchandising
+  projects: StockFlow
+  background: I am a dedicated E-commerce Operations Specialist with four years of experience driving growth and operational efficiency in the retail sector. In my most recent role at a mid-sized e-commerce startup, I managed a team of five and was responsible for streamlining marketplace operations on Shopify Pl
 
-  id: resume_1010 | level: junior | exp: 0.3 yrs | raw_text: 263 words
-  skills: Financial Analysis, Accounting, SQL, Tableau, Excel, GAAP
-  projects: TrendTracker
-  background: I am a recent Finance graduate with a keen interest in data-driven decision making and financial reporting within the fintech industry. Throughout my academic career and a three-month internship at a local startup, I focused on developing my proficiency in financial analysis tools and accounting sof
+  id: resume_1013 | level: middle | exp: 5.0 yrs | raw_text: 264 words
+  skills: Magento, Amazon FBA, SQL, Tableau, Python, AWS
+  projects: MarketPulse
+  background: I am a Retail Management Professional with five years of experience in omni-channel e-commerce strategy and marketplace optimization. Throughout my tenure at an innovative retail agency, I led a cross-functional team of eight to optimize digital storefronts and implement comprehensive inventory mana
 
-  id: resume_1011 | level: senior | exp: 8.0 yrs | raw_text: 261 words
-  skills: Financial Modeling, Accounting, Compliance, Oracle NetSuite, Python, SQL, AWS Redshift
-  projects: GlobalAlign
-  background: I am an experienced Financial Controller and Strategic Advisor with eight years of professional experience in the fintech and banking industries. Throughout my career, I have successfully managed accounting departments of up to twenty-five employees while ensuring full compliance with stringent inte
+  id: resume_1014 | level: senior | exp: 8.0 yrs | raw_text: 276 words
+  skills: Go, Kubernetes, SAP Commerce Cloud, GraphQL, Cassandra, Python, AWS
+  projects: RetailFusion
+  background: I am a seasoned E-commerce Architect and Operations Lead with eight years of experience building and scaling high-performance retail platforms. At a leading global e-commerce enterprise, I managed a technical team of twenty, overseeing the migration of monolithic systems to a microservices architect
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1009 | title: Financial Planning & Analysis Manager | level: middle | min_exp: 3 yrs | raw_text: 199 words
-  required_skills: Financial Modeling, Accounting, Oracle NetSuite, Excel
-  preferred_skills: SQL, Fintech Experience
-  description: Our FP&A team is looking for a Financial Planning & Analysis Manager to support our rapid growth as we expand into new financial product offerings. You will work within a group of fifteen finance professionals, managing the delivery of accurate finan
+  id: jd_1012 | title: Junior E-commerce Associate | level: junior | min_exp: 1 yrs | raw_text: 212 words
+  required_skills: Shopify, Google Analytics, Operations Management, Merchandising
+  preferred_skills: HTML, CSS
+  description: Our E-commerce team is looking for a detail-oriented Junior E-commerce Associate to support the daily operations of our growing online marketplace. You will join a supportive team of ten, focusing on product listing management, inventory accuracy, an
 
-  id: jd_1010 | title: Principal Finance & Compliance Lead | level: senior | min_exp: 6 yrs | raw_text: 191 words
-  required_skills: Financial Modeling, Accounting, Compliance, Python, AWS Redshift, SQL
-  preferred_skills: System Architecture, CPA or CFA
-  description: The financial operations organization is seeking a Principal Finance & Compliance Lead to oversee our most critical regulatory initiatives and reporting standards. You will manage a high-performing team of twenty, driving the development of automated
+  id: jd_1013 | title: Junior Retail Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 213 words
+  required_skills: Retail Operations, Excel, Tableau, Data Analysis
+  preferred_skills: SQL, Logistics
+  description: We are seeking a motivated Junior Retail Operations Analyst to join our team of fifteen, dedicated to ensuring seamless operations across our digital and physical store network. Your role will involve supporting the day-to-day management of inventory
 
-  id: jd_1011 | title: Director of Financial Operations | level: senior | min_exp: 6 yrs | raw_text: 193 words
-  required_skills: Financial Modeling, Accounting, Compliance, Python, SQL, Oracle NetSuite
-  preferred_skills: Financial Infrastructure, Leadership
-  description: Our operations team is seeking a Director of Financial Operations to lead our global financial strategy and reporting initiatives. You will orchestrate the efforts of thirty professionals, focusing on optimizing financial operations and ensuring top-
+  id: jd_1014 | title: Principal E-commerce Architect | level: senior | min_exp: 6 yrs | raw_text: 213 words
+  required_skills: Microservices Architecture, Go, Python, AWS, Systems Architecture
+  preferred_skills: GraphQL, Cassandra
+  description: Our engineering organization is seeking a Principal E-commerce Architect to lead the design and implementation of our next-generation global retail platform. Managing a team of fifteen software engineers, you will be responsible for creating robust, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -125,16 +125,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this batch)
 ════════════════════════════════════
-Overall dataset so far: 3024 pairs total.
+Overall dataset so far: 3033 pairs total.
 This batch's resume/JD seniority levels were deliberately chosen so that scoring
 each pair honestly (per the rubric below) should already land close to this spread —
 no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  602  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  605  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  606  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  605  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  606  →  expected this batch: 2 pairs (from seniority gaps below)
+  poor_match            existing:  606  →  expected this batch: 0 pairs (from seniority gaps below)
+  weak_match            existing:  607  →  expected this batch: 2 pairs (from seniority gaps below)
+  moderate_match        existing:  606  →  expected this batch: 2 pairs (from seniority gaps below)
+  strong_match          existing:  606  →  expected this batch: 4 pairs (from seniority gaps below)
+  excellent_match       existing:  608  →  expected this batch: 1 pairs (from seniority gaps below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -145,15 +145,15 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (9 pairs)
 ════════════════════════════════════
-  pair_3025   resume_1009 × jd_1009
-  pair_3026   resume_1009 × jd_1010
-  pair_3027   resume_1009 × jd_1011
-  pair_3028   resume_1010 × jd_1009
-  pair_3029   resume_1010 × jd_1010
-  pair_3030   resume_1010 × jd_1011
-  pair_3031   resume_1011 × jd_1009
-  pair_3032   resume_1011 × jd_1010
-  pair_3033   resume_1011 × jd_1011
+  pair_3034   resume_1012 × jd_1012
+  pair_3035   resume_1012 × jd_1013
+  pair_3036   resume_1012 × jd_1014
+  pair_3037   resume_1013 × jd_1012
+  pair_3038   resume_1013 × jd_1013
+  pair_3039   resume_1013 × jd_1014
+  pair_3040   resume_1014 × jd_1012
+  pair_3041   resume_1014 × jd_1013
+  pair_3042   resume_1014 × jd_1014
 
 ════════════════════════════════════
 OUTPUT FORMAT
