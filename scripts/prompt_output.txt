@@ -4,108 +4,108 @@ Score 20 CV-JD pairs (from 5 rounds of 4 pairs each) using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_51 | level: middle | exp: 4.5 yrs | raw_text: 324 words
-  skills: SEO, Ahrefs, Screaming Frog, Google Analytics 4, Google Search Console, Content Strategy, SEMrush, Clearscope, WordPress, Python, Technical Auditing
-  projects: Automated Keyword Tracker
-  background: Since entering the digital marketing field four and a half years ago, my professional path has been defined by a deep commitment to mastering search engine optimization and technical content strategy. I began my journey at a boutique marketing agency where I spent two years as a Junior SEO Specialis
+  id: resume_61 | level: senior | exp: 8.0 yrs | raw_text: 296 words
+  skills: Program Management, Cross‑Team Coordination, Engineering Roadmaps, Risk Mitigation, Agile Methodologies, Stakeholder Communication
+  projects: OpenRoad, GreenDeploy
+  background: The candidate has spent the last eight years shaping technical delivery across enterprise‑scale platforms, beginning as a Technical Program Lead at a multinational software startup where they oversaw a team of 12 engineers and two product owners for a period of three years. In that role they defined
 
-  id: resume_52 | level: middle | exp: 3.5 yrs | raw_text: 307 words
-  skills: Paid Social, Meta Ads Manager, TikTok Ads, Looker Studio, HubSpot, SQL, Google Tag Manager, Sprout Social, Data Visualization, BigQuery, A/B Testing
-  projects: Attribution Architect
-  background: I am a dedicated Digital Marketing Professional with three and a half years of experience specifically focused on paid social media and performance analytics. My career started at a fast-growing e-commerce startup where I served as a Social Media Coordinator for two years. Working in a small team of
+  id: resume_62 | level: middle | exp: 4.0 yrs | raw_text: 271 words
+  skills: Technical Program Management, Scrum Mastery, Metrics Reporting, Process Optimization, Tool Integration
+  projects: DataPulse, SprintSync
+  background: Over the past four years the professional has built a career in technical program coordination, beginning as a Program Coordinator at a SaaS startup where they joined a six‑person engineering team and managed the rollout of a new API platform using Node.js 16 and MongoDB 5, cutting onboarding time f
 
-  id: resume_53 | level: middle | exp: 4.5 yrs | raw_text: 314 words
-  skills: PostgreSQL, MongoDB, Redis, AWS RDS, Terraform, Python, Kafka, PostGIS, Datadog, SQL
-  projects: DataStreamer, GeoCache
-  background: I am a dedicated Database Engineer with over four years of professional experience specializing in high-availability environments and cloud-native data solutions. I earned my Bachelor of Science in Computer Science in 2019 and have since transitioned from a generalist developer into a focused databa
+  id: resume_63 | level: junior | exp: 0.9 yrs | raw_text: 302 words
+  skills: React Native, Flutter, Swift, Kotlin, Firebase, Git
+  projects: FitTrack, QuickPulse
+  background: After completing a Bachelor of Science in Computer Science in 2025, the candidate began a role as a Junior Mobile Developer at a fast‑growing startup that focuses on health‑tech solutions. Employed for nine months, the developer joined a compact team of five engineers and collaborated closely with a
 
-  id: resume_54 | level: middle | exp: 3.5 yrs | raw_text: 304 words
-  skills: PostgreSQL, Redis, MongoDB, Docker, Python, GitLab CI/CD, Data Modeling, SQL, Cassandra, NoSQL
-  projects: QuerySense
-  background: I am an established Database Specialist with three and a half years of experience as an individual contributor in data-heavy e-commerce environments. I graduated with a Bachelor of Science in Software Engineering in 2020 and immediately entered the workforce focusing on backend scalability and data 
+  id: resume_64 | level: junior | exp: 0.85 yrs | raw_text: 294 words
+  skills: React Native, Flutter, Swift, Kotlin, Firebase, GitLab
+  projects: LanguageBuddy, UI‑Elements
+  background: The graduate earned a Bachelor of Science in Software Engineering in 2025 and immediately entered a junior role as a Mobile Application Engineer at a boutique agency that builds custom apps for nonprofit clients. Over ten months, the engineer worked within a multidisciplinary squad of eight, partner
 
-  id: resume_55 | level: middle | exp: 4.5 yrs | raw_text: 333 words
-  skills: Airflow, Spark, BigQuery, Dbt, Python, SQL, Terraform, PostgreSQL, Docker, Google Cloud Platform, Kubernetes, FastAPI
-  projects: StreamSync
-  background: Commencing my professional career in data infrastructure approximately four and a half years ago, I have cultivated a robust skill set focused primarily on the Google Cloud Platform ecosystem and modern analytics engineering. My primary professional tenure involved working at a series B fintech star
+  id: resume_65 | level: junior | exp: 0.9 yrs | raw_text: 256 words
+  skills: Marketplace Integration, Product Merchandising, Data Analysis, Inventory Management, Customer Experience Optimization
+  projects: Price Optimizer
+  background: I launched my professional career as an E‑Commerce Associate at a high‑growth startup that operated a marketplace of handcrafted goods. Over a ten‑month period I worked within a cross‑functional team of twelve, collaborating closely with product managers and a two‑person engineering squad. My daily 
 
-  id: resume_56 | level: middle | exp: 5.0 yrs | raw_text: 311 words
-  skills: Spark, Airflow, AWS, Dbt, Python, Databricks, Snowflake, BigQuery, S3, Glue, Athena, GitHub Actions
-  projects: DataOps-Auto
-  background: Over the past five years, I have established myself as a dedicated Data Engineer with a deep specialization in distributed computing and large-scale analytics pipelines. My most recent experience includes a three-year stint at a major SaaS enterprise, where I was a key member of an eight-person data
+  id: resume_66 | level: senior | exp: 7.3 yrs | raw_text: 312 words
+  skills: Marketplace Operations, Category Management, Supply Chain Optimization, Data Engineering, Pricing Strategy, Product Analytics, Vendor Negotiation
+  projects: Unified Catalog, Live Inventory Sync
+  background: Over the past seven years I have progressed from a merchandising analyst at a national retail chain to a senior marketplace operations leader at a Fortune‑500 e‑commerce enterprise. In my most recent role as Head of Marketplace Operations for an enterprise retailer, I directed a team of thirty speci
 
-  id: resume_57 | level: middle | exp: 4.5 yrs | raw_text: 336 words
-  skills: Articulate Storyline 360, Docebo, Camtasia, Snagit, WCAG 2.1, H5P, HTML, CSS, Instructional Design, Learning Experience Design
-  projects: Digital Literacy Initiative
-  background: Driven by a passion for adult learning principles, I have spent the last five years crafting engaging educational experiences within diverse environments. My most recent tenure was at a high-growth fintech startup where I served as a Learning Experience Designer for two and a half years. Working wit
+  id: resume_67 | level: senior | exp: 8.0 yrs | raw_text: 281 words
+  skills: MLOps, Kubeflow, Kubernetes, MLflow, Docker, Model Deployment, Model Monitoring, Machine Learning, AWS, TensorFlow, PyTorch, Scikit-Learn
+  projects: Retail Recommendation System
+  background: A seasoned MLOps engineer with 8 years of experience, I have led the development and deployment of machine learning models in various industries. My journey began at a fintech startup, where I was part of a small team responsible for building a fraud detection system. Using Kubeflow and Kubernetes, 
 
-  id: resume_58 | level: middle | exp: 4.0 yrs | raw_text: 292 words
-  skills: Adobe Captivate, Cornerstone OnDemand, Vyond, SCORM, Javascript, Canva, Zoom, Microsoft Teams, Instructional Technology, Learning Management Systems
-  projects: Sales Quest
-  background: As an established instructional technologist with four years of professional experience, I specialize in the intersection of educational technology and human performance improvement. My career began at a boutique digital marketing agency where I spent eighteen months as a Junior Instructional Design
+  id: resume_68 | level: senior | exp: 7.0 yrs | raw_text: 255 words
+  skills: MLOps, Model Deployment, Kubernetes, Docker, MLflow, CI/CD, Machine Learning, AWS, TensorFlow, Keras, PyTorch, Model Serving
+  projects: Renewable Energy Optimization
+  background: With 7 years of experience in the field of MLOps and model deployment, I have honed my skills in creating efficient and scalable machine learning pipelines. My journey began at a small AI startup, where I was responsible for building and deploying computer vision models for object detection. Using D
 
-  id: resume_59 | level: middle | exp: 4.5 yrs | raw_text: 377 words
-  skills: Customer Success Management, SaaS Onboarding, Enterprise Account Retention, Renewal Negotiation, Customer Analytics, Stakeholder Alignment, GoToWebinar, HubSpot CRM, Gainsight, Zuora Billing, SQL, Python for Data Analysis, Data-Driven Decision Making, Quarterly Business Reviews, Pandas, Clari Platform, Customer Journey Mapping, SaaS Metrics, CRM Administration, Active Listening, Conflict Resolution
-  projects: SaaS Onboarding Playbook Automation, ARR Expansion Predictive Model
-  background: Over the past five years, I have focused my career on customer success in the SaaS space, where I’ve specialized in onboarding high-touch enterprise clients and minimizing churn through proactive account management. Initially, I joined a fast-growing HR SaaS startup as a Customer Success Associate, 
+  id: resume_69 | level: senior | exp: 8.5 yrs | raw_text: 253 words
+  skills: Penetration Testing, Network Security, SIEM, Cloud Security, DevSecOps
+  projects: IoT Vulnerability Scanner
+  background: This senior-level cybersecurity professional has over 8 years of experience in the field, specializing in penetration testing and network security. As a Lead Penetration Tester at a leading cybersecurity startup, they managed a team of 5 testers, conducting comprehensive security assessments for cli
 
-  id: resume_60 | level: middle | exp: 4.0 yrs | raw_text: 390 words
-  skills: Account Management, SaaS Onboarding, Customer Renewals, Churn Risk Modeling, Data Analytics, Stakeholder Management, Agile Collaboration, Salesforce CRM, Power BI, Tableau, Catalyst platform, PostgreSQL, Python for Analytics, TensorFlow, Gainsight, PowerShell Scripting, API Integration, Slack Workflows, Jira, SaaS Metrics, QBR Preparation, Digital Marketing Analytics
-  projects: Churn Risk Scoring Engine, Client ROI Dashboard Suite
-  background: Early in my career I cut my teeth in account management at a boutique agency specializing in fintech integrations, where I served clients ranging from early-stage startups to publicly traded companies. In my first role as an Account Coordinator, I supported a team of seven in managing 20 client acco
+  id: resume_70 | level: senior | exp: 7.2 yrs | raw_text: 251 words
+  skills: SIEM, Network Security, Firewall Management, Security Architecture, Scripting
+  projects: Security Automation Framework
+  background: With 7 years of experience in information security, this senior-level professional has a strong background in SIEM implementation and network defense. They began their career as a Security Analyst at a renowned cybersecurity agency, where they worked closely with a team of 10 analysts to monitor and
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_51 | title: Junior Content Marketing Coordinator | level: junior | min_exp: 1 yrs | raw_text: 245 words
-  required_skills: SEO, Social Media Management, Content Creation, Keyword Research, Buffer
-  preferred_skills: WordPress, Google Analytics, Ubersuggest, Moz
-  description: We are looking for a motivated Junior Content Marketing Coordinator to join our expanding growth team. This role is designed for someone with at least one year of professional experience who is eager to dive deep into the world of SEO and social medi
+  id: jd_61 | title: Senior Product Manager | level: senior | min_exp: 6 yrs | raw_text: 200 words
+  required_skills: Product Strategy, Roadmap Development, Agile Product Delivery, Data Visualization
+  preferred_skills: Customer Insight, Market Research, Growth Hacking, Cloud Platform Awareness
+  description: The product organization seeks a senior product manager to own the end‑to‑end lifecycle of a cloud‑based analytics platform serving B2B customers, operating within a team of eight product professionals and collaborating closely with engineering, data
 
-  id: jd_52 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 6 yrs | raw_text: 256 words
-  required_skills: SEO Strategy, Performance Marketing, Data Analytics, Google Analytics 4, SEMrush, Budget Management, Attribution Modeling
-  preferred_skills: SQL, Python, Technical SEO, Team Leadership
-  description: We are seeking an experienced Senior Digital Marketing Strategist to lead our high-level performance and content initiatives. The ideal candidate will have at least six years of professional experience with a proven track record of managing complex, 
+  id: jd_62 | title: Senior Product Manager - Consumer Apps | level: senior | min_exp: 6 yrs | raw_text: 194 words
+  required_skills: Product Vision, User Research, Mobile Platform Expertise, A/B Testing
+  preferred_skills: Growth Strategy, Community Engagement, Privacy Compliance, Push Notification Optimization
+  description: Our consumer applications team, comprising ten product owners, designers, and engineers, is looking for a senior product manager to lead the evolution of a mobile social platform used by millions worldwide. The role entails owning the product vision,
 
-  id: jd_53 | title: Junior Database Associate | level: junior | min_exp: 1 yrs | raw_text: 251 words
-  required_skills: PostgreSQL, SQL, Python, Prometheus, Grafana
-  preferred_skills: Redis, MongoDB, Docker, AWS
-  description: We are looking for a Junior Database Associate to join our growing data operations team. In this role, you will support our core engineering group in maintaining and monitoring our production database fleet which powers our real-time messaging platfo
+  id: jd_63 | title: QA Automation Engineer | level: middle | min_exp: 3 yrs | raw_text: 221 words
+  required_skills: Selenium, Playwright, Jenkins, Docker
+  preferred_skills: GitHub Actions, TypeScript
+  description: The QA automation team, consisting of six engineers and a test lead, is responsible for guaranteeing the reliability of a suite of SaaS products that serve millions of users worldwide. The role involves designing, implementing, and maintaining end‑to
 
-  id: jd_54 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 285 words
-  required_skills: PostgreSQL, MongoDB, Redis, Terraform, Data Modeling, Database Architecture
-  preferred_skills: Kubernetes, Go, AWS RDS, Distributed Systems
-  description: We are seeking a Senior Database Architect to join our core infrastructure team as a lead individual contributor responsible for the long-term scalability and reliability of our global data platform. Our team currently consists of eight senior engine
+  id: jd_64 | title: Senior QA Test Automation Engineer | level: middle | min_exp: 3 yrs | raw_text: 204 words
+  required_skills: Playwright, Selenium Grid, GitLab CI, Docker
+  preferred_skills: Gatling, Python
+  description: A dedicated test automation squad of eight engineers within a large enterprise product group is tasked with ensuring high‑quality releases for a suite of financial analytics tools used by corporate clients. The senior test automation engineer will ow
 
-  id: jd_55 | title: Junior Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 274 words
-  required_skills: Python, SQL, BigQuery, Airflow
-  preferred_skills: Dbt, Git, Data Modeling
-  description: We are currently looking for an enthusiastic Junior Data Engineer to join our growing data department within our expanding e-commerce platform. Our team currently consists of four dedicated professionals who work closely to support the broader market
+  id: jd_65 | title: Junior Application Security Engineer | level: junior | min_exp: 1 yrs | raw_text: 225 words
+  required_skills: Static Application Security Testing, Dynamic Application Security Testing, Secure Code Review
+  preferred_skills: Threat Modeling, Container Security
+  description: Our security engineering team, consisting of eight engineers and a lead analyst, safeguards the core web platform that serves millions of users globally. As a Junior Application Security Engineer you will work closely with developers and QA engineers
 
-  id: jd_56 | title: Senior Data Engineer | level: senior | min_exp: 6 yrs | raw_text: 270 words
-  required_skills: Spark, Airflow, Dbt, BigQuery, Terraform, Python
-  preferred_skills: Kafka, Pulumi, Data Mesh, Cloud Migration
-  description: Our organization is searching for a Senior Data Engineer to take a leadership role within our core data infrastructure team of twelve engineers. This role is critical for our global logistics firm, as we manage vast amounts of real-time tracking data
+  id: jd_66 | title: Application Security Engineer | level: middle | min_exp: 3 yrs | raw_text: 225 words
+  required_skills: Static Application Security Testing, Dynamic Application Security Testing, Threat Modeling
+  preferred_skills: Cloud Security, Infrastructure as Code Security
+  description: Our mid‑size security operations group, composed of fifteen engineers and two senior architects, is responsible for protecting a suite of SaaS products used by enterprise customers. As a mid‑level Application Security Engineer you will take ownership
 
-  id: jd_57 | title: Junior Learning Coordinator | level: junior | min_exp: 1 yrs | raw_text: 252 words
-  required_skills: Moodle, Google Workspace, Zoom, PowerPoint, Canva
-  preferred_skills: Camtasia, Articulate Rise, Reporting
-  description: We are looking for a motivated and detail-oriented Junior Learning Coordinator to join our growing People Operations team. In this entry-level role, you will be instrumental in supporting the daily administration and maintenance of our global learnin
+  id: jd_67 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 226 words
+  required_skills: PostgreSQL, MongoDB, Database Design, SQL, Data Modeling, Data Security
+  preferred_skills: Redis, Docker, Kubernetes, Data Integrity
+  description: We are seeking a talented junior database engineer to join our dynamic team of 5, working on a cutting-edge e-commerce platform. As a key member of the team, you will play a crucial role in designing and optimizing database systems to handle large-sc
 
-  id: jd_58 | title: Senior Manager, Learning & Development | level: senior | min_exp: 6 yrs | raw_text: 249 words
-  required_skills: Articulate 360, SAP SuccessFactors, Strategic Planning, Instructional Design, Kirkpatrick Model
-  preferred_skills: PowerBI, xAPI, SCORM 2004, Vendor Management
-  description: Our organization is seeking a seasoned Senior Manager of Learning and Development to architect and lead our global educational strategy. As a senior member of the People Development function, you will be responsible for designing high-impact curricul
+  id: jd_68 | title: Junior Database Administrator | level: junior | min_exp: 1 yrs | raw_text: 225 words
+  required_skills: PostgreSQL, Database Administration, Database Monitoring, SQL, Data Security
+  preferred_skills: MongoDB, Redis, AWS, Google Cloud, Data Migration
+  description: We are a fast-growing SaaS company seeking a junior database administrator to join our team of 8. As a key member of the team, you will be responsible for maintaining and optimizing our database systems, ensuring high availability and performance for
 
-  id: jd_59 | title: Customer Success Associate | level: junior | min_exp: 1 yrs | raw_text: 245 words
-  required_skills: Customer Success, SaaS Onboarding, HubSpot CRM, Zoom, Gainsight, Clari, Time Management, Stakeholder Communication, Basic SQL
-  preferred_skills: Gainsight Platform, Clari Forecasting, Intermediate SQL
-  description: This role sits within a fast-moving Customer Success team supporting a portfolio of SMB to mid-market SaaS clients across the Americas. The team uses Gainsight to orchestrate onboarding journeys and track customer health scores, while leveraging Zoom
+  id: jd_69 | title: Healthcare Administration Assistant | level: junior | min_exp: 0 yrs | raw_text: 226 words
+  required_skills: Microsoft Office, Data Entry, Communication
+  preferred_skills: EMR Software, Medical Terminology
+  description: This entry-level role is an excellent opportunity for a recent graduate to begin their career in healthcare administration. As a Healthcare Administration Assistant, you will be part of a dynamic team responsible for ensuring the smooth operation of 
 
-  id: jd_60 | title: Senior Account Manager – Enterprise Renewals & Expansion | level: senior | min_exp: 6 yrs | raw_text: 289 words
-  required_skills: Senior Account Management, Enterprise Renewals, Churn Prediction, Customer Success Strategy, QBR Leadership, Expansion Strategy, Salesforce CRM, Clari Revenue Intelligence, Gong, Advanced SQL, Python, Data-Driven Decision Making, Stakeholder Management, Predictive Analytics, Negotiation Techniques
-  preferred_skills: TensorFlow, R Programming, Gainsight Platform, Gong Analytics, Machine Learning for SaaS, Team Leadership
-  description: We are seeking a seasoned Senior Account Manager to lead the renewal and expansion strategy for our enterprise SaaS customer portfolio, driving ARR retention and growth while minimizing churn. This role sits within a 12-person Customer Success organi
+  id: jd_70 | title: Senior Medical Coordinator | level: senior | min_exp: 8 yrs | raw_text: 252 words
+  required_skills: Team Management, Medical Coordination, Communication
+  preferred_skills: Epic EHR, Process Improvement
+  description: We are seeking an experienced and highly organized Senior Medical Coordinator to join our dynamic healthcare team. With a minimum of 8 years of experience in medical coordination or a related field, you will play a crucial role in ensuring seamless p
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -190,15 +190,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 100 pairs total.
+Overall dataset so far: 120 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   20  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:   17  →  expected this group: 10 pairs (from rounds below)
+  poor_match            existing:   20  →  expected this group: 20 pairs (from rounds below)
+  weak_match            existing:   27  →  expected this group: 0 pairs (from rounds below)
   moderate_match        existing:   23  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:   17  →  expected this group: 10 pairs (from rounds below)
+  strong_match          existing:   27  →  expected this group: 0 pairs (from rounds below)
   excellent_match       existing:   23  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
@@ -210,35 +210,35 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (20 pairs across 5 rounds — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Digital Marketing and Content Strategy (SEO, social media, analytics)):
-  pair_101    resume_51 × jd_51   (expected: strong_match)
-  pair_102    resume_51 × jd_52   (expected: weak_match)
-  pair_103    resume_52 × jd_51   (expected: strong_match)
-  pair_104    resume_52 × jd_52   (expected: weak_match)
+Round 1 (CROSS-DOMAIN: Technical Program Management (cross-team delivery, engineering roadmaps) × Product Management in Technology (roadmap, agile, stakeholders) — expect poor_match throughout):
+  pair_121    resume_61 × jd_61   (expected: poor_match)
+  pair_122    resume_61 × jd_62   (expected: poor_match)
+  pair_123    resume_62 × jd_61   (expected: poor_match)
+  pair_124    resume_62 × jd_62   (expected: poor_match)
 
-Round 2 (domain: Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)):
-  pair_105    resume_53 × jd_53   (expected: strong_match)
-  pair_106    resume_53 × jd_54   (expected: weak_match)
-  pair_107    resume_54 × jd_53   (expected: strong_match)
-  pair_108    resume_54 × jd_54   (expected: weak_match)
+Round 2 (CROSS-DOMAIN: Mobile Development (React Native, Flutter, Swift, Kotlin) × QA and Test Automation Engineering (Selenium, Playwright, CI test pipelines) — expect poor_match throughout):
+  pair_125    resume_63 × jd_63   (expected: poor_match)
+  pair_126    resume_63 × jd_64   (expected: poor_match)
+  pair_127    resume_64 × jd_63   (expected: poor_match)
+  pair_128    resume_64 × jd_64   (expected: poor_match)
 
-Round 3 (domain: Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)):
-  pair_109    resume_55 × jd_55   (expected: strong_match)
-  pair_110    resume_55 × jd_56   (expected: weak_match)
-  pair_111    resume_56 × jd_55   (expected: strong_match)
-  pair_112    resume_56 × jd_56   (expected: weak_match)
+Round 3 (CROSS-DOMAIN: E-commerce and Retail Management (marketplace, operations, merchandising) × Application Security Engineering (SAST/DAST, secure code review, threat modeling) — expect poor_match throughout):
+  pair_129    resume_65 × jd_65   (expected: poor_match)
+  pair_130    resume_65 × jd_66   (expected: poor_match)
+  pair_131    resume_66 × jd_65   (expected: poor_match)
+  pair_132    resume_66 × jd_66   (expected: poor_match)
 
-Round 4 (domain: Learning and Development / Corporate Training (curriculum design, LMS)):
-  pair_113    resume_57 × jd_57   (expected: strong_match)
-  pair_114    resume_57 × jd_58   (expected: weak_match)
-  pair_115    resume_58 × jd_57   (expected: strong_match)
-  pair_116    resume_58 × jd_58   (expected: weak_match)
+Round 4 (CROSS-DOMAIN: MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring) × Database Engineering (PostgreSQL, MongoDB, Redis, data modeling) — expect poor_match throughout):
+  pair_133    resume_67 × jd_67   (expected: poor_match)
+  pair_134    resume_67 × jd_68   (expected: poor_match)
+  pair_135    resume_68 × jd_67   (expected: poor_match)
+  pair_136    resume_68 × jd_68   (expected: poor_match)
 
-Round 5 (domain: Customer Success and Account Management (SaaS renewals, onboarding, churn)):
-  pair_117    resume_59 × jd_59   (expected: strong_match)
-  pair_118    resume_59 × jd_60   (expected: weak_match)
-  pair_119    resume_60 × jd_59   (expected: strong_match)
-  pair_120    resume_60 × jd_60   (expected: weak_match)
+Round 5 (CROSS-DOMAIN: Cybersecurity and Information Security (pentesting, SIEM, network) × Healthcare Administration and Medical Coordination (clinical ops, EMR) — expect poor_match throughout):
+  pair_137    resume_69 × jd_69   (expected: poor_match)
+  pair_138    resume_69 × jd_70   (expected: poor_match)
+  pair_139    resume_70 × jd_69   (expected: poor_match)
+  pair_140    resume_70 × jd_70   (expected: poor_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
