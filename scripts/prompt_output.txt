@@ -4,108 +4,108 @@ Score 20 CV-JD pairs (from 5 rounds of 4 pairs each) using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_1 | level: middle | exp: 4.0 yrs | raw_text: 280 words
-  skills: Python, FastAPI, Transformers, LangChain, RAG, Embeddings, Sentence Transformers, BERT, T5, FAISS, ChromaDB, PostgreSQL, pgvector, Docker, AWS ECS, Redis, Elasticsearch, Git
-  projects: Meeting Insight
-  background: After graduating with a Bachelor degree in Computer Science in 2021, the candidate began working as an AI Engineer at a startup focused on enterprise document automation and remained there for 2 years on a team of 8 engineers. Daily responsibilities included building retrieval augmented generation p
+  id: resume_11 | level: junior | exp: 0.5 yrs | raw_text: 287 words
+  skills: Python, Scikit-Learn, Pandas, NumPy, Matplotlib, PostgreSQL, Git, Data Preprocessing, Logistic Regression
+  projects: Predictive Pulse
+  background: Completing a Bachelor of Science in Computer Science in May 2025, I am eager to secure my first corporate role. My academic foundation is reinforced by an intensive six-month internship as a Junior Data Scientist at a boutique machine learning agency, working within a tight-knit team of four data pr
 
-  id: resume_2 | level: senior | exp: 8.0 yrs | raw_text: 273 words
-  skills: Python, PyTorch, Transformers, LangChain, LangGraph, RAG, Embeddings, Pinecone, Milvus, FAISS, MLflow, Kubernetes, Docker, AWS EKS, Kafka, PostgreSQL, Redis, Prompt Engineering, LLM Evaluation, CI/CD, Git
-  projects: Enterprise Knowledge Hub
-  background: The candidate has accumulated over 8 years of professional experience building AI infrastructure and leading NLP engineering teams. The first three years were spent at an enterprise software company as a Machine Learning Engineer within a team of 15 developers, where responsibilities included buildi
+  id: resume_12 | level: junior | exp: 0.7 yrs | raw_text: 273 words
+  skills: Python, PyTorch, Torchvision, MLflow, Pandas, NumPy, Librosa, Computer Vision, Image Segmentation
+  projects: SoundStream
+  background: Having recently graduated with a Master of Science in Data Science in late 2025, I have spent the last eight months working as a Graduate Machine Learning Researcher at an agricultural technology startup, collaborating within a multidisciplinary team of five engineers. My core duties centered around
 
-  id: resume_3 | level: middle | exp: 4.0 yrs | raw_text: 295 words
-  skills: Python, MLflow, Kubeflow, KServe, Docker, Kubernetes, FastAPI, Prometheus, Grafana, Airflow, PostgreSQL, GitHub Actions, CI/CD, Evidently AI, Git
-  projects: ModelOps Portal
-  background: Professional experience over the last four years has been centered on production machine learning infrastructure and reliable model deployment rather than model research. The candidate started as an MLOps Engineer at a machine learning startup and spent 2 years working with a team of 7 software engi
+  id: resume_13 | level: junior | exp: 0.6 yrs | raw_text: 298 words
+  skills: Python, Django, Django REST Framework, HL7, FHIR, PostgreSQL, Redis, Celery, Healthtech, Interoperability
+  projects: PulseSync
+  background: As a motivated software engineer who completed a Bachelor of Science in Biomedical Engineering in 2025, I am highly interested in building secure healthcare backends. My professional background includes a intensive seven-month internship as a Junior Healthtech Developer at a medical software startup
 
-  id: resume_4 | level: senior | exp: 8.0 yrs | raw_text: 276 words
-  skills: Python, MLflow, Kubeflow, KServe, Docker, Kubernetes, AWS EKS, Prometheus, Grafana, Evidently AI, Kafka, Jenkins, CI/CD, Feature Store, Terraform, Git
-  projects: Unified Deployment Framework
-  background: Over the past eight years the candidate has specialized in designing enterprise MLOps platforms and leading engineering teams responsible for production machine learning infrastructure. The career began as a Machine Learning Platform Engineer at an enterprise organization for three years within a te
+  id: resume_14 | level: middle | exp: 4.0 yrs | raw_text: 299 words
+  skills: Python, Django, Django REST Framework, HL7, FHIR, PostgreSQL, Redis, Docker, SQLAlchemy, Microservices, HIPAA Compliance
+  projects: ClinicalFlow
+  background: An analytical server-side engineer with four years of dedicated expertise, I specialize in designing clinical data distribution networks and scalable medical system abstractions. My career path includes working for three solid years as a Backend Healthtech Engineer at an enterprise medical informati
 
-  id: resume_5 | level: middle | exp: 4.5 yrs | raw_text: 264 words
-  skills: Financial Modeling, DCF Valuation, Comparable Company Analysis, Precedent Transactions, Microsoft Excel, Power Query, VBA, Power BI, SAP S/4HANA, Corporate Finance, M&A Analysis, Financial Forecasting, Capital Budgeting, Financial Statement Analysis
-  projects: Investment Review Dashboard
-  background: Following graduation with a Bachelor degree in Finance in 2020, the candidate entered corporate finance as a Financial Analyst at a boutique advisory firm and remained there for 2 years on a team of 10 analysts and associates. Primary responsibilities included preparing discounted cash flow valuatio
+  id: resume_15 | level: junior | exp: 0.5 yrs | raw_text: 387 words
+  skills: Product Roadmapping, Agile Methodologies, User Story Mapping, A/B Testing, Data Analysis (Python/Pandas), SQL, Jira, Confluence, Aha!, Mixpanel
+  projects: EduTrack Learning Analytics Dashboard
+  background: A recent Master's graduate in Information Management, I have cultivated a strong foundation in product strategy and agile development through academic projects and a recent internship. My professional journey began with a six-month product internship at a fintech startup, where I worked within a pro
 
-  id: resume_6 | level: senior | exp: 8.0 yrs | raw_text: 258 words
-  skills: Financial Modeling, DCF Valuation, Mergers And Acquisitions, LBO Modeling, Comparable Company Analysis, Precedent Transactions, Microsoft Excel, Bloomberg Terminal, Capital IQ, FactSet, Power BI, SAP Analytics Cloud, Corporate Finance, Financial Forecasting, Due Diligence, Strategic Planning
-  projects: Acquisition Evaluation Framework
-  background: Across eight years of progressively responsible experience, the candidate has specialized in investment analysis, mergers and acquisitions, and strategic corporate finance while leading high-value transaction execution. The career began at an investment banking advisory firm as an Investment Analyst
+  id: resume_16 | level: senior | exp: 8.5 yrs | raw_text: 429 words
+  skills: Product Strategy, Agile & Lean, Stakeholder Management, Data Analytics (Amplitude/Pendo), Roadmap Planning, Financial Modeling (SaaS), SQL, Python, Jira Advanced Roadmaps, Tableau
+  projects: TaskWeaver: Internal Tool to External Product
+  background: For nearly a decade, I have been shaping product strategy and leading cross-functional teams to deliver complex software solutions in both enterprise and hyper-growth startup environments. My career began as a business analyst, but I quickly transitioned into product ownership, discovering a passion
 
-  id: resume_7 | level: middle | exp: 4.5 yrs | raw_text: 280 words
-  skills: Python, FastAPI, Node.js, Express.js, PostgreSQL, SQLAlchemy, Redis, RabbitMQ, Docker, AWS ECS, GitHub Actions, REST API, JWT, NGINX, Git
-  projects: API Gateway Toolkit
-  background: Beginning a professional software engineering career in 2021, the candidate accumulated four and a half years of experience focused on backend API development and distributed web services. The first position was as a Backend Developer at a technology startup where the candidate worked for 2 years wi
+  id: resume_17 | level: senior | exp: 8.0 yrs | raw_text: 394 words
+  skills: E-commerce Strategy, Retail Operations, Merchandising Planning, Supply Chain Logistics, Salesforce Commerce Cloud, SAP Retail, SQL, Tableau, Python, Data Analytics, Inventory Management, Pricing Strategy
+  projects: Predictive Restocking Model, Omnichannel Fulfillment Optimization
+  background: For the past eight years, I have dedicated my career to scaling e-commerce operations and driving profitable growth across both established enterprises and fast-paced startups. My journey began as a merchandising analyst at a national department store chain, where I quickly grasped the intricate dan
 
-  id: resume_8 | level: senior | exp: 8.0 yrs | raw_text: 262 words
-  skills: Python, FastAPI, Node.js, NestJS, PostgreSQL, Redis, Kafka, Docker, Kubernetes, AWS EKS, Terraform, GitHub Actions, OpenTelemetry, Celery, REST API, Microservices, Git
-  projects: Service Platform Framework
-  background: Throughout eight years of backend engineering experience, the candidate has specialized in designing high-performance APIs, distributed systems, and platform architecture while progressing into technical leadership responsibilities. The career started as a Backend Software Engineer at an enterprise 
+  id: resume_18 | level: junior | exp: 0.5 yrs | raw_text: 374 words
+  skills: Retail Merchandising, Shopify, Google Analytics, Excel, SEO, SQL, Asana, Data Analysis, Product Catalog Management, E-commerce Operations
+  projects: MarketMatch Artisan Platform
+  background: A recent graduate with a Bachelor of Science in Retail Management, I am eager to launch my career in the vibrant world of e-commerce and merchandising. My foundational experience comes from a six-month internship as a Junior Merchandise Coordinator at a mid-sized online home goods retailer, a role I
 
-  id: resume_9 | level: middle | exp: 4.0 yrs | raw_text: 261 words
-  skills: Talent Acquisition, Recruiting, HRIS, Workday, BambooHR, Greenhouse, LinkedIn Recruiter, Onboarding, Interview Coordination, Microsoft Excel, Power BI, Employee Relations, HR Analytics, SharePoint
-  projects: Digital Onboarding Hub
-  background: Building a career in human resources over the past four years, the candidate has developed practical expertise in recruitment operations, onboarding, and HR process improvement. The first role was as a Talent Acquisition Coordinator at a technology startup for 2 years, working within a team of 6 rec
+  id: resume_19 | level: junior | exp: 0.6 yrs | raw_text: 343 words
+  skills: Technical Program Management, Agile Methodologies, Jira, Confluence, Project Planning, Risk Assessment, Stakeholder Communication, Sprint Reporting, Data Analysis, Miro
+  projects: Agile Pulse Retrospective Dashboard
+  background: Graduating with a Master's in Information Systems, I have built a strong foundation in coordinating technical projects and facilitating communication between engineering teams. My first professional experience came through a seven-month internship as a Program Coordinator at a mid-sized fintech star
 
-  id: resume_10 | level: senior | exp: 8.0 yrs | raw_text: 251 words
-  skills: Talent Acquisition, Recruiting, HRIS, Workday HCM, Workday Recruiting, Greenhouse, LinkedIn Recruiter, Visier, Power BI, HR Analytics, Onboarding, Employer Branding, Workforce Planning, Stakeholder Management, Microsoft 365
-  projects: Global Hiring Framework
-  background: Over eight years of professional experience, the candidate has specialized in talent acquisition strategy, HR operations, and organizational workforce planning while progressing into senior leadership responsibilities. The career began as a Talent Acquisition Specialist at an enterprise organization
+  id: resume_20 | level: senior | exp: 8.0 yrs | raw_text: 364 words
+  skills: Technical Program Management, Agile Transformation, Jira Advanced Roadmaps, Confluence, Risk Management, Stakeholder Engagement, Financial Forecasting, Tableau, SQL, Kanban, Release Management, LaunchDarkly
+  projects: Microservices Migration Program, Unified Reporting Initiative
+  background: Over the past eight years, I have led complex technical programs spanning cloud infrastructure, AI platform development, and mobile ecosystem modernization for both Fortune 500 enterprises and high-growth startups. My career started as a business analyst, but I rapidly moved into program management,
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_1 | title: Junior AI NLP Engineer | level: junior | min_exp: 1 yrs | raw_text: 203 words
-  required_skills: Python, FastAPI, Transformers, LangChain, Embeddings, RAG, Git
-  preferred_skills: Docker, AWS, Redis, FAISS, PostgreSQL
-  description: The engineering team builds intelligent document search and conversational assistance features for business customers. The team currently consists of 9 engineers including backend developers, machine learning engineers, QA specialists, and a product 
+  id: jd_11 | title: Category Management Analyst | level: middle | min_exp: 3 yrs | raw_text: 224 words
+  required_skills: Planograms, Category Management, JDA Space Planning, Assortment Optimization, Retail Merchandising, Space Planning
+  preferred_skills: Nielsen Spaceman, Galleria, Retail Analytics, Inventory Turnover Analysis
+  description: Our corporate retail operations department is seeking a dedicated Category Management Analyst to join our mid-level regional planning division. The regional merchandising team currently consists of eight corporate professionals, including senior spac
 
-  id: jd_2 | title: Senior AI Platform and NLP Engineer | level: senior | min_exp: 6 yrs | raw_text: 190 words
-  required_skills: Python, PyTorch, Transformers, LangChain, LangGraph, RAG, Embeddings, Kubernetes, AWS
-  preferred_skills: Pinecone, Milvus, MLflow, Kafka, Redis, CI/CD
-  description: The platform engineering organization develops enterprise scale language model infrastructure powering search, knowledge management, and intelligent automation products. The team consists of more than 30 engineers across machine learning, backend inf
+  id: jd_12 | title: Senior Merchandising Strategy Manager | level: senior | min_exp: 6 yrs | raw_text: 221 words
+  required_skills: Planograms, Category Management, JDA Planogram Generator, RELEX Solutions, Macro Space Optimization, Visual Merchandising
+  preferred_skills: IRI Liquid Data, Apollo Space Planning, Space Management Strategy, Retail Compliance Tracking
+  description: The centralized corporate retail planning organization is actively expanding its leadership structure and is seeking a Senior Merchandising Strategy Manager to direct enterprise-scale space management initiatives. The core corporate department compri
 
-  id: jd_3 | title: Associate MLOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 193 words
-  required_skills: Python, MLflow, Docker, FastAPI, Git, Kubernetes
-  preferred_skills: Kubeflow, Prometheus, Grafana, AWS
-  description: The engineering team develops infrastructure that enables data scientists to deploy and monitor machine learning models for customer-facing applications. The team includes 10 engineers working across machine learning, backend development, DevOps, and
+  id: jd_13 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: React, TypeScript, Tailwind CSS, Next.js, JavaScript, Git
+  preferred_skills: Redux Toolkit, Jest, React Testing Library, Figma
+  description: Our application development department is seeking an energetic Associate Frontend Developer to join our growing customer-facing user interface team. Our engineering division consists of six frontend developers, two UI designers, and a dedicated produ
 
-  id: jd_4 | title: Senior MLOps Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 188 words
-  required_skills: Python, MLflow, Kubeflow, Kubernetes, KServe, Docker, Prometheus, Grafana, AWS
-  preferred_skills: Terraform, Kafka, Evidently AI, Feature Store, Jenkins
-  description: The platform organization is responsible for the complete lifecycle of production machine learning systems supporting multiple AI products across the business. More than 35 engineers collaborate across machine learning, platform engineering, infrastr
+  id: jd_14 | title: Junior Web UI Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
+  required_skills: React, TypeScript, Tailwind CSS, JavaScript, HTML5, CSS3
+  preferred_skills: Next.js, Lighthouse, Vite, Web Accessibility
+  description: Our creative design and product organization is looking for a Junior Web UI Engineer to enhance our web accessibility and client experience initiatives. The digital product group encompasses eight engineering specialists across UI development, qualit
 
-  id: jd_5 | title: Junior Investment Analyst | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: Financial Modeling, Microsoft Excel, DCF Valuation, Financial Statement Analysis
-  preferred_skills: Power BI, SAP, VBA, Comparable Company Analysis
-  description: The finance team supports investment decisions, valuation projects, and strategic planning initiatives across multiple business units. The department consists of 12 finance professionals including analysts, managers, and accounting specialists who wo
+  id: jd_15 | title: Lead Mobile Engineer (React Native) | level: senior | min_exp: 6 yrs | raw_text: 360 words
+  required_skills: React Native, JavaScript, TypeScript, Swift, Kotlin, iOS, Android, Xcode, Android Studio, Jest, Git
+  preferred_skills: Zustand, Detox, Fastlane, Firebase Crashlytics, App Center
+  description: We are looking for an experienced Lead Mobile Engineer to drive the technical direction and architecture of our flagship consumer mobile application. This is a senior role within our 20-person engineering team, where you will be responsible for the c
 
-  id: jd_6 | title: Senior Corporate Finance and M&A Manager | level: senior | min_exp: 6 yrs | raw_text: 184 words
-  required_skills: Financial Modeling, DCF Valuation, Mergers And Acquisitions, Microsoft Excel, Capital IQ, Bloomberg Terminal
-  preferred_skills: Power BI, FactSet, SAP Analytics Cloud, LBO Modeling
-  description: The strategic finance organization leads mergers and acquisitions, enterprise valuation, capital allocation, and long-term investment planning for multiple international business units. The department includes more than 30 finance professionals worki
+  id: jd_16 | title: Senior Software Engineer - Mobile (Flutter) | level: senior | min_exp: 6 yrs | raw_text: 375 words
+  required_skills: Flutter, Dart, Android, iOS, GraphQL, SQLite, Rest API, Riverpod, Xcode, Android Studio
+  preferred_skills: BLoC Pattern, Dio, Firebase, Sentry, flutter_test
+  description: Our engineering team is building the next generation of our digital health platform, and we are seeking a highly skilled Senior Software Engineer to take ownership of our mobile client-side development. This role is deeply embedded in a high-performi
 
-  id: jd_7 | title: Associate Backend API Developer | level: junior | min_exp: 1 yrs | raw_text: 188 words
-  required_skills: Python, FastAPI, PostgreSQL, REST API, Git
-  preferred_skills: Node.js, Redis, Docker, GitHub Actions
-  description: The backend engineering team develops REST APIs and internal services supporting web and mobile products used by business customers. The team consists of 11 software engineers, QA specialists, product managers, and DevOps engineers working together i
+  id: jd_17 | title: Senior Clinical Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 328 words
+  required_skills: Clinical Operations Management, Epic EMR, Quality Improvement, Lean Six Sigma, SQL, PowerBI, Healthcare Compliance, HIPAA, Process Optimization, Team Leadership
+  preferred_skills: Healthcare Analytics, Project Management, Epic Clarity, Operational Auditing
+  description: We are seeking a highly experienced Senior Clinical Operations Manager to lead the optimization of our multi-specialty outpatient clinic network. This role is pivotal within our 50-person administrative and medical operations team, which supports ove
 
-  id: jd_8 | title: Senior Backend Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Python, FastAPI, Node.js, PostgreSQL, Kubernetes, Docker, AWS
-  preferred_skills: Kafka, Terraform, OpenTelemetry, Redis, GitHub Actions
-  description: The platform engineering organization builds scalable backend services and shared infrastructure powering multiple enterprise applications. More than 30 engineers across backend development, DevOps, product management, and quality engineering collabo
+  id: jd_18 | title: Senior Medical Coordinator – Specialized Care | level: senior | min_exp: 6 yrs | raw_text: 350 words
+  required_skills: Medical Coordination, Cerner EMR, Prior Authorization, Patient Advocacy, Healthcare Compliance, Excel, Smartsheet, Patient Scheduling, Insurance Verification, Team Supervision
+  preferred_skills: Medical Billing, CPT Coding, Telehealth Integration, Project Management
+  description: We are looking for a seasoned Senior Medical Coordinator to take charge of care coordination and administrative oversight for our specialized oncology and infusion therapy department. This role sits within our 30-person clinical support and coordinat
 
-  id: jd_9 | title: Associate Talent Acquisition Coordinator | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: Recruiting, HRIS, Onboarding, Microsoft Excel
-  preferred_skills: Workday, BambooHR, Power BI, LinkedIn Recruiter
-  description: The human resources team supports recruitment, onboarding, employee documentation, and hiring operations for a growing organization. The department consists of 10 HR professionals including recruiters, HR coordinators, HR business partners, and payro
+  id: jd_19 | title: Senior Full-Stack Engineer (Python + React) | level: senior | min_exp: 6 yrs | raw_text: 299 words
+  required_skills: Python, Django, React, TypeScript, PostgreSQL, REST API, GraphQL, AWS, Docker, Git, Jest, PyTest
+  preferred_skills: GraphQL, Redis, ECS, Selenium, OAuth2
+  description: We are seeking an experienced Senior Full-Stack Engineer to lead the development of our next-generation customer analytics platform. You will join a 10-person engineering team that builds data-intensive web applications serving thousands of enterpris
 
-  id: jd_10 | title: Senior Talent Acquisition and HR Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 192 words
-  required_skills: Talent Acquisition, Workday HCM, HRIS, HR Analytics, Workforce Planning, Onboarding
-  preferred_skills: Greenhouse, LinkedIn Recruiter, Power BI, Visier, Microsoft 365
-  description: The people operations organization leads enterprise recruitment, workforce planning, HR technology, onboarding strategy, and employee experience across multiple business units. More than 40 professionals work across talent acquisition, HR operations,
+  id: jd_20 | title: Junior Full-Stack Developer (Python/React) | level: junior | min_exp: 1 yrs | raw_text: 268 words
+  required_skills: Python, Flask, React, JavaScript, SQL, PostgreSQL, Git, HTML, CSS, REST API
+  preferred_skills: Redux, Docker, GitLab CI, PyTest, Jest
+  description: We are looking for a motivated Junior Full-Stack Developer to join our product engineering team, which builds a scalable e-learning platform for universities and corporate training. You will work within a squad of eight engineers, product designers, 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -190,16 +190,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 0 pairs total.
+Overall dataset so far: 20 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:    0  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:    0  →  expected this group: 5 pairs (from rounds below)
-  moderate_match        existing:    0  →  expected this group: 5 pairs (from rounds below)
-  strong_match          existing:    0  →  expected this group: 5 pairs (from rounds below)
-  excellent_match       existing:    0  →  expected this group: 5 pairs (from rounds below)
+  poor_match            existing:    0  →  expected this group: 20 pairs (from rounds below)
+  weak_match            existing:    5  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:    5  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:    5  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:    5  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -210,35 +210,35 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (20 pairs across 5 rounds — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)):
-  pair_1      resume_1 × jd_1   (expected: strong_match)
-  pair_2      resume_1 × jd_2   (expected: weak_match)
-  pair_3      resume_2 × jd_1   (expected: moderate_match)
-  pair_4      resume_2 × jd_2   (expected: excellent_match)
+Round 1 (CROSS-DOMAIN: Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas) × Retail Operations and Merchandising (planograms, category management) — expect poor_match throughout):
+  pair_21     resume_11 × jd_11   (expected: poor_match)
+  pair_22     resume_11 × jd_12   (expected: poor_match)
+  pair_23     resume_12 × jd_11   (expected: poor_match)
+  pair_24     resume_12 × jd_12   (expected: poor_match)
 
-Round 2 (domain: MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring)):
-  pair_5      resume_3 × jd_3   (expected: strong_match)
-  pair_6      resume_3 × jd_4   (expected: weak_match)
-  pair_7      resume_4 × jd_3   (expected: moderate_match)
-  pair_8      resume_4 × jd_4   (expected: excellent_match)
+Round 2 (CROSS-DOMAIN: Backend Development for Healthtech (Python, Django, HL7/FHIR integrations) × Frontend Development (React, TypeScript, Next.js, Tailwind CSS) — expect poor_match throughout):
+  pair_25     resume_13 × jd_13   (expected: poor_match)
+  pair_26     resume_13 × jd_14   (expected: poor_match)
+  pair_27     resume_14 × jd_13   (expected: poor_match)
+  pair_28     resume_14 × jd_14   (expected: poor_match)
 
-Round 3 (domain: Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)):
-  pair_9      resume_5 × jd_5   (expected: strong_match)
-  pair_10     resume_5 × jd_6   (expected: weak_match)
-  pair_11     resume_6 × jd_5   (expected: moderate_match)
-  pair_12     resume_6 × jd_6   (expected: excellent_match)
+Round 3 (CROSS-DOMAIN: Product Management in Technology (roadmap, agile, stakeholders) × Mobile Development (React Native, Flutter, Swift, Kotlin) — expect poor_match throughout):
+  pair_29     resume_15 × jd_15   (expected: poor_match)
+  pair_30     resume_15 × jd_16   (expected: poor_match)
+  pair_31     resume_16 × jd_15   (expected: poor_match)
+  pair_32     resume_16 × jd_16   (expected: poor_match)
 
-Round 4 (domain: Backend API Development (Python, FastAPI, Node.js, PostgreSQL)):
-  pair_13     resume_7 × jd_7   (expected: strong_match)
-  pair_14     resume_7 × jd_8   (expected: weak_match)
-  pair_15     resume_8 × jd_7   (expected: moderate_match)
-  pair_16     resume_8 × jd_8   (expected: excellent_match)
+Round 4 (CROSS-DOMAIN: E-commerce and Retail Management (marketplace, operations, merchandising) × Healthcare Administration and Medical Coordination (clinical ops, EMR) — expect poor_match throughout):
+  pair_33     resume_17 × jd_17   (expected: poor_match)
+  pair_34     resume_17 × jd_18   (expected: poor_match)
+  pair_35     resume_18 × jd_17   (expected: poor_match)
+  pair_36     resume_18 × jd_18   (expected: poor_match)
 
-Round 5 (domain: Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)):
-  pair_17     resume_9 × jd_9   (expected: strong_match)
-  pair_18     resume_9 × jd_10   (expected: weak_match)
-  pair_19     resume_10 × jd_9   (expected: moderate_match)
-  pair_20     resume_10 × jd_10   (expected: excellent_match)
+Round 5 (CROSS-DOMAIN: Technical Program Management (cross-team delivery, engineering roadmaps) × Full-Stack Web Development (Python backend + React frontend) — expect poor_match throughout):
+  pair_37     resume_19 × jd_19   (expected: poor_match)
+  pair_38     resume_19 × jd_20   (expected: poor_match)
+  pair_39     resume_20 × jd_19   (expected: poor_match)
+  pair_40     resume_20 × jd_20   (expected: poor_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT

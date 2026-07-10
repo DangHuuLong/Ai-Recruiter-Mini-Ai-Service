@@ -3,5 +3,15 @@
   "MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring)": 1,
   "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 1,
   "Backend API Development (Python, FastAPI, Node.js, PostgreSQL)": 1,
-  "Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)": 1
+  "Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)": 1,
+  "Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)": 1,
+  "Retail Operations and Merchandising (planograms, category management)": 1,
+  "Backend Development for Healthtech (Python, Django, HL7/FHIR integrations)": 1,
+  "Frontend Development (React, TypeScript, Next.js, Tailwind CSS)": 1,
+  "Product Management in Technology (roadmap, agile, stakeholders)": 1,
+  "Mobile Development (React Native, Flutter, Swift, Kotlin)": 1,
+  "E-commerce and Retail Management (marketplace, operations, merchandising)": 1,
+  "Healthcare Administration and Medical Coordination (clinical ops, EMR)": 1,
+  "Technical Program Management (cross-team delivery, engineering roadmaps)": 1,
+  "Full-Stack Web Development (Python backend + React frontend)": 1
 }
