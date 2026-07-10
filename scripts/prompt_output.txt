@@ -10,28 +10,28 @@ below — do not re-score or repeat any other pair.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_121 | level: senior | exp: 7.0 yrs | raw_text: 335 words
-  skills: Node.js, TypeScript, React, Redux, GraphQL, PostgreSQL, MySQL, Docker, Kubernetes, AWS, Terraform, CI/CD, Stripe API, Microservices, REST, Jest, Cypress, Webpack, Babel, Nginx
-  projects: InsightHub, OpenBilling
-  background: During the past seven years the candidate has progressed from senior software engineer to lead full‑stack engineer at two high‑growth SaaS startups. In the most recent role as Lead Full‑Stack Engineer at a Series‑B startup that delivers a subscription‑based analytics platform, the individual managed
+  id: resume_139 | level: middle | exp: 4.0 yrs | raw_text: 312 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, AWS ECS, Kubernetes, GitLab CI, Redis, Kafka, GraphQL, Testing
+  projects: DataHub API, OpenWeather Wrapper
+  background: During the past four years the candidate has built a solid foundation as a backend engineer specializing in API development. The first two-year stint was at a fast‑growing startup where the title of Backend Engineer involved a team of eight engineers. Responsibilities included designing RESTful endp
 
-  id: resume_122 | level: senior | exp: 7.0 yrs | raw_text: 320 words
-  skills: Node.js, TypeScript, React, Redux, GraphQL, PostgreSQL, Docker, Kubernetes, AWS, Terraform, CI/CD, Stripe API, Microservices, REST, Jest, Cypress, Next.js, Tailwind CSS, Socket.io, Helm
-  projects: SyncNotes, BillingInsights
-  background: The candidate has accumulated seven years of full‑stack development experience, beginning as a senior engineer at a digital agency and advancing to lead engineer at a remote‑collaboration SaaS platform. At the agency, the candidate spent two years as Senior Full‑Stack Engineer on a cross‑functional 
+  id: resume_140 | level: middle | exp: 4.5 yrs | raw_text: 294 words
+  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, AWS Fargate, Terraform, Kafka, Redis, GitHub Actions, Prometheus, Grafana
+  projects: StreamLens, AuthCore
+  background: Over the course of four and a half years the professional has cultivated expertise in backend API development, primarily using Python and Node.js within distributed systems. The career began at an agency where the role of Backend Developer lasted two years, collaborating with a team of six engineers
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_121 | title: Full‑Stack Engineer (Node.js/React) | level: middle | min_exp: 3 yrs | raw_text: 204 words
-  required_skills: Node.js, TypeScript, React, PostgreSQL, Docker, AWS, Stripe API
-  preferred_skills: GraphQL, Redis, Terraform
-  description: Our product team of six engineers builds a subscription‑based SaaS platform that streamlines billing and analytics for small businesses. The role sits within a cross‑functional squad that includes a product manager, a UX designer, a QA analyst, and a
+  id: jd_139 | title: Senior Backend API Engineer | level: senior | min_exp: 6 yrs | raw_text: 205 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Kafka, Docker, Kubernetes, AWS
+  preferred_skills: GraphQL, gRPC, Terraform, Prometheus
+  description: The team responsible for this role powers the core data platform of a large SaaS product, consisting of fifteen engineers who build and maintain high‑throughput RESTful and GraphQL APIs. In this senior position the individual will design, implement, 
 
-  id: jd_122 | title: Lead Full‑Stack Engineer (Node.js/React/Stripe) | level: senior | min_exp: 6 yrs | raw_text: 219 words
-  required_skills: Node.js, TypeScript, React, Next.js, PostgreSQL, Redis, Docker, Kubernetes, AWS, Terraform, Stripe API
-  preferred_skills: Go, Kafka
-  description: Our eight‑person engineering group powers a rapidly scaling SaaS product that delivers enterprise‑grade subscription management and analytics. The lead full‑stack engineer will own the end‑to‑end architecture of the billing platform, mentor a team of
+  id: jd_140 | title: Lead Senior Backend API Developer | level: senior | min_exp: 6 yrs | raw_text: 212 words
+  required_skills: Python, FastAPI, Node.js, PostgreSQL, Redis, Docker, AWS ECS, GitLab CI
+  preferred_skills: Kafka, OpenAPI, Jaeger
+  description: The product team behind this role maintains a suite of mission‑critical APIs that serve millions of users across mobile and web platforms, operating within a tightly knit group of twelve engineers. As the lead senior backend API developer, the indivi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -116,16 +116,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 240 pairs total.
+Overall dataset so far: 260 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   60  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:   44  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:   50  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:   43  →  expected this group: 2 pairs (from rounds below)
-  excellent_match       existing:   43  →  expected this group: 2 pairs (from rounds below)
+  weak_match            existing:   45  →  expected this group: 4 pairs (from rounds below)
+  moderate_match        existing:   51  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:   49  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   55  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -136,8 +136,8 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)):
-  pair_243    resume_122 × jd_121   (expected: strong_match)
+Round 5 (domain: Backend API Development (Python, FastAPI, Node.js, PostgreSQL)):
+  pair_279    resume_140 × jd_139   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
