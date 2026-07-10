@@ -1,37 +1,77 @@
 You are a dataset labeler for an AI recruitment system.
-Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
+Score 10 CV-JD pairs (from 3 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 1 pairs listed
+A previous response was incomplete. Score ONLY the 10 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_97 | level: middle | exp: 4.0 yrs | raw_text: 314 words
-  skills: Content Marketing, SEO, Digital Strategy, Email Marketing, Social Media Marketing, HTML/CSS, Google Analytics, A/B Testing, WordPress, CRM, Python
-  projects: Marketer's Community Platform
-  background: I am a passionate digital marketer with 4 years of experience, specializing in content strategy and SEO. As a Content Marketing Specialist at a B2B SaaS startup, I managed the company's blog, creating engaging articles and tutorials to educate our target audience. I optimized content for search engi
+  id: resume_105 | level: senior | exp: 7.0 yrs | raw_text: 376 words
+  skills: UI/UX Design, Product Design, User Research, Prototyping, Design Systems, Figma, Adobe XD, Sketch, InVision Studio, Dovetail, Lookback.io, Zeplin, HTML5, CSS3, JavaScript, Motion Design, Design Thinking, Agile Collaboration
+  projects: DesignOps Toolkit, Pattern Library
+  background: Over the past seven years I have progressed from a junior UI designer in a boutique agency to a senior UI/UX designer at a high‑growth startup and most recently a lead product designer within a large enterprise software firm. At the boutique agency (agency, 1.5 years, team of 5) I was responsible fo
 
-  id: resume_98 | level: senior | exp: 8.5 yrs | raw_text: 317 words
-  skills: Content Strategy, SEO, Digital Marketing Management, Analytics, UX Optimization, CRM, Marketing Automation, A/B Testing, HTML/CSS, AI for Marketing
-  projects: AI-Powered Content Personalization
-  background: With over 8 years of experience in digital marketing, I have honed my expertise in content strategy, SEO, and analytics. As a Senior Content Strategist at a renowned digital agency, I led a team of 5 content creators, overseeing the development and execution of content strategies for diverse clients
+  id: resume_106 | level: senior | exp: 8.0 yrs | raw_text: 338 words
+  skills: Product Design, UI/UX Design, User Research, Prototyping, Design Systems, Figma, FigJam, Miro, Qualtrics, UserTesting.com, Optimizely, Zeplin, HTML5, CSS3, SCSS, React, Python, Accessibility Design, Design Ops, Mentoring
+  projects: UserJourney Mapper, Accessibility Audit Tool
+  background: With eight years of professional design experience I have moved from a senior UI/UX designer role at a mid‑size startup to leading product design initiatives at a global digital agency. In my first senior position at a health‑tech startup (startup, 3.5 years, design squad of 6) I owned end‑to‑end de
+
+  id: resume_107 | level: senior | exp: 8.0 yrs | raw_text: 329 words
+  skills: Supply Chain Management, Procurement Strategy, Logistics Optimization, ERP Implementation, Data Analytics, Python, SQL, SAP ECC, Oracle ERP Cloud, PowerBI
+  projects: Inventory Optimizer
+  background: Over the past eight years, I have built a career that bridges supply chain strategy, procurement excellence, and logistics optimization within large enterprises and fast‑moving startups. My first professional role was as a Supply Chain Analyst at a multinational manufacturing enterprise, where I spe
+
+  id: resume_108 | level: senior | exp: 7.0 yrs | raw_text: 317 words
+  skills: Procurement Analytics, Inventory Planning, ERP Implementation, SAP S/4HANA, Microsoft Dynamics 365, SQL Server, PowerBI, Python, Azure, Tableau
+  projects: Procurement Dashboard
+  background: During seven years of professional experience I have combined deep expertise in inventory planning, procurement analytics, and ERP system integration to deliver measurable cost savings for both global manufacturers and agile startups. My career began as an Inventory Planner at a Fortune‑500 automoti
+
+  id: resume_109 | level: senior | exp: 7.0 yrs | raw_text: 287 words
+  skills: Management Consulting, Project Management, Stakeholder Engagement, Strategic Planning, Process Improvement, Data Visualization, Financial Modeling, Change Management, Workshop Facilitation, Business Analysis
+  projects: Knowledge Hub, Sustainability Impact Analyzer
+  background: After completing an MBA in 2015, the candidate joined a mid-sized boutique consultancy where, for four years, they operated as a Management Consultant within a four‑person delivery team. In that role they performed market segmentation using SQL Server 2019 and Tableau 2022.1, constructed financial m
+
+  id: resume_110 | level: senior | exp: 8.0 yrs | raw_text: 291 words
+  skills: Management Consulting, Agile Methodologies, Lean Six Sigma, Client Relationship Management, Process Design, Data Analysis, Business Process Modeling, Presentation Design, Risk Management, Team Leadership
+  projects: Process Excellence Dashboard, Client Pulse Survey
+  background: Graduating with a Bachelor of Science in Economics in 2014, the professional began their career at a startup consultancy as a Management Analyst, contributing to a three‑person analytics team for two years. They extracted and cleaned client datasets using Python 3.8 and PostgreSQL 14, visualized key
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_97 | title: Digital Marketing Specialist | level: middle | min_exp: 3 yrs | raw_text: 262 words
-  required_skills: Content Marketing, SEO, Digital Marketing, Content Strategy, Social Media Marketing
-  preferred_skills: HTML/CSS, WordPress, Drupal, Google Analytics, Adobe Analytics, Hootsuite, Buffer, CRM
-  description: We are seeking a talented Digital Marketing Specialist to join our dynamic team of 8 marketers, focusing on content strategy and SEO. The ideal candidate will have a minimum of 3 years of hands-on experience in digital marketing, with a strong founda
+  id: jd_105 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 192 words
+  required_skills: Figma, User Research, Prototyping, Wireframing, Design Systems
+  preferred_skills: Adobe XD, Sketch, HTML, CSS
+  description: Our product team of six designers, product managers, and engineers builds a suite of SaaS tools that help small businesses manage their online presence. The junior UI/UX designer will join a compact design squad of four and will be responsible for tr
 
-  id: jd_98 | title: Senior Content Strategist | level: senior | min_exp: 6 yrs | raw_text: 287 words
-  required_skills: Content Strategy, SEO, Content Optimization, Team Leadership, Editorial Management
-  preferred_skills: WordPress, Drupal, Google Analytics, Adobe Analytics, Optimizely, VWO, HTML/CSS
-  description: We are seeking an experienced Senior Content Strategist to lead our content marketing efforts and drive the digital transformation of our enterprise-level organization. With a team of 10 content creators and a focus on SEO, the strategist will play a
+  id: jd_106 | title: Junior Product Designer | level: junior | min_exp: 1 yrs | raw_text: 203 words
+  required_skills: Figma, User Research, Prototyping, Product Thinking, Wireframing, Design Systems
+  preferred_skills: Miro, Jira, HTML, CSS, Analytics
+  description: Our cross‑functional product team of eight, including product managers, engineers, data analysts, and designers, builds a consumer‑facing mobile app that streamlines personal finance management. The junior product designer will work within a design t
+
+  id: jd_107 | title: Junior Supply Chain Analyst | level: junior | min_exp: 1 yrs | raw_text: 216 words
+  required_skills: SAP ECC, Excel, PowerBI, SQL
+  preferred_skills: Python, Tableau, AWS S3
+  description: Our fast‑growing e‑commerce team, consisting of eight members, is responsible for maintaining product availability while minimizing carrying costs across a distributed fulfillment network. The Junior Supply Chain Analyst will support daily demand pla
+
+  id: jd_108 | title: Junior Procurement Coordinator | level: junior | min_exp: 1 yrs | raw_text: 232 words
+  required_skills: Microsoft Dynamics 365, Excel, PowerBI, SQL
+  preferred_skills: Python, Tableau, SAP Ariba
+  description: Our procurement department, a team of ten professionals, is tasked with sourcing critical components for a hardware manufacturing line while ensuring compliance and cost efficiency. The Junior Procurement Coordinator will assist senior buyers in supp
+
+  id: jd_109 | title: Junior Management Consultant | level: junior | min_exp: 1 yrs | raw_text: 209 words
+  required_skills: Stakeholder Interviewing, Data Visualization, Strategic Frameworks, Presentation Development
+  preferred_skills: Python, JIRA Cloud, Miro
+  description: Our consulting practice consists of a four‑person delivery team that supports clients in the manufacturing sector by translating strategic goals into actionable plans. The junior consultant will work closely with senior consultants to conduct stakeho
+
+  id: jd_110 | title: Junior Management Consultant | level: junior | min_exp: 1 yrs | raw_text: 186 words
+  required_skills: Requirement Gathering, Data Analysis, Report Writing, Project Tracking
+  preferred_skills: Lean Six Sigma, Agile Methodologies, Bizagi
+  description: The consulting group operates as a five‑person agile squad that delivers transformation projects for financial services clients, focusing on process redesign and technology enablement. In this junior role the individual will assist senior consultants
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -116,16 +156,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 180 pairs total.
+Overall dataset so far: 200 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   40  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:   35  →  expected this group: 1 pairs (from rounds below)
-  moderate_match        existing:   37  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:   35  →  expected this group: 1 pairs (from rounds below)
-  excellent_match       existing:   33  →  expected this group: 2 pairs (from rounds below)
+  weak_match            existing:   40  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:   37  →  expected this group: 12 pairs (from rounds below)
+  strong_match          existing:   40  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   43  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -134,17 +174,30 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
+PAIRING ORDER (10 pairs across 3 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 4 (domain: Digital Marketing and Content Strategy (SEO, social media, analytics)):
-  pair_196    resume_98 × jd_98   (expected: excellent_match)
+Round 3 (domain: UI/UX Design and Product Design (Figma, user research, prototyping)):
+  pair_211    resume_106 × jd_105   (expected: moderate_match)
+  pair_212    resume_106 × jd_106   (expected: moderate_match)
+
+Round 4 (domain: Supply Chain and Logistics Management (procurement, inventory, ERP)):
+  pair_213    resume_107 × jd_107   (expected: moderate_match)
+  pair_214    resume_107 × jd_108   (expected: moderate_match)
+  pair_215    resume_108 × jd_107   (expected: moderate_match)
+  pair_216    resume_108 × jd_108   (expected: moderate_match)
+
+Round 5 (domain: Management Consulting (client delivery, frameworks, stakeholder workshops)):
+  pair_217    resume_109 × jd_109   (expected: moderate_match)
+  pair_218    resume_109 × jd_110   (expected: moderate_match)
+  pair_219    resume_110 × jd_109   (expected: moderate_match)
+  pair_220    resume_110 × jd_110   (expected: moderate_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 1 lines.
+Output exactly 10 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 1 JSON lines.
+No markdown, no explanation — only 10 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
