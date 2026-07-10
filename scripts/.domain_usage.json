@@ -13,5 +13,10 @@
   "E-commerce and Retail Management (marketplace, operations, merchandising)": 1,
   "Healthcare Administration and Medical Coordination (clinical ops, EMR)": 1,
   "Technical Program Management (cross-team delivery, engineering roadmaps)": 1,
-  "Full-Stack Web Development (Python backend + React frontend)": 1
+  "Full-Stack Web Development (Python backend + React frontend)": 1,
+  "QA and Test Automation Engineering (Selenium, Playwright, CI test pipelines)": 1,
+  "Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)": 1,
+  "Platform Engineering for E-commerce (Go, gRPC, high-throughput services)": 1,
+  "Management Consulting (client delivery, frameworks, stakeholder workshops)": 1,
+  "UI/UX Design and Product Design (Figma, user research, prototyping)": 1
 }

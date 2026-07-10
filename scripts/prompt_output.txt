@@ -4,108 +4,108 @@ Score 20 CV-JD pairs (from 5 rounds of 4 pairs each) using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_11 | level: junior | exp: 0.5 yrs | raw_text: 287 words
-  skills: Python, Scikit-Learn, Pandas, NumPy, Matplotlib, PostgreSQL, Git, Data Preprocessing, Logistic Regression
-  projects: Predictive Pulse
-  background: Completing a Bachelor of Science in Computer Science in May 2025, I am eager to secure my first corporate role. My academic foundation is reinforced by an intensive six-month internship as a Junior Data Scientist at a boutique machine learning agency, working within a tight-knit team of four data pr
+  id: resume_21 | level: middle | exp: 4.0 yrs | raw_text: 353 words
+  skills: Selenium WebDriver, Java, TestNG, Maven, Jenkins, REST Assured, Allure, Selenium Grid, Docker, Git, Slack API
+  projects: Test Orchestrator
+  background: With over four years of dedicated experience in quality assurance and test automation, I have honed my skills in building scalable and maintainable test frameworks across multiple product lines. My professional journey began as a QA Automation Engineer at a fintech startup, where I worked within a t
 
-  id: resume_12 | level: junior | exp: 0.7 yrs | raw_text: 273 words
-  skills: Python, PyTorch, Torchvision, MLflow, Pandas, NumPy, Librosa, Computer Vision, Image Segmentation
-  projects: SoundStream
-  background: Having recently graduated with a Master of Science in Data Science in late 2025, I have spent the last eight months working as a Graduate Machine Learning Researcher at an agricultural technology startup, collaborating within a multidisciplinary team of five engineers. My core duties centered around
+  id: resume_22 | level: senior | exp: 8.0 yrs | raw_text: 342 words
+  skills: Selenium WebDriver, Java, Cucumber, Jenkins, Docker, Kubernetes, JMeter, Allure, Grafana, GitLab CI, TestNG, Maven, Faker
+  projects: AutoFlow DSL
+  background: My career in software testing spans eight years, during which I have progressed from a test analyst to a principal automation architect, driving quality strategy for both large enterprises and fast-growing startups. For the first four years, I served as a Senior QA Lead at a global e-commerce enterp
 
-  id: resume_13 | level: junior | exp: 0.6 yrs | raw_text: 298 words
-  skills: Python, Django, Django REST Framework, HL7, FHIR, PostgreSQL, Redis, Celery, Healthtech, Interoperability
-  projects: PulseSync
-  background: As a motivated software engineer who completed a Bachelor of Science in Biomedical Engineering in 2025, I am highly interested in building secure healthcare backends. My professional background includes a intensive seven-month internship as a Junior Healthtech Developer at a medical software startup
+  id: resume_23 | level: middle | exp: 4.5 yrs | raw_text: 329 words
+  skills: Google Ads, Meta Ads Manager, Google Analytics, Google Tag Manager, Supermetrics, Looker Studio, Facebook Attribution, TikTok Ads, A/B Testing, Excel, Python
+  projects: AdPulse Budget Monitor
+  background: Over the past four and a half years, I have built a robust career in performance marketing, specializing in paid acquisition across search and social platforms. My journey began at a mid-sized digital agency, where I served as a Paid Media Specialist for two years, managing a portfolio of fifteen sm
 
-  id: resume_14 | level: middle | exp: 4.0 yrs | raw_text: 299 words
-  skills: Python, Django, Django REST Framework, HL7, FHIR, PostgreSQL, Redis, Docker, SQLAlchemy, Microservices, HIPAA Compliance
-  projects: ClinicalFlow
-  background: An analytical server-side engineer with four years of dedicated expertise, I specialize in designing clinical data distribution networks and scalable medical system abstractions. My career path includes working for three solid years as a Backend Healthtech Engineer at an enterprise medical informati
+  id: resume_24 | level: senior | exp: 8.0 yrs | raw_text: 326 words
+  skills: Google Ads, Bing Ads, Meta Ads Manager, Google Analytics 360, Google Tag Manager, Kenshoo (Skai), SQL, Python, Tableau, Looker, Branch.io, MMM, LTV Modeling, The Trade Desk, Leadership
+  projects: Unified Attribution Framework
+  background: With nearly eight years of experience in performance marketing and paid acquisition, I have honed a comprehensive skill set spanning campaign execution, strategic planning, and team leadership across both B2C and B2B enterprises. My career started as a Paid Search Analyst at a large e-commerce retai
 
-  id: resume_15 | level: junior | exp: 0.5 yrs | raw_text: 387 words
-  skills: Product Roadmapping, Agile Methodologies, User Story Mapping, A/B Testing, Data Analysis (Python/Pandas), SQL, Jira, Confluence, Aha!, Mixpanel
-  projects: EduTrack Learning Analytics Dashboard
-  background: A recent Master's graduate in Information Management, I have cultivated a strong foundation in product strategy and agile development through academic projects and a recent internship. My professional journey began with a six-month product internship at a fintech startup, where I worked within a pro
+  id: resume_25 | level: middle | exp: 4.5 yrs | raw_text: 356 words
+  skills: Go, gRPC, Protocol Buffers, Redis, PostgreSQL, Kafka, Docker, Kubernetes, GitLab CI, Prometheus, Jaeger, Linux
+  projects: CacheGuard Distributed Cache
+  background: My career in backend and platform engineering spans four and a half years, during which I have specialized in building resilient, high-throughput services for e-commerce and fintech applications. I began as a Backend Engineer at a fintech startup, where I worked for two years within a team of twelve
 
-  id: resume_16 | level: senior | exp: 8.5 yrs | raw_text: 429 words
-  skills: Product Strategy, Agile & Lean, Stakeholder Management, Data Analytics (Amplitude/Pendo), Roadmap Planning, Financial Modeling (SaaS), SQL, Python, Jira Advanced Roadmaps, Tableau
-  projects: TaskWeaver: Internal Tool to External Product
-  background: For nearly a decade, I have been shaping product strategy and leading cross-functional teams to deliver complex software solutions in both enterprise and hyper-growth startup environments. My career began as a business analyst, but I quickly transitioned into product ownership, discovering a passion
+  id: resume_26 | level: senior | exp: 8.0 yrs | raw_text: 355 words
+  skills: Go, gRPC, Protocol Buffers, Kafka, Redis, PostgreSQL, CockroachDB, Kubernetes, Istio, Envoy, Prometheus, Grafana, Loki, Jaeger, OpenTelemetry, Linux, eBPF
+  projects: Custom Connection Pool for Go
+  background: For nearly eight years, I have been deeply involved in designing and scaling platform infrastructure for large-scale e-commerce and logistics systems, progressing from a backend developer to a principal platform architect. My career began with two years as a software engineer at a traditional enterp
 
-  id: resume_17 | level: senior | exp: 8.0 yrs | raw_text: 394 words
-  skills: E-commerce Strategy, Retail Operations, Merchandising Planning, Supply Chain Logistics, Salesforce Commerce Cloud, SAP Retail, SQL, Tableau, Python, Data Analytics, Inventory Management, Pricing Strategy
-  projects: Predictive Restocking Model, Omnichannel Fulfillment Optimization
-  background: For the past eight years, I have dedicated my career to scaling e-commerce operations and driving profitable growth across both established enterprises and fast-paced startups. My journey began as a merchandising analyst at a national department store chain, where I quickly grasped the intricate dan
+  id: resume_27 | level: middle | exp: 4.0 yrs | raw_text: 350 words
+  skills: Management Consulting, Strategy Formulation, Financial Modeling, Excel, Power BI, SQL, Python, Porter's Five Forces, SWOT Analysis, Miro, Market Research, Data Analysis, Project Management, PowerPoint, Workshop Facilitation
+  projects: StrategyCraft Toolkit
+  background: I have spent the last four years building a career in management consulting, focusing on strategy formulation and operational improvement for clients across the technology and financial services sectors. My journey began as a junior consultant at a boutique strategy firm, where I worked for two and 
 
-  id: resume_18 | level: junior | exp: 0.5 yrs | raw_text: 374 words
-  skills: Retail Merchandising, Shopify, Google Analytics, Excel, SEO, SQL, Asana, Data Analysis, Product Catalog Management, E-commerce Operations
-  projects: MarketMatch Artisan Platform
-  background: A recent graduate with a Bachelor of Science in Retail Management, I am eager to launch my career in the vibrant world of e-commerce and merchandising. My foundational experience comes from a six-month internship as a Junior Merchandise Coordinator at a mid-sized online home goods retailer, a role I
+  id: resume_28 | level: senior | exp: 8.0 yrs | raw_text: 353 words
+  skills: Management Consulting, Corporate Strategy, M&A Due Diligence, Post-Merger Integration, Lean Six Sigma, Process Mining, Python, R, SQL, Tableau, Alteryx, Celonis, McKinsey 7S, BCG Matrix, Stakeholder Management, Workshop Facilitation, Team Leadership, Change Management
+  projects: Digital Transformation Roadmap
+  background: Over eight years of experience in management consulting, I have established myself as a trusted advisor to C-suite executives, leading large-scale transformation programs and driving strategic decisions across technology, healthcare, and industrial sectors. My career started with a two-year stint at
 
-  id: resume_19 | level: junior | exp: 0.6 yrs | raw_text: 343 words
-  skills: Technical Program Management, Agile Methodologies, Jira, Confluence, Project Planning, Risk Assessment, Stakeholder Communication, Sprint Reporting, Data Analysis, Miro
-  projects: Agile Pulse Retrospective Dashboard
-  background: Graduating with a Master's in Information Systems, I have built a strong foundation in coordinating technical projects and facilitating communication between engineering teams. My first professional experience came through a seven-month internship as a Program Coordinator at a mid-sized fintech star
+  id: resume_29 | level: middle | exp: 4.0 yrs | raw_text: 359 words
+  skills: Figma, Sketch, Adobe XD, User Research, Wireframing, Prototyping, Usability Testing, Design Systems, User Journey Mapping, Miro, Zeplin, Storybook, Interaction Design
+  projects: FitTrack Mobile App
+  background: With over four years of dedicated experience in UI/UX and product design, I have cultivated a human-centered approach to crafting digital experiences that are both intuitive and impactful. My professional journey began at a digital product agency, where I spent two years working within a team of six
 
-  id: resume_20 | level: senior | exp: 8.0 yrs | raw_text: 364 words
-  skills: Technical Program Management, Agile Transformation, Jira Advanced Roadmaps, Confluence, Risk Management, Stakeholder Engagement, Financial Forecasting, Tableau, SQL, Kanban, Release Management, LaunchDarkly
-  projects: Microservices Migration Program, Unified Reporting Initiative
-  background: Over the past eight years, I have led complex technical programs spanning cloud infrastructure, AI platform development, and mobile ecosystem modernization for both Fortune 500 enterprises and high-growth startups. My career started as a business analyst, but I rapidly moved into program management,
+  id: resume_30 | level: senior | exp: 7.0 yrs | raw_text: 355 words
+  skills: Figma, Sketch, Design Systems, User Research, Usability Testing, Prototyping, Information Architecture, Accessibility (WCAG), Journey Mapping, Storybook, Zeplin, Dovetail, Optimal Workshop, Team Leadership, Design Strategy, Interaction Design
+  projects: Design System Migration
+  background: Across seven years of professional design practice, I have advanced from a junior designer to a principal-level contributor, leading product design strategy for both enterprise-scale platforms and high-growth startups. My career began with two years at a large enterprise software company, where I wo
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_11 | title: Category Management Analyst | level: middle | min_exp: 3 yrs | raw_text: 224 words
-  required_skills: Planograms, Category Management, JDA Space Planning, Assortment Optimization, Retail Merchandising, Space Planning
-  preferred_skills: Nielsen Spaceman, Galleria, Retail Analytics, Inventory Turnover Analysis
-  description: Our corporate retail operations department is seeking a dedicated Category Management Analyst to join our mid-level regional planning division. The regional merchandising team currently consists of eight corporate professionals, including senior spac
+  id: jd_21 | title: Junior QA Automation Engineer | level: junior | min_exp: 1 yrs | raw_text: 266 words
+  required_skills: Selenium WebDriver, Java, TestNG, Git, Jenkins, Maven, JIRA
+  preferred_skills: Python, REST Assured, Docker, Agile
+  description: We are seeking a motivated Junior QA Automation Engineer to join our quality engineering team, which supports a suite of web-based financial planning applications. The team currently consists of five engineers who work closely with developers and pro
 
-  id: jd_12 | title: Senior Merchandising Strategy Manager | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: Planograms, Category Management, JDA Planogram Generator, RELEX Solutions, Macro Space Optimization, Visual Merchandising
-  preferred_skills: IRI Liquid Data, Apollo Space Planning, Space Management Strategy, Retail Compliance Tracking
-  description: The centralized corporate retail planning organization is actively expanding its leadership structure and is seeking a Senior Merchandising Strategy Manager to direct enterprise-scale space management initiatives. The core corporate department compri
+  id: jd_22 | title: Senior QA Automation Architect | level: senior | min_exp: 6 yrs | raw_text: 295 words
+  required_skills: Selenium WebDriver, Java, Jenkins, Docker, Kubernetes, JMeter, GitLab CI, Allure, TestNG, Maven, Linux
+  preferred_skills: Playwright, Cypress, Grafana, AWS, BrowserStack, Pact
+  description: We are looking for an experienced Senior QA Automation Architect to lead the transformation of our test automation strategy across a portfolio of twelve microservices and three client-facing web applications. This is a high-impact role within our eng
 
-  id: jd_13 | title: Associate Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 209 words
-  required_skills: React, TypeScript, Tailwind CSS, Next.js, JavaScript, Git
-  preferred_skills: Redux Toolkit, Jest, React Testing Library, Figma
-  description: Our application development department is seeking an energetic Associate Frontend Developer to join our growing customer-facing user interface team. Our engineering division consists of six frontend developers, two UI designers, and a dedicated produ
+  id: jd_23 | title: Junior Performance Marketing Associate | level: junior | min_exp: 1 yrs | raw_text: 273 words
+  required_skills: Google Ads, Meta Ads Manager, Google Analytics, Excel, A/B Testing, Keyword Research
+  preferred_skills: Google Tag Manager, Looker Studio, TikTok Ads, Attribution Modeling
+  description: We are looking for an energetic Junior Performance Marketing Associate to join our growing digital acquisition team. This team currently consists of six marketing professionals who manage paid media campaigns across search, social, and display for a 
 
-  id: jd_14 | title: Junior Web UI Engineer | level: junior | min_exp: 1 yrs | raw_text: 201 words
-  required_skills: React, TypeScript, Tailwind CSS, JavaScript, HTML5, CSS3
-  preferred_skills: Next.js, Lighthouse, Vite, Web Accessibility
-  description: Our creative design and product organization is looking for a Junior Web UI Engineer to enhance our web accessibility and client experience initiatives. The digital product group encompasses eight engineering specialists across UI development, qualit
+  id: jd_24 | title: Senior Performance Marketing Strategist | level: senior | min_exp: 6 yrs | raw_text: 285 words
+  required_skills: Google Ads, Meta Ads Manager, SQL, Looker, Multi-Touch Attribution, Marketing Mix Modeling, Excel, Google Analytics 360, Leadership, Budget Management, A/B Testing
+  preferred_skills: The Trade Desk, AppsFlyer, Python, Programmatic Display
+  description: We are seeking a highly experienced Senior Performance Marketing Strategist to lead the evolution of our paid acquisition strategy across multiple channels and geographies. This is a pivotal role within our 20-person marketing organization, where you
 
-  id: jd_15 | title: Lead Mobile Engineer (React Native) | level: senior | min_exp: 6 yrs | raw_text: 360 words
-  required_skills: React Native, JavaScript, TypeScript, Swift, Kotlin, iOS, Android, Xcode, Android Studio, Jest, Git
-  preferred_skills: Zustand, Detox, Fastlane, Firebase Crashlytics, App Center
-  description: We are looking for an experienced Lead Mobile Engineer to drive the technical direction and architecture of our flagship consumer mobile application. This is a senior role within our 20-person engineering team, where you will be responsible for the c
+  id: jd_25 | title: Junior Platform Engineer | level: junior | min_exp: 1 yrs | raw_text: 279 words
+  required_skills: Go, gRPC, Protocol Buffers, Docker, PostgreSQL, Git, Linux
+  preferred_skills: Kafka, Kubernetes, Redis, Prometheus, Grafana
+  description: We are looking for a motivated Junior Platform Engineer to join our core infrastructure team, which supports a suite of e-commerce applications serving over 200,000 daily active users. The team consists of eight platform engineers and three SREs, and
 
-  id: jd_16 | title: Senior Software Engineer - Mobile (Flutter) | level: senior | min_exp: 6 yrs | raw_text: 375 words
-  required_skills: Flutter, Dart, Android, iOS, GraphQL, SQLite, Rest API, Riverpod, Xcode, Android Studio
-  preferred_skills: BLoC Pattern, Dio, Firebase, Sentry, flutter_test
-  description: Our engineering team is building the next generation of our digital health platform, and we are seeking a highly skilled Senior Software Engineer to take ownership of our mobile client-side development. This role is deeply embedded in a high-performi
+  id: jd_26 | title: Senior Platform Architect - E-commerce | level: senior | min_exp: 6 yrs | raw_text: 295 words
+  required_skills: Go, gRPC, Protocol Buffers, Kafka, Redis, Kubernetes, Istio, Envoy, Prometheus, Grafana, Jaeger, Linux, Docker
+  preferred_skills: CockroachDB, eBPF, AWS, GCP, OpenTelemetry
+  description: We are seeking an experienced Senior Platform Architect to lead the evolution of our e-commerce platform, which processes over 2 million transactions daily across multiple regions. You will join our 15-person infrastructure and platform engineering g
 
-  id: jd_17 | title: Senior Clinical Operations Manager | level: senior | min_exp: 6 yrs | raw_text: 328 words
-  required_skills: Clinical Operations Management, Epic EMR, Quality Improvement, Lean Six Sigma, SQL, PowerBI, Healthcare Compliance, HIPAA, Process Optimization, Team Leadership
-  preferred_skills: Healthcare Analytics, Project Management, Epic Clarity, Operational Auditing
-  description: We are seeking a highly experienced Senior Clinical Operations Manager to lead the optimization of our multi-specialty outpatient clinic network. This role is pivotal within our 50-person administrative and medical operations team, which supports ove
+  id: jd_27 | title: Junior Management Consultant | level: junior | min_exp: 1 yrs | raw_text: 250 words
+  required_skills: Excel, SQL, PowerPoint, Market Research, Data Analysis, Financial Modeling, Problem Solving
+  preferred_skills: Power BI, Tableau, Python, Miro, Frameworks
+  description: We are seeking an analytical and motivated Junior Management Consultant to join our consulting practice, which supports clients across the technology, financial services, and healthcare sectors. Our team is comprised of fifteen consultants and analys
 
-  id: jd_18 | title: Senior Medical Coordinator – Specialized Care | level: senior | min_exp: 6 yrs | raw_text: 350 words
-  required_skills: Medical Coordination, Cerner EMR, Prior Authorization, Patient Advocacy, Healthcare Compliance, Excel, Smartsheet, Patient Scheduling, Insurance Verification, Team Supervision
-  preferred_skills: Medical Billing, CPT Coding, Telehealth Integration, Project Management
-  description: We are looking for a seasoned Senior Medical Coordinator to take charge of care coordination and administrative oversight for our specialized oncology and infusion therapy department. This role sits within our 30-person clinical support and coordinat
+  id: jd_28 | title: Senior Strategy Consultant | level: senior | min_exp: 6 yrs | raw_text: 289 words
+  required_skills: Management Consulting, SQL, Python, R, Excel, Financial Modeling, Strategy Frameworks, Team Leadership, Stakeholder Management, Project Management, PowerPoint
+  preferred_skills: Tableau, Power BI, Celonis, Change Management, Digital Transformation
+  description: We are looking for an experienced Senior Strategy Consultant to lead high-impact engagements for our diverse roster of Fortune 500 and growth-stage clients. This role sits within our thirty-person strategy practice, where you will be responsible for 
 
-  id: jd_19 | title: Senior Full-Stack Engineer (Python + React) | level: senior | min_exp: 6 yrs | raw_text: 299 words
-  required_skills: Python, Django, React, TypeScript, PostgreSQL, REST API, GraphQL, AWS, Docker, Git, Jest, PyTest
-  preferred_skills: GraphQL, Redis, ECS, Selenium, OAuth2
-  description: We are seeking an experienced Senior Full-Stack Engineer to lead the development of our next-generation customer analytics platform. You will join a 10-person engineering team that builds data-intensive web applications serving thousands of enterpris
+  id: jd_29 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 264 words
+  required_skills: Figma, Wireframing, Prototyping, User Research, User-Centered Design, Miro, Visual Design, Collaboration
+  preferred_skills: UserTesting.com, Design Systems, Accessibility, Storybook
+  description: We are seeking a creative and detail-oriented Junior UI/UX Designer to join our product design team, which supports a growing portfolio of consumer-facing mobile and web applications. The team currently consists of six designers, three product manage
 
-  id: jd_20 | title: Junior Full-Stack Developer (Python/React) | level: junior | min_exp: 1 yrs | raw_text: 268 words
-  required_skills: Python, Flask, React, JavaScript, SQL, PostgreSQL, Git, HTML, CSS, REST API
-  preferred_skills: Redux, Docker, GitLab CI, PyTest, Jest
-  description: We are looking for a motivated Junior Full-Stack Developer to join our product engineering team, which builds a scalable e-learning platform for universities and corporate training. You will work within a squad of eight engineers, product designers, 
+  id: jd_30 | title: Senior Product Designer | level: senior | min_exp: 6 yrs | raw_text: 307 words
+  required_skills: Figma, Prototyping, User Research, Design Systems, Interaction Design, Information Architecture, Mentoring, Leadership, Collaboration, Communication
+  preferred_skills: Dovetail, Optimal Workshop, Storybook, Accessibility, WCAG
+  description: We are looking for a seasoned Senior Product Designer to lead the design vision for our core product suite, serving millions of users across web and mobile platforms. You will join our 25-person product design and research organization, working withi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -190,16 +190,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 20 pairs total.
+Overall dataset so far: 40 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:    0  →  expected this group: 20 pairs (from rounds below)
-  weak_match            existing:    5  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:    5  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:    5  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:    5  →  expected this group: 0 pairs (from rounds below)
+  poor_match            existing:   20  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:    5  →  expected this group: 5 pairs (from rounds below)
+  moderate_match        existing:    5  →  expected this group: 5 pairs (from rounds below)
+  strong_match          existing:    5  →  expected this group: 5 pairs (from rounds below)
+  excellent_match       existing:    5  →  expected this group: 5 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -210,35 +210,35 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (20 pairs across 5 rounds — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (CROSS-DOMAIN: Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas) × Retail Operations and Merchandising (planograms, category management) — expect poor_match throughout):
-  pair_21     resume_11 × jd_11   (expected: poor_match)
-  pair_22     resume_11 × jd_12   (expected: poor_match)
-  pair_23     resume_12 × jd_11   (expected: poor_match)
-  pair_24     resume_12 × jd_12   (expected: poor_match)
+Round 1 (domain: QA and Test Automation Engineering (Selenium, Playwright, CI test pipelines)):
+  pair_41     resume_21 × jd_21   (expected: strong_match)
+  pair_42     resume_21 × jd_22   (expected: weak_match)
+  pair_43     resume_22 × jd_21   (expected: moderate_match)
+  pair_44     resume_22 × jd_22   (expected: excellent_match)
 
-Round 2 (CROSS-DOMAIN: Backend Development for Healthtech (Python, Django, HL7/FHIR integrations) × Frontend Development (React, TypeScript, Next.js, Tailwind CSS) — expect poor_match throughout):
-  pair_25     resume_13 × jd_13   (expected: poor_match)
-  pair_26     resume_13 × jd_14   (expected: poor_match)
-  pair_27     resume_14 × jd_13   (expected: poor_match)
-  pair_28     resume_14 × jd_14   (expected: poor_match)
+Round 2 (domain: Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)):
+  pair_45     resume_23 × jd_23   (expected: strong_match)
+  pair_46     resume_23 × jd_24   (expected: weak_match)
+  pair_47     resume_24 × jd_23   (expected: moderate_match)
+  pair_48     resume_24 × jd_24   (expected: excellent_match)
 
-Round 3 (CROSS-DOMAIN: Product Management in Technology (roadmap, agile, stakeholders) × Mobile Development (React Native, Flutter, Swift, Kotlin) — expect poor_match throughout):
-  pair_29     resume_15 × jd_15   (expected: poor_match)
-  pair_30     resume_15 × jd_16   (expected: poor_match)
-  pair_31     resume_16 × jd_15   (expected: poor_match)
-  pair_32     resume_16 × jd_16   (expected: poor_match)
+Round 3 (domain: Platform Engineering for E-commerce (Go, gRPC, high-throughput services)):
+  pair_49     resume_25 × jd_25   (expected: strong_match)
+  pair_50     resume_25 × jd_26   (expected: weak_match)
+  pair_51     resume_26 × jd_25   (expected: moderate_match)
+  pair_52     resume_26 × jd_26   (expected: excellent_match)
 
-Round 4 (CROSS-DOMAIN: E-commerce and Retail Management (marketplace, operations, merchandising) × Healthcare Administration and Medical Coordination (clinical ops, EMR) — expect poor_match throughout):
-  pair_33     resume_17 × jd_17   (expected: poor_match)
-  pair_34     resume_17 × jd_18   (expected: poor_match)
-  pair_35     resume_18 × jd_17   (expected: poor_match)
-  pair_36     resume_18 × jd_18   (expected: poor_match)
+Round 4 (domain: Management Consulting (client delivery, frameworks, stakeholder workshops)):
+  pair_53     resume_27 × jd_27   (expected: strong_match)
+  pair_54     resume_27 × jd_28   (expected: weak_match)
+  pair_55     resume_28 × jd_27   (expected: moderate_match)
+  pair_56     resume_28 × jd_28   (expected: excellent_match)
 
-Round 5 (CROSS-DOMAIN: Technical Program Management (cross-team delivery, engineering roadmaps) × Full-Stack Web Development (Python backend + React frontend) — expect poor_match throughout):
-  pair_37     resume_19 × jd_19   (expected: poor_match)
-  pair_38     resume_19 × jd_20   (expected: poor_match)
-  pair_39     resume_20 × jd_19   (expected: poor_match)
-  pair_40     resume_20 × jd_20   (expected: poor_match)
+Round 5 (domain: UI/UX Design and Product Design (Figma, user research, prototyping)):
+  pair_57     resume_29 × jd_29   (expected: strong_match)
+  pair_58     resume_29 × jd_30   (expected: weak_match)
+  pair_59     resume_30 × jd_29   (expected: moderate_match)
+  pair_60     resume_30 × jd_30   (expected: excellent_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
