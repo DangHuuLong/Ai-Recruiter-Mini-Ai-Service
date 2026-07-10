@@ -18,5 +18,10 @@
   "Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)": 1,
   "Platform Engineering for E-commerce (Go, gRPC, high-throughput services)": 1,
   "Management Consulting (client delivery, frameworks, stakeholder workshops)": 1,
-  "UI/UX Design and Product Design (Figma, user research, prototyping)": 1
+  "UI/UX Design and Product Design (Figma, user research, prototyping)": 1,
+  "Supply Chain and Logistics Management (procurement, inventory, ERP)": 1,
+  "Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)": 1,
+  "DevOps and Cloud Infrastructure (AWS, Docker, Kubernetes, Terraform)": 1,
+  "Site Reliability Engineering (Prometheus, Grafana, on-call, incident response)": 1,
+  "Business Analysis and Project Management (requirements, BPMN, stakeholders)": 1
 }
