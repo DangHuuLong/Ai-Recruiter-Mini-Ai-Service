@@ -4,108 +4,108 @@ Score 20 CV-JD pairs (from 5 rounds of 4 pairs each) using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_31 | level: middle | exp: 3.5 yrs | raw_text: 287 words
-  skills: SAP MM, Procurement, Excel VBA, Power BI, Python, Vendor Management, Oracle NetSuite, Supply Chain Management
-  projects: Supply Chain Visualization Tool
-  background: Following the completion of my Bachelor of Science in Supply Chain Management in 2020, I embarked on a professional journey that has been defined by a commitment to operational excellence and procurement efficiency. My career began at a specialized logistics agency where I served as a Junior Buyer f
+  id: resume_41 | level: senior | exp: 8.0 yrs | raw_text: 275 words
+  skills: Oracle NetSuite, Adaptive Insights, SQL, SAP ERP, Bloomberg Terminal, Python, Pandas, NumPy, Financial Modeling, Basel III, Monte Carlo Simulation, Streamlit
+  projects: FinModel-Alpha
+  background: My professional journey in the fintech sector spans eight years of dedicated focus on financial planning and strategic analysis. I most recently served as the FP&A Manager at a mid-sized fintech startup for four years, where I led a high-performing team of four analysts. My primary responsibility in
 
-  id: resume_32 | level: middle | exp: 4.5 yrs | raw_text: 292 words
-  skills: Microsoft Dynamics 365, Inventory Management, SQL, R, Tableau, Logistics Coordination, Fleet Scheduling, Lean Logistics
-  projects: Predictive Stocking Model
-  background: Having dedicated the past four and a half years to mastering the complexities of inventory management and demand planning, I have developed a deep proficiency in optimizing warehouse operations and streamlining logistics workflows. I initiated my career at a major distribution enterprise where I wor
+  id: resume_42 | level: senior | exp: 7.5 yrs | raw_text: 261 words
+  skills: Xero, Stripe API, SQL, PostgreSQL, Alteryx, Excel VBA, IFRS 9, SOC2 Compliance, Vanta, Jira, GAAP, Financial Controls, Audit
+  projects: Project Shield
+  background: With seven and a half years of experience in technical accounting and financial operations, I have developed a robust expertise in managing complex compliance frameworks for rapidly scaling fintech platforms. I recently completed a three and a half year tenure as the Head of Accounting Operations at
 
-  id: resume_33 | level: middle | exp: 4.5 yrs | raw_text: 392 words
-  skills: Node.js, React, PostgreSQL, Stripe, Express, MongoDB
-  projects: QuickPay, EcommercePlatform
-  background: With over four years of experience in full-stack development for SaaS startups, I have established myself as a skilled individual contributor. My most recent role was at a startup, where I worked as a full-stack engineer for two years, leading a team of three to develop and deploy multiple features 
+  id: resume_43 | level: senior | exp: 7.0 yrs | raw_text: 277 words
+  skills: Splunk ES, Palo Alto Firewalls, Burp Suite Professional, Metasploit, Python 3.11, Kali Linux, Nessus 10.x, Wireshark, OWASP Top 10, Threat Modeling
+  projects: Sentinel-Link, Vuln-Scanner-Custom
+  background: Beginning my career as a Security Analyst at a mid-sized enterprise for four years, I managed a team of six focused on threat detection and incident response. During this tenure, I heavily utilized Splunk Enterprise Security and Palo Alto Firewalls to harden the network perimeter. I successfully red
 
-  id: resume_34 | level: middle | exp: 3.5 yrs | raw_text: 373 words
-  skills: Node.js, React, MySQL, Stripe, Firebase
-  projects: PersonalFinance
-  background: As a full-stack developer with over three years of experience, I have developed a strong foundation in Node.js, React, and Stripe. My most recent role was at an enterprise company, where I worked as a software engineer for two years, collaborating with a team of five to develop and deploy multiple f
+  id: resume_44 | level: senior | exp: 8.5 yrs | raw_text: 271 words
+  skills: Cobalt Strike, Metasploit, Terraform 1.5, AWS CloudFormation, HashiCorp Vault, CrowdStrike Falcon, Zero Trust, DDoS Mitigation, Python, Kubernetes Security
+  projects: Cloud-Guard-Automate, Red-Team-Playbook
+  background: Over the past eight and a half years, I have cultivated extensive expertise in red teaming and cloud infrastructure protection. I spent five years at a specialized security agency as a Principal Consultant, where I led a cross-functional team of eight on high-stakes penetration testing engagements f
 
-  id: resume_35 | level: middle | exp: 4.0 yrs | raw_text: 293 words
-  skills: AWS, Terraform, Docker, ECS, Python, Shell Scripting, GitLab CI, RDS, CloudWatch, S3, Linux
-  projects: S3-Processor
-  background: I started my professional journey as a Junior DevOps Engineer at a regional IT agency where I spent one year working in a small team of four specialists. During this period, I focused on containerizing legacy PHP applications using Docker and setting up basic GitLab CI pipelines for automated testin
+  id: resume_45 | level: senior | exp: 8.5 yrs | raw_text: 300 words
+  skills: Java 17, Spring Boot 3.1, Kafka, PostgreSQL 12, Redis, Kubernetes, AWS EKS, Terraform, Microservices, Event Sourcing, Spring Security, Project Reactor
+  projects: OpenLedger
+  background: Starting with a career focused on high-concurrency financial systems, I have spent the last eight and a half years mastering the intricacies of backend architecture within the fintech sector. At a major financial enterprise where I served as a Senior Specialist and eventually a Team Lead for four ye
 
-  id: resume_36 | level: middle | exp: 5.0 yrs | raw_text: 296 words
-  skills: Kubernetes, AWS, EKS, Helm, Jenkins, Prometheus, Grafana, Ansible, Bash, Python, Linux, IAM
-  projects: K8s-Healer
-  background: My career began as a Junior Systems Administrator at a national hosting provider where I spent eighteen months maintaining a fleet of Linux servers and writing complex Bash scripts for automated backups and user provisioning. This role provided me with a deep understanding of networking and OS inter
+  id: resume_46 | level: senior | exp: 7.0 yrs | raw_text: 281 words
+  skills: Java 21, Spring Boot, Kafka 3.0, Spring Cloud Stream, Redis, PostgreSQL 13, Docker, AWS Lambda, Prometheus, Spring Vault, REST APIs, Distributed Locking
+  projects: SecureVault
+  background: My professional journey over the last seven years has been defined by a commitment to engineering excellence and the delivery of secure, scalable financial software. Most recently, I spent three years as a Senior Software Engineer within the Core Banking unit of a global banking group. In this role,
 
-  id: resume_37 | level: middle | exp: 3.5 yrs | raw_text: 310 words
-  skills: Prometheus, Grafana, Kubernetes, AWS EKS, Terraform, Python, Jenkins, PagerDuty, Docker, Linux, Shell Scripting
-  projects: Prom-Exporter-Custom, Auto-Scaler-Bot
-  background: My professional journey in site reliability engineering began shortly after my graduation in 2020 and has since evolved into a specialized focus on cloud-native observability and infrastructure automation. At my most recent role within a high-growth fintech startup, I served as a Site Reliability En
+  id: resume_47 | level: senior | exp: 8.5 yrs | raw_text: 300 words
+  skills: React 18, TypeScript, Storybook 7, Tailwind CSS, Headless UI, Chromatic, Figma API, Node.js, Radix UI, Redux, Jest, Testing Library
+  projects: System-Sync, Component-Lab
+  background: With over eight years of experience in the frontend ecosystem, I have spent the last four years specializing in design systems for large-scale enterprise environments. My previous tenure at a major fintech enterprise involved leading a team of six developers to architect a multi-brand component libr
 
-  id: resume_38 | level: middle | exp: 4.5 yrs | raw_text: 279 words
-  skills: GCP, GKE, Prometheus, Thanos, Go, Ansible, Terraform, ELK Stack, HashiCorp Vault, Incident Response, SLOs
-  projects: Incident-Tracker-API, Terraform-Module-Library
-  background: Leveraging four and a half years of professional experience in high-availability environments, I have developed a robust expertise in maintaining system reliability and optimizing distributed systems. My previous role was at a large HealthTech enterprise where I functioned as a Site Reliability Engi
+  id: resume_48 | level: senior | exp: 9.0 yrs | raw_text: 313 words
+  skills: React, TypeScript, Turborepo, pnpm, Storybook, Docusaurus, Styled Components, Framer Motion, CSS Grid, Vanilla Extract, GitHub Actions, SVG Animation
+  projects: Motion-Kit, Token-Manager
+  background: As a seasoned Tech Lead with nine years in frontend engineering, my core expertise lies in building and scaling robust design systems that bridge the gap between design and development. At my current role within a global e-commerce enterprise, I lead a cross-functional team of eight engineers respon
 
-  id: resume_39 | level: middle | exp: 4.5 yrs | raw_text: 286 words
-  skills: BPMN 2.0, Signavio, Jira, Confluence, PostgreSQL 15, Power BI, Microsoft Project, Python, Tableau, Requirements Elicitation, Stakeholder Management
-  projects: ReportFlow
-  background: In my professional journey over the past four and a half years, I have cultivated a deep expertise in business analysis and process optimization within both startup and enterprise environments. My career began at a logistics-focused startup where I served as a Junior Project Coordinator for two year
+  id: resume_49 | level: senior | exp: 8.0 yrs | raw_text: 292 words
+  skills: OpenCV, PyTorch, C++, TensorRT, NVIDIA Jetson, ONNX, Python, Docker, FastAPI, PostgreSQL, AWS ECS, ROS
+  projects: VisionGuard, DeepSynth
+  background: Beginning my professional journey eight years ago at a mid-sized industrial enterprise, I served as a Computer Vision Developer within a team of six. During this three-year tenure, I was primarily responsible for developing automated visual inspection systems using OpenCV 3.4 and Python 3.6 to ident
 
-  id: resume_40 | level: middle | exp: 4.0 yrs | raw_text: 273 words
-  skills: UML, Lucidchart, Enterprise Architect, Swagger, OpenAPI 3.0, SQL Server 2019, Jira, Agile, Scrum, BPMN, API Documentation
-  projects: HealthSync
-  background: I am a dedicated Systems and Business Analyst with four years of hands-on experience bridging the gap between technical teams and business stakeholders. My career started at a fast-growing retail startup where I functioned as a Business Analyst for two years in an agile team of eight. My primary foc
+  id: resume_50 | level: senior | exp: 7.5 yrs | raw_text: 285 words
+  skills: PyTorch, TensorFlow, OpenCV, CUDA, Triton Inference Server, Kubernetes, AWS SageMaker, YOLOv8, C++, Python, Flask
+  projects: OpenCV-Stream, NeuroLabel
+  background: With a career spanning over seven years in the deep learning space, I currently serve as a Principal Machine Learning Engineer at a prominent robotics firm. My journey started seven and a half years ago at a large-scale software enterprise where I spent four years as a Research Engineer. In a team o
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_31 | title: Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 246 words
-  required_skills: Excel, SQL, ERP, Inventory Tracking, Data Analysis
-  preferred_skills: SAP, Oracle, Tableau, Problem Solving
-  description: We are currently seeking a dedicated Operations Associate to join our growing logistics department and support the daily execution of our supply chain activities. As part of a collaborative team of five, you will play a vital role in ensuring that ou
+  id: jd_41 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 254 words
+  required_skills: QuickBooks Online, Microsoft Excel, SQL, Financial Reporting, Accounting Principles
+  preferred_skills: Tableau, Data Visualization, PowerBI
+  description: Our finance team is looking for a motivated and detail-oriented Junior Financial Analyst to support our growing fintech platform, which focuses on providing innovative consumer micro-lending solutions. The team currently consists of six members who a
 
-  id: jd_32 | title: Senior Supply Chain Manager | level: senior | min_exp: 6 yrs | raw_text: 248 words
-  required_skills: SAP S/4HANA, Strategic Sourcing, Global Logistics, Supply Chain Management, Six Sigma
-  preferred_skills: Leadership, Risk Management, Negotiation, Predictive Modeling
-  description: Our organization is looking for a Senior Supply Chain Manager to take a leadership role in defining and executing our global procurement and logistics strategy. This is a high-impact position within our senior leadership tier, overseeing a multi-mill
+  id: jd_42 | title: Senior Finance Manager (Reporting & Compliance) | level: senior | min_exp: 6 yrs | raw_text: 243 words
+  required_skills: NetSuite ERP, BlackLine, IFRS, GAAP, Python, SQL, Financial Modeling, SOX Compliance
+  preferred_skills: R, CPA, Tax Compliance, Strategic Planning
+  description: We are seeking a highly experienced and strategic Senior Finance Manager to lead our reporting and compliance functions within our international fintech organization. Our finance team of ten is currently scaling our B2B payment solutions across Europ
 
-  id: jd_33 | title: Junior Full-Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 263 words
-  required_skills: Node.js, React, PostgreSQL
-  preferred_skills: Stripe, Agile, Scrum
-  description: We are seeking a junior full-stack engineer to join our team of three engineers. As a junior engineer, you will be responsible for developing and deploying new features using Node.js 16, React 18, and PostgreSQL 14. You will work closely with our pro
+  id: jd_43 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 232 words
+  required_skills: Splunk, Wireshark, Nmap, Jira, Linux, Windows
+  preferred_skills: Python, Bash, Nessus, Snort
+  description: The security operations team is seeking a dedicated Junior Security Analyst to join our growing group of five specialists tasked with protecting our core financial services infrastructure. In this role, you will be at the front lines of our defense, 
 
-  id: jd_34 | title: Senior Full-Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 384 words
-  required_skills: Node.js, React, PostgreSQL, Stripe
-  preferred_skills: Agile, Scrum, Cloud Computing
-  description: We are seeking a senior full-stack engineer to lead our team of five engineers. As a senior engineer, you will be responsible for designing and implementing new features using Node.js 16, React 18, and PostgreSQL 14, and leading the development of ou
+  id: jd_44 | title: Senior Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 233 words
+  required_skills: Pentesting, Burp Suite, Metasploit, Python, AWS Security, Kubernetes
+  preferred_skills: Terraform, Red Teaming, Threat Modeling, CI/CD Security
+  description: We are looking for a Senior Security Engineer to take a leadership role within our twelve-person application security and red teaming department. This position is central to our mission of maintaining the highest security standards for our high-risk 
 
-  id: jd_35 | title: Associate DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 265 words
-  required_skills: Docker, Terraform, AWS, Linux, Bash, Python
-  preferred_skills: Kubernetes, GitHub Actions, S3, EC2
-  description: We are looking for an Associate DevOps Engineer to join our growing platform team of four dedicated specialists who support our core e-commerce product. In this role, you will be mentored by senior engineers while taking on the responsibility of cont
+  id: jd_45 | title: Junior Java Developer | level: junior | min_exp: 1 yrs | raw_text: 226 words
+  required_skills: Java 17, Spring Boot, SQL, Git, REST APIs
+  preferred_skills: Maven, JUnit 5, Fintech
+  description: We are seeking an enthusiastic Junior Java Developer to join our growing Digital Wallet team, which currently consists of six engineers focused on enhancing the user experience of our mobile payment application. In this role, you will be responsible 
 
-  id: jd_36 | title: Senior Site Reliability Engineer | level: senior | min_exp: 6 yrs | raw_text: 255 words
-  required_skills: AWS, Kubernetes, Terraform, Python, Go, Istio, SRE
-  preferred_skills: ArgoCD, GitOps, Distributed Systems, Linkerd
-  description: Our engineering department is seeking a Senior Site Reliability Engineer to lead the strategic direction of our cloud infrastructure and mentor a team of ten talented engineers. The product context involves a high-traffic data processing platform tha
+  id: jd_46 | title: Senior Payments Engineer | level: senior | min_exp: 6 yrs | raw_text: 207 words
+  required_skills: Java 21, Spring Boot, Kafka, Kubernetes, PostgreSQL, Distributed Systems, Microservices
+  preferred_skills: gRPC, Financial Regulation, Performance Tuning
+  description: Our organization is looking for a Senior Payments Engineer to lead the technical development of our new cross-border payment rails system. The team is currently comprised of five senior developers and two product designers working in a high-stakes, f
 
-  id: jd_37 | title: Junior Site Reliability Engineer | level: junior | min_exp: 1 yrs | raw_text: 238 words
-  required_skills: Linux, Docker, Prometheus, Grafana, Python, Bash
-  preferred_skills: AWS, PromQL, PagerDuty
-  description: Our observability engineering team is currently looking for a motivated Junior Site Reliability Engineer to help us maintain and improve our core infrastructure monitoring systems. The team consists of five engineers dedicated to ensuring that our in
+  id: jd_47 | title: Junior Frontend Engineer (Design Systems) | level: junior | min_exp: 1 yrs | raw_text: 221 words
+  required_skills: React, TypeScript, CSS, HTML5, JavaScript, Git, Storybook
+  preferred_skills: Tailwind CSS, Figma, Jest, Vite
+  description: Our UI Foundations team is looking for a Junior Frontend Engineer to help us maintain and expand our internal component library. This team of four works closely with the design department to ensure that every button, input, and modal across our platf
 
-  id: jd_38 | title: Senior Site Reliability Engineer | level: senior | min_exp: 6 yrs | raw_text: 239 words
-  required_skills: Prometheus, Thanos, Kubernetes, Go, Terraform, AWS, GCP
-  preferred_skills: Istio, Chaos Engineering, Kubernetes Operators
-  description: We are seeking a Senior Site Reliability Engineer to drive the architectural evolution of our global infrastructure and lead our reliability initiatives. The successful candidate will join a high-impact team of eight SREs responsible for a platform t
+  id: jd_48 | title: Lead Frontend Architect (Design Systems) | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: React, TypeScript, Design Systems, Monorepo, Turborepo, Storybook, Accessibility, CI/CD
+  preferred_skills: Radix UI, Chromatic, Playwright, Figma API, pnpm
+  description: We are seeking a Lead Frontend Architect to spearhead the evolution of our global design system. Our Design Systems Guild is a centralized team of six engineers and four designers responsible for the visual language and component architecture used by
 
-  id: jd_39 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 242 words
-  required_skills: Jira, Confluence, Microsoft Excel, SQL, Business Documentation
-  preferred_skills: Visio, Agile, Scrum
-  description: Our dynamic product team is looking for a motivated Junior Business Analyst to help support our growing portfolio of digital transformation projects. In this role, you will work within a collaborative team of five people, including senior analysts an
+  id: jd_49 | title: Junior Computer Vision Engineer | level: junior | min_exp: 1 yrs | raw_text: 216 words
+  required_skills: Python, OpenCV, PyTorch, Git, Docker
+  preferred_skills: Linux, FastAPI, Unit Testing
+  description: We are seeking an enthusiastic Junior Computer Vision Engineer to join our growing retail analytics team consisting of four dedicated developers. In this role, you will help us build the next generation of shelf-monitoring technology that tracks prod
 
-  id: jd_40 | title: Senior Project Manager / Lead Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 244 words
-  required_skills: Project Management, BPMN 2.0, Microsoft Project, Jira, Risk Management, Stakeholder Management
-  preferred_skills: PMP, ERP, PRINCE2, Strategic Planning
-  description: We are seeking a highly experienced Senior Project Manager who can also serve as a Lead Business Analyst to oversee our most complex enterprise-scale initiatives. The successful candidate will join a high-impact team of over twenty professionals, inc
+  id: jd_50 | title: Senior Computer Vision Engineer | level: senior | min_exp: 6 yrs | raw_text: 212 words
+  required_skills: C++, Python, PyTorch, OpenCV, TensorRT, CUDA, NVIDIA Jetson
+  preferred_skills: ROS2, Benchmarking, System Architecture
+  description: Our engineering organization is looking for a Senior Computer Vision Engineer to take high-level ownership of our edge deployment strategy for industrial automation. As a key member of a twelve-person AI department, you will be responsible for design
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -190,16 +190,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 60 pairs total.
+Overall dataset so far: 80 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   20  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:    7  →  expected this group: 10 pairs (from rounds below)
-  moderate_match        existing:   13  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:    7  →  expected this group: 10 pairs (from rounds below)
-  excellent_match       existing:   13  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:   17  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:   13  →  expected this group: 10 pairs (from rounds below)
+  strong_match          existing:   17  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   13  →  expected this group: 10 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -210,35 +210,35 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (20 pairs across 5 rounds — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Supply Chain and Logistics Management (procurement, inventory, ERP)):
-  pair_61     resume_31 × jd_31   (expected: strong_match)
-  pair_62     resume_31 × jd_32   (expected: weak_match)
-  pair_63     resume_32 × jd_31   (expected: strong_match)
-  pair_64     resume_32 × jd_32   (expected: weak_match)
+Round 1 (domain: Finance and Accounting in Fintech (financial modeling, reporting, compliance)):
+  pair_81     resume_41 × jd_41   (expected: moderate_match)
+  pair_82     resume_41 × jd_42   (expected: excellent_match)
+  pair_83     resume_42 × jd_41   (expected: moderate_match)
+  pair_84     resume_42 × jd_42   (expected: excellent_match)
 
-Round 2 (domain: Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)):
-  pair_65     resume_33 × jd_33   (expected: strong_match)
-  pair_66     resume_33 × jd_34   (expected: weak_match)
-  pair_67     resume_34 × jd_33   (expected: strong_match)
-  pair_68     resume_34 × jd_34   (expected: weak_match)
+Round 2 (domain: Cybersecurity and Information Security (pentesting, SIEM, network)):
+  pair_85     resume_43 × jd_43   (expected: moderate_match)
+  pair_86     resume_43 × jd_44   (expected: excellent_match)
+  pair_87     resume_44 × jd_43   (expected: moderate_match)
+  pair_88     resume_44 × jd_44   (expected: excellent_match)
 
-Round 3 (domain: DevOps and Cloud Infrastructure (AWS, Docker, Kubernetes, Terraform)):
-  pair_69     resume_35 × jd_35   (expected: strong_match)
-  pair_70     resume_35 × jd_36   (expected: weak_match)
-  pair_71     resume_36 × jd_35   (expected: strong_match)
-  pair_72     resume_36 × jd_36   (expected: weak_match)
+Round 3 (domain: Backend Development for Fintech Payments (Java, Spring Boot, Kafka)):
+  pair_89     resume_45 × jd_45   (expected: moderate_match)
+  pair_90     resume_45 × jd_46   (expected: excellent_match)
+  pair_91     resume_46 × jd_45   (expected: moderate_match)
+  pair_92     resume_46 × jd_46   (expected: excellent_match)
 
-Round 4 (domain: Site Reliability Engineering (Prometheus, Grafana, on-call, incident response)):
-  pair_73     resume_37 × jd_37   (expected: strong_match)
-  pair_74     resume_37 × jd_38   (expected: weak_match)
-  pair_75     resume_38 × jd_37   (expected: strong_match)
-  pair_76     resume_38 × jd_38   (expected: weak_match)
+Round 4 (domain: Frontend Development for Design Systems (React, Storybook, component libraries)):
+  pair_93     resume_47 × jd_47   (expected: moderate_match)
+  pair_94     resume_47 × jd_48   (expected: excellent_match)
+  pair_95     resume_48 × jd_47   (expected: moderate_match)
+  pair_96     resume_48 × jd_48   (expected: excellent_match)
 
-Round 5 (domain: Business Analysis and Project Management (requirements, BPMN, stakeholders)):
-  pair_77     resume_39 × jd_39   (expected: strong_match)
-  pair_78     resume_39 × jd_40   (expected: weak_match)
-  pair_79     resume_40 × jd_39   (expected: strong_match)
-  pair_80     resume_40 × jd_40   (expected: weak_match)
+Round 5 (domain: Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)):
+  pair_97     resume_49 × jd_49   (expected: moderate_match)
+  pair_98     resume_49 × jd_50   (expected: excellent_match)
+  pair_99     resume_50 × jd_49   (expected: moderate_match)
+  pair_100    resume_50 × jd_50   (expected: excellent_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT

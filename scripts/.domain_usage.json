@@ -23,5 +23,10 @@
   "Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)": 1,
   "DevOps and Cloud Infrastructure (AWS, Docker, Kubernetes, Terraform)": 1,
   "Site Reliability Engineering (Prometheus, Grafana, on-call, incident response)": 1,
-  "Business Analysis and Project Management (requirements, BPMN, stakeholders)": 1
+  "Business Analysis and Project Management (requirements, BPMN, stakeholders)": 1,
+  "Finance and Accounting in Fintech (financial modeling, reporting, compliance)": 1,
+  "Cybersecurity and Information Security (pentesting, SIEM, network)": 1,
+  "Backend Development for Fintech Payments (Java, Spring Boot, Kafka)": 1,
+  "Frontend Development for Design Systems (React, Storybook, component libraries)": 1,
+  "Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)": 1
 }
