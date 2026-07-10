@@ -4,108 +4,108 @@ Score 20 CV-JD pairs (from 5 rounds of 4 pairs each) using rubric v0.2.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_41 | level: senior | exp: 8.0 yrs | raw_text: 275 words
-  skills: Oracle NetSuite, Adaptive Insights, SQL, SAP ERP, Bloomberg Terminal, Python, Pandas, NumPy, Financial Modeling, Basel III, Monte Carlo Simulation, Streamlit
-  projects: FinModel-Alpha
-  background: My professional journey in the fintech sector spans eight years of dedicated focus on financial planning and strategic analysis. I most recently served as the FP&A Manager at a mid-sized fintech startup for four years, where I led a high-performing team of four analysts. My primary responsibility in
+  id: resume_51 | level: middle | exp: 4.5 yrs | raw_text: 324 words
+  skills: SEO, Ahrefs, Screaming Frog, Google Analytics 4, Google Search Console, Content Strategy, SEMrush, Clearscope, WordPress, Python, Technical Auditing
+  projects: Automated Keyword Tracker
+  background: Since entering the digital marketing field four and a half years ago, my professional path has been defined by a deep commitment to mastering search engine optimization and technical content strategy. I began my journey at a boutique marketing agency where I spent two years as a Junior SEO Specialis
 
-  id: resume_42 | level: senior | exp: 7.5 yrs | raw_text: 261 words
-  skills: Xero, Stripe API, SQL, PostgreSQL, Alteryx, Excel VBA, IFRS 9, SOC2 Compliance, Vanta, Jira, GAAP, Financial Controls, Audit
-  projects: Project Shield
-  background: With seven and a half years of experience in technical accounting and financial operations, I have developed a robust expertise in managing complex compliance frameworks for rapidly scaling fintech platforms. I recently completed a three and a half year tenure as the Head of Accounting Operations at
+  id: resume_52 | level: middle | exp: 3.5 yrs | raw_text: 307 words
+  skills: Paid Social, Meta Ads Manager, TikTok Ads, Looker Studio, HubSpot, SQL, Google Tag Manager, Sprout Social, Data Visualization, BigQuery, A/B Testing
+  projects: Attribution Architect
+  background: I am a dedicated Digital Marketing Professional with three and a half years of experience specifically focused on paid social media and performance analytics. My career started at a fast-growing e-commerce startup where I served as a Social Media Coordinator for two years. Working in a small team of
 
-  id: resume_43 | level: senior | exp: 7.0 yrs | raw_text: 277 words
-  skills: Splunk ES, Palo Alto Firewalls, Burp Suite Professional, Metasploit, Python 3.11, Kali Linux, Nessus 10.x, Wireshark, OWASP Top 10, Threat Modeling
-  projects: Sentinel-Link, Vuln-Scanner-Custom
-  background: Beginning my career as a Security Analyst at a mid-sized enterprise for four years, I managed a team of six focused on threat detection and incident response. During this tenure, I heavily utilized Splunk Enterprise Security and Palo Alto Firewalls to harden the network perimeter. I successfully red
+  id: resume_53 | level: middle | exp: 4.5 yrs | raw_text: 314 words
+  skills: PostgreSQL, MongoDB, Redis, AWS RDS, Terraform, Python, Kafka, PostGIS, Datadog, SQL
+  projects: DataStreamer, GeoCache
+  background: I am a dedicated Database Engineer with over four years of professional experience specializing in high-availability environments and cloud-native data solutions. I earned my Bachelor of Science in Computer Science in 2019 and have since transitioned from a generalist developer into a focused databa
 
-  id: resume_44 | level: senior | exp: 8.5 yrs | raw_text: 271 words
-  skills: Cobalt Strike, Metasploit, Terraform 1.5, AWS CloudFormation, HashiCorp Vault, CrowdStrike Falcon, Zero Trust, DDoS Mitigation, Python, Kubernetes Security
-  projects: Cloud-Guard-Automate, Red-Team-Playbook
-  background: Over the past eight and a half years, I have cultivated extensive expertise in red teaming and cloud infrastructure protection. I spent five years at a specialized security agency as a Principal Consultant, where I led a cross-functional team of eight on high-stakes penetration testing engagements f
+  id: resume_54 | level: middle | exp: 3.5 yrs | raw_text: 304 words
+  skills: PostgreSQL, Redis, MongoDB, Docker, Python, GitLab CI/CD, Data Modeling, SQL, Cassandra, NoSQL
+  projects: QuerySense
+  background: I am an established Database Specialist with three and a half years of experience as an individual contributor in data-heavy e-commerce environments. I graduated with a Bachelor of Science in Software Engineering in 2020 and immediately entered the workforce focusing on backend scalability and data 
 
-  id: resume_45 | level: senior | exp: 8.5 yrs | raw_text: 300 words
-  skills: Java 17, Spring Boot 3.1, Kafka, PostgreSQL 12, Redis, Kubernetes, AWS EKS, Terraform, Microservices, Event Sourcing, Spring Security, Project Reactor
-  projects: OpenLedger
-  background: Starting with a career focused on high-concurrency financial systems, I have spent the last eight and a half years mastering the intricacies of backend architecture within the fintech sector. At a major financial enterprise where I served as a Senior Specialist and eventually a Team Lead for four ye
+  id: resume_55 | level: middle | exp: 4.5 yrs | raw_text: 333 words
+  skills: Airflow, Spark, BigQuery, Dbt, Python, SQL, Terraform, PostgreSQL, Docker, Google Cloud Platform, Kubernetes, FastAPI
+  projects: StreamSync
+  background: Commencing my professional career in data infrastructure approximately four and a half years ago, I have cultivated a robust skill set focused primarily on the Google Cloud Platform ecosystem and modern analytics engineering. My primary professional tenure involved working at a series B fintech star
 
-  id: resume_46 | level: senior | exp: 7.0 yrs | raw_text: 281 words
-  skills: Java 21, Spring Boot, Kafka 3.0, Spring Cloud Stream, Redis, PostgreSQL 13, Docker, AWS Lambda, Prometheus, Spring Vault, REST APIs, Distributed Locking
-  projects: SecureVault
-  background: My professional journey over the last seven years has been defined by a commitment to engineering excellence and the delivery of secure, scalable financial software. Most recently, I spent three years as a Senior Software Engineer within the Core Banking unit of a global banking group. In this role,
+  id: resume_56 | level: middle | exp: 5.0 yrs | raw_text: 311 words
+  skills: Spark, Airflow, AWS, Dbt, Python, Databricks, Snowflake, BigQuery, S3, Glue, Athena, GitHub Actions
+  projects: DataOps-Auto
+  background: Over the past five years, I have established myself as a dedicated Data Engineer with a deep specialization in distributed computing and large-scale analytics pipelines. My most recent experience includes a three-year stint at a major SaaS enterprise, where I was a key member of an eight-person data
 
-  id: resume_47 | level: senior | exp: 8.5 yrs | raw_text: 300 words
-  skills: React 18, TypeScript, Storybook 7, Tailwind CSS, Headless UI, Chromatic, Figma API, Node.js, Radix UI, Redux, Jest, Testing Library
-  projects: System-Sync, Component-Lab
-  background: With over eight years of experience in the frontend ecosystem, I have spent the last four years specializing in design systems for large-scale enterprise environments. My previous tenure at a major fintech enterprise involved leading a team of six developers to architect a multi-brand component libr
+  id: resume_57 | level: middle | exp: 4.5 yrs | raw_text: 336 words
+  skills: Articulate Storyline 360, Docebo, Camtasia, Snagit, WCAG 2.1, H5P, HTML, CSS, Instructional Design, Learning Experience Design
+  projects: Digital Literacy Initiative
+  background: Driven by a passion for adult learning principles, I have spent the last five years crafting engaging educational experiences within diverse environments. My most recent tenure was at a high-growth fintech startup where I served as a Learning Experience Designer for two and a half years. Working wit
 
-  id: resume_48 | level: senior | exp: 9.0 yrs | raw_text: 313 words
-  skills: React, TypeScript, Turborepo, pnpm, Storybook, Docusaurus, Styled Components, Framer Motion, CSS Grid, Vanilla Extract, GitHub Actions, SVG Animation
-  projects: Motion-Kit, Token-Manager
-  background: As a seasoned Tech Lead with nine years in frontend engineering, my core expertise lies in building and scaling robust design systems that bridge the gap between design and development. At my current role within a global e-commerce enterprise, I lead a cross-functional team of eight engineers respon
+  id: resume_58 | level: middle | exp: 4.0 yrs | raw_text: 292 words
+  skills: Adobe Captivate, Cornerstone OnDemand, Vyond, SCORM, Javascript, Canva, Zoom, Microsoft Teams, Instructional Technology, Learning Management Systems
+  projects: Sales Quest
+  background: As an established instructional technologist with four years of professional experience, I specialize in the intersection of educational technology and human performance improvement. My career began at a boutique digital marketing agency where I spent eighteen months as a Junior Instructional Design
 
-  id: resume_49 | level: senior | exp: 8.0 yrs | raw_text: 292 words
-  skills: OpenCV, PyTorch, C++, TensorRT, NVIDIA Jetson, ONNX, Python, Docker, FastAPI, PostgreSQL, AWS ECS, ROS
-  projects: VisionGuard, DeepSynth
-  background: Beginning my professional journey eight years ago at a mid-sized industrial enterprise, I served as a Computer Vision Developer within a team of six. During this three-year tenure, I was primarily responsible for developing automated visual inspection systems using OpenCV 3.4 and Python 3.6 to ident
+  id: resume_59 | level: middle | exp: 4.5 yrs | raw_text: 377 words
+  skills: Customer Success Management, SaaS Onboarding, Enterprise Account Retention, Renewal Negotiation, Customer Analytics, Stakeholder Alignment, GoToWebinar, HubSpot CRM, Gainsight, Zuora Billing, SQL, Python for Data Analysis, Data-Driven Decision Making, Quarterly Business Reviews, Pandas, Clari Platform, Customer Journey Mapping, SaaS Metrics, CRM Administration, Active Listening, Conflict Resolution
+  projects: SaaS Onboarding Playbook Automation, ARR Expansion Predictive Model
+  background: Over the past five years, I have focused my career on customer success in the SaaS space, where I’ve specialized in onboarding high-touch enterprise clients and minimizing churn through proactive account management. Initially, I joined a fast-growing HR SaaS startup as a Customer Success Associate, 
 
-  id: resume_50 | level: senior | exp: 7.5 yrs | raw_text: 285 words
-  skills: PyTorch, TensorFlow, OpenCV, CUDA, Triton Inference Server, Kubernetes, AWS SageMaker, YOLOv8, C++, Python, Flask
-  projects: OpenCV-Stream, NeuroLabel
-  background: With a career spanning over seven years in the deep learning space, I currently serve as a Principal Machine Learning Engineer at a prominent robotics firm. My journey started seven and a half years ago at a large-scale software enterprise where I spent four years as a Research Engineer. In a team o
+  id: resume_60 | level: middle | exp: 4.0 yrs | raw_text: 390 words
+  skills: Account Management, SaaS Onboarding, Customer Renewals, Churn Risk Modeling, Data Analytics, Stakeholder Management, Agile Collaboration, Salesforce CRM, Power BI, Tableau, Catalyst platform, PostgreSQL, Python for Analytics, TensorFlow, Gainsight, PowerShell Scripting, API Integration, Slack Workflows, Jira, SaaS Metrics, QBR Preparation, Digital Marketing Analytics
+  projects: Churn Risk Scoring Engine, Client ROI Dashboard Suite
+  background: Early in my career I cut my teeth in account management at a boutique agency specializing in fintech integrations, where I served clients ranging from early-stage startups to publicly traded companies. In my first role as an Account Coordinator, I supported a team of seven in managing 20 client acco
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_41 | title: Junior Financial Analyst | level: junior | min_exp: 1 yrs | raw_text: 254 words
-  required_skills: QuickBooks Online, Microsoft Excel, SQL, Financial Reporting, Accounting Principles
-  preferred_skills: Tableau, Data Visualization, PowerBI
-  description: Our finance team is looking for a motivated and detail-oriented Junior Financial Analyst to support our growing fintech platform, which focuses on providing innovative consumer micro-lending solutions. The team currently consists of six members who a
+  id: jd_51 | title: Junior Content Marketing Coordinator | level: junior | min_exp: 1 yrs | raw_text: 245 words
+  required_skills: SEO, Social Media Management, Content Creation, Keyword Research, Buffer
+  preferred_skills: WordPress, Google Analytics, Ubersuggest, Moz
+  description: We are looking for a motivated Junior Content Marketing Coordinator to join our expanding growth team. This role is designed for someone with at least one year of professional experience who is eager to dive deep into the world of SEO and social medi
 
-  id: jd_42 | title: Senior Finance Manager (Reporting & Compliance) | level: senior | min_exp: 6 yrs | raw_text: 243 words
-  required_skills: NetSuite ERP, BlackLine, IFRS, GAAP, Python, SQL, Financial Modeling, SOX Compliance
-  preferred_skills: R, CPA, Tax Compliance, Strategic Planning
-  description: We are seeking a highly experienced and strategic Senior Finance Manager to lead our reporting and compliance functions within our international fintech organization. Our finance team of ten is currently scaling our B2B payment solutions across Europ
+  id: jd_52 | title: Senior Digital Marketing Strategist | level: senior | min_exp: 6 yrs | raw_text: 256 words
+  required_skills: SEO Strategy, Performance Marketing, Data Analytics, Google Analytics 4, SEMrush, Budget Management, Attribution Modeling
+  preferred_skills: SQL, Python, Technical SEO, Team Leadership
+  description: We are seeking an experienced Senior Digital Marketing Strategist to lead our high-level performance and content initiatives. The ideal candidate will have at least six years of professional experience with a proven track record of managing complex, 
 
-  id: jd_43 | title: Junior Security Analyst | level: junior | min_exp: 1 yrs | raw_text: 232 words
-  required_skills: Splunk, Wireshark, Nmap, Jira, Linux, Windows
-  preferred_skills: Python, Bash, Nessus, Snort
-  description: The security operations team is seeking a dedicated Junior Security Analyst to join our growing group of five specialists tasked with protecting our core financial services infrastructure. In this role, you will be at the front lines of our defense, 
+  id: jd_53 | title: Junior Database Associate | level: junior | min_exp: 1 yrs | raw_text: 251 words
+  required_skills: PostgreSQL, SQL, Python, Prometheus, Grafana
+  preferred_skills: Redis, MongoDB, Docker, AWS
+  description: We are looking for a Junior Database Associate to join our growing data operations team. In this role, you will support our core engineering group in maintaining and monitoring our production database fleet which powers our real-time messaging platfo
 
-  id: jd_44 | title: Senior Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 233 words
-  required_skills: Pentesting, Burp Suite, Metasploit, Python, AWS Security, Kubernetes
-  preferred_skills: Terraform, Red Teaming, Threat Modeling, CI/CD Security
-  description: We are looking for a Senior Security Engineer to take a leadership role within our twelve-person application security and red teaming department. This position is central to our mission of maintaining the highest security standards for our high-risk 
+  id: jd_54 | title: Senior Database Architect | level: senior | min_exp: 6 yrs | raw_text: 285 words
+  required_skills: PostgreSQL, MongoDB, Redis, Terraform, Data Modeling, Database Architecture
+  preferred_skills: Kubernetes, Go, AWS RDS, Distributed Systems
+  description: We are seeking a Senior Database Architect to join our core infrastructure team as a lead individual contributor responsible for the long-term scalability and reliability of our global data platform. Our team currently consists of eight senior engine
 
-  id: jd_45 | title: Junior Java Developer | level: junior | min_exp: 1 yrs | raw_text: 226 words
-  required_skills: Java 17, Spring Boot, SQL, Git, REST APIs
-  preferred_skills: Maven, JUnit 5, Fintech
-  description: We are seeking an enthusiastic Junior Java Developer to join our growing Digital Wallet team, which currently consists of six engineers focused on enhancing the user experience of our mobile payment application. In this role, you will be responsible 
+  id: jd_55 | title: Junior Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 274 words
+  required_skills: Python, SQL, BigQuery, Airflow
+  preferred_skills: Dbt, Git, Data Modeling
+  description: We are currently looking for an enthusiastic Junior Data Engineer to join our growing data department within our expanding e-commerce platform. Our team currently consists of four dedicated professionals who work closely to support the broader market
 
-  id: jd_46 | title: Senior Payments Engineer | level: senior | min_exp: 6 yrs | raw_text: 207 words
-  required_skills: Java 21, Spring Boot, Kafka, Kubernetes, PostgreSQL, Distributed Systems, Microservices
-  preferred_skills: gRPC, Financial Regulation, Performance Tuning
-  description: Our organization is looking for a Senior Payments Engineer to lead the technical development of our new cross-border payment rails system. The team is currently comprised of five senior developers and two product designers working in a high-stakes, f
+  id: jd_56 | title: Senior Data Engineer | level: senior | min_exp: 6 yrs | raw_text: 270 words
+  required_skills: Spark, Airflow, Dbt, BigQuery, Terraform, Python
+  preferred_skills: Kafka, Pulumi, Data Mesh, Cloud Migration
+  description: Our organization is searching for a Senior Data Engineer to take a leadership role within our core data infrastructure team of twelve engineers. This role is critical for our global logistics firm, as we manage vast amounts of real-time tracking data
 
-  id: jd_47 | title: Junior Frontend Engineer (Design Systems) | level: junior | min_exp: 1 yrs | raw_text: 221 words
-  required_skills: React, TypeScript, CSS, HTML5, JavaScript, Git, Storybook
-  preferred_skills: Tailwind CSS, Figma, Jest, Vite
-  description: Our UI Foundations team is looking for a Junior Frontend Engineer to help us maintain and expand our internal component library. This team of four works closely with the design department to ensure that every button, input, and modal across our platf
+  id: jd_57 | title: Junior Learning Coordinator | level: junior | min_exp: 1 yrs | raw_text: 252 words
+  required_skills: Moodle, Google Workspace, Zoom, PowerPoint, Canva
+  preferred_skills: Camtasia, Articulate Rise, Reporting
+  description: We are looking for a motivated and detail-oriented Junior Learning Coordinator to join our growing People Operations team. In this entry-level role, you will be instrumental in supporting the daily administration and maintenance of our global learnin
 
-  id: jd_48 | title: Lead Frontend Architect (Design Systems) | level: senior | min_exp: 6 yrs | raw_text: 209 words
-  required_skills: React, TypeScript, Design Systems, Monorepo, Turborepo, Storybook, Accessibility, CI/CD
-  preferred_skills: Radix UI, Chromatic, Playwright, Figma API, pnpm
-  description: We are seeking a Lead Frontend Architect to spearhead the evolution of our global design system. Our Design Systems Guild is a centralized team of six engineers and four designers responsible for the visual language and component architecture used by
+  id: jd_58 | title: Senior Manager, Learning & Development | level: senior | min_exp: 6 yrs | raw_text: 249 words
+  required_skills: Articulate 360, SAP SuccessFactors, Strategic Planning, Instructional Design, Kirkpatrick Model
+  preferred_skills: PowerBI, xAPI, SCORM 2004, Vendor Management
+  description: Our organization is seeking a seasoned Senior Manager of Learning and Development to architect and lead our global educational strategy. As a senior member of the People Development function, you will be responsible for designing high-impact curricul
 
-  id: jd_49 | title: Junior Computer Vision Engineer | level: junior | min_exp: 1 yrs | raw_text: 216 words
-  required_skills: Python, OpenCV, PyTorch, Git, Docker
-  preferred_skills: Linux, FastAPI, Unit Testing
-  description: We are seeking an enthusiastic Junior Computer Vision Engineer to join our growing retail analytics team consisting of four dedicated developers. In this role, you will help us build the next generation of shelf-monitoring technology that tracks prod
+  id: jd_59 | title: Customer Success Associate | level: junior | min_exp: 1 yrs | raw_text: 245 words
+  required_skills: Customer Success, SaaS Onboarding, HubSpot CRM, Zoom, Gainsight, Clari, Time Management, Stakeholder Communication, Basic SQL
+  preferred_skills: Gainsight Platform, Clari Forecasting, Intermediate SQL
+  description: This role sits within a fast-moving Customer Success team supporting a portfolio of SMB to mid-market SaaS clients across the Americas. The team uses Gainsight to orchestrate onboarding journeys and track customer health scores, while leveraging Zoom
 
-  id: jd_50 | title: Senior Computer Vision Engineer | level: senior | min_exp: 6 yrs | raw_text: 212 words
-  required_skills: C++, Python, PyTorch, OpenCV, TensorRT, CUDA, NVIDIA Jetson
-  preferred_skills: ROS2, Benchmarking, System Architecture
-  description: Our engineering organization is looking for a Senior Computer Vision Engineer to take high-level ownership of our edge deployment strategy for industrial automation. As a key member of a twelve-person AI department, you will be responsible for design
+  id: jd_60 | title: Senior Account Manager – Enterprise Renewals & Expansion | level: senior | min_exp: 6 yrs | raw_text: 289 words
+  required_skills: Senior Account Management, Enterprise Renewals, Churn Prediction, Customer Success Strategy, QBR Leadership, Expansion Strategy, Salesforce CRM, Clari Revenue Intelligence, Gong, Advanced SQL, Python, Data-Driven Decision Making, Stakeholder Management, Predictive Analytics, Negotiation Techniques
+  preferred_skills: TensorFlow, R Programming, Gainsight Platform, Gong Analytics, Machine Learning for SaaS, Team Leadership
+  description: We are seeking a seasoned Senior Account Manager to lead the renewal and expansion strategy for our enterprise SaaS customer portfolio, driving ARR retention and growth while minimizing churn. This role sits within a 12-person Customer Success organi
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -190,16 +190,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 80 pairs total.
+Overall dataset so far: 100 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   20  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:   17  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:   13  →  expected this group: 10 pairs (from rounds below)
-  strong_match          existing:   17  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:   13  →  expected this group: 10 pairs (from rounds below)
+  weak_match            existing:   17  →  expected this group: 10 pairs (from rounds below)
+  moderate_match        existing:   23  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:   17  →  expected this group: 10 pairs (from rounds below)
+  excellent_match       existing:   23  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -210,35 +210,35 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (20 pairs across 5 rounds — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Finance and Accounting in Fintech (financial modeling, reporting, compliance)):
-  pair_81     resume_41 × jd_41   (expected: moderate_match)
-  pair_82     resume_41 × jd_42   (expected: excellent_match)
-  pair_83     resume_42 × jd_41   (expected: moderate_match)
-  pair_84     resume_42 × jd_42   (expected: excellent_match)
+Round 1 (domain: Digital Marketing and Content Strategy (SEO, social media, analytics)):
+  pair_101    resume_51 × jd_51   (expected: strong_match)
+  pair_102    resume_51 × jd_52   (expected: weak_match)
+  pair_103    resume_52 × jd_51   (expected: strong_match)
+  pair_104    resume_52 × jd_52   (expected: weak_match)
 
-Round 2 (domain: Cybersecurity and Information Security (pentesting, SIEM, network)):
-  pair_85     resume_43 × jd_43   (expected: moderate_match)
-  pair_86     resume_43 × jd_44   (expected: excellent_match)
-  pair_87     resume_44 × jd_43   (expected: moderate_match)
-  pair_88     resume_44 × jd_44   (expected: excellent_match)
+Round 2 (domain: Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)):
+  pair_105    resume_53 × jd_53   (expected: strong_match)
+  pair_106    resume_53 × jd_54   (expected: weak_match)
+  pair_107    resume_54 × jd_53   (expected: strong_match)
+  pair_108    resume_54 × jd_54   (expected: weak_match)
 
-Round 3 (domain: Backend Development for Fintech Payments (Java, Spring Boot, Kafka)):
-  pair_89     resume_45 × jd_45   (expected: moderate_match)
-  pair_90     resume_45 × jd_46   (expected: excellent_match)
-  pair_91     resume_46 × jd_45   (expected: moderate_match)
-  pair_92     resume_46 × jd_46   (expected: excellent_match)
+Round 3 (domain: Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)):
+  pair_109    resume_55 × jd_55   (expected: strong_match)
+  pair_110    resume_55 × jd_56   (expected: weak_match)
+  pair_111    resume_56 × jd_55   (expected: strong_match)
+  pair_112    resume_56 × jd_56   (expected: weak_match)
 
-Round 4 (domain: Frontend Development for Design Systems (React, Storybook, component libraries)):
-  pair_93     resume_47 × jd_47   (expected: moderate_match)
-  pair_94     resume_47 × jd_48   (expected: excellent_match)
-  pair_95     resume_48 × jd_47   (expected: moderate_match)
-  pair_96     resume_48 × jd_48   (expected: excellent_match)
+Round 4 (domain: Learning and Development / Corporate Training (curriculum design, LMS)):
+  pair_113    resume_57 × jd_57   (expected: strong_match)
+  pair_114    resume_57 × jd_58   (expected: weak_match)
+  pair_115    resume_58 × jd_57   (expected: strong_match)
+  pair_116    resume_58 × jd_58   (expected: weak_match)
 
-Round 5 (domain: Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)):
-  pair_97     resume_49 × jd_49   (expected: moderate_match)
-  pair_98     resume_49 × jd_50   (expected: excellent_match)
-  pair_99     resume_50 × jd_49   (expected: moderate_match)
-  pair_100    resume_50 × jd_50   (expected: excellent_match)
+Round 5 (domain: Customer Success and Account Management (SaaS renewals, onboarding, churn)):
+  pair_117    resume_59 × jd_59   (expected: strong_match)
+  pair_118    resume_59 × jd_60   (expected: weak_match)
+  pair_119    resume_60 × jd_59   (expected: strong_match)
+  pair_120    resume_60 × jd_60   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT

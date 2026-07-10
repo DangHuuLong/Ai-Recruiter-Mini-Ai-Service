@@ -28,5 +28,10 @@
   "Cybersecurity and Information Security (pentesting, SIEM, network)": 1,
   "Backend Development for Fintech Payments (Java, Spring Boot, Kafka)": 1,
   "Frontend Development for Design Systems (React, Storybook, component libraries)": 1,
-  "Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)": 1
+  "Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)": 1,
+  "Digital Marketing and Content Strategy (SEO, social media, analytics)": 1,
+  "Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)": 1,
+  "Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)": 1,
+  "Learning and Development / Corporate Training (curriculum design, LMS)": 1,
+  "Customer Success and Account Management (SaaS renewals, onboarding, churn)": 1
 }
