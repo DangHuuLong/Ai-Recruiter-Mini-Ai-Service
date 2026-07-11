@@ -1,97 +1,37 @@
 You are a dataset labeler for an AI recruitment system.
-Score 5 CV-JD pairs (from 4 round(s)) using rubric v0.2.
+Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 5 pairs listed
+A previous response was incomplete. Score ONLY the 1 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_243 | level: senior | exp: 8.5 yrs | raw_text: 280 words
-  skills: BPMN 2.0, Jira, Confluence, SQL, PostgreSQL, Tableau, MS Visio, Lucidchart, Python, UiPath, Requirements Gathering, Stakeholder Management
-  projects: ProcessOptimizer
-  background: Over the past eight and a half years, my professional career has evolved from a foundational analyst role into a senior-level position focused on complex business architecture and strategic project management. At a large-scale financial enterprise where I spent four years, I operated within a collab
+  id: resume_259 | level: senior | exp: 7.0 yrs | raw_text: 347 words
+  skills: Go, gRPC, Protocol Buffers, Kubernetes, Docker, PostgreSQL, Redis, Kafka, AWS, Terraform, Prometheus, Grafana, OpenTelemetry, CI/CD, Microservices
+  projects: Cart Optimizer, Realtime Pricing Engine
+  background: The candidate has spent the past seven years building and operating platform services for fast‑growing e‑commerce businesses. As a Senior Platform Engineer at a high‑velocity startup that operated an online marketplace, they led an eight‑person engineering team from 2021 to 2023, designing a Go 1.20
 
-  id: resume_244 | level: senior | exp: 7.0 yrs | raw_text: 274 words
-  skills: SAFe, Agile, Jira, Trello, Miro, Figma, Python, Swagger, OpenAPI, SDLC, AWS, Product Roadmap, React, Node.js
-  projects: SupplyChain360
-  background: I have spent the last seven years refining my expertise in technical project management and business systems analysis, primarily within the SaaS and retail sectors. My most recent tenure involved three years at a high-growth technology startup as a Tech Lead for the project management office, where 
-
-  id: resume_245 | level: senior | exp: 8.0 yrs | raw_text: 308 words
-  skills: Penetration Testing, Network Security, SIEM Operations, Incident Response, Cloud Security, Python, Docker, Kubernetes, AWS, Terraform, Splunk, Elastic Stack, Nessus, OpenVAS, OWASP ZAP
-  projects: VulnAuto
-  background: Over the past eight years, I have progressed from a junior security analyst to a senior penetration testing lead, guiding multidisciplinary teams within both fast‑growing startups and large enterprises. In my most recent role as Lead Security Engineer at a multinational financial services firm, I ma
-
-  id: resume_246 | level: senior | exp: 7.0 yrs | raw_text: 309 words
-  skills: Zero Trust Architecture, SIEM Engineering, Incident Response, Cloud Security, Python, Terraform, Elastic Stack, Splunk, Docker, Kubernetes, AWS, Azure, PowerShell, Bash, Threat Intelligence
-  projects: SecureOps
-  background: With nearly seven years of progressive responsibility in information security, I have acted as a technical lead for enterprise‑grade security initiatives, bridging gaps between development, operations, and compliance. Most recently, as Principal Security Architect at a global SaaS provider, I direct
-
-  id: resume_247 | level: senior | exp: 7.5 yrs | raw_text: 274 words
-  skills: Category Management, Planogram Development, Data Analytics, Machine Learning
-  projects: Sales Forecasting Model, Recommendation Engine
-  background: As a seasoned retail operations professional with over 7 years of experience, I have developed a strong expertise in category management and planogram development. My most recent role was as a Category Manager at a large enterprise retailer, where I led a team of 5 and was responsible for managing a
-
-  id: resume_248 | level: senior | exp: 6.5 yrs | raw_text: 261 words
-  skills: Planogram Development, Category Management, Data Analytics, Cloud Computing
-  projects: Real-time Analytics Platform, Demand Forecasting Model
-  background: With over 6 years of experience in retail operations and merchandising, I have developed a strong expertise in planogram development and category management. My most recent role was as a Senior Merchandise Planner at a large enterprise retailer, where I was responsible for developing and implementin
-
-  id: resume_249 | level: senior | exp: 8.5 yrs | raw_text: 308 words
-  skills: Node.js, React, Stripe Connect, PostgreSQL, AWS CDK, Redis, GraphQL, TypeScript, RabbitMQ, Go
-  projects: SafeDeploy
-  background: I began my professional journey in 2015 after completing my Bachelor of Science in Computer Science. Over the past eight and a half years, I have evolved from a junior contributor to a principal-level architect within the SaaS ecosystem. At my most recent position within a high-growth Fintech startu
-
-  id: resume_250 | level: senior | exp: 7.0 yrs | raw_text: 290 words
-  skills: TypeScript, NestJS, React, Stripe API, Google Cloud Platform, Kubernetes, Docker, MongoDB, D3.js, Rust
-  projects: SyncLedger
-  background: With over seven years of dedicated experience in full-stack development, I have built a career focused on the intersection of scalable cloud infrastructure and intuitive user experiences. My journey started in 2017 after I graduated with a Bachelor in Software Engineering. For the last two and a hal
+  id: resume_260 | level: senior | exp: 8.0 yrs | raw_text: 317 words
+  skills: Go, gRPC, Protocol Buffers, NATS, Istio, Envoy, Kubernetes, Docker, PostgreSQL, Redis, AWS, Terraform, Prometheus, Jaeger, OpenTelemetry
+  projects: High‑Speed Checkout, Feature Flag Service
+  background: Over the course of eight years the candidate has specialized in building high‑throughput platform components for large‑scale e‑commerce platforms. From 2020 to 2023 they acted as Lead Platform Engineer at a multinational retail corporation, heading a fifteen‑person team that delivered a Go 1.21 orde
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_243 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 217 words
-  required_skills: Jira, Confluence, MS Excel, MS Visio, Requirements Gathering, SDLC
-  preferred_skills: SQL, BPMN
-  description: We are seeking a Junior Business Analyst to join our collaborative operations team, which currently consists of five dedicated professionals focused on optimizing internal administrative workflows. The primary focus of this role is to assist senior s
+  id: jd_259 | title: Senior Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 235 words
+  required_skills: Go, gRPC, Protocol Buffers, Kubernetes, Docker, AWS, Terraform, Prometheus, OpenTelemetry
+  preferred_skills: Istio, Kafka, CI/CD
+  description: We are seeking a senior platform engineer to join a twelve‑person team that powers the core order processing system of a high‑volume e‑commerce platform. The team builds and operates Go‑based microservices that handle millions of transactions daily, 
 
-  id: jd_244 | title: Business Analyst | level: middle | min_exp: 3 yrs | raw_text: 215 words
-  required_skills: BPMN, SQL, Jira, Confluence, Power BI, Stakeholder Management, PostgreSQL
-  preferred_skills: PMP, CBAP, ERP
-  description: Our project delivery department is looking for a Middle Business Analyst to take ownership of several key workstreams within our enterprise resource planning project. You will join a team of eight members, including developers, designers, and a senio
-
-  id: jd_245 | title: Junior Security Operations Analyst | level: junior | min_exp: 1 yrs | raw_text: 196 words
-  required_skills: Splunk, Wireshark, Nessus, Python, PowerShell
-  preferred_skills: AWS, Azure, MITRE ATT&CK
-  description: Our security operations team consists of five analysts who monitor the health and safety of a cloud‑native SaaS platform serving thousands of customers worldwide. The junior analyst will join this close‑knit group and spend each day reviewing alerts 
-
-  id: jd_246 | title: Mid‑Level Security Engineer | level: middle | min_exp: 3 yrs | raw_text: 187 words
-  required_skills: Elastic Stack, Terraform, Docker, Kubernetes, Python
-  preferred_skills: Kube‑audit, AWS IAM
-  description: Our engineering security group, composed of eight seasoned engineers, is responsible for building end‑to‑end protection for a high‑traffic e‑commerce platform that processes over two million transactions daily. The mid‑level security engineer will de
-
-  id: jd_247 | title: Junior Merchandise Planner | level: junior | min_exp: 1 yrs | raw_text: 211 words
-  required_skills: Merchandise Planning, Data Analysis, Team Collaboration
-  preferred_skills: Category Management, Inventory Management, SQL
-  description: We are seeking a Junior Merchandise Planner to join our retail operations team. The successful candidate will be responsible for developing and implementing merchandise plans, managing inventory levels, and analyzing sales trends using tools such as 
-
-  id: jd_248 | title: Senior Category Manager | level: middle | min_exp: 3 yrs | raw_text: 219 words
-  required_skills: Category Management, Data Analysis, Team Collaboration
-  preferred_skills: Merchandise Planning, Inventory Management, SQL
-  description: We are seeking a Senior Category Manager to join our retail operations team. The successful candidate will be responsible for developing and implementing category strategies, managing category performance, and collaborating with the merchandising tea
-
-  id: jd_249 | title: Junior Full-Stack Developer (SaaS) | level: junior | min_exp: 1 yrs | raw_text: 235 words
-  required_skills: Node.js, React, JavaScript, SQL
-  preferred_skills: Stripe API, AWS, TypeScript, Express
-  description: We are looking for a motivated Junior Full-Stack Developer to join our growing engineering team of eight as we expand our core SaaS product. In this role, you will work closely with our senior engineers and product designers to build and maintain use
-
-  id: jd_250 | title: Full-Stack Engineer (Mid-Level) | level: middle | min_exp: 3 yrs | raw_text: 231 words
-  required_skills: Node.js, TypeScript, React, Stripe Billing, PostgreSQL
-  preferred_skills: Docker, Testing, System Design, Cloud Infrastructure
-  description: Our engineering organization is searching for a Middle Full-Stack Developer to join our Series B startup as we scale our revenue operations and customer offerings. Our team currently consists of fifteen talented individuals, and you will play a pivot
+  id: jd_260 | title: Senior Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
+  required_skills: Go, gRPC, NATS, Istio, Envoy, Kubernetes, AWS, Terraform, Prometheus
+  preferred_skills: Jaeger, OpenTelemetry, CI/CD
+  description: Our platform engineering group consists of ten engineers who are responsible for the event‑driven backbone of a large online marketplace. The senior platform engineer will own the design and delivery of Go‑based services that communicate over gRPC an
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -176,16 +116,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 480 pairs total.
+Overall dataset so far: 500 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  102  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:  106  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:   90  →  expected this group: 8 pairs (from rounds below)
-  strong_match          existing:   90  →  expected this group: 8 pairs (from rounds below)
-  excellent_match       existing:   92  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:  107  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:  100  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:   99  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   92  →  expected this group: 4 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -194,27 +134,17 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (5 pairs across 4 round(s) — never cross-pair rounds)
+PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 2 (domain: Business Analysis and Project Management (requirements, BPMN, stakeholders)):
-  pair_488    resume_244 × jd_244   (expected: strong_match)
-
-Round 3 (domain: Cybersecurity and Information Security (pentesting, SIEM, network)):
-  pair_492    resume_246 × jd_246   (expected: strong_match)
-
-Round 4 (domain: Retail Operations and Merchandising (planograms, category management)):
-  pair_493    resume_247 × jd_247   (expected: moderate_match)
-
-Round 5 (domain: Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)):
-  pair_497    resume_249 × jd_249   (expected: moderate_match)
-  pair_500    resume_250 × jd_250   (expected: strong_match)
+Round 5 (domain: Platform Engineering for E-commerce (Go, gRPC, high-throughput services)):
+  pair_520    resume_260 × jd_260   (expected: excellent_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 5 lines.
+Output exactly 1 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 5 JSON lines.
+No markdown, no explanation — only 1 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
