@@ -10,28 +10,30 @@ below — do not re-score or repeat any other pair.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_327 | level: middle | exp: 4.0 yrs | raw_text: 292 words
-  skills: Transformers, Hugging Face Transformers, LangChain, RAG, FAISS, PyTorch, spaCy, GitHub Actions, CI/CD, Embeddings, Prompt Engineering, Multilingual NLP, FlashAttention, Quantized Models, Fine-tuning, Inference Optimization, Python
-  projects: Multilingual Embedding Library Optimization, Conversational RAG Bot for Customer Support
-  background: With a solid foundation in machine learning and natural language processing, the professional has spent the last four years specializing in transformer architectures and their practical applications. Beginning at a mid-sized AI consultancy, they joined as a Junior ML Engineer and quickly became prof
+  id: resume_337 | level: senior | exp: 8.5 yrs | raw_text: 251 words
+  skills: Agile, Cloud Computing, Kubernetes, Docker, Python, Kafka, AWS Lambda, Jenkins, CI/CD, Machine Learning
+  projects: Real-Time Transaction Processing System
+  background: With over 8 years of experience in technical program management, I have honed my skills in leading cross-functional teams and delivering complex engineering projects. My journey began at a leading enterprise software company, where I spent 3 years as a Technical Project Manager, managing a team of 1
 
-  id: resume_328 | level: middle | exp: 3.0 yrs | raw_text: 278 words
-  skills: Sentence Transformers, Hugging Face Tokenizers, LangChain, Weaviate, PyTorch Lightning, RAG, ONNX Runtime, Quantization, Hybrid Search, Embeddings, Tokenization, Python, Docker
-  projects: Scalable Legal Contract Retrieval with Sentence-BERT, Transformer Summarization Pipeline for Research Lab
-  background: This professional brings three years of focused experience in developing and scaling NLP systems centered around transformer models and embedding-based retrieval architectures. Early in their career at a data-driven startup, they worked on a small team of five engineers to implement a document retri
+  id: resume_338 | level: senior | exp: 7.5 yrs | raw_text: 278 words
+  skills: Software Engineering, Agile, Java, Spring, Microservices, Docker, Kubernetes, Go, gRPC, Cybersecurity
+  projects: Threat Detection Platform
+  background: As a seasoned Technical Program Manager with 7 years of experience, I have a proven track record in delivering large-scale software projects and leading high-performing teams. My expertise lies in the full software development lifecycle, from requirements gathering to deployment and maintenance. 
+
+I
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_327 | title: Senior AI Engineer – NLP & Retrieval Systems | level: senior | min_exp: 6 yrs | raw_text: 235 words
-  required_skills: LangChain, RAG, Hugging Face Transformers, PyTorch, FAISS, Weaviate, Python, CI/CD, Model Fine-tuning, Embeddings, Vector Databases, ML Optimization, LoRA, Quantization
-  preferred_skills: ONNX Runtime, FlashAttention, Llama2, Flan-T5, TensorFlow, Docker, Kubernetes
-  description: We are seeking a seasoned Senior AI Engineer to lead the design and deployment of next-generation NLP systems centered around transformer models, retrieval-augmented generation (RAG), and high-dimensional embeddings. Our team, composed of 12 engineer
+  id: jd_337 | title: Senior Technical Program Manager | level: senior | min_exp: 6 yrs | raw_text: 246 words
+  required_skills: Agile, Software Development Lifecycle, Project Management, Python, Django, PostgreSQL, AWS, Docker, Kubernetes
+  preferred_skills: JIRA, Confluence, GitHub, Cloud Architecture, Microservices
+  description: We are seeking an experienced Senior Technical Program Manager to lead our cross-functional engineering teams and drive the development of our core product offerings. With a focus on delivering high-quality software solutions, the role requires a dee
 
-  id: jd_328 | title: Senior AI Engineer – Embedding & Retrieval Engineering | level: senior | min_exp: 6 yrs | raw_text: 261 words
-  required_skills: Embeddings, Sentence Transformers, Vector Databases, ONNX Runtime, TensorRT, PyTorch, Hugging Face, FAISS, Chroma, Milvus, Model Optimization, Low-Latency Systems, Retrieval Engineering, Python
-  preferred_skills: Multilingual Embeddings, MTEB, Kafka, Apache Beam, Kubernetes, Terraform, Rust
-  description: Our growing AI team is looking for a Senior Embedding and Retrieval Engineer to architect scalable, low-latency systems that power intelligent search, recommendation, and knowledge discovery across large unstructured datasets. The team operates a mic
+  id: jd_338 | title: Lead Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 242 words
+  required_skills: Java, Spring, MySQL, Microservices, Docker, Kubernetes, Software Architecture, Leadership
+  preferred_skills: Cloud Computing, DevOps
+  description: We are seeking a highly skilled Lead Software Engineer to join our dynamic team and take ownership of critical engineering projects. With a focus on building scalable and high-performance software solutions, this role requires a deep understanding of
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -116,16 +118,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 640 pairs total.
+Overall dataset so far: 660 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:  121  →  expected this group: 4 pairs (from rounds below)
+  weak_match            existing:  141  →  expected this group: 0 pairs (from rounds below)
   moderate_match        existing:  129  →  expected this group: 0 pairs (from rounds below)
   strong_match          existing:  131  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:  125  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:  125  →  expected this group: 4 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -136,8 +138,8 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 4 (domain: AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)):
-  pair_656    resume_328 × jd_328   (expected: weak_match)
+Round 4 (domain: Technical Program Management (cross-team delivery, engineering roadmaps)):
+  pair_674    resume_337 × jd_338   (expected: excellent_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
