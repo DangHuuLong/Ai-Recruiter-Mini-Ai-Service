@@ -1,5 +1,5 @@
 You are a dataset labeler for an AI recruitment system.
-Score 3 CV-JD pairs (from 3 round(s)) using rubric v0.2.
+Score 3 CV-JD pairs (from 2 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
@@ -10,68 +10,48 @@ below — do not re-score or repeat any other pair.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_301 | level: middle | exp: 4.3 yrs | raw_text: 298 words
-  skills: Curriculum Design, LMS Administration, Instructional Technology, Data Analytics, Project Management, Agile Methodologies, Adult Learning Theory, SCORM, xAPI, PowerBI, Python, SQL, Adobe Captivate, Articulate Storyline, Moodle, Cornerstone OnDemand, Zapier, React Native
-  projects: Learning Analytics Dashboard, Microlearning Mobile App
-  background: A seasoned Learning Experience Designer with over four years of experience in corporate training environments. In the most recent role as Learning Experience Designer at a mid‑size enterprise (April 2021 – present, team of six), the candidate led the end‑to‑end design of blended curricula, authored 
+  id: resume_315 | level: senior | exp: 8.0 yrs | raw_text: 307 words
+  skills: Business Analysis, Requirements Engineering, BPMN Modeling, Stakeholder Management, Agile Methodologies, Azure DevOps, Jira Service Management, Confluence, SQL Server, PowerBI, Tableau, Python, FastAPI, PostgreSQL, Figma
+  projects: Process Optimizer, DataBridge
+  background: Over the past eight years, the candidate has progressed from a Business Analyst at a fast‑growing startup to a Senior Business Analyst and Team Lead at a large enterprise software firm. In the most recent role, titled Senior Business Analyst Team Lead at an enterprise, the professional supervised a 
 
-  id: resume_302 | level: senior | exp: 8.2 yrs | raw_text: 308 words
-  skills: Learning Strategy, Curriculum Architecture, LMS Integration, AI-powered Learning Analytics, Cloud Deployment, Microservices, Terraform, Docker, Kubernetes, FastAPI, PostgreSQL, AWS, Python, SQL, Tableau, PowerBI, Articulate 360, Adobe Captivate, SCORM, xAPI, Degreed, Agile Leadership, Data Engineering
-  projects: Adaptive Learning Engine, Open Learning Toolkit
-  background: A senior Learning Architect with eight years of progressive experience steering enterprise‑wide learning ecosystems. Most recently, as Lead Learning Architect at a global enterprise (July 2019 – present, team of twelve), the candidate defined strategic learning roadmaps, supervised a cross‑functiona
+  id: resume_316 | level: senior | exp: 8.0 yrs | raw_text: 295 words
+  skills: Project Management, Business Analysis, Requirements Engineering, BPMN Modeling, Stakeholder Management, Agile Scrum, Azure DevOps, Microsoft Project Online, PowerBI, SQL Server, Python, FastAPI, Docker, PostgreSQL, Robot Framework, Node.js
+  projects: InsightHub, AutomateDocs
+  background: The applicant brings eight years of progressive experience in project management and business analysis, beginning as a Junior Project Coordinator at a boutique agency and rising to Senior Project Manager & Business Analyst at a multinational enterprise. In the latest position, the senior professiona
 
-  id: resume_303 | level: middle | exp: 4.0 yrs | raw_text: 259 words
-  skills: Python, Pandas, Scikit-Learn, SQL, FastAPI, Docker, AWS, Airflow, Git, Data Visualization, Machine Learning
-  projects: ChurnPredict
-  background: During a two‑year tenure as a Data Analyst at a fintech startup, I worked within a five‑person analytics team to design ETL pipelines using Python 3.10 and PostgreSQL 14, where I built daily reports that informed pricing decisions. My responsibilities included cleaning transactional data with pandas
+  id: resume_319 | level: senior | exp: 7.0 yrs | raw_text: 392 words
+  skills: E‑commerce Operations, Marketplace Management, Merchandising Strategy, Data Analysis, Python, SQL, AWS, Kubernetes, Airflow, Snowflake, Looker, A/B Testing, Product Roadmapping, Team Leadership, Pricing Optimization
+  projects: SmartSuggest, RouteMax
+  background: During the past seven years the professional has progressed from an e‑commerce operations analyst at a fast‑growing startup to a marketplace operations lead at a large enterprise, overseeing a cross‑functional squad of twelve members. In the first role, titled Operations Analyst at a marketplace‑foc
 
-  id: resume_304 | level: senior | exp: 7.0 yrs | raw_text: 275 words
-  skills: Python, Pandas, Scikit-Learn, TensorFlow, PyTorch, Spark, Kubernetes, Docker, Airflow, AWS, Git, SQL, MLOps, Data Engineering, Machine Learning
-  projects: GraphRec
-  background: Over the past seven years I have progressed from a Machine Learning Engineer at a health‑tech startup to a Senior Data Scientist at a global e‑commerce enterprise, consistently leading teams and delivering high‑impact AI solutions. In my initial role lasting three years, I joined a six‑person engine
-
-  id: resume_309 | level: middle | exp: 4.2 yrs | raw_text: 324 words
-  skills: Google Ads, Meta Ads, Google Analytics, SQL, Python, Data Analysis, Campaign Optimization, Attribution Modeling, A/B Testing, Tableau
-  projects: AdBudget Optimizer
-  background: Over the past four years, I have built a career in performance marketing focused on paid acquisition for SaaS and e‑commerce brands. In my most recent role as Performance Marketing Analyst at a growth‑stage startup, I managed a $1.2 million annual budget across Google Ads and Meta Ads Manager, leadi
-
-  id: resume_310 | level: senior | exp: 7.1 yrs | raw_text: 341 words
-  skills: Google Ads, Meta Ads, TikTok Ads, DV360, Attribution Modeling, Python, SQL, Snowflake, Looker, Data Visualization, Statistical Analysis, Team Leadership
-  projects: Unified Attribution Engine, AI Bidding Optimizer
-  background: With more than seven years of experience leading performance marketing initiatives at enterprise and scale‑up companies, I have specialized in building data‑centric acquisition engines that drive multimillion‑dollar growth. As Senior Performance Marketing Manager at a Fortune‑500 enterprise, I overs
+  id: resume_320 | level: senior | exp: 8.0 yrs | raw_text: 407 words
+  skills: Marketplace Operations, Retail Strategy, Data Engineering, Python, Java, SQL, GCP, Docker, Kubernetes, Airflow, Looker, Machine Learning, Pricing Optimization, Team Leadership, Supply Chain Coordination
+  projects: InvOpt, FraudGuard
+  background: Over the past eight years the candidate has built a career at the intersection of retail management and technology, beginning as a Merchandise Analyst at a boutique e‑commerce agency and culminating in a role as Marketplace Operations Lead at a multinational retailer. In the first position, titled M
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_301 | title: Learning and Development Specialist | level: middle | min_exp: 3 yrs | raw_text: 195 words
-  required_skills: Curriculum Design, Instructional Design, Articulate Storyline, Adobe Captivate, Moodle, SCORM, xAPI, PowerBI, SQL
-  preferred_skills: Python, Agile Methodologies, LMS Integration
-  description: The Learning and Development team consists of five professionals responsible for delivering internal corporate training programs that upskill employees across functional areas. The team operates within an agile framework to maintain an internal talen
+  id: jd_315 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 186 words
+  required_skills: Jira, Confluence, PostgreSQL, Lucidchart
+  preferred_skills: Tableau, Agile Scrum
+  description: The team consists of five product developers who build a SaaS customer‑relationship management platform for small businesses. The junior analyst will join this compact group and support the product owners by gathering functional requirements, transla
 
-  id: jd_302 | title: Senior Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
-  required_skills: Learning Strategy, Curriculum Architecture, Cornerstone OnDemand, Degreed, FastAPI, PostgreSQL, AWS, Docker, Kubernetes, Terraform, SCORM, xAPI, Tableau, PowerBI, Python
-  preferred_skills: Machine Learning, Snowflake, Airflow, Leadership
-  description: The senior learning function operates within a twelve‑member global L&D organization that drives a comprehensive learning experience platform combining Cornerstone OnDemand and Degreed to deliver personalized development journeys for thousands of emp
+  id: jd_316 | title: Business Analyst / Project Manager | level: middle | min_exp: 3 yrs | raw_text: 193 words
+  required_skills: Azure DevOps, PowerBI, SQL Server, BPMN Modeling
+  preferred_skills: Python, GitHub Actions
+  description: The organization runs a ten‑person product team that delivers enterprise‑grade workflow automation solutions for financial services clients. The Business Analyst / Project Manager will lead requirement workshops, design detailed BPMN 2.0 processes, a
 
-  id: jd_303 | title: Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 197 words
-  required_skills: Python, Pandas, Scikit-Learn, FastAPI, SQL, AWS, Git
-  preferred_skills: Docker, Airflow, Data Visualization
-  description: Our data science team of six engineers builds a real‑time fraud detection platform that protects millions of transactions each day. The role involves designing, developing, and maintaining machine learning models that operate at low latency, as well 
+  id: jd_319 | title: Junior Marketplace Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 194 words
+  required_skills: Shopify, Microsoft Excel, Python, SQL
+  preferred_skills: Looker, Git
+  description: The team is a compact unit of five members responsible for maintaining the health of a growing online marketplace, ensuring product listings are accurate and inventory levels remain synchronized across multiple suppliers. Day‑to‑day duties involve as
 
-  id: jd_304 | title: Lead Data Scientist | level: senior | min_exp: 6 yrs | raw_text: 184 words
-  required_skills: Python, PyTorch, Spark, Kubernetes, AWS, SQL, Git, Docker, Airflow
-  preferred_skills: TensorFlow, MLOps, Terraform, Prometheus
-  description: Our recommendation engine team of fifteen data scientists and engineers powers personalization across a global e‑commerce platform serving billions of users. The senior lead will own the end‑to‑end machine learning lifecycle, from concept through pro
-
-  id: jd_309 | title: Performance Marketing Analyst | level: middle | min_exp: 3 yrs | raw_text: 236 words
-  required_skills: Google Ads, Meta Ads, Google Analytics, SQL, Python, Looker Studio
-  preferred_skills: Tableau, Snowflake
-  description: The performance marketing team consists of five analysts focused on paid acquisition for a B2B SaaS platform. The team collaborates closely with product managers, data scientists, and the creative studio to ensure campaigns align with product launche
-
-  id: jd_310 | title: Senior Performance Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 257 words
-  required_skills: Google Ads, Meta Ads, TikTok Ads, DV360, Snowflake, BigQuery, Python, R, Airflow, Attribution Modeling
-  preferred_skills: Looker, Tableau, TensorFlow
-  description: The senior performance acquisition group comprises twelve specialists who own the end‑to‑end paid media strategy for a global e‑commerce brand, handling budgets exceeding $15 million across Google Ads, Meta Ads, TikTok Ads, and DV360. The team works 
+  id: jd_320 | title: Marketplace Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 212 words
+  required_skills: Python, PostgreSQL, Airflow, Looker
+  preferred_skills: GCP BigQuery, Scikit‑Learn
+  description: The department consists of an eight‑person analytics crew tasked with optimizing the day‑to‑day operations of a large multi‑category marketplace, focusing on inventory forecasting, pricing strategy, and supply‑chain efficiency. Daily responsibilities
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -156,16 +136,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 600 pairs total.
+Overall dataset so far: 620 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:  116  →  expected this group: 3 pairs (from rounds below)
-  moderate_match        existing:  119  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  116  →  expected this group: 3 pairs (from rounds below)
-  excellent_match       existing:  115  →  expected this group: 6 pairs (from rounds below)
+  weak_match            existing:  121  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:  119  →  expected this group: 4 pairs (from rounds below)
+  strong_match          existing:  121  →  expected this group: 4 pairs (from rounds below)
+  excellent_match       existing:  125  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -174,16 +154,14 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (3 pairs across 3 round(s) — never cross-pair rounds)
+PAIRING ORDER (3 pairs across 2 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Learning and Development / Corporate Training (curriculum design, LMS)):
-  pair_603    resume_302 × jd_301   (expected: strong_match)
+Round 3 (domain: Business Analysis and Project Management (requirements, BPMN, stakeholders)):
+  pair_629    resume_315 × jd_315   (expected: moderate_match)
+  pair_631    resume_316 × jd_315   (expected: moderate_match)
 
-Round 2 (domain: Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)):
-  pair_606    resume_303 × jd_304   (expected: weak_match)
-
-Round 5 (domain: Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)):
-  pair_618    resume_309 × jd_310   (expected: weak_match)
+Round 5 (domain: E-commerce and Retail Management (marketplace, operations, merchandising)):
+  pair_637    resume_319 × jd_319   (expected: moderate_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
