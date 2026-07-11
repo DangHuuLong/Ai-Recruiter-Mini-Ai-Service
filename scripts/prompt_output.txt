@@ -1,117 +1,77 @@
 You are a dataset labeler for an AI recruitment system.
-Score 20 CV-JD pairs (from 5 round(s)) using rubric v0.2.
+Score 3 CV-JD pairs (from 3 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 20 pairs listed
+A previous response was incomplete. Score ONLY the 3 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_291 | level: middle | exp: 3.5 yrs | raw_text: 274 words
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Machine Learning, Data Visualization, SQL, AWS
-  projects: Demand Forecast Optimizer
-  background: The candidate began their professional journey as a Junior Data Analyst at an enterprise‑scale retail corporation, spending eighteen months within a data‑centric team of eight analysts where they built daily dashboards using Python 3.10, pandas 1.5 and PowerBI, and automated ETL pipelines with Airfl
+  id: resume_301 | level: middle | exp: 4.3 yrs | raw_text: 298 words
+  skills: Curriculum Design, LMS Administration, Instructional Technology, Data Analytics, Project Management, Agile Methodologies, Adult Learning Theory, SCORM, xAPI, PowerBI, Python, SQL, Adobe Captivate, Articulate Storyline, Moodle, Cornerstone OnDemand, Zapier, React Native
+  projects: Learning Analytics Dashboard, Microlearning Mobile App
+  background: A seasoned Learning Experience Designer with over four years of experience in corporate training environments. In the most recent role as Learning Experience Designer at a mid‑size enterprise (April 2021 – present, team of six), the candidate led the end‑to‑end design of blended curricula, authored 
 
-  id: resume_292 | level: senior | exp: 8.0 yrs | raw_text: 289 words
-  skills: Python, Pandas, Scikit-Learn, PyTorch, Deep Learning, MLOps, SQL, AWS, GCP, Docker, Kubernetes
-  projects: AI‑Driven Customer Segmentation, Real‑Time Recommendation Engine
-  background: With eight years of experience in data science and machine learning, the candidate first served as a Data Scientist at a multinational telecommunications enterprise, where over a two‑year period they led a data team of twelve analysts and engineers. Their responsibilities encompassed designing end‑t
+  id: resume_302 | level: senior | exp: 8.2 yrs | raw_text: 308 words
+  skills: Learning Strategy, Curriculum Architecture, LMS Integration, AI-powered Learning Analytics, Cloud Deployment, Microservices, Terraform, Docker, Kubernetes, FastAPI, PostgreSQL, AWS, Python, SQL, Tableau, PowerBI, Articulate 360, Adobe Captivate, SCORM, xAPI, Degreed, Agile Leadership, Data Engineering
+  projects: Adaptive Learning Engine, Open Learning Toolkit
+  background: A senior Learning Architect with eight years of progressive experience steering enterprise‑wide learning ecosystems. Most recently, as Lead Learning Architect at a global enterprise (July 2019 – present, team of twelve), the candidate defined strategic learning roadmaps, supervised a cross‑functiona
 
-  id: resume_293 | level: middle | exp: 4.5 yrs | raw_text: 293 words
-  skills: Python, FastAPI, PostgreSQL, Docker, Kubernetes, Aws Ecs, Celery, Redis, Git, Linux
-  projects: API Optimizer, Node Scheduler
-  background: During a two‑year stint as a Backend Engineer at a fintech startup, I worked within a nine‑person engineering team to design and maintain a suite of microservices that powered real‑time transaction processing. My daily responsibilities included writing Python 3.10 code with FastAPI 0.100, orchestrat
+  id: resume_303 | level: middle | exp: 4.0 yrs | raw_text: 259 words
+  skills: Python, Pandas, Scikit-Learn, SQL, FastAPI, Docker, AWS, Airflow, Git, Data Visualization, Machine Learning
+  projects: ChurnPredict
+  background: During a two‑year tenure as a Data Analyst at a fintech startup, I worked within a five‑person analytics team to design ETL pipelines using Python 3.10 and PostgreSQL 14, where I built daily reports that informed pricing decisions. My responsibilities included cleaning transactional data with pandas
 
-  id: resume_294 | level: senior | exp: 7.0 yrs | raw_text: 291 words
-  skills: Python, FastAPI, Node.js, PostgreSQL, Docker, Kubernetes, Aws Eks, Kafka, Grpc, Terraform, Ci/cd, GitHub Actions, Prometheus, Grafana
-  projects: Telemetry Hub, Client Portal
-  background: I spent seven years shaping backend architectures across three distinct organisations, beginning as a Senior Backend Engineer at a high‑growth SaaS startup where I led an eight‑person team to build a scalable data‑pipeline using Python 3.11, FastAPI 0.110, and PostgreSQL 15. I introduced Kafka 3.2 f
+  id: resume_304 | level: senior | exp: 7.0 yrs | raw_text: 275 words
+  skills: Python, Pandas, Scikit-Learn, TensorFlow, PyTorch, Spark, Kubernetes, Docker, Airflow, AWS, Git, SQL, MLOps, Data Engineering, Machine Learning
+  projects: GraphRec
+  background: Over the past seven years I have progressed from a Machine Learning Engineer at a health‑tech startup to a Senior Data Scientist at a global e‑commerce enterprise, consistently leading teams and delivering high‑impact AI solutions. In my initial role lasting three years, I joined a six‑person engine
 
-  id: resume_295 | level: middle | exp: 4.0 yrs | raw_text: 317 words
-  skills: Electronic Health Records, Clinical Operations Management, Data Analysis, Process Improvement, Regulatory Compliance, Stakeholder Communication
-  projects: CarePath Optimizer
-  background: With four years of experience in healthcare administration and clinical operations, I have worked as a Clinical Operations Coordinator at an enterprise‑owned hospital network from June 2020 to May 2022, collaborating with a five‑person multidisciplinary team. In this role I managed daily patient flo
+  id: resume_309 | level: middle | exp: 4.2 yrs | raw_text: 324 words
+  skills: Google Ads, Meta Ads, Google Analytics, SQL, Python, Data Analysis, Campaign Optimization, Attribution Modeling, A/B Testing, Tableau
+  projects: AdBudget Optimizer
+  background: Over the past four years, I have built a career in performance marketing focused on paid acquisition for SaaS and e‑commerce brands. In my most recent role as Performance Marketing Analyst at a growth‑stage startup, I managed a $1.2 million annual budget across Google Ads and Meta Ads Manager, leadi
 
-  id: resume_296 | level: senior | exp: 8.0 yrs | raw_text: 303 words
-  skills: Medical Coordination, Healthcare Operations, Electronic Health Records, Process Optimization, Data Visualization, Regulatory Compliance
-  projects: Hospital Bed Utilization Dashboard, Prescription Accuracy Engine
-  background: Over eight years of progressive experience in medical coordination and healthcare administration has shaped my career, most recently as a Medical Coordinator Lead at a large enterprise health system from March 2016 to present, heading a twelve‑person operations team that includes clinicians, IT anal
-
-  id: resume_297 | level: middle | exp: 4.2 yrs | raw_text: 287 words
-  skills: Financial Modeling, Valuation Analysis, M&A Deal Execution, Leveraged Buyout Modeling, Equity Research, Capital Markets Advisory
-  projects: DealFlow Optimizer, Equity Valuation Dashboard
-  background: Graduating with a Master of Finance in 2020, the candidate began a career at a large investment bank where, as a Financial Analyst in the corporate finance division, they spent two years (January 2021 – December 2022) embedded in an eight‑person team. Their daily duties included constructing detaile
-
-  id: resume_298 | level: junior | exp: 0.8 yrs | raw_text: 279 words
-  skills: Financial Analysis, Basic Financial Modeling, Industry Research, Pitch Book Preparation, Data Extraction
-  projects: Campus Investment Club Valuation Model, Financial Ratio Explorer
-  background: Holding a Bachelor of Science in Finance earned in 2023, the candidate entered the workforce as a Summer Analyst at a multinational investment bank for three months (June – August 2023) within a six‑person analyst squad. During that stint they assisted senior analysts by gathering comparable company
-
-  id: resume_299 | level: middle | exp: 4.5 yrs | raw_text: 312 words
-  skills: Prometheus, Grafana, Kubernetes, Docker, On‑call Incident Management, Terraform, AWS, Python, Go
-  projects: Metrics Dashboard, OpenAlert
-  background: A site reliability engineer with four and a half years of experience has built a career across both fast‑moving startup environments and large‑scale enterprise platforms. In the most recent role as a Site Reliability Engineer at a fintech startup (company type: startup) for two years, the engineer w
-
-  id: resume_300 | level: senior | exp: 8.0 yrs | raw_text: 354 words
-  skills: Prometheus, Grafana, Kubernetes, Docker, Terraform, AWS, Go, LitmusChaos, On‑call Incident Management
-  projects: ChaosKit, Observability Hub
-  background: An experienced site reliability engineering leader with eight years of progressive responsibility has guided reliability initiatives across a diverse portfolio of high‑traffic services. The most recent position, Lead Site Reliability Engineer at a multinational SaaS enterprise (company type: enterpr
+  id: resume_310 | level: senior | exp: 7.1 yrs | raw_text: 341 words
+  skills: Google Ads, Meta Ads, TikTok Ads, DV360, Attribution Modeling, Python, SQL, Snowflake, Looker, Data Visualization, Statistical Analysis, Team Leadership
+  projects: Unified Attribution Engine, AI Bidding Optimizer
+  background: With more than seven years of experience leading performance marketing initiatives at enterprise and scale‑up companies, I have specialized in building data‑centric acquisition engines that drive multimillion‑dollar growth. As Senior Performance Marketing Manager at a Fortune‑500 enterprise, I overs
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_291 | title: Junior Database Engineer | level: junior | min_exp: 1 yrs | raw_text: 218 words
-  required_skills: PostgreSQL, MongoDB, Redis, SQL
-  preferred_skills: Docker, Python, GitHub Actions
-  description: The database engineering team, consisting of five engineers and two data analysts, powers the core data platform for a SaaS product that serves thousands of small‑business customers worldwide. The junior role focuses on building and maintaining relia
+  id: jd_301 | title: Learning and Development Specialist | level: middle | min_exp: 3 yrs | raw_text: 195 words
+  required_skills: Curriculum Design, Instructional Design, Articulate Storyline, Adobe Captivate, Moodle, SCORM, xAPI, PowerBI, SQL
+  preferred_skills: Python, Agile Methodologies, LMS Integration
+  description: The Learning and Development team consists of five professionals responsible for delivering internal corporate training programs that upskill employees across functional areas. The team operates within an agile framework to maintain an internal talen
 
-  id: jd_292 | title: Senior Database Engineer | level: senior | min_exp: 6 yrs | raw_text: 223 words
-  required_skills: PostgreSQL, MongoDB, Redis, SQL, Go
-  preferred_skills: Kubernetes, Terraform, Prometheus
-  description: The senior database engineering squad, a core component of the platform team comprising eight senior engineers and three data architects, underpins the high‑throughput transaction processing system for a global fintech platform handling millions of f
+  id: jd_302 | title: Senior Learning Architect | level: senior | min_exp: 6 yrs | raw_text: 210 words
+  required_skills: Learning Strategy, Curriculum Architecture, Cornerstone OnDemand, Degreed, FastAPI, PostgreSQL, AWS, Docker, Kubernetes, Terraform, SCORM, xAPI, Tableau, PowerBI, Python
+  preferred_skills: Machine Learning, Snowflake, Airflow, Leadership
+  description: The senior learning function operates within a twelve‑member global L&D organization that drives a comprehensive learning experience platform combining Cornerstone OnDemand and Degreed to deliver personalized development journeys for thousands of emp
 
-  id: jd_293 | title: Junior Full‑Stack Engineer | level: junior | min_exp: 1 yrs | raw_text: 192 words
-  required_skills: React, TypeScript, Html, Css, Next.js, Jest
-  preferred_skills: Tailwind Css, GraphQL, Flask
-  description: Our small product team of six engineers builds a SaaS platform that combines a Python backend with a responsive React frontend to serve small‑business customers. The junior engineer will spend each day writing clean, maintainable code, implementing U
+  id: jd_303 | title: Data Scientist | level: middle | min_exp: 3 yrs | raw_text: 197 words
+  required_skills: Python, Pandas, Scikit-Learn, FastAPI, SQL, AWS, Git
+  preferred_skills: Docker, Airflow, Data Visualization
+  description: Our data science team of six engineers builds a real‑time fraud detection platform that protects millions of transactions each day. The role involves designing, developing, and maintaining machine learning models that operate at low latency, as well 
 
-  id: jd_294 | title: Senior Full‑Stack Engineer | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: React, TypeScript, Redux, Next.js, Graphql, Docker, Postgresql, Flask
-  preferred_skills: Aws, Terraform, Cypress, Jest
-  description: Our eight‑person engineering group drives the core of a high‑traffic e‑commerce platform that blends a Flask backend with a sophisticated React and Redux frontend, delivering a seamless experience to millions of users worldwide. The senior engineer w
+  id: jd_304 | title: Lead Data Scientist | level: senior | min_exp: 6 yrs | raw_text: 184 words
+  required_skills: Python, PyTorch, Spark, Kubernetes, AWS, SQL, Git, Docker, Airflow
+  preferred_skills: TensorFlow, MLOps, Terraform, Prometheus
+  description: Our recommendation engine team of fifteen data scientists and engineers powers personalization across a global e‑commerce platform serving billions of users. The senior lead will own the end‑to‑end machine learning lifecycle, from concept through pro
 
-  id: jd_295 | title: Platform Engineer (Mid‑Level) | level: middle | min_exp: 3 yrs | raw_text: 210 words
-  required_skills: Go, gRPC, Docker, Kubernetes
-  preferred_skills: Terraform, AWS
-  description: The platform engineering team consists of eight engineers who build and maintain the high‑throughput microservices that power the core e‑commerce order processing system. The team is responsible for delivering low‑latency, scalable services that hand
+  id: jd_309 | title: Performance Marketing Analyst | level: middle | min_exp: 3 yrs | raw_text: 236 words
+  required_skills: Google Ads, Meta Ads, Google Analytics, SQL, Python, Looker Studio
+  preferred_skills: Tableau, Snowflake
+  description: The performance marketing team consists of five analysts focused on paid acquisition for a B2B SaaS platform. The team collaborates closely with product managers, data scientists, and the creative studio to ensure campaigns align with product launche
 
-  id: jd_296 | title: Senior Platform Engineering Lead | level: senior | min_exp: 6 yrs | raw_text: 197 words
-  required_skills: Go, gRPC, Docker, Kubernetes, Kafka
-  preferred_skills: Terraform, Prometheus, OpenTelemetry
-  description: Our senior platform engineering lead joins a twelve‑member high‑performance team responsible for the end‑to‑end delivery of high‑throughput e‑commerce services that process over 10 million transactions daily. The role demands ownership of architectur
-
-  id: jd_297 | title: Senior Computer Vision Engineer | level: senior | min_exp: 6 yrs | raw_text: 230 words
-  required_skills: Computer Vision, OpenCV, PyTorch, Object Detection, CUDA
-  preferred_skills: TensorFlow, Edge AI Deployment, C++, Docker, Kubernetes
-  description: The perception team, composed of ten engineers, is responsible for delivering end‑to‑end computer‑vision capabilities for autonomous robotic platforms that operate in unstructured environments. Day‑to‑day responsibilities include designing and implem
-
-  id: jd_298 | title: Junior Computer Vision Engineer | level: junior | min_exp: 1 yrs | raw_text: 207 words
-  required_skills: Computer Vision, OpenCV, PyTorch, Object Detection, TensorFlow Lite
-  preferred_skills: C++, Mobile Optimization, GitHub Actions
-  description: The mobile‑app vision team, consisting of five engineers, builds computer‑vision features that enhance user experiences on Android and iOS platforms. Daily duties involve implementing image‑preprocessing pipelines using OpenCV 4.7, training and evalu
-
-  id: jd_299 | title: Senior Frontend Engineer – Design Systems | level: senior | min_exp: 6 yrs | raw_text: 232 words
-  required_skills: React, TypeScript, Storybook, Figma, Styled Components, Jest, Cypress
-  preferred_skills: Next.js, GraphQL, Style Dictionary
-  description: Our design system team, consisting of eight engineers, designers, and product managers, builds a reusable component library that powers the core web experience for millions of users across multiple SaaS products. The senior engineer will own the end‑
-
-  id: jd_300 | title: Junior Frontend Engineer – Design Systems | level: junior | min_exp: 1 yrs | raw_text: 199 words
-  required_skills: React, TypeScript, Storybook, Figma, Jest
-  preferred_skills: Styled Components, GitHub Actions
-  description: Our growing design system squad, made up of five engineers and two product designers, is tasked with creating a cohesive component library that underpins the visual experience of our web applications. The junior engineer will contribute to building R
+  id: jd_310 | title: Senior Performance Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 257 words
+  required_skills: Google Ads, Meta Ads, TikTok Ads, DV360, Snowflake, BigQuery, Python, R, Airflow, Attribution Modeling
+  preferred_skills: Looker, Tableau, TensorFlow
+  description: The senior performance acquisition group comprises twelve specialists who own the end‑to‑end paid media strategy for a global e‑commerce brand, handling budgets exceeding $15 million across Google Ads, Meta Ads, TikTok Ads, and DV360. The team works 
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -196,16 +156,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 580 pairs total.
+Overall dataset so far: 600 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  114  →  expected this group: 20 pairs (from rounds below)
-  weak_match            existing:  116  →  expected this group: 0 pairs (from rounds below)
+  poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:  116  →  expected this group: 3 pairs (from rounds below)
   moderate_match        existing:  119  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  116  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:  115  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:  116  →  expected this group: 3 pairs (from rounds below)
+  excellent_match       existing:  115  →  expected this group: 6 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -214,44 +174,23 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (20 pairs across 5 round(s) — never cross-pair rounds)
+PAIRING ORDER (3 pairs across 3 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (CROSS-DOMAIN: Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas) × Database Engineering (PostgreSQL, MongoDB, Redis, data modeling) — expect poor_match throughout):
-  pair_581    resume_291 × jd_291   (expected: poor_match)
-  pair_582    resume_291 × jd_292   (expected: poor_match)
-  pair_583    resume_292 × jd_291   (expected: poor_match)
-  pair_584    resume_292 × jd_292   (expected: poor_match)
+Round 1 (domain: Learning and Development / Corporate Training (curriculum design, LMS)):
+  pair_603    resume_302 × jd_301   (expected: strong_match)
 
-Round 2 (CROSS-DOMAIN: Backend API Development (Python, FastAPI, Node.js, PostgreSQL) × Full-Stack Web Development (Python backend + React frontend) — expect poor_match throughout):
-  pair_585    resume_293 × jd_293   (expected: poor_match)
-  pair_586    resume_293 × jd_294   (expected: poor_match)
-  pair_587    resume_294 × jd_293   (expected: poor_match)
-  pair_588    resume_294 × jd_294   (expected: poor_match)
+Round 2 (domain: Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)):
+  pair_606    resume_303 × jd_304   (expected: weak_match)
 
-Round 3 (CROSS-DOMAIN: Healthcare Administration and Medical Coordination (clinical ops, EMR) × Platform Engineering for E-commerce (Go, gRPC, high-throughput services) — expect poor_match throughout):
-  pair_589    resume_295 × jd_295   (expected: poor_match)
-  pair_590    resume_295 × jd_296   (expected: poor_match)
-  pair_591    resume_296 × jd_295   (expected: poor_match)
-  pair_592    resume_296 × jd_296   (expected: poor_match)
-
-Round 4 (CROSS-DOMAIN: Investment Analysis and Corporate Finance (valuation, financial modeling, M&A) × Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment) — expect poor_match throughout):
-  pair_593    resume_297 × jd_297   (expected: poor_match)
-  pair_594    resume_297 × jd_298   (expected: poor_match)
-  pair_595    resume_298 × jd_297   (expected: poor_match)
-  pair_596    resume_298 × jd_298   (expected: poor_match)
-
-Round 5 (CROSS-DOMAIN: Site Reliability Engineering (Prometheus, Grafana, on-call, incident response) × Frontend Development for Design Systems (React, Storybook, component libraries) — expect poor_match throughout):
-  pair_597    resume_299 × jd_299   (expected: poor_match)
-  pair_598    resume_299 × jd_300   (expected: poor_match)
-  pair_599    resume_300 × jd_299   (expected: poor_match)
-  pair_600    resume_300 × jd_300   (expected: poor_match)
+Round 5 (domain: Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)):
+  pair_618    resume_309 × jd_310   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 20 lines.
+Output exactly 3 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 20 JSON lines.
+No markdown, no explanation — only 3 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
