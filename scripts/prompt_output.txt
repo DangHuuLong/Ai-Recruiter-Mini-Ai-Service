@@ -1,57 +1,37 @@
 You are a dataset labeler for an AI recruitment system.
-Score 3 CV-JD pairs (from 2 round(s)) using rubric v0.2.
+Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 3 pairs listed
+A previous response was incomplete. Score ONLY the 1 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_315 | level: senior | exp: 8.0 yrs | raw_text: 307 words
-  skills: Business Analysis, Requirements Engineering, BPMN Modeling, Stakeholder Management, Agile Methodologies, Azure DevOps, Jira Service Management, Confluence, SQL Server, PowerBI, Tableau, Python, FastAPI, PostgreSQL, Figma
-  projects: Process Optimizer, DataBridge
-  background: Over the past eight years, the candidate has progressed from a Business Analyst at a fast‑growing startup to a Senior Business Analyst and Team Lead at a large enterprise software firm. In the most recent role, titled Senior Business Analyst Team Lead at an enterprise, the professional supervised a 
+  id: resume_327 | level: middle | exp: 4.0 yrs | raw_text: 292 words
+  skills: Transformers, Hugging Face Transformers, LangChain, RAG, FAISS, PyTorch, spaCy, GitHub Actions, CI/CD, Embeddings, Prompt Engineering, Multilingual NLP, FlashAttention, Quantized Models, Fine-tuning, Inference Optimization, Python
+  projects: Multilingual Embedding Library Optimization, Conversational RAG Bot for Customer Support
+  background: With a solid foundation in machine learning and natural language processing, the professional has spent the last four years specializing in transformer architectures and their practical applications. Beginning at a mid-sized AI consultancy, they joined as a Junior ML Engineer and quickly became prof
 
-  id: resume_316 | level: senior | exp: 8.0 yrs | raw_text: 295 words
-  skills: Project Management, Business Analysis, Requirements Engineering, BPMN Modeling, Stakeholder Management, Agile Scrum, Azure DevOps, Microsoft Project Online, PowerBI, SQL Server, Python, FastAPI, Docker, PostgreSQL, Robot Framework, Node.js
-  projects: InsightHub, AutomateDocs
-  background: The applicant brings eight years of progressive experience in project management and business analysis, beginning as a Junior Project Coordinator at a boutique agency and rising to Senior Project Manager & Business Analyst at a multinational enterprise. In the latest position, the senior professiona
-
-  id: resume_319 | level: senior | exp: 7.0 yrs | raw_text: 392 words
-  skills: E‑commerce Operations, Marketplace Management, Merchandising Strategy, Data Analysis, Python, SQL, AWS, Kubernetes, Airflow, Snowflake, Looker, A/B Testing, Product Roadmapping, Team Leadership, Pricing Optimization
-  projects: SmartSuggest, RouteMax
-  background: During the past seven years the professional has progressed from an e‑commerce operations analyst at a fast‑growing startup to a marketplace operations lead at a large enterprise, overseeing a cross‑functional squad of twelve members. In the first role, titled Operations Analyst at a marketplace‑foc
-
-  id: resume_320 | level: senior | exp: 8.0 yrs | raw_text: 407 words
-  skills: Marketplace Operations, Retail Strategy, Data Engineering, Python, Java, SQL, GCP, Docker, Kubernetes, Airflow, Looker, Machine Learning, Pricing Optimization, Team Leadership, Supply Chain Coordination
-  projects: InvOpt, FraudGuard
-  background: Over the past eight years the candidate has built a career at the intersection of retail management and technology, beginning as a Merchandise Analyst at a boutique e‑commerce agency and culminating in a role as Marketplace Operations Lead at a multinational retailer. In the first position, titled M
+  id: resume_328 | level: middle | exp: 3.0 yrs | raw_text: 278 words
+  skills: Sentence Transformers, Hugging Face Tokenizers, LangChain, Weaviate, PyTorch Lightning, RAG, ONNX Runtime, Quantization, Hybrid Search, Embeddings, Tokenization, Python, Docker
+  projects: Scalable Legal Contract Retrieval with Sentence-BERT, Transformer Summarization Pipeline for Research Lab
+  background: This professional brings three years of focused experience in developing and scaling NLP systems centered around transformer models and embedding-based retrieval architectures. Early in their career at a data-driven startup, they worked on a small team of five engineers to implement a document retri
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_315 | title: Junior Business Analyst | level: junior | min_exp: 1 yrs | raw_text: 186 words
-  required_skills: Jira, Confluence, PostgreSQL, Lucidchart
-  preferred_skills: Tableau, Agile Scrum
-  description: The team consists of five product developers who build a SaaS customer‑relationship management platform for small businesses. The junior analyst will join this compact group and support the product owners by gathering functional requirements, transla
+  id: jd_327 | title: Senior AI Engineer – NLP & Retrieval Systems | level: senior | min_exp: 6 yrs | raw_text: 235 words
+  required_skills: LangChain, RAG, Hugging Face Transformers, PyTorch, FAISS, Weaviate, Python, CI/CD, Model Fine-tuning, Embeddings, Vector Databases, ML Optimization, LoRA, Quantization
+  preferred_skills: ONNX Runtime, FlashAttention, Llama2, Flan-T5, TensorFlow, Docker, Kubernetes
+  description: We are seeking a seasoned Senior AI Engineer to lead the design and deployment of next-generation NLP systems centered around transformer models, retrieval-augmented generation (RAG), and high-dimensional embeddings. Our team, composed of 12 engineer
 
-  id: jd_316 | title: Business Analyst / Project Manager | level: middle | min_exp: 3 yrs | raw_text: 193 words
-  required_skills: Azure DevOps, PowerBI, SQL Server, BPMN Modeling
-  preferred_skills: Python, GitHub Actions
-  description: The organization runs a ten‑person product team that delivers enterprise‑grade workflow automation solutions for financial services clients. The Business Analyst / Project Manager will lead requirement workshops, design detailed BPMN 2.0 processes, a
-
-  id: jd_319 | title: Junior Marketplace Operations Associate | level: junior | min_exp: 1 yrs | raw_text: 194 words
-  required_skills: Shopify, Microsoft Excel, Python, SQL
-  preferred_skills: Looker, Git
-  description: The team is a compact unit of five members responsible for maintaining the health of a growing online marketplace, ensuring product listings are accurate and inventory levels remain synchronized across multiple suppliers. Day‑to‑day duties involve as
-
-  id: jd_320 | title: Marketplace Operations Analyst | level: middle | min_exp: 3 yrs | raw_text: 212 words
-  required_skills: Python, PostgreSQL, Airflow, Looker
-  preferred_skills: GCP BigQuery, Scikit‑Learn
-  description: The department consists of an eight‑person analytics crew tasked with optimizing the day‑to‑day operations of a large multi‑category marketplace, focusing on inventory forecasting, pricing strategy, and supply‑chain efficiency. Daily responsibilities
+  id: jd_328 | title: Senior AI Engineer – Embedding & Retrieval Engineering | level: senior | min_exp: 6 yrs | raw_text: 261 words
+  required_skills: Embeddings, Sentence Transformers, Vector Databases, ONNX Runtime, TensorRT, PyTorch, Hugging Face, FAISS, Chroma, Milvus, Model Optimization, Low-Latency Systems, Retrieval Engineering, Python
+  preferred_skills: Multilingual Embeddings, MTEB, Kafka, Apache Beam, Kubernetes, Terraform, Rust
+  description: Our growing AI team is looking for a Senior Embedding and Retrieval Engineer to architect scalable, low-latency systems that power intelligent search, recommendation, and knowledge discovery across large unstructured datasets. The team operates a mic
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -136,15 +116,15 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 620 pairs total.
+Overall dataset so far: 640 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:  121  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:  119  →  expected this group: 4 pairs (from rounds below)
-  strong_match          existing:  121  →  expected this group: 4 pairs (from rounds below)
+  weak_match            existing:  121  →  expected this group: 4 pairs (from rounds below)
+  moderate_match        existing:  129  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:  131  →  expected this group: 0 pairs (from rounds below)
   excellent_match       existing:  125  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
@@ -154,21 +134,17 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (3 pairs across 2 round(s) — never cross-pair rounds)
+PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 3 (domain: Business Analysis and Project Management (requirements, BPMN, stakeholders)):
-  pair_629    resume_315 × jd_315   (expected: moderate_match)
-  pair_631    resume_316 × jd_315   (expected: moderate_match)
-
-Round 5 (domain: E-commerce and Retail Management (marketplace, operations, merchandising)):
-  pair_637    resume_319 × jd_319   (expected: moderate_match)
+Round 4 (domain: AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)):
+  pair_656    resume_328 × jd_328   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 3 lines.
+Output exactly 1 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 3 JSON lines.
+No markdown, no explanation — only 1 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
