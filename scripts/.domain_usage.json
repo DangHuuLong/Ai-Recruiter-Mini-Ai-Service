@@ -1,7 +1,7 @@
 {
   "AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)": 4,
   "MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring)": 4,
-  "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 3,
+  "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 4,
   "Backend API Development (Python, FastAPI, Node.js, PostgreSQL)": 4,
   "Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)": 4,
   "Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)": 4,
@@ -19,10 +19,10 @@
   "Platform Engineering for E-commerce (Go, gRPC, high-throughput services)": 4,
   "Management Consulting (client delivery, frameworks, stakeholder workshops)": 3,
   "UI/UX Design and Product Design (Figma, user research, prototyping)": 3,
-  "Supply Chain and Logistics Management (procurement, inventory, ERP)": 3,
+  "Supply Chain and Logistics Management (procurement, inventory, ERP)": 4,
   "Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing)": 3,
   "DevOps and Cloud Infrastructure (AWS, Docker, Kubernetes, Terraform)": 3,
-  "Site Reliability Engineering (Prometheus, Grafana, on-call, incident response)": 3,
+  "Site Reliability Engineering (Prometheus, Grafana, on-call, incident response)": 4,
   "Business Analysis and Project Management (requirements, BPMN, stakeholders)": 3,
   "Finance and Accounting in Fintech (financial modeling, reporting, compliance)": 4,
   "Cybersecurity and Information Security (pentesting, SIEM, network)": 4,
@@ -30,9 +30,9 @@
   "Frontend Development for Design Systems (React, Storybook, component libraries)": 4,
   "Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)": 3,
   "Digital Marketing and Content Strategy (SEO, social media, analytics)": 3,
-  "Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)": 3,
+  "Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)": 4,
   "Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)": 4,
-  "Learning and Development / Corporate Training (curriculum design, LMS)": 3,
+  "Learning and Development / Corporate Training (curriculum design, LMS)": 4,
   "Customer Success and Account Management (SaaS renewals, onboarding, churn)": 4,
   "Application Security Engineering (SAST/DAST, secure code review, threat modeling)": 4
 }

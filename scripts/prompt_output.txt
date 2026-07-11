@@ -1,77 +1,37 @@
 You are a dataset labeler for an AI recruitment system.
-Score 8 CV-JD pairs (from 3 round(s)) using rubric v0.2.
+Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 8 pairs listed
+A previous response was incomplete. Score ONLY the 1 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_195 | level: senior | exp: 8.5 yrs | raw_text: 258 words
-  skills: Splunk, Palo Alto Networks, SOAR, Phantom, Burp Suite, Metasploit, Python, Scapy, Docker, Kubernetes, Pentesting, SIEM
-  projects: SecurFlow
-  background: Initiating my professional journey nearly a decade ago, I have cultivated a deep expertise in defensive and offensive security operations. At a large-scale enterprise financial corporation where I served as a Technical Lead for four years, I directed a specialized security team of eight professional
+  id: resume_205 | level: senior | exp: 8.0 yrs | raw_text: 259 words
+  skills: SAP S/4HANA, Coupa, Procurement, Python, Power BI, Ariba, Strategic Sourcing, Contract Negotiation, Lean Manufacturing
+  projects: Supplier Risk Assessment Tool
+  background: Beginning my journey in industrial procurement eight years ago, I spent five years as a Strategic Sourcing Specialist at a multi-national enterprise specializing in heavy machinery. Within this environment, I collaborated with a team of six to manage a spend of forty million dollars annually. My cor
 
-  id: resume_196 | level: senior | exp: 7.5 yrs | raw_text: 266 words
-  skills: AWS, HashiCorp Vault, Kubernetes, EKS, SOC2, QRadar, Carbon Black, EDR, Terraform, Go, Wireshark, Cloud Security
-  projects: CloudBastion
-  background: Over the past seven and a half years, I have established a comprehensive background in securing complex cloud-native environments and enterprise networks. My most recent tenure was at a high-growth tech startup, where I acted as the Security Lead for a team of four over three and a half years. Durin
-
-  id: resume_197 | level: senior | exp: 8.5 yrs | raw_text: 306 words
-  skills: React Native, TypeScript, Kotlin, Swift, Redux Toolkit, Fastlane, GitHub Actions, Firebase, Sentry, Node.js, PostgreSQL, AWS
-  projects: FlexUI
-  background: Starting my journey nearly nine years ago, I have navigated the evolution of mobile ecosystems from early hybrid frameworks to modern high-performance cross-platform solutions. Most recently, as a Tech Lead at a high-growth fintech startup for three years, I managed a diverse team of six engineers. 
-
-  id: resume_198 | level: senior | exp: 7.0 yrs | raw_text: 295 words
-  skills: Flutter, Dart, Bloc, Riverpod, GraphQL, Apollo, Kotlin, SQLite, Codemagic, Firebase, Bluetooth LE, Go
-  projects: SyncFit
-  background: Over the past seven years, my career has been defined by a commitment to creating seamless, high-performance mobile experiences through the Flutter and Dart ecosystem. In my most recent role as a Principal-track Senior Developer at a specialized HealthTech agency, I led a cross-functional team of fi
-
-  id: resume_199 | level: senior | exp: 7.5 yrs | raw_text: 329 words
-  skills: Spark, Airflow, BigQuery, dbt Core, Terraform, Python, Hadoop, Kafka, SQL, GCP
-  projects: StreamWatch
-  background: Initiating my professional journey within a major financial enterprise, I spent four years as a Data Engineer where I collaborated within a team of twelve to modernize legacy ETL systems. Utilizing Apache Spark 3.2 on a Hadoop cluster, I successfully re-architected ingestion pipelines that processed
-
-  id: resume_200 | level: senior | exp: 8.5 yrs | raw_text: 322 words
-  skills: Airflow, BigQuery, dbt Cloud, Python, Flink, SQL, Snowflake, Go, Kubernetes, CI/CD, GCP
-  projects: QueryGuard
-  background: Over the past eight and a half years, I have dedicated my career to mastering the intricacies of data movement and storage, starting as a foundational member of a fast-paced data startup. During my five-year tenure there, I worked in a lean team of five to build an end-to-end analytics platform from
+  id: resume_206 | level: senior | exp: 7.5 yrs | raw_text: 267 words
+  skills: Oracle NetSuite, Manhattan WMS, Inventory Management, SQL, Tableau, Six Sigma, Demand Forecasting, Warehouse Operations, Supply Chain Visibility
+  projects: Logistics Cost Analyzer
+  background: My career in logistics and inventory management began seven and a half years ago, starting at a large-scale international retail enterprise. Over a period of four and a half years, I served as a Senior Inventory Planner within a centralized team of ten professionals. My primary focus was the optimiz
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_195 | title: Security Operations Center Analyst | level: middle | min_exp: 3 yrs | raw_text: 234 words
-  required_skills: Splunk, Wireshark, Python, Nessus, Kali Linux
-  preferred_skills: Cloud Security, Incident Response
-  description: Our security operations team is currently looking for a motivated and experienced mid-level Security Operations Center Analyst to join our growing department of six professionals. In this role, you will play a critical part in protecting our B2B SaaS
+  id: jd_205 | title: Logistics Coordinator | level: junior | min_exp: 1 yrs | raw_text: 231 words
+  required_skills: Logistics, Microsoft Excel, ERP Systems, Communication
+  preferred_skills: Data Entry, Shipping Coordination
+  description: We are looking for a Junior Logistics Coordinator to join our growing fulfillment team of four people. This role is central to our daily operations, ensuring that our e-commerce products move from our warehouse to our customers with maximum efficienc
 
-  id: jd_196 | title: Network Security Engineer | level: middle | min_exp: 3 yrs | raw_text: 242 words
-  required_skills: Cisco ASA, Fortinet, AWS, VPC, WAF, TCP/IP, BGP
-  preferred_skills: Zero Trust, Check Point, Cloud Security
-  description: We are seeking a dedicated Network Security Engineer to join our infrastructure security team at a mid-level capacity. Our team consists of five engineers focused on maintaining the integrity and availability of our hybrid cloud and on-premise enviro
-
-  id: jd_197 | title: Middle Mobile Developer (React Native) | level: middle | min_exp: 3 yrs | raw_text: 263 words
-  required_skills: React Native, TypeScript, Redux, Jest, Fastlane
-  preferred_skills: Swift, Kotlin, GraphQL, Figma
-  description: We are looking for a dedicated Middle-level Mobile Developer to join our growing product team of twelve, focused on building an engaging social networking platform. In this role, you will be responsible for developing new features and maintaining our
-
-  id: jd_198 | title: Middle Flutter Developer | level: middle | min_exp: 3 yrs | raw_text: 260 words
-  required_skills: Flutter, Dart, Riverpod, REST API, Mobile Security
-  preferred_skills: Firebase, Bitrise, Codemagic, Provider
-  description: Our engineering team is searching for a Middle Flutter Developer to contribute to our flagship wealth management application. The team currently consists of eight developers working in an agile environment to deliver secure and intuitive financial to
-
-  id: jd_199 | title: Middle Data Engineer | level: middle | min_exp: 3 yrs | raw_text: 260 words
-  required_skills: Airflow, BigQuery, Python, SQL, dbt
-  preferred_skills: Terraform, GCP, Data Modeling
-  description: Our core data infrastructure team is expanding to better support our growing product analytics division as we scale our user base. We are looking for a Middle Data Engineer to join our six-person unit and take ownership of our primary ingestion and t
-
-  id: jd_200 | title: Data Pipeline Engineer | level: middle | min_exp: 3 yrs | raw_text: 254 words
-  required_skills: Spark, dbt, Python, BigQuery, Kubernetes
-  preferred_skills: GitHub Actions, GCP, AWS, Snowflake
-  description: We are seeking a diligent Middle Data Engineer to bridge the gap between raw data collection and actionable insights within our four-person data engineering team. This role is central to our mission of providing high-quality data products to our inte
+  id: jd_206 | title: Senior Supply Chain Lead | level: senior | min_exp: 6 yrs | raw_text: 222 words
+  required_skills: SAP S/4HANA, Strategic Sourcing, SQL, Power BI, Vendor Management, Procurement Strategy
+  preferred_skills: Change Management, Financial Modeling, Lean Six Sigma
+  description: Our organization is searching for a Senior Supply Chain Lead to spearhead our strategic sourcing and procurement division. You will be joining an established operations team of twelve, where you will take the lead on high-value vendor negotiations an
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -156,16 +116,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 380 pairs total.
+Overall dataset so far: 400 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:   80  →  expected this group: 0 pairs (from rounds below)
   weak_match            existing:   85  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:   73  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:   69  →  expected this group: 12 pairs (from rounds below)
-  excellent_match       existing:   73  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:   73  →  expected this group: 2 pairs (from rounds below)
+  strong_match          existing:   89  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   73  →  expected this group: 2 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -174,28 +134,17 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (8 pairs across 3 round(s) — never cross-pair rounds)
+PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 3 (domain: Cybersecurity and Information Security (pentesting, SIEM, network)):
-  pair_389    resume_195 × jd_195   (expected: strong_match)
-
-Round 4 (domain: Mobile Development (React Native, Flutter, Swift, Kotlin)):
-  pair_394    resume_197 × jd_198   (expected: strong_match)
-  pair_395    resume_198 × jd_197   (expected: strong_match)
-  pair_396    resume_198 × jd_198   (expected: strong_match)
-
-Round 5 (domain: Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)):
-  pair_397    resume_199 × jd_199   (expected: strong_match)
-  pair_398    resume_199 × jd_200   (expected: strong_match)
-  pair_399    resume_200 × jd_199   (expected: strong_match)
-  pair_400    resume_200 × jd_200   (expected: strong_match)
+Round 3 (domain: Supply Chain and Logistics Management (procurement, inventory, ERP)):
+  pair_409    resume_205 × jd_205   (expected: moderate_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 8 lines.
+Output exactly 1 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 8 JSON lines.
+No markdown, no explanation — only 1 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
