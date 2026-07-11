@@ -1,166 +1,84 @@
-You are a dataset labeler for an AI recruitment system.
-Score 9 CV-JD pairs using rubric v0.2.
+You are a dataset generator for an AI recruitment system.
+Generate exactly 2 resumes and 2 job descriptions in the domain: Mobile Development (React Native, Flutter, Swift, Kotlin)
+
+These 4 documents will be cross-paired into 4 CV-JD pairs.
+Target score range: 0-100 (continuous — do not avoid any particular sub-range).
 
 ════════════════════════════════════
-RESUMES
+SENIORITY ASSIGNMENT (follow exactly)
 ════════════════════════════════════
-  id: resume_1198 | level: junior | exp: 0.5 yrs | raw_text: 256 words
-  skills: Linux, Network Security, Nessus, pfSense, ELK Stack, Snort
-  projects: SecureHome
-  background: I am an enthusiastic entry-level cybersecurity analyst with a foundational background in network security and threat detection. During my six-month internship at a local technology startup, I worked alongside a security team of three to monitor network traffic and investigate potential security inci
+Resume resume_377: middle   (3-5 yrs total experience)
+Resume resume_378: middle   (3-5 yrs total experience)
 
-  id: resume_1199 | level: junior | exp: 0.7 yrs | raw_text: 256 words
-  skills: Python, Burp Suite, Nmap, Metasploit, Flask, Web Security
-  projects: WebShield
-  background: I am a motivated junior information security associate with a fresh academic background in ethical hacking and system hardening. During my eight-month residency at a cybersecurity consultancy firm, I collaborated with a team of five security engineers to deliver penetration testing services for smal
+JD jd_377: senior   (min 6 yrs, lead or senior engineer, deep specialization required)
+JD jd_378: senior   (min 6 yrs, senior-level position requiring deep expertise)
 
-  id: resume_1200 | level: senior | exp: 8.0 yrs | raw_text: 252 words
-  skills: Python, Splunk, AWS Security, Kubernetes, Terraform, Network Security
-  projects: SentinelFlow
-  background: I am a senior cybersecurity architect with eight years of experience in designing resilient, large-scale security operations for enterprise organizations. In my recent role as a Lead Security Engineer at a global technology firm, I managed a cross-functional team of twelve security professionals res
+This round's mix was chosen (based on which labels the dataset currently lacks)
+so that cross-pairing every resume × every JD naturally produces this label
+spread — score the resulting pairs honestly instead of forcing a different
+distribution:
+  weak_match       × 4
 
-════════════════════════════════════
-JOB DESCRIPTIONS
-════════════════════════════════════
-  id: jd_1198 | title: Mid-Level Security Operations Engineer | level: middle | min_exp: 3 yrs | raw_text: 213 words
-  required_skills: Splunk, AWS Security, Linux, Network Security, Python, Vulnerability Assessment
-  preferred_skills: Kubernetes, Terraform
-  description: Our security operations team is seeking a Mid-Level Security Operations Engineer to join our group of fifteen professionals. We are responsible for maintaining our global security posture and responding to incidents across our cloud and on-premises e
-
-  id: jd_1199 | title: Senior Cybersecurity Architect | level: senior | min_exp: 6 yrs | raw_text: 214 words
-  required_skills: Splunk, Kubernetes, Terraform, AWS, Cloud Security, Microservices
-  preferred_skills: Threat Intelligence, Cryptography
-  description: Our platform engineering team is seeking a Senior Cybersecurity Architect to lead the design and implementation of our next-generation enterprise-scale security architecture. Working in a specialized team of ten, you will guide our technical strategy
-
-  id: jd_1200 | title: Lead Security Engineer | level: senior | min_exp: 6 yrs | raw_text: 204 words
-  required_skills: Splunk, Python, Kubernetes, AWS, Cloud Security, API Security
-  preferred_skills: Terraform, Threat Detection
-  description: Our core security team is hiring a Lead Security Engineer to drive the delivery of our enterprise platform protection. You will lead a high-performing squad of fifteen engineers, steering the development of advanced security features that protect mil
+Gap rule (JD seniority tier − resume seniority tier), for reference:
+  +2 → poor_match       +1 → weak_match
+   0 → excellent_match  -1 → strong_match
+  <=-2 → moderate_match (heavily overqualified)
 
 ════════════════════════════════════
-SCORING RUBRIC v0.2
+SKILL AUTHORING — USE JUDGMENT, NOT A FIXED PERCENTAGE
 ════════════════════════════════════
-Score each criterion 0-100, then compute weighted overall:
-  overall_score = round(
-      SKILLS_MATCH            × 0.35 +
-      EXPERIENCE_RELEVANCE    × 0.30 +
-      PROJECT_RELEVANCE       × 0.15 +
-      EDUCATION_CERTIFICATION × 0.10 +
-      KEYWORD_DOMAIN_ALIGNMENT× 0.10
-  )
-
-Label mapping:
-  90-100 → excellent_match
-  75-89  → strong_match
-  60-74  → moderate_match
-  40-59  → weak_match
-  0-39   → poor_match
+Design each resume's skill list based on genuine expertise for its stated
+seniority — do NOT target an exact overlap percentage with any specific JD.
+A junior resume should naturally know fewer of a senior JD's specialized or
+advanced-tier tools (they simply haven't needed them yet), while a resume at
+the same level as a JD should naturally share most of its core stack. Let the
+overlap emerge from realistic, individually-authored skill sets, not a formula.
 
 ════════════════════════════════════
-VALID SCORE WINDOWS (boundary zones removed)
+CV raw_text — STRICT REQUIREMENTS
 ════════════════════════════════════
-Use ONLY scores within these windows — no exceptions:
-  poor_match:      20-34   (use 25, 28, 30)
-  weak_match:      46-54   (use 48, 50, 52)
-  moderate_match:  66-69   (use 67, 68)
-  strong_match:    81-84   (use 82, 83)
-  excellent_match: 96-100  (use 97, 98)
+Minimum 280 words per resume. Write as connected prose paragraphs (not bullet points).
+Include ALL of the following to reach 280+ words:
+  • Job history: for each role — job title, company type (startup/enterprise/agency),
+    duration, team size, 2-3 specific responsibilities with concrete tools used
+  • Technologies: list specific versions or ecosystems where natural (e.g. "FastAPI 0.100,
+    PostgreSQL 14, deployed on AWS ECS")
+  • Quantified achievements where possible: latency reduced by X%, served Y requests/day,
+    reduced deployment time from X to Y minutes
+  • Projects: 1-2 side or internal projects with name, goal, tech stack, outcome
+  • Current focus and next career direction (1-2 sentences)
+  • Education: degree, field, graduation year
 
-NEVER use scores in boundary zones: 35-45, 55-65, 70-80, 85-95.
-These zones are forbidden because they produce ambiguous labels.
-
-════════════════════════════════════
-SKILLS_MATCH — DERIVE FROM ACTUAL OVERLAP, DON'T REUSE A NUMBER
-════════════════════════════════════
-For every pair, first count: matched = required_skills present in the resume's
-skills list, total = len(required_skills). Then anchor SKILLS_MATCH to that ratio:
-  SKILLS_MATCH ≈ round(100 × matched / total), adjusted ±10 for preferred-skill
-  overlap and depth/version alignment.
-Two pairs with the same seniority gap can still need different SKILLS_MATCH if
-their real overlap ratio differs (e.g. 25% overlap vs 65% overlap must NOT get the
-same score just because both are "junior CV × senior JD"). Recompute per pair.
+Do NOT include: candidate name, email, phone number, LinkedIn URL, GitHub URL.
+Do NOT use bullet points — write connected prose only.
+Vary sentence structure and opening phrasing from any previous batches you may
+have generated in this session — do not reuse the same opening sentence pattern.
 
 ════════════════════════════════════
-poor_match SCORING GUIDANCE
+JD raw_text — STRICT REQUIREMENTS
 ════════════════════════════════════
-A valid poor_match pair (score 20-34) requires ALL of:
-  1. Massive experience gap: intern/fresh grad (0-1 yr) vs senior JD (6+ yrs required)
-     → EXPERIENCE_RELEVANCE: 10-25
-  2. Core skill mismatch: matched/required skill ratio < 40%
-     → SKILLS_MATCH: 15-35 (must equal the computed ratio, not a template number)
-  3. Project misalignment: no relevant projects that map to JD responsibilities
-     → PROJECT_RELEVANCE: 10-30
-Natural source: intern/junior (0-1 yr) CV × senior JD pairing.
-Do NOT fabricate poor_match from unrelated domains — the CV and JD must still be in the same broad domain.
+Minimum 200 words per job description. Write as connected prose paragraphs.
+Include ALL of the following to reach 200+ words:
+  • Role overview: what the team does, team size, product context
+  • Day-to-day responsibilities (3-4 specific duties with tools/systems named)
+  • Technical stack: list every required and preferred technology with context
+  • What success looks like in the first 6 months
+  • Collaboration: who this person works with (e.g. product, QA, data team)
+  • Growth opportunities or scope of impact
 
-DECISION PRIORITY — resolve intern×senior pairs with this BEFORE picking a label:
-if resume experience_years <= 1 AND JD min_experience_years >= 6, compute the
-skill overlap ratio (matched required_skills / total required_skills) FIRST:
-  • ratio < 40%  → this pair MUST be poor_match. The weak_match "experience gap"
-    rule below does NOT apply to interns (<=1 yr) — it only applies once the
-    candidate has 1-2+ yrs and is past entry level.
-  • ratio >= 40% → this pair is weak_match instead (real partial overlap saves it).
-This ratio check overrides any temptation to soften the label because the CV and
-JD share some domain vocabulary — shared domain alone is not overlap.
-
-════════════════════════════════════
-weak_match SCORING GUIDANCE
-════════════════════════════════════
-A valid weak_match pair (score 46-54) requires at least one of:
-  1. Experience gap: resume has >1 yr (already past intern/fresh-grad stage — e.g.
-     1-2 yrs) vs senior JD (5+ yrs required). Do NOT use this rule for resumes with
-     experience_years <= 1 — see the poor_match DECISION PRIORITY above, which
-     routes those to poor_match unless overlap ratio is already >= 40%.
-     → EXPERIENCE_RELEVANCE: 25-40 (large gap penalised heavily)
-     → SKILLS_MATCH: 45-60 (must equal the actual computed overlap ratio, not a default)
-  2. Skill domain mismatch: same broad field but different specialization
-     → SKILLS_MATCH: 35-55 (missing core required stack)
-     → PROJECT_RELEVANCE: 30-50 (projects don't align with JD responsibilities)
-
-For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
-  • If EXPERIENCE_RELEVANCE is 20, explain in label_notes (e.g. "requires 6+ yrs, candidate has 0.5 yrs")
-  • SKILLS_MATCH cannot be 85 if overall is 28 — the math must work
-  • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
-
-════════════════════════════════════
-LABEL BALANCE — CONTEXT (already engineered into this batch)
-════════════════════════════════════
-Overall dataset so far: 3591 pairs total.
-This batch's resume/JD seniority levels were deliberately chosen so that scoring
-each pair honestly (per the rubric below) should already land close to this spread —
-no need to force it, just verify your scores roughly match:
-
-  poor_match            existing:  717  →  expected this batch: 4 pairs (from seniority gaps below)
-  weak_match            existing:  718  →  expected this batch: 2 pairs (from seniority gaps below)
-  moderate_match        existing:  719  →  expected this batch: 0 pairs (from seniority gaps below)
-  strong_match          existing:  718  →  expected this batch: 1 pairs (from seniority gaps below)
-  excellent_match       existing:  719  →  expected this batch: 2 pairs (from seniority gaps below)
-
-Rules:
-• Score every pair from its actual documents — seniority gap, skill overlap, project fit.
-• If a pair's honest score lands far from its "expected" label above, trust the
-  documents over the expectation and note why in label_notes.
-• Adjust criterion scores within valid windows only.
-
-════════════════════════════════════
-PAIRING ORDER (9 pairs)
-════════════════════════════════════
-  pair_3592   resume_1198 × jd_1198
-  pair_3593   resume_1198 × jd_1199
-  pair_3594   resume_1198 × jd_1200
-  pair_3595   resume_1199 × jd_1198
-  pair_3596   resume_1199 × jd_1199
-  pair_3597   resume_1199 × jd_1200
-  pair_3598   resume_1200 × jd_1198
-  pair_3599   resume_1200 × jd_1199
-  pair_3600   resume_1200 × jd_1200
+Do NOT include: company name. Do NOT use bullet points — write connected prose only.
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 9 lines.
+Output exactly 4 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 9 JSON lines.
+Lines 1-2: resumes (IDs: resume_377, resume_378)
+Lines 3-4: job descriptions (IDs: jd_377, jd_378)
+No markdown, no explanation — only 4 JSON lines.
 
-JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int in valid window>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+RESUME SCHEMA (lines 1-2):
+{"id":"<resume_id>","source":"synthetic","candidate_level":"<junior|middle|senior>","raw_text":"<280+ word prose — no names/emails/phones/URLs>","summary":"<one sentence capturing level, domain, and key strength>","skills":["<TitleCased>",...],"normalized_skills":["<snake_case>",...],"experience_years":<float>,"education":{"degree":"<Bachelor|Master|PhD>","field_of_study":"<field>","status":"<student|final_year|graduate>"},"projects":[{"name":"<project name>","description":"<2-3 sentences: goal, tech, outcome>","technologies":["<Tech>",...]}],"certifications":[],"languages":[{"name":"English","proficiency":"intermediate"}],"anonymized":true,"language":"en"}
+
+JD SCHEMA (lines 3-4):
+{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<200+ word prose — no company name>","responsibilities":["<specific item>",...],"requirements":["<specific item>",...],"nice_to_have":["<specific item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}

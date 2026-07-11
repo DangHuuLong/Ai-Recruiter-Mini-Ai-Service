@@ -152,24 +152,83 @@ The CV must have enough specific detail (skills, tools, project descriptions) th
 
 ---
 
-## 5. Progress Checklist
+## 6. Dataset v0.6 (raw_v2) Result — 91% Test LabelAcc Was Fake
+
+### 6.1 What happened
+
+`datasets/raw_v2` was generated (3,600 pairs, versioned as `datasets/versions/v0.6`): 3×3 batches, ≥280/200-word enforcement, perfectly balanced 20%/class (poor_match was engineered back in via a seniority-mix + skill-overlap mechanism — see 6.4 for why this deviates from this doc's original plan). Fine-tuning MiniLM-L-12-v2 with the same config as the v0.6 baseline (MSE + Spearman, 10 epochs) produced **91.3% test LabelAcc, MAE 3.70** — far above the 65.80% ceiling.
+
+### 6.2 Why it's fake: cross-dataset evaluation
+
+The model was evaluated on data it was **not** trained on, in both directions:
+
+| Model trained on → tested on | MAE | RMSE | LabelAcc | Prediction range |
+|---|---|---|---|---|
+| raw_v2/v0.6 model → v0.5 test set (2,000 pairs) | **127.73** | 171.51 | 27.4% | mean predicted = **132** (outside valid 0–100 range) |
+| v0.6-ensemble-lineage model (trained on v0.5) → raw_v2/v0.6 test set (540 pairs) | 13.54 | 17.43 | 42.8% | mean predicted = 73 (stays in-range) |
+
+The new model doesn't just perform worse out-of-distribution — its regression head produces values outside the valid score range entirely, meaning it never learned a bounded, generalizable scoring function. It memorized this dataset's specific generation formula. The old v0.5-trained model degrades gracefully by comparison (in-range, moderately worse). **91.3% reflects fitting a narrow synthetic distribution, not CV–JD matching ability.**
+
+### 6.3 Root cause: data homogeneity, not the boundary-zone rule
+
+The forbidden-boundary-zone scoring rule (Section 4.4) was the first suspect but is **ruled out** by re-checking dataset history: the actual source of the 60.76% ceiling is `datasets/versions/v0.3` (7,000 pairs, `manual_ai_assisted` — corrected after initially mis-checking the `v0.2` folder), which has **59.8%** of pairs inside "boundary zones." Meanwhile the `llm_synthetic` subset of v0.5 (6,350 pairs, contributing to the 65.80%-ensemble best model) has **0%** boundary-zone pairs — identical to raw_v2 — yet did not cause catastrophic failure. So boundary-zone avoidance alone does not explain it.
+
+Measured, confirmed differences between raw_v2 and every dataset that generalized reasonably:
+
+| Metric | v0.3 (ceiling source, single generation pass) | v0.5 (best model, 3 mixed sources/eras) | raw_v2 (new, 91% fake) |
+|---|---|---|---|
+| unique JD `domain` tag values | 743 / 1,400 (53%) | — | **191 / 1,200 (16%)** |
+| max repeated 6-word resume opening | 9× / 1,400 | — | **27× / 1,200** |
+| unique 6-word resume openings | 83.4% | — | 72.7% |
+
+`raw_v2` is generated entirely by one fixed script/prompt template cycling through only 18 domain strings via `random.choice` (each reused ~22× across ~400 batches). Every historical dataset that generalized reasonably had meaningfully more diversity — including v0.5, whose best-ever result (65.80%) came from **combining 3 different generation eras/sources** (`manual_ai_assisted` + `llm_relabeled` + `llm_synthetic`), not from any single "clean" generator. Heterogeneity of source/style — not a particular scoring-window rule — is what historically drove generalization.
+
+Secondary contributor: the `REQUIRED SKILLS OVERLAP` prompt section forced an exact %-overlap-to-label mapping per pair, making score a near-linear, mechanically learnable function of keyword overlap — an easy shortcut for a small model to exploit instead of learning semantic matching.
+
+### 6.4 Deviation from the "no poor_match" plan (Section 4.2)
+
+This document originally planned 4 classes with **no poor_match** in synthetic data ("balanced at 20% per class (4 classes)" — note this ratio is internally inconsistent, 4 × 20% = 80%, so the target was never fully specified). In practice, poor_match was engineered back in via a same-domain seniority-gap + forced-low-skill-overlap mechanism. Section 7 redesigns poor_match generation around genuine cross-domain mismatches instead (CV domain A × JD domain B), closer to the original "cross-field pairs" idea from the v0.4 report's next-steps, and more realistic than a same-domain contrivance.
+
+---
+
+## 7. Dataset v0.7 (raw_v3) — Plan
+
+Supersedes the v0.6/raw_v2 approach. Keeps everything that measurably worked (word-count enforcement, explicit weak_match criteria, water-filling label balance) and changes the parts implicated in Section 6.3:
+
+| Change | Rationale |
+|---|---|
+| Batch size 3×3 → **2×2** (4 pairs/round) | Further reduces per-response document load, same direction as the original 5×5→3×3 fix |
+| **5 rounds of 2×2 accumulated, scored together** (20 pairs/scoring prompt) | Keeps CV/JD generation at the proven-safe small size while cutting manual round-trips for the scoring step ~5× |
+| Domain list expanded + **least-used-domain rotation** (not `random.choice` with replacement) | Directly targets the measured 191-vs-743 domain-diversity gap |
+| **Cross-domain round mode** for poor_match (resume domain ≠ JD domain) | Genuine mismatch signal instead of a same-domain contrivance; also raises domain diversity per the table above |
+| Removed forbidden-boundary-zone score windows — scores now continuous 0–100 | Ruled out as the cause (6.3); the real historical risk (v0.4/v0.5) was inconsistent *multi-session relabeling*, not continuous scores, which doesn't apply to this single-pass generator |
+| Removed fixed `%`-overlap-to-label table — qualitative skill-authoring guidance instead | Removes the mechanical, easily-memorized shortcut identified in 6.3 |
+| Seniority-tier description text varied across multiple phrasings | Reduces the measured 27×-repeated opening-sentence pattern |
+| New path: `datasets/raw_v3` (raw_v2/v0.6 kept frozen as a documented negative result) | Matches this project's established versioning convention (v0.1–v0.5 kept frozen); enables a clean ablation later (v0.6 alone vs v0.7 alone vs combined) |
+
+---
+
+## 8. Progress Checklist
 
 ### Data Pipeline
 - [x] v0.6 error analysis completed — weak_match identified as bottleneck
 - [x] Model upgrade path explored (ELECTRA, BGE) — both failed, MiniLM confirmed as only viable base
-- [x] Update `generate_synthetic_data.py`: 3×3=9 batch, ≥280-word CV enforcement, weak_match guidance, criterion score consistency check
-- [ ] Create `datasets/raw_v2/` and start generation
-- [ ] Target: ~1,000 batches × 9 pairs = ~9,000 pairs, balanced across 4 classes
-- [ ] Build `datasets/versions/v0.6/cross_encoder/` split (70/15/15)
-- [ ] Quality verification: word count stats, label distribution, manual spot-check of 50 pairs
+- [x] Update `generate_synthetic_data.py` (v1): 3×3=9 batch, ≥280-word CV enforcement, weak_match guidance, criterion score consistency check
+- [x] Create `datasets/raw_v2/` and generate 3,600 pairs (balanced 20%/class)
+- [x] Fine-tune on raw_v2/v0.6 → 91.3% test LabelAcc
+- [x] Cross-dataset evaluation reveals the result is fake (Section 6.2) — root-caused to data homogeneity (Section 6.3)
+- [ ] Update `generate_synthetic_data.py` (v2): 2×2 batch, 5-round accumulation, expanded domains, cross-domain poor_match mode, continuous scores, qualitative skill guidance
+- [ ] Create `datasets/raw_v3/` and start generation
+- [ ] Build `datasets/versions/v0.7/cross_encoder/` split (70/15/15)
+- [ ] Fine-tune on raw_v3 alone, then on raw_v2+raw_v3 combined — compare both against the v0.5/v0.6 baseline AND via cross-dataset evaluation (not just in-domain test LabelAcc)
 
-### Model Training (after dataset v0.6 is ready)
-- [ ] Fine-tune MiniLM-L-12-v2 on v0.6 dataset (LR=5e-5, 15 epochs, BS=16)
-- [ ] Compare: v0.7 model (dataset v0.6) vs v0.6 baseline (dataset v0.5)
-- [ ] If single run ≥65.15%: run ensemble with 5 seeds
+### Model Training
+- [ ] Fine-tune MiniLM-L-12-v2 on raw_v3 (LR=5e-5, 15 epochs, BS=16)
+- [ ] Cross-evaluate: raw_v3 model → v0.5 test set, and v0.5-lineage model → raw_v3 test set (repeat the Section 6.2 check — a healthy result should NOT reproduce the MAE-127 / out-of-range collapse)
+- [ ] If in-domain and cross-dataset results are both healthy: run ensemble with 5 seeds
 - [ ] Update this document with final results
 
 ---
 
 **Last Updated**: July 2026
-**Status**: 🔄 In Progress — updating data generation pipeline
+**Status**: 🔄 In Progress — raw_v2 diagnosed as overfit to a narrow single-source distribution; pivoting to raw_v3 with wider domain diversity and cross-domain poor_match generation
