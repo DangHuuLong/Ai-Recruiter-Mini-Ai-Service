@@ -1,5 +1,5 @@
 You are a dataset labeler for an AI recruitment system.
-Score 2 CV-JD pairs (from 1 round(s)) using rubric v0.2.
+Score 2 CV-JD pairs (from 2 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
@@ -10,30 +10,48 @@ below — do not re-score or repeat any other pair.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_357 | level: senior | exp: 7.5 yrs | raw_text: 272 words
-  skills: Recruitment, HRIS, Talent Acquisition, Employee Relations, Performance Management, HR Analytics, BambooHR, ADP Workforce Now, Workday, Power BI
-  projects: HR Analytics Dashboard
-  background: I am a seasoned HR professional with over 7 years of experience, currently seeking a challenging role in Talent Acquisition. My journey began at a boutique recruitment agency, where I honed my skills in full-cycle recruitment, managing a diverse portfolio of clients across various industries. During
+  id: resume_363 | level: middle | exp: 4.2 yrs | raw_text: 294 words
+  skills: Prometheus Monitoring, Grafana Dashboards, Incident Response, On-Call Engineering, SLO Development, Terraform Infrastructure, Kubernetes Operations, CI/CD Pipelines, AWS Cloud, OpenStack Administration, Python Automation, Opsgenie Integration, PagerDuty Escalation, eBPF Profiling, Status Page Development
+  projects: Open-source status dashboard
+  background: Over the past four years, I’ve carved out a career in site reliability engineering, focusing on observability and incident response in fast-paced SaaS environments. At my most recent role as a Site Reliability Engineer at a mid-sized fintech startup, I worked on a team of eight engineers maintaining
 
-  id: resume_358 | level: senior | exp: 8 yrs | raw_text: 269 words
-  skills: Talent Acquisition, HR Operations, HRIS, Employee Engagement, Onboarding, RPA, Workday, SAP SuccessFactors, Oracle HCM, UiPath
-  projects: HR Process Automation
-  background: With 8 years of experience in the HR domain, I have honed my skills in Talent Acquisition and HR Operations, seeking a principal role to drive strategic talent initiatives. My career began as a Technical Recruiter at a leading IT consulting firm, where I excelled in sourcing and hiring top tech tale
+  id: resume_364 | level: senior | exp: 8.9 yrs | raw_text: 306 words
+  skills: Multi-Region Observability, Thanos Federation, Incident Command Systems, MTTR Reduction, SLO Engineering, Chaos Engineering, Kubernetes-Native SDN, Go Development, C++ Networking, GitLab CI Automation, Slack Integrations, PagerDuty Playbooks, PostgreSQL HA, Patroni, Chaos Mesh, Platform Engineering
+  projects: Open-data PostgreSQL HA cluster, SRE Guild Lightning Talk Series
+  background: With nine years of progressive experience in site reliability engineering, I’ve evolved from hands-on troubleshooting to leading reliability initiatives that directly impact product stability and business outcomes. As a Staff Site Reliability Engineer at a unicorn-scale ad-tech company with a 200-pe
+
+  id: resume_369 | level: junior | exp: 0.5 yrs | raw_text: 266 words
+  skills: Figma, User Research, Prototyping, Usability Testing, Wireframing, Adobe XD, User Interviews, A/B Testing, Interaction Design
+  projects: HomeFlow
+  background: Fresh from design school with a strong portfolio in Figma and Adobe XD, I began my career as a Product Design Intern at Bright Labs, a boutique digital agency in Lisbon, where I spent six months immersed in end-to-end design workflows. During that time, I collaborated closely with a team of four jun
+
+  id: resume_370 | level: middle | exp: 4.0 yrs | raw_text: 282 words
+  skills: Figma, User Research, Prototyping, Stakeholder Collaboration, Design Systems, WCAG 2.2, Usability Testing, Framer, User Interviews, Mentorship
+  projects: Pulse UI Design System
+  background: As a Product Designer at Echo Creative Studio, an enterprise-focused agency in Berlin, I led design initiatives for complex digital products over the past four years, working with a cross-functional team of eight designers, five developers, and three product managers. My role combined deep user rese
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_357 | title: HR Business Partner | level: middle | min_exp: 4 yrs | raw_text: 228 words
-  required_skills: Recruitment, Employee Relations, HRIS, Performance Management, Communication Skills
-  preferred_skills: HR Analytics, Labor Law Compliance, HR Operations
-  description: We are seeking an experienced HR Business Partner to join our dynamic team and support our growing organization. As an HRBP, you will be a strategic partner to business leaders, providing HR expertise and guidance to drive organizational success.
+  id: jd_363 | title: Associate Technical Program Manager | level: junior | min_exp: 1 yrs | raw_text: 233 words
+  required_skills: JIRA, Confluence, Agile Methodologies, Cross-Team Coordination, Release Management, Sprint Planning, Stakeholder Communication
+  preferred_skills: AWS EKS, User Acceptance Testing, PMP Certification, SQL Basics
+  description: This entry-level Associate Technical Program Manager role sits within a fast-growing 15-person agile delivery team responsible for shipping high-impact features across three engineering squads and one data engineering team. The squad owns a mission-c
 
-Yo
+  id: jd_364 | title: Technical Program Manager - Growth Roadmaps | level: middle | min_exp: 3 yrs | raw_text: 247 words
+  required_skills: Technical Roadmaps, Cross-Functional Leadership, Agile-Waterfall Hybrid, Risk Assessment, Dependency Matrix Management, Stakeholder Alignment, API Platforms, RFC Authoring
+  preferred_skills: Smartsheet, Go Programming, API Compliance, Principal-Level Roadmapping
+  description: This experienced Technical Program Manager role focuses on driving end-to-end execution for a 70-person platform engineering org that builds and maintains the core API infrastructure powering the company’s mobile and web applications. The team owns a
 
-  id: jd_358 | title: Talent Acquisition Specialist | level: middle | min_exp: 3 yrs | raw_text: 238 words
-  required_skills: Talent Acquisition, Sourcing, Screening, Interviewing, Employer Branding, Communication Skills
-  preferred_skills: HRIS, Diversity & Inclusion, HR Operations
-  description: We are on the lookout for a talented and experienced Talent Acquisition Specialist to join our remote team and play a pivotal role in building a diverse and high-performing workforce. As a key member of the Talent Acquisition team, you will be respon
+  id: jd_369 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 208 words
+  required_skills: Business Analysis, BPMN 2.0, Stakeholder Management, Requirements Traceability, Process Modeling, SQL, Confluence, Jira, Workshop Facilitation, GDPR Compliance
+  preferred_skills: SAP ERP, Oracle Fusion, CBAP Certification, PMI-PBA Certification, Power BI, Enterprise Architecture
+  description: We are building a next-generation enterprise resource planning platform designed to streamline complex business workflows for Fortune 500 clients across North America and EMEA. Our team of 25 business analysts, 12 engineers, and 4 product managers is
+
+  id: jd_370 | title: Senior Project Manager | level: senior | min_exp: 6 yrs | raw_text: 222 words
+  required_skills: Project Management, MS Project, Jira, Azure DevOps, Power BI, Stakeholder Facilitation, Risk Management, Agile Delivery, Gantt Charting, Change Management
+  preferred_skills: PMP Certification, PRINCE2 Certification, ITIL v4, ADKAR, Prosci
+  description: We’re scaling our global project management office to deliver high-impact digital transformation initiatives for a diverse portfolio of clients in banking, healthcare, and public sector organizations. Our team of 30 project managers, six delivery lea
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -118,16 +136,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 700 pairs total.
+Overall dataset so far: 720 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
+  poor_match            existing:  134  →  expected this group: 8 pairs (from rounds below)
   weak_match            existing:  142  →  expected this group: 0 pairs (from rounds below)
   moderate_match        existing:  147  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  134  →  expected this group: 4 pairs (from rounds below)
-  excellent_match       existing:  143  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:  144  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:  153  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -136,11 +154,13 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (2 pairs across 1 round(s) — never cross-pair rounds)
+PAIRING ORDER (2 pairs across 2 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 4 (domain: Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)):
-  pair_714    resume_357 × jd_358   (expected: strong_match)
-  pair_716    resume_358 × jd_358   (expected: strong_match)
+Round 2 (CROSS-DOMAIN: Site Reliability Engineering (Prometheus, Grafana, on-call, incident response) × Technical Program Management (cross-team delivery, engineering roadmaps) — expect poor_match throughout):
+  pair_728    resume_364 × jd_364   (expected: poor_match)
+
+Round 5 (CROSS-DOMAIN: UI/UX Design and Product Design (Figma, user research, prototyping) × Business Analysis and Project Management (requirements, BPMN, stakeholders) — expect poor_match throughout):
+  pair_738    resume_369 × jd_370   (expected: poor_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
