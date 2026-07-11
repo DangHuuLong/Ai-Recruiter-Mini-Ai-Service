@@ -1,37 +1,57 @@
 You are a dataset labeler for an AI recruitment system.
-Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
+Score 3 CV-JD pairs (from 2 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 1 pairs listed
+A previous response was incomplete. Score ONLY the 3 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_259 | level: senior | exp: 7.0 yrs | raw_text: 347 words
-  skills: Go, gRPC, Protocol Buffers, Kubernetes, Docker, PostgreSQL, Redis, Kafka, AWS, Terraform, Prometheus, Grafana, OpenTelemetry, CI/CD, Microservices
-  projects: Cart Optimizer, Realtime Pricing Engine
-  background: The candidate has spent the past seven years building and operating platform services for fast‑growing e‑commerce businesses. As a Senior Platform Engineer at a high‑velocity startup that operated an online marketplace, they led an eight‑person engineering team from 2021 to 2023, designing a Go 1.20
+  id: resume_261 | level: senior | exp: 7.0 yrs | raw_text: 303 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Redux, GraphQL, Jest, Cypress, Docker, AWS, CI/CD, Webpack
+  projects: Nimbus UI, ReactHealth
+  background: During a seven‑year career the professional has progressed from a frontend engineer at a fast‑growing startup to a lead UI architect at a large enterprise SaaS provider. The first role was Frontend Engineer at a startup that built a B2B marketplace; over 24 months the engineer worked in a team of ei
 
-  id: resume_260 | level: senior | exp: 8.0 yrs | raw_text: 317 words
-  skills: Go, gRPC, Protocol Buffers, NATS, Istio, Envoy, Kubernetes, Docker, PostgreSQL, Redis, AWS, Terraform, Prometheus, Jaeger, OpenTelemetry
-  projects: High‑Speed Checkout, Feature Flag Service
-  background: Over the course of eight years the candidate has specialized in building high‑throughput platform components for large‑scale e‑commerce platforms. From 2020 to 2023 they acted as Lead Platform Engineer at a multinational retail corporation, heading a fifteen‑person team that delivered a Go 1.21 orde
+  id: resume_262 | level: senior | exp: 7.0 yrs | raw_text: 303 words
+  skills: React, TypeScript, Next.js, Tailwind CSS, Zustand, Vite, Node.js, Express, Prisma, PostgreSQL, Docker, Azure, Jest
+  projects: StoryMap, API‑Mock
+  background: The candidate accumulated seven years of frontend development experience, beginning as a UI Engineer at a digital agency and advancing to Senior Frontend Lead at a multinational technology corporation. At the agency, the engineer spent eighteen months within a nine‑person multidisciplinary team, del
+
+  id: resume_265 | level: senior | exp: 7.5 yrs | raw_text: 287 words
+  skills: Applicant Tracking Systems, HRIS Integration, Python (Pandas, SQL), Employer Branding, Workforce Analytics, SHRM-SCP, ATS Configuration, Elasticsearch, React, Data-Driven Recruitment, Onboarding Automation, Multi-National Recruiting, Greenhouse, BambooHR, Zenefits, Predictive Hiring Models
+  projects: Skills Taxonomy Portal, Predictive Hiring Model
+  background: With over seven years of progressive experience in human resources and talent acquisition, this professional has built a track record of optimizing recruitment workflows and leading cross-functional HR projects. Currently serving as a Senior Talent Acquisition Specialist at a mid-sized tech startup,
+
+  id: resume_266 | level: senior | exp: 8.2 yrs | raw_text: 290 words
+  skills: HRIS Architecture, HR Transformation, Workday 33, SuccessFactors 2011, BambooHR 6.8, Python (Flask), Kafka, REST APIs, Data Migration, GDPR Compliance, EEOC Compliance, Talent Marketplace Design, SHRM-SCP, HR Business Partnering, Change Management
+  projects: HRIS Migration Automation, Custom ATS-HRIS Sync Service
+  background: A principal-track HR professional with eight years of expertise in talent acquisition and HRIS architecture, this candidate combines deep operational experience with strategic system design. They currently serve as a Principal HR Business Partner at a fast-scaling SaaS company, where they lead a tea
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_259 | title: Senior Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 235 words
-  required_skills: Go, gRPC, Protocol Buffers, Kubernetes, Docker, AWS, Terraform, Prometheus, OpenTelemetry
-  preferred_skills: Istio, Kafka, CI/CD
-  description: We are seeking a senior platform engineer to join a twelve‑person team that powers the core order processing system of a high‑volume e‑commerce platform. The team builds and operates Go‑based microservices that handle millions of transactions daily, 
+  id: jd_261 | title: Junior Frontend Engineer | level: junior | min_exp: 1 yrs | raw_text: 222 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Jest
+  preferred_skills: Redux, Zustand, Docker
+  description: The team is a compact, cross‑functional product group of five engineers that builds and iterates on a customer‑facing dashboard for a SaaS analytics platform. The junior role will work closely with a senior frontend lead, product manager, and QA spec
 
-  id: jd_260 | title: Senior Platform Engineer | level: senior | min_exp: 6 yrs | raw_text: 221 words
-  required_skills: Go, gRPC, NATS, Istio, Envoy, Kubernetes, AWS, Terraform, Prometheus
-  preferred_skills: Jaeger, OpenTelemetry, CI/CD
-  description: Our platform engineering group consists of ten engineers who are responsible for the event‑driven backbone of a large online marketplace. The senior platform engineer will own the design and delivery of Go‑based services that communicate over gRPC an
+  id: jd_262 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 215 words
+  required_skills: React, TypeScript, Next.js, Tailwind CSS, Apollo Client, Cypress
+  preferred_skills: Redux Toolkit, GitLab CI
+  description: The product team consists of six members, including a senior backend engineer, a product owner, and two QA analysts, all focused on delivering a new e‑commerce experience for a growing online retailer. The junior developer will be responsible for bui
+
+  id: jd_265 | title: Associate Recruiter | level: junior | min_exp: 1 yrs | raw_text: 234 words
+  required_skills: Greenhouse ATS, Boolean Search, HireVue, Microsoft Excel, Google Sheets, LinkedIn Recruiter
+  preferred_skills: HRIS Basics, Employment Law Awareness
+  description: This dynamic early-career role sits within a growing remote-first HR team that supports a 300-person software company specializing in HRIS platforms. The Associate Recruiter will work closely with hiring managers to source, screen, and coordinate int
+
+  id: jd_266 | title: HR Support Specialist | level: junior | min_exp: 1 yrs | raw_text: 213 words
+  required_skills: BambooHR, HRIS Management, Microsoft Excel, Google Workspace, Employment Law Basics
+  preferred_skills: HIPAA Compliance, OSHA Compliance, QuickBooks
+  description: This role is part of a 15-person HR operations team within a healthcare services provider that manages a workforce of 1,200 employees across 12 regional clinics. The HR Support Specialist will focus on facilitating smooth onboarding for new hires, pr
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -116,16 +136,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 500 pairs total.
+Overall dataset so far: 520 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  102  →  expected this group: 0 pairs (from rounds below)
   weak_match            existing:  107  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:  100  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:   99  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:   92  →  expected this group: 4 pairs (from rounds below)
+  moderate_match        existing:  101  →  expected this group: 8 pairs (from rounds below)
+  strong_match          existing:  106  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:  104  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -134,17 +154,21 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
+PAIRING ORDER (3 pairs across 2 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 5 (domain: Platform Engineering for E-commerce (Go, gRPC, high-throughput services)):
-  pair_520    resume_260 × jd_260   (expected: excellent_match)
+Round 1 (domain: Frontend Development (React, TypeScript, Next.js, Tailwind CSS)):
+  pair_521    resume_261 × jd_261   (expected: moderate_match)
+  pair_523    resume_262 × jd_261   (expected: moderate_match)
+
+Round 3 (domain: Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)):
+  pair_530    resume_265 × jd_266   (expected: moderate_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 1 lines.
+Output exactly 3 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 1 JSON lines.
+No markdown, no explanation — only 3 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
