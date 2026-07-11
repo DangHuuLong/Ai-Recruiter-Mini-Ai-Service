@@ -1,117 +1,37 @@
 You are a dataset labeler for an AI recruitment system.
-Score 9 CV-JD pairs (from 5 round(s)) using rubric v0.2.
+Score 1 CV-JD pairs (from 1 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 9 pairs listed
+A previous response was incomplete. Score ONLY the 1 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_271 | level: junior | exp: 0.8 yrs | raw_text: 289 words
-  skills: Excel, Discounted Cash Flow, Python, SQL, PitchBook, Capital IQ, VBA, Power BI, Refinitiv Eikon, Financial Modeling, Corporate Valuation, EBITDA Analysis, Scenario Analysis, Financial Reporting, Data Visualization, M&A Comparables, Data Cleaning
-  projects: European M&A Trend Analysis
-  background: For the past eight months, I have worked as a Financial Analyst at a fast-growing fintech startup based in Berlin, supporting the corporate finance team in building valuation models for early-stage ventures. My responsibilities included maintaining and updating discounted cash flow models in Excel a
+  id: resume_289 | level: middle | exp: 4.5 yrs | raw_text: 269 words
+  skills: Python, Django, FastAPI, PostgreSQL, Docker, AWS, HL7, FHIR, CI/CD, Git, Linux, REST, Asynchronous Programming, RabbitMQ, Unit Testing, Agile
+  projects: FHIRSync, PatientPortal
+  background: After completing a Bachelor of Science in Computer Science in 2019, the candidate began a career focused on building resilient backend services for healthtech applications. The first professional role was as a Backend Engineer at HealthStart, a fast‑growing startup, where the individual contributed 
 
-  id: resume_272 | level: senior | exp: 8.9 yrs | raw_text: 338 words
-  skills: Excel, Power Query, Power Pivot, Discounted Cash Flow, Monte Carlo Simulation, LBO Modeling, M&A Accounting, IFRS 3, ASC 805, VBA, Python, C#, SQL, Bloomberg Terminal, Capital IQ, S&P Capital IQ, Financial Due Diligence, Impairment Testing, Publication, Leadership, CFA, Coaching
-  projects: Automated Impairment Testing Tool
-  background: With nearly nine years of progressive experience in investment analysis and corporate finance, I currently serve as a Senior Valuation Associate at a London-based private equity firm, where I lead a team of three analysts in modeling and executing portfolio company valuations. My role encompasses th
-
-  id: resume_273 | level: junior | exp: 0.5 yrs | raw_text: 315 words
-  skills: Apache Airflow, Google Cloud Platform, BigQuery, Data Engineering, Data Processing, Python, SQL, Apache Spark, Data Warehousing, Machine Learning
-  projects: Data-Driven Recommendation System
-  background: I am a recent graduate with a Bachelor's degree in Computer Science, eager to embark on my career in data engineering. My academic projects and internships have provided a strong foundation in data processing and analytics, and I am keen to apply this knowledge in a professional setting. During my s
-
-  id: resume_274 | level: senior | exp: 7.5 yrs | raw_text: 315 words
-  skills: Apache Airflow, Data Engineering, Data Pipelines, Google Cloud Platform, BigQuery, Apache Spark, Data Modeling, Data Warehousing, dbt, Data Processing, Data Transformation, Machine Learning, Real-time Data Processing, Streaming Analytics, Team Leadership
-  projects: Cloud Migration Project
-  background: With over 7 years of experience in the data engineering domain, I have honed my skills in building and optimizing data pipelines, leveraging a wide range of technologies. My journey began as a Data Engineer at a leading e-commerce company, where I was part of a large enterprise team of 20+ engineers
-
-  id: resume_275 | level: junior | exp: 0.9 yrs | raw_text: 258 words
-  skills: OpenCV, Python, NumPy, PyTorch, Docker, Git, Linux
-  projects: SmartShelf Detector
-  background: During a six‑month internship at a fast‑growing AI startup, I served as a Computer Vision Engineer working within a cross‑functional team of five engineers. My daily responsibilities included building prototype object‑detection models using OpenCV 4.7 and PyTorch 1.12, writing data preprocessing pip
-
-  id: resume_276 | level: senior | exp: 8.0 yrs | raw_text: 294 words
-  skills: OpenCV, Python, PyTorch, TensorFlow, CUDA, C++, ONNX, TensorRT, FastAPI, Docker, Kubernetes, AWS SageMaker, CI/CD, Jenkins, Edge Deployment, ROS
-  projects: EdgeVision Analytics, Autonomous Drone Perception
-  background: Over the past eight years I have progressed from a junior computer‑vision analyst at a multinational electronics enterprise to a lead AI systems architect overseeing a department of twelve engineers. In my most recent role as Senior Computer Vision Engineer at a large SaaS provider, I directed the e
-
-  id: resume_277 | level: junior | exp: 0.9 yrs | raw_text: 295 words
-  skills: Technical Program Management, Agile Methodologies, Jira, Confluence, SQL, Python, AWS, Git
-  projects: SpendSense, Release Health Tracker
-  background: After graduating with a Bachelor of Science in Computer Science in 2025, the candidate began a role as an Associate Technical Program Manager at a fast‑growing fintech startup. The position lasted ten months, operating within a product‑focused team of five engineers and designers. In this capacity t
-
-  id: resume_278 | level: senior | exp: 8.0 yrs | raw_text: 326 words
-  skills: Technical Program Management, Cross‑functional Leadership, Roadmap Planning, OKRs, Agile Methodologies, Scrum, Kanban, Jira, Confluence, GitLab CI, Docker, Kubernetes, AWS, Azure, Terraform, Python, Go, SQL, NoSQL, Microservices Architecture, Data Analytics, SRE Practices
-  projects: InfraScout, DataPulse
-  background: Holding a Master of Science in Software Engineering earned in 2019, the candidate accumulated eight years of experience driving complex engineering roadmaps across enterprise and mid‑size SaaS organizations. The most recent role was Senior Technical Program Manager at an established enterprise softw
-
-  id: resume_279 | level: junior | exp: 0.9 yrs | raw_text: 271 words
-  skills: Google Ads, Meta Ads, Google Analytics, SQL, Python, A/B Testing
-  projects: CampusAd
-  background: The candidate began a performance‑marketing career as a Marketing Analyst at a fast‑growing startup, where the team of four handled the entire paid‑media budget. Over ten months the analyst set up and optimized Google Ads Search and Display campaigns as well as Meta Ads campaigns, using the native G
-
-  id: resume_280 | level: senior | exp: 7.5 yrs | raw_text: 299 words
-  skills: Google Ads, Meta Ads, Programmatic Advertising, Attribution Modeling, Snowflake, Looker, Python, Airflow, SQL, A/B Testing
-  projects: AttributionEngine
-  background: With seven and a half years of experience in performance marketing, the candidate has progressed from a Paid Media Specialist at a mid‑size agency to a Senior Performance Marketing Lead at a global enterprise. At the agency, a ten‑person cross‑functional team managed a $3 million annual spend across
+  id: resume_290 | level: middle | exp: 3.8 yrs | raw_text: 281 words
+  skills: Python, Django, FastAPI, PostgreSQL, Docker, Azure, Kubernetes, HL7, FHIR, Celery, CI/CD, Git, Linux, Unit Testing, Agile
+  projects: FHIRAdapter, HealthMetrics Dashboard
+  background: Holding a Master of Science in Computer Science earned in 2021, the candidate has accumulated 3.8 years of backend development experience dedicated to health technology solutions. The career began at CareBridge, an agency serving multiple healthcare clients, where the candidate worked as a Junior Ba
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_271 | title: Senior Valuation & Corporate Development Lead | level: senior | min_exp: 6 yrs | raw_text: 243 words
-  required_skills: Excel, Power Query, Power Pivot, VBA, LBO Modeling, IFRS 3, ASC 805, Financial Due Diligence, Purchase Price Allocation, KPI Reporting, Board Presentations
-  preferred_skills: Python, Bloomberg Terminal, S&P Capital IQ, Monte Carlo Simulation, Scenario Analysis, M&A Accounting
-  description: This role sits within the Corporate Development team at a diversified holding company managing a $3 billion private equity portfolio, with a remit that blends deep valuation modeling with strategic M&A execution. The team consists of eight profession
+  id: jd_289 | title: Junior Backend Engineer – Health Integration | level: junior | min_exp: 1 yrs | raw_text: 211 words
+  required_skills: Python, Django, PostgreSQL, Docker, Git
+  preferred_skills: FastAPI, FHIR
+  description: The team responsible for bridging electronic health record systems with our SaaS platform is composed of four engineers, a product manager, and a QA specialist, all collaborating to deliver secure data exchange solutions for small to medium clinics. 
 
-  id: jd_272 | title: Senior Investment Analyst – Corporate Finance & Strategy | level: senior | min_exp: 6 yrs | raw_text: 240 words
-  required_skills: Excel, Discounted Cash Flow, Precedent Transactions, PitchBook, Capital IQ, Financial Modeling, Sensitivity Analysis, ESG Integration, Board Presentations
-  preferred_skills: S&P Global Market Intelligence, FactSet, Scenario Modeling, Trading Comparables, Treasury Coordination, Investor Relations
-  description: This role is embedded within the corporate strategy team of a Fortune 500 conglomerate with a $12 billion annual EBITDA, focusing on capital allocation, strategic M&A, and shareholder value optimization. The team comprises seven professionals includi
-
-  id: jd_273 | title: Senior Data Engineer - Airflow Specialist | level: senior | min_exp: 6 yrs | raw_text: 298 words
-  required_skills: Apache Airflow, Data Engineering, Data Pipelines, Python, SQL, Google Cloud Platform, BigQuery
-  preferred_skills: Apache Spark, Data Modeling, Data Warehousing, dbt, Machine Learning
-  description: We are seeking an experienced Senior Data Engineer to join our dynamic team, focusing on building and optimizing data pipelines using Apache Airflow. Our team is responsible for designing and maintaining complex data workflows that power our data-dri
-
-  id: jd_274 | title: Senior Data Engineer - Analytics Platform | level: senior | min_exp: 6 yrs | raw_text: 307 words
-  required_skills: Data Engineering, Data Pipelines, Apache Airflow, Apache Spark, Data Modeling, SQL, Google Cloud Platform, BigQuery
-  preferred_skills: Data Warehousing, dbt, Real-time Data Processing, Streaming Analytics
-  description: We are on the lookout for a Senior Data Engineer to join our remote team, focusing on building and maintaining a robust analytics platform. Our platform is at the core of our data-driven decision-making process, and we require an experienced engineer
-
-  id: jd_275 | title: Senior Computer Vision Engineer | level: senior | min_exp: 6 yrs | raw_text: 226 words
-  required_skills: OpenCV, Python, PyTorch, ONNX, TensorRT, Docker, Kubernetes
-  preferred_skills: CUDA, C++, NVIDIA Jetson
-  description: Our team of eight engineers builds real‑time perception services for an edge‑focused AI platform that powers millions of IoT devices worldwide. The role requires a senior computer vision engineer who will own the design, implementation, and optimizat
-
-  id: jd_276 | title: Lead Computer Vision Scientist | level: senior | min_exp: 6 yrs | raw_text: 248 words
-  required_skills: OpenCV, Python, PyTorch, FastAPI, Docker, Kubernetes, AWS SageMaker
-  preferred_skills: Quantization, MLflow, PyTorch Lightning, TensorRT
-  description: Our eight‑person AI research group delivers cutting‑edge computer vision capabilities for a cloud‑native SaaS product that serves enterprise customers in the manufacturing sector. The lead computer vision scientist will define the vision strategy, me
-
-  id: jd_277 | title: Senior Technical Program Manager | level: senior | min_exp: 6 yrs | raw_text: 218 words
-  required_skills: Technical Program Management, Jira, Confluence, Kubernetes, Terraform, CI/CD
-  preferred_skills: AWS, Prometheus, Grafana
-  description: The organization is expanding its platform engineering group, a team of 30 engineers and product specialists that delivers a suite of cloud‑native services to enterprise customers. The Senior Technical Program Manager will own the end‑to‑end delivery
-
-  id: jd_278 | title: Senior Technical Program Manager, AI Platforms | level: senior | min_exp: 6 yrs | raw_text: 225 words
-  required_skills: Technical Program Management, Azure DevOps, GitLab CI, Docker, Kubernetes, Python
-  preferred_skills: Spark, Feast, Datadog, New Relic
-  description: The AI Platforms division comprises 40 engineers, data scientists, and product managers focused on building machine‑learning‑driven services for both internal and external customers. The Senior Technical Program Manager will orchestrate the delivery 
-
-  id: jd_279 | title: Senior Performance Marketing Manager | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Google Ads, Meta Ads, Adjust, Python, SQL, Snowflake, Looker
-  preferred_skills: DV360, Airflow, Docker, Tableau
-  description: The team consists of eight performance marketers who own the full lifecycle of paid acquisition for a suite of SaaS products, ranging from prospecting to retargeting across Google Ads, Meta Ads, and programmatic platforms. The manager will be respons
-
-  id: jd_280 | title: Senior Paid Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 220 words
-  required_skills: Google Ads, Google Ads API, AppsFlyer, Python, SQL, BigQuery, Looker Studio
-  preferred_skills: Kubernetes, GitLab CI/CD, A/B Testing
-  description: The acquisition group comprises a cross‑functional team of eight specialists who drive large‑scale Google Search, Shopping, and YouTube campaigns for a portfolio of consumer‑facing applications, managing budgets that exceed eight million dollars annu
+  id: jd_290 | title: Senior Backend Engineer – Health Platform Architecture | level: senior | min_exp: 6 yrs | raw_text: 222 words
+  required_skills: Python, Django, FastAPI, PostgreSQL, RabbitMQ, Kubernetes, Docker, AWS, HL7, FHIR, Terraform
+  preferred_skills: Prometheus, Grafana, HIPAA Compliance
+  description: The platform engineering team, consisting of twelve senior engineers, a product director, data scientists, and QA leads, builds the core services that power a nationwide health information exchange serving millions of patients. The senior backend eng
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -196,16 +116,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 540 pairs total.
+Overall dataset so far: 560 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:  104  →  expected this group: 10 pairs (from rounds below)
-  weak_match            existing:  107  →  expected this group: 0 pairs (from rounds below)
+  poor_match            existing:  114  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:  107  →  expected this group: 2 pairs (from rounds below)
   moderate_match        existing:  119  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  106  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:  104  →  expected this group: 10 pairs (from rounds below)
+  strong_match          existing:  106  →  expected this group: 2 pairs (from rounds below)
+  excellent_match       existing:  114  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -214,33 +134,17 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (9 pairs across 5 round(s) — never cross-pair rounds)
+PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 1 (domain: Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)):
-  pair_541    resume_271 × jd_271   (expected: poor_match)
-
-Round 2 (domain: Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)):
-  pair_545    resume_273 × jd_273   (expected: poor_match)
-  pair_546    resume_273 × jd_274   (expected: poor_match)
-
-Round 3 (domain: Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)):
-  pair_549    resume_275 × jd_275   (expected: poor_match)
-  pair_550    resume_275 × jd_276   (expected: poor_match)
-
-Round 4 (domain: Technical Program Management (cross-team delivery, engineering roadmaps)):
-  pair_553    resume_277 × jd_277   (expected: poor_match)
-  pair_554    resume_277 × jd_278   (expected: poor_match)
-
-Round 5 (domain: Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)):
-  pair_557    resume_279 × jd_279   (expected: poor_match)
-  pair_560    resume_280 × jd_280   (expected: excellent_match)
+Round 5 (domain: Backend Development for Healthtech (Python, Django, HL7/FHIR integrations)):
+  pair_578    resume_289 × jd_290   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 9 lines.
+Output exactly 1 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 9 JSON lines.
+No markdown, no explanation — only 1 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}

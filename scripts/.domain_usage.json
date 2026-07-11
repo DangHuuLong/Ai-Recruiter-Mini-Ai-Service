@@ -1,20 +1,20 @@
 {
-  "AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)": 4,
+  "AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)": 5,
   "MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring)": 5,
   "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 5,
   "Backend API Development (Python, FastAPI, Node.js, PostgreSQL)": 5,
   "Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)": 5,
   "Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)": 4,
   "Retail Operations and Merchandising (planograms, category management)": 5,
-  "Backend Development for Healthtech (Python, Django, HL7/FHIR integrations)": 4,
+  "Backend Development for Healthtech (Python, Django, HL7/FHIR integrations)": 5,
   "Frontend Development (React, TypeScript, Next.js, Tailwind CSS)": 5,
   "Product Management in Technology (roadmap, agile, stakeholders)": 5,
   "Mobile Development (React Native, Flutter, Swift, Kotlin)": 5,
-  "E-commerce and Retail Management (marketplace, operations, merchandising)": 4,
+  "E-commerce and Retail Management (marketplace, operations, merchandising)": 5,
   "Healthcare Administration and Medical Coordination (clinical ops, EMR)": 5,
   "Technical Program Management (cross-team delivery, engineering roadmaps)": 5,
   "Full-Stack Web Development (Python backend + React frontend)": 5,
-  "QA and Test Automation Engineering (Selenium, Playwright, CI test pipelines)": 4,
+  "QA and Test Automation Engineering (Selenium, Playwright, CI test pipelines)": 5,
   "Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)": 5,
   "Platform Engineering for E-commerce (Go, gRPC, high-throughput services)": 5,
   "Management Consulting (client delivery, frameworks, stakeholder workshops)": 5,
@@ -34,5 +34,5 @@
   "Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)": 5,
   "Learning and Development / Corporate Training (curriculum design, LMS)": 5,
   "Customer Success and Account Management (SaaS renewals, onboarding, churn)": 5,
-  "Application Security Engineering (SAST/DAST, secure code review, threat modeling)": 4
+  "Application Security Engineering (SAST/DAST, secure code review, threat modeling)": 5
 }
