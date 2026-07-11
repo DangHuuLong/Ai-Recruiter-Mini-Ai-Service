@@ -1,173 +1,84 @@
-You are a dataset labeler for an AI recruitment system.
-Score 2 CV-JD pairs (from 2 round(s)) using rubric v0.2.
+You are a dataset generator for an AI recruitment system.
+Generate exactly 2 resumes and 2 job descriptions in the domain: Mobile Development (React Native, Flutter, Swift, Kotlin)
+
+These 4 documents will be cross-paired into 4 CV-JD pairs.
+Target score range: 0-100 (continuous — do not avoid any particular sub-range).
 
 ════════════════════════════════════
-PARTIAL RE-REQUEST
+SENIORITY ASSIGNMENT (follow exactly)
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 2 pairs listed
-below — do not re-score or repeat any other pair.
+Resume resume_377: middle   (3-5 yrs total experience)
+Resume resume_378: middle   (3-5 yrs total experience)
 
-════════════════════════════════════
-RESUMES
-════════════════════════════════════
-  id: resume_363 | level: middle | exp: 4.2 yrs | raw_text: 294 words
-  skills: Prometheus Monitoring, Grafana Dashboards, Incident Response, On-Call Engineering, SLO Development, Terraform Infrastructure, Kubernetes Operations, CI/CD Pipelines, AWS Cloud, OpenStack Administration, Python Automation, Opsgenie Integration, PagerDuty Escalation, eBPF Profiling, Status Page Development
-  projects: Open-source status dashboard
-  background: Over the past four years, I’ve carved out a career in site reliability engineering, focusing on observability and incident response in fast-paced SaaS environments. At my most recent role as a Site Reliability Engineer at a mid-sized fintech startup, I worked on a team of eight engineers maintaining
+JD jd_377: senior   (min 6 yrs, lead or senior engineer, deep specialization required)
+JD jd_378: senior   (min 6 yrs, senior-level position requiring deep expertise)
 
-  id: resume_364 | level: senior | exp: 8.9 yrs | raw_text: 306 words
-  skills: Multi-Region Observability, Thanos Federation, Incident Command Systems, MTTR Reduction, SLO Engineering, Chaos Engineering, Kubernetes-Native SDN, Go Development, C++ Networking, GitLab CI Automation, Slack Integrations, PagerDuty Playbooks, PostgreSQL HA, Patroni, Chaos Mesh, Platform Engineering
-  projects: Open-data PostgreSQL HA cluster, SRE Guild Lightning Talk Series
-  background: With nine years of progressive experience in site reliability engineering, I’ve evolved from hands-on troubleshooting to leading reliability initiatives that directly impact product stability and business outcomes. As a Staff Site Reliability Engineer at a unicorn-scale ad-tech company with a 200-pe
+This round's mix was chosen (based on which labels the dataset currently lacks)
+so that cross-pairing every resume × every JD naturally produces this label
+spread — score the resulting pairs honestly instead of forcing a different
+distribution:
+  weak_match       × 4
 
-  id: resume_369 | level: junior | exp: 0.5 yrs | raw_text: 266 words
-  skills: Figma, User Research, Prototyping, Usability Testing, Wireframing, Adobe XD, User Interviews, A/B Testing, Interaction Design
-  projects: HomeFlow
-  background: Fresh from design school with a strong portfolio in Figma and Adobe XD, I began my career as a Product Design Intern at Bright Labs, a boutique digital agency in Lisbon, where I spent six months immersed in end-to-end design workflows. During that time, I collaborated closely with a team of four jun
-
-  id: resume_370 | level: middle | exp: 4.0 yrs | raw_text: 282 words
-  skills: Figma, User Research, Prototyping, Stakeholder Collaboration, Design Systems, WCAG 2.2, Usability Testing, Framer, User Interviews, Mentorship
-  projects: Pulse UI Design System
-  background: As a Product Designer at Echo Creative Studio, an enterprise-focused agency in Berlin, I led design initiatives for complex digital products over the past four years, working with a cross-functional team of eight designers, five developers, and three product managers. My role combined deep user rese
+Gap rule (JD seniority tier − resume seniority tier), for reference:
+  +2 → poor_match       +1 → weak_match
+   0 → excellent_match  -1 → strong_match
+  <=-2 → moderate_match (heavily overqualified)
 
 ════════════════════════════════════
-JOB DESCRIPTIONS
+SKILL AUTHORING — USE JUDGMENT, NOT A FIXED PERCENTAGE
 ════════════════════════════════════
-  id: jd_363 | title: Associate Technical Program Manager | level: junior | min_exp: 1 yrs | raw_text: 233 words
-  required_skills: JIRA, Confluence, Agile Methodologies, Cross-Team Coordination, Release Management, Sprint Planning, Stakeholder Communication
-  preferred_skills: AWS EKS, User Acceptance Testing, PMP Certification, SQL Basics
-  description: This entry-level Associate Technical Program Manager role sits within a fast-growing 15-person agile delivery team responsible for shipping high-impact features across three engineering squads and one data engineering team. The squad owns a mission-c
-
-  id: jd_364 | title: Technical Program Manager - Growth Roadmaps | level: middle | min_exp: 3 yrs | raw_text: 247 words
-  required_skills: Technical Roadmaps, Cross-Functional Leadership, Agile-Waterfall Hybrid, Risk Assessment, Dependency Matrix Management, Stakeholder Alignment, API Platforms, RFC Authoring
-  preferred_skills: Smartsheet, Go Programming, API Compliance, Principal-Level Roadmapping
-  description: This experienced Technical Program Manager role focuses on driving end-to-end execution for a 70-person platform engineering org that builds and maintains the core API infrastructure powering the company’s mobile and web applications. The team owns a
-
-  id: jd_369 | title: Senior Business Analyst | level: senior | min_exp: 6 yrs | raw_text: 208 words
-  required_skills: Business Analysis, BPMN 2.0, Stakeholder Management, Requirements Traceability, Process Modeling, SQL, Confluence, Jira, Workshop Facilitation, GDPR Compliance
-  preferred_skills: SAP ERP, Oracle Fusion, CBAP Certification, PMI-PBA Certification, Power BI, Enterprise Architecture
-  description: We are building a next-generation enterprise resource planning platform designed to streamline complex business workflows for Fortune 500 clients across North America and EMEA. Our team of 25 business analysts, 12 engineers, and 4 product managers is
-
-  id: jd_370 | title: Senior Project Manager | level: senior | min_exp: 6 yrs | raw_text: 222 words
-  required_skills: Project Management, MS Project, Jira, Azure DevOps, Power BI, Stakeholder Facilitation, Risk Management, Agile Delivery, Gantt Charting, Change Management
-  preferred_skills: PMP Certification, PRINCE2 Certification, ITIL v4, ADKAR, Prosci
-  description: We’re scaling our global project management office to deliver high-impact digital transformation initiatives for a diverse portfolio of clients in banking, healthcare, and public sector organizations. Our team of 30 project managers, six delivery lea
+Design each resume's skill list based on genuine expertise for its stated
+seniority — do NOT target an exact overlap percentage with any specific JD.
+A junior resume should naturally know fewer of a senior JD's specialized or
+advanced-tier tools (they simply haven't needed them yet), while a resume at
+the same level as a JD should naturally share most of its core stack. Let the
+overlap emerge from realistic, individually-authored skill sets, not a formula.
 
 ════════════════════════════════════
-SCORING RUBRIC v0.2
+CV raw_text — STRICT REQUIREMENTS
 ════════════════════════════════════
-Score each criterion 0-100, then compute weighted overall:
-  overall_score = round(
-      SKILLS_MATCH            × 0.35 +
-      EXPERIENCE_RELEVANCE    × 0.30 +
-      PROJECT_RELEVANCE       × 0.15 +
-      EDUCATION_CERTIFICATION × 0.10 +
-      KEYWORD_DOMAIN_ALIGNMENT× 0.10
-  )
+Minimum 280 words per resume. Write as connected prose paragraphs (not bullet points).
+Include ALL of the following to reach 280+ words:
+  • Job history: for each role — job title, company type (startup/enterprise/agency),
+    duration, team size, 2-3 specific responsibilities with concrete tools used
+  • Technologies: list specific versions or ecosystems where natural (e.g. "FastAPI 0.100,
+    PostgreSQL 14, deployed on AWS ECS")
+  • Quantified achievements where possible: latency reduced by X%, served Y requests/day,
+    reduced deployment time from X to Y minutes
+  • Projects: 1-2 side or internal projects with name, goal, tech stack, outcome
+  • Current focus and next career direction (1-2 sentences)
+  • Education: degree, field, graduation year
 
-Label mapping:
-  90-100 → excellent_match
-  75-89  → strong_match
-  60-74  → moderate_match
-  40-59  → weak_match
-  0-39   → poor_match
-
-Scores are CONTINUOUS across the full 0-100 range — including near a boundary
-(e.g. 58, 61, 74, 76). Do not avoid any sub-range. A genuinely borderline pair
-should get a genuinely borderline score; do not round it away from the boundary
-just to make the label look cleaner.
+Do NOT include: candidate name, email, phone number, LinkedIn URL, GitHub URL.
+Do NOT use bullet points — write connected prose only.
+Vary sentence structure and opening phrasing from any previous batches you may
+have generated in this session — do not reuse the same opening sentence pattern.
 
 ════════════════════════════════════
-SKILLS_MATCH — DERIVE FROM ACTUAL OVERLAP, DON'T REUSE A NUMBER
+JD raw_text — STRICT REQUIREMENTS
 ════════════════════════════════════
-For every pair, first count: matched = required_skills present in the resume's
-skills list, total = len(required_skills). Then anchor SKILLS_MATCH to that ratio:
-  SKILLS_MATCH ≈ round(100 × matched / total), adjusted ±10 for preferred-skill
-  overlap and depth/version alignment.
-Two pairs with the same seniority gap can still need different SKILLS_MATCH if
-their real overlap ratio differs (e.g. 25% overlap vs 65% overlap must NOT get the
-same score just because both are "junior CV × senior JD"). Recompute per pair.
+Minimum 200 words per job description. Write as connected prose paragraphs.
+Include ALL of the following to reach 200+ words:
+  • Role overview: what the team does, team size, product context
+  • Day-to-day responsibilities (3-4 specific duties with tools/systems named)
+  • Technical stack: list every required and preferred technology with context
+  • What success looks like in the first 6 months
+  • Collaboration: who this person works with (e.g. product, QA, data team)
+  • Growth opportunities or scope of impact
 
-════════════════════════════════════
-poor_match SCORING GUIDANCE
-════════════════════════════════════
-A valid poor_match pair (score 0-39) requires ALL of:
-  1. Massive experience gap OR domain mismatch (cross-domain rounds: domain
-     mismatch alone is sufficient regardless of experience_years)
-     → EXPERIENCE_RELEVANCE: 0-30
-  2. Core skill mismatch: matched/required skill ratio < 40%
-     → SKILLS_MATCH: 0-35 (must equal the computed ratio, not a template number)
-  3. Project misalignment: no relevant projects that map to JD responsibilities
-     → PROJECT_RELEVANCE: 0-30
-Natural sources: (a) intern/junior CV × senior JD in the SAME domain, or
-(b) any-seniority CV × any-seniority JD in a CROSS-DOMAIN round (see rounds above).
-
-DECISION PRIORITY — resolve same-domain intern×senior pairs with this BEFORE
-picking a label: if resume experience_years <= 1 AND JD min_experience_years >= 6,
-compute the skill overlap ratio (matched required_skills / total required_skills) FIRST:
-  • ratio < 40%  → this pair MUST be poor_match. The weak_match "experience gap"
-    rule below does NOT apply to interns (<=1 yr) — it only applies once the
-    candidate has 1-2+ yrs and is past entry level.
-  • ratio >= 40% → this pair is weak_match instead (real partial overlap saves it).
-This ratio check overrides any temptation to soften the label because the CV and
-JD share some domain vocabulary — shared domain alone is not overlap.
-For cross-domain rounds, skip this check entirely — domain mismatch alone
-determines poor_match.
-
-════════════════════════════════════
-weak_match SCORING GUIDANCE
-════════════════════════════════════
-A valid weak_match pair (score 40-59) requires at least one of:
-  1. Experience gap: resume has >1 yr (already past intern/fresh-grad stage — e.g.
-     1-2 yrs) vs senior JD (5+ yrs required). Do NOT use this rule for resumes with
-     experience_years <= 1 — see the poor_match DECISION PRIORITY above, which
-     routes those to poor_match unless overlap ratio is already >= 40%.
-     → EXPERIENCE_RELEVANCE: 20-45 (large gap penalised heavily)
-     → SKILLS_MATCH: 40-60 (must equal the actual computed overlap ratio, not a default)
-  2. Skill domain mismatch: same broad field but different specialization
-     → SKILLS_MATCH: 35-55 (missing core required stack)
-     → PROJECT_RELEVANCE: 30-55 (projects don't align with JD responsibilities)
-
-For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
-  • If EXPERIENCE_RELEVANCE is 20, explain in label_notes (e.g. "requires 6+ yrs, candidate has 0.5 yrs")
-  • SKILLS_MATCH cannot be 85 if overall is 28 — the math must work
-  • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
-
-════════════════════════════════════
-LABEL BALANCE — CONTEXT (already engineered into this group)
-════════════════════════════════════
-Overall dataset so far: 720 pairs total.
-This group's resume/JD seniority levels and domains were deliberately chosen so
-that scoring each pair honestly (per the rubric below) should already land close
-to this spread — no need to force it, just verify your scores roughly match:
-
-  poor_match            existing:  134  →  expected this group: 8 pairs (from rounds below)
-  weak_match            existing:  142  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:  147  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  144  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:  153  →  expected this group: 0 pairs (from rounds below)
-
-Rules:
-• Score every pair from its actual documents — seniority gap, skill overlap, project fit.
-• If a pair's honest score lands far from its "expected" label above, trust the
-  documents over the expectation and note why in label_notes.
-• Never pair a resume with a JD from a different round.
-
-════════════════════════════════════
-PAIRING ORDER (2 pairs across 2 round(s) — never cross-pair rounds)
-════════════════════════════════════
-Round 2 (CROSS-DOMAIN: Site Reliability Engineering (Prometheus, Grafana, on-call, incident response) × Technical Program Management (cross-team delivery, engineering roadmaps) — expect poor_match throughout):
-  pair_728    resume_364 × jd_364   (expected: poor_match)
-
-Round 5 (CROSS-DOMAIN: UI/UX Design and Product Design (Figma, user research, prototyping) × Business Analysis and Project Management (requirements, BPMN, stakeholders) — expect poor_match throughout):
-  pair_738    resume_369 × jd_370   (expected: poor_match)
+Do NOT include: company name. Do NOT use bullet points — write connected prose only.
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 2 lines.
+Output exactly 4 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 2 JSON lines.
+Lines 1-2: resumes (IDs: resume_377, resume_378)
+Lines 3-4: job descriptions (IDs: jd_377, jd_378)
+No markdown, no explanation — only 4 JSON lines.
 
-JSON schema per pair:
-{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
+RESUME SCHEMA (lines 1-2):
+{"id":"<resume_id>","source":"synthetic","candidate_level":"<junior|middle|senior>","raw_text":"<280+ word prose — no names/emails/phones/URLs>","summary":"<one sentence capturing level, domain, and key strength>","skills":["<TitleCased>",...],"normalized_skills":["<snake_case>",...],"experience_years":<float>,"education":{"degree":"<Bachelor|Master|PhD>","field_of_study":"<field>","status":"<student|final_year|graduate>"},"projects":[{"name":"<project name>","description":"<2-3 sentences: goal, tech, outcome>","technologies":["<Tech>",...]}],"certifications":[],"languages":[{"name":"English","proficiency":"intermediate"}],"anonymized":true,"language":"en"}
+
+JD SCHEMA (lines 3-4):
+{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<200+ word prose — no company name>","responsibilities":["<specific item>",...],"requirements":["<specific item>",...],"nice_to_have":["<specific item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}

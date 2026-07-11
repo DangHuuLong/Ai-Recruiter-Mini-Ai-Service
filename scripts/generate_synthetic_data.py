@@ -601,11 +601,24 @@ def build_group_pair_prompt(
     rounds: list[dict],
     label_targets: dict[str, int] | None = None,
     current_dist: dict[str, int] | None = None,
+    only_pair_ids: set[str] | None = None,
 ) -> str:
     """Combine ROUNDS_PER_GROUP rounds' worth of resumes/JDs into ONE scoring
     prompt. Pairing stays within each round only — rounds are never cross-paired
     with each other, so the total is exactly len(rounds) * N_PAIRS_PER_ROUND.
+
+    `only_pair_ids`, if given, restricts the prompt to just those pair ids —
+    used for incremental retries after a response came back incomplete, so
+    the retry asks for (and the model has to output) only what's still
+    missing instead of regenerating the whole group and risking the same
+    truncation again.
     """
+    def round_pair_ids(rnd: dict) -> list[str]:
+        return [f"pair_{rnd['pair_start'] + i}" for i in range(N_PAIRS_PER_ROUND)]
+
+    if only_pair_ids is not None:
+        rounds = [rnd for rnd in rounds if set(round_pair_ids(rnd)) & only_pair_ids]
+
     all_resumes = [r for rnd in rounds for r in rnd["resumes"]]
     all_jds     = [j for rnd in rounds for j in rnd["jds"]]
 
@@ -613,6 +626,7 @@ def build_group_pair_prompt(
     jd_block     = "\n\n".join(_jd_summary(j)     for j in all_jds)
 
     pairing_blocks = []
+    n_to_score = 0
     for rnd in rounds:
         r_ids = [r["id"] for r in rnd["resumes"]]
         j_ids = [j["id"] for j in rnd["jds"]]
@@ -625,8 +639,13 @@ def build_group_pair_prompt(
 
         lines = [header]
         idx = rnd["pair_start"]
+        wrote_any = False
         for rid in r_ids:
             for jid in j_ids:
+                pair_id = f"pair_{idx}"
+                idx += 1
+                if only_pair_ids is not None and pair_id not in only_pair_ids:
+                    continue
                 r_lvl = next(r.get("candidate_level") for r in rnd["resumes"] if r["id"] == rid)
                 j_lvl = next(j.get("level") for j in rnd["jds"] if j["id"] == jid)
                 if spec["mode"] == "cross_domain":
@@ -635,10 +654,22 @@ def build_group_pair_prompt(
                     expected = natural_label_for_gap(LEVELS.index(j_lvl) - LEVELS.index(r_lvl))
                 else:
                     expected = "?"
-                lines.append(f"  pair_{idx:<5}  {rid} × {jid}   (expected: {expected})")
-                idx += 1
-        pairing_blocks.append("\n".join(lines))
+                lines.append(f"  {pair_id:<10}  {rid} × {jid}   (expected: {expected})")
+                wrote_any = True
+                n_to_score += 1
+        if wrote_any:
+            pairing_blocks.append("\n".join(lines))
     pair_order = "\n\n".join(pairing_blocks)
+
+    partial_note = ""
+    if only_pair_ids is not None:
+        partial_note = f"""
+════════════════════════════════════
+PARTIAL RE-REQUEST
+════════════════════════════════════
+A previous response was incomplete. Score ONLY the {n_to_score} pairs listed
+below — do not re-score or repeat any other pair.
+"""
 
     label_order = ["poor_match", "weak_match", "moderate_match", "strong_match", "excellent_match"]
 
@@ -683,8 +714,8 @@ Rules:
         distribution_section = ""
 
     return f"""You are a dataset labeler for an AI recruitment system.
-Score {N_PAIRS} CV-JD pairs (from {len(rounds)} rounds of {N_PAIRS_PER_ROUND} pairs each) using rubric v0.2.
-
+Score {n_to_score} CV-JD pairs (from {len(rounds)} round(s)) using rubric v0.2.
+{partial_note}
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
@@ -776,16 +807,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
   • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
 {distribution_section}
 ════════════════════════════════════
-PAIRING ORDER ({N_PAIRS} pairs across {len(rounds)} rounds — never cross-pair rounds)
+PAIRING ORDER ({n_to_score} pairs across {len(rounds)} round(s) — never cross-pair rounds)
 ════════════════════════════════════
 {pair_order}
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly {N_PAIRS} lines.
+Output exactly {n_to_score} lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only {N_PAIRS} JSON lines.
+No markdown, no explanation — only {n_to_score} JSON lines.
 
 JSON schema per pair:
 {{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>}},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}}"""
@@ -966,27 +997,6 @@ def validate_cvjd_ids(
     return errs
 
 
-def validate_pair_ids(pairs: list[dict], group_pair_start: int) -> list[str]:
-    errs: list[str] = []
-    expected_pair_ids = {f"pair_{group_pair_start + i}" for i in range(N_PAIRS)}
-
-    actual_ids: list[str] = [p.get("id", f"<missing id on line {i + 1}>") for i, p in enumerate(pairs)]
-
-    seen: set[str] = set()
-    for pid in actual_ids:
-        if pid in seen:
-            errs.append(f"[ID] pair '{pid}' is duplicated")
-        seen.add(pid)
-
-    for pid in sorted(expected_pair_ids - set(actual_ids)):
-        errs.append(f"[ID] pair '{pid}' expected but missing from LLM output")
-    for pid in sorted(set(actual_ids) - expected_pair_ids):
-        errs.append(
-            f"[ID] pair '{pid}' is unexpected "
-            f"(expected pair_{group_pair_start}-pair_{group_pair_start + N_PAIRS - 1})"
-        )
-    return errs
-
 # ── actions ────────────────────────────────────────────────────────────────────
 
 def _build_round(round_index: int, group_pair_start: int) -> tuple[str, dict]:
@@ -1025,6 +1035,111 @@ def _print_round_prompt(round_meta: dict, prompt: str) -> None:
     print(f"  → Copy all content, paste into your LLM.")
     print(f"  → Paste LLM output into:  scripts/temp_input.txt")
     print(f"  → Then press [2] to save.")
+
+
+def _process_cvjd_lines(lines: list[str], round_meta: dict) -> tuple[list[dict], list[dict], list[str]]:
+    """Parse + validate one round's CV/JD lines. Pure — no printing, no I/O
+    besides what's already in `lines`. Shared by the interactive action_save()
+    and the fully-automated API path so both enforce identical rules."""
+    expected_lines = N_RESUMES + N_JDS
+    if len(lines) != expected_lines:
+        return [], [], [f"Expected {expected_lines} lines ({N_RESUMES} resumes + {N_JDS} JDs), got {len(lines)}."]
+
+    resumes_new: list[dict] = []
+    jds_new:     list[dict] = []
+    errors:      list[str]  = []
+
+    for i, line in enumerate(lines, 1):
+        try:
+            obj = json.loads(line)
+        except json.JSONDecodeError as e:
+            errors.append(f"Line {i}: invalid JSON — {e}")
+            continue
+        if "candidate_level" in obj:
+            resumes_new.append(obj)
+        elif "responsibilities" in obj or "required_skills" in obj:
+            jds_new.append(obj)
+        else:
+            errors.append(f"Line {i}: cannot identify as resume or JD")
+
+    if errors:
+        return resumes_new, jds_new, errors
+
+    if len(resumes_new) != N_RESUMES or len(jds_new) != N_JDS:
+        return resumes_new, jds_new, [f"Expected {N_RESUMES} resumes + {N_JDS} JDs, got {len(resumes_new)} + {len(jds_new)}."]
+
+    errors.extend(validate_cvjd_ids(resumes_new, jds_new, round_meta["resume_start"], round_meta["jd_start"]))
+    if errors:
+        return resumes_new, jds_new, errors
+
+    for i, r in enumerate(resumes_new, 1):
+        errors.extend(validate_resume(r, i))
+    for i, j in enumerate(jds_new, 1):
+        errors.extend(validate_jd(j, i))
+
+    return resumes_new, jds_new, errors
+
+
+def _process_pair_lines(
+    lines: list[str],
+    rounds: list[dict],
+    expected_ids: set[str],
+    resume_ids: set[str],
+    jd_ids: set[str],
+) -> tuple[dict[str, dict], list[str], list[str]]:
+    """Parse + validate pair-scoring lines against `expected_ids`. Pure —
+    shared by the interactive save path (expected_ids = the whole group) and
+    the automated incremental path (expected_ids = only the pairs still
+    missing from earlier attempts in this group — see _auto_generate_pairs).
+
+    Returns (accepted, errors, warnings): `accepted` maps pair_id -> validated
+    pair object for every expected id that parsed AND passed validation in
+    THIS response. An id that's missing, or present but fails validation, is
+    left out of `accepted` and reported in `errors` instead — a caller that
+    needs one-shot completeness (manual save) should treat any errors as
+    fatal, while an accumulating caller can just retry the still-missing ids
+    without throwing away what already validated correctly.
+
+    Also tolerant of extra/duplicate/garbage lines: LLMs occasionally emit a
+    stray or repeated JSON object alongside the expected ones (seen e.g. as
+    "got 21" instead of 20) — those are dropped with a warning rather than
+    failing everything else in the response.
+    """
+    parse_errors: list[str] = []
+    parsed: list[dict] = []
+    for i, line in enumerate(lines, 1):
+        try:
+            parsed.append(json.loads(line))
+        except json.JSONDecodeError as e:
+            parse_errors.append(f"Line {i}: invalid JSON — {e}")
+
+    warnings: list[str] = []
+    by_id: dict[str, dict] = {}
+    for obj in parsed:
+        pid = obj.get("id")
+        if pid not in expected_ids:
+            warnings.append(f"[ID] pair '{pid}' is unexpected/extra — dropped")
+            continue
+        if pid in by_id:
+            warnings.append(f"[ID] pair '{pid}' is duplicated — keeping first occurrence")
+            continue
+        by_id[pid] = obj
+
+    errors: list[str] = list(parse_errors)
+    accepted: dict[str, dict] = {}
+    for pid, p in by_id.items():
+        errs, warns = validate_pair(p, resume_ids, jd_ids)
+        errs.extend(validate_pair_round_consistency([p], rounds))
+        if errs:
+            errors.extend(errs)
+            continue
+        warnings.extend(warns)
+        accepted[pid] = p
+
+    for pid in sorted(expected_ids - set(by_id)):
+        errors.append(f"[ID] pair '{pid}' expected but missing from LLM output")
+
+    return accepted, errors, warnings
 
 
 def action_generate_prompt() -> None:
@@ -1067,59 +1182,10 @@ def action_save() -> None:
     # ── save one round's CV+JD ──────────────────────────────────────────────
     if state == "waiting_cvjd":
         current_round = session["current_round"]
-        expected_lines = N_RESUMES + N_JDS
-        if len(lines) != expected_lines:
-            print(f"\n  [!] Expected {expected_lines} lines ({N_RESUMES} resumes + {N_JDS} JDs), got {len(lines)}.")
-            print("      Fix the LLM output in temp_input.txt and press [2] again.")
-            return
-
-        resumes_new: list[dict] = []
-        jds_new:     list[dict] = []
-        parse_errors: list[str] = []
-
-        for i, line in enumerate(lines, 1):
-            try:
-                obj = json.loads(line)
-            except json.JSONDecodeError as e:
-                parse_errors.append(f"Line {i}: invalid JSON — {e}")
-                continue
-
-            if "candidate_level" in obj:
-                resumes_new.append(obj)
-            elif "responsibilities" in obj or "required_skills" in obj:
-                jds_new.append(obj)
-            else:
-                parse_errors.append(f"Line {i}: cannot identify as resume or JD")
-
-        if parse_errors:
-            print("\n  [!] Parse errors:")
-            for e in parse_errors:
-                print(f"      ✗ {e}")
-            return
-
-        if len(resumes_new) != N_RESUMES or len(jds_new) != N_JDS:
-            print(f"\n  [!] Expected {N_RESUMES} resumes + {N_JDS} JDs, got {len(resumes_new)} + {len(jds_new)}.")
-            return
-
-        id_errors = validate_cvjd_ids(
-            resumes_new, jds_new,
-            current_round["resume_start"], current_round["jd_start"],
-        )
-        if id_errors:
-            print(f"\n  [!] {len(id_errors)} ID error(s) — NOT saved:")
-            for e in id_errors:
-                print(f"      ✗ {e}")
-            print("\n      Fix the IDs in temp_input.txt and press [2] again.")
-            return
-
-        all_errors: list[str] = []
-        for i, r in enumerate(resumes_new, 1):
-            all_errors.extend(validate_resume(r, i))
-        for i, j in enumerate(jds_new, 1):
-            all_errors.extend(validate_jd(j, i))
+        resumes_new, jds_new, all_errors = _process_cvjd_lines(lines, current_round)
 
         if all_errors:
-            print(f"\n  [!] {len(all_errors)} validation error(s):")
+            print(f"\n  [!] {len(all_errors)} error(s):")
             for e in all_errors:
                 print(f"      ✗ {e}")
             print("\n      Fix the output in temp_input.txt and press [2] again.")
@@ -1181,51 +1247,13 @@ def action_save() -> None:
     # ── save pairs for the whole group ──────────────────────────────────────
     elif state == "waiting_pairs":
         rounds = session.get("rounds", [])
-        if len(lines) != N_PAIRS:
-            print(f"\n  [!] Expected {N_PAIRS} lines ({N_PAIRS} pairs), got {len(lines)}.")
-            print("      Fix the output in temp_input.txt and press [2] again.")
-            return
-
         resume_ids = {r["id"] for rnd in rounds for r in rnd["resumes"]}
         jd_ids     = {j["id"] for rnd in rounds for j in rnd["jds"]}
+        expected_ids = {f"pair_{session['group_pair_start'] + i}" for i in range(N_PAIRS)}
 
-        pairs_new: list[dict] = []
-        all_errors:  list[str] = []
-        all_warnings: list[str] = []
-        parse_errors: list[str] = []
-
-        for i, line in enumerate(lines, 1):
-            try:
-                obj = json.loads(line)
-            except json.JSONDecodeError as e:
-                parse_errors.append(f"Line {i}: invalid JSON — {e}")
-                continue
-            errs, warns = validate_pair(obj, resume_ids, jd_ids)
-            all_errors.extend(errs)
-            all_warnings.extend(warns)
-            pairs_new.append(obj)
-
-        if parse_errors:
-            print("\n  [!] Parse errors:")
-            for e in parse_errors:
-                print(f"      ✗ {e}")
-            return
-
-        pair_id_errors = validate_pair_ids(pairs_new, session["group_pair_start"])
-        if pair_id_errors:
-            print(f"\n  [!] {len(pair_id_errors)} pair ID error(s) — NOT saved:")
-            for e in pair_id_errors:
-                print(f"      ✗ {e}")
-            print("\n      Fix the pair IDs in temp_input.txt and press [2] again.")
-            return
-
-        round_errors = validate_pair_round_consistency(pairs_new, rounds)
-        if round_errors:
-            print(f"\n  [!] {len(round_errors)} cross-round pairing error(s) — NOT saved:")
-            for e in round_errors:
-                print(f"      ✗ {e}")
-            print("\n      Fix the pairing in temp_input.txt and press [2] again.")
-            return
+        accepted, all_errors, all_warnings = _process_pair_lines(
+            lines, rounds, expected_ids, resume_ids, jd_ids,
+        )
 
         if all_errors:
             print(f"\n  [!] {len(all_errors)} validation error(s) — NOT saved:")
@@ -1243,6 +1271,7 @@ def action_save() -> None:
                 print("      Aborted. Fix the output and press [2] again.")
                 return
 
+        pairs_new = [accepted[pid] for pid in sorted(expected_ids, key=lambda s: int(s.split("_")[1]))]
         append_jsonl(PAIRS_PATH, pairs_new)
         print(f"\n  ✓ Saved {len(pairs_new)} pairs → {PAIRS_PATH.name}")
 
@@ -1256,6 +1285,231 @@ def action_save() -> None:
         auto_commit_batch()
         show_stats()
 
+# ── fully-automated mode (calls .env API keys directly, no copy-paste) ────────
+
+try:
+    import llm_client
+    _LLM_CLIENT_AVAILABLE = True
+except ImportError:
+    _LLM_CLIENT_AVAILABLE = False
+
+MAX_ATTEMPTS_PER_STEP = 12  # enough headroom to reach every configured provider,
+                             # not just cycle within the first one or two
+
+# How many consecutive validation failures from the SAME provider (across
+# different keys) before that provider's remaining keys get skipped too.
+PROVIDER_STRIKES_BEFORE_SKIP = 2
+
+
+def _record_provider_failure(used_key: str, provider_fails: dict[str, int], tried: set[str]) -> None:
+    """Track a validation failure from `used_key`'s provider.
+
+    A single bad generation is usually just an unlucky sample (temperature=0.9
+    means the same model can produce a fine response on the next call with a
+    different key) — so don't give up on a whole provider after one miss.
+    Only once the SAME provider has failed validation
+    PROVIDER_STRIKES_BEFORE_SKIP times in a row (a real signal that its model
+    has a systematic problem with this prompt, e.g. reliably emitting one
+    extra line) do we stop wasting attempts on its remaining keys.
+    """
+    provider = used_key.split(":", 1)[0]
+    provider_fails[provider] = provider_fails.get(provider, 0) + 1
+    if provider_fails[provider] >= PROVIDER_STRIKES_BEFORE_SKIP:
+        tried |= llm_client.provider_tokens(used_key)
+
+
+def _auto_generate_round(round_index: int, group_pair_start: int) -> tuple[list[dict], list[dict], dict]:
+    """Build one round's prompt, call the LLM (with automatic key fallback),
+    validate, and on failure retry with a DIFFERENT key — up to
+    MAX_ATTEMPTS_PER_STEP times — before giving up on this round. Reuses the
+    same prompt across retries; only the API call is repeated."""
+    resume_start, jd_start, _ = get_next_ids()
+    round_pair_start = group_pair_start + (round_index - 1) * N_PAIRS_PER_ROUND
+    spec = choose_round_spec()
+    round_meta = {
+        "index":        round_index,
+        "spec":         spec,
+        "resume_start": resume_start,
+        "jd_start":     jd_start,
+        "pair_start":   round_pair_start,
+    }
+    prompt = build_cvjd_prompt(spec, resume_start, jd_start)
+    PROMPT_OUTPUT.write_text(prompt, encoding="utf-8")
+
+    tried: set[str] = set()
+    provider_fails: dict[str, int] = {}
+    for attempt in range(1, MAX_ATTEMPTS_PER_STEP + 1):
+        raw, used_key = llm_client.call_llm(prompt, exclude=tried)
+        tried.add(used_key)
+        TEMP_INPUT.write_text(raw, encoding="utf-8")
+        lines = [ln.strip() for ln in raw.strip().splitlines() if ln.strip()]
+        resumes_new, jds_new, errors = _process_cvjd_lines(lines, round_meta)
+        if not errors:
+            for r in resumes_new:
+                wc = len(r.get("raw_text", "").split())
+                print(f"    {r['id']}: {wc} words  {'ok' if wc >= CV_MIN_WORDS else 'SHORT'}  (via {used_key})")
+            return resumes_new, jds_new, round_meta
+        print(f"  [auto] round {round_index} attempt {attempt}/{MAX_ATTEMPTS_PER_STEP} via {used_key} failed validation:")
+        for e in errors[:5]:
+            print(f"      ✗ {e}")
+        _record_provider_failure(used_key, provider_fails, tried)
+
+    raise RuntimeError(f"Round {round_index}: failed validation after {MAX_ATTEMPTS_PER_STEP} attempts across different keys.")
+
+
+def _auto_generate_pairs(
+    rounds: list[dict], label_targets: dict, current_dist: dict, group_pair_start: int,
+) -> list[dict]:
+    """Score all N_PAIRS pairs, accumulating across retries: each attempt only
+    asks for whatever is still missing (a smaller prompt + smaller expected
+    response than re-requesting the full group every time), and validated
+    pairs from a partial response are kept rather than discarded. This avoids
+    wasting an otherwise-good 18/20 response just because the last couple of
+    pairs got truncated or mis-scored."""
+    expected_ids = {f"pair_{group_pair_start + i}" for i in range(N_PAIRS)}
+    resume_ids = {r["id"] for rnd in rounds for r in rnd["resumes"]}
+    jd_ids     = {j["id"] for rnd in rounds for j in rnd["jds"]}
+
+    collected: dict[str, dict] = {}
+    tried: set[str] = set()
+    provider_fails: dict[str, int] = {}
+
+    for attempt in range(1, MAX_ATTEMPTS_PER_STEP + 1):
+        missing_ids = expected_ids - set(collected)
+        if not missing_ids:
+            break
+
+        pair_prompt = build_group_pair_prompt(rounds, label_targets, current_dist, only_pair_ids=missing_ids)
+        PROMPT_OUTPUT.write_text(pair_prompt, encoding="utf-8")
+
+        raw, used_key = llm_client.call_llm(pair_prompt, exclude=tried)
+        tried.add(used_key)
+        TEMP_INPUT.write_text(raw, encoding="utf-8")
+        lines = [ln.strip() for ln in raw.strip().splitlines() if ln.strip()]
+
+        accepted, errors, warnings = _process_pair_lines(lines, rounds, missing_ids, resume_ids, jd_ids)
+        collected.update(accepted)
+
+        if warnings:
+            print(f"  [auto] {len(warnings)} warning(s) (proceeding automatically):")
+            for w in warnings[:5]:
+                print(f"      ⚠ {w}")
+
+        if accepted:
+            # Forward progress — this provider clearly works on this prompt,
+            # so don't let an earlier unrelated strike count against it.
+            provider_fails[used_key.split(":", 1)[0]] = 0
+            print(f"  [auto] attempt {attempt}/{MAX_ATTEMPTS_PER_STEP} via {used_key}: "
+                  f"+{len(accepted)} pair(s) accepted ({len(collected)}/{N_PAIRS} total)")
+        if len(accepted) < len(missing_ids):
+            still_missing = len(missing_ids) - len(accepted)
+            print(f"  [auto]   {still_missing} pair(s) still missing/invalid from this attempt:")
+            for e in errors[:5]:
+                print(f"      ✗ {e}")
+            if not accepted:
+                _record_provider_failure(used_key, provider_fails, tried)
+
+    missing_ids = expected_ids - set(collected)
+    if missing_ids:
+        raise RuntimeError(
+            f"Pair scoring: still missing {len(missing_ids)}/{N_PAIRS} pair(s) after "
+            f"{MAX_ATTEMPTS_PER_STEP} attempts across different keys: {sorted(missing_ids)}"
+        )
+
+    print(f"  [auto] all {N_PAIRS} pairs scored.")
+    return [collected[f"pair_{group_pair_start + i}"] for i in range(N_PAIRS)]
+
+
+def _auto_run_one_group() -> None:
+    session = load_session()
+
+    if session.get("state") == "idle":
+        _, _, group_pair_start = get_next_ids()
+        rounds: list[dict] = []
+    else:
+        group_pair_start = session["group_pair_start"]
+        rounds = session.get("rounds", [])
+
+    if session.get("state") != "waiting_pairs":
+        while len(rounds) < ROUNDS_PER_GROUP:
+            round_index = len(rounds) + 1
+            print(f"\n  [auto] generating round {round_index}/{ROUNDS_PER_GROUP}...")
+            resumes_new, jds_new, round_meta = _auto_generate_round(round_index, group_pair_start)
+
+            append_jsonl(RESUMES_PATH, resumes_new)
+            append_jsonl(JDS_PATH,     jds_new)
+
+            completed_round = dict(round_meta)
+            completed_round["resumes"] = resumes_new
+            completed_round["jds"]     = jds_new
+            rounds = rounds + [completed_round]
+
+            save_session({
+                "state":            "waiting_cvjd",
+                "group_pair_start": group_pair_start,
+                "current_round":    round_meta,
+                "rounds":           rounds,
+            })
+            print(f"  [auto] round {round_index}/{ROUNDS_PER_GROUP} saved.")
+
+        save_session({
+            "state":            "waiting_pairs",
+            "group_pair_start": group_pair_start,
+            "rounds":           rounds,
+        })
+
+    label_targets = compute_label_targets(N_PAIRS)
+    current_dist  = dict(Counter(p.get("label") for p in load_jsonl(PAIRS_PATH) if p.get("label") in ALLOWED_LABELS))
+
+    print(f"\n  [auto] all {ROUNDS_PER_GROUP} rounds ready — scoring {N_PAIRS} pairs...")
+    pairs_new = _auto_generate_pairs(rounds, label_targets, current_dist, group_pair_start)
+
+    append_jsonl(PAIRS_PATH, pairs_new)
+    dist = Counter(p.get("label") for p in pairs_new)
+    print(f"\n  [auto] ✓ saved {len(pairs_new)} pairs — " + "  |  ".join(f"{k}: {v}" for k, v in dist.items()))
+
+    TEMP_INPUT.write_text("", encoding="utf-8")
+    save_session({"state": "idle"})
+
+    auto_commit_batch()
+    show_stats()
+
+
+def action_auto_run(max_groups: int | None = None) -> None:
+    """Fully automated mode: build every prompt, call the configured API keys
+    directly (automatic fallback across providers/keys on failure or
+    exhaustion), validate, and save — no manual copy-paste required.
+
+    Runs until `max_groups` groups are completed, or indefinitely (Ctrl+C to
+    stop) if max_groups is None, or until every configured API key is
+    exhausted — whichever happens first. Progress is saved after every round
+    and every group, so an interrupted run can always be resumed with [1]/[2]
+    (manual) or by choosing auto-run again.
+    """
+    if not _LLM_CLIENT_AVAILABLE:
+        print("\n  [!] llm_client module unavailable (missing httpx / python-dotenv?). Cannot run auto mode.")
+        return
+
+    print("\n  Auto mode: calling configured API keys directly (no manual copy-paste).")
+    if max_groups is None:
+        print("  Press Ctrl+C to stop between groups.")
+
+    groups_done = 0
+    try:
+        while max_groups is None or groups_done < max_groups:
+            _auto_run_one_group()
+            groups_done += 1
+            suffix = f"/{max_groups}" if max_groups else ""
+            print(f"\n  [auto] === group {groups_done}{suffix} complete ===")
+    except llm_client.AllKeysExhaustedError as e:
+        print(f"\n  [!] {e}")
+        print("  [!] Stopping — no more usable API keys. Progress so far is saved.")
+    except KeyboardInterrupt:
+        print("\n\n  Stopped by user (Ctrl+C). Progress so far is saved — resume anytime.")
+    except RuntimeError as e:
+        print(f"\n  [!] {e}")
+        print("  [!] Stopping — inspect scripts/temp_input.txt for the last LLM response.")
+
 # ── main loop ─────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -1265,6 +1519,13 @@ def main() -> None:
     print("╚══════════════════════════════════════════════════╝")
     show_stats()
 
+    # --auto [N]: skip the interactive menu entirely and run N groups (or
+    # indefinitely if N is omitted) via the configured API keys.
+    if len(sys.argv) > 1 and sys.argv[1] in ("--auto", "-a"):
+        n = int(sys.argv[2]) if len(sys.argv) > 2 else None
+        action_auto_run(n)
+        return
+
     while True:
         session = load_session()
         state   = session.get("state", "idle")
@@ -1272,6 +1533,7 @@ def main() -> None:
         print("\nMenu:")
         print("  [1]  Generate CV+JD prompt  (start new group / next round)")
         print("  [2]  Save result            (paste LLM output into scripts/temp_input.txt first)")
+        print("  [3]  Auto-run via API       (no manual copy-paste, uses keys from .env)")
         print("  [0]  Exit")
 
         if state != "idle":
@@ -1285,6 +1547,9 @@ def main() -> None:
             action_generate_prompt()
         elif choice == "2":
             action_save()
+        elif choice == "3":
+            raw_n = input("      How many groups? (blank = run until stopped or keys exhausted): ").strip()
+            action_auto_run(int(raw_n) if raw_n else None)
         elif choice == "0":
             print("\n  Bye.\n")
             sys.exit(0)

@@ -1,3 +1,915 @@
 {
-  "state": "idle"
+  "state": "waiting_cvjd",
+  "group_pair_start": 741,
+  "current_round": {
+    "index": 3,
+    "spec": {
+      "mode": "same_domain",
+      "domain": "Customer Success and Account Management (SaaS renewals, onboarding, churn)",
+      "resume_levels": [
+        "middle",
+        "middle"
+      ],
+      "jd_levels": [
+        "senior",
+        "senior"
+      ]
+    },
+    "resume_start": 375,
+    "jd_start": 375,
+    "pair_start": 749
+  },
+  "rounds": [
+    {
+      "index": 1,
+      "spec": {
+        "mode": "same_domain",
+        "domain": "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)",
+        "resume_levels": [
+          "middle",
+          "middle"
+        ],
+        "jd_levels": [
+          "senior",
+          "senior"
+        ]
+      },
+      "resume_start": 371,
+      "jd_start": 371,
+      "pair_start": 741,
+      "resumes": [
+        {
+          "id": "resume_371",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "Over the past four years, I have honed my expertise in investment analysis and corporate finance through roles at a mid-sized financial advisory firm and a boutique private equity fund, accumulating a robust foundation in valuation methodologies, M&A processes, and financial modeling. Currently serving as a Financial Analyst at Alpha Capital Partners—a 25-person investment boutique focused on mid-market buyouts—I lead the modeling and due diligence for two to three acquisition targets annually. My daily work involves building three-statement forecast models in Excel and PitchBook, performing DCF and LBO analyses, and creating sensitivity tables to assess deal viability. I collaboratively support the deal team during negotiations by preparing valuation outputs and drafting sections of the investment memo, ensuring alignment between strategic goals and financial projections. Beyond modeling, I’ve streamlined the firm’s quarterly portfolio review process by automating consolidation reports using Python, reducing reporting time from 10 hours to 2 hours while improving data accuracy. This automation now serves as a template for future quarterly cycles and is widely adopted by the team. Prior to this, I spent two years at a Series B-stage fintech startup, DeltaPay, where I worked closely with the CFO on monthly board reporting and the development of a rolling 18-month financial forecast. My responsibilities included reconciling revenue recognition under ASC 606 and coordinating with engineering to refine unit economics models for a subscription-based product. I hold a Bachelor of Science in Finance from the University of Virginia, graduating in 2021 with honors, and have pursued self-directed learning in advanced topics like option pricing models and real options theory through Coursera. My current focus lies in deepening my expertise in cross-border M&A and integrating ESG factors into valuation frameworks, particularly for energy transition sectors. Looking ahead, I aim to transition into a lead financial analyst or associate role at a larger private equity fund within the next two years.",
+          "summary": "Middle-level investment analyst with four years of experience in financial modeling, M&A due diligence, and valuation, currently seeking to leverage analytical rigor in a higher-impact corporate finance role.",
+          "skills": [
+            "DCF Modeling",
+            "LBO Analysis",
+            "Three-Statement Forecasting",
+            "Python for Finance",
+            "PitchBook",
+            "Excel",
+            "ASC 606 Revenue Recognition",
+            "Portfolio Monitoring",
+            "Board Reporting",
+            "Valuation Memos",
+            "Sensitivity Analysis",
+            "Financial Due Diligence",
+            "Unit Economics Modeling",
+            "Automation Scripting"
+          ],
+          "normalized_skills": [
+            "dcf_modeling",
+            "lbo_analysis",
+            "three_statement_forecasting",
+            "python_for_finance",
+            "pitchbook",
+            "excel",
+            "asc_606_revenue_recognition",
+            "portfolio_monitoring",
+            "board_reporting",
+            "valuation_memos",
+            "sensitivity_analysis",
+            "financial_due_diligence",
+            "unit_economics_modeling",
+            "automation_scripting"
+          ],
+          "experience_years": 4.0,
+          "education": {
+            "degree": "Bachelor",
+            "field_of_study": "Finance",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "ESG-Adjusted DCF Toolkit",
+              "description": "Developed an open-source Python toolkit that integrates carbon transition risk metrics into discounted cash flow models by overlaying scenario-based CO2 price pathways from IPCC datasets. The tool automatically recalculates terminal values and NPVs under multiple carbon pricing regimes, enabling quick sensitivity analysis for energy and utilities portfolios. Validated against 12 public comparables, it reduced valuation adjustment variance by 15% compared to traditional DCF outputs.",
+              "technologies": [
+                "Python 3.11",
+                "NumPy",
+                "pandas",
+                "Matplotlib",
+                "SciPy",
+                "IPCC Data API"
+              ]
+            }
+          ],
+          "certifications": [],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        },
+        {
+          "id": "resume_372",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "As a Corporate Finance Associate at Sterling Partners—a 50-person mid-market investment firm—I’ve spent the last three years immersed in the full lifecycle of M&A transactions and strategic valuation assignments. My role demands hands-on execution at every stage: drafting CIMs, coordinating sell-side due diligence, and designing auction processes that balance competitive tension with confidentiality. I’ve personally managed five sell-side engagements, ranging from $12M to $45M enterprise value, including a recent software-enabled services deal where I led market outreach to 35 potential buyers and negotiated confidentiality agreements in parallel with stapled financing from a regional bank. For buy-side mandates, I perform commercial and financial due diligence, often leveraging FactSet and Capital IQ to build peer-group trading comps and transaction comps under both equity- and asset-deal structures. I also maintain the firm’s proprietary LBO model, which we calibrate quarterly against public market comparables to ensure bid-ask realism during auction cycles. In addition to live deals, I’ve contributed to the firm’s thought leadership by publishing an internal white paper on the impact of AI-driven automation on SaaS company multiples, synthesizing data from over 70 public filings and trade publications. Before Sterling, I worked for two years at a Big Four transaction services team in Chicago, where I assisted with sell-side VDD and quality of earnings engagements for private equity clients. I specialize in working with founder-owned businesses transitioning to institutional ownership, and I routinely interface with legal counsel and tax advisors to structure tax-efficient exits. I hold a Master of Business Administration from the University of Southern California with a concentration in Corporate Finance, completed in 2023, and a Bachelor of Business Administration from Indiana University in 2020. Currently, I’m expanding my knowledge in international tax structuring and considering the CFA charter to further validate my technical depth. My next career move aims to secure a senior associate role at a top-tier buyout fund where I can take on greater ownership of deal sourcing and execution.",
+          "summary": "Middle-tier corporate finance associate with three years of M&A transaction experience and valuation modeling expertise, currently pursuing broader deal leadership and specialization in SaaS sector transactions.",
+          "skills": [
+            "M&A Execution",
+            "CIM Preparation",
+            "Sell-Side Due Diligence",
+            "Buy-Side Due Diligence",
+            "FactSet",
+            "Capital IQ",
+            "LBO Modeling",
+            "Auction Process Design",
+            "Stapled Financing",
+            "Quality of Earnings",
+            "Valuation Multiples Analysis",
+            "Tax Structuring",
+            "Commercial Due Diligence",
+            "Proprietary Model Maintenance",
+            "White Paper Development"
+          ],
+          "normalized_skills": [
+            "m&a_execution",
+            "cim_preparation",
+            "sell_side_due_diligence",
+            "buy_side_due_diligence",
+            "factset",
+            "capital_iq",
+            "lbo_modeling",
+            "auction_process_design",
+            "stapled_financing",
+            "quality_of_earnings",
+            "valuation_multiples_analysis",
+            "tax_structuring",
+            "commercial_due_diligence",
+            "proprietary_model_maintenance",
+            "white_paper_development"
+          ],
+          "experience_years": 3.5,
+          "education": {
+            "degree": "MBA",
+            "field_of_study": "Corporate Finance",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "SaaS Multiples Dashboard",
+              "description": "Built an interactive Tableau dashboard that tracks forward revenue multiples (EV/NTM Revenue) across 150 SaaS companies with revenue between $50M and $5B. The tool automatically ingests quarterly SEC filings via XBRL parsing, normalizes for growth stage and profitability, and flags outliers for further analyst review. It reduced multiples research time by 60% and informed the firm’s quarterly portfolio monitoring process.",
+              "technologies": [
+                "Tableau",
+                "Python 3.11",
+                "Pandas",
+                "XBRL API",
+                "AWS S3"
+              ]
+            }
+          ],
+          "certifications": [],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        }
+      ],
+      "jds": [
+        {
+          "id": "jd_371",
+          "source": "synthetic",
+          "title": "Senior Investment Analyst – Corporate Development",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "London, United Kingdom",
+          "remote_allowed": false,
+          "posted_date": null,
+          "domain": "investment_analysis_corporate_finance",
+          "raw_text": "We are seeking a seasoned Senior Investment Analyst to drive our corporate development agenda and advise on high-impact M&A transactions within a rapidly scaling multinational enterprise. Reporting to the Head of Corporate Development and serving on a tight-knit team of eight professionals, the successful candidate will play a pivotal role in identifying strategic acquisition targets, executing buy-side mandates, and optimizing the portfolio through divestitures and bolt-ons. Day-to-day responsibilities include performing deep-dive valuation analysis on potential targets using discounted cash flow, trading comparables, and transaction comparables, with a particular emphasis on cross-border transactions and regulatory nuances. You will lead the construction of complex LBO models under both base-case and stressed scenarios, incorporating sensitivity analyses for key value drivers such as pricing power and working capital turnover. Additionally, the role involves drafting board-level investment memos that synthesize market trends, competitive positioning, and financial projections into compelling narratives for executive sign-off. Collaboration is central—you will work closely with legal teams during SPA negotiations, coordinate with treasury on financing structure, and interface with the strategy team to align deals with long-term vision. Success in the first six months will be measured by leading at least two acquisition mandates from inception to close, delivering IRR uplift versus underwriting assumptions by more than 50 basis points, and publishing a quarterly sector deep-dive that informs the board’s forward-looking agenda. The ideal candidate will thrive in ambiguous environments, distill complex financial concepts for non-technical stakeholders, and possess a track record of executing transactions within regulated industries. We require proficiency in Valutico or PitchBook for primary research and familiarity with Python or R for ad-hoc financial analysis and automation.",
+          "responsibilities": [
+            "Lead valuation analysis for cross-border M&A transactions using DCF, comps, and LBO methodologies",
+            "Construct detailed financial models including sensitivity analyses and scenario stress tests",
+            "Draft executive-grade investment memos summarizing deal rationale and strategic fit",
+            "Coordinate with legal, treasury, and strategy teams throughout transaction lifecycle",
+            "Publish quarterly sector analysis to inform board-level investment decisions"
+          ],
+          "requirements": [
+            "Minimum of six years of investment banking, private equity, or corporate development experience",
+            "Proven track record of executing at least three buy-side or sell-side M&A transactions from mandate to close",
+            "Strong command of Excel and PowerPoint for financial modeling and pitch book development",
+            "Experience with Valutico or PitchBook for market research",
+            "Proficiency in Python or R for financial analysis and automation tasks"
+          ],
+          "nice_to_have": [
+            "Prior experience in regulated industries such as healthcare or energy",
+            "CFA charterholder or equivalent qualification",
+            "Experience with SQL for data extraction from transaction databases"
+          ],
+          "required_skills": [
+            "DCF Modeling",
+            "Trading Comps",
+            "Transaction Comps",
+            "LBO Modeling",
+            "Financial Due Diligence",
+            "Investment Memo Authoring",
+            "Cross-border M&A",
+            "Sensitivity Analysis",
+            "Regulatory Due Diligence",
+            "Python for Finance",
+            "R for Finance",
+            "Valutico",
+            "PowerPoint",
+            "Excel"
+          ],
+          "preferred_skills": [
+            "SQL",
+            "CFA",
+            "Tableau",
+            "Power BI"
+          ],
+          "min_experience_years": 6,
+          "education_requirement": "MBA or equivalent advanced degree preferred",
+          "domain_keywords": [
+            "cross_border_m&a",
+            "valuation_analysis",
+            "lbo_modeling",
+            "financial_due_diligence",
+            "board_level_reporting",
+            "investment_memos"
+          ],
+          "language": "en"
+        },
+        {
+          "id": "jd_372",
+          "source": "synthetic",
+          "title": "Lead Corporate Finance Associate – M&A Execution",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "New York City, United States",
+          "remote_allowed": true,
+          "posted_date": null,
+          "domain": "investment_analysis_corporate_finance",
+          "raw_text": "We are looking for a Lead Corporate Finance Associate to spearhead our M&A execution function and oversee a portfolio of full-cycle transactions from sourcing through integration. Joining a high-growth, data-driven team of twelve at our New York headquarters, this role owns the end-to-end orchestration of buy-side and sell-side deals, making it ideal for a hands-on leader who thrives under pressure and values deep ownership. The Associate will design and execute auction processes, manage due diligence workflows across functional teams, and negotiate definitive agreements with sellers and lenders—ensuring every transaction delivers value within its defined strategic parameters. On a day-to-day basis, you will construct and maintain proprietary LBO and merger models for high-profile targets, integrate buy-side diligence findings into bid strategies, and liaise with private equity sponsors to refine investment theses based on market feedback. You will also oversee the firm’s compliance with SEC reporting requirements for public targets and ensure accurate financial metrics are embedded in fairness opinions and fairness committee memos. The first six months focus on leading two live transactions end-to-end, benchmarking performance against internal hurdle rates, and establishing KPI dashboards to monitor synergies during post-close integration. This role interacts extensively with product teams to assess operational synergies, partners with legal to draft SPA agreements, and collaborates with data science to automate deal sourcing using proprietary machine learning models. Successful candidates will demonstrate fluency in modern M&A tooling and the ability to mentor junior analysts through complex transactions. We require deep expertise in LBO modeling and auction process design, as well as familiarity with FactSet, Capital IQ, and DealCloud for transaction support. Knowledge of Python for automation and familiarity with SEC EDGAR parsing tools is a strong differentiator.",
+          "responsibilities": [
+            "Design and execute auction processes for sell-side mandates, managing confidentiality and competitive tension",
+            "Build and maintain LBO and merger models for high-profile targets, integrating buy-side diligence findings",
+            "Oversee due diligence workflows across legal, tax, commercial, and financial teams",
+            "Negotiate definitive agreements and coordinate with lenders on financing structures",
+            "Ensure SEC compliance for public targets and deliver fairness opinions as required"
+          ],
+          "requirements": [
+            "A minimum of seven years of M&A experience at a top-tier investment bank, elite boutique, or lead private equity firm",
+            "Direct experience leading at least four full-cycle buy-side or sell-side transactions to closing",
+            "Expert-level LBO modeling and merger analysis capabilities",
+            "Hands-on experience with FactSet and Capital IQ for research and analysis",
+            "Ability to mentor and develop junior team members through transaction cycles"
+          ],
+          "nice_to_have": [
+            "CFA charter or equivalent",
+            "Experience with SEC EDGAR filing parsing and XBRL",
+            "Python scripting for deal sourcing automation",
+            "Knowledge of DealCloud CRM"
+          ],
+          "required_skills": [
+            "LBO Modeling",
+            "Merger Modeling",
+            "Auction Process Design",
+            "Due Diligence Coordination",
+            "Definitive Agreement Negotiation",
+            "Fairness Opinion Preparation",
+            "SEC Compliance",
+            "FactSet",
+            "Capital IQ",
+            "DealCloud",
+            "PowerPoint",
+            "Excel",
+            "Python"
+          ],
+          "preferred_skills": [
+            "SQL",
+            "XBRL Parsing",
+            "Machine Learning for Deal Sourcing",
+            "Tableau",
+            "Power BI"
+          ],
+          "min_experience_years": 7,
+          "education_requirement": "MBA strongly preferred",
+          "domain_keywords": [
+            "full_cycle_m&a",
+            "lbo_modeling",
+            "merger_modeling",
+            "auction_process_design",
+            "sec_compliance",
+            "fairness_opinions",
+            "deal_sourcing_automation"
+          ],
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "spec": {
+        "mode": "same_domain",
+        "domain": "Digital Marketing and Content Strategy (SEO, social media, analytics)",
+        "resume_levels": [
+          "middle",
+          "middle"
+        ],
+        "jd_levels": [
+          "senior",
+          "senior"
+        ]
+      },
+      "resume_start": 373,
+      "jd_start": 373,
+      "pair_start": 745,
+      "resumes": [
+        {
+          "id": "resume_373",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "With nearly five years of hands-on experience in digital marketing and content strategy, this professional has refined their expertise across SEO, social media management, and analytics-driven decision making. Starting as a Content Coordinator at a SaaS startup, they quickly progressed into a Digital Marketing Specialist role at a mid-sized e-commerce agency, where they managed a team of four junior marketers. Daily responsibilities included crafting and executing multi-channel content strategies, optimizing on-page and technical SEO for conversions, and leading keyword research campaigns using tools like Ahrefs 12.0 and SEMrush 2023. By implementing structured data markup and A/B testing landing pages in Google Optimize, they reduced bounce rates by 35% while increasing organic traffic by 42% over 18 months. Their technical stack spans content management systems like WordPress 6.2 and Webflow 1.18, where they developed custom modules for dynamic content personalization. Side projects such as \"Localize\", a small business directory platform built with Next.js 13.4 and Firebase, demonstrate their full-stack capability in delivering scalable solutions. Data visualization and reporting relied heavily on Google Looker Studio 2023, where dashboards were created to track customer acquisition costs and ROI per channel. Recognizing gaps in automation, they built a Python 3.11 script using Scrapy 2.8 to streamline competitive backlink analysis, cutting research time from 12 to 3 hours weekly. Currently, they are focused on refining predictive analytics models to optimize content distribution timelines, positioning themselves as a specialist in data-informed marketing strategies. Holding a Bachelor’s degree in Communications with a minor in Computer Science from 2019, they balance a pragmatic approach to strategy with a passion for emerging AI tools in SEO. Their next career step involves transitioning into a leadership role where they can mentor teams while driving cross-functional digital transformation initiatives.",
+          "summary": "Middle-level digital marketer specializing in SEO and content strategy with 4.5 years of experience optimizing organic growth and team leadership.",
+          "skills": [
+            "Ahrefs Pro",
+            "SEMrush",
+            "Google Analytics 4",
+            "Google Optimize",
+            "WordPress",
+            "Webflow",
+            "Python",
+            "Scrapy",
+            "Google Looker Studio",
+            "Structured Data Markup",
+            "A/B Testing",
+            "Social Media Strategy",
+            "Content Marketing",
+            "Keyword Research",
+            "Conversion Rate Optimization",
+            "Firebase",
+            "Next.js"
+          ],
+          "normalized_skills": [
+            "ahrefs_pro",
+            "semrush",
+            "google_analytics_4",
+            "google_optimize",
+            "wordpress",
+            "webflow",
+            "python",
+            "scrapy",
+            "google_looker_studio",
+            "structured_data_markup",
+            "ab_testing",
+            "social_media_strategy",
+            "content_marketing",
+            "keyword_research",
+            "conversion_rate_optimization",
+            "firebase",
+            "next_js"
+          ],
+          "experience_years": 4.5,
+          "education": {
+            "degree": "Bachelor",
+            "field_of_study": "Communications",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "Localize",
+              "description": "Developed a scalable directory platform aggregating local service providers with focus on SEO-optimized listings. Built with Next.js 13.4 for frontend rendering and Firebase for realtime database operations, the platform achieved 85% faster load times than competitor templates. Monetization via paid memberships tripled monthly revenue within six months of launch.",
+              "technologies": [
+                "Next.js 13.4",
+                "Firebase",
+                "TailwindCSS",
+                "Google Analytics 4",
+                "Vercel Hosting"
+              ]
+            },
+            {
+              "name": "Content Cluster Generator",
+              "description": "Created a Python 3.11 application that automates internal linking strategy by analyzing semantic relationships between blog posts. Reduced manual cluster planning from 5 days to 3 hours using NLP techniques with spaCy 3.5 and predefined content taxonomy. Integrated directly with WordPress via REST API for seamless content scheduling.",
+              "technologies": [
+                "Python 3.11",
+                "spaCy 3.5",
+                "WordPress REST API",
+                "SQLite"
+              ]
+            }
+          ],
+          "certifications": [],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        },
+        {
+          "id": "resume_374",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "Over three years of focused experience in digital marketing and content strategy, this professional has developed a strong foundation in SEO, analytics, and social media operations across both enterprise and agency settings. Beginning as a Social Media Coordinator at a digital advertising firm, they specialized in community growth tactics and paid social campaigns before moving into an SEO Analyst position at a mid-sized SaaS company. During their tenure, they designed and executed an SEO roadmap using Google Search Console and Moz API 2.0 to improve site architecture and crawlability, resulting in a 28% increase in qualified organic traffic within eight months. Responsibilities included managing a $250,000 annual ad budget on Meta Ads Manager and LinkedIn Campaign Manager while maintaining a 3:1 ROAS target, which they sustained by refining audience segmentation and creative testing frameworks. Their technical toolkit includes HubSpot Marketing Hub 2023 for workflow automation and Screaming Frog SEO Spider for technical audits, where they identified and resolved 180 critical crawl errors reducing page load time by 40%. A highlight project involved developing a content brief generator using Node.js 18 and Airtable API, which standardized brief creation across five content writers and cut approval cycles from 4 days to 24 hours. Collaboration extended to cross-functional teams including product, design, and UX, ensuring alignment between content strategies and user experience improvements. Holding a Master’s degree in Marketing from 2021, they have expanded their expertise into marketing automation through certifications in HubSpot Content Marketing. Looking ahead, they aim to deepen their technical SEO capabilities and leverage AI for predictive content performance modeling, with a goal of moving into a senior strategy role within two years.",
+          "summary": "Digital marketing specialist with 3.5 years of experience in SEO, paid social, and marketing automation, building scalable strategies in SaaS and agency environments.",
+          "skills": [
+            "HubSpot Marketing Hub",
+            "Meta Ads Manager",
+            "LinkedIn Campaign Manager",
+            "Google Search Console",
+            "Moz API",
+            "Screaming Frog",
+            "Node.js",
+            "Airtable API",
+            "SEO Strategy",
+            "Content Brief Creation",
+            "Audience Segmentation",
+            "ROAS Optimization",
+            "Marketing Automation",
+            "Technical SEO",
+            "Community Growth"
+          ],
+          "normalized_skills": [
+            "hubspot_marketing_hub",
+            "meta_ads_manager",
+            "linkedin_campaign_manager",
+            "google_search_console",
+            "moz_api",
+            "screaming_frog",
+            "node_js",
+            "airtable_api",
+            "seo_strategy",
+            "content_brief_creation",
+            "audience_segmentation",
+            "roas_optimization",
+            "marketing_automation",
+            "technical_seo",
+            "community_growth"
+          ],
+          "experience_years": 3.5,
+          "education": {
+            "degree": "Master",
+            "field_of_study": "Marketing",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "Content Brief Generator",
+              "description": "Built a content brief automation tool to standardize SEO-driven brief creation across writing teams. Leveraged Node.js 18 for backend processing and Airtable API for dynamic content brief storage, reducing creation time from 4 days to 24 hours. Integrated semantic keyword analysis through integration with Google Natural Language API for topic relevance scoring.",
+              "technologies": [
+                "Node.js 18",
+                "Airtable API",
+                "Google Natural Language API",
+                "Express.js",
+                "Jest Testing"
+              ]
+            },
+            {
+              "name": "SEO Crawl Budget Optimizer",
+              "description": "Developed a lightweight Python 3.9 script using Screaming Frog SEO Spider's export API to identify pages wasting crawl budget due to thin content or low traffic. Removed 220 non-performing pages, improving indexation rate from 78% to 91% and reducing server load during crawls.",
+              "technologies": [
+                "Python 3.9",
+                "Screaming Frog SEO Spider",
+                "Pandas",
+                "GitHub Actions"
+              ]
+            }
+          ],
+          "certifications": [
+            "HubSpot Content Marketing"
+          ],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        }
+      ],
+      "jds": [
+        {
+          "id": "jd_373",
+          "source": "synthetic",
+          "title": "Senior SEO & Content Strategy Lead",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "Remote",
+          "remote_allowed": true,
+          "posted_date": null,
+          "domain": "digital_marketing_content_strategy",
+          "raw_text": "We are seeking a seasoned Senior SEO & Content Strategy Lead to own the end-to-end digital visibility strategy for our B2B SaaS platform, serving over 50,000 global users. The successful candidate will lead a small but high-impact team of three specialists, collaborating closely with product, engineering, and data science to align content initiatives with technical roadmaps and user intent. Day-to-day responsibilities include overseeing a $3M annual marketing budget, designing and executing SEO roadmaps that account for algorithmic shifts and competitive pressures, and mentoring junior team members to elevate their strategic thinking and execution quality. You will be expected to leverage advanced technical SEO skills to optimize crawl efficiency, schema implementation at scale, and internal linking architectures using enterprise-grade tools such as DeepCrawl, Botify, and Sitebulb. Success will be measured by improvements in organic session growth exceeding 30% year-over-year, a 50% increase in high-intent keyword rankings in the top three positions, and a reduction in average page load time under 2.5 seconds. You will need fluency in JavaScript-based static site generators like Next.js 13 or Gatsby, and experience with cloud platforms including AWS CloudFront and Vercel Edge Functions for high-performance deployments. Applicants must demonstrate proven expertise in forecasting SEO impact using machine learning models trained on historical ranking and conversion data, as well as proficiency in SQL for advanced analytics and stakeholder reporting. We value leaders who can translate data into actionable insights while maintaining a deep understanding of semantic search evolution and AI-driven content relevance. This role offers extensive growth opportunities, including leading cross-functional initiatives that influence product direction and visibility within the company’s core go-to-market strategy.",
+          "responsibilities": [
+            "Lead the SEO and content strategy roadmap for a B2B SaaS platform with 50,000+ users",
+            "Design and execute SEO initiatives using Botify, DeepCrawl, and Sitebulb to optimize crawl efficiency and schema at scale",
+            "Oversee a $3M annual marketing budget and allocate resources to maximize ROI across channels",
+            "Mentor junior team members and elevate strategic execution quality to senior-grade standards",
+            "Implement schema markup at enterprise scale across 1,200+ dynamic pages",
+            "Forecast SEO impact using machine learning models trained on historical ranking and conversion data"
+          ],
+          "requirements": [
+            "Minimum 6 years in digital marketing with at least 3 years focused on technical SEO",
+            "Experience leading teams of 3+ marketers in SEO or content-driven growth",
+            "Proficiency with enterprise SEO tools: Botify, DeepCrawl, Sitebulb, and Screaming Frog Enterprise",
+            "Strong background in JavaScript frameworks (Next.js 13 or Gatsby) and cloud deployments on AWS CloudFront/Vercel",
+            "Fluency in SQL for analytics and stakeholder reporting",
+            "Demonstrated ability to forecast SEO impact using predictive models",
+            "Proven track record of increasing organic session growth by 30%+ YoY"
+          ],
+          "nice_to_have": [
+            "Certification in Google Analytics 4 (GA4) or Adobe Analytics",
+            "Experience with machine learning platforms like TensorFlow or scikit-learn for SEO modeling",
+            "Background in B2B SaaS product marketing or competitive intelligence",
+            "Proficiency in Spanish or German for global content planning"
+          ],
+          "required_skills": [
+            "SEO Strategy Leadership",
+            "Technical SEO",
+            "Content Strategy",
+            "Botify",
+            "DeepCrawl",
+            "Sitebulb",
+            "Schema Markup",
+            "JavaScript Frameworks",
+            "AWS CloudFront",
+            "Vercel",
+            "SQL",
+            "Predictive Analytics",
+            "Team Mentorship"
+          ],
+          "preferred_skills": [
+            "Machine Learning for SEO",
+            "TensorFlow",
+            "Scikit-learn",
+            "Adobe Analytics",
+            "B2B Product Marketing",
+            "Competitive Intelligence",
+            "Multilingual Content"
+          ],
+          "min_experience_years": 6,
+          "education_requirement": "Bachelor’s degree or equivalent experience",
+          "domain_keywords": [
+            "technical_seo",
+            "content_strategy",
+            "team_leadership",
+            "enterprise_seo",
+            "predictive_analytics",
+            "schema_markup",
+            "b2b_saas",
+            "organic_growth",
+            "crawl_optimization"
+          ],
+          "language": "en"
+        },
+        {
+          "id": "jd_374",
+          "source": "synthetic",
+          "title": "Senior Content & Growth Strategist",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "San Francisco, USA",
+          "remote_allowed": false,
+          "posted_date": null,
+          "domain": "digital_marketing_content_strategy",
+          "raw_text": "A growing B2B technology company is hiring a Senior Content & Growth Strategist to own content-led growth across our AI-driven platform serving enterprise clients in finance and healthcare. This senior role will be responsible for shaping the narrative and driving acquisition, conversion, and retention through strategic content initiatives, working closely with product, sales, and customer success teams. The ideal candidate will have a minimum of six years of experience in content marketing, SEO, and conversion optimization, with a proven ability to scale content operations across multiple verticals. Daily responsibilities include developing and executing a content strategy that aligns with product roadmaps, managing a team of four content creators and editors, and using analytics to inform prioritization—bridging tools such as Google Analytics 4, Mixpanel, and Hotjar—to identify high-impact content opportunities. You will own the full content lifecycle from ideation to publication, ensuring brand consistency and SEO alignment while leveraging AI-powered tools like Clearscope and MarketMuse for content optimization. Success will be defined by measurable outcomes in lead quality improvement, a 40% increase in marketing-qualified leads (MQLs), and a 25% lift in customer retention through content engagement. The ideal candidate should bring deep experience in ABM (Account-Based Marketing) strategies, particularly in crafting personalized content for enterprise audiences across multiple touchpoints. Fluency in tools like HubSpot, Salesforce Marketing Cloud, and Tableau is essential, alongside a strong grasp of modern SEO frameworks such as EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) and Google’s Helpful Content guidelines. This role is ideal for a strategic thinker who excels in cross-functional collaboration and can scale content systems to support rapid company growth.",
+          "responsibilities": [
+            "Develop and execute a content strategy aligned with product roadmaps for an AI-driven B2B platform",
+            "Manage a content team of four creators and editors to scale content production across multiple industries",
+            "Use GA4, Mixpanel, and Hotjar to analyze content performance and prioritize high-impact initiatives",
+            "Own the full content lifecycle from ideation to publication with SEO and brand consistency in mind",
+            "Implement ABM strategies to personalize content for enterprise audiences across touchpoints"
+          ],
+          "requirements": [
+            "Minimum 6 years in content marketing, SEO, and growth strategy with enterprise experience",
+            "Experience managing teams of 3+ content creators and editors",
+            "Proficiency with content optimization tools: Clearscope, MarketMuse, SurferSEO",
+            "Strong knowledge of ABM strategies and enterprise content frameworks",
+            "Experience with analytics platforms: Google Analytics 4, Mixpanel, Hotjar",
+            "Fluency with CRM systems: HubSpot, Salesforce Marketing Cloud, Tableau"
+          ],
+          "nice_to_have": [
+            "Certification in Content Marketing Institute programs",
+            "Experience in healthcare or fintech content strategy",
+            "Background in AI-generated content tools (e.g., Jasper, Copy.ai)",
+            "Strong data visualization skills with Tableau or Looker"
+          ],
+          "required_skills": [
+            "Content Strategy",
+            "SEO",
+            "ABM Strategies",
+            "Content Optimization",
+            "Google Analytics 4",
+            "Mixpanel",
+            "Hotjar",
+            "Clearscope",
+            "MarketMuse",
+            "HubSpot",
+            "Salesforce Marketing Cloud",
+            "EEAT Framework",
+            "Google Helpful Content Guidelines"
+          ],
+          "preferred_skills": [
+            "Jasper",
+            "Copy.ai",
+            "Tableau",
+            "Looker",
+            "Healthcare Content Strategy",
+            "Fintech Content Strategy",
+            "AI Content Tools"
+          ],
+          "min_experience_years": 6,
+          "education_requirement": "Bachelor’s degree in Marketing, Communications, or related field",
+          "domain_keywords": [
+            "content_strategy",
+            "account_based_marketing",
+            "enterprise_content",
+            "ai_platforms",
+            "conversion_optimization",
+            "seo_frameworks",
+            "content_lifecycle",
+            "google_analytics_4",
+            "abm_strategies",
+            "customer_retention"
+          ],
+          "language": "en"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "spec": {
+        "mode": "same_domain",
+        "domain": "Customer Success and Account Management (SaaS renewals, onboarding, churn)",
+        "resume_levels": [
+          "middle",
+          "middle"
+        ],
+        "jd_levels": [
+          "senior",
+          "senior"
+        ]
+      },
+      "resume_start": 375,
+      "jd_start": 375,
+      "pair_start": 749,
+      "resumes": [
+        {
+          "id": "resume_375",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "After three years of hands-on experience in SaaS customer success at a Series B fintech startup, I’ve developed a sharp focus on renewal-driven onboarding and churn-reduction strategies. At FinFlow (a fintech scale-up), I spearheaded onboarding for 50+ enterprise clients migrating off legacy solutions, cutting time-to-value from 35 to 19 days by redesigning touchpoints around user pain points. Using Gainsight 19.3 and in-house analytics dashboards (built with Python 3.11, Metabase, and Snowflake), I automated renewal check-ins for ARR segments exceeding $2M, lifting net retention by 12% quarter-over-quarter. Before FinFlow, I spent two years at TechOasis (a B2B SaaS agency) as a Customer Success Associate, where I managed cohorts of 20 SMB clients using Totango and Intercom—balancing proactive upsell outreach with reactive issue resolution to maintain a CSAT of 94%. Across both roles, I collaborated closely with product teams to translate client feedback into prioritized backlog items (Jira) and led training sessions for 200+ internal users, ensuring consistent adoption of new features. My stack runs on AWS EC2 and Lambda, with monitoring via Datadog, and I’ve contributed to an internal churn-prediction model using Scikit-learn, which flagged at-risk accounts 48 hours earlier on average. Side projects include a Flask microservice that scrapes public earnings call transcripts (BeautifulSoup, NLTK) to generate sentiment trends for investment teams—reducing manual analysis time by 60%. Currently, I’m focused on scaling high-touch SaaS onboarding for companies with $10M+ ARR, seeking to bridge operational gaps between customer success and revenue teams. I hold a Bachelor of Science in Business Analytics from State University, graduating in 2020.",
+          "summary": "Middle-level SaaS Customer Success professional with 5 years’ experience driving renewals and reducing churn through onboarding optimization and data-driven outreach.",
+          "skills": [
+            "Customer Onboarding",
+            "Net Revenue Retention",
+            "Churn Reduction",
+            "Gainsight",
+            "Totango",
+            "Python 3.11",
+            "SQL",
+            "Metabase",
+            "Snowflake",
+            "AWS EC2",
+            "Datadog",
+            "Scikit-learn",
+            "Intercom",
+            "Jira",
+            "Process Optimization"
+          ],
+          "normalized_skills": [
+            "customer_onboarding",
+            "net_revenue_retention",
+            "churn_reduction",
+            "gainsight",
+            "totango",
+            "python",
+            "sql",
+            "metabase",
+            "snowflake",
+            "aws_ec2",
+            "datadog",
+            "scikit_learn",
+            "intercom",
+            "jira",
+            "process_optimization"
+          ],
+          "experience_years": 5.0,
+          "education": {
+            "degree": "Bachelor",
+            "field_of_study": "Business Analytics",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "Earnings Sentiment Tracker",
+              "description": "A Flask API that aggregates earnings call transcripts, applies NLP sentiment analysis, and delivers trend reports to investment teams. The project cut manual analysis time by 60% and sparked discussions on automating investor relations workflows.",
+              "technologies": [
+                "Flask",
+                "BeautifulSoup",
+                "NLTK",
+                "Pandas",
+                "Matplotlib"
+              ]
+            }
+          ],
+          "certifications": [],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        },
+        {
+          "id": "resume_376",
+          "source": "synthetic",
+          "candidate_level": "middle",
+          "raw_text": "With four years of experience in account management within the SaaS space—split between a mid-market SaaS platform and a martech startup—I specialize in renewal negotiations and frictionless client transitions. At GrowthIQ (a B2B SaaS provider), I managed a portfolio of 70+ customer accounts totaling $3.2M ARR through full-funnel engagement, from post-sale onboarding to expansion-stage renewals. By integrating Salesforce 24.1, HubSpot Service Hub, and custom revenue signals built on top of PostgreSQL 15, I designed a playbook that reduced negotiation cycles by 22% and increased expansion MRR by 18% YoY. Before GrowthIQ, I spent two years at Marketopia (a martech startup) as an Account Manager, where I onboarded 30+ clients onto a self-serve ad-tech platform, resolving 90% of technical blockers within SLA and achieving a renewal rate of 89%. My workflow leverages Python 3.10 for light scripting (pandas, requests) to automate invoice reconciliation and renewal reminders, while dashboards in Tableau provide leadership with real-time pipeline visibility. I also led cross-functional workshops for 50+ internal stakeholders during product launches, aligning account plans with roadmap priorities. An avid contributor to the company-wide churn audit project, I identified $450K in at-risk ARR by correlating inactivity patterns with feature usage metrics, enabling targeted retention campaigns. Beyond work, I built a Sidekiq-powered background worker to poll CRM events and auto-generate renewal proposals, cutting manual effort by 70%. Looking ahead, I’m targeting senior roles where I can scale renewal frameworks for companies with enterprise-level ARR commitments. I earned a Master of Science in Marketing from Tech University in 2021.",
+          "summary": "Middle-level Account Manager with 6 years in SaaS renewals and account growth, focusing on retention optimization and cross-functional collaboration.",
+          "skills": [
+            "Account Management",
+            "Renewal Negotiation",
+            "Salesforce 24.1",
+            "HubSpot Service Hub",
+            "PostgreSQL 15",
+            "Python 3.10",
+            "Pandas",
+            "Tableau",
+            "Marketopia",
+            "GrowthIQ",
+            "Self-Serve Platforms",
+            "Onboarding",
+            "Process Automation",
+            "Expansion Revenue"
+          ],
+          "normalized_skills": [
+            "account_management",
+            "renewal_negotiation",
+            "salesforce",
+            "hubspot_service_hub",
+            "postgresql",
+            "python",
+            "pandas",
+            "tableau",
+            "marketopia",
+            "growthiq",
+            "self_serve_platforms",
+            "onboarding",
+            "process_automation",
+            "expansion_revenue"
+          ],
+          "experience_years": 4.0,
+          "education": {
+            "degree": "Master",
+            "field_of_study": "Marketing",
+            "status": "graduate"
+          },
+          "projects": [
+            {
+              "name": "Automated Renewal Proposal Generator",
+              "description": "A Sidekiq-based background worker that pulls CRM renewal events and auto-generates proposal documents. Deployed on AWS Lambda, it reduced manual proposal assembly time by 70% and eliminated formatting errors in renewal documents.",
+              "technologies": [
+                "Sidekiq",
+                "Python",
+                "AWS Lambda",
+                "Salesforce API"
+              ]
+            }
+          ],
+          "certifications": [],
+          "languages": [
+            {
+              "name": "English",
+              "proficiency": "intermediate"
+            }
+          ],
+          "anonymized": true,
+          "language": "en"
+        }
+      ],
+      "jds": [
+        {
+          "id": "jd_375",
+          "source": "synthetic",
+          "title": "Senior Customer Success Manager (SaaS Renewals and Onboarding)",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "San Francisco, USA",
+          "remote_allowed": true,
+          "posted_date": null,
+          "domain": "customer-success",
+          "raw_text": "We’re expanding our Customer Success team to tackle complex renewals and deepen enterprise adoption for our AI-driven SaaS platform serving Fortune 500 clients. The ideal candidate will quarterback end-to-end renewals up to $50M ARR and lead the transition of high-touch, global accounts through multi-year product expansions. Day-to-day, you’ll design and execute renewal playbooks for strategic accounts, orchestrating cross-functional collaboration with sales, product, and legal teams to mitigate churn risks before renewal deadlines. You’ll leverage Gainsight 19.5, Clari, and Salesforce CPQ to model renewal scenarios, track engagement signals, and automate executive communication cadences, ensuring we hit 95%+ gross retention by year two. Beyond renewals, you’ll disrupt our onboarding process by introducing a data-driven maturity framework that cuts average time-to-value for enterprise cohorts from 60 to under 30 days, using Tableau dashboards and Snowflake SQL to monitor progress in real time. You’ll also spearhead a churn-prevention initiative by analyzing usage telemetry (via Amplitude and Mixpanel) to predict at-risk accounts 90 days out, enabling proactive interventions that safeguard up to $8M in ARR. Success in this role hinges on your ability to influence C-suite stakeholders, translate product roadmap themes into customer success stories, and drive a culture of revenue-focused service delivery. You’ll report to the VP of Customer Success and work alongside a team of 15 CSMs covering EMEA, APAC, and Americas. This position offers clear pathways into leadership roles overseeing multi-million dollar portfolios and direct influence on product strategy based on customer pain points uncovered during renewal cycles.",
+          "responsibilities": [
+            "Design and execute renewal playbooks for accounts up to $50M ARR using Gainsight 19.5, Clari, and Salesforce CPQ",
+            "Lead enterprise account transitions through multi-year product expansions while coordinating with sales, product, and legal",
+            "Develop a data-driven maturity framework to reduce enterprise onboarding time-to-value from 60 to under 30 days",
+            "Spearhead churn prevention by predicting at-risk accounts 90 days out via telemetry analysis in Amplitude and Mixpanel"
+          ],
+          "requirements": [
+            "Minimum 6 years in customer success management with a track record of renewing $20M+ ARR portfolios",
+            "Hands-on experience with Gainsight, Clari, Salesforce CPQ, and SQL for renewal scenario modeling",
+            "Proven ability to design maturity frameworks that accelerate customer value realization",
+            "Expertise in telemetry analysis (Amplitude, Mixpanel) to predict churn risk",
+            "Track record of influencing C-suite stakeholders in renewal discussions"
+          ],
+          "nice_to_have": [
+            "Experience with Snowflake, Tableau, and Python for dashboarding and automation",
+            "Familiarity with SaaS pricing models and expansion revenue strategies"
+          ],
+          "required_skills": [
+            "Customer Success Management",
+            "Renewal Playbooks",
+            "Gainsight",
+            "Clari",
+            "Salesforce CPQ",
+            "SQL",
+            "Churn Prediction",
+            "Enterprise Onboarding",
+            "Telemetry Analysis",
+            "Amplitude",
+            "Mixpanel"
+          ],
+          "preferred_skills": [
+            "Snowflake",
+            "Tableau",
+            "Python"
+          ],
+          "min_experience_years": 6,
+          "education_requirement": "Bachelor’s degree in Business, Marketing, or related field",
+          "domain_keywords": [
+            "renewal_playbooks",
+            "enterprise_onboarding",
+            "churn_prediction",
+            "gainsight",
+            "salesforce_cpq",
+            "amplitude",
+            "mixpanel"
+          ],
+          "language": "en"
+        },
+        {
+          "id": "jd_376",
+          "source": "synthetic",
+          "title": "Senior Account Manager – SaaS Renewals and Expansion",
+          "level": "senior",
+          "employment_type": "full_time",
+          "location": "Austin, USA",
+          "remote_allowed": false,
+          "posted_date": null,
+          "domain": "account-management",
+          "raw_text": "Our growth-stage SaaS company is seeking a Senior Account Manager to own renewal pipelines and expansion revenue across a portfolio exceeding $100M ARR. In this role, you’ll serve as the primary relationship owner for 40 mid-market and enterprise accounts, driving net revenue retention targets by aligning product upgrades with strategic business outcomes. Each day involves collaborating with customer success and sales teams to identify upsell opportunities, negotiate multi-year renewals, and remove adoption barriers using HubSpot Service Hub, Clari, and Zuora CPQ. You’ll also build and evangelize a renewal-readiness framework that standardizes risk scoring across the team, integrating data from CRM, usage analytics (Amplitude), and support tickets to flag at-risk accounts during the 90-day window before renewal. To measure impact, you’ll own the quality bar for renewals, aiming for 98%+ contract retention and driving expansion revenue exceeding 120% NRR. This role is highly cross-functional: you’ll partner with product management to prioritize features based on renewal discovery calls, work with finance to model pricing alternatives, and align with marketing to co-create client-facing success stories. The ideal candidate thrives in a fast-paced environment where revenue targets hinge on deep account penetration and the ability to navigate complex organizational politics during renewals. Reporting to the Director of Account Management, you’ll join a team of 8 AEs focused on mid-market accounts and have direct input into the company’s pricing and packaging strategy based on learnings from renewal negotiations.",
+          "responsibilities": [
+            "Own renewal pipelines for 40 mid-market and enterprise accounts totaling $100M+ ARR",
+            "Drive net revenue retention by identifying upsell opportunities and negotiating multi-year renewals using HubSpot Service Hub, Clari, and Zuora CPQ",
+            "Develop and evangelize a renewal-readiness framework that integrates CRM, Amplitude, and support ticket data",
+            "Partner with product, finance, and marketing to align feature priorities and co-create client success stories"
+          ],
+          "requirements": [
+            "Minimum 6 years in account management or customer success with a record of renewing $30M+ ARR portfolios",
+            "Proficiency in HubSpot Service Hub, Clari, and Zuora CPQ for renewal workflows",
+            "Ability to design renewal-readiness frameworks that integrate CRM, usage analytics, and support data",
+            "Proven track record of achieving 120%+ NRR across a mid-market/enterprise portfolio"
+          ],
+          "nice_to_have": [
+            "Experience with Zuora Revenue and Salesforce Revenue Cloud",
+            "Knowledge of SaaS pricing models and usage-based billing economics",
+            "Certification in revenue operations or SaaS metrics"
+          ],
+          "required_skills": [
+            "Account Management",
+            "Renewal Negotiation",
+            "HubSpot Service Hub",
+            "Clari",
+            "Zuora CPQ",
+            "NRR Optimization",
+            "Renewal-Readiness Frameworks",
+            "Cross-Functional Collaboration"
+          ],
+          "preferred_skills": [
+            "Zuora Revenue",
+            "Salesforce Revenue Cloud",
+            "SaaS Pricing Models",
+            "Revenue Operations"
+          ],
+          "min_experience_years": 6,
+          "education_requirement": "Bachelor’s degree in Business Administration, Finance, or related field",
+          "domain_keywords": [
+            "renewal_negotiation",
+            "nrg_optimization",
+            "zuora_cpq",
+            "hubspot_service_hub",
+            "narr_analytics"
+          ],
+          "language": "en"
+        }
+      ]
+    }
+  ]
 }

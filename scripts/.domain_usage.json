@@ -1,7 +1,7 @@
 {
   "AI and NLP Engineering (Transformers, LangChain, RAG, embeddings)": 7,
   "MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring)": 6,
-  "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 6,
+  "Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)": 7,
   "Backend API Development (Python, FastAPI, Node.js, PostgreSQL)": 6,
   "Human Resources and Talent Acquisition (recruiting, HRIS, onboarding)": 7,
   "Data Science and Machine Learning (Python, scikit-learn, PyTorch, pandas)": 6,
@@ -9,7 +9,7 @@
   "Backend Development for Healthtech (Python, Django, HL7/FHIR integrations)": 7,
   "Frontend Development (React, TypeScript, Next.js, Tailwind CSS)": 7,
   "Product Management in Technology (roadmap, agile, stakeholders)": 7,
-  "Mobile Development (React Native, Flutter, Swift, Kotlin)": 6,
+  "Mobile Development (React Native, Flutter, Swift, Kotlin)": 7,
   "E-commerce and Retail Management (marketplace, operations, merchandising)": 7,
   "Healthcare Administration and Medical Coordination (clinical ops, EMR)": 7,
   "Technical Program Management (cross-team delivery, engineering roadmaps)": 7,
@@ -29,10 +29,10 @@
   "Backend Development for Fintech Payments (Java, Spring Boot, Kafka)": 6,
   "Frontend Development for Design Systems (React, Storybook, component libraries)": 6,
   "Computer Vision Engineering (OpenCV, PyTorch, object detection, edge deployment)": 6,
-  "Digital Marketing and Content Strategy (SEO, social media, analytics)": 6,
+  "Digital Marketing and Content Strategy (SEO, social media, analytics)": 7,
   "Database Engineering (PostgreSQL, MongoDB, Redis, data modeling)": 6,
   "Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)": 6,
   "Learning and Development / Corporate Training (curriculum design, LMS)": 6,
-  "Customer Success and Account Management (SaaS renewals, onboarding, churn)": 6,
+  "Customer Success and Account Management (SaaS renewals, onboarding, churn)": 7,
   "Application Security Engineering (SAST/DAST, secure code review, threat modeling)": 6
 }
