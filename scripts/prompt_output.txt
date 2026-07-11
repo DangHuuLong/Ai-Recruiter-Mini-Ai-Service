@@ -1,77 +1,97 @@
 You are a dataset labeler for an AI recruitment system.
-Score 3 CV-JD pairs (from 3 round(s)) using rubric v0.2.
+Score 11 CV-JD pairs (from 4 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
 PARTIAL RE-REQUEST
 ════════════════════════════════════
-A previous response was incomplete. Score ONLY the 3 pairs listed
+A previous response was incomplete. Score ONLY the 11 pairs listed
 below — do not re-score or repeat any other pair.
 
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_215 | level: senior | exp: 7.5 yrs | raw_text: 293 words
-  skills: AWS, Docker, Kubernetes, Terraform, Jenkins, Python, Prometheus, Grafana, PostgreSQL, GitHub Actions
-  projects: Project Skyhook, KubeWatch
-  background: Starting my professional journey in 2017 at a prominent financial enterprise with a team of twenty engineers, I initially served as a Systems Administrator where I managed on-premise server clusters before transitioning to cloud-native workflows. During my three years there, I spearheaded the migrat
+  id: resume_223 | level: junior | exp: 0.5 yrs | raw_text: 302 words
+  skills: Node.js, React, Stripe Billing, Express.js, PostgreSQL, Redis, Docker, AWS ECS, TypeScript, Chart.js
+  projects: SaaS-Track
+  background: Upon completing my Bachelor of Science in Computer Science in late 2023, I immediately transitioned into a professional environment as a Junior Full-Stack Developer at a boutique fintech startup where I served for six months within a tight-knit engineering team of five. My primary contribution invol
 
-  id: resume_216 | level: senior | exp: 8.5 yrs | raw_text: 294 words
-  skills: AWS, GCP, Terraform, Ansible, Kubernetes, Istio, Go, Bash, GitLab CI, Helm
-  projects: Operation Zero-Downtime, CloudCost Dash
-  background: Over the span of the last nine years, I have cultivated deep expertise in cloud infrastructure and reliability engineering, beginning with a specialized DevOps agency where I spent four years managing diverse client portfolios. In this role, I worked in a collaborative team of eight to deliver autom
+  id: resume_224 | level: junior | exp: 0.7 yrs | raw_text: 277 words
+  skills: TypeScript, NestJS, React, Stripe, PostgreSQL, GitHub Actions, Next.js, Tailwind CSS, RESTful APIs, Vite
+  projects: LuminaDash
+  background: I graduated with a Bachelor of Software Engineering in 2023 and have spent the last eight months working as a Junior Software Engineer at an agile software agency focused on delivering high-performance SaaS solutions. During this tenure, I worked within a team of eight developers to build and mainta
 
-  id: resume_217 | level: senior | exp: 8.0 yrs | raw_text: 295 words
-  skills: Google Ads, Meta Ads, GA4, Google Tag Manager, Supermetrics, BigQuery, Tableau, Python, Attribution Modeling
-  projects: Attribution Engine
-  background: Commencing my professional journey in 2016, I have dedicated the past eight years to mastering the complexities of the digital advertising ecosystem and performance marketing. My most recent tenure as a Performance Team Lead at a global digital agency involved managing a multi-disciplinary team of s
+  id: resume_225 | level: junior | exp: 0.7 yrs | raw_text: 294 words
+  skills: Python 3.11, Django 4.2, HL7 FHIR, PostgreSQL 15, AWS ECS, FastAPI, Redis, Pytest, HIPAA Compliance, REST API
+  projects: HeartRate Monitor Sync
+  background: Freshly graduated with a Bachelor of Science in Computer Science in May 2023, I transitioned into a professional role as an Associate Backend Engineer at a fast-paced healthtech startup focused on decentralized clinical trials. Working within a tight-knit team of four engineers, I spent eight months
 
-  id: resume_218 | level: senior | exp: 7.0 yrs | raw_text: 296 words
-  skills: Meta Ads, TikTok Ads, LinkedIn Ads, AppsFlyer, Adjust, SQL, Python, Looker Studio, Growth Marketing
-  projects: Segment-Pro
-  background: Initiating my career within the high-growth FinTech sector seven years ago, I have developed a deep expertise in mobile-first acquisition and scalable growth strategies. Most recently, I operated as a Principal Performance Marketer for a rapidly expanding SaaS scale-up, where I led a team of four an
+  id: resume_226 | level: junior | exp: 0.5 yrs | raw_text: 279 words
+  skills: Python 3.10, Django, HL7 v2, FHIR, Celery, RabbitMQ, PostgreSQL, Docker, GitLab CI/CD, AWS S3, DICOM
+  projects: Medical Imaging Metadata Extractor
+  background: Following the completion of my Bachelor of Engineering in Software Systems in early 2024, I secured a six-month internship that evolved into a junior role at a large health data enterprise. As part of a specialized backend team of ten developers, I focused on the development of microservices designe
 
-  id: resume_219 | level: senior | exp: 8.5 yrs | raw_text: 328 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, TanStack Query, Redux, Playwright, Radix UI, Zustand, React Flow, AWS ECS, PostgreSQL
-  projects: StateFlow, PerfAudit
-  background: I initiated my professional journey as a Frontend Developer at a high-volume Digital Agency for a duration of two and a half years, where I actively contributed to over fifteen distinct client projects using React 16.8 and Redux. In this agency setting, I was part of a versatile team of eight, deliv
+  id: resume_227 | level: junior | exp: 0.5 yrs | raw_text: 287 words
+  skills: SAP S/4HANA, Procurement, Inventory Management, Microsoft Excel, Power BI, Vendor Management, AutoCAD, Lean Six Sigma
+  projects: Warehouse Flow Optimization
+  background: I began my professional career after completing a Bachelor of Science in Supply Chain Management in 2023. During my final year, I secured an internship at a large-scale manufacturing enterprise specializing in heavy industrial machinery, where I worked within a procurement team of twelve professiona
 
-  id: resume_220 | level: senior | exp: 7.0 yrs | raw_text: 293 words
-  skills: React, TypeScript, Next.js, Tailwind CSS, GraphQL, Apollo Client, Vitest, Zod, D3.js, Framer Motion, Turborepo, Vue.js
-  projects: DataVisual, HookLibrary
-  background: I began my professional career at a Marketing Tech Firm as a Web Developer for eighteen months, where I worked within a team of four primarily with Vue.js and early React hooks to build interactive campaign landing pages. I then joined a specialized HealthTech Startup as a Senior Software Engineer f
+  id: resume_228 | level: junior | exp: 1.0 yrs | raw_text: 290 words
+  skills: Oracle NetSuite, Logistics Coordination, Inventory Management, Tableau, SQL, Freight Forwarding, Supply Chain Optimization, Microsoft Office
+  projects: Local Link
+  background: Having recently graduated with a Bachelor of Arts in Logistics and Operations in late 2023, I have spent the last year developing my skills as a Junior Logistics Coordinator at a boutique logistics agency specializing in international freight forwarding. In this role, I worked as part of a small, ag
+
+  id: resume_229 | level: middle | exp: 4.0 yrs | raw_text: 269 words
+  skills: Financial Modeling, Python, SQL, IFRS Compliance, NetSuite, VBA, Power BI, AWS Redshift, Pandas, NumPy, Variance Analysis, Budget Forecasting
+  projects: Project Ledger-Sync
+  background: After graduating with a Bachelor of Science in Finance in 2020, my career began at a mid-sized financial services enterprise where I spent eighteen months as a Junior Financial Analyst within a team of twelve. My core responsibilities involved managing monthly variance analysis and supporting the se
+
+  id: resume_230 | level: junior | exp: 1.0 yrs | raw_text: 262 words
+  skills: QuickBooks Online, Xero, Excel, Bank Reconciliation, General Ledger, Accounts Payable, Accounts Receivable, AML Compliance, Financial Reporting, Google Apps Script
+  projects: Personal Finance Dashboard
+  background: Since completing my Bachelor of Science in Accounting in late 2023, I have focused on building a strong foundation in the fintech sector. My initial professional exposure came through a six-month internship at a digital banking startup where I supported a three-person accounting team. During this ti
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_215 | title: Junior DevOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 232 words
-  required_skills: AWS, Docker, Linux, CloudWatch
-  preferred_skills: Terraform, Python, Jenkins
-  description: Our engineering department is searching for a motivated Junior DevOps Engineer to join our core platform team and help maintain the infrastructure that powers our growing e-commerce application. You will work in a small, collaborative group of four e
+  id: jd_223 | title: Junior UI/UX Designer | level: junior | min_exp: 1 yrs | raw_text: 245 words
+  required_skills: Figma, Miro, User Research, Wireframing, Prototyping
+  preferred_skills: Maze, Design Systems, Information Architecture
+  description: We are looking for a passionate Junior UI/UX Designer to join our growing product design team of four as we expand our consumer-facing web platform. In this role, you will be responsible for translating user needs and business requirements into intui
 
-  id: jd_216 | title: Senior Infrastructure Architect | level: senior | min_exp: 6 yrs | raw_text: 226 words
-  required_skills: AWS, Kubernetes, Terraform, CI/CD, Go, Python
-  preferred_skills: Istio, SRE, Security Compliance, Multi-cloud
-  description: As we scale our distributed global infrastructure to meet the demands of our expanding user base, we are seeking a seasoned Senior Infrastructure Architect to spearhead our platform engineering initiatives. Our infrastructure team handles high-freque
+  id: jd_224 | title: Middle Product Designer | level: middle | min_exp: 3 yrs | raw_text: 254 words
+  required_skills: Figma, Principle, Design Systems, Usability Auditing, Product Strategy
+  preferred_skills: Storybook, Hotjar, Data Visualization
+  description: Our design organization is seeking an experienced Middle Product Designer to help lead the evolution of our enterprise design system and enhance the user experience of our core B2B tools. You will join a multidisciplinary team of designers, researche
 
-  id: jd_217 | title: Junior Performance Marketing Specialist | level: junior | min_exp: 1 yrs | raw_text: 238 words
-  required_skills: Google Ads, Meta Ads, Microsoft Excel, Google Sheets
-  preferred_skills: Google Merchant Center, Copywriting
-  description: Joining our performance team as a Junior Performance Marketing Specialist, you will play a vital role in executing the day-to-day operations of our digital advertising accounts. We are a growing team of five specialists focused on building a scalable
+  id: jd_225 | title: Management Consultant | level: middle | min_exp: 3 yrs | raw_text: 263 words
+  required_skills: Management Consulting, Stakeholder Management, Strategic Planning, Microsoft Excel, Tableau, Business Frameworks
+  preferred_skills: MBA, Project Management, Financial Modeling
+  description: We are seeking a dedicated Management Consultant to join our growing strategy and operations team, which currently consists of fifteen professionals focused on high-impact client delivery for Fortune 500 companies. This middle-level role involves a d
 
-  id: jd_218 | title: Senior Paid Acquisition Lead | level: senior | min_exp: 6 yrs | raw_text: 233 words
-  required_skills: Google Ads, Meta Ads, SQL, Looker Studio, GA4, Python
-  preferred_skills: Snowflake, BigQuery, Strategic Planning
-  description: We are seeking a Senior Paid Acquisition Lead to take full ownership of our global growth strategy and drive our performance marketing efforts to the next level. As a key member of our ten-person marketing department, you will manage a multi-million 
+  id: jd_226 | title: Associate Consultant | level: junior | min_exp: 1 yrs | raw_text: 250 words
+  required_skills: Market Research, Microsoft PowerPoint, Microsoft Excel, Analytical Thinking, Communication, Business Analysis
+  preferred_skills: Strategic Analysis, Public Speaking, Report Writing
+  description: Our organization is looking for a motivated Associate Consultant to support our client delivery efforts within our management consulting division. This junior role is part of a dynamic team of eight consultants working on diverse projects ranging fro
 
-  id: jd_219 | title: Junior Frontend Developer | level: junior | min_exp: 1 yrs | raw_text: 210 words
-  required_skills: React, TypeScript, Tailwind CSS, Vite
-  preferred_skills: Zustand, Vitest, Jest
-  description: Our product team is looking for a motivated Junior Frontend Developer to help us build and maintain our suite of customer support tools. You will be joining a collaborative team of four engineers dedicated to creating seamless internal workflows. You
+  id: jd_227 | title: Junior MLOps Engineer | level: junior | min_exp: 1 yrs | raw_text: 249 words
+  required_skills: Python, MLflow, Docker, AWS SageMaker, GitHub Actions
+  preferred_skills: DVC, Kubernetes, Bash
+  description: Our growing machine learning team is seeking a Junior MLOps Engineer to help us bridge the gap between model development and production-ready applications. Our team of six engineers and data scientists is currently building a real-time recommendation
 
-  id: jd_220 | title: Senior Frontend Engineer | level: senior | min_exp: 6 yrs | raw_text: 220 words
-  required_skills: Next.js, TypeScript, Tailwind CSS, TanStack Query, Radix UI, Playwright, Turborepo
-  preferred_skills: GraphQL, Apollo Client, Framer Motion
-  description: We are seeking a Senior Frontend Engineer to join our Core Platform team and take a lead role in evolving our complex B2B dashboard. As part of a team of ten, you will drive the architectural direction of our frontend applications and lead the migrat
+  id: jd_228 | title: Senior MLOps Engineer | level: senior | min_exp: 6 yrs | raw_text: 255 words
+  required_skills: Kubernetes, Kubeflow, Seldon Core, Prometheus, Grafana, Python, Go
+  preferred_skills: Istio, Google Cloud Platform, Terraform
+  description: We are looking for a Senior MLOps Engineer to lead the architectural design and scaling of our model serving infrastructure. Our platform team of eight engineers supports a wide range of computer vision and natural language processing models that ser
+
+  id: jd_229 | title: Medical Administrative Assistant | level: junior | min_exp: 1 yrs | raw_text: 216 words
+  required_skills: Epic EMR, HIPAA Compliance, Insurance Verification, Patient Scheduling, Microsoft Office 365
+  preferred_skills: Medical Terminology, Customer Service, Data Entry
+  description: Our outpatient clinic is seeking a Medical Administrative Assistant to join our clinical operations team of eight. This entry-level role is vital for ensuring the smooth flow of patient care and administrative efficiency. The day-to-day responsibilit
+
+  id: jd_230 | title: Clinical Operations Coordinator | level: middle | min_exp: 3 yrs | raw_text: 220 words
+  required_skills: Cerner EMR, Healthcare Administration, Clinical Workflow Optimization, HIPAA Compliance, HL7 Standards
+  preferred_skills: Athenahealth, Staff Management, Budget Planning, Telehealth Systems
+  description: We are looking for an experienced Clinical Operations Coordinator to oversee the daily workflows of our multi-specialty medical facility. The successful candidate will join a dynamic administrative team of fifteen and play a key role in optimizing ou
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -156,16 +176,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 420 pairs total.
+Overall dataset so far: 440 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
-  poor_match            existing:   82  →  expected this group: 0 pairs (from rounds below)
+  poor_match            existing:   82  →  expected this group: 16 pairs (from rounds below)
   weak_match            existing:   86  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:   81  →  expected this group: 6 pairs (from rounds below)
-  strong_match          existing:   89  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:   82  →  expected this group: 6 pairs (from rounds below)
+  moderate_match        existing:   90  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:   90  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:   92  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -174,23 +194,33 @@ Rules:
 • Never pair a resume with a JD from a different round.
 
 ════════════════════════════════════
-PAIRING ORDER (3 pairs across 3 round(s) — never cross-pair rounds)
+PAIRING ORDER (11 pairs across 4 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 3 (domain: DevOps and Cloud Infrastructure (AWS, Docker, Kubernetes, Terraform)):
-  pair_431    resume_216 × jd_215   (expected: moderate_match)
+Round 2 (CROSS-DOMAIN: Full-Stack Development for SaaS Startups (Node.js, React, Stripe billing) × UI/UX Design and Product Design (Figma, user research, prototyping) — expect poor_match throughout):
+  pair_446    resume_223 × jd_224   (expected: poor_match)
+  pair_447    resume_224 × jd_223   (expected: poor_match)
 
-Round 4 (domain: Performance Marketing and Paid Acquisition (Google Ads, Meta Ads, attribution)):
-  pair_435    resume_218 × jd_217   (expected: moderate_match)
+Round 3 (CROSS-DOMAIN: Backend Development for Healthtech (Python, Django, HL7/FHIR integrations) × Management Consulting (client delivery, frameworks, stakeholder workshops) — expect poor_match throughout):
+  pair_450    resume_225 × jd_226   (expected: poor_match)
+  pair_451    resume_226 × jd_225   (expected: poor_match)
+  pair_452    resume_226 × jd_226   (expected: poor_match)
 
-Round 5 (domain: Frontend Development (React, TypeScript, Next.js, Tailwind CSS)):
-  pair_439    resume_220 × jd_219   (expected: moderate_match)
+Round 4 (CROSS-DOMAIN: Supply Chain and Logistics Management (procurement, inventory, ERP) × MLOps and Model Deployment (MLflow, Kubeflow, model serving, monitoring) — expect poor_match throughout):
+  pair_453    resume_227 × jd_227   (expected: poor_match)
+  pair_454    resume_227 × jd_228   (expected: poor_match)
+  pair_455    resume_228 × jd_227   (expected: poor_match)
+  pair_456    resume_228 × jd_228   (expected: poor_match)
+
+Round 5 (CROSS-DOMAIN: Finance and Accounting in Fintech (financial modeling, reporting, compliance) × Healthcare Administration and Medical Coordination (clinical ops, EMR) — expect poor_match throughout):
+  pair_459    resume_230 × jd_229   (expected: poor_match)
+  pair_460    resume_230 × jd_230   (expected: poor_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 3 lines.
+Output exactly 11 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-No markdown, no explanation — only 3 JSON lines.
+No markdown, no explanation — only 11 JSON lines.
 
 JSON schema per pair:
 {"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
