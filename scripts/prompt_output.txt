@@ -10,30 +10,28 @@ below — do not re-score or repeat any other pair.
 ════════════════════════════════════
 RESUMES
 ════════════════════════════════════
-  id: resume_337 | level: senior | exp: 8.5 yrs | raw_text: 251 words
-  skills: Agile, Cloud Computing, Kubernetes, Docker, Python, Kafka, AWS Lambda, Jenkins, CI/CD, Machine Learning
-  projects: Real-Time Transaction Processing System
-  background: With over 8 years of experience in technical program management, I have honed my skills in leading cross-functional teams and delivering complex engineering projects. My journey began at a leading enterprise software company, where I spent 3 years as a Technical Project Manager, managing a team of 1
+  id: resume_349 | level: senior | exp: 8.5 yrs | raw_text: 286 words
+  skills: Airflow, Apache Spark, BigQuery, Data Engineering, ETL, Data Pipeline Architecture, Data Modeling, AWS, Data Visualization, Python, SQL
+  projects: E-commerce Recommendation Engine, Open-Source Data Visualization Library
+  background: With a strong foundation in data engineering and analytics, I have honed my skills over 8 years, primarily within the startup ecosystem. As a Senior Data Engineer at DataSpark, I led a team of 5, designing and implementing a scalable data pipeline using Airflow, Spark, and BigQuery. We achieved a 30
 
-  id: resume_338 | level: senior | exp: 7.5 yrs | raw_text: 278 words
-  skills: Software Engineering, Agile, Java, Spring, Microservices, Docker, Kubernetes, Go, gRPC, Cybersecurity
-  projects: Threat Detection Platform
-  background: As a seasoned Technical Program Manager with 7 years of experience, I have a proven track record in delivering large-scale software projects and leading high-performing teams. My expertise lies in the full software development lifecycle, from requirements gathering to deployment and maintenance. 
-
-I
+  id: resume_350 | level: senior | exp: 7 yrs | raw_text: 289 words
+  skills: Apache Spark, Airflow, BigQuery, Data Engineering, Data Pipeline Architecture, ETL, Data Modeling, dbt, Apache Kafka, Machine Learning, Python, SQL
+  projects: Real-time Analytics Platform, dbt Package Development
+  background: As a seasoned Data Engineer, I have dedicated 7 years to building robust data pipelines and enabling data-driven decision-making. My journey began at an enterprise-level company, where I was part of a large data team, working on a diverse range of projects. This exposure allowed me to develop a comp
 
 ════════════════════════════════════
 JOB DESCRIPTIONS
 ════════════════════════════════════
-  id: jd_337 | title: Senior Technical Program Manager | level: senior | min_exp: 6 yrs | raw_text: 246 words
-  required_skills: Agile, Software Development Lifecycle, Project Management, Python, Django, PostgreSQL, AWS, Docker, Kubernetes
-  preferred_skills: JIRA, Confluence, GitHub, Cloud Architecture, Microservices
-  description: We are seeking an experienced Senior Technical Program Manager to lead our cross-functional engineering teams and drive the development of our core product offerings. With a focus on delivering high-quality software solutions, the role requires a dee
+  id: jd_349 | title: Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 251 words
+  required_skills: Airflow, BigQuery, SQL, Python, Data Engineering
+  preferred_skills: Data Modeling, Data Visualization, Cloud Computing
+  description: We are seeking a Junior Data Engineer to join our dynamic team of data enthusiasts, where you will play a crucial role in building and maintaining our data infrastructure. Our team works closely with data scientists and analysts to ensure seamless da
 
-  id: jd_338 | title: Lead Software Engineer | level: senior | min_exp: 6 yrs | raw_text: 242 words
-  required_skills: Java, Spring, MySQL, Microservices, Docker, Kubernetes, Software Architecture, Leadership
-  preferred_skills: Cloud Computing, DevOps
-  description: We are seeking a highly skilled Lead Software Engineer to join our dynamic team and take ownership of critical engineering projects. With a focus on building scalable and high-performance software solutions, this role requires a deep understanding of
+  id: jd_350 | title: Data Engineer | level: junior | min_exp: 1 yrs | raw_text: 273 words
+  required_skills: Apache Airflow, BigQuery, SQL, Python, Data Engineering
+  preferred_skills: Data Modeling, Data Visualization, Cloud Computing
+  description: Join our innovative team as a Junior Data Engineer and embark on a journey of building cutting-edge data solutions. We are a dynamic startup, revolutionizing the way data is utilized and analyzed, and we need your expertise to take our data infrastru
 
 ════════════════════════════════════
 SCORING RUBRIC v0.2
@@ -118,16 +116,16 @@ For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
 ════════════════════════════════════
 LABEL BALANCE — CONTEXT (already engineered into this group)
 ════════════════════════════════════
-Overall dataset so far: 660 pairs total.
+Overall dataset so far: 680 pairs total.
 This group's resume/JD seniority levels and domains were deliberately chosen so
 that scoring each pair honestly (per the rubric below) should already land close
 to this spread — no need to force it, just verify your scores roughly match:
 
   poor_match            existing:  134  →  expected this group: 0 pairs (from rounds below)
-  weak_match            existing:  141  →  expected this group: 0 pairs (from rounds below)
-  moderate_match        existing:  129  →  expected this group: 0 pairs (from rounds below)
-  strong_match          existing:  131  →  expected this group: 0 pairs (from rounds below)
-  excellent_match       existing:  125  →  expected this group: 4 pairs (from rounds below)
+  weak_match            existing:  142  →  expected this group: 0 pairs (from rounds below)
+  moderate_match        existing:  129  →  expected this group: 4 pairs (from rounds below)
+  strong_match          existing:  133  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:  142  →  expected this group: 0 pairs (from rounds below)
 
 Rules:
 • Score every pair from its actual documents — seniority gap, skill overlap, project fit.
@@ -138,8 +136,8 @@ Rules:
 ════════════════════════════════════
 PAIRING ORDER (1 pairs across 1 round(s) — never cross-pair rounds)
 ════════════════════════════════════
-Round 4 (domain: Technical Program Management (cross-team delivery, engineering roadmaps)):
-  pair_674    resume_337 × jd_338   (expected: excellent_match)
+Round 5 (domain: Data Engineering and Analytics Pipelines (Airflow, Spark, dbt, BigQuery)):
+  pair_699    resume_350 × jd_349   (expected: moderate_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
