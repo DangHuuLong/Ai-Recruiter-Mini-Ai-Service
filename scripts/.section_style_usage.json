@@ -1,24 +1,24 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 57,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 57,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 57,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 58,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 58,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 57,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 57
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 58
   },
   "language": {
-    "mixed": 95,
-    "vi": 95,
-    "en": 95
+    "mixed": 96,
+    "vi": 96,
+    "en": 96
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 71,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 71,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 72,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 72,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 72,
-    "none - straightforward single-column layout": 71
+    "none - straightforward single-column layout": 72
   },
   "domain": {
-    "Supply Chain": 15,
+    "Supply Chain": 16,
     "Sales": 16,
     "DevOps": 16,
     "Product Management": 16,
@@ -26,12 +26,12 @@
     "Mobile Development": 16,
     "Data Analysis": 16,
     "Customer Support": 16,
-    "Education and Training": 15,
+    "Education and Training": 16,
     "Legal": 16,
     "Healthcare Administration": 16,
     "Software Engineering": 16,
     "Project Management": 16,
-    "Finance and Accounting": 15,
+    "Finance and Accounting": 16,
     "Digital Marketing": 16,
     "Business Analysis": 16,
     "Content Writing": 16,
