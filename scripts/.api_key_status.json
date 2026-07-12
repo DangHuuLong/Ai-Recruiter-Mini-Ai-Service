@@ -1,18 +1,18 @@
 {
   "deepseek:1": {
-    "exhausted_at": "2026-07-11T10:36:50.440628+00:00",
+    "exhausted_at": "2026-07-12T10:56:02.182249+00:00",
     "reason": "key rejected (HTTP 402)"
   },
   "deepseek:2": {
-    "exhausted_at": "2026-07-11T10:36:51.853417+00:00",
+    "exhausted_at": "2026-07-12T10:56:02.902768+00:00",
     "reason": "key rejected (HTTP 402)"
   },
   "deepseek:3": {
-    "exhausted_at": "2026-07-11T10:38:46.408503+00:00",
+    "exhausted_at": "2026-07-12T10:56:03.576685+00:00",
     "reason": "key rejected (HTTP 402)"
   },
   "deepseek:4": {
-    "exhausted_at": "2026-07-11T10:38:47.521925+00:00",
+    "exhausted_at": "2026-07-12T10:56:04.254738+00:00",
     "reason": "key rejected (HTTP 402)"
   },
   "groq:1": {

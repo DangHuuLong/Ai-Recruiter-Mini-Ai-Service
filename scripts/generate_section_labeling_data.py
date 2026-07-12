@@ -47,7 +47,6 @@ from app.parsers.section_splitter import SECTION_ORDER  # noqa: E402
 
 OUTPUT_DIR       = PROJECT_ROOT / "datasets" / "section_splitting" / "v0.1"
 OUTPUT_PATH      = OUTPUT_DIR / "labeled_lines.jsonl"
-SESSION_FILE     = SCRIPTS_DIR / ".section_labeling_session.json"
 STYLE_USAGE_FILE = SCRIPTS_DIR / ".section_style_usage.json"
 TEMP_INPUT       = SCRIPTS_DIR / "section_labeling_temp_input.txt"
 PROMPT_OUTPUT    = SCRIPTS_DIR / "section_labeling_prompt_output.txt"
@@ -169,26 +168,16 @@ def pick_rotating(usage: dict, axis: str, options: list[str]) -> str:
     counts[chosen] = counts.get(chosen, 0) + 1
     return chosen
 
-# ── session ────────────────────────────────────────────────────────────────────
-
-def load_session() -> dict:
-    if SESSION_FILE.exists():
-        try:
-            return json.loads(SESSION_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            pass
-    return {"state": "idle"}
-
-
-def save_session(data: dict) -> None:
-    SESSION_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
 def auto_commit_batch() -> None:
     """Stage and commit this batch's files, scoped to exactly what this script
     writes (not `git add .`) — mirrors generate_synthetic_data.py's
-    auto_commit_batch() so it never sweeps up unrelated in-progress edits."""
-    files = [OUTPUT_PATH, TEMP_INPUT, PROMPT_OUTPUT, SESSION_FILE, STYLE_USAGE_FILE]
+    auto_commit_batch() so it never sweeps up unrelated in-progress edits.
+
+    No session file here (unlike generate_synthetic_data.py): each batch in
+    this script is atomic — it either fully completes or raises, with no
+    multi-step state to resume across script restarts. _next_start_id()
+    already recovers the correct next id from OUTPUT_PATH itself."""
+    files = [OUTPUT_PATH, TEMP_INPUT, PROMPT_OUTPUT, STYLE_USAGE_FILE]
     try:
         subprocess.run(
             ["git", "add", "--", *[str(f) for f in files]],
