@@ -1,20 +1,20 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 21,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 22,
     "Markdown-bold headers (e.g. \"**Skills**\")": 21,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 21,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 21,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 21
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 22,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 22
   },
   "language": {
-    "mixed": 35,
-    "vi": 35,
-    "en": 35
+    "mixed": 36,
+    "vi": 36,
+    "en": 36
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 26,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 26,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 26,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 27,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 27,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 27,
     "none - straightforward single-column layout": 27
   },
   "domain": {
@@ -23,7 +23,7 @@
     "DevOps": 6,
     "Product Management": 6,
     "Human Resources": 6,
-    "Mobile Development": 5,
+    "Mobile Development": 6,
     "Data Analysis": 6,
     "Customer Support": 6,
     "Education and Training": 6,
@@ -31,10 +31,10 @@
     "Healthcare Administration": 6,
     "Software Engineering": 6,
     "Project Management": 6,
-    "Finance and Accounting": 5,
+    "Finance and Accounting": 6,
     "Digital Marketing": 6,
     "Business Analysis": 6,
     "Content Writing": 6,
-    "UI/UX Design": 5
+    "UI/UX Design": 6
   }
 }
