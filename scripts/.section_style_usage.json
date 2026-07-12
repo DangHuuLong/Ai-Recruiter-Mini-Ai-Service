@@ -1,21 +1,21 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 3,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 4,
     "Markdown-bold headers (e.g. \"**Skills**\")": 3,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 3,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 3,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 3
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 4,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 4
   },
   "language": {
-    "mixed": 5,
-    "vi": 5,
-    "en": 5
+    "mixed": 6,
+    "vi": 6,
+    "en": 6
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 4,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 5,
     "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 4,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 4,
-    "none - straightforward single-column layout": 3
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 5,
+    "none - straightforward single-column layout": 4
   },
   "domain": {
     "Supply Chain": 1,
@@ -32,6 +32,9 @@
     "Software Engineering": 1,
     "Project Management": 1,
     "Finance and Accounting": 1,
-    "Digital Marketing": 1
+    "Digital Marketing": 1,
+    "Business Analysis": 1,
+    "Content Writing": 1,
+    "UI/UX Design": 1
   }
 }
