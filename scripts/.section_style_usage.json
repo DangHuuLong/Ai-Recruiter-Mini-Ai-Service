@@ -1,29 +1,29 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 54,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 53,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 53,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 53,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 54,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 54,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 54,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 54
   },
   "language": {
-    "mixed": 89,
-    "vi": 89,
-    "en": 89
+    "mixed": 90,
+    "vi": 90,
+    "en": 90
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 67,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 66,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 68,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 67,
-    "none - straightforward single-column layout": 67
+    "none - straightforward single-column layout": 68
   },
   "domain": {
     "Supply Chain": 15,
     "Sales": 15,
     "DevOps": 15,
-    "Product Management": 14,
+    "Product Management": 15,
     "Human Resources": 15,
-    "Mobile Development": 14,
+    "Mobile Development": 15,
     "Data Analysis": 15,
     "Customer Support": 15,
     "Education and Training": 15,
@@ -32,7 +32,7 @@
     "Software Engineering": 15,
     "Project Management": 15,
     "Finance and Accounting": 15,
-    "Digital Marketing": 14,
+    "Digital Marketing": 15,
     "Business Analysis": 15,
     "Content Writing": 15,
     "UI/UX Design": 15
