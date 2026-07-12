@@ -1,84 +1,251 @@
-You are a dataset generator for an AI recruitment system.
-Generate exactly 2 resumes and 2 job descriptions in the domain: Mobile Development (React Native, Flutter, Swift, Kotlin)
-
-These 4 documents will be cross-paired into 4 CV-JD pairs.
-Target score range: 0-100 (continuous — do not avoid any particular sub-range).
+You are a dataset labeler for an AI recruitment system.
+Score 20 CV-JD pairs (from 5 round(s)) using rubric v0.2.
 
 ════════════════════════════════════
-SENIORITY ASSIGNMENT (follow exactly)
+RESUMES
 ════════════════════════════════════
-Resume resume_377: middle   (3-5 yrs total experience)
-Resume resume_378: middle   (3-5 yrs total experience)
+  id: resume_371 | level: middle | exp: 4.0 yrs | raw_text: 311 words
+  skills: DCF Modeling, LBO Analysis, Three-Statement Forecasting, Python for Finance, PitchBook, Excel, ASC 606 Revenue Recognition, Portfolio Monitoring, Board Reporting, Valuation Memos, Sensitivity Analysis, Financial Due Diligence, Unit Economics Modeling, Automation Scripting
+  projects: ESG-Adjusted DCF Toolkit
+  background: Over the past four years, I have honed my expertise in investment analysis and corporate finance through roles at a mid-sized financial advisory firm and a boutique private equity fund, accumulating a robust foundation in valuation methodologies, M&A processes, and financial modeling. Currently serv
 
-JD jd_377: senior   (min 6 yrs, lead or senior engineer, deep specialization required)
-JD jd_378: senior   (min 6 yrs, senior-level position requiring deep expertise)
+  id: resume_372 | level: middle | exp: 3.5 yrs | raw_text: 322 words
+  skills: M&A Execution, CIM Preparation, Sell-Side Due Diligence, Buy-Side Due Diligence, FactSet, Capital IQ, LBO Modeling, Auction Process Design, Stapled Financing, Quality of Earnings, Valuation Multiples Analysis, Tax Structuring, Commercial Due Diligence, Proprietary Model Maintenance, White Paper Development
+  projects: SaaS Multiples Dashboard
+  background: As a Corporate Finance Associate at Sterling Partners—a 50-person mid-market investment firm—I’ve spent the last three years immersed in the full lifecycle of M&A transactions and strategic valuation assignments. My role demands hands-on execution at every stage: drafting CIMs, coordinating sell-sid
 
-This round's mix was chosen (based on which labels the dataset currently lacks)
-so that cross-pairing every resume × every JD naturally produces this label
-spread — score the resulting pairs honestly instead of forcing a different
-distribution:
-  weak_match       × 4
+  id: resume_373 | level: middle | exp: 4.5 yrs | raw_text: 288 words
+  skills: Ahrefs Pro, SEMrush, Google Analytics 4, Google Optimize, WordPress, Webflow, Python, Scrapy, Google Looker Studio, Structured Data Markup, A/B Testing, Social Media Strategy, Content Marketing, Keyword Research, Conversion Rate Optimization, Firebase, Next.js
+  projects: Localize, Content Cluster Generator
+  background: With nearly five years of hands-on experience in digital marketing and content strategy, this professional has refined their expertise across SEO, social media management, and analytics-driven decision making. Starting as a Content Coordinator at a SaaS startup, they quickly progressed into a Digita
 
-Gap rule (JD seniority tier − resume seniority tier), for reference:
-  +2 → poor_match       +1 → weak_match
-   0 → excellent_match  -1 → strong_match
-  <=-2 → moderate_match (heavily overqualified)
+  id: resume_374 | level: middle | exp: 3.5 yrs | raw_text: 273 words
+  skills: HubSpot Marketing Hub, Meta Ads Manager, LinkedIn Campaign Manager, Google Search Console, Moz API, Screaming Frog, Node.js, Airtable API, SEO Strategy, Content Brief Creation, Audience Segmentation, ROAS Optimization, Marketing Automation, Technical SEO, Community Growth
+  projects: Content Brief Generator, SEO Crawl Budget Optimizer
+  background: Over three years of focused experience in digital marketing and content strategy, this professional has developed a strong foundation in SEO, analytics, and social media operations across both enterprise and agency settings. Beginning as a Social Media Coordinator at a digital advertising firm, they
+
+  id: resume_375 | level: middle | exp: 5.0 yrs | raw_text: 256 words
+  skills: Customer Onboarding, Net Revenue Retention, Churn Reduction, Gainsight, Totango, Python 3.11, SQL, Metabase, Snowflake, AWS EC2, Datadog, Scikit-learn, Intercom, Jira, Process Optimization
+  projects: Earnings Sentiment Tracker
+  background: After three years of hands-on experience in SaaS customer success at a Series B fintech startup, I’ve developed a sharp focus on renewal-driven onboarding and churn-reduction strategies. At FinFlow (a fintech scale-up), I spearheaded onboarding for 50+ enterprise clients migrating off legacy solutio
+
+  id: resume_376 | level: middle | exp: 4.0 yrs | raw_text: 252 words
+  skills: Account Management, Renewal Negotiation, Salesforce 24.1, HubSpot Service Hub, PostgreSQL 15, Python 3.10, Pandas, Tableau, Marketopia, GrowthIQ, Self-Serve Platforms, Onboarding, Process Automation, Expansion Revenue
+  projects: Automated Renewal Proposal Generator
+  background: With four years of experience in account management within the SaaS space—split between a mid-market SaaS platform and a martech startup—I specialize in renewal negotiations and frictionless client transitions. At GrowthIQ (a B2B SaaS provider), I managed a portfolio of 70+ customer accounts totalin
+
+  id: resume_375 | level: middle | exp: 4.0 yrs | raw_text: 283 words
+  skills: Flutter, Dart, React Native, TypeScript, Redux Toolkit, Bloc Architecture, REST APIs, Android, iOS
+  projects: FlexiCart
+  background: An adaptable Mobile Software Engineer with a solid background in cross-platform development frameworks and multi-platform distribution. Over the past four years, professional engineering efforts have focused on optimizing component lifecycles, stream management, and offline data sync mechanisms for 
+
+  id: resume_376 | level: middle | exp: 3.9 yrs | raw_text: 263 words
+  skills: Swift, Kotlin, Jetpack Compose, UIKit, CoreData, Hilt, Android SDK, CoreLocation, SQLite
+  projects: RouteMaster
+  background: A dedicated Mobile Application Developer with comprehensive experience building high-performance native applications across Android and iOS ecosystems. Early professional growth materialized within a boutique software house, working for two years alongside six developers to deliver native utilities 
+
+  id: resume_377 | level: middle | exp: 4.0 yrs | raw_text: 289 words
+  skills: Instructional Design, LMS Administration, Moodle, TalentLMS, Articulate Storyline 360, Adobe Captivate, SCORM, xAPI, LTI 1.3
+  projects: Project EduStream
+  background: An accomplished Learning Experience Designer with a proven background in corporate education systems, instructional architecture, and systemic learner engagement strategies. Professional practice spans exactly four years of creating high-quality instructional solutions for complex operational settin
+
+  id: resume_378 | level: middle | exp: 4.5 yrs | raw_text: 299 words
+  skills: Curriculum Design, Workday LMS, Litmos LMS, ADDIE Model, Articulate Rise, Camtasia, SCORM 2004, HRIS Integration, Data Automation
+  projects: SkillForge
+  background: A highly analytical Corporate Training Specialist with extensive experience managing learning infrastructure and curriculum design frameworks within matrixed corporate environments. Professional progress has evolved over four and a half years of professional dedication to data-driven corporate learn
 
 ════════════════════════════════════
-SKILL AUTHORING — USE JUDGMENT, NOT A FIXED PERCENTAGE
+JOB DESCRIPTIONS
 ════════════════════════════════════
-Design each resume's skill list based on genuine expertise for its stated
-seniority — do NOT target an exact overlap percentage with any specific JD.
-A junior resume should naturally know fewer of a senior JD's specialized or
-advanced-tier tools (they simply haven't needed them yet), while a resume at
-the same level as a JD should naturally share most of its core stack. Let the
-overlap emerge from realistic, individually-authored skill sets, not a formula.
+  id: jd_371 | title: Senior Investment Analyst – Corporate Development | level: senior | min_exp: 6 yrs | raw_text: 270 words
+  required_skills: DCF Modeling, Trading Comps, Transaction Comps, LBO Modeling, Financial Due Diligence, Investment Memo Authoring, Cross-border M&A, Sensitivity Analysis, Regulatory Due Diligence, Python for Finance, R for Finance, Valutico, PowerPoint, Excel
+  preferred_skills: SQL, CFA, Tableau, Power BI
+  description: We are seeking a seasoned Senior Investment Analyst to drive our corporate development agenda and advise on high-impact M&A transactions within a rapidly scaling multinational enterprise. Reporting to the Head of Corporate Development and serving on 
+
+  id: jd_372 | title: Lead Corporate Finance Associate – M&A Execution | level: senior | min_exp: 7 yrs | raw_text: 280 words
+  required_skills: LBO Modeling, Merger Modeling, Auction Process Design, Due Diligence Coordination, Definitive Agreement Negotiation, Fairness Opinion Preparation, SEC Compliance, FactSet, Capital IQ, DealCloud, PowerPoint, Excel, Python
+  preferred_skills: SQL, XBRL Parsing, Machine Learning for Deal Sourcing, Tableau, Power BI
+  description: We are looking for a Lead Corporate Finance Associate to spearhead our M&A execution function and oversee a portfolio of full-cycle transactions from sourcing through integration. Joining a high-growth, data-driven team of twelve at our New York head
+
+  id: jd_373 | title: Senior SEO & Content Strategy Lead | level: senior | min_exp: 6 yrs | raw_text: 267 words
+  required_skills: SEO Strategy Leadership, Technical SEO, Content Strategy, Botify, DeepCrawl, Sitebulb, Schema Markup, JavaScript Frameworks, AWS CloudFront, Vercel, SQL, Predictive Analytics, Team Mentorship
+  preferred_skills: Machine Learning for SEO, TensorFlow, Scikit-learn, Adobe Analytics, B2B Product Marketing, Competitive Intelligence, Multilingual Content
+  description: We are seeking a seasoned Senior SEO & Content Strategy Lead to own the end-to-end digital visibility strategy for our B2B SaaS platform, serving over 50,000 global users. The successful candidate will lead a small but high-impact team of three speci
+
+  id: jd_374 | title: Senior Content & Growth Strategist | level: senior | min_exp: 6 yrs | raw_text: 263 words
+  required_skills: Content Strategy, SEO, ABM Strategies, Content Optimization, Google Analytics 4, Mixpanel, Hotjar, Clearscope, MarketMuse, HubSpot, Salesforce Marketing Cloud, EEAT Framework, Google Helpful Content Guidelines
+  preferred_skills: Jasper, Copy.ai, Tableau, Looker, Healthcare Content Strategy, Fintech Content Strategy, AI Content Tools
+  description: A growing B2B technology company is hiring a Senior Content & Growth Strategist to own content-led growth across our AI-driven platform serving enterprise clients in finance and healthcare. This senior role will be responsible for shaping the narrati
+
+  id: jd_375 | title: Senior Customer Success Manager (SaaS Renewals and Onboarding) | level: senior | min_exp: 6 yrs | raw_text: 246 words
+  required_skills: Customer Success Management, Renewal Playbooks, Gainsight, Clari, Salesforce CPQ, SQL, Churn Prediction, Enterprise Onboarding, Telemetry Analysis, Amplitude, Mixpanel
+  preferred_skills: Snowflake, Tableau, Python
+  description: We’re expanding our Customer Success team to tackle complex renewals and deepen enterprise adoption for our AI-driven SaaS platform serving Fortune 500 clients. The ideal candidate will quarterback end-to-end renewals up to $50M ARR and lead the tran
+
+  id: jd_376 | title: Senior Account Manager – SaaS Renewals and Expansion | level: senior | min_exp: 6 yrs | raw_text: 233 words
+  required_skills: Account Management, Renewal Negotiation, HubSpot Service Hub, Clari, Zuora CPQ, NRR Optimization, Renewal-Readiness Frameworks, Cross-Functional Collaboration
+  preferred_skills: Zuora Revenue, Salesforce Revenue Cloud, SaaS Pricing Models, Revenue Operations
+  description: Our growth-stage SaaS company is seeking a Senior Account Manager to own renewal pipelines and expansion revenue across a portfolio exceeding $100M ARR. In this role, you’ll serve as the primary relationship owner for 40 mid-market and enterprise acc
+
+  id: jd_375 | title: Senior Mobile Engineering Lead | level: senior | min_exp: 6 yrs | raw_text: 229 words
+  required_skills: React Native, Flutter, Swift, Kotlin, Fastlane, Bitrise
+  preferred_skills: Android NDK, PCI-DSS, Memory Profiling
+  description: The engineering department is actively seeking a Senior Mobile Engineering Lead to spearhead the evolution of our primary consumer fintech product line. This specialized role will oversee a high-performing core mobile team of ten engineers focused on
+
+  id: jd_376 | title: Senior Native Mobile Architect | level: senior | min_exp: 6 yrs | raw_text: 209 words
+  required_skills: Swift, Kotlin, Jetpack Compose, SwiftUI, Combine, Coroutines
+  preferred_skills: Bluetooth Low Energy, CoreLocation, Graphics Rendering
+  description: Our enterprise core platform group is expanding to incorporate a Senior Native Mobile Architect who will dictate the future technical roadmap of our real-time tracking solutions. Operating within a collaborative department of twelve specialized mobil
+
+  id: jd_377 | title: Senior Learning Management Systems Engineer & Content Architect | level: senior | min_exp: 6 yrs | raw_text: 234 words
+  required_skills: Docebo, Cornerstone OnDemand, LTI 1.3, xAPI, SCORM 2004, CMI5
+  preferred_skills: Watershed LRS, AWS, Google Cloud Platform
+  description: The talent technology division is seeking a Senior Learning Management Systems Engineer and Content Architect to redefine the digital learning infrastructure across our global operational units. Operating within a dedicated learning engineering squad
+
+  id: jd_378 | title: Senior Director of Corporate Curriculum and Learning Solutions | level: senior | min_exp: 6 yrs | raw_text: 237 words
+  required_skills: SAP Litmos, Degreed, Articulate 360, Kirkpatrick Methodology, Curriculum Design, HRIS Integration
+  preferred_skills: CPTD Certification, Adaptive Learning, AI Analytics
+  description: Our organizational transformation group is searching for a Senior Director of Corporate Curriculum and Learning Solutions to lead the design, implementation, and management of our strategic professional training assets. Managing an elite internal col
 
 ════════════════════════════════════
-CV raw_text — STRICT REQUIREMENTS
+SCORING RUBRIC v0.2
 ════════════════════════════════════
-Minimum 280 words per resume. Write as connected prose paragraphs (not bullet points).
-Include ALL of the following to reach 280+ words:
-  • Job history: for each role — job title, company type (startup/enterprise/agency),
-    duration, team size, 2-3 specific responsibilities with concrete tools used
-  • Technologies: list specific versions or ecosystems where natural (e.g. "FastAPI 0.100,
-    PostgreSQL 14, deployed on AWS ECS")
-  • Quantified achievements where possible: latency reduced by X%, served Y requests/day,
-    reduced deployment time from X to Y minutes
-  • Projects: 1-2 side or internal projects with name, goal, tech stack, outcome
-  • Current focus and next career direction (1-2 sentences)
-  • Education: degree, field, graduation year
+Score each criterion 0-100, then compute weighted overall:
+  overall_score = round(
+      SKILLS_MATCH            × 0.35 +
+      EXPERIENCE_RELEVANCE    × 0.30 +
+      PROJECT_RELEVANCE       × 0.15 +
+      EDUCATION_CERTIFICATION × 0.10 +
+      KEYWORD_DOMAIN_ALIGNMENT× 0.10
+  )
 
-Do NOT include: candidate name, email, phone number, LinkedIn URL, GitHub URL.
-Do NOT use bullet points — write connected prose only.
-Vary sentence structure and opening phrasing from any previous batches you may
-have generated in this session — do not reuse the same opening sentence pattern.
+Label mapping:
+  90-100 → excellent_match
+  75-89  → strong_match
+  60-74  → moderate_match
+  40-59  → weak_match
+  0-39   → poor_match
+
+Scores are CONTINUOUS across the full 0-100 range — including near a boundary
+(e.g. 58, 61, 74, 76). Do not avoid any sub-range. A genuinely borderline pair
+should get a genuinely borderline score; do not round it away from the boundary
+just to make the label look cleaner.
 
 ════════════════════════════════════
-JD raw_text — STRICT REQUIREMENTS
+SKILLS_MATCH — DERIVE FROM ACTUAL OVERLAP, DON'T REUSE A NUMBER
 ════════════════════════════════════
-Minimum 200 words per job description. Write as connected prose paragraphs.
-Include ALL of the following to reach 200+ words:
-  • Role overview: what the team does, team size, product context
-  • Day-to-day responsibilities (3-4 specific duties with tools/systems named)
-  • Technical stack: list every required and preferred technology with context
-  • What success looks like in the first 6 months
-  • Collaboration: who this person works with (e.g. product, QA, data team)
-  • Growth opportunities or scope of impact
+For every pair, first count: matched = required_skills present in the resume's
+skills list, total = len(required_skills). Then anchor SKILLS_MATCH to that ratio:
+  SKILLS_MATCH ≈ round(100 × matched / total), adjusted ±10 for preferred-skill
+  overlap and depth/version alignment.
+Two pairs with the same seniority gap can still need different SKILLS_MATCH if
+their real overlap ratio differs (e.g. 25% overlap vs 65% overlap must NOT get the
+same score just because both are "junior CV × senior JD"). Recompute per pair.
 
-Do NOT include: company name. Do NOT use bullet points — write connected prose only.
+════════════════════════════════════
+poor_match SCORING GUIDANCE
+════════════════════════════════════
+A valid poor_match pair (score 0-39) requires ALL of:
+  1. Massive experience gap OR domain mismatch (cross-domain rounds: domain
+     mismatch alone is sufficient regardless of experience_years)
+     → EXPERIENCE_RELEVANCE: 0-30
+  2. Core skill mismatch: matched/required skill ratio < 40%
+     → SKILLS_MATCH: 0-35 (must equal the computed ratio, not a template number)
+  3. Project misalignment: no relevant projects that map to JD responsibilities
+     → PROJECT_RELEVANCE: 0-30
+Natural sources: (a) intern/junior CV × senior JD in the SAME domain, or
+(b) any-seniority CV × any-seniority JD in a CROSS-DOMAIN round (see rounds above).
+
+DECISION PRIORITY — resolve same-domain intern×senior pairs with this BEFORE
+picking a label: if resume experience_years <= 1 AND JD min_experience_years >= 6,
+compute the skill overlap ratio (matched required_skills / total required_skills) FIRST:
+  • ratio < 40%  → this pair MUST be poor_match. The weak_match "experience gap"
+    rule below does NOT apply to interns (<=1 yr) — it only applies once the
+    candidate has 1-2+ yrs and is past entry level.
+  • ratio >= 40% → this pair is weak_match instead (real partial overlap saves it).
+This ratio check overrides any temptation to soften the label because the CV and
+JD share some domain vocabulary — shared domain alone is not overlap.
+For cross-domain rounds, skip this check entirely — domain mismatch alone
+determines poor_match.
+
+════════════════════════════════════
+weak_match SCORING GUIDANCE
+════════════════════════════════════
+A valid weak_match pair (score 40-59) requires at least one of:
+  1. Experience gap: resume has >1 yr (already past intern/fresh-grad stage — e.g.
+     1-2 yrs) vs senior JD (5+ yrs required). Do NOT use this rule for resumes with
+     experience_years <= 1 — see the poor_match DECISION PRIORITY above, which
+     routes those to poor_match unless overlap ratio is already >= 40%.
+     → EXPERIENCE_RELEVANCE: 20-45 (large gap penalised heavily)
+     → SKILLS_MATCH: 40-60 (must equal the actual computed overlap ratio, not a default)
+  2. Skill domain mismatch: same broad field but different specialization
+     → SKILLS_MATCH: 35-55 (missing core required stack)
+     → PROJECT_RELEVANCE: 30-55 (projects don't align with JD responsibilities)
+
+For ALL pairs, criterion scores must be INTERNALLY CONSISTENT:
+  • If EXPERIENCE_RELEVANCE is 20, explain in label_notes (e.g. "requires 6+ yrs, candidate has 0.5 yrs")
+  • SKILLS_MATCH cannot be 85 if overall is 28 — the math must work
+  • Verify: round(SM×0.35 + ER×0.30 + PR×0.15 + EC×0.10 + KD×0.10) == overall_score
+
+════════════════════════════════════
+LABEL BALANCE — CONTEXT (already engineered into this group)
+════════════════════════════════════
+Overall dataset so far: 740 pairs total.
+This group's resume/JD seniority levels and domains were deliberately chosen so
+that scoring each pair honestly (per the rubric below) should already land close
+to this spread — no need to force it, just verify your scores roughly match:
+
+  poor_match            existing:  154  →  expected this group: 0 pairs (from rounds below)
+  weak_match            existing:  142  →  expected this group: 20 pairs (from rounds below)
+  moderate_match        existing:  147  →  expected this group: 0 pairs (from rounds below)
+  strong_match          existing:  144  →  expected this group: 0 pairs (from rounds below)
+  excellent_match       existing:  153  →  expected this group: 0 pairs (from rounds below)
+
+Rules:
+• Score every pair from its actual documents — seniority gap, skill overlap, project fit.
+• If a pair's honest score lands far from its "expected" label above, trust the
+  documents over the expectation and note why in label_notes.
+• Never pair a resume with a JD from a different round.
+
+════════════════════════════════════
+PAIRING ORDER (20 pairs across 5 round(s) — never cross-pair rounds)
+════════════════════════════════════
+Round 1 (domain: Investment Analysis and Corporate Finance (valuation, financial modeling, M&A)):
+  pair_741    resume_371 × jd_371   (expected: weak_match)
+  pair_742    resume_371 × jd_372   (expected: weak_match)
+  pair_743    resume_372 × jd_371   (expected: weak_match)
+  pair_744    resume_372 × jd_372   (expected: weak_match)
+
+Round 2 (domain: Digital Marketing and Content Strategy (SEO, social media, analytics)):
+  pair_745    resume_373 × jd_373   (expected: weak_match)
+  pair_746    resume_373 × jd_374   (expected: weak_match)
+  pair_747    resume_374 × jd_373   (expected: weak_match)
+  pair_748    resume_374 × jd_374   (expected: weak_match)
+
+Round 3 (domain: Customer Success and Account Management (SaaS renewals, onboarding, churn)):
+  pair_749    resume_375 × jd_375   (expected: weak_match)
+  pair_750    resume_375 × jd_376   (expected: weak_match)
+  pair_751    resume_376 × jd_375   (expected: weak_match)
+  pair_752    resume_376 × jd_376   (expected: weak_match)
+
+Round 3 (domain: Customer Success and Account Management (SaaS renewals, onboarding, churn)):
+  pair_749    resume_375 × jd_375   (expected: weak_match)
+  pair_750    resume_375 × jd_376   (expected: weak_match)
+  pair_751    resume_376 × jd_375   (expected: weak_match)
+  pair_752    resume_376 × jd_376   (expected: weak_match)
+
+Round 5 (domain: Learning and Development / Corporate Training (curriculum design, LMS)):
+  pair_757    resume_377 × jd_377   (expected: weak_match)
+  pair_758    resume_377 × jd_378   (expected: weak_match)
+  pair_759    resume_378 × jd_377   (expected: weak_match)
+  pair_760    resume_378 × jd_378   (expected: weak_match)
 
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 4 lines.
+Output exactly 20 lines.
 Each line is a single JSON object (no array brackets, no commas between lines).
-Lines 1-2: resumes (IDs: resume_377, resume_378)
-Lines 3-4: job descriptions (IDs: jd_377, jd_378)
-No markdown, no explanation — only 4 JSON lines.
+No markdown, no explanation — only 20 JSON lines.
 
-RESUME SCHEMA (lines 1-2):
-{"id":"<resume_id>","source":"synthetic","candidate_level":"<junior|middle|senior>","raw_text":"<280+ word prose — no names/emails/phones/URLs>","summary":"<one sentence capturing level, domain, and key strength>","skills":["<TitleCased>",...],"normalized_skills":["<snake_case>",...],"experience_years":<float>,"education":{"degree":"<Bachelor|Master|PhD>","field_of_study":"<field>","status":"<student|final_year|graduate>"},"projects":[{"name":"<project name>","description":"<2-3 sentences: goal, tech, outcome>","technologies":["<Tech>",...]}],"certifications":[],"languages":[{"name":"English","proficiency":"intermediate"}],"anonymized":true,"language":"en"}
-
-JD SCHEMA (lines 3-4):
-{"id":"<jd_id>","source":"synthetic","title":"<Job Title>","level":"<junior|middle|senior>","employment_type":"<internship|full_time|contract>","location":"<City, Country or Remote>","remote_allowed":<true|false>,"posted_date":null,"domain":"<slug>","raw_text":"<200+ word prose — no company name>","responsibilities":["<specific item>",...],"requirements":["<specific item>",...],"nice_to_have":["<specific item>",...],"required_skills":["<TitleCased>",...],"preferred_skills":["<TitleCased>",...],"min_experience_years":<int>,"education_requirement":"<string>","domain_keywords":["<snake_case>",...],"language":"en"}
+JSON schema per pair:
+{"id":"<pair_id>","resume_id":"<resume_id>","job_description_id":"<jd_id>","split":null,"label":"<poor_match|weak_match|moderate_match|strong_match|excellent_match>","overall_score":<int 0-100>,"criterion_scores":{"SKILLS_MATCH":<int 0-100>,"EXPERIENCE_RELEVANCE":<int 0-100>,"PROJECT_RELEVANCE":<int 0-100>,"EDUCATION_CERTIFICATION":<int 0-100>,"KEYWORD_DOMAIN_ALIGNMENT":<int 0-100>},"matched_skills":["<skill>",...],"missing_required_skills":["<skill>",...],"matched_preferred_skills":["<skill>",...],"label_notes":"<2-3 sentences: strongest match point, key gap, and why this score not the adjacent label>","labeled_by":"llm_synthetic","label_version":"rubric_v0.2"}
