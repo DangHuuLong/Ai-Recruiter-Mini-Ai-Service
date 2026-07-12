@@ -1,31 +1,31 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 64,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 65,
     "Markdown-bold headers (e.g. \"**Skills**\")": 64,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 64,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 65,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 65,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 64
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 65
   },
   "language": {
-    "mixed": 107,
-    "vi": 107,
-    "en": 107
+    "mixed": 108,
+    "vi": 108,
+    "en": 108
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 81,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 80,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 80,
-    "none - straightforward single-column layout": 80
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 81,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 81,
+    "none - straightforward single-column layout": 81
   },
   "domain": {
     "Supply Chain": 18,
     "Sales": 18,
     "DevOps": 18,
-    "Product Management": 17,
+    "Product Management": 18,
     "Human Resources": 18,
     "Mobile Development": 18,
     "Data Analysis": 18,
-    "Customer Support": 17,
+    "Customer Support": 18,
     "Education and Training": 18,
     "Legal": 18,
     "Healthcare Administration": 18,
@@ -33,7 +33,7 @@
     "Project Management": 18,
     "Finance and Accounting": 18,
     "Digital Marketing": 18,
-    "Business Analysis": 17,
+    "Business Analysis": 18,
     "Content Writing": 18,
     "UI/UX Design": 18
   }
