@@ -1,21 +1,21 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 24,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 25,
     "Markdown-bold headers (e.g. \"**Skills**\")": 25,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 24,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 25,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 25,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 26,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 25
   },
   "language": {
-    "mixed": 41,
-    "vi": 41,
-    "en": 41
+    "mixed": 42,
+    "vi": 42,
+    "en": 42
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 31,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 30,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 31,
-    "none - straightforward single-column layout": 31
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 31,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 32,
+    "none - straightforward single-column layout": 32
   },
   "domain": {
     "Supply Chain": 7,
@@ -26,8 +26,8 @@
     "Mobile Development": 7,
     "Data Analysis": 7,
     "Customer Support": 7,
-    "Education and Training": 6,
-    "Legal": 6,
+    "Education and Training": 7,
+    "Legal": 7,
     "Healthcare Administration": 7,
     "Software Engineering": 7,
     "Project Management": 7,
@@ -35,6 +35,6 @@
     "Digital Marketing": 7,
     "Business Analysis": 7,
     "Content Writing": 7,
-    "UI/UX Design": 6
+    "UI/UX Design": 7
   }
 }
