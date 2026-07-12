@@ -11,7 +11,7 @@ class TestSimilarityConfigDefaults:
     def test_default_values(self) -> None:
         cfg = SimilarityConfig()
         assert cfg.model_path == ""
-        assert cfg.base_model == "sentence-transformers/all-MiniLM-L6-v2"
+        assert cfg.base_model == "cross-encoder/ms-marco-MiniLM-L-12-v2"
         assert cfg.model_version == ""
         assert cfg.scoring_weight == 0.0
         assert cfg.score_threshold == 0.0

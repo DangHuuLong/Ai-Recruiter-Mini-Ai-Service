@@ -21,7 +21,7 @@ class TestIsValidModelDir:
 
 
 class TestSimilarityModelLoader:
-    _PATCH = "app.ml.similarity_model._SentenceTransformer"
+    _PATCH = "app.ml.similarity_model._CrossEncoder"
 
     def test_loads_base_model_when_path_empty(self) -> None:
         with patch(self._PATCH) as mock_cls:

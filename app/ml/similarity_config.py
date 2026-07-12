@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 class SimilarityConfig(BaseModel):
     model_path: str = ""
-    base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    base_model: str = "cross-encoder/ms-marco-MiniLM-L-12-v2"
     model_version: str = ""
     scoring_weight: float = Field(default=0.0, ge=0.0, le=1.0)
     score_threshold: float = Field(default=0.0, ge=0.0, le=100.0)

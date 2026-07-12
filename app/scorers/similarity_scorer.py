@@ -17,10 +17,10 @@ def score_cv_jd_similarity(request: ScoreApplicationRequest) -> float:
     cv_text = resume_text(request.resume)
     jd_text = job_text(request.job_description)
 
-    embeddings = model.encode(
-        [cv_text, jd_text],
-        normalize_embeddings=True,
-        show_progress_bar=False,
-    )
-    similarity = float(sum(float(a) * float(b) for a, b in zip(embeddings[0], embeddings[1])))
-    return round(max(0.0, min(1.0, similarity)) * 100, 2)
+    # CrossEncoder pair-scorer (see app/ml/similarity_model.py) — trained with
+    # Identity activation on labels scaled to [0, 1] (score / 100), so predict()
+    # returns a raw regression value approximating that same [0, 1] range
+    # without an automatic sigmoid squash. Clip defensively since regression
+    # output isn't hard-bounded.
+    raw_score = float(model.predict([(cv_text, jd_text)])[0])
+    return round(max(0.0, min(1.0, raw_score)) * 100, 2)

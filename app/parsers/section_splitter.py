@@ -8,6 +8,15 @@ from app.parsers.normalizer import strip_accents, strip_list_marker
 logger = logging.getLogger(__name__)
 
 
+_EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+_PHONE_RE = re.compile(r"(?:\+?\d[\s.-]?){8,15}")
+_URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+
+
+def _looks_like_contact_info(line: str) -> bool:
+    return bool(_EMAIL_RE.search(line) or _PHONE_RE.search(line) or _URL_RE.search(line))
+
+
 SECTION_ORDER = (
     "summary",
     "skills",
@@ -245,12 +254,34 @@ def _ml_assisted_split(text: str) -> dict[str, str]:
         return sections
 
     other_lines = other_text.splitlines()
-    bundle = get_section_classifier_model()
-    predicted_labels = bundle.predict_labels(other_lines)
 
-    remaining_other: list[str] = []
+    # The "other" bucket always starts at the document's very first non-blank
+    # line (regex only ever moves `current` AWAY from "other", never back).
+    # That first line is almost universally a candidate's name/title, and any
+    # line matching an email/phone/URL pattern is contact info — never real
+    # section content either way. The training corpus explicitly never
+    # includes a name or contact details (scripts/generate_section_labeling_data.py
+    # forbids them for privacy), so the model has no precedent for such lines
+    # and will confidently misclassify them (observed: a name line merged into
+    # "summary", an email line merged into "languages"). Keep these lines in
+    # "other" unconditionally rather than asking the model to guess.
+    protected_first_line, *rest = other_lines
+    if not rest:
+        return sections
+
+    reclassifiable_indices = [i for i, line in enumerate(rest) if not _looks_like_contact_info(line)]
+    if not reclassifiable_indices:
+        return sections
+
+    reclassifiable_lines = [rest[i] for i in reclassifiable_indices]
+    bundle = get_section_classifier_model()
+    predicted_labels = bundle.predict_labels(reclassifiable_lines)
+    label_by_index = dict(zip(reclassifiable_indices, predicted_labels))
+
+    remaining_other: list[str] = [protected_first_line]
     additions: dict[str, list[str]] = {}
-    for line, label in zip(other_lines, predicted_labels):
+    for i, line in enumerate(rest):
+        label = label_by_index.get(i, "other")
         if label == "other":
             remaining_other.append(line)
         else:
