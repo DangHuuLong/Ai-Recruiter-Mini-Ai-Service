@@ -1,40 +1,40 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 13,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 14,
     "Markdown-bold headers (e.g. \"**Skills**\")": 14,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 13,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 14,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 13,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 13
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 14
   },
   "language": {
-    "mixed": 22,
-    "vi": 22,
-    "en": 22
+    "mixed": 23,
+    "vi": 23,
+    "en": 23
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 17,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 18,
     "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 17,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 16,
-    "none - straightforward single-column layout": 16
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 17,
+    "none - straightforward single-column layout": 17
   },
   "domain": {
     "Supply Chain": 4,
     "Sales": 4,
     "DevOps": 4,
     "Product Management": 4,
-    "Human Resources": 3,
+    "Human Resources": 4,
     "Mobile Development": 4,
     "Data Analysis": 4,
     "Customer Support": 4,
     "Education and Training": 4,
     "Legal": 3,
     "Healthcare Administration": 4,
-    "Software Engineering": 3,
+    "Software Engineering": 4,
     "Project Management": 3,
     "Finance and Accounting": 4,
     "Digital Marketing": 4,
     "Business Analysis": 4,
     "Content Writing": 3,
-    "UI/UX Design": 3
+    "UI/UX Design": 4
   }
 }
