@@ -13,10 +13,22 @@ A previous response was incomplete. Output ONLY the resumes listed below —
 do not re-output or repeat any other resume.
 
 ════════════════════════════════════
-RESUMES TO GENERATE (1)
+RESUMES TO GENERATE (3)
 ════════════════════════════════════
-  resline_0081:
-    domain       : Mobile Development
+  resline_0082:
+    domain       : Customer Support
+    header_style : Markdown-bold headers (e.g. "**Skills**")
+    language     : en
+    hard_case    : stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)
+
+  resline_0083:
+    domain       : Sales
+    header_style : Markdown-bold headers (e.g. "**Skills**")
+    language     : vi
+    hard_case    : none - straightforward single-column layout
+
+  resline_0084:
+    domain       : DevOps
     header_style : Title Case headers on their own line (e.g. "Work Experience")
     language     : mixed
     hard_case    : two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)
@@ -73,7 +85,7 @@ real resume).
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 1 lines. Each line is a single JSON object (no
+Output exactly 3 lines. Each line is a single JSON object (no
 array brackets, no commas between lines, no markdown fences, no explanation).
 
 Schema per resume:

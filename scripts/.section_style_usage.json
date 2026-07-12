@@ -1,31 +1,31 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 17,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 16,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 18,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 17,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 17,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 17
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 18
   },
   "language": {
-    "mixed": 28,
-    "vi": 28,
-    "en": 28
+    "mixed": 29,
+    "vi": 29,
+    "en": 29
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 21,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 21,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 21,
-    "none - straightforward single-column layout": 21
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 22,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 22,
+    "none - straightforward single-column layout": 22
   },
   "domain": {
     "Supply Chain": 5,
-    "Sales": 4,
-    "DevOps": 4,
+    "Sales": 5,
+    "DevOps": 5,
     "Product Management": 5,
     "Human Resources": 4,
     "Mobile Development": 5,
     "Data Analysis": 5,
-    "Customer Support": 4,
+    "Customer Support": 5,
     "Education and Training": 5,
     "Legal": 5,
     "Healthcare Administration": 5,
