@@ -13,25 +13,19 @@ A previous response was incomplete. Output ONLY the resumes listed below —
 do not re-output or repeat any other resume.
 
 ════════════════════════════════════
-RESUMES TO GENERATE (3)
+RESUMES TO GENERATE (2)
 ════════════════════════════════════
-  resline_0166:
-    domain       : Customer Support
-    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
+  resline_0170:
+    domain       : Data Analysis
+    header_style : inline label-colon style with no standalone header line (e.g. "Skills: Python, SQL, Docker")
     language     : mixed
-    hard_case    : none - straightforward single-column layout
+    hard_case    : two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)
 
-  resline_0167:
-    domain       : Mobile Development
-    header_style : ALL CAPS headers on their own line (e.g. "EXPERIENCE")
-    language     : en
-    hard_case    : none - straightforward single-column layout
-
-  resline_0168:
-    domain       : Content Writing
+  resline_0171:
+    domain       : Legal
     header_style : Title Case headers on their own line (e.g. "Work Experience")
-    language     : vi
-    hard_case    : stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)
+    language     : en
+    hard_case    : two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)
 
 For each resume: write realistic content for a mid-career professional in
 the given domain (any seniority — vary it). Do NOT include a candidate name,
@@ -85,7 +79,7 @@ real resume).
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 3 lines. Each line is a single JSON object (no
+Output exactly 2 lines. Each line is a single JSON object (no
 array brackets, no commas between lines, no markdown fences, no explanation).
 
 Schema per resume:
