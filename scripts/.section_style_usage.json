@@ -1,31 +1,31 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 48,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 49,
     "Markdown-bold headers (e.g. \"**Skills**\")": 48,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 48,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 49,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 48,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 48
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 49
   },
   "language": {
-    "mixed": 80,
-    "vi": 80,
-    "en": 80
+    "mixed": 81,
+    "vi": 81,
+    "en": 81
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 60,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 60,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 61,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 61,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 60,
-    "none - straightforward single-column layout": 60
+    "none - straightforward single-column layout": 61
   },
   "domain": {
     "Supply Chain": 13,
-    "Sales": 13,
+    "Sales": 14,
     "DevOps": 13,
     "Product Management": 14,
     "Human Resources": 13,
     "Mobile Development": 13,
-    "Data Analysis": 13,
-    "Customer Support": 13,
+    "Data Analysis": 14,
+    "Customer Support": 14,
     "Education and Training": 14,
     "Legal": 14,
     "Healthcare Administration": 14,
