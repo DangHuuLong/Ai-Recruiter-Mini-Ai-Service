@@ -16,131 +16,131 @@
     "reason": "key rejected (HTTP 402)"
   },
   "groq:1": {
-    "exhausted_at": "2026-07-11T10:44:47.766393+00:00",
+    "exhausted_at": "2026-07-12T11:16:54.893842+00:00",
     "reason": "key rejected (HTTP 401)"
   },
   "gpt:1": {
-    "exhausted_at": "2026-07-11T11:38:40.148961+00:00",
+    "exhausted_at": "2026-07-12T12:10:34.410267+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gpt:2": {
-    "exhausted_at": "2026-07-11T11:38:41.707657+00:00",
+    "exhausted_at": "2026-07-12T12:10:36.237055+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gpt:3": {
-    "exhausted_at": "2026-07-11T11:38:43.150558+00:00",
+    "exhausted_at": "2026-07-12T12:10:37.926830+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gpt:4": {
-    "exhausted_at": "2026-07-11T11:38:44.454725+00:00",
+    "exhausted_at": "2026-07-12T12:10:39.468237+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gemini:1": {
-    "exhausted_at": "2026-07-11T10:57:37.616802+00:00",
+    "exhausted_at": "2026-07-12T11:15:19.637927+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gemini:2": {
-    "exhausted_at": "2026-07-11T11:09:41.441713+00:00",
+    "exhausted_at": "2026-07-12T11:40:30.239788+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gemini:3": {
-    "exhausted_at": "2026-07-11T11:25:28.853155+00:00",
+    "exhausted_at": "2026-07-12T11:57:19.993660+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "gemini:4": {
-    "exhausted_at": "2026-07-11T11:35:15.517157+00:00",
+    "exhausted_at": "2026-07-12T12:07:46.822496+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "openrouter:1": {
-    "exhausted_at": "2026-07-11T11:40:30.178809+00:00",
+    "exhausted_at": "2026-07-12T12:13:15.976730+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "openrouter:2": {
-    "exhausted_at": "2026-07-11T11:40:31.322204+00:00",
+    "exhausted_at": "2026-07-12T12:13:17.132338+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "openrouter:3": {
-    "exhausted_at": "2026-07-11T11:40:32.497955+00:00",
+    "exhausted_at": "2026-07-12T12:13:18.267473+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "openrouter:4": {
-    "exhausted_at": "2026-07-11T11:40:36.252302+00:00",
+    "exhausted_at": "2026-07-12T12:13:19.754980+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "groq:2": {
-    "exhausted_at": "2026-07-11T11:35:27.586741+00:00",
+    "exhausted_at": "2026-07-12T12:04:36.214743+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "groq:3": {
-    "exhausted_at": "2026-07-11T11:35:42.106131+00:00",
+    "exhausted_at": "2026-07-12T12:07:57.369972+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "groq:4": {
-    "exhausted_at": "2026-07-11T11:35:42.543657+00:00",
+    "exhausted_at": "2026-07-12T12:08:06.619048+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "moonshot:1": {
-    "exhausted_at": "2026-07-11T11:37:01.537733+00:00",
+    "exhausted_at": "2026-07-12T12:09:28.134902+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "moonshot:2": {
-    "exhausted_at": "2026-07-11T11:37:01.859441+00:00",
+    "exhausted_at": "2026-07-12T12:09:28.690132+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "moonshot:3": {
-    "exhausted_at": "2026-07-11T11:37:02.182933+00:00",
+    "exhausted_at": "2026-07-12T12:09:29.291653+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "moonshot:4": {
-    "exhausted_at": "2026-07-11T11:37:02.562303+00:00",
+    "exhausted_at": "2026-07-12T12:09:29.884639+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "alibaba:1": {
-    "exhausted_at": "2026-07-11T11:39:38.225097+00:00",
+    "exhausted_at": "2026-07-12T12:10:24.433926+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "alibaba:2": {
-    "exhausted_at": "2026-07-11T11:38:02.960768+00:00",
+    "exhausted_at": "2026-07-12T12:10:27.859790+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "alibaba:3": {
-    "exhausted_at": "2026-07-11T11:38:25.801451+00:00",
+    "exhausted_at": "2026-07-12T12:10:30.355724+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "alibaba:4": {
-    "exhausted_at": "2026-07-11T11:38:38.825761+00:00",
+    "exhausted_at": "2026-07-12T12:10:32.460490+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "cerebras:1": {
-    "exhausted_at": "2026-07-11T12:20:29.323395+00:00",
+    "exhausted_at": "2026-07-12T12:08:28.099163+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "cerebras:2": {
-    "exhausted_at": "2026-07-11T12:21:36.129359+00:00",
+    "exhausted_at": "2026-07-12T12:08:55.076277+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "cerebras:3": {
-    "exhausted_at": "2026-07-11T12:21:47.843203+00:00",
+    "exhausted_at": "2026-07-12T12:09:14.313152+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "cerebras:4": {
-    "exhausted_at": "2026-07-11T12:29:07.020804+00:00",
+    "exhausted_at": "2026-07-12T12:11:05.104686+00:00",
     "reason": "rate limited / quota exceeded (HTTP 429)"
   },
   "siliconflow:1": {
-    "exhausted_at": "2026-07-11T13:47:11.862765+00:00",
+    "exhausted_at": "2026-07-12T12:13:20.849406+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "siliconflow:2": {
-    "exhausted_at": "2026-07-11T13:47:13.168828+00:00",
+    "exhausted_at": "2026-07-12T12:13:21.828988+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "siliconflow:3": {
-    "exhausted_at": "2026-07-11T13:47:14.364762+00:00",
+    "exhausted_at": "2026-07-12T12:13:22.759114+00:00",
     "reason": "key rejected (HTTP 403)"
   },
   "siliconflow:4": {
-    "exhausted_at": "2026-07-11T13:47:15.450589+00:00",
+    "exhausted_at": "2026-07-12T12:13:23.721575+00:00",
     "reason": "key rejected (HTTP 403)"
   }
 }

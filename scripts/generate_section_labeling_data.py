@@ -381,9 +381,14 @@ def _process_labeling_lines(
     parsed: list[dict] = []
     for i, line in enumerate(lines, 1):
         try:
-            parsed.append(json.loads(line))
+            obj = json.loads(line)
         except json.JSONDecodeError as e:
             parse_errors.append(f"Line {i}: invalid JSON — {e}")
+            continue
+        if not isinstance(obj, dict):
+            parse_errors.append(f"Line {i}: expected a JSON object, got {type(obj).__name__}")
+            continue
+        parsed.append(obj)
 
     warnings: list[str] = []
     by_id: dict[str, dict] = {}
