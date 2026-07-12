@@ -1,32 +1,32 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 15,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 15,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 15,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 16,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 16,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 16,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 15,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 15
   },
   "language": {
-    "mixed": 25,
-    "vi": 25,
-    "en": 25
+    "mixed": 26,
+    "vi": 26,
+    "en": 26
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 18,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 19,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 19,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 20,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 19,
-    "none - straightforward single-column layout": 19
+    "none - straightforward single-column layout": 20
   },
   "domain": {
     "Supply Chain": 5,
     "Sales": 4,
     "DevOps": 4,
-    "Product Management": 4,
+    "Product Management": 5,
     "Human Resources": 4,
     "Mobile Development": 4,
     "Data Analysis": 4,
     "Customer Support": 4,
-    "Education and Training": 4,
+    "Education and Training": 5,
     "Legal": 4,
     "Healthcare Administration": 5,
     "Software Engineering": 4,
@@ -35,6 +35,6 @@
     "Digital Marketing": 4,
     "Business Analysis": 4,
     "Content Writing": 4,
-    "UI/UX Design": 4
+    "UI/UX Design": 5
   }
 }
