@@ -15,21 +15,21 @@ do not re-output or repeat any other resume.
 ════════════════════════════════════
 RESUMES TO GENERATE (3)
 ════════════════════════════════════
-  resline_0262:
-    domain       : Mobile Development
-    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
+  resline_0265:
+    domain       : Customer Support
+    header_style : inline label-colon style with no standalone header line (e.g. "Skills: Python, SQL, Docker")
     language     : vi
-    hard_case    : stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)
+    hard_case    : wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation
 
-  resline_0263:
-    domain       : Product Management
+  resline_0266:
+    domain       : DevOps
     header_style : Markdown-bold headers (e.g. "**Skills**")
     language     : en
-    hard_case    : stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)
+    hard_case    : two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)
 
-  resline_0264:
-    domain       : Digital Marketing
-    header_style : ALL CAPS headers on their own line (e.g. "EXPERIENCE")
+  resline_0267:
+    domain       : Healthcare Administration
+    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
     language     : mixed
     hard_case    : none - straightforward single-column layout
 
