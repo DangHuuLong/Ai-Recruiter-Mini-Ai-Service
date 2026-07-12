@@ -1,27 +1,27 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 4,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 4,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 5,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 5,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 5,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 4,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 4
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 5
   },
   "language": {
-    "mixed": 7,
-    "vi": 7,
-    "en": 7
+    "mixed": 8,
+    "vi": 8,
+    "en": 8
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 6,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 5,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 5,
-    "none - straightforward single-column layout": 5
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 6,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 6,
+    "none - straightforward single-column layout": 6
   },
   "domain": {
     "Supply Chain": 1,
     "Sales": 1,
     "DevOps": 1,
-    "Product Management": 1,
+    "Product Management": 2,
     "Human Resources": 1,
     "Mobile Development": 1,
     "Data Analysis": 1,
@@ -30,9 +30,9 @@
     "Legal": 1,
     "Healthcare Administration": 2,
     "Software Engineering": 2,
-    "Project Management": 1,
+    "Project Management": 2,
     "Finance and Accounting": 1,
-    "Digital Marketing": 1,
+    "Digital Marketing": 2,
     "Business Analysis": 1,
     "Content Writing": 1,
     "UI/UX Design": 2
