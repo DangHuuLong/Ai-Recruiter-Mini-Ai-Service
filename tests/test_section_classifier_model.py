@@ -136,6 +136,14 @@ class TestSectionClassifierBundlePredictLabels:
 
 
 class TestGetSectionClassifierModel:
+    def setup_method(self) -> None:
+        # Guard against cache pollution from OTHER test modules that exercise
+        # the real model via the actual .env config (e.g. tests that call
+        # parse_resume() -> split_sections() with SECTION_CLASSIFIER_* enabled)
+        # — teardown_method alone only cleans up after THIS class's own
+        # tests, not state inherited from whatever ran before it.
+        get_section_classifier_model.cache_clear()
+
     def teardown_method(self) -> None:
         get_section_classifier_model.cache_clear()
 

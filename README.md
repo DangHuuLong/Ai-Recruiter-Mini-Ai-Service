@@ -654,8 +654,9 @@ Schemas are defined in `app/schemas/`:
 | Comprehensive test suite | ✅ Complete |
 | Training datasets | ✅ Complete |
 | Fine-tuning notebooks (Colab) | ✅ Complete |
-| Real AI integration (Gemini) | 📋 Planned |
-| Semantic embeddings (sentence-transformers) | 📋 Planned |
+| CV-JD semantic scoring (CrossEncoder v0.6, blended into `/score/application`) | ✅ Complete |
+| Resume section-classifier (LLM-distilled, blended into resume parsing) | ✅ Complete |
+| Real AI integration (Gemini, live LLM calls in the request path) | 📋 Planned |
 | Response caching | 📋 Planned |
 | Authentication / API key guard | 📋 Planned |
 | Monitoring & metrics | 📋 Planned |

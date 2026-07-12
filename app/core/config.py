@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     request_timeout_seconds: int = 30
 
     similarity_model_path: str = ""
-    similarity_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    similarity_base_model: str = "cross-encoder/ms-marco-MiniLM-L-12-v2"
     similarity_model_version: str = ""
     similarity_scoring_weight: float = 0.0
     similarity_score_threshold: float = 0.0

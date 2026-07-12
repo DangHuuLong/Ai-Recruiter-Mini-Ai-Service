@@ -27,27 +27,34 @@ to rule-based scoring automatically.
 
 ## 3. Downloading the Fine-Tuned Model
 
-The model artifact is not committed to git. Download it from Google Drive and
-place it inside the `models/` directory at the project root.
+**Updated (v0.6 integration)**: the similarity scorer now loads a
+`sentence_transformers.CrossEncoder` checkpoint, not a bi-encoder — a
+different save format (HuggingFace `*ForSequenceClassification`, no
+`1_Pooling/`/`modules.json`). The model artifact is not committed to git
+(trained via Colab, see `docs/similarity-model-cross-encoder-v0.6.md`).
+Place it inside the `models/` directory at the project root.
 
-Expected path after download:
+Expected path:
 
 ```
 models/
-  fine-tuned-miniLM-v0.2-ep3/
-    config.json
+  cross-encoder-cv-jd-v0.6/
+    config.json                 ← "architectures": ["BertForSequenceClassification"]
     model.safetensors
-    modules.json
+    special_tokens_map.json
     tokenizer.json
     tokenizer_config.json
     vocab.txt
-    1_Pooling/
-    2_Normalize/
 ```
 
 The loader validates the path by checking that `config.json` exists inside the
 directory. If the directory is missing or `config.json` is absent, the loader
-falls back to the base model automatically and logs a warning.
+falls back to the base model (`cross-encoder/ms-marco-MiniLM-L-12-v2`)
+automatically and logs a warning.
+
+> **Do not** point `SIMILARITY_MODEL_PATH` at a bi-encoder checkpoint (e.g.
+> `models/fine-tuned-miniLM-v0.2`, which has `1_Pooling/`/`modules.json`) —
+> `CrossEncoder(...)` will not load it as a working pair-scorer.
 
 ---
 
@@ -59,29 +66,29 @@ All similarity settings are read from `.env` (or environment) via `Settings` in
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SIMILARITY_MODEL_PATH` | `""` | Path to fine-tuned model directory. Empty = use base model. |
-| `SIMILARITY_BASE_MODEL` | `sentence-transformers/all-MiniLM-L6-v2` | HuggingFace model name used when no fine-tuned path is set or the path is invalid. |
+| `SIMILARITY_MODEL_PATH` | `""` | Path to fine-tuned CrossEncoder model directory. Empty = use base model. |
+| `SIMILARITY_BASE_MODEL` | `cross-encoder/ms-marco-MiniLM-L-12-v2` | HuggingFace CrossEncoder model name used when no fine-tuned path is set or the path is invalid. |
 | `SIMILARITY_MODEL_VERSION` | `""` | Informational label only. Used for logging and reports. |
 | `SIMILARITY_SCORING_WEIGHT` | `0.0` | Blend weight for ML score. `0.0` disables ML scoring entirely. `1.0` uses ML score only. |
 | `SIMILARITY_SCORE_THRESHOLD` | `0.0` | Minimum ML score to allow blending. Below this value, rule-based score is returned. `0.0` disables the threshold guard. |
 | `SIMILARITY_FALLBACK_MODE` | `base_model` | `base_model` = use base model when fine-tuned path is unavailable. `rule_only` = disable ML entirely regardless of other settings. |
 
-### Minimal config for fine-tuned model with 30% ML blend
+### Minimal config for fine-tuned model with 50% ML blend
 
 ```env
-SIMILARITY_MODEL_PATH=models/fine-tuned-miniLM-v0.2-ep3
-SIMILARITY_MODEL_VERSION=v0.2
-SIMILARITY_SCORING_WEIGHT=0.3
+SIMILARITY_MODEL_PATH=models/cross-encoder-cv-jd-v0.6
+SIMILARITY_MODEL_VERSION=v0.6
+SIMILARITY_SCORING_WEIGHT=0.5
 ```
 
 ### Full config example
 
 ```env
-SIMILARITY_MODEL_PATH=models/fine-tuned-miniLM-v0.2-ep3
-SIMILARITY_BASE_MODEL=sentence-transformers/all-MiniLM-L6-v2
-SIMILARITY_MODEL_VERSION=v0.2
-SIMILARITY_SCORING_WEIGHT=0.3
-SIMILARITY_SCORE_THRESHOLD=20.0
+SIMILARITY_MODEL_PATH=models/cross-encoder-cv-jd-v0.6
+SIMILARITY_BASE_MODEL=cross-encoder/ms-marco-MiniLM-L-12-v2
+SIMILARITY_MODEL_VERSION=v0.6
+SIMILARITY_SCORING_WEIGHT=0.5
+SIMILARITY_SCORE_THRESHOLD=0.0
 SIMILARITY_FALLBACK_MODE=base_model
 ```
 
@@ -135,7 +142,7 @@ If `SIMILARITY_MODEL_PATH` is empty or the directory is missing, the loader
 falls back to `SIMILARITY_BASE_MODEL` automatically:
 
 ```
-SIMILARITY_MODEL_PATH not set, using base model 'sentence-transformers/all-MiniLM-L6-v2'
+SIMILARITY_MODEL_PATH not set, using base model 'cross-encoder/ms-marco-MiniLM-L-12-v2'
 # or
 Fine-tuned model not found at 'models/...', falling back to base model '...'
 ```
@@ -175,23 +182,28 @@ process and reused for all requests.
 
 ## 9. Verifying the Setup
 
-Run the evaluation pipeline to confirm the model loads and scores correctly:
+`training/evaluate_similarity_pipeline.py` only supports bi-encoder
+(`SentenceTransformer`) models and does not apply to the CrossEncoder setup —
+it remains valid only for re-evaluating the historical `fine-tuned-miniLM-vX`
+line (`similarity-model-v0.2.md`/`v0.3.md`).
 
-```bash
-python -m training.evaluate_similarity_pipeline \
-  --models base:sentence-transformers/all-MiniLM-L6-v2 \
-           v0.2-ep3:models/fine-tuned-miniLM-v0.2-ep3 \
-  --output artifacts/reports/comparison_v0.2.json
+To smoke-test the CrossEncoder model directly:
+
+```python
+from sentence_transformers import CrossEncoder
+
+model = CrossEncoder("models/cross-encoder-cv-jd-v0.6")
+good = model.predict([("Backend engineer with Python, Django, PostgreSQL experience.",
+                        "Senior Backend Engineer needing strong Python and Django skills.")])
+bad = model.predict([("Marketing coordinator, social media and content creation.",
+                       "Senior Backend Engineer needing strong Python and Django skills.")])
+print(good, bad)  # good should score noticeably higher than bad
 ```
 
-Expected output (test split, 350 pairs):
+Or through the app's own code path end-to-end via `app.scorers.similarity_scorer.score_cv_jd_similarity`.
 
-| Model | MAE | Label Acc |
-|-------|-----|-----------|
-| base | 20.32 | 32.3% |
-| v0.2-ep3 | 11.92 | 47.7% |
-
-See [similarity-model-v0.2.md](similarity-model-v0.2.md) for full benchmark details.
+See [similarity-model-cross-encoder-v0.6.md](similarity-model-cross-encoder-v0.6.md)
+for the full v0.6 training/benchmark history.
 
 ---
 
