@@ -1,24 +1,24 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 33,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 33,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 34,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 34,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 33,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 33,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 34,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 33
   },
   "language": {
-    "mixed": 55,
-    "vi": 55,
-    "en": 55
+    "mixed": 56,
+    "vi": 56,
+    "en": 56
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 41,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 41,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 42,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 42,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 42,
-    "none - straightforward single-column layout": 41
+    "none - straightforward single-column layout": 42
   },
   "domain": {
-    "Supply Chain": 9,
+    "Supply Chain": 10,
     "Sales": 9,
     "DevOps": 10,
     "Product Management": 9,
@@ -30,11 +30,11 @@
     "Legal": 9,
     "Healthcare Administration": 9,
     "Software Engineering": 9,
-    "Project Management": 9,
+    "Project Management": 10,
     "Finance and Accounting": 9,
     "Digital Marketing": 10,
     "Business Analysis": 9,
     "Content Writing": 9,
-    "UI/UX Design": 9
+    "UI/UX Design": 10
   }
 }
