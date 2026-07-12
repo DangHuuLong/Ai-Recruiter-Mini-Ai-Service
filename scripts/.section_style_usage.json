@@ -2,20 +2,20 @@
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 35,
     "Markdown-bold headers (e.g. \"**Skills**\")": 34,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 34,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 34,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 34
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 35,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 35,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 35
   },
   "language": {
-    "mixed": 57,
-    "vi": 57,
-    "en": 57
+    "mixed": 58,
+    "vi": 58,
+    "en": 58
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 43,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 43,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 44,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 43,
-    "none - straightforward single-column layout": 42
+    "none - straightforward single-column layout": 44
   },
   "domain": {
     "Supply Chain": 10,
@@ -23,9 +23,9 @@
     "DevOps": 10,
     "Product Management": 9,
     "Human Resources": 10,
-    "Mobile Development": 9,
+    "Mobile Development": 10,
     "Data Analysis": 9,
-    "Customer Support": 9,
+    "Customer Support": 10,
     "Education and Training": 9,
     "Legal": 9,
     "Healthcare Administration": 10,
@@ -34,7 +34,7 @@
     "Finance and Accounting": 10,
     "Digital Marketing": 10,
     "Business Analysis": 9,
-    "Content Writing": 9,
+    "Content Writing": 10,
     "UI/UX Design": 10
   }
 }
