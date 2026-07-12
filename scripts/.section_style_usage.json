@@ -1,20 +1,20 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 48,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 47,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 48,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 48,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 47,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 47
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 48,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 48
   },
   "language": {
-    "mixed": 79,
-    "vi": 79,
-    "en": 79
+    "mixed": 80,
+    "vi": 80,
+    "en": 80
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 59,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 59,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 59,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 60,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 60,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 60,
     "none - straightforward single-column layout": 60
   },
   "domain": {
@@ -26,13 +26,13 @@
     "Mobile Development": 13,
     "Data Analysis": 13,
     "Customer Support": 13,
-    "Education and Training": 13,
-    "Legal": 13,
+    "Education and Training": 14,
+    "Legal": 14,
     "Healthcare Administration": 14,
     "Software Engineering": 14,
     "Project Management": 13,
     "Finance and Accounting": 13,
-    "Digital Marketing": 13,
+    "Digital Marketing": 14,
     "Business Analysis": 13,
     "Content Writing": 13,
     "UI/UX Design": 13
