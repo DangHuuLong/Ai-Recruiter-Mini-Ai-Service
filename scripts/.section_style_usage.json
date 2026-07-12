@@ -1,35 +1,35 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 47,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 48,
     "Markdown-bold headers (e.g. \"**Skills**\")": 47,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 47,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 48,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 47,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 46
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 47
   },
   "language": {
-    "mixed": 78,
-    "vi": 78,
-    "en": 78
+    "mixed": 79,
+    "vi": 79,
+    "en": 79
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 58,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 59,
     "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 59,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 59,
-    "none - straightforward single-column layout": 58
+    "none - straightforward single-column layout": 60
   },
   "domain": {
     "Supply Chain": 13,
     "Sales": 13,
     "DevOps": 13,
-    "Product Management": 13,
+    "Product Management": 14,
     "Human Resources": 13,
     "Mobile Development": 13,
     "Data Analysis": 13,
     "Customer Support": 13,
     "Education and Training": 13,
     "Legal": 13,
-    "Healthcare Administration": 13,
-    "Software Engineering": 13,
+    "Healthcare Administration": 14,
+    "Software Engineering": 14,
     "Project Management": 13,
     "Finance and Accounting": 13,
     "Digital Marketing": 13,
