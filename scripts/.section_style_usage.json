@@ -1,28 +1,28 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 51,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 51,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 52,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 52,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 51,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 51,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 51
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 52
   },
   "language": {
-    "mixed": 85,
-    "vi": 85,
-    "en": 85
+    "mixed": 86,
+    "vi": 86,
+    "en": 86
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 64,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 64,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 63,
-    "none - straightforward single-column layout": 64
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 65,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 64,
+    "none - straightforward single-column layout": 65
   },
   "domain": {
     "Supply Chain": 15,
     "Sales": 14,
     "DevOps": 14,
     "Product Management": 14,
-    "Human Resources": 14,
+    "Human Resources": 15,
     "Mobile Development": 14,
     "Data Analysis": 14,
     "Customer Support": 14,
@@ -31,10 +31,10 @@
     "Healthcare Administration": 15,
     "Software Engineering": 14,
     "Project Management": 14,
-    "Finance and Accounting": 14,
+    "Finance and Accounting": 15,
     "Digital Marketing": 14,
     "Business Analysis": 14,
-    "Content Writing": 14,
+    "Content Writing": 15,
     "UI/UX Design": 14
   }
 }
