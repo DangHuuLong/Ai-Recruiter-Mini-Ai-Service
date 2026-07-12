@@ -15,9 +15,9 @@ do not re-output or repeat any other resume.
 ════════════════════════════════════
 RESUMES TO GENERATE (1)
 ════════════════════════════════════
-  resline_0291:
-    domain       : Content Writing
-    header_style : inline label-colon style with no standalone header line (e.g. "Skills: Python, SQL, Docker")
+  resline_0293:
+    domain       : Data Analysis
+    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
     language     : mixed
     hard_case    : none - straightforward single-column layout
 

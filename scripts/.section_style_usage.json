@@ -1,36 +1,36 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 61,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 61,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 60,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 60,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 61
+    "Markdown-bold headers (e.g. \"**Skills**\")": 62,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 62,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 62,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 62
   },
   "language": {
-    "mixed": 101,
-    "vi": 101,
-    "en": 101
+    "mixed": 103,
+    "vi": 103,
+    "en": 103
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 76,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 75,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 76,
-    "none - straightforward single-column layout": 76
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 77,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 77,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 78,
+    "none - straightforward single-column layout": 77
   },
   "domain": {
     "Supply Chain": 17,
     "Sales": 17,
-    "DevOps": 16,
+    "DevOps": 17,
     "Product Management": 17,
-    "Human Resources": 16,
+    "Human Resources": 17,
     "Mobile Development": 17,
-    "Data Analysis": 17,
+    "Data Analysis": 18,
     "Customer Support": 17,
-    "Education and Training": 16,
+    "Education and Training": 17,
     "Legal": 17,
-    "Healthcare Administration": 17,
+    "Healthcare Administration": 18,
     "Software Engineering": 17,
-    "Project Management": 17,
+    "Project Management": 18,
     "Finance and Accounting": 17,
     "Digital Marketing": 17,
     "Business Analysis": 17,
