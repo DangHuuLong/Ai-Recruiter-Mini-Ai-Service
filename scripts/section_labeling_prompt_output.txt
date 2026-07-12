@@ -1,0 +1,80 @@
+You are generating training data to teach a small model how real
+resumes are laid out into sections. This is DIFFERENT from other resume
+generation you may have done before: those wanted clean prose with NO
+headers or bullets. This task wants the OPPOSITE — realistic resumes with
+EXPLICIT section headers and bullet points (except where a resume's
+assignment below calls for a minimal/no-header style), because the model
+being trained needs real header/bullet/layout cues to learn from.
+
+════════════════════════════════════
+PARTIAL RE-REQUEST
+════════════════════════════════════
+A previous response was incomplete. Output ONLY the resumes listed below —
+do not re-output or repeat any other resume.
+
+════════════════════════════════════
+RESUMES TO GENERATE (1)
+════════════════════════════════════
+  resline_0305:
+    domain       : Sales
+    header_style : inline label-colon style with no standalone header line (e.g. "Skills: Python, SQL, Docker")
+    language     : vi
+    hard_case    : wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation
+
+For each resume: write realistic content for a mid-career professional in
+the given domain (any seniority — vary it). Do NOT include a candidate name,
+email, phone number, LinkedIn URL, or GitHub URL anywhere in the text.
+
+════════════════════════════════════
+LAYOUT REQUIREMENTS PER header_style
+════════════════════════════════════
+- "ALL CAPS headers": each section starts with its name in ALL CAPS on its
+  own line (e.g. "EXPERIENCE"), followed by bullet-point or short-line content.
+- "Title Case headers": same but Title Case (e.g. "Work Experience").
+- "Markdown-bold headers": headers wrapped in ** (e.g. "**Skills**").
+- "inline label-colon style": no standalone header line at all — each
+  section's content starts right after "Label: " on the same line
+  (e.g. "Skills: Python, Django, PostgreSQL, Docker").
+- "minimal-to-no explicit headers": write the resume as a sequence of
+  clearly distinguishable content blocks (a skills line still reads like a
+  skills line, an experience entry still reads like a job entry) but WITHOUT
+  a labeled header line introducing most sections.
+Apply the hard_case for each resume literally where it's not "none" — these
+are deliberately awkward/realistic layout quirks the model must learn to
+handle, do not smooth them over.
+
+════════════════════════════════════
+LINE-LEVEL LABELING — every line gets exactly one label
+════════════════════════════════════
+  summary          intro/profile/objective/about-me paragraph
+  skills           technical and soft skills, tools, technologies
+  experience       work history entries (job title, company type, duration, duties)
+  projects         personal/side/work projects (name, description, tech, outcome)
+  education        degrees, schools, graduation year
+  certifications   certificates, licenses
+  achievements     awards, honors, recognitions
+  languages        spoken language proficiency (NOT programming languages — those go under skills)
+  other            use ONLY for lines with no clear section membership (e.g. a
+                   decorative separator like "----"). Do NOT use "other" for
+                   content that clearly belongs to a section just because
+                   you're unsure of exact wording — pick the best-fit section.
+
+A header line itself (e.g. the line that just says "EXPERIENCE") gets the
+SAME label as the section it introduces — do not invent a separate "header"
+label. Bullet lines keep their bullet marker (e.g. "- Built a...") in `text`.
+Blank/empty lines should simply be omitted from the `lines` array (don't
+emit empty-string entries).
+
+Each resume needs at least 15 lines total and at least
+4 distinct section labels represented (skills alone
+isn't enough — include experience, education, etc. as make sense for a
+real resume).
+
+════════════════════════════════════
+OUTPUT FORMAT
+════════════════════════════════════
+Output exactly 1 lines. Each line is a single JSON object (no
+array brackets, no commas between lines, no markdown fences, no explanation).
+
+Schema per resume:
+{"id":"<resline_id>","lines":[{"text":"<line text, bullet marker included if present>","label":"<summary|skills|experience|projects|education|certifications|achievements|languages|other>"}, ...]}

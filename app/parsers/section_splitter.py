@@ -1,8 +1,11 @@
 """Heuristic section splitter for resume text."""
 
+import logging
 import re
 
 from app.parsers.normalizer import strip_accents, strip_list_marker
+
+logger = logging.getLogger(__name__)
 
 
 SECTION_ORDER = (
@@ -136,6 +139,18 @@ HEADER_LOOKUP = {
 }
 
 
+def matches_known_header(line: str) -> bool:
+    """Whether the regex/alias splitter recognizes `line` as a section header.
+
+    Exposed as a small public signal (rather than requiring callers to reach
+    into `_match_header_line`) so the ML section-classifier's feature
+    extractor (app/ml/section_classifier_features.py) can feed the existing
+    heuristic's own confidence in as a feature, instead of duplicating the
+    alias-matching logic.
+    """
+    return _match_header_line(line) is not None
+
+
 def _match_header_line(line: str) -> tuple[str, str] | None:
     candidate = strip_list_marker(line).strip("# ").strip()
     if not candidate:
@@ -174,7 +189,7 @@ def find_headings(text: str) -> list[re.Match[str]]:
     ]
 
 
-def split_sections(text: str) -> dict[str, str]:
+def _regex_split_sections(text: str) -> dict[str, str]:
     sections: dict[str, list[str]] = {key: [] for key in SECTION_ORDER}
     sections["other"] = []
 
@@ -202,3 +217,61 @@ def split_sections(text: str) -> dict[str, str]:
         sections[current].append(line)
 
     return {key: "\n".join(value).strip() for key, value in sections.items()}
+
+
+def _ml_assisted_split(text: str) -> dict[str, str]:
+    """Regex-first, ML-fallback-for-ambiguous-lines only.
+
+    A header match is a high-precision signal, so any line the regex pass
+    confidently assigns to a real section is kept as-is. The regex splitter
+    can only ever leave a line in "other" for lines seen BEFORE the first
+    recognized header (or the whole document, if no header is ever
+    recognized) — headers themselves always move `current` to a real
+    section, so "other" is exactly the heuristic's blind spot. This function
+    reclassifies just that blind spot with the distilled section-classifier
+    model (see app/ml/section_classifier_model.py), Viterbi-smoothed so the
+    reclassified lines still form coherent runs rather than flip-flopping
+    line by line.
+
+    Raises whatever get_section_classifier_model() raises when the model is
+    disabled or its artifacts are missing — callers (split_sections) must
+    catch that and fall back to _regex_split_sections.
+    """
+    from app.ml.section_classifier_model import get_section_classifier_model
+
+    sections = _regex_split_sections(text)
+    other_text = sections.get("other", "")
+    if not other_text:
+        return sections
+
+    other_lines = other_text.splitlines()
+    bundle = get_section_classifier_model()
+    predicted_labels = bundle.predict_labels(other_lines)
+
+    remaining_other: list[str] = []
+    additions: dict[str, list[str]] = {}
+    for line, label in zip(other_lines, predicted_labels):
+        if label == "other":
+            remaining_other.append(line)
+        else:
+            additions.setdefault(label, []).append(line)
+
+    merged = dict(sections)
+    for label, lines in additions.items():
+        # These lines occurred earliest in the document (before any
+        # recognized header), so they're prepended ahead of whatever content
+        # the regex pass already assigned to this section.
+        prefix = "\n".join(lines)
+        existing = merged.get(label, "")
+        merged[label] = f"{prefix}\n{existing}".strip() if existing else prefix
+    merged["other"] = "\n".join(remaining_other).strip()
+
+    return merged
+
+
+def split_sections(text: str) -> dict[str, str]:
+    try:
+        return _ml_assisted_split(text)
+    except Exception:
+        logger.debug("ML-assisted section split unavailable, falling back to regex.", exc_info=True)
+        return _regex_split_sections(text)

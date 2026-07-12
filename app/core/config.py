@@ -23,6 +23,10 @@ class Settings(BaseSettings):
     similarity_score_threshold: float = 0.0
     similarity_fallback_mode: str = "base_model"
 
+    section_classifier_model_path: str = ""
+    section_classifier_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    section_classifier_fallback_mode: str = "regex_only"
+
     enable_pdf_ocr_fallback: bool = False
     pdf_ocr_engine: str = "paddleocr"
     pdf_ocr_mode: str = "targeted"
@@ -34,6 +38,7 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=False,
+        extra="ignore",
     )
 
 
