@@ -1,27 +1,27 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 7,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 7,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 7,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 7,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 8,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 8,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 8,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 8
   },
   "language": {
-    "mixed": 12,
-    "vi": 12,
-    "en": 12
+    "mixed": 13,
+    "vi": 13,
+    "en": 13
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 9,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 9,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 10,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 10,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 9,
-    "none - straightforward single-column layout": 9
+    "none - straightforward single-column layout": 10
   },
   "domain": {
-    "Supply Chain": 2,
+    "Supply Chain": 3,
     "Sales": 2,
-    "DevOps": 2,
-    "Product Management": 2,
+    "DevOps": 3,
+    "Product Management": 3,
     "Human Resources": 2,
     "Mobile Development": 2,
     "Data Analysis": 2,
