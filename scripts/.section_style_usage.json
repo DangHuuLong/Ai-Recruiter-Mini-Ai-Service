@@ -1,26 +1,26 @@
 {
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 31,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 30,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 31,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 31,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 30,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 32,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 31
   },
   "language": {
-    "mixed": 51,
-    "vi": 51,
-    "en": 51
+    "mixed": 52,
+    "vi": 52,
+    "en": 52
   },
   "hard_case": {
     "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 39,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 38,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 38,
-    "none - straightforward single-column layout": 38
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 39,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 39,
+    "none - straightforward single-column layout": 39
   },
   "domain": {
     "Supply Chain": 9,
-    "Sales": 8,
-    "DevOps": 8,
+    "Sales": 9,
+    "DevOps": 9,
     "Product Management": 9,
     "Human Resources": 9,
     "Mobile Development": 8,
@@ -31,7 +31,7 @@
     "Healthcare Administration": 9,
     "Software Engineering": 8,
     "Project Management": 9,
-    "Finance and Accounting": 8,
+    "Finance and Accounting": 9,
     "Digital Marketing": 9,
     "Business Analysis": 9,
     "Content Writing": 8,
