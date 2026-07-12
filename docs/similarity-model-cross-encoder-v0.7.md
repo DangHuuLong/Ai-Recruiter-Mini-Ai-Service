@@ -1,8 +1,8 @@
-# Similarity Model — Cross-Encoder v0.7 — In Progress
+# Similarity Model — Cross-Encoder v0.7 — Discontinued
 
 **Version**: v0.7
 **Date**: July 2026
-**Status**: 🔄 In Progress
+**Status**: ⏹️ Discontinued — v0.6 (Ensemble, 65.80% test LabelAcc) remains the production model
 **Baseline**: v0.6 = 65.80% test LabelAcc (Ensemble of 5 seeds)
 
 ---
@@ -230,5 +230,17 @@ Supersedes the v0.6/raw_v2 approach. Keeps everything that measurably worked (wo
 
 ---
 
+## 9. Discontinuation
+
+Stopped generating `raw_v3` at 760 pairs. Before stopping, dataset validation surfaced a real
+generator bug: duplicate IDs across rounds (`jd_375`/`jd_376`/`resume_375`/`resume_376` each
+appeared twice with unrelated domain content — a same-domain Round 3 batch and a later
+Mobile Engineering batch collided on the same numeric suffix). This would have silently
+corrupted any `cross_encoder` split built from the raw data (dict keyed by id drops the
+first record). Decision made to end the v0.7 experiment here rather than fix the generator
+and continue — v0.6 (Ensemble of 5 seeds, 65.80% test LabelAcc) is kept as the final/production
+model. `datasets/raw_v3` is left as-is (not versioned into `datasets/versions/v0.7/`, not
+trained on).
+
 **Last Updated**: July 2026
-**Status**: 🔄 In Progress — raw_v2 diagnosed as overfit to a narrow single-source distribution; pivoting to raw_v3 with wider domain diversity and cross-domain poor_match generation
+**Status**: ⏹️ Discontinued — v0.6 (Ensemble, 65.80% test LabelAcc) is the final model for this project
