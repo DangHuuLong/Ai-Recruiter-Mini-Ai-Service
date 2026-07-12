@@ -1,20 +1,20 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 1,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 2,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 2,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 3,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 2,
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 2,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 2
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 3
   },
   "language": {
-    "mixed": 3,
-    "vi": 3,
-    "en": 3
+    "mixed": 4,
+    "vi": 4,
+    "en": 4
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 2,
-    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 2,
-    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 2,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 3,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 3,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 3,
     "none - straightforward single-column layout": 3
   },
   "domain": {
@@ -26,6 +26,9 @@
     "Mobile Development": 1,
     "Data Analysis": 1,
     "Customer Support": 1,
-    "Education and Training": 1
+    "Education and Training": 1,
+    "Legal": 1,
+    "Healthcare Administration": 1,
+    "Software Engineering": 1
   }
 }
