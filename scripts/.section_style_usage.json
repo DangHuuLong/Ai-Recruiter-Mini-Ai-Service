@@ -2,20 +2,20 @@
   "header_style": {
     "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 10,
     "Markdown-bold headers (e.g. \"**Skills**\")": 11,
-    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 10,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 10,
-    "Title Case headers on their own line (e.g. \"Work Experience\")": 10
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 11,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 11,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 11
   },
   "language": {
-    "mixed": 17,
-    "vi": 17,
-    "en": 17
+    "mixed": 18,
+    "vi": 18,
+    "en": 18
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 12,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 14,
     "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 13,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 13,
-    "none - straightforward single-column layout": 13
+    "none - straightforward single-column layout": 14
   },
   "domain": {
     "Supply Chain": 3,
@@ -29,10 +29,10 @@
     "Education and Training": 3,
     "Legal": 3,
     "Healthcare Administration": 3,
-    "Software Engineering": 2,
-    "Project Management": 2,
+    "Software Engineering": 3,
+    "Project Management": 3,
     "Finance and Accounting": 3,
-    "Digital Marketing": 2,
+    "Digital Marketing": 3,
     "Business Analysis": 3,
     "Content Writing": 3,
     "UI/UX Design": 3
