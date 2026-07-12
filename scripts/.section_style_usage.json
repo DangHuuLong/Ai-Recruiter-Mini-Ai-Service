@@ -1,33 +1,33 @@
 {
   "header_style": {
-    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 18,
-    "Markdown-bold headers (e.g. \"**Skills**\")": 18,
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 19,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 19,
     "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 18,
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 18,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 19,
     "Title Case headers on their own line (e.g. \"Work Experience\")": 18
   },
   "language": {
-    "mixed": 30,
-    "vi": 30,
-    "en": 30
+    "mixed": 31,
+    "vi": 31,
+    "en": 31
   },
   "hard_case": {
-    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 22,
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 24,
     "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 23,
     "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 23,
-    "none - straightforward single-column layout": 22
+    "none - straightforward single-column layout": 23
   },
   "domain": {
     "Supply Chain": 5,
     "Sales": 5,
     "DevOps": 5,
     "Product Management": 5,
-    "Human Resources": 5,
+    "Human Resources": 6,
     "Mobile Development": 5,
     "Data Analysis": 5,
     "Customer Support": 5,
-    "Education and Training": 5,
-    "Legal": 5,
+    "Education and Training": 6,
+    "Legal": 6,
     "Healthcare Administration": 5,
     "Software Engineering": 5,
     "Project Management": 5,
