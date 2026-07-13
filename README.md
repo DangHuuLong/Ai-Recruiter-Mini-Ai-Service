@@ -664,6 +664,22 @@ Schemas are defined in `app/schemas/`:
 
 ---
 
+## ⚠️ Known Limitations
+
+**CV-JD semantic scoring batch throughput**: the CrossEncoder used for
+`/score/application`'s ML blend (`SIMILARITY_SCORING_WEIGHT`) encodes each
+CV/JD pair jointly — there are no separate, cacheable embeddings, unlike a
+bi-encoder. Every scored pair costs a full model forward pass, so a bulk job
+like 1,000 CVs × 5 JDs means 5,000 forward passes, bottlenecked by this
+service's own inference speed regardless of Backend-side concurrency. For
+large batch/bulk scoring runs, set `SIMILARITY_SCORING_WEIGHT=0.0` (or
+`SIMILARITY_FALLBACK_MODE=rule_only`) in this service's `.env` first — the
+Backend cannot work around this via retries or parallelism. See
+[docs/similarity-scoring-design.md](docs/similarity-scoring-design.md) and
+[docs/model-integration-guide.md](docs/model-integration-guide.md) for details.
+
+---
+
 ## 🧠 ML / Fine-Tuning
 
 The `notebooks/`, `training/`, and `datasets/` directories contain work for improving parsing accuracy via model fine-tuning:

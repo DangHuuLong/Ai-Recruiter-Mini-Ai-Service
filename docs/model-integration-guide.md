@@ -111,6 +111,17 @@ final_score = (1 - weight) × rule_score + weight × ml_score
 The response field `similarity_score` is populated only when blending actually
 occurs. If ML is skipped for any reason, `similarity_score` is `null`.
 
+### ⚠️ Batch/bulk scoring: lower this weight for large runs
+
+`CrossEncoder` has no cacheable embeddings — every `/score/application` call
+with `weight > 0` costs a full model forward pass, so 1,000 CVs × 5 JDs means
+5,000 forward passes no matter how the caller batches or parallelizes
+requests. If you're about to run a large bulk-scoring job (not a single
+application), set `SIMILARITY_SCORING_WEIGHT=0.0` (or
+`SIMILARITY_FALLBACK_MODE=rule_only`) for that run first — this is an AI
+service `.env` change, the caller side has no way to work around the
+bottleneck. Full rationale: `similarity-scoring-design.md` Section 2.
+
 ---
 
 ## 6. Score Threshold
