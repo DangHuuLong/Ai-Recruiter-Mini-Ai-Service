@@ -82,9 +82,40 @@ Text representation (unchanged from the bi-encoder version):
 - Not explainable: produces a single score with no breakdown.
 - Requires `sentence-transformers` installed and a model loaded.
 - Non-deterministic across model versions.
-- Slower per-request than a bi-encoder (no precomputable embeddings — every
-  CV/JD pair requires a fresh forward pass), which matters only if this
-  scorer is ever used for bulk ranking rather than single-application scoring.
+
+### ⚠️ Batch throughput bottleneck (real constraint, not tunable from the Backend side)
+
+A `CrossEncoder` encodes the CV and JD text **jointly** in one forward pass —
+there is no separate CV embedding or JD embedding to precompute or cache.
+Every single `/score/application` call that blends ML pays a full model
+forward pass, no matter how the Backend batches or parallelizes its own
+requests. Concretely: **1,000 CVs × 5 JDs = 5,000 CrossEncoder forward
+passes**, and the AI service's own inference throughput is the hard ceiling
+— higher Backend concurrency cannot get around this, it only saturates the
+AI service faster.
+
+This is fundamentally different from the retired bi-encoder design (Section
+2, historical), where CV and JD embeddings are computed once each and
+compared via cheap cosine similarity — embeddings ARE cacheable/precomputable
+there, which is exactly why bi-encoders are the standard choice for
+large-scale retrieval/ranking, and cross-encoders are normally used only as
+a *second-stage reranker* over a small shortlist (see the 2-stage pattern
+already scaffolded in `training/evaluate_cross_encoder_pipeline.py`, not
+currently wired into the live API).
+
+**What to do about it, depending on the situation:**
+- **Single or small-batch scoring** (a candidate applying to a few jobs,
+  scoring one application at a time) — current setup is fine as-is.
+- **Large batch runs** (bulk re-scoring, matching many CVs against many JDs)
+  — lower or zero out `SIMILARITY_SCORING_WEIGHT` in the AI service's `.env`
+  for that run (falls back to the deterministic rule-based scorer only,
+  which has no such bottleneck), or set `SIMILARITY_FALLBACK_MODE=rule_only`.
+  This is an AI-service-side config change, not something the Backend can
+  work around via its own concurrency/queueing.
+- **If large-batch ML scoring becomes a hard requirement**: the real fix is
+  architectural (a bi-encoder retrieval pass to shortlist candidates, then
+  CrossEncoder only on the shortlist) — not implemented in the live API
+  today, would need new work in `app/scorers/similarity_scorer.py`.
 
 ---
 
@@ -240,6 +271,11 @@ score_application(request)
 
 **ML scorer limitations:**
 
+- **Batch throughput** — no cacheable embeddings, every pair costs a full
+  CrossEncoder forward pass; a large batch (e.g. 1,000 CVs × 5 JDs = 5,000
+  calls) is bottlenecked by AI-service inference speed regardless of Backend
+  concurrency. See the dedicated warning under Section 2 for what to do
+  about it (lower/zero `SIMILARITY_SCORING_WEIGHT` for bulk runs).
 - Base model (`cross-encoder/ms-marco-MiniLM-L-12-v2`) is English-optimised.
   Mixed Vietnamese/English text produces less reliable scores.
 - Learned pairwise relevance measures general semantic/domain closeness, not
