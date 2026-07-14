@@ -109,7 +109,7 @@ class DocumentTextExtractionService:
             return self._extract_docx_text(document_bytes)
 
         raise DocumentTextExtractionError(
-            f"Unsupported resume file type: {file_type or file_name or 'unknown'}",
+            f"Unsupported document file type: {file_type or file_name or 'unknown'}",
         )
 
     def _download_document(self, signed_url: str) -> bytes:

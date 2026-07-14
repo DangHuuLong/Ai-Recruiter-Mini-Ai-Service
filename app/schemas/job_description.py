@@ -1,7 +1,18 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl, model_validator
 
 class ParseJobDescriptionRequest(BaseModel):
-    raw_text: str
+    raw_text: str | None = None
+    file_name: str | None = None
+    file_type: str | None = None
+    signed_url: HttpUrl | None = None
+
+    @model_validator(mode="after")
+    def _require_raw_text_or_file(self) -> "ParseJobDescriptionRequest":
+        if self.raw_text is None and self.signed_url is None:
+            raise ValueError("Either raw_text or signed_url must be provided")
+        if self.signed_url is not None and (self.file_name is None or self.file_type is None):
+            raise ValueError("file_name and file_type are required when signed_url is provided")
+        return self
 
 class JobSkill(BaseModel):
     name: str

@@ -10,10 +10,19 @@ GPA_RE = re.compile(
 
 class ParseResumeRequest(BaseModel):
     resume_id: str
-    file_name: str
-    file_type: str
-    signed_url: HttpUrl
+    file_name: str | None = None
+    file_type: str | None = None
+    signed_url: HttpUrl | None = None
+    raw_text: str | None = None
     checksum: str | None = None
+
+    @model_validator(mode="after")
+    def _require_file_or_raw_text(self) -> "ParseResumeRequest":
+        if self.signed_url is None and self.raw_text is None:
+            raise ValueError("Either signed_url or raw_text must be provided")
+        if self.signed_url is not None and (self.file_name is None or self.file_type is None):
+            raise ValueError("file_name and file_type are required when signed_url is provided")
+        return self
 
 
 class ResumePersonalInfo(BaseModel):

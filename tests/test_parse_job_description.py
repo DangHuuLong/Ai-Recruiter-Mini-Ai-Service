@@ -1,6 +1,9 @@
+from unittest.mock import patch
+
 from fastapi.testclient import TestClient
 
 from app.main import app
+from app.services.document_text_extraction_service import DocumentTextExtractionResult
 
 
 client = TestClient(app)
@@ -168,3 +171,47 @@ def test_parse_job_description_does_not_match_short_alias_inside_framework_names
     assert "nestjs" in required_skill_names
     assert "typescript" in required_skill_names
     assert "javascript" not in required_skill_names
+
+
+def test_parse_job_description_accepts_file_via_signed_url():
+    mock_result = DocumentTextExtractionResult(
+        raw_text="We need a Backend Developer with Python, FastAPI, and PostgreSQL.",
+        method="PDF_TEXT_PYMUPDF_WORDS",
+    )
+
+    with patch(
+        "app.services.parsing_service.document_text_extraction_service.extract_from_signed_url",
+        return_value=mock_result,
+    ) as mock_extract:
+        response = client.post(
+            "/parse/job-description",
+            json={
+                "signed_url": "https://example.com/jd.pdf",
+                "file_name": "jd.pdf",
+                "file_type": "PDF",
+            },
+        )
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["data"]["title"] == "Backend Developer"
+    mock_extract.assert_called_once_with(
+        signed_url="https://example.com/jd.pdf",
+        file_type="PDF",
+        file_name="jd.pdf",
+    )
+
+
+def test_parse_job_description_requires_raw_text_or_signed_url():
+    response = client.post("/parse/job-description", json={})
+
+    assert response.status_code == 422
+
+
+def test_parse_job_description_requires_file_name_and_type_with_signed_url():
+    response = client.post(
+        "/parse/job-description",
+        json={"signed_url": "https://example.com/jd.pdf"},
+    )
+
+    assert response.status_code == 422
