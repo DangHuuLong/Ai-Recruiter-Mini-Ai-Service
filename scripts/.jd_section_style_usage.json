@@ -2,28 +2,28 @@
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 33,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 33,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 32,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 32,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 32
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 33,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 33,
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 33
   },
   "language": {
-    "vi": 54,
-    "en": 54,
-    "mixed": 54
+    "vi": 55,
+    "en": 55,
+    "mixed": 55
   },
   "hard_case": {
-    "none - straightforward single-column layout": 41,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 40,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 40,
+    "none - straightforward single-column layout": 42,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 41,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 41,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 41
   },
   "domain": {
     "Backend Engineering": 9,
     "Content Writing": 9,
     "Human Resources": 9,
-    "QA/Test Automation": 9,
+    "QA/Test Automation": 10,
     "Legal": 9,
-    "Data Engineering": 9,
+    "Data Engineering": 10,
     "Healthcare Administration": 9,
     "Finance": 9,
     "Frontend Engineering": 9,
@@ -35,6 +35,6 @@
     "Sales": 9,
     "Business Analysis": 9,
     "Customer Support": 9,
-    "Mobile Development": 9
+    "Mobile Development": 10
   }
 }
