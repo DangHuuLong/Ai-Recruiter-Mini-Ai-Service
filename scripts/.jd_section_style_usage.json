@@ -1,19 +1,19 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 60,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 61,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 61,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 61,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 61,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 60
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 62
   },
   "language": {
-    "vi": 101,
-    "en": 101,
-    "mixed": 101
+    "vi": 102,
+    "en": 102,
+    "mixed": 102
   },
   "hard_case": {
-    "none - straightforward single-column layout": 75,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 76,
+    "none - straightforward single-column layout": 77,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 77,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 76,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 76
   },
@@ -25,16 +25,16 @@
     "Legal": 17,
     "Data Engineering": 17,
     "Healthcare Administration": 17,
-    "Finance": 16,
+    "Finance": 17,
     "Frontend Engineering": 17,
     "DevOps": 17,
-    "Product Management": 16,
+    "Product Management": 17,
     "UI/UX Design": 17,
     "Digital Marketing": 17,
     "Supply Chain": 17,
     "Sales": 17,
     "Business Analysis": 17,
     "Customer Support": 17,
-    "Mobile Development": 16
+    "Mobile Development": 17
   }
 }

@@ -15,11 +15,11 @@ below — do not re-output or repeat any other one.
 ════════════════════════════════════
 JOB DESCRIPTIONS TO GENERATE (1)
 ════════════════════════════════════
-  jdline_0301:
-    domain       : Sales
-    header_style : ALL CAPS headers on their own line (e.g. "RESPONSIBILITIES")
-    language     : en
-    hard_case    : wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation
+  jdline_0304:
+    domain       : Product Management
+    header_style : inline label-colon style with no standalone header line (e.g. "Requirements: 3+ years Python, FastAPI, PostgreSQL")
+    language     : vi
+    hard_case    : none - straightforward single-column layout
 
 For each JD: write a realistic job posting for the given domain (any
 seniority — vary it). Do NOT include a company name anywhere in the text.
