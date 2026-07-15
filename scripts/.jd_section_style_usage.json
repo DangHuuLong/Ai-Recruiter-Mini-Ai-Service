@@ -1,21 +1,21 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 21,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 22,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 22,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 22,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 22,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 21
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 23,
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 22
   },
   "language": {
-    "vi": 36,
-    "en": 36,
-    "mixed": 36
+    "vi": 37,
+    "en": 37,
+    "mixed": 37
   },
   "hard_case": {
-    "none - straightforward single-column layout": 27,
+    "none - straightforward single-column layout": 28,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 27,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 27,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 27
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 28,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 28
   },
   "domain": {
     "Backend Engineering": 6,
@@ -26,11 +26,11 @@
     "Data Engineering": 6,
     "Healthcare Administration": 6,
     "Finance": 6,
-    "Frontend Engineering": 6,
-    "DevOps": 6,
+    "Frontend Engineering": 7,
+    "DevOps": 7,
     "Product Management": 6,
     "UI/UX Design": 6,
-    "Digital Marketing": 6,
+    "Digital Marketing": 7,
     "Supply Chain": 6,
     "Sales": 6,
     "Business Analysis": 6,
