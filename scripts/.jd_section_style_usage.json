@@ -1,26 +1,26 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 60,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 60,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 60,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 60,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 61,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 61,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 61,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 60
   },
   "language": {
-    "vi": 100,
-    "en": 100,
-    "mixed": 100
+    "vi": 101,
+    "en": 101,
+    "mixed": 101
   },
   "hard_case": {
     "none - straightforward single-column layout": 75,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 75,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 75,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 75
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 76,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 76,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 76
   },
   "domain": {
     "Backend Engineering": 17,
     "Content Writing": 17,
-    "Human Resources": 16,
+    "Human Resources": 17,
     "QA/Test Automation": 17,
     "Legal": 17,
     "Data Engineering": 17,
@@ -32,9 +32,9 @@
     "UI/UX Design": 17,
     "Digital Marketing": 17,
     "Supply Chain": 17,
-    "Sales": 16,
+    "Sales": 17,
     "Business Analysis": 17,
-    "Customer Support": 16,
+    "Customer Support": 17,
     "Mobile Development": 16
   }
 }
