@@ -1,38 +1,38 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 9,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 8,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 9,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 9,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 8,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 8
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 9,
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 9
   },
   "language": {
-    "vi": 14,
-    "en": 14,
-    "mixed": 14
+    "vi": 15,
+    "en": 15,
+    "mixed": 15
   },
   "hard_case": {
-    "none - straightforward single-column layout": 10,
+    "none - straightforward single-column layout": 12,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 11,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 11,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 10
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 11
   },
   "domain": {
     "Backend Engineering": 3,
     "Content Writing": 2,
     "Human Resources": 2,
     "QA/Test Automation": 2,
-    "Legal": 2,
+    "Legal": 3,
     "Data Engineering": 2,
     "Healthcare Administration": 3,
-    "Finance": 2,
+    "Finance": 3,
     "Frontend Engineering": 3,
     "DevOps": 3,
     "Product Management": 2,
     "UI/UX Design": 2,
     "Digital Marketing": 2,
     "Supply Chain": 2,
-    "Sales": 2,
+    "Sales": 3,
     "Business Analysis": 2,
     "Customer Support": 3,
     "Mobile Development": 3
