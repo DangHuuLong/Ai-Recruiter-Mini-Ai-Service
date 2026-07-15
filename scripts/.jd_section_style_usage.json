@@ -1,29 +1,29 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 41,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 42,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 42,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 41,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 42,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 42,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 41
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 42
   },
   "language": {
-    "vi": 69,
-    "en": 69,
-    "mixed": 69
+    "vi": 70,
+    "en": 70,
+    "mixed": 70
   },
   "hard_case": {
-    "none - straightforward single-column layout": 52,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 52,
+    "none - straightforward single-column layout": 53,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 53,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 52,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 51
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 52
   },
   "domain": {
     "Backend Engineering": 11,
-    "Content Writing": 11,
-    "Human Resources": 11,
+    "Content Writing": 12,
+    "Human Resources": 12,
     "QA/Test Automation": 12,
     "Legal": 12,
-    "Data Engineering": 11,
+    "Data Engineering": 12,
     "Healthcare Administration": 11,
     "Finance": 12,
     "Frontend Engineering": 11,
