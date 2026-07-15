@@ -2,20 +2,20 @@
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 2,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 2,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 2,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 1,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 3,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 3,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 2
   },
   "language": {
-    "vi": 3,
-    "en": 3,
-    "mixed": 3
+    "vi": 4,
+    "en": 4,
+    "mixed": 4
   },
   "hard_case": {
-    "none - straightforward single-column layout": 2,
+    "none - straightforward single-column layout": 3,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 3,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 2,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 2
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 3,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 3
   },
   "domain": {
     "Backend Engineering": 1,
@@ -26,6 +26,9 @@
     "Data Engineering": 1,
     "Healthcare Administration": 1,
     "Finance": 1,
-    "Frontend Engineering": 1
+    "Frontend Engineering": 1,
+    "DevOps": 1,
+    "Product Management": 1,
+    "UI/UX Design": 1
   }
 }
