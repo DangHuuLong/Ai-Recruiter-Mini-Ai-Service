@@ -2,27 +2,27 @@
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 23,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 23,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 22,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 23,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 24,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 24,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 23
   },
   "language": {
-    "vi": 38,
-    "en": 38,
-    "mixed": 38
+    "vi": 39,
+    "en": 39,
+    "mixed": 39
   },
   "hard_case": {
-    "none - straightforward single-column layout": 28,
+    "none - straightforward single-column layout": 30,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 29,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 29,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 28
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 29
   },
   "domain": {
     "Backend Engineering": 6,
     "Content Writing": 6,
     "Human Resources": 7,
     "QA/Test Automation": 6,
-    "Legal": 6,
+    "Legal": 7,
     "Data Engineering": 7,
     "Healthcare Administration": 6,
     "Finance": 6,
@@ -32,9 +32,9 @@
     "UI/UX Design": 6,
     "Digital Marketing": 7,
     "Supply Chain": 7,
-    "Sales": 6,
+    "Sales": 7,
     "Business Analysis": 6,
     "Customer Support": 6,
-    "Mobile Development": 6
+    "Mobile Development": 7
   }
 }
