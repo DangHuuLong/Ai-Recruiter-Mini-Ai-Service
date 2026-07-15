@@ -1,24 +1,24 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 48,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 49,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 48,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 48,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 49,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 48,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 48
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 49
   },
   "language": {
-    "vi": 80,
-    "en": 80,
-    "mixed": 80
+    "vi": 81,
+    "en": 81,
+    "mixed": 81
   },
   "hard_case": {
-    "none - straightforward single-column layout": 60,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 60,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 60,
+    "none - straightforward single-column layout": 61,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 61,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 61,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 60
   },
   "domain": {
-    "Backend Engineering": 13,
+    "Backend Engineering": 14,
     "Content Writing": 13,
     "Human Resources": 13,
     "QA/Test Automation": 14,
@@ -29,10 +29,10 @@
     "Frontend Engineering": 14,
     "DevOps": 13,
     "Product Management": 13,
-    "UI/UX Design": 13,
+    "UI/UX Design": 14,
     "Digital Marketing": 14,
     "Supply Chain": 14,
-    "Sales": 13,
+    "Sales": 14,
     "Business Analysis": 13,
     "Customer Support": 14,
     "Mobile Development": 13
