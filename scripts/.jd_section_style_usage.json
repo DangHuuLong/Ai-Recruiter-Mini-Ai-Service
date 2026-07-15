@@ -1,19 +1,19 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 63,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 63,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 64,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 64,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 64,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 64,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 64
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 65
   },
   "language": {
-    "vi": 106,
-    "en": 106,
-    "mixed": 106
+    "vi": 107,
+    "en": 107,
+    "mixed": 107
   },
   "hard_case": {
-    "none - straightforward single-column layout": 79,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 79,
+    "none - straightforward single-column layout": 80,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 81,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 80,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 80
   },
@@ -27,10 +27,10 @@
     "Healthcare Administration": 18,
     "Finance": 17,
     "Frontend Engineering": 18,
-    "DevOps": 17,
+    "DevOps": 18,
     "Product Management": 18,
-    "UI/UX Design": 17,
-    "Digital Marketing": 17,
+    "UI/UX Design": 18,
+    "Digital Marketing": 18,
     "Supply Chain": 18,
     "Sales": 18,
     "Business Analysis": 18,
