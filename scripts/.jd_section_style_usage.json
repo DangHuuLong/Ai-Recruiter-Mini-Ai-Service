@@ -1,29 +1,29 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 14,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 14,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 14,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 13,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 15,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 15,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 14,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 14
   },
   "language": {
-    "vi": 23,
-    "en": 23,
-    "mixed": 23
+    "vi": 24,
+    "en": 24,
+    "mixed": 24
   },
   "hard_case": {
-    "none - straightforward single-column layout": 17,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 17,
+    "none - straightforward single-column layout": 18,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 18,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 18,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 17
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 18
   },
   "domain": {
-    "Backend Engineering": 3,
+    "Backend Engineering": 4,
     "Content Writing": 4,
     "Human Resources": 4,
     "QA/Test Automation": 4,
     "Legal": 4,
-    "Data Engineering": 3,
+    "Data Engineering": 4,
     "Healthcare Administration": 4,
     "Finance": 4,
     "Frontend Engineering": 4,
@@ -35,6 +35,6 @@
     "Sales": 4,
     "Business Analysis": 4,
     "Customer Support": 4,
-    "Mobile Development": 3
+    "Mobile Development": 4
   }
 }
