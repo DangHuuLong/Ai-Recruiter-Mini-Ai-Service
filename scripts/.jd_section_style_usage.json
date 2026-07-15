@@ -1,24 +1,24 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 45,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 45,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 45,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 46,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 46,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 46,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 45,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 45
   },
   "language": {
-    "vi": 75,
-    "en": 75,
-    "mixed": 75
+    "vi": 76,
+    "en": 76,
+    "mixed": 76
   },
   "hard_case": {
-    "none - straightforward single-column layout": 56,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 56,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 56,
+    "none - straightforward single-column layout": 57,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 57,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 57,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 57
   },
   "domain": {
-    "Backend Engineering": 12,
+    "Backend Engineering": 13,
     "Content Writing": 13,
     "Human Resources": 12,
     "QA/Test Automation": 13,
@@ -27,10 +27,10 @@
     "Healthcare Administration": 13,
     "Finance": 13,
     "Frontend Engineering": 12,
-    "DevOps": 12,
+    "DevOps": 13,
     "Product Management": 12,
     "UI/UX Design": 13,
-    "Digital Marketing": 12,
+    "Digital Marketing": 13,
     "Supply Chain": 13,
     "Sales": 13,
     "Business Analysis": 13,
