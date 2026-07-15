@@ -33,7 +33,10 @@ def parse_resume(request: ParseResumeRequest) -> ApiResponse[ParseResumeResult]:
 def parse_job_description(
     request: ParseJobDescriptionRequest,
 ) -> ApiResponse[ParsedJobDescriptionData]:
-    parsed_job_description = parsing_service.parse_job_description(request.raw_text)
+    try:
+        parsed_job_description = parsing_service.parse_job_description(request)
+    except DocumentTextExtractionError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     return ApiResponse(
         success=True,

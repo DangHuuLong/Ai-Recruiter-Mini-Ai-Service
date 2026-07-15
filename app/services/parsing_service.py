@@ -3,9 +3,11 @@ from pathlib import Path
 
 from app.parsers.job_description_parser import parse_job_description
 from app.parsers.resume_parser import parse_resume
-from app.schemas.job_description import ParsedJobDescriptionData
+from app.schemas.job_description import ParseJobDescriptionRequest, ParsedJobDescriptionData
 from app.schemas.resume import ParseResumeRequest, ParseResumeResult, ParsedResumeData
 from app.services.document_text_extraction_service import document_text_extraction_service
+
+RAW_TEXT_EXTRACTION_METHOD = "RAW_TEXT_DIRECT"
 
 RESUME_PARSER_VERSION = "ai-document-resume-parser-v1"
 BAD_TEXT_MARKERS = ("·", "ï", "¿", "ˇ", "�")
@@ -79,6 +81,23 @@ BULLET_MARKERS_RE = re.compile(r'^[\s"“”]+(?=(?:[A-Za-zÀ-ỹ]|Backend|Front
 
 class ParsingService:
     def parse_resume(self, request: ParseResumeRequest) -> ParseResumeResult:
+        if request.signed_url is None:
+            # raw_text path — schema validation guarantees raw_text is set
+            # whenever signed_url isn't (see ParseResumeRequest._require_file_or_raw_text).
+            raw_text = self._sanitize_raw_text(request.raw_text or "")
+            parsed_resume = parse_resume(raw_text)
+            parsed_resume.summary = self._recover_summary_tail(parsed_resume.summary, raw_text)
+            confidence = 0.9 if raw_text else 0.0
+
+            return ParseResumeResult(
+                raw_text=raw_text,
+                parsed_data=parsed_resume,
+                parser_version=RESUME_PARSER_VERSION,
+                warnings=[],
+                confidence=confidence,
+                text_extraction_method=RAW_TEXT_EXTRACTION_METHOD,
+            )
+
         extraction_result = document_text_extraction_service.extract_from_signed_url(
             signed_url=str(request.signed_url),
             file_type=request.file_type,
@@ -108,8 +127,19 @@ class ParsingService:
     def parse_resume_text(self, raw_text: str) -> ParsedResumeData:
         return parse_resume(self._sanitize_raw_text(raw_text))
 
-    def parse_job_description(self, raw_text: str) -> ParsedJobDescriptionData:
-        return parse_job_description(self._sanitize_raw_text(raw_text))
+    def parse_job_description(self, request: ParseJobDescriptionRequest) -> ParsedJobDescriptionData:
+        if request.signed_url is None:
+            # raw_text path — schema validation guarantees raw_text is set
+            # whenever signed_url isn't (see ParseJobDescriptionRequest._require_raw_text_or_file).
+            return parse_job_description(self._sanitize_raw_text(request.raw_text or ""))
+
+        extraction_result = document_text_extraction_service.extract_from_signed_url(
+            signed_url=str(request.signed_url),
+            file_type=request.file_type,
+            file_name=request.file_name,
+        )
+        raw_text = self._sanitize_raw_text(extraction_result.raw_text)
+        return parse_job_description(raw_text)
 
     def _sanitize_raw_text(self, raw_text: str) -> str:
         text = (raw_text or "").replace("\x00", "")
