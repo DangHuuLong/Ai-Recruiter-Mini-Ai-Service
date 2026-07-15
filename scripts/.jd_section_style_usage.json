@@ -1,21 +1,21 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 2,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 2,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 3,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 3,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 3,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 3,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 2
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 3
   },
   "language": {
-    "vi": 4,
-    "en": 4,
-    "mixed": 4
+    "vi": 5,
+    "en": 5,
+    "mixed": 5
   },
   "hard_case": {
-    "none - straightforward single-column layout": 3,
+    "none - straightforward single-column layout": 4,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 3,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 3,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 3
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 4,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 4
   },
   "domain": {
     "Backend Engineering": 1,
@@ -29,6 +29,9 @@
     "Frontend Engineering": 1,
     "DevOps": 1,
     "Product Management": 1,
-    "UI/UX Design": 1
+    "UI/UX Design": 1,
+    "Digital Marketing": 1,
+    "Supply Chain": 1,
+    "Sales": 1
   }
 }
