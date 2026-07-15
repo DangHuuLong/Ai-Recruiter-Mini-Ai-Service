@@ -1,25 +1,25 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 35,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 36,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 36,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 36,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 35,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 35
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 36,
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 36
   },
   "language": {
-    "vi": 59,
-    "en": 59,
-    "mixed": 59
+    "vi": 60,
+    "en": 60,
+    "mixed": 60
   },
   "hard_case": {
-    "none - straightforward single-column layout": 44,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 44,
+    "none - straightforward single-column layout": 45,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 45,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 45,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 44
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 45
   },
   "domain": {
-    "Backend Engineering": 9,
-    "Content Writing": 9,
+    "Backend Engineering": 10,
+    "Content Writing": 10,
     "Human Resources": 10,
     "QA/Test Automation": 10,
     "Legal": 10,
@@ -29,7 +29,7 @@
     "Frontend Engineering": 10,
     "DevOps": 10,
     "Product Management": 10,
-    "UI/UX Design": 9,
+    "UI/UX Design": 10,
     "Digital Marketing": 10,
     "Supply Chain": 10,
     "Sales": 10,
