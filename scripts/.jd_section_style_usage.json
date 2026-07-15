@@ -1,30 +1,30 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 28,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 27,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 27,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 28,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 28,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 28,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 28
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 29
   },
   "language": {
-    "vi": 46,
-    "en": 46,
-    "mixed": 46
+    "vi": 47,
+    "en": 47,
+    "mixed": 47
   },
   "hard_case": {
     "none - straightforward single-column layout": 35,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 35,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 34,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 34
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 35,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 36
   },
   "domain": {
-    "Backend Engineering": 7,
+    "Backend Engineering": 8,
     "Content Writing": 8,
     "Human Resources": 8,
-    "QA/Test Automation": 7,
+    "QA/Test Automation": 8,
     "Legal": 8,
     "Data Engineering": 8,
-    "Healthcare Administration": 7,
+    "Healthcare Administration": 8,
     "Finance": 7,
     "Frontend Engineering": 8,
     "DevOps": 7,
