@@ -1,27 +1,27 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 41,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 41,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 40,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 41,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 42,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 41,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 42,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 41
   },
   "language": {
-    "vi": 68,
-    "en": 68,
-    "mixed": 68
+    "vi": 69,
+    "en": 69,
+    "mixed": 69
   },
   "hard_case": {
-    "none - straightforward single-column layout": 51,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 51,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 51,
+    "none - straightforward single-column layout": 52,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 52,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 52,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 51
   },
   "domain": {
     "Backend Engineering": 11,
     "Content Writing": 11,
     "Human Resources": 11,
-    "QA/Test Automation": 11,
+    "QA/Test Automation": 12,
     "Legal": 12,
     "Data Engineering": 11,
     "Healthcare Administration": 11,
@@ -30,9 +30,9 @@
     "DevOps": 11,
     "Product Management": 11,
     "UI/UX Design": 12,
-    "Digital Marketing": 11,
+    "Digital Marketing": 12,
     "Supply Chain": 12,
-    "Sales": 11,
+    "Sales": 12,
     "Business Analysis": 12,
     "Customer Support": 12,
     "Mobile Development": 11
