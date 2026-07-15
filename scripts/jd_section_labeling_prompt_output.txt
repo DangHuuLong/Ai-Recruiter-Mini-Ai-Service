@@ -13,19 +13,25 @@ A previous response was incomplete. Output ONLY the job descriptions listed
 below — do not re-output or repeat any other one.
 
 ════════════════════════════════════
-JOB DESCRIPTIONS TO GENERATE (2)
+JOB DESCRIPTIONS TO GENERATE (3)
 ════════════════════════════════════
-  jdline_0098:
-    domain       : Mobile Development
-    header_style : ALL CAPS headers on their own line (e.g. "RESPONSIBILITIES")
-    language     : vi
-    hard_case    : stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)
+  jdline_0100:
+    domain       : Digital Marketing
+    header_style : Markdown-bold headers (e.g. "**Requirements**")
+    language     : mixed
+    hard_case    : wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation
 
-  jdline_0099:
-    domain       : QA/Test Automation
+  jdline_0101:
+    domain       : Customer Support
     header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
     language     : en
-    hard_case    : none - straightforward single-column layout
+    hard_case    : two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column
+
+  jdline_0102:
+    domain       : Healthcare Administration
+    header_style : ALL CAPS headers on their own line (e.g. "RESPONSIBILITIES")
+    language     : vi
+    hard_case    : wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation
 
 For each JD: write a realistic job posting for the given domain (any
 seniority — vary it). Do NOT include a company name anywhere in the text.
@@ -73,7 +79,7 @@ Each JD needs at least 12 lines total and at least
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 2 lines. Each line is a single JSON object (no
+Output exactly 3 lines. Each line is a single JSON object (no
 array brackets, no commas between lines, no markdown fences, no explanation).
 
 Schema per JD:
