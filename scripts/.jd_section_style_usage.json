@@ -1,27 +1,27 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 5,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 5,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 6,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 6,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 6,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 6,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 5
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 6
   },
   "language": {
-    "vi": 9,
-    "en": 9,
-    "mixed": 9
+    "vi": 10,
+    "en": 10,
+    "mixed": 10
   },
   "hard_case": {
     "none - straightforward single-column layout": 7,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 7,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 8,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 7,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 6
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 8
   },
   "domain": {
     "Backend Engineering": 2,
     "Content Writing": 2,
-    "Human Resources": 1,
-    "QA/Test Automation": 1,
+    "Human Resources": 2,
+    "QA/Test Automation": 2,
     "Legal": 2,
     "Data Engineering": 2,
     "Healthcare Administration": 2,
@@ -32,7 +32,7 @@
     "UI/UX Design": 1,
     "Digital Marketing": 2,
     "Supply Chain": 1,
-    "Sales": 1,
+    "Sales": 2,
     "Business Analysis": 1,
     "Customer Support": 1,
     "Mobile Development": 1
