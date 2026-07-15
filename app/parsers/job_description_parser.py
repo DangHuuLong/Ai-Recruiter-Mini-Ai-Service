@@ -1,9 +1,22 @@
+import logging
 import re
 import unicodedata
 from dataclasses import dataclass
 from typing import Iterable
 
 from app.schemas.job_description import JobSkill, ParsedJobDescriptionData
+
+logger = logging.getLogger(__name__)
+
+SECTION_ORDER: tuple[str, ...] = ("responsibilities", "requirements", "nice_to_have", "benefits")
+
+_EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+_PHONE_RE = re.compile(r"(?:\+?\d[\s.-]?){8,15}")
+_URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+
+
+def _looks_like_contact_info(line: str) -> bool:
+    return bool(_EMAIL_RE.search(line) or _PHONE_RE.search(line) or _URL_RE.search(line))
 
 
 SECTION_ALIASES: dict[str, tuple[str, ...]] = {
@@ -174,7 +187,7 @@ BULLET_RE = re.compile(r"^\s*(?:[-*+•]|\d+[.)])\s*")
 
 def parse_job_description(raw_text: str) -> ParsedJobDescriptionData:
     clean_text = _normalize_text(raw_text)
-    sections = _split_sections(clean_text)
+    sections = _split_sections(clean_text)  # ML-assisted when enabled, see below
 
     responsibilities = _extract_section_items(sections, "responsibilities")
     requirements = _extract_section_items(sections, "requirements")
@@ -216,8 +229,9 @@ def _normalize_text(raw_text: str) -> str:
     return "\n".join(line for line in lines if line)
 
 
-def _split_sections(text: str) -> dict[str, list[str]]:
+def _regex_split_sections(text: str) -> dict[str, list[str]]:
     sections: dict[str, list[str]] = {key: [] for key in SECTION_ALIASES}
+    sections["other"] = []
     current_section: str | None = None
 
     for line in text.split("\n"):
@@ -231,8 +245,87 @@ def _split_sections(text: str) -> dict[str, list[str]]:
 
         if current_section:
             sections[current_section].append(line)
+        else:
+            # Previously dropped entirely (lines before the first recognized
+            # header, e.g. a title/intro line) — kept in "other" instead, both
+            # to avoid silently losing content and as the substrate for
+            # ML-assisted reclassification (see _ml_assisted_split below).
+            sections["other"].append(line)
 
     return sections
+
+
+def _ml_assisted_split(text: str) -> dict[str, list[str]]:
+    """Regex-first, ML-fallback-for-ambiguous-lines only — mirrors
+    app/parsers/section_splitter.py's design for resumes. A header match is a
+    high-precision signal, so any line the regex pass confidently assigns to
+    a real section is kept as-is. The regex splitter can only ever leave a
+    line in "other" for lines seen BEFORE the first recognized header (or the
+    whole document, if no header is ever recognized) — headers always move
+    `current_section` to a real section, so "other" is exactly the
+    heuristic's blind spot (e.g. a JD's title/intro line, or a JD with
+    non-standard headers). Reclassifies just that blind spot with the
+    distilled JD section-classifier model (see
+    app/ml/jd_section_classifier_model.py), Viterbi-smoothed.
+
+    Raises whatever get_jd_section_classifier_model() raises when the model
+    is disabled or its artifacts are missing — callers (_split_sections) must
+    catch that and fall back to _regex_split_sections.
+    """
+    from app.ml.jd_section_classifier_model import get_jd_section_classifier_model
+
+    sections = _regex_split_sections(text)
+    other_lines = sections.get("other", [])
+    if not other_lines:
+        return sections
+
+    reclassifiable_indices = [i for i, line in enumerate(other_lines) if not _looks_like_contact_info(line)]
+    if not reclassifiable_indices:
+        return sections
+
+    reclassifiable_lines = [other_lines[i] for i in reclassifiable_indices]
+    bundle = get_jd_section_classifier_model()
+    predicted_labels = bundle.predict_labels(reclassifiable_lines)
+    label_by_index = dict(zip(reclassifiable_indices, predicted_labels))
+
+    remaining_other: list[str] = []
+    additions: dict[str, list[str]] = {}
+    for i, line in enumerate(other_lines):
+        label = label_by_index.get(i, "other")
+        if label == "other":
+            remaining_other.append(line)
+        else:
+            additions.setdefault(label, []).append(line)
+
+    merged = {key: list(value) for key, value in sections.items()}
+    for label, lines in additions.items():
+        # These lines occurred earliest in the document, so they're
+        # prepended ahead of whatever content the regex pass already
+        # assigned to this section.
+        merged[label] = lines + merged.get(label, [])
+    merged["other"] = remaining_other
+
+    return merged
+
+
+def _split_sections(text: str) -> dict[str, list[str]]:
+    try:
+        return _ml_assisted_split(text)
+    except Exception:
+        logger.debug("ML-assisted JD section split unavailable, falling back to regex.", exc_info=True)
+        return _regex_split_sections(text)
+
+
+def matches_known_jd_header(line: str) -> bool:
+    """Whether the regex/alias splitter recognizes `line` as a section header.
+
+    Exposed as a small public signal (mirrors
+    app.parsers.section_splitter.matches_known_header) so the JD
+    section-classifier's feature extractor
+    (app/ml/jd_section_classifier_features.py) can feed the existing
+    heuristic's own confidence in as a feature.
+    """
+    return _match_section_heading(line) is not None
 
 
 def _match_section_heading(line: str) -> str | None:

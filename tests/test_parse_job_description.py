@@ -1,5 +1,6 @@
 from unittest.mock import patch
 
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -7,6 +8,20 @@ from app.services.document_text_extraction_service import DocumentTextExtraction
 
 
 client = TestClient(app)
+
+
+@pytest.fixture(autouse=True)
+def _disable_jd_ml_classifier():
+    # This file verifies the deterministic (regex-based) JD parsing contract,
+    # not the ML-assisted blend (see tests/test_job_description_parser_ml_assisted.py
+    # for that). Force the fallback path regardless of the environment's
+    # JD_SECTION_CLASSIFIER_FALLBACK_MODE so these tests don't depend on
+    # whatever model happens to be configured/trained locally.
+    with patch(
+        "app.ml.jd_section_classifier_model.get_jd_section_classifier_model",
+        side_effect=RuntimeError("disabled for deterministic-parser tests"),
+    ):
+        yield
 
 
 def test_parse_job_description_returns_parsed_jd_data():

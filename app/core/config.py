@@ -27,6 +27,10 @@ class Settings(BaseSettings):
     section_classifier_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
     section_classifier_fallback_mode: str = "regex_only"
 
+    jd_section_classifier_model_path: str = ""
+    jd_section_classifier_base_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    jd_section_classifier_fallback_mode: str = "regex_only"
+
     enable_pdf_ocr_fallback: bool = False
     pdf_ocr_engine: str = "paddleocr"
     pdf_ocr_mode: str = "targeted"
