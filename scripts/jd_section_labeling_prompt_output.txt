@@ -15,10 +15,10 @@ below — do not re-output or repeat any other one.
 ════════════════════════════════════
 JOB DESCRIPTIONS TO GENERATE (1)
 ════════════════════════════════════
-  jdline_0292:
-    domain       : QA/Test Automation
-    header_style : inline label-colon style with no standalone header line (e.g. "Requirements: 3+ years Python, FastAPI, PostgreSQL")
-    language     : mixed
+  jdline_0297:
+    domain       : Supply Chain
+    header_style : ALL CAPS headers on their own line (e.g. "RESPONSIBILITIES")
+    language     : vi
     hard_case    : two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column
 
 For each JD: write a realistic job posting for the given domain (any
