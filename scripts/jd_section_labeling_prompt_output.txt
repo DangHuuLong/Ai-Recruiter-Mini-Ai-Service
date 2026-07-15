@@ -15,23 +15,23 @@ below — do not re-output or repeat any other one.
 ════════════════════════════════════
 JOB DESCRIPTIONS TO GENERATE (3)
 ════════════════════════════════════
-  jdline_0247:
-    domain       : Content Writing
-    header_style : inline label-colon style with no standalone header line (e.g. "Requirements: 3+ years Python, FastAPI, PostgreSQL")
-    language     : en
-    hard_case    : two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column
-
-  jdline_0248:
-    domain       : Product Management
-    header_style : Markdown-bold headers (e.g. "**Requirements**")
+  jdline_0250:
+    domain       : Business Analysis
+    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
     language     : vi
     hard_case    : none - straightforward single-column layout
 
-  jdline_0249:
-    domain       : Human Resources
-    header_style : Title Case headers on their own line (e.g. "Key Responsibilities")
+  jdline_0251:
+    domain       : Mobile Development
+    header_style : minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text
+    language     : en
+    hard_case    : stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)
+
+  jdline_0252:
+    domain       : Healthcare Administration
+    header_style : ALL CAPS headers on their own line (e.g. "RESPONSIBILITIES")
     language     : mixed
-    hard_case    : wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation
+    hard_case    : two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column
 
 For each JD: write a realistic job posting for the given domain (any
 seniority — vary it). Do NOT include a company name anywhere in the text.
