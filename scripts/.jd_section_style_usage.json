@@ -1,38 +1,38 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 66,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 65,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 65,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 66,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 66,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 66,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 65
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 66
   },
   "language": {
-    "vi": 109,
-    "en": 109,
-    "mixed": 109
+    "vi": 110,
+    "en": 110,
+    "mixed": 110
   },
   "hard_case": {
-    "none - straightforward single-column layout": 82,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 81,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 82,
+    "none - straightforward single-column layout": 83,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 82,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 83,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 82
   },
   "domain": {
-    "Backend Engineering": 18,
+    "Backend Engineering": 19,
     "Content Writing": 18,
     "Human Resources": 18,
     "QA/Test Automation": 18,
     "Legal": 18,
     "Data Engineering": 19,
     "Healthcare Administration": 18,
-    "Finance": 18,
+    "Finance": 19,
     "Frontend Engineering": 18,
     "DevOps": 18,
     "Product Management": 18,
     "UI/UX Design": 19,
     "Digital Marketing": 18,
     "Supply Chain": 19,
-    "Sales": 18,
+    "Sales": 19,
     "Business Analysis": 18,
     "Customer Support": 18,
     "Mobile Development": 18

@@ -13,19 +13,13 @@ A previous response was incomplete. Output ONLY the job descriptions listed
 below — do not re-output or repeat any other one.
 
 ════════════════════════════════════
-JOB DESCRIPTIONS TO GENERATE (2)
+JOB DESCRIPTIONS TO GENERATE (1)
 ════════════════════════════════════
-  jdline_0325:
-    domain       : Data Engineering
-    header_style : Markdown-bold headers (e.g. "**Requirements**")
-    language     : mixed
-    hard_case    : none - straightforward single-column layout
-
-  jdline_0326:
-    domain       : UI/UX Design
-    header_style : Title Case headers on their own line (e.g. "Key Responsibilities")
+  jdline_0328:
+    domain       : Finance
+    header_style : inline label-colon style with no standalone header line (e.g. "Requirements: 3+ years Python, FastAPI, PostgreSQL")
     language     : en
-    hard_case    : wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation
+    hard_case    : two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column
 
 For each JD: write a realistic job posting for the given domain (any
 seniority — vary it). Do NOT include a company name anywhere in the text.
@@ -73,7 +67,7 @@ Each JD needs at least 12 lines total and at least
 ════════════════════════════════════
 OUTPUT FORMAT
 ════════════════════════════════════
-Output exactly 2 lines. Each line is a single JSON object (no
+Output exactly 1 lines. Each line is a single JSON object (no
 array brackets, no commas between lines, no markdown fences, no explanation).
 
 Schema per JD:
