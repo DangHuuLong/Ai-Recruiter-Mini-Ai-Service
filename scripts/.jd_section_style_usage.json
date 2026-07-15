@@ -1,31 +1,31 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 64,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 64,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 65,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 65,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 64,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 64,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 65,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 65
   },
   "language": {
-    "vi": 107,
-    "en": 107,
-    "mixed": 107
+    "vi": 108,
+    "en": 108,
+    "mixed": 108
   },
   "hard_case": {
-    "none - straightforward single-column layout": 80,
+    "none - straightforward single-column layout": 81,
     "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 81,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 80,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 80
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 81,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 81
   },
   "domain": {
-    "Backend Engineering": 17,
+    "Backend Engineering": 18,
     "Content Writing": 18,
     "Human Resources": 18,
     "QA/Test Automation": 18,
     "Legal": 18,
-    "Data Engineering": 17,
+    "Data Engineering": 18,
     "Healthcare Administration": 18,
-    "Finance": 17,
+    "Finance": 18,
     "Frontend Engineering": 18,
     "DevOps": 18,
     "Product Management": 18,
