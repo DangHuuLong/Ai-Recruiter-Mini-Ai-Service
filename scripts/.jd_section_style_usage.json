@@ -1,39 +1,39 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 33,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 33,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 33,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 34,
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 34,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 33,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 33
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 34
   },
   "language": {
-    "vi": 55,
-    "en": 55,
-    "mixed": 55
+    "vi": 56,
+    "en": 56,
+    "mixed": 56
   },
   "hard_case": {
     "none - straightforward single-column layout": 42,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 41,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 41,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 41
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 42,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 42,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 42
   },
   "domain": {
     "Backend Engineering": 9,
     "Content Writing": 9,
     "Human Resources": 9,
     "QA/Test Automation": 10,
-    "Legal": 9,
+    "Legal": 10,
     "Data Engineering": 10,
     "Healthcare Administration": 9,
     "Finance": 9,
-    "Frontend Engineering": 9,
+    "Frontend Engineering": 10,
     "DevOps": 9,
     "Product Management": 9,
     "UI/UX Design": 9,
     "Digital Marketing": 9,
     "Supply Chain": 9,
     "Sales": 9,
-    "Business Analysis": 9,
+    "Business Analysis": 10,
     "Customer Support": 9,
     "Mobile Development": 10
   }
