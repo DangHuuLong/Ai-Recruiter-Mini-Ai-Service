@@ -1,31 +1,31 @@
 {
   "header_style": {
-    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 23,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 23,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 24,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 24,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 24,
     "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 24,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 23
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 24
   },
   "language": {
-    "vi": 39,
-    "en": 39,
-    "mixed": 39
+    "vi": 40,
+    "en": 40,
+    "mixed": 40
   },
   "hard_case": {
     "none - straightforward single-column layout": 30,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 29,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 29,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 29
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 30,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 30,
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 30
   },
   "domain": {
     "Backend Engineering": 6,
-    "Content Writing": 6,
+    "Content Writing": 7,
     "Human Resources": 7,
     "QA/Test Automation": 6,
     "Legal": 7,
     "Data Engineering": 7,
-    "Healthcare Administration": 6,
-    "Finance": 6,
+    "Healthcare Administration": 7,
+    "Finance": 7,
     "Frontend Engineering": 7,
     "DevOps": 7,
     "Product Management": 6,
