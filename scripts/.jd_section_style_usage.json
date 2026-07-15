@@ -2,23 +2,23 @@
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 51,
     "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 51,
-    "Markdown-bold headers (e.g. \"**Requirements**\")": 50,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 50,
-    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 50
+    "Markdown-bold headers (e.g. \"**Requirements**\")": 51,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 51,
+    "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 51
   },
   "language": {
-    "vi": 84,
-    "en": 84,
-    "mixed": 84
+    "vi": 85,
+    "en": 85,
+    "mixed": 85
   },
   "hard_case": {
-    "none - straightforward single-column layout": 63,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 63,
+    "none - straightforward single-column layout": 64,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 64,
     "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 63,
-    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 63
+    "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 64
   },
   "domain": {
-    "Backend Engineering": 14,
+    "Backend Engineering": 15,
     "Content Writing": 14,
     "Human Resources": 14,
     "QA/Test Automation": 14,
@@ -31,10 +31,10 @@
     "Product Management": 14,
     "UI/UX Design": 14,
     "Digital Marketing": 14,
-    "Supply Chain": 14,
+    "Supply Chain": 15,
     "Sales": 14,
     "Business Analysis": 14,
     "Customer Support": 14,
-    "Mobile Development": 14
+    "Mobile Development": 15
   }
 }
