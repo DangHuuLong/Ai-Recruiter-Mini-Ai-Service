@@ -1,20 +1,20 @@
 {
   "header_style": {
     "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 29,
-    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 28,
+    "ALL CAPS headers on their own line (e.g. \"RESPONSIBILITIES\")": 30,
     "Markdown-bold headers (e.g. \"**Requirements**\")": 29,
-    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 29,
+    "Title Case headers on their own line (e.g. \"Key Responsibilities\")": 30,
     "inline label-colon style with no standalone header line (e.g. \"Requirements: 3+ years Python, FastAPI, PostgreSQL\")": 29
   },
   "language": {
-    "vi": 48,
-    "en": 48,
-    "mixed": 48
+    "vi": 49,
+    "en": 49,
+    "mixed": 49
   },
   "hard_case": {
-    "none - straightforward single-column layout": 36,
-    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 36,
-    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 36,
+    "none - straightforward single-column layout": 37,
+    "two-column artifact - interleave Responsibilities bullets and Requirements bullets as if a 2-column PDF layout collapsed into one column": 37,
+    "stacked bullets - list all Responsibilities and Requirements bullets first, then a trailing Nice-to-have block bunched at the very end (simulates a PDF-extraction column artifact)": 37,
     "wrapped requirement line - a single requirement wraps across 2-3 separate lines with no punctuation cue that they're a continuation": 36
   },
   "domain": {
@@ -24,15 +24,15 @@
     "QA/Test Automation": 8,
     "Legal": 8,
     "Data Engineering": 8,
-    "Healthcare Administration": 8,
+    "Healthcare Administration": 9,
     "Finance": 8,
     "Frontend Engineering": 8,
     "DevOps": 8,
     "Product Management": 8,
-    "UI/UX Design": 8,
+    "UI/UX Design": 9,
     "Digital Marketing": 8,
     "Supply Chain": 8,
-    "Sales": 8,
+    "Sales": 9,
     "Business Analysis": 8,
     "Customer Support": 8,
     "Mobile Development": 8
