@@ -344,6 +344,7 @@ class DocumentTextExtractionService:
         lang: str,
     ) -> OcrExtractionResult:
         import fitz  # PyMuPDF
+        import numpy as np
         from paddleocr import PaddleOCR
         from PIL import Image
 
@@ -386,7 +387,9 @@ class DocumentTextExtractionService:
                             alpha=False,
                         )
                         image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-                        result = ocr.ocr(image, cls=True)
+                        # PaddleOCR's .ocr() asserts on isinstance(img, (np.ndarray,
+                        # list, str, bytes)) — a PIL Image fails that check outright.
+                        result = ocr.ocr(np.array(image), cls=True)
                         converted_lines, converted_stats = self._paddleocr_result_to_lines(
                             result,
                             page_index + 1,

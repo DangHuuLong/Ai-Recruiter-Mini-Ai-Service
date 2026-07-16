@@ -1,5 +1,8 @@
 from unittest.mock import patch
 
+import fitz
+import numpy as np
+
 from app.services.document_text_extraction_service import (
     DocumentTextExtractionService,
     OcrExtractionResult,
@@ -232,3 +235,48 @@ class TestVniStyleVietnameseCorruptionDetection:
         merged = service._merge_ocr_result(self.CORRUPTED_CV_TEXT, ocr_result, [])
 
         assert merged != "Dang Huu Long"
+
+
+class TestPaddleOcrReceivesNumpyArray:
+    """Real regression found by running the actual PaddleOCR fallback (not a
+    mock) against a real PDF: `Image.frombytes(...)` produces a PIL Image,
+    but PaddleOCR 2.8.1's `.ocr()` asserts
+    `isinstance(img, (np.ndarray, list, str, bytes))` and rejects a PIL
+    Image outright, raising AssertionError. Because every other test mocks
+    `_run_paddleocr_for_language` itself (or the higher-level
+    `_try_extract_pdf_text_with_paddleocr`), this call never actually ran
+    against the real paddleocr package until manual end-to-end testing —
+    meaning the PaddleOCR fallback had silently never worked, on any OS."""
+
+    def test_passes_numpy_array_not_pil_image_to_ocr(self) -> None:
+        service = DocumentTextExtractionService()
+        document = fitz.open()
+        document.new_page()
+        pdf_bytes = document.tobytes()
+        document.close()
+
+        received_images: list[object] = []
+
+        def fake_ocr(img: object, cls: bool = True) -> list[list]:
+            # Records the input without raising: the real code wraps this
+            # whole block in `except Exception`, so a raised AssertionError
+            # here would be silently swallowed and the test would pass
+            # either way. Asserting on the recorded type *after* the call
+            # is what actually distinguishes a fixed vs. broken call site.
+            received_images.append(img)
+            return [[]]
+
+        fake_ocr_instance = type("FakeOcr", (), {"ocr": staticmethod(fake_ocr)})()
+        warnings: list[str] = []
+
+        with patch("paddleocr.PaddleOCR", return_value=fake_ocr_instance), patch.object(
+            service, "_ocr_regions_for_page", return_value=[("full_page", fitz.Rect(0, 0, 100, 100))]
+        ):
+            service._run_paddleocr_for_language(pdf_bytes, ["full_page"], warnings, "en")
+
+        assert received_images, "PaddleOCR.ocr() was never called"
+        assert isinstance(received_images[0], np.ndarray), (
+            f"expected np.ndarray, got {type(received_images[0])} — "
+            "PaddleOCR 2.8.1's real .ocr() rejects a bare PIL Image with AssertionError"
+        )
+        assert warnings == []
