@@ -19,7 +19,22 @@ OCR_RENDER_ZOOM = 3.0
 URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}")
 PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,})")
-BAD_GLYPH_MARKERS = ("·", "ï", "¿", "ˇ", "�")
+BAD_GLYPH_MARKERS = (
+    "·", "ï", "¿", "ˇ", "�",
+    # Legacy Vietnamese font encodings (VNI, TCVN3/ABC, etc.) have no
+    # ToUnicode CMap, so PyMuPDF/pypdf fall back to a generic Latin-1-style
+    # decode and produce arbitrary accented Latin-1 Supplement letters in
+    # place of Vietnamese diacritic vowels/consonants — e.g. "Số điện thoại"
+    # extracts as "SÑ iÇn tho¡i", "Địa chỉ" as "Ëa chÉ", "Giới thiệu" as
+    # "GiÛi thiÇu". None of these specific letters are plausible in real
+    # English or genuine Vietnamese Unicode text (which uses precomposed
+    # characters in the U+1EA0-U+1EF9 block, not plain Latin-1 Supplement),
+    # so their presence is a reliable corruption signal even when none of
+    # the markers above match.
+    "Ñ", "Ç", "É", "Û", "Ë", "À", "Â", "Ã", "Ä", "Å",
+    "È", "Ê", "Ì", "Í", "Î", "Ò", "Ó", "Ô", "Õ", "Ö",
+    "Ù", "Ú", "Ü", "Ý", "¡", "¬",
+)
 IMPORTANT_PDF_SECTION_NAMES = {
     "experience": {"experience", "work experience"},
 }
@@ -201,7 +216,15 @@ class DocumentTextExtractionService:
 
         quality.needs_header_ocr = has_bad_glyphs or not quality.has_email or not quality.has_phone
         quality.needs_bottom_ocr = not quality.has_experience
-        quality.needs_full_page_ocr = len(text or "") < 300 or corrupted_glyph_ratio > 0.03
+        # A broken font encoding (the has_bad_glyphs case) corrupts the
+        # WHOLE document, not just the header — previously this only drove
+        # needs_header_ocr, so only header-region fields (e.g. full_name)
+        # ever got OCR-recovered while skills/education/experience stayed
+        # corrupted even though the underlying cause (bad font encoding)
+        # affects every section equally.
+        quality.needs_full_page_ocr = (
+            len(text or "") < 300 or corrupted_glyph_ratio > 0.03 or has_bad_glyphs
+        )
         return quality
 
     def _maybe_merge_local_ocr_text(
@@ -273,6 +296,21 @@ class DocumentTextExtractionService:
         merged_text = self._merge_ocr_result(primary_text, ocr_result, warnings)
         return self._normalize_extracted_text(merged_text)
 
+    def _configured_ocr_languages(self) -> list[str]:
+        """Parse PDF_OCR_LANGUAGES ("en+vi" etc.) into an ordered language
+        list. Previously only `.split("+")[0]` was ever used — every
+        language after the first was silently discarded despite the "+"
+        syntax implying multi-language support was intended. That meant a
+        Vietnamese CV/JD whose PyMuPDF text came out corrupted (legacy
+        VNI/TCVN3 font encodings with no ToUnicode map — a known PDF-text-
+        extraction limitation, not something fixable by post-processing)
+        would trigger the OCR fallback, but PaddleOCR would then run with an
+        English-only model, misreading Vietnamese diacritics and producing
+        different-but-still-wrong text instead of a real fix."""
+        settings = get_settings()
+        languages = [lang.strip() for lang in (settings.pdf_ocr_languages or "en").split("+") if lang.strip()]
+        return languages or ["en"]
+
     def _try_extract_pdf_text_with_paddleocr(
         self,
         document_bytes: bytes,
@@ -280,25 +318,44 @@ class DocumentTextExtractionService:
         warnings: list[str],
     ) -> OcrExtractionResult:
         try:
-            import fitz  # PyMuPDF
-            from paddleocr import PaddleOCR
-            from PIL import Image
+            import fitz  # noqa: F401  (import-availability check only)
+            from paddleocr import PaddleOCR  # noqa: F401
+            from PIL import Image  # noqa: F401
         except ImportError as exc:
             message = f"PaddleOCR fallback skipped because optional OCR dependencies are missing: {exc}"
             logger.exception(message)
             warnings.append(message)
             return OcrExtractionResult()
 
+        best_result = OcrExtractionResult()
+        for lang in self._configured_ocr_languages():
+            result = self._run_paddleocr_for_language(document_bytes, regions, warnings, lang)
+            if result.raw_text and not self._has_corrupted_glyphs(result.raw_text):
+                return result
+            if len(result.raw_text or "") > len(best_result.raw_text or ""):
+                best_result = result
+        return best_result
+
+    def _run_paddleocr_for_language(
+        self,
+        document_bytes: bytes,
+        regions: list[str],
+        warnings: list[str],
+        lang: str,
+    ) -> OcrExtractionResult:
+        import fitz  # PyMuPDF
+        from paddleocr import PaddleOCR
+        from PIL import Image
+
         settings = get_settings()
         max_pages = max(settings.pdf_ocr_max_pages, 1)
         min_confidence = settings.pdf_ocr_min_confidence
-        lang = (settings.pdf_ocr_languages or "en").split("+")[0]
 
         try:
             logger.info("Initializing PaddleOCR fallback with lang=%s", lang)
             ocr = PaddleOCR(use_angle_cls=True, lang=lang, show_log=False)
         except Exception as exc:
-            message = f"PaddleOCR fallback initialization failed: {exc}"
+            message = f"PaddleOCR fallback initialization failed for lang={lang}: {exc}"
             logger.exception(message)
             warnings.append(message)
             return OcrExtractionResult()
@@ -314,7 +371,8 @@ class DocumentTextExtractionService:
                         break
                     for region_name, rect in self._ocr_regions_for_page(page, unique_regions):
                         logger.info(
-                            "Running PaddleOCR page=%s region=%s rect=(%.1f, %.1f, %.1f, %.1f)",
+                            "Running PaddleOCR lang=%s page=%s region=%s rect=(%.1f, %.1f, %.1f, %.1f)",
+                            lang,
                             page_index + 1,
                             region_name,
                             float(rect.x0),
@@ -341,7 +399,7 @@ class DocumentTextExtractionService:
                         for key, value in converted_stats.items():
                             stats[key] += value
         except Exception as exc:
-            message = f"PaddleOCR fallback failed: {exc}"
+            message = f"PaddleOCR fallback failed for lang={lang}: {exc}"
             logger.exception(message)
             warnings.append(message)
             return OcrExtractionResult(
@@ -357,7 +415,7 @@ class DocumentTextExtractionService:
         if raw_text:
             sample = " | ".join(line.text for line in sorted_lines[:8])
             message = (
-                f"PaddleOCR fallback extracted text from regions: {', '.join(unique_regions)}; "
+                f"PaddleOCR fallback (lang={lang}) extracted text from regions: {', '.join(unique_regions)}; "
                 f"sample={sample[:500]}"
             )
             logger.info(message)
@@ -448,6 +506,24 @@ class DocumentTextExtractionService:
         ocr_text = self._normalize_extracted_text(ocr_result.raw_text)
         if not primary:
             return ocr_text
+
+        # A broken font encoding corrupts the WHOLE document, not just the
+        # header/bottom regions the targeted patches below cover. If the
+        # primary text is corrupted and a full-page OCR pass produced
+        # clean, substantially-complete text, prefer it as the document's
+        # text entirely — otherwise sections outside header/experience
+        # (skills, education, projects, ...) stay permanently corrupted
+        # even when a perfectly good full-page OCR result exists, since
+        # nothing below ever propagates it into those sections.
+        full_page_text = self._ocr_text_for_regions(ocr_result, {"full_page"})
+        if (
+            self._has_corrupted_glyphs(primary)
+            and full_page_text
+            and not self._has_corrupted_glyphs(full_page_text)
+            and len(full_page_text) >= len(primary) * 0.5
+        ):
+            warnings.append("Replaced corrupted embedded PDF text with full-page OCR text")
+            return full_page_text
 
         blocks: list[str] = [primary]
         header_text = self._ocr_text_for_regions(ocr_result, {"header", "left_sidebar", "top_left", "top_right"})
