@@ -1,4 +1,9 @@
-from app.services.document_text_extraction_service import DocumentTextExtractionService
+from unittest.mock import patch
+
+from app.services.document_text_extraction_service import (
+    DocumentTextExtractionService,
+    OcrExtractionResult,
+)
 
 
 def segment(text: str, x0: float, y0: float, x1: float | None = None) -> dict:
@@ -61,3 +66,74 @@ def test_words_to_line_segments_keeps_full_width_line_together_until_large_gap()
         "EDUCATION",
         "WORK EXPERIENCE",
     ]
+
+
+def test_configured_ocr_languages_splits_plus_separated_list():
+    service = DocumentTextExtractionService()
+
+    with patch("app.services.document_text_extraction_service.get_settings") as mock_settings:
+        mock_settings.return_value.pdf_ocr_languages = "en+vi"
+        assert service._configured_ocr_languages() == ["en", "vi"]
+
+
+def test_configured_ocr_languages_defaults_to_en_when_unset():
+    service = DocumentTextExtractionService()
+
+    with patch("app.services.document_text_extraction_service.get_settings") as mock_settings:
+        mock_settings.return_value.pdf_ocr_languages = ""
+        assert service._configured_ocr_languages() == ["en"]
+
+
+class TestPaddleOcrMultiLanguageFallback:
+    """Previously only the FIRST configured OCR language was ever used
+    (`.split("+")[0]`) — a Vietnamese CV/JD with corrupted PyMuPDF text
+    (legacy font encoding) would trigger OCR fallback but then run an
+    English-only PaddleOCR model against it, never actually fixing the
+    Vietnamese text. _try_extract_pdf_text_with_paddleocr now tries each
+    configured language and stops at the first clean (non-corrupted) result."""
+
+    def test_stops_at_first_language_with_clean_result(self) -> None:
+        service = DocumentTextExtractionService()
+
+        with patch.object(service, "_configured_ocr_languages", return_value=["en", "vi"]), patch.object(
+            service,
+            "_run_paddleocr_for_language",
+            side_effect=[OcrExtractionResult(raw_text="Clean English text")],
+        ) as mock_run:
+            result = service._try_extract_pdf_text_with_paddleocr(b"fake-pdf-bytes", ["header"], [])
+
+        assert result.raw_text == "Clean English text"
+        mock_run.assert_called_once_with(b"fake-pdf-bytes", ["header"], [], "en")
+
+    def test_falls_through_to_next_language_when_first_is_corrupted(self) -> None:
+        service = DocumentTextExtractionService()
+
+        with patch.object(service, "_configured_ocr_languages", return_value=["en", "vi"]), patch.object(
+            service,
+            "_run_paddleocr_for_language",
+            side_effect=[
+                OcrExtractionResult(raw_text="corrupted �� text"),
+                OcrExtractionResult(raw_text="Kinh nghiem lam viec"),
+            ],
+        ) as mock_run:
+            result = service._try_extract_pdf_text_with_paddleocr(b"fake-pdf-bytes", ["header"], [])
+
+        assert result.raw_text == "Kinh nghiem lam viec"
+        assert mock_run.call_count == 2
+        mock_run.assert_any_call(b"fake-pdf-bytes", ["header"], [], "en")
+        mock_run.assert_any_call(b"fake-pdf-bytes", ["header"], [], "vi")
+
+    def test_returns_longest_result_when_no_language_is_clean(self) -> None:
+        service = DocumentTextExtractionService()
+
+        with patch.object(service, "_configured_ocr_languages", return_value=["en", "vi"]), patch.object(
+            service,
+            "_run_paddleocr_for_language",
+            side_effect=[
+                OcrExtractionResult(raw_text="short �"),
+                OcrExtractionResult(raw_text="longer but still � corrupted text"),
+            ],
+        ):
+            result = service._try_extract_pdf_text_with_paddleocr(b"fake-pdf-bytes", ["header"], [])
+
+        assert result.raw_text == "longer but still � corrupted text"
