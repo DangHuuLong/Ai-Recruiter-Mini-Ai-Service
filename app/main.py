@@ -24,9 +24,48 @@ settings = get_settings()
 logger = logging.getLogger(__name__)
 
 
+def _warm_up_ml_models() -> None:
+    """Eagerly load every configured ML model once at startup, before the
+    server accepts traffic.
+
+    Previously each model loaded lazily (@lru_cache) on its first request.
+    lru_cache does serialize concurrent callers within a single process, but
+    provides no protection at all across worker PROCESSES (each process has
+    its own interpreter and its own cache) — if several requests land on
+    different workers right after a cold start, multiple processes can end
+    up loading the same HuggingFace model concurrently. Observed in
+    production as an intermittent "Cannot copy out of meta tensor" error
+    from torch during that window, with automatic fallback to the
+    rule-based scorer (never a crash, but silently 0% ML-blended for those
+    requests despite SIMILARITY_SCORING_WEIGHT > 0).
+
+    Paying the load cost once here, before `yield`, removes that window
+    entirely. If a model is disabled (fallback_mode=*_only) this is a no-op
+    for it; if loading genuinely fails, it's logged loudly at startup
+    instead of silently mid-request, and lazy loading still retries on the
+    first real request (lru_cache does not cache exceptions)."""
+    from app.ml.jd_section_classifier_model import get_jd_section_classifier_model
+    from app.ml.section_classifier_model import get_section_classifier_model
+    from app.ml.similarity_model import get_similarity_model
+
+    for name, loader in (
+        ("similarity (CV-JD CrossEncoder)", get_similarity_model),
+        ("section_classifier (CV)", get_section_classifier_model),
+        ("jd_section_classifier (JD)", get_jd_section_classifier_model),
+    ):
+        try:
+            loader()
+            logger.info("Warmed up ML model: %s", name)
+        except RuntimeError as exc:
+            logger.info("Skipped ML model warm-up (disabled): %s — %s", name, exc)
+        except Exception:
+            logger.exception("Failed to warm up ML model: %s — will retry lazily on first request", name)
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     logger.info("AI service started")
+    _warm_up_ml_models()
     yield
     logger.info("AI service stopped")
 

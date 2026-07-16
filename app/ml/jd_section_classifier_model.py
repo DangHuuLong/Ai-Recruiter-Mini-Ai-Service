@@ -92,9 +92,9 @@ class JdSectionClassifierLoader:
         except Exception:  # pragma: no cover - defensive: fall through to an independent model
             pass
 
-        from sentence_transformers import SentenceTransformer
+        from app.ml.section_classifier_model import _load_sentence_transformer_preferring_cache
 
-        return SentenceTransformer(self._base_model)
+        return _load_sentence_transformer_preferring_cache(self._base_model)
 
 
 @lru_cache(maxsize=1)

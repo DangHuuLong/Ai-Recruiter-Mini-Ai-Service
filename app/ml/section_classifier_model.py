@@ -19,6 +19,36 @@ from app.ml.section_classifier_features import (
 logger = logging.getLogger(__name__)
 
 
+def _load_sentence_transformer_preferring_cache(base_model: str) -> Any:
+    """Load a bare HuggingFace Hub model id, trying the LOCAL cache first.
+
+    `SentenceTransformer(base_model)` by default makes a network HEAD request
+    to check for updates even when the model is already fully cached — if
+    the Hub is slow/unreachable, huggingface_hub retries with exponential
+    backoff across several files before finally falling back to cache,
+    which can add minutes of latency to what should be an instant load.
+    Observed in practice as this exact model hanging on repeated
+    `ReadTimeoutError` retries against huggingface.co.
+
+    Since `base_model` here is a stable, already-downloaded dependency (used
+    throughout this project's training scripts), try `local_files_only=True`
+    first — instant if cached, raises immediately if not — and only fall
+    back to a normal (network-allowed) load for a genuinely fresh
+    environment that has never downloaded this model before.
+    """
+    from sentence_transformers import SentenceTransformer
+
+    try:
+        return SentenceTransformer(base_model, local_files_only=True)
+    except Exception:
+        logger.info(
+            "'%s' not found in local cache — falling back to a network-allowed load "
+            "(this may be slow if the Hub is unreachable).",
+            base_model,
+        )
+        return SentenceTransformer(base_model)
+
+
 def _is_valid_model_dir(path: Path) -> bool:
     return (
         path.is_dir()
@@ -98,9 +128,7 @@ class SectionClassifierLoader:
         except Exception:  # pragma: no cover - defensive: fall through to an independent model
             pass
 
-        from sentence_transformers import SentenceTransformer
-
-        return SentenceTransformer(self._base_model)
+        return _load_sentence_transformer_preferring_cache(self._base_model)
 
 
 @lru_cache(maxsize=1)

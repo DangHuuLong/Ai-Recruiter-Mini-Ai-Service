@@ -83,7 +83,7 @@ class TestSectionClassifierLoaderEmbedderSharing:
              patch("sentence_transformers.SentenceTransformer") as mock_st:
             SectionClassifierLoader(model_path="x", base_model="shared-model")._load_embedder()
 
-        mock_st.assert_called_once_with("shared-model")
+        mock_st.assert_called_once_with("shared-model", local_files_only=True)
 
     def test_does_not_share_when_similarity_disabled(self) -> None:
         mock_similarity_cfg = MagicMock(fallback_mode="rule_only", model_path="", base_model="shared-model")
@@ -92,7 +92,7 @@ class TestSectionClassifierLoaderEmbedderSharing:
              patch("sentence_transformers.SentenceTransformer") as mock_st:
             SectionClassifierLoader(model_path="x", base_model="shared-model")._load_embedder()
 
-        mock_st.assert_called_once_with("shared-model")
+        mock_st.assert_called_once_with("shared-model", local_files_only=True)
 
     def test_does_not_share_when_base_model_differs(self) -> None:
         mock_similarity_cfg = MagicMock(fallback_mode="base_model", model_path="", base_model="other-model")
@@ -101,7 +101,7 @@ class TestSectionClassifierLoaderEmbedderSharing:
              patch("sentence_transformers.SentenceTransformer") as mock_st:
             SectionClassifierLoader(model_path="x", base_model="shared-model")._load_embedder()
 
-        mock_st.assert_called_once_with("shared-model")
+        mock_st.assert_called_once_with("shared-model", local_files_only=True)
 
 
 class TestSectionClassifierBundlePredictLabels:
