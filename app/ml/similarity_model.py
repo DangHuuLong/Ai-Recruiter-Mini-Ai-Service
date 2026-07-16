@@ -17,6 +17,22 @@ def _is_valid_model_dir(path: Path) -> bool:
     return path.is_dir() and (path / "config.json").exists()
 
 
+def _load_cross_encoder_preferring_cache(base_model: str) -> Any:
+    """Load a bare HuggingFace Hub CrossEncoder id, trying the local cache
+    first — see app.ml.section_classifier_model._load_sentence_transformer_preferring_cache
+    for why: a Hub HEAD-request freshness check can hang for minutes under
+    network issues even when the model is already fully cached locally."""
+    try:
+        return _CrossEncoder(base_model, local_files_only=True)
+    except Exception:
+        logger.info(
+            "'%s' not found in local cache — falling back to a network-allowed load "
+            "(this may be slow if the Hub is unreachable).",
+            base_model,
+        )
+        return _CrossEncoder(base_model)
+
+
 class SimilarityModelLoader:
     """Loads the CV-JD relevance model as a `sentence_transformers.CrossEncoder`
     (pointwise pair scorer — trained via training/fine_tune_cross_encoder_*
@@ -55,7 +71,7 @@ class SimilarityModelLoader:
                 self._base_model,
             )
 
-        return _CrossEncoder(self._base_model)
+        return _load_cross_encoder_preferring_cache(self._base_model)
 
 
 @lru_cache(maxsize=1)

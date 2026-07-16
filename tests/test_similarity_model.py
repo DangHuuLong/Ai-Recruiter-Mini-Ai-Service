@@ -26,13 +26,13 @@ class TestSimilarityModelLoader:
     def test_loads_base_model_when_path_empty(self) -> None:
         with patch(self._PATCH) as mock_cls:
             SimilarityModelLoader(model_path="", base_model="base-model").load()
-        mock_cls.assert_called_once_with("base-model")
+        mock_cls.assert_called_once_with("base-model", local_files_only=True)
 
     def test_loads_base_model_when_path_missing(self, tmp_path: Path) -> None:
         missing = str(tmp_path / "nonexistent")
         with patch(self._PATCH) as mock_cls:
             SimilarityModelLoader(model_path=missing, base_model="base-model").load()
-        mock_cls.assert_called_once_with("base-model")
+        mock_cls.assert_called_once_with("base-model", local_files_only=True)
 
     def test_loads_fine_tuned_when_path_valid(self, tmp_path: Path) -> None:
         (tmp_path / "config.json").write_text("{}")

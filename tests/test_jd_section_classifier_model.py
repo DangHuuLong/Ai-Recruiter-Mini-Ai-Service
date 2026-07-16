@@ -79,7 +79,7 @@ class TestJdSectionClassifierLoaderEmbedderSharing:
              patch("sentence_transformers.SentenceTransformer") as mock_st:
             JdSectionClassifierLoader(model_path="x", base_model="shared-model")._load_embedder()
 
-        mock_st.assert_called_once_with("shared-model")
+        mock_st.assert_called_once_with("shared-model", local_files_only=True)
 
     def test_does_not_share_when_base_model_differs(self) -> None:
         mock_cv_cfg = MagicMock(fallback_mode="model_with_regex_fallback", base_model="other-model")
@@ -88,7 +88,7 @@ class TestJdSectionClassifierLoaderEmbedderSharing:
              patch("sentence_transformers.SentenceTransformer") as mock_st:
             JdSectionClassifierLoader(model_path="x", base_model="shared-model")._load_embedder()
 
-        mock_st.assert_called_once_with("shared-model")
+        mock_st.assert_called_once_with("shared-model", local_files_only=True)
 
 
 class TestJdSectionClassifierBundlePredictLabels:
