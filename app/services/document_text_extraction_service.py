@@ -19,7 +19,22 @@ OCR_RENDER_ZOOM = 3.0
 URL_RE = re.compile(r"https?://[^\s)>,;]+", re.IGNORECASE)
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}")
 PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,})")
-BAD_GLYPH_MARKERS = ("·", "ï", "¿", "ˇ", "�")
+BAD_GLYPH_MARKERS = (
+    "·", "ï", "¿", "ˇ", "�",
+    # Legacy Vietnamese font encodings (VNI, TCVN3/ABC, etc.) have no
+    # ToUnicode CMap, so PyMuPDF/pypdf fall back to a generic Latin-1-style
+    # decode and produce arbitrary accented Latin-1 Supplement letters in
+    # place of Vietnamese diacritic vowels/consonants — e.g. "Số điện thoại"
+    # extracts as "SÑ iÇn tho¡i", "Địa chỉ" as "Ëa chÉ", "Giới thiệu" as
+    # "GiÛi thiÇu". None of these specific letters are plausible in real
+    # English or genuine Vietnamese Unicode text (which uses precomposed
+    # characters in the U+1EA0-U+1EF9 block, not plain Latin-1 Supplement),
+    # so their presence is a reliable corruption signal even when none of
+    # the markers above match.
+    "Ñ", "Ç", "É", "Û", "Ë", "À", "Â", "Ã", "Ä", "Å",
+    "È", "Ê", "Ì", "Í", "Î", "Ò", "Ó", "Ô", "Õ", "Ö",
+    "Ù", "Ú", "Ü", "Ý", "¡", "¬",
+)
 IMPORTANT_PDF_SECTION_NAMES = {
     "experience": {"experience", "work experience"},
 }
@@ -201,7 +216,15 @@ class DocumentTextExtractionService:
 
         quality.needs_header_ocr = has_bad_glyphs or not quality.has_email or not quality.has_phone
         quality.needs_bottom_ocr = not quality.has_experience
-        quality.needs_full_page_ocr = len(text or "") < 300 or corrupted_glyph_ratio > 0.03
+        # A broken font encoding (the has_bad_glyphs case) corrupts the
+        # WHOLE document, not just the header — previously this only drove
+        # needs_header_ocr, so only header-region fields (e.g. full_name)
+        # ever got OCR-recovered while skills/education/experience stayed
+        # corrupted even though the underlying cause (bad font encoding)
+        # affects every section equally.
+        quality.needs_full_page_ocr = (
+            len(text or "") < 300 or corrupted_glyph_ratio > 0.03 or has_bad_glyphs
+        )
         return quality
 
     def _maybe_merge_local_ocr_text(
@@ -483,6 +506,24 @@ class DocumentTextExtractionService:
         ocr_text = self._normalize_extracted_text(ocr_result.raw_text)
         if not primary:
             return ocr_text
+
+        # A broken font encoding corrupts the WHOLE document, not just the
+        # header/bottom regions the targeted patches below cover. If the
+        # primary text is corrupted and a full-page OCR pass produced
+        # clean, substantially-complete text, prefer it as the document's
+        # text entirely — otherwise sections outside header/experience
+        # (skills, education, projects, ...) stay permanently corrupted
+        # even when a perfectly good full-page OCR result exists, since
+        # nothing below ever propagates it into those sections.
+        full_page_text = self._ocr_text_for_regions(ocr_result, {"full_page"})
+        if (
+            self._has_corrupted_glyphs(primary)
+            and full_page_text
+            and not self._has_corrupted_glyphs(full_page_text)
+            and len(full_page_text) >= len(primary) * 0.5
+        ):
+            warnings.append("Replaced corrupted embedded PDF text with full-page OCR text")
+            return full_page_text
 
         blocks: list[str] = [primary]
         header_text = self._ocr_text_for_regions(ocr_result, {"header", "left_sidebar", "top_left", "top_right"})
