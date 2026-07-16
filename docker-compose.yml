@@ -1,0 +1,16 @@
+services:
+  ai-service:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./models:/app/models:ro
+      - ./samples:/app/samples:ro
+      - hf-cache:/root/.cache/huggingface
+      - paddleocr-cache:/root/.paddleocr
+
+volumes:
+  hf-cache:
+  paddleocr-cache:
