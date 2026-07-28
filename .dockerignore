@@ -1,0 +1,26 @@
+.venv
+__pycache__
+**/__pycache__
+.pytest_cache
+.git
+.github
+.env
+.env.*
+!.env.example
+*.log
+.vscode
+.idea
+docs
+tests
+notebooks
+training
+datasets
+samples
+
+# Fine-tuned model weights are large and gitignored — only bake in the versions
+# actually referenced by env vars (SIMILARITY_MODEL_PATH etc.), not every old
+# checkpoint under models/. Update these lines when the referenced version changes.
+models/*
+!models/cross-encoder-cv-jd-v0.6/
+!models/section-classifier-v0.1/
+!models/jd-section-classifier-v0.1/
