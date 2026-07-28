@@ -37,4 +37,10 @@ build/
 dist/
 *.egg-info/
 
-models/
+# Fine-tuned model weights are large — only the versions actually referenced by env vars
+# (SIMILARITY_MODEL_PATH etc.) are tracked, via Git LFS, so CI can build the AI service
+# image from a fresh checkout. Update these lines when the referenced version changes.
+models/*
+!models/cross-encoder-cv-jd-v0.6/
+!models/section-classifier-v0.1/
+!models/jd-section-classifier-v0.1/

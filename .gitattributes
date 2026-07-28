@@ -1,0 +1,5 @@
+# Fine-tuned model weights referenced by env vars (SIMILARITY_MODEL_PATH etc.) — tracked
+# via Git LFS so a fresh CI checkout has what the Dockerfile needs to COPY into the image.
+models/cross-encoder-cv-jd-v0.6/** filter=lfs diff=lfs merge=lfs -text
+models/section-classifier-v0.1/** filter=lfs diff=lfs merge=lfs -text
+models/jd-section-classifier-v0.1/** filter=lfs diff=lfs merge=lfs -text
