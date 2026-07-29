@@ -10,7 +10,6 @@ from app.parsers.extractors.projects import extract_projects
 from app.parsers.extractors.projects_certifications import extract_certifications
 from app.parsers.extractors.skills import extract_skills
 from app.parsers.normalizer import normalize_text, split_lines, strip_accents
-from app.parsers.normalizers.skill_normalizer import normalize_skill
 from app.parsers.section_splitter import split_sections
 from app.schemas.resume import (
     ParsedResumeData,
@@ -376,7 +375,7 @@ def _skill_levels_from_text(raw_text: str) -> dict[str, str]:
 
         for raw_name in raw_names:
             for skill in extract_skills(raw_name):
-                levels.setdefault(normalize_skill(skill["name"]), level)
+                levels.setdefault(skill["normalized_name"], level)
     return levels
 
 
@@ -486,10 +485,10 @@ def parse_resume(raw_text: str) -> ParsedResumeData:
     skills = [
         ResumeSkill(
             name=skill["name"],
-            normalized_name=normalize_skill(skill["name"]),
+            normalized_name=skill["normalized_name"],
             category=skill.get("category"),
             evidence=skill.get("evidence"),
-            level=skill_levels.get(normalize_skill(skill["name"])),
+            level=skill_levels.get(skill["normalized_name"]),
         )
         for skill in extract_skills(raw_text)
         if skill.get("name")

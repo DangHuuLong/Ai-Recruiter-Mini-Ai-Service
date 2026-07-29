@@ -1,81 +1,7 @@
 import re
 from collections.abc import Iterable
 
-
-SKILL_CATALOG = {
-    "Python": {"category": "language", "aliases": ["python"]},
-    "JavaScript": {"category": "language", "aliases": ["javascript", "js"]},
-    "TypeScript": {"category": "language", "aliases": ["typescript", "ts"]},
-    "Java": {"category": "language", "aliases": ["java"]},
-    "PHP": {"category": "language", "aliases": ["php"]},
-    "Ruby": {"category": "language", "aliases": ["ruby"]},
-    "C": {"category": "language", "aliases": ["c"]},
-    "C#": {"category": "language", "aliases": ["c#"]},
-    "C++": {"category": "language", "aliases": ["c++"]},
-    "Go": {"category": "language", "aliases": ["go", "golang"]},
-    "SQL": {"category": "database", "aliases": ["sql"]},
-    "HTML": {"category": "frontend", "aliases": ["html"]},
-    "CSS": {"category": "frontend", "aliases": ["css"]},
-    "Bootstrap": {"category": "frontend", "aliases": ["bootstrap"]},
-    "React": {"category": "frontend", "aliases": ["react", "reactjs", "react.js"]},
-    "React Native": {"category": "mobile", "aliases": ["react native"]},
-    "Expo": {"category": "mobile", "aliases": ["expo"]},
-    "Vite": {"category": "frontend", "aliases": ["vite"]},
-    "Next.js": {"category": "frontend", "aliases": ["next.js", "nextjs"]},
-    "Vue": {"category": "frontend", "aliases": ["vue", "vue.js", "vuejs"]},
-    "Tailwind CSS": {"category": "frontend", "aliases": ["tailwind css", "tailwind"]},
-    "shadcn/ui": {"category": "frontend", "aliases": ["shadcn/ui", "shadcn ui", "shadcn"]},
-    "Zustand": {"category": "frontend", "aliases": ["zustand"]},
-    "Redux Toolkit": {"category": "frontend", "aliases": ["redux toolkit", "rtk"]},
-    "TanStack Query": {"category": "frontend", "aliases": ["tanstack query", "react query"]},
-    "React Context": {"category": "frontend", "aliases": ["react context", "context api"]},
-    "Flutter": {"category": "mobile", "aliases": ["flutter"]},
-    "BLoC/Cubit": {"category": "mobile", "aliases": ["bloc/cubit", "bloc", "cubit"]},
-    "Dio": {"category": "mobile", "aliases": ["dio"]},
-    "Node.js": {"category": "backend", "aliases": ["node.js", "nodejs", "node"]},
-    "ASP.NET MVC": {"category": "backend", "aliases": ["asp.net mvc", "asp net mvc"]},
-    "NestJS": {"category": "backend", "aliases": ["nestjs", "nest.js"]},
-    "Express": {"category": "backend", "aliases": ["express", "express.js"]},
-    "Socket.IO": {"category": "backend", "aliases": ["socket.io", "socket io"]},
-    "RBAC": {"category": "backend", "aliases": ["rbac", "role based access control", "role-based access control"]},
-    "JWT": {"category": "backend", "aliases": ["jwt", "json web token", "json web tokens"]},
-    "FastAPI": {"category": "backend", "aliases": ["fastapi", "fast api"]},
-    "Django": {"category": "backend", "aliases": ["django"]},
-    "Flask": {"category": "backend", "aliases": ["flask"]},
-    "Laravel": {"category": "backend", "aliases": ["laravel"]},
-    "Spring Boot": {"category": "backend", "aliases": ["spring boot", "springboot"]},
-    ".NET": {"category": "backend", "aliases": [".net", "dotnet"]},
-    "REST API": {"category": "backend", "aliases": ["rest api", "rest apis", "restful api", "rest"]},
-    "GraphQL": {"category": "backend", "aliases": ["graphql", "graph ql"]},
-    "PostgreSQL": {"category": "database", "aliases": ["postgresql", "postgres", "postgre sql"]},
-    "MySQL": {"category": "database", "aliases": ["mysql"]},
-    "MongoDB": {"category": "database", "aliases": ["mongodb", "mongo db"]},
-    "Mongoose": {"category": "orm", "aliases": ["mongoose"]},
-    "Redis": {"category": "database", "aliases": ["redis"]},
-    "Docker": {"category": "devops", "aliases": ["docker"]},
-    "Kubernetes": {"category": "devops", "aliases": ["kubernetes", "k8s"]},
-    "CI/CD": {"category": "devops", "aliases": ["ci/cd", "cicd", "continuous integration"]},
-    "GitHub Actions": {"category": "devops", "aliases": ["github actions", "gh actions"]},
-    "Nginx": {"category": "devops", "aliases": ["nginx"]},
-    "AWS": {"category": "cloud", "aliases": ["aws", "amazon web services"]},
-    "AWS EC2": {"category": "cloud", "aliases": ["aws ec2", "ec2"]},
-    "Azure": {"category": "cloud", "aliases": ["azure", "microsoft azure"]},
-    "GCP": {"category": "cloud", "aliases": ["gcp", "google cloud"]},
-    "Firebase": {"category": "cloud", "aliases": ["firebase"]},
-    "Supabase": {"category": "cloud", "aliases": ["supabase"]},
-    "Supabase Storage": {"category": "cloud", "aliases": ["supabase storage"]},
-    "Cloudinary": {"category": "cloud", "aliases": ["cloudinary"]},
-    "Vercel": {"category": "cloud", "aliases": ["vercel"]},
-    "Render": {"category": "cloud", "aliases": ["render"]},
-    "Git": {"category": "tooling", "aliases": ["git"]},
-    "GitHub": {"category": "tooling", "aliases": ["github"]},
-    "Postman": {"category": "tooling", "aliases": ["postman"]},
-    "Prisma": {"category": "orm", "aliases": ["prisma"]},
-    "Whisper AI": {"category": "ai", "aliases": ["whisper ai", "openai whisper", "whisper"]},
-    "Gemini AI": {"category": "ai", "aliases": ["gemini ai", "gemini"]},
-    "Jest": {"category": "testing", "aliases": ["jest"]},
-    "Pytest": {"category": "testing", "aliases": ["pytest"]},
-}
+from app.parsers.skill_catalog import SKILL_CATALOG
 
 
 def _alias_pattern(alias: str) -> re.Pattern:
@@ -104,7 +30,10 @@ def _alias_pattern(alias: str) -> re.Pattern:
     if alias == "css":
         return re.compile(rf"(?<!tailwind\s)\b{escaped}\b", re.IGNORECASE)
 
-    if alias in {"c#", "c++", "ci/cd", "shadcn/ui", "socket.io", "bloc/cubit"}:
+    if alias in {
+        "c#", "c++", "ci/cd", "shadcn/ui", "socket.io", "bloc/cubit",
+        "tcp/ip", "ids/ips", "ssl/tls",
+    }:
         return re.compile(rf"(?<!\w){escaped}(?!\w)", re.IGNORECASE)
 
     return re.compile(rf"\b{escaped}\b", re.IGNORECASE)
@@ -131,14 +60,15 @@ def extract_skills(text: str) -> list[dict[str, str | None]]:
     found: dict[str, dict[str, str | None]] = {}
 
     for evidence in _iter_evidence_units(text):
-        for skill, metadata in SKILL_CATALOG.items():
-            if skill in found:
+        for definition in SKILL_CATALOG:
+            if definition.name in found:
                 continue
 
-            if any(_alias_pattern(alias).search(evidence) for alias in metadata["aliases"]):
-                found[skill] = {
-                    "name": skill,
-                    "category": metadata["category"],
+            if any(_alias_pattern(alias).search(evidence) for alias in definition.aliases):
+                found[definition.name] = {
+                    "name": definition.name,
+                    "normalized_name": definition.normalized_name,
+                    "category": definition.category,
                     "evidence": evidence,
                 }
 
