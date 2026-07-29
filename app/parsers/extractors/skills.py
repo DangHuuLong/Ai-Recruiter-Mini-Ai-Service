@@ -32,7 +32,7 @@ def _alias_pattern(alias: str) -> re.Pattern:
 
     if alias in {
         "c#", "c++", "ci/cd", "shadcn/ui", "socket.io", "bloc/cubit",
-        "tcp/ip", "ids/ips", "ssl/tls",
+        "tcp/ip", "ids/ips", "ssl/tls", "f#", "q#",
     }:
         return re.compile(rf"(?<!\w){escaped}(?!\w)", re.IGNORECASE)
 
