@@ -1,0 +1,850 @@
+{"resume_id": "resline_0009", "line_index": 0, "text": "Tóm tắt chuyên môn", "label": "summary"}
+{"resume_id": "resline_0009", "line_index": 1, "text": "Kỹ sư phần mềm với 7 năm kinh nghiệm trong phát triển ứng dụng web, hệ thống phân tán quy mô lớn và tối ưu hóa hiệu suất backend.", "label": "summary"}
+{"resume_id": "resline_0009", "line_index": 2, "text": "Kinh nghiệm làm việc", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 3, "text": "Trưởng nhóm kỹ thuật, Công ty Công nghệ VinaTech, 2019 – Hiện tại", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 4, "text": "- Thiết kế và triển khai kiến trúc microservices giúp tăng khả năng mở rộng hệ thống lên 300%.", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 5, "text": "- Tối ưu hóa truy vấn cơ sở dữ liệu giúp giảm thời gian phản hồi API trung bình từ 200ms xuống 50ms.", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 6, "text": "Kỹ sư Backend, Giải pháp Phần mềm Sài Gòn, 2016 – 2019", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 7, "text": "- Phát triển các tính năng cốt lõi cho nền tảng thương mại điện tử phục vụ hơn 500.000 người dùng hàng tháng.", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 8, "text": "- Xây dựng hệ thống thanh toán tích hợp với nhiều ví điện tử và ngân hàng nội địa.", "label": "experience"}
+{"resume_id": "resline_0009", "line_index": 9, "text": "Dự án", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 10, "text": "Hệ thống Quản lý Kho (Dự án A) | Website Thương mại điện tử (Dự án B)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 11, "text": "- Phát triển API RESTful cho quản lý hàng tồn kho thời gian thực (Dự án A)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 12, "text": "- Xây dựng module giỏ hàng và quy trình thanh toán bảo mật (Dự án B)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 13, "text": "- Tối ưu hóa bộ nhớ đệm sử dụng Redis để tăng tốc độ truy xuất (Dự án A)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 14, "text": "- Thiết kế giao diện người dùng responsive với React và Tailwind CSS (Dự án B)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 15, "text": "- Tích hợp hệ thống quét mã vạch và tự động hóa nhập kho (Dự án A)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 16, "text": "- Phát triển công cụ gợi ý sản phẩm dựa trên hành vi người dùng (Dự án B)", "label": "projects"}
+{"resume_id": "resline_0009", "line_index": 17, "text": "Kỹ năng", "label": "skills"}
+{"resume_id": "resline_0009", "line_index": 18, "text": "Java, Golang, Python, JavaScript, Docker, Kubernetes, AWS, SQL, NoSQL", "label": "skills"}
+{"resume_id": "resline_0009", "line_index": 19, "text": "Học vấn", "label": "education"}
+{"resume_id": "resline_0009", "line_index": 20, "text": "Cử nhân Công nghệ Thông tin, Đại học Bách Khoa Hà Nội, 2016", "label": "education"}
+{"resume_id": "resline_0012", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0012", "line_index": 1, "text": "Dynamic Digital Marketing Manager with a track record of driving 200% year-over-year growth in organic traffic for SaaS brands.", "label": "summary"}
+{"resume_id": "resline_0012", "line_index": 2, "text": "Expert in customer acquisition, retention strategies, and data-driven marketing optimization.", "label": "summary"}
+{"resume_id": "resline_0012", "line_index": 3, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 4, "text": "Growth Lead at Marketify.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 5, "text": "- Directed a team of 5 content creators and SEO specialists.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 6, "text": "- Oversee a $50k monthly ad spend across multiple social platforms.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 7, "text": "Marketing Associate at BrandBoost.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 8, "text": "- Executed email marketing campaigns with an average open rate of 25%.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 9, "text": "- Managed social media presence across 4 different brand channels.", "label": "experience"}
+{"resume_id": "resline_0012", "line_index": 10, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0012", "line_index": 11, "text": "Content Hub Launch: Built a comprehensive resource library that generated 5k leads in 3 months.", "label": "projects"}
+{"resume_id": "resline_0012", "line_index": 12, "text": "Email Automation Overhaul: Re-architected customer lifecycle journeys to reduce churn by 12%.", "label": "projects"}
+{"resume_id": "resline_0012", "line_index": 13, "text": "Jan 2023 - May 2023", "label": "projects"}
+{"resume_id": "resline_0012", "line_index": 14, "text": "June 2022 - Dec 2022", "label": "projects"}
+{"resume_id": "resline_0012", "line_index": 15, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0012", "line_index": 16, "text": "Google Ads, Facebook Blueprint, Salesforce, SQL, Python for Data Analysis.", "label": "skills"}
+{"resume_id": "resline_0012", "line_index": 17, "text": "Google Analytics 4, SEMrush, HubSpot, Mailchimp, HTML/CSS.", "label": "skills"}
+{"resume_id": "resline_0012", "line_index": 18, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0012", "line_index": 19, "text": "Bachelor of Science in Marketing, University of Oregon.", "label": "education"}
+{"resume_id": "resline_0017", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0017", "line_index": 1, "text": "Senior UI/UX Designer with over 7 years of expertise in digital product design.", "label": "summary"}
+{"resume_id": "resline_0017", "line_index": 2, "text": "Specialized in user-centered design principles for SaaS and mobile platforms.", "label": "summary"}
+{"resume_id": "resline_0017", "line_index": 3, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 4, "text": "Lead Product Designer - Tech Solutions Inc.", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 5, "text": "- Spearheaded the redesign of the flagship e-commerce platform.", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 6, "text": "- Directed a team of 4 designers to create a unified design system.", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 7, "text": "Senior UX Designer - Creative Media Agency", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 8, "text": "- Collaborated with cross-functional teams to deliver wireframes.", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 9, "text": "- Conducted A/B testing and user interviews to iterate designs.", "label": "experience"}
+{"resume_id": "resline_0017", "line_index": 10, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0017", "line_index": 11, "text": "FinTech Dashboard Redesign: Overhauled the user interface for a high-frequency trading application focusing on data visualization.", "label": "projects"}
+{"resume_id": "resline_0017", "line_index": 12, "text": "EcoTrack Mobile App: Designed a sustainable habit tracking application from initial concept to high-fidelity prototyping.", "label": "projects"}
+{"resume_id": "resline_0017", "line_index": 13, "text": "March 2022 - August 2022 | January 2021 - May 2021", "label": "projects"}
+{"resume_id": "resline_0017", "line_index": 14, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0017", "line_index": 15, "text": "Bachelor of Fine Arts in Graphic Design", "label": "education"}
+{"resume_id": "resline_0017", "line_index": 16, "text": "Rhode Island School of Design", "label": "education"}
+{"resume_id": "resline_0017", "line_index": 17, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0017", "line_index": 18, "text": "Figma, Adobe XD, Sketch, Prototyping, User Research, HTML/CSS", "label": "skills"}
+{"resume_id": "resline_0021", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0021", "line_index": 1, "text": "Strategic Product Manager with 8 years of experience driving product vision and execution for B2B SaaS platforms. Proven ability to translate complex user needs into actionable roadmaps that exceed business KPIs.", "label": "summary"}
+{"resume_id": "resline_0021", "line_index": 2, "text": "**Work Experience**", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 3, "text": "Senior Product Manager | CloudScale Solutions", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 4, "text": "- Led the end-to-end development of a new analytics dashboard, resulting in a 30% increase in user engagement.", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 5, "text": "- Orchestrated a cross-functional team of 12 developers and designers using Agile methodologies.", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 6, "text": "- Conducted over 50 deep-dive customer interviews to define the Q3-Q4 product strategy.", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 7, "text": "Product Owner | DataFlow Systems", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 8, "text": "- Managed the migration of legacy data services to a scalable microservices architecture.", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 9, "text": "- Reduced product time-to-market by 20% through the implementation of automated testing workflows.", "label": "experience"}
+{"resume_id": "resline_0021", "line_index": 10, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0021", "line_index": 11, "text": "- Product Roadmap Development, Market Research, User Experience (UX) Design, Agile/Scrum, Jira, SQL, Mixpanel.", "label": "skills"}
+{"resume_id": "resline_0021", "line_index": 12, "text": "**Projects**", "label": "projects"}
+{"resume_id": "resline_0021", "line_index": 13, "text": "Enterprise API Gateway: Developed a self-service portal for third-party developers, reducing integration support tickets by 50%.", "label": "projects"}
+{"resume_id": "resline_0021", "line_index": 14, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0021", "line_index": 15, "text": "Master of Science in Information Systems - University of Washington", "label": "education"}
+{"resume_id": "resline_0021", "line_index": 16, "text": "Bachelor of Science in Computer Science - Seattle University", "label": "education"}
+{"resume_id": "resline_0021", "line_index": 17, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0021", "line_index": 18, "text": "Certified Scrum Product Owner (CSPO)", "label": "certifications"}
+{"resume_id": "resline_0021", "line_index": 19, "text": "Pragmatic Institute Certified (Level IV)", "label": "certifications"}
+{"resume_id": "resline_0023", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0023", "line_index": 1, "text": "Results-driven Sales Director with 12+ years of experience expanding market share in Latin America and the US.", "label": "summary"}
+{"resume_id": "resline_0023", "line_index": 2, "text": "Liderazgo de equipos de ventas internacionales y cierre de contratos de alto valor en sectores tecnológicos.", "label": "summary"}
+{"resume_id": "resline_0023", "line_index": 3, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 4, "text": "Regional Sales Manager | Global Tech Solutions", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 5, "text": "- Oversaw a $50M portfolio across Mexico and Brazil, achieving 115% of annual quota for three consecutive years.", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 6, "text": "- Gestión de relaciones con clientes clave y desarrollo de nuevos canales de distribución en mercados emergentes.", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 7, "text": "- Recruited and trained a cross-functional team of 15 account executives to improve regional performance.", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 8, "text": "Account Executive | Enterprise Software Corp", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 9, "text": "- Managed complex sales cycles for Fortune 1000 accounts in the telecommunications and finance sectors.", "label": "experience"}
+{"resume_id": "resline_0023", "line_index": 10, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0023", "line_index": 11, "text": "LATAM Market Expansion Initiative: Spearheaded the successful entry into three new territories within 18 months.", "label": "projects"}
+{"resume_id": "resline_0023", "line_index": 12, "text": "CRM Migration Project: Led the transition of legacy data to Salesforce for 200+ users across four global offices.", "label": "projects"}
+{"resume_id": "resline_0023", "line_index": 13, "text": "2021 – 2023", "label": "projects"}
+{"resume_id": "resline_0023", "line_index": 14, "text": "2019 – 2020", "label": "projects"}
+{"resume_id": "resline_0023", "line_index": 15, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0023", "line_index": 16, "text": "Salesforce, HubSpot, Strategic Planning, Negotiation, Revenue Forecasting, Cross-cultural Communication.", "label": "skills"}
+{"resume_id": "resline_0023", "line_index": 17, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0023", "line_index": 18, "text": "Master of Business Administration (MBA) | University of Texas", "label": "education"}
+{"resume_id": "resline_0024", "line_index": 0, "text": "**Tóm tắt chuyên môn**", "label": "summary"}
+{"resume_id": "resline_0024", "line_index": 1, "text": "Chuyên gia phân tích dữ liệu với hơn 8 năm kinh nghiệm trong ngành thương mại điện tử và tài chính tiêu dùng.", "label": "summary"}
+{"resume_id": "resline_0024", "line_index": 2, "text": "Có khả năng chuyển đổi dữ liệu phức tạp thành các chiến lược kinh doanh hành động được để tăng doanh thu.", "label": "summary"}
+{"resume_id": "resline_0024", "line_index": 3, "text": "**Kinh nghiệm làm việc**", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 4, "text": "Trưởng nhóm Phân tích Dữ liệu | Công ty TNHH E-Commerce Việt | 2019 – Hiện tại", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 5, "text": "- Xây dựng hệ thống báo cáo tự động giúp tiết kiệm 20 giờ làm việc mỗi tuần cho bộ phận vận hành và kho vận.", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 6, "text": "- Phân tích hành vi người dùng trên nền tảng di động để tối ưu hóa tỷ lệ chuyển đổi thêm 15% trong quý 4.", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 7, "text": "Chuyên viên Phân tích | Ngân hàng Á Châu | 2016 – 2019", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 8, "text": "- Phát triển các mô hình dự báo rủi ro tín dụng bằng ngôn ngữ Python và cơ sở dữ liệu SQL quy mô lớn.", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 9, "text": "- Phối hợp với bộ phận IT để chuẩn hóa quy trình thu thập dữ liệu khách hàng từ nhiều nguồn khác nhau.", "label": "experience"}
+{"resume_id": "resline_0024", "line_index": 10, "text": "**Kỹ năng**", "label": "skills"}
+{"resume_id": "resline_0024", "line_index": 11, "text": "SQL Python R Tableau Power BI Google Analytics BigQuery", "label": "skills"}
+{"resume_id": "resline_0024", "line_index": 12, "text": "TensorFlow PyTorch Scikit-learn Hadoop Spark Redshift", "label": "skills"}
+{"resume_id": "resline_0024", "line_index": 13, "text": "Excel VBA Statistical Modeling Data Visualization ETL", "label": "skills"}
+{"resume_id": "resline_0024", "line_index": 14, "text": "**Học vấn**", "label": "education"}
+{"resume_id": "resline_0024", "line_index": 15, "text": "Thạc sĩ Khoa học Dữ liệu | Đại học Bách Khoa Hà Nội | 2016", "label": "education"}
+{"resume_id": "resline_0024", "line_index": 16, "text": "Cử nhân Toán Tin | Đại học Quốc gia Hà Nội | 2014", "label": "education"}
+{"resume_id": "resline_0024", "line_index": 17, "text": "**Chứng chỉ**", "label": "certifications"}
+{"resume_id": "resline_0024", "line_index": 18, "text": "Google Data Analytics Professional Certificate", "label": "certifications"}
+{"resume_id": "resline_0024", "line_index": 19, "text": "Tableau Desktop Specialist", "label": "certifications"}
+{"resume_id": "resline_0026", "line_index": 0, "text": "Tóm tắt chuyên môn", "label": "summary"}
+{"resume_id": "resline_0026", "line_index": 1, "text": "Chuyên viên Hỗ trợ khách hàng tận tâm với hơn 7 năm kinh nghiệm trong ngành thương mại điện tử và dịch vụ tài chính. Có kỹ năng giải quyết khiếu nại phức tạp và xây dựng lòng trung thành của khách hàng.", "label": "summary"}
+{"resume_id": "resline_0026", "line_index": 2, "text": "Kỹ năng", "label": "skills"}
+{"resume_id": "resline_0026", "line_index": 3, "text": "- Sử dụng thành thạo Salesforce CRM, Zendesk và Intercom.", "label": "skills"}
+{"resume_id": "resline_0026", "line_index": 4, "text": "- Kỹ năng giao tiếp và lắng nghe chủ động.", "label": "skills"}
+{"resume_id": "resline_0026", "line_index": 5, "text": "- Quản lý thời gian và ưu tiên công việc hiệu quả.", "label": "skills"}
+{"resume_id": "resline_0026", "line_index": 6, "text": "- Khả năng làm việc dưới áp lực cao và xử lý tình huống khẩn cấp.", "label": "skills"}
+{"resume_id": "resline_0026", "line_index": 7, "text": "Kinh nghiệm làm việc", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 8, "text": "Trưởng nhóm Hỗ trợ khách hàng, Công ty Cổ phần Thương mại Điện tử X (2019 - Hiện tại).", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 9, "text": "- Quản lý và đào tạo đội ngũ 15 nhân viên tư vấn trực tuyến.", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 10, "text": "- Xây dựng quy trình phản hồi khách hàng giúp giảm thời gian chờ đợi từ 5 phút xuống còn 30 giây.", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 11, "text": "- Phân tích dữ liệu phản hồi để đề xuất cải tiến sản phẩm với bộ phận kỹ thuật.", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 12, "text": "Nhân viên Chăm sóc khách hàng, Ngân hàng ABC (2016 - 2019).", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 13, "text": "- Giải quyết các thắc mắc về giao dịch thẻ và dịch vụ ngân hàng trực tuyến.", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 14, "text": "- Đạt danh hiệu Nhân viên xuất sắc nhất năm 2018.", "label": "experience"}
+{"resume_id": "resline_0026", "line_index": 15, "text": "Học vấn", "label": "education"}
+{"resume_id": "resline_0026", "line_index": 16, "text": "Cử nhân Quản trị Kinh doanh, Đại học Kinh tế TP.HCM (2016).", "label": "education"}
+{"resume_id": "resline_0026", "line_index": 17, "text": "Ngôn ngữ", "label": "languages"}
+{"resume_id": "resline_0026", "line_index": 18, "text": "- Tiếng Việt: Bản ngữ.", "label": "languages"}
+{"resume_id": "resline_0026", "line_index": 19, "text": "- Tiếng Anh: IELTS 7.0.", "label": "languages"}
+{"resume_id": "resline_0029", "line_index": 0, "text": "Giới thiệu: Chuyên gia sáng tạo nội dung với hơn 6 năm kinh nghiệm trong lĩnh vực truyền thông đa phương tiện và chiến lược thương hiệu.", "label": "summary"}
+{"resume_id": "resline_0029", "line_index": 1, "text": "Kỹ năng: Viết bài SEO, Quản lý mạng xã hội, Biên tập video, Marketing nội dung, Phân tích dữ liệu, Quản trị CMS.", "label": "skills"}
+{"resume_id": "resline_0029", "line_index": 2, "text": "Kinh nghiệm làm việc: Trưởng nhóm nội dung tại Công ty Truyền thông Alpha (2020 - Nay).", "label": "experience"}
+{"resume_id": "resline_0029", "line_index": 3, "text": "- Xây dựng chiến lược nội dung hàng tháng cho 5 nhãn hàng lớn trong ngành tiêu dùng.", "label": "experience"}
+{"resume_id": "resline_0029", "line_index": 4, "text": "- Tăng tỷ lệ tương tác trên các nền tảng mạng xã hội lên 150% trong vòng 6 tháng đầu nhiệm kỳ.", "label": "experience"}
+{"resume_id": "resline_0029", "line_index": 5, "text": "Dự án tiêu biểu: Dự án A: Chiến dịch \"Sống Xanh\" | Dự án B: Ra mắt ứng dụng \"EduApp\"", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 6, "text": "- Phát triển nội dung blog và kịch bản video cho chiến dịch nâng cao nhận thức môi trường.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 7, "text": "- Thiết kế lộ trình truyền thông đa kênh cho tính năng học trực tuyến mới trên thiết bị di động.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 8, "text": "- Thu hút hơn 50.000 lượt cam kết hành động bền vững từ cộng đồng trực tuyến.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 9, "text": "- Đạt mốc 10.000 lượt tải ứng dụng trong tuần đầu tiên ra mắt nhờ chiến dịch nội dung lan tỏa.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 10, "text": "- Hợp tác với 20 người ảnh hưởng (KOLs) để quảng bá thông điệp sống xanh đến giới trẻ.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 11, "text": "- Xây dựng hệ thống email marketing tự động cá nhân hóa cho hơn 5.000 người dùng mới của EduApp.", "label": "projects"}
+{"resume_id": "resline_0029", "line_index": 12, "text": "Học vấn: Cử nhân Báo chí và Truyền thông, Đại học Khoa học Xã hội và Nhân văn, 2016.", "label": "education"}
+{"resume_id": "resline_0029", "line_index": 13, "text": "Chứng chỉ: Chứng chỉ Google Digital Marketing & E-commerce chuyên sâu, 2021.", "label": "certifications"}
+{"resume_id": "resline_0029", "line_index": 14, "text": "Chứng chỉ: Chứng chỉ Quản lý Dự án Sáng tạo (CPM), 2019.", "label": "certifications"}
+{"resume_id": "resline_0033", "line_index": 0, "text": "Professional Summary", "label": "summary"}
+{"resume_id": "resline_0033", "line_index": 1, "text": "Senior Finance and Accounting professional with over a decade of experience in corporate finance.", "label": "summary"}
+{"resume_id": "resline_0033", "line_index": 2, "text": "Expertise in GAAP, IFRS, and complex financial consolidations for multinational firms.", "label": "summary"}
+{"resume_id": "resline_0033", "line_index": 3, "text": "Work Experience", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 4, "text": "Finance Manager | Alliance Manufacturing | 2016 - Present", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 5, "text": "- Direct all accounting operations including Billing, A/R, A/P, and GL.", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 6, "text": "- Prepare and publish timely monthly financial statements for executive review.", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 7, "text": "Senior Accountant | Peak Consulting Group | 2011 - 2016", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 8, "text": "- Managed tax reporting and compliance for diverse client portfolios.", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 9, "text": "- Assisted with external audits and internal control assessments for compliance.", "label": "experience"}
+{"resume_id": "resline_0033", "line_index": 10, "text": "Projects", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 11, "text": "Global ERP Migration", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 12, "text": "Internal Controls Overhaul", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 13, "text": "- Migrated historical financial data for 12 international subsidiaries.", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 14, "text": "- Redesigned internal audit workflows to meet SOX compliance requirements.", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 15, "text": "- Integrated third-party payroll systems into the central ledger.", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 16, "text": "- Drafted comprehensive standard operating procedures for the finance team.", "label": "projects"}
+{"resume_id": "resline_0033", "line_index": 17, "text": "Education", "label": "education"}
+{"resume_id": "resline_0033", "line_index": 18, "text": "Master of Accountancy | Northern State University | 2011", "label": "education"}
+{"resume_id": "resline_0033", "line_index": 19, "text": "Bachelor of Science in Finance | Western University | 2009", "label": "education"}
+{"resume_id": "resline_0033", "line_index": 20, "text": "Skills", "label": "skills"}
+{"resume_id": "resline_0033", "line_index": 21, "text": "Financial Analysis, Budgeting, Risk Management, QuickBooks, SAP FICO", "label": "skills"}
+{"resume_id": "resline_0037", "line_index": 0, "text": "Professional Summary: Dedicated Human Resources Business Partner with over 9 years of experience driving organizational excellence through strategic talent management, employee engagement initiatives, and comprehensive policy development.", "label": "summary"}
+{"resume_id": "resline_0037", "line_index": 1, "text": "Skills: Workforce Planning, HRIS Implementation (Workday), Labor Law Compliance, Conflict Resolution, Performance Management, Payroll Administration, Benefits Design, Executive Coaching.", "label": "skills"}
+{"resume_id": "resline_0037", "line_index": 2, "text": "Work Experience: Senior Human Resources Generalist, TechStream Innovations, 2018 – Present", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 3, "text": "- Spearheaded the annual performance review cycle for 400+ staff members across three global offices to improve feedback quality.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 4, "text": "- Reduced employee turnover by 18% through the implementation of a peer-to-peer recognition program and engagement surveys.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 5, "text": "- Managed complex employee relations investigations and provided coaching to department heads on disciplinary actions.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 6, "text": "- Optimized onboarding workflows to reduce time-to-productivity for new hires by 30% through automation.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 7, "text": "Human Resources Coordinator, Logistics United, 2015 – 2018", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 8, "text": "- Administered employee benefits programs and processed bi-weekly payroll for a regional workforce of 250.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 9, "text": "- Coordinated full-cycle recruitment for entry-level and mid-level positions in operations, finance, and customer service.", "label": "experience"}
+{"resume_id": "resline_0037", "line_index": 10, "text": "Strategic Initiatives: Healthcare Cost Containment Project | DEI Cultural Transformation Roadmap", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 11, "text": "- Led an audit of current benefit providers and negotiated new contracts resulting in a 15% reduction in annual premiums.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 12, "text": "- Formulated and launched a multi-year Diversity, Equity, and Inclusion (DEI) strategic roadmap for the organization.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 13, "text": "- Introduced a tiered insurance structure that maintained high coverage levels while lowering employee out-of-pocket costs.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 14, "text": "- Established five distinct Employee Resource Groups (ERGs) to foster an inclusive and supportive workplace culture.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 15, "text": "- Coordinated 10+ open-enrollment seminars attended by over 90% of the employee base to improve plan literacy.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 16, "text": "- Increased candidate pipeline diversity by 40% through targeted outreach and manager-level unconscious bias training.", "label": "projects"}
+{"resume_id": "resline_0037", "line_index": 17, "text": "Education: Master of Science in Human Resources Management, University of Excellence, 2015", "label": "education"}
+{"resume_id": "resline_0037", "line_index": 18, "text": "Certifications: SHRM-CP (Society for Human Resource Management Certified Professional), PHR (Professional in Human Resources)", "label": "certifications"}
+{"resume_id": "resline_0039", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0039", "line_index": 1, "text": "Customer Support Specialist with 7 years of experience in technical troubleshooting and high-volume ticket management. Bilingual professional focused on delivering exceptional service and improving client retention in the SaaS sector.", "label": "summary"}
+{"resume_id": "resline_0039", "line_index": 2, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0039", "line_index": 3, "text": "Senior Support Lead, TechSolutions Global. Managed a remote team of 12 agents providing 24/7 support for cloud infrastructure products.", "label": "experience"}
+{"resume_id": "resline_0039", "line_index": 4, "text": "- Resolved over 200 escalated technical issues per month with a 98% satisfaction rating.", "label": "experience"}
+{"resume_id": "resline_0039", "line_index": 5, "text": "- Desarrollé guías de soporte técnico en español para clientes en América Latina, mejorando la satisfacción regional.", "label": "experience"}
+{"resume_id": "resline_0039", "line_index": 6, "text": "- Implemented a new automated ticketing workflow that reduced average response time by 40%.", "label": "experience"}
+{"resume_id": "resline_0039", "line_index": 7, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0039", "line_index": 8, "text": "Knowledge Base Migration: Led the transition of 500+ technical articles from legacy systems to a modern Zendesk Help Center.", "label": "projects"}
+{"resume_id": "resline_0039", "line_index": 9, "text": "Chatbot Training Initiative: Developed decision trees and response logic for a new AI-driven customer service bot in English and French.", "label": "projects"}
+{"resume_id": "resline_0039", "line_index": 10, "text": "January 2021 - May 2021", "label": "projects"}
+{"resume_id": "resline_0039", "line_index": 11, "text": "September 2022 - February 2023", "label": "projects"}
+{"resume_id": "resline_0039", "line_index": 12, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0039", "line_index": 13, "text": "Bachelor of Arts in Communication Studies, University of Florida, 2015.", "label": "education"}
+{"resume_id": "resline_0039", "line_index": 14, "text": "LANGUAGES", "label": "languages"}
+{"resume_id": "resline_0039", "line_index": 15, "text": "English: Native proficiency", "label": "languages"}
+{"resume_id": "resline_0039", "line_index": 16, "text": "Spanish: Professional working proficiency", "label": "languages"}
+{"resume_id": "resline_0039", "line_index": 17, "text": "French: Elementary proficiency", "label": "languages"}
+{"resume_id": "resline_0045", "line_index": 0, "text": "Chuyên gia quản trị y tế với hơn 8 năm kinh nghiệm điều hành và tối ưu hóa quy trình tại các bệnh viện lớn. Có thế mạnh trong việc triển khai hệ thống quản trị chất lượng và nâng cao trải nghiệm bệnh nhân thông qua chuyển đổi số.", "label": "summary"}
+{"resume_id": "resline_0045", "line_index": 1, "text": "Quản lý vận hành - Bệnh viện Đa khoa Quốc tế", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 2, "text": "- Giám sát đội ngũ hơn 120 nhân viên hành chính và điều phối quy trình tiếp nhận bệnh nhân tại các khoa trọng điểm.", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 3, "text": "- Xây dựng và triển khai bộ tiêu chuẩn chất lượng JCI giúp bệnh viện đạt chứng nhận quốc tế trong năm 2022.", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 4, "text": "- Cải thiện hiệu suất sử dụng phòng mổ thêm 15% thông qua việc tái cấu trúc lịch trình và quản lý nhân lực.", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 5, "text": "Chuyên viên hành chính cao cấp - Trung tâm Y khoa Sài Gòn", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 6, "text": "- Phụ trách quản lý ngân sách vận hành hàng năm trị giá 50 tỷ VNĐ và đàm phán hợp đồng với các nhà cung cấp thiết bị.", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 7, "text": "- Thiết lập hệ thống báo cáo KPI tự động cho ban giám đốc nhằm theo dõi sát sao tình hình tài chính và nhân sự.", "label": "experience"}
+{"resume_id": "resline_0045", "line_index": 8, "text": "Dự án: Triển khai hệ thống bệnh án điện tử EHR", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 9, "text": "Dự án: Tối ưu hóa luồng bệnh nhân ngoại trú", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 10, "text": "- Số hóa thành công hơn 100.000 hồ sơ bệnh án cũ sang hệ thống quản lý tập trung bảo mật cao", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 11, "text": "- Giảm thời gian chờ đợi trung bình của bệnh nhân từ 45 phút xuống còn 20 phút mỗi lượt khám", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 12, "text": "- Tổ chức các buổi đào tạo chuyên sâu về phần mềm mới cho 200 y bác sĩ và điều dưỡng viên", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 13, "text": "- Áp dụng phương pháp Lean Six Sigma để loại bỏ các bước trung gian không cần thiết trong quy trình", "label": "projects"}
+{"resume_id": "resline_0045", "line_index": 14, "text": "Thạc sĩ Quản trị Bệnh viện - Đại học Y Dược TP.HCM", "label": "education"}
+{"resume_id": "resline_0045", "line_index": 15, "text": "Cử nhân Quản trị Kinh doanh - Đại học Kinh tế TP.HCM", "label": "education"}
+{"resume_id": "resline_0045", "line_index": 16, "text": "Chứng chỉ Quản lý Y tế Cao cấp - Viện Đào tạo Cán bộ Y tế", "label": "certifications"}
+{"resume_id": "resline_0045", "line_index": 17, "text": "Chứng chỉ Chuyên gia Quản lý Chất lượng (CQM)", "label": "certifications"}
+{"resume_id": "resline_0045", "line_index": 18, "text": "Tiếng Việt (Bản ngữ), Tiếng Anh (Lưu loát - IELTS 7.5)", "label": "languages"}
+{"resume_id": "resline_0053", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0053", "line_index": 1, "text": "Dedicated Customer Support Lead with a decade of expertise in resolving complex technical issues and improving user retention for global SaaS platforms.", "label": "summary"}
+{"resume_id": "resline_0053", "line_index": 2, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0053", "line_index": 3, "text": "Help Desk Software (Zendesk, Freshdesk, Intercom), CRM Management (Salesforce), Crisis Communication, Team Training, SLA Compliance.", "label": "skills"}
+{"resume_id": "resline_0053", "line_index": 4, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0053", "line_index": 5, "text": "Customer Success Manager, CloudSolutions Inc.", "label": "experience"}
+{"resume_id": "resline_0053", "line_index": 6, "text": "- Led a remote team of 20 support agents across three time zones, ensuring 24/7 coverage and consistent service quality.", "label": "experience"}
+{"resume_id": "resline_0053", "line_index": 7, "text": "- Implemented a new ticketing priority system that increased first-response time by 40% for enterprise-level clients.", "label": "experience"}
+{"resume_id": "resline_0053", "line_index": 8, "text": "- Reduced churn rate by 15% through proactive outreach programs and personalized troubleshooting sessions.", "label": "experience"}
+{"resume_id": "resline_0053", "line_index": 9, "text": "**Projects**", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 10, "text": "Multi-Channel Support Integration", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 11, "text": "Successfully integrated live chat, email, and social media support channels into a single unified dashboard for the support team.", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 12, "text": "Support Content Localization", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 13, "text": "Managed the translation and cultural adaptation of the help center documentation for 5 new European and Asian markets.", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 14, "text": "March 2019 – October 2019", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 15, "text": "November 2020 – April 2021", "label": "projects"}
+{"resume_id": "resline_0053", "line_index": 16, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0053", "line_index": 17, "text": "Bachelor of Science in Information Systems, Western State University, 2011.", "label": "education"}
+{"resume_id": "resline_0053", "line_index": 18, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0053", "line_index": 19, "text": "Certified Customer Service Professional (CCSP), International Customer Service Association.", "label": "certifications"}
+{"resume_id": "resline_0055", "line_index": 0, "text": "Summary: Senior Financial Analyst with 8+ years of experience in corporate finance, budgeting, and strategic planning. Especialista en planificación y análisis financiero con enfoque en optimización de procesos.", "label": "summary"}
+{"resume_id": "resline_0055", "line_index": 1, "text": "Summary: Proven track record of reducing operational costs by 15% through data-driven forecasting and rigorous variance analysis. Experto en consolidación de estados financieros bajo normas IFRS y US GAAP.", "label": "summary"}
+{"resume_id": "resline_0055", "line_index": 2, "text": "Experience: Senior Financial Audit Manager, Deloitte, 2019 – Present", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 3, "text": "- Led multi-national audit engagements for Fortune 500 manufacturing clients across Latin America and the US.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 4, "text": "- Managed a cross-functional team of 12 auditors to deliver complex compliance reports ahead of strict deadlines.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 5, "text": "- Desarrolló modelos financieros complejos para evaluar riesgos de liquidez y solvencia en sectores industriales.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 6, "text": "Experience: Corporate Accountant, Grupo Bimbo, 2015 – 2019", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 7, "text": "- Responsible for monthly, quarterly, and year-end closing processes for regional subsidiaries.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 8, "text": "- Implementación de un nuevo sistema de reporte que redujo el tiempo de cierre mensual en un 25%.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 9, "text": "- Reconciled intercompany accounts and managed fixed asset depreciation schedules across multiple jurisdictions.", "label": "experience"}
+{"resume_id": "resline_0055", "line_index": 10, "text": "Skills: SAP S/4HANA, Oracle Financials, Advanced Excel (VBA/Power Query), SQL, Power BI, IFRS, US GAAP, Financial Modeling.", "label": "skills"}
+{"resume_id": "resline_0055", "line_index": 11, "text": "Education: Master of Business Administration (MBA) in Finance, Universidad Nacional Autónoma de México, 2015", "label": "education"}
+{"resume_id": "resline_0055", "line_index": 12, "text": "Education: Bachelor of Science in Accounting and Finance, University of Texas at Austin, 2012", "label": "education"}
+{"resume_id": "resline_0055", "line_index": 13, "text": "Certifications: Certified Public Accountant (CPA), Chartered Financial Analyst (CFA) Level II Candidate.", "label": "certifications"}
+{"resume_id": "resline_0055", "line_index": 14, "text": "Languages: English (Native), Spanish (Native Proficiency), Portuguese (Professional Working Proficiency).", "label": "languages"}
+{"resume_id": "resline_0057", "line_index": 0, "text": "Tóm tắt chuyên môn", "label": "summary"}
+{"resume_id": "resline_0057", "line_index": 1, "text": "Chuyên gia DevOps với hơn 7 năm kinh nghiệm trong việc tự động hóa hạ tầng đám mây và tối ưu hóa quy trình triển khai phần mềm. Có kinh nghiệm sâu rộng với kiến trúc microservices và bảo mật hệ thống.", "label": "summary"}
+{"resume_id": "resline_0057", "line_index": 2, "text": "Kinh nghiệm làm việc", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 3, "text": "Kỹ sư DevOps Cấp cao | FPT Software | 2020 - Hiện tại", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 4, "text": "- Thiết kế và triển khai hạ tầng tự động hóa trên AWS sử dụng Terraform và CloudFormation.", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 5, "text": "- Xây dựng hệ thống CI/CD cho hơn 50 dự án phần mềm, giúp giảm thời gian triển khai từ vài giờ xuống còn vài phút.", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 6, "text": "Kỹ sư Hệ thống | VNG Corporation | 2016 - 2020", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 7, "text": "- Quản trị và vận hành cụm Kubernetes lớn chạy trên môi trường on-premise và đám mây.", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 8, "text": "- Tối ưu hóa hiệu năng cơ sở dữ liệu PostgreSQL và hệ thống lưu trữ phân tán.", "label": "experience"}
+{"resume_id": "resline_0057", "line_index": 9, "text": "Dự án tiêu biểu", "label": "projects"}
+{"resume_id": "resline_0057", "line_index": 10, "text": "Hệ thống Tự động hóa Ngân hàng Số: Xây dựng toàn bộ cơ sở hạ tầng dưới dạng mã (IaC) và thiết lập quy trình bảo mật nghiêm ngặt theo tiêu chuẩn tài chính.", "label": "projects"}
+{"resume_id": "resline_0057", "line_index": 11, "text": "Nền tảng E-commerce Toàn cầu: Di chuyển hệ thống từ server vật lý sang Kubernetes trên Google Cloud Platform, hỗ trợ 1 triệu người dùng đồng thời.", "label": "projects"}
+{"resume_id": "resline_0057", "line_index": 12, "text": "01/2022 - 12/2023", "label": "projects"}
+{"resume_id": "resline_0057", "line_index": 13, "text": "05/2019 - 08/2020", "label": "projects"}
+{"resume_id": "resline_0057", "line_index": 14, "text": "Kỹ năng", "label": "skills"}
+{"resume_id": "resline_0057", "line_index": 15, "text": "Công cụ: Docker, Kubernetes, Terraform, Ansible, Jenkins, GitLab CI, ArgoCD.", "label": "skills"}
+{"resume_id": "resline_0057", "line_index": 16, "text": "Đám mây: AWS, Google Cloud Platform (GCP), Microsoft Azure.", "label": "skills"}
+{"resume_id": "resline_0057", "line_index": 17, "text": "Lập trình: Python, Go, Bash scripting, Java.", "label": "skills"}
+{"resume_id": "resline_0057", "line_index": 18, "text": "Học vấn", "label": "education"}
+{"resume_id": "resline_0057", "line_index": 19, "text": "Cử nhân Công nghệ Thông tin, Đại học Bách Khoa Hà Nội, 2016", "label": "education"}
+{"resume_id": "resline_0071", "line_index": 0, "text": "Professional Summary", "label": "summary"}
+{"resume_id": "resline_0071", "line_index": 1, "text": "Detail-oriented Financial Analyst with expertise in GAAP compliance and data-driven decision making.", "label": "summary"}
+{"resume_id": "resline_0071", "line_index": 2, "text": "Proven track record in streamlining month-end closing processes and enhancing audit readiness.", "label": "summary"}
+{"resume_id": "resline_0071", "line_index": 3, "text": "Work Experience", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 4, "text": "Senior Accountant | Sterling Financial Group | 2016 - 2023", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 5, "text": "- Managed accounts payable and receivable for a diverse $20M portfolio.", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 6, "text": "- Developed automated Excel models for quarterly forecasting and variance analysis.", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 7, "text": "- Conducted internal audits to ensure regulatory compliance across four departments.", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 8, "text": "- Supervised a team of three junior accountants during peak tax seasons.", "label": "experience"}
+{"resume_id": "resline_0071", "line_index": 9, "text": "Skills", "label": "skills"}
+{"resume_id": "resline_0071", "line_index": 10, "text": "QuickBooks, NetSuite, Microsoft Excel (VBA/Macros), Power BI, SAP ERP", "label": "skills"}
+{"resume_id": "resline_0071", "line_index": 11, "text": "Financial Reporting, Budgeting, Risk Assessment, Tax Compliance", "label": "skills"}
+{"resume_id": "resline_0071", "line_index": 12, "text": "Projects", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 13, "text": "ERP Migration Strategy", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 14, "text": "Overhauled the legacy accounting system to NetSuite for better scalability.", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 15, "text": "Tax Compliance Audit", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 16, "text": "Led a comprehensive review of tax filings for 5 regional subsidiaries.", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 17, "text": "June 2021 - December 2021", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 18, "text": "January 2022 - March 2022", "label": "projects"}
+{"resume_id": "resline_0071", "line_index": 19, "text": "Education", "label": "education"}
+{"resume_id": "resline_0071", "line_index": 20, "text": "Master of Accountancy | Ohio State University | 2015", "label": "education"}
+{"resume_id": "resline_0071", "line_index": 21, "text": "Certifications", "label": "certifications"}
+{"resume_id": "resline_0071", "line_index": 22, "text": "Certified Public Accountant (CPA)", "label": "certifications"}
+{"resume_id": "resline_0080", "line_index": 0, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0080", "line_index": 1, "text": "- Làm việc như một nhà văn nội dung cho một công ty truyền thông, tạo ra nội dung hấp dẫn và thu hút cho các nền tảng xã hội.", "label": "experience"}
+{"resume_id": "resline_0080", "line_index": 2, "text": "- Phối hợp với các thành viên trong nhóm để phát triển ý tưởng và tạo ra nội dung sáng tạo.", "label": "experience"}
+{"resume_id": "resline_0080", "line_index": 3, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 4, "text": "- Kỹ năng viết lách, biên tập, và chỉnh sửa", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 5, "text": "- Sử dụng thành thạo các công cụ như Adobe Creative Cloud, Microsoft Office", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 6, "text": "- Sử dụng các công cụ như", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 7, "text": "Trello, Asana, và Slack để quản lý dự án và cộng tác với nhóm", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 8, "text": "- Có kiến thức về thiết kế đồ họa và phát triển web", "label": "skills"}
+{"resume_id": "resline_0080", "line_index": 9, "text": "GIÁO DỤC", "label": "education"}
+{"resume_id": "resline_0080", "line_index": 10, "text": "- Tốt nghiệp Đại học XYZ, chuyên ngành Ngôn ngữ và Văn hóa, 2015", "label": "education"}
+{"resume_id": "resline_0080", "line_index": 11, "text": "CHỨNG CHỈ", "label": "certifications"}
+{"resume_id": "resline_0080", "line_index": 12, "text": "- Chứng chỉ biên tập, Hội biên tập viên Việt Nam, 2018", "label": "certifications"}
+{"resume_id": "resline_0080", "line_index": 13, "text": "THÀNH TỰU", "label": "achievements"}
+{"resume_id": "resline_0080", "line_index": 14, "text": "- Được vinh danh là Nhà văn nội dung xuất sắc, Công ty truyền thông XYZ, 2020", "label": "achievements"}
+{"resume_id": "resline_0080", "line_index": 15, "text": "NGÔN NGỮ", "label": "languages"}
+{"resume_id": "resline_0080", "line_index": 16, "text": "- Tiếng Việt: lưu loát", "label": "languages"}
+{"resume_id": "resline_0080", "line_index": 17, "text": "- Tiếng Anh: tốt", "label": "languages"}
+{"resume_id": "resline_0089", "line_index": 0, "text": "Accomplished HR Business Partner with over 12 years of experience in the technology and manufacturing sectors.", "label": "summary"}
+{"resume_id": "resline_0089", "line_index": 1, "text": "Dedicated to building inclusive cultures and optimizing organizational efficiency through data-driven HR strategies.", "label": "summary"}
+{"resume_id": "resline_0089", "line_index": 2, "text": "**Work History**", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 3, "text": "Senior HR Business Partner | Innovate Tech Corp | 2019 – Present", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 4, "text": "- Led the design of a global diversity and inclusion initiative resulting in a 20% increase in minority leadership roles.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 5, "text": "- Partnered with executive leadership to redefine compensation structures and benefit packages for a global workforce.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 6, "text": "- Managed employee relations and conflict resolution for a remote workforce of 1,200 employees.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 7, "text": "Human Resources Generalist | Startup Hub | 2014 – 2019", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 8, "text": "- Scaled the company from 50 to 300 employees within a three-year period while maintaining culture standards.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 9, "text": "- Automated the recruitment pipeline using advanced applicant tracking systems to reduce time-to-hire by 15 days.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 10, "text": "- Oversaw monthly payroll processing and annual tax compliance audits for multi-state operations.", "label": "experience"}
+{"resume_id": "resline_0089", "line_index": 11, "text": "**Tools and Technologies**", "label": "skills"}
+{"resume_id": "resline_0089", "line_index": 12, "text": "Workday SAP SuccessFactors Greenhouse", "label": "skills"}
+{"resume_id": "resline_0089", "line_index": 13, "text": "ADP Workforce Now BambooHR Oracle", "label": "skills"}
+{"resume_id": "resline_0089", "line_index": 14, "text": "HCM PeopleSoft Microsoft Excel", "label": "skills"}
+{"resume_id": "resline_0089", "line_index": 15, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0089", "line_index": 16, "text": "Master of Science in Industrial-Organizational Psychology | State University", "label": "education"}
+{"resume_id": "resline_0089", "line_index": 17, "text": "Bachelor of Arts in Sociology | University of Arts", "label": "education"}
+{"resume_id": "resline_0090", "line_index": 0, "text": "Chuyên gia đào tạo với hơn 8 năm kinh nghiệm trong việc thiết kế chương trình giảng dạy và phát triển năng lực nhân sự.", "label": "summary"}
+{"resume_id": "resline_0090", "line_index": 1, "text": "Có khả năng ứng dụng các phương pháp giáo dục hiện đại nhằm nâng cao hiệu quả tiếp thu và trải nghiệm học tập của học viên.", "label": "summary"}
+{"resume_id": "resline_0090", "line_index": 2, "text": "Kinh nghiệm: Trưởng phòng Đào tạo - Trung tâm Anh ngữ Elite - 2018 đến nay", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 3, "text": "- Xây dựng và chuẩn hóa bộ giáo trình tiếng Anh giao tiếp chuyên sâu cho người đi làm.", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 4, "text": "- Quản lý đội ngũ 30 giáo viên và thực hiện đánh giá chất lượng giảng dạy định kỳ hàng quý.", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 5, "text": "- Tổ chức các buổi workshop về kỹ năng mềm và phương pháp tự học hiệu quả cho sinh viên.", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 6, "text": "Giảng viên đào tạo nội bộ - Công ty Thương mại X - 2015 đến 2018", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 7, "text": "- Thiết kế các khóa đào tạo kỹ năng bán hàng và quy trình chăm sóc khách hàng cho nhân viên mới.", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 8, "text": "- Theo dõi và báo cáo tiến độ học tập của nhân sự thông qua hệ thống quản lý nội bộ.", "label": "experience"}
+{"resume_id": "resline_0090", "line_index": 9, "text": "Học vấn: Thạc sĩ Quản lý Giáo dục - Đại học Sư phạm Hà Nội - 2015", "label": "education"}
+{"resume_id": "resline_0090", "line_index": 10, "text": "Cử nhân Ngôn ngữ Anh - Đại học Ngoại ngữ - 2012", "label": "education"}
+{"resume_id": "resline_0090", "line_index": 11, "text": "Kỹ năng: Microsoft Teams Zoom Google Classroom", "label": "skills"}
+{"resume_id": "resline_0090", "line_index": 12, "text": "Kahoot Quizizz Canvas LMS Moodle", "label": "skills"}
+{"resume_id": "resline_0090", "line_index": 13, "text": "Articulate Storyline Adobe Captivate", "label": "skills"}
+{"resume_id": "resline_0090", "line_index": 14, "text": "Ngoại ngữ: Tiếng Anh (IELTS 7.5), Tiếng Nhật (N3)", "label": "languages"}
+{"resume_id": "resline_0090", "line_index": 15, "text": "Chứng chỉ: Chứng chỉ Nghiệp vụ Sư phạm bậc 2, Chứng chỉ TESOL quốc tế", "label": "certifications"}
+{"resume_id": "resline_0093", "line_index": 0, "text": "TÓM TẮT CHUYÊN MÔN", "label": "summary"}
+{"resume_id": "resline_0093", "line_index": 1, "text": "Chuyên viên Phân tích Nghiệp vụ (BA) giàu kinh nghiệm trong việc tối ưu hóa quy trình kinh doanh và triển khai hệ thống ERP cho các doanh nghiệp sản xuất lớn.", "label": "summary"}
+{"resume_id": "resline_0093", "line_index": 2, "text": "KỸ NĂNG", "label": "skills"}
+{"resume_id": "resline_0093", "line_index": 3, "text": "- Phân tích dữ liệu (SQL, Python)", "label": "skills"}
+{"resume_id": "resline_0093", "line_index": 4, "text": "- Công cụ quản lý dự án (Jira, Trello)", "label": "skills"}
+{"resume_id": "resline_0093", "line_index": 5, "text": "- Kỹ năng giao tiếp và đàm phán", "label": "skills"}
+{"resume_id": "resline_0093", "line_index": 6, "text": "KINH NGHIỆM LÀM VIỆC", "label": "experience"}
+{"resume_id": "resline_0093", "line_index": 7, "text": "Chuyên viên BA Cấp cao | Sản Xuất Việt Nam | 2017 - Hiện tại", "label": "experience"}
+{"resume_id": "resline_0093", "line_index": 8, "text": "- Thu thập và phân tích yêu cầu từ các phòng ban để xây dựng tài liệu đặc tả hệ thống.", "label": "experience"}
+{"resume_id": "resline_0093", "line_index": 9, "text": "- Đào tạo người dùng cuối và hỗ trợ triển khai hệ thống phần mềm mới trên toàn quốc.", "label": "experience"}
+{"resume_id": "resline_0093", "line_index": 10, "text": "DỰ ÁN", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 11, "text": "Dự án Hiện đại hóa Kho bãi", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 12, "text": "Dự án Cổng thông tin Khách hàng", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 13, "text": "- Thiết kế sơ đồ luồng dữ liệu cho hệ thống quản lý tồn kho tự động.", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 14, "text": "- Xây dựng giao diện đăng ký và quản lý tài khoản cho khách hàng B2B.", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 15, "text": "- Tối ưu hóa thời gian xử lý đơn hàng tại kho thêm 20%.", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 16, "text": "- Tích hợp hệ thống thông báo qua SMS và Email cho trạng thái đơn hàng.", "label": "projects"}
+{"resume_id": "resline_0093", "line_index": 17, "text": "HỌC VẤN", "label": "education"}
+{"resume_id": "resline_0093", "line_index": 18, "text": "Cử nhân Quản trị Kinh doanh | Đại học Quốc gia | 2016", "label": "education"}
+{"resume_id": "resline_0093", "line_index": 19, "text": "CHỨNG CHỈ", "label": "certifications"}
+{"resume_id": "resline_0093", "line_index": 20, "text": "Certified Business Analysis Professional (CBAP)", "label": "certifications"}
+{"resume_id": "resline_0097", "line_index": 0, "text": "Tôi là một chuyên viên hỗ trợ khách hàng với hơn 5 năm kinh nghiệm trong lĩnh vực dịch vụ khách hàng", "label": "summary"}
+{"resume_id": "resline_0097", "line_index": 1, "text": "Kỹ năng giao tiếp, kỹ năng giải quyết vấn đề, kỹ năng làm việc nhóm, phần mềm hỗ trợ khách hàng", "label": "skills"}
+{"resume_id": "resline_0097", "line_index": 2, "text": "Chuyên viên hỗ trợ khách hàng, Công ty Dịch vụ Khách hàng XYZ, 2 năm", "label": "experience"}
+{"resume_id": "resline_0097", "line_index": 3, "text": "Chuyên viên hỗ trợ khách hàng, Công ty Dịch vụ Khách hàng ABC, 3 năm", "label": "experience"}
+{"resume_id": "resline_0097", "line_index": 4, "text": "Dự án 1: Phát triển hệ thống hỗ trợ khách hàng mới, Dự án 2: Cải thiện quy trình giải quyết vấn đề", "label": "projects"}
+{"resume_id": "resline_0097", "line_index": 5, "text": "Tháng 1/2018 - Tháng 12/2020, Tháng 1/2021 - Tháng 6/2022", "label": "projects"}
+{"resume_id": "resline_0097", "line_index": 6, "text": "Đại học Kinh tế, Tốt nghiệp năm 2015", "label": "education"}
+{"resume_id": "resline_0097", "line_index": 7, "text": "Chứng chỉ hỗ trợ khách hàng, Chứng chỉ quản lý dự án", "label": "certifications"}
+{"resume_id": "resline_0097", "line_index": 8, "text": "Giải thưởng hỗ trợ khách hàng xuất sắc, Giải thưởng quản lý dự án xuất sắc", "label": "achievements"}
+{"resume_id": "resline_0097", "line_index": 9, "text": "Tiếng Việt, Tiếng Anh", "label": "languages"}
+{"resume_id": "resline_0097", "line_index": 10, "text": "Có khả năng làm việc độc lập và theo nhóm, có khả năng giải quyết vấn đề phức tạp", "label": "skills"}
+{"resume_id": "resline_0097", "line_index": 11, "text": "Có kinh nghiệm làm việc với phần mềm hỗ trợ khách hàng và quản lý dự án", "label": "experience"}
+{"resume_id": "resline_0097", "line_index": 12, "text": "Có khả năng giao tiếp hiệu quả với khách hàng và đồng nghiệp", "label": "skills"}
+{"resume_id": "resline_0097", "line_index": 13, "text": "Đã hoàn thành các khóa học về hỗ trợ khách hàng và quản lý dự án", "label": "education"}
+{"resume_id": "resline_0097", "line_index": 14, "text": "Đã tham gia các dự án về hỗ trợ khách hàng và quản lý dự án", "label": "projects"}
+{"resume_id": "resline_0104", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0104", "line_index": 1, "text": "Dedicated healthcare administrator with over 12 years of experience in clinical operations and facility management.", "label": "summary"}
+{"resume_id": "resline_0104", "line_index": 2, "text": "Líder bilingüe especializado en mejorar la eficiencia operativa y la calidad del servicio al paciente en entornos hospitalarios de alta presión.", "label": "summary"}
+{"resume_id": "resline_0104", "line_index": 3, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0104", "line_index": 4, "text": "- Revenue Cycle Management (RCM)", "label": "skills"}
+{"resume_id": "resline_0104", "line_index": 5, "text": "- HIPAA & Joint Commission Compliance", "label": "skills"}
+{"resume_id": "resline_0104", "line_index": 6, "text": "- Gestión de expedientes médicos electrónicos (Epic, Cerner)", "label": "skills"}
+{"resume_id": "resline_0104", "line_index": 7, "text": "- Budgeting and Strategic Planning", "label": "skills"}
+{"resume_id": "resline_0104", "line_index": 8, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 9, "text": "Operations Director, Metro Health Center", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 10, "text": "- Oversee daily administrative functions for a 200-bed facility.", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 11, "text": "- Implementar protocolos de seguridad para reducir incidentes clínicos en un 20%.", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 12, "text": "- Managed a multi-disciplinary team of 45 administrative staff.", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 13, "text": "- Optimización de procesos de facturación aumentando la recaudación anual en un 15%.", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 14, "text": "Senior Coordinator, St. Jude Medical Group", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 15, "text": "- Directed patient scheduling and front-office workflows.", "label": "experience"}
+{"resume_id": "resline_0104", "line_index": 16, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0104", "line_index": 17, "text": "Master of Health Administration (MHA), Florida State University", "label": "education"}
+{"resume_id": "resline_0104", "line_index": 18, "text": "Licenciatura en Administración de Empresas, Universidad de Buenos Aires", "label": "education"}
+{"resume_id": "resline_0104", "line_index": 19, "text": "LANGUAGES", "label": "languages"}
+{"resume_id": "resline_0104", "line_index": 20, "text": "English (Fluent), Spanish (Native)", "label": "languages"}
+{"resume_id": "resline_0105", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0105", "line_index": 1, "text": "Strategic Supply Chain professional with a track record of optimizing global logistics networks and reducing procurement costs.", "label": "summary"}
+{"resume_id": "resline_0105", "line_index": 2, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0105", "line_index": 3, "text": "Senior Supply Chain Manager, Global Logistics Corp.", "label": "experience"}
+{"resume_id": "resline_0105", "line_index": 4, "text": "- Engineered a new distribution model saving $2.5M in annual freight costs.", "label": "experience"}
+{"resume_id": "resline_0105", "line_index": 5, "text": "- Directed a team of 15 analysts to improve demand forecasting accuracy.", "label": "experience"}
+{"resume_id": "resline_0105", "line_index": 6, "text": "- Negotiated long-term contracts with ocean carriers to stabilize pricing.", "label": "experience"}
+{"resume_id": "resline_0105", "line_index": 7, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 8, "text": "Warehouse Robotics Integration", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 9, "text": "Regional Sourcing Initiative", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 10, "text": "- Deployed 30 autonomous picking units across the Midwest hub.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 11, "text": "- Identified and vetted 12 new local suppliers in Southeast Asia.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 12, "text": "- Achieved a 50% increase in items picked per hour per worker.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 13, "text": "- Reduced lead times by 14 days by bypassing major port congestion.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 14, "text": "- Integrated warehouse management software with robotic API.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 15, "text": "- Executed risk mitigation audits for all Tier-2 component providers.", "label": "projects"}
+{"resume_id": "resline_0105", "line_index": 16, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0105", "line_index": 17, "text": "Lean Six Sigma, SAP S/4HANA, SQL, Inventory Optimization, Tableau.", "label": "skills"}
+{"resume_id": "resline_0105", "line_index": 18, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0105", "line_index": 19, "text": "Bachelor of Science in Supply Chain Management, Michigan State University", "label": "education"}
+{"resume_id": "resline_0105", "line_index": 20, "text": "CERTIFICATIONS", "label": "certifications"}
+{"resume_id": "resline_0105", "line_index": 21, "text": "Certified Supply Chain Professional (CSCP) - APICS", "label": "certifications"}
+{"resume_id": "resline_0116", "line_index": 0, "text": "Chuyên gia Phân tích Tài chính cấp cao với hơn 8 năm kinh nghiệm trong lĩnh vực quản trị rủi ro và lập kế hoạch ngân sách tại các tập đoàn đa quốc gia. Am hiểu sâu sắc về chuẩn mực kế toán VAS và IFRS, có khả năng tối ưu hóa quy trình vận hành để nâng cao hiệu quả lợi nhuận.", "label": "summary"}
+{"resume_id": "resline_0116", "line_index": 1, "text": "Trưởng phòng Tài chính | Công ty Cổ phần Đầu tư Alpha | 2019 – Hiện tại", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 2, "text": "- Chịu trách nhiệm lập báo cáo tài chính hợp nhất và phân tích biến động định kỳ cho Ban Giám đốc.", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 3, "text": "- Xây dựng mô hình dự báo dòng tiền chính xác giúp giảm chi phí vay vốn ngân hàng thêm 12%.", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 4, "text": "- Giám sát đội ngũ 15 nhân viên kế toán và kiểm soát viên nội bộ tại 3 chi nhánh khác nhau.", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 5, "text": "Kế toán tổng hợp | Tập đoàn Bất động sản Delta | 2015 – 2019", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 6, "text": "- Thực hiện quyết toán thuế thu nhập doanh nghiệp và thuế giá trị gia tăng hàng năm.", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 7, "text": "- Tham mưu cho ban lãnh đạo về các phương án đầu tư tài chính ngắn hạn và dài hạn.", "label": "experience"}
+{"resume_id": "resline_0116", "line_index": 8, "text": "- Dự án A: Triển khai hệ thống phần mềm ERP Oracle quy mô toàn công ty.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 9, "text": "- Dự án B: Thiết lập quy trình kiểm soát chi phí vận hành cho khối văn phòng.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 10, "text": "- Dự án A: Đạt mục tiêu số hóa 90% chứng từ kế toán trong vòng 12 tháng triển khai.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 11, "text": "- Dự án B: Cắt giảm thành công 15% chi phí lãng phí thông qua cơ chế duyệt chi mới.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 12, "text": "- Dự án A: Đào tạo sử dụng hệ thống mới cho hơn 100 nhân sự thuộc các phòng ban.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 13, "text": "- Dự án B: Hoàn thành báo cáo đánh giá tác động tài chính sau khi áp dụng quy trình.", "label": "projects"}
+{"resume_id": "resline_0116", "line_index": 14, "text": "CFA Charterholder - CFA Institute", "label": "certifications"}
+{"resume_id": "resline_0116", "line_index": 15, "text": "Chứng chỉ Kế toán trưởng - Bộ Tài chính", "label": "certifications"}
+{"resume_id": "resline_0116", "line_index": 16, "text": "Cử nhân Kế toán - Kiểm toán | Đại học Kinh tế Quốc dân | 2014", "label": "education"}
+{"resume_id": "resline_0116", "line_index": 17, "text": "Thành thạo Excel (VBA), SQL, Power BI, SAP, và phần mềm kế toán MISA.", "label": "skills"}
+{"resume_id": "resline_0127", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0127", "line_index": 1, "text": "Experienced Digital Marketing Manager with a focus on cross-border e-commerce and performance marketing in international markets.", "label": "summary"}
+{"resume_id": "resline_0127", "line_index": 2, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0127", "line_index": 3, "text": "SEO/SEM, Google Analytics, Meta Ads, Salesforce, SQL, Content Strategy, Market Analysis, Copywriting", "label": "skills"}
+{"resume_id": "resline_0127", "line_index": 4, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 5, "text": "Senior Growth Lead | Nexus Digital | 2020 - Present", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 6, "text": "- Managed multi-channel campaigns resulting in a 40% increase in ROAS across European markets.", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 7, "text": "- Optimized funnel conversion rates through rigorous A/B testing and data analysis of user journeys.", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 8, "text": "Especialista en Marketing Digital | Soluciones Creativas | 2017 - 2020", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 9, "text": "- Implementación de estrategias de SEO on-page y off-page para clientes corporativos B2B.", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 10, "text": "- Gestión de presupuestos publicitarios de más de $20,000 USD mensuales para campañas globales.", "label": "experience"}
+{"resume_id": "resline_0127", "line_index": 11, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0127", "line_index": 12, "text": "Bachelor of Business Administration, University of Toronto", "label": "education"}
+{"resume_id": "resline_0127", "line_index": 13, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0127", "line_index": 14, "text": "HubSpot Content Marketing Certification", "label": "certifications"}
+{"resume_id": "resline_0146", "line_index": 0, "text": "Summary: Dedicated Education Specialist with 10 years of experience in curriculum design and bilingual instruction. Chuyên gia giáo dục tận tâm với 10 năm kinh nghiệm thiết kế chương trình và giảng dạy song ngữ.", "label": "summary"}
+{"resume_id": "resline_0146", "line_index": 1, "text": "Skills: Curriculum Development, E-learning Platforms, Bilingual Pedagogy, Classroom Management, K-12 Literacy, Microsoft Office, Canvas, Google Classroom.", "label": "skills"}
+{"resume_id": "resline_0146", "line_index": 2, "text": "Experience: Senior Instructor at Global Education Center, 2018-Present.", "label": "experience"}
+{"resume_id": "resline_0146", "line_index": 3, "text": "- Lead a team of teachers to implement new bilingual standards. Điều hành đội ngũ giáo viên triển khai tiêu chuẩn song ngữ mới.", "label": "experience"}
+{"resume_id": "resline_0146", "line_index": 4, "text": "- Developed hybrid learning models that improved student engagement by 40%. Phát triển mô hình học tập kết hợp giúp tăng 40% sự tương tác.", "label": "experience"}
+{"resume_id": "resline_0146", "line_index": 5, "text": "Projects: Project Alpha: Digital Literacy Initiative / Dự án Alpha: Sáng kiến xóa mù chữ số.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 6, "text": "Project Beta: Bilingual Curriculum Pilot / Dự án Beta: Thí điểm chương trình song ngữ.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 7, "text": "- Project Alpha: Developed workshop materials for over 300 adult learners in urban areas.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 8, "text": "- Project Beta: Designed dual-language science textbooks for secondary schools.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 9, "text": "- Project Alpha: Managed a $25,000 grant for hardware and software procurement.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 10, "text": "- Project Beta: Conducted pilot testing in five provinces with positive feedback from 90% of teachers.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 11, "text": "- Project Alpha: Published a white paper on the impact of mobile learning in developing regions.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 12, "text": "- Project Beta: Integrated multimedia resources into the standard curriculum for better retention.", "label": "projects"}
+{"resume_id": "resline_0146", "line_index": 13, "text": "Education: Master of Education in Teaching and Learning, University of Melbourne, 2014.", "label": "education"}
+{"resume_id": "resline_0146", "line_index": 14, "text": "Languages: English (Native), Vietnamese (Native), French (Intermediate).", "label": "languages"}
+{"resume_id": "resline_0156", "line_index": 0, "text": "Luật sư dày dạn kinh nghiệm với hơn 12 năm làm việc trong lĩnh vực tranh tụng dân sự và tư vấn pháp lý doanh nghiệp.", "label": "summary"}
+{"resume_id": "resline_0156", "line_index": 1, "text": "Chuyên gia về luật hợp đồng, giải quyết tranh chấp thương mại quốc tế và quản trị rủi ro pháp lý cho các tập đoàn đa quốc gia.", "label": "summary"}
+{"resume_id": "resline_0156", "line_index": 2, "text": "Luật sư điều hành | Công ty Luật Minh Quang | 2016 - Hiện tại", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 3, "text": "- Đại diện cho khách hàng trong các vụ kiện kinh tế và dân sự phức tạp tại Tòa án nhân dân các cấp.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 4, "text": "- Soạn thảo và rà soát các thỏa thuận sáp nhập và mua lại (M&A) trị giá lên đến 50 triệu USD.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 5, "text": "- Tư vấn cho Hội đồng quản trị về việc tuân thủ các quy định pháp luật mới về đầu tư và doanh nghiệp tại Việt Nam.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 6, "text": "Luật sư cộng sự | Văn phòng Luật sư ABC | 2011 - 2016", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 7, "text": "- Hỗ trợ khách hàng trong việc đàm phán hợp đồng lao động và giải quyết khiếu nại tại nơi làm việc.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 8, "text": "- Nghiên cứu hồ sơ vụ án, chuẩn bị luận cứ bảo vệ và các văn bản tố tụng cần thiết cho phiên tòa.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 9, "text": "- Tham gia bào chữa trong các vụ án hình sự và đại diện ủy quyền trong các vụ án dân sự sơ thẩm.", "label": "experience"}
+{"resume_id": "resline_0156", "line_index": 10, "text": "Tư vấn pháp lý, Tranh tụng tại tòa, Đàm phán hợp đồng, Tiếng Anh chuyên ngành pháp lý, Quản trị rủi ro.", "label": "skills"}
+{"resume_id": "resline_0156", "line_index": 11, "text": "Thạc sĩ Luật kinh tế | Đại học Luật Hà Nội | 2014", "label": "education"}
+{"resume_id": "resline_0156", "line_index": 12, "text": "Cử nhân Luật | Đại học Quốc gia Hà Nội | 2011", "label": "education"}
+{"resume_id": "resline_0156", "line_index": 13, "text": "Chứng chỉ hành nghề Luật sư | Bộ Tư pháp Việt Nam | 2013", "label": "certifications"}
+{"resume_id": "resline_0156", "line_index": 14, "text": "Thành viên xuất sắc Đoàn Luật sư Thành phố Hồ Chí Minh năm 2020", "label": "achievements"}
+{"resume_id": "resline_0156", "line_index": 15, "text": "Tiếng Việt (Bản ngữ), Tiếng Anh (Lưu loát, IELTS 7.5)", "label": "languages"}
+{"resume_id": "resline_0157", "line_index": 0, "text": "Digital Marketing Specialist with 8+ years of experience: skilled in SEO, PPC, and social media marketing", "label": "summary"}
+{"resume_id": "resline_0157", "line_index": 1, "text": "Skills: Python, SQL, Docker, Google Analytics, Facebook Ads", "label": "skills"}
+{"resume_id": "resline_0157", "line_index": 2, "text": "- Developed and executed a multi-channel marketing campaign for a new product launch, resulting in a 25% increase in sales", "label": "experience"}
+{"resume_id": "resline_0157", "line_index": 3, "text": "- Created and managed a social media presence for a clients' brand, growing followers by 500% in 6 months", "label": "projects"}
+{"resume_id": "resline_0157", "line_index": 4, "text": "- Developed and executed a multi-channel marketing campaign for a new product launch, resulting in a 25% increase in sales", "label": "experience"}
+{"resume_id": "resline_0157", "line_index": 5, "text": "- Built and optimized landing pages for paid advertising campaigns, resulting in a 15% increase in conversions", "label": "projects"}
+{"resume_id": "resline_0157", "line_index": 6, "text": "- Collaborated with cross-functional teams to launch a new product, resulting in a 50% increase in sales", "label": "experience"}
+{"resume_id": "resline_0157", "line_index": 7, "text": "- Created and managed a social media presence for a clients' brand, growing followers by 500% in 6 months", "label": "projects"}
+{"resume_id": "resline_0157", "line_index": 8, "text": "Education: Bachelor's degree in Marketing from a reputable university, 2010", "label": "education"}
+{"resume_id": "resline_0157", "line_index": 9, "text": "Certifications: Google Analytics Certification, HubSpot Inbound Marketing Certification", "label": "certifications"}
+{"resume_id": "resline_0157", "line_index": 10, "text": "Achievements: Winner of the 2018 Digital Marketing Award for Best Social Media Campaign", "label": "achievements"}
+{"resume_id": "resline_0157", "line_index": 11, "text": "Languages: English (native), Spanish (fluent)", "label": "languages"}
+{"resume_id": "resline_0157", "line_index": 12, "text": "- Managed a team of junior marketers, providing guidance and support to ensure successful campaign execution", "label": "experience"}
+{"resume_id": "resline_0157", "line_index": 13, "text": "- Developed and maintained relationships with key clients, resulting in a 25% increase in repeat business", "label": "projects"}
+{"resume_id": "resline_0157", "line_index": 14, "text": "- Created and presented regular performance reports to senior management, highlighting key metrics and insights", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0160", "line_index": 1, "text": "Innovative UI/UX Designer with over 7 years of experience in creating user-centered digital products across web and mobile platforms. Proven track record of improving user engagement and streamlining design workflows.", "label": "summary"}
+{"resume_id": "resline_0160", "line_index": 2, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0160", "line_index": 3, "text": "Figma Adobe Creative Suite Sketch Framer", "label": "skills"}
+{"resume_id": "resline_0160", "line_index": 4, "text": "InVision Principle Maze Hotjar Google Analytics", "label": "skills"}
+{"resume_id": "resline_0160", "line_index": 5, "text": "Miro Jira Confluence Trello Slack Zoom", "label": "skills"}
+{"resume_id": "resline_0160", "line_index": 6, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 7, "text": "Senior Product Designer", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 8, "text": "Innovate Design Lab", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 9, "text": "- Spearheaded the redesign of the flagship e-commerce platform resulting in a 25% increase in conversion rate.", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 10, "text": "- Established a comprehensive design system that reduced design-to-development handoff time by 40%.", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 11, "text": "UX Designer", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 12, "text": "Creative Pulse Agency", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 13, "text": "- Conducted over 50 user research sessions and synthesized findings into actionable design improvements.", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 14, "text": "- Collaborated with cross-functional teams to deliver high-fidelity prototypes for healthcare applications.", "label": "experience"}
+{"resume_id": "resline_0160", "line_index": 15, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0160", "line_index": 16, "text": "Master of Fine Arts in Interaction Design", "label": "education"}
+{"resume_id": "resline_0160", "line_index": 17, "text": "School of Visual Arts", "label": "education"}
+{"resume_id": "resline_0160", "line_index": 18, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0160", "line_index": 19, "text": "Certified Professional in Accessibility Core Competencies (CPACC)", "label": "certifications"}
+{"resume_id": "resline_0171", "line_index": 0, "text": "Work Experience", "label": "experience"}
+{"resume_id": "resline_0171", "line_index": 1, "text": "- Served as a Law Clerk for a federal judge, researching and drafting opinions on complex legal cases", "label": "experience"}
+{"resume_id": "resline_0171", "line_index": 2, "text": "- Collaborated with attorneys to develop and implement case strategies, resulting in a 90% success rate", "label": "experience"}
+{"resume_id": "resline_0171", "line_index": 3, "text": "- Conducted legal research and analysis on intellectual property law, resulting in the development of a new patent application process", "label": "experience"}
+{"resume_id": "resline_0171", "line_index": 4, "text": "Projects", "label": "projects"}
+{"resume_id": "resline_0171", "line_index": 5, "text": "- Developed and implemented a pro bono legal services program, providing legal assistance to low-income families", "label": "projects"}
+{"resume_id": "resline_0171", "line_index": 6, "text": "- Collaborated with legal professionals to create a legal research database, improving research efficiency by 40%", "label": "projects"}
+{"resume_id": "resline_0171", "line_index": 7, "text": "- Researched and wrote a paper on the intersection of law and technology, published in the Journal of Law and Technology", "label": "projects"}
+{"resume_id": "resline_0171", "line_index": 8, "text": "- Worked as a Summer Associate at a law firm, assisting attorneys with legal research and case preparation", "label": "experience"}
+{"resume_id": "resline_0171", "line_index": 9, "text": "- Developed and taught a legal education program for high school students, resulting in a 25% increase in student interest in law", "label": "projects"}
+{"resume_id": "resline_0171", "line_index": 10, "text": "Education", "label": "education"}
+{"resume_id": "resline_0171", "line_index": 11, "text": "- Juris Doctor, Harvard Law School, 2015", "label": "education"}
+{"resume_id": "resline_0171", "line_index": 12, "text": "- Bachelor of Arts in English, University of California, Los Angeles, 2010", "label": "education"}
+{"resume_id": "resline_0171", "line_index": 13, "text": "Certifications", "label": "certifications"}
+{"resume_id": "resline_0171", "line_index": 14, "text": "- Certified Legal Professional, National Association of Legal Professionals, 2018", "label": "certifications"}
+{"resume_id": "resline_0171", "line_index": 15, "text": "Achievements", "label": "achievements"}
+{"resume_id": "resline_0171", "line_index": 16, "text": "- Received the Outstanding Achievement Award in Law, 2019", "label": "achievements"}
+{"resume_id": "resline_0171", "line_index": 17, "text": "Languages", "label": "languages"}
+{"resume_id": "resline_0171", "line_index": 18, "text": "- Proficient in English, Spanish, and French", "label": "languages"}
+{"resume_id": "resline_0185", "line_index": 0, "text": "Chuyên gia thiết kế UI/UX với hơn 6 năm kinh nghiệm trong việc tạo ra các sản phẩm kỹ thuật số tập trung vào trải nghiệm người dùng và giao diện trực quan.", "label": "summary"}
+{"resume_id": "resline_0185", "line_index": 1, "text": "Có khả năng thực hiện nghiên cứu người dùng sâu rộng và xây dựng các hệ thống thiết kế quy mô lớn cho ứng dụng di động và nền tảng web.", "label": "summary"}
+{"resume_id": "resline_0185", "line_index": 2, "text": "Figma Sketch Adobe XD Framer Principle InVision Zeplin", "label": "skills"}
+{"resume_id": "resline_0185", "line_index": 3, "text": "Miro Webflow HTML CSS JavaScript Prototyping Wireframing User Research", "label": "skills"}
+{"resume_id": "resline_0185", "line_index": 4, "text": "Senior Product Designer | Tech Creative Hub", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 5, "text": "- Dẫn dắt quy trình thiết kế cho 3 ứng dụng di động lớn trong lĩnh vực thương mại điện tử.", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 6, "text": "- Quản lý và đào tạo đội ngũ gồm 5 nhà thiết kế trẻ nhằm cải thiện hiệu suất làm việc.", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 7, "text": "- Phối hợp chặt chẽ với đội ngũ kỹ thuật để đảm bảo tính khả thi của các bản thiết kế.", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 8, "text": "UX Designer | Innovate Startup", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 9, "text": "- Xây dựng bản đồ hành trình người dùng và khung sườn ứng dụng cho nền tảng Fintech.", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 10, "text": "- Thực hiện các buổi phỏng vấn người dùng và kiểm tra khả năng sử dụng định kỳ.", "label": "experience"}
+{"resume_id": "resline_0185", "line_index": 11, "text": "Cử nhân Thiết kế Đồ họa", "label": "education"}
+{"resume_id": "resline_0185", "line_index": 12, "text": "Đại học Mỹ thuật Công nghiệp Hà Nội", "label": "education"}
+{"resume_id": "resline_0185", "line_index": 13, "text": "Chứng chỉ Google UX Design Professional", "label": "certifications"}
+{"resume_id": "resline_0185", "line_index": 14, "text": "Adobe Certified Professional in Visual Design", "label": "certifications"}
+{"resume_id": "resline_0185", "line_index": 15, "text": "Tiếng Việt (Bản ngữ)", "label": "languages"}
+{"resume_id": "resline_0185", "line_index": 16, "text": "Tiếng Anh (IELTS 7.5)", "label": "languages"}
+{"resume_id": "resline_0191", "line_index": 0, "text": "Senior DevOps Engineer with over 8 years of experience in cloud infrastructure automation and CI/CD pipelines.", "label": "summary"}
+{"resume_id": "resline_0191", "line_index": 1, "text": "Senior Infrastructure Engineer | Tech Solutions Inc. | 2019 – Present", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 2, "text": "- Architected AWS multi-region infrastructure using Terraform and CloudFormation for high availability.", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 3, "text": "- Implemented automated deployments reducing release cycle time by 40% using Jenkins and Spinnaker.", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 4, "text": "- Managed Kubernetes clusters (EKS) for microservices orchestration and scaling.", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 5, "text": "DevOps Specialist | Global Data Systems | 2015 – 2019", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 6, "text": "- Optimized Jenkins pipelines for Java and Python applications across multiple environments.", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 7, "text": "- Monitored system performance and uptime using Prometheus, Grafana, and ELK stack.", "label": "experience"}
+{"resume_id": "resline_0191", "line_index": 8, "text": "Infrastructure Migration Project: Migrated legacy on-premise servers to Azure cloud with zero downtime.", "label": "projects"}
+{"resume_id": "resline_0191", "line_index": 9, "text": "CI/CD Pipeline Overhaul: Integrated security scanning and automated testing into the delivery process.", "label": "projects"}
+{"resume_id": "resline_0191", "line_index": 10, "text": "Jan 2021 – Dec 2022", "label": "projects"}
+{"resume_id": "resline_0191", "line_index": 11, "text": "Mar 2018 – Nov 2019", "label": "projects"}
+{"resume_id": "resline_0191", "line_index": 12, "text": "Docker, Kubernetes, Terraform, AWS, Azure, Jenkins, Python, Ansible, Linux Administration.", "label": "skills"}
+{"resume_id": "resline_0191", "line_index": 13, "text": "Bachelor of Science in Computer Science, State University, 2015.", "label": "education"}
+{"resume_id": "resline_0191", "line_index": 14, "text": "AWS Certified Solutions Architect – Professional", "label": "certifications"}
+{"resume_id": "resline_0192", "line_index": 0, "text": "Summary: Senior Project Manager with 10+ years of experience leading cross-functional teams. Quản lý dự án chuyên nghiệp.", "label": "summary"}
+{"resume_id": "resline_0192", "line_index": 1, "text": "Experience: Senior Project Manager at BuildRight Solutions, 2018 - Present.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 2, "text": "Experience: Successfully delivered a $10M infrastructure upgrade on schedule and 5% under budget.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 3, "text": "Experience: Managed a diverse team of 20+ engineers, contractors, and internal stakeholders.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 4, "text": "Experience: Project Coordinator at TechVina Corp, 2014 - 2018.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 5, "text": "Experience: Facilitated communication between technical teams and regional stakeholders in SE Asia.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 6, "text": "Experience: Tracked project milestones and provided weekly status reports to executive leadership.", "label": "experience"}
+{"resume_id": "resline_0192", "line_index": 7, "text": "Skills: Agile, Scrum, PMP, Microsoft Project, JIRA, Risk Management, Stakeholder Communication, English, Vietnamese.", "label": "skills"}
+{"resume_id": "resline_0192", "line_index": 8, "text": "Education: Master of Business Administration (MBA), University of Economics, 2014.", "label": "education"}
+{"resume_id": "resline_0192", "line_index": 9, "text": "Education: Bachelor of Civil Engineering, Hanoi University of Science and Technology, 2011.", "label": "education"}
+{"resume_id": "resline_0192", "line_index": 10, "text": "Languages: English (Fluent / Lưu loát), Vietnamese (Native / Tiếng mẹ đẻ), French (Basic).", "label": "languages"}
+{"resume_id": "resline_0192", "line_index": 11, "text": "Certifications: PMP (Project Management Professional), 2019.", "label": "certifications"}
+{"resume_id": "resline_0192", "line_index": 12, "text": "Certifications: Certified Scrum Master (CSM), Scrum Alliance, 2017.", "label": "certifications"}
+{"resume_id": "resline_0192", "line_index": 13, "text": "Achievements: Recipient of the 'Project Manager of the Year' award at BuildRight, 2021.", "label": "achievements"}
+{"resume_id": "resline_0192", "line_index": 14, "text": "Achievements: Led the first LEED Gold certified building project in the metropolitan area.", "label": "achievements"}
+{"resume_id": "resline_0196", "line_index": 0, "text": "Highly motivated finance professional with 5+ years of experience in financial analysis and planning:", "label": "summary"}
+{"resume_id": "resline_0196", "line_index": 1, "text": "Skills: Python, SQL, Docker, financial modeling, data analysis, budgeting", "label": "skills"}
+{"resume_id": "resline_0196", "line_index": 2, "text": "Project A - Financial Planning: - Developed a financial planning model using Python and SQL", "label": "projects"}
+{"resume_id": "resline_0196", "line_index": 3, "text": "Project B - Risk Analysis: - Conducted risk analysis for investment portfolios using Docker and data visualization tools", "label": "projects"}
+{"resume_id": "resline_0196", "line_index": 4, "text": "Project A - Financial Planning: - Created data visualizations to present findings to stakeholders", "label": "projects"}
+{"resume_id": "resline_0196", "line_index": 5, "text": "Project B - Risk Analysis: - Collaborated with cross-functional teams to implement risk mitigation strategies", "label": "projects"}
+{"resume_id": "resline_0196", "line_index": 6, "text": "Education: Bachelor's degree in Finance, XYZ University, 2018", "label": "education"}
+{"resume_id": "resline_0196", "line_index": 7, "text": "Certifications: Certified Financial Analyst (CFA), 2020", "label": "certifications"}
+{"resume_id": "resline_0196", "line_index": 8, "text": "Achievements: Awarded the Financial Planning Award, 2019", "label": "achievements"}
+{"resume_id": "resline_0196", "line_index": 9, "text": "Languages: English, Spanish", "label": "languages"}
+{"resume_id": "resline_0196", "line_index": 10, "text": "Experience: Financial Analyst, ABC Company, 2018-2020", "label": "experience"}
+{"resume_id": "resline_0196", "line_index": 11, "text": "- Analyzed financial data to inform business decisions", "label": "experience"}
+{"resume_id": "resline_0196", "line_index": 12, "text": "- Developed and maintained financial models to forecast revenue and expenses", "label": "experience"}
+{"resume_id": "resline_0196", "line_index": 13, "text": "Other relevant tools: Excel, Tableau, Power BI", "label": "skills"}
+{"resume_id": "resline_0196", "line_index": 14, "text": "Project A - Financial Planning: - Presented findings to executive team and implemented changes", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 0, "text": "Summary: Experienced software engineer with 8 years of full‑stack development, specializing in scalable backend services and cloud infrastructure.", "label": "summary"}
+{"resume_id": "resline_0209", "line_index": 1, "text": "Skills: Python, SQL, Docker, Kubernetes, AWS, Git, CI/CD", "label": "skills"}
+{"resume_id": "resline_0209", "line_index": 2, "text": "Experience:", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 3, "text": "Senior Software Engineer, CloudCorp – 2018‑Present", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 4, "text": "- Designed microservices in Python, handling 2M+ API calls daily.", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 5, "text": "- Optimized PostgreSQL queries, reducing latency by 35%.", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 6, "text": "Software Engineer, DataSolutions – 2014‑2018", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 7, "text": "- Built ETL pipelines with Apache Airflow and SQL.", "label": "experience"}
+{"resume_id": "resline_0209", "line_index": 8, "text": "Projects:", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 9, "text": "- Real‑time Analytics Dashboard: React front‑end visualizing streaming Kafka data.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 10, "text": "- CI/CD Automation Toolkit: Bash scripts automating Docker image builds and deployments.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 11, "text": "- Implemented WebSocket integration for live updates in the dashboard.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 12, "text": "- Integrated GitLab CI pipelines with Kubernetes for zero‑downtime releases.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 13, "text": "- Added role‑based access control and JWT authentication.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 14, "text": "- Provided Helm charts for scalable deployment of the toolkit.", "label": "projects"}
+{"resume_id": "resline_0209", "line_index": 15, "text": "Education:", "label": "education"}
+{"resume_id": "resline_0209", "line_index": 16, "text": "B.S. Computer Science, University of Illinois – 2014", "label": "education"}
+{"resume_id": "resline_0213", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0213", "line_index": 1, "text": "Creative Content Writer with 7 years experience crafting SEO‑optimized articles for tech and lifestyle brands.", "label": "summary"}
+{"resume_id": "resline_0213", "line_index": 2, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0213", "line_index": 3, "text": "- SEO, CMS (WordPress, Joomla), Adobe Creative Suite, Google Analytics, Copywriting", "label": "skills"}
+{"resume_id": "resline_0213", "line_index": 4, "text": "- Vietnamese (Native), English (Fluent)", "label": "languages"}
+{"resume_id": "resline_0213", "line_index": 5, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 6, "text": "Senior Content Strategist – TechMedia Co. | 2020‑2023", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 7, "text": "- Led a team of 5 writers, increasing organic traffic by 45% YoY", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 8, "text": "- Developed editorial calendar and style guide in both English and Vietnamese", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 9, "text": "Content Writer – Lifestyle Hub | 2015‑2020", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 10, "text": "- Produced over 300 blog posts, achieving average 5,000 monthly reads", "label": "experience"}
+{"resume_id": "resline_0213", "line_index": 11, "text": "**Projects**", "label": "projects"}
+{"resume_id": "resline_0213", "line_index": 12, "text": "- Personal blog \"Sáng Tạo Nội Dung\" – 30k monthly visitors, monetized through affiliate marketing", "label": "projects"}
+{"resume_id": "resline_0213", "line_index": 13, "text": "- Collaborative e‑book \"Digital Marketing Trends 2022\" – 15k downloads, co‑author with 3 industry experts", "label": "projects"}
+{"resume_id": "resline_0213", "line_index": 14, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0213", "line_index": 15, "text": "B.A. Journalism – University of Hanoi, 2014", "label": "education"}
+{"resume_id": "resline_0226", "line_index": 0, "text": "Summary: HR professional with 8 years driving talent acquisition, employee engagement, and compliance across multinational firms.", "label": "summary"}
+{"resume_id": "resline_0226", "line_index": 1, "text": "Skills: Talent acquisition, Employee relations, HRIS (Workday), GDPR compliance, Spanish (fluent), Tableau, Agile coaching", "label": "skills"}
+{"resume_id": "resline_0226", "line_index": 2, "text": "Experience: HR Manager, GlobalTech Solutions, 2019‑2023", "label": "experience"}
+{"resume_id": "resline_0226", "line_index": 3, "text": "- Led a team of 5 recruiters, reducing time‑to‑fill by 22%.", "label": "experience"}
+{"resume_id": "resline_0226", "line_index": 4, "text": "- Implemented a new performance‑review process, boosting employee satisfaction scores from 78% to 89%.", "label": "experience"}
+{"resume_id": "resline_0226", "line_index": 5, "text": "- Managed the rollout of Workday HRIS for 2,000+ users, achieving 99% data accuracy.", "label": "experience"}
+{"resume_id": "resline_0226", "line_index": 6, "text": "Projects: Diversity Dashboard (Python, PowerBI) & Automated Onboarding Workflow (Workday, JavaScript)", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 7, "text": "- Designed a data model aggregating demographic metrics across 15 regions, enabling quarterly diversity reporting.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 8, "text": "- Developed a scripted onboarding bot that auto‑populates new‑hire records, cutting onboarding time by 30%.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 9, "text": "- Created interactive PowerBI visualizations with drill‑down capabilities for senior leadership.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 10, "text": "- Integrated the bot with Workday APIs, ensuring GDPR‑compliant data handling.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 11, "text": "- Conducted training sessions for 200 managers on interpreting dashboard insights.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 12, "text": "- Established automated email notifications for pending onboarding tasks, improving compliance audit scores.", "label": "projects"}
+{"resume_id": "resline_0226", "line_index": 13, "text": "Education: B.A. in Human Resources Management, State University, 2015", "label": "education"}
+{"resume_id": "resline_0226", "line_index": 14, "text": "Certifications: SHRM‑CP (2020), Certified GDPR Practitioner (2021)", "label": "certifications"}
+{"resume_id": "resline_0228", "line_index": 0, "text": "Strategic supply chain analyst with 7 years of experience optimizing global logistics networks and reducing costs through data‑driven solutions.", "label": "summary"}
+{"resume_id": "resline_0228", "line_index": 1, "text": "Skills: Supply chain planning, SAP MM, Lean Six Sigma, demand forecasting, Python, SQL, Tableau, Agile methodology", "label": "skills"}
+{"resume_id": "resline_0228", "line_index": 2, "text": "Supply Chain Analyst, Apex Logistics, Jan 2020 – Present", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 3, "text": "- Managed end‑to‑end inventory for 5 major clients, reducing stockouts by 15%.", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 4, "text": "- Implemented demand‑forecasting models in Python, improving forecast accuracy to 92%.", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 5, "text": "Operations Coordinator, FreightFlow Inc., Jun 2016 – Dec 2019", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 6, "text": "- Coordinated cross‑border shipments, achieving on‑time delivery rate of 97%.", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 7, "text": "- Led a Kaizen initiative that cut handling costs by $200K annually.", "label": "experience"}
+{"resume_id": "resline_0228", "line_index": 8, "text": "Project A – Real‑time Inventory Visibility Platform (PowerBI, Azure)", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 9, "text": "Project B – Automated Carrier Selection Engine (Python, OR‑Tools)", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 10, "text": "- Developed PowerBI dashboards displaying live inventory levels across 12 warehouses.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 11, "text": "- Built an algorithm to match shipments with optimal carriers based on cost and transit time.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 12, "text": "- Integrated Azure Stream Analytics to feed data into dashboards every 5 minutes.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 13, "text": "- Validated engine performance, achieving 8% reduction in freight costs.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 14, "text": "- Trained supply chain team on dashboard usage, resulting in faster decision making.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 15, "text": "- Deployed the engine into production, handling 1,500 routing decisions per day.", "label": "projects"}
+{"resume_id": "resline_0228", "line_index": 16, "text": "Education: M.S. in Supply Chain Management, University of Michigan, 2016", "label": "education"}
+{"resume_id": "resline_0228", "line_index": 17, "text": "Certifications: APICS CPIM (2018), Six Sigma Green Belt (2019)", "label": "certifications"}
+{"resume_id": "resline_0235", "line_index": 0, "text": "Summary: Chuyên gia bán hàng với hơn 9 năm kinh nghiệm, tập trung vào tăng trưởng doanh thu và phát triển mối quan hệ khách hàng.", "label": "summary"}
+{"resume_id": "resline_0235", "line_index": 1, "text": "Skills: Đàm phán, quản lý mối quan hệ khách hàng, Salesforce, HubSpot, Excel, PowerPoint", "label": "skills"}
+{"resume_id": "resline_0235", "line_index": 2, "text": "Experience: Senior Sales Manager, ABC Corp – 2018‑2023", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 3, "text": "- Dẫn dắt đội ngũ 12 người, tăng doanh thu 35%.", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 4, "text": "- Phát triển chiến lược bán hàng đa kênh, mở rộng thị trường Đông Nam Á.", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 5, "text": "Experience: Sales Executive, XYZ Ltd – 2014‑2018", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 6, "text": "- Đạt mục tiêu doanh số hàng năm vượt 120%.", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 7, "text": "- Xây dựng mối quan hệ với 50+ khách hàng lớn.", "label": "experience"}
+{"resume_id": "resline_0235", "line_index": 8, "text": "Projects: Chương trình CRM tùy chỉnh cho khách hàng nội bộ", "label": "projects"}
+{"resume_id": "resline_0235", "line_index": 9, "text": "- Thiết kế quy trình tự động hoá, giảm thời gian nhập liệu 40%.", "label": "projects"}
+{"resume_id": "resline_0235", "line_index": 10, "text": "Projects: Nghiên cứu thị trường xu hướng mua sắm trực tuyến", "label": "projects"}
+{"resume_id": "resline_0235", "line_index": 11, "text": "- Phân tích dữ liệu 5 năm, đề xuất chiến lược tăng trưởng 15%.", "label": "projects"}
+{"resume_id": "resline_0235", "line_index": 12, "text": "Jan 2019 – Jun 2019; Sep 2020 – Dec 2020", "label": "projects"}
+{"resume_id": "resline_0235", "line_index": 13, "text": "Education: Cử nhân Quản trị Kinh doanh, Đại học Kinh tế TP.HCM, 2014", "label": "education"}
+{"resume_id": "resline_0235", "line_index": 14, "text": "Certifications: Chứng chỉ Salesforce Administrator, 2020", "label": "certifications"}
+{"resume_id": "resline_0235", "line_index": 15, "text": "Achievements: Giải Nhì Cuộc thi Bán hàng Quốc gia, 2021", "label": "achievements"}
+{"resume_id": "resline_0236", "line_index": 0, "text": "Summary", "label": "summary"}
+{"resume_id": "resline_0236", "line_index": 1, "text": "Customer Support specialist with 7+ years of experience handling high‑volume ticket queues and improving CSAT scores.", "label": "summary"}
+{"resume_id": "resline_0236", "line_index": 2, "text": "Skills", "label": "skills"}
+{"resume_id": "resline_0236", "line_index": 3, "text": "Skills: Zendesk LiveChat", "label": "skills"}
+{"resume_id": "resline_0236", "line_index": 4, "text": "Salesforce Service Cloud Slack", "label": "skills"}
+{"resume_id": "resline_0236", "line_index": 5, "text": "Jira Confluence", "label": "skills"}
+{"resume_id": "resline_0236", "line_index": 6, "text": "Work Experience", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 7, "text": "Support Lead, GlobalTech Solutions – 2019‑2023", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 8, "text": "- Managed a team of 8 agents, achieving 95% CSAT and reducing average handling time by 22%.", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 9, "text": "- Implemented knowledge‑base improvements, cutting repeat tickets by 18%.", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 10, "text": "Senior Support Agent, SoftServe Inc. – 2015‑2019", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 11, "text": "- Handled Tier‑2 escalations for SaaS products, resolving 98% of issues on first contact.", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 12, "text": "- Trained new hires on communication protocols and ticketing system best practices.", "label": "experience"}
+{"resume_id": "resline_0236", "line_index": 13, "text": "Education", "label": "education"}
+{"resume_id": "resline_0236", "line_index": 14, "text": "B.A. Communications, University of State, 2014", "label": "education"}
+{"resume_id": "resline_0236", "line_index": 15, "text": "Certifications", "label": "certifications"}
+{"resume_id": "resline_0236", "line_index": 16, "text": "Certified Customer Service Professional (CCSP), 2020", "label": "certifications"}
+{"resume_id": "resline_0236", "line_index": 17, "text": "Achievements", "label": "achievements"}
+{"resume_id": "resline_0236", "line_index": 18, "text": "Employee of the Year, GlobalTech, 2021", "label": "achievements"}
+{"resume_id": "resline_0243", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0243", "line_index": 1, "text": "Finance professional with 10 years experience in accounting, financial reporting, and audit coordination for multinational corporations.", "label": "summary"}
+{"resume_id": "resline_0243", "line_index": 2, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0243", "line_index": 3, "text": "GAAP, IFRS, SAP FI/CO, Excel (advanced), Power BI, financial modeling, risk assessment", "label": "skills"}
+{"resume_id": "resline_0243", "line_index": 4, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 5, "text": "Finance Manager, Global Manufacturing Inc. (2016‑2022)", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 6, "text": "- Oversaw month‑end close process, ensuring timely and accurate financial statements for $2B revenue.", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 7, "text": "- Led a team of 8 accountants, improving audit readiness and reducing external audit adjustments by 30%.", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 8, "text": "Senior Accountant, Tech Solutions Ltd. (2012‑2016)", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 9, "text": "- Managed accounts payable/receivable, cash flow forecasting, and intercompany reconciliations.", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 10, "text": "- Implemented SAP FI module upgrade, streamlining financial reporting workflow.", "label": "experience"}
+{"resume_id": "resline_0243", "line_index": 11, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 12, "text": "Project: ERP Financial Integration – Consolidated financial data across 5 subsidiaries.", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 13, "text": "- Designed data migration strategy, resulting in 95% data integrity post‑go‑live.", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 14, "text": "Project: Cost Reduction Initiative – Analyzed expense categories to identify savings.", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 15, "text": "- Delivered recommendations that cut operating costs by $4M annually.", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 16, "text": "Jan 2018 – Dec 2019", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 17, "text": "Mar 2014 – Aug 2015", "label": "projects"}
+{"resume_id": "resline_0243", "line_index": 18, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0243", "line_index": 19, "text": "MBA Finance, University of Michigan Ross School of Business, 2012", "label": "education"}
+{"resume_id": "resline_0243", "line_index": 20, "text": "CERTIFICATIONS", "label": "certifications"}
+{"resume_id": "resline_0243", "line_index": 21, "text": "CPA – Certified Public Accountant, 2013", "label": "certifications"}
+{"resume_id": "resline_0244", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0244", "line_index": 1, "text": "Versatile content writer with 7+ years experience crafting SEO‑optimized articles, marketing copy, and technical documentation for SaaS and e‑commerce clients.", "label": "summary"}
+{"resume_id": "resline_0244", "line_index": 2, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0244", "line_index": 3, "text": "Copywriting SEO Content Strategy", "label": "skills"}
+{"resume_id": "resline_0244", "line_index": 4, "text": "WordPress Grammarly Hemingway Editor", "label": "skills"}
+{"resume_id": "resline_0244", "line_index": 5, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 6, "text": "- Senior Content Writer, TechPulse Solutions (Jan 2020 – Present)", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 7, "text": "- Produced 150+ blog posts ranking on first page of Google, increasing organic traffic by 45%.", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 8, "text": "- Led a cross‑functional team to revamp product documentation, reducing support tickets by 20%.", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 9, "text": "- Collaborated with UX designers to write microcopy for web app, improving conversion rate by 12%.", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 10, "text": "- Junior Content Writer, MediaWave Agency (Jun 2015 – Dec 2019)", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 11, "text": "- Developed press releases and case studies for Fortune 500 clients, achieving 30% media pick‑up.", "label": "experience"}
+{"resume_id": "resline_0244", "line_index": 12, "text": "**Projects**", "label": "projects"}
+{"resume_id": "resline_0244", "line_index": 13, "text": "- Freelance: Created an e‑book on AI ethics (200 pages) published on Amazon, generating $5K revenue in first month.", "label": "projects"}
+{"resume_id": "resline_0244", "line_index": 14, "text": "- Volunteer: Managed content for non‑profit environmental campaign, raising $10K donations.", "label": "projects"}
+{"resume_id": "resline_0244", "line_index": 15, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0244", "line_index": 16, "text": "- B.A. in English Literature, University of Chicago, 2015", "label": "education"}
+{"resume_id": "resline_0244", "line_index": 17, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0244", "line_index": 18, "text": "- HubSpot Content Marketing Certified, 2018", "label": "certifications"}
+{"resume_id": "resline_0244", "line_index": 19, "text": "- Google Analytics Individual Qualification, 2019", "label": "certifications"}
+{"resume_id": "resline_0258", "line_index": 0, "text": "**Summary**", "label": "summary"}
+{"resume_id": "resline_0258", "line_index": 1, "text": "Creative UI/UX Designer with 8 years of experience crafting intuitive digital experiences for web and mobile platforms.", "label": "summary"}
+{"resume_id": "resline_0258", "line_index": 2, "text": "Proven ability to translate business goals into user‑centered designs, leading to a 20% increase in conversion rates.", "label": "summary"}
+{"resume_id": "resline_0258", "line_index": 3, "text": "**Skills**", "label": "skills"}
+{"resume_id": "resline_0258", "line_index": 4, "text": "Figma Sketch Adobe XD", "label": "skills"}
+{"resume_id": "resline_0258", "line_index": 5, "text": "InVision Zeplin Axure", "label": "skills"}
+{"resume_id": "resline_0258", "line_index": 6, "text": "User Research Wireframing Prototyping", "label": "skills"}
+{"resume_id": "resline_0258", "line_index": 7, "text": "**Experience**", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 8, "text": "Lead UI/UX Designer, E‑Commerce Solutions, 2019‑2023 – Directed design team of 5, delivering responsive redesigns for high‑traffic retail sites.", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 9, "text": "- Conducted usability testing with 150+ participants, uncovering key friction points and informing redesigns.", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 10, "text": "- Created design system adopted across 12 product lines, ensuring visual consistency.", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 11, "text": "UI/UX Designer, Mobile App Co., 2015‑2019 – Designed end‑to‑end experiences for iOS and Android applications.", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 12, "text": "- Developed interactive prototypes in InVision, accelerating stakeholder approvals by 30%.", "label": "experience"}
+{"resume_id": "resline_0258", "line_index": 13, "text": "**Education**", "label": "education"}
+{"resume_id": "resline_0258", "line_index": 14, "text": "B.A. Graphic Design, Rhode Island School of Design, 2015.", "label": "education"}
+{"resume_id": "resline_0258", "line_index": 15, "text": "**Certifications**", "label": "certifications"}
+{"resume_id": "resline_0258", "line_index": 16, "text": "Certified UX Designer (NN/g), Google UX Design Professional Certificate.", "label": "certifications"}
+{"resume_id": "resline_0258", "line_index": 17, "text": "**Achievements**", "label": "achievements"}
+{"resume_id": "resline_0258", "line_index": 18, "text": "Winner of 2022 Red Dot Design Award for innovative e‑commerce checkout flow.", "label": "achievements"}
+{"resume_id": "resline_0268", "line_index": 0, "text": "SUMMARY", "label": "summary"}
+{"resume_id": "resline_0268", "line_index": 1, "text": "Data analyst with 7+ years of experience turning raw data into actionable insights for Fortune 500 companies.", "label": "summary"}
+{"resume_id": "resline_0268", "line_index": 2, "text": "SKILLS", "label": "skills"}
+{"resume_id": "resline_0268", "line_index": 3, "text": "- SQL, Python (pandas, NumPy), R, Tableau, Power BI, Excel Advanced", "label": "skills"}
+{"resume_id": "resline_0268", "line_index": 4, "text": "EXPERIENCE", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 5, "text": "Senior Data Analyst, Global Retail Corp – Jan 2020 to Present", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 6, "text": "- Led cross‑functional team to develop sales forecasting model reducing inventory costs by 12%.", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 7, "text": "- Automated weekly KPI reporting, cutting manual effort by 30 hours per month.", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 8, "text": "Data Analyst, Tech Solutions Ltd – Jun 2015 to Dec 2019", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 9, "text": "- Built dashboards for client performance tracking, increasing client satisfaction scores by 15%.", "label": "experience"}
+{"resume_id": "resline_0268", "line_index": 10, "text": "PROJECTS", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 11, "text": "Project Alpha – Predictive Maintenance for Manufacturing Equipment", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 12, "text": "- Developed ETL pipelines using Python and Airflow to ingest sensor data.", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 13, "text": "Project Beta – Customer Churn Dashboard for Telecom", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 14, "text": "- Designed interactive dashboards in Tableau to visualize churn risk segments.", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 15, "text": "- Implemented time‑series forecasting with Prophet, achieving 85% accuracy.", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 16, "text": "- Conducted A/B testing of retention campaigns, increasing win‑back rate by 9%.", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 17, "text": "- Integrated SQL stored procedures for real‑time churn score calculation.", "label": "projects"}
+{"resume_id": "resline_0268", "line_index": 18, "text": "EDUCATION", "label": "education"}
+{"resume_id": "resline_0268", "line_index": 19, "text": "M.S. in Applied Statistics, University of Chicago – 2015", "label": "education"}
+{"resume_id": "resline_0268", "line_index": 20, "text": "B.S. in Mathematics, University of Illinois – 2012", "label": "education"}
+{"resume_id": "resline_0272", "line_index": 0, "text": "Business writer with a decade of experience crafting engaging content for tech and lifestyle brands, driving audience growth and brand loyalty.", "label": "summary"}
+{"resume_id": "resline_0272", "line_index": 1, "text": "Core competencies: SEO, copywriting, editorial calendar management, AP style, CMS (WordPress, Joomla)", "label": "skills"}
+{"resume_id": "resline_0272", "line_index": 2, "text": "Senior Content Writer, TechPulse Media (2018‑2023) – Produced 150+ technical articles, increasing site traffic by 60%.", "label": "experience"}
+{"resume_id": "resline_0272", "line_index": 3, "text": "- Collaborated with engineers to translate complex concepts into layperson‑friendly content.", "label": "experience"}
+{"resume_id": "resline_0272", "line_index": 4, "text": "- Managed a team of 4 junior writers, overseeing editorial workflow and SEO optimization.", "label": "experience"}
+{"resume_id": "resline_0272", "line_index": 5, "text": "Content Strategist, GreenLeaf Blog (2015‑2018) – Developed brand voice and content strategy for sustainability niche.", "label": "experience"}
+{"resume_id": "resline_0272", "line_index": 6, "text": "- Conducted keyword research resulting in top‑10 ranking for 12 target keywords.", "label": "experience"}
+{"resume_id": "resline_0272", "line_index": 7, "text": "- Authored 120‑page eBook ‘AI Ethics for Business Leaders’, selling 4,000 copies.", "label": "projects"}
+{"resume_id": "resline_0272", "line_index": 8, "text": "- Produced 12‑episode podcast ‘Digital Literacy 101’, total listens 80,000.", "label": "projects"}
+{"resume_id": "resline_0272", "line_index": 9, "text": "- Designed interactive worksheets and self‑assessment tools, boosting reader engagement.", "label": "projects"}
+{"resume_id": "resline_0272", "line_index": 10, "text": "- Secured sponsorships from tech firms, generating $15k revenue.", "label": "projects"}
+{"resume_id": "resline_0272", "line_index": 11, "text": "BA in English Literature, University of Washington, 2014", "label": "education"}
+{"resume_id": "resline_0272", "line_index": 12, "text": "Google Analytics Individual Qualification (GAIQ), 2020", "label": "certifications"}
+{"resume_id": "resline_0272", "line_index": 13, "text": "Languages: English (native), Spanish (professional proficiency)", "label": "languages"}
+{"resume_id": "resline_0272", "line_index": 14, "text": "Awarded ‘Best Contributor’ by TechPulse Media for 2021.", "label": "achievements"}
+{"resume_id": "resline_0278", "line_index": 0, "text": "**Work Experience**", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 1, "text": "*Account Executive, Enterprise SaaS* | Salesforce | 2021–Present", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 2, "text": "- Closed $2.1M ARR through consultative selling and strategic account penetration", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 3, "text": "**Enterprise Sales Team** | *Solution Engineer* | 2018–2021", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 4, "text": "- Designed and delivered technical demos for Fortune 500 prospects including Citibank and AT&T", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 5, "text": "**Sales Development Representative** | Upstart | 2016–2018", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 6, "text": "- Generated pipeline exceeding quota by 180% through targeted outbound campaigns", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 7, "text": "- Validated 500+ leads weekly using Salesforce.com and LinkedIn Sales Navigator", "label": "experience"}
+{"resume_id": "resline_0278", "line_index": 8, "text": "**Key Achievements**", "label": "achievements"}
+{"resume_id": "resline_0278", "line_index": 9, "text": "- Ranked #1 in Q4 2022 sales performance out of 200+ global reps", "label": "achievements"}
+{"resume_id": "resline_0278", "line_index": 10, "text": "- Received President's Club award for exceeding annual quota by 238%", "label": "achievements"}
+{"resume_id": "resline_0278", "line_index": 11, "text": "**Core Competencies**", "label": "skills"}
+{"resume_id": "resline_0278", "line_index": 12, "text": "**Salesforce** Advanced knowledge of Sales Cloud, CPQ, and Einstein AI", "label": "skills"}
+{"resume_id": "resline_0278", "line_index": 13, "text": "**Negotiation** Proven track record closing complex multi-year contracts", "label": "skills"}
+{"resume_id": "resline_0278", "line_index": 14, "text": "**CRM** Deep expertise in pipeline management and forecasting methodologies", "label": "skills"}
+{"resume_id": "resline_0278", "line_index": 15, "text": "**languages** English (Native), Spanish (Professional working proficiency)", "label": "languages"}
+{"resume_id": "resline_0279", "line_index": 0, "text": "Kỹ năng: Quản lý dự án Agile, Phân tích kinh doanh, Lập kế hoạch chiến lược, Truyền thông đa cấp, Quản lý rủi ro", "label": "skills"}
+{"resume_id": "resline_0279", "line_index": 1, "text": "Luật Doanh nghiệp • Tư vấn tuân thủ • Soạn thảo hợp đồng • Giải quyết tranh chấp • M&A", "label": "skills"}
+{"resume_id": "resline_0279", "line_index": 2, "text": "Dự án: Hợp nhất hệ thống quản lý pháp lý", "label": "projects"}
+{"resume_id": "resline_0279", "line_index": 3, "text": "Dự án: Đánh giá tuân thủ quy định cho tập đoàn đa quốc gia", "label": "projects"}
+{"resume_id": "resline_0279", "line_index": 4, "text": "- Tích hợp 3 nền tảng pháp lý nội bộ thành hệ thống thống nhất giảm 40% thời gian truy cập tài liệu", "label": "projects"}
+{"resume_id": "resline_0279", "line_index": 5, "text": "- Phát hiện 12 lỗ hổng tuân thủ trong quy trình quản lý dữ liệu cá nhân, đề xuất sửa đổi ngăn chặn rủi ro phạt 150 triệu VND", "label": "projects"}
+{"resume_id": "resline_0279", "line_index": 6, "text": "- Đàm phán điều khoản M&A trị giá 50 triệu USD, đảm bảo tuân thủ pháp luật Việt Nam và quốc tế", "label": "projects"}
+{"resume_id": "resline_0279", "line_index": 7, "text": "Luật sư chính, Công ty Luật Minh Anh | 2018–Hiện tại", "label": "experience"}
+{"resume_id": "resline_0279", "line_index": 8, "text": "Luật sư tư vấn, Văn phòng Luật sư Toàn Cầu | 2015–2018", "label": "experience"}
+{"resume_id": "resline_0279", "line_index": 9, "text": "- Tư vấn chiến lược M&A cho 15+ thương vụ, đảm bảo tuân thủ pháp luật cạnh tranh", "label": "experience"}
+{"resume_id": "resline_0279", "line_index": 10, "text": "- Biên soạn 47 hợp đồng thương mại và 19 hợp đồng lao động tuân thủ Bộ Luật Dân sự 2015", "label": "experience"}
+{"resume_id": "resline_0279", "line_index": 11, "text": "- Đại diện pháp lý trong 8 vụ kiện tranh chấp hợp đồng, đạt 100% tỉ lệ thắng kiện", "label": "experience"}
+{"resume_id": "resline_0279", "line_index": 12, "text": "Cử nhân Luật, Đại học Quốc gia Hà Nội | 2015", "label": "education"}
+{"resume_id": "resline_0279", "line_index": 13, "text": "Chứng chỉ hành nghề luật sư, Hội Luật gia Việt Nam | 2016", "label": "certifications"}
+{"resume_id": "resline_0279", "line_index": 14, "text": "Thành viên đoàn luật sư Hà Nội | 2016–Hiện tại", "label": "certifications"}

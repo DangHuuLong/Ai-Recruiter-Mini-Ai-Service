@@ -1,0 +1,57 @@
+{
+  "version": "baseline_model_selection_v0.1",
+  "task": "cv_jd_similarity_baseline",
+  "selected_primary_model": {
+    "key": "mini_lm_l6_v2",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "provider": "sentence-transformers",
+    "model_type": "bi_encoder_embedding",
+    "embedding_dimension": 384,
+    "max_sequence_length": 256,
+    "language_fit": "english_first",
+    "recommended_use": "default local baseline for English or mostly English CV-JD text",
+    "selection_reason": "Small, fast, easy to run locally, and suitable as the first cosine-similarity baseline before any fine-tuning.",
+    "status": "selected_primary"
+  },
+  "comparison_candidates": [
+    {
+      "key": "multilingual_mini_lm_l12_v2",
+      "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "provider": "sentence-transformers",
+      "model_type": "bi_encoder_embedding",
+      "embedding_dimension": 384,
+      "max_sequence_length": 128,
+      "language_fit": "multilingual",
+      "recommended_use": "fallback comparison if the dataset contains Vietnamese or mixed Vietnamese-English records",
+      "selection_reason": "Useful multilingual baseline candidate, but kept as comparison first because the initial dataset is currently English synthetic data.",
+      "status": "comparison_candidate"
+    },
+    {
+      "key": "mpnet_base_v2",
+      "model_name": "sentence-transformers/all-mpnet-base-v2",
+      "provider": "sentence-transformers",
+      "model_type": "bi_encoder_embedding",
+      "embedding_dimension": 768,
+      "max_sequence_length": 384,
+      "language_fit": "english_first",
+      "recommended_use": "quality-oriented comparison candidate when local runtime cost is acceptable",
+      "selection_reason": "Often stronger than MiniLM-style models, but larger and less suitable as the very first lightweight project baseline.",
+      "status": "optional_comparison_candidate"
+    }
+  ],
+  "baseline_scoring": {
+    "embedding_strategy": "encode_resume_text_and_job_description_text_separately",
+    "similarity_metric": "cosine_similarity",
+    "score_mapping": "map cosine similarity to a 0-100 score for reporting only; do not treat it as calibrated before evaluation",
+    "initial_input_fields": {
+      "resume": ["summary", "skills", "projects", "raw_text"],
+      "job_description": ["title", "responsibilities", "requirements", "required_skills", "preferred_skills", "raw_text"]
+    }
+  },
+  "evaluation_notes": {
+    "current_dataset_size": "too small for stable train/validation/test evaluation",
+    "expected_next_step": "implement baseline similarity evaluation script",
+    "do_not_fine_tune_yet": true,
+    "minimum_before_fine_tune": "collect and label a larger, cleaner dataset first"
+  }
+}

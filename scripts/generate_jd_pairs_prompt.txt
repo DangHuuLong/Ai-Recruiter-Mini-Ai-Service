@@ -1,0 +1,258 @@
+You are a senior HR specialist and dataset engineer. Your task is to generate synthetic training data for an AI recruitment scoring model.
+
+================================================================================
+DATASET CONTEXT
+================================================================================
+
+The existing dataset already has job descriptions and resume-JD pairs.
+The header of the input block below tells you exactly which IDs to use for this batch:
+  - NEXT_JD_IDS   → use these IDs for the 5 new JDs you generate
+  - NEXT_PAIR_IDS → use these IDs (sequential) for the 25 new pairs you generate
+
+================================================================================
+YOUR TASK
+================================================================================
+
+STEP 1 — Generate exactly 5 Job Descriptions
+
+Rules for each JD:
+  - Each JD targets ONE specific resume as its PRIMARY match (the resume with the
+    same numeric suffix, e.g., resume_456 → jd_456).
+  - Write in realistic HR language. Do NOT copy exact phrases from the resume text.
+  - Requirements must be slightly broader than the resume:
+      * Use experience ranges (e.g., "3–6 years", not "exactly 5 years").
+      * Add 1–2 adjacent/preferred skills the target resume does not have.
+      * Include broad transferable AND cross-domain technical skills (e.g., cloud platforms,
+        CI/CD, scripting, system design, security awareness, data handling) so that nearly ALL
+        off-diagonal resumes can honestly reach ≥ 90 on the weighted formula.
+      * The JD must be broad enough that resumes from adjacent domains still satisfy the core
+        requirements. Reserve poor_match only for a genuine total mismatch — at most 1 across
+        the entire batch of 25 pairs.
+  - Domain and level must match the target resume's field and seniority.
+  - Design each JD so the diagonal pair scores **90–95** (targeting excellent_match).
+    Craft requirements to align tightly with the target resume's core stack so the
+    weighted score naturally lands ≥ 90. Only drop below 90 if the resume has a clear
+    gap that cannot be bridged by the JD design.
+
+STEP 2 — Generate exactly 25 Pairs (5 JDs × 5 Resumes)
+
+Rules:
+  - Evaluate EVERY combination of the 5 JDs against all 5 resumes.
+  - Iteration order: outer = JDs (sorted by jd_id), inner = resumes (sorted by
+    resume_id). Example for IDs 456–460:
+      pair_2276 = jd_456 × resume_456   ← diagonal (target: high)
+      pair_2277 = jd_456 × resume_457
+      pair_2278 = jd_456 × resume_458
+      pair_2279 = jd_456 × resume_459
+      pair_2280 = jd_456 × resume_460
+      pair_2281 = jd_457 × resume_456
+      pair_2282 = jd_457 × resume_457   ← diagonal (target: high)
+      ... and so on until pair_2300 = jd_460 × resume_460
+  - Score each pair honestly based on actual resume content vs JD requirements.
+  - Aim for score distribution:
+      * Diagonal pairs (JD_i ↔ target resume_i): **90–95** (excellent_match preferred)
+      * Off-diagonal pairs: DEFAULT to excellent_match. Per JD, the 4 off-diagonal pairs
+        should follow this distribution:
+          - poor_match    (0–39):  exactly 1 pair total across the entire batch — assign to the
+              most severe domain mismatch; the entire batch requires EXACTLY 1 poor_match total
+          - weak_match   (40–59): 0 pairs    — DO NOT USE; push scores to ≤ 39 or ≥ 60
+          - moderate_match (60–74): exactly 3 pairs total across the entire batch — assign to pairs
+              where the score provably cannot reach 90; the entire batch requires EXACTLY 3 moderate_match total
+          - strong_match  (75–89): 0 pairs   — DO NOT USE; push scores to ≤ 74 or ≥ 90
+          - excellent_match (90–100): 3–4 pairs — the strong default; assign to every off-diagonal
+              pair whose resume covers the JD's transferable and cross-domain requirements
+        Do NOT assign the same score to all off-diagonal pairs.
+        CRITICAL — FORBIDDEN RANGES FOR ALL PAIRS:
+          After computing overall_score = SM*0.35 + ER*0.30 + PR*0.15 + EC*0.10 + KDA*0.10,
+          if the result falls in [40, 59], you MUST revise the criterion scores so the
+          weighted sum drops to ≤ 39 or rises to ≥ 60 (never land in the weak_match range).
+          If the result falls in [75, 89], you MUST revise the criterion scores so the
+          weighted sum drops to ≤ 74 or rises to ≥ 90.
+          A weak_match or strong_match label on any pair is a hard error in this batch.
+      * Target per batch of 25 pairs (20 off-diagonal + 5 diagonal):
+          EXACTLY 1 poor_match (entire batch — required, not optional),
+          EXACTLY 3 moderate_match (off-diagonal — no more, no fewer),
+          0 weak_match, 0 strong_match,
+          EXACTLY 21 excellent_match (5 diagonal + 16 off-diagonal).
+        HARD CONSTRAINTS:
+          — poor_match = 1 across all 25 pairs (required). Choose the single worst domain
+            mismatch and justify in label_notes why no transferable skill bridge exists.
+          — moderate_match = 3 across all 25 pairs (required). Assign to the 3 pairs where
+            the score provably cannot reach 90; all other off-diagonal pairs must be excellent_match.
+          — All remaining off-diagonal pairs (16 of them) MUST be excellent_match (score ≥ 90).
+            Design JDs broad enough that adjacent-domain resumes clear the threshold.
+        Goal: weak_match = 0, strong_match = 0, poor_match = 1, moderate_match = 3,
+              excellent_match = 21 (exact target — hitting this exactly is required).
+
+================================================================================
+SCORING RUBRIC  (rubric_v0.2)
+================================================================================
+
+Overall score formula — WEIGHTED average (NOT a simple mean):
+
+  overall_score =
+    SKILLS_MATCH             × 0.35
+    + EXPERIENCE_RELEVANCE   × 0.30
+    + PROJECT_RELEVANCE      × 0.15
+    + EDUCATION_CERTIFICATION× 0.10
+    + KEYWORD_DOMAIN_ALIGNMENT × 0.10
+
+Round the result to the nearest integer.
+
+Criterion guidance:
+
+  SKILLS_MATCH (35%)
+    90–100  Covers almost all required skills with clear evidence
+    75–89   Covers most required skills, minor gaps only
+    60–74   Covers some required skills, misses important items
+    40–59   Broad overlap but missing the core stack
+    0–39    Little or no overlap with required skills
+    Note: do not reward keyword mentions without project/work evidence.
+
+  EXPERIENCE_RELEVANCE (30%)
+    90–100  Experience clearly exceeds role expectations
+    75–89   Experience fits the role well
+    60–74   Related but shallow or incomplete
+    40–59   Limited practical evidence
+    0–39    No relevant experience or projects
+    Note: for intern JDs, academic/personal projects count as evidence.
+
+  PROJECT_RELEVANCE (15%)
+    Evaluate whether resume projects demonstrate the same stack, problem type,
+    or responsibilities as the JD. Examples:
+    - backend API JD + FastAPI/PostgreSQL project = high
+    - DevOps JD + only frontend UI projects = low
+    - AI data JD + dataset/evaluation project = high
+
+  EDUCATION_CERTIFICATION (10%)
+    90–100  Directly matches required degree and field
+    75–89   Related degree or strong equivalent background
+    60–74   Partially related education
+    40–59   Education is unclear or weakly related
+    0–39    Does not meet explicit education requirement
+    Note: if JD does not mention education, use a neutral score (~70).
+
+  KEYWORD_DOMAIN_ALIGNMENT (10%)
+    Evaluate overlap in responsibilities, domain keywords, and business/
+    technical context between the JD and the resume.
+
+Label class mapping (from overall_score):
+
+  90–100 → "excellent_match"
+  75–89  → "strong_match"
+  60–74  → "moderate_match"
+  40–59  → "weak_match"
+  0–39   → "poor_match"
+
+  All five labels are valid. Use poor_match only for genuine mismatches, not as a
+  default floor — scores must reflect actual resume-JD alignment.
+
+================================================================================
+OUTPUT FORMAT
+================================================================================
+Output ONLY raw JSONL.
+Do not output BLOCK headers.
+Do not output PAIRS.
+Do not output explanations.
+
+--- BLOCK 1: JOB DESCRIPTIONS ---
+(5 lines, one compact JSON object per line, no pretty-print)
+
+Required fields for each JD (all fields must be present):
+{
+  "id": "jd_456",
+  "source": "synthetic",
+  "title": "...",
+  "level": "intern|junior|middle|senior",
+  "employment_type": "full_time|part_time|contract|internship",
+  "location": "Ho Chi Minh City, Vietnam",
+  "remote_allowed": true,
+  "posted_date": null,
+  "domain": "...",
+  "raw_text": "...(2–4 sentence plain-text JD summary)...",
+  "responsibilities": ["...", "...", "..."],
+  "requirements": ["...", "...", "..."],
+  "nice_to_have": ["...", "..."],
+  "required_skills": ["Skill1", "Skill2"],
+  "preferred_skills": ["Skill3"],
+  "min_experience_years": 3,
+  "education_requirement": "...",
+  "domain_keywords": ["...", "..."],
+  "language": "en"
+}
+
+--- BLOCK 2: PAIRS ---
+(25 lines, one compact JSON object per line, no pretty-print)
+
+Required fields for each pair (all fields must be present):
+{
+  "id": "pair_2276",
+  "resume_id": "resume_456",
+  "job_description_id": "jd_456",
+  "split": null,
+  "label": "excellent_match",
+  "overall_score": 89,
+  "criterion_scores": {
+    "SKILLS_MATCH": 92,
+    "EXPERIENCE_RELEVANCE": 88,
+    "PROJECT_RELEVANCE": 85,
+    "EDUCATION_CERTIFICATION": 80,
+    "KEYWORD_DOMAIN_ALIGNMENT": 90
+  },
+  "matched_skills": ["Skill1", "Skill2"],
+  "missing_required_skills": [],
+  "matched_preferred_skills": ["Skill3"],
+  "label_notes": "...(one sentence: strongest reason + key gap + why the label fits)...",
+  "labeled_by": "manual_ai_assisted",
+  "label_version": "rubric_v0.2"
+}
+
+================================================================================
+SELF-CHECK BEFORE OUTPUTTING
+================================================================================
+
+Verify all of the following before writing your final answer:
+
+  [ ] Exactly 5 JD objects in Block 1
+  [ ] Exactly 25 pair objects in Block 2
+  [ ] All 25 combinations are present (no duplicate, no missing pair)
+  [ ] Diagonal pairs (JD_i ↔ its target resume) score 90–95 (excellent_match)
+  [ ] overall_score = weighted formula result (rounded to nearest integer):
+        score = SM*0.35 + ER*0.30 + PR*0.15 + EC*0.10 + KDA*0.10
+  [ ] label matches the overall_score range (see label mapping above)
+  [ ] JD IDs follow resume numbering (resume_456 → jd_456)
+  [ ] Pair IDs are sequential from NEXT_PAIR_IDS header
+  [ ] No JD copies verbatim phrases from the resume raw_text
+  [ ] Every overall_score is either ≤ 39 or in [60, 74] or ≥ 90 — the 40–59 and 75–89 ranges are FORBIDDEN
+  [ ] If any score landed in 40–59, revise criterion scores to drop to ≤ 39 or rise to ≥ 60
+  [ ] If any score landed in 75–89, revise criterion scores to drop to ≤ 74 or rise to ≥ 90
+  [ ] poor_match count across all 25 pairs = 1 (required); label_notes explains why no transferable bridge exists
+  [ ] moderate_match count across all 25 pairs = 3 (required — no more, no fewer)
+  [ ] excellent_match count across all 25 pairs = 21 (5 diagonal + 16 off-diagonal)
+  [ ] weak_match count in entire batch = 0
+  [ ] strong_match count in entire batch = 0
+  [ ] Each label_notes mentions: strongest match reason + most important gap
+
+================================================================================
+INPUT
+================================================================================
+GROUP FROM LINE 1396 TO 1400
+================================================================================
+
+RESUMES
+--------------------------------------------------------------------------------
+
+[RESUME LINE 1396]
+{"id":"resume_1396","source":"synthetic","candidate_level":"middle","raw_text":"Mobile developer with 5.2 years of experience creating consumer applications at AppNova Technologies. Currently develops cross platform products using Flutter, Dart, Firebase, and REST services in a team of ten engineers. Responsible for feature implementation, release management, application monitoring, and performance tuning. Delivered a redesign that improved mobile retention by 19 percent and reduced crash rates by 32 percent. Collaborated with backend teams on API contracts and authentication flows supporting more than 400000 active users. Uses automated testing, analytics tools, and CI pipelines to maintain product quality. Previously built payment and notification modules for commerce applications. Holds a Bachelor degree in Software Engineering. Daily work includes architecture discussions, pull request reviews, bug investigations, and deployment coordination. Experienced with Agile delivery, mobile analytics, and application lifecycle management across Android and iOS environments.","summary":"Middle mobile developer with 5.2 years of experience in Flutter, Firebase, Dart.","skills":["Flutter","Dart","Firebase","REST APIs","Android","iOS","CI/CD","Git"],"normalized_skills":["flutter","dart","firebase","rest_apis","android","ios","ci_cd","git"],"experience_years":5.2,"education":{"degree":"Bachelor","field_of_study":"Software Engineering","status":"graduate"},"projects":[{"name":"Mobile Developer at AppNova Technologies","description":"Improved retention by 19 percent and reduced crashes by 32 percent through optimization efforts.","technologies":["Flutter","Firebase"]},{"name":"Application Engineer at WaveApps","description":"Built payment and notification modules used by large commerce platforms.","technologies":["Dart","REST APIs"]}],"certifications":[],"languages":[{"name":"English","proficiency":"upper_intermediate"}],"anonymized":true,"language":"en"}
+
+[RESUME LINE 1397]
+{"id":"resume_1397","source":"synthetic","candidate_level":"middle","raw_text":"Cybersecurity analyst with 4.1 years of experience working in a security operations center at SecureGrid Solutions. Monitors enterprise environments using SIEM platforms, endpoint security tools, and threat intelligence feeds. Collaborates with a team of twelve analysts handling incident triage, log analysis, vulnerability assessments, and compliance reviews. Implemented detection rules that increased high severity threat identification by 28 percent while reducing false positives. Led remediation coordination for critical vulnerabilities across cloud and on premises systems. Uses Python scripting, Linux, ISO 27001 controls, and security monitoring tools daily. Participates in incident response exercises and produces reports for technical and business stakeholders. Holds a Bachelor degree in Cybersecurity and maintains industry certifications. Works closely with infrastructure and development teams to improve security posture and audit readiness. Experienced with access management, risk assessment, and security awareness initiatives.","summary":"Middle cybersecurity analyst with 4.1 years of experience in SIEM, ISO 27001, Python.","skills":["SIEM","ISO 27001","Python","Linux","Incident Response","Vulnerability Management","SOC Operations","Threat Intelligence"],"normalized_skills":["siem","iso_27001","python","linux","incident_response","vulnerability_management","soc_operations","threat_intelligence"],"experience_years":4.1,"education":{"degree":"Bachelor","field_of_study":"Cybersecurity","status":"graduate"},"projects":[{"name":"Security Analyst at SecureGrid Solutions","description":"Improved threat detection by 28 percent through custom SIEM rules and tuning.","technologies":["SIEM","Python"]},{"name":"SOC Specialist at CyberMatrix","description":"Coordinated remediation activities and compliance assessments.","technologies":["Linux","ISO 27001"]}],"certifications":[{"name":"CompTIA Security+","issuer":"CompTIA","issue_date":null}],"languages":[{"name":"English","proficiency":"professional working proficiency"}],"anonymized":true,"language":"en"}
+
+[RESUME LINE 1398]
+{"id":"resume_1398","source":"synthetic","candidate_level":"senior","raw_text":"Senior backend engineer with 9.4 years of experience designing distributed systems at FinEdge Platforms. Leads a team of eight engineers building high volume services using Java, Spring Boot, Kafka, PostgreSQL, Redis, and Kubernetes. Responsible for architecture decisions, code review standards, reliability planning, and cross team integration efforts. Directed a platform modernization program that reduced API latency by 38 percent and increased throughput capacity by 2.5 times. Implemented event driven services processing millions of transactions each day while maintaining strict availability targets. Collaborates with product, security, and infrastructure teams to define service contracts and operational standards. Holds a Master degree in Computer Science and AWS certifications. Daily responsibilities include mentoring engineers, reviewing designs, troubleshooting production incidents, and planning quarterly roadmaps. Experienced in microservices, observability, cloud infrastructure, and performance engineering across large scale environments.","summary":"Senior backend engineer with 9.4 years of experience in Java, Spring Boot, Kafka.","skills":["Java","Spring Boot","Apache Kafka","PostgreSQL","Redis","Kubernetes","Microservices","AWS"],"normalized_skills":["java","spring_boot","apache_kafka","postgresql","redis","kubernetes","microservices","aws"],"experience_years":9.4,"education":{"degree":"Master","field_of_study":"Computer Science","status":"graduate"},"projects":[{"name":"Lead Backend Engineer at FinEdge Platforms","description":"Reduced latency by 38 percent and increased throughput by 2.5 times through modernization initiatives.","technologies":["Java","Spring Boot"]},{"name":"Platform Architect at NexBank Tech","description":"Built event driven transaction services processing millions of records daily.","technologies":["Kafka","Kubernetes"]}],"certifications":[{"name":"AWS Certified Solutions Architect","issuer":"Amazon Web Services","issue_date":null}],"languages":[{"name":"English","proficiency":"professional working proficiency"}],"anonymized":true,"language":"en"}
+
+[RESUME LINE 1399]
+{"id":"resume_1399","source":"synthetic","candidate_level":"senior","raw_text":"Senior DevOps engineer with 11.7 years of experience operating cloud platforms at CloudAxis Group. Leads infrastructure initiatives using AWS, Terraform, Kubernetes, Helm, GitHub Actions, and observability tooling. Works with development teams across multiple products and supports environments serving more than two million daily users. Designed an infrastructure as code program that reduced provisioning time by 70 percent and improved audit consistency. Implemented reliability improvements that lowered production incidents by 33 percent over twelve months. Collaborates with architects, security engineers, and product leaders on capacity planning and platform strategy. Holds a Bachelor degree in Information Technology and several cloud certifications. Daily work includes incident management, deployment automation, cost optimization, and mentoring platform engineers. Experienced in multi region architectures, disaster recovery planning, and CI/CD governance.","summary":"Senior DevOps engineer with 11.7 years of experience in AWS, Kubernetes, Terraform.","skills":["AWS","Kubernetes","Terraform","CI/CD","GitHub Actions","Helm","Prometheus","Linux"],"normalized_skills":["aws","kubernetes","terraform","ci_cd","github_actions","helm","prometheus","linux"],"experience_years":11.7,"education":{"degree":"Bachelor","field_of_study":"Information Technology","status":"graduate"},"projects":[{"name":"DevOps Lead at CloudAxis Group","description":"Reduced provisioning time by 70 percent using infrastructure as code and automation.","technologies":["Terraform","AWS"]},{"name":"Platform Engineer at SkyOps","description":"Improved reliability and lowered incidents by 33 percent.","technologies":["Kubernetes","Prometheus"]}],"certifications":[{"name":"AWS Certified DevOps Engineer","issuer":"Amazon Web Services","issue_date":null}],"languages":[{"name":"English","proficiency":"professional working proficiency"}],"anonymized":true,"language":"en"}
+
+[RESUME LINE 1400]
+{"id":"resume_1400","source":"synthetic","candidate_level":"senior","raw_text":"Senior machine learning engineer with 8.8 years of experience delivering NLP and computer vision systems at IntelliModel Labs. Leads a team of seven engineers and researchers developing production models using Python, PyTorch, TensorFlow, Hugging Face, and cloud infrastructure. Responsible for model architecture selection, experimentation strategy, deployment pipelines, and monitoring frameworks. Led development of a document understanding platform that improved extraction accuracy by 16 percent and processed millions of records annually. Built MLOps workflows that reduced model deployment cycles from weeks to days. Collaborates with data engineers, product managers, and domain experts to define metrics and validate outcomes. Holds a PhD in Data Science and maintains advanced AI certifications. Daily responsibilities include code reviews, experiment analysis, stakeholder communication, and mentoring. Experienced with distributed training, feature engineering, model governance, and scalable inference services.","summary":"Senior machine learning engineer with 8.8 years of experience in PyTorch, TensorFlow, NLP.","skills":["PyTorch","TensorFlow","NLP","Computer Vision","MLOps","Python","Hugging Face","AWS"],"normalized_skills":["pytorch","tensorflow","nlp","computer_vision","mlops","python","hugging_face","aws"],"experience_years":8.8,"education":{"degree":"PhD","field_of_study":"Data Science","status":"graduate"},"projects":[{"name":"ML Lead at IntelliModel Labs","description":"Improved extraction accuracy by 16 percent through advanced NLP and vision models.","technologies":["PyTorch","TensorFlow"]},{"name":"AI Architect at DataMind Systems","description":"Built MLOps pipelines that reduced deployment cycles from weeks to days.","technologies":["Python","AWS"]}],"certifications":[{"name":"TensorFlow Developer Certificate","issuer":"Google","issue_date":null}],"languages":[{"name":"English","proficiency":"professional working proficiency"}],"anonymized":true,"language":"en"}

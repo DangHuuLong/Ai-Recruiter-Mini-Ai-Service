@@ -1,0 +1,113 @@
+{
+  "personal": {
+    "full_name": "Nguyen Van A",
+    "email": "nguyenvana@example.com",
+    "phone": "+84901234567",
+    "location": "Ho Chi Minh City, Vietnam",
+    "linkedin_url": "https://www.linkedin.com/in/nguyenvana",
+    "github_url": "https://github.com/nguyenvana",
+    "portfolio_url": "https://nguyenvana.dev"
+  },
+  "summary": "Backend developer with experience in Python, FastAPI, PostgreSQL, Redis, Docker, and REST API development.",
+  "skills": [
+    {
+      "name": "Python",
+      "normalized_name": "python",
+      "category": "backend",
+      "evidence": "Experienced in Python backend development."
+    },
+    {
+      "name": "FastAPI",
+      "normalized_name": "fastapi",
+      "category": "backend",
+      "evidence": "Built REST APIs using FastAPI."
+    },
+    {
+      "name": "PostgreSQL",
+      "normalized_name": "postgresql",
+      "category": "database",
+      "evidence": "Used PostgreSQL for relational data storage."
+    },
+    {
+      "name": "Redis",
+      "normalized_name": "redis",
+      "category": "database",
+      "evidence": "Used Redis for caching and background processing support."
+    },
+    {
+      "name": "Docker",
+      "normalized_name": "docker",
+      "category": "devops",
+      "evidence": "Containerized backend services with Docker."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "degree": "Bachelor",
+      "field_of_study": "Computer Science",
+      "start_year": 2019,
+      "end_year": 2023,
+      "description": "Studied software engineering, database systems, and web development."
+    }
+  ],
+  "experience": [
+    {
+      "company": "ABC Tech",
+      "role": "Backend Developer",
+      "location": "Ho Chi Minh City",
+      "start_date": "2023-01",
+      "end_date": "2024-12",
+      "duration_months": 24,
+      "responsibilities": [
+        "Developed and maintained backend REST APIs.",
+        "Integrated PostgreSQL and Redis into backend services.",
+        "Improved API performance and reliability."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Recruitment Management API",
+      "description": "Built backend APIs for candidate and resume management.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "url": "https://github.com/nguyenvana/recruitment-api"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Docker Foundations",
+      "issuer": "Docker",
+      "issued_year": 2024,
+      "url": null
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Improved API response time",
+      "description": "Optimized database queries and reduced average API latency.",
+      "year": 2024
+    }
+  ],
+  "languages": [
+    {
+      "name": "Vietnamese",
+      "proficiency": "native"
+    },
+    {
+      "name": "English",
+      "proficiency": "intermediate"
+    }
+  ]
+}

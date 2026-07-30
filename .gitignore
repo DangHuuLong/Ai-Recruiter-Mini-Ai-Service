@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Generated AI artifacts
+artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Fine-tuned model weights are large — only the versions actually referenced by env vars
+# (SIMILARITY_MODEL_PATH etc.) are tracked, via Git LFS, so CI can build the AI service
+# image from a fresh checkout. Update these lines when the referenced version changes.
+models/*
+!models/cross-encoder-cv-jd-v0.6/
+!models/section-classifier-v0.1/
+!models/jd-section-classifier-v0.1/

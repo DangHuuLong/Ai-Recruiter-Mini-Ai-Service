@@ -1,0 +1,40 @@
+{
+  "header_style": {
+    "inline label-colon style with no standalone header line (e.g. \"Skills: Python, SQL, Docker\")": 66,
+    "Markdown-bold headers (e.g. \"**Skills**\")": 66,
+    "ALL CAPS headers on their own line (e.g. \"EXPERIENCE\")": 65,
+    "minimal-to-no explicit headers — sections must be distinguishable mainly from content/context, not header text": 65,
+    "Title Case headers on their own line (e.g. \"Work Experience\")": 65
+  },
+  "language": {
+    "mixed": 109,
+    "vi": 109,
+    "en": 109
+  },
+  "hard_case": {
+    "wrapped skill line - the Skills section's tools list wraps across 2-3 separate lines with no comma or punctuation cue at the line break that it's a continuation": 82,
+    "stacked project dates - list 2 project titles/descriptions first, then bunch both of their date ranges together at the very end of the Projects section (simulates a PDF-extraction column artifact)": 82,
+    "two-column artifact - interleave two projects' bullet lines as if a 2-column PDF layout collapsed into one column (alternate: project A detail, project B detail, project A detail, ...)": 82,
+    "none - straightforward single-column layout": 81
+  },
+  "domain": {
+    "Supply Chain": 18,
+    "Sales": 19,
+    "DevOps": 18,
+    "Product Management": 18,
+    "Human Resources": 18,
+    "Mobile Development": 18,
+    "Data Analysis": 18,
+    "Customer Support": 18,
+    "Education and Training": 18,
+    "Legal": 18,
+    "Healthcare Administration": 18,
+    "Software Engineering": 18,
+    "Project Management": 19,
+    "Finance and Accounting": 18,
+    "Digital Marketing": 19,
+    "Business Analysis": 18,
+    "Content Writing": 18,
+    "UI/UX Design": 18
+  }
+}
