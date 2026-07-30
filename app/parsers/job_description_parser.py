@@ -1,9 +1,9 @@
 import logging
 import re
 import unicodedata
-from dataclasses import dataclass
 from typing import Iterable
 
+from app.parsers.skill_catalog import SKILL_CATALOG
 from app.schemas.job_description import JobSkill, ParsedJobDescriptionData
 
 logger = logging.getLogger(__name__)
@@ -132,56 +132,6 @@ DOMAIN_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
 SHORT_ALIASES = {"go", "js", "ts"}
 
 
-@dataclass(frozen=True)
-class SkillDefinition:
-    name: str
-    normalized_name: str
-    aliases: tuple[str, ...]
-    category: str
-
-
-SKILL_CATALOG: tuple[SkillDefinition, ...] = (
-    SkillDefinition("Python", "python", ("python",), "language"),
-    SkillDefinition("JavaScript", "javascript", ("javascript", "js"), "language"),
-    SkillDefinition("TypeScript", "typescript", ("typescript", "ts"), "language"),
-    SkillDefinition("Java", "java", ("java",), "language"),
-    SkillDefinition("C#", "csharp", ("c#", "c sharp", ".net"), "language"),
-    SkillDefinition("PHP", "php", ("php",), "language"),
-    SkillDefinition("Go", "go", ("golang", "go"), "language"),
-    SkillDefinition("FastAPI", "fastapi", ("fastapi", "fast api"), "backend"),
-    SkillDefinition("Django", "django", ("django",), "backend"),
-    SkillDefinition("Flask", "flask", ("flask",), "backend"),
-    SkillDefinition("Spring Boot", "spring_boot", ("spring boot", "springboot"), "backend"),
-    SkillDefinition("Node.js", "nodejs", ("node.js", "nodejs", "node js"), "backend"),
-    SkillDefinition("NestJS", "nestjs", ("nestjs", "nest.js", "nest js"), "backend"),
-    SkillDefinition("Express.js", "expressjs", ("express.js", "expressjs", "express js"), "backend"),
-    SkillDefinition("React", "react", ("react", "reactjs", "react.js"), "frontend"),
-    SkillDefinition("Next.js", "nextjs", ("next.js", "nextjs", "next js"), "frontend"),
-    SkillDefinition("Vue.js", "vuejs", ("vue.js", "vuejs", "vue js"), "frontend"),
-    SkillDefinition("Angular", "angular", ("angular",), "frontend"),
-    SkillDefinition("HTML", "html", ("html", "html5"), "frontend"),
-    SkillDefinition("CSS", "css", ("css", "css3"), "frontend"),
-    SkillDefinition("Tailwind CSS", "tailwind_css", ("tailwind", "tailwind css"), "frontend"),
-    SkillDefinition("PostgreSQL", "postgresql", ("postgresql", "postgres", "postgre"), "database"),
-    SkillDefinition("MySQL", "mysql", ("mysql",), "database"),
-    SkillDefinition("SQL Server", "sql_server", ("sql server", "mssql"), "database"),
-    SkillDefinition("MongoDB", "mongodb", ("mongodb", "mongo"), "database"),
-    SkillDefinition("Redis", "redis", ("redis",), "cache"),
-    SkillDefinition("REST API", "rest_api", ("rest api", "restful", "restful api"), "api"),
-    SkillDefinition("GraphQL", "graphql", ("graphql", "graph ql"), "api"),
-    SkillDefinition("Docker", "docker", ("docker",), "devops"),
-    SkillDefinition("Kubernetes", "kubernetes", ("kubernetes", "k8s"), "devops"),
-    SkillDefinition("AWS", "aws", ("aws", "amazon web services"), "cloud"),
-    SkillDefinition("Azure", "azure", ("azure",), "cloud"),
-    SkillDefinition("GCP", "gcp", ("gcp", "google cloud"), "cloud"),
-    SkillDefinition("Git", "git", ("git",), "tool"),
-    SkillDefinition("CI/CD", "ci_cd", ("ci/cd", "cicd", "continuous integration"), "devops"),
-    SkillDefinition("Prisma", "prisma", ("prisma",), "orm"),
-    SkillDefinition("Supabase", "supabase", ("supabase",), "platform"),
-    SkillDefinition("Pytest", "pytest", ("pytest",), "testing"),
-    SkillDefinition("Jest", "jest", ("jest",), "testing"),
-)
-
 BULLET_RE = re.compile(r"^\s*(?:[-*+•]|\d+[.)])\s*")
 
 
@@ -198,6 +148,13 @@ def parse_job_description(raw_text: str) -> ParsedJobDescriptionData:
 
     required_skills = _extract_skills(required_skill_text, is_core=True, weight_hint=1.0)
     preferred_skills = _extract_skills(preferred_skill_text, is_core=False, weight_hint=0.6)
+
+    # A skill mentioned in both the requirements and nice-to-have sections (common —
+    # JDs often restate core skills in prose elsewhere) would otherwise show up twice in
+    # score_skill_overlap()'s output, since required/preferred are scored as separate
+    # lists there. Required wins since it's the stronger signal.
+    required_names = {skill.normalized_name for skill in required_skills}
+    preferred_skills = [skill for skill in preferred_skills if skill.normalized_name not in required_names]
 
     if not required_skills:
         preferred_names = {skill.normalized_name for skill in preferred_skills}
