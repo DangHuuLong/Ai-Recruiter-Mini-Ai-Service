@@ -2,7 +2,11 @@ name: Build and publish Docker image
 
 on:
   push:
-    branches: [develop]
+    # Deploys from main, not develop — develop is the integration branch (feature/*
+    # branches merge here first); main only receives promoted release/* branches, so
+    # every push to main is meant to go live. See release/* branches for the promotion
+    # step (branch off develop when ready, merge into both main and back into develop).
+    branches: [main]
 
 env:
   IMAGE: ghcr.io/danghuulong/ai-recruiter-mini-ai-service
