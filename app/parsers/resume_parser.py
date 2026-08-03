@@ -220,6 +220,12 @@ SECTION_STOP_NAMES = {
     "honors awards",
     "skills",
     "soft skills",
+    "technical skills",
+    "core skills",
+    "personal skill",
+    "tech stack",
+    "ky nang",
+    "ky nang chuyen mon",
 }
 
 URL_RE = re.compile(
