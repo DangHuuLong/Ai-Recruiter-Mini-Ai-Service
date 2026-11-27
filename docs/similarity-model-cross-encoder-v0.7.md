@@ -5,6 +5,14 @@
 **Status**: ⏹️ Discontinued — v0.6 (Ensemble, 65.80% test LabelAcc) remains the production model
 **Baseline**: v0.6 = 65.80% test LabelAcc (Ensemble of 5 seeds)
 
+> **Metric note (2026-11).** In Sections 1–3, "LabelAcc" means *within ±10
+> points*, the metric of the v0.6 and v0.7 grid-search notebooks. The `raw_v2`
+> run in Section 6 went through `training/fine_tune_cross_encoder.py`, which
+> reports *same rubric bucket* accuracy. The 91.3% figure and the 65.80%
+> figure are therefore not on the same scale. Under the bucket metric the
+> v0.6 ensemble scores 61.70%. See Section 2 of
+> `docs/similarity-model-cross-encoder-v0.6.md`.
+
 ---
 
 ## 1. Objectives

@@ -1,816 +1,330 @@
-# Cross-Encoder v0.6 - Comprehensive Experimentation Report
+# Similarity Model — Cross-Encoder v0.6 — Experiment Report
 
-**Version**: v0.6 Final  
-**Date**: June 2026  
-**Status**: ✅ Completed & Frozen  
-**Final Performance**: **65.80% test LabelAcc** (Ensemble)  
-**Baseline (v0.2)**: 60.86%  
-**Total Improvement**: **+4.94pp** (60.86% → 65.80%)
+**Date**: June 2026 (revised November 2026)
+**Status**: Frozen. v0.6 is the model shipped in `models/cross-encoder-cv-jd-v0.6`.
+**Dataset**: `datasets/versions/v0.5` (13,350 pairs)
+**Base model**: `cross-encoder/ms-marco-MiniLM-L-12-v2`
 
----
-
-## 📋 Executive Summary
-
-Cross-Encoder v0.6 represents a comprehensive optimization framework for CV-JD semantic matching, incorporating:
-- **Regression-based approach** (MSELoss) for continuous similarity scores
-- **Spearman correlation** as training evaluator (guides model convergence)
-- **Systematic hyperparameter tuning** (Learning Rate Grid Search)
-- **Ensemble methodology** with 5 different random seeds for robustness
-
-**Final Result**: **65.80% test LabelAcc** via ensemble averaging of 5 independently trained models.
-
-This document serves as a complete reference for future developers, documenting all design decisions, experimental results, identified limitations, and recommendations for next-generation models (v0.7+).
+> **Revision note (2026-11).** The first version of this report contained claims
+> that were not backed by the experiment artifacts: a dataset described as
+> "collected from an HR database and labeled by domain experts", typical text
+> lengths of 500–3,000 tokens, ~117M parameters, an assumed IT-heavy domain
+> split, and per-run MAE/RMSE values that did not match the saved reports.
+> It also compared v0.6 numbers against v0.2–v0.5 numbers that were computed
+> with a **different metric** (see Section 2). This revision keeps only figures
+> that can be traced to `artifacts/reports/*.json`, notebook outputs in
+> `notebooks/`, or a re-measurement of the dataset and the shipped model.
 
 ---
 
-## 🎯 Part 1: Vision & Objectives
+## 1. Summary
 
-### 1.1 Problem Statement
+v0.6 returned to the v0.2 recipe (MSE regression, Spearman checkpoint
+selection) on the larger v0.5 dataset and tuned it systematically: epochs,
+learning rate, batch size, base model, early stopping and a 5-seed ensemble.
 
-**Task**: CV-JD Semantic Similarity Matching
-- **Input**: CV text + Job Description text (variable length, up to 512 tokens)
-- **Output**: Similarity score (continuous 0.0-1.0)
-- **Success Metric**: LabelAcc = percentage of predictions within ±10 score points of true label
+| Result (test split, 2,000 pairs) | Within ±10 points | Same rubric bucket |
+|---|---|---|
+| Best single run (LR 5e-5, BS 16, 15 epochs, seed 42) | 65.15% | 62.50% (re-measured, Section 6) |
+| Ensemble of 5 seeds (not shipped) | 65.80% | 61.70% |
+| **Shipped checkpoint** (`models/cross-encoder-cv-jd-v0.6`) | **65.15%** | **62.50%** |
 
-**Historical Context**:
-- **v0.1**: Boundary loss on tiny dataset → 0% accuracy (failure)
-- **v0.2**: MSE loss on 4,900 pairs → 60.86% accuracy (breakthrough)
-- **v0.3-v0.5**: Experimented with Boundary/Classification losses → regression to 30-59% (failures)
-- **v0.6**: Return to MSE + systematic optimization → **65.80%** (major success)
-
-### 1.2 v0.6 Design Goals
-
-1. **Maximize LabelAcc** from 60.86% v0.2 baseline
-2. **Understand hyperparameter sensitivity** (LR, BS, epochs, model choice)
-3. **Stabilize predictions** across multiple runs (reduce seed variance)
-4. **Identify the ceiling** for current architecture (what's theoretically maximum?)
-5. **Document all findings** to guide future versions and prevent repeated mistakes
-
-### 1.3 Success Criteria (Met ✅)
-
-| Criterion | Target | Achieved | Status |
-|-----------|--------|----------|--------|
-| Test LabelAcc | 62-63% | 65.80% | ✅ Exceeded |
-| Generalization Gap | <1pp (val ≈ test) | 0.84pp | ✅ Met |
-| Reproducibility | Consistent across seeds | σ=0.8597pp | ✅ Met |
-| Training Efficiency | <1hr/run on Colab | ~60min/run | ✅ Met |
-| Documentation | Complete & usable | This report | ✅ Met |
+The headline "65.80%" is a ±10-point tolerance figure for an ensemble that was
+never shipped. Under the bucket metric used for v0.2–v0.5, the shipped model
+reaches **62.50%**, about 2 pp above v0.2's 60.76%. The two figures come from
+different test sets.
+The v0.6 tuning work is real, but it should not be read as a +5 pp jump over v0.2.
 
 ---
 
-## 🔧 Part 2: Architecture & Design Rationale
+## 2. Metric definitions — read this before comparing versions
 
-### 2.1 Why Cross-Encoder Architecture?
+Two different metrics were both reported as "LabelAcc" in this project.
 
-**Architecture Choice**: `cross-encoder/ms-marco-MiniLM-L-12-v2`
+| Name used here | Definition | Where it was used |
+|---|---|---|
+| **Bucket accuracy** | predicted score and true score fall in the same rubric label (poor <40, weak 40–59, moderate 60–74, strong 75–89, excellent ≥90) | `training/fine_tune_cross_encoder.py` (`_compute_metrics`, `CELabelAccEvaluator`); all v0.1–v0.5 reports; v0.7 `raw_v2` run |
+| **Within-10 accuracy** | `abs(pred − true) ≤ 10` on the 0–100 scale | every v0.6 notebook (`fine_tune_cross_encoder_v0.6_*`), the v0.6 error analysis, the v0.7 LR/BGE grid-search notebooks |
 
-**Why Cross-Encoder over Siamese/Bi-Encoders?**
+The two are not interchangeable. A prediction of 58 for a true score of 61 is
+correct under within-10 and wrong under bucket accuracy; a prediction of 41
+for a true score of 59 is the reverse. All "LabelAcc" values in Sections 4–5
+are within-10 unless marked otherwise.
 
-| Aspect | Cross-Encoder | Siamese Twin-Encoder | Difference |
-|--------|---------------|--------------------|-----------
-| Encoding | Joint (CV+JD together) | Separate (CV then JD) | Cross-encoder captures CV-JD interaction |
-| Computational | 1 forward pass | 2 forward passes | Cross-encoder faster |
-| Semantic Understanding | High (interaction-aware) | Medium (independence bias) | Cross-encoder better for matching |
-| Ranking Task Fit | Excellent | Good | Cross-encoder specifically designed |
-| Training Signal | Strong (joint gradients) | Weak (independent gradients) | Cross-encoder learns relationships |
-
-**Evidence**: Previous early experiments (v0.1 setup) with Siamese networks + CosineSimilarity achieved poor results (~30-40%), motivating switch to Cross-Encoder.
-
-### 2.2 Model Selection: MiniLM-L-12-v2
-
-**Chosen Model**: `cross-encoder/ms-marco-MiniLM-L-12-v2`
-
-**Model Specifications**:
-```
-Architecture:        BERT-like Transformer
-Layers:              12
-Hidden Dimension:    384
-Attention Heads:     12
-Max Sequence Length: 512 tokens
-Parameters:          ~117M
-Pre-training Data:   MS MARCO (1B+ passage-query pairs)
-Pre-training Loss:   Triplet loss (ranking-focused)
-```
-
-**Why MiniLM-L-12 (not L-6 or larger)?**
-
-| Model | Layers | Dim | Params | Test Acc (v0.6) | Analysis |
-|-------|--------|-----|--------|-----------------|----------|
-| L-6 (small) | 6 | 384 | 22M | 57.65% | ❌ Insufficient capacity |
-| **L-12 (chosen)** | **12** | **384** | **117M** | **64.80%** | ✅ Sweet spot |
-| RoBERTa-base (large) | 12 | 768 | 355M | 25.00% | ❌ Wrong architecture for task |
-
-**Key Insight**: Larger isn't always better. RoBERTa-base completely failed (25% accuracy), suggesting it was pre-trained differently and doesn't transfer to this CV-JD matching task. MiniLM-L-12 is pre-trained on MS MARCO (passage ranking) which is structurally similar to CV-JD matching.
-
-### 2.3 Loss Function: Why MSELoss?
-
-**Chosen Loss**: `torch.nn.MSELoss()`
-
-**Motivation**: Labels are continuous (0.00-1.00), predicting similarity as regression task
-
-**Comparison with Alternatives**:
-
-| Loss Function | Pros | Cons | Test Acc | Status |
-|---------------|------|------|----------|--------|
-| **MSELoss** | Smooth gradients, continuous target | Assumes Gaussian noise | **65.15%** | ✅ Best |
-| Boundary Loss | Domain-specific (±10 range) | Discontinuous, unstable gradients | 59.62% | ❌ -5.53pp |
-| Classification Loss | Multi-class framework | Doesn't leverage continuous labels | 30.29% | ❌ -34.86pp |
-| CosineSimilarity | Magnitude-invariant | Poor early results | N/A | ❌ Not competitive |
-
-**Why MSELoss Works**:
-1. **Continuous Target**: Labels in [0.0, 1.0] naturally fit regression
-2. **Smooth Gradient Flow**: Enables stable training (vs Boundary's hard threshold)
-3. **Generalizes Better**: Model learns smooth similarity, not hard classification
-4. **Empirically Best**: Phase 2.1 proved 5e-5 LR with MSE → 65.15%
-
-**Theoretical Justification**:
-- MSE assumes labels have independent Gaussian noise: `pred = true_label + N(0, σ²)`
-- For CV-JD matching, this is reasonable (multiple annotators might give slightly different scores)
-- Spearman evaluator during training monitors rank correlation, orthogonal to MSE (captures both absolute accuracy and relative ordering)
-
-### 2.4 Evaluator: Spearman Correlation (Not LabelAcc)
-
-**Why Monitor Spearman During Training, Not LabelAcc?**
-
-| Metric | Differentiable | Stable Gradients | Training Signal | Use Case |
-|--------|----------------|------------------|-----------------|----------|
-| Spearman | No, but smooth | Yes (rank-based) | Good (guides learning) | **Training** |
-| LabelAcc | No, discrete | No (0/1 per sample) | Poor (sparse signal) | **Evaluation only** |
-
-**How It Works**:
-
-```
-During Training (per epoch):
-  1. Get predictions on validation set
-  2. Compute Spearman rank correlation between predictions and labels
-  3. Track: Log it, use for checkpoint selection
-  4. Benefit: Spearman smooth → can track improvements per epoch
-  
-During Evaluation (after training):
-  1. Get predictions on test set
-  2. Compute LabelAcc: % predictions within ±10 of label
-  3. This is final metric (what users care about)
-```
-
-**Why Spearman as Proxy?**
-
-| Property | Spearman | LabelAcc | Why Spearman Better? |
-|----------|----------|----------|----------------------|
-| Continuous | No, but rank-ordered | No, binary per sample | Rank correlation smooth, binary metric noisy |
-| Gradient | No (not differentiable) | No | Both non-differentiable, but Spearman less noisy |
-| Per-sample Signal | Weak (depends on all samples) | None (0/1) | Spearman uses global ranking, captures trends |
-| Training Guide | Good | Poor | Spearman catches broad overfitting before LabelAcc collapses |
-
-**Evidence**: Phase 4 (Early Stopping) showed that early-stopping on Spearman resulted in 64.80%, slightly worse than baseline 65.15%, because Spearman peak ≠ LabelAcc peak. However, Spearman is still better than pure LabelAcc since LabelAcc is too discrete.
+The test sets also differ: v0.2–v0.4 used the 1,050-pair test split of
+dataset v0.3, while v0.6 uses the 2,000-pair test split of dataset v0.5.
 
 ---
 
-## 📊 Part 3: Experimental Results & Analysis
+## 3. Dataset v0.5
 
-### 3.1 Dataset v0.5 (Final Training Data)
+Measured directly from `datasets/versions/v0.5/`.
 
-**Dataset Composition**:
-```
-Total Pairs:        13,350
-├─ Training:        9,350 pairs (70%)
-├─ Validation:      2,000 pairs (15%)
-└─ Test:            2,000 pairs (15%)
+### 3.1 Size and split
 
-Class Distribution (Score Range):
-├─ 0-20:   2,670 pairs (20%)
-├─ 20-40:  2,670 pairs (20%)
-├─ 40-60:  2,670 pairs (20%)
-├─ 60-80:  2,670 pairs (20%)
-└─ 80-100: 2,670 pairs (20%)
+| Split | Pairs |
+|---|---|
+| Train | 9,350 |
+| Validation | 2,000 |
+| Test | 2,000 |
+| **Total** | **13,350** |
 
-Data Format: JSONL
-{
-  "cv_text": "...",        // Resume/CV text (500-2000 tokens)
-  "jd_text": "...",        // Job description (1000-3000 tokens)
-  "label": 0.65            // True similarity score (0.0-1.0)
-}
-```
+The split is component-based: a resume or JD never appears in more than one split.
 
-**How Dataset was Created**:
-- Collected from HR database and job postings
-- Labeled by domain experts (similarity on 0-100 scale, normalized to 0-1)
-- Filtered to remove duplicates
-- Balanced across 5 score ranges (20% each)
+### 3.2 Label source
 
-### 3.2 Phase 2.1: Learning Rate Grid Search
+All pairs are synthetic or LLM-labelled. None come from real hiring outcomes or human expert annotation.
 
-**Hypothesis**: Find optimal learning rate for this model + dataset combination
+| `labeled_by` | Train | Validation | Test | Total |
+|---|---|---|---|---|
+| `llm_synthetic` (CV, JD and score generated by an LLM) | 4,575 | 875 | 900 | 6,350 |
+| `llm_relabeled` (v0.3 pairs re-scored by an LLM, see v0.5 report) | 2,876 | 660 | 652 | 4,188 |
+| `manual_ai_assisted` (original v0.3 labels) | 1,899 | 465 | 448 | 2,812 |
 
-**Configuration**:
-```
-Fixed:    BS=16, epochs=15, loss=MSE, evaluator=Spearman
-Tested:   LR ∈ [1e-5, 2e-5, 3e-5, 5e-5]
-Seeds:    [42] (single seed per LR to isolate LR effect)
-```
+JD sources: 2,220 `synthetic`, 270 `synthetic_resume_driven`, 180 `anonymized`.
 
-**Results**:
+### 3.3 Label distribution (rubric_v0.2 buckets)
 
-| LR | Val Acc | Val MAE | Test Acc | Test MAE | Interpretation |
-|----|---------|---------|----------|----------|-----------------|
-| 1e-5 | 61.15% | 9.68 | 61.05% | 10.09 | 🔴 Too conservative (weak gradients) |
-| 2e-5 | 59.30% | 9.94 | 58.25% | 10.44 | 🔴 Regression, worse convergence |
-| 3e-5 | 64.70% | 9.16 | 63.80% | 9.59 | 🟡 Good, but still suboptimal |
-| **5e-5** | **65.00%** | **9.39** | **65.15%** | **9.62** | 🟢 **OPTIMAL** |
+| Label | Train | Validation | Test | Total |
+|---|---|---|---|---|
+| poor_match (<40) | 1,800 | 460 | 410 | 2,670 |
+| weak_match (40–59) | 1,852 | 428 | 392 | 2,672 |
+| moderate_match (60–74) | 1,917 | 365 | 388 | 2,670 |
+| strong_match (75–89) | 1,928 | 362 | 377 | 2,667 |
+| excellent_match (≥90) | 1,853 | 385 | 433 | 2,671 |
 
-**Key Insight**: **LR=5e-5 is 5x higher than typical BERT fine-tuning (1e-5).**
+The dataset is balanced at 20% per rubric label. Every pair's `label` agrees with its `overall_score`.
 
-**Why?**
-- Warmup steps = 877 (10% of 8,775 total steps)
-- Small warmup window → need aggressive LR to escape random initialization
-- Spearman evaluator is more stable than loss, allowing higher LR
-- **+3.55pp improvement** (61.60% baseline → 65.15%) from single hyperparameter
+### 3.4 Text length
 
-**Conclusion**: Learning rate is **critical hyperparameter**, easily ±3pp variation.
+On the test split, with the model's own tokenizer applied to `[CLS] CV [SEP] JD [SEP]`:
 
-### 3.3 Phase 2.2: Batch Size Tuning
+| Measure | Value |
+|---|---|
+| Median pair length | 229 tokens |
+| 90th percentile | 439 tokens |
+| Max | 991 tokens |
+| Pairs truncated at 512 | 125 / 2,000 (6.3%) |
+| Median CV length | 56 words |
+| Median JD length | 105.5 words |
 
-**Hypothesis**: Optimize batch size for convergence stability
+Truncation therefore affects only a small share of pairs. The bigger
+data-quality problem, found later in v0.7, is that the synthetic CVs are short
+and generic: the prompts asked for 150–250 words, and the LLM produced about 50–80.
 
-**Configuration**:
-```
-Locked:   LR=5e-5 (from Phase 2.1), epochs=15
-Tested:   BS ∈ [8, 16, 32]
-Seeds:    [42] per batch size
-```
+### 3.5 Domain coverage
 
-**Results**:
-
-| BS | Val Acc | Val LabelAcc | Test Acc | Gap | Interpretation |
-|----|---------|--------------|----------|-----|-----------------|
-| 8 | 67.00% | 67.00% | 64.65% | -2.35pp | 🟡 Noisy, high variance |
-| **16** | **65.40%** | **65.40%** | **64.40%** | **-0.95pp** | 🔴 Baseline (slight regression) |
-| 32 | 60.70% | 60.70% | 56.05% | -4.65pp | 🔴 Collapse (batch too large) |
-
-**Key Findings**:
-1. **All batches worse than Phase 2.1 baseline (65.15%)**
-   - Phase 2.1: No intermediate evaluation
-   - Phase 2.2: Evaluate per epoch, per batch
-   - Likely due to **random seed variance** (different seed = different convergence)
-
-2. **BS=16 represents **stable middle ground**
-   - BS=8: Noisy gradients → high validation variance
-   - BS=32: Large gradients → insufficient diversity → underfitting
-
-3. **Variance Surprise**: Expected +1-2pp from BS tuning, got -0.75pp instead
-   - Lesson: Not all hyperparameters equally important
-   - LR >> BS for this task
-
-**Conclusion**: **Batch size tuning did NOT help**. BS=16 remains optimal despite regression. Suggests random seed effect is stronger than batch size effect.
-
-### 3.4 Phase 3: Base Model Selection
-
-**Hypothesis**: Larger or different models might capture nuances better
-
-**Configuration**:
-```
-Locked:   LR=5e-5, BS=16, epochs=15, loss=MSE, evaluator=Spearman
-Tested:   3 different base models
-Seeds:    [42] per model
-```
-
-**Results**:
-
-| Model | Dim | Layers | Test Acc | vs Baseline | Analysis |
-|-------|-----|--------|----------|-------------|----------|
-| ms-marco-MiniLM-L-12-v2 | 384 | 12 | **64.80%** | -0.35pp | 🟢 Baseline (slight regression) |
-| ms-marco-MiniLM-L-6-v2 | 384 | 6 | 57.65% | -7.50pp | 🔴 Too small, loses capacity |
-| qnli-distilroberta-base | 768 | 12 | 25.00% | -40.15pp | 🔴 Wrong architecture, incompatible |
-
-**Analysis**:
-
-1. **MiniLM-L-12 is near-optimal for this task**
-   - Despite slight regression (-0.35pp), it's best among tested
-   - Suggests architecture already optimized
-
-2. **MiniLM-L-6 confirms: capacity matters**
-   - 6 layers insufficient for CV-JD complexity
-   - -7.5pp loss significant
-
-3. **DistilRoBERTa catastrophic failure (25%)**
-   - Different pre-training (QNLI: question entailment vs MS MARCO: ranking)
-   - Different tokenization, different pooling strategy
-   - **Lesson**: Pre-training domain matters as much as architecture
-
-**Conclusion**: **Don't swap base models lightly.** Pre-training dataset and task align with ranking/matching tasks (MS MARCO) better than classification (QNLI).
-
-### 3.5 Phase 4: Extended Training + Early Stopping
-
-**Hypothesis**: Longer training might help, if stopped before overfitting
-
-**Configuration**:
-```
-Locked:   LR=5e-5, BS=16, loss=MSE
-Tested:   20 epochs with early stopping (patience=3 on Spearman)
-vs Baseline: 15 epochs (Phase 2.1)
-```
-
-**Results**:
-
-| Config | Epochs | Early Stop? | Test Acc | vs Baseline | Gap (Val-Test) |
-|--------|--------|-------------|----------|------------|-----------------|
-| Baseline | 15 | No | 65.15% | - | 0.15pp |
-| Extended | 20 | Yes (triggered epoch ~13) | 64.80% | -0.35pp | 0.84pp |
-
-**Analysis**:
-
-1. **Early stopping triggered around epoch 13**
-   - Spearman correlation stopped improving
-   - Model likely plateau'd in ranking ability
-
-2. **But test accuracy regressed (-0.35pp)**
-   - Why? Spearman peak ≠ LabelAcc peak
-   - Spearman measures relative ranking, not absolute calibration
-   - Model ranked pairs well but predicted poorly within ±10 range
-
-3. **Larger Val-Test gap (0.84pp vs 0.15pp)**
-   - Suggests overfitting to validation set
-   - Even though early stopping triggered
-
-**Conclusion**: **15 epochs is near-optimal for this task.** Extended training + early stopping on Spearman does NOT help. Suggests model converges quickly, further training adds noise rather than signal.
-
-### 3.6 Phase 5: Ensemble with 5 Random Seeds (FINAL)
-
-**Hypothesis**: Different random seeds lead to different local optima. Averaging predictions reduces variance.
-
-**Configuration**:
-```
-Locked:   LR=5e-5, BS=16, epochs=15, loss=MSE, evaluator=Spearman
-Varied:   Random seed (controls shuffle order, weight init, dropout, optimizer state)
-Seeds:    [42, 123, 456, 789, 999]
-```
-
-**Individual Run Results**:
-
-| Run | Seed | Val Acc | Test Acc | MAE | RMSE |
-|-----|------|---------|----------|-----|------|
-| 1 | 42 | 62.80% | **62.55%** | 9.51 | 13.18 |
-| 2 | 123 | 65.45% | **64.95%** | 9.34 | 12.91 |
-| 3 | 456 | 64.00% | **63.60%** | 9.49 | 13.05 |
-| 4 | 789 | 63.90% | **63.70%** | 9.59 | 13.16 |
-| 5 | 999 | 65.30% | **64.70%** | 9.48 | 13.04 |
-
-**Statistical Summary**:
-```
-Mean Test Acc:         63.90%
-Std Dev:              0.8597pp
-Min (worst):          62.55%  (seed 42)
-Max (best):           64.95%  (seed 123)
-Range (gap):          2.40pp
-
-Insight: Seed variance is significant (2.40pp spread)
-```
-
-**Ensemble Result** (Average Predictions):
-
-| Metric | Value | Interpretation |
-|--------|-------|-----------------|
-| **Ensemble Test Acc** | **65.80%** | **Better than any single run!** |
-| Ensemble Test MAE | 9.1147 | Improved |
-| Ensemble Test RMSE | 12.8660 | Improved |
-| vs Best Single (64.95%) | +0.85pp | Ensemble gains from diversity |
-| vs Baseline (65.15%) | +0.65pp | Overall improvement |
-
-**Why Ensemble Works**:
-
-1. **Seed Controls Everything Random**:
-   - Weight initialization: Different starting parameters
-   - Data shuffle order: Different batch ordering each epoch
-   - Dropout masks: Different neurons dropped each forward pass
-   - Optimizer state: Different momentum/adaptive rates
-
-2. **Different Seeds → Different Local Optima**:
-   - Seed 42: Converges to one local minimum (62.55%)
-   - Seed 123: Different path, different local minimum (64.95%)
-   - All valid solutions, different strengths/weaknesses
-
-3. **Averaging = Variance Reduction**:
-   ```
-   For pair P:
-     Pred_1(P) = 0.65 (seed 42)
-     Pred_2(P) = 0.68 (seed 123)
-     Pred_3(P) = 0.66 (seed 456)
-     Pred_4(P) = 0.67 (seed 789)
-     Pred_5(P) = 0.67 (seed 999)
-     ──────────────────────
-     Ensemble(P) = 0.666 (smooth, stable)
-   ```
-   - Single run might be 0.65 or 0.68 (off by ±0.02)
-   - Ensemble = 0.666 (more accurate on average)
-
-**Key Discovery**: **Ensemble (65.80%) > Best Single (64.95%)**
-- Proves ensemble value
-- Shows that variance reduction matters
-- Explains v0.6 final result
+JDs carry 850 distinct `domain` tag values. The tags are not normalised; for
+example `Mobile Development` and `mobile_development` both appear. A real
+per-domain breakdown would need the tags cleaned first, so this report makes no
+claim about domain bias.
 
 ---
 
-## 🚨 Part 4: Known Limitations & Dataset Issues
+## 4. Experiments
 
-### 4.1 Critical Dataset Issues
+All runs use `cross-encoder/ms-marco-MiniLM-L-12-v2` (12 layers, hidden size
+384, ~33M parameters), `max_length=512`, Sigmoid output, warmup 10%, AMP, on a
+Colab T4. LabelAcc below is **within-10**.
 
-#### **Issue 1: Label Ambiguity (HIGH IMPACT)**
+### 4.1 Loss and evaluator re-check (10 epochs, default LR 2e-5, BS 16)
 
-**Problem**: Some CV-JD pairs are inherently ambiguous
+Source: `fine_tune_cross_encoder_v0.6_report.json`.
 
-**Examples**:
-```
-CV: "5 years Python, 3 years SQL"
-JD: "5+ years Python required"
-Label: 0.65?  Why not 0.75? (both are valid)
+| Run | Loss | Checkpoint selected by | Val | Test | Test MAE |
+|---|---|---|---|---|---|
+| 1 | MSE | Spearman | 62.85% | **60.95%** | 9.94 |
+| 2 | BoundaryAwareLoss | Spearman | 58.30% | 56.05% | 10.92 |
+| 3 | MSE | LabelAcc | 43.25% | 42.85% | 14.15 |
 
-CV: "Experienced in REST APIs"
-JD: "REST API development required"
-Label: 0.85?  Why not 0.90? (different people annotate differently)
-```
+This confirmed the v0.3–v0.5 findings on the new dataset: MSE with Spearman
+selection is best. Selecting checkpoints by LabelAcc is clearly worse.
 
-**Impact on v0.6**:
-- Cannot exceed inter-annotator agreement ceiling
-- If 3 people label same pair: [0.6, 0.7, 0.8] → true label unknown
-- Current label (say 0.65) might be wrong
+Running the same configuration for 15 epochs reached 61.60% test
+(`fine_tune_cross_encoder_v0.6_mse_spearman_15ep_report.json`).
 
-**Recommendation**:
-- Multi-annotator agreement study on 10% of data
-- If agreement < 0.80, dataset has inherent noise
-- Consider crowd-sourcing re-labeling
+### 4.2 Learning-rate grid (15 epochs, BS 16, seed 42)
 
-#### **Issue 2: Text Truncation (MEDIUM IMPACT)**
+Source: `fine_tune_cross_encoder_v0.6_lr_grid_search_report.json`.
 
-**Problem**: CV/JD texts exceed 512 token limit
+| LR | Val | Test | Test MAE |
+|---|---|---|---|
+| 1e-5 | 61.15% | 61.05% | 10.09 |
+| 2e-5 | 59.30% | 58.25% | 10.44 |
+| 3e-5 | 64.70% | 63.80% | 9.59 |
+| **5e-5** | 65.00% | **65.15%** | 9.62 |
 
-**Typical Lengths**:
-```
-CV texts:   500-2000 tokens
-JD texts:   1000-3000 tokens
-Max allowed: 512 tokens
-```
+LR 5e-5 was locked for later phases. The same LR 2e-5 / 15-epoch setting
+scored 61.60% in 4.1 and 58.25% here. That is a 3.35 pp swing from
+run-to-run randomness alone, which is about as large as the effect of LR itself.
 
-**How It's Truncated**:
-- BERT tokenizer takes first 512 tokens
-- Later context (often relevant!) is discarded
-- Especially impacts longer JD descriptions (sometimes full job spec)
+### 4.3 Batch size (LR 5e-5, 15 epochs)
 
-**Impact on v0.6**:
-- Predictions based on partial information
-- Model might miss crucial skills later in text
-- Expected accuracy ceiling: 70-75% (vs current 65.80%)
+Source: notebook output of `fine_tune_cross_encoder_v0.6_batch_size_tuning_colab.ipynb`.
 
-**Recommendation**:
-- Implement longer context handling:
-  - Use sliding window (overlapping chunks)
-  - Hierarchical pooling (summarize then match)
-  - Sparse attention models (Longformer, BigBird)
+| BS | Val | Test | Test MAE |
+|---|---|---|---|
+| 8 | 67.00% | 64.65% | 9.18 |
+| 16 | 65.40% | 64.40% | 9.73 |
+| 32 | 57.00% | 56.05% | 11.02 |
 
-#### **Issue 3: Domain & Demographic Bias (MEDIUM IMPACT)**
+No setting beat 65.15%. BS 8 and BS 16 are within seed noise. BS 32 is clearly
+worse at this epoch budget, because it takes half as many optimiser steps.
+BS 16 was kept.
 
-**Problem**: Dataset skewed toward certain job categories
+### 4.4 Base model (LR 5e-5, BS 16, 15 epochs)
 
-**Suspected Bias**:
-```
-Over-represented:
-  - IT/Software Engineering (40-50% of data?)
-  - Data Science (10-15%)
-  
-Under-represented:
-  - Sales (5%)
-  - Marketing (5%)
-  - Creative (3%)
-  - HR (2%)
-```
+Source: `fine_tune_cross_encoder_v0.6_model_selection_report.json`.
 
-**Impact on v0.6**:
-- Model overfits to IT skills/keywords
-- Performance drops on non-IT roles
-- Systematic error patterns by category
+| Model | Test | Test MAE |
+|---|---|---|
+| `ms-marco-MiniLM-L-12-v2` | **64.80%** | 9.19 |
+| `ms-marco-MiniLM-L-6-v2` | 57.65% | 10.94 |
+| `qnli-distilroberta-base` | 25.00% | 17.82 |
 
-**Recommendation**:
-- Stratified evaluation: Report accuracy by job category
-- Collect balanced data if possible
-- Fine-tune on under-represented categories
+The QNLI model collapsed to near-constant output. Its MAE of about 17.8 matches
+the later ELECTRA and BGE failures in v0.7.
 
-#### **Issue 4: Class Distribution Question (LOW IMPACT)**
+### 4.5 20 epochs with early stopping (patience 3, Spearman)
 
-**Claim**: Balanced 20% per score range (0-20, 20-40, ..., 80-100)
+Source: `fine_tune_cross_encoder_v0.6_20ep_early_stopping_report.json`.
 
-**Problem**: Not verified in this report
+| Config | Val | Test | Test MAE |
+|---|---|---|---|
+| 15 epochs, no early stopping (4.2) | 65.00% | 65.15% | 9.62 |
+| 20 epochs, early stopping | 65.90% | 64.80% | 9.15 |
 
-**Recommendation**:
-- Analyze histogram of label distribution
-- Check for skew (e.g., concentrated in 40-60 range)
-- If imbalanced, use weighted loss or resampling
+Longer training did not help. Note that MAE improved while within-10 accuracy dropped.
 
-### 4.2 Model Ceiling Analysis
+### 4.6 5-seed ensemble (LR 5e-5, BS 16, 15 epochs)
 
-**Why 65.80% might be near the ceiling with current approach?**
+Sources: `fine_tune_cross_encoder_v0.6_ensemble_5runs_report.json` and the notebook output.
 
-#### **Reason 1: Information Loss from Truncation**
-```
-Maximum possible accuracy: ~70-75% (if using full text)
-Current accuracy: 65.80%
-Loss from truncation: ~4-9pp
-```
+| Seed | Val | Test | Test MAE | Test RMSE |
+|---|---|---|---|---|
+| 42 | 64.55% | 62.55% | 9.87 | 13.46 |
+| 123 | 66.05% | **64.95%** | 9.60 | 13.54 |
+| 456 | 64.05% | 63.60% | 9.91 | 13.44 |
+| 789 | 64.75% | 63.70% | 9.50 | 13.37 |
+| 999 | 65.30% | 64.70% | 9.27 | 13.09 |
+| **Mean ± std** | | 63.90% ± 0.86 | | |
+| **Ensemble (mean of predictions)** | | **65.80%** | **9.11** | **12.87** |
 
-#### **Reason 2: Label Noise**
-```
-Assume true inter-annotator agreement: 85% (3 people agree 85% of time)
-Current model accuracy: 65.80%
-Theoretical ceiling: ~85% (cannot exceed agreement)
-Gap: 19.2pp potential improvement
-```
-
-#### **Reason 3: Task Inherent Ambiguity**
-```
-Some CV-JD pairs genuinely ambiguous even to humans
-- CV: "Familiar with Python", JD: "5+ years Python required"
-  Is this match? 30%? 40%? Depends on context
-```
-
-#### **Reason 4: Model Capacity**
-```
-MiniLM-L-12: 384-dim, optimized for efficiency
-Larger models (RoBERTa-base: 768-dim) might capture more nuance
-But Phase 3 showed DistilRoBERTa (768-dim) failed completely
-Suggests architecture matters more than size
-```
-
-**Estimated Ceiling by Intervention**:
-
-| Intervention | Estimated Ceiling | Effort | Confidence |
-|--------------|-------------------|--------|------------|
-| Fix truncation (sliding window) | 70-75% | High | Medium |
-| Multi-annotator re-labeling | 80-85% | Very High | Medium |
-| Larger model (if compatible) | 68-70% | Medium | Low |
-| All of above | 80-85% | Very High | Medium |
+Seed 42 scored 65.15% in 4.2 and 62.55% here with the same configuration. GPU
+non-determinism on Colab is the likely cause, which again shows the
+run-to-run noise is about 2–3 pp.
 
 ---
 
-## 🚀 Part 5: Recommendations for Future Versions
+## 5. Error analysis (ensemble, test split)
 
-### 5.1 v0.7 Experimental Direction
+Source: `notebooks/error_analysis_cross_encoder_v0.6_colab.ipynb`.
 
-#### **Recommended Experiments (Priority Order)**
+Confusion matrix by rubric bucket (rows = true, columns = predicted):
 
-**Priority 1: Larger Compatible Model**
-```
-Hypothesis: MiniLM-L-12 (384-dim) may lack capacity
-Test: cross-encoder/mmarco-MiniLMv2-L12-H768-v1 (768-dim)
-Expected Uplift: +1-3pp → 66.8-68.8%
-Effort: Medium (retune LR, likely lower)
-Risk: Low (can revert if fails)
-Timeline: 1 week
+| True \ Pred | poor | weak | moderate | strong | excellent | Bucket acc |
+|---|---|---|---|---|---|---|
+| poor (410) | **305** | 93 | 12 | 0 | 0 | 74.4% |
+| weak (392) | 91 | **193** | 74 | 28 | 6 | 49.2% |
+| moderate (388) | 13 | 80 | **206** | 75 | 14 | 53.1% |
+| strong (377) | 3 | 24 | 66 | **211** | 71 | 56.0% |
+| excellent (433) | 1 | 1 | 14 | 86 | **319** | 73.7% |
+| **Overall** | | | | | | **61.70%** |
 
-Config:
-  - LR: Start 3e-5 (larger models usually need lower LR)
-  - BS: 16 (unchanged)
-  - Epochs: 15 (unchanged)
-  - Ensemble: 3-5 seeds (new best model)
-```
+Signed error by true score (positive = over-prediction):
 
-**Priority 2: Data Augmentation**
-```
-Hypothesis: 9,350 training pairs insufficient for nuanced matching
-Test: Paraphrasing + synonym replacement
-Expected Uplift: +1-2pp → 66.8-67.8%
-Effort: High (need paraphrasing API or model)
-Risk: Medium (augmented data quality unsure)
-Timeline: 2 weeks
+| True score | Pairs | Mean error | Within-10 acc |
+|---|---|---|---|
+| 0–39 (poor) | 410 | +7.8 | 60.2% |
+| 40–59 (weak) | 392 | +1.6 | 52.3% |
+| 60–74 (moderate) | 388 | −1.0 | 63.4% |
+| 75–89 (strong) | 377 | −2.6 | 71.4% |
+| 90–100 (excellent) | 433 | −3.6 | 80.6% |
 
-Technique:
-  1. Use T5 or GPT to paraphrase CV/JD texts
-  2. Keep same similarity label
-  3. Expand dataset 9,350 → 18,700 pairs
-  4. Retrain v0.6 config
-  5. Evaluate: Does augmentation help or hurt?
-```
+Findings:
 
-**Priority 3: Context Extension**
-```
-Hypothesis: Truncation at 512 tokens loses critical information
-Test: Sliding window with hierarchical pooling
-Expected Uplift: +2-4pp → 67.8-69.8%
-Effort: High (requires code changes)
-Risk: Medium (architectural change)
-Timeline: 2-3 weeks
-
-Approach:
-  1. Split texts into overlapping chunks (e.g., 256-token windows with 128-token overlap)
-  2. Get embeddings for each chunk
-  3. Pool (mean or attention) to get final pair embedding
-  4. Predict similarity
-  5. Expected: Recover lost information from truncation
-```
-
-**Priority 4: Contrastive Learning**
-```
-Hypothesis: Relative ranking (contrastive loss) better than absolute scoring (MSE)
-Test: ContrastiveLoss or TripletLoss with hard negative mining
-Expected Uplift: +1-2pp → 66.8-67.8%
-Effort: Very High (complex negative sampling)
-Risk: High (may not work, complex tuning)
-Timeline: 2-3 weeks
-
-Approach:
-  1. For each CV-JD pair (anchor, positive):
-     - Find hard negative: Different CV, higher score or same CV, lower score JD
-  2. Contrastive loss: Minimize distance (anchor, positive), maximize (anchor, negative)
-  3. May better capture relative matching (JD-A better match than JD-B for CV)
-```
-
-### 5.2 v0.7 Success Criteria
-
-| Metric | v0.6 | v0.7 Target | Acceptable |
-|--------|------|------------|-----------|
-| Test LabelAcc | 65.80% | 67.5%+ | 66.5%+ |
-| Val-Test Gap | 0.84pp | <0.5pp | <1.0pp |
-| Training Time/Run | 60min | <90min | <120min |
-| Ensemble Size | 5 | 3-5 | 3+ |
-| Reproducibility (σ) | 0.8597pp | <0.7pp | <1.0pp |
-
-### 5.3 v0.7 Dataset Improvements
-
-**Critical Actions**:
-
-1. **Multi-Annotator Study**
-   - Recruit 3 annotators
-   - Label 500 random pairs independently
-   - Compute Fleiss' Kappa (inter-annotator agreement)
-   - If <0.80: Re-label entire dataset
-
-2. **Category Stratification**
-   - Analyze label distribution by job category
-   - Report accuracy (v0.6) by category
-   - Identify worst-performing categories
-   - Collect more data for under-represented categories
-
-3. **Outlier Analysis**
-   - Identify pairs where v0.6 prediction >> label (e.g., +25pp)
-   - Manual review: Is label wrong or model overconfident?
-   - Remove or relabel problematic pairs
+- Most errors are one bucket away. Only 5.8% of pairs (116 / 2,000) land two
+  or more buckets off.
+- Predictions are pulled toward the middle, as expected from MSE regression:
+  poor pairs are over-scored and strong or excellent pairs are under-scored.
+- The middle buckets (weak, moderate, strong) are the hardest. They are
+  15–20 points wide, so a ±10 error easily crosses a boundary.
+- The largest errors come from noisy synthetic CVs, for example a CV that is
+  only a "DECLARATION …" footer with two skills, or one that says its
+  experience is "placeholder text". These are data-quality defects rather
+  than model failures.
 
 ---
 
-## 📝 Part 6: Technical Implementation Notes
+## 6. Shipped model
 
-### 6.1 Code Structure for Reference
+`models/cross-encoder-cv-jd-v0.6` contains **one** checkpoint, not the
+ensemble. `app/ml/similarity_model.py` loads a single `CrossEncoder`, so the 65.80%
+ensemble figure does not describe what runs in production.
 
-**Current v0.6 Implementation**:
-```
-notebooks/
-├─ fine_tune_cross_encoder_v0.6_ensemble_5runs_colab.ipynb
-│  ├─ Cell 1: Setup (clone, install)
-│  ├─ Cell 2: Load data + helpers
-│  ├─ Cell 3-7: Run 1-5 (independent training)
-│  └─ Cell 8: Aggregate (ensemble predictions)
+Re-measured on 2026-11-27 on the v0.5 test split (2,000 pairs, CPU
+inference). Scores were computed the same way as
+`app/scorers/similarity_scorer.py`: the raw regression output is clipped to
+[0, 1] and multiplied by 100. Raw outputs ranged from 0.069 to 1.053.
 
-artifacts/
-├─ models/
-│  ├─ cross-encoder-cv-jd-v0.6-ensemble-run1-seed42/
-│  ├─ cross-encoder-cv-jd-v0.6-ensemble-run2-seed123/
-│  ├─ ... (5 total)
-│  └─ cross-encoder-cv-jd-v0.6-ensemble-run5-seed999/
-└─ reports/
-   ├─ fine_tune_cross_encoder_v0.6_ensemble_run1_seed42_report.json
-   ├─ fine_tune_cross_encoder_v0.6_ensemble_run2_seed123_report.json
-   ├─ ... (5 total)
-   └─ fine_tune_cross_encoder_v0.6_ensemble_5runs_aggregate_report.json
-```
+| Metric | Value |
+|---|---|
+| Within-10 accuracy | 65.15% |
+| Bucket accuracy | **62.50%** |
+| MAE | 9.56 |
+| RMSE | 13.52 |
+| Spearman | 0.864 |
 
-**Metrics Always Logged**:
-- Per-epoch: train loss, val Spearman, val LabelAcc
-- Per-run: test MAE, RMSE, LabelAcc
-- Ensemble: average, std dev, best/worst single run
-- Timing: seconds per epoch, total per run
+Bucket accuracy per class: poor 79.3%, weak 49.7%, moderate 49.5%, strong
+55.4%, excellent 76.0%.
 
-### 6.2 Debugging Checklist for v0.7 Development
+Within-10 accuracy equals the LR-grid winner in 4.2 exactly (LR 5e-5, BS 16,
+15 epochs, seed 42; test 65.15%), so the shipped checkpoint is almost
+certainly that run. The small MAE difference (9.56 against 9.62) comes from
+clipping outputs to [0, 1].
 
-**If accuracy regresses from 65.80%**:
+The shipped single model scores slightly higher on bucket accuracy (62.50%)
+than the ensemble (61.70%). The ensemble only wins on the within-10 metric.
 
-- [ ] **Data Integrity**: No train-val-test leakage?
-- [ ] **Seed Reproducibility**: `torch.manual_seed()` set before training?
-- [ ] **Model Weights**: Loading best checkpoint (not final)?
-- [ ] **GPU Memory**: OOM errors → reduce BS?
-- [ ] **Hyperparameters**: Double-check LR, warmup_steps, epochs
-- [ ] **Loss Trends**: Does loss decrease per epoch?
-- [ ] **Evaluator Signal**: Does Spearman improve?
-- [ ] **Data Changes**: Different v0.5 dataset used?
-- [ ] **Library Versions**: sentence_transformers, torch versions match?
-
-### 6.3 Performance Optimization for Production
-
-**For Deployment** (beyond v0.6 research):
-
-1. **Model Quantization**: Reduce 117M params → 30M params (FP16 or INT8)
-   - 4x smaller model size
-   - 2-3x faster inference
-   - ~0.5-1pp accuracy loss
-
-2. **Batch Inference**: Use GPU batching (predict 32-64 pairs at once)
-   - 10x faster than single-pair inference
-
-3. **Ensemble Optimization**: Parallel inference on 5 models
-   - Run all 5 in parallel on GPU
-   - Average predictions
-   - Still faster than single-model sequential
+At runtime the ML score is blended 50/50 with the rule-based score
+(`SIMILARITY_SCORING_WEIGHT=0.5`; see `docs/similarity-scoring-design.md`),
+so these figures describe only the ML half of the final score.
 
 ---
 
-## 🎯 Part 7: Key Learnings & Lessons
+## 7. Limitations
 
-### 7.1 What Worked (Replicate in v0.7)
-
-✅ **MSELoss for Continuous Similarity Scoring**
-- Natural fit for regression task
-- Smooth gradients enable stable training
-- Better generalization than classification/boundary losses
-
-✅ **Spearman Evaluator During Training**
-- Guides model to learn ranking patterns
-- Less noisy than discrete metrics
-- Correlates with final LabelAcc (though not perfect)
-
-✅ **Learning Rate Optimization (LR=5e-5)**
-- +3.55pp improvement from single hyperparameter
-- Worth investigating per model/dataset
-- Higher than typical BERT fine-tuning due to warmup strategy
-
-✅ **Ensemble with Multiple Seeds**
-- Reduces variance (σ=0.8597pp)
-- Final accuracy beats best single run
-- Recommended practice for all future versions
-
-✅ **Cross-Encoder Architecture**
-- Pre-trained on ranking tasks (MS MARCO)
-- Joint encoding captures CV-JD interaction
-- Beats Siamese networks for this task
-
-### 7.2 What Didn't Work (Avoid in v0.7)
-
-❌ **Boundary Loss**: Discontinuous gradients, unstable training (-5.53pp)
-❌ **Classification Loss**: Wrong for continuous similarity task (-34.86pp)
-❌ **Batch Size Tuning**: No significant gains, wasted effort
-❌ **Larger Different Models** (DistilRoBERTa): Pre-training domain critical (-40.15pp)
-❌ **Extended Training (20 epochs)**: Plateau at 15, further training adds noise (-0.35pp)
-❌ **Early Stopping on Spearman**: Spearman peak ≠ LabelAcc peak
-
-### 7.3 Surprising Insights
-
-🎯 **Ensemble > Best Single Run**
-- Best single: 64.95%, Ensemble: 65.80%
-- Shows variance reduction value
-- Proves seed diversity matters
-
-🎯 **Pre-training Domain > Model Size**
-- DistilRoBERTa (768-dim) failed completely (25%)
-- MiniLM-L-12 (384-dim) best (65.80%)
-- MS MARCO pre-training (ranking) > QNLI (classification)
-
-🎯 **Seed Variance = 2.40pp**
-- Gap between best (64.95%) and worst (62.55%) run
-- Shows randomness is significant force
-- Justifies ensemble approach
-
-🎯 **Test > Val Performance** (slightly)
-- Val: 65.00%, Test: 65.15%
-- Unusual (often opposite)
-- Suggests no overfitting, good generalization
+- **The ground truth is an LLM's judgement.** Every label was produced or
+  revised by an LLM using rubric v0.2. The model learns to imitate that LLM
+  scorer at a much lower cost. It is not validated against recruiter decisions
+  or hiring outcomes, so its accuracy ceiling is the LLM's own consistency,
+  which was never measured.
+- **Run-to-run noise (2–3 pp) is as large as most tuning effects.** Single-seed
+  comparisons in Section 4 are suggestive, not conclusive.
+- **Short, generic synthetic CVs.** The median CV is 56 words, far shorter than
+  a real CV, and some are degenerate (Section 5).
+- **English-centric.** Most training text is English; Vietnamese CVs are
+  under-represented.
+- **No per-domain evaluation.** The domain tags need normalising first (3.5).
 
 ---
 
-## 🏆 Conclusion & Status
+## 8. What carried into v0.7
 
-**v0.6 Final Status: ✅ COMPLETE & FROZEN**
+v0.7 tested two directions; see `docs/similarity-model-cross-encoder-v0.7.md`.
 
-**Key Achievements**:
-- 65.80% test LabelAcc (ensemble) — solid result
-- +4.94pp improvement over v0.2 baseline
-- Identified learning rate as critical lever
-- Demonstrated ensemble value for variance reduction
-- Documented all design decisions, failures, learnings
-- Provided clear roadmap for v0.7+
+1. **Larger base models.** `ms-marco-electra-base` and `BAAI/bge-reranker-base`
+   both collapsed to constant output. Only the MiniLM MS MARCO cross-encoders
+   train well with this setup.
+2. **Better synthetic data.** A cleaner but homogeneous generator (`raw_v2`)
+   produced an in-domain score that cross-dataset evaluation showed to be
+   memorisation. v0.7 was stopped, and v0.6 remains the shipped model.
 
-**For Next Developers**:
-1. **Use v0.6 (65.80%) as reference baseline** — don't go below this
-2. **Don't repeat failures**: Boundary loss, Classification loss, BS tuning, extended training
-3. **Do explore**: Larger compatible models, data augmentation, context extension
-4. **Always**: Log metrics per epoch, test multiple seeds, validate on domain subsets
-5. **Remember**: Pre-training domain matters as much as architecture size
+Lessons that still hold:
 
-**Open Questions for v0.7 Research**:
-1. Can we reach 70%+ with larger models or better data?
-2. What's the inter-annotator agreement ceiling?
-3. Does truncation really cost 4-9pp accuracy?
-4. Can contrastive learning capture relative ranking better?
-
----
-
-**End of v0.6 Comprehensive Report**
-
-Document Version: Final  
-Last Updated: June 2026  
-Status: Frozen (no further changes)  
-Prepared By: Data Science & ML Engineering Team  
-For: v0.7 Development & Future Optimization
+- Use MSE regression with Spearman checkpoint selection. Boundary-aware loss,
+  5-class classification and LabelAcc-based checkpoint selection were all worse.
+- LR 5e-5, BS 16 and 15 epochs work best for MiniLM-L-12 on this data.
+- Fix one metric definition and one test set before comparing versions.
+- Report several seeds, or an ensemble, rather than a single run.
+- Mixing data sources generalised better than any single clean generator.
