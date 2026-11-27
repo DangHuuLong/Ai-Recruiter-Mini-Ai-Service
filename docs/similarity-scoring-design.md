@@ -54,8 +54,10 @@ relevance score directly:
 
 Trained via `training/fine_tune_cross_encoder_*` (Colab notebooks, see
 `docs/similarity-model-cross-encoder-v0.6.md`) on `datasets/versions/v0.5`
-(13,350 pairs), reaching **65.80% test LabelAcc** as a 5-seed ensemble
-(single-checkpoint runs: 62.55%–64.95%). Only one checkpoint is committed
+(13,350 pairs), reaching **65.80% test accuracy within ±10 points** as a
+5-seed ensemble (single-checkpoint runs: 62.55%–64.95%). Same-rubric-bucket
+accuracy, the metric used for v0.1–v0.5, is 61.70% for the ensemble.
+Only one checkpoint is committed
 locally (`models/cross-encoder-cv-jd-v0.6`), so the integrated model runs at
 single-checkpoint accuracy, not the full ensemble figure, unless the other
 4 seed checkpoints are also placed alongside it and ensembling is added to
@@ -283,8 +285,10 @@ score_application(request)
   may score higher than intended.
 - The model produces a single holistic score with no breakdown. There is no way
   to tell which part of the resume drove the score.
-- Only one of the 5 ensemble seed checkpoints is integrated (see above) —
-  running at ~63-65% single-run LabelAcc rather than the 65.80% ensemble figure.
+- The integrated checkpoint is a single model, not the ensemble. Re-measured
+  on the v0.5 test split, it scores 65.15% within ±10 points and 62.50% on
+  same-bucket accuracy (MAE 9.56, Spearman 0.864). See Section 6 of
+  `docs/similarity-model-cross-encoder-v0.6.md`.
 - Trained on synthetic LLM-generated CV/JD pairs (`datasets/versions/v0.5`),
   not real-world hiring outcomes.
 
